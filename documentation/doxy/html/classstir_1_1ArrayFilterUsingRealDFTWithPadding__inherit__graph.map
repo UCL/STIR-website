@@ -1,0 +1,8 @@
+<map id="stir::ArrayFilterUsingRealDFTWithPadding&lt; num_dimensions, elemT &gt;" name="stir::ArrayFilterUsingRealDFTWithPadding&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node7" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 1, float \&gt;" alt="" coords="827,5,1007,46"/>
+<area shape="rect" id="node11" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="827,70,1007,111"/>
+<area shape="rect" id="node2" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="243,35,429,91"/>
+<area shape="rect" id="node4" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="6,42,191,83"/>
+<area shape="rect" id="node9" href="$classstir_1_1RampFilter.html" title="The ramp filter used for (2D) FBP. " alt="" coords="1064,12,1173,39"/>
+<area shape="rect" id="node13" href="$classstir_1_1ColsherFilter.html" title="This class contains the Colsher filter used for 3D&#45;PET reconstruction. " alt="" coords="1059,77,1178,104"/>
+</map>

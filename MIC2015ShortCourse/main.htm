@@ -1,0 +1,229 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+
+<TITLE>STIR at the IEEE MIC 2015 Short Course on Image Reconstruction </TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<h1>STIR at the IEEE MIC 2015 Short Course on Image Reconstruction </h1>
+<p>This page is for participants in the <a href="http://www.nss-mic.org/2015/public/ShortCourses.asp#c7"  target=_blank>Short Course on Image Reconstruction</a> 
+at the IEEE MIC. It will be updated with extra information before the course.
+  <br />
+  <strong>Please refresh the page when you re-visit.</strong> Check the bottom of page for list of updates.</p>
+
+
+<!--<p>After reading this page, please fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>a 1 minute survey</a>.</p>
+  -->
+
+
+<p>During the course, we will have practical exercises using STIR. These exercises are an integral part of the course. 
+To be able to participate, <strong>students are asked to bring their own laptop if possible</strong>.
+</p>
+
+<p>We provide a <a href="https://en.wikipedia.org/wiki/Virtual_machine" target=_blank>Virtual Machine</a>
+   with everything preinstalled for the course. Please <strong>follow
+    the installation instructions below to get this on your laptop
+    <i>before the conference</i></strong> (we will be available 30 minutes before the course to help with installation problems and will have some USB sticks with us as well).</p>
+  
+<p>Please note that the STIR version that we will be using is more
+   recent that the current 3.0. Therefore, <strong>please use the virtual machine.</strong>
+   If you really want to do this all yourself, you will need to get <a href=http://github.com/UCL/STIR target="_blank">STIR from
+  github</a>, install <a href=http://www.swig.org target="_blank">SWIG</a>, Python, etc and compile STIR with
+Python support. You would then need to get the data and example scripts. Don't try this...
+</p>
+
+<p>
+  <strong>Please prepare for these exercises, see bottom of this page.</strong>
+</p>
+
+<h2>Virtual Machine installation instructions</h2>
+<p>If you have any problems, please first re-check this web-page. If you cannot solve your
+  issue, please email <tt>k dot thielemans at ucl dot ac dot uk</tt>.
+</p>
+<h3>Initial download and installation</h3>
+<ol>
+  <li>Make sure you have enough free disk-space on your laptop (~10GB for installation).</li>
+  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>.
+    <br /> You do not need to install the Oracle extensions to VirtualBox, although it might come in handy for USB support. 
+    <br />
+       Although other Virtual Machine software might work, we have not tried this and will not be able
+    to help to get this going.
+    <br />Nikos Efthimiou says that if you run Ubuntu (or similar) on your laptop, VirtualBox
+    might not install, unless you first upgrade to libvpx>1. You could try the following (but you might
+    want to read-up on this first):
+    <ol>
+      <li>wget http://launchpadlibrarian.net/199480915/libvpx1_1.3.0-3ubuntu1_amd64.deb</li>
+      <li>sudo dpkg -i libvpx1*.deb</li>
+    </ol>
+  </li>
+  <li> Download the Virtual Image from <a href="https://sourceforge.net/projects/stir/files/VirtualMachine1/" target=_blank>
+      the Sourceforge site</a> (get the Lubuntu-STIR.ova file). <br />
+    Please be careful on Sourceforge. Do not press any attractive Download buttons as they are all ads. <br />
+    Alternative link in the UK:
+      <a href="https://zendto.manchester.ac.uk/pickup.php" target=_blank>ZendTo at Manchester Univ</a>, use
+      Claim ID: YRBRJV7MeW7DrKHx, Claim Passcode: jt34GaQPaDX2r488
+      <br />
+    <strong><i>Warning</i>: this file is ~1.7GB</strong>. (You can of course download to a USB stick to save space on your laptop).
+  </li>
+  <li>Open the downloaded OVA file (double-click or whatever is appropriate for your system). This should start VirtualBox with the "Import" dialog box.
+  </li>
+  <li>Change settings of the virtual machine (you can still change this afterwards by using the Settings menu of VirtualBox). The only things that need your attention:
+    <ol>
+      <li>CPU: use the same number of CPUs (i.e. cores) as your laptop (or 1 less)
+      </li>
+      <li>RAM: use about half the RAM of your laptop (assigning too much RAM will slow down your laptop dramatically, using not enough will slow down the virtual machine. 1.5GB seems to be enough though.)
+      </li>
+      <li>Virtual Disk Image: normally this filename is fine but you can save it somewhere else if you like
+      </li>
+    </ol>
+  </li>
+  <li>Tick the box "<strong>Reinitialise the MAC address of all network cards</strong>"
+  </li>
+  <li>Press Import and wait for a few minutes (everything will be decompressed etc).
+  </li>
+  <li>In the VirtualBox window, select your new VM and press the Settings icon. In the "General" category, "Advanced" tab, check that "Shared Clipboard" is set to "bidirectional". You can try the "Drag and drop" feature to
+    copy files across (but it did not work for KT).
+  </li>
+</ol>
+
+<h3>Updating the virtual machine</h3>
+<p>Now you can start your virtual machine. If it fails to start with an error like "<i>virtualbox vt-x is disabled in the bios</i>",  <a href="http://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/" parent=_blank>check here</a>.
+
+  <p>If you see a dialog box about "starting in scaled mode", you can press OK to allow VirtualBox to scale the display larger or smaller, or you can press Cancel and start the machine again without scaling. (See <a href="https://www.virtualbox.org/manual/ch01.html">the Virtualbox site</a>
+for some info on the Host-Key etc).</p>
+
+<ol>
+  <li>You should get a window where Lubuntu will be starting (might take a few minutes). Wait until you see the log-in prompt.
+  </li>
+  <li>Log in as <strong>user "stir" with password "virtual"</strong> (please note
+    that if you have an Azerty-type keyboard, you will have to type "virtuql" until you
+    change your Lubuntu keyboard settings).
+    You should get the Lubuntu desktop.
+  </li>
+  <li>Adjust your Ubuntu settings:
+  <ol>
+    <li>The keyboard type is set to English-UK. If this is not ok
+      <ol>
+        <li>Right-click on the bottom bar of the desktop;</li>
+        <li>Select "Add/Remove Panel Items";</li>
+        <li>Click the "Add" button on the right hand side;</li>
+        <li>Scroll down the list and select "Keyboard Layout Handler" and then click "Add" then close;</li>
+        <li>You will see an English flag on the bottom right corner of the screen, that relates to the keyboard, right-click on it and choose "Keyboard Layout Handler Settings";</li>
+        <li>Remove the tick from "Keep System layouts" then the click on the "Add" button and choose the flag depending on your keyboard and then "OK";</li>
+        <li>Click "Close";</li>
+        <li>Now on the bottom right corner you should see the flag you selected or the English flag, if you left-click on the flag, it will change from one keyboard to the other, pick the chosen one.</li>
+      </ol>
+      <!--- Ubuntu
+        <li>Go into the "System" menu, then in "Preferences" and finally in "Keyboard".</li>
+        <li>Go in the "Layout" tab and choose the appropriate layout corresponding to your keyboard.</li>
+  </ol>
+  --->
+      </li>
+    <li>Default settings should allow you to access the internet from in the virtual machine.
+      If not, please check the <a href=http://www.virtualbox.org/manual/ch03.html#settings-network target="_blank">Virtual Box documentation</a>
+    </li>
+  </ol>
+  </li>
+  <li>Double-click on the LXTerminal icon to open a terminal. Type
+    <pre>
+      cd ~
+      wget http://stir.sourceforge.net/MIC2015ShortCourse/UPDATE.sh
+      bash ./UPDATE.sh
+    </pre>
+    enter the password "virtual". <br />
+    If you see a message about "Configuration file /etc/X11/Xsession.d/98vboxadd-xclient",
+    answer Y to install the package maintainer's version.
+  </li>
+  <li>
+    You should now have a HELP.htm on your desktop, double-click that one.
+  </li>
+</ol>
+
+<p>Note that when you are finished with the Virtual Machine (VM), you should do something like this
+  <ul>
+    <li>Close the VM window and use "save machine state" (allowing you to resume from where you were)</li>
+    <li>Shutdown the VM via the Lubuntu interface, or close the VM window and use "Send the shutdown signal".
+      (It is not advisable to "power-off" the VM as that can leave the file system of the VM in an undefined state).</li>
+    <li>Use the VirtualBox main window do to any of the above.</li>
+  </ul>
+
+  <h3>Shared folders and other VirtualBox advanced features</h3>
+<p>This section is optional.</p>
+<p>Things work smoother if you have the <a href="https://www.virtualbox.org/manual/ch04.html" target=_blank>VrtualBox Guest Additions (VGA)</a>, essentially a set of drivers for the guest OS. The VM has these already installed but they will work properly if you have VirtualBox 4.3.30. Fortunately, it is not very hard to install the VGA
+  for your VirtualBox version. Please follow the <a href="https://www.virtualbox.org/manual/ch04.html#idp45859068609968" target=_blank>standard instructions</a>, skipping step 1 (about dkms) as this has been done for you. Reboot your VM after installing the VGA.<br/>
+  Please do this <strong>after</strong> updating your VM as above.</p>
+
+<p>After installing the VGA, you might want to configure a shared directory between the host and the guest machine
+  such that your virtual machine can "see" your "normal" files. Please read the
+  <a href="http://www.virtualbox.org/manual/ch04.html#sharedfolders" target="_blank"> Virtualbox documentation on Folder Sharing</a>. <br />
+  Summary of steps (courtesy Nikos Efthimiou):
+  <ol>
+    <li>Right click on the Lubuntu VM in VirtualBox main window and choose Settings</li>
+    <li>Choose "Shared Folders" (last item on the left)</li>
+    <li>Add new folder, select the folder you want, and give it a name, e.g. MyLaptop (use small + button near the right edge of the dialog)</li>
+    <li>Select folder and opt in "make permanent" and "auto mount"</li>
+    <li>Start the Lubuntu VM (or switch to it) and open a terminal and type
+      <pre>
+        mkdir ~/MyLaptop
+        sudo mount -t vboxsf -o rw,uid=1000,gid=1000 MyLaptop ~/MyLaptop
+      </pre>
+      You will have to type the last command whenever you reboot your VM, or you could make
+      this permanent by pasting the above command to /etc/rc.local before "exit 0" (non-trivial because of admin permissions).
+    </li>
+    </ol>
+</p>   
+
+<h2>Next steps</h2>
+<p>  The files will need another update before the course (but with minimal download time).
+  In particular, the exercises themselves might still change. Therefore,
+  <i>please check this web-page occasionally</i>.
+</p>
+<p>Update process: open the terminal and just type
+<pre>
+  STIRupdate.sh
+</pre>
+</p>
+<p><strong>We recommend that you get yourself (somewhat) familiar with VirtualBox and Lubuntu and iPython.</strong>
+  Links are provided in the HELP.htm and the <a href="./exercises_document.pdf" target=_blank>exercises_document.pdf</a> on the Desktop
+  Here is some suggested material:
+  <ol><li>If you have never used a Linux/Unix terminal before, have a look at
+      <a href=https://help.ubuntu.com/community/UsingTheTerminal target=_blank>this tutorial</a>.
+    </li>
+    <li><a href=https://docs.python.org/2/tutorial/ target=_blank>The official Python tutorial</a>. Just read Section 1, 3, a bit of 4 and a tiny bit of 6.
+    </li>
+    <li><a href=https://github.com/patvarilly/dihub-python-for-data-scientists-2015/blob/master/notebooks/02_Matplotlib.ipynb target=_blank>Examples for matplotlib</a>, the python module that allows you to
+      make plots almost like in MATLAB.
+    </li>
+  </ol>
+  It would also be useful to check some of the STIR <a href=../documentation>documentation on the STIR web-site</a>.
+  You could even try to run some of the exercises already.
+  </p>
+
+<h2>Page update history</h2>
+<ol>
+  <li>25 Oct, 20.00 UTC: make VM available</li>
+  <li>26 Oct, 15.30 UTC: add alternative download link, give info on what to do with VT-X failures
+    and VirtualBox installation on Ubuntu</li>
+  <li>27 Oct, 23.00 UTC: add text about VirtualBox Guest Additions, and suggested links for Lubuntu and Python</li>
+  <li>29 Oct, 13:50 UTC: added text about Configuration file during installation, and updated exercises.</li>
+  <li>30 Oct, 17:40 UTC: updated exercise PDF</li>
+  <li>31 Oct, 11:40 UTC: updated MAP exercises and updated PDF</li>
+  <li>02 Nov, 02:00 UTC: updated PSF and randoms exercises and updated PDF</li>
+  <li>02 Nov, 08:30 UTC: updated MCIR exercises and updated PDF</li>
+    <li>03 Nov, 08:30 UTC: minor fixes</li>
+</ol>
+
+<hr>
+<center>This site uses no cookies, except for accessing the registered users section.</center>
+<hr>
+<p>Contact <a href="mailto:stir@asc.uk.com">webmaster</a>.</p>
+
+<!-- Created:  2015 -->
+<!-- hhmts start -->
+Last modified: Nov 2, 2015
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

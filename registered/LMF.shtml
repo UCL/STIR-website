@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<head>
+<title>STIR Registered Users Area: LMF files</title>
+</head>
+
+<body bgcolor="#fdffe6" lang=EN-GB link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>STIR Registered Users Area: LMF files</h1>
+
+<hr size=2 width="100%" align=center>
+<p><center><strong>Warning: preliminary</strong></center></p>
+
+<h2><a name="preliminary_files">Preliminary files</a></h2>
+This section contains downloadable files that are currently under 
+development/testing. Some might come under special license restrictions.
+Use at your own risk, and check the mailing lists!
+
+<ul>
+<li><a href="LMF.zip">
+A zip file with preliminary code for reading the LMF listmode format</a>.<br>
+<strong>This code does not work (or even compile without a tiny fix).
+Please check the stir-devel mailing list for the current status.</strong>
+<br>
+How to use this
+<ol>
+<li>Extract in your STIR subdirectory.</li>
+<li> Create <tt>STIR/local/extra_dirs.mk</tt>
+with the following line
+<pre>
+LIBDIRS = local/listmode
+</pre>
+</li>
+<li>
+Edit <tt>STIR/local/listmode/CListModeData.cxx</tt> 
+and change <tt>read_from_file</tt>
+to 
+<pre>
+ return new CListModeDataLMF(filename);
+</pre>
+</li>
+<li>
+Check the CListModeDataLMF.* files and edit (obvious holes are marked with
+TODO).
+</li>
+<li>Get the LMF library somehow and build it
+</li>
+<li>
+Rebuild STIR using something like
+<pre>
+make BUILD=debug EXTRA_LINKFLAGS="/some/path/libLMF.a" \
+  EXTRA_CFLAGS="-I/some/path/where/to/find/LMF.h"
+</pre>
+</li>
+</ol>
+</li>
+
+</ul>
+<a href="./">Back to registered users' area</a>
+
+<hr size=2 width="100%" align=center>
+
+
+<p ><!-- Created: Fri Nov  4 10:52:48 GMTST 2005 -->
+<!-- hhmts start -->
+Last modified: Fri Nov  4 10:52:48 GMTST 2005
+<!-- hhmts end --></p>
+
+
+</body>
+
+</html>

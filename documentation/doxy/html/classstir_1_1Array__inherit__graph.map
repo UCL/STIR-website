@@ -1,0 +1,28 @@
+<map id="stir::Array&lt; num_dimensions, elemT &gt;" name="stir::Array&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node14" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="1773,110,1958,151"/>
+<area shape="rect" id="node32" href="$classstir_1_1Array.html" title="stir::Array\&lt; 1, float \&gt;" alt="" coords="1797,179,1933,205"/>
+<area shape="rect" id="node34" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1791,229,1939,256"/>
+<area shape="rect" id="node40" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="1771,281,1960,322"/>
+<area shape="rect" id="node42" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, int \&gt;" alt="" coords="1802,347,1929,373"/>
+<area shape="rect" id="node44" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="1771,398,1960,439"/>
+<area shape="rect" id="node46" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, float \&gt;" alt="" coords="1797,464,1933,491"/>
+<area shape="rect" id="node48" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, float \&gt;" alt="" coords="1797,515,1933,541"/>
+<area shape="rect" id="node50" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="1771,566,1960,607"/>
+<area shape="rect" id="node52" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1791,632,1939,659"/>
+<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions&#45;1,\l elemT \&gt;, elemT \&gt;" alt="" coords="1149,363,1344,419"/>
+<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l&#45;1, elemT \&gt; \&gt;" alt="" coords="555,336,727,392"/>
+<area shape="rect" id="node6" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="6,369,151,410"/>
+<area shape="rect" id="node10" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\&lt; T \&gt;" alt="" coords="355,403,530,429"/>
+<area shape="rect" id="node8" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="752,401,947,442"/>
+<area shape="rect" id="node16" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 2, elemT \&gt;" alt="" coords="2267,6,2469,47"/>
+<area shape="rect" id="node20" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 3, elemT \&gt;" alt="" coords="2267,175,2469,217"/>
+<area shape="rect" id="node24" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="2011,99,2242,155"/>
+<area shape="rect" id="node18" href="$classstir_1_1PixelsOnCartesianGrid.html" title="This class is used to represent pixelised densities on a rectangular grid (2D). " alt="" coords="2738,42,2915,83"/>
+<area shape="rect" id="node22" href="$classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). " alt="" coords="2736,137,2917,178"/>
+<area shape="rect" id="node26" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 2, elemT \&gt;" alt="" coords="2494,57,2685,98"/>
+<area shape="rect" id="node29" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="2494,122,2685,163"/>
+<area shape="rect" id="node36" href="$classstir_1_1Sinogram.html" title="A class for 2d projection data. " alt="" coords="2047,280,2206,307"/>
+<area shape="rect" id="node38" href="$classstir_1_1Viewgram.html" title="A class for 2d projection data. " alt="" coords="2045,229,2208,256"/>
+<area shape="rect" id="node54" href="$classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="2043,657,2211,698"/>
+<area shape="rect" id="node56" href="$classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="2055,591,2198,633"/>
+</map>

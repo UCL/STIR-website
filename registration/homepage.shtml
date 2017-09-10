@@ -1,0 +1,115 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML><HEAD><TITLE>STIR Registration</TITLE></HEAD>
+<BODY BGCOLOR="#fdffe6">
+<FONT SIZE=3> 
+<center>
+<H1> STIR Registration </H1>
+</center></FONT>
+<HR>
+<H2>Introduction</H2>
+<p>The STIR software is protected by international copyright. However,
+we decided to give everyone the opportunity to use and change it, but
+under some licensing restrictions. Moreover, we will ask you to
+fill in a registration form.</p>
+
+Unfortunately, due to historical
+and commercial reasons, the licensing situation is somewhat complex.
+Here is an overview (see below for more details on the 
+licenses):
+<ul>
+<li>Most of the available software is a library, which you can use
+to build your own stand-alone application. 
+The library is available under the 
+<a href="LGPL.htm">GNU Lesser General Public License</a>.</li>
+<li>We distribute some applications as well, including the actual
+reconstruction algorithms. These applications use the above library,
+but are available under the 
+<a href="GPL.htm">GNU General Public License</a>.</li>
+<li>The current software is based on previous work by the 
+PARAPET project (see also the CREDITs).
+Hence, a lot of the files are protected by the 
+<a href="PARAPETlicense.htm">PARAPET license</a>.</li>
+</ul>
+
+<H2>License details</H2>
+We do not give a thorough discussion of the licenses.  
+We only attempt here to give a short and informal overview of our 
+understanding.
+You have to read the licenses to get the full details.
+<H3>GNU licenses</H3>
+The Free Software Foundation (http://www.gnu.org) is a non-commercial
+organisation that has a long standard in providing Open Source
+software. The main intention of the (L)GPL licenses is to make the software
+(and source code) available to everyone to use, while protecting the
+interests of the developers by putting restrictions on distribution of
+software incorporating the software. 
+
+The FSF has 2 licenses available, the 
+<a href="http://www.gnu.org/copyleft/gpl.html" target="_parent">GNU General Public License
+(GPL)</a> and the 
+<a href="http://www.gnu.org/copyleft/lesser.html" target="_parent">GNU Lesser GPL</a>, see also
+<a href="http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses"
+target="_parent">the FSF's page on licenses</a>. These
+licenses both use the copyleft mechanism to make sure that any
+redistributed derivative of the licensed software has to have a
+license compatible with the original one (in particular, enforcing
+making source code available).  The difference between the GPL and the
+LGPL is that the LGPL allows commercial (or non-LGPL) programmes to
+link with the library (you still have to give credit and
+distribute the source), while the GPL forces any application using the
+software to be GPL'ed as well. This is done by requiring that any GPL
+program can only use other software components whose license is
+compatible with the GPL. However, note that a commercial application
+can still run a GPL'ed program, as long as it is clear it is used as a
+stand-alone product.
+
+<H3>Parapet Project Software Distribution Agreement </H3>
+The <a href="PARAPETlicense.htm">PARAPET  license</a> states more or less 
+that you can have the software, 
+and use it for any purpose at all, under the condition that 
+<quote>"the partners in
+the Parapet Project are individually acknowledged in that use"</quote>.
+ 
+
+<H2>Summary</H2>
+<ul>
+<li>If you use this software, you have to give credit to the PARAPET
+project and to STIR. </li>
+<li>If you distribute an application that links with the library part of 
+STIR (which you potentially modified), you have to distribute the (modified) 
+source code of the library part of STIR as 
+well, protected under the LGPL. See section 6 of the LGPL for full details.</li>
+<li>If you distribute a (modified version) of a STIR application, you
+have to do this under the GPL.</li>
+</ul>
+
+
+<H2>Warranty?</H2>
+All licenses disclaim all warranty. 
+
+
+<H2>Registration</H2>
+If after all this, you still think STIR is for you (I wouldn't know why not), then you have to read the 
+<a href="GPL.htm">GPL</a>, the 
+<a href="LGPL.htm">GNU Lesser GPL</a> and the
+ <a href="PARAPETlicense.htm">PARAPET  license</a>. 
+Then click the appropriate button below.
+
+
+
+<CENTER>
+
+  <p> <a href="registration.htm"> <img src = "accept.gif" width="182" height="18" border="0"> 
+    </a> <a href=".."> <img src = "decline.gif" width="183" height="18" border="0"> 
+    </a>   
+
+</CENTER>
+
+<p>
+
+<hr>
+<!-- hhmts start -->
+Last modified: Mon Jun 22 20:18:31 GMT 2009
+<!-- hhmts end -->
+</BODY>

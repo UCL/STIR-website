@@ -1,0 +1,156 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+<TITLE>STIR Links</TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<P ALIGN="CENTER"><font size="6">Other info related to STIR</font></P>
+<!--
+<p><strong><font size+=3 color=red> Update in progress. Do not download any files.
+Links might not work!<p>
+</font></strong>
+-->
+<h2>Contents</h2>
+<ul>
+<li><a href="#4DPETMR_sims">simulated 4D PET-MR datasets</a></li>
+<li><a href="#STIR-Interfile">STIR-specific Interfile file format</a></li>
+<li><a href="#GATEPET2STIR">External project to convert GATE output to STIR</a></li>
+<li><a href="#PARAPET_deliverables">PARAPET deliverables</a></li>
+<li><a href="#other_packages">Other Open Source reconstruction software</a></li>
+<li><a href="#other_software">Other Open Source software for PET</a></li>
+</ul>
+
+<h2><a name="4DPETMR_sims">Simulated 4D PET-MR datasets</a></h2>
+Charalampos Tsoumpas (King's College London) has made a set of simulated 4D PET-MR datasets
+available that can be used freely by anyone (academia and industry) for any scientific investigation. 
+You can find further information 
+<a href="http://www.isd.kcl.ac.uk/pet-mri/simulated-data/" target=_parent>on the relevant website</a>.
+
+<h2><a name="STIR-Interfile">STIR-specific Interfile file format</a></h2>
+<p>STIR uses a modified version of Interfile for its native data format. The modifications 
+were intended to become part of Interfile 4.0 but it is not clear if this will ever
+ happen. See <a href="petinterfile03.pdf" target="_parent">the original proposal as PDF</a> 
+for more information on the modifications. (Note that currently, STIR does not support
+images that are in strict Interfile version 3.3 format. Moreover, it only supports a subset
+of the suggested new keywords).</p>
+
+<h2><a name="GATEPET2STIR">External project to convert GATE output to STIR</a></h2>
+</p><a href="http://sourceforge.net/projects/gatepet2stir/">GATE_PET_2_STIR</a> is a project 
+(independent from STIR) to convert GATE data to STIR sinograms. Let us know how it works via the
+mailing list.
+</p>
+
+
+<h2><a name="PARAPET_deliverables">PARAPET deliverables</a></h2>
+<p>The PARAPET project (precursor of STIR) has a number of deliverables that are still somewhat useful
+for STIR users. You can find them here.</p>
+<ul>
+<li><a href="parapet/Task4_1.ParapetBuildingBlocks.pdf">PARAPET Deliverable 4.1: PARAPET buiding blocks documentation</a> as PDF. Note: written in 1999. 
+Pretty much completely out of date with respect to STIR, but contains
+slightly more documentation on the projectors.
+</li>
+<li><a href="parapet/Task1_3.AlgorithmSurvey.pdf">
+Deliverable 1.3: PET reconstruction algorithm survey</a> as PDF. Note: written in 1997.
+</li>
+<li>Deliverable 5.2 on OSMAPOSL has essentially the same content as
+Jacobson M, Levkovitz R, Ben-Tal A, Thielemans K, Spinks T, Belluzzo D, Pagani E, Bettinardi V, Gilardi M C, Zverovich A and Mitra G <I>Enhanced 3D PET OSEM Reconstruction using inter-update Metz filters</I>, Phys. Med. Biol. <B>45</B> No.8 (2000) 2417-2439.
+</li>
+<li><a href="parapet/Task5.4BayesianAlgorithms.pdf">Deliverable 5.4: Specification of Bayesian
+Reconstruction Building Blocks</a> as PDF. Note: written in 2000.
+</li>
+<li><a href="parapet/Task5_6.EvaluationIterativeAlgorithms.pdf">
+Deliverable 5.6a: Evaluation of iterative reconstructions</a> as PDF. Note: written in 2000.
+</li>
+<li><a href="parapet/Task5_6.EvaluationAnalyticAlgorithms.pdf">
+Deliverable 5.6b: Evaluation of analytic reconstructions</a> as PDF. Note: written in 2000.
+</li>
+</ul>
+
+
+<h2><a name="other_packages">Other Open Source reconstruction software</a></h2>
+<p>There are a number of other software packages available for PET/SPECT/CT image 
+reconstruction. This is an (incomplete?) overview with some subjective comments.</p>
+<ul>
+<li>Fessler and his students have implemented an 
+<a href="http://www.eecs.umich.edu/~fessler/code/" target="_parent">Image Reconstruction Toolbox</a>
+  as a set of open source matlab  routines for image reconstruction and processing. In addition, Fessler has also developed ASPIRE. However, this is distributed via executable files and its license allows non-commercial usage only. 
+</li>
+<li><a href="http://sourceforge.net/projects/tirius/" target="_parent">TIRIUS</a> 
+provides an implementation of OSEM for PET image reconstruction using a well-designed GUI. It could also use reconstruction algorithms available in STIR 1.4 but it is not compatible with STIR 2 or later. 
+TIRIUS is distributed under the GNU Lesser General Public License.
+</li>
+<li> <a href="http://sourceforge.net/projects/niftyrec" target="_parent">NiftyRec</a>  provides 
+a matlab (and also some python) interface to C/GPU projectors and some reconstruction 
+algorithms. Current projectors are mostly suitable for SPECT. License is BSD-style.
+</li>
+<li><a href="http://emrecon.uni-muenster.de/" target="_parent">EMrecon</a> is another recently released package, using expectation maximisation. License is unclear</li> 
+<li><a href="http://www.bme.teiath.gr/ni/EnglishVersion/Downloads_files/Downloads.html" target="_parent">QSPECT</a> is a recently released package for SPECT reconstruction using MLEM or OSEM. 
+</li>
+<li>
+<a href="http://www.cs.toronto.edu/~nrezvani/OSCaR.html" target="_parent">OSCaR</a> (Rezvani et al, 2007) provides a matlab-based implementation of the FDK algorithm for Cone-beam CT  and it is freely available to AAPM members, but it is not clear if non-members can also use it.
+</li>
+<li>
+<a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/POSSUM" target="_parent">POSSUM</a> is an MRI
+simulator which also contains FBP.
+</li>
+<li>
+<a href="http://www.ctsim.org/download" target="_parent">CTsim</a> is an analytic CT simulator (2D) which also contains FBP. It is not clear if this is still maintained as the
+web-site does contain a lot of dead links.
+</li>
+<li>
+<a href="http://www.openrtk.org" target="_parent">OpenRTK</a> is a recent reconstruction 
+package for (cone-beam) CT, based on ITK. License is Apache 2.0.
+</li>
+<li><a href="https://code.google.com/p/astra-toolbox/" target=_parent">Astra-Toolbox</a>
+uses <quote> high-performance GPU primitives for 2D and 3D tomography. It supports 2D parallel and fan beam geometries, and 3D parallel and cone beam. All of them have highly flexible source/detector positioning.
+A large number of 2D and 3D algorithms are available, including FBP, SIRT, SART, CGLS.</quote> License is GPL3.
+</li>
+<li><a href="https://bitbucket.org/dvolgyes/troll" target="_parent">Troll</a>: a
+pyCuda based toolkit for PET, later (now?) SPECT and CT. In early development stage (2013). License is GPL3.
+</li>
+<li><a href="http://ccpforge.cse.rl.ac.uk/gf/project/ccpi_itr/frs/" target="_parent">regularization techniques for iterative reconstruction</a> for matlab (using mex) developed as part of the <a href="http://www.ccpi.ac.uk/">Collaborative Computational Project in Tomographic Imaging</a> which concentrates on CT. Their reconstruction software is planned to become public in 2015 or so.
+</li>
+<li><a href="software https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
+the ANL. License is BSD-style.</li>
+</ul>
+
+All these packages concentrate on image reconstruction for static imaging. 
+STIR is unique in providing a flexible open source framework for PET including scatter estimation and routines for dynamic imaging.
+
+<h3>Some MRI reconstruction software</h3>
+A very incomplete list.
+<ul>
+<li><a href=http://www.ismrm.org/mri_unbound/sequence.htm target="_parent">This ISMRM page</a>  lists some sequence and reconstruction packages</li>
+<li><a href=http://www.cai2r.net/resources/software/agile-gpu-image-reconstruction-library target="_parent">AGILE</a> is a GPU-based 
+library. Non-commercial use only.</li>
+<li><a href="http://gadgetron.sourceforge.net/" target="_parent"</a>Gadgetron</a> is an open source framework for medical image reconstruction (although only MRI at present?). Depending on your scanner, it can be installed to work in parallel
+to the scanner reconstruction chain. Its license is quoted as "Public Domain" on Sourceforge.</li>
+</ul>
+
+<h3>Framework for multi-modality  reconstruction software</h3>
+<ul>
+<li>The <a href="http://www.ccppetmr.ac.uk">Computational Collaborative Project in Synergistic PET-MR Reconstruction</a> is developing a framework for PET-MR
+reconstruction software that aims to provide interfaces to different packages.
+STIR is currently selected as the first package to support PET data.
+</li>
+</ul>
+
+<h2><a name="other_software">Other open source software for PET</a></h2>
+You could read the following review by Roberto de la Prieta
+<a href="http://www.intechopen.com/books/positron-emission-tomography-current-clinical-and-research-aspects/free-software-for-pet-imaging" title="free-software-for-pet-imaging">Free Software for PET Imaging</a>
+		
+<hr>
+<p>
+This page is licensed with the 
+<a href="http://creativecommons.org/licenses/by-sa/3.0/" class="external text" title="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow"  target="_parent">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>
+<a href="http://creativecommons.org/licenses/by-sa/3.0/"  target="_parent"><img alt="" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" width="88" height="31" border="0"></a>
+</p>
+<hr>
+<!-- hhmts start -->
+Last modified: Mon Sep 22 17:40:10 BST 2014
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

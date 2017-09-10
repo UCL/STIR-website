@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>STIR/SimSET/ASIM User's Meeting MIC 2012</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+    <h1>STIR/SimSET/ASIM User's Meeting at MIC 2012</h1>
+After the success of previous year's User's Meetings and the large overlap in
+audience, we decided to have a joint meeting focussing on the synergies
+between these three open source packages used for medical imaging research:
+<a href="http://stir.sourceforge.net" target=_blank>STIR</a>,
+<a href="http://depts.washington.edu/simset/html/simset_main.html" target=_blank>SimSET</a>,
+<a href="http://depts.washington.edu/asimuw/" target=_blank>ASIM</a>.
+
+<h2>Where and when</h2>
+<p>
+<a href="http://www.nss-mic.org/2012/" target=_blank>IEEE Medical Imaging Conference, Anaheim, CA, USA</a><br />
+Thursday 1st of November 12.40-14.00 <br />
+
+</p>
+
+<h2>Chairs</h2>
+<ul>
+<li> Kris Thielemans, Algorithms and Software Consulting Ltd and King's College London</li>
+<li>Robert Harrison, Univ. of Washington</li>
+<li> Charalampos Tsoumpas, King's College London</li>
+<li>Claude Comtat, CEA-SHFJ</li>
+<li>Paul Kinahan, Univ. of Washington</li>
+</ul>
+<h2>Programme</h2>
+<p><strong>Note:</strong> PDFs and AVIs of the presentations are made available
+under the Creative Commons 
+<a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+allowing redistribution without modification with credit to the author(s).
+<br />
+The AVIs are "screen and voice" captures made using
+<a href="http://camstudio.org/" target=_blank>CAMStudio</a>. You will likely need the
+XVid decoder to be able to see this (get it  
+<a href="http://www.xvid.org/Downloads.15.0.html" target=_blank> here for windows/linux</a> and
+<a href="http://www.xvid.org/Software.83.0.html" target=_blank>here for Mac</a>, although these links might be out-of-date).
+On MAC, you will also need a player such as <a href="http://www.videolan.org/vlc/index.html" target=_blank>VLC</a>.
+</p>
+
+<ol>
+<li> 
+Introduction (Kris Thielemans)
+</li>
+<li>
+SimSET (Robert Harrison)
+<ul>
+<li>current status 
+<a href=SASUM2012_SimSET_intro.pdf target=_blank>PDF</a>, <a href=SASUM2012_SimSET_intro.avi target=_blank>AVI</a> (3.5MB)</li>
+<li>User Function examples, plans for improved SPECT modeling 
+<a href=SASUM2012_SimSET_SPECT_and_user_functions.pdf target=_blank>PDF</a>, <a href=SASUM2012_SimSET_SPECT_and_user_functions.avi target=_blank>AVI</a> (17MB) </li>
+</ul>
+</li>
+<li>
+ASIM (Brian Elston)
+<ul>
+<li>current status</li>
+<li>using STIR to reconstruct ASIM data</li>
+</ul>
+<a href=SASUM2012_ASIM_STIR.pdf target=_blank>PDF</a>, <a href=SASUM2012_ASIM_STIR.avi target=_blank>AVI</a> (20MB)
+</li>
+<li>STIR (Kris Thielemans)
+<ul>
+<li>current status</li>
+<li>calling SimSET from STIR</li>
+<li>plans for STIR and Python</li>
+</ul>
+<a href=SASUM2012_STIR_status_and_future.pdf target=_blank>PDF</a>, <a href=SASUM2012_STIR_status_and_future.avi target=_blank>AVI</a>  (38MB)
+</li>
+<li>
+SPECT reconstruction with STIR (Berta Marti, Univ Barcelona) 
+<a href=SASUM2012_SPECT_Reconstruction_with_STIR.pdf target=_blank>PDF</a>, <a href=SASUM2012_SPECT_Reconstruction_with_STIR.avi target=_blank>AVI</a> (27MB)
+</li>
+<li>
+STIR simulated PET data-sets based on MR (Charalampos Tsoumpas)
+<a href=SASUM2012_STIR_open_simulated_4D_PET_data.pdf target=_blank>PDF</a>, <a href=SASUM2012_STIR_open_simulated_4D_PET_data.avi target=_blank>AVI</a> (9MB)
+</li>
+<li>Open discussion</li>
+</ol>
+
+<h2>Number of attendants</h2>
+Approximately 65.
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to GE Research for sponsoring this meeting, and to
+the MIC conference organisers for making the room available, helping with projectors etc !</p>
+<hr>
+<p>
+<!-- hhmts start -->
+Last modified: Tue Apr 23 18:08:32 BST 2013
+<!-- hhmts end -->
+</p>
+  </body>
+</html>

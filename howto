@@ -1,0 +1,29 @@
+-how to copy website
+
+# wren to SF (launched on wren)
+~kris/bin/rsync --progress --rsh=ssh --exclude=registered/.htaccess -uavCz . krthie@shell.sf.net:stir/htdocs
+
+# SF to wren (launched on wren)
+~kris/bin/rsync --progress  --exclude=STIRweb1.2.tar.gz  --rsh=ssh --exclude=registered/.htaccess -uaCzv krthie@shell.sf.net:stir/htdocs/ .
+
+# PC to wren
+ rsync --rsync-path=~kris/bin/rsync  -auCzv  --exclude=registered/.htaccess ./ web@wren:htdocs/STIR/
+# wren to PC
+ rsync --rsync-path=~kris/bin/rsync  -auCzv  --exclude=registered/.htaccess web@wren:htdocs/STIR/ ./ 
+
+# PC to SF
+ rsync   -auCzv  --exclude=registered/.htaccess ./  krthie@shell.sf.net:stir/htdocs/
+# SF to PC
+ rsync   -auCzv  --exclude=registered/.htaccess   krthie@shell.sf.net:stir/htdocs/ ./
+
+all files have relative locations, so can be copied freely.
+The only exception is registered/.htaccess. This requires in
+its content an absolute path to pass/.htpasswd.
+
+At present, I have made copies
+.htaccessHI (for Hammersmith Imanet)
+.htaccessSF (for the Sourceforge site)
+which can be use when .htaccess is overwritten. Note that their
+permissions are more restrictive than for .htacess, so if you 
+copy them, adjust permissions with
+chmod go+r .htaccess

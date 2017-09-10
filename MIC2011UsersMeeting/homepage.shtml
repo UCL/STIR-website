@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>STIR User's Meeting MIC 2011</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+    <h1>STIR User's Meeting at MIC 2011</h1>
+
+<h2>Where and when</h2>
+<a href="http://www.nss-mic.org/2011/">IEEE Medical Imaging Conference, Valencia, Spain</a><br />
+Thursday 27th of October at 6:30 pm <br />
+<!---
+(Please check this page for last-minute changes)<br />
+ <a href="mailto:kris.thielemans@imperial.ac.uk">Email to confirm your attendance <i>ASAP</i></a>
+--->
+
+<h2>Chairs</h2>
+<ul>
+<li> Kris Thielemans, Algorithms and Software Consulting Ltd</li>
+<li> Charalampos Tsoumpas, King's College London</li>
+
+</ul>
+<h2>Programme</h2>
+<p>Approximate duration: 2 hours.</p>
+<ol>
+<li>Kris Thielemans<br />
+<a href="STIR-MIC2011-UsersMeetingOverview.pdf">Introduction to STIR 2.1 version - History - Demo</a>
+</li>
+<li>
+Charalampos Tsoumpas<br />
+<a href="Tsoumpas_FASTwithSTIR.pdf">Simulating PET data using STIR</a>
+</li>
+<li>
+David Volgyes<br />
+<a href="COMPET-STIR.pdf">Use of STIR for the COMPET project</a>
+</li>
+<li>
+Logo competition
+</li>
+<li> Future of STIR: <br />
+(Slides included in the overview PDF by Kris Thielemans)
+<ul>
+<li>how to enable easy contribution and create a vibrant developer's community</li> 
+<li>which topics need most attention and who has interest in pursuing this<br />
+Example: integration with other languages (e.g. Python, matlab) using SWIG (Kris Thielemans)
+</li>
+</ul>
+</li>
+</ol>
+
+<h2>Number of attendants</h2>
+Approximately 45.
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to Philips Healthcare for sponsoring this meeting, and to
+the MIC conference organisers for making the room available, helping with catering etc !</p>
+
+    <hr>
+<p>
+<!-- hhmts start -->
+Last modified: Tue Nov  1 22:17:25 GMTST 2011
+<!-- hhmts end -->
+</p>
+  </body>
+</html>

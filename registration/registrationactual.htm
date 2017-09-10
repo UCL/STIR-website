@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>STIR Registration Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#Fdffe6" text="000000" link="0000ff" vlink="800080">
+<p><B><I><FONT FACE="Arial,Helvetica" SIZE=6 COLOR="#000080">STIR Registration form </font></I></B></p>
+<p>&nbsp;</p>
+<p>Please fill in the following form.<br>
+  Information about the location of the STIR download material will be forwarded 
+  to you by email. Please allow for a few days of delay. In case of problems,
+  contact <a href="mailto:kris.thielemans@ic.ac.uk">kris.thielemans@ic.ac.uk</a>.
+<br>
+<form method="POST" action="/cgi-bin/FormMail.cgi">
+  <table width="90%" border="1"><!--TODO 90-->
+    <tr> 
+      <td>First Name (and other initials)</td>
+      <td> 
+        <input type="text" name="firstname" size="50">
+      </td>
+    </tr>
+    <tr> 
+      <td>Surname </td>
+      <td> 
+        <input type="text" name="surname" size="50">
+      </td>
+    </tr>
+    <tr> 
+      <td>Organisation </td>
+      <td> 
+        <select name="organisation">
+          <option>Academic</option>
+          <option>Commercial</option>
+          <option>Other</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td>Email address (please type the <i>correct</i> address)</td>
+      <td> 
+        <input type="text" name="email" size="50">
+      </td>
+    </tr>
+    <tr> 
+      <td>Address (including country)</td>
+      <td>
+         <textarea name="address" rows="5" cols="50"></textarea> 
+      </td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Select the packages:</div>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td>STIR Library part</td>
+      <td> 
+        <input type="checkbox" name="library" value="ck_lib">
+      </td>
+    </tr>
+    <tr> 
+      <td>STIR Applications</td>
+      <td> 
+        <input type="checkbox" name="applications" value="ck_app">
+      </td>
+    </tr>
+  </table>
+  <p> 
+    <input type="hidden" name="recipient" value="kris.thielemans@ic.ac.uk">
+    <input type="hidden" name="subject" value="STIR registration form">
+    <input type="hidden" name="required" value="email,firstname,surname,organisation">
+
+  </p>
+  <p>Optional information:</p>
+  <table width="76%" border="1">
+    <tr>
+      <td width="68%">Which scanner type will you use ?</td>
+      <td width="32%"> 
+        <input type="text" name="Scanner type" size="35">
+      </td>
+    </tr>
+    <tr>
+      <td width="68%">What types of studies (e.g. FDG (static), Raclopride (kinetic...) ?</td>
+      <td width="32%"> 
+        <textarea name="Study type" rows="3" cols="35"></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td width="68%" height="70">Are you considering to use this software for 
+        your own developments ?</td>
+      <td width="32%" height="70"> 
+        <div align="center">
+          <select name="further development">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Don't know yet</option>
+          </select>
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="68%">How did you hear about us ? </td>
+      <td width="32%"> 
+        <textarea name="how do you know" rows="3" cols="35"></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td width="68%" height="95">Other comments</td>
+      <td width="32%" height="95"> 
+        <textarea name="comments" rows="3" cols="35"></textarea>
+      </td>
+    </tr>
+  </table>
+  <p> 
+    <input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Reset" value="Reset Form">
+  </p>
+</form>
+<hr>
+<!-- hhmts start -->
+Last modified: Thu Dec 20 23:45:21 GMT 2001
+<!-- hhmts end -->
+</body>
+</html>
+
+
+
+
+
+

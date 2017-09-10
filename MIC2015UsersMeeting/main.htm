@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <style>
+table, th, td {
+    vertical-align: top;
+}
+</style>
+    <title>STIR User's and Developer's Meeting MIC 2015</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+    <h1>STIR User's and Developer's Meeting at MIC 2015</h1>
+
+<h2>Chairs</h2>
+<ul>
+<li> Charalampos Tsoumpas, University of Leeds</li>
+<li> Kris Thielemans, University College London</li>
+</ul>
+
+<h2>Where and when</h2>
+<p>
+<a href="http://www.nss-mic.org/2015/" target=_blank>IEEE Medical Imaging Conference, San Diego, CA, USA</a><br />
+Thursday, November 5, 2015, 18:30 - 20:30, Windsor Room
+</p>
+
+
+<h2>Summary</h2>
+<p>STIR is Open Source software for use in tomographic imaging. Its aim is to
+provide a Multi-Platform Object-Oriented framework for all data manipulations
+in tomographic imaging. Currently, the emphasis is on image reconstruction in
+emission tomography (PET and SPECT) but other imaging modalities can be added
+in the future.</p>
+
+<p>During this annual meeting experienced users and developers
+presented their recent work with STIR with the emphasis on software
+  and algorithmic development.</p>
+
+<p>This year we had about 40 attendants.</p>
+
+<h2>Agenda</h2>
+    <p>All presentations are kindly made available by the presenters 
+      under the Creative Commons 
+      <a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+      allowing redistribution without modification with credit to the author(s).
+    </p>
+
+<table style="width:100%">
+  <tr>  <td>18.30</td> <td>Opening</td> </tr>
+  <tr>  <td>18.35</td> <td> <details><summary><b>Custom input file format class for reading arbitrary crystal positions into STIR <br /> Jannis Fischer (ETH Zuerich)</b></summary>
+	<br />Abstract: In the SAFIR project, a high-rate capable preclinical PET insert is developed. Simulations of different geometries were performed using Geant4. Images are reconstructed using STIR, which has been extended by classes to read crystal positions from a text file to quickly reconstruct data from any of the approximately cylindrical crystal arrangements. It is planned to later implement an integration into the ray-tracing algorithm for better matching the scanner geometry in the actual iterative reconstruction.
+        <br />
+        <a href="STIR_UM2015_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+</details>
+  </td> </tr>
+  <tr>  <td>18.55</td> <td> <details><summary><b>Using an External Optimization Algorithm for PET reconstruction with STIR in MATLAB <br /> Yu-Jung Tsai, Matthias J. Ehrhardt and Kris Thielemans (UCL)</b></summary>
+	  <br />
+	  Abstract: Calling STIR from MATLAB makes the library more flexible. With efficient STIR functionalities and robust MATLAB toolboxes, quick prototyping can be achieved for evaluating new reconstruction algorithms or analyzing methods. In this presentation, we are going to give an example of how to combine STIR projectors with an open source optimization algorithm, namely L-BFGS-B (limited-memory Broyden-Fletcher-Goldfarb- Shanno with boundary constraints). It will be concentrated on practice and will not include too much background about the algorithm. The users should be able to deal with any algorithms available in MATLAB using similar steps.
+          <br />
+          <a href="STIR_UM2015_Tsai_STIR_and_MATLAB.pdf" target=_blank>PDF</a>
+  </details></td> </tr>
+  <tr>  <td>19.15</td> <td><details><summary><b> Incorporation of a two metre long PET scanner in STIR <br />
+            Charalampos Tsoumpas, Christopher Brain and Thomas Dyke (Uni. Leeds)</b></summary>
+	<br />Abstract: This investigation incorporates a total-body 2 metre long PET scanner in STIR library and demonstrates the capabilities and weaknesses of FBP and OSEM reconstruction and single scatter simulation algorithms. It was found that sensible images are reconstructed but at the expense of high memory and processing time demands. FBP requires 4 hrs on a single core; OSEM (MPI-version): 2 hrs per iteration if ran in parallel on 15-cores of a high performance computer. The single scatter simulation algorithm shows that on a short scale, up to a fifth of the scanner length, the assumption that the scatter between direct rings is similar to the scatter between the oblique rings is approximately valid. However, for more extreme cases this assumption is no longer valid, which illustrates that consideration of the oblique rings within the single scatter simulation will be necessary, if this scatter correction is the method of choice.
+<br /><a href="STIR_UM2015_LongScanner_Tsoumpas.pdf" target=_blank>PDF</a>
+  </details></td> </tr>
+  <tr>  <td>19.30</td> <td> <details><summary><b>New features in STIR 3.1 and future developments <br /> Kris Thielemans (UCL)</b></summary>
+	<br />Abstract: This talk gives an overview of the new features in the 3.1 release (currently in testing phase), including OpenMP support for multi-core machines, Maximum-Likelihood estimation of normalisation factors and randoms for PET. This release will also include support for Siemens mMR data. We will also discuss the future of STIR and its connection with the software of the <a href="http://ccppetmr.ac.uk/">CCP for Synergistic PET-MR Reconstruction</a>.
+        <br />
+        <a href="STIR_UM2015_Thielemans_STIR_status_and_future.pdf" target=_blank>PDF</a>
+  </details></td> </tr>
+  <tr>  <td>20.00</td> <td> General Discussion & Closing</td> </tr>
+</table>
+
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to our corporate sponsor GE Research.</p>
+<p>Many thanks to the MIC conference organisers (in particular Ralf Engels and Tony Lavietes) for helping with the announcements, making the room available, catering, etc.</p>
+
+<h2>Other meeting at IEEE MIC</h2>
+<p>You might also be interested in the
+<a href="../MIC2015SatelliteWorkshop/main.htm">Satellite Workshop on Open Source in Medical Imaging</a>.</p>
+
+<h2>Previous meetings</h2>
+<ul>
+<li><a href="../MIC2004workshop/homepage.html">2004</a></li>
+<li><a href="../MIC2009UsersMeeting/homepage.html">2009</a></li>
+<li><a href="../MIC2011UsersMeeting/homepage.shtml">2011</a></li>
+<li><a href="../MIC2012UsersMeeting/homepage.shtml">2012</a></li>
+<li><a href="../MIC2013UsersMeeting/homepage.shtml">2013</a></li>
+<li><a href="../MIC2014UsersMeeting/homepage.shtml">2014</a></li>
+</ul>
+
+<hr>
+<p>
+<!-- hhmts start -->
+Last modified: 10 December 2015
+<!-- hhmts end -->
+</p>
+  </body>
+</html>

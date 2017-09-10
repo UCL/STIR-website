@@ -1,0 +1,127 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+
+<TITLE>STIR at the 2nd International Training School on PET-MRI Engineering </TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<h1>STIR at the 2nd International Training School on PET-MRI Engineering  </h1>
+<p>This page is for participants in the <a href="http://www.pet-mri.eu/PETMR_School_15.html"  target=_parent>2nd Training School on PET/MR</a> 
+in Leeds, UK. It will be occasionally updated with extra information. Please refresh the page when you re-visit.</p>
+
+<!--<p>After reading this page, please fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>a 1 minute survey</a>.</p>-->
+
+
+<p>During the course, we will have practical exercises using STIR. These exercises are an integral part of the course. 
+To be able to participate, <strong>students are asked to bring their own laptop if possible</strong>.
+</p>
+
+<p><strong>
+    We highly recommend you install STIR in the vGATE virtual machine, which you need for other parts of the course.</strong>
+    Check <a href="http://wiki.opengatecollaboration.org/index.php/VGate">vGATE installation instructions here.</a>
+    Installation scripts for STIR in vGATE are provided below.
+</p>
+
+<p>If you do not want to use vGATE, this is possible of course.
+  STIR runs on Linux, Mac OS and Windows. However, as some of the examples will use shell scripts, on Windows you will need
+to install either (preferably) <a href=http://cygwin.com  target=_parent>Cygwin</a> or <a href="http://www.mingw.org/wiki/MSYS"  target=_parent>MSYS</a> (we have not tried MSYS yet). You can still use Visual Studio (Express) if you prefer for the compilation.
+</p>
+
+
+<p>
+If you want to prepare for these exercises, have a look at the files in 
+examples/PET_simulation provided in the download below.
+</p>
+
+</div>
+
+<br />
+Note that some of the links below point to DropBox locations. There is no need to sign-up to
+DropBox, just continue with download only.
+
+<h2>Source code and documentation</h2>
+
+<!--This is only necessary if you are compiling STIR yourself.-->
+Please note that the STIR version that we will be using is somewhat more
+recent that the current official release 3.0. Therefore, download from the link below,
+even if you have already installed STIR 3.0.
+
+This file contains the documentation as well, but you might find it easier to find this
+on the <a href="stir.sourceforge.net/">STIR web-site</a>.
+
+<br />
+<a href="https://www.dropbox.com/s/ici7j5eq0v79td3/STIRsource.zip?dl=0"  target=_parent>Zip file with updated source code</a>.
+
+<h2>Installation</h2>
+Below is a link to scripts to install STIR on vGATE. The scripts should
+work on other Debian systems as well, maybe even Redhat.
+
+<br />
+<a href="https://www.dropbox.com/s/rplji00utv1l995/Install_scripts.zip?dl=0" target=_parent>zip file with scripts</a>.
+<!--
+ <a href="https://www.dropbox.com/sh/cpw7xd3l3yrdjbk/AAAKrAK75hmkilROKISmJmdwa?dl=0" target=_parent>Dropbox folder with scripts</a>. -->
+
+(On Debian-based systems such as Ubuntu, these scripts will also install Amide).
+
+<br />
+<p>
+  If vGATE does not work for you, you can follow then normal STIR installation instructions, part of the STIR documentation.
+  Easiest is to check
+  <a href="http://stir.sourceforge.net/wiki/index.php/Installing_STIR_with_CMake">the STIR wiki</a>. 
+<!--However, to make this process easier, we are in the process of providing precompiled executables. 
+    We will also provide a package with data for the exercises.-->
+</p>
+
+<h2>Demo files</h2>
+Please download <a href="STIR-exercises.zip">a zip file with data and scripts</a> for the exercises.
+
+<!--
+
+<h2>Precompiled Executables</h2>
+   You will need to unzip these (they will be in a subfolder called <tt>bin</tt>)
+   and either put them somewhere in your PATH or add the directory
+   to your path (instructions later).
+  <ul>
+   <li>Linux 64 bit: <ul>
+         <li><a href="https://www.dropbox.com/s/xu6a1g4yy29ibru/executables-Linux64.zip?dl=0"  target=_parent>statically linked</a> (safe but 131MB)</li>
+          <li><a href="https://www.dropbox.com/s/bdvnaddmwyevgod/executables-sharedlibs-Linux64.zip?dl=0"  target=_parent>dynamically linked</a> (no ITK support, 5MB)</li>
+     </ul></li>
+   <li><a href="https://www.dropbox.com/s/7crweiqdklbd37c/MacOSX_executables.zip?dl=0"  target=_parent>MacOSX</a> (43MB, updated 10 Nov 8.30 UTC).
+   Please also get <a href="https://www.dropbox.com/s/n6hblt2b9zseatw/MacOSX_list_image_info.zip?dl=0"  target=_parent>list_image_info</a></li>
+   <li><a href="https://www.dropbox.com/s/mck9sqi9o8di7zv/executables-windows.zip?dl=0" target=_parent>Windows (without Linux virtual system)</a>, 14MB, updated Monday 17.00 Seattle time (.exe extension was missing which was only ok for cygwin, added list_image_values).
+<br />
+ You will also need 
+the <a href="http://www.microsoft.com/en-us/download/details.aspx?id=40784"  target=_parent>Visual C++ Redistributable Packages for Visual Studio 2013</a> and
+ideally you install <a href=http://cygwin.com>Cygwin</a> (click on the
+set-up link, use the defaults but ideally add tcsh)</li>
+  </ul>
+
+  -->
+
+<h2>Other</h2>
+<ul>
+<li>You need a display program that understands Interfile images. We will use
+<a href="http://amide.sourceforge.net">AMIDE</a> so it is best to install 
+that as well.
+</li>
+</ul>
+
+<!--
+<hr>
+<p>Also, now please <strong>fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>the 1 minute survey</a></strong> if you haven't done so yet.</p>
+<br />
+-->
+<hr>
+<center>This site uses no cookies, except for accessing the registered users section.</center>
+<hr>
+<p>Contact <a href="mailto:stir@asc.uk.com">webmaster</a>.</p>
+
+<!-- Created: Thu Jun 15 07:53:50 BST 2000 -->
+<!-- hhmts start -->
+Last modified: Sat Nov  8 09:05:11 GMT 2014
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

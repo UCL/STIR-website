@@ -1,0 +1,8 @@
+<map id="stir::AnalyticReconstruction" name="stir::AnalyticReconstruction">
+<area shape="rect" id="node13" href="$classstir_1_1FBP2DReconstruction.html" title="Reconstruction class for 2D Filtered Back Projection. " alt="" coords="5,387,179,413"/>
+<area shape="rect" id="node15" href="$classstir_1_1FBP3DRPReconstruction.html" title="This class contains the implementation of the FBP3DRP algorithm. " alt="" coords="203,387,396,413"/>
+<area shape="rect" id="node2" href="$classstir_1_1Reconstruction.html" title="stir::Reconstruction\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="125,203,265,259"/>
+<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="100,5,220,32"/>
+<area shape="rect" id="node8" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="168,83,301,125"/>
+<area shape="rect" id="node6" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="259,5,387,32"/>
+</map>

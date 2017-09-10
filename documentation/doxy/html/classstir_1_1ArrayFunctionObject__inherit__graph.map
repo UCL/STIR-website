@@ -1,0 +1,22 @@
+<map id="stir::ArrayFunctionObject&lt; num_dimensions, elemT &gt;" name="stir::ArrayFunctionObject&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node3" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 1, elemT \&gt;" alt="" coords="811,4,992,60"/>
+<area shape="rect" id="node9" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 2, elemT \&gt;" alt="" coords="397,480,579,536"/>
+<area shape="rect" id="node11" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="811,484,992,540"/>
+<area shape="rect" id="node19" href="$classstir_1_1ArrayFunctionObject__1ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the 2 argument operator() in t..." alt="" coords="395,560,581,616"/>
+<area shape="rect" id="node25" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="395,307,581,363"/>
+<area shape="rect" id="node48" href="$classstir_1_1ArrayFunctionObject.html" title="stir::ArrayFunctionObject\l\&lt; num_dimensions, float \&gt;" alt="" coords="401,214,575,255"/>
+<area shape="rect" id="node5" href="$classstir_1_1ArrayFilter1DUsingConvolution.html" title="This class implements convolution of a 1D array with an arbitrary (i.e. potentially non&#45;symmetric) ke..." alt="" coords="1148,21,1303,62"/>
+<area shape="rect" id="node7" href="$classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html" title="This class implements convolution of a 1D array with a symmetric kernel. " alt="" coords="1131,96,1320,152"/>
+<area shape="rect" id="node13" href="$classstir_1_1MaximalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="1145,415,1305,457"/>
+<area shape="rect" id="node15" href="$classstir_1_1MedianArrayFilter3D.html" title="Implements median filtering on 3D arrays. " alt="" coords="1148,490,1303,531"/>
+<area shape="rect" id="node17" href="$classstir_1_1MinimalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="1147,346,1304,387"/>
+<area shape="rect" id="node21" href="$classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable. " alt="" coords="809,564,993,620"/>
+<area shape="rect" id="node23" href="$classstir_1_1SeparableMetzArrayFilter.html" title="Separable Metz filtering in n &#45; dimensions. " alt="" coords="1143,564,1307,620"/>
+<area shape="rect" id="node27" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i.e. potentially non&#45;symmetric) kernel using DFTs. " alt="" coords="785,244,1018,300"/>
+<area shape="rect" id="node33" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 2, elemT \&gt;" alt="" coords="811,404,992,460"/>
+<area shape="rect" id="node35" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; num_dimensions, float \&gt;" alt="" coords="811,164,992,220"/>
+<area shape="rect" id="node39" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 1, elemT \&gt;" alt="" coords="811,84,992,140"/>
+<area shape="rect" id="node43" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="811,324,992,380"/>
+<area shape="rect" id="node29" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 1, float \&gt;" alt="" coords="1135,262,1315,303"/>
+<area shape="rect" id="node31" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="1135,182,1315,223"/>
+</map>

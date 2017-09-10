@@ -1,0 +1,48 @@
+<map id="boost::shared_ptr&lt; T &gt;" name="boost::shared_ptr&lt; T &gt;">
+<area shape="rect" id="node3" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataSymmetriesForDensels \&gt;" alt="" coords="429,37,651,78"/>
+<area shape="rect" id="node5" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjDataInMemory \&gt;" alt="" coords="457,102,623,143"/>
+<area shape="rect" id="node7" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::GeneralisedPrior\l\&lt; TargetT \&gt; \&gt;" alt="" coords="467,167,613,223"/>
+<area shape="rect" id="node9" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataSymmetriesForView\lSegmentNumbers \&gt;" alt="" coords="443,247,637,303"/>
+<area shape="rect" id="node11" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::Shape3D \&gt;" alt="" coords="475,326,605,367"/>
+<area shape="rect" id="node13" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataProcessor\l\&lt; DataT \&gt; \&gt;" alt="" coords="473,391,607,447"/>
+<area shape="rect" id="node15" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ForwardProjectorByBin \&gt;" alt="" coords="443,470,637,511"/>
+<area shape="rect" id="node17" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::SinglesRates \&gt;" alt="" coords="471,535,609,577"/>
+<area shape="rect" id="node19" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::BackProjectorByBin \&gt;" alt="" coords="452,601,628,642"/>
+<area shape="rect" id="node21" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DynamicProjData \&gt;" alt="" coords="460,666,620,707"/>
+<area shape="rect" id="node23" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; stir::DiscretisedDensity\l\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="457,731,623,802"/>
+<area shape="rect" id="node25" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; ParametricDiscretisedDensity\l\&lt; DiscretisedDensityT \&gt; \&gt; \&gt;" alt="" coords="438,826,642,897"/>
+<area shape="rect" id="node27" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjDataInfoCylindrical\lNoArcCorr \&gt;" alt="" coords="450,921,630,977"/>
+<area shape="rect" id="node29" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjMatrixByBin \&gt;" alt="" coords="464,1001,616,1042"/>
+<area shape="rect" id="node31" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ExamInfo \&gt;" alt="" coords="475,1066,605,1107"/>
+<area shape="rect" id="node33" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::GeneralisedObjective\lFunction\&lt; TargetT \&gt; \&gt;" alt="" coords="453,1131,627,1187"/>
+<area shape="rect" id="node35" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; TargetT \&gt; \&gt;" alt="" coords="465,1211,615,1267"/>
+<area shape="rect" id="node37" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::BinNormalisation \&gt;" alt="" coords="461,1290,619,1331"/>
+<area shape="rect" id="node39" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataProcessor\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="469,1355,611,1426"/>
+<area shape="rect" id="node41" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataSymmetriesForBins\l_PET_CartesianGrid \&gt;" alt="" coords="445,1451,635,1507"/>
+<area shape="rect" id="node43" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; num_dimensions,\l elemT \&gt; \&gt;" alt="" coords="423,1531,657,1602"/>
+<area shape="rect" id="node45" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjDataInfo \&gt;" alt="" coords="474,1626,606,1667"/>
+<area shape="rect" id="node47" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjData \&gt;" alt="" coords="475,1691,605,1733"/>
+<area shape="rect" id="node49" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::InputStreamWithRecords\l\&lt; CListRecordT, bool \&gt; \&gt;" alt="" coords="443,1756,637,1812"/>
+<area shape="rect" id="node51" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l istream \&gt;" alt="" coords="475,1835,605,1877"/>
+<area shape="rect" id="node53" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::CListModeData \&gt;" alt="" coords="465,1901,615,1942"/>
+<area shape="rect" id="node55" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; DataT \&gt; \&gt;" alt="" coords="465,1965,615,2021"/>
+<area shape="rect" id="node57" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l std::iostream \&gt;" alt="" coords="475,2045,605,2086"/>
+<area shape="rect" id="node59" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l singleDiscDensT \&gt;" alt="" coords="473,2110,607,2151"/>
+<area shape="rect" id="node61" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataSymmetriesForBins \&gt;" alt="" coords="439,2175,641,2217"/>
+<area shape="rect" id="node63" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ArcCorrection \&gt;" alt="" coords="471,2241,609,2282"/>
+<area shape="rect" id="node65" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataProcessor\l\&lt; TargetT \&gt; \&gt;" alt="" coords="473,2305,607,2361"/>
+<area shape="rect" id="node67" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="461,2385,619,2441"/>
+<area shape="rect" id="node69" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DiscretisedDensity\l\&lt; num_dimensions, elemT \&gt; \&gt;" alt="" coords="442,2465,638,2521"/>
+<area shape="rect" id="node71" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::Scanner \&gt;" alt="" coords="475,2545,605,2586"/>
+<area shape="rect" id="node73" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="461,2609,619,2665"/>
+<area shape="rect" id="node75" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::GeneralisedObjective\lFunction\&lt; stir::DiscretisedDensity \&gt; \&gt;" alt="" coords="421,2689,659,2745"/>
+<area shape="rect" id="node77" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::DataProcessor\l\&lt; stir::DiscretisedDensity\l\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="457,2770,623,2841"/>
+<area shape="rect" id="node79" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::PatlakPlot \&gt;" alt="" coords="475,2865,605,2906"/>
+<area shape="rect" id="node81" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l GatedProjData \&gt;" alt="" coords="475,2930,605,2971"/>
+<area shape="rect" id="node83" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; DiscretisedDensity\&lt; 3,\l float \&gt; \&gt; \&gt;" alt="" coords="459,2995,621,3066"/>
+<area shape="rect" id="node85" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; ParametricDiscretisedDensity\l\&lt; DiscDensityT \&gt; \&gt; \&gt;" alt="" coords="438,3090,642,3161"/>
+<area shape="rect" id="node87" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjDataRebinning \&gt;" alt="" coords="457,3185,623,3226"/>
+<area shape="rect" id="node89" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l TargetT \&gt;" alt="" coords="475,3250,605,3291"/>
+<area shape="rect" id="node91" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::ProjectorByBinPair \&gt;" alt="" coords="455,3315,625,3357"/>
+<area shape="rect" id="node93" href="$classboost_1_1shared__ptr.html" title="boost::shared_ptr\&lt;\l stir::OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt; \&gt;" alt="" coords="433,3380,647,3436"/>
+</map>

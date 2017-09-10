@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>STIR User's Meeting MIC 2013</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+    <h1>STIR User's Meeting at MIC 2013</h1>
+
+
+<p>We had a succesful User's Meeting at the 2013 IEEE MIC, attended by 30-35 people.
+</p>
+
+
+<h2>Chairs</h2>
+<ul>
+<li> Charalampos Tsoumpas, University of Leeds</li>
+<li> Kris Thielemans, University College London and Algorithms and Software Consulting Ltd</li>
+</ul>
+
+<h2>Where and when</h2>
+<p>
+<a href="http://www.nss-mic.org/2013/" target=_blank>IEEE Medical Imaging Conference, Seoul, South Korea</a><br />
+Thursday the 31st of October, 19:00-21:00
+</p>
+<h2>Programme</h2>
+<p><strong>Note:</strong> PDFs of the presentations are made available
+under the Creative Commons 
+<a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+allowing redistribution without modification with credit to the author(s).
+</p>
+<ul>
+<li>PART I: STIR NEW DEVELOPMENTS</li>
+<ul>
+<li>Kris Thielemans: STIR Status and future
+<br /><a href=STIR_UM_2013_Thielemans_STIR_status_and_future.pdf>PDF</a></li>
+<li>Nikolaos Karakatsanis: Direct 4D parametric image reconstruction of whole body PET data</li>
+<li>Charalampos Tsoumpas: Motion compensated reconstruction in STIR 2.4
+<br /><a href=STIR_UM_2013_Tsoumpas_MCIRinSTIR.pdf>PDF</a></li>
+</ul>
+
+<li>PART II: STIR USERS DISCUSSIONS</li>
+<ul>
+<li>Liliana Caldeira: Reconstruction of PET data acquired with the BrainPET using STIR
+<br /><a href=STIR_UM_2013_Caldeira_BrainPET.pdf>PDF</a></li>
+<li>Elisabetta Grecchi: Iterative STIR reconstruction of data acquired with GE Discovery VCT</li>
+<li>Kjell Erlandsson: Evaluation of the novel 3D SPECT Modelling Algorithm in
+STIR: Simple vs. full attenuation correction</li>
+<li>Nikolaos Efthimiou: GATE_PET_2_STIR: a platform to connect GATE to STIR
+<br /><a href=STIR_UM_2013_Efthimiou_GATE_PET_2_STIR.pdf>PDF</a></li>
+<li>STIR FAQ and HOW TO session</li>
+<li>Closing Remarks</li>
+</ul>
+</ul>
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to our corporate sponsors for providing dinner: GE Research (gold sponsor) and Philips (bronze).<br />
+Also sincere thanks to the MIC conference organisers (in particular Ralf Engels) for making the room available and getting dinner organised.</p>
+<hr>
+<p>
+<!-- hhmts start -->
+Last modified: Sat Nov 16 09:50:43 GMT 2013
+<!-- hhmts end -->
+</p>
+  </body>
+</html>

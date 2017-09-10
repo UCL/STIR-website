@@ -1,0 +1,184 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+<TITLE>STIR Publications</TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<P ALIGN="CENTER"><font size="6">Publications related to STIR</font></P>
+<!--
+<p><strong><font size+=3 color=red> Update in progress. Do not download any files.
+Links might not work!<p>
+</font></strong>
+-->
+
+<p>The main publication describing STIR is:<br />
+<blockquote><strong>
+Kris Thielemans, Charalampos Tsoumpas, Sanida Mustafovic, Tobias Beisel, Pablo Aguiar, Nikolaos Dikaios, and Matthew W Jacobson, <br />
+<cite>STIR: Software for Tomographic Image Reconstruction Release 2</cite>, <br />
+<a href="http://dx.doi.org/10.1088/0031-9155/57/4/867" target="_parent">
+Physics in Medicine and Biology, 57 (4), 2012 pp.867-883.</a>
+</strong>
+</blockquote>
+Please refer to this paper if you use STIR.</p>
+
+<p>If you use STIR for SPECT, please also refer to<br />
+<blockquote><strong>
+BM Fuster, C Falcon, C Tsoumpas, L Livieratos, P Aguiar, A Cot, D Ros, K Thielemans,<br /> 
+<cite>Integration of advanced 3D SPECT modeling into the open-source STIR framework</cite>, <br />
+<a href="http://dx.doi.org/10.1118/1.4816676" target="_parent">
+Medical Physics 40 (9), 092502, 2013.</a>
+</strong>
+</blockquote>
+</p>
+
+<p>Below is a hand-crafted list of papers that describe STIR.
+There is also a corresponding (and more useful) 
+<a href="http://www.citeulike.org/group/15740/tag/stir-software/order/year,desc," target="_parent">database on CiteULike</a>. If you use a specific STIR feature described in one of these papers, a reference would be appreciated.</p>
+
+<p>A (probably incomplete) list of references to <a href="http://www.citeulike.org/group/15740/order/year,desc," target="_parent"> papers that use STIR is available on this CiteULike page</a>.
+There's a Wiki page with <a href="../wiki/index.php?title=Publications_that_use_STIR" target="_parent">instructions on how to add your
+own paper to those lists</a>.
+</p>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#journalpapers">Journal papers</a></li>
+<li><a href="#proceedings">Proceedings</a></li>
+</ul>
+
+<h2><a name="journalpapers">Journal papers describing/evaluating STIR (components)</a></h2>
+<ul>
+<LI><a href="http://dx.doi.org/10.1088/0031-9155/45/8/325" target="_parent">
+Jacobson M, Levkovitz R, Ben-Tal A, Thielemans K, Spinks T, Belluzzo D, Pagani E, Bettinardi V, Gilardi M C, Zverovich A and Mitra G <cite>Enhanced 3D PET OSEM Reconstruction using inter-update Metz filters</cite>, Phys. Med. Biol. <B>45</B> No.8 (2000) 2417-2439)
+</a>.<br />
+This paper describes an alternative regularisation method for EMML using
+inter-update filtering (which is somewhat similar to inter-iteration filtering). 
+It also describes the subset scheme used by STIR and gives some details on the
+parallelisation scheme used during PARAPET (which formed the basis for the current STIR MPI work).
+</LI>
+<LI><a href="http://dx.doi.org/10.1007/s002590100651" target="_parent">
+V. Bettinardi, E. Pagani, M.C. Gilardi, S. Alenius, K. Thielemans, M. Teras, and F. Fazio, 
+<cite>Implementation and evaluation of a 3D One Step Late reconstruction algorithm for 3D Positron Emission Tomography studies using Median Root Prior</cite>,
+Eur. J. Nucl. Med. (2002) Vol 29 No. 1 pp 7-18)</a>.<br />
+MRP using STIR.</LI>
+</li>
+<li><a href="http://dx.doi.org/10.1118/1.2885369" target="_parent">
+C. Tsoumpas, F. Turkheimer,  K. Thielemans, 
+<cite>Study of direct and indirect parametric estimation methods of linear models in dynamic positron emission tomography,
+</cite> Med. Phys. Volume 35, Issue 4, (2008) pp. 1299-1309)</a>
+</li>
+<li><a href="http://dx.doi.org/10.1016/j.compmedimag.2011.01.002" target="_parent">
+Georgios I. Angelis,  Kris Thielemans, Andri C. Tziortzi, 
+Federico E. Turkheimer and Charalampos Tsoumpas,
+<cite>Convergence Optimization of Parametric MLEM Reconstruction for Estimation of Patlak Plot Parameters,</cite>  
+Journal Computerized Medical Imaging and Graphics (Feb 2011)</a>
+<br /> 
+This study reveals how direct iterative reconstruction of kinetic parameters from the
+ measured (FDOPA) data can be performed optimally (using STIR release 2.1). It explains how to 
+optimize the speed of the algorithm minimizing bias; and it compares the results with analytic reconstructions.
+</li> 
+<li><a href="http://dx.doi.org/10.1007/s12149-011-0514-y" target="_parent">
+Polycarpou I; Thielemans K; Manjeshwar R; Aguiar P; Marsden PK; Tsoumpas C
+<cite>Comparative evaluation of scatter correction in 3D PET using different 
+scatter-level approximations,</cite> 
+Annals of Nuclear Medicine (July 2011)</a>
+<br />
+This paper describes how to perform scatter correction using STIR 
+and it evaluates its accuracy versus SimSET scatter estimation. 
+Results demonstrate that in many cases scaling the single 
+scatter distribution is a reasonable approximation to compensate for total 
+scatter, especially if scaling is based on a global fit.
+</li>
+<li>
+<a href="http://dx.doi.org/10.1088/0031-9155/57/4/867" target="_parent">
+Kris Thielemans, Charalampos Tsoumpas, Sanida Mustafovic, Tobias Beisel, Pablo Aguiar, Nikolaos Dikaios, and Matthew W Jacobson, 
+<cite>STIR: Software for Tomographic Image Reconstruction Release 2</cite>, 
+Physics in Medicine and Biology, 57 (4), 2012 pp.867-883.</a>
+</li>
+<li><a href="http://dx.doi.org/10.1118/1.4754586" target="_parent">
+Polycarpou I; Tsoumpas C; Marsden PK (Oct 2012) Analysis and comparison of two methods for motion correction in PET imaging. Medical Physics. 39(10): 6474-6483.
+</a>
+</li>
+<li>
+<a href="http://dx.doi.org/10.1118/1.4816676" target="_parent">
+BM Fuster, C Falcon, C Tsoumpas, L Livieratos, P Aguiar, A Cot, D Ros, K Thielemans,
+<cite>Integration of advanced 3D SPECT modeling into the open-source STIR framework</cite>, 
+Medical Physics 40 (9), 092502, 2013.</a>
+</li>
+<li><a href="http://dx.doi.org/10.1088/0031-9155/58/6/1759" target="_parent">
+Tsoumpas C; Polycarpou I; Thielemans K; Buerger C; King AP; Schaeffter T; Marsden PK (Mar 2013) The effect of regularization in motion compensated PET image reconstruction: A realistic numerical 4D simulation study. Physics in Medicine and Biology, 58(6):1759-1773.
+</a>
+<br />
+We have performed two realistic numerical 4D simulation study to compare the two main approaches for PET motion-compensation: motion correction within reconstruction versus post-reconstruction (Polycarpou et al, 2012) including median-root-prior regularisation (Tsoumpas, et al 2013) . Both techniques are based on the same iterative reconstruction algorithm in STIR (i.e. OSMAPOSL) approaches are available in the 2.4 release.
+</li>
+
+</ul>
+<h2><a name="proceedings">Proceedings describing/evaluating STIR (components)</a></h2>
+<ul>
+<LI>
+<a href="http://dx.doi.org/10.1007/978-3-642-60125-5_50" target="_parent">
+Labb&eacute; C, Thielemans K, Belluzzo D, Bettinardi V, Gilardi MC, Hague DS, Jacobson MW, Kaiser S, Levkovitz R, Margalit T, Mitra G, Morel C, Spinks T, Valente P, Zaidi H, Zverovich A,
+<cite>An object-Oriented Library for 3D PET Reconstruction using Parallel Computing</cite>, 
+Proceedings of "Bildverarbeitung fuer die Medizin 1999, Algorithmen-Systeme-Anwendungen", Informatik aktuell, Springer, Eds. H. Evers, G. Glombitza, T. Lehmann, H.-P. Meinzer, pp 268-272.</a>
+</LI>
+<LI>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.9899" target="_parent">
+Labb&eacute; C, Thielemans K, Zaidi H, Morel C, 
+<cite>An object-oriented library incorporating efficient projection/backprojection operators for volume reconstruction in 3D PET</cite>. Proc. of 3D99 Conference, June 1999, Egmond aan Zee, The Netherlands.</a>
+<br><a href="STIR-publications/Labbe_3D1999_object-oriented_library_for_3DPET.pdf" target="_parent">PDF</a>
+</LI>
+
+<LI>Thielemans K, Jacobson M W, Belluzzo D,
+<cite> On various approximations for the projectors in iterative reconstruction algorithms for 3D-PET</cite>. Proc. of 3D99 Conference, June 1999, Egmond aan Zee, The Netherlands, pp 232-235.
+<br>
+<a href="STIR-publications/Thielemans_proc_3D1999-approximations_for_projectors_in_3D_PET.pdf" target="_parent">PDF</a>, 
+</LI>
+<LI><a href="http://dx.doi.org/10.1109/NSSMIC.2001.1008688" target="_parent">
+S. Mustafovic and K.Thielemans, 
+<cite>Additive and Multiplicative versions of the Maximum A Posteriori Algorithm with the Median Root Prior</cite>, 
+proc. IEEE Medical Imaging Conf. 2001</a>.
+</li>
+<li><a href="http://dx.doi.org/10.1109/NSSMIC.2004.1466455" target="_parent">
+C. Tsoumpas, P. Aguiar, K. S. Nikita, D. Ros, K. Thielemans,
+<cite>Evaluation of the Single Scatter Simulation Algorithm Implemented in the STIR Library</cite>,
+proc. IEEE Medical Imaging Conf. 2004</a>.
+</li>
+<li><a href="http://dx.doi.org/10.1109/NSSMIC.2004.1466782" target="_parent">
+K. Dinelle, K. Thielemans, C. Tsoumpas, T. J. Spinks,
+<cite>An Evaluation of Various Analytic Reconstruction Algorithms and 
+Implementations for 2D and 3D PET</cite>, 
+in IEEE Medical Imaging Conf. 2004, vol. 7, Oct. 2004, pp. 4043-4047.</a>
+</li>
+<li><a href="http://dx.doi.org/10.1109/NSSMIC.2006.354345" target="_parent">
+Kris Thielemans, Sanida Mustafovic, Charalampos Tsoumpas,
+<cite> STIR: Software for Tomographic Image Reconstruction Release 2, </cite> 
+Proc. IEEE Medical Imaging Conference 2006 (San Diego, CA)</a>.
+</li>
+<li><a href="http://dx.doi.org/10.1109/NSSMIC.2008.4774198" target="_parent">
+T. Beisel, S. Lietsch, K. Thielemans, 
+<cite>A Method for OSEM PET Reconstruction on Parallel Architectures Using STIR</cite>,
+Proc. Medical Imaging Conf. 2008 (Dresden, Germany)</a>.
+</li>
+<li><a href="http://dx.doi.org/10.1109/NSSMIC.2013.6829258" target="_parent">
+Berta Marti Fuster, Kjell Erlandsson, Carles Falcon, Charalampos Tsoumpas, Lefteris Livieratos, Domenec Ros, Kris Thielemans, 
+<cite>Evaluation of the novel 3D SPECT Modelling Algorithm in the STIR Reconstruction Framework: Simple vs. full attenuation correction</cite>, 
+proc. IEEE Medical Imaging Conf. 2013 (Seoul, S. Korea).</a>
+</a>
+</li>
+</ul>
+
+<hr>
+<p>
+This page is licensed with the 
+<a href="http://creativecommons.org/licenses/by-sa/3.0/" class="external text" title="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow"  target="_parent">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>
+<a href="http://creativecommons.org/licenses/by-sa/3.0/"  target="_parent"><img alt="" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" width="88" height="31" border="0"></a>
+</p>
+<hr>
+<!-- hhmts start -->
+Last modified: Tue Jun 24 23:26:23 BST 2014
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

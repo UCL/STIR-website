@@ -1,0 +1,22 @@
+making read-only:
+insert the following line into LocalSettings.php
+$wgReadOnly = 'Dumping Database, Access will be restored shortly';
+
+backup:
+http://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki
+
+mysqldump -h mysql-r  -u s42522admin --password --default-character-set=binary  s42522_mediawiki > ~/backup.sql
+
+
+
+-----
+
+Function: DatabaseBase::sourceFile( /home/project-web/stir/htdocs/wiki/extensions/ConfirmAccount/backend/schema/mysql/ConfirmAccount.sql )
+Error: 1142 CREATE command denied to user 's42522rw'@'10.60.24.9' for table 'account_requests' (mysql-s)
+
+PHP Notice:  Uncommitted DB writes (transaction from DatabaseUpdater::doUpdates). in /home/project-web/stir/htdocs/wiki/includes/db/Database.php on line 4147
+PHP Stack trace:
+PHP   1. {main}() /home/project-web/stir/htdocs/wiki/maintenance/update.php:0
+PHP   2. require_once() /home/project-web/stir/htdocs/wiki/maintenance/update.php:194
+PHP   3. DatabaseBase->__destruct() /home/project-web/stir/htdocs/wiki/includes/db/Database.php:0
+PHP   4. trigger_error() /home/project-web/stir/htdocs/wiki/includes/db/Database.php:4147

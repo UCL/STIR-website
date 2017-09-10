@@ -1,0 +1,108 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+
+<TITLE>STIR at the IEEE MIC 2015 Short Course on Image Reconstruction </TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<h1>STIR at the IEEE MIC 2015 Short Course on Image Reconstruction </h1>
+<p>This page is for participants in the <a href="http://www.nss-mic.org/2015/public/ShortCourses.asp#c7"  target=_blank>Short Course on Image Reconstruction</a> 
+at the IEEE MIC. It will be updated information and extra files before the course.
+  <br />
+  <strong>Please read but check back later.</strong> Please refresh the page when you re-visit.</p>
+
+<!--<p>After reading this page, please fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>a 1 minute survey</a>.</p>
+  -->
+
+
+<p>During the course, we will have practical exercises using STIR. These exercises are an integral part of the course. 
+To be able to participate, <strong>students are asked to bring their own laptop if possible</strong>.
+</p>
+
+<p>We will provide a Virtual Machine with everything preinstalled for the course. Please <strong>follow
+    the installation instructions below to get this on your laptop
+<i>before the conference</i>.</strong>. Please note that this will require administrator permissions.<br />
+
+<p>Please note that the STIR version that we will be using is more
+   recent that the current 3.0. Therefore, <strong>please use the virtual machine.</strong>.
+   If you really want to do this all yourself, you will need to get <a href=http://github.com/UCL/STIR target="_blank">STIR from
+  github</a>, install <a href=http://www.swig.org target="_blank">SWIG</a>, Python, etc and compile STIR with
+Python support. You would then need to get the data and excample scripts. Don't try this...
+</p>
+
+<p>
+  If you want to prepare for these exercises, please check some of the STIR documentation on
+  the website, or register for STIR and download the software already
+  (or get them from <a href=http://github.com/UCL/STIR target="_blank">github</a>).
+  You could then have a look at the files in 
+  examples/PET_simulation provided in the download.
+</p>
+
+<h2>Virtual Machine installation instructions</h2>
+<p>This text is adapted from the <a href=http://wiki.opengatecollaboration.org/index.php/VGate target="_blank">vGate instructions</a>.</p>
+
+<p><i>We are still in the process of getting this ready. If you are not familiar with VirtualBox,
+    We recommend experimenting with <a href=http://wiki.opengatecollaboration.org/index.php/VGate target="_blank">vGate</a> now.</i></p>
+
+<ol>
+  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>
+    <br /> You do not need to install the Oracle extensions to VirtualBox, although it might come in handy for USB support.
+<br />
+       Although other Virtual Machine software might work, we have not tried this and will not be able
+       to help to get this going.
+  </li>
+<li>Download the Virtual Disk Image (VDI) (<i>coming soon</i>).</li>
+<li>Once Virtual Box is installed and you have the VDI, do the following:
+  <ol>
+   <li> Launch Virtual Box and click on "New" to create a new virtual machine.</li>
+   <li>Click on "Next", and give a name to your machine.</li>
+   <li>Choose 'Linux' as Operating System, and 'Ubuntu' as Version. If you are asked to, precise 64 bits system. Click on "Next".</li>
+   <li>Select the amount of RAM that you want to give to the virtual machine (at least 1Gb if possible, the higher the better). Click on "Next".</li>
+   <li>Select "Use existing hard disk" and then go in the menu on the right, click on "Hard drive" "Add" and find the VDI file that you have just downloaded. Click on "Next".</li>
+   <li>Click on "Finish", and you can change settings of your virtual machine and start it.</li>
+   <li>The only user in the machine is named "stir" with password "virtual". </li>
+   </ol>
+  </li>
+<li>Adjust your Ubuntu settings:
+  <ol>
+    <li>The keyboard type is set to English-UK. If this is not ok:
+      <ol>
+        <li>Go into the "System" menu, then in "Preferences" and finally in "Keyboard".</li>
+        <li>Go in the "Layout" tab and choose the appropriate layout corresponding to your keyboard.</li>
+      </ol>
+      </li>
+    <li>Default settings should allow you to access the internet from in the virtual machine.
+      If not, please check the <a href=http://www.virtualbox.org/manual/ch03.html#settings-network target="_blank">Virtual Box documentation</a>
+    </li>
+    <li>You probably want to configure a shared directory between the host and the guest machine
+      such that your virtual machine can "see" your "normal" files. Please read the
+      <a href="http://www.virtualbox.org/manual/ch04.html#sharedfolders" target="_blank"> Virtualbox documentation on Folder Sharing.</a>
+    </li>
+  </ol>
+  </li>
+</ol>
+
+<!--
+<h2>Other</h2>
+<ul>
+<li>You need a display program that understands Interfile images. We will use
+<a href="http://amide.sourceforge.net">AMIDE</a> so it is best to install 
+that as well.
+</li>
+</ul>
+-->
+
+<hr>
+<center>This site uses no cookies, except for accessing the registered users section.</center>
+<hr>
+<p>Contact <a href="mailto:stir@asc.uk.com">webmaster</a>.</p>
+
+<!-- Created:  2015 -->
+<!-- hhmts start -->
+Last modified:Oct 24 GMT 2015
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>STIR User's Meeting MIC 2014</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<h1>STIR User's Meeting at MIC 2014</h1>
+
+<p>We had a succesful User's Meeting at the 2014 IEEE MIC, attended by 35-40 people. Some of the presentations can be found below.
+</p>
+
+<h2>Chairs</h2>
+<ul>
+<li> Charalampos Tsoumpas, University of Leeds</li>
+<li> Kris Thielemans, University College London and Algorithms and Software Consulting Ltd</li>
+</ul>
+
+<h2>Where and when</h2>
+<p>
+<a href="http://www.nss-mic.org/2014/" target=_blank>IEEE Medical Imaging Conference, Seattle, WA, USA</a><br />
+Thursday, 13 November, 18:30-20:30, room 303
+</p>
+
+
+<h2>Programme</h2>
+<p><strong>Note:</strong> PDFs of the presentations are made available
+under the Creative Commons 
+<a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+allowing redistribution without modification with credit to the author(s).
+</p>
+
+<ul>
+<li>18.30: Opening</li>
+<li>18.35: Marc Chamberland<br />
+  <i><a href="2014-11-11_Chamberland_ListmodeTRackingandMC.pdf">List-Mode Tracking and Motion Correction for PET 
+Imaging Using Low-Activity Fiducial Markers</a></i></li>
+<li>18.50: Nicolas A. Karakatsanis, Charalampos Tsoumpas, Habib Zaidi:<br />
+<i>Generalized Motion Compensated Dynamic and Whole-Body
+PET Image Reconstruction in STIR</i></li>
+<li>19.05: Nicoletta Vitale, Lefteris Livieratos:<br />
+  <i><a href="2014-11-11_Nicoletta_SPECTandSTIR">Potential image quality improvements in SPECT using STIR</a>
+</i></li>
+<li>19.20: Pawel Markiewicz, Richard Manber, Irene Polycarpou, Kris Thielemans:<br /> 
+  <i><a href="2014-11-11_Markiewicz_STIRandmMR.pdf">Using STIR to reconstruct PET data from the Siemens Biograph mMR</a></i>
+</li>
+<li>19.35: Matthias Ehrhardt, Kris Thielemans: <br />
+  <i><a href="2014-11-11_Ehrhardt_STIRinMATLAB.pdf">Using the new MATLAB interface to STIR</a></i></li>
+<li>Future Directions for STIR</li>
+  
+</ul> 
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to our corporate sponsor  GE Research.<br />
+Also sincere thanks to the MIC conference organisers (in particular Richard Kouzes) for helping with the announcements, making the room available,
+ getting dinner organised etc.</p>
+
+<h2>Previous meetings</h2>
+<ul>
+<li><a href="../MIC2004workshop/homepage.html">2004</a></li>
+<li><a href="../MIC2009UsersMeeting/homepage.html">2009</a></li>
+<li><a href="../MIC2011UsersMeeting/homepage.shtml">2011</a></li>
+<li><a href="../MIC2012UsersMeeting/homepage.shtml">2012</a></li>
+<li><a href="../MIC2013UsersMeeting/homepage.shtml">2013</a></li>
+</ul>
+
+<hr>
+<p>
+<!-- hhmts start -->
+Last modified: 28 Jun 2015
+<!-- hhmts end -->
+</p>
+  </body>
+</html>
