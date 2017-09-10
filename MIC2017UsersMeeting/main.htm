@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <style>
+table, th, td {
+    vertical-align: top;
+}
+</style>
+    <title>STIR User's and Developer's Meeting MIC 2017</title>
+  </head>
+
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+    <h1>STIR User's and Developer's Meeting at MIC 2017</h1>
+
+<h2>Chairs</h2>
+<ul>
+<li> Charalampos Tsoumpas, University of Leeds</li>
+<li> Kris Thielemans, University College London</li>
+</ul>
+
+<h2>Where and when</h2>
+<p>
+<a href="http://www.nss-mic.org/2017/" target=_blank>IEEE Medical Imaging Conference, Atlanta, USA</a><br />
+Thursday, October 26, 18:00-20:00, PIEDMONT Room
+</p>
+
+
+<h2>Summary</h2>
+<p>STIR is Open Source software for use in tomographic imaging. Its aim is to
+provide a Multi-Platform Object-Oriented framework for all data manipulations
+in tomographic imaging. Currently, the emphasis is on image reconstruction in
+emission tomography (PET and SPECT) but other imaging modalities can be added
+in the future.</p>
+
+<p>During this annual meeting experienced users and developers
+During this annual meeting experienced users and developers will present their recent work with STIR with the emphasis on software and algorithmic development. Additional time will be allocated for discussion between the speakers and the audience. If interested in presenting, contact the chairs before the 15th of September.</p>
+
+<p>The event is free but priority will be given to those that have reserved, as only limited space is available. Thanks to our sponsors,
+snacks will be provided (no free lunch boxes this year, apologies).
+</p>
+
+<!-- <p><center><strong>Please <a href="http://www.eventbrite.com/e/stir-users-developers-meeting-tickets-28181586885"  target=_blank>register here</a>.</strong></center></p>
+-->
+
+<p>For up-to-date information please always check the STIR website.</p>
+
+<h2>Agenda</h2>
+<!--    <p>All presentations are kindly made available by the presenters 
+      under the Creative Commons 
+      <a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+      allowing redistribution without modification with credit to the author(s).
+    </p>
+-->
+Current confirmed speakers are Daniel Deidda (Leeds), Elise Emond (UCL), Kris Thielemans (UCL).
+<!--
+<table style="width:100%">
+  <tr>  <td>19.00</td> <td>Opening</td> </tr>
+  <tr>  <td>19.05</td> <td> 
+     <details><summary><b>Recent developments in STIR: Improvements in scatter correction and new tools for developers and researchers <br /> 
+               Nikos Efthimiou, Institute of Nuclear Medicine, University College London (UK)</b></summary>
+	<br />Abstract: 
+	Current scatter correction in STIR relies on a series of bash scripts which sequentially called STIR executables limiting their use in Unix-based platforms. This procedure is replaced by a single executable with a single header file. In order to achieve this, STIR library has been modified and extended with new options for developers and users. This seminar will present a summary of the scatter correction developments and some new functionalities which greatly enhance flexibility.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+    </td></tr>
+
+  <tr>  <td>19.25</td> <td> 
+     <details><summary><b> Reading custom data into STIR - the first SAFIR approach<br /> 
+               Jannis Fischer, ETH Zuerich (Switzerland) </b></summary>
+	<br />Abstract: 
+	The SAFIR collaboration is developing a high-rate capable PET insert. Geant4 is used to simulate different geometries. To enable STIR to read the data and reconstruct images, custom classes have been written. They make it possible to read the PET crystal positions from a text file and sort coincidence events into a virtual cylindrical scanner, which can be used in the reconstruction.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+  </td> </tr>
+  <tr>  <td>19.35</td> <td> 
+     <details><summary><b> Implementing Block Geometry in STIR<br /> 
+               Parisa Khateri, ETH Zuerich (Switzerland)</b></summary>
+	<br />Abstract: 
+	The SAFIR project is developing a small animal PET insert for a pre-clinical 7T MRI scanner. The reconstruction software will be based on the STIR library. In the current version of STIR, the scanner geometry is considered as a cylinder with single crystals encircling it. In order to increase the image resolution which is of great importance in small animal imaging, block geometry in which the scanner is constructed by blocks of single crystals is going to be implemented. To approximate the block geometry, new classes have been added to the STIR library to calculate relevant projection information. The new projection information is used to calculate the system matrix which is the main component in forward and backward projecting PET data.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+  </td> </tr>
+
+  <tr>  <td>19.45</td> <td> 
+     <details><summary><b>Improvements in 3D Model-Based Maximum-Likelihood Estimation of Normalisation Factors: Implementation of 3D geometric factors estimation in STIR
+    <br /> Tahereh Nikjenad, Laboratory of Instrumentation and experimental particle Physics (LIP), Lisbon (Portugal)
+               </b></summary>
+	<br />Abstract: 
+PET data reconstruction requires an accurate estimate of the normalisation factors to take the detection sensitivity of different lines of response (LOR) into account. Normalisation factors are multiplicative parameters to the measured data. Previously a component based method to estimate normalisation factors based on maximising the poisson log-likelihood for 2D PET data reconstruction has been developed and is available in the current version of STIR. The normalisation factors are split into two components including the crystal efficiencies and geometric effects. Based on that algorithm, a 3D normalisation factor estimation is derived. In this presentation, we will talk about the current state of the normalisation factors estimation in STIR and the recent developments for the 3D reconstruction.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+  </td> </tr>
+  <tr>  <td>20.00</td> <td> 
+     <details><summary><b>Unlisting and processing GE Signa PET/MR listmode data with STIR
+    <br /> Ottavia Bertolli, Institute of Nuclear Medicine, University College London (UK)
+               </b></summary>
+	<br />Abstract: 
+	Being able to manage the data acquired from different scanners is of crucial importance for making STIR accessible and useful to more users. Several scanners are already supported, but the GE Signa PET/MR is not. Our aim was therefore to include it in the software. 
+	I will present in detail the steps that were needed in order to add this scanner to STIR, and also present the new libraries that are required to read its new data format. Finally, some insight will be given about how to extract the normalization factors from the information provided by the dataset itself.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+  </td> </tr>
+  <tr>  <td>20.15</td> <td> <details><summary><b>New features in STIR: Listmode and TOF reconstruction of simulated and acquired data <br /> 
+     Nikos Efthimiou, University of Leeds (UK) & Technical Educational Institute of Athens (Greece) & University College London (UK)</b></summary>
+	<br />Abstract: 
+	A brief technical introduction and few validation results for two new features in STIR, list mode and time-of-flight reconstruction. Listmode reconstruction allows users to reconstruct directly from listmode data, either acquired or simulated. Listmode reconstruction has been updated and new features have been added (e.g. time based subsets). In addition, recent advances in PET detectors brought high demand for time-of-flight (TOF) reconstruction. TOF reconstruction directly from listmode data is implemented and initial results are presented.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+        </details>
+  </td> </tr>
+
+  <tr>  <td>20.35</td> <td> 
+     <details><summary><b> CCP PET-MR and its relation to STIR<br /> 
+       Kris Thielemans, Institute of Nuclear Medicine, University College London (UK)</b></summary>
+	<br />Abstract: 
+	The UK Collaborative Computational Project for Synergistic PET/MR Reconstruction (<a href="http://www.ccppetmr.ac.uk">CCP PET-MR</a>) is creating a new open source platform for dual-modality reconstruction. This talk will give an overview of the project and its software and how it relates to STIR.
+ <!- -       <br />
+        <a href="STIR_UM2017_Fischer_SAFIRInputFileFormat.pdf" target=_blank>PDF</a>
+- ->
+     </details>
+    </td></tr>
+  <tr>  <td>20.50</td> <td> Open Discussion on future directions of STIR and Closing</td> </tr>
+</table>
+-->
+
+<h2>Acknowledgements</h2>
+<p>Many thanks to <a href="http://www.ccppetmr.ac.uk">CCP PET-MR</a> for
+sponsoring this event.</p>
+<p>Many thanks to the MIC conference organisers (in particular Ralf Engels) for helping with the announcements, making the room available, catering, etc.</p>
+
+<h2>Previous meetings</h2>
+<ul>
+<li><a href="../MIC2004workshop/homepage.html">2004</a></li>
+<li><a href="../MIC2009UsersMeeting/homepage.html">2009</a></li>
+<li><a href="../MIC2011UsersMeeting/homepage.shtml">2011</a></li>
+<li><a href="../MIC2012UsersMeeting/homepage.shtml">2012</a></li>
+<li><a href="../MIC2013UsersMeeting/homepage.shtml">2013</a></li>
+<li><a href="../MIC2014UsersMeeting/homepage.shtml">2014</a></li>
+<li><a href="../MIC2015UsersMeeting/homepage.shtml">2015</a></li>
+<li><a href="../MIC2016UsersMeeting/homepage.shtml">2016</a></li>
+</ul>
+
+<hr>
+<p>
+<!-- hhmts start -->
+Last modified: 10 September 2017
+<!-- hhmts end -->
+</p>
+  </body>
+</html>

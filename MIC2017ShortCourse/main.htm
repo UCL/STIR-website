@@ -1,0 +1,111 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+
+<TITLE>STIR at the IEEE MIC 2017 Short Course on Image Reconstruction </TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<h1>STIR at the IEEE MIC 2017 Short Course on Image Reconstruction </h1>
+<p>This page is for participants in the <a href="http://www.nss-mic.org/2017/public/ShortCourses.asp#SC7"  target=_blank>Short Course on Image Reconstruction</a> 
+at the IEEE MIC. It will be updated with extra information before the course.
+  <br />
+  <strong>Please refresh the page when you re-visit.</strong> Check the bottom of page for list of updates.</p>
+
+
+<!--<p>After reading this page, please fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>a 1 minute survey</a>.</p>
+  -->
+
+
+<p>During the course, we will have practical exercises using STIR. These exercises are an integral part of the course. 
+To be able to participate, <strong>students are asked to bring their own laptop if possible</strong>.
+</p>
+
+<p>We will provide a <a href="https://en.wikipedia.org/wiki/Virtual_machine" target=_blank>Virtual Machine</a>
+   with everything preinstalled for the course. Please <strong>follow
+    the installation instructions below to get this on your laptop
+    <i>before the conference</i></strong> (we will be available 30 minutes before the course to help with installation problems and will have some USB sticks with us as well).</p>
+  
+<p>Please note that the STIR version that we will be using is more
+   recent that the current 3.0. Therefore, <strong>please use the virtual machine.</strong>
+   If you really want to do this all yourself, you will need to get <a href=http://github.com/UCL/STIR target="_blank">STIR from
+  github</a>, install <a href=http://www.swig.org target="_blank">SWIG</a>, Python, etc and compile STIR with
+Python support. You would then need to get the data and example scripts. Don't try this...
+</p>
+
+<p>
+  <strong>Please prepare for these exercises, see bottom of this page.</strong>
+</p>
+
+<h2>Virtual Machine installation instructions</h2>
+<p>If you have any problems, please first re-check this web-page. If you cannot solve your
+  issue, please email <tt>k dot thielemans at ucl dot ac dot uk</tt>.
+</p>
+<h3>Initial download and installation</h3>
+<ol>
+  <li>Make sure you have enough free disk-space on your laptop (~10GB for installation).</li>
+  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>.
+    <br /> You do not need to install the Oracle extensions to VirtualBox, although it might come in handy for USB support. 
+    <br />
+       Although other Virtual Machine software might work, we have not tried this and will not be able
+    to help to get this going.
+  </li>
+  <li> If you cannot wait to try STIR, you can download a Virtual Image from <a href="http://www.ccppetmr.ac.uk/downloads" target=_blank>
+   CCP PETMR</a>. This VM contains SIRF (the CCP PETMR software for both PET and MR image reconstruction) but also STIR. After 
+   installing this VM as per the instructions, please type the following in a terminal in the VM (note that this will take quite a while).
+     <pre>
+       update_VM.sh
+       update_VM_to_full_STIR.sh
+     </pre>
+      <!--https://sourceforge.net/projects/stir/files/VirtualMachine1/ the Sourceforge site</a> (get the Lubuntu-STIR.ova file).
+<br />
+    Please be careful on Sourceforge. Do not press any attractive Download buttons as they are all ads.
+-->
+      <br />
+    <strong><i>Warning</i>: this file is ~1.7GB</strong>. (You can of course download to a USB stick to save space on your laptop).
+  </li>
+
+<h2>Next steps</h2>
+<p>  The files will need another update before the course (but with minimal download time).
+  In particular, the exercises themselves will still change. Therefore,
+  <i>please check this web-page occasionally</i>.
+</p>
+<p>Update process: open the terminal and just type
+<pre>
+  update_VM.sh
+</pre>
+</p>
+<p><strong>We recommend that you get yourself (somewhat) familiar with VirtualBox and Ubuntu and iPython.</strong>
+  Links are provided in the HELP.htm and the exercise document on the Desktop in your VM (<a href="./exercises_document.pdf" target=_blank>click here for an out-dated version of the document).</a><br />
+  Here is some suggested material:
+  <ol><li>If you have never used a Linux/Unix terminal before, have a look at
+      <a href=https://help.ubuntu.com/community/UsingTheTerminal target=_blank>this tutorial</a>.
+    </li>
+    <li><a href=https://docs.python.org/2/tutorial/ target=_blank>The official Python tutorial</a>. Just read Section 1, 3, a bit of 4 and a tiny bit of 6.
+    </li>
+    <li><a href=https://github.com/patvarilly/dihub-python-for-data-scientists-2017/blob/master/notebooks/02_Matplotlib.ipynb target=_blank>Examples for matplotlib</a>, the python module that allows you to
+      make plots almost like in MATLAB.
+    </li>
+  </ol>
+  It would also be useful to check some of the STIR <a href=../documentation>documentation on the STIR web-site</a>.
+  You could even try to run some of the exercises already.
+  </p>
+
+<h2>Page update history</h2>
+<ol>
+  <li>9 Sep, 10.00 UTC: first version</li>
+</ol>
+
+<hr>
+<center>This site uses no cookies, except for accessing the registered users section.</center>
+<hr>
+<p>Contact <a href="mailto:stir@asc.uk.com">webmaster</a>.</p>
+
+<!-- Created:  2017 -->
+<!-- hhmts start -->
+Last modified: Sep 9, 2017
+<!-- hhmts end -->
+
+</BODY>
+</HTML>
