@@ -8,12 +8,14 @@ table, th, td {
 </style>
     <title>STIR User's and Developer's Meeting MIC 2017</title>
   </head>
+<meta http-equiv="cache-control" content="no-cache"/>
+<meta http-equiv="pragma" content="no-cache"/>
 
 <BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
 
     <h1>STIR User's and Developer's Meeting at MIC 2017</h1>
 
-<h2>Chairs</h2>
+<h2>Organisers</h2>
 <ul>
 <li> Charalampos Tsoumpas, University of Leeds</li>
 <li> Kris Thielemans, University College London</li>
@@ -24,8 +26,6 @@ table, th, td {
 <a href="http://www.nss-mic.org/2017/" target=_blank>IEEE Medical Imaging Conference, Atlanta, USA</a><br />
 Thursday, October 26, 18:00-20:00, PIEDMONT Room
 </p>
-
-
 <h2>Summary</h2>
 <p>STIR is Open Source software for use in tomographic imaging. Its aim is to
 provide a Multi-Platform Object-Oriented framework for all data manipulations
@@ -33,18 +33,21 @@ in tomographic imaging. Currently, the emphasis is on image reconstruction in
 emission tomography (PET and SPECT) but other imaging modalities can be added
 in the future.</p>
 
-<p>During this annual meeting experienced users and developers
-During this annual meeting experienced users and developers will present their recent work with STIR with the emphasis on software and algorithmic development. Additional time will be allocated for discussion between the speakers and the audience. If interested in presenting, contact the chairs before the 15th of September.</p>
-
-<p>The event is free but priority will be given to those that have reserved, as only limited space is available. Thanks to our sponsors,
-snacks will be provided (no free lunch boxes this year, apologies).
+<p>
+During this annual meeting experienced users and developers present their recent work with STIR with the emphasis on software and algorithmic development.
+<!-- Additional time will be allocated for discussion between the speakers and the audience. If interested in presenting, contact the chairs before the 15th of September.-->
 </p>
 
-<p><center><strong>Please <a href="https://www.eventbrite.co.uk/e/stir-users-developers-meeting-tickets-35842890049"  target=_blank>register here</a>.</strong></center></p>
+<!--<p>The event is free. Thanks to our sponsors,
+snacks will be provided (no free lunch boxes this year, apologies).
+</p>
+-->
+<!-- <p><center><strong>Please <a href="https://www.eventbrite.co.uk/e/stir-users-developers-meeting-tickets-35842890049"  target=_blank>register here</a>.</strong></center></p>
+
 
 <p>For up-to-date information please always check the STIR website.</p>
-
-<h2>Preliminary Agenda</h2>
+-->
+<h2>Agenda</h2>
 <!--    <p>All presentations are kindly made available by the presenters 
       under the Creative Commons 
       <a href="http://creativecommons.org/licenses/by-nd/3.0/" target=_blank>"Attribution-NoDerivs" license</a>,
@@ -54,12 +57,13 @@ snacks will be provided (no free lunch boxes this year, apologies).
 <!-- Current confirmed speakers are Daniel Deidda (Leeds), Elise Emond (UCL), Kris Thielemans (UCL).
 -->
 <table style="width:100%">
-  <tr>  <td>18.00</td> <td>Opening</td> </tr>
-  <tr>  <td>1.</td> <td> 
-     <details><summary><b>
+  <tr>  <td>1.</td> <td>Opening</td> </tr>
+  <tr>  <td>2.</td> <td><a href="http://ioppublishing.org/awards-given/physics-in-medicine-biology-citations-prize/" target="_blank">Presentation of the 2017 Physics in Medicine and Biology Rotblat Prize</a></td> </tr>
+  <tr>  <td>3.</td> <td> 
+     <details><summary>
 Ashley Gillman, Jye Smith, Jason Dowling, Paul Thomas, Stephen Rose, Nicholas Dowson<br />
 CSIRO Australian e-Health Research Centre and University of Queensland (Australia)<br />
-Title: A framework for generalised PET motion correction with STIR implemented in Nipype<br />
+Title:  <b>A framework for generalised PET motion correction with STIR implemented in Nipype
 </b></summary>
 	<br />
 Abstract: PET motion correction can be presented in a generalised framework, able to encapsulate a variety of PET motion correction techniques. Variations include tracking (respiratory bellows, MR navigator, optical, device-less tracking, etc.), discretisation (amplitude-based, phase-based, multiple frames, etc.), modelling (registration, optical, single-phase gating, etc.), and correction (MOLAR, RTA, MCIR). We present a Python implementation of the framework leveraging Nipype for workflow modelling. Nipype provides a low barrier to entry to using and producing reusable and composable workflows, and can interface with a wide variety of software, including registration packages such as Mirorr and ANTs. We also provide wrappers for many STIR tools, which can be used as a high-level Python interface to STIR, alongside the existing, lower-level Python SWIG interface. The framework is demonstrated on a Hoffman Phantom experiment using a PET-alone motion correction scheme, in which device-less techniques are used for tracking, and PET non-attenuation corrected (NAC) reconstruction are registered to derive motion models for use in a reconstruct-transform-add (RTA) correction scheme. Of the device-less techniques considered, sensitivity,
@@ -67,33 +71,52 @@ centre-of-mass and principal component analysis (PCA), the latter is found to be
      </details>
     </td></tr>
 
-  <tr>  <td>2.</td> <td> 
-     <details><summary><b>Elise Emond, Institute of Nuclear Medicine, University College London (UK)<br />
+  <tr>  <td>4.</td> <td> 
+     <details><summary>Elise Emond, Institute of Nuclear Medicine, University College London (UK)<br />
            Nikos Efthimiou, University of Hull (UK)<br />
-Title: Time-of-Flight within STIR: overview and results of tests using GATE simulations
+Title:  <b>Time-of-Flight within STIR: overview and results of tests using GATE simulations
 </b></summary>
 	<br />Abstract: Time-of-Flight functionality in STIR has been implemented and is currently in final testing phase. The presentation will focus on its specific workflow within STIR and how to unlist and reconstruct listmode data from GATE simulations and from some real scanner acquisitions, with and without Time-of-Flight. A brief explanation on the construction of a scanner in GATE and how to make it consistent with a scanner prototype in STIR will also be provided.
      </details>
     </td></tr>
 
-  <tr>  <td>3.</td> <td> 
-     <details><summary><b>Daniel Deidda, University of Leeds (UK)<br />
+  <tr>  <td>5.</td> <td> 
+     <details><summary>Daniel Deidda, University of Leeds (UK)<br />
 Title: List-Mode Kernelized Expectation Maximization implementation in STIR
 </b></summary>
 	<br />Abstract: Ordered subsets expectation maximization and Bayesian algorithms are implemented into the STIR library and many publication using these algorithm have been published. The recently introduced kernelized expectation maximization (KEM) method has shown promise for different applications. Therefore, a list-mode-hybrid KEM reconstruction algorithm was implemented. In this algorithm there is the option of choosing between a normal Kernel matrix and a hybrid kernel matrix. The proposed algorithm uses both the magnetic resonance image and PET previous estimate to create the kernel matrix.  
       </details>
     </td></tr>
 
-  <tr>  <td>4.</td> <td> 
-     <details><summary><b>Kris Thielemans, Institute of Nuclear Medicine, University College London (UK)<br />
-Title: The CCP PET-MR Synergistic Image Reconstruction Framework (SIRF) and its relation to STIR
+  <tr>  <td>6.</td> <td> 
+     <details><summary>Kris Thielemans, Institute of Nuclear Medicine, University College London (UK)<br />
+Title:  <b>The CCP PET-MR Synergistic Image Reconstruction Framework (SIRF) and its relation to STIR
 </b></summary>
 	<br />Abstract: The UK Collaborative Computational Project for Synergistic PET/MR Reconstruction 
 <a href="http://www.ccppetmr.ac.uk">(CCP PET-MR)</a> has released its first version of SIRF, a new open source platform for dual-modality reconstruction. This talk will give an overview of the project and its software and how it relates to STIR.
      </details>
     </td></tr>
-  <tr>  <td>19.50</td> <td> <b>Open Discussion on future directions of STIR and Closing</b></td> </tr>
+  <tr>  <td>7.</td> <td> 
+     <details><summary>Kris Thielemans, Institute of Nuclear Medicine, University College London (UK)<br />
+Title: <b>Current projects under development and plan for future releases.</b>
+</b></summary>
+	<br />Abstract: Various groups are working on extensions for STIR.
+I will give a brief summary of their aim and status. I will also present
+discuss future releases.
+     </details>
+    </td></tr>
+  <tr>  <td>8.</td> <td> <b>Open Discussion on future directions of STIR and Closing</b></td> </tr>
 </table>
+<p>
+<center>
+  <IMG SRC="STIR_UM_2017_presenters.jpg"  WIDTH="500" BORDER=0 ALT="presenters">
+</center>
+</p>
+<p>
+<center>
+  <IMG SRC="Rotblat1.jpg"  WIDTH="500" BORDER=0 ALT="presenters">
+</center>
+</p>
 
 <h2>Acknowledgements</h2>
 <p>Many thanks to <a href="http://www.ccppetmr.ac.uk">CCP PET-MR</a> for
@@ -115,7 +138,7 @@ sponsoring this event.</p>
 <hr>
 <p>
 <!-- hhmts start -->
-Last modified: 19 September 2017
+Last modified: 06 December 2017
 <!-- hhmts end -->
 </p>
   </body>

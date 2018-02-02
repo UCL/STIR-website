@@ -8,10 +8,12 @@
 <BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
 
 <h1>STIR at the IEEE MIC 2017 Short Course on Image Reconstruction </h1>
-<p>This page is for participants in the <a href="http://www.nss-mic.org/2017/public/ShortCourses.asp#SC7"  target=_blank>Short Course on Image Reconstruction</a> 
+<p>This page is for participants in the <a href="http://www.nss-mic.org/2017/ShortCourses.asp#SC7"  target=_blank>Short Course on Image Reconstruction</a> 
 at the IEEE MIC. It will be updated with extra information before the course.
   <br />
-  <strong>Please refresh the page when you re-visit.</strong> Check the bottom of page for list of updates.</p>
+  <strong>Please refresh the page when you re-visit.</strong> (In some browsers,
+such as FireFox, a normal Page Refresh doesn't work. On windows, right-click on the page, select <i>This Frame</i> and <i>Release Frame</i>).<br />
+Check the bottom of page for list of updates.</p>
 
 
 <!--<p>After reading this page, please fill in <a href="https://www.surveymonkey.com/s/JLS9CPJ"  target=_parent>a 1 minute survey</a>.</p>
@@ -31,7 +33,8 @@ To be able to participate, <strong>students are asked to bring their own laptop 
    recent that the current 3.0. Therefore, <strong>please use the virtual machine.</strong>
    If you really want to do this all yourself, you will need to get <a href=http://github.com/UCL/STIR target="_blank">STIR from
   github</a>, install <a href=http://www.swig.org target="_blank">SWIG</a>, Python, etc and compile STIR with
-Python support. You would then need to get the data and example scripts. Don't try this...
+Python support. You would then need to get the <a href=http://github.com/UCL/STIR-exercises target="_blank">example scripts from
+  github</a>. Don't try this at short notice...
 </p>
 
 <p>
@@ -45,18 +48,18 @@ Python support. You would then need to get the data and example scripts. Don't t
 <h3>Initial download and installation</h3>
 <ol>
   <li>Make sure you have enough free disk-space on your laptop (~10GB for installation).</li>
-  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>.
-    <br /> You do not need to install the Oracle extensions to VirtualBox, although it might come in handy for USB support. 
-    <br />
-       Although other Virtual Machine software might work, we have not tried this and will not be able
-    to help to get this going.
-  </li>
-  <li> If you cannot wait to try STIR, you can download a Virtual Image from <a href="http://www.ccppetmr.ac.uk/downloads" target=_blank>
-   CCP PETMR</a>. This VM contains SIRF (the CCP PETMR software for both PET and MR image reconstruction) but also STIR. After 
-   installing this VM as per the instructions, please type the following in a terminal in the VM (note that this will take quite a while).
+  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>. 
+     <br />There is more information in the
+      <a href="https://github.com/CCPPETMR/CCPPETMR_VM/wiki" target=_blank>installation instructions of the Virtual Machine</a>
+ </li>
+  <li> You can download a Virtual Image from <a href="http://www.ccppetmr.ac.uk/downloads" target=_blank>
+   CCP PETMR</a> (use release 0.9.2). This VM contains SIRF (the CCP PETMR software for both PET and MR image reconstruction) but also STIR. After 
+   following the <a href="https://github.com/CCPPETMR/CCPPETMR_VM/wiki" target=_blank>installation instructions of the Virtual Machine</a>,
+   please type the following in a terminal in the VM (note that this will take quite a while).
      <pre>
        update_VM.sh
        update_VM_to_full_STIR.sh
+       sudo apt-get install ipython ipython-qtconsole python-zmq csh
      </pre>
       <!--https://sourceforge.net/projects/stir/files/VirtualMachine1/ the Sourceforge site</a> (get the Lubuntu-STIR.ova file).
 <br />
@@ -65,9 +68,10 @@ Python support. You would then need to get the data and example scripts. Don't t
       <br />
     <strong><i>Warning</i>: this file is ~1.7GB</strong>. (You can of course download to a USB stick to save space on your laptop).
   </li>
+</ol>
 
 <h2>Next steps</h2>
-<p>  The files will need another update before the course (but with minimal download time).
+<p>  The files might need another update before the course (but with minimal download time).
   In particular, the exercises themselves will still change. Therefore,
   <i>please check this web-page occasionally</i>.
 </p>
@@ -77,14 +81,15 @@ Python support. You would then need to get the data and example scripts. Don't t
 </pre>
 </p>
 <p><strong>We recommend that you get yourself (somewhat) familiar with VirtualBox and Ubuntu and iPython.</strong>
-  Links are provided in the HELP.htm and the exercise document on the Desktop in your VM (<a href="./exercises_document.pdf" target=_blank>click here for an out-dated version of the document).</a><br />
+  Links are provided in the HELP.htm and on the Desktop in your VM and the <a href="https://github.com/UCL/STIR-exercises/blob/master/README.md" target=_blank>README.md.</a> (this is a simple text file in Markdown
+format. It is nicely formatted on the web-site).<br />
   Here is some suggested material:
   <ol><li>If you have never used a Linux/Unix terminal before, have a look at
       <a href=https://help.ubuntu.com/community/UsingTheTerminal target=_blank>this tutorial</a>.
     </li>
     <li><a href=https://docs.python.org/2/tutorial/ target=_blank>The official Python tutorial</a>. Just read Section 1, 3, a bit of 4 and a tiny bit of 6.
     </li>
-    <li><a href=https://github.com/patvarilly/dihub-python-for-data-scientists-2017/blob/master/notebooks/02_Matplotlib.ipynb target=_blank>Examples for matplotlib</a>, the python module that allows you to
+    <li><a href=https://github.com/patvarilly/dsghent-python-for-data-scientists-2016/blob/master/notebooks/02_MatplotlibAndSeaborn.ipynb target=_blank>Examples for matplotlib</a>, the python module that allows you to
       make plots almost like in MATLAB.
     </li>
   </ol>
@@ -95,6 +100,10 @@ Python support. You would then need to get the data and example scripts. Don't t
 <h2>Page update history</h2>
 <ol>
   <li>9 Sep, 10.00 UTC: first version</li>
+  <li>16 Oct, 16.00 UTC: updated links</li>
+  <li>20 Oct, 12:40 UTC: updated instructions for VM</li>
+  <li> 22 Oct, 14:15 UTC: updated link to README.md</li>
+  <li> 23 Oct, 9:00 EDT: updated list of Ubuntu packages to install</li>
 </ol>
 
 <hr>
@@ -104,7 +113,7 @@ Python support. You would then need to get the data and example scripts. Don't t
 
 <!-- Created:  2017 -->
 <!-- hhmts start -->
-Last modified: Sep 9, 2017
+Last modified: Oct 23, 2017
 <!-- hhmts end -->
 
 </BODY>
