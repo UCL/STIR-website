@@ -88,6 +88,8 @@ algorithms. Current projectors are mostly suitable for SPECT. License is BSD-sty
 <li><a href="http://emrecon.uni-muenster.de/" target="_parent">EMrecon</a> is another recently released package, using expectation maximisation. License is unclear</li> 
 <li><a href="http://www.bme.teiath.gr/ni/EnglishVersion/Downloads_files/Downloads.html" target="_parent">QSPECT</a> is a recently released package for SPECT reconstruction using MLEM or OSEM. 
 </li>
+<li><a href="http://www.castor-project.org/">CASToR</a> is an actively developed package intending to handle
+multiple modalities. License is GPL3.</li>
 <li>
 <a href="http://www.cs.toronto.edu/~nrezvani/OSCaR.html" target="_parent">OSCaR</a> (Rezvani et al, 2007) provides a matlab-based implementation of the FDK algorithm for Cone-beam CT  and it is freely available to AAPM members, but it is not clear if non-members can also use it.
 </li>
@@ -138,9 +140,19 @@ STIR is currently selected as the first package to support PET data.
 </ul>
 
 <h2><a name="other_software">Other open source software for PET</a></h2>
-You could read the following review by Roberto de la Prieta
+<p>You could read the following review by Roberto de la Prieta
 <a href="http://www.intechopen.com/books/positron-emission-tomography-current-clinical-and-research-aspects/free-software-for-pet-imaging" title="free-software-for-pet-imaging">Free Software for PET Imaging</a>
-		
+</p>
+
+<p>Some analytic simulators
+<ul>
+<li><a href="https://github.com/CRossSchmidtlein/PETSTEP">PETSTEP</a>, GPL, based on 
+<a href="https://github.com/adityaapte/CERR">CERR</a>.</li>
+<li><a href="http://depts.washington.edu/simset/html/presentations/asimOverview_v2.pdf">ASIM</a>,
+not sure if this is being updated.</li>
+</ul>
+</p>
+
 <hr>
 <p>
 This page is licensed with the 
