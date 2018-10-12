@@ -1,7 +1,0 @@
-AuthType Basic
-AuthUserFile /home/web/htdocs/STIR/pass/.htpasswd
-AuthGroupFile /dev/null
-AuthName "Restricted access for STIR registered users"
-<limit GET>
-require user registered
-</limit>

@@ -10,8 +10,7 @@
 <H2>Introduction</H2>
 <p>The STIR software is protected by international copyright. However,
 we decided to give everyone the opportunity to use and change it, but
-under some licensing restrictions. Moreover, we will ask you to
-fill in a registration form.</p>
+under some licensing restrictions.</p>
 
 Unfortunately, due to historical
 and commercial reasons, the licensing situation is somewhat complex.
@@ -90,26 +89,12 @@ All licenses disclaim all warranty.
 
 
 <H2>Registration</H2>
-If after all this, you still think STIR is for you (I wouldn't know why not), then you have to read the 
-<a href="GPL.htm">GPL</a>, the 
-<a href="LGPL.htm">GNU Lesser GPL</a> and the
- <a href="PARAPETlicense.htm">PARAPET  license</a>. 
-Then click the appropriate button below.
-
-
-
-<CENTER>
-
-  <p> <a href="registration.htm"> <img src = "accept.gif" width="182" height="18" border="0"> 
-    </a> <a href=".."> <img src = "decline.gif" width="183" height="18" border="0"> 
-    </a>   
-
-</CENTER>
-
+There is no longer any need to register for STIR. Just proceed to the 
+<a hlink="../registered">section for registered users</a>.
 <p>
 
 <hr>
 <!-- hhmts start -->
-Last modified: Mon Jun 22 20:18:31 GMT 2009
+Last modified: May 24 2018
 <!-- hhmts end -->
 </BODY>
