@@ -43,14 +43,13 @@ Additional time will be allocated for discussion between the speakers and the au
 snacks will be provided (no free lunch boxes this year, apologies).
 </p>
 
-<!-- <p><center><strong>Please <a href="https://www.eventbrite.co.uk/e/stir-users-developers-meeting-tickets-35842890049"  target=_blank>register here</a>.</strong></center></p>
+<p><center><strong>Please <a href="https://stir.eventcube.io/events/14099/stir-users-developers-meeting/"  target=_blank>register here</a>.</strong></center></p>
 
 
 <p>For up-to-date information please always check the STIR website.</p>
--->
+
 <h2>Agenda</h2>
-<p>See <a href="https://www.eventclass.org/contxt_ieee2018/online-program/session?s=STIR-1">the conference programme page</a> for the agenda with 
-full abstracts.
+<p>See also <a href="https://www.eventclass.org/contxt_ieee2018/online-program/session?s=STIR-1">the conference programme page</a>.
 </p>
 <!--    <p>All presentations are kindly made available by the presenters 
       under the Creative Commons 
@@ -61,6 +60,87 @@ full abstracts.
 <!-- Current confirmed speakers are Daniel Deidda (Leeds), Elise Emond (UCL), Kris Thielemans (UCL).
 -->
 <table style="width:100%">
+      <tr>  <td>1.</td> <td>Opening</td> </tr>
+      <tr>  <td>2.</td> <td> 
+         <details><summary>
+    Han Gyu Kang, Hideaki Tashima, Seong Jong Hong, Taiga Yamaya (Japan)<br />
+    Title:  <b> Image reconstruction of GATE SPECT simulation data using STIR
+    </b></summary>
+    	<br />
+    Abstract: GATE Monte Carlo simulation has been played an important role for the modeling and optimization of SPECT imaging system. However, the image reconstruction of the GATE simulation data was always an issue for many researchers due to the lack of in-house image reconstruction software. The aim of this study is to use STIR for the image reconstruction of GATE SPECT simulation projection data.
+         </details>
+        </td></tr>      <tr>  <td>3.</td> <td> 
+         <details><summary>
+    Hunor Kertesz and Jacobo Cal-Gonzalez<br />
+    Center for Medical Physics and Biomedical Engineering, Medical University of Vienna, Vienna, Austria <br />
+    Title:  <b>A GATE simulation to image reconstruction with STIR toolbox
+    </b></summary>
+    	<br />
+    Abstract: GATE (GEANT4) simulations are frequently used for modeling PET scanners for the development of new systems and for image reconstruction purposes. In order to perform image reconstruction using the Software for Tomographic Image Reconstruction (STIR) the collected simulated data needs to preprocessed and the necessary correction factors needs to be created in an adequate way. In the past the solution for the conversion from *.root to sinogram was given by the code developed by R. Schmidtlein and S. Nehmeh, which was further developed by N. Efthimiou. These applications have the limitations of only creating the sinograms, however the additive factors (scatter and random correction) and the multiplicative factor (attenuation and normalization correction) which are essential for a correct image reconstruction are not calculated. In order to overcome this limitation we propose a new application developed using the Qt framework which contains an automatic workflow from the simulated data to image reconstruction. The application has three main parts: sinogram creation, data preprocessing and writing the input parameter file for the image reconstruction. The sinograms are created with the use of the program developed by R. Schmidtlein and S. Nehmeh. The steps for the preprocessing chain (span conversion, conversion to STIR format, creating additive and multiplicative factors) are developed in Matlab and are integrated in the Qt framework as executables. The attenuation factors are computed from the attenuation map of the simulated phantom. Moreover the built in features of STIR (paste segments, projector) are used. Finally, the inputs for parameter file needed for the image reconstruction can be created directly from the user interface. The toolbox was developed specifically for the Siemens Biograph TruePoint TrueView PET/CT and Siemens Biograph mMR PET/MRI. All the integrated steps can be used in a standalone and in a fully automatic way. Full integration of the Matlab scripts into the Qt framework as *.cpp codes in under development.
+         </details>
+        </td></tr>    
+        </td></tr>      <tr>  <td>4.</td> <td> 
+         <details><summary>
+    J. Paredes-Pacheco, J. Silva-Rodriguez, A. Ninerola-Baizan, F. J. Lopez-Gonzalez, E. Alonso- Albella, R. Sala-Llonch, D. Ros, N. Roe-Vellve, P. Aguiar<br />
+    University of Santiago de Compostela, Molecular Imaging and Medical Physics Group, Health Research Institute of Santiago de Compostela, Santiago de Compostela, Spain <br />
+    Title:  <b> The SimPET project: A web-based platform for realistic simulation of brain PET studies based on SimSET and STIR libraries
+    </b></summary>
+    	<br />
+    Abstract: Monte Carlo (MC) simulation techniques are the gold standard for the evaluation of PET image quantification methods. The currently available software tools for MC simulation of emission tomography studies require extensive knowledge of the code, as well as a specific validation for each PET scanner before being used. Moreover, realistic digital models of the spatial distribution of the radiotracer are required for simulation. The aim of this work was to develop an open-source and user-friendly web-based platform, SimPET WEB, to allow the automatic generation of realistic phantoms for brain PET studies and their simulation in well validated MC models of commercial PET scanners. It is based on SimSET, a dedicated MC code for nuclear medicine, and STIR, a tomographic reconstruction library. This work is organized in three parts: the generation of realistic digital phantoms from real FDG-PET studies, the validation of MC simulation methods and reconstruction algorithms in three commercial PET scanners and the implementation of all this processes in a web-based interface. An iterative simulation-reconstruction process was used to obtain the brain activity maps, on the basis of the MR and CT studies of 20 healthy controls, using the functional information from their PET images. The simulation and reconstruction process was jointly validated for three scanners: GE PET Advance, GE Discovery STE 4 PET/CT and Siemens mCT PET/CT. Simulated images for the NEMA tests for each device showed values for resolution, uniformity and contrast recovery in agreement with the experimental results of each scanner. Simulated images from the digital phantoms were reconstructed for the three modeled devices, showing better contrast and definition for the more advanced scanners. Finally, a free and user-friendly web platform was built allowing the user to upload PET, CT and MR images, to generate realistic maps based on these studies, and to carry out simulations based on the obtained maps.         </details>
+        </td></tr>        
+      <tr>  <td>5.</td> <td> 
+         <details><summary> Ashley Gillman, Richard Brown, David Atkinson, Ben Thomas, Evgueni Ovtchinni, Jason Dowling, Stephen Rose, Nicholas Dowson, Kris Thielemans<br />
+    Title: Implementing a patient-based orientation system within the Software for Tomographic Image Reconstruction
+    </b></summary>
+    	<br />Abstract: The most common data format for storage and transport of clinical imaging data is the DICOM standard. This standard specifies a patient-based coordinate system, such that the image will be oriented with respect to the patient physiology. Currently, STIR uses a gantry-based coordinate system that does not consider patient positioning, and has a different definition to the vendor of where the frame of reference is located. This can make it difficult to compare STIR and vendor reconstructions, and to incorporate information from vendor images, such as attenuation images, motion estimates and anatomical priors. Work has begun on implementing an alternative coordinate system within STIR that is patient-based, and allows STIR's frame of reference to be consistent with the vendor's, and considers the bed position. Changes are required to many disparate classes within STIR, including acquisition and image containers, projectors, input/output classes and utilities. This presentation outlines the motivations for change, progress on the changes, and highlights resulting backwards-incompatible changes.  
+          </details>
+        </td></tr>    
+      <tr>  <td>6.</td> <td> 
+         <details><summary>Richard Brown, Benjamin A. Thomas, Alaleh Rashidnasab, Kjell Erlandsson, Evgueni Ovtchinnikov, Edoardo Pasca, Andrew Reader, Julian Matthews, Charalampos Tsoumpas and Kris Thielemans (UK)<br />
+    Title:  <b>Motion-corrected direct parametric reconstructions in STIR
+    </b></summary>
+    	<br />Abstract: Recent development has been carried out for direct motion-corrected parametric reconstructions in STIR. These developments bring about a somewhat revival of some of STIR's old motion code. Concretely, the user is now able to enter displacement fields for each time frame used during the reconstruction. The algorithm, POSMAPOSL (a parametric version of OSMAPOSL), then uses Patlak analysis to perform the reconstruction. To enable motion correction, the projectors have been modified such that each time frame can be transformed before the forward projection and the adjoint transformation is used after the back projection. Furthermore, improvements have also been made to STIR's IO. It can now read and write parametric and dynamic images, as well as reading displacement images saved in the NIfTI format. Lastly, some related executables have been added. These executables enable the user to extract static frames from dynamic images, postfilter dynamic images, construct parametric images from separate components, perform the non-rigid B-spline transformation of an image.
+         </details>
+        </td></tr>
+      <tr>  <td>7.</td> <td> 
+         <details><summary>Nikos Efthimiou, University of Hull (UK)<br />
+    Title:  <b> Savvy - STIR visualisation application
+    </b></summary>
+    	<br />Abstract:
+Proper visualisation of PET data might be crucial in many applications, like the design of new scanners. 
+Currently, STIR provides a non-interactive, visualisation system, based on X11. 
+While, manufacturers (GE and Siemens) provide tools for viewing data they are not directly compatible with STIR sinograms.
+We have developed an application for viewing and processing data and images using the STIR IO and various functions in the STIR framework. 
+The application is build on QT5 / C++, using QWT for the core visualisation.
+The application allows interaction with the data, such ROI selections and editing. 
+In addition, is dynamically extendible, either through python scripts or custom QT plugins.
+See <a href=https://youtu.be/OuMblfBKzws target=_blank>here for a demo</a>.
+         </details>
+        </td></tr>
+
+      <tr>  <td>8.</td> <td> 
+         <details><summary>Nikos Efthimiou, University of Hull (UK)<br />
+    Title:  <b> Calculation of component based normalisation sinogram in STIR
+    </b></summary>
+    	<br />Abstract:
+Component based normalization is a well-established method to calculate correction factors for unbiased and reliable PET reconstruction. Several methods have been studied and validated for cylindrical PET scanners. In this work we adapted a method already presented for cylindrical scanners to rotating dual head PET scanners. The model included corrections for detector efficiency, axial and transaxial geometric effects, crystal interference and attenuation corrections. Results from a simulated realistic dual head PET showed that the adaptation is valid. The images are significantly improved in terms of homogeneity, resolution and background contribution.
+         </details>
+        </td></tr>
+      <tr>  <td>9.</td> <td> 
+         <details><summary>Kris Thielemans, Institute of Nuclear Medicine, University College London (UK)<br />
+    Title: <b> Future outlook on STIR and SIRF </b>
+    </b></summary>
+    	<br />Abstract: In this talk, I will give an overview of upcoming 
+features in STIR and plans for future releases. In addition, I will give
+an update on SIRF, the open source platform for dual-modality reconstruction
+from the UK Collaborative Computational Project for Synergistic PET/MR Reconstruction 
+    <a href="http://www.ccppetmr.ac.uk" target=_blank>(CCP PET-MR)</a>, which uses STIR
+for PET reconstruction.
+         </details>
+        </td></tr>
+      <tr>  <td>9.</td> <td> <b>Discussion and Closing</b></td> </tr>
+    </table>
+
 <!--
 <p>
 <center>
