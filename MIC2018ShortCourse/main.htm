@@ -24,14 +24,14 @@ Check the bottom of page for list of updates.</p>
 To be able to participate, <strong>students are asked to bring their own laptop if possible</strong>.
 </p>
 
-<p>We will provide a <a href="https://en.wikipedia.org/wiki/Virtual_machine" target=_blank>Virtual Machine</a>
+<p>We provide a <a href="https://en.wikipedia.org/wiki/Virtual_machine" target=_blank>Virtual Machine</a>
    with everything preinstalled for the course. Please <strong>follow
     the installation instructions below to get this on your laptop
-    <i>before the conference</i></strong> (we will be available 30 minutes before the course to help with installation problems and will have some USB sticks with us as well).</p>
+    <i>before the conference</i></strong> (we will be available 15 minutes before the course to help with installation problems and will have some USB sticks with us as well).</p>
 <p>We will also attempt to use cloud-based access (thanks to Ben Thomas, UCL), but this will
 clearly depend on Internet access, so we strongly suggest to download the VM before the course.</p>
   
-<p>Please note that the STIR version that we will be using is more
+<p>Please note that the STIR version that we will be using is much more
    recent than the current official 3.0. Therefore, <strong>please use the virtual machine.</strong>
    If you really want to do this all yourself, you will need to get <a href=http://github.com/UCL/STIR target="_blank">STIR from
   github</a>, install <a href=http://www.swig.org target="_blank">SWIG</a>, Python, etc and compile STIR with
@@ -47,13 +47,28 @@ Python support. You would then need to get the <a href=http://github.com/UCL/STI
 <p>If you have any problems, please first re-check this web-page. If you cannot solve your
   issue, please email <tt>k dot thielemans at ucl dot ac dot uk</tt>.
 </p>
+<p>We are using a VM based on a framework developed by the 
+<a href="http://www.ccppetmr.ac.uk" target=_blank>CCP PETMR project</a>, but 
+with tweaks for the STIR exercises.
+</p>
 <h3>Initial download and installation</h3>
 <ol>
   <li>Make sure you have enough free disk-space on your laptop (~10GB for installation).</li>
-  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>. 
-     <br />There is more information in the
-      <a href="https://github.com/CCPPETMR/CCPPETMR_VM/wiki" target=_blank>installation instructions of the Virtual Machine</a>
+  <li>Install <a href=https://www.virtualbox.org/ target="_blank">VirtualBox</a>. <strong>Please note that this will require administrator permissions</strong>.   We recommend to use VirtualBox 5.2.18, although different versions should work
+   (but you might have trouble with the VirtualBox Guest Additions, see the
+    installation instructions further on).
+  </li>
+  <li>Download the STIR exercises Virtual Machine from
+        <a href="https://liveuclac-my.sharepoint.com/:u:/g/personal/rmhathi_ucl_ac_uk/EboGDYWeRAdIm92JEL3o8tYBthBFA7n7HyQxAztKc0V8Gw?e=FLgnMh" target=_blank>here</a>.
+      <br />
+    <strong><i>Warning</i>: this file is ~2GB</strong>. (You can of course download to a USB stick to save space on your laptop).
+  </li>
+  <li>Install the VM, <a href="https://github.com/CCPPETMR/CCPPETMR_VM/blob/master/INSTALL.md" target=_blank>instructions are here</a> (ignore links to the CCP PETMR download page and any mention of Gadgetron or SIRF)
+  </li>
+  <li>Check-out the 
+      <a href="https://github.com/CCPPETMR/CCPPETMR_VM/wiki/Basic-usage" target=_blank>basic instructions on how to use the VM</a>
  </li>
+<!--
   <li> The actual VM is still in preparation. However, you could already download a Virtual Image from <a href="http://www.ccppetmr.ac.uk/downloads" target=_blank>
    CCP PETMR</a> (use release 1.1.1). This VM contains SIRF (the CCP PETMR software for both PET and MR image reconstruction) but also STIR. After 
    following the <a href="https://github.com/CCPPETMR/CCPPETMR_VM/wiki" target=_blank>installation instructions of the Virtual Machine</a>,
@@ -63,13 +78,12 @@ Python support. You would then need to get the <a href=http://github.com/UCL/STI
        update_VM_to_full_STIR.sh
        sudo apt-get install ipython ipython-qtconsole python-zmq csh
      </pre>
+-->
       <!--https://sourceforge.net/projects/stir/files/VirtualMachine1/ the Sourceforge site</a> (get the Lubuntu-STIR.ova file).
 <br />
     Please be careful on Sourceforge. Do not press any attractive Download buttons as they are all ads.
+</li>
 -->
-      <br />
-    <strong><i>Warning</i>: this file is ~1.7GB</strong>. (You can of course download to a USB stick to save space on your laptop).
-  </li>
 </ol>
 
 <h2>Next steps</h2>
@@ -83,7 +97,7 @@ Python support. You would then need to get the <a href=http://github.com/UCL/STI
 </pre>
 </p>
 <p><strong>We recommend that you get yourself (somewhat) familiar with VirtualBox and Ubuntu and iPython.</strong>
-  Links are provided in the HELP.htm and on the Desktop in your VM and the <a href="https://github.com/UCL/STIR-exercises/blob/master/README.md" target=_blank>README.md.</a> (this is a simple text file in Markdown
+  Links are provided in the <a href="https://github.com/UCL/STIR-exercises/blob/master/README.md" target=_blank>README.md.</a> (this is a simple text file in Markdown
 format. It is nicely formatted on the web-site).<br />
   Here is some suggested material:
   <ol><li>If you have never used a Linux/Unix terminal before, have a look at
@@ -96,12 +110,14 @@ format. It is nicely formatted on the web-site).<br />
     </li>
   </ol>
   It would also be useful to check some of the STIR <a href=../documentation>documentation on the STIR web-site</a>.
-  You could even try to run some of the exercises already.
+  You could even try to run some of the exercises already. Please check
+  <a href="https://github.com/UCL/STIR-exercises/blob/master/README.md" target=_blank>the README.md</a> for instructions.
   </p>
 
 <h2>Page update history</h2>
 <ol>
   <li>12 Oct, 07.00 UTC: first version</li>
+  <li>7 Nov, 03:40 UTC: added links to the VM and instructions</li>
 </ol>
 
 <hr>
@@ -109,7 +125,7 @@ format. It is nicely formatted on the web-site).<br />
 
 <!-- Created:  2018 -->
 <!-- hhmts start -->
-Last modified: Oct 12, 2018
+Last modified: Nov 7, 2018
 <!-- hhmts end -->
 
 </BODY>
