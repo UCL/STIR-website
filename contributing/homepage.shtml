@@ -36,9 +36,9 @@ your standing, kudos, and maybe even improve your chances for your dream job...<
 <p>It doesn't really matter. STIR is Open Source and comes with an appropriate license (see 
 <a href="../registration">our registration page</a> and the LICENSE.txt in your distribution). That license tells you
 what you can do with the STIR source code and documentation.<br /> 
-<small>Currently, copyright to
-parts of STIR is currently mostly owned by the original PARAPET partners, Hammersmith
-Imanet Ltd and/or General Electric. </small>
+<small>In the past, copyright to
+parts of STIR was mostly owned by the original PARAPET partners, Hammersmith
+Imanet Ltd and/or General Electric. This is still a large (but decreasing) fraction of the code.</small>
 </p>
 
 <h3>But what's the deal then with ASC?</h3>
@@ -70,10 +70,11 @@ entry on the STIR Wiki</a> on how to do this.</li>
 
 <ul>
 <li><em>Submitting bug reports</em><br />
-If you found a problem in STIR, and checked the <a href= ../documentation/bugs.htm>list of known problems</a>,
-please report it via the stir-users mailing list. Please be as complete as you can:
+If you found a problem in STIR, and checked the <a href= https://github.com/UCL/STIR/issues>list of known problems</a>,
+please report it via the <a href=https://github.com/UCL/STIR/issues>issue tracker</a> or
+via the stir-users mailing list. Please be as complete as you can:
 STIR version, OS, compiler version, build mechanism, which libraries are you using, which STIR executable did
-you run and how (give parameter files etc). Of course, if you can do some debugging yourself, that'd be great.
+you run and how (give parameter files etc), or Python script etc. Of course, if you can do some debugging yourself, that'd be great.
 </li>
 <li><em>Contributing to the WIKI</em><br />
 The  <a href="../wiki/" target="_parent">STIR Wiki</a>
@@ -107,16 +108,18 @@ things above is just as important, so please <strong>help anyway you can</strong
 <p>You will need to 
 discuss your contribution on the mailing lists and provide a
 document specifying the license that the copyright owner (usually you or
-your employer) wants to use for distribution. This license has to be the LGPL
-(or GPL if you have excellent reasons).</p>
+your employer) wants to use for distribution. This license has to be the
+<a href=https://www.apache.org/licenses/LICENSE-2.0>Apache 2.0</a>
+license.</p>
 </div> 
 <p>Some more info follows now.</p>
 
 <h3>Who accepts the contribution and how?</h3>
 <p>STIR is currently run by volunteers who you will have to convince by
 <a href="mailto:stir-devel@lists.sourceforge.net">sending email to the stir-devel list</a>. 
-However, currently releases
-are prepared by <i>ASC</i>, so the final arbiter is Kris Thielemans.
+However, the final arbiter is currently Kris Thielemans.
+
+You should then create a <a href=https://github.com/UCL/STIR/issues>pull request</a>.
 
 Of course, your chances of getting your contribution included will depend on how useful it is,
 how much this was discussed
@@ -143,11 +146,11 @@ the document.</p>
 <h4>License</h4>
 <p>STIR has grown over the years by contributions from different parties. 
 Nearly all these contributions were released under the Lesser GNU Public License (LGPL)
-version 2.1 or the GNU Public License (GPL) version 2. A very brief discussion of these licenses is
-given on <a href="../registration">our registration page</a>, but these licenses require any 
-distributed modifications 
-(and, in the case of GPL, additions) to use the same license. Therefore, you will have 
-to license your contributions under one of these two licenses.</p>
+version 2.1 or the GNU Public License (GPL) version 2. However, we have since
+received agreement from nearly all contributors to switch to the
+<a href=https://www.apache.org/licenses/LICENSE-2.0>Apache 2.0</a>
+license, which we will use in the future. Therefore, you will have
+to license your contributions under this license.</p>
 
 <p>However, it is possible that the license used for STIR changes in the future. This will depend
 on agreement of all copyright holders. To make this easier, we ask you to allow us to
@@ -163,8 +166,7 @@ In many cases, that would be your employer or university (but not always). The s
 depends on which country you live in and of course your contract terms. Once you have that sorted out,
 please prepare the following letter:</p>
 <ul>
-<li><a href="STIR_LGPL_letter_v2.doc">Template letter in Word format</a></li>
-<li><a href="STIR_LGPL_letter_v2.pdf">Template letter in PDF format</a></li>
+<li><a href="STIR_AL2_letter_v8.docx">Template letter in Word format</a></li>
 </ul>
 <p>Please discuss details by sending email to <a href="mailto:stir@asc.uk.com?subject=STIR contribution">stir@asc.uk.com<a>.
 </p>
@@ -175,7 +177,7 @@ by <a href="mailto:stir-devel@lists.sourceforge.net">sending email to the stir-d
 
 <hr>
 <!-- hhmts start -->
-Last modified: Tue Jun 24 22:50:35 BST 2014
+Last modified: Wed Jan 2 17:30 GMT 2019
 <!-- hhmts end -->
 
 </BODY>
