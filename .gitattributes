@@ -8,3 +8,5 @@
 *.pdf   -text -diff
 *.eps   -text -diff
 *.zip   -text -diff
+*.doc   -text -diff
+*.docx   -text -diff
