@@ -65,7 +65,6 @@ install_manifest.txt
 *.suo
 *.user
 *.sln.docstates
-*.pdf
 *.manifest
 *.exp
 
