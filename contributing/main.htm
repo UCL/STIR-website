@@ -1,0 +1,184 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Contributing to STIR</TITLE>
+</HEAD>
+<BODY bgcolor="fdffe6" text="000000" link="0000ff" vlink="800080">
+
+<P ALIGN="CENTER"><font size="6">Contributing to STIR</font></P>
+<!--
+<p><strong><font size+=3 color=red> Update in progress. Do not download any files.
+Links might not work!<p>
+</font></strong>
+-->
+
+<p>This page attempts to <a href="#motivation">motivate you</a> to contribute to the 
+STIR Open Source project and to list <a href="#how">a few
+options to help</a>, including of course <a href="#contributing_code">contributing code</a>.</p>
+
+<h2><a name="motivation">Why would you contribute?</a></h2>
+<p>
+This could be rather obvious, but here are a few reasons:
+<ul>
+<li>Hopefully, STIR has been useful to you. As you got it for free, it makes sense to give something back.</li>
+<li>There's no-one funding STIR at present. Therefore,
+if STIR needs to improve/grow, it can only happen via its users. 
+</li>
+<li>STIR is quite well-known in our relatively small community. If you help out, you will increase
+your standing, kudos, and maybe even improve your chances for your dream job...</li>
+<li>Making your own code available in STIR could increase your citation rate.</li>
+<li>Just because you are a nice person.</li>
+</ul>
+</p>
+
+<h3>But who owns STIR?</h3> 
+<p>It doesn't really matter. STIR is Open Source and comes with an appropriate license (see 
+<a href="../registration">our registration page</a> and the LICENSE.txt in your distribution). That license tells you
+what you can do with the STIR source code and documentation.<br /> 
+<small>In the past, copyright to
+parts of STIR was mostly owned by the original PARAPET partners, Hammersmith
+Imanet Ltd and/or General Electric. This is still a large (but decreasing) fraction of the code.</small>
+</p>
+
+<h3>But what's the deal then with ASC?</h3>
+<p>Kris Thielemans set-up <a href="http://asc.uk.com"  target="_parent">Algorithms and Consulting Ltd (ASC)</a> as an independent company. 
+It does not (cannot) own STIR, but it
+can provide support (for a fee), accept donations, apply for grants etc.
+Hopefully, this will allow ASC to contribute to STIR in other ways (e.g.
+training, hosting of web-services...).  Does that mean that ASC would
+benefit from your contributions? Yes, but so does everyone else!</p>
+
+<h2><a name="how">How can you help?</a></h2>
+<p>Here are a few ways how everyone can help:</p>
+
+<h3>Easy:</h3>
+<ul>
+<li><em>Refer to STIR publications</em> (see the <a href="../links/publications.shtml">publications section</a>).</li>
+<li><em>Helping out on the mailing lists</em><br />
+It would be great if you could help answer other people's questions on the mailing lists. It 
+saves time for the main developers, but also of course gives you community kudos.
+</li>
+<li><em>Help us to complete the list of publications that use STIR</em><br />
+For recognition, but (importantly) also for grant applications, it's essential to have a list of 
+publications that use STIR. 
+See the <a href="../wiki/index.php?title=Publications_that_use_STIR" target="_parent">
+entry on the STIR Wiki</a> on how to do this.</li>
+</ul>
+
+<h3>Slightly trickier:</h3>
+
+<ul>
+<li><em>Submitting bug reports</em><br />
+If you found a problem in STIR, and checked the <a href= https://github.com/UCL/STIR/issues>list of known problems</a>,
+please report it via the <a href=https://github.com/UCL/STIR/issues>issue tracker</a> or
+via the stir-users mailing list. Please be as complete as you can:
+STIR version, OS, compiler version, build mechanism, which libraries are you using, which STIR executable did
+you run and how (give parameter files etc), or Python script etc. Of course, if you can do some debugging yourself, that'd be great.
+</li>
+<li><em>Contributing to the WIKI</em><br />
+The  <a href="../wiki/" target="_parent">STIR Wiki</a>
+is a (slowly) growing repository of information. You can help by improving/expanding it, e.g. by
+contributing a tutorial using something that you achieved as an example.</li>
+
+</li>
+</ul>
+
+<h3>More involved:</h3>
+<ul>
+<li><em>Contribute your code</em> </li>
+<li><em>Improve the documentation</em></li>
+<li><em>Help redesign the web-site</em></li>
+<li><em>Suggest/submit grant applications</em></li>
+</ul>
+
+<p>
+Code and documentation contributions need further information but 
+<strong>remember</strong> that doing the simple
+things above is just as important, so please <strong>help anyway you can</strong>!
+</p>
+
+
+
+<h2><a name="contributing_code">Contributing code and/or documentation</a></h2>
+<p>Great! Now we have to discuss how to get your code accepted, and issues such as copyright and licensing. </p>
+
+<div style="border:medium double;background-color: tan; color:black">
+<p><large>Summary</large> </p>
+<p>You will need to 
+discuss your contribution on the mailing lists and provide a
+document specifying the license that the copyright owner (usually you or
+your employer) wants to use for distribution. This license has to be the
+<a href=https://www.apache.org/licenses/LICENSE-2.0>Apache 2.0</a>
+license.</p>
+</div> 
+<p>Some more info follows now.</p>
+
+<h3>Who accepts the contribution and how?</h3>
+<p>STIR is currently run by volunteers who you will have to convince by
+<a href="mailto:stir-devel@lists.sourceforge.net">sending email to the stir-devel list</a>. 
+However, the final arbiter is currently Kris Thielemans.
+
+You should then create a <a href=https://github.com/UCL/STIR/issues>pull request</a>.
+
+Of course, your chances of getting your contribution included will depend on how useful it is,
+how much this was discussed
+on the mailing list, what documentation/testing you make available, if you
+made changes to other files in STIR etc.
+<small>If it happens that
+nobody volunteers to merge your changes with STIR, you can always
+make your changes available elsewhere of course.</small>
+</p>
+
+<h3>Legal issues</h3>
+
+<h4>Copyright</h4>
+<p>As soon as you write software (or documentation), it is protected by
+copyright law, which essentially means that the copyright owner can (in
+principle) prevent anyone to copy the work, or allow to do this under some
+licensing conditions. In some countries, the author of the software is the
+copyright owner, but in other countries (e.g. UK) it is your employer (this
+will clearly also depend on your contract). This means that 
+<strong>you (probably) need to ask your employer/university permission to be able 
+to add your work to STIR</strong>. You will need to confirm the copyright ownership in
+the document.</p>
+
+<h4>License</h4>
+<p>STIR has grown over the years by contributions from different parties. 
+Nearly all these contributions were released under the Lesser GNU Public License (LGPL)
+version 2.1 or the GNU Public License (GPL) version 2. However, we have since
+received agreement from nearly all contributors to switch to the
+<a href=https://www.apache.org/licenses/LICENSE-2.0>Apache 2.0</a>
+license, which we will use in the future. Therefore, you will have
+to license your contributions under this license.</p>
+
+<p>However, it is possible that the license used for STIR changes in the future. This will depend
+on agreement of all copyright holders. To make this easier, we ask you to allow us to
+relicense the code to another Open Source license.
+</p>
+
+<h4>Paperwork</h4>
+<p>STIR currently has excellent information on ownership and licensing and we want to keep it that way. 
+Therefore, you will need to provide an officially signed
+document to confirm copyright ownership and licensing agreement.
+One of the hardest parts can be to decide who owns the copyright to the software that you wrote.
+In many cases, that would be your employer or university (but not always). The situation
+depends on which country you live in and of course your contract terms. Once you have that sorted out,
+please prepare the following letter:</p>
+<ul>
+<li><a href="STIR_AL2_letter_v8.docx">Template letter in Word format</a></li>
+</ul>
+<p>Please discuss details by sending email to <a href="mailto:stir@asc.uk.com?subject=STIR contribution">stir@asc.uk.com<a>.
+</p>
+
+<p>Any comments on this web-page or on the procedure? Please discuss 
+by <a href="mailto:stir-devel@lists.sourceforge.net">sending email to the stir-devel list</a>.</p>
+<hr> 
+
+<hr>
+<!-- hhmts start -->
+Last modified: Wed Jan 2 17:30 GMT 2019
+<!-- hhmts end -->
+
+</BODY>
+</HTML>
