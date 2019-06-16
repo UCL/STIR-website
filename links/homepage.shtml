@@ -73,8 +73,8 @@ Deliverable 5.6b: Evaluation of analytic reconstructions</a> as PDF. Note: writt
 <p>There are a number of other software packages available for PET/SPECT/CT image 
 reconstruction. This is an (incomplete?) overview with some subjective comments.</p>
 <ul>
-<li>Fessler and his students have implemented an 
-<a href="http://www.eecs.umich.edu/~fessler/code/" target="_parent">Image Reconstruction Toolbox</a>
+<li>Jeff Fessler and his students have implemented the
+<a href="http://www.eecs.umich.edu/~fessler/code/" target="_parent">Michigan Image Reconstruction Toolbox</a>
   as a set of open source matlab  routines for image reconstruction and processing. In addition, Fessler has also developed ASPIRE. However, this is distributed via executable files and its license allows non-commercial usage only. 
 </li>
 <li><a href="http://sourceforge.net/projects/tirius/" target="_parent">TIRIUS</a> 
@@ -105,16 +105,20 @@ web-site does contain a lot of dead links.
 <a href="http://www.openrtk.org" target="_parent">OpenRTK</a> is a recent reconstruction 
 package for (cone-beam) CT, based on ITK. License is Apache 2.0.
 </li>
-<li><a href="https://code.google.com/p/astra-toolbox/" target=_parent">Astra-Toolbox</a>
+<li><a href="https://www.astra-toolbox.com/" target=_parent">Astra-Toolbox</a>
 uses <quote> high-performance GPU primitives for 2D and 3D tomography. It supports 2D parallel and fan beam geometries, and 3D parallel and cone beam. All of them have highly flexible source/detector positioning.
 A large number of 2D and 3D algorithms are available, including FBP, SIRT, SART, CGLS.</quote> License is GPL3.
+</li>
+<li>
+<a href="https://github.com/CERN/TIGRE" target=_"_parent">TIGRE</a> is an open-source toolbox for fast and accurate 3D tomographic reconstruction for any geometry. Its focus is on iterative algorithms for improved image quality that have all been optimized to run on GPUs.
+It has a MATLAB and Python interface. It is licensed under the BSD.
 </li>
 <li><a href="https://bitbucket.org/dvolgyes/troll" target="_parent">Troll</a>: a
 pyCuda based toolkit for PET, later (now?) SPECT and CT. In early development stage (2013). License is GPL3.
 </li>
 <li><a href="http://ccpforge.cse.rl.ac.uk/gf/project/ccpi_itr/frs/" target="_parent">regularization techniques for iterative reconstruction</a> for matlab (using mex) developed as part of the <a href="http://www.ccpi.ac.uk/">Collaborative Computational Project in Tomographic Imaging</a> which concentrates on CT. Their reconstruction software is planned to become public in 2015 or so.
 </li>
-<li><a href="software https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
+<li><a href="https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
 the ANL. License is BSD-style.</li>
 </ul>
 
