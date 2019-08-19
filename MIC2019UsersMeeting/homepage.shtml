@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>STIR User's and Developer's Meeting MIC 2019</title>
+  </head>
+
+<!-- <frameset rows="145,*">
+  <frame name="banner" scrolling="no" noresize target="contents" src="parapet_ba
+nner.htm">
+-->
+  <frameset cols="200,871*" rows="*">
+    <frame name="contents" target="main" src="../contents.htm">
+    <frame name="main" src="main.htm">
+  </frameset>
+  <noframes>
+  <body>
+  <p>This page uses frames, but your browser doesn't support them.</p>
+  </body>
+  </noframes>
+</frameset>
+</html>
