@@ -1,17 +1,19 @@
 <map id="stir::ArrayFunctionObject_2ArgumentImplementation&lt; num_dimensions, elemT &gt;" name="stir::ArrayFunctionObject_2ArgumentImplementation&lt; num_dimensions, elemT &gt;">
-<area shape="rect" id="node5" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i.e. potentially non&#45;symmetric) kernel using DFTs. " alt="" coords="633,85,866,141"/>
-<area shape="rect" id="node15" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 2, elemT \&gt;" alt="" coords="659,165,840,221"/>
-<area shape="rect" id="node17" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; num_dimensions, float \&gt;" alt="" coords="659,5,840,61"/>
-<area shape="rect" id="node21" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 1, elemT \&gt;" alt="" coords="659,245,840,301"/>
-<area shape="rect" id="node27" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="659,351,840,407"/>
-<area shape="rect" id="node2" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="6,173,191,214"/>
-<area shape="rect" id="node7" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 1, float \&gt;" alt="" coords="983,90,1163,131"/>
-<area shape="rect" id="node11" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="983,15,1163,57"/>
-<area shape="rect" id="node9" href="$classstir_1_1RampFilter.html" title="The ramp filter used for (2D) FBP. " alt="" coords="1224,97,1333,124"/>
-<area shape="rect" id="node13" href="$classstir_1_1ColsherFilter.html" title="This class contains the Colsher filter used for 3D&#45;PET reconstruction. " alt="" coords="1219,23,1338,49"/>
-<area shape="rect" id="node23" href="$classstir_1_1ArrayFilter1DUsingConvolution.html" title="This class implements convolution of a 1D array with an arbitrary (i.e. potentially non&#45;symmetric) ke..." alt="" coords="996,253,1151,294"/>
-<area shape="rect" id="node25" href="$classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html" title="This class implements convolution of a 1D array with a symmetric kernel. " alt="" coords="979,173,1168,229"/>
-<area shape="rect" id="node29" href="$classstir_1_1MaximalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="993,318,1153,359"/>
-<area shape="rect" id="node31" href="$classstir_1_1MedianArrayFilter3D.html" title="Implements median filtering on 3D arrays. " alt="" coords="996,383,1151,425"/>
-<area shape="rect" id="node33" href="$classstir_1_1MinimalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="995,449,1152,490"/>
+<area shape="rect" id="node3" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i.e. potentially non&#45;symmetric) kernel using DFTs. " alt="" coords="709,85,968,141"/>
+<area shape="rect" id="node8" href="$classstir_1_1SeparableArrayFunctionObject2.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable. " alt="" coords="736,165,941,221"/>
+<area shape="rect" id="node9" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 2, elemT \&gt;" alt="" coords="736,245,941,301"/>
+<area shape="rect" id="node10" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; num_dimensions, float \&gt;" alt="" coords="736,5,941,61"/>
+<area shape="rect" id="node11" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 1, elemT \&gt;" alt="" coords="736,325,941,381"/>
+<area shape="rect" id="node14" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, float \&gt;" alt="" coords="736,405,941,461"/>
+<area shape="rect" id="node15" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="736,485,941,541"/>
+<area shape="rect" id="node2" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="5,253,217,294"/>
+<area shape="rect" id="node4" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 1, float \&gt;" alt="" coords="1101,98,1303,139"/>
+<area shape="rect" id="node6" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="1101,9,1303,50"/>
+<area shape="rect" id="node5" href="$classstir_1_1RampFilter.html" title="The ramp filter used for (2D) FBP. " alt="" coords="1363,105,1484,132"/>
+<area shape="rect" id="node7" href="$classstir_1_1ColsherFilter.html" title="This class contains the Colsher filter used for 3D&#45;PET reconstruction. " alt="" coords="1357,16,1489,43"/>
+<area shape="rect" id="node12" href="$classstir_1_1ArrayFilter1DUsingConvolution.html" title="This class implements convolution of a 1D array with an arbitrary (i.e. potentially non&#45;symmetric) ke..." alt="" coords="1115,347,1289,389"/>
+<area shape="rect" id="node13" href="$classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html" title="This class implements convolution of a 1D array with a symmetric kernel. " alt="" coords="1096,267,1308,323"/>
+<area shape="rect" id="node16" href="$classstir_1_1MaximalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="1111,427,1293,469"/>
+<area shape="rect" id="node17" href="$classstir_1_1MedianArrayFilter3D.html" title="Implements median filtering on 3D arrays. " alt="" coords="1115,493,1289,534"/>
+<area shape="rect" id="node18" href="$classstir_1_1MinimalArrayFilter3D.html" title="Implements erosion on 3D arrays. " alt="" coords="1113,558,1291,599"/>
 </map>

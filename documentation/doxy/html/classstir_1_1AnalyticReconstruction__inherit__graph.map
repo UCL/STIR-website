@@ -1,8 +1,13 @@
 <map id="stir::AnalyticReconstruction" name="stir::AnalyticReconstruction">
-<area shape="rect" id="node13" href="$classstir_1_1FBP2DReconstruction.html" title="Reconstruction class for 2D Filtered Back Projection. " alt="" coords="5,387,179,413"/>
-<area shape="rect" id="node15" href="$classstir_1_1FBP3DRPReconstruction.html" title="This class contains the implementation of the FBP3DRP algorithm. " alt="" coords="203,387,396,413"/>
-<area shape="rect" id="node2" href="$classstir_1_1Reconstruction.html" title="stir::Reconstruction\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="125,203,265,259"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="100,5,220,32"/>
-<area shape="rect" id="node8" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="168,83,301,125"/>
-<area shape="rect" id="node6" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="259,5,387,32"/>
+<area shape="rect" id="node9" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; FBP2DReconstruction, Reconstruction\l\&lt; DiscretisedDensity\&lt; 3, float \&gt;\l \&gt;, AnalyticReconstruction \&gt;" alt="" coords="1739,27,2017,97"/>
+<area shape="rect" id="node11" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; FBP3DRPReconstruction,\l Reconstruction\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, AnalyticReconstruction \&gt;" alt="" coords="1736,121,2020,192"/>
+<area shape="rect" id="node2" href="$classstir_1_1Reconstruction.html" title="stir::Reconstruction\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="1277,82,1437,138"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="667,7,888,63"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,57,200,83"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,49,412,91"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="664,88,891,129"/>
+<area shape="rect" id="node6" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="710,155,845,182"/>
+<area shape="rect" id="node7" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="940,89,1087,131"/>
+<area shape="rect" id="node10" href="$classstir_1_1FBP2DReconstruction.html" title="Reconstruction class for 2D Filtered Back Projection. " alt="" coords="2078,49,2267,75"/>
+<area shape="rect" id="node12" href="$classstir_1_1FBP3DRPReconstruction.html" title="This class contains the implementation of the FBP3DRP algorithm. " alt="" coords="2069,143,2276,170"/>
 </map>

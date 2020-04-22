@@ -1,2 +1,2 @@
 #! /bin/sh
-rsync --exclude .git\* --exclude previous --exclude \*.lnk --exclude sync-to-sf.sh --exclude \*stackdump -auOCzv ./ krthie,stir@web.sf.net:htdocs/ $*
+rsync --exclude .git\* --exclude previous --exclude \*.lnk --exclude sync-to-sf.sh --exclude \*stackdump -auOCzv ./ krthie@web.sf.net:/home/project-web/stir/htdocs/ $*

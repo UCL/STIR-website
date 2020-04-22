@@ -1,6 +1,6 @@
 <map id="stir::Array&lt; 1, elemT &gt;" name="stir::Array&lt; 1, elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="5,297,200,338"/>
-<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="51,6,196,47"/>
-<area shape="rect" id="node8" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\&lt; T \&gt;" alt="" coords="122,112,296,139"/>
-<area shape="rect" id="node6" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="119,190,313,231"/>
+<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="83,199,299,240"/>
+<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; elemT \&gt;" alt="" coords="5,95,167,136"/>
+<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="93,5,292,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="191,95,407,136"/>
 </map>
