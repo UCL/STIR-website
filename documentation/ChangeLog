@@ -1,4 +1,71 @@
 -------------------------------
+Tue, 28 Apr 2020 11:49:33 +0000  Kris Thielemans  
+
+release 4.0.1 prep
+
+
+CMakeLists.txt
+documentation/history.htm
+documentation/release_4.0.htm
+
+-------------------------------
+Tue, 28 Apr 2020 11:48:33 +0000  Kris Thielemans  
+
+create both rel_ and stir_rel_ tags
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Tue, 28 Apr 2020 11:45:08 +0000  Kris Thielemans  
+
+extra warnings about things to do manually
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Tue, 28 Apr 2020 11:06:41 +0000  Kris Thielemans  
+
+fixed typos in the UsersGuide [ci skip]
+found by rijobro
+
+
+documentation/STIR-UsersGuide.tex
+
+-------------------------------
+Mon, 27 Apr 2020 07:27:07 +0000  Kris Thielemans  
+
+fixed loop in CListEventECAT8_32bit
+closes #520
+
+
+src/listmode_buildblock/CListRecordECAT8_32bit.cxx
+
+-------------------------------
+Fri, 24 Apr 2020 11:50:40 +0000  Kris Thielemans  
+
+Merge pull request #516 from KrisThielemans/JSON_fix
+prevent build error for ctac_to_mu_values if BUILD_EXECUTABLES=OFF
+
+-------------------------------
+Thu, 23 Apr 2020 19:45:57 +0100  Kris Thielemans  
+
+prevent build error for ctac_to_mu_values if BUILD_EXECUTABLES=OFF
+closes #515
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Thu, 23 Apr 2020 15:15:20 +0100  Richard Brown  
+
+if clang no undefined template warning (#513)
+if clang no undefined template warning. Addresses #126 by removing the warning.
+
+CMakeLists.txt
+
+-------------------------------
 Wed, 22 Apr 2020 17:45:03 +0000  Kris Thielemans  
 
 updated version number
