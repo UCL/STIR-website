@@ -1,0 +1,8 @@
+<map id="stir::ProjMatrixByDenselOnCartesianGridUsingElement" name="stir::ProjMatrixByDenselOnCartesianGridUsingElement">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjMatrixByDenselUsingRayTracing,\l ProjMatrixByDenselOnCartesianGridUsingElement \&gt;" alt="" coords="1349,5,1716,61"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjMatrixByDensel.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;Densel&#39;..." alt="" coords="852,20,1031,47"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByDensel \&gt;" alt="" coords="623,13,803,54"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,25,200,52"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,47,412,89"/>
+<area shape="rect" id="node7" href="$classstir_1_1ProjMatrixByDenselUsingRayTracing.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Length of Intersectio..." alt="" coords="1765,13,1944,54"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="stir::InputFileFormat&lt; DataT &gt;" name="stir::InputFileFormat&lt; DataT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="458,93,618,149"/>
+<area shape="rect" id="node6" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; STIRImageType \&gt;" alt="" coords="462,201,614,243"/>
+<area shape="rect" id="node8" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ParametricVoxelsOnCartesian\lGrid \&gt;" alt="" coords="423,267,653,323"/>
+<area shape="rect" id="node10" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt;" alt="" coords="421,391,655,432"/>
+<area shape="rect" id="node14" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="462,641,614,683"/>
+<area shape="rect" id="node3" href="$classstir_1_1ecat_1_1ecat6_1_1ECAT6ImageInputFileFormat.html" title="Class for reading images in ECAT6 file&#45;format. " alt="" coords="725,5,930,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7ImageInputFileFormat.html" title="Class for reading images in ECAT7 file&#45;format. " alt="" coords="725,71,930,112"/>
+<area shape="rect" id="node5" href="$classstir_1_1InterfileImageInputFileFormat.html" title="Class for reading images in Interfile file&#45;format. " alt="" coords="740,136,915,177"/>
+<area shape="rect" id="node7" href="$classstir_1_1ITKImageInputFileFormat.html" title="Class for reading images using ITK. " alt="" coords="720,201,935,243"/>
+<area shape="rect" id="node9" href="$classstir_1_1InterfileParametricDiscretisedDensityInputFileFormat.html" title="Class for reading images in Interfile file&#45;format. " alt="" coords="704,267,951,308"/>
+<area shape="rect" id="node11" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in ECAT7 file&#45;format. " alt="" coords="705,333,949,389"/>
+<area shape="rect" id="node12" href="$classstir_1_1InterfileDynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in Interfile file&#45;format. " alt="" coords="711,413,943,455"/>
+<area shape="rect" id="node13" href="$classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in Multi file&#45;format. " alt="" coords="720,479,935,520"/>
+<area shape="rect" id="node15" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT962ListmodeInputFileFormat.html" title="Class for reading list mode data from the ECAT 962 scanner. " alt="" coords="707,544,947,585"/>
+<area shape="rect" id="node16" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html" title="Class for reading list mode data from the ECAT 966 scanner. " alt="" coords="707,609,947,651"/>
+<area shape="rect" id="node17" href="$classstir_1_1ecat_1_1ECAT8__32bitListmodeInputFileFormat.html" title="Class for being able to read list mode data from the ECAT 8_32bit scanner via the listmode&#45;data regis..." alt="" coords="713,675,941,716"/>
+<area shape="rect" id="node18" href="$classstir_1_1ROOTListmodeInputFileFormat.html" title="The ROOTListmodeInputFileFormat class. " alt="" coords="726,740,929,781"/>
+<area shape="rect" id="node19" href="$classstir_1_1SAFIRCListmodeInputFileFormat.html" title="stir::SAFIRCListmodeInput\lFileFormat" alt="" coords="733,805,922,847"/>
+</map>

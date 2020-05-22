@@ -1,0 +1,8 @@
+<map id="stir::SinglesRatesForTimeFrames" name="stir::SinglesRatesForTimeFrames">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromECAT7,\l SinglesRates, SinglesRatesForTime\lFrames \&gt;" alt="" coords="1212,5,1467,76"/>
+<area shape="rect" id="node2" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info. " alt="" coords="791,27,925,54"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="579,20,741,61"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,33,200,59"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,55,412,96"/>
+<area shape="rect" id="node7" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file. " alt="" coords="1516,20,1695,61"/>
+</map>

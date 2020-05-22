@@ -1,0 +1,6 @@
+<map id="stir::Coordinate4D&lt; coordT &gt;" name="stir::Coordinate4D&lt; coordT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1BasicCoordinate.html" title="stir::BasicCoordinate\l\&lt; 4, coordT \&gt;" alt="" coords="1177,58,1335,99"/>
+<area shape="rect" id="node3" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; BasicCoordinate\&lt; num\l_dimensions, coordT \&gt;, boost\l::equality_comparable\&lt; BasicCoordinate\l\&lt; num_dimensions, coordT \&gt; \&gt; \&gt;" alt="" coords="483,36,771,121"/>
+<area shape="rect" id="node5" href="$classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions &#45;dimensional coordi..." alt="" coords="820,87,1035,129"/>
+<area shape="rect" id="node4" href="$structboost_1_1partially__ordered.html" title="Boost class to define all comparison operators given only 2 (see operators.hpp) " alt="" coords="5,58,183,99"/>
+</map>

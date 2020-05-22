@@ -1,0 +1,7 @@
+<map id="Test code for STIR" name="Test code for STIR">
+<area shape="rect" id="node1" href="$group__motion__test.html" title="Tests of motion transformations etc" alt="" coords="291,5,545,32"/>
+<area shape="rect" id="node2" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="351,57,485,98"/>
+<area shape="rect" id="node3" href="$group__STIR.html" title="STIR" alt="" coords="5,97,56,124"/>
+<area shape="rect" id="node4" href="$group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="333,122,503,163"/>
+<area shape="rect" id="node5" href="$group__numerics__test.html" title="Tests of numeric building\l blocks" alt="" coords="325,187,511,229"/>
+</map>

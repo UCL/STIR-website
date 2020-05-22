@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. " alt="" coords="5,46,137,73"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="185,46,387,73"/>
+<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="435,5,636,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="435,71,636,112"/>
+</map>

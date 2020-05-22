@@ -1,0 +1,16 @@
+<map id="stir::PriorWithParabolicSurrogate&lt; TargetT &gt;" name="stir::PriorWithParabolicSurrogate&lt; TargetT &gt;">
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; ParametricQuadraticPrior\l\&lt; TargetT \&gt;, GeneralisedPrior\l\&lt; TargetT \&gt;, PriorWithParabolicSurrogate\l\&lt; TargetT \&gt; \&gt;" alt="" coords="1735,5,2025,91"/>
+<area shape="rect" id="node10" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="stir::PriorWithParabolic\lSurrogate\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="1769,115,1991,171"/>
+<area shape="rect" id="node13" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="stir::PriorWithParabolic\lSurrogate\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="1769,195,1991,251"/>
+<area shape="rect" id="node2" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; TargetT \&gt;" alt="" coords="1165,122,1324,163"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; TargetT \&gt; \&gt;" alt="" coords="588,91,827,133"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,129,200,156"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,122,412,163"/>
+<area shape="rect" id="node7" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; DataT \&gt; \&gt;" alt="" coords="593,157,822,198"/>
+<area shape="rect" id="node6" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined..." alt="" coords="876,153,1035,194"/>
+<area shape="rect" id="node9" href="$classstir_1_1ParametricQuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. " alt="" coords="2140,27,2324,69"/>
+<area shape="rect" id="node11" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; QuadraticPrior\&lt; float \&gt;\l, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, PriorWithParabolicSurrogate\l\&lt; DiscretisedDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="2413,105,2716,191"/>
+<area shape="rect" id="node12" href="$classstir_1_1QuadraticPrior.html" title="stir::QuadraticPrior\l\&lt; float \&gt;" alt="" coords="2996,162,3140,203"/>
+<area shape="rect" id="node14" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; QuadraticPrior\&lt; elemT \&gt;\l, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt;, PriorWithParabolicSurrogate\l\&lt; DiscretisedDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="2075,180,2389,265"/>
+<area shape="rect" id="node15" href="$classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. " alt="" coords="2740,193,2884,234"/>
+</map>

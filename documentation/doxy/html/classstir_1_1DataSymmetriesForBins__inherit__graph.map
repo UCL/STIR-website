@@ -1,0 +1,5 @@
+<map id="stir::DataSymmetriesForBins" name="stir::DataSymmetriesForBins">
+<area shape="rect" id="node3" href="$classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="5,169,215,211"/>
+<area shape="rect" id="node4" href="$classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all..." alt="" coords="239,169,439,211"/>
+<area shape="rect" id="node2" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)..." alt="" coords="118,5,331,47"/>
+</map>

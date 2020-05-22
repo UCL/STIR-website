@@ -1,0 +1,10 @@
+<map id="stir::ProjectorByBinPair" name="stir::ProjectorByBinPair">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingProjMatrix\lByBin, ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="1245,5,1576,61"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingSeparate\lProjectors, ProjectorByBinPair,\l ProjectorByBinPair \&gt;" alt="" coords="1285,86,1537,157"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="804,58,976,99"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,65,389,92"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,87,601,129"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,65,145,92"/>
+<area shape="rect" id="node7" href="$classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html" title="A projector pair based on a single matrix. " alt="" coords="1631,13,1802,54"/>
+<area shape="rect" id="node9" href="$classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html" title="A projector pair based on a single matrix. " alt="" coords="1625,101,1808,142"/>
+</map>

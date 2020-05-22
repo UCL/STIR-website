@@ -1,0 +1,15 @@
+<map id="stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;" name="stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node7" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 2, elemT \&gt;" alt="" coords="1604,5,1829,47"/>
+<area shape="rect" id="node9" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 3, elemT \&gt;" alt="" coords="1604,167,1829,208"/>
+<area shape="rect" id="node11" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="1321,71,1580,127"/>
+<area shape="rect" id="node14" href="$classstir_1_1DiscretisedDensity.html" title="stir::DiscretisedDensity\l\&lt; 3, float \&gt;" alt="" coords="1363,203,1538,244"/>
+<area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="765,90,883,117"/>
+<area shape="rect" id="node3" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="716,141,932,183"/>
+<area shape="rect" id="node4" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions&#45;1,\l elemT \&gt;, elemT \&gt;" alt="" coords="451,134,667,190"/>
+<area shape="rect" id="node5" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l&#45;1, elemT \&gt; \&gt;" alt="" coords="14,97,213,153"/>
+<area shape="rect" id="node6" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="5,177,221,219"/>
+<area shape="rect" id="node8" href="$classstir_1_1PixelsOnCartesianGrid.html" title="This class is used to represent pixelised densities on a rectangular grid (2D). " alt="" coords="2121,36,2318,77"/>
+<area shape="rect" id="node10" href="$classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). " alt="" coords="2119,131,2320,172"/>
+<area shape="rect" id="node12" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 2, elemT \&gt;" alt="" coords="1853,48,2069,89"/>
+<area shape="rect" id="node13" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="1853,113,2069,155"/>
+</map>

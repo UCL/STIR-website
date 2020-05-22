@@ -1,0 +1,4 @@
+<map id="stir::PtrBeginEndFunction&lt; TopLevelIterT, RestIterT &gt;" name="stir::PtrBeginEndFunction&lt; TopLevelIterT, RestIterT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1PtrBeginEndFunction.html" title="stir::PtrBeginEndFunction\l\&lt; TopLevelIterT, boost\l::pointee\&lt; boost::iterator\l_value\&lt; TopLevelIterT \&gt;::type\l \&gt;::type::const_iterator \&gt;" alt="" coords="453,21,672,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1ConstPtrBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator. " alt="" coords="721,43,943,85"/>
+</map>

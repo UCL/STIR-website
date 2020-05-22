@@ -1,0 +1,6 @@
+<map id="stir::ParametricQuadraticPrior&lt; TargetT &gt;" name="stir::ParametricQuadraticPrior&lt; TargetT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ParametricQuadraticPrior\l\&lt; TargetT \&gt;, GeneralisedPrior\l\&lt; TargetT \&gt;, PriorWithParabolicSurrogate\l\&lt; TargetT \&gt; \&gt;" alt="" coords="740,23,1031,109"/>
+<area shape="rect" id="node3" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="this class implements priors with a parabolic surrogate curvature " alt="" coords="233,5,403,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; TargetT \&gt;" alt="" coords="5,5,164,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="213,84,423,125"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="stir::ProjDataInfoCylindrical" name="stir::ProjDataInfoCylindrical">
+<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="5,155,207,196"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="231,155,432,196"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. " alt="" coords="152,5,284,32"/>
+</map>

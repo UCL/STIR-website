@@ -1,0 +1,7 @@
+<map id="stir::PixelsOnCartesianGrid&lt; elemT &gt;" name="stir::PixelsOnCartesianGrid&lt; elemT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 2, elemT \&gt;" alt="" coords="931,26,1147,67"/>
+<area shape="rect" id="node3" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="271,27,483,69"/>
+<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="532,52,791,108"/>
+<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="54,5,173,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="5,57,221,98"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="stir::Shape3D" name="stir::Shape3D">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; CombinedShape3D, Shape3D,\l Shape3D \&gt;" alt="" coords="1117,5,1348,61"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; DiscretisedShape3D, Shape3D,\l Shape3D \&gt;" alt="" coords="1113,85,1352,141"/>
+<area shape="rect" id="node10" href="$classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. " alt="" coords="1127,191,1339,217"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="743,93,905,134"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,100,389,127"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,122,601,163"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,100,145,127"/>
+<area shape="rect" id="node7" href="$classstir_1_1CombinedShape3D.html" title="A class that allows combining several shapes using logical operations. " alt="" coords="1479,13,1654,54"/>
+<area shape="rect" id="node9" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. " alt="" coords="1475,85,1658,112"/>
+<area shape="rect" id="node11" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1401,137,1732,178"/>
+<area shape="rect" id="node13" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1439,203,1694,259"/>
+<area shape="rect" id="node15" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1453,283,1681,339"/>
+<area shape="rect" id="node12" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1820,144,1915,171"/>
+<area shape="rect" id="node14" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1814,217,1921,244"/>
+<area shape="rect" id="node16" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1781,297,1953,324"/>
+</map>

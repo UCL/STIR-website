@@ -1,0 +1,8 @@
+<map id="stir::ScatterSimulation" name="stir::ScatterSimulation">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SingleScatterSimulation,\l ScatterSimulation, ScatterSimulation \&gt;" alt="" coords="1233,5,1515,61"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ScatterSimulation \&gt;" alt="" coords="800,13,968,54"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,20,389,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,42,601,83"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,145,47"/>
+<area shape="rect" id="node7" href="$classstir_1_1SingleScatterSimulation.html" title="PET single scatter simulation. " alt="" coords="1564,20,1771,47"/>
+</map>

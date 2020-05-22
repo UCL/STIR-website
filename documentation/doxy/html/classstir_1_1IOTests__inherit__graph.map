@@ -1,0 +1,9 @@
+<map id="stir::IOTests&lt; A &gt;" name="stir::IOTests&lt; A &gt;">
+<area shape="rect" id="node3" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="593,5,779,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; DynamicDiscretised\lDensity \&gt;" alt="" coords="564,71,808,112"/>
+<area shape="rect" id="node7" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; Parametric\lVoxelsOnCartesianGrid \&gt;" alt="" coords="593,136,779,177"/>
+<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,78,113,105"/>
+<area shape="rect" id="node4" href="$classstir_1_1IOTests__DiscretisedDensity.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="886,5,1065,47"/>
+<area shape="rect" id="node6" href="$classstir_1_1IOTests__DynamicDiscretisedDensity.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="857,71,1093,112"/>
+<area shape="rect" id="node8" href="$classstir_1_1IOTests__ParametricDiscretisedDensity.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="888,136,1063,177"/>
+</map>

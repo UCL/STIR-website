@@ -1,0 +1,9 @@
+<map id="stir::ProjDataRebinning" name="stir::ProjDataRebinning">
+<area shape="rect" id="node7" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; FourierRebinning, ProjDataRebinning,\l ProjDataRebinning \&gt;" alt="" coords="1245,20,1524,76"/>
+<area shape="rect" id="node2" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="823,5,957,32"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjDataRebinning \&gt;" alt="" coords="804,57,976,98"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,64,389,91"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,86,601,127"/>
+<area shape="rect" id="node5" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,64,145,91"/>
+<area shape="rect" id="node8" href="$classstir_1_1FourierRebinning.html" title="Class for Serial FORE Reconstruction. " alt="" coords="1573,35,1733,61"/>
+</map>

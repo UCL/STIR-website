@@ -1,0 +1,9 @@
+<map id="Utility programs" name="Utility programs">
+<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="526,50,669,91"/>
+<area shape="rect" id="node2" href="$group__ECAT.html" title="ECAT6 and ECAT7 support\l in the IO library" alt="" coords="503,190,692,231"/>
+<area shape="rect" id="node5" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="503,256,692,283"/>
+<area shape="rect" id="node6" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="522,307,673,349"/>
+<area shape="rect" id="node7" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="510,373,685,414"/>
+<area shape="rect" id="node8" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="488,438,707,479"/>
+<area shape="rect" id="node4" href="$group__main__programs.html" title="Executables" alt="" coords="5,285,107,312"/>
+</map>

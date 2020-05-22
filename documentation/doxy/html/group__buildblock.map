@@ -1,0 +1,13 @@
+<map id="Basic building blocks" name="Basic building blocks">
+<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="556,5,784,32"/>
+<area shape="rect" id="node2" href="$group__geometry.html" title="Items related to simple\l geometric calculations" alt="" coords="583,57,757,98"/>
+<area shape="rect" id="node3" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,327,103,353"/>
+<area shape="rect" id="node4" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="599,122,741,163"/>
+<area shape="rect" id="node5" href="$group__DataProcessor.html" title="Data processors" alt="" coords="607,188,733,215"/>
+<area shape="rect" id="node6" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="579,239,761,295"/>
+<area shape="rect" id="node7" href="$group__threads.html" title="Items relating to threading\l of certain STIR functions." alt="" coords="572,319,768,361"/>
+<area shape="rect" id="node8" href="$group__densitydata.html" title="Items related to image data" alt="" coords="568,385,772,412"/>
+<area shape="rect" id="node9" href="$group__buildblock__detail.html" title="Implementation details\l for buildblock" alt="" coords="583,437,757,478"/>
+<area shape="rect" id="node10" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="603,502,737,543"/>
+<area shape="rect" id="node11" href="$group__Coordinate.html" title="Items relating to coordinates" alt="" coords="565,568,775,595"/>
+</map>

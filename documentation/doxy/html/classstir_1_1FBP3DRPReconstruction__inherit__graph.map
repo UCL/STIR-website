@@ -1,0 +1,6 @@
+<map id="stir::FBP3DRPReconstruction" name="stir::FBP3DRPReconstruction">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; FBP3DRPReconstruction,\l Reconstruction\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, AnalyticReconstruction \&gt;" alt="" coords="785,30,1069,101"/>
+<area shape="rect" id="node3" href="$classstir_1_1AnalyticReconstruction.html" title="base class for all analytic reconstruction algorithmsThis class provides extra functinoality (compare..." alt="" coords="219,20,419,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1Reconstruction.html" title="stir::Reconstruction\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="5,5,165,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="215,77,424,118"/>
+</map>

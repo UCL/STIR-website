@@ -1,4 +1,189 @@
 -------------------------------
+Fri, 22 May 2020 09:36:23 +0000  Kris Thielemans  
+
+set cmake_policy CMP0025 to NEW
+This sets Compiler Id for Apple Clang to AppleClang
+
+Fixes #531
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 22 May 2020 09:04:23 +0000  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 4.0.2
+
+
+LICENSE.txt
+VERSION.txt
+
+-------------------------------
+Fri, 22 May 2020 09:04:04 +0000  Kris Thielemans  
+
+set version to 4.0.2 [ci skip]
+
+
+CMakeLists.txt
+documentation/history.htm
+
+-------------------------------
+Fri, 22 May 2020 08:48:58 +0000  Kris Thielemans  
+
+updated release notes for 4.0.2 [ci skip]
+
+
+documentation/release_4.0.htm
+
+-------------------------------
+Thu, 21 May 2020 21:01:44 +0000  Kris Thielemans  
+
+KOSMAPOSL improvements (pull request #540)
+various fixes to KOSMAPOSL to make it safe to be called without parsing (e.g. from Python or SIRF). Also enable using only the functional kernel (without anatomical priors)
+
+- moved non-parsing related checks from post_processing to set_up().
+- set_defaults() clears all vectors that are not set in set_up(), such that it's safe to re-use the same object.
+- change set_anatomical_image_filenames to set_anatomical_image_filename as it's setting only a single filename.
+- change name of vector members from singular to plural, ex: anatamical_prior_sptr -> anatomical prior_sptrs,
+- safer assignment of vector elements in set functions,
+- set_up() checks that every anatomical image has been set
+- using unsigned int i for loops over anatomical_priors_sptrs.size() to avoid warnings. (had to use i<size() then to avoid wrap-around)
+- set _already_set_up=false in all set() functions. This means that the reconstruction will check if set_up() is called after one of the set_*() functions has changed any parameters
+
+related to https://github.com/SyneRBI/SIRF/issues/654
+
+Co-authored-by: Kris Thielemans <k.thielemans@ucl.ac.uk>
+
+-------------------------------
+Thu, 21 May 2020 20:38:47 +0000  Kris Thielemans  
+
+removed obsolete member variable
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+
+-------------------------------
+Mon, 18 May 2020 18:28:25 +0100  danieldeidda  
+
+ update release notes for KOSMAPOSL
+
+
+documentation/release_4.0.htm
+
+-------------------------------
+Mon, 18 May 2020 15:41:32 +0000  Kris Thielemans  
+
+KOSMAPOSL:set _already_set_up=false in all set() functions
+This means that the reconstruction will check if set_up() is after one
+of the set_*() functions has changed any parameters
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Mon, 18 May 2020 15:33:12 +0000  Kris Thielemans  
+
+fixes related to Travis failures
+- revert to use anatomical_prior_sptrs.size() as using an_size could lead to uninitialised values possibly
+- avoid calling set_anatomical_prior_sptr(anatomical_prior_sptr[i],i) which seemed to lead to undefined behaviour on some systems
+- using unsigned int i for loops over anatomical_priors_sptrs.size() to avoid warnings. (had to use i<size() then to avoid wrap-around)
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Mon, 18 May 2020 12:00:37 +0100  danieldeidda  
+
+enable only-functional kernel: general sizes estimated from target_image_sptr is set up; remove set_default for the vectors sigma_m and anatomical_image_filenames; added new member for the  anatomical_prior_sptr size, therefore for  number of anatomical images as well.
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Fri, 15 May 2020 17:47:47 +0100  danieldeidda  
+
+set_up():check for only functional
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Fri, 15 May 2020 17:34:49 +0100  danieldeidda  
+
+set_up():check for only functional
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Fri, 15 May 2020 15:51:10 +0100  danieldeidda  
+
+set_up():checks that every anatomical image has been set
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Fri, 15 May 2020 15:00:41 +0100  danieldeidda  
+
+small change on names and check on data reading
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Fri, 15 May 2020 13:15:25 +0100  danieldeidda  
+
+1) change name of vector from singular to plural,ex: anatamical_prior_sptr -> anatomical prior_sptrs, 2) safer assignemente of vector elements in set functions, 3) set_defaults() clears all vectors that are not set in set_up().
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 13 May 2020 18:02:46 +0100  danieldeidda  
+
+do safe assignment of anatomical_prior_sptr and anatomical_SD
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 13 May 2020 16:48:15 +0100  danieldeidda  
+
+checks if anatomical_image_filenames has been set
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 13 May 2020 12:14:31 +0100  danieldeidda  
+
+removed use of anatomical_image_filenames from set_up();.
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 13 May 2020 11:44:08 +0100  danieldeidda  
+
+fix SyneRBI/SIRF#654: moved non-parsing operations in set_up().
+
+
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Tue, 28 Apr 2020 11:58:12 +0000  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 4.0.1 [ci skip]
+
+
+LICENSE.txt
+VERSION.txt
+
+-------------------------------
 Tue, 28 Apr 2020 11:49:33 +0000  Kris Thielemans  
 
 release 4.0.1 prep

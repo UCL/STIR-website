@@ -1,0 +1,6 @@
+<map id="stir::ecat::ecat7::SinglesRatesFromECAT7" name="stir::ecat::ecat7::SinglesRatesFromECAT7">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromECAT7,\l SinglesRates, SinglesRatesForTime\lFrames \&gt;" alt="" coords="648,24,903,95"/>
+<area shape="rect" id="node3" href="$classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames. " alt="" coords="200,5,388,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info. " alt="" coords="5,13,140,39"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="189,71,399,112"/>
+</map>

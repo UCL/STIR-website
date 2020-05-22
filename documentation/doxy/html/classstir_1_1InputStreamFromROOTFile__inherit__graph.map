@@ -1,0 +1,10 @@
+<map id="stir::InputStreamFromROOTFile" name="stir::InputStreamFromROOTFile">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; InputStreamFromROOTFileForCylindrical\lPET, InputStreamFromROOTFile, InputStreamFrom\lROOTFile \&gt;" alt="" coords="1399,5,1744,76"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; InputStreamFromROOTFileForECATPET,\l InputStreamFromROOTFile, InputStreamFrom\lROOTFile \&gt;" alt="" coords="1413,100,1730,171"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; InputStreamFromROOTFile \&gt;" alt="" coords="855,68,1077,109"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,75,389,102"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,97,601,139"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,75,145,102"/>
+<area shape="rect" id="node7" href="$classstir_1_1InputStreamFromROOTFileForCylindricalPET.html" title="Declaration of class stir::InputStreamFromROOTFileForCylindricalPET. " alt="" coords="1793,20,2016,61"/>
+<area shape="rect" id="node9" href="$classstir_1_1InputStreamFromROOTFileForECATPET.html" title="Declaration of class stir::InputStreamFromROOTFileForECATPET. " alt="" coords="1793,115,2016,156"/>
+</map>

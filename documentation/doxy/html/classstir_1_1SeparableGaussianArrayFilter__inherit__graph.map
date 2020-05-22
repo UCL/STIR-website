@@ -1,0 +1,5 @@
+<map id="stir::SeparableGaussianArrayFilter&lt; num_dimensions, elemT &gt;" name="stir::SeparableGaussianArrayFilter&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable. " alt="" coords="9,199,214,255"/>
+<area shape="rect" id="node3" href="$classstir_1_1ArrayFunctionObject__1ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the 2 argument operator() in t..." alt="" coords="5,95,217,151"/>
+<area shape="rect" id="node4" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="5,5,217,47"/>
+</map>

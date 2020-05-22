@@ -1,0 +1,8 @@
+<map id="stir::SpatialTransformation" name="stir::SpatialTransformation">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; GatedSpatialTransformation,\l SpatialTransformation \&gt;" alt="" coords="1315,5,1537,61"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SpatialTransformation \&gt;" alt="" coords="827,13,1021,54"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,20,389,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,42,601,83"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,145,47"/>
+<area shape="rect" id="node7" href="$classstir_1_1GatedSpatialTransformation.html" title="Class for spatial transformations for gated images. " alt="" coords="1587,20,1820,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="stir::DataSymmetriesForBins_PET_CartesianGrid" name="stir::DataSymmetriesForBins_PET_CartesianGrid">
+<area shape="rect" id="node2" href="$classstir_1_1DataSymmetriesForBins.html" title="A class for encoding/finding symmetries common to the geometry of the projection data and the discret..." alt="" coords="7,95,217,121"/>
+<area shape="rect" id="node3" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)..." alt="" coords="5,5,219,47"/>
+</map>

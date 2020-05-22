@@ -1,0 +1,6 @@
+<map id="stir::RigidObject3DMotionFromPolaris" name="stir::RigidObject3DMotionFromPolaris">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DMotionFromPolaris,\l RigidObject3DMotion, RigidObject3DMotion \&gt;" alt="" coords="695,30,1017,86"/>
+<area shape="rect" id="node3" href="$classstir_1_1RigidObject3DMotion.html" title="Base class for 3D rigid motion. " alt="" coords="255,13,443,39"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="244,69,453,111"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="stir::BinNormalisation" name="stir::BinNormalisation">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromAttenuation\lImage, BinNormalisation \&gt;" alt="" coords="1235,5,1494,61"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT7,\l BinNormalisation \&gt;" alt="" coords="1251,85,1478,141"/>
+<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT8,\l BinNormalisation \&gt;" alt="" coords="1251,165,1478,221"/>
+<area shape="rect" id="node12" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromML2D,\l BinNormalisation \&gt;" alt="" coords="1253,245,1476,301"/>
+<area shape="rect" id="node14" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromProjData,\l BinNormalisation \&gt;" alt="" coords="1243,325,1486,381"/>
+<area shape="rect" id="node16" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationSinogramRescaling,\l BinNormalisation \&gt;" alt="" coords="1225,405,1504,461"/>
+<area shape="rect" id="node18" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationSPECT,\l BinNormalisation \&gt;" alt="" coords="1260,485,1469,541"/>
+<area shape="rect" id="node19" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationUsingProfile,\l BinNormalisation \&gt;" alt="" coords="1249,565,1481,621"/>
+<area shape="rect" id="node20" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ChainedBinNormalisation,\l BinNormalisation \&gt;" alt="" coords="1260,645,1469,701"/>
+<area shape="rect" id="node22" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; TrivialBinNormalisation,\l BinNormalisation \&gt;" alt="" coords="1260,725,1469,781"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="797,385,963,426"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,392,389,419"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,414,601,455"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,392,145,419"/>
+<area shape="rect" id="node7" href="$classstir_1_1BinNormalisationFromAttenuationImage.html" title="A BinNormalisation class that gets attenuation correction factors from an attenuation image..." alt="" coords="1571,13,1767,54"/>
+<area shape="rect" id="node9" href="$classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT7 3D normalisation file..." alt="" coords="1565,93,1773,134"/>
+<area shape="rect" id="node11" href="$classstir_1_1ecat_1_1BinNormalisationFromECAT8.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT8 3D normalisation file..." alt="" coords="1569,173,1769,214"/>
+<area shape="rect" id="node13" href="$classstir_1_1BinNormalisationFromML2D.html" title="A BinNormalisation class that gets the normalisation factors from the files output by find_ML_normfac..." alt="" coords="1553,260,1785,287"/>
+<area shape="rect" id="node15" href="$classstir_1_1BinNormalisationFromProjData.html" title="A BinNormalisation class that gets the normalisation factors from a ProjData object. " alt="" coords="1571,333,1767,374"/>
+<area shape="rect" id="node17" href="$classstir_1_1BinNormalisationSinogramRescaling.html" title="The BinNormalisationSinogramRescaling class gets normaliastion factors by dividing forward projection..." alt="" coords="1556,413,1783,454"/>
+<area shape="rect" id="node21" href="$classstir_1_1ChainedBinNormalisation.html" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects..." alt="" coords="1561,660,1778,687"/>
+<area shape="rect" id="node23" href="$classstir_1_1TrivialBinNormalisation.html" title="Trivial class which does not do any normalisation whatsoever. " alt="" coords="1568,740,1771,767"/>
+</map>

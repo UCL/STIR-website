@@ -1,0 +1,6 @@
+<map id="stir::GatedSpatialTransformation" name="stir::GatedSpatialTransformation">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; GatedSpatialTransformation,\l SpatialTransformation \&gt;" alt="" coords="712,33,935,89"/>
+<area shape="rect" id="node3" href="$classstir_1_1SpatialTransformation.html" title="base class for any type of motion fieldsAt present very basic. It just provides the parsing mechanism..." alt="" coords="257,13,451,39"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SpatialTransformation \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="249,64,459,105"/>
+</map>

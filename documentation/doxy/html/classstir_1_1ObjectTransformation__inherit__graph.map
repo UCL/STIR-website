@@ -1,0 +1,11 @@
+<map id="stir::ObjectTransformation&lt; num_dimensions, elemT &gt;" name="stir::ObjectTransformation&lt; num_dimensions, elemT &gt;">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; NonRigidObjectTransformation\lUsingBSplines\&lt; num_dimensions,\l elemT \&gt;, ObjectTransformation\l\&lt; num_dimensions, elemT \&gt;, ObjectTransformation\l\&lt; num_dimensions, elemT \&gt; \&gt;" alt="" coords="1471,5,1831,105"/>
+<area shape="rect" id="node8" href="$classstir_1_1ObjectTransformation.html" title="stir::ObjectTransformation\l\&lt; 3, float \&gt;" alt="" coords="1555,129,1746,171"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ObjectTransformation\l\&lt; num_dimensions, elemT \&gt; \&gt;" alt="" coords="855,75,1081,131"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,90,389,117"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,112,601,153"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,90,145,117"/>
+<area shape="rect" id="node7" href="$classstir_1_1NonRigidObjectTransformationUsingBSplines.html" title="Class to perform non&#45;rigid object transformations in arbitrary dimensions. " alt="" coords="1892,27,2143,83"/>
+<area shape="rect" id="node9" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DTransformation,\l ObjectTransformation\&lt; 3, float\l \&gt;, ObjectTransformation\&lt; 3, float \&gt; \&gt;" alt="" coords="1880,115,2155,185"/>
+<area shape="rect" id="node10" href="$classstir_1_1RigidObject3DTransformation.html" title="Class to perform rigid object transformations in 3 dimensions. " alt="" coords="2204,137,2447,163"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="stir::QuadraticPrior&lt; elemT &gt;" name="stir::QuadraticPrior&lt; elemT &gt;">
+<area shape="rect" id="node7" href="$classstir_1_1QuadraticPrior.html" title="stir::QuadraticPrior\l\&lt; float \&gt;" alt="" coords="1523,95,1667,137"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; QuadraticPrior\&lt; elemT \&gt;\l, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt;, PriorWithParabolicSurrogate\l\&lt; DiscretisedDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="903,73,1217,159"/>
+<area shape="rect" id="node3" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="stir::PriorWithParabolic\lSurrogate\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="367,41,589,97"/>
+<area shape="rect" id="node4" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="5,5,176,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="this class implements priors with a parabolic surrogate curvature " alt="" coords="5,86,176,127"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="373,142,583,183"/>
+</map>

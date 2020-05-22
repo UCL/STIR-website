@@ -1,0 +1,8 @@
+<map id="stir::InterfileHeaderSiemens" name="stir::InterfileHeaderSiemens">
+<area shape="rect" id="node5" href="$classstir_1_1InterfileRawDataHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens PET projection or list mode data ..." alt="" coords="115,304,322,345"/>
+<area shape="rect" id="node2" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="145,155,293,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="119,80,319,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="161,5,276,32"/>
+<area shape="rect" id="node6" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemesn listmode data (in PETLINK format) ..." alt="" coords="5,393,213,435"/>
+<area shape="rect" id="node7" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="237,393,419,435"/>
+</map>

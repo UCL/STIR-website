@@ -1,0 +1,8 @@
+<map id="stir::KeyParser" name="stir::KeyParser">
+<area shape="rect" id="node2" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="168,81,368,108"/>
+<area shape="rect" id="node3" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="416,81,564,108"/>
+<area shape="rect" id="node4" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="612,5,816,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images " alt="" coords="619,56,809,83"/>
+<area shape="rect" id="node6" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="623,107,805,133"/>
+<area shape="rect" id="node7" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data " alt="" coords="623,158,805,199"/>
+</map>

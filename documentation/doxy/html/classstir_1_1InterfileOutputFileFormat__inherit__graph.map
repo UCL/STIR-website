@@ -1,0 +1,7 @@
+<map id="stir::InterfileOutputFileFormat" name="stir::InterfileOutputFileFormat">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; InterfileOutputFileFormat,\l OutputFileFormat\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, OutputFileFormat\l\&lt; DiscretisedDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="945,67,1221,152"/>
+<area shape="rect" id="node3" href="$classstir_1_1OutputFileFormat.html" title="stir::OutputFileFormat\l\&lt; DiscretisedDensity\&lt;\l 3, float \&gt; \&gt;" alt="" coords="453,41,623,97"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="5,5,243,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files. " alt="" coords="43,86,205,127"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="433,127,643,169"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="stir::CartesianCoordinate3D&lt; coordT &gt;" name="stir::CartesianCoordinate3D&lt; coordT &gt;">
+<area shape="rect" id="node6" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; elemT \&gt;" alt="" coords="1412,5,1604,47"/>
+<area shape="rect" id="node7" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; float \&gt;" alt="" coords="1412,71,1604,112"/>
+<area shape="rect" id="node8" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; int \&gt;" alt="" coords="1412,136,1604,177"/>
+<area shape="rect" id="node2" href="$classstir_1_1Coordinate3D.html" title="a templated class for 3&#45;dimensional coordinates. " alt="" coords="907,71,1047,112"/>
+<area shape="rect" id="node3" href="$classstir_1_1BasicCoordinate.html" title="stir::BasicCoordinate\l\&lt; 3, coordT \&gt;" alt="" coords="700,71,857,112"/>
+<area shape="rect" id="node4" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; BasicCoordinate\&lt; num\l_dimensions, coordT \&gt;, boost\l::equality_comparable\&lt; BasicCoordinate\l\&lt; num_dimensions, coordT \&gt; \&gt; \&gt;" alt="" coords="5,54,293,139"/>
+<area shape="rect" id="node5" href="$classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions &#45;dimensional coordi..." alt="" coords="343,105,557,147"/>
+</map>
