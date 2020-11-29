@@ -123,10 +123,14 @@ Conclusions: SimPET can potentially allow scientists in clinical and research se
   	<br />
 
  <details><summary>
-Title:  <b>T.B.A.
+Title:  <b>Implementation of cylindrical PET scanners with block detector geometry in STIR
 </b></summary>
 
-Abstract: T.B.A.
+Abstract: Cylindrical PET scanners are usually designed based on a block-type geometry, i.e. several rectangular blocks of crystals are arranged on a right angle prism. In STIR, the geometrical model of the scanner is a cylinder made of individual crystals equally distributed in axial and transaxial directions. The data of realistic scanners are projected onto such virtual scanners prior to image reconstruction. This results in reduced quality of the reconstructed image, especially for scanners of larger blocks. Recently, we have extended the library so that a more precise model of the scanner can be implemented. Few more parameters has been added to describe the scanner. Now, the user can choose among three options to model the scanner: (1) Cylindrical, which is the standard STIR model, (2) BlocksOnCylindrical, which is newly implemented to model regular prism-shaped geometries with regular blocks per face of the prism and (3) Generic, which is newly implemented and is able to model any irregular prism.
+The new  BlocksOnCylindrical model has been evaluated using data from Monte Carlo simulation. Simulated data are reconstructed using the standard STIR model and the newly implemented BlockOnCylindrical geometry. Results show that the new implementation enhances the image quality to the extent that the results before normalization correction are comparable with those after normalization correction.
+The Cylindrical model benefits from being the most symmetric model, thus the fastest reconstruction. Symmetries in (only) axial direction have been implemented for the BlocksOnCylindrical model to accelerate the reconstruction. It would be beneficial to implement symmetries in transaxial direction too.
+
+
 </details>
 
   </td></tr>
