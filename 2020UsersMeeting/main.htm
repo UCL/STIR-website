@@ -25,12 +25,14 @@ table, th, td {
 <h2>Where and when</h2>
 <ul>
   <li>Thursday 3rd of December, 15:00-18:00 EST, 20:00-23:00 UTC</li>
-  <li>Online only. Join the <a href=https://ukri.zoom.us/j/99695829764 target="_parent">Zoom Meeting via this link</a>.
+<!--  <li>Online only. Join the <a href=https://ukri.zoom.us/j/99695829764 target="_parent">Zoom Meeting via this link</a>.
       More connection options are available, see the <a href=https://www.ccpsynerbi.ac.uk/node/279 target="_parent">SyneRBI web-site</a>
   </li>
+  -->
   </ul>
 
-<p>Please test your connection prior to the meeting here:<a href=https://ukri.zoom.us/test target="_parent">https://ukri.zoom.us/test</a>.</p>
+<!-- <p>Please test your connection prior to the meeting here:<a href=https://ukri.zoom.us/test target="_parent">https://ukri.zoom.us/test</a>.</p>
+-->
 
 <h2>Summary</h2>
 <p>STIR is Open Source software for use in tomographic imaging. Its aim is to
@@ -40,13 +42,22 @@ emission tomography (PET and SPECT) but other imaging modalities can be added
 in the future.</p>
 
 <p>
-  During this annual meeting users and developers present their recent work with STIR with the emphasis on
+  During this annual meeting users and developers presented their recent work with STIR with the emphasis on
   software and algorithmic development.
-<!--Additional time will be allocated for discussion between the speakers and the audience.-->
-<!-- If interested in presenting, contact the chairs before the 15th of September.-->
-</p>
 
+  This year, the meeting was online only, and attended by about 40 people.
+Some speakers have kindly provided PDFs of their talks, see the table below. In addition, all speakers have agreed to making the 
+<a href=http://www.ccpsynerbi.ac.uk/sites/www.ccppetmr.ac.uk/files/CCPSyneRBI/STIRMeeting20201203.mp4>recording of the meeting</a> available.</p>
+<p> Please note that this material 
+is provided under the Creative Commons 
+<a href="http://creativecommons.org/licenses/by-nd/4.0/" target=_blank>"Attribution-NoDerivs" license</a>,
+      allowing redistribution without modification with credit to the author(s).</p>
+
+<!--Additional time will be allocated for discussion between the speakers and the audience.-->
+<!-- If interested in presenting, contact the chairs before the 15th of September.--></p>
+<!--
 <p>For up-to-date information on this meeting please always check the STIR website.</p>
+
 
 <h2>Registration and abstract submission</h2>
     <p>To register your attendance or participation, please fill out <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAALKGDSVURUE5TlQ0VUFTSE42NVRCM1M0UTBGQ0JZNi4u">this form</a>.</p>
@@ -58,12 +69,16 @@ However, it would be very helpful for us to know how many people to expect.</p>
 <p>The second part of the form is for those that would like to present their work. However,
   this is now closed.
 </p>
+-->
+
 <!--
   In this meeting, we encourage participation and sharing, early and preliminary works, are welcomed.<br />
   <strong>Deadline for abstract submission: 24th of November</strong>
 </p>
 -->
 
+<h2>Recording</h2>
+<p><a href=http://www.ccpsynerbi.ac.uk/sites/www.ccppetmr.ac.uk/files/CCPSyneRBI/STIRMeeting20201203.mp4>Recording of the meeting.</a></p>
 <h2>Agenda</h2>
 
 <!--
@@ -106,18 +121,18 @@ However, it would be very helpful for us to know how many people to expect.</p>
  <tr><td>&nbsp;</td><td>&nbsp;</td><td>Discussion</td><td>22:25:00</td><td>22:25:00</td></tr>
 </tbody></table>
 
-<p>More information:</p>
-	
+<h2>More information</h2>
+
 <table style="width:100%">
 
-  <tr>  <td>  1.  </td> <td>Opening</td> </tr>
+  <tr>  <td>  1.  </td> <td>Charalampos Tsoumpas<br /> University of Leeds<br />Opening</td> </tr>
 
   <tr>  <td>  2.  </td> 
   	<td> Satyajit Ghosh, Pragya Das<br />
   	Physics Department, IIT Bombay, Mumbai (India) <br />
 
  <details><summary>
-Title:  <b>Appropriate use of initial estimate for CRC improvement in MLEM reconstruction for low count high scatter fraction PET scan
+  <b>Appropriate use of initial estimate for CRC improvement in MLEM reconstruction for low count high scatter fraction PET scan
 </b></summary>
 
 Abstract: In various cases of PET imaging, the number of events that can be acquired is low, e.g., dynamic PET imaging, PET-based beam range verification in ion beam therapy. Besides, in human PET scan count loss due to tissue scattering is significant. Hence, reconstructed image becomes very noisy. In this work, we have investigated the feasibility of a new method to improve image quality in PET for low count high scatter fraction cases. We have used rejected single scattered events to produce physically meaningful estimate of activity distribution. Richardson-Lucy iterative deconvolution method is used on broken LOR TOF backprojection of rejected events to produce estimate of activity distribution. Only uniform attenuation phantom case is investigated. Then we have used that image estimate as initial image of nonTOF MLEM reconstruction in STIR. Although general intuitive understanding about effect of appropriate initial estimate is faster convergence, this work is motivated from recent work on effect of initial estimate on MLEM reconstructed images [1]. GATE simulation of PET scanner with 5% energy resolution and 200 ps time resolution was performed. We have shown improvement of trade-off between contrast recovery coefficient (CRC) and coefficient of variation (CoV) with the conclusion that a better CRC valued final reconstructed image can be obtained if we use the deconvoluted image as initial estimate instead of uniform. We believe the proposed method for improving image quality can become practically beneficial in case of low count and high scatter fraction cases and hence worthy of further investigation.
@@ -131,7 +146,7 @@ Abstract: In various cases of PET imaging, the number of events that can be acqu
 <br />
 
   <details><summary>
-	Title:  <b> STIR Image reconstruction of a long axial field of view PET scanner for NEMA spatial resolution study. 
+	<b> <a href=AbiAkl_STIR_meeting_2020.pdf>STIR Image reconstruction of a long axial field of view PET scanner for NEMA spatial resolution study.</a>
   </b></summary>
 
 Abstract: T.B.A.
@@ -144,7 +159,7 @@ Abstract: T.B.A.
   	Health Research Institute of Santiago de Compostela (Spain)<br />
 
  <details><summary>
-Title:  <b>An open online platform for the Monte Carlo simulation of realistic brain PET data integrating SimSET and STIR (SimPET)
+  <b>An open online platform for the Monte Carlo simulation of realistic brain PET data integrating SimSET and STIR (SimPET)
 </b></summary>
 
 Abstract: SimPET  <a href=https://www.sim-pet.org>(www.sim-pet.org)</a> is a free cloud-based platform for the generation of realistic brain Positron Emission Tomography (PET) data using SimSET and STIR. In this presentation, we will introduce the key features of the platform. In addition, we detail the work currently ongoing for introducing STIR’s latest features.<br />
@@ -162,7 +177,7 @@ Conclusions: SimPET can potentially allow scientists in clinical and research se
   	<br />
 
  <details><summary>
-Title:  <b>Implementation of cylindrical PET scanners with block detector geometry in STIR
+  <b>Implementation of cylindrical PET scanners with block detector geometry in STIR
 </b></summary>
 
 Abstract: Cylindrical PET scanners are usually designed based on a block-type geometry, i.e. several rectangular blocks of crystals are arranged on a right angle prism. In STIR, the geometrical model of the scanner is a cylinder made of individual crystals equally distributed in axial and transaxial directions. The data of realistic scanners are projected onto such virtual scanners prior to image reconstruction. This results in reduced quality of the reconstructed image, especially for scanners of larger blocks. Recently, we have extended the library so that a more precise model of the scanner can be implemented. Few more parameters has been added to describe the scanner. Now, the user can choose among three options to model the scanner: (1) Cylindrical, which is the standard STIR model, (2) BlocksOnCylindrical, which is newly implemented to model regular prism-shaped geometries with regular blocks per face of the prism and (3) Generic, which is newly implemented and is able to model any irregular prism.
@@ -180,8 +195,8 @@ The Cylindrical model benefits from being the most symmetric model, thus the fas
   	<br />
 
  <details><summary>
-Title:  <b> Implementation of a PET scanner:
-  a guide to reconstruct data from your scanner in STIR
+  <b> <a href=D_Deidda_STIR-meeting2020.pdf>Implementation of a PET scanner:
+  a guide to reconstruct data from your scanner in STIR</a>
 </b></summary>
 
 Abstract: The software for tomographic image reconstruction (STIR) provides reconstruction of data for a number of PET scanners. However, there are more and more commercial and research scanners being developed all the time. Some researchers may be interested to use STIR but feel unable to use it because the scanner they use is not implemented. In this presentation, a summary of the steps that are required to reconstruct data from any PET scanner is shown, with the example of the Mediso AnyScanTrio, and the appropriate classes and function will be highlighted. Among all the steps, a focus on the creation of STIR readable sinograms for prompts, attenuation, normalisation, randoms and scatter is given. To conclude, an example of how to use all your estimation for the reconstruction is shown using the OSMAPOSL parameter file.
@@ -196,7 +211,7 @@ Abstract: The software for tomographic image reconstruction (STIR) provides reco
   	<br />
 
  <details><summary>
-Title:  <b>STIR-GATE-Connection: A bridge between GATE and STIR
+ <b><a href=RT_STIR-GATE-Connection.pdf>STIR-GATE-Connection: A bridge between GATE and STIR</a>
 </b></summary>
 
 Abstract: Powerful Monte Carlo simulation software, such as GATE, are  useful  in emission tomography research for analysis, assisting in the assessment of new reconstruction algorithm performance, medical imaging device design, or scan protocols.
@@ -214,7 +229,7 @@ In addition, the GE Discovery 690 and Seimens mMR scanner geometries have been i
   	<br />
 
  <details><summary>
-Title:  <b>Preliminary image reconstruction results of single-pinhole SPECT data using STIR
+ <b><a href=STIR2020_PinholeSPECT_StrugariPresentation.pdf>Preliminary image reconstruction results of single-pinhole SPECT data using STIR</a>
 </b></summary>
 
 Abstract: Despite STIR's diverse toolset for tomographic image re-construction, there is an unmet need for an open source tool capable of reconstructing pinhole-SPECT data. Originally designed for PET applications, SPECT functionality was added to STIR in 2014 with limited support of only parallel-hole collimator geometries. Prototype code has been written by Carles Falcon to model the weight matrix for multi-pinhole SPECT collimator geometries although it is not yet integrated into STIR. Using simulation data from Cubresa Inc.'s novel preclinical SPECT scanner, this work presents images reconstructed with STIR using a single-pinhole collimator to illustrate STIR's forthcoming pinhole-SPECT capabilities.
@@ -236,7 +251,7 @@ Conclusions: Preliminary results of an acquisition involving three point-sources
   	<br />
 
  <details><summary>
-Title:  <b>Recent developments in STIR
+  <b>Recent developments in STIR
 </b></summary>
 
 Abstract: T.B.A.
@@ -251,8 +266,8 @@ Abstract: T.B.A.
   	<br />
 
  <details><summary>
-Title:  Keynote<b>
-</b></summary>
+  <a href=Thielemans-STIRUM2020-STIR_status_and_future.pdf>Keynote</a>
+</summary>
 
 Abstract: This presentation will give an update on current developments in STIR. It will also touch on interaction
 with <a href=https://github.com/SyneRBI/SIRF>SIRF</a>, the Synergistic Image Reconstruction Framework, which uses
@@ -286,7 +301,7 @@ sponsoring this event.</p>
 <hr>
 <p>
 <!-- hhmts start -->
-Last modified: 2 December 2020
+Last modified: 14 December 2020
 <!-- hhmts end -->
 </p>
   </body>
