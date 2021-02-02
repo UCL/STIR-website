@@ -121,6 +121,10 @@ pyCuda based toolkit for PET, later (now?) SPECT and CT. In early development st
 <li><a href="https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
 the ANL. License is BSD-style.</li>
 </ul>
+<li>
+<a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aim to facilitate the conversion of
+GATE list mode data into STIR sinograms and data corrections for reconstruction.
+</li>
 
 All these packages concentrate on image reconstruction for static imaging. 
 STIR is unique in providing a flexible open source framework for PET including scatter estimation and routines for dynamic imaging.
@@ -165,7 +169,7 @@ This page is licensed with the
 </p>
 <hr>
 <!-- hhmts start -->
-Last modified: Mon Sep 22 17:40:10 BST 2014
+Last modified: Tue Feb 02 16:44:10 BST 2021
 <!-- hhmts end -->
 
 </BODY>
