@@ -88,15 +88,18 @@ reconstruction. This is an (incomplete?) overview with some subjective comments.
 <a href="http://www.eecs.umich.edu/~fessler/code/" target="_parent">Michigan Image Reconstruction Toolbox</a>
   as a set of open source matlab  routines for image reconstruction and processing. In addition, Fessler has also developed ASPIRE. However, this is distributed via executable files and its license allows non-commercial usage only. 
 </li>
+<li><a href=https://github.com/NiftyPET/NiftyPET>NiftyPET</a> is Python-based
+  with GPU projectors
+</li>  
 <li><a href="http://sourceforge.net/projects/tirius/" target="_parent">TIRIUS</a> 
 provides an implementation of OSEM for PET image reconstruction using a well-designed GUI. It could also use reconstruction algorithms available in STIR 1.4 but it is not compatible with STIR 2 or later. 
-TIRIUS is distributed under the GNU Lesser General Public License.
+TIRIUS is distributed under the GNU Lesser General Public License. Not updated since 2005.
 </li>
 <li> <a href="http://sourceforge.net/projects/niftyrec" target="_parent">NiftyRec</a>  provides 
 a matlab (and also some python) interface to C/GPU projectors and some reconstruction 
-algorithms. Current projectors are mostly suitable for SPECT. License is BSD-style.
+algorithms. Current projectors are mostly suitable for SPECT. License is BSD-style. Not updated since 2015.
 </li>
-<li><a href="http://emrecon.uni-muenster.de/" target="_parent">EMrecon</a> is another recently released package, using expectation maximisation. License is unclear</li> 
+<li><a href="http://emrecon.uni-muenster.de/" target="_parent">EMrecon</a> is another recently released package, using expectation maximisation. License is unclear and this might no longer be active.</li> 
 <li><a href="http://www.bme.teiath.gr/ni/EnglishVersion/Downloads_files/Downloads.html" target="_parent">QSPECT</a> is a recently released package for SPECT reconstruction using MLEM or OSEM. 
 </li>
 <li><a href="http://www.castor-project.org/">CASToR</a> is an actively developed package intending to handle
@@ -127,10 +130,9 @@ It has a MATLAB and Python interface. It is licensed under the BSD.
 <li><a href="https://bitbucket.org/dvolgyes/troll" target="_parent">Troll</a>: a
 pyCuda based toolkit for PET, later (now?) SPECT and CT. In early development stage (2013). License is GPL3.
 </li>
-<li><a href="http://ccpforge.cse.rl.ac.uk/gf/project/ccpi_itr/frs/" target="_parent">regularization techniques for iterative reconstruction</a> for matlab (using mex) developed as part of the <a href="http://www.ccpi.ac.uk/">Collaborative Computational Project in Tomographic Imaging</a> which concentrates on CT. Their reconstruction software is planned to become public in 2015 or so.
-</li>
 <li><a href="https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
 the ANL. License is BSD-style.</li>
+
 </ul>
 
 All these packages concentrate on image reconstruction for static imaging. 
@@ -146,12 +148,18 @@ library. Non-commercial use only.</li>
 to the scanner reconstruction chain. Its license is quoted as "Public Domain" on Sourceforge.</li>
 </ul>
 
-<h3>Framework for multi-modality  reconstruction software</h3>
+<h3>Frameworks for based on other reconstruction software</h3>
 <ul>
-<li>The <a href="http://www.ccppetmr.ac.uk">Computational Collaborative Project in Synergistic PET-MR Reconstruction</a> is developing a framework for PET-MR
-reconstruction software that aims to provide interfaces to different packages.
-STIR is currently selected as the first package to support PET data.
+<li>The <a href="http://www.ccpsynerbi.ac.uk">CCP SyneRBI (Computational Collaborative Project in Synergistic Reconstruction for Biomedical Imaging)</a> is developing 
+<a href=https://github.com/SyneRBI/SIRF>SIRF</a>, a framework for
+reconstruction software for multimodality data, providing a consistent interfaces to different packages.
+STIR is currently selected as the first package to support PET and SPECT data.
 </li>
+<li><a href="https://github.com/vais-ral/CCPi-Framework" target="_parent">CIL (Common Imaging Library)</a> provides a Python framework for optimisation in the context of imaging, developed by <a href="http://www.ccpi.ac.uk/">CCPi (Collaborative Computational Project in Tomographic Imaging)</a> which concentrates on CT, but plugins can be provided for projectors etc. SIRF and CIL interact closely.
+</li>
+<li><a href="https://github.com/odlgroup/odl" target="_parent">ODL (Operator Disvretization Library)</a> provides a Python framework for optimisation in the context of imaging, using plug-ins to interface to many other packages, including STIR.
+</li>
+
 </ul>
 
 <h2><a name="other_software">Other open source software for PET</a></h2>
@@ -176,7 +184,7 @@ This page is licensed with the
 </p>
 <hr>
 <!-- hhmts start -->
-Last modified: Tue Feb 02 16:44:10 BST 2021
+Last modified: Feb 03 2021
 <!-- hhmts end -->
 
 </BODY>
