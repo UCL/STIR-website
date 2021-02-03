@@ -16,7 +16,7 @@ Links might not work!<p>
 <ul>
 <li><a href="#4DPETMR_sims">simulated 4D PET-MR datasets</a></li>
 <li><a href="#STIR-Interfile">STIR-specific Interfile file format</a></li>
-<li><a href="#GATEPET2STIR">External project to convert GATE output to STIR</a></li>
+<li><a href="#GATESTIR">Handling GATE data with STIR</a></li>
 <li><a href="#PARAPET_deliverables">PARAPET deliverables</a></li>
 <li><a href="#other_packages">Other Open Source reconstruction software</a></li>
 <li><a href="#other_software">Other Open Source software for PET</a></li>
@@ -36,14 +36,23 @@ for more information on the modifications. (Note that currently, STIR does not s
 images that are in strict Interfile version 3.3 format. Moreover, it only supports a subset
 of the suggested new keywords).</p>
 
-<h2><a name="GATEPET2STIR">External project to convert GATE output to STIR</a></h2>
+<h2><a name="GATESTIR">External projects to help with GATE and STIR</a></h2>
+<p>STIR provides support for reading ROOT files from <a href=http://www.opengatecollaboration.org/>GATE</a>,
+a Monte Carlo simulator. However, as ROOT files do not contain any information
+on geometry of the scanner etc, STIR needs an additional header. In addition,
+there is much more to do then just reading the data of course. The following
+external projects can help</p>
+<ul>
+  <li><a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aiming to facilitate the
+    connection between GATE and STIR taking into account image conversions,
+    conventions etc. It also estimates the data corrections needed for reconstruction.
+  </li>
+  <li>
 </p><a href="http://sourceforge.net/projects/gatepet2stir/">GATE_PET_2_STIR</a> is a project 
-(independent from STIR) to convert GATE data to STIR sinograms. Let us know how it works via the
-mailing list.
-</p>
-</p><a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aim to facilitate the conversion of
-GATE list mode data into STIR sinograms and data corrections for reconstruction.
-</p>
+to convert GATE data to STIR sinograms. It reads the GATE macros and ROOT file.
+However, this project is no longer maintained and largely superseded by
+functionality introduced in STIR 4.x.</li>
+</ul>
 
 <h2><a name="PARAPET_deliverables">PARAPET deliverables</a></h2>
 <p>The PARAPET project (precursor of STIR) has a number of deliverables that are still somewhat useful
