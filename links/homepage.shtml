@@ -41,7 +41,9 @@ of the suggested new keywords).</p>
 (independent from STIR) to convert GATE data to STIR sinograms. Let us know how it works via the
 mailing list.
 </p>
-
+</p><a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aim to facilitate the conversion of
+GATE list mode data into STIR sinograms and data corrections for reconstruction.
+</p>
 
 <h2><a name="PARAPET_deliverables">PARAPET deliverables</a></h2>
 <p>The PARAPET project (precursor of STIR) has a number of deliverables that are still somewhat useful
@@ -121,10 +123,6 @@ pyCuda based toolkit for PET, later (now?) SPECT and CT. In early development st
 <li><a href="https://github.com/tomopy/tomopy" target="_parent">TomoPy</a>: Python-based reconstruction software from
 the ANL. License is BSD-style.</li>
 </ul>
-<li>
-<a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aim to facilitate the conversion of
-GATE list mode data into STIR sinograms and data corrections for reconstruction.
-</li>
 
 All these packages concentrate on image reconstruction for static imaging. 
 STIR is unique in providing a flexible open source framework for PET including scatter estimation and routines for dynamic imaging.
