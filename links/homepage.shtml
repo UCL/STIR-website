@@ -41,7 +41,9 @@ of the suggested new keywords).</p>
 (independent from STIR) to convert GATE data to STIR sinograms. Let us know how it works via the
 mailing list.
 </p>
-
+</p><a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aim to facilitate the conversion of
+GATE list mode data into STIR sinograms and data corrections for reconstruction.
+</p>
 
 <h2><a name="PARAPET_deliverables">PARAPET deliverables</a></h2>
 <p>The PARAPET project (precursor of STIR) has a number of deliverables that are still somewhat useful
@@ -165,7 +167,7 @@ This page is licensed with the
 </p>
 <hr>
 <!-- hhmts start -->
-Last modified: Mon Sep 22 17:40:10 BST 2014
+Last modified: Tue Feb 02 16:44:10 BST 2021
 <!-- hhmts end -->
 
 </BODY>
