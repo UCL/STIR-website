@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1Utah__phantom.html" title="A class that represents a Utah phantom. " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node1" href="$classstir_1_1SymmetryOperation.html" title="Encodes symmetry operation on image coordinates and projection data coordinates. " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1TrivialSymmetryOperation.html" title="A class implementing the trivial case where the symmetry operation does nothing at all..." alt="" coords="236,5,459,32"/>
 </map>

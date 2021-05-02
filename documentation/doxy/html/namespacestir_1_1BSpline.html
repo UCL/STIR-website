@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -113,13 +113,36 @@ template&lt;typename pos_type &gt; </td></tr>
 <tr class="memitem:ga68871d9fab43283a01c101706db5bb38"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__BSpline.html#ga68871d9fab43283a01c101706db5bb38">BSplines_weights</a> (const <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> relative_position, const <a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSplineType</a> spline_type)</td></tr>
 <tr class="memdesc:ga68871d9fab43283a01c101706db5bb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">return spline value <br /></td></tr>
 <tr class="separator:ga68871d9fab43283a01c101706db5bb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef58951d93569c96f5e86713acaafbf"><td class="memItemLeft" align="right" valign="top"><a id="acef58951d93569c96f5e86713acaafbf"></a>
+const PieceWiseFunction&lt; <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>bspline_function</b> (<a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSplineType</a> type)</td></tr>
+<tr class="separator:acef58951d93569c96f5e86713acaafbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9925b261dbe74cb410f71c3c85ad7d36"><td class="memTemplParams" colspan="2"><a id="a9925b261dbe74cb410f71c3c85ad7d36"></a>
+template&lt;typename posT &gt; </td></tr>
+<tr class="memitem:a9925b261dbe74cb410f71c3c85ad7d36"><td class="memTemplItemLeft" align="right" valign="top">posT&#160;</td><td class="memTemplItemRight" valign="bottom"><b>cubic_BSplines_weight</b> (const posT relative_position)</td></tr>
+<tr class="separator:a9925b261dbe74cb410f71c3c85ad7d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5f63d9fb7a19d49527abb84615ce44"><td class="memTemplParams" colspan="2"><a id="a8f5f63d9fb7a19d49527abb84615ce44"></a>
+template&lt;typename posT &gt; </td></tr>
+<tr class="memitem:a8f5f63d9fb7a19d49527abb84615ce44"><td class="memTemplItemLeft" align="right" valign="top">posT&#160;</td><td class="memTemplItemRight" valign="bottom"><b>oMoms_weight</b> (const posT relative_position)</td></tr>
+<tr class="separator:a8f5f63d9fb7a19d49527abb84615ce44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0a1f63c17b32da90606d5b2f8d520c"><td class="memTemplParams" colspan="2"><a id="a0a0a1f63c17b32da90606d5b2f8d520c"></a>
+template&lt;typename posT &gt; </td></tr>
+<tr class="memitem:a0a0a1f63c17b32da90606d5b2f8d520c"><td class="memTemplItemLeft" align="right" valign="top">posT&#160;</td><td class="memTemplItemRight" valign="bottom"><b>cubic_BSplines_1st_der_weight</b> (const posT relative_position)</td></tr>
+<tr class="separator:a0a0a1f63c17b32da90606d5b2f8d520c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0eb147384c4cfc7fa125939bb6c072"><td class="memTemplParams" colspan="2"><a id="abb0eb147384c4cfc7fa125939bb6c072"></a>
+template&lt;typename posT &gt; </td></tr>
+<tr class="memitem:abb0eb147384c4cfc7fa125939bb6c072"><td class="memTemplItemLeft" align="right" valign="top">posT&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BSplines_1st_der_weight</b> (const posT relative_position, const <a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSplineType</a> spline_type)</td></tr>
+<tr class="separator:abb0eb147384c4cfc7fa125939bb6c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89442f8eaa9a8202590663933f3ad38"><td class="memTemplParams" colspan="2"><a id="ac89442f8eaa9a8202590663933f3ad38"></a>
+template&lt;typename posT &gt; </td></tr>
+<tr class="memitem:ac89442f8eaa9a8202590663933f3ad38"><td class="memTemplItemLeft" align="right" valign="top">posT&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BSplines_weights</b> (const posT relative_position, const <a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSplineType</a> spline_type)</td></tr>
+<tr class="separator:ac89442f8eaa9a8202590663933f3ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace for functions and classes for B-Spline interpolation in the STIR library. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

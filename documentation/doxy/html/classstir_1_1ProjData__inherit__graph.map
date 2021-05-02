@@ -1,7 +1,8 @@
 <map id="stir::ProjData" name="stir::ProjData">
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="93,155,279,181"/>
-<area shape="rect" id="node6" href="$classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="303,155,485,181"/>
-<area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="231,5,349,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="5,229,177,256"/>
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="202,229,359,256"/>
+<area shape="rect" id="node3" href="$classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. " alt="" coords="347,5,493,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="327,71,513,98"/>
+<area shape="rect" id="node7" href="$classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="329,122,511,149"/>
+<area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,71,124,98"/>
+<area shape="rect" id="node5" href="$classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="561,46,733,73"/>
+<area shape="rect" id="node6" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="569,97,726,123"/>
 </map>

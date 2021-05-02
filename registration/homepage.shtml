@@ -17,25 +17,32 @@ and commercial reasons, the licensing situation is somewhat complex.
 Here is an overview (see below for more details on the 
 licenses):
 <ul>
-<li>Most of the available software is a library, which you can use
-to build your own stand-alone application. 
-The library is available under the 
-<a href="LGPL.htm">GNU Lesser General Public License</a>.</li>
-<li>We distribute some applications as well, including the actual
-reconstruction algorithms. These applications use the above library,
-but are available under the 
-<a href="GPL.htm">GNU General Public License</a>.</li>
+<li>Most of the available software is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>.</li>
 <li>The current software is based on previous work by the 
 PARAPET project (see also the CREDITs).
 Hence, a lot of the files are protected by the 
-<a href="PARAPETlicense.htm">PARAPET license</a>.</li>
+  <a href="PARAPETlicense.htm">PARAPET license</a>.</li>
+<li>The implementation of the Fourier rebinning algorithm is covered by both the PARAPET license
+  and the <a href=LGPL.htm>Lesser GNU Public License 2.0</a>.</li>
 </ul>
 
 <H2>License details</H2>
-We do not give a thorough discussion of the licenses.  
+We do not give a thorough discussion of the licenses.
 We only attempt here to give a short and informal overview of our 
 understanding.
 You have to read the licenses to get the full details.
+
+<H3>Apache 2.0 license</H3>
+The <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a> is a permissive license,
+but with some more conditions than BSD-style licenses. See the link for more details.
+
+<H3>Parapet Project Software Distribution Agreement </H3>
+The <a href="PARAPETlicense.htm">PARAPET  license</a> states more or less 
+that you can have the software, 
+and use it for any purpose at all, under the condition that 
+<quote>"the partners in
+the Parapet Project are individually acknowledged in that use"</quote>.
+
 <H3>GNU licenses</H3>
 The Free Software Foundation (http://www.gnu.org) is a non-commercial
 organisation that has a long standard in providing Open Source
@@ -55,32 +62,22 @@ redistributed derivative of the licensed software has to have a
 license compatible with the original one (in particular, enforcing
 making source code available).  The difference between the GPL and the
 LGPL is that the LGPL allows commercial (or non-LGPL) programmes to
-link with the library (you still have to give credit and
-distribute the source), while the GPL forces any application using the
-software to be GPL'ed as well. This is done by requiring that any GPL
-program can only use other software components whose license is
-compatible with the GPL. However, note that a commercial application
-can still run a GPL'ed program, as long as it is clear it is used as a
-stand-alone product.
+link with the library (you still have to
+distribute the source of the library), while the GPL forces any application using the
+software to be GPL'ed as well.
 
-<H3>Parapet Project Software Distribution Agreement </H3>
-The <a href="PARAPETlicense.htm">PARAPET  license</a> states more or less 
-that you can have the software, 
-and use it for any purpose at all, under the condition that 
-<quote>"the partners in
-the Parapet Project are individually acknowledged in that use"</quote>.
  
 
 <H2>Summary</H2>
 <ul>
 <li>If you use this software, you have to give credit to the PARAPET
 project and to STIR. </li>
-<li>If you distribute an application that links with the library part of 
-STIR (which you potentially modified), you have to distribute the (modified) 
+<li>Unless you use the Fourier rebinning code, you are also bound by the
+  Apache 2.0 license.</li>
+<li>If you distribute an application that links with the Fourier rebinning implementation
+(which you potentially modified), you have to distribute the (modified) 
 source code of the library part of STIR as 
 well, protected under the LGPL. See section 6 of the LGPL for full details.</li>
-<li>If you distribute a (modified version) of a STIR application, you
-have to do this under the GPL.</li>
 </ul>
 
 
@@ -95,6 +92,6 @@ There is no longer any need to register for STIR. Just proceed to the
 
 <hr>
 <!-- hhmts start -->
-Last modified: May 24 2018
+Last modified: May 2 2021
 <!-- hhmts end -->
 </BODY>

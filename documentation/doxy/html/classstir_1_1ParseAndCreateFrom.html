@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,7 @@ class stir::ParseAndCreateFrom&lt; OutputT, InputT, ParserT &gt;</h3>
 <p>template for adding keywords to a parser and creating an object </p>
 <p>The idea is that a reconstructor needs to be able to create an image based on some parameters and the current input data. However, this needs to be flexible for different types, as for instance, many different reconstructors produce a <a class="el" href="classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. ">DiscretisedDensity</a> object but from different input data, or vice versa.</p>
 <p>We do this using specialisations of this class. That way, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a> etc can be templated without having to know what the actual <code>OutputT</code> is.</p>
-<p>This of course only works if a specialisation is created for the <code>OutputT</code> and  of interest.</p>
+<p>This of course only works if a specialisation is created for the <code>OutputT</code> and <code>InputT</code> of interest.</p>
 <p>A specialisation needs to define all four member functions as the reconstruction code will otherwise break.</p>
 <p>The default implementations don't do anything (aside from <a class="el" href="classstir_1_1ParseAndCreateFrom.html#ae335e7747328c2ee570610212e93c6f5" title="create a new object ">create()</a>).</p>
 <p>Check <a class="el" href="classstir_1_1ParseAndCreateFrom.html" title="template for adding keywords to a parser and creating an object ">ParseAndCreateFrom</a>&lt;DiscretisedDensity&lt;3, elemT&gt;, ExamDataT&gt; for an example which might make sense. </p>
@@ -126,7 +126,7 @@ template&lt;class OutputT, class InputT, class ParserT = KeyParser&gt; </div>
 <p>create a new object </p>
 <p>This can take any parsed parameters into account.</p>
 <p>The default just calls <code>new</code>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>Currently we're assuming this returns a bare pointer (to a new object). This is due to limitations in the reconstruction classes. It will need to change to a <code>std::unique</code> pointer. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>Currently we're assuming this returns a bare pointer (to a new object). This is due to limitations in the reconstruction classes. It will need to change to a <code>std::unique</code> pointer. </dd></dl>
 
 </div>
 </div>
@@ -136,7 +136,7 @@ template&lt;class OutputT, class InputT, class ParserT = KeyParser&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

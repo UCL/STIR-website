@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -51,11 +51,13 @@ Collaboration diagram for Tests of the basic building blocks:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__test.png" border="0" alt="" usemap="#group____test"/>
 <map name="group____test" id="group____test">
-<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="593,5,736,47"/>
-<area shape="rect" id="node2" href="group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="573,87,756,143"/>
-<area shape="rect" id="node4" href="group__buildblock.html" title="Basic building blocks" alt="" coords="585,187,744,214"/>
-<area shape="rect" id="node6" href="group__distributable.html" title="distributable building\l blocks" alt="" coords="585,276,745,317"/>
-<area shape="rect" id="node5" href="group__alltest.html" title="Test code for STIR" alt="" coords="5,141,144,167"/>
+<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="593,14,736,55"/>
+<area shape="rect" id="node2" href="group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="573,127,756,183"/>
+<area shape="rect" id="node3" href="group__date__time.html" title="Items related to date\l/time processing" alt="" coords="585,209,744,250"/>
+<area shape="rect" id="node5" href="group__numerics.html" title="Numerical algorithms" alt="" coords="583,292,746,319"/>
+<area shape="rect" id="node6" href="group__buildblock.html" title="Basic building blocks" alt="" coords="585,371,744,397"/>
+<area shape="rect" id="node8" href="group__distributable.html" title="distributable building\l blocks" alt="" coords="585,450,745,491"/>
+<area shape="rect" id="node7" href="group__alltest.html" title="Test code for STIR" alt="" coords="5,247,144,273"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -101,10 +103,13 @@ Files</h2></td></tr>
 <tr class="memdesc:test__ByteOrder_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program for <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">stir::ByteOrder</a> and <a class="el" href="ByteOrderDefine_8h.html" title="Definition of STIRIsNativeByteOrderBigEndian and STIRIsNativeByteOrderLittleEndian preprocessor symbo...">ByteOrderDefine.h</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__convert__array_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__convert__array_8cxx.html">test_convert_array.cxx</a></td></tr>
-<tr class="memdesc:test__convert__array_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for the <a class="el" href="group__Array.html#ga29b397533a51414e1cb495ca3903099a" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions <br /></td></tr>
+<tr class="memdesc:test__convert__array_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for the <a class="el" href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__coordinates_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__coordinates_8cxx.html">test_coordinates.cxx</a></td></tr>
 <tr class="memdesc:test__coordinates_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple program to test the Coordinate classes. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:test__DateTime_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__DateTime_8cxx.html">test_DateTime.cxx</a></td></tr>
+<tr class="memdesc:test__DateTime_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple program to test the date-time conversions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__display_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__display_8cxx.html">test_display.cxx</a></td></tr>
 <tr class="memdesc:test__display_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very simple test program for stir::display() <br /></td></tr>
@@ -144,6 +149,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__proj__data__info_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__proj__data__info_8cxx.html">test_proj_data_info.cxx</a></td></tr>
 <tr class="memdesc:test__proj__data__info_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program for <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">stir::ProjDataInfo</a> hierarchy. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:test__proj__data__maths_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__proj__data__maths_8cxx.html">test_proj_data_maths.cxx</a></td></tr>
+<tr class="memdesc:test__proj__data__maths_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test maths of <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__ROIs_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__ROIs_8cxx.html">test_ROIs.cxx</a></td></tr>
 <tr class="memdesc:test__ROIs_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program for ROI functionality (and a bit of <a class="el" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. ">stir::Shape3D</a> hierarchy) <br /></td></tr>
@@ -220,6 +228,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1modellingTests.html">stir::modellingTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple class to test modelling functions.  <a href="classstir_1_1modellingTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TestGPUProjectors.html">stir::TestGPUProjectors</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for GPU projectors.  <a href="classstir_1_1TestGPUProjectors.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BSpline_1_1BSplines__Tests.html">stir::BSpline::BSplines_Tests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple class to test the BSplines function.  <a href="classstir_1_1BSpline_1_1BSplines__Tests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +248,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1coordinateTests.html">stir::coordinateTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class with tests for <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a>, <a class="el" href="classstir_1_1Coordinate3D.html" title="a templated class for 3-dimensional coordinates. ">Coordinate3D</a> et al.  <a href="classstir_1_1coordinateTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DateTimeTest.html">stir::DateTimeTest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class with tests for date time functions.  <a href="classstir_1_1DateTimeTest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilenameTests.html">stir::FilenameTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for filename functions defined in utility.h.  <a href="classstir_1_1FilenameTests.html#details">More...</a><br /></td></tr>
@@ -286,6 +300,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulationTests.html">stir::ScatterSimulationTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for <a class="el" href="classstir_1_1ScatterSimulation.html" title="Simulate the scatter probability using a model-based approach. ">ScatterSimulation</a>.  <a href="classstir_1_1ScatterSimulationTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SeparableGaussianArrayFilterTests.html">stir::SeparableGaussianArrayFilterTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests <a class="el" href="classstir_1_1SeparableGaussianArrayFilter.html" title="Separable Gaussian filtering in n - dimensions. ">SeparableGaussianArrayFilter</a> functionalityCurrently only very basic tests on normalisation.  <a href="classstir_1_1SeparableGaussianArrayFilterTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SeparableMetzArrayFilterTests.html">stir::SeparableMetzArrayFilterTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests <a class="el" href="classstir_1_1SeparableMetzArrayFilter.html" title="Separable Metz filtering in n - dimensions. ">SeparableMetzArrayFilter</a> functionalityCurrently only very basic tests on normalisation.  <a href="classstir_1_1SeparableMetzArrayFilterTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,7 +326,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -83,20 +83,24 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>DiscoverySTE</b>, 
 <b>DiscoveryRX</b>, 
 <b>Discovery600</b>, 
-<b>Discovery690</b>, 
+<b>PETMR_Signa</b>, 
 <br />
-&#160;&#160;<b>HZLR</b>, 
-<b>RATPET</b>, 
+&#160;&#160;<b>Discovery690</b>, 
+<b>DiscoveryMI3ring</b>, 
+<b>DiscoveryMI4ring</b>, 
+<b>HZLR</b>, 
+<br />
+&#160;&#160;<b>RATPET</b>, 
 <b>PANDA</b>, 
 <b>HYPERimage</b>, 
+<b>nanoPET</b>, 
 <br />
-&#160;&#160;<b>nanoPET</b>, 
-<b>HRRT</b>, 
+&#160;&#160;<b>HRRT</b>, 
 <b>Allegro</b>, 
 <b>GeminiTF</b>, 
+<b>User_defined_scanner</b>, 
 <br />
-&#160;&#160;<b>User_defined_scanner</b>, 
-<b>Unknown_scanner</b>
+&#160;&#160;<b>Unknown_scanner</b>
 <br />
  }<tr class="memdesc:a67a1829773e3df52965769e9e1b0a9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for all predefined scanners <br /></td></tr>
 </td></tr>
@@ -137,10 +141,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5e456ef2dbcfab92317f66b78790c393"><td class="memItemLeft" align="right" valign="top"><a id="a5e456ef2dbcfab92317f66b78790c393"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &amp;scanner) const</td></tr>
 <tr class="separator:a5e456ef2dbcfab92317f66b78790c393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93f8f0dc3493fda8bbff60cb82628a1"><td class="memItemLeft" align="right" valign="top"><a id="ae93f8f0dc3493fda8bbff60cb82628a1"></a>
-<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ae93f8f0dc3493fda8bbff60cb82628a1">get_type</a> () const</td></tr>
-<tr class="memdesc:ae93f8f0dc3493fda8bbff60cb82628a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner type <br /></td></tr>
-<tr class="separator:ae93f8f0dc3493fda8bbff60cb82628a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151e9ff906ed795438d22bf4c6b0f9eb"><td class="memItemLeft" align="right" valign="top"><a id="a151e9ff906ed795438d22bf4c6b0f9eb"></a>
+<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a151e9ff906ed795438d22bf4c6b0f9eb">get_type</a> () const</td></tr>
+<tr class="memdesc:a151e9ff906ed795438d22bf4c6b0f9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner type <br /></td></tr>
+<tr class="separator:a151e9ff906ed795438d22bf4c6b0f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency</a> () const</td></tr>
 <tr class="memdesc:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks consistency  <a href="#a2dd6bc8b5428e5538c3d36d945bc0fba">More...</a><br /></td></tr>
 <tr class="separator:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,14 +383,14 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <li><code>block</code> several crystals are grouped in a block, this can be in 3 dimensions (see layer). This information could be useful for finding the geometry of the scanner, but we would plenty more size info presumably. </li>
 <li><code>layer</code> Some scanners have multiple layers of detectors to give Depth Of Interaction information </li>
 <li><code>bucket</code> several <code>blocks</code> send detected events to one <code>bucket</code>. This has consequences for the dead-time modelling. For instance, one bucket could have much more singles than another, and hence presumably higher singles-dead-time. </li>
-<li><code>singles_unit</code> (non-standard terminology) Most scanners report the singles detected during the acquisition. Some scanners (such as GE scanners) report singles for every crystal, while others (such as CTI scanners) give only singles for a collection of blocks. A <code>singles_unit</code> is then a set of crystals for which we can get singles rates.</li>
+<li><code>singles_unit</code> (non-standard terminology) Most scanners report the singles detected during the acquisition. Some scanners (such as <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> scanners) report singles for every crystal, while others (such as CTI scanners) give only singles for a collection of blocks. A <code>singles_unit</code> is then a set of crystals for which we can get singles rates.</li>
 </ul>
 <p>A further complication is that some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data (corresponding to gaps between detector blocks). We currently define the blocks as the "virtual" ones, but provide extra members to find out how many of these virtual crystals there are.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is only sensible for discrete detector-based scanners. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000139">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
 <p class="enddd">derive from <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a> </p>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000140">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adda8b1b4d119f8587360d47dbebc4c80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adda8b1b4d119f8587360d47dbebc4c80">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
@@ -730,7 +734,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>get the maximum number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_num_non_arccorrected_tangential_poss()</code> or so. Even better would be to replace it by a name relating to the number of detectors that are in coincidence with a a single detector in the ring, as that is the physical reason why there is a maximum number anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000141">Todo:</a></b></dt><dd>change name </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo:</a></b></dt><dd>change name </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
 
@@ -761,7 +765,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>get the default number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_default_num_arccorrected_tangential_poss()</code> or so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000158">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
 
 </div>
 </div>
@@ -818,7 +822,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>get intrinsic tilt in raw sinogram data (in radians) </p>
 <p>Some scanners construct sinograms where the first view does not correspond to the vertical. This angle tells you how much the image will be rotated when this tilt is ignored in the reconstruction algorithm. It uses the same coordinate system as <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>we still have to decide if <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a> will take this tilt into account or not. At present, STIR ignores the intrinsic tilt. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000159">Todo:</a></b></dt><dd>we still have to decide if <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a> will take this tilt into account or not. At present, STIR ignores the intrinsic tilt. </dd></dl>
 
 </div>
 </div>
@@ -891,11 +895,12 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Scanner_8h_source.html">Scanner.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/buildblock/<a class="el" href="Scanner_8cxx.html">Scanner.cxx</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Scanner_8inl.html">Scanner.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

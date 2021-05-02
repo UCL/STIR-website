@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -76,9 +76,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:a159d43472bff308f1d869f400e7c4372"><td class="memItemLeft" align="right" valign="top"><a id="a159d43472bff308f1d869f400e7c4372"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classstir_1_1DataSymmetriesForDensels.html">DataSymmetriesForDensels</a> &amp;) const</td></tr>
 <tr class="separator:a159d43472bff308f1d869f400e7c4372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af454f6588654733c40aad7a30ca3899e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForDensels.html#af454f6588654733c40aad7a30ca3899e">get_related_densels</a> (std::vector&lt; <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &gt; &amp;, const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;b) const =0</td></tr>
-<tr class="memdesc:af454f6588654733c40aad7a30ca3899e"><td class="mdescLeft">&#160;</td><td class="mdescRight">fills in a vector with all the Densels that are related to 'b' (including itself)  <a href="#af454f6588654733c40aad7a30ca3899e">More...</a><br /></td></tr>
-<tr class="separator:af454f6588654733c40aad7a30ca3899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bd517b0a7086863abdb234f94bc635"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForDensels.html#af9bd517b0a7086863abdb234f94bc635">get_related_densels</a> (std::vector&lt; <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &gt; &amp;, const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;b) const =0</td></tr>
+<tr class="memdesc:af9bd517b0a7086863abdb234f94bc635"><td class="mdescLeft">&#160;</td><td class="mdescRight">fills in a vector with all the Densels that are related to 'b' (including itself)  <a href="#af9bd517b0a7086863abdb234f94bc635">More...</a><br /></td></tr>
+<tr class="separator:af9bd517b0a7086863abdb234f94bc635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f07db05b79896274cb47e0e84077a23"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForDensels.html#a3f07db05b79896274cb47e0e84077a23">num_related_densels</a> (const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;b) const</td></tr>
 <tr class="memdesc:a3f07db05b79896274cb47e0e84077a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of Densels related to 'b'  <a href="#a3f07db05b79896274cb47e0e84077a23">More...</a><br /></td></tr>
 <tr class="separator:a3f07db05b79896274cb47e0e84077a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,8 +104,8 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>A class for encoding/finding symmetries common to the geometry of the projection data and the discretised density. </p>
 <p>This class is mainly (only?) useful for <a class="el" href="classstir_1_1ProjMatrixByDensel.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;Densel&#39;...">ProjMatrixByDensel</a> classes and their 'users'. Together with <a class="el" href="classstir_1_1SymmetryOperation.html" title="Encodes symmetry operation on image coordinates and projection data coordinates. ">SymmetryOperation</a>, it provides the basic way to be able to write generic code without knowing which particular symmetries the data have. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af454f6588654733c40aad7a30ca3899e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af454f6588654733c40aad7a30ca3899e">&#9670;&nbsp;</a></span>get_related_densels()</h2>
+<a id="af9bd517b0a7086863abdb234f94bc635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9bd517b0a7086863abdb234f94bc635">&#9670;&nbsp;</a></span>get_related_densels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,10 +114,10 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void stir::DataSymmetriesForDensels::get_related_densels </td>
+          <td class="memname">void stir::DataSymmetriesForDensels::get_related_densels </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &gt; &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>rel_b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,7 +203,7 @@ Protected Member Functions</h2></td></tr>
 <p>given an arbitrary Densel 'b', find the basic Densel </p>
 <p>sets 'b' to the corresponding 'basic' Densel and returns the symmetry transformation from 'basic' to 'b'. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html#ab569b05846d56614ec4a78292f29a551">stir::DataSymmetriesForDensels_PET_CartesianGrid</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html#ac5d540220e16e12a3e9812961c278b69">stir::DataSymmetriesForDensels_PET_CartesianGrid</a>.</p>
 
 </div>
 </div>
@@ -268,12 +268,13 @@ Protected Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock/<a class="el" href="DataSymmetriesForDensels_8h_source.html">DataSymmetriesForDensels.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock/<a class="el" href="DataSymmetriesForDensels_8inl.html">DataSymmetriesForDensels.inl</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/recon_buildblock/<a class="el" href="DataSymmetriesForDensels_8cxx.html">DataSymmetriesForDensels.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

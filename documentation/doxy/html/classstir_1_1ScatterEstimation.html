@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,12 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ProjData.html">ProjData</a
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a207441b869453637a816c56ce94952a2">set_input_proj_data_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
 <tr class="memdesc:a207441b869453637a816c56ce94952a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the input projdata. <br /></td></tr>
 <tr class="separator:a207441b869453637a816c56ce94952a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040c8f5cbcb180997de1e0f5c8da5530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a040c8f5cbcb180997de1e0f5c8da5530">set_input_data</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a040c8f5cbcb180997de1e0f5c8da5530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the input projdata.  <a href="#a040c8f5cbcb180997de1e0f5c8da5530">More...</a><br /></td></tr>
+<tr class="separator:a040c8f5cbcb180997de1e0f5c8da5530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721fcfd13c08ae91fa0ea03b820a462c"><td class="memItemLeft" align="right" valign="top"><a id="a721fcfd13c08ae91fa0ea03b820a462c"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_input_data</b> () const</td></tr>
+<tr class="separator:a721fcfd13c08ae91fa0ea03b820a462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade55606f77ff3a309965ed8b36308d04"><td class="memItemLeft" align="right" valign="top"><a id="ade55606f77ff3a309965ed8b36308d04"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ade55606f77ff3a309965ed8b36308d04">set_reconstruction_method_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Reconstruction.html">Reconstruction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &gt;)</td></tr>
 <tr class="memdesc:ade55606f77ff3a309965ed8b36308d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the reconstruction method for the scatter estimation. <br /></td></tr>
@@ -100,11 +106,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ad702919edf4769776cb3888b1cb71346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the full resolution attenuation image. <br /></td></tr>
 <tr class="separator:ad702919edf4769776cb3888b1cb71346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc45dab478fe65fc54695ba8db201f5"><td class="memItemLeft" align="right" valign="top"><a id="a5bc45dab478fe65fc54695ba8db201f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_attenuation_correction_proj_data_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a5bc45dab478fe65fc54695ba8db201f5">set_attenuation_correction_proj_data_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
+<tr class="memdesc:a5bc45dab478fe65fc54695ba8db201f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set projection data that contains the attenuation correction factors <br /></td></tr>
 <tr class="separator:a5bc45dab478fe65fc54695ba8db201f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b825ce3ba9596822c0ae9fb2d5be43e"><td class="memItemLeft" align="right" valign="top"><a id="a6b825ce3ba9596822c0ae9fb2d5be43e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_normalisation_proj_data_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
-<tr class="separator:a6b825ce3ba9596822c0ae9fb2d5be43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae73163383cdfcd436de88a08d5073"><td class="memItemLeft" align="right" valign="top"><a id="ab0ae73163383cdfcd436de88a08d5073"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ab0ae73163383cdfcd436de88a08d5073">set_normalisation_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;)</td></tr>
+<tr class="memdesc:ab0ae73163383cdfcd436de88a08d5073"><td class="mdescLeft">&#160;</td><td class="mdescRight">set normalisation object (excluding attenuation) <br /></td></tr>
+<tr class="separator:ab0ae73163383cdfcd436de88a08d5073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a014a317061f6cb500b3c773c7a805c"><td class="memItemLeft" align="right" valign="top"><a id="a8a014a317061f6cb500b3c773c7a805c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_background_proj_data_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
 <tr class="separator:a8a014a317061f6cb500b3c773c7a805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +128,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_mask_proj_data_sp
 <tr class="memitem:addcc716934a0d0d0f04a35332e968a42"><td class="memItemLeft" align="right" valign="top"><a id="addcc716934a0d0d0f04a35332e968a42"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_scatter_simulation_method_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> &gt;)</td></tr>
 <tr class="separator:addcc716934a0d0d0f04a35332e968a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6230a52c23fa34f530146fe2c924e03"><td class="memItemLeft" align="right" valign="top"><a id="ab6230a52c23fa34f530146fe2c924e03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_iterations</b> (int)</td></tr>
+<tr class="separator:ab6230a52c23fa34f530146fe2c924e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaae7ea8fb41e11b60078dec74564ec"><td class="memItemLeft" align="right" valign="top"><a id="acdaae7ea8fb41e11b60078dec74564ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_scatter_estimate_prefix</b> (const std::string &amp;)</td></tr>
+<tr class="separator:acdaae7ea8fb41e11b60078dec74564ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930e6a5675d4907a358653c287bcf97d"><td class="memItemLeft" align="right" valign="top"><a id="a930e6a5675d4907a358653c287bcf97d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_export_scatter_estimates_of_each_iteration</b> (bool)</td></tr>
+<tr class="separator:a930e6a5675d4907a358653c287bcf97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1501551083ef88b45d5caa93c0eed9"><td class="memItemLeft" align="right" valign="top"><a id="a1b1501551083ef88b45d5caa93c0eed9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a1b1501551083ef88b45d5caa93c0eed9">set_zoom_xy</a> (float)</td></tr>
 <tr class="memdesc:a1b1501551083ef88b45d5caa93c0eed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the zoom factor in the XY plane for the downsampling of the activity and attenuation image. <br /></td></tr>
@@ -128,10 +145,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#aede82091442212444902ab1b2750126c">set_zoom_z</a> (float)</td></tr>
 <tr class="memdesc:aede82091442212444902ab1b2750126c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the zoom factor in the Z axis for the downsampling of the activity and attenuation image. <br /></td></tr>
 <tr class="separator:aede82091442212444902ab1b2750126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dfdaa6087a99699346f9ebf77c41d9a"><td class="memItemLeft" align="right" valign="top"><a id="a6dfdaa6087a99699346f9ebf77c41d9a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a6dfdaa6087a99699346f9ebf77c41d9a">get_iterations_num</a> () const</td></tr>
-<tr class="memdesc:a6dfdaa6087a99699346f9ebf77c41d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of iteration for the scatter estimation. <br /></td></tr>
+<tr class="memitem:a6dfdaa6087a99699346f9ebf77c41d9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a6dfdaa6087a99699346f9ebf77c41d9a">get_iterations_num</a> () const</td></tr>
+<tr class="memdesc:a6dfdaa6087a99699346f9ebf77c41d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of iterations for the scatter estimation.  <a href="#a6dfdaa6087a99699346f9ebf77c41d9a">More...</a><br /></td></tr>
 <tr class="separator:a6dfdaa6087a99699346f9ebf77c41d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f3eb555800e60b9a2d84a6fdea3dd7"><td class="memItemLeft" align="right" valign="top"><a id="a48f3eb555800e60b9a2d84a6fdea3dd7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a48f3eb555800e60b9a2d84a6fdea3dd7">get_num_iterations</a> () const</td></tr>
+<tr class="memdesc:a48f3eb555800e60b9a2d84a6fdea3dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of iterations for the scatter estimation. <br /></td></tr>
+<tr class="separator:a48f3eb555800e60b9a2d84a6fdea3dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107504be28ea985d9e051691f6761d1d"><td class="memItemLeft" align="right" valign="top"><a id="a107504be28ea985d9e051691f6761d1d"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a107504be28ea985d9e051691f6761d1d">get_estimated_activity_image_sptr</a> () const</td></tr>
+<tr class="memdesc:a107504be28ea985d9e051691f6761d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the (low resolution) estimate of the activity image. <br /></td></tr>
+<tr class="separator:a107504be28ea985d9e051691f6761d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca0db5d394151dfa1dcb81be82803e2"><td class="memItemLeft" align="right" valign="top"><a id="aaca0db5d394151dfa1dcb81be82803e2"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#aaca0db5d394151dfa1dcb81be82803e2">already_setup</a> () const</td></tr>
+<tr class="memdesc:aaca0db5d394151dfa1dcb81be82803e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows checking if we have called <a class="el" href="classstir_1_1ScatterEstimation.html#a3ba6aebef60bff5fd4cf4850537e68cf" title="set_up ">set_up()</a> <br /></td></tr>
+<tr class="separator:aaca0db5d394151dfa1dcb81be82803e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -202,14 +230,10 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">Discret
 shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ab1c9ffd1ce689290052ae68e93957a8f">atten_image_sptr</a></td></tr>
 <tr class="memdesc:ab1c9ffd1ce689290052ae68e93957a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classImage.html" title="Reading and writing gipl files. ">Image</a> with attenuation values. <br /></td></tr>
 <tr class="separator:ab1c9ffd1ce689290052ae68e93957a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac820b739a8191915bc78e0ecd4831b7f"><td class="memItemLeft" align="right" valign="top"><a id="ac820b739a8191915bc78e0ecd4831b7f"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ac820b739a8191915bc78e0ecd4831b7f">multiplicative_binnorm_2d_sptr</a></td></tr>
-<tr class="memdesc:ac820b739a8191915bc78e0ecd4831b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">((1/SSRB(1/norm3D)) * SSRB(atten)). Through out the code we set as first the norm and second the atten. <br /></td></tr>
-<tr class="separator:ac820b739a8191915bc78e0ecd4831b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1065e2b11f64b541f36846f2cc87abe5"><td class="memItemLeft" align="right" valign="top"><a id="a1065e2b11f64b541f36846f2cc87abe5"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a1065e2b11f64b541f36846f2cc87abe5">multiplicative_binnorm_sptr</a></td></tr>
-<tr class="memdesc:a1065e2b11f64b541f36846f2cc87abe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">(norm * atten) in 3D. Through out the code we set as first the norm and second the atten. <br /></td></tr>
-<tr class="separator:a1065e2b11f64b541f36846f2cc87abe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6215678213614bb082e55776072fe27d"><td class="memItemLeft" align="right" valign="top"><a id="a6215678213614bb082e55776072fe27d"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a6215678213614bb082e55776072fe27d">norm_3d_sptr</a></td></tr>
+<tr class="memdesc:a6215678213614bb082e55776072fe27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalisation components in 3D (without atten) <br /></td></tr>
+<tr class="separator:a6215678213614bb082e55776072fe27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d823b413eb93823fda273a0d9c72a20"><td class="memItemLeft" align="right" valign="top"><a id="a3d823b413eb93823fda273a0d9c72a20"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a></td></tr>
 <tr class="memdesc:a3d823b413eb93823fda273a0d9c72a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask proj_data. <br /></td></tr>
@@ -253,13 +277,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#aba532c89260e3c4485a34538dfa5598b">back_projdata_filename</a></td></tr>
 <tr class="memdesc:aba532c89260e3c4485a34538dfa5598b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename of background projdata. <br /></td></tr>
 <tr class="separator:aba532c89260e3c4485a34538dfa5598b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac315f6ab279fa70a24d517214b952344"><td class="memItemLeft" align="right" valign="top"><a id="ac315f6ab279fa70a24d517214b952344"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ac315f6ab279fa70a24d517214b952344">norm_coeff_filename</a></td></tr>
-<tr class="memdesc:ac315f6ab279fa70a24d517214b952344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename of normalisation factors. <br /></td></tr>
-<tr class="separator:ac315f6ab279fa70a24d517214b952344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ff1d6214ec59be4294a66b6cc106c8"><td class="memItemLeft" align="right" valign="top"><a id="ad3ff1d6214ec59be4294a66b6cc106c8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ad3ff1d6214ec59be4294a66b6cc106c8">tail_mask_par_filename</a></td></tr>
-<tr class="memdesc:ad3ff1d6214ec59be4294a66b6cc106c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paraameter file for the tail fitting. <br /></td></tr>
+<tr class="memitem:ad3ff1d6214ec59be4294a66b6cc106c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#ad3ff1d6214ec59be4294a66b6cc106c8">tail_mask_par_filename</a></td></tr>
+<tr class="memdesc:ad3ff1d6214ec59be4294a66b6cc106c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional parameter file for the tail fitting.  <a href="#ad3ff1d6214ec59be4294a66b6cc106c8">More...</a><br /></td></tr>
 <tr class="separator:ad3ff1d6214ec59be4294a66b6cc106c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5307cc76151c003ff790758bcd8d2055"><td class="memItemLeft" align="right" valign="top"><a id="a5307cc76151c003ff790758bcd8d2055"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a5307cc76151c003ff790758bcd8d2055">input_projdata_filename</a></td></tr>
@@ -300,10 +319,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>output_additiv
 Kris Thielemans</dd></dl>
 <p>This is an implementation of Watson's SSS iterative algorithm to estimate scatter. Simulation is normally at low resolution, ideally reconstruction as well (to save time). The code also does tail-fitting.</p>
 <p>A particular feature is that the first iterations happen in 2D (after SSRB of all the data). Currently only the last simulation is in 3D. This could be changed later.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd><p class="startdd">The code should throw an error if 2D input data are loaded. It should just deactivate the final upsampling. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000160">Todo:</a></b></dt><dd><p class="startdd">The code should throw an error if 2D input data are loaded. It should just deactivate the final upsampling. </p>
 <p>Currently FBP reconstruction is not working and just throws an error. </p>
-<p class="enddd">This code needs far more documentation. </p>
+<p class="enddd">This code needs far more documentation.</p>
 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>The current parsing code still allows the <code>bin normalisation type</code> keyword to specify a "chained" normalisation object with first the norm and second the atten. As there is no way to guarantee that this will be the case, we have now replaced this with explicit setting of the norm factors only (keyword <code>normalisation type</code>) and the attenuation factors. The naming of the keywords is confusing however. (Ensuring backwards compatibility was not so easy, so the code might look confusing.) </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ace6b465e634d39ff125681d5b384d1bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace6b465e634d39ff125681d5b384d1bd">&#9670;&nbsp;</a></span>upsample_and_fit_scatter_estimate()</h2>
@@ -398,7 +418,7 @@ Kris Thielemans</dd></dl>
 <li>apply scale factors using <a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77" title="apply a scale factor for every sinogram ">scale_sinograms()</a> </li>
 </ol>
 
-<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#ad29792ed78c33cf9465e0365fb261547">stir::VectorWithOffset&lt; T &gt;::begin()</a>, <a class="el" href="classstir_1_1Array.html#a3df0eff45925f35329a33d94b0b66cfe">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">stir::ProjDataInfo::clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a926807d20073d214ca81cf2b7eae994b">stir::ProjDataInfo::create_shared_clone()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#ab808970194605ce7c58fe1cdaaf5ddf8">stir::VectorWithOffset&lt; T &gt;::end()</a>, <a class="el" href="classstir_1_1Array.html#a01fe4396ea4f95c0c23b7b28e20b3f04">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;::fill()</a>, <a class="el" href="classstir_1_1ProjData.html#a93e155fb1cae1f57eb6e4c02e92ec9b8">stir::ProjData::fill()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#ac3cbbc39532fa95ee7121cb251ab43d0">stir::VectorWithOffset&lt; T &gt;::fill()</a>, <a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a934fdb0888b8dd27f0dea48d11c90263">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e">stir::get_scale_factors_per_sinogram()</a>, <a class="el" href="classstir_1_1Array.html#a91aae9bb5d444aa5d9bdfb95f7d88630">stir::Array&lt; num_dimensions, elemT &gt;::grow()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__projdata.html#ga0cb657b2de00a68eb0b235a89861f477">stir::interpolate_projdata()</a>, <a class="el" href="group__projdata.html#gae32b9bf6161b4465b00537278ce74722">stir::inverse_SSRB()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#aebe407aa214715b152f50222a6a57998">stir::BinNormalisation::is_trivial()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aed0410b14fbc21f5b11632738dbca877">stir::VectorWithOffset&lt; T &gt;::resize()</a>, <a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77">stir::scale_sinograms()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#a3f25d42d0a56b00b7c719dd66967fd2b">stir::BinNormalisation::set_up()</a>, <a class="el" href="namespacestir.html#a6c602d976b9fa3dc9a2daf6d42a6f660">stir::threshold_lower()</a>, <a class="el" href="namespacestir.html#a1ad7dd3b0556692f95f67a2d6c9112ce">stir::threshold_upper()</a>, and <a class="el" href="classstir_1_1BinNormalisation.html#aa647ffbe81a5bc18c2a7e30eab0c22f4">stir::BinNormalisation::undo()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a147a665c5ab7818c5197fac452bcff9b">stir::VectorWithOffset&lt; T &gt;::begin()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">stir::ProjDataInfo::clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb">stir::ProjDataInfo::create_shared_clone()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#ab5ea6073b3daf75f23f1b545d0b6593f">stir::VectorWithOffset&lt; T &gt;::end()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjData.html#a93e155fb1cae1f57eb6e4c02e92ec9b8">stir::ProjData::fill()</a>, <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;::fill()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#ac3cbbc39532fa95ee7121cb251ab43d0">stir::VectorWithOffset&lt; T &gt;::fill()</a>, <a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae7b96d9b9add37501ee1af381e0cb8bf">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e">stir::get_scale_factors_per_sinogram()</a>, <a class="el" href="classstir_1_1Array.html#a65d8d70124654379b1bc507829e14b67">stir::Array&lt; num_dimensions, elemT &gt;::grow()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__projdata.html#ga0cb657b2de00a68eb0b235a89861f477">stir::interpolate_projdata()</a>, <a class="el" href="group__projdata.html#gae32b9bf6161b4465b00537278ce74722">stir::inverse_SSRB()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#aebe407aa214715b152f50222a6a57998">stir::BinNormalisation::is_trivial()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aa0d7c80102ef873b5d60c52f3db4348d">stir::VectorWithOffset&lt; T &gt;::resize()</a>, <a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77">stir::scale_sinograms()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#a3f25d42d0a56b00b7c719dd66967fd2b">stir::BinNormalisation::set_up()</a>, <a class="el" href="namespacestir.html#a6c602d976b9fa3dc9a2daf6d42a6f660">stir::threshold_lower()</a>, <a class="el" href="namespacestir.html#a1ad7dd3b0556692f95f67a2d6c9112ce">stir::threshold_upper()</a>, and <a class="el" href="classstir_1_1BinNormalisation.html#aa647ffbe81a5bc18c2a7e30eab0c22f4">stir::BinNormalisation::undo()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>.</p>
 
@@ -437,7 +457,7 @@ Check if debug mode and activate all export flags. </li>
 <li>
 Load the input_projdata_3d_sptr and perform SSRB </li>
 <li>
-Initialise (partially for the moment) the reconstruction method: Parses the input par file. </li>
+Initialise (partially for the moment) the reconstruction method: </li>
 <li>
 Load Normalisation data and perform SSRB </li>
 <li>
@@ -446,9 +466,54 @@ Load the background data (randoms) and do normalisation (to get the additive dat
 </li>
 </ul>
 
-<p class="reference">References <a class="el" href="classstir_1_1ScatterEstimation.html#a2e6854912d678eb3da7d4805257e5d7c">add_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1FilePath.html#a25cecdc0f314d04a5ef40e15ec0014f4">stir::FilePath::append()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab1c9ffd1ce689290052ae68e93957a8f">atten_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ac8430e98802dbd1bcf84c4ac839a45df">back_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7362e2fbc1285190f20eaa8630d5fb9e">back_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aa520b2ea2d293ad480b25089293f06e0">current_activity_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2d120468f7744719fad60b79eace6b63">data_to_fit_projdata_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1FilePath.html#abc5a7535d76132d7391c073d73885deb">stir::FilePath::get_current_working_directory()</a>, <a class="el" href="classstir_1_1FilePath.html#a3bd6d8a2d074d66e3172d5a7403f014f">stir::FilePath::get_path()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a852e6094644e95dc0d1d94eeaebda1a0">input_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a17292283391ab84c49e2ac70390a9288">stir::ChainedBinNormalisation::is_first_trivial()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acbcc957a4321d7c3840f9485d372aa1a">mask_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a051d5cee13b9001396bedc45b743e0c3">masking_parameters</a>, <a class="el" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">distributed::min_threshold</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ac820b739a8191915bc78e0ecd4831b7f">multiplicative_binnorm_2d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a1065e2b11f64b541f36846f2cc87abe5">multiplicative_binnorm_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2888fb4f785b5b2b7879164d9c035f20">recompute_mask_image</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad39840831f0c7a1089c3a19a7899ced8">recompute_mask_projdata</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a22bde20f9710c8acdbf864db610ca6db">reconstruction_template_sptr</a>, <a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6">stir::SSRB()</a>, <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>, and <a class="el" href="group__IO.html#ga0ad946998d5f86bcb7e829271c8cf517">stir::write_to_file()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ScatterEstimation.html#a2e6854912d678eb3da7d4805257e5d7c">add_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1FilePath.html#a25cecdc0f314d04a5ef40e15ec0014f4">stir::FilePath::append()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab1c9ffd1ce689290052ae68e93957a8f">atten_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ac8430e98802dbd1bcf84c4ac839a45df">back_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7362e2fbc1285190f20eaa8630d5fb9e">back_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aa520b2ea2d293ad480b25089293f06e0">current_activity_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2d120468f7744719fad60b79eace6b63">data_to_fit_projdata_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1FilePath.html#abc5a7535d76132d7391c073d73885deb">stir::FilePath::get_current_working_directory()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a852e6094644e95dc0d1d94eeaebda1a0">input_projdata_2d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acbcc957a4321d7c3840f9485d372aa1a">mask_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a051d5cee13b9001396bedc45b743e0c3">masking_parameters</a>, <a class="el" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">distributed::min_threshold</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2888fb4f785b5b2b7879164d9c035f20">recompute_mask_image</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad39840831f0c7a1089c3a19a7899ced8">recompute_mask_projdata</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a22bde20f9710c8acdbf864db610ca6db">reconstruction_template_sptr</a>, <a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">stir::SSRB()</a>, <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>, and <a class="el" href="group__IO.html#ga0ad946998d5f86bcb7e829271c8cf517">stir::write_to_file()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a29dee81c4820a976ac799b78d4d4b021">get_output()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#aaca0db5d394151dfa1dcb81be82803e2">already_setup()</a>.</p>
+
+</div>
+</div>
+<a id="a040c8f5cbcb180997de1e0f5c8da5530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040c8f5cbcb180997de1e0f5c8da5530">&#9670;&nbsp;</a></span>set_input_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::ScatterEstimation::set_input_data </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the input projdata. </p>
+<p>Using same name as <a class="el" href="classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi...">Reconstruction</a> </p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a207441b869453637a816c56ce94952a2">set_input_proj_data_sptr()</a>.</p>
+
+</div>
+</div>
+<a id="a6dfdaa6087a99699346f9ebf77c41d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfdaa6087a99699346f9ebf77c41d9a">&#9670;&nbsp;</a></span>get_iterations_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stir::ScatterEstimation::get_iterations_num </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of iterations for the scatter estimation. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use <a class="el" href="classstir_1_1ScatterEstimation.html#a48f3eb555800e60b9a2d84a6fdea3dd7" title="Get the number of iterations for the scatter estimation. ">get_num_iterations()</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1FilePath.html#a36aca9b556f0fadcbb2c4c2cc4392a72">stir::FilePath::get_filename()</a>, <a class="el" href="classstir_1_1FilePath.html#a3bd6d8a2d074d66e3172d5a7403f014f">stir::FilePath::get_path()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a6215678213614bb082e55776072fe27d">norm_3d_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acb252446bc6db862fdc6c193d73deec0">num_scatter_iterations</a>, <a class="el" href="classstir_1_1FilePath.html#a5b61dfce42434d1a97dd752271550b74">stir::FilePath::prepend_directory_name()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -480,13 +545,40 @@ Load the background data (randoms) and do normalisation (to get the additive dat
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">stir::ParsingObject</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#a31ac36b0d6259233724f5f1b89ab20fb">stir::KeyParser::add_parsing_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a2f9888661e50ab3a45504abd91e57d72">stir::KeyParser::add_start_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#aa92a7db6e8ab333adf8741acfcd95cb9">stir::KeyParser::add_stop_key()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aadbf3bda61be8c705662b13084842c35">atten_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab1c9ffd1ce689290052ae68e93957a8f">atten_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aba532c89260e3c4485a34538dfa5598b">back_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7362e2fbc1285190f20eaa8630d5fb9e">back_projdata_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="structstir_1_1MaskingParameters.html#a91a2bca35dd177d74727431598631f8b">stir::MaskingParameters::filter_filename</a>, <a class="el" href="structstir_1_1MaskingParameters.html#ad0eb94d02c24188c637acb16f3ff458e">stir::MaskingParameters::filter_sptr</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a5307cc76151c003ff790758bcd8d2055">input_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acbcc957a4321d7c3840f9485d372aa1a">mask_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab03f8924b921f10fa4909fe4b350b836">mask_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a051d5cee13b9001396bedc45b743e0c3">masking_parameters</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a1065e2b11f64b541f36846f2cc87abe5">multiplicative_binnorm_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a718244af847584c4d7229ebcdac1f233">output_scatter_estimate_prefix</a>, <a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43">stir::KeyParser::parse()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2888fb4f785b5b2b7879164d9c035f20">recompute_mask_image</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad39840831f0c7a1089c3a19a7899ced8">recompute_mask_projdata</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a1a1773cecc8122d6802aa3f35ad7ce26">recon_template_par_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a22bde20f9710c8acdbf864db610ca6db">reconstruction_template_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad3ff1d6214ec59be4294a66b6cc106c8">tail_mask_par_filename</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#a31ac36b0d6259233724f5f1b89ab20fb">stir::KeyParser::add_parsing_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a2f9888661e50ab3a45504abd91e57d72">stir::KeyParser::add_start_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#aa92a7db6e8ab333adf8741acfcd95cb9">stir::KeyParser::add_stop_key()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a6040476b88557cd0aa6a2cca6cf70b78">atten_coeff_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aadbf3bda61be8c705662b13084842c35">atten_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab1c9ffd1ce689290052ae68e93957a8f">atten_image_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aba532c89260e3c4485a34538dfa5598b">back_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7362e2fbc1285190f20eaa8630d5fb9e">back_projdata_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="structstir_1_1MaskingParameters.html#a91a2bca35dd177d74727431598631f8b">stir::MaskingParameters::filter_filename</a>, <a class="el" href="structstir_1_1MaskingParameters.html#ad0eb94d02c24188c637acb16f3ff458e">stir::MaskingParameters::filter_sptr</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a5307cc76151c003ff790758bcd8d2055">input_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#acbcc957a4321d7c3840f9485d372aa1a">mask_image_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ab03f8924b921f10fa4909fe4b350b836">mask_projdata_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a051d5cee13b9001396bedc45b743e0c3">masking_parameters</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a718244af847584c4d7229ebcdac1f233">output_scatter_estimate_prefix</a>, <a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43">stir::KeyParser::parse()</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2888fb4f785b5b2b7879164d9c035f20">recompute_mask_image</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad39840831f0c7a1089c3a19a7899ced8">recompute_mask_projdata</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a1a1773cecc8122d6802aa3f35ad7ce26">recon_template_par_filename</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a22bde20f9710c8acdbf864db610ca6db">reconstruction_template_sptr</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a5bc45dab478fe65fc54695ba8db201f5">set_attenuation_correction_proj_data_sptr()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a7b3b3365671daaf1de03d06c2259017b">ScatterEstimation()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad3ff1d6214ec59be4294a66b6cc106c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ff1d6214ec59be4294a66b6cc106c8">&#9670;&nbsp;</a></span>tail_mask_par_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string stir::ScatterEstimation::tail_mask_par_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optional parameter file for the tail fitting. </p>
+<p>If not provided, sensible defaults are used </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">initialise_keymap()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>.</p>
+
+</div>
+</div>
 <a id="a051d5cee13b9001396bedc45b743e0c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a051d5cee13b9001396bedc45b743e0c3">&#9670;&nbsp;</a></span>masking_parameters</h2>
 
@@ -506,7 +598,11 @@ Load the background data (randoms) and do normalisation (to get the additive dat
   </tr>
 </table>
 </div><div class="memdoc">
-<p>the set of parameters to mask the attenuation image </p>
+<p>the set of parameters to obtain a mask from the attenuation image</p>
+<p>The attenuation image will be thresholded to find a plausible mask for where there can be emission data. This mask will be then forward projected to find the tails in the projection data.</p>
+<p>This is a simple strategy that can fail due to motion etc, so the attenuation image is first blurred, and the default threshold is low.</p>
+<p>Note that there is currently no attempt to eliminate the bed from the attenuation image first. Tails are therefore going to be too small, which could create trouble.</p>
+<p>By default, a Gaussian filter of FWHM (15,20,20) will be applied before thresholding with a value 0.003 cm^-1 </p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a2fed1d09541ce5d92916c08993856318">set_defaults()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a3ba6aebef60bff5fd4cf4850537e68cf">set_up()</a>.</p>
 
@@ -533,19 +629,20 @@ Load the background data (randoms) and do normalisation (to get the additive dat
 </div><div class="memdoc">
 <p>The number of iterations the scatter estimation will perform. Default = 5. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a6dfdaa6087a99699346f9ebf77c41d9a">get_iterations_num()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a2fed1d09541ce5d92916c08993856318">set_defaults()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a6dfdaa6087a99699346f9ebf77c41d9a">get_iterations_num()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a48f3eb555800e60b9a2d84a6fdea3dd7">get_num_iterations()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">process_data()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#a2fed1d09541ce5d92916c08993856318">set_defaults()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/scatter/<a class="el" href="ScatterEstimation_8h_source.html">ScatterEstimation.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/scatter/ScatterEstimation.inl</li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/scatter_buildblock/<a class="el" href="ScatterEstimation_8cxx.html">ScatterEstimation.cxx</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/scatter_buildblock/<a class="el" href="upsample__and__fit__scatter__estimate_8cxx.html">upsample_and_fit_scatter_estimate.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

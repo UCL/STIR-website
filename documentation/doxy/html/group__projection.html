@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -51,8 +51,9 @@ Collaboration diagram for Projection building blocks:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__projection.png" border="0" alt="" usemap="#group____projection"/>
 <map name="group____projection" id="group____projection">
-<area shape="rect" id="node3" href="group__symmetries.html" title="Symmetries building\l blocks" alt="" coords="419,5,576,47"/>
-<area shape="rect" id="node2" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node1" href="group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="629,149,855,190"/>
+<area shape="rect" id="node4" href="group__symmetries.html" title="Symmetries building\l blocks" alt="" coords="663,214,821,255"/>
+<area shape="rect" id="node3" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,182,180,223"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -79,6 +80,18 @@ Files</h2></td></tr>
 <tr class="memitem:ForwardProjectorByBinUsingRayTracing_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ForwardProjectorByBinUsingRayTracing_8h.html">ForwardProjectorByBinUsingRayTracing.h</a></td></tr>
 <tr class="memdesc:ForwardProjectorByBinUsingRayTracing_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html" title="This class implements forward projection using Siddon&#39;s algorithm for ray tracing. That is, it computes length of intersection with the voxels. ">stir::ForwardProjectorByBinUsingRayTracing</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:BackProjectorByBinNiftyPET_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BackProjectorByBinNiftyPET_8h.html">BackProjectorByBinNiftyPET.h</a></td></tr>
+<tr class="memdesc:BackProjectorByBinNiftyPET_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Back projection class using NiftyPET's GPU implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ForwardProjectorByBinNiftyPET_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ForwardProjectorByBinNiftyPET_8h.html">ForwardProjectorByBinNiftyPET.h</a></td></tr>
+<tr class="memdesc:ForwardProjectorByBinNiftyPET_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward projection class using NiftyPET's GPU implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:NiftyPETHelper_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NiftyPETHelper_8h.html">NiftyPETHelper.h</a></td></tr>
+<tr class="memdesc:NiftyPETHelper_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for NiftyPET's GPU implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjectorByBinPairUsingNiftyPET_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjectorByBinPairUsingNiftyPET_8h.html">ProjectorByBinPairUsingNiftyPET.h</a></td></tr>
+<tr class="memdesc:ProjectorByBinPairUsingNiftyPET_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares class <a class="el" href="classstir_1_1ProjectorByBinPairUsingNiftyPET.html" title="A projector pair based on NiftyPET projectors. ">stir::ProjectorByBinPairUsingNiftyPET</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjectorByBinPair_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjectorByBinPair_8h.html">ProjectorByBinPair.h</a></td></tr>
 <tr class="memdesc:ProjectorByBinPair_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares class <a class="el" href="classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. ">stir::ProjectorByBinPair</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,11 +104,14 @@ Files</h2></td></tr>
 <tr class="memitem:ProjMatrixByBin_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBin_8h.html">ProjMatrixByBin.h</a></td></tr>
 <tr class="memdesc:ProjMatrixByBin_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">declaration of <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">stir::ProjMatrixByBin</a> and its helpers classes <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjMatrixByBin_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBin_8inl.html">ProjMatrixByBin.inl</a></td></tr>
+<tr class="memdesc:ProjMatrixByBin_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions for class <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">stir::ProjMatrixByBin</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixByBinFromFile_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBinFromFile_8h.html">ProjMatrixByBinFromFile.h</a></td></tr>
 <tr class="memdesc:ProjMatrixByBinFromFile_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html" title="Reads/writes a projection matrix from/to file. ">stir::ProjMatrixByBinFromFile</a>'s definition <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixByBinSPECTUB_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBinSPECTUB_8h.html">ProjMatrixByBinSPECTUB.h</a></td></tr>
-<tr class="memdesc:ProjMatrixByBinSPECTUB_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">stir::ProjMatrixByBinSPECTUB's definition <br /></td></tr>
+<tr class="memdesc:ProjMatrixByBinSPECTUB_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html" title="generates projection matrix for SPECT studies ">stir::ProjMatrixByBinSPECTUB</a>'s definition <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixByBinUsingInterpolation_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBinUsingInterpolation_8h.html">ProjMatrixByBinUsingInterpolation.h</a></td></tr>
 <tr class="memdesc:ProjMatrixByBinUsingInterpolation_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using an interpolation model...">stir::ProjMatrixByBinUsingInterpolation</a>'s definition <br /></td></tr>
@@ -106,11 +122,23 @@ Files</h2></td></tr>
 <tr class="memitem:ProjMatrixElemsForOneBin_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneBin_8h.html">ProjMatrixElemsForOneBin.h</a></td></tr>
 <tr class="memdesc:ProjMatrixElemsForOneBin_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">stir::ProjMatrixElemsForOneBin</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjMatrixElemsForOneBin_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneBin_8inl.html">ProjMatrixElemsForOneBin.inl</a></td></tr>
+<tr class="memdesc:ProjMatrixElemsForOneBin_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class stir::ProjMatrixelemesForOneBin. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixElemsForOneBinValue_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneBinValue_8h.html">ProjMatrixElemsForOneBinValue.h</a></td></tr>
 <tr class="memdesc:ProjMatrixElemsForOneBinValue_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html" title="Stores voxel coordinates and the value of the matrix element. ">stir::ProjMatrixElemsForOneBinValue</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjMatrixElemsForOneBinValue_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneBinValue_8inl.html">ProjMatrixElemsForOneBinValue.inl</a></td></tr>
+<tr class="memdesc:ProjMatrixElemsForOneBinValue_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html" title="Stores voxel coordinates and the value of the matrix element. ">stir::ProjMatrixElemsForOneBinValue</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjMatrixElemsForOneDensel_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneDensel_8inl.html">ProjMatrixElemsForOneDensel.inl</a></td></tr>
+<tr class="memdesc:ProjMatrixElemsForOneDensel_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html" title="This stores the non-zero projection matrix elements for every &#39;voxel&#39;. ">stir::ProjMatrixElemsForOneDensel</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixElemsForOneDenselValue_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneDenselValue_8h.html">ProjMatrixElemsForOneDenselValue.h</a></td></tr>
 <tr class="memdesc:ProjMatrixElemsForOneDenselValue_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. ">stir::ProjMatrixElemsForOneDenselValue</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjMatrixElemsForOneDenselValue_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixElemsForOneDenselValue_8inl.html">ProjMatrixElemsForOneDenselValue.inl</a></td></tr>
+<tr class="memdesc:ProjMatrixElemsForOneDenselValue_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. ">stir::ProjMatrixElemsForOneDenselValue</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:BackProjectorByBin_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BackProjectorByBin_8cxx.html">BackProjectorByBin.cxx</a></td></tr>
 <tr class="memdesc:BackProjectorByBin_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. ">stir::BackProjectorByBin</a> <br /></td></tr>
@@ -142,6 +170,18 @@ Files</h2></td></tr>
 <tr class="memitem:ForwardProjectorByBinUsingRayTracing__Siddon_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ForwardProjectorByBinUsingRayTracing__Siddon_8cxx.html">ForwardProjectorByBinUsingRayTracing_Siddon.cxx</a></td></tr>
 <tr class="memdesc:ForwardProjectorByBinUsingRayTracing__Siddon_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of Siddon's algorithm <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:BackProjectorByBinNiftyPET_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BackProjectorByBinNiftyPET_8cxx.html">BackProjectorByBinNiftyPET.cxx</a></td></tr>
+<tr class="memdesc:BackProjectorByBinNiftyPET_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html" title="Class for NiftyPET&#39;s GPU back projector. ">stir::BackProjectorByBinNiftyPET</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ForwardProjectorByBinNiftyPET_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ForwardProjectorByBinNiftyPET_8cxx.html">ForwardProjectorByBinNiftyPET.cxx</a></td></tr>
+<tr class="memdesc:ForwardProjectorByBinNiftyPET_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html" title="Class for NiftyPET&#39;s GPU forward projector. ">stir::ForwardProjectorByBinNiftyPET</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:NiftyPETHelper_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NiftyPETHelper_8cxx.html">NiftyPETHelper.cxx</a></td></tr>
+<tr class="memdesc:NiftyPETHelper_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1NiftyPETHelper.html" title="Helper class for the wrapped NiftyPET projectors. ">stir::NiftyPETHelper</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjectorByBinPairUsingNiftyPET_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjectorByBinPairUsingNiftyPET_8cxx.html">ProjectorByBinPairUsingNiftyPET.cxx</a></td></tr>
+<tr class="memdesc:ProjectorByBinPairUsingNiftyPET_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1ProjectorByBinPairUsingNiftyPET.html" title="A projector pair based on NiftyPET projectors. ">stir::ProjectorByBinPairUsingNiftyPET</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjectorByBinPair_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjectorByBinPair_8cxx.html">ProjectorByBinPair.cxx</a></td></tr>
 <tr class="memdesc:ProjectorByBinPair_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. ">stir::ProjectorByBinPair</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +198,7 @@ Files</h2></td></tr>
 <tr class="memdesc:ProjMatrixByBinFromFile_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of class <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html" title="Reads/writes a projection matrix from/to file. ">stir::ProjMatrixByBinFromFile</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixByBinSPECTUB_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBinSPECTUB_8cxx.html">ProjMatrixByBinSPECTUB.cxx</a></td></tr>
-<tr class="memdesc:ProjMatrixByBinSPECTUB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of class stir::ProjMatrixByBinSPECTUB. <br /></td></tr>
+<tr class="memdesc:ProjMatrixByBinSPECTUB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of class <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html" title="generates projection matrix for SPECT studies ">stir::ProjMatrixByBinSPECTUB</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjMatrixByBinUsingInterpolation_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjMatrixByBinUsingInterpolation_8cxx.html">ProjMatrixByBinUsingInterpolation.cxx</a></td></tr>
 <tr class="memdesc:ProjMatrixByBinUsingInterpolation_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-inline implementations for <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using an interpolation model...">stir::ProjMatrixByBinUsingInterpolation</a> <br /></td></tr>
@@ -190,6 +230,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html">stir::ForwardProjectorByBinUsingRayTracing</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements forward projection using Siddon's algorithm for ray tracing. That is, it computes length of intersection with the voxels.  <a href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html">stir::BackProjectorByBinNiftyPET</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for NiftyPET's GPU back projector.  <a href="classstir_1_1BackProjectorByBinNiftyPET.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html">stir::ForwardProjectorByBinNiftyPET</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for NiftyPET's GPU forward projector.  <a href="classstir_1_1ForwardProjectorByBinNiftyPET.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1NiftyPETHelper.html">stir::NiftyPETHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for the wrapped NiftyPET projectors.  <a href="classstir_1_1NiftyPETHelper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjectorByBinPairUsingNiftyPET.html">stir::ProjectorByBinPairUsingNiftyPET</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A projector pair based on NiftyPET projectors.  <a href="classstir_1_1ProjectorByBinPairUsingNiftyPET.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjectorByBinPair.html">stir::ProjectorByBinPair</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for all projector pairs.  <a href="classstir_1_1ProjectorByBinPair.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +256,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html">stir::ProjMatrixByBinFromFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads/writes a projection matrix from/to file.  <a href="classstir_1_1ProjMatrixByBinFromFile.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html">stir::ProjMatrixByBinSPECTUB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates projection matrix for SPECT studies  <a href="classstir_1_1ProjMatrixByBinSPECTUB.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html">stir::ProjMatrixByBinUsingInterpolation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes projection matrix elements for <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a> images by using an interpolation model.  <a href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#details">More...</a><br /></td></tr>
@@ -228,7 +283,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

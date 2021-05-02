@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf975a92b5600fe1942cfeb18f5ee9fe.html">STIR</a></li><li class="navelem"><a class="el" href="dir_87ae7feb76449a838062947fcfbc37f1.html">src</a></li><li class="navelem"><a class="el" href="dir_43bdf3cad22e53c8329992cdc5085372.html">utilities</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_0b75bdf102f5cf4910d6429d56a66609.html">sirfuser</a></li><li class="navelem"><a class="el" href="dir_bf00ec6aee8436d9dd9bdb27c8ba69c2.html">devel</a></li><li class="navelem"><a class="el" href="dir_f033b80aa1e53a09c27a870e567321ae.html">STIRdistrib</a></li><li class="navelem"><a class="el" href="dir_dee4efe29267f8f1fbd97b7b185bc024.html">STIR</a></li><li class="navelem"><a class="el" href="dir_4d737faa33632d919b5a76c7a560514d.html">src</a></li><li class="navelem"><a class="el" href="dir_64801a3d1b1f0e36b62ae4d60cd8bffe.html">utilities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,20 +78,24 @@ Functions</h2></td></tr>
 template&lt;class DataT , class FunctionObjectT &gt; </td></tr>
 <tr class="memitem:a9d58f8822cccae0053674efaf241c12a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_data</b> (const string &amp;output_file_name, const int num_files, char **argv, const bool no_math_on_data, const bool except_first, const bool verbose, const bool do_add, const FunctionObjectT &amp;pow_times_add_object, const <a class="el" href="classstir_1_1OutputFileFormat.html">OutputFileFormat</a>&lt; DataT &gt; &amp;output_format)</td></tr>
 <tr class="separator:a9d58f8822cccae0053674efaf241c12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ca98301bb3278c726d951f64b7cb42"><td class="memTemplParams" colspan="2"><a id="a93ca98301bb3278c726d951f64b7cb42"></a>
+<tr class="memitem:a63d2f1bc97855499a86de9f4dd14e79b"><td class="memTemplParams" colspan="2"><a id="a63d2f1bc97855499a86de9f4dd14e79b"></a>
 template&lt;class FunctionObjectT &gt; </td></tr>
-<tr class="memitem:a93ca98301bb3278c726d951f64b7cb42"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_data</b> (const string &amp;output_file_name, const int num_files, char **argv, const bool no_math_on_data, const bool except_first, const bool verbose, const bool do_add, const FunctionObjectT &amp;pow_times_add_object)</td></tr>
-<tr class="separator:a93ca98301bb3278c726d951f64b7cb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d2f1bc97855499a86de9f4dd14e79b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_data</b> (const string &amp;output_file_name, const int num_files, char **argv, const bool no_math_on_data, const bool except_first, const bool verbose, const bool do_add, const FunctionObjectT &amp;pow_times_add_object, const <a class="el" href="classstir_1_1OutputFileFormat.html">OutputFileFormat</a>&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &gt; &amp;output_format)</td></tr>
+<tr class="separator:a63d2f1bc97855499a86de9f4dd14e79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c17b27a5d168196e5e153d9afe3d78"><td class="memTemplParams" colspan="2"><a id="a86c17b27a5d168196e5e153d9afe3d78"></a>
+template&lt;class DataT &gt; </td></tr>
+<tr class="memitem:a86c17b27a5d168196e5e153d9afe3d78"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1OutputFileFormat.html">OutputFileFormat</a>&lt; DataT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find_output_format</b> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a86c17b27a5d168196e5e153d9afe3d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>add or multiply data, with some other basic math manipulations </p>
-<p>This is a command line utility for adding, multiplying, thresholding ... data, with a somewhat awkward syntax. The command line arguments are as follows (but everything has to fit on 1 line): </p><div class="fragment"><div class="line">[--output-format parameter-filename ]</div><div class="line">[-s [--max_segment_num_to_process number] ] </div><div class="line">[--add | --mult] </div><div class="line">[--power power_float] </div><div class="line">[--times-scalar mult_scalar_float] </div><div class="line">[--<a class="code" href="group__numerics.html#ga2135eeda219aa6700b50580389a12771">divide</a>-scalar divide_scalar_float] </div><div class="line">[--add-scalar add_scalar_float] </div><div class="line">[--min-threshold <a class="code" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">min_threshold</a>]</div><div class="line">[--max-threshold max_threshold]</div><div class="line">[--including-first] </div><div class="line">[--verbose]</div><div class="line">output_filename_with_extension in_data1 [in_data2 [in_data3...]]</div></div><!-- fragment --><p> or </p><div class="fragment"><div class="line">[--output-format parameter-filename ]</div><div class="line">--accumulate</div><div class="line">[-s] </div><div class="line">[--add | --mult] </div><div class="line">[--power power_float] </div><div class="line">[--times-scalar mult_scalar_float] </div><div class="line">[--<a class="code" href="group__numerics.html#ga2135eeda219aa6700b50580389a12771">divide</a>-scalar divide_scalar_float] </div><div class="line">[--add-scalar add_scalar_float] </div><div class="line">[--min-threshold <a class="code" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">min_threshold</a>]</div><div class="line">[--max-threshold max_threshold]</div><div class="line">[--including-first] </div><div class="line">[--verbose]</div><div class="line">out_and_input_filename in_data2 [in_data3 [in_data4...]]</div></div><!-- fragment --><p>'&ndash;add' is default, and outputs the sum of the result of processed data. '&ndash;mult' outputs the multiplication of the result of processed data.<br />
+<p>This is a command line utility for adding, multiplying, thresholding ... data, with a somewhat awkward syntax. The command line arguments are as follows (but everything has to fit on 1 line): </p><div class="fragment"><div class="line">[--output-format parameter-filename ]</div><div class="line">[--parametric || --dynamic]</div><div class="line">[-s [--max_segment_num_to_process number] ] </div><div class="line">[--add | --mult] </div><div class="line">[--power power_float] </div><div class="line">[--times-scalar mult_scalar_float] </div><div class="line">[--<a class="code" href="group__numerics.html#ga2135eeda219aa6700b50580389a12771">divide</a>-scalar divide_scalar_float] </div><div class="line">[--add-scalar add_scalar_float] </div><div class="line">[--min-threshold <a class="code" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">min_threshold</a>]</div><div class="line">[--max-threshold max_threshold]</div><div class="line">[--including-first] </div><div class="line">[--verbose]</div><div class="line">output_filename_with_extension in_data1 [in_data2 [in_data3...]]</div></div><!-- fragment --><p> or </p><div class="fragment"><div class="line">[--output-format parameter-filename ]</div><div class="line">--accumulate</div><div class="line">[-s] </div><div class="line">[--parametric || --dynamic]</div><div class="line">[--add | --mult] </div><div class="line">[--power power_float] </div><div class="line">[--times-scalar mult_scalar_float] </div><div class="line">[--<a class="code" href="group__numerics.html#ga2135eeda219aa6700b50580389a12771">divide</a>-scalar divide_scalar_float] </div><div class="line">[--add-scalar add_scalar_float] </div><div class="line">[--min-threshold <a class="code" href="namespacedistributed.html#aac893dd256bfd22c5bce0f30000fed83">min_threshold</a>]</div><div class="line">[--max-threshold max_threshold]</div><div class="line">[--including-first] </div><div class="line">[--verbose]</div><div class="line">out_and_input_filename in_data2 [in_data3 [in_data4...]]</div></div><!-- fragment --><p>'&ndash;add' is default, and outputs the sum of the result of processed data. '&ndash;mult' outputs the multiplication of the result of processed data.<br />
  The '&ndash;include-first' option can be used such that power and scalar multiplication are done on the first input argument as well. Otherwise these manipulations are done only on the 2nd, 3rd,.. argument.<br />
  The '&ndash;accumulate' option can be used to say that the first filename given will be used for input AND output. Note that when using this option together with '&ndash;including-first', the data in the first filename will first be manipulated according to '&ndash;power' and '&ndash;times-scalar'.<br />
- The '-s' option is necessary if the arguments are projection data. Otherwise, it is assumed the data are images.<br />
+ The '-s' option is necessary if the arguments are projection data. Otherwise, it is assumed the data are images. '&ndash;parametric' and '&ndash;dynamic' can be used to read parametric/dynamic images.<br />
  For projection data, you can restrict the number of segments read/written using the &ndash;max_segment_num_to_process option (unless &ndash;accumulate is used). For example, using 2 as an argument of this option, will read/write segments -2,-1,0,1,2.<br />
  Multiple occurences of '&ndash;times-scalar' and '&ndash;divide-scalar' are allowed and will just result in accumulation of the factors.</p>
 <p>The order of the manipulations is as follows:<br />
@@ -127,7 +131,7 @@ For future compatibility, it is recommended to put the command line arguments in
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

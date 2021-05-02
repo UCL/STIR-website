@@ -107,3 +107,25 @@
 \form#106:${[}n_z,n_y,n_x{]}$
 \form#107:$\phi$
 \form#108:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
+\form#109:$ R_{ij}= \tau S_i S_j $
+\form#110:$\tau$
+\form#111:$ [0, 1, -1, 2, -2, ...] $
+\form#112:$ [0, 1, -1, 2, 3 ] $
+\form#113:\[ g_r = \sum_{dr} w_{dr} * \frac{\left(\lambda_{j}-\lambda_{k}\right)\left(\gamma\left|\lambda_{j}-\lambda_{k}\right|+\lambda_{j}+3 \lambda_{k} + 2 \epsilon \right)} {\left(\lambda_{j}+\lambda_{k}+\gamma\left|\lambda_{j}-\lambda_{k}\right| + \epsilon \right)^{2}} * \kappa_r * \kappa_{r+dr} \]
+\form#114:$\epsilon$
+\form#115:$i,j$
+\form#116:\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]
+\form#117:\[ r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t) \]
+\form#118:\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_t1^t2 dt\,exp (-\lambda t)\right)^2} \]
+\form#119:$ \boldsymbol{v}_j $
+\form#120:$\lambda_j$
+\form#121:\[ \alpha^{(n+1)}_j = \frac{ \alpha^{(n)}_j }{\sum_{m} k^{(n)}_{jm} \sum_i p_{mi}} \sum_{m}k^{(n)}_{jm}\sum_i p_{mi}\frac{ y_i }{\sum_{q} p_{iq} \sum_l k^{(n)}_{ql}\alpha^{(n)}_l + s_i} \]
+\form#122:$ jl $
+\form#123:\[ k^{(n)}_{jl} = k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) \cdot k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l); \]
+\form#124:$ f $
+\form#125:\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]
+\form#126:$ \xi $
+\form#127:\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]
+\form#128:$ v $
+\form#129:$ \alpha $
+\form#130:$ \eta $

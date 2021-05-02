@@ -1,9 +1,11 @@
 <map id="Reconstruction building blocks" name="Reconstruction building blocks">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,242,103,269"/>
-<area shape="rect" id="node2" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="610,23,787,79"/>
-<area shape="rect" id="node3" href="$group__ECAT.html" title="ECAT6 and ECAT7 support\l in the IO library" alt="" coords="604,168,793,209"/>
-<area shape="rect" id="node4" href="$group__utilities.html" title="Utility programs" alt="" coords="635,250,763,277"/>
-<area shape="rect" id="node5" href="$group__projection.html" title="Projection building\l blocks" alt="" coords="627,301,770,343"/>
-<area shape="rect" id="node7" href="$group__normalisation.html" title="Normalisation building\l blocks" alt="" coords="613,367,784,408"/>
-<area shape="rect" id="node8" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="619,432,779,473"/>
+<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,314,103,341"/>
+<area shape="rect" id="node2" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="628,45,805,101"/>
+<area shape="rect" id="node3" href="$group__GE.html" title="support for GE data" alt="" coords="643,145,791,171"/>
+<area shape="rect" id="node4" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="604,228,829,269"/>
+<area shape="rect" id="node5" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="628,323,805,364"/>
+<area shape="rect" id="node6" href="$group__utilities.html" title="Utility programs" alt="" coords="653,405,781,431"/>
+<area shape="rect" id="node7" href="$group__projection.html" title="Projection building\l blocks" alt="" coords="645,456,788,497"/>
+<area shape="rect" id="node9" href="$group__normalisation.html" title="Normalisation building\l blocks" alt="" coords="631,521,802,563"/>
+<area shape="rect" id="node10" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="637,587,797,628"/>
 </map>

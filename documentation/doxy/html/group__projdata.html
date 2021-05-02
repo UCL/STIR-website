@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -52,8 +52,9 @@ Collaboration diagram for Items related to projection data:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__projdata.png" border="0" alt="" usemap="#group____projdata"/>
 <map name="group____projdata" id="group____projdata">
-<area shape="rect" id="node2" href="group__LOR.html" title="Items related to Line\l Of Responses (preliminary)" alt="" coords="488,5,691,47"/>
-<area shape="rect" id="node3" href="group__buildblock.html" title="Basic building blocks" alt="" coords="5,13,164,39"/>
+<area shape="rect" id="node2" href="group__GE.html" title="support for GE data" alt="" coords="654,24,802,51"/>
+<area shape="rect" id="node3" href="group__LOR.html" title="Items related to Line\l Of Responses (preliminary)" alt="" coords="627,98,829,139"/>
+<area shape="rect" id="node4" href="group__buildblock.html" title="Basic building blocks" alt="" coords="5,61,164,88"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -80,6 +81,9 @@ Files</h2></td></tr>
 <tr class="memitem:buildblock_2inverse__SSRB_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buildblock_2inverse__SSRB_8cxx.html">inverse_SSRB.cxx</a></td></tr>
 <tr class="memdesc:buildblock_2inverse__SSRB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__projdata.html#gae32b9bf6161b4465b00537278ce74722" title="Perform Inverse Single Slice Rebinning and write output to ProjData4D format. ">stir::inverse_SSRB</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:multiply__crystal__factors_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="multiply__crystal__factors_8cxx.html">multiply_crystal_factors.cxx</a></td></tr>
+<tr class="memdesc:multiply__crystal__factors_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51" title="Construct proj-data as a multiple of crystal efficiencies (or singles) ">stir::multiply_crystal_factors</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjData_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjData_8cxx.html">ProjData.cxx</a></td></tr>
 <tr class="memdesc:ProjData_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for non-inline functions of class <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,6 +92,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataGEAdvance_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataGEAdvance_8cxx.html">ProjDataGEAdvance.cxx</a></td></tr>
 <tr class="memdesc:ProjDataGEAdvance_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for class <a class="el" href="classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. ">stir::ProjDataGEAdvance</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataGEHDF5_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataGEHDF5_8cxx.html">ProjDataGEHDF5.cxx</a></td></tr>
+<tr class="memdesc:ProjDataGEHDF5_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for class <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. ">stir::GE::RDF_HDF5::ProjDataGEHDF5</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInfo_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfo_8cxx.html">ProjDataInfo.cxx</a></td></tr>
 <tr class="memdesc:ProjDataInfo_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of non-inline functions of class <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">stir::ProjDataInfo</a>. <br /></td></tr>
@@ -123,7 +130,7 @@ Files</h2></td></tr>
 <tr class="memdesc:Sinogram_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for non-inline functions of class <a class="el" href="classstir_1_1Sinogram.html" title="A class for 2d projection data. ">stir::Sinogram</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:buildblock_2SSRB_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buildblock_2SSRB_8cxx.html">SSRB.cxx</a></td></tr>
-<tr class="memdesc:buildblock_2SSRB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>. <br /></td></tr>
+<tr class="memdesc:buildblock_2SSRB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:Viewgram_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Viewgram_8cxx.html">Viewgram.cxx</a></td></tr>
 <tr class="memdesc:Viewgram_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for non-inline functions of class <a class="el" href="classstir_1_1Viewgram.html" title="A class for 2d projection data. ">stir::Viewgram</a>. <br /></td></tr>
@@ -134,35 +141,68 @@ Files</h2></td></tr>
 <tr class="memitem:Bin_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Bin_8h.html">Bin.h</a></td></tr>
 <tr class="memdesc:Bin_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">stir::Bin</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Bin_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Bin_8inl.html">Bin.inl</a></td></tr>
+<tr class="memdesc:Bin_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions of class <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">stir::Bin</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:DataSymmetriesForViewSegmentNumbers_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DataSymmetriesForViewSegmentNumbers_8h.html">DataSymmetriesForViewSegmentNumbers.h</a></td></tr>
 <tr class="memdesc:DataSymmetriesForViewSegmentNumbers_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">stir::DataSymmetriesForViewSegmentNumbers</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:DetectionPosition_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DetectionPosition_8h.html">DetectionPosition.h</a></td></tr>
 <tr class="memdesc:DetectionPosition_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1DetectionPosition.html" title="A class for storing coordinates of a detection. ">stir::DetectionPosition</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:DetectionPosition_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DetectionPosition_8inl.html">DetectionPosition.inl</a></td></tr>
+<tr class="memdesc:DetectionPosition_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline methods of class <a class="el" href="classstir_1_1DetectionPosition.html" title="A class for storing coordinates of a detection. ">stir::DetectionPosition</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:DetectionPositionPair_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DetectionPositionPair_8h.html">DetectionPositionPair.h</a></td></tr>
 <tr class="memdesc:DetectionPositionPair_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1DetectionPositionPair.html" title="A class for storing 2 coordinates-sets of a detection, as suitable for PET. ">stir::DetectionPositionPair</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:DetectionPositionPair_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DetectionPositionPair_8inl.html">DetectionPositionPair.inl</a></td></tr>
+<tr class="memdesc:DetectionPositionPair_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline methods of class <a class="el" href="classstir_1_1DetectionPositionPair.html" title="A class for storing 2 coordinates-sets of a detection, as suitable for PET. ">stir::DetectionPositionPair</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:multiply__crystal__factors_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="multiply__crystal__factors_8h.html">multiply_crystal_factors.h</a></td></tr>
+<tr class="memdesc:multiply__crystal__factors_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51" title="Construct proj-data as a multiple of crystal efficiencies (or singles) ">stir::multiply_crystal_factors</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjData_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjData_8h.html">ProjData.h</a></td></tr>
 <tr class="memdesc:ProjData_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjData_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjData_8inl.html">ProjData.inl</a></td></tr>
+<tr class="memdesc:ProjData_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations for inline functions of class <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataFromStream_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataFromStream_8h.html">ProjDataFromStream.h</a></td></tr>
 <tr class="memdesc:ProjDataFromStream_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. ">stir::ProjDataFromStream</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataFromStream_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataFromStream_8inl.html">ProjDataFromStream.inl</a></td></tr>
+<tr class="memdesc:ProjDataFromStream_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class <a class="el" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. ">stir::ProjDataFromStream</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataGEAdvance_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataGEAdvance_8h.html">ProjDataGEAdvance.h</a></td></tr>
 <tr class="memdesc:ProjDataGEAdvance_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. ">stir::ProjDataGEAdvance</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataGEHDF5_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataGEHDF5_8h.html">ProjDataGEHDF5.h</a></td></tr>
+<tr class="memdesc:ProjDataGEHDF5_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class stir::GE::RDF_HDF5::ProjDataFromGEHDF5. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInfo_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfo_8h.html">ProjDataInfo.h</a></td></tr>
 <tr class="memdesc:ProjDataInfo_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">stir::ProjDataInfo</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataInfo_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfo_8inl.html">ProjDataInfo.inl</a></td></tr>
+<tr class="memdesc:ProjDataInfo_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions for class <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">stir::ProjDataInfo</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInfoCylindrical_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindrical_8h.html">ProjDataInfoCylindrical.h</a></td></tr>
 <tr class="memdesc:ProjDataInfoCylindrical_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">stir::ProjDataInfoCylindrical</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataInfoCylindrical_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindrical_8inl.html">ProjDataInfoCylindrical.inl</a></td></tr>
+<tr class="memdesc:ProjDataInfoCylindrical_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline functions of class <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">stir::ProjDataInfoCylindrical</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInfoCylindricalArcCorr_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindricalArcCorr_8h.html">ProjDataInfoCylindricalArcCorr.h</a></td></tr>
 <tr class="memdesc:ProjDataInfoCylindricalArcCorr_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc-corrected data. ">stir::ProjDataInfoCylindricalArcCorr</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataInfoCylindricalArcCorr_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindricalArcCorr_8inl.html">ProjDataInfoCylindricalArcCorr.inl</a></td></tr>
+<tr class="memdesc:ProjDataInfoCylindricalArcCorr_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline functions of class <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc-corrected data. ">stir::ProjDataInfoCylindricalArcCorr</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInfoCylindricalNoArcCorr_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindricalNoArcCorr_8h.html">ProjDataInfoCylindricalNoArcCorr.h</a></td></tr>
 <tr class="memdesc:ProjDataInfoCylindricalNoArcCorr_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc-corrected. ">stir::ProjDataInfoCylindricalNoArcCorr</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ProjDataInfoCylindricalNoArcCorr_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInfoCylindricalNoArcCorr_8inl.html">ProjDataInfoCylindricalNoArcCorr.inl</a></td></tr>
+<tr class="memdesc:ProjDataInfoCylindricalNoArcCorr_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline functions of class ProjDataInfoCylindricalNoArcCorr. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ProjDataInMemory_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ProjDataInMemory_8h.html">ProjDataInMemory.h</a></td></tr>
 <tr class="memdesc:ProjDataInMemory_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. ">stir::ProjDataInMemory</a>. <br /></td></tr>
@@ -173,32 +213,56 @@ Files</h2></td></tr>
 <tr class="memitem:RelatedViewgrams_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RelatedViewgrams_8h.html">RelatedViewgrams.h</a></td></tr>
 <tr class="memdesc:RelatedViewgrams_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">stir::RelatedViewgrams</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:RelatedViewgrams_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RelatedViewgrams_8inl.html">RelatedViewgrams.inl</a></td></tr>
+<tr class="memdesc:RelatedViewgrams_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">inline implementations for class <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">stir::RelatedViewgrams</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:scale__sinograms_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scale__sinograms_8h.html">scale_sinograms.h</a></td></tr>
 <tr class="memdesc:scale__sinograms_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">declaration of <a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77" title="apply a scale factor for every sinogram ">stir::scale_sinograms</a> and <a class="el" href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e" title="find scale factors between two different sinograms ">stir::get_scale_factors_per_sinogram</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:Segment_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Segment_8h.html">Segment.h</a></td></tr>
 <tr class="memdesc:Segment_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1Segment.html" title="An (abstract base) class for storing 3d projection dataThis stores a subset of the data accessible vi...">stir::Segment</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Segment_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Segment_8inl.html">Segment.inl</a></td></tr>
+<tr class="memdesc:Segment_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of inline functions of class <a class="el" href="classstir_1_1Segment.html" title="An (abstract base) class for storing 3d projection dataThis stores a subset of the data accessible vi...">stir::Segment</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SegmentBySinogram_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SegmentBySinogram_8h.html">SegmentBySinogram.h</a></td></tr>
 <tr class="memdesc:SegmentBySinogram_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with a fixed segment_num. ">stir::SegmentBySinogram</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SegmentBySinogram_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SegmentBySinogram_8inl.html">SegmentBySinogram.inl</a></td></tr>
+<tr class="memdesc:SegmentBySinogram_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions of class <a class="el" href="classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with a fixed segment_num. ">stir::SegmentBySinogram</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SegmentByView_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SegmentByView_8h.html">SegmentByView.h</a></td></tr>
 <tr class="memdesc:SegmentByView_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with a fixed segment_num. ">stir::SegmentByView</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SegmentByView_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SegmentByView_8inl.html">SegmentByView.inl</a></td></tr>
+<tr class="memdesc:SegmentByView_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions of class <a class="el" href="classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with a fixed segment_num. ">stir::SegmentByView</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:Sinogram_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sinogram_8h.html">Sinogram.h</a></td></tr>
 <tr class="memdesc:Sinogram_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1Sinogram.html" title="A class for 2d projection data. ">stir::Sinogram</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Sinogram_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sinogram_8inl.html">Sinogram.inl</a></td></tr>
+<tr class="memdesc:Sinogram_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of inline functions of class <a class="el" href="classstir_1_1Sinogram.html" title="A class for 2d projection data. ">stir::Sinogram</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SSRB_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SSRB_8h.html">SSRB.h</a></td></tr>
-<tr class="memdesc:SSRB_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a> functions. <br /></td></tr>
+<tr class="memdesc:SSRB_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a> functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:TrivialDataSymmetriesForViewSegmentNumbers_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TrivialDataSymmetriesForViewSegmentNumbers_8h.html">TrivialDataSymmetriesForViewSegmentNumbers.h</a></td></tr>
 <tr class="memdesc:TrivialDataSymmetriesForViewSegmentNumbers_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1TrivialDataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding NO symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">stir::TrivialDataSymmetriesForViewSegmentNumbers</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:TrivialDataSymmetriesForViewSegmentNumbers_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TrivialDataSymmetriesForViewSegmentNumbers_8inl.html">TrivialDataSymmetriesForViewSegmentNumbers.inl</a></td></tr>
+<tr class="memdesc:TrivialDataSymmetriesForViewSegmentNumbers_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of inline-methods of class <a class="el" href="classstir_1_1TrivialDataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding NO symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">stir::TrivialDataSymmetriesForViewSegmentNumbers</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:Viewgram_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Viewgram_8h.html">Viewgram.h</a></td></tr>
 <tr class="memdesc:Viewgram_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1Viewgram.html" title="A class for 2d projection data. ">stir::Viewgram</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Viewgram_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Viewgram_8inl.html">Viewgram.inl</a></td></tr>
+<tr class="memdesc:Viewgram_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations of class <a class="el" href="classstir_1_1Viewgram.html" title="A class for 2d projection data. ">stir::Viewgram</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ViewSegmentNumbers_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ViewSegmentNumbers_8h.html">ViewSegmentNumbers.h</a></td></tr>
 <tr class="memdesc:ViewSegmentNumbers_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of class <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">stir::ViewSegmentNumbers</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ViewSegmentNumbers_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ViewSegmentNumbers_8inl.html">ViewSegmentNumbers.inl</a></td></tr>
+<tr class="memdesc:ViewSegmentNumbers_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">inline implementations for class <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">stir::ViewSegmentNumbers</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -225,7 +289,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class which reads/writes projection data from/to a (binary) stream.  <a href="classstir_1_1ProjDataFromStream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataGEAdvance.html">stir::ProjDataGEAdvance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class which reads projection data from a GE Advance sinogram file.  <a href="classstir_1_1ProjDataGEAdvance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class which reads projection data from a <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> Advance sinogram file.  <a href="classstir_1_1ProjDataGEAdvance.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html">stir::GE::RDF_HDF5::ProjDataGEHDF5</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class which reads projection data from a <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> HDF5 sinogram file.  <a href="classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An (abstract base) class that contains information on the projection data.  <a href="classstir_1_1ProjDataInfo.html#details">More...</a><br /></td></tr>
@@ -272,18 +339,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gae32b9bf6161b4465b00537278ce74722"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gae32b9bf6161b4465b00537278ce74722">stir::inverse_SSRB</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_4D, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_3D)</td></tr>
 <tr class="memdesc:gae32b9bf6161b4465b00537278ce74722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform Inverse Single Slice Rebinning and write output to ProjData4D format.  <a href="group__projdata.html#gae32b9bf6161b4465b00537278ce74722">More...</a><br /></td></tr>
 <tr class="separator:gae32b9bf6161b4465b00537278ce74722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">stir::multiply_crystal_factors</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;efficiencies, const float global_factor)</td></tr>
+<tr class="memdesc:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct proj-data as a multiple of crystal efficiencies (or singles)  <a href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">More...</a><br /></td></tr>
+<tr class="separator:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8e5cdb3af7c92d88e7b1f4252c47a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77">stir::scale_sinograms</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;output_proj_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;input_proj_data, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; scale_factors_per_sinogram)</td></tr>
 <tr class="memdesc:gaa8e5cdb3af7c92d88e7b1f4252c47a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply a scale factor for every sinogram  <a href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77">More...</a><br /></td></tr>
 <tr class="separator:gaa8e5cdb3af7c92d88e7b1f4252c47a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ca5b8f25160eda3d22c15a7dfa64a5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e">stir::get_scale_factors_per_sinogram</a> (const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;numerator_proj_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;denominator_proj_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;weights_proj_data)</td></tr>
 <tr class="memdesc:ga6ca5b8f25160eda3d22c15a7dfa64a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">find scale factors between two different sinograms  <a href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e">More...</a><br /></td></tr>
 <tr class="separator:ga6ca5b8f25160eda3d22c15a7dfa64a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad53326537cc1a666338269d0b89836f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6">stir::SSRB</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;in_proj_data_info, const int num_segments_to_combine, const int num_views_to_combine=1, const int num_tangential_poss_to_trim=0, const int max_in_segment_num_to_process=-1)</td></tr>
-<tr class="memdesc:gad53326537cc1a666338269d0b89836f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct new <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> that is appropriate for rebinned data  <a href="group__projdata.html#gad53326537cc1a666338269d0b89836f6">More...</a><br /></td></tr>
-<tr class="separator:gad53326537cc1a666338269d0b89836f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02bc22d0ea3d24d605d5d0c34fcf7e9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga02bc22d0ea3d24d605d5d0c34fcf7e9d">stir::SSRB</a> (const std::string &amp;output_filename, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;in_projdata, const int num_segments_to_combine, const int num_views_to_combine=1, const int num_tangential_poss_to_trim=0, const bool do_normalisation=true, const int max_in_segment_num_to_process=-1)</td></tr>
-<tr class="memdesc:ga02bc22d0ea3d24d605d5d0c34fcf7e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform Single Slice Rebinning and write output to file.  <a href="group__projdata.html#ga02bc22d0ea3d24d605d5d0c34fcf7e9d">More...</a><br /></td></tr>
-<tr class="separator:ga02bc22d0ea3d24d605d5d0c34fcf7e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac58540d3d092496da3c2c10836a6a77f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">stir::SSRB</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;in_proj_data_info, const int num_segments_to_combine, const int num_views_to_combine=1, const int num_tangential_poss_to_trim=0, const int max_in_segment_num_to_process=-1, const int num_tof_bins_to_combine=1)</td></tr>
+<tr class="memdesc:gac58540d3d092496da3c2c10836a6a77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct new <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> that is appropriate for rebinned data  <a href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">More...</a><br /></td></tr>
+<tr class="separator:gac58540d3d092496da3c2c10836a6a77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e80d1904ef53c7c12f64eec5db1809e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga7e80d1904ef53c7c12f64eec5db1809e">stir::SSRB</a> (const std::string &amp;output_filename, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;in_projdata, const int num_segments_to_combine, const int num_views_to_combine=1, const int num_tangential_poss_to_trim=0, const bool do_normalisation=true, const int max_in_segment_num_to_process=-1, const int num_tof_bins_to_combine=1)</td></tr>
+<tr class="memdesc:ga7e80d1904ef53c7c12f64eec5db1809e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform Single Slice Rebinning and write output to file.  <a href="group__projdata.html#ga7e80d1904ef53c7c12f64eec5db1809e">More...</a><br /></td></tr>
+<tr class="separator:ga7e80d1904ef53c7c12f64eec5db1809e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72b5f9d629f6ce8def1e29cbb6f13297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga72b5f9d629f6ce8def1e29cbb6f13297">stir::SSRB</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;out_projdata, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;in_projdata, const bool do_normalisation=true)</td></tr>
 <tr class="memdesc:ga72b5f9d629f6ce8def1e29cbb6f13297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform Single Slice Rebinning and write output to <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a>.  <a href="group__projdata.html#ga72b5f9d629f6ce8def1e29cbb6f13297">More...</a><br /></td></tr>
 <tr class="separator:ga72b5f9d629f6ce8def1e29cbb6f13297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -398,7 +468,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>See STIR documentation about B-Spline interpolation or scatter correction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>This currently only works for direct sinograms (i.e. segment 0). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">Todo:</a></b></dt><dd>This currently only works for direct sinograms (i.e. segment 0). </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Because of the boundary conditions in the B-spline interpolation, strange results can occur if the output sinogram has a larger range than the input sinogram. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
@@ -443,9 +513,59 @@ Functions</h2></td></tr>
 <p>Note that any oblique segments in <em>proj_data_3D</em> are currently ignored.</p>
 <p>Input and output projectino data should have the same number of views and tangential positions. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjData.html#ae1093b25f19ac0fb916e97646b4984f7">stir::ProjData::get_empty_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a9a7634858370658c0852322d2c7c00cb">stir::ProjDataInfo::get_m()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2dd57dfe721004c9e049191863549d05">stir::ProjDataInfo::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a8d5fcf9a1d5b8ca671338fba9255cb85">stir::ProjDataInfo::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjData.html#ae1093b25f19ac0fb916e97646b4984f7">stir::ProjData::get_empty_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a97abba6e4105aaa74b30420f18a44757">stir::ProjDataInfo::get_m()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2dd57dfe721004c9e049191863549d05">stir::ProjDataInfo::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a8d5fcf9a1d5b8ca671338fba9255cb85">stir::ProjDataInfo::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
+
+</div>
+</div>
+<a id="gaeddbaa80aaf07f85fc2e5b1164a09b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeddbaa80aaf07f85fc2e5b1164a09b51">&#9670;&nbsp;</a></span>multiply_crystal_factors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::multiply_crystal_factors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;&#160;</td>
+          <td class="paramname"><em>proj_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>efficiencies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>global_factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct proj-data as a multiple of crystal efficiencies (or singles) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">proj_data</td><td>projection data to write output (potentially to read first). This needs to be an existing object as geometry will be obtained from it. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">efficiencies</td><td>array of factors, one per crystal </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">global_factor</td><td>global additional factor to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Sets <code>proj_data(bin)</code> to the product <code>global_factor</code> times the sum of <code>efficiencies</code>[c1]*efficiencies[c2] (with <code>c1</code>,c2 the crystals in the bin).</p>
+<p>This is useful for normalisation, but also for randoms from singles. </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ae346d00436f9a48fbc142aabe0b85846">stir::ProjDataInfoCylindricalNoArcCorr::get_det_pair_for_bin()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">stir::ProjDataInfo::get_empty_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical::get_m()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af570c808b1c83a91e0d8e0eb84f8cee0">stir::ProjDataInfoCylindrical::get_max_ring_difference()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a649f9d722765ee211751d9441e839489">stir::ProjDataInfo::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a46d7a0a93ae0815b802e2530e1d03133">stir::ProjData::get_max_view_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#adb8294dff954cd51adabe1b76ce69d02">stir::ProjDataInfoCylindrical::get_min_ring_difference()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2dd57dfe721004c9e049191863549d05">stir::ProjDataInfo::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#aa9654291d445fcf79b465aa6bee10af9">stir::ProjData::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab4329e79f386e32863b1e8c2fe0444a7">stir::ProjDataInfoCylindrical::get_view_mashing_factor()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="group__singles__buildblock.html#ga6a0a3de9251746563ba30d4c3aeb3e88">stir::randoms_from_singles()</a>.</p>
 
 </div>
 </div>
@@ -492,7 +612,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicates if writing failed or not </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, and <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, and <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
@@ -542,14 +662,14 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>scale_factors_per_sinogram array with the scale factors. The first index corresponds to segments, the second to axial positions.</dd></dl>
 <p>scale factors are found for every sinogram such that </p><div class="fragment"><div class="line">scale_factor = <a class="code" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187">sum</a>(numerator * weights) / <a class="code" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187">sum</a>(denominator * weights)</div></div><!-- fragment --><p>Currently this function sets the scale factor or a sinogram to 1 (and calls <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">warning()</a>) when the denominator gets too small. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">stir::ProjDataInfo::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a3b3532da9bac92e19e2bffac2bb38407">stir::ProjDataInfo::get_num_views()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aed0410b14fbc21f5b11632738dbca877">stir::VectorWithOffset&lt; T &gt;::resize()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Array.html#ab264a137a11b26dd484292408ee70044">stir::Array&lt; num_dimensions, elemT &gt;::sum()</a>, <a class="el" href="classstir_1_1Array.html#ab264a137a11b26dd484292408ee70044">stir::Array&lt; 2, elemT &gt;::sum()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">stir::ProjDataInfo::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a3b3532da9bac92e19e2bffac2bb38407">stir::ProjDataInfo::get_num_views()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aa0d7c80102ef873b5d60c52f3db4348d">stir::VectorWithOffset&lt; T &gt;::resize()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Array.html#ab264a137a11b26dd484292408ee70044">stir::Array&lt; num_dimensions, elemT &gt;::sum()</a>, <a class="el" href="classstir_1_1Array.html#ab264a137a11b26dd484292408ee70044">stir::Array&lt; 2, elemT &gt;::sum()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
 </div>
 </div>
-<a id="gad53326537cc1a666338269d0b89836f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad53326537cc1a666338269d0b89836f6">&#9670;&nbsp;</a></span>SSRB() <span class="overload">[1/3]</span></h2>
+<a id="gac58540d3d092496da3c2c10836a6a77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac58540d3d092496da3c2c10836a6a77f">&#9670;&nbsp;</a></span>SSRB() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +702,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>max_in_segment_num_to_process</em> = <code>-1</code>&#160;</td>
+          <td class="paramname"><em>max_in_segment_num_to_process</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_tof_bins_to_combine</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -599,7 +725,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">num_segments_to_combine</td><td>how many segments will be combined into 1 output segment. </td></tr>
     <tr><td class="paramname">num_views_to_combine</td><td>how many views will be combined in the output (i.e. mashing) </td></tr>
     <tr><td class="paramname">num_tangential_poss_to_trim</td><td>can be used to throw away some bins. Half of the bins will be thrown away at each 'side' of a sinogram (see below). </td></tr>
-    <tr><td class="paramname">max_in_segment_num_to_process</td><td>rebinned in_proj_data only upto this segment. Default value -1 means 'do all segments'.</td></tr>
+    <tr><td class="paramname">max_in_segment_num_to_process</td><td>rebinned in_proj_data only upto this segment. Default value -1 means 'do all segments'. </td></tr>
+    <tr><td class="paramname">num_tof_bins_to_combine</td><td>currently has to be 1.</td></tr>
   </table>
   </dd>
 </dl>
@@ -609,8 +736,10 @@ Functions</h2></td></tr>
 </pre><p> The new num_tangential_poss is simply set to old_num_tangential_poss - num_tang_poss_to_trim. Note that because of this, if num_tang_poss_to_trim is negative, more (zero) bins will be added.</p>
 <dl class="section warning"><dt>Warning</dt><dd>in_proj_data_info has to be (at least) of type <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">ProjDataInfoCylindrical</a> </dd>
 <dd>
-This function can only handle in_proj_data_info where all segments have identical 'num_segments_to_combine'. So it cannot handle standard GE Advance data. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo:</a></b></dt><dd>get rid of both restrictions flagged as warnings in the documentation for this function. </dd></dl>
+This function can only handle in_proj_data_info where all segments have identical 'num_segments_to_combine'. So it cannot handle standard <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> Advance data. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000173">Todo:</a></b></dt><dd><p class="startdd">get rid of both restrictions flagged as warnings in the documentation for this function. </p>
+<p class="enddd">rename to something much more general than <code>SSRB</code> </p>
+</dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">stir::ProjDataInfo::clone()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ad4cfc85c50305d643d290bf56915a68b">stir::ProjDataInfoCylindrical::get_axial_sampling()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a6f96709c581f8800521ceb9e7bbe3cb0">stir::ProjDataInfo::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af570c808b1c83a91e0d8e0eb84f8cee0">stir::ProjDataInfoCylindrical::get_max_ring_difference()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a2cde055a364af39ac7a99cc9b283ba1a">stir::ProjDataInfo::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#adb8294dff954cd51adabe1b76ce69d02">stir::ProjDataInfoCylindrical::get_min_ring_difference()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">stir::ProjDataInfo::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a3b3532da9bac92e19e2bffac2bb38407">stir::ProjDataInfo::get_num_views()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a51d62e263ea0258b0a996bfd4c429b02">stir::ProjDataInfoCylindrical::reduce_segment_range()</a>, <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -618,8 +747,8 @@ This function can only handle in_proj_data_info where all segments have identica
 
 </div>
 </div>
-<a id="ga02bc22d0ea3d24d605d5d0c34fcf7e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02bc22d0ea3d24d605d5d0c34fcf7e9d">&#9670;&nbsp;</a></span>SSRB() <span class="overload">[2/3]</span></h2>
+<a id="ga7e80d1904ef53c7c12f64eec5db1809e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e80d1904ef53c7c12f64eec5db1809e">&#9670;&nbsp;</a></span>SSRB() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -664,7 +793,13 @@ This function can only handle in_proj_data_info where all segments have identica
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>max_in_segment_num_to_process</em> = <code>-1</code>&#160;</td>
+          <td class="paramname"><em>max_in_segment_num_to_process</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_tof_bins_to_combine</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -685,9 +820,9 @@ This function can only handle in_proj_data_info where all segments have identica
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6" title="construct new ProjDataInfo that is appropriate for rebinned data ">SSRB</a>(const <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>&amp; in_proj_data_info, const int num_segments_to_combine, const int num_views_to_combine, const int num_tang_poss_to_trim, const int max_in_segment_num_to_process ) for restrictions </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">SSRB</a>(const <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>&amp; in_proj_data_info, const int num_segments_to_combine, const int num_views_to_combine, const int num_tang_poss_to_trim, const int max_in_segment_num_to_process, const int num_tof_bins_to_combine ) for restrictions </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__projdata.html#ga72b5f9d629f6ce8def1e29cbb6f13297">stir::SSRB()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__projdata.html#ga72b5f9d629f6ce8def1e29cbb6f13297">stir::SSRB()</a>.</p>
 
 </div>
 </div>
@@ -734,16 +869,16 @@ This function can only handle in_proj_data_info where all segments have identica
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>in_proj_data_info has to be (at least) of type <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">ProjDataInfoCylindrical</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjData.html#ae1093b25f19ac0fb916e97646b4984f7">stir::ProjData::get_empty_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical::get_m()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af570c808b1c83a91e0d8e0eb84f8cee0">stir::ProjDataInfoCylindrical::get_max_ring_difference()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a581c37630fd579ed236d675407669dd4">stir::ProjData::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a46d7a0a93ae0815b802e2530e1d03133">stir::ProjData::get_max_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#adb8294dff954cd51adabe1b76ce69d02">stir::ProjDataInfoCylindrical::get_min_ring_difference()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a9c335f1b228c0372dff6619fef190e6d">stir::ProjData::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#aa9654291d445fcf79b465aa6bee10af9">stir::ProjData::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a8e162fbc5ca9e32ff104003fe0a39dd1">stir::ProjData::get_num_views()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjData.html#ae1093b25f19ac0fb916e97646b4984f7">stir::ProjData::get_empty_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical::get_m()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af570c808b1c83a91e0d8e0eb84f8cee0">stir::ProjDataInfoCylindrical::get_max_ring_difference()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a581c37630fd579ed236d675407669dd4">stir::ProjData::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a46d7a0a93ae0815b802e2530e1d03133">stir::ProjData::get_max_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#adb8294dff954cd51adabe1b76ce69d02">stir::ProjDataInfoCylindrical::get_min_ring_difference()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a9c335f1b228c0372dff6619fef190e6d">stir::ProjData::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#aa9654291d445fcf79b465aa6bee10af9">stir::ProjData::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a8e162fbc5ca9e32ff104003fe0a39dd1">stir::ProjData::get_num_views()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjData.html#a2cb9332ffd6809f1de7df96d2e244cc2">stir::ProjData::set_sinogram()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="group__projdata.html#ga02bc22d0ea3d24d605d5d0c34fcf7e9d">stir::SSRB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="group__projdata.html#ga7e80d1904ef53c7c12f64eec5db1809e">stir::SSRB()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

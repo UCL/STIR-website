@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -51,13 +51,15 @@ Collaboration diagram for Utility programs:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__utilities.png" border="0" alt="" usemap="#group____utilities"/>
 <map name="group____utilities" id="group____utilities">
-<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="526,50,669,91"/>
-<area shape="rect" id="node2" href="group__ECAT.html" title="ECAT6 and ECAT7 support\l in the IO library" alt="" coords="503,190,692,231"/>
-<area shape="rect" id="node5" href="group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="503,256,692,283"/>
-<area shape="rect" id="node6" href="group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="522,307,673,349"/>
-<area shape="rect" id="node7" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="510,373,685,414"/>
-<area shape="rect" id="node8" href="group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="488,438,707,479"/>
-<area shape="rect" id="node4" href="group__main__programs.html" title="Executables" alt="" coords="5,285,107,312"/>
+<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="536,89,679,130"/>
+<area shape="rect" id="node2" href="group__GE.html" title="support for GE data" alt="" coords="533,155,681,181"/>
+<area shape="rect" id="node3" href="group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="495,206,720,247"/>
+<area shape="rect" id="node4" href="group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="519,333,696,374"/>
+<area shape="rect" id="node7" href="group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="513,399,702,425"/>
+<area shape="rect" id="node8" href="group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="532,450,683,491"/>
+<area shape="rect" id="node9" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="520,515,695,557"/>
+<area shape="rect" id="node10" href="group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="498,581,717,622"/>
+<area shape="rect" id="node6" href="group__main__programs.html" title="Executables" alt="" coords="5,377,107,404"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -149,6 +151,9 @@ Files</h2></td></tr>
 <tr class="memitem:make__grid__image_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make__grid__image_8cxx.html">make_grid_image.cxx</a></td></tr>
 <tr class="memdesc:make__grid__image_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program creates a simple grid image. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:normalizedbckproj_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizedbckproj_8cxx.html">normalizedbckproj.cxx</a></td></tr>
+<tr class="memdesc:normalizedbckproj_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This programm was based on bck_project originnal code with the difference that here we normalize the final value of a single pixel with a sum of all values in the corresponding LOR. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:prepare__projdata_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prepare__projdata_8cxx.html">prepare_projdata.cxx</a></td></tr>
 <tr class="memdesc:prepare__projdata_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">A utility preparing some projection data for further processing with iterative reconstructions. See <a class="el" href="classstir_1_1PrepareProjData.html" title="A preliminary class to prepare files for iterative reconstruction. ">stir::PrepareProjData</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +177,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:listmode__utilities_2add__ecat7__header__to__sgl_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listmode__utilities_2add__ecat7__header__to__sgl_8cxx.html">add_ecat7_header_to_sgl.cxx</a></td></tr>
 <tr class="memdesc:listmode__utilities_2add__ecat7__header__to__sgl_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepend contents of ECAT7 header to a new sgl file (from list mode acquisition) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:conv__NiftyPET__stir_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__NiftyPET__stir_8cxx.html">conv_NiftyPET_stir.cxx</a></td></tr>
+<tr class="memdesc:conv__NiftyPET__stir_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert between NiftyPET and STIR imagees and projdata. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:print__sgl__values_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__sgl__values_8cxx.html">print_sgl_values.cxx</a></td></tr>
 <tr class="memdesc:print__sgl__values_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility program that prints out values from an sgl file. <br /></td></tr>
@@ -215,6 +223,9 @@ Files</h2></td></tr>
 <tr class="memitem:simulate__scatter_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulate__scatter_8cxx.html">simulate_scatter.cxx</a></td></tr>
 <tr class="memdesc:simulate__scatter_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates a coarse scatter sinogram. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:upsample__and__fit__single__scatter_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="upsample__and__fit__single__scatter_8cxx.html">upsample_and_fit_single_scatter.cxx</a></td></tr>
+<tr class="memdesc:upsample__and__fit__single__scatter_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">upsample a coarse scatter estimate and fit it to emission data using a weight/mask projection data <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abs__image_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abs__image_8cxx.html">abs_image.cxx</a></td></tr>
 <tr class="memdesc:abs__image_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">It produces the absolute value image of an image. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +249,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:compare__projdata_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compare__projdata_8cxx.html">compare_projdata.cxx</a></td></tr>
 <tr class="memdesc:compare__projdata_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare 2 files with sinogram data <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:construct__randoms__from__GEsingles_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="construct__randoms__from__GEsingles_8cxx.html">construct_randoms_from_GEsingles.cxx</a></td></tr>
+<tr class="memdesc:construct__randoms__from__GEsingles_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct randoms as a product of singles estimates. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:construct__randoms__from__singles_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="construct__randoms__from__singles_8cxx.html">construct_randoms_from_singles.cxx</a></td></tr>
 <tr class="memdesc:construct__randoms__from__singles_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct randoms as a product of singles estimates. <br /></td></tr>
@@ -312,7 +326,7 @@ Files</h2></td></tr>
 <tr class="memdesc:get__time__frame__info_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints start time and duration of a frame to stdout. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:invert__axis_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="invert__axis_8cxx.html">invert_axis.cxx</a></td></tr>
-<tr class="memdesc:invert__axis_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program inverts x y or z axis. It is also able to remove nan from the image. <br /></td></tr>
+<tr class="memdesc:invert__axis_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program inverts x y or z axis. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:list__detector__and__bin__info_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list__detector__and__bin__info_8cxx.html">list_detector_and_bin_info.cxx</a></td></tr>
 <tr class="memdesc:list__detector__and__bin__info_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">A utility that lists bin and detector info for a given (cylindrical) scanner on stdout. <br /></td></tr>
@@ -351,7 +365,7 @@ Files</h2></td></tr>
 <tr class="memdesc:shift__image__origin_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program shifts the origin of an image. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:utilities_2SSRB_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_2SSRB_8cxx.html">SSRB.cxx</a></td></tr>
-<tr class="memdesc:utilities_2SSRB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main program for <a class="el" href="group__projdata.html#gad53326537cc1a666338269d0b89836f6" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>. <br /></td></tr>
+<tr class="memdesc:utilities_2SSRB_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main program for <a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:stir__math_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stir__math_8cxx.html">stir_math.cxx</a></td></tr>
 <tr class="memdesc:stir__math_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">add or multiply data, with some other basic math manipulations <br /></td></tr>
@@ -385,7 +399,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

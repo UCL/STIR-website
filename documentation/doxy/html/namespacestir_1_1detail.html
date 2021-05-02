@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,46 @@ template void&#160;</td><td class="memItemRight" valign="bottom"><b>linear_regre
 <tr class="memitem:a64b7396e375aaa06ee5a4278a4e69f08"><td class="memItemLeft" align="right" valign="top"><a id="a64b7396e375aaa06ee5a4278a4e69f08"></a>
 template void&#160;</td><td class="memItemRight" valign="bottom"><b>linear_regression_compute_fit_from_S</b> (double &amp;constant, double &amp;scale, double &amp;chi_square, double &amp;variance_of_constant, double &amp;variance_of_scale, double &amp;covariance_of_constant_with_scale, const double S, const double Sx, const double Sy, const double Syy, const double Stt, const double Sty, const std::size_t data_size, const bool use_estimated_variance)</td></tr>
 <tr class="separator:a64b7396e375aaa06ee5a4278a4e69f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d0ecce16a9140c4384a7f630ffcdda"><td class="memTemplParams" colspan="2"><a id="a04d0ecce16a9140c4384a7f630ffcdda"></a>
+template&lt;int num_dimensions, typename T &gt; </td></tr>
+<tr class="memitem:a04d0ecce16a9140c4384a7f630ffcdda"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_min_indices_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, T &gt; &amp;a)</td></tr>
+<tr class="separator:a04d0ecce16a9140c4384a7f630ffcdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96103d64dd2bf520d51e3bbc3410110"><td class="memTemplParams" colspan="2"><a id="aa96103d64dd2bf520d51e3bbc3410110"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa96103d64dd2bf520d51e3bbc3410110"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 1, int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_min_indices_help</b> (<a class="el" href="structstir_1_1detail_1_1is__1d.html">is_1d</a>, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, T &gt; &amp;a)</td></tr>
+<tr class="separator:aa96103d64dd2bf520d51e3bbc3410110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10097c6874e2f99d540343ef8785fd59"><td class="memTemplParams" colspan="2"><a id="a10097c6874e2f99d540343ef8785fd59"></a>
+template&lt;int num_dimensions2, typename T &gt; </td></tr>
+<tr class="memitem:a10097c6874e2f99d540343ef8785fd59"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>next_help</b> (<a class="el" href="structstir_1_1detail_1_1is__1d.html">is_1d</a>, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 1, int &gt; &amp;index, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions2, T &gt; &amp;a)</td></tr>
+<tr class="separator:a10097c6874e2f99d540343ef8785fd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e5c3c9a65416ba4b6c73cb84784e72"><td class="memTemplParams" colspan="2"><a id="a88e5c3c9a65416ba4b6c73cb84784e72"></a>
+template&lt;typename T , int num_dimensions, int num_dimensions2&gt; </td></tr>
+<tr class="memitem:a88e5c3c9a65416ba4b6c73cb84784e72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>next_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, int &gt; &amp;index, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions2, T &gt; &amp;a)</td></tr>
+<tr class="separator:a88e5c3c9a65416ba4b6c73cb84784e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539fbf9c05cf1d57adecbc4225bb2e39"><td class="memTemplParams" colspan="2"><a id="a539fbf9c05cf1d57adecbc4225bb2e39"></a>
+template&lt;class coordT &gt; </td></tr>
+<tr class="memitem:a539fbf9c05cf1d57adecbc4225bb2e39"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>coordinate_less_than_help</b> (<a class="el" href="structstir_1_1detail_1_1is__1d.html">is_1d</a>, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 1, coordT &gt; &amp;c1, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 1, coordT &gt; &amp;c2)</td></tr>
+<tr class="separator:a539fbf9c05cf1d57adecbc4225bb2e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ee574dc715bea8ca5c48c71089c5e0"><td class="memTemplParams" colspan="2"><a id="a67ee574dc715bea8ca5c48c71089c5e0"></a>
+template&lt;class coordT &gt; </td></tr>
+<tr class="memitem:a67ee574dc715bea8ca5c48c71089c5e0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>coordinate_less_than_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 2, coordT &gt; &amp;c1, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 2, coordT &gt; &amp;c2)</td></tr>
+<tr class="separator:a67ee574dc715bea8ca5c48c71089c5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18750b948e95888a763893dd6721e41"><td class="memTemplParams" colspan="2"><a id="ab18750b948e95888a763893dd6721e41"></a>
+template&lt;class coordT &gt; </td></tr>
+<tr class="memitem:ab18750b948e95888a763893dd6721e41"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>coordinate_less_than_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, coordT &gt; &amp;c1, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, coordT &gt; &amp;c2)</td></tr>
+<tr class="separator:ab18750b948e95888a763893dd6721e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44282145957e1bfa50daea35af35917"><td class="memTemplParams" colspan="2"><a id="ac44282145957e1bfa50daea35af35917"></a>
+template&lt;int num_dimensions, class coordT &gt; </td></tr>
+<tr class="memitem:ac44282145957e1bfa50daea35af35917"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>coordinate_less_than_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, coordT &gt; &amp;c1, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, coordT &gt; &amp;c2)</td></tr>
+<tr class="separator:ac44282145957e1bfa50daea35af35917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memTemplParams" colspan="2"><a id="a9a7d0a71f2818bb202d8ea02751f97d2"></a>
+template&lt;int num_dimensions, class IStreamT , class elemT &gt; </td></tr>
+<tr class="memitem:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read_data_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, IStreamT &amp;s, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order)</td></tr>
+<tr class="separator:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memTemplParams" colspan="2"><a id="a4a02ddbec93bccbc7e13cd6948a77e56"></a>
+template&lt;class IStreamT , class elemT &gt; </td></tr>
+<tr class="memitem:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read_data_help</b> (<a class="el" href="structstir_1_1detail_1_1is__1d.html">is_1d</a>, IStreamT &amp;s, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order)</td></tr>
+<tr class="separator:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga836785cfb7548ecb7e5fc1a604f71aad"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
 <tr class="memitem:ga836785cfb7548ecb7e5fc1a604f71aad"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad">read_data_1d</a> (std::istream &amp;s, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order)</td></tr>
 <tr class="memdesc:ga836785cfb7548ecb7e5fc1a604f71aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">read_data()</a></code>. It does the actual reading to <code>std::istream</code>.  <a href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad">More...</a><br /></td></tr>
@@ -91,6 +131,14 @@ template void&#160;</td><td class="memItemRight" valign="bottom"><b>linear_regre
 template&lt;class elemT &gt; </td></tr>
 <tr class="memitem:aa613c02ad8da854e2b385eb407a9a533"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read_data_1d</b> (FILE *&amp;, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order)</td></tr>
 <tr class="separator:aa613c02ad8da854e2b385eb407a9a533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memTemplParams" colspan="2"><a id="a3dbf512b174a8200ff847f0eea9ec82b"></a>
+template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>write_data_with_fixed_scale_factor_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, OStreamT &amp;s, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, elemT &gt; &amp;data, <a class="el" href="classstir_1_1NumericInfo.html">NumericInfo</a>&lt; OutputType &gt; output_type, const ScaleT scale_factor, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="separator:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplParams" colspan="2"><a id="a141ebd0eb86381aa3c78441a40d15549"></a>
+template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>write_data_with_fixed_scale_factor_help</b> (<a class="el" href="structstir_1_1detail_1_1is__1d.html">is_1d</a>, OStreamT &amp;s, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, <a class="el" href="classstir_1_1NumericInfo.html">NumericInfo</a>&lt; OutputType &gt;, const ScaleT scale_factor, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="separator:a141ebd0eb86381aa3c78441a40d15549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4418189143eea7d24627e84e02bfd875"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
 <tr class="memitem:ga4418189143eea7d24627e84e02bfd875"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875">write_data_1d</a> (std::ostream &amp;s, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order, const bool can_corrupt_data)</td></tr>
 <tr class="memdesc:ga4418189143eea7d24627e84e02bfd875"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>std::ostream</code>.  <a href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875">More...</a><br /></td></tr>
@@ -99,6 +147,14 @@ template&lt;class elemT &gt; </td></tr>
 <tr class="memitem:ga9b1ea3680bd91c0772b9e82a52d44b9c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#ga9b1ea3680bd91c0772b9e82a52d44b9c">write_data_1d</a> (FILE *&amp;fptr_ref, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, elemT &gt; &amp;data, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order, const bool can_corrupt_data)</td></tr>
 <tr class="memdesc:ga9b1ea3680bd91c0772b9e82a52d44b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>FILE*</code> using stdio functions.  <a href="group__Array__IO__detail.html#ga9b1ea3680bd91c0772b9e82a52d44b9c">More...</a><br /></td></tr>
 <tr class="separator:ga9b1ea3680bd91c0772b9e82a52d44b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65a5bb4c19ddd1114f924262c9dee48"><td class="memTemplParams" colspan="2"><a id="ab65a5bb4c19ddd1114f924262c9dee48"></a>
+template&lt;class DataIter , class CoordinatesIter , class WeightsIter &gt; </td></tr>
+<tr class="memitem:ab65a5bb4c19ddd1114f924262c9dee48"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>linear_regression_compute_S</b> (double &amp;S, double &amp;Sx, double &amp;Sy, double &amp;Syy, double &amp;Stt, double &amp;Sty, const DataIter data_begin, const DataIter data_end, const CoordinatesIter coords_begin, const WeightsIter weights_begin)</td></tr>
+<tr class="separator:ab65a5bb4c19ddd1114f924262c9dee48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c255ff3502563797c0a3ee7707e745f"><td class="memTemplParams" colspan="2"><a id="a2c255ff3502563797c0a3ee7707e745f"></a>
+template&lt;class elemT , class vecT &gt; </td></tr>
+<tr class="memitem:a2c255ff3502563797c0a3ee7707e745f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>matrix_multiply_help</b> (vecT &amp;retval, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;m, const vecT &amp;vec)</td></tr>
+<tr class="separator:a2c255ff3502563797c0a3ee7707e745f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab09fbf8fe96eabb2f9f32fb5fcc3eac8"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__recon__buildblock.html#gab09fbf8fe96eabb2f9f32fb5fcc3eac8">find_basic_vs_nums_in_subset</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info, const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &amp;symmetries, const int min_segment_num, const int max_segment_num, const int subset_num, const int num_subsets)</td></tr>
 <tr class="memdesc:gab09fbf8fe96eabb2f9f32fb5fcc3eac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">a helper function to find which view/segments are in a subsetThis function is used by projectors and distributable_computation etc to construct a list of view/segments that are in a subset, and which are "basic" w.r.t the symmetries. <br /></td></tr>
@@ -110,7 +166,7 @@ std::vector&lt; <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSe
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

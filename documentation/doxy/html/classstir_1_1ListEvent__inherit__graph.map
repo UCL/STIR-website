@@ -1,13 +1,14 @@
 <map id="stir::ListEvent" name="stir::ListEvent">
-<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="181,107,301,134"/>
-<area shape="rect" id="node12" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file. " alt="" coords="165,158,317,185"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="181,98,301,125"/>
+<area shape="rect" id="node13" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file. " alt="" coords="165,149,317,175"/>
 <area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR \&gt;" alt="" coords="843,5,1008,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="367,129,588,171"/>
-<area shape="rect" id="node10" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="399,64,556,105"/>
-<area shape="rect" id="node11" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="401,195,553,222"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="367,136,588,177"/>
+<area shape="rect" id="node11" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="399,5,556,47"/>
+<area shape="rect" id="node12" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="401,202,553,229"/>
 <area shape="rect" id="node4" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general record, containing a union of data, time and raw record and providing access to cer..." alt="" coords="1342,13,1506,39"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="1283,141,1565,197"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="1283,229,1565,285"/>
-<area shape="rect" id="node8" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="784,187,1067,243"/>
+<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="1283,293,1565,349"/>
+<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="1283,206,1565,262"/>
+<area shape="rect" id="node8" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="784,253,1067,309"/>
 <area shape="rect" id="node9" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="827,71,1024,112"/>
+<area shape="rect" id="node10" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="846,136,1005,177"/>
 </map>

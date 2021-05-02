@@ -1,4 +1,4342 @@
 -------------------------------
+Sun, 2 May 2021 10:00:51 +0000  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 4.1.0
+
+
+LICENSE.txt
+
+-------------------------------
+Sun, 2 May 2021 09:59:51 +0000  Kris Thielemans  
+
+updated zenodo.json and mailmap
+
+
+.mailmap
+.zenodo.json
+
+-------------------------------
+Sun, 2 May 2021 09:25:40 +0000  Kris Thielemans  
+
+fix some license info
+
+
+scripts/maintenance/make_distribution.sh
+src/display/gen.c
+src/display/gen.h
+src/display/mathlinkhelp.c
+src/display/screengen.c
+src/experimental/buildblock/AbsTimeIntervalFromDynamicData.cxx
+src/experimental/buildblock/AbsTimeIntervalFromECAT7ACF.cxx
+src/experimental/buildblock/AbsTimeIntervalWithParsing.cxx
+src/experimental/buildblock/DAVArrayFilter3D.cxx
+src/experimental/buildblock/DAVImageFilter3D.cxx
+src/experimental/buildblock/ModifiedInverseAveragingImageFilterAll.cxx
+src/experimental/buildblock/ModifiedInverseAverigingArrayFilter.cxx
+src/experimental/buildblock/ModifiedInverseAverigingImageFilter.cxx
+src/experimental/buildblock/NonseparableSpatiallyVaryingFilters.cxx
+src/experimental/buildblock/NonseparableSpatiallyVaryingFilters3D.cxx
+src/experimental/buildblock/Quaternion.cxx
+src/experimental/buildblock/SeparableLowPassArrayFilter.cxx
+src/experimental/buildblock/SeparableLowPassImageFilter.cxx
+src/experimental/buildblock/fwd_and_bck_manipulation_for_SAF.cxx
+src/experimental/buildblock/local_helping_functions.cxx
+src/experimental/buildblock/multiply_plane_scale_factorsImageProcessor.cxx
+src/experimental/recon_buildblock/ProjMatrixByBinUsingSolidAngle.cxx
+src/experimental/recon_buildblock/ProjMatrixByBinWithPositronRange.cxx
+src/experimental/recon_buildblock/ProjMatrixByDensel.cxx
+src/experimental/recon_test/fwdtestDensel.cxx
+src/include/stir/recon_buildblock/BackProjectorByBinUsingSquareProjMatrixByBin.h
+src/include/stir_experimental/AbsTimeInterval.h
+src/include/stir_experimental/AbsTimeIntervalFromDynamicData.h
+src/include/stir_experimental/AbsTimeIntervalFromECAT7ACF.h
+src/include/stir_experimental/AbsTimeIntervalWithParsing.h
+src/include/stir_experimental/DAVArrayFilter3D.h
+src/include/stir_experimental/Filter.h
+src/include/stir_experimental/ModifiedInverseAveragingImageFilterAll.h
+src/include/stir_experimental/ModifiedInverseAverigingArrayFilter.h
+src/include/stir_experimental/ModifiedInverseAverigingImageFilter.h
+src/include/stir_experimental/NonseparableSpatiallyVaryingFilters.h
+src/include/stir_experimental/NonseparableSpatiallyVaryingFilters3D.h
+src/include/stir_experimental/Quaternion.h
+src/include/stir_experimental/Quaternion.inl
+src/include/stir_experimental/SeparableLowPassArrayFilter.h
+src/include/stir_experimental/SeparableLowPassArrayFilter2.h
+src/include/stir_experimental/SeparableLowPassImageFilter.h
+src/include/stir_experimental/fwd_and_bck_manipulation_for_SAF.h
+src/include/stir_experimental/multiply_plane_scale_factorsImageProcessor.h
+
+-------------------------------
+Sun, 2 May 2021 09:21:05 +0000  Kris Thielemans  
+
+updated version 4.1.0 dates etc
+
+
+documentation/history.htm
+documentation/release_4.1.htm
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Sun, 2 May 2021 10:00:22 +0100  Kris Thielemans  
+
+Merge pull request #878 from KrisThielemans/fix_DOXYSWIG
+fix RUN_DOXYSWIG for parallel builds
+
+Fixes #877
+
+-------------------------------
+Sun, 2 May 2021 07:13:58 +0000  Kris Thielemans  
+
+fix RUN_DOXYSWIG for parallel builds [skip appveyor]
+doxyswig could be started before doxygen had finished, resulting in
+using out-dated files
+
+
+src/swig/CMakeLists.txt
+
+-------------------------------
+Sun, 2 May 2021 06:54:44 +0000  Kris Thielemans  
+
+various doxygen fixes
+
+
+documentation/release_4.1.htm
+src/IO/GIPL_ImageFormat.cxx
+src/experimental/motion/RigidObject3DMotionFromPolaris.cxx
+src/experimental/recon_buildblock/BinNormalisationSinogramRescaling.cxx
+src/experimental/utilities/normalizedbckproj.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/include/stir/KeyParser.h
+src/include/stir/MultipleProjData.h
+src/include/stir/ParseAndCreateFrom.h
+src/include/stir/data/SinglesRates.h
+src/include/stir/data/randoms_from_singles.h
+src/include/stir/date_time_functions.h
+src/include/stir/doxygengroups.h
+src/include/stir/recon_buildblock/PLSPrior.h
+src/include/stir/recon_buildblock/ProjMatrixByBinSPECTUB.h
+src/include/stir_experimental/modelling/BloodFrameData.h
+src/listmode_buildblock/CListRecordROOT.cxx
+src/recon_buildblock/BinNormalisationSPECT.cxx
+src/recon_buildblock/ProjMatrixByBin.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_utilities/upsample_and_fit_single_scatter.cxx
+src/test/test_SeparableGaussianArrayFilter.cxx
+
+-------------------------------
+Sat, 1 May 2021 22:22:40 +0100  Kris Thielemans  
+
+Merge pull request #875 from KrisThielemans/singles_rates
+Singles rates fixes and other files for GE processing
+
+-------------------------------
+Sat, 1 May 2021 19:44:26 +0100  Kris Thielemans  
+
+Merge pull request #876 from KrisThielemans/fix_decay_correction
+fix decay_correction_factor for small interval
+
+-------------------------------
+Sat, 1 May 2021 18:40:54 +0000  Kris Thielemans  
+
+fix decay_correction_Factor for small interval [ci skip]
+when start_time was not zero, the formula was wrong.
+
+Fixes #872
+
+
+src/include/stir/decay_correction_factor.h
+
+-------------------------------
+Sat, 1 May 2021 16:13:12 +0000  Kris Thielemans  
+
+renamed SinglesFromGEHDF5 back to SinglesRatesFromGEHDF5
+as the hierarchy can now do both rates and totals, the name was ok
+
+
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/data_buildblock/data_buildblock_registries.cxx
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/utilities/GE/print_GE_singles_values.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Sat, 1 May 2021 16:00:07 +0000  Kris Thielemans  
+
+fix GEAC_to_mu.sh
+
+
+examples/GE-Signa-PETMR/GEAC_to_mu.sh
+
+-------------------------------
+Sat, 1 May 2021 07:21:23 +0000  Kris Thielemans  
+
+added license info to GE examples scripts
+
+
+examples/GE-Signa-PETMR/GEAC_to_mu.sh
+examples/GE-Signa-PETMR/NAC_recon.sh
+examples/GE-Signa-PETMR/create_norm_projdata.sh
+examples/GE-Signa-PETMR/howto.md
+examples/GE-Signa-PETMR/process_VQC_data.sh
+examples/GE-Signa-PETMR/register_GEAC.sh
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/sino_and_randoms.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Sat, 1 May 2021 07:18:09 +0000  Kris Thielemans  
+
+check-in of basic files for GE PET/CT files
+
+
+examples/GE-Signa-PETMR/GEAC_to_mu.sh
+examples/GE-Signa-PETMR/GE_HUToMu.par
+examples/GE-Signa-PETMR/README.md
+
+-------------------------------
+Sat, 1 May 2021 07:15:25 +0000  Kris Thielemans  
+
+improvements to GE Signa scripts
+- made them location independent
+- cope with spaces in paths
+- unlist_and_randoms.sh allows specifying TEMPLATE
+- randoms file output is now called randomsspan2_f1g1d0b0.hs to be like prompts
+- process_VQC* now
+     - runs NAC recon only
+     - allows specifying location of data
+
+
+examples/GE-Signa-PETMR/NAC_recon.sh
+examples/GE-Signa-PETMR/README.md
+examples/GE-Signa-PETMR/create_norm_projdata.sh
+examples/GE-Signa-PETMR/process_VQC_data.sh
+examples/GE-Signa-PETMR/register_GEAC.sh
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/sino_and_randoms.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Sat, 1 May 2021 05:27:45 +0000  Kris Thielemans  
+
+correct decay handling in randoms_from_singles
+We now compute integrals (hopefully!) correctly for "double decay"
+of the randoms
+
+
+src/data_buildblock/randoms_from_singles.cxx
+src/include/stir/data/randoms_from_singles.h
+
+-------------------------------
+Sat, 1 May 2021 05:24:49 +0000  Kris Thielemans  
+
+correct single slice case in SinglesRatesForTimeSlices
+When only 1 slice was present, it was double counted.
+This was a bug introduced by me a few commits ago. However,
+the new code allows for fractions as well (which wasn't necessary
+for the original code as it was returning rates).
+
+
+src/data_buildblock/SinglesRatesForTimeSlices.cxx
+
+-------------------------------
+Fri, 30 Apr 2021 12:40:16 +0000  Kris Thielemans  
+
+added print_GE_singles_values utility
+
+
+src/experimental/utilities/print_rdf_singles.cxx
+src/utilities/CMakeLists.txt
+src/utilities/GE/print_GE_singles_values.cxx
+
+-------------------------------
+Fri, 30 Apr 2021 12:36:24 +0000  Kris Thielemans  
+
+singles improvements
+- allow non-zero start for SinglesRatesFromTimeSlices (fixing corresponding
+bug in when reading GE sinogram files when it wasn't the first of the series)
+- add get_time_frame_definitions() functionality to SinglesRatesFromTimeSlices
+- rename SinglesFromGEHDF5::read_from_singles_file to read_from_file and add a
+constructor taking a filename
+- postpone check on compressed RDF9 sino to the point that we actually read
+the data (such that it can be used for singles, time frame info etc)
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/data_buildblock/SinglesFromGEHDF5.cxx
+src/data_buildblock/SinglesRatesForTimeSlices.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/data/SinglesFromGEHDF5.h
+src/include/stir/data/SinglesRatesForTimeFrames.h
+src/include/stir/data/SinglesRatesForTimeSlices.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 30 Apr 2021 12:33:42 +0000  Kris Thielemans  
+
+revise SinglesRates hierarchy
+The SinglesRates classes assumed that stored singles were "rates" but in practice
+were totals-per-time-interval (for both ECAT7 and RDF9). It is convenient
+to be able to access totals and rates, so `SinglesRates` has now
+`get_singles` (returning the singles in the time interval) and
+`get_singles_rates` (returning the rate per second).
+
+Due to the previous confusion, "client"-code will need to be adapted to use
+either `get_singles` or `get_singles_rate`, depending on what is needed.
+
+
+documentation/bugs.htm
+documentation/release_4.1.htm
+src/data_buildblock/SinglesRates.cxx
+src/data_buildblock/SinglesRatesForTimeFrames.cxx
+src/data_buildblock/SinglesRatesForTimeSlices.cxx
+src/include/stir/data/SinglesRates.h
+src/include/stir/data/SinglesRatesForTimeFrames.h
+src/include/stir/data/SinglesRatesForTimeSlices.h
+src/include/stir/data/randoms_from_singles.h
+src/include/stir/recon_buildblock/BinNormalisationFromECAT7.h
+src/recon_buildblock/BinNormalisationFromECAT7.cxx
+src/utilities/ecat/print_ecat_singles_values.cxx
+
+-------------------------------
+Thu, 29 Apr 2021 16:55:06 +0000  Kris Thielemans  
+
+clarify doc for correct_projdata on scatter [ci skip]
+
+
+examples/samples/correct_projdata.par
+src/utilities/correct_projdata.cxx
+
+-------------------------------
+Wed, 28 Apr 2021 18:24:45 +0100  Kris Thielemans  
+
+Merge pull request #869 from KrisThielemans/GE_list_speed_up
+speed-up reading from GEHDF5 list files
+
+-------------------------------
+Wed, 28 Apr 2021 11:30:30 +0000  Kris Thielemans  
+
+fix ambigious conversion between streamoff, hsize etc
+
+
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+
+-------------------------------
+Wed, 28 Apr 2021 10:14:51 +0100  Kris Thielemans  
+
+Merge pull request #870 from KrisThielemans/singles_overlap
+remove overlap in Singles classes
+
+-------------------------------
+Tue, 27 Apr 2021 07:26:03 +0000  Kris Thielemans  
+
+remove overlap in Singles classes
+- moved standard code from SinglesRatesFromSglFile to new class
+SinglesRatesForTimeSlices
+- removed corresponding code in SinglesFromGEHDF5
+- minor changes in documentation
+
+Results are identical after this commit
+
+
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/SinglesFromGEHDF5.cxx
+src/data_buildblock/SinglesRatesForTimeSlices.cxx
+src/data_buildblock/SinglesRatesFromSglFile.cxx
+src/include/stir/data/SinglesFromGEHDF5.h
+src/include/stir/data/SinglesRatesForTimeSlices.h
+src/include/stir/data/SinglesRatesFromSglFile.h
+
+-------------------------------
+Tue, 27 Apr 2021 07:21:06 +0000  Kris Thielemans  
+
+speed-up reading from GEHDF5 list files
+- use an internal buffer such that we don't have to call h5read for every event. This
+speeds things up dramatically.
+- minor clean-up of GEHDF5Wrapper by removing a member variable (making it local)
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+
+-------------------------------
+Sat, 24 Apr 2021 07:48:20 +0100  Kris Thielemans  
+
+Merge pull request #864 from KrisThielemans/release_4.1.0
+Towards Release 4.1.0
+
+-------------------------------
+Fri, 23 Apr 2021 20:47:13 +0000  Kris Thielemans  
+
+minor fixes to license info
+
+
+LICENSE.txt
+scripts/maintenance/change-license.sh
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Fri, 23 Apr 2021 20:46:51 +0000  Kris Thielemans  
+
+deprecate VOLPET and ECAT6  and X Windows support
+
+
+LICENSE.txt
+VERSION.txt
+documentation/release_4.1.htm
+src/include/stir/IO/ECAT6ImageInputFileFormat.h
+src/include/stir/IO/ECAT6OutputFileFormat.h
+src/include/stir/IO/stir_ecat6.h
+src/include/stir/ProjDataGEAdvance.h
+
+-------------------------------
+Fri, 23 Apr 2021 20:28:56 +0000  Kris Thielemans  
+
+updates to UsersGuide
+
+
+documentation/STIR-UsersGuide.tex
+
+-------------------------------
+Fri, 23 Apr 2021 19:57:22 +0000  Kris Thielemans  
+
+fix distribution script
+remove erroneous PARAPET license, and added a missing quote
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Fri, 23 Apr 2021 17:45:11 +0000  Kris Thielemans  
+
+corrected GE-Signa unlist_and_randoms variable
+
+
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Fri, 23 Apr 2021 17:44:32 +0000  Kris Thielemans  
+
+updated the GE-Signa howto
+
+
+examples/GE-Signa-PETMR/howto.md
+
+-------------------------------
+Fri, 23 Apr 2021 07:56:43 +0000  Kris Thielemans  
+
+update to version 4.1
+
+
+CMakeLists.txt
+documentation/STIR-UsersGuide.tex
+documentation/STIR-developers-overview.tex
+documentation/history.htm
+
+-------------------------------
+Fri, 23 Apr 2021 07:50:26 +0000  Kris Thielemans  
+
+a few more license changes
+
+
+recon_test_pack/SPECT/run_SPECT_tests.sh
+recon_test_pack/run_ecat_tests.sh
+recon_test_pack/run_root_GATE.sh
+recon_test_pack/run_scatter_tests.sh
+recon_test_pack/run_test_listmode_recon.sh
+recon_test_pack/run_test_simulate_and_recon.sh
+recon_test_pack/run_test_simulate_and_recon_with_motion.sh
+recon_test_pack/run_test_zoom_image.sh
+recon_test_pack/run_tests.sh
+recon_test_pack/simulate_PET_data_for_tests.sh
+recon_test_pack/simulate_data.sh
+recon_test_pack/simulate_scatter.sh
+
+-------------------------------
+Fri, 23 Apr 2021 07:09:07 +0000  Kris Thielemans  
+
+corrected filename LICENSES/LGPL-2.1.txt [ci skip]
+
+
+LICENSES/LGPL-2.1.txt
+
+-------------------------------
+Fri, 23 Apr 2021 07:37:23 +0100  Kris Thielemans  
+
+Merge pull request #862 from KrisThielemans/license_switch
+License switch to Apache 2.0
+
+-------------------------------
+Fri, 23 Apr 2021 06:35:59 +0000  Kris Thielemans  
+
+update release_4.1 notes regarding license change [ci skip]
+
+
+LICENSE.txt
+documentation/release_4.1.htm
+
+-------------------------------
+Thu, 22 Apr 2021 21:24:22 +0000  license change  
+
+change to Apache 2.0 license
+essentially running change_license.sh with a few small edits
+in the doc where there was no license
+
+
+CMakeLists.txt
+documentation/Makefile
+documentation/STIR-UsersGuide.tex
+documentation/STIR-developers-overview.tex
+documentation/STIR-general-overview.tex
+documentation/STIR-glossary.tex
+examples/GATE_test_macro/benchPET.mac
+examples/GATE_test_macro/digitizer.mac
+examples/GATE_test_macro/geometry.mac
+examples/PET_simulation/README.txt
+examples/PET_simulation/Shell-scripting-primer.txt
+examples/PET_simulation/generate_input_data.sh
+examples/PET_simulation/recon_FBP2D.sh
+examples/PET_simulation/recon_iterative.sh
+examples/PET_simulation/run_simulation.sh
+examples/PET_simulation/simulate_data.sh
+examples/PET_simulation/simulate_scatter.sh
+examples/matlab/plot_demo.m
+examples/matlab/projector_demo.m
+examples/matlab/recon_demo.m
+examples/matlab/recon_demo_gradient.m
+examples/python/README.txt
+examples/python/matplotlib_demo.py
+examples/python/mayavi_demo.py
+examples/python/projector_demo.py
+examples/python/recon_demo.py
+examples/recon_demo/README.txt
+scripts/CMakeLists.txt
+scripts/IO/CMakeLists.txt
+scripts/count
+scripts/create_fdef_from_listmode.sh
+scripts/estimate_scatter.sh
+scripts/maintenance/CMakeLists.txt
+scripts/maintenance/change-license.sh
+scripts/maintenance/make_distribution.sh
+scripts/stir_divide
+scripts/stir_print_voxel_sizes.sh
+scripts/stir_subtract
+src/CMakeLists.txt
+src/IO/CMakeLists.txt
+src/IO/ECAT6OutputFileFormat.cxx
+src/IO/ECAT7DynamicDiscretisedDensityInputFileFormat.cxx
+src/IO/ECAT7DynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/ECAT7OutputFileFormat.cxx
+src/IO/ECAT7ParametricDensityOutputFileFormat.cxx
+src/IO/GEHDF5Wrapper.cxx
+src/IO/GIPL_ImageFormat.cxx
+src/IO/IO_registries.cxx
+src/IO/ITKImageInputFileFormat.cxx
+src/IO/ITKOutputFileFormat.cxx
+src/IO/InputFileFormatRegistry.cxx
+src/IO/InputStreamFromROOTFile.cxx
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/IO/InterfileDynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/InterfileHeader.cxx
+src/IO/InterfileHeaderSiemens.cxx
+src/IO/InterfileOutputFileFormat.cxx
+src/IO/InterfilePDFSHeaderSPECT.cxx
+src/IO/InterfileParametricDiscretisedDensityOutputFileFormat.cxx
+src/IO/MultiDynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/OutputFileFormat.cxx
+src/IO/OutputFileFormat_default.cxx
+src/IO/RegisteredObject.cxx
+src/IO/ecat6_utils.cxx
+src/IO/interfile.cxx
+src/IO/stir_AVW.cxx
+src/IO/stir_ecat6.cxx
+src/IO/stir_ecat7.cxx
+src/IO/stir_ecat_common.cxx
+src/Shape_buildblock/Box3D.cxx
+src/Shape_buildblock/DiscretisedShape3D.cxx
+src/Shape_buildblock/Ellipsoid.cxx
+src/Shape_buildblock/EllipsoidalCylinder.cxx
+src/Shape_buildblock/RegisteredObject.cxx
+src/Shape_buildblock/Shape3D.cxx
+src/Shape_buildblock/Shape3DWithOrientation.cxx
+src/Shape_buildblock/Shape_buildblock_registries.cxx
+src/SimSET/CMakeLists.txt
+src/SimSET/README.txt
+src/SimSET/conv_SimSET_projdata_to_STIR.cxx
+src/SimSET/conv_to_SimSET_att_image.cxx
+src/SimSET/examples/howto_run_SimSET.sh
+src/SimSET/scripts/CMakeLists.txt
+src/SimSET/scripts/SimSET_STIR_names.sh
+src/SimSET/scripts/add_SimSET_results.sh
+src/SimSET/scripts/conv_SimSET_projdata_to_STIR.sh
+src/SimSET/scripts/make_hv_from_Simset_params.sh
+src/SimSET/scripts/mult_num_photons.sh
+src/SimSET/scripts/run_SimSET.sh
+src/SimSET/scripts/stir_image_to_simset_object.sh
+src/SimSET/write_phg_image_info.c
+src/analytic/FBP2D/FBP2D.cxx
+src/analytic/FBP2D/FBP2DReconstruction.cxx
+src/analytic/FBP2D/RampFilter.cxx
+src/analytic/FBP3DRP/ColsherFilter.cxx
+src/analytic/FBP3DRP/FBP3DRP.cxx
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/buildblock/ArcCorrection.cxx
+src/buildblock/Array.cxx
+src/buildblock/ArrayFilter1DUsingConvolution.cxx
+src/buildblock/ArrayFilter1DUsingConvolutionSymmetricKernel.cxx
+src/buildblock/ArrayFilterUsingRealDFTWithPadding.cxx
+src/buildblock/ByteOrder.cxx
+src/buildblock/ChainedDataProcessor.cxx
+src/buildblock/DataSymmetriesForViewSegmentNumbers.cxx
+src/buildblock/DiscretisedDensity.cxx
+src/buildblock/DynamicDiscretisedDensity.cxx
+src/buildblock/DynamicProjData.cxx
+src/buildblock/ExamData.cxx
+src/buildblock/ExamInfo.cxx
+src/buildblock/FilePath.cxx
+src/buildblock/GatedDiscretisedDensity.cxx
+src/buildblock/GatedProjData.cxx
+src/buildblock/GeneralisedPoissonNoiseGenerator.cxx
+src/buildblock/IndexRange.cxx
+src/buildblock/KeyParser.cxx
+src/buildblock/ML_norm.cxx
+src/buildblock/MaximalArrayFilter3D.cxx
+src/buildblock/MaximalImageFilter3D.cxx
+src/buildblock/MedianArrayFilter3D.cxx
+src/buildblock/MedianImageFilter3D.cxx
+src/buildblock/MinimalArrayFilter3D.cxx
+src/buildblock/MinimalImageFilter3D.cxx
+src/buildblock/MultipleDataSetHeader.cxx
+src/buildblock/MultipleProjData.cxx
+src/buildblock/NonseparableConvolutionUsingRealDFTImageFilter.cxx
+src/buildblock/NumericType.cxx
+src/buildblock/ParseDiscretisedDensityParameters.cxx
+src/buildblock/ParsingObject.cxx
+src/buildblock/PatientPosition.cxx
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataFromStream.cxx
+src/buildblock/ProjDataGEAdvance.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/buildblock/ProjDataInfoCylindricalArcCorr.cxx
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInterfile.cxx
+src/buildblock/RegisteredObject.cxx
+src/buildblock/RelatedViewgrams.cxx
+src/buildblock/SSRB.cxx
+src/buildblock/Scanner.cxx
+src/buildblock/Segment.cxx
+src/buildblock/SegmentBySinogram.cxx
+src/buildblock/SegmentByView.cxx
+src/buildblock/SeparableArrayFunctionObject.cxx
+src/buildblock/SeparableCartesianMetzImageFilter.cxx
+src/buildblock/SeparableConvolutionImageFilter.cxx
+src/buildblock/SeparableGaussianArrayFilter.cxx
+src/buildblock/SeparableGaussianImageFilter.cxx
+src/buildblock/SeparableMetzArrayFilter.cxx
+src/buildblock/Sinogram.cxx
+src/buildblock/ThresholdMinToSmallPositiveValueDataProcessor.cxx
+src/buildblock/TimeFrameDefinitions.cxx
+src/buildblock/TimeGateDefinitions.cxx
+src/buildblock/TruncateToCylindricalFOVImageProcessor.cxx
+src/buildblock/Verbosity.cxx
+src/buildblock/Viewgram.cxx
+src/buildblock/VoxelsOnCartesianGrid.cxx
+src/buildblock/buildblock_registries.cxx
+src/buildblock/centre_of_gravity.cxx
+src/buildblock/date_time_functions.cxx
+src/buildblock/error.cxx
+src/buildblock/extend_projdata.cxx
+src/buildblock/find_fwhm_in_image.cxx
+src/buildblock/interfile_keyword_functions.cxx
+src/buildblock/interpolate_projdata.cxx
+src/buildblock/inverse_SSRB.cxx
+src/buildblock/line.cxx
+src/buildblock/linear_regression.cxx
+src/buildblock/multiply_crystal_factors.cxx
+src/buildblock/num_threads.cxx
+src/buildblock/overlap_interpolate.cxx
+src/buildblock/recon_array_functions.cxx
+src/buildblock/scale_sinograms.cxx
+src/buildblock/utilities.cxx
+src/buildblock/warning.cxx
+src/buildblock/zoom.cxx
+src/cmake/FindAllHeaderFiles.cmake
+src/cmake/FindNiftyPET.cmake
+src/cmake/STIRConfig.h.in
+src/cmake/stir_dirs.cmake
+src/cmake/stir_exe_targets.cmake
+src/cmake/stir_lib_target.cmake
+src/cmake/stir_test_exe_targets.cmake
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/RegisteredObject.cxx
+src/data_buildblock/SinglesFromGEHDF5.cxx
+src/data_buildblock/SinglesRates.cxx
+src/data_buildblock/SinglesRatesForTimeFrames.cxx
+src/data_buildblock/SinglesRatesFromECAT7.cxx
+src/data_buildblock/SinglesRatesFromSglFile.cxx
+src/data_buildblock/data_buildblock_registries.cxx
+src/data_buildblock/randoms_from_singles.cxx
+src/display/display_array.cxx
+src/display/screen.c
+src/display/screen.h
+src/eval_buildblock/ROIValues.cxx
+src/eval_buildblock/compute_ROI_values.cxx
+src/experimental/IO/ECAT7DynamicDiscretisedDensityOutputFileFormat.cxx
+src/experimental/IO/OutputFileFormat_default.cxx
+src/experimental/IO/local_InputFileFormatRegistry.cxx
+src/experimental/IO/local_OutputFileFormat_default.cxx
+src/experimental/buildblock/RegisteredObject.cxx
+src/experimental/iterative/OSSPS/line_search.cxx
+src/experimental/listmode_utilities/CMakeLists.txt
+src/experimental/motion_test/CMakeLists.txt
+src/experimental/motion_test/test_BSpline_transformations.cxx
+src/experimental/motion_utilities/CMakeLists.txt
+src/experimental/motion_utilities/non_rigid_transform.cxx
+src/experimental/recon_buildblock/BinNormalisationFromML2D.cxx
+src/experimental/recon_buildblock/CMakeLists.txt
+src/experimental/recon_buildblock/DataSymmetriesForDensels_PET_CartesianGrid.cxx
+src/experimental/recon_buildblock/ParametricQuadraticPrior.cxx
+src/experimental/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.cxx
+src/experimental/test/test_IO_ParametricDiscretisedDensity.cxx
+src/experimental/utilities/AVWROI.cxx
+src/experimental/utilities/Bland_Altman_plot.cxx
+src/experimental/utilities/CMakeLists.txt
+src/experimental/utilities/add_side_shields.cxx
+src/experimental/utilities/add_time_frame_info.cxx
+src/experimental/utilities/compute_gradient.cxx
+src/experimental/utilities/image_flip_x.cxx
+src/experimental/utilities/interpolate_projdata.cxx
+src/experimental/utilities/inverse_SSRB.cxx
+src/experimental/utilities/line_profiles_through_projdata.cxx
+src/experimental/utilities/list_TAC_ROI_values.cxx
+src/include/stir/ArcCorrection.h
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/Array1d.h
+src/include/stir/ArrayFilter1DUsingConvolution.h
+src/include/stir/ArrayFilter1DUsingConvolutionSymmetricKernel.h
+src/include/stir/ArrayFilterUsingRealDFTWithPadding.h
+src/include/stir/ArrayFunction.h
+src/include/stir/ArrayFunction.inl
+src/include/stir/ArrayFunctionObject.h
+src/include/stir/ArrayFunctionObject_1ArgumentImplementation.h
+src/include/stir/ArrayFunctionObject_2ArgumentImplementation.h
+src/include/stir/Array_complex_numbers.h
+src/include/stir/BasicCoordinate.h
+src/include/stir/BasicCoordinate.inl
+src/include/stir/Bin.h
+src/include/stir/Bin.inl
+src/include/stir/BoundaryConditions.h
+src/include/stir/ByteOrder.h
+src/include/stir/ByteOrder.inl
+src/include/stir/ByteOrderDefine.h
+src/include/stir/CPUTimer.h
+src/include/stir/CPUTimer.inl
+src/include/stir/CartesianCoordinate2D.h
+src/include/stir/CartesianCoordinate2D.inl
+src/include/stir/CartesianCoordinate3D.h
+src/include/stir/CartesianCoordinate3D.inl
+src/include/stir/ChainedDataProcessor.h
+src/include/stir/Coordinate2D.h
+src/include/stir/Coordinate2D.inl
+src/include/stir/Coordinate3D.h
+src/include/stir/Coordinate3D.inl
+src/include/stir/Coordinate4D.h
+src/include/stir/Coordinate4D.inl
+src/include/stir/DataProcessor.h
+src/include/stir/DataProcessor.inl
+src/include/stir/DataSymmetriesForViewSegmentNumbers.h
+src/include/stir/Densel.h
+src/include/stir/DetectionPosition.h
+src/include/stir/DetectionPosition.inl
+src/include/stir/DetectionPositionPair.h
+src/include/stir/DetectionPositionPair.inl
+src/include/stir/DiscretisedDensity.h
+src/include/stir/DiscretisedDensity.inl
+src/include/stir/DiscretisedDensityOnCartesianGrid.h
+src/include/stir/DiscretisedDensityOnCartesianGrid.inl
+src/include/stir/DynamicDiscretisedDensity.h
+src/include/stir/DynamicDiscretisedDensity.inl
+src/include/stir/DynamicProjData.h
+src/include/stir/ExamData.h
+src/include/stir/ExamInfo.h
+src/include/stir/ExamInfo.inl
+src/include/stir/FactoryRegistry.h
+src/include/stir/FactoryRegistry.inl
+src/include/stir/FilePath.h
+src/include/stir/FilePath.inl
+src/include/stir/FullArrayIterator.h
+src/include/stir/FullArrayIterator.inl
+src/include/stir/GatedDiscretisedDensity.h
+src/include/stir/GatedProjData.h
+src/include/stir/GeneralisedPoissonNoiseGenerator.h
+src/include/stir/HighResWallClockTimer.h
+src/include/stir/IO/ECAT6ImageInputFileFormat.h
+src/include/stir/IO/ECAT6OutputFileFormat.h
+src/include/stir/IO/ECAT7DynamicDiscretisedDensityInputFileFormat.h
+src/include/stir/IO/ECAT7DynamicDiscretisedDensityOutputFileFormat.h
+src/include/stir/IO/ECAT7ImageInputFileFormat.h
+src/include/stir/IO/ECAT7OutputFileFormat.h
+src/include/stir/IO/ECAT7ParametricDensityOutputFileFormat.h
+src/include/stir/IO/ECAT8_32bitListmodeInputFileFormat.h
+src/include/stir/IO/ECAT962ListmodeInputFileFormat.h
+src/include/stir/IO/ECAT966ListmodeInputFileFormat.h
+src/include/stir/IO/FileSignature.h
+src/include/stir/IO/GEHDF5ListmodeInputFileFormat.h
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/include/stir/IO/GIPL_ImageFormat.h
+src/include/stir/IO/ITKImageInputFileFormat.h
+src/include/stir/IO/ITKOutputFileFormat.h
+src/include/stir/IO/InputFileFormat.h
+src/include/stir/IO/InputFileFormatRegistry.h
+src/include/stir/IO/InputFileFormatRegistry.txx
+src/include/stir/IO/InputStreamFromROOTFile.h
+src/include/stir/IO/InputStreamFromROOTFile.inl
+src/include/stir/IO/InputStreamFromROOTFileForCylindricalPET.h
+src/include/stir/IO/InputStreamFromROOTFileForCylindricalPET.inl
+src/include/stir/IO/InputStreamFromROOTFileForECATPET.h
+src/include/stir/IO/InputStreamFromROOTFileForECATPET.inl
+src/include/stir/IO/InputStreamWithRecords.h
+src/include/stir/IO/InputStreamWithRecords.inl
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/IO/InterfileDynamicDiscretisedDensityInputFileFormat.h
+src/include/stir/IO/InterfileDynamicDiscretisedDensityOutputFileFormat.h
+src/include/stir/IO/InterfileHeader.h
+src/include/stir/IO/InterfileHeaderSiemens.h
+src/include/stir/IO/InterfileImageInputFileFormat.h
+src/include/stir/IO/InterfileOutputFileFormat.h
+src/include/stir/IO/InterfilePDFSHeaderSPECT.h
+src/include/stir/IO/InterfileParametricDiscretisedDensityInputFileFormat.h
+src/include/stir/IO/InterfileParametricDiscretisedDensityOutputFileFormat.h
+src/include/stir/IO/MultiDynamicDiscretisedDensityInputFileFormat.h
+src/include/stir/IO/MultiDynamicDiscretisedDensityOutputFileFormat.h
+src/include/stir/IO/OutputFileFormat.h
+src/include/stir/IO/OutputFileFormat.txx
+src/include/stir/IO/ROOTListmodeInputFileFormat.h
+src/include/stir/IO/ecat6_types.h
+src/include/stir/IO/ecat6_utils.h
+src/include/stir/IO/interfile.h
+src/include/stir/IO/read_data.h
+src/include/stir/IO/read_data.inl
+src/include/stir/IO/read_data_1d.h
+src/include/stir/IO/read_data_1d.inl
+src/include/stir/IO/read_from_file.h
+src/include/stir/IO/stir_AVW.h
+src/include/stir/IO/stir_ecat6.h
+src/include/stir/IO/stir_ecat7.h
+src/include/stir/IO/stir_ecat_common.h
+src/include/stir/IO/test/test_IO.h
+src/include/stir/IO/write_data.h
+src/include/stir/IO/write_data.inl
+src/include/stir/IO/write_data_1d.h
+src/include/stir/IO/write_data_1d.inl
+src/include/stir/IO/write_to_file.h
+src/include/stir/ImagingModality.h
+src/include/stir/IndexRange.h
+src/include/stir/IndexRange.inl
+src/include/stir/IndexRange2D.h
+src/include/stir/IndexRange2D.inl
+src/include/stir/IndexRange3D.h
+src/include/stir/IndexRange3D.inl
+src/include/stir/IndexRange4D.h
+src/include/stir/IndexRange4D.inl
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/include/stir/KeyParser.h
+src/include/stir/LORCoordinates.h
+src/include/stir/LORCoordinates.inl
+src/include/stir/ML_norm.h
+src/include/stir/MaximalArrayFilter3D.h
+src/include/stir/MaximalImageFilter3D.h
+src/include/stir/MedianArrayFilter3D.h
+src/include/stir/MedianImageFilter3D.h
+src/include/stir/MinimalArrayFilter3D.h
+src/include/stir/MinimalImageFilter3D.h
+src/include/stir/MultipleDataSetHeader.h
+src/include/stir/MultipleProjData.h
+src/include/stir/NestedIterator.h
+src/include/stir/NestedIterator.inl
+src/include/stir/NestedIteratorHelpers.h
+src/include/stir/NonseparableConvolutionUsingRealDFTImageFilter.h
+src/include/stir/NumericInfo.h
+src/include/stir/NumericType.h
+src/include/stir/NumericType.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/OSMAPOSL/OSMAPOSLReconstruction.h
+src/include/stir/OSSPS/OSSPSReconstruction.h
+src/include/stir/ParseAndCreateFrom.h
+src/include/stir/ParseAndCreateFrom.inl
+src/include/stir/ParseDiscretisedDensityParameters.h
+src/include/stir/ParsingObject.h
+src/include/stir/PatientPosition.h
+src/include/stir/PixelsOnCartesianGrid.h
+src/include/stir/PixelsOnCartesianGrid.inl
+src/include/stir/PostFiltering.h
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/ProjDataFromStream.h
+src/include/stir/ProjDataFromStream.inl
+src/include/stir/ProjDataGEAdvance.h
+src/include/stir/ProjDataGEHDF5.h
+src/include/stir/ProjDataInMemory.h
+src/include/stir/ProjDataInfo.h
+src/include/stir/ProjDataInfo.inl
+src/include/stir/ProjDataInfoCylindrical.h
+src/include/stir/ProjDataInfoCylindrical.inl
+src/include/stir/ProjDataInfoCylindricalArcCorr.h
+src/include/stir/ProjDataInfoCylindricalArcCorr.inl
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.inl
+src/include/stir/ProjDataInterfile.h
+src/include/stir/RegisteredObject.h
+src/include/stir/RegisteredObject.inl
+src/include/stir/RegisteredObjectBase.h
+src/include/stir/RegisteredParsingObject.h
+src/include/stir/RegisteredParsingObject.inl
+src/include/stir/RelatedViewgrams.h
+src/include/stir/RelatedViewgrams.inl
+src/include/stir/RunTests.h
+src/include/stir/SSRB.h
+src/include/stir/Scanner.h
+src/include/stir/Scanner.inl
+src/include/stir/Segment.h
+src/include/stir/Segment.inl
+src/include/stir/SegmentBySinogram.h
+src/include/stir/SegmentBySinogram.inl
+src/include/stir/SegmentByView.h
+src/include/stir/SegmentByView.inl
+src/include/stir/SeparableArrayFunctionObject.h
+src/include/stir/SeparableCartesianMetzImageFilter.h
+src/include/stir/SeparableConvolutionImageFilter.h
+src/include/stir/SeparableMetzArrayFilter.h
+src/include/stir/Shape/Box3D.h
+src/include/stir/Shape/CombinedShape3D.h
+src/include/stir/Shape/CombinedShape3D.inl
+src/include/stir/Shape/DiscretisedShape3D.h
+src/include/stir/Shape/DiscretisedShape3D.inl
+src/include/stir/Shape/Ellipsoid.h
+src/include/stir/Shape/EllipsoidalCylinder.h
+src/include/stir/Shape/EllipsoidalCylinder.inl
+src/include/stir/Shape/Shape3D.h
+src/include/stir/Shape/Shape3D.inl
+src/include/stir/Shape/Shape3DWithOrientation.h
+src/include/stir/Sinogram.h
+src/include/stir/Sinogram.inl
+src/include/stir/Succeeded.h
+src/include/stir/ThresholdMinToSmallPositiveValueDataProcessor.h
+src/include/stir/TimeFrameDefinitions.h
+src/include/stir/TimeGateDefinitions.h
+src/include/stir/TimedBlock.h
+src/include/stir/TimedObject.h
+src/include/stir/TimedObject.inl
+src/include/stir/Timer.h
+src/include/stir/Timer.inl
+src/include/stir/TrivialDataSymmetriesForViewSegmentNumbers.h
+src/include/stir/TrivialDataSymmetriesForViewSegmentNumbers.inl
+src/include/stir/TruncateToCylindricalFOVImageProcessor.h
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/include/stir/Verbosity.h
+src/include/stir/ViewSegmentNumbers.h
+src/include/stir/ViewSegmentNumbers.inl
+src/include/stir/Viewgram.h
+src/include/stir/Viewgram.inl
+src/include/stir/VoxelsOnCartesianGrid.h
+src/include/stir/VoxelsOnCartesianGrid.inl
+src/include/stir/ZoomOptions.h
+src/include/stir/analytic/FBP2D/FBP2DReconstruction.h
+src/include/stir/analytic/FBP2D/RampFilter.h
+src/include/stir/analytic/FBP3DRP/ColsherFilter.h
+src/include/stir/analytic/FBP3DRP/FBP3DRPReconstruction.h
+src/include/stir/array_index_functions.h
+src/include/stir/array_index_functions.inl
+src/include/stir/assign.h
+src/include/stir/assign_to_subregion.h
+src/include/stir/assign_to_subregion.inl
+src/include/stir/centre_of_gravity.h
+src/include/stir/common.h
+src/include/stir/config/gcc.h
+src/include/stir/config/visualc.h
+src/include/stir/convert_array.h
+src/include/stir/convert_array.inl
+src/include/stir/convert_range.h
+src/include/stir/convert_range.inl
+src/include/stir/cross_product.h
+src/include/stir/data/SinglesFromGEHDF5.h
+src/include/stir/data/SinglesRates.h
+src/include/stir/data/SinglesRates.inl
+src/include/stir/data/SinglesRatesForTimeFrames.h
+src/include/stir/data/SinglesRatesFromECAT7.h
+src/include/stir/data/SinglesRatesFromSglFile.h
+src/include/stir/data/randoms_from_singles.h
+src/include/stir/date_time_functions.h
+src/include/stir/decay_correction_factor.h
+src/include/stir/deprecated.h
+src/include/stir/detail/test_if_1d.h
+src/include/stir/display.h
+src/include/stir/display.inl
+src/include/stir/doxygen_doc_for_boost.h
+src/include/stir/doxygengroups.h
+src/include/stir/doxygenmain.h
+src/include/stir/error.h
+src/include/stir/evaluation/ROIValues.h
+src/include/stir/evaluation/compute_ROI_values.h
+src/include/stir/extend_projdata.h
+src/include/stir/extract_line.h
+src/include/stir/extract_line.inl
+src/include/stir/find_fwhm_in_image.h
+src/include/stir/find_fwhm_in_image.inl
+src/include/stir/geometry/line_distances.h
+src/include/stir/index_at_maximum.h
+src/include/stir/info.h
+src/include/stir/interfile_keyword_functions.h
+src/include/stir/interpolate.h
+src/include/stir/interpolate_projdata.h
+src/include/stir/inverse_SSRB.h
+src/include/stir/is_null_ptr.h
+src/include/stir/line.h
+src/include/stir/linear_regression.h
+src/include/stir/linear_regression.inl
+src/include/stir/listmode/CListEventCylindricalScannerWithDiscreteDetectors.h
+src/include/stir/listmode/CListEventCylindricalScannerWithDiscreteDetectors.inl
+src/include/stir/listmode/CListEventCylindricalScannerWithViewTangRingRingEncoding.h
+src/include/stir/listmode/CListEventCylindricalScannerWithViewTangRingRingEncoding.inl
+src/include/stir/listmode/CListModeData.h
+src/include/stir/listmode/CListModeDataECAT.h
+src/include/stir/listmode/CListModeDataECAT8_32bit.h
+src/include/stir/listmode/CListModeDataROOT.h
+src/include/stir/listmode/CListRecord.h
+src/include/stir/listmode/CListRecordECAT8_32bit.h
+src/include/stir/listmode/CListRecordECAT962.h
+src/include/stir/listmode/CListRecordECAT966.h
+src/include/stir/listmode/CListRecordROOT.h
+src/include/stir/listmode/CListRecordROOT.inl
+src/include/stir/listmode/ListEvent.h
+src/include/stir/listmode/ListGatingInput.h
+src/include/stir/listmode/ListModeData.h
+src/include/stir/listmode/ListRecord.h
+src/include/stir/listmode/ListRecordWithGatingInput.h
+src/include/stir/listmode/ListTime.h
+src/include/stir/listmode/LmToProjData.h
+src/include/stir/listmode/LmToProjDataAbstract.h
+src/include/stir/listmode/LmToProjDataBootstrap.h
+src/include/stir/listmode/LmToProjDataWithRandomRejection.h
+src/include/stir/listmode/NiftyPET_listmode/LmToProjDataNiftyPET.h
+src/include/stir/listmode/SPECTListEvent.h
+src/include/stir/listmode/SPECTListModeData.h
+src/include/stir/listmode/SPECTListRecord.h
+src/include/stir/listmode/SPECTListRecordWithGatingInput.h
+src/include/stir/make_array.h
+src/include/stir/make_array.inl
+src/include/stir/min_positive_element.h
+src/include/stir/modelling/KineticModel.h
+src/include/stir/modelling/KineticParameters.h
+src/include/stir/modelling/KineticParameters.inl
+src/include/stir/modelling/ModelMatrix.h
+src/include/stir/modelling/ModelMatrix.inl
+src/include/stir/modelling/ParametricDiscretisedDensity.h
+src/include/stir/modelling/ParseAndCreateParametricDiscretisedDensityFrom.h
+src/include/stir/modelling/ParseAndCreateParametricDiscretisedDensityFrom.inl
+src/include/stir/modelling/PatlakPlot.h
+src/include/stir/modelling/PlasmaData.h
+src/include/stir/modelling/PlasmaData.inl
+src/include/stir/modelling/PlasmaSample.h
+src/include/stir/modelling/PlasmaSample.inl
+src/include/stir/modulo.h
+src/include/stir/more_algorithms.h
+src/include/stir/more_algorithms.inl
+src/include/stir/multiply_crystal_factors.h
+src/include/stir/num_threads.h
+src/include/stir/numerics/BSplines.h
+src/include/stir/numerics/BSplines1DRegularGrid.h
+src/include/stir/numerics/BSplines1DRegularGrid.inl
+src/include/stir/numerics/BSplinesDetail.inl
+src/include/stir/numerics/BSplinesRegularGrid.h
+src/include/stir/numerics/BSplinesRegularGrid.inl
+src/include/stir/numerics/BSplines_coef.inl
+src/include/stir/numerics/BSplines_weights.inl
+src/include/stir/numerics/IR_filters.h
+src/include/stir/numerics/IR_filters.inl
+src/include/stir/numerics/MatrixFunction.h
+src/include/stir/numerics/MatrixFunction.inl
+src/include/stir/numerics/determinant.h
+src/include/stir/numerics/divide.h
+src/include/stir/numerics/divide.inl
+src/include/stir/numerics/erf.h
+src/include/stir/numerics/fourier.h
+src/include/stir/numerics/ieeefp.h
+src/include/stir/numerics/integrate_discrete_function.h
+src/include/stir/numerics/integrate_discrete_function.inl
+src/include/stir/numerics/max_eigenvector.h
+src/include/stir/numerics/norm.h
+src/include/stir/numerics/norm.inl
+src/include/stir/numerics/overlap_interpolate.h
+src/include/stir/numerics/overlap_interpolate.inl
+src/include/stir/numerics/sampling_functions.h
+src/include/stir/numerics/sampling_functions.inl
+src/include/stir/numerics/stir_NumericalRecipes.h
+src/include/stir/recon_array_functions.h
+src/include/stir/recon_buildblock/AnalyticReconstruction.h
+src/include/stir/recon_buildblock/BackProjectorByBin.h
+src/include/stir/recon_buildblock/BackProjectorByBinUsingInterpolation.h
+src/include/stir/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.h
+src/include/stir/recon_buildblock/BinNormalisation.h
+src/include/stir/recon_buildblock/BinNormalisationFromAttenuationImage.h
+src/include/stir/recon_buildblock/BinNormalisationFromECAT7.h
+src/include/stir/recon_buildblock/BinNormalisationFromProjData.h
+src/include/stir/recon_buildblock/ChainedBinNormalisation.h
+src/include/stir/recon_buildblock/DataSymmetriesForBins.h
+src/include/stir/recon_buildblock/DataSymmetriesForBins.inl
+src/include/stir/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.h
+src/include/stir/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.inl
+src/include/stir/recon_buildblock/DataSymmetriesForDensels.h
+src/include/stir/recon_buildblock/DataSymmetriesForDensels.inl
+src/include/stir/recon_buildblock/DistributedCachingInformation.h
+src/include/stir/recon_buildblock/DistributedWorker.h
+src/include/stir/recon_buildblock/FilterRootPrior.h
+src/include/stir/recon_buildblock/ForwardProjectorByBin.h
+src/include/stir/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.h
+src/include/stir/recon_buildblock/ForwardProjectorByBinUsingRayTracing.h
+src/include/stir/recon_buildblock/FourierRebinning.h
+src/include/stir/recon_buildblock/GeneralisedObjectiveFunction.h
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+src/include/stir/recon_buildblock/GeneralisedPrior.inl
+src/include/stir/recon_buildblock/IterativeReconstruction.h
+src/include/stir/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/NiftyPETHelper.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.h
+src/include/stir/recon_buildblock/PLSPrior.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.txx
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMean.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.txx
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.h
+src/include/stir/recon_buildblock/PostsmoothingBackProjectorByBin.h
+src/include/stir/recon_buildblock/PresmoothingForwardProjectorByBin.h
+src/include/stir/recon_buildblock/PriorWithParabolicSurrogate.h
+src/include/stir/recon_buildblock/ProjDataRebinning.h
+src/include/stir/recon_buildblock/ProjMatrixByBin.h
+src/include/stir/recon_buildblock/ProjMatrixByBin.inl
+src/include/stir/recon_buildblock/ProjMatrixByBinFromFile.h
+src/include/stir/recon_buildblock/ProjMatrixByBinSPECTUB.h
+src/include/stir/recon_buildblock/ProjMatrixByBinUsingInterpolation.h
+src/include/stir/recon_buildblock/ProjMatrixByBinUsingRayTracing.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBin.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBin.inl
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBinValue.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBinValue.inl
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneDensel.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneDensel.inl
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneDenselValue.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneDenselValue.inl
+src/include/stir/recon_buildblock/ProjectorByBinPair.h
+src/include/stir/recon_buildblock/ProjectorByBinPairUsingProjMatrixByBin.h
+src/include/stir/recon_buildblock/ProjectorByBinPairUsingSeparateProjectors.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RayTraceVoxelsOnCartesianGrid.h
+src/include/stir/recon_buildblock/Reconstruction.h
+src/include/stir/recon_buildblock/RelatedBins.h
+src/include/stir/recon_buildblock/RelatedBins.inl
+src/include/stir/recon_buildblock/RelatedDensels.h
+src/include/stir/recon_buildblock/RelatedDensels.inl
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/include/stir/recon_buildblock/SPECTUB_Tools.h
+src/include/stir/recon_buildblock/SPECTUB_Weight3d.h
+src/include/stir/recon_buildblock/SumOfGeneralisedObjectiveFunctions.h
+src/include/stir/recon_buildblock/SumOfGeneralisedObjectiveFunctions.inl
+src/include/stir/recon_buildblock/SymmetryOperation.h
+src/include/stir/recon_buildblock/SymmetryOperations_PET_CartesianGrid.h
+src/include/stir/recon_buildblock/SymmetryOperations_PET_CartesianGrid.inl
+src/include/stir/recon_buildblock/TrivialBinNormalisation.h
+src/include/stir/recon_buildblock/TrivialDataSymmetriesForBins.h
+src/include/stir/recon_buildblock/distributable.h
+src/include/stir/recon_buildblock/distributableMPICacheEnabled.h
+src/include/stir/recon_buildblock/distributable_main.h
+src/include/stir/recon_buildblock/distributed_functions.h
+src/include/stir/recon_buildblock/distributed_test_functions.h
+src/include/stir/recon_buildblock/find_basic_vs_nums_in_subsets.h
+src/include/stir/recon_buildblock/test/PoissonLLReconstructionTests.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/include/stir/round.h
+src/include/stir/round.inl
+src/include/stir/scale_sinograms.h
+src/include/stir/scatter/CreateTailMaskFromACFs.h
+src/include/stir/scatter/ScatterEstimation.h
+src/include/stir/scatter/ScatterSimulation.h
+src/include/stir/scatter/ScatterSimulation.inl
+src/include/stir/scatter/SingleScatterSimulation.h
+src/include/stir/shared_ptr.h
+src/include/stir/spatial_transformation/GatedSpatialTransformation.h
+src/include/stir/spatial_transformation/InvertAxis.h
+src/include/stir/spatial_transformation/SpatialTransformation.h
+src/include/stir/spatial_transformation/warp_image.h
+src/include/stir/stir_math.h
+src/include/stir/stream.h
+src/include/stir/stream.inl
+src/include/stir/thresholding.h
+src/include/stir/unique_ptr.h
+src/include/stir/utilities.h
+src/include/stir/utilities.inl
+src/include/stir/warning.h
+src/include/stir/zoom.h
+src/include/stir_experimental/DAVImageFilter3D.h
+src/include/stir_experimental/modelling/BloodFrame.h
+src/include/stir_experimental/modelling/BloodFrame.inl
+src/include/stir_experimental/modelling/BloodFrameData.h
+src/include/stir_experimental/modelling/BloodFrameData.inl
+src/include/stir_experimental/modelling/OneParamModel.h
+src/include/stir_experimental/modelling/OneParamModel.inl
+src/include/stir_experimental/motion/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.h
+src/include/stir_experimental/numerics/linear_extrapolation.h
+src/include/stir_experimental/phantoms/Utah.h
+src/include/stir_experimental/recon_buildblock/BinNormalisationFromML2D.h
+src/include/stir_experimental/recon_buildblock/DataSymmetriesForDensels_PET_CartesianGrid.h
+src/include/stir_experimental/recon_buildblock/ParametricQuadraticPrior.h
+src/include/stir_experimental/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.h
+src/iterative/KOSMAPOSL/KOSMAPOSL.cxx
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+src/iterative/OSMAPOSL/OSMAPOSL.cxx
+src/iterative/OSMAPOSL/OSMAPOSLReconstruction.cxx
+src/iterative/OSSPS/OSSPS.cxx
+src/iterative/OSSPS/OSSPSReconstruction.cxx
+src/iterative/POSMAPOSL/CMakeLists.txt
+src/iterative/POSMAPOSL/POSMAPOSL.cxx
+src/iterative/POSSPS/CMakeLists.txt
+src/iterative/POSSPS/POSSPS.cxx
+src/listmode_buildblock/CListEvent.cxx
+src/listmode_buildblock/CListModeDataECAT.cxx
+src/listmode_buildblock/CListModeDataECAT8_32bit.cxx
+src/listmode_buildblock/CListModeDataROOT.cxx
+src/listmode_buildblock/CListRecordECAT8_32bit.cxx
+src/listmode_buildblock/CListRecordECAT962.cxx
+src/listmode_buildblock/CListRecordECAT966.cxx
+src/listmode_buildblock/CListRecordROOT.cxx
+src/listmode_buildblock/ListEvent.cxx
+src/listmode_buildblock/ListModeData.cxx
+src/listmode_buildblock/LmToProjData.cxx
+src/listmode_buildblock/LmToProjDataAbstract.cxx
+src/listmode_buildblock/LmToProjDataBootstrap.cxx
+src/listmode_buildblock/LmToProjDataWithRandomRejection.cxx
+src/listmode_buildblock/NiftyPET_listmode/LmToProjDataNiftyPET.cxx
+src/listmode_utilities/CMakeLists.txt
+src/listmode_utilities/add_ecat7_header_to_sgl.cxx
+src/listmode_utilities/conv_NiftyPET_stir.cxx
+src/listmode_utilities/list_lm_events.cxx
+src/listmode_utilities/list_lm_info.cxx
+src/listmode_utilities/lm_fansums.cxx
+src/listmode_utilities/lm_to_projdata.cxx
+src/listmode_utilities/lm_to_projdata_NiftyPET.cxx
+src/listmode_utilities/lm_to_projdata_bootstrap.cxx
+src/listmode_utilities/lm_to_projdata_with_random_rejection.cxx
+src/listmode_utilities/print_sgl_values.cxx
+src/listmode_utilities/rebin_sgl_file.cxx
+src/listmode_utilities/scan_sgl_file.cxx
+src/modelling_buildblock/KineticModel.cxx
+src/modelling_buildblock/ParametricDiscretisedDensity.cxx
+src/modelling_buildblock/PatlakPlot.cxx
+src/modelling_utilities/CMakeLists.txt
+src/modelling_utilities/apply_patlak_to_images.cxx
+src/modelling_utilities/extract_single_images_from_dynamic_image.cxx
+src/modelling_utilities/get_dynamic_images_from_parametric_images.cxx
+src/modelling_utilities/make_parametric_image_from_components.cxx
+src/modelling_utilities/mult_image_parameters.cxx
+src/modelling_utilities/mult_model_with_dyn_images.cxx
+src/modelling_utilities/write_patlak_matrix.cxx
+src/numerics_buildblock/determinant.cxx
+src/numerics_buildblock/fourier.cxx
+src/recon_buildblock/AnalyticReconstruction.cxx
+src/recon_buildblock/BackProjectorByBin.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_3DCho.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_linear.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_piecewise_linear.cxx
+src/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.cxx
+src/recon_buildblock/BackProjectorByBinUsingSquareProjMatrixByBin.cxx
+src/recon_buildblock/BinNormalisation.cxx
+src/recon_buildblock/BinNormalisationFromAttenuationImage.cxx
+src/recon_buildblock/BinNormalisationFromProjData.cxx
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/ChainedBinNormalisation.cxx
+src/recon_buildblock/DataSymmetriesForBins.cxx
+src/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/recon_buildblock/DataSymmetriesForDensels.cxx
+src/recon_buildblock/DistributedCachingInformation.cxx
+src/recon_buildblock/DistributedWorker.cxx
+src/recon_buildblock/FilterRootPrior.cxx
+src/recon_buildblock/ForwardProjectorByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingRayTracing.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingRayTracing_Siddon.cxx
+src/recon_buildblock/FourierRebinning.cxx
+src/recon_buildblock/GeneralisedObjectiveFunction.cxx
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/IterativeReconstruction.cxx
+src/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/NiftyPETHelper.cxx
+src/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMean.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_buildblock/PostsmoothingBackProjectorByBin.cxx
+src/recon_buildblock/PresmoothingForwardProjectorByBin.cxx
+src/recon_buildblock/ProjDataRebinning.cxx
+src/recon_buildblock/ProjMatrixByBin.cxx
+src/recon_buildblock/ProjMatrixByBinFromFile.cxx
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinUsingInterpolation.cxx
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+src/recon_buildblock/ProjMatrixElemsForOneBin.cxx
+src/recon_buildblock/ProjMatrixElemsForOneDensel.cxx
+src/recon_buildblock/ProjectorByBinPair.cxx
+src/recon_buildblock/ProjectorByBinPairUsingProjMatrixByBin.cxx
+src/recon_buildblock/ProjectorByBinPairUsingSeparateProjectors.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RayTraceVoxelsOnCartesianGrid.cxx
+src/recon_buildblock/Reconstruction.cxx
+src/recon_buildblock/RegisteredObject.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/recon_buildblock/SPECTUB_Tools.cxx
+src/recon_buildblock/SPECTUB_Weight3d.cxx
+src/recon_buildblock/SymmetryOperation.cxx
+src/recon_buildblock/SymmetryOperations_PET_CartesianGrid.cxx
+src/recon_buildblock/TrivialBinNormalisation.cxx
+src/recon_buildblock/TrivialDataSymmetriesForBins.cxx
+src/recon_buildblock/distributable.cxx
+src/recon_buildblock/distributableMPICacheEnabled.cxx
+src/recon_buildblock/distributed_functions.cxx
+src/recon_buildblock/distributed_test_functions.cxx
+src/recon_buildblock/find_basic_vs_nums_in_subset.cxx
+src/recon_test/CMakeLists.txt
+src/recon_test/bcktest.cxx
+src/recon_test/fwdtest.cxx
+src/recon_test/test_DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/recon_test/test_FBP2D.cxx
+src/recon_test/test_FBP3DRP.cxx
+src/recon_test/test_OSMAPOSL.cxx
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_test/test_data_processor_projectors.cxx
+src/recon_test/test_modelling.sh
+src/scatter_buildblock/CreateTailMaskFromACFs.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/SingleScatterSimulation.cxx
+src/scatter_buildblock/cached_single_scatter_integrals.cxx
+src/scatter_buildblock/sample_scatter_points.cxx
+src/scatter_buildblock/scatter_detection_modelling.cxx
+src/scatter_buildblock/scatter_estimate_for_one_scatter_point.cxx
+src/scatter_buildblock/single_scatter_estimate.cxx
+src/scatter_buildblock/single_scatter_integrals.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+src/scatter_utilities/CMakeLists.txt
+src/scatter_utilities/create_tail_mask_from_ACFs.cxx
+src/scatter_utilities/estimate_scatter.cxx
+src/scatter_utilities/simulate_scatter.cxx
+src/scatter_utilities/upsample_and_fit_single_scatter.cxx
+src/spatial_transformation_buildblock/CMakeLists.txt
+src/spatial_transformation_buildblock/GatedSpatialTransformation.cxx
+src/spatial_transformation_buildblock/InvertAxis.cxx
+src/spatial_transformation_buildblock/SpatialTransformation.cxx
+src/spatial_transformation_buildblock/spatial_transformation_registries.cxx
+src/spatial_transformation_buildblock/warp_image.cxx
+src/swig/CMakeLists.txt
+src/swig/README.txt
+src/swig/stir.i
+src/swig/stirextra.py
+src/swig/test/matlab/test_IO.m
+src/swig/test/matlab/test_buildblock.m
+src/swig/test/python/README.md
+src/swig/test/python/test_IO.py
+src/swig/test/python/test_buildblock.py
+src/swig/test/python/test_numpy.py
+src/test/CMakeLists.txt
+src/test/IO/test_IO_DiscretisedDensity.cxx
+src/test/IO/test_IO_DynamicDiscretisedDensity.cxx
+src/test/IO/test_IO_ITKMulticomponent.cxx
+src/test/IO/test_IO_ParametricDiscretisedDensity.cxx
+src/test/NiftyPET_projector/CMakeLists.txt
+src/test/NiftyPET_projector/test_ProjectorNiftyPET_adjoint.cxx
+src/test/modelling/CMakeLists.txt
+src/test/modelling/test_ParametricDiscretisedDensity.cxx
+src/test/modelling/test_modelling.cxx
+src/test/numerics/BSplines_timing.cxx
+src/test/numerics/CMakeLists.txt
+src/test/numerics/test_BSplines.cxx
+src/test/numerics/test_BSplinesRegularGrid.cxx
+src/test/numerics/test_BSplinesRegularGrid1D.cxx
+src/test/numerics/test_IR_filters.cxx
+src/test/numerics/test_erf.cxx
+src/test/numerics/test_integrate_discrete_function.cxx
+src/test/numerics/test_matrices.cxx
+src/test/numerics/test_overlap_interpolate.cxx
+src/test/test_ArcCorrection.cxx
+src/test/test_Array.cxx
+src/test/test_ArrayFilter.cxx
+src/test/test_ByteOrder.cxx
+src/test/test_DateTime.cxx
+src/test/test_DynamicDiscretisedDensity.cxx
+src/test/test_GeneralisedPoissonNoiseGenerator.cxx
+src/test/test_IndexRange.cxx
+src/test/test_KeyParser.cxx
+src/test/test_NestedIterator.cxx
+src/test/test_OutputFileFormat.cxx
+src/test/test_ROIs.cxx
+src/test/test_Scanner.cxx
+src/test/test_ScatterSimulation.cxx
+src/test/test_SeparableGaussianArrayFilter.cxx
+src/test/test_SeparableMetzArrayFilter.cxx
+src/test/test_VectorWithOffset.cxx
+src/test/test_VoxelsOnCartesianGrid.cxx
+src/test/test_convert_array.cxx
+src/test/test_coordinates.cxx
+src/test/test_display.cxx
+src/test/test_export_array.cxx
+src/test/test_filename_functions.cxx
+src/test/test_find_fwhm_in_image.cxx
+src/test/test_interpolate.cxx
+src/test/test_linear_regression.cxx
+src/test/test_multiple_proj_data.cxx
+src/test/test_proj_data_in_memory.cxx
+src/test/test_proj_data_info.cxx
+src/test/test_proj_data_maths.cxx
+src/test/test_stir_math.cxx
+src/test/test_warp_image.cxx
+src/test/test_zoom_image.cxx
+src/utilities/CMakeLists.txt
+src/utilities/SSRB.cxx
+src/utilities/abs_image.cxx
+src/utilities/apply_normfactors.cxx
+src/utilities/apply_normfactors3D.cxx
+src/utilities/attenuation_coefficients_to_projections.cxx
+src/utilities/back_project.cxx
+src/utilities/calculate_attenuation_coefficients.cxx
+src/utilities/compare_image.cxx
+src/utilities/compare_projdata.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/construct_randoms_from_singles.cxx
+src/utilities/conv_AVW.cxx
+src/utilities/conv_GATE_raw_ECAT_projdata_to_interfile.cxx
+src/utilities/conv_gipl_to_interfile.cxx
+src/utilities/conv_interfile_to_gipl.cxx
+src/utilities/convert_to_binary_image.cxx
+src/utilities/correct_projdata.cxx
+src/utilities/create_projdata_template.cxx
+src/utilities/ctac_to_mu_values.cxx
+src/utilities/display_projdata.cxx
+src/utilities/do_linear_regression.cxx
+src/utilities/ecat/conv_to_ecat6.cxx
+src/utilities/ecat/conv_to_ecat7.cxx
+src/utilities/ecat/convecat6_if.cxx
+src/utilities/ecat/copy_ecat7_header.cxx
+src/utilities/ecat/ifheaders_for_ecat7.cxx
+src/utilities/ecat/is_ecat7_file.cxx
+src/utilities/ecat/print_ecat_singles_values.cxx
+src/utilities/estimate_triple_energy_window_scatter_sinogram.cxx
+src/utilities/extract_segments.cxx
+src/utilities/find_ML_normfactors.cxx
+src/utilities/find_ML_normfactors3D.cxx
+src/utilities/find_ML_singles_from_delayed.cxx
+src/utilities/find_fwhm_in_image.cxx
+src/utilities/find_maxima_in_image.cxx
+src/utilities/forward_project.cxx
+src/utilities/generate_image.cxx
+src/utilities/get_time_frame_info.cxx
+src/utilities/invert_axis.cxx
+src/utilities/list_ROI_values.cxx
+src/utilities/list_detector_and_bin_info.cxx
+src/utilities/list_image_info.cxx
+src/utilities/list_image_values.cxx
+src/utilities/list_projdata_info.cxx
+src/utilities/manip_image.cxx
+src/utilities/manip_projdata.cxx
+src/utilities/poisson_noise.cxx
+src/utilities/postfilter.cxx
+src/utilities/rebin_projdata.cxx
+src/utilities/shift_image.cxx
+src/utilities/shift_image_origin.cxx
+src/utilities/stir_math.cxx
+src/utilities/stir_write_pgm.cxx
+src/utilities/warp_and_accumulate_gated_images.cxx
+src/utilities/warp_image.cxx
+src/utilities/write_proj_matrix_by_bin.cxx
+src/utilities/zeropad_planes.cxx
+src/utilities/zoom_image.cxx
+
+-------------------------------
+Thu, 22 Apr 2021 21:24:22 +0000  Kris Thielemans  
+
+move license files according to REUSE specificatoin
+
+
+GPL.txt
+LICENSES/Apache-2.0.txt
+LICENSES/LGPLG-2.1.txt
+LICENSES/PARAPET-license.txt
+
+-------------------------------
+Thu, 22 Apr 2021 21:24:22 +0000  Kris Thielemans  
+
+update info on license to Apache 2.0
+
+
+LICENSE.txt
+
+-------------------------------
+Thu, 22 Apr 2021 21:24:22 +0000  Kris Thielemans  
+
+take LGPL license for FourierRebinning.cxx into account
+
+
+scripts/maintenance/change-license.sh
+
+-------------------------------
+Thu, 22 Apr 2021 21:24:22 +0000  Kris Thielemans  
+
+add PARAPET license to the sphx identifier
+
+
+scripts/maintenance/add-PARAPET-license.sed
+scripts/maintenance/change-license.sh
+
+-------------------------------
+Thu, 22 Apr 2021 22:23:34 +0100  Kris Thielemans  
+
+Merge pull request #861 from KrisThielemans/CMake_extensions
+[CMake] explicitly add .cxx extensions
+
+-------------------------------
+Thu, 22 Apr 2021 17:22:43 +0000  Kris Thielemans  
+
+[CMake] explicitly add .cxx extensions
+CMake 3.19 warns when not specifying extensions, so
+we add them.
+
+Fixes #852
+
+
+src/IO/CMakeLists.txt
+src/Shape_buildblock/CMakeLists.txt
+src/SimSET/CMakeLists.txt
+src/analytic/FBP2D/CMakeLists.txt
+src/analytic/FBP3DRP/CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/cmake/stir_exe_targets.cmake
+src/data_buildblock/CMakeLists.txt
+src/display/CMakeLists.txt
+src/experimental/motion_utilities/CMakeLists.txt
+src/experimental/recon_buildblock/CMakeLists.txt
+src/experimental/utilities/CMakeLists.txt
+src/iterative/KOSMAPOSL/CMakeLists.txt
+src/iterative/OSMAPOSL/CMakeLists.txt
+src/iterative/OSSPS/CMakeLists.txt
+src/iterative/POSMAPOSL/CMakeLists.txt
+src/iterative/POSSPS/CMakeLists.txt
+src/listmode_buildblock/CMakeLists.txt
+src/listmode_utilities/CMakeLists.txt
+src/modelling_buildblock/CMakeLists.txt
+src/modelling_utilities/CMakeLists.txt
+src/numerics_buildblock/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+src/scatter_buildblock/CMakeLists.txt
+src/scatter_utilities/CMakeLists.txt
+src/spatial_transformation_buildblock/CMakeLists.txt
+src/utilities/CMakeLists.txt
+src/utilities/ecat/CMakeLists.txt
+
+-------------------------------
+Tue, 16 Mar 2021 16:52:06 +0100  Kris Thielemans  
+
+Update randoms_from_singles.h
+fixed typo (spotted by @evgueni-ovtchinnikov )
+
+src/include/stir/data/randoms_from_singles.h
+
+-------------------------------
+Thu, 25 Feb 2021 17:09:00 +0000  Kris Thielemans  
+
+Merge pull request #834 from KrisThielemans/LmToProjData_setget
+LmToProjData improvements
+
+-------------------------------
+Thu, 25 Feb 2021 06:39:19 +0000  Kris Thielemans  
+
+LmToProjData improvements
+- added set/get functions for most variables
+- extra checks in set_up()
+
+
+src/include/stir/listmode/LmToProjData.h
+src/listmode_buildblock/LmToProjData.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 09:39:53 +0000  Kris Thielemans  
+
+Merge pull request #829 from KrisThielemans/singlesCleanup
+Singles and randoms cleanup
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+rename SinglesRatesFromGEHDF5 to SinglesFromGEHDF5
+
+
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/SinglesFromGEHDF5.cxx
+src/data_buildblock/data_buildblock_registries.cxx
+src/include/stir/data/SinglesFromGEHDF5.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+add doxygen warning about SinglesRates
+It isn't rates but counts....
+
+
+src/include/stir/data/SinglesRates.h
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+renamed SinglesRatesFromGEHDF5::read_singles_from_listmode_file
+jsut call it read_singles_from_file, as it can work with sinograms as well
+
+
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+move code to randoms_from_singles function
+
+
+documentation/release_4.1.htm
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/randoms_from_singles.cxx
+src/include/stir/data/randoms_from_singles.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+use openmp loops for multiply_crystal_factors
+
+
+src/buildblock/multiply_crystal_factors.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 07:30:22 +0000  Kris Thielemans  
+
+create function to multiply efficiencies
+new function multiply_crystal_factors, extracted from
+construct_randoms_from_singles.cxx. Re-use it 2 times.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/multiply_crystal_factors.cxx
+src/include/stir/multiply_crystal_factors.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/construct_randoms_from_singles.cxx
+
+-------------------------------
+Mon, 22 Feb 2021 07:19:47 +0000  Kris Thielemans  
+
+Merge pull request #828 from KrisThielemans/LmToProjDataSetUp
+add LmToProjData::set_up()
+
+Fixes #234
+
+-------------------------------
+Sun, 21 Feb 2021 16:39:54 +0000  Kris Thielemans  
+
+added LmToProjData::set_up()
+Like other STIR hierarchies, this adds a set_up() function. Many checks
+have been moved from post_processing() to set_up(). This allows
+using LmToProjData without parsing.
+
+For backwards compatibility, LmToProjData::post_processing() still
+calls set_up().
+
+
+documentation/release_4.1.htm
+src/experimental/listmode/LmToProjDataWithMC.cxx
+src/include/stir/listmode/LmToProjData.h
+src/include/stir/listmode/LmToProjDataBootstrap.h
+src/include/stir/listmode/LmToProjDataWithRandomRejection.h
+src/include/stir_experimental/listmode/LmToProjDataWithMC.h
+src/listmode_buildblock/LmToProjData.cxx
+src/listmode_buildblock/LmToProjDataBootstrap.cxx
+src/listmode_buildblock/LmToProjDataWithRandomRejection.cxx
+
+-------------------------------
+Sun, 21 Feb 2021 16:30:26 +0000  Kris Thielemans  
+
+add warning about image flip in release notes for 4.1 [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Sun, 21 Feb 2021 15:18:46 +0000  Kris Thielemans  
+
+cope with spaces in filenames in some scripts [ci skip]
+
+
+examples/GE-Signa-PETMR/process_VQC_data.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+scripts/create_fdef_from_listmode.sh
+
+-------------------------------
+Wed, 27 Jan 2021 23:28:04 +0000  Kris Thielemans  
+
+Merge pull request #808 from KrisThielemans/SSRB-TOF-arg
+SSRB dummy tof arg
+
+-------------------------------
+Wed, 27 Jan 2021 17:55:25 +0000  Kris Thielemans  
+
+inserted copyright
+
+
+src/include/stir/SSRB.h
+
+-------------------------------
+Wed, 27 Jan 2021 13:50:34 +0000  Kris Thielemans  
+
+dummy TOF arguments for SSRB
+
+
+src/buildblock/SSRB.cxx
+src/include/stir/SSRB.h
+
+-------------------------------
+Mon, 18 Jan 2021 21:44:56 +0000  Kris Thielemans  
+
+prevent exception in GEHDF5Wrapper::check_GE_signature
+if the file is not a HDF5 file at all, an exception was thrown. We now
+first call isHDF5, and in any case catch any exceptions.
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Thu, 14 Jan 2021 15:18:46 +0000  Kris Thielemans  
+
+Merge pull request #789 from KrisThielemans/LicenseScript
+add script to change license to Apache 2.0
+
+-------------------------------
+Sun, 10 Jan 2021 11:26:06 +0000  Kris Thielemans  
+
+Merge pull request #791 from KrisThielemans/ITK51fix
+ITK 5.1 compatibility fix
+
+-------------------------------
+Sun, 10 Jan 2021 09:54:32 +0000  Kris Thielemans  
+
+fix for ITK 5.1
+ITK 5.1 introduced a typed-enum IOPixelEnum
+
+Fixes #654
+
+
+src/IO/ITKImageInputFileFormat.cxx
+
+-------------------------------
+Wed, 6 Jan 2021 23:09:16 +0000  Kris Thielemans  
+
+add script to change license to Apache 2.0
+
+
+scripts/maintenance/change-license.sed
+scripts/maintenance/change-license.sh
+
+-------------------------------
+Wed, 23 Dec 2020 07:35:03 +0000  Kris Thielemans  
+
+Merge pull request #777 from KrisThielemans/fix_HDF5_const
+fix GEHDF5Wrapper for Visual Studio
+
+-------------------------------
+Tue, 22 Dec 2020 21:19:00 +0000  Kris Thielemans  
+
+fix for Visual Studio
+need to make a `const int` member also `static` to be able to use it in array declaration
+
+
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Mon, 7 Dec 2020 22:42:48 +0000  Kris Thielemans  
+
+Merge pull request #767 from gfardell/axpby_fix2
+Further axpby fixes
+
+-------------------------------
+Mon, 7 Dec 2020 11:20:34 +0000  gfardell  
+
+added unit tests for sapby
+
+
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Fri, 4 Dec 2020 18:51:42 +0000  gfardell  
+
+remove redundant casts
+
+
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.inl
+
+-------------------------------
+Fri, 4 Dec 2020 18:50:08 +0000  gfardell  
+
+added sapyb to ProjData and ProjDataInMemory
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Fri, 4 Dec 2020 18:10:09 +0000  gfardell  
+
+Add xapyb(vec) for ProjData and ProjDataInMemory
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Fri, 4 Dec 2020 17:54:37 +0000  gfardell  
+
+add deprecated axpby back in
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Wed, 2 Dec 2020 22:42:55 +0000  Kris Thielemans  
+
+minor fixes to release_4.1.htm [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Wed, 2 Dec 2020 21:56:44 +0000  Kris Thielemans  
+
+Merge pull request #731 from gfardell/xapyb
+Implemented xapyb and sapyb for Arrays and derived classes (replacing axpby which is now deprecated)
+
+Fixes #560.
+Fixes #732.
+
+-------------------------------
+Wed, 2 Dec 2020 21:51:19 +0000  Kris Thielemans  
+
+Merge pull request #763 from KrisThielemans/Travis_OSX12.2
+set Travis osx gcc job to xcode 12.2
+
+fixes #761 
+
+-------------------------------
+Wed, 2 Dec 2020 21:27:53 +0100  Kris Thielemans  
+
+update release notes for xapyb [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Wed, 2 Dec 2020 18:18:20 +0000  Kris Thielemans  
+
+[TRAVIS] set gcc OSX job to xcode12.2
+It defaults to xcode 9.* which is too old by now and times-out with brew
+
+
+.travis.yml
+
+-------------------------------
+Wed, 2 Dec 2020 15:48:50 +0000  Kris Thielemans  
+
+Merge pull request #762 from KrisThielemans/add_num_tof
+add get_num_tof_poss() etc from TOF branch
+
+-------------------------------
+Wed, 2 Dec 2020 11:48:12 +0000  gfardell  
+
+doc and swig changes
+
+
+documentation/release_4.1.htm
+src/include/stir/deprecated.h
+src/swig/CMakeLists.txt
+src/swig/stir.i
+
+-------------------------------
+Wed, 2 Dec 2020 11:27:29 +0000  Kris Thielemans  
+
+add get_num_tof_poss() etc from TOF branch
+These functions currently return the non-TOF values of course, but
+they are identical to what is on the TOF branch, so makes it easier
+for people (including) SIRF to be compatible with the future
+
+
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/ProjDataInfo.h
+src/include/stir/ProjDataInfo.inl
+
+-------------------------------
+Wed, 2 Dec 2020 10:29:11 +0000  gfardell  
+
+requested changes
+
+
+src/include/stir/Array.h
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/deprecated.h
+src/test/test_Array.cxx
+
+-------------------------------
+Tue, 1 Dec 2020 17:16:32 +0000  gfardell  
+
+Merge branch 'xapyb' of https://github.com/gfardell/STIR into xapyb
+
+
+-------------------------------
+Tue, 1 Dec 2020 17:15:34 +0000  gfardell  
+
+swig include deprecated.h
+
+
+src/swig/stir.i
+
+-------------------------------
+Tue, 1 Dec 2020 16:52:56 +0000  Gemma Fardell  
+
+Merge branch 'release_4' into xapyb
+
+
+-------------------------------
+Tue, 1 Dec 2020 16:35:37 +0000  gfardell  
+
+axpby marked as deprecated
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/deprecated.h
+src/swig/stir.i
+src/test/test_Array.cxx
+
+-------------------------------
+Tue, 1 Dec 2020 16:10:47 +0000  gfardell  
+
+updated release_4.1 change log
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Tue, 1 Dec 2020 16:06:46 +0000  gfardell  
+
+added GF to authors
+
+
+src/include/stir/Array.h
+src/include/stir/NumericVectorWithOffset.h
+
+-------------------------------
+Tue, 1 Dec 2020 16:05:46 +0000  gfardell  
+
+fixed sapyb unit test
+
+
+src/test/test_Array.cxx
+
+-------------------------------
+Tue, 1 Dec 2020 15:40:17 +0000  gfardell  
+
+Implemented sapyb
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Thu, 19 Nov 2020 22:30:00 +0100  Kris Thielemans  
+
+Zenodo additions (#748) [ci skip]
+* add .mailmap and .zenodo.json
+* added script with example usage of git-fame to find order of authors
+* added statement in .zenodo.json in make_distribution.sh
+
+Co-authored-by: Casper da Costa-Luis <casper.dcl@physics.org>
+
+.mailmap
+.zenodo.json
+scripts/maintenance/git-fame.sh
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Sun, 15 Nov 2020 18:10:31 +0000  Kris Thielemans  
+
+State that estimate_scatter.sh is obsolete [ci skip]
+
+
+scripts/estimate_scatter.sh
+
+-------------------------------
+Sun, 15 Nov 2020 17:56:12 +0000  Kris Thielemans  
+
+removed a few more uses of auto for release_4
+
+
+src/test/test_Array.cxx
+
+-------------------------------
+Sun, 15 Nov 2020 17:31:28 +0000  Kris Thielemans  
+
+Update release_4.1.htm to reflect RDF9 bug [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Sun, 15 Nov 2020 17:13:12 +0000  Kris Thielemans  
+
+Merge pull request #749 from KrisThielemans/installation_updates
+Installation and demo updates
+
+-------------------------------
+Sun, 15 Nov 2020 13:30:52 +0000  Kris Thielemans  
+
+removed step-by-step code for xpaby
+also resolved pre-C++11 incompatibility (only allowed from STIR 5)
+
+
+src/include/stir/NumericVectorWithOffset.inl
+
+-------------------------------
+Sun, 15 Nov 2020 12:52:57 +0000  Kris Thielemans  
+
+Let SWIG ignore NumericVectorWithOffset::xapyb
+This resolves a compilation problem, possibly introduced by a SWIG bug.
+
+
+src/swig/stir.i
+
+-------------------------------
+Sun, 15 Nov 2020 12:48:11 +0000  Kris Thielemans  
+
+replace xapyb_vec with xapyb
+Resolve template ambiguity by being less ambitious with templates and
+forcing the a,b arguments to be scalar (i.e. of type `elemT`)
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+moved C++ examples into the C++ folder
+
+
+documentation/release_4.1.htm
+examples/C++/General_Reconstruction/General_Reconstruction.cxx
+examples/C++/General_Reconstruction/General_Reconstruction.h
+examples/C++/src/CMakeLists.txt
+examples/C++/src/README.txt
+examples/C++/src/demo.par
+examples/C++/src/demo1.cxx
+examples/C++/src/demo2.cxx
+examples/C++/src/demo3.cxx
+examples/C++/src/demoPM.par
+examples/C++/src/extra_stir_dirs.cmake
+examples/C++/src/generate_image.par
+examples/C++/src/small.hs
+examples/C++/src/small.s
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+install ct_slopes.json into share/stir
+It was in `share` before, but it is a STIR-specific file.
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+update release-4.1.htm on install changes
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+moved install dir to share/doc/stir-majorversion.minorversion
+Location seems to fit with Ubuntu (it was doc/stir before)
+
+
+CMakeLists.txt
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+rename install directory of doxygen files to doxygen
+Also add it to the DOC COMPONENT
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Sun, 15 Nov 2020 08:11:02 +0000  Kris Thielemans  
+
+install documentation and example files
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 13 Nov 2020 15:52:04 +0000  Kris Thielemans  
+
+relax threshold in scatter test
+seems that occasionally it goes just over 5%, so I've now set it at 6%
+
+
+recon_test_pack/run_scatter_tests.sh
+
+-------------------------------
+Fri, 13 Nov 2020 08:48:59 +0000  Kris Thielemans  
+
+Merge pull request #744 from KrisThielemans/scatter_improvements_2
+Make it easier to use ScatterEstimation from Python etc.
+
+-------------------------------
+Thu, 12 Nov 2020 20:58:55 +0000  Kris Thielemans  
+
+require ScatterEstimation::set_up() to be called
+Formerly, process_data() called set_up(), but as that was virtual, that could lead
+to surprising results as we don't know what a derived class needs. Therefore,
+process_data() no longer does this, and requires the user to do it (as in other
+places in STIR).
+
+WARNING: this is a backwards incompatible change.
+
+
+documentation/release_4.1.htm
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_utilities/estimate_scatter.cxx
+
+-------------------------------
+Thu, 12 Nov 2020 20:58:04 +0000  Kris Thielemans  
+
+more tweaks to ScatterEstimation
+- add get/set_input_data()
+- add already_setup() is a method
+- minor clean-up
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Thu, 12 Nov 2020 11:48:29 +0000  Kris Thielemans  
+
+ScatterEstimation changes to specify norm and atten separately
+To avoid confusing and mistakes, the parsing has been changed to specifiy
+norm and atten via separate keywords. They can also be set from C++.
+
+In addition, there is now an _already_setup member that can be used internally to
+check if set_up() is still necessary.
+
+
+documentation/release_4.1.htm
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+src/include/stir/scatter/ScatterEstimation.h
+src/include/stir/scatter/ScatterEstimation.inl
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Thu, 12 Nov 2020 05:51:52 +0000  Kris Thielemans  
+
+scatter_estimation minor clean-up
+prepare for being able to set norm and atten separately
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/include/stir/scatter/ScatterEstimation.inl
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Wed, 11 Nov 2020 18:19:00 +0000  Kris Thielemans  
+
+Make it easier to use ScatterEstimation from Python etc.
+Code was designed to run from command line with full parsing of
+a parameter file. This update makes it possible to create a ScatterEstimation
+object with a partial parameter file, and set remaining parameters
+afterwards
+
+- add set_output_scatter_estimate_prefix and set_export_scatter_estimates_of_each_iteration
+- move checks from post_processing() to set_up()
+- default scatter simulation to SingleScatterSimulation
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Wed, 11 Nov 2020 01:30:05 +0000  Kris Thielemans  
+
+minor fixes to ScatterEstimation
+- implement set_background_proj_data_sptr
+- call error in a 2 set_*() functions that are not implemented
+- set default value for run_in_2d_projdata
+- add get/set_num_iterations
+- add get_estimated_activity_image_sptr()
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/include/stir/scatter/ScatterEstimation.inl
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Tue, 10 Nov 2020 19:52:25 +0000  Kris Thielemans  
+
+extra doxygen for scatter estimation [ci skip]
+forgot to commit this file in #740
+
+
+src/include/stir/scatter/ScatterEstimation.h
+
+-------------------------------
+Tue, 10 Nov 2020 14:57:55 +0000  Kris Thielemans  
+
+Merge pull request #740 from KrisThielemans/defaults_for_ScatterEstimation
+provide more defaults for ScatterEstimation
+
+-------------------------------
+Mon, 9 Nov 2020 22:09:20 +0000  robbietuk  
+
+Root data energy information is converted to keV instead of MeV (#736)
+* Root data energy information is converted to keV instead of MeV
+
+This is done only in the when reading energy information.
+
+* Remove unnecessary #include
+
+* get energy information in keV functions. Update ROOT documentation
+
+Clean up the conversion of energy information to keV using methods. Updates the documentation regarding ROOT energy units and the conversion
+
+* Updates release notes [ci skip]
+
+documentation/STIR-UsersGuide.tex
+documentation/release_4.1.htm
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/include/stir/IO/InputStreamFromROOTFile.h
+
+-------------------------------
+Mon, 9 Nov 2020 12:05:07 +0000  Kris Thielemans  
+
+Merge pull request #738 from UCL/fix_run_test_listmode_recon.sh
+correct run_test_listmode_recon.sh exit status
+
+-------------------------------
+Mon, 9 Nov 2020 00:55:53 +0000  Kris Thielemans  
+
+provide more defaults for ScatterEstimation
+- set default filter for the mask attenuation image filter
+- set default settings for the tail-fitting mask parameters
+
+This means that these 2 files are no longer required.
+
+
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+src/include/stir/PostFiltering.h
+src/include/stir/PostFiltering.inl
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Sun, 8 Nov 2020 23:47:25 +0000  Kris Thielemans  
+
+Merge pull request #737 from KrisThielemans/scatter_improvements
+Scatter improvements and fixes:
+- fixes a few corner cases (with either no norm factors or trivial ones), which caused seg-faults
+- added more checks
+- add estimate scatter test in recon_test_pack
+
+-------------------------------
+Sun, 8 Nov 2020 23:41:09 +0100  Kris Thielemans  
+
+Update run_test_listmode_recon.sh
+set `ThereWereErrors=0` at the start, as otherwise it is uninitialized when there are no errors.
+
+Fixes #230
+
+recon_test_pack/run_test_listmode_recon.sh
+
+-------------------------------
+Sun, 8 Nov 2020 20:49:19 +0000  Kris Thielemans  
+
+add recon_test_pack test for scatter estimation
+this is a round-trip test (simulate, estimate) with a non-trivial scale.
+
+To do this, I've moved simulation lines from run_test_simulate_and_recon.sh
+to a new script simulate_PET_data_for_tests.sh, especially is it needs
+some ugly work-arounds to add energy info.
+
+
+documentation/release_4.1.htm
+recon_test_pack/.gitignore
+recon_test_pack/run_scatter_tests.sh
+recon_test_pack/run_test_simulate_and_recon.sh
+recon_test_pack/simulate_PET_data_for_tests.sh
+recon_test_pack/simulate_data.sh
+
+-------------------------------
+Sun, 8 Nov 2020 20:49:14 +0000  Kris Thielemans  
+
+copy energy information in forward_project
+energy info is now preserved by the forward_project utility.
+
+added ExamInfo.set_energy_information_from
+
+
+documentation/release_4.1.htm
+src/include/stir/ExamInfo.h
+src/include/stir/ExamInfo.inl
+src/utilities/forward_project.cxx
+
+-------------------------------
+Sun, 8 Nov 2020 20:47:42 +0000  Kris Thielemans  
+
+fixes for scatter simulation/estimation in corner cases
+ScatterEstimation:
+- if no norm was set, only a warning was written
+- if there is a chained norm, but the first one is trivial, we had a seg-fault
+- if norm was only attenuation, the 2D sinograms were not properly normalised (as it didn't take SSRB into account)
+
+improvements for ScatterSimulation
+
+- add set_exam_info() (to be compatible with release 5)
+- set _already_setup=false in a few cases
+- raise error is set_up is called twice (as it would downsample twice)
+- add check if specified output file has same proj_data_info as what was used for set-up
+- move check if output_projdata_sptr exists from set_up() to process_data()
+(as it makes sense to specify a new file without having to set_up again, or just
+calling set_up to get a downsampled scanner)
+- backport a few const lines from release_5 (they don't change anything, but it's maybe a bit clearer)
+
+
+examples/samples/scatter_estimation_par_files/README.md
+src/include/stir/scatter/ScatterSimulation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Sun, 8 Nov 2020 20:47:42 +0000  Kris Thielemans  
+
+fixes for examples/samples/scatter_estimation_par_files/
+- fix keyword for mask filter (not mask postfilter)
+- complete README.md a bit more
+
+
+examples/samples/scatter_estimation_par_files/README.md
+
+-------------------------------
+Wed, 28 Oct 2020 18:22:12 +0000  gfardell  
+
+Implemeted xapyb_vec, used full iterators, added unit tests
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Tue, 27 Oct 2020 16:42:34 +0000  gfardell  
+
+Merge branch 'release_4' into xapyb
+
+
+-------------------------------
+Tue, 6 Oct 2020 22:17:57 +0200  Kris Thielemans  
+
+Merge pull request #696 from robbietuk/RDP_grad_fix
+Fix an issue with the gradient of the relative difference prior (also change default values)
+
+-------------------------------
+Tue, 6 Oct 2020 22:16:12 +0200  Kris Thielemans  
+
+update example RDP file to indicate default values [ci skip]
+
+
+examples/samples/OSMAPOSL_RDP.par
+
+-------------------------------
+Tue, 6 Oct 2020 13:55:25 +0100  Robert Twyman  
+
+Adds example OSMAPOSL implementation with RDP [ci skip]
+
+
+examples/samples/OSMAPOSL_RDP.par
+
+-------------------------------
+Sun, 4 Oct 2020 16:26:43 +0100  Robert Twyman  
+
+RDP update documentation and spell checks
+
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 2 Oct 2020 16:10:29 +0100  Robert Twyman  
+
+Set default epsilon to 0.0. If epsilon, use the correct func. and grad.
+
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Wed, 30 Sep 2020 17:59:49 +0000  Kris Thielemans  
+
+correct ct_slopes [ci skip]
+there was a missing }, and GE values for kev/kvp were wrong
+
+
+src/utilities/share/ct_slopes.json
+
+-------------------------------
+Wed, 30 Sep 2020 15:24:16 +0100  Kris Thielemans  
+
+Merge pull request #693 from AnderBiguri/mu_slopes [ci skip]
+Add GE ct_slopes
+
+-------------------------------
+Thu, 24 Sep 2020 16:57:56 +0100  Robert Twyman  
+
+Fix an issue with the relative difference prior and the inclusion of the epsilon term in the denominator square.
+
+
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Tue, 22 Sep 2020 13:02:13 +0100  Ander Biguri  
+
+Add GE, GENERIC ct_slopes, and JSON lint
+
+
+src/utilities/share/ct_slopes.json
+
+-------------------------------
+Wed, 16 Sep 2020 16:09:57 +0100  Kris Thielemans  
+
+Merge pull request #688 from KrisThielemans/list_lm_info
+added list_lm_info
+
+-------------------------------
+Wed, 16 Sep 2020 10:21:40 +0100  Kris Thielemans  
+
+Merge pull request #601 from KrisThielemans/GERDF9
+extend GE RDF9 raw data support to other GE PET/CT scanners that use RDF9
+
+-------------------------------
+Wed, 16 Sep 2020 08:14:18 +0000  Kris Thielemans  
+
+added list_lm_info
+Also moved printing of exam_info to ExamInfo::parameter_info() to reduce duplication
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_4.1.htm
+src/buildblock/CMakeLists.txt
+src/buildblock/ExamInfo.cxx
+src/include/stir/ExamInfo.h
+src/listmode_utilities/CMakeLists.txt
+src/listmode_utilities/list_lm_info.cxx
+src/utilities/list_image_info.cxx
+src/utilities/list_projdata_info.cxx
+
+-------------------------------
+Wed, 16 Sep 2020 08:15:01 +0100  Kris Thielemans  
+
+Merge pull request #687 from KrisThielemans/InvertAxis_cleanup
+InvertAxis cleanup.
+
+Fixes #459 
+
+-------------------------------
+Tue, 15 Sep 2020 23:56:50 +0000  Kris Thielemans  
+
+minor clean-up of InvertAxis and invert_axis
+
+
+src/include/stir/spatial_transformation/InvertAxis.h
+src/spatial_transformation_buildblock/InvertAxis.cxx
+src/utilities/invert_axis.cxx
+
+-------------------------------
+Tue, 15 Sep 2020 23:05:39 +0000  Kris Thielemans  
+
+add example script for GE CTAC/MRAC handling
+
+
+examples/GE-Signa-PETMR/README.md
+examples/GE-Signa-PETMR/register_GEAC.sh
+
+-------------------------------
+Tue, 15 Sep 2020 22:25:59 +0000  Kris Thielemans  
+
+create additional example script for Signa for NAC recon
+do avoid some duplication, I've moved the norm stuff to a separate script
+
+
+examples/GE-Signa-PETMR/NAC_recon.sh
+examples/GE-Signa-PETMR/create_norm_projdata.sh
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+
+-------------------------------
+Tue, 15 Sep 2020 21:54:39 +0000  Kris Thielemans  
+
+correct GE example unlist_and_randoms.sh
+construct_randoms_from_GEsingles needs to be called with the actual unlisted projdata.
+Otherwise, timing information would be incorrect.
+
+
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Tue, 15 Sep 2020 21:44:42 +0000  Kris Thielemans  
+
+make third argument to construct_randoms_from_GEsingles optional
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Tue, 15 Sep 2020 21:14:05 +0000  Kris Thielemans  
+
+correct overall factor in construct_randoms_from_GEsingles
+Multiplicative factor taking duration into account was wrong (for listmode data we were using
+times duration as opposed to divide by it, for sinogram data it was 1). In addition, we also
+take decay into account now (assuming F-18).
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Tue, 15 Sep 2020 19:16:23 +0000  Kris Thielemans  
+
+GE listmode: make sure that first timing event is 0
+
+
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/listmode/CListModeDataGEHDF5.h
+src/include/stir/listmode/CListRecordGEHDF5.h
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+
+-------------------------------
+Sat, 12 Sep 2020 23:45:54 +0000  Kris Thielemans  
+
+another clean-up of RDF9 files
+- changed some more references from the Signa to RDF9
+- added Ander in a few places
+- removed some obsolete/commented out code
+
+
+documentation/release_4.1.htm
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/include/stir/listmode/CListModeDataGEHDF5.h
+src/include/stir/listmode/CListRecordGEHDF5.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Sat, 12 Sep 2020 23:34:29 +0000  Kris Thielemans  
+
+improved/fixed GE Signa PET/MR example
+
+
+examples/GE-Signa-PETMR/OSMAPOSLbackground.par
+examples/GE-Signa-PETMR/README.md
+examples/GE-Signa-PETMR/correct_projdata_for_norm.par
+examples/GE-Signa-PETMR/download_VQC_data.sh
+examples/GE-Signa-PETMR/generate_zero_atn.par
+examples/GE-Signa-PETMR/process_VQC_data.sh
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+
+-------------------------------
+Sat, 12 Sep 2020 22:59:54 +0000  Kris Thielemans  
+
+read more from GE RDF data
+- read patient_position
+- read bed positions for proj-data
+
+created new functions in GEHDF5Wrapper to do this:
+- initialise_proj_data_info, and get_proj_data_info_sptr (allowing cleaning up some code elsewhere)
+- 2 utilities read_dataset_int32
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+
+-------------------------------
+Sat, 12 Sep 2020 21:30:28 +0000  Kris Thielemans  
+
+corrected create_fdef_from_listmode.sh
+first "skip" has to be in seconds as well
+
+
+scripts/create_fdef_from_listmode.sh
+
+-------------------------------
+Sat, 12 Sep 2020 08:48:44 +0000  Kris Thielemans  
+
+fix energy window/exam info for GE HDF5 data
+- low/high energy window info were swapped
+- exam info wasn't set for listmode data
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+
+-------------------------------
+Fri, 11 Sep 2020 20:54:54 +0000  Kris Thielemans  
+
+tiny mods to the Signa example scripts [ci skip]
+
+
+examples/GE-Signa-PETMR/howto.md
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Fri, 11 Sep 2020 18:24:40 +0000  Kris Thielemans  
+
+added scripts/create_fdef_from_listmode.sh
+
+
+documentation/release_4.1.htm
+scripts/CMakeLists.txt
+scripts/create_fdef_from_listmode.sh
+
+-------------------------------
+Fri, 11 Sep 2020 17:59:25 +0000  Kris Thielemans  
+
+GE HDF5 listmode support: handle different event sizes
+Some listmode files can contain events of size 6, 8 or 16. We assumed it was always 6.
+
+Fixes #679
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/listmode/CListRecordGEHDF5.h
+
+-------------------------------
+Fri, 11 Sep 2020 15:55:36 +0000  Abder Biguri  
+
+remove hard-wired number of detectors in GEHDF5 listmode processing
+
+
+src/include/stir/listmode/CListRecordGEHDF5.h
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+
+-------------------------------
+Mon, 7 Sep 2020 09:50:13 +0100  Abder Biguri  
+
+Change Signa to HDF5
+
+
+src/IO/IO_registries.cxx
+src/include/stir/IO/GEHDF5ListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataGEHDF5.h
+src/include/stir/listmode/CListRecordGEHDF5.h
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 3 Sep 2020 07:24:18 +0100  Kris Thielemans  
+
+update release_4.1.htm on Interfile timezone capabilities [ci-skip]
+Forgotten to commit this update in #634
+
+documentation/release_4.1.htm
+
+-------------------------------
+Wed, 26 Aug 2020 15:30:36 +0100  Abder Biguri  
+
+Allow singles to be read from sinogram data
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+
+-------------------------------
+Fri, 21 Aug 2020 15:15:25 +0000  Kris Thielemans  
+
+update release 4.1 notes on ProjDataInMemory order [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Fri, 21 Aug 2020 16:02:05 +0100  Kris Thielemans  
+
+Merge pull request #663 from KrisThielemans/ProjDataInMemoryOrder
+fix ProjDataInMemory order of iterators on release_4.
+
+Fixes #661
+
+-------------------------------
+Fri, 21 Aug 2020 12:03:52 +0000  Kris Thielemans  
+
+fix usage of StorageOrder
+pre-C++-11 fix
+
+
+src/buildblock/ProjDataInMemory.cxx
+
+-------------------------------
+Fri, 21 Aug 2020 10:14:12 +0100  Abder Biguri  
+
+Changed how geo type is read
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Thu, 20 Aug 2020 21:35:07 +0000  Kris Thielemans  
+
+more tests on ProjData copy_to/fill_from and iterators
+
+
+src/test/test_export_array.cxx
+src/test/test_proj_data_in_memory.cxx
+
+-------------------------------
+Thu, 20 Aug 2020 21:32:35 +0000  Kris Thielemans  
+
+backport changes in order in ProjDataInMemory from master
+PR #612 introduced changes in ProjDataInMemory such that an iterator
+would go in the same order as one through an array filled with copy_to.
+This is already used in SIRF.
+
+This commit backports those changes into release_4.
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+
+-------------------------------
+Thu, 20 Aug 2020 18:22:47 +0100  Abder Biguri  
+
+Remove hardcoded crystal value, fix types
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Thu, 20 Aug 2020 17:36:28 +0100  Abder Biguri  
+
+Support for RDF8 type of geometry data
+Seems that RDF9 may have it in sometimes....
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 11 Aug 2020 11:46:54 +0100  gfardell  
+
+rename axpby to xapyb
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+src/test/test_Array.cxx
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Sun, 26 Jul 2020 19:57:54 +0100  Kris Thielemans  
+
+Merge pull request #650 from KrisThielemans/ITK_IO_fixes
+ITK IO fixes for non-DICOM files
+
+-------------------------------
+Sun, 26 Jul 2020 09:16:51 +0100  Kris Thielemans  
+
+fix ITK non-DICOM IO date-time issue
+made any other non-DICOM ITK reading fail due to non-existent DICOM
+fields in the MetaDataDictionary
+
+Fixes #649
+
+
+src/IO/ITKImageInputFileFormat.cxx
+
+-------------------------------
+Sun, 26 Jul 2020 08:42:51 +0100  Kris Thielemans  
+
+small doxygen fixes
+- create KOSMAPOSL group and use it
+- remove stray control-A character in a comment in FourierRebinning.cxx
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+src/include/stir/doxygengroups.h
+src/include/stir/recon_buildblock/FourierRebinning.h
+
+-------------------------------
+Fri, 24 Jul 2020 17:59:27 +0100  Abder Biguri  
+
+Test and validate examples
+
+
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Thu, 23 Jul 2020 17:56:34 +0100  Kris Thielemans  
+
+Merge pull request #634 from KrisThielemans/ITK_MetaData
+This PR adds functions to handle date/time for both DICOM and Interfile. It also adds functions for handling getting time-zones.
+
+Currently IO only uses limited time-fields, but we can now add others more easily
+
+-------------------------------
+Wed, 22 Jul 2020 18:38:49 +0100  Kris Thielemans  
+
+minor corrections in Signa example files [ci skip]
+
+
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Wed, 22 Jul 2020 16:26:40 +0100  Abder Biguri  
+
+Add preliminary version of examples
+
+
+examples/GE-Signa-PETMR/correct_projdata.par
+examples/GE-Signa-PETMR/correct_projdata_for_norm.par
+examples/GE-Signa-PETMR/howto.md
+examples/GE-Signa-PETMR/lm_to_projdata.par
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/GE-Signa-PETMR/unlist_and_randoms.sh
+
+-------------------------------
+Wed, 22 Jul 2020 13:25:48 +0100  Abder Biguri  
+
+Test and validate geo corr. Fix #608
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 22 Jul 2020 09:34:55 +0100  Abder Biguri  
+
+Fix Signa template Fix #641
+
+
+examples/GE-Signa-PETMR/template.hs
+
+-------------------------------
+Tue, 21 Jul 2020 19:43:03 +0100  Abder Biguri  
+
+Invert geo norm factors, tested
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 21 Jul 2020 19:08:03 +0100  Biguri  
+
+Improve speed of get_bin_value (#639)
+Improve speed of ProjDataInMemory::get_bin_value
+
+Fixes reading part of #638
+
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataFromStream.h
+
+-------------------------------
+Tue, 21 Jul 2020 10:53:42 +0100  Abder Biguri  
+
+Merge branch 'projdatainmemory' into GERDF9
+
+
+-------------------------------
+Tue, 21 Jul 2020 10:50:46 +0100  Abder Biguri  
+
+Even faster get_bin_value()
+
+
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataFromStream.h
+
+-------------------------------
+Tue, 21 Jul 2020 10:09:03 +0100  Abder Biguri  
+
+Improve speed of get_bin_value
+
+
+src/buildblock/ProjDataInMemory.cxx
+
+-------------------------------
+Tue, 21 Jul 2020 09:56:55 +0100  Abder Biguri  
+
+Allow sinos for coincidence time windows reading
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Fri, 17 Jul 2020 16:32:56 +0100  Abder Biguri  
+
+Attempt to do something about #630
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 17 Jul 2020 16:06:48 +0100  Abder Biguri  
+
+Do tangential flip in Wrapper
+Related to #636
+
+src/IO/GEHDF5Wrapper.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 17 Jul 2020 15:33:46 +0100  Abder Biguri  
+
+Comments cleanup
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Fri, 17 Jul 2020 15:31:19 +0100  Abder Biguri  
+
+Moved tangential axis flip to the reader
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Fri, 17 Jul 2020 14:04:39 +0100  Abder Biguri  
+
+Merge remote-tracking branch 'KrisThielemans/GERDF9' into GERDF9
+
+
+-------------------------------
+Fri, 17 Jul 2020 14:04:34 +0100  Abder Biguri  
+
+Validated geo reading
+
+
+examples/GE-Signa-PETMR/correct_projdata_for_norm.par
+src/IO/GEHDF5Wrapper.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Thu, 16 Jul 2020 22:01:14 +0000  Kris Thielemans  
+
+fix reading of dynamic images from the multi-format
+exam_info wasn't initialised properly
+
+
+src/include/stir/IO/MultiDynamicDiscretisedDensityInputFileFormat.h
+
+-------------------------------
+Thu, 16 Jul 2020 15:28:53 +0000  Kris Thielemans  
+
+added date-time functions for Interfile and add time-zone support
+This required adding timezone capabilties to Interfile parsing.
+
+Also added functions to get from seconds-since-Unix-epoch to strings.
+
+Changed names to clarify we mean the Unix epoch.
+
+
+documentation/release_4.1.htm
+src/IO/ITKImageInputFileFormat.cxx
+src/IO/InterfileHeader.cxx
+src/IO/interfile.cxx
+src/buildblock/CMakeLists.txt
+src/buildblock/DICOM_date_time_functions.cxx
+src/buildblock/date_time_functions.cxx
+src/include/stir/DICOM_date_time_functions.h
+src/include/stir/IO/InterfileHeader.h
+src/include/stir/date_time_functions.h
+src/include/stir/doxygengroups.h
+src/test/CMakeLists.txt
+src/test/test_DICOMDateTime.cxx
+src/test/test_DateTime.cxx
+src/utilities/list_image_info.cxx
+src/utilities/list_projdata_info.cxx
+
+-------------------------------
+Thu, 16 Jul 2020 11:50:06 +0100  Abder Biguri  
+
+Merge remote-tracking branch 'KrisThielemans/GERDF9' into GERDF9
+
+
+-------------------------------
+Thu, 16 Jul 2020 11:50:00 +0100  Abder Biguri  
+
+Fix bugs on efficiency reading
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 18:11:15 +0000  Kris Thielemans  
+
+write start_time_since_1970 in fixed precision
+
+
+src/utilities/list_image_info.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 18:10:50 +0000  Kris Thielemans  
+
+read DICOM date/time information for ITK image input
+
+
+src/IO/ITKImageInputFileFormat.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 17:51:41 +0000  Kris Thielemans  
+
+strip white-spaces before DICOM date/time handling
+
+
+src/buildblock/DICOM_date_time_functions.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 16:47:52 +0000  Kris Thielemans  
+
+fix example correct_projdata file
+
+
+examples/GE-Signa-PETMR/correct_projdata_for_norm.par
+
+-------------------------------
+Wed, 15 Jul 2020 16:15:54 +0100  Abder Biguri  
+
+Merge remote-tracking branch 'KrisThielemans/GERDF9' into GERDF9
+
+
+-------------------------------
+Wed, 15 Jul 2020 16:15:45 +0100  Abder Biguri  
+
+Efficiency factors tested and validated
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 14:31:03 +0000  Kris Thielemans  
+
+add functions for date-time processing
+
+
+documentation/release_4.1.htm
+src/buildblock/CMakeLists.txt
+src/buildblock/DICOM_date_time_functions.cxx
+src/include/stir/DICOM_date_time_functions.h
+src/test/CMakeLists.txt
+src/test/test_DICOMDateTime.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 14:02:34 +0000  Kris Thielemans  
+
+correct test in MultiDynamicDiscretisedDensityOutputFileFormat
+correct usage of FilePath
+
+
+src/IO/MultiDynamicDiscretisedDensityOutputFileFormat.cxx
+
+-------------------------------
+Wed, 15 Jul 2020 06:50:56 +0100  Kris Thielemans  
+
+Merge pull request #633 from KrisThielemans/stir_math_dynamic
+enable stir_math --output-format option for dynamic/parametric images
+
+-------------------------------
+Tue, 14 Jul 2020 17:58:18 +0000  Kris Thielemans  
+
+output-format option for stir_math for dynamic/parametric images
+
+
+documentation/release_4.1.htm
+src/utilities/stir_math.cxx
+
+-------------------------------
+Tue, 14 Jul 2020 17:51:42 +0000  Kris Thielemans  
+
+improve MultiDynamicDiscretisedDensityOutputFileFormat
+- use default output file format
+- set default type and endian-ness explicitly when calling set_defaults() (before it was using whatever was set before)
+- throw error if an extension is used as it leads to wrong results
+- add example file
+
+
+examples/samples/stir_math_multi_output_file_format.par
+src/IO/MultiDynamicDiscretisedDensityOutputFileFormat.cxx
+
+-------------------------------
+Tue, 14 Jul 2020 17:11:01 +0100  Abder Biguri  
+
+Fix bug with sizes
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 14 Jul 2020 09:54:49 +0100  Biguri  
+
+Update src/utilities/construct_randoms_from_GEsingles.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Mon, 13 Jul 2020 20:50:28 +0000  Kris Thielemans  
+
+corrected name of GE Signa PET/MR in the example [ci skip]
+
+
+examples/GE-Signa-PETMR/howto.md
+
+-------------------------------
+Mon, 13 Jul 2020 17:09:49 +0100  Abder Biguri  
+
+Indent correct_projdata
+
+
+src/utilities/correct_projdata.cxx
+
+-------------------------------
+Mon, 13 Jul 2020 12:41:16 +0100  Abder Biguri  
+
+Remove hardcoded value from singles
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Mon, 13 Jul 2020 11:51:34 +0100  Abder Biguri  
+
+Indent construct_randoms_from_GEsingles
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 10 Jul 2020 19:28:38 +0100  Kris Thielemans  
+
+Merge pull request #626 from KrisThielemans/TravisOSXpython
+simplify searching for Python on OSX
+
+-------------------------------
+Fri, 10 Jul 2020 16:14:11 +0000  Kris Thielemans  
+
+simplify searching for Python on OSX
+in the hope that this works better....
+
+
+.travis.yml
+
+-------------------------------
+Fri, 10 Jul 2020 17:10:00 +0100  Kris Thielemans  
+
+Merge pull request #621 from KrisThielemans/interfileFixes
+interfile reading fixes for Siemens sinograms and attenuation files
+
+-------------------------------
+Fri, 10 Jul 2020 16:05:10 +0000  Kris Thielemans  
+
+added example files for the GE Signa PET/MR [ci skip]
+first version, based on Palak's instructions
+
+
+examples/GE-Signa-PETMR/correct_projdata_for_norm.par
+examples/GE-Signa-PETMR/howto.md
+examples/GE-Signa-PETMR/lm_to_projdata.par
+examples/GE-Signa-PETMR/template.hs
+examples/GE-Signa-PETMR/template.s
+
+-------------------------------
+Fri, 10 Jul 2020 15:40:40 +0100  Abder Biguri  
+
+Add comments and improvements
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Fri, 10 Jul 2020 13:57:41 +0000  Kris Thielemans  
+
+improve warnings when reading Siemens interfile data
+Also make sure that "data offset in bytes" processing is safe when reading listmode data
+(in the previous version, the keyword had to be at the top of the file)
+
+
+src/IO/InterfileHeaderSiemens.cxx
+
+-------------------------------
+Fri, 10 Jul 2020 12:00:15 +0100  Abder Biguri  
+
+Finish geo loading code, untested.
+
+
+src/include/stir/ProjDataGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Thu, 9 Jul 2020 21:19:51 +0000  Kris Thielemans  
+
+[TRAVIS] brew upgrade
+
+
+.travis.yml
+
+-------------------------------
+Thu, 9 Jul 2020 20:42:22 +0000  Kris Thielemans  
+
+changes for reading attenuation files for the mCT
+
+
+src/IO/InterfileHeaderSiemens.cxx
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Thu, 9 Jul 2020 17:34:58 +0000  Kris Thielemans  
+
+fix reading of Siemens sinogram Interfile headers
+correct use of vectorised_keys and ignore a few more
+
+fixes #622
+
+
+src/IO/InterfileHeaderSiemens.cxx
+
+-------------------------------
+Thu, 9 Jul 2020 17:58:01 +0100  Abder Biguri  
+
+Halfway towards loading geometric data
+This commit does not compile, just saving work for the day,
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Thu, 9 Jul 2020 16:35:38 +0000  Kris Thielemans  
+
+read_interfile_PDFS fix related to EOF
+we read the Interfile header multiple times. After the first time, the EOF flag can be set,
+causing problems later. Now we clear it explicitly.
+
+Fixes #620
+
+
+src/IO/interfile.cxx
+
+-------------------------------
+Thu, 9 Jul 2020 12:13:14 +0100  Abder Biguri  
+
+Change Wrapper reader names and bug fixes
+Have changed wrapper reader functions to "read" instead of "get" to not get them confused with getters, as they are not. Also have named them for their unique functionality. 
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 17:54:55 +0100  Abder Biguri  
+
+Further tidy and harmonisation of the functions
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 17:34:57 +0100  Abder Biguri  
+
+Removed hard-coded crystals per ring.
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 17:24:14 +0100  Abder Biguri  
+
+Move division to read_norm_data
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 16:43:56 +0100  Abder Biguri  
+
+Input check read_norm_data, to ensure the correct file is passed
+Related to #608, comment about requiring several files, or make sure we have norm, which contains geo. 
+
+src/IO/GEHDF5Wrapper.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 16:08:08 +0100  Abder Biguri  
+
+Tidy read_norm_data
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 13:09:17 +0000  Kris Thielemans  
+
+further clean-up of BinNormalisationFromGEHDF5
+- removed crystal_efficiency things (not applicable)
+- removed some more remnants of ECAT7 specific code
+- further work on skeleton for get_geometric_factors
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 8 Jul 2020 10:55:13 +0100  Kris Thielemans  
+
+Update BinNormalisationFromGEHDF5.cxx
+remove some more old ECAT7 code
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 7 Jul 2020 14:45:02 +0100  Abder Biguri  
+
+Add single sample size reading code to singles initialisation.
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 7 Jul 2020 14:22:16 +0100  Abder Biguri  
+
+code review and error checking
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 7 Jul 2020 09:48:15 +0100  Abder Biguri  
+
+Issue #608 Step 2.1, bug fix
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Mon, 6 Jul 2020 15:44:46 +0100  Abder Biguri  
+
+Issue #608 Step 2
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Mon, 6 Jul 2020 15:03:26 +0100  Abder Biguri  
+
+Issue #608 Step 1
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Sat, 4 Jul 2020 07:25:23 +0000  Kris Thielemans  
+
+Merge branch 'release_4' into GERDF9
+
+
+-------------------------------
+Sat, 4 Jul 2020 07:14:24 +0000  Kris Thielemans  
+
+update version in CMakeLists.txt to 4.1.0-prealpha [ci skip]
+This allows dependent projects to see if it's after release 4.0
+
+
+CMakeLists.txt
+
+-------------------------------
+Sat, 4 Jul 2020 07:09:51 +0000  Kris Thielemans  
+
+work-around FindHDF5.cmake bug when writing STIRConfig.cmake [ci skip]
+No longer search only for CXX component for HDF5. See #614
+
+(commit also on the master branch)
+
+
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Thu, 25 Jun 2020 07:25:11 +0000  Kris Thielemans  
+
+update DMI for 3 and 4 ring systems
+also correct number of rings for DMI3
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+
+-------------------------------
+Thu, 25 Jun 2020 07:14:15 +0000  Kris Thielemans  
+
+added energy resolution for the GE Signa PET/MR
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Wed, 24 Jun 2020 11:11:13 +0100  Abder Biguri  
+
+re-structure stack mallocs
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Wed, 24 Jun 2020 10:05:59 +0100  Abder Biguri  
+
+Fix wrong dynamic malloc
+related #555, fixes evguenis bug report.
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+Add GE Discovery MI
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+GEHDF5Wrapper: improvements on reading scanner info
+write some warnings and reading effective-ring-radius
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+use default max_non_arccorrected_bins when reading GE listmode file scanner
+Otherwise we get conflicts on the scanner
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+small simplification in reading sinogram from GE HDF5
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+fix GEHDF5Wrapper scanner recognition - Scanner.cxx name has to match with what GE uses - we were initialising a local scanner_sptr as opposed to the member variable
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  pwadhwa351  
+
+Update src/IO/GEHDF5Wrapper.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  pwadhwa351  
+
+Remove hard-coded numbers in initialise_scanner_from_HDF5 and add logic for checking Signa
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  pwadhwa351  
+
+Remove hard-coded numbers and read scanner from the Header
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  pwadhwa351  
+
+Fix DOI calculation
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  pwadhwa351  
+
+GE Signa Parameters Fix #583
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+remove hard-wired dimensions in ProjDataGEHDF5
+
+
+src/buildblock/ProjDataGEHDF5.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+simplify for-loops in ProjDataGEHDF5
+some code wasn't used, and generated warnings with clang.
+
+
+src/buildblock/ProjDataGEHDF5.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+fixes in GEHDF5Wrapper
+- fixed some types to be consistent
+- commented out unused m_NX etc
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+various clean-ups in GEHDF5Wrapper
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Address review. Compiles, but not tested.
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Progress in generalising wrapper functions
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/ProjDataGEHDF5.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Finish up file checking
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Kris Thielemans  
+
+let ProjData::read_from_file read GEHDF5 data
+Needed some changes in ProjDataGEHDF5 to construct the projdata_info itself
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/ProjDataGEHDF5.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Code review, unfinished progress in RDF9 full file checking
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Fix #573
+Checks if the file is compressed, error if that is the case.
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Abder Biguri  
+
+Check if its RDF9
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Ander  
+
+Update comments, remove unnecessary debugging code.
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Ander  
+
+Fix redundancy in naming initialise_proj_data_data
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:53 +0000  Ander  
+
+Fix compiler warning (unsigned int vs int)
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/include/stir/ProjDataGEHDF5.h
+
+-------------------------------
+Tue, 23 Jun 2020 17:52:30 +0000  Ander  
+
+Replace most hard-coded vars for the Signa. UNTESTED.
+
+
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Mon, 22 Jun 2020 18:08:47 +0100  Richard Brown  
+
+Revert "GatedProjData multi format and read_from_file returns unique_ptr (#587)"
+This reverts commit 592e58fe6644aa058e656d11a7e42d5cceeb95ee.
+
+
+src/buildblock/GatedProjData.cxx
+src/experimental/motion/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.cxx
+src/include/stir/GatedProjData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.txx
+
+-------------------------------
+Mon, 22 Jun 2020 15:48:08 +0100  Richard Brown  
+
+GatedProjData multi format and read_from_file returns unique_ptr (#587)
+GatedProjData multi format and read_from_file returns unique_ptr
+
+src/buildblock/GatedProjData.cxx
+src/experimental/motion/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.cxx
+src/include/stir/GatedProjData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.txx
+
+-------------------------------
+Mon, 22 Jun 2020 11:54:31 +0100  Kris Thielemans  
+
+[TRAVIS] update XCODE  (#598)
+test xcode11.3 as opposed to xcode 9 (which is outdated and causes problems with `brew`)
+
+.travis.yml
+
+-------------------------------
+Sat, 20 Jun 2020 22:45:42 +0100  Kris Thielemans  
+
+Merge pull request #595 from KrisThielemans/fix_zoom_viewgram_leak
+fix small leak in zoom_viewgram
+
+-------------------------------
+Sat, 20 Jun 2020 19:05:11 +0100  Kris Thielemans  
+
+Merge pull request #594 from KrisThielemans/CMAKE_COMPILE_ID_fix
+handle case when CMAKE_CXX_COMPILER_ID is not set
+
+-------------------------------
+Sat, 20 Jun 2020 18:39:02 +0100  Kris Thielemans  
+
+Merge pull request #592 from KrisThielemans/get_num_sinograms
+added get_sinograms() and size_all() to ProjDataInfo
+
+-------------------------------
+Sat, 20 Jun 2020 12:44:59 +0100  Kris Thielemans  
+
+Merge pull request #591 from KrisThielemans/Clang_undefined-var-template
+avoid undefined-var-template warning on non-Apple Clang
+
+-------------------------------
+Sat, 20 Jun 2020 11:23:00 +0000  Kris Thielemans  
+
+Minor updated to release_4.1.htm [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Sat, 20 Jun 2020 10:07:13 +0000  Kris Thielemans  
+
+fix small leak in zoom_viewgram
+Fixes #486
+
+
+src/buildblock/zoom.cxx
+
+-------------------------------
+Sat, 20 Jun 2020 09:39:59 +0000  Kris Thielemans  
+
+handle case when CMAKE_CXX_COMPILER_ID is not set
+write warning, as opposed to crashing
+
+Fixes #593
+
+
+CMakeLists.txt
+
+-------------------------------
+Sat, 20 Jun 2020 09:38:01 +0000  Kris Thielemans  
+
+Update example scatter_estimate.par [ci skip]
+correct keyword `ask attenuation image filter filename`
+
+Fixes #551
+
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+
+-------------------------------
+Sat, 20 Jun 2020 08:59:31 +0000  Kris Thielemans  
+
+added get_sinograms() and size_all() to ProjDataInfo
+Moved implementation from ProjData to ProjDataInfo with some changes
+to make them safer.
+
+Also removed some commented out lines related to an old exam_info move
+from ProjData.h/inl
+
+Fixes #586
+
+
+documentation/release_4.1.htm
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/ProjDataInfo.h
+src/include/stir/ProjDataInfo.inl
+
+-------------------------------
+Sat, 20 Jun 2020 08:20:25 +0100  Kris Thielemans  
+
+avoid undefined-var-template warning on non-Apple Clang
+See #126 for cause of warning. #513 removed the warning on Apple. Here we remove it for any clang.
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 19 Jun 2020 16:15:08 +0000  Richard  
+
+niftypet changes for parsing as projector pair [ci skip]
+
+
+src/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.cxx
+
+-------------------------------
+Thu, 18 Jun 2020 18:43:42 +0100  Kris Thielemans  
+
+[SWIG] fix matlab mex extension
+the mex extension was empty since moving to CMake's FindMatlab.
+
+Fixes #522
+
+
+src/swig/CMakeLists.txt
+
+-------------------------------
+Wed, 17 Jun 2020 17:03:54 +0000  Richard Brown  
+
+Merge pull request #585 from rijobro/stir_w_experimental2
+stir w experimental 2
+
+-------------------------------
+Wed, 17 Jun 2020 12:30:17 +0100  richard  
+
+stir w experimental 2
+
+
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Tue, 16 Jun 2020 18:36:17 +0000  Richard Brown  
+
+Merge pull request #584 from rijobro/STIRConfig_experimental
+STIR built with experimental?
+
+-------------------------------
+Tue, 16 Jun 2020 16:20:06 +0100  richard  
+
+STIR built with experimental?
+
+
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Tue, 16 Jun 2020 07:24:46 +0100  Kris Thielemans  
+
+Merge pull request #581 from KrisThielemans/fixECAT7
+fix ECAT7 compilation problems due to renaming
+
+-------------------------------
+Mon, 15 Jun 2020 13:36:17 +0100  Kris Thielemans  
+
+fix ECAT7 compilation problems due to renaming
+Fixes #578
+
+
+src/IO/stir_ecat7.cxx
+src/include/stir/listmode/CListRecordECAT962.h
+src/include/stir/listmode/CListRecordECAT966.h
+
+-------------------------------
+Fri, 12 Jun 2020 17:38:02 +0100  robbietuk  
+
+Gate/root cylindrical PET geometry fixes (#569)
+* Modified STIR's interpretation of GATE cylindrical PET geometries to be consistent with rsector/module/submodule/crystal <-> ../bucket/block/crystal
+* Adds View_offset and default_num_arccorrected_bins to .hroot files
+* updated UsersGuide.tex and sample .hroot files
+
+Co-authored-by: Kris Thielemans <k.thielemans@ucl.ac.uk>
+
+documentation/STIR-UsersGuide.tex
+documentation/release_4.1.htm
+examples/samples/root_header.hroot
+recon_test_pack/root_header.hroot
+src/include/stir/IO/InputStreamFromROOTFileForCylindricalPET.inl
+src/include/stir/listmode/CListModeDataROOT.h
+src/listmode_buildblock/CListModeDataROOT.cxx
+
+-------------------------------
+Fri, 12 Jun 2020 13:57:40 +0100  Kris Thielemans  
+
+Merge pull request #570 from KrisThielemans/ReconImprovements
+More recon safety improvements
+
+-------------------------------
+Fri, 12 Jun 2020 06:35:12 +0100  Kris Thielemans  
+
+Merge pull request #565 from KrisThielemans/fixMPIprojectors
+Fix MPI projectors
+
+-------------------------------
+Fri, 12 Jun 2020 05:29:21 +0000  Kris Thielemans  
+
+C++ consistency test for OSMAPOSL
+add a test for iterative reconstruction as well
+
+
+src/include/stir/recon_buildblock/test/PoissonLLReconstructionTests.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/recon_test/CMakeLists.txt
+src/recon_test/test_FBP2D.cxx
+src/recon_test/test_FBP3DRP.cxx
+src/recon_test/test_OSMAPOSL.cxx
+
+-------------------------------
+Fri, 12 Jun 2020 05:29:21 +0000  Kris Thielemans  
+
+extra check in IterativeReconstruction::get_initial_data_ptr()
+if set_up() has already been called, check if target-dat sizes are consistent
+
+
+src/recon_buildblock/IterativeReconstruction.cxx
+
+-------------------------------
+Thu, 11 Jun 2020 19:42:19 +0000  Kris Thielemans  
+
+start/stop timers in AnalyticReconstruction
+as done in IterativeReconstruction
+
+
+src/recon_buildblock/AnalyticReconstruction.cxx
+
+-------------------------------
+Thu, 11 Jun 2020 19:39:18 +0000  Kris Thielemans  
+
+set verbosity-level of some messages to 2
+ForwardProjectorByBin and distributable changes to decrease default verbosity
+
+
+src/recon_buildblock/ForwardProjectorByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Thu, 11 Jun 2020 19:35:03 +0000  Kris Thielemans  
+
+fix BackProjectorByBin with openmp
+After running some projections, it should be possible to call `set_up()`
+with an image with a different size. However, this was broken as `set_up()` only
+resized the `_local_output_image_sptrs vector`.
+
+Also set verbosity-level of some messages to 2.
+
+Fixes #574
+
+
+src/recon_buildblock/BackProjectorByBin.cxx
+
+-------------------------------
+Sun, 7 Jun 2020 23:57:12 +0000  Kris Thielemans  
+
+OSMAPOSLReconstruction::set_MAP_model now checks argument
+fixes #543
+
+
+src/iterative/OSMAPOSL/OSMAPOSLReconstruction.cxx
+
+-------------------------------
+Sun, 7 Jun 2020 23:57:12 +0000  Kris Thielemans  
+
+further safety improvements for reconstruction algorithms
+- AnalyticReconstruction now follows same scheme for set_up as IterativeReconstruction.
+In particular, it no longer calls set_up() in reconstruct(image_sptr) (WARNING: this might break your code)
+- AnalyticReconstruction resets _already_setup=false in set_* functions
+- AnalyticReconstruction now also starts/stops timers (like IterativeReconstruction)
+- more checks if set_up has been called in AnalyticReconstruction
+- avoid seg-fault in get_input_data() if not initialised (both AnalyticReconstruction in IterativeReconstruction)
+- fixes in FBP2D and FBP3DRP for set_up()
+- moved checks to FBP3DRPReconstruction::set_up() (they were in reconstruct())
+- changes to ReconstructionTests: filter the default image to avoid high frequency trouble, and use method_info() in diagnostics and filenames
+- added C++ test for FBP3DRP
+
+
+documentation/release_4.1.htm
+src/analytic/FBP2D/FBP2DReconstruction.cxx
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/include/stir/analytic/FBP3DRP/FBP3DRPReconstruction.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/recon_buildblock/AnalyticReconstruction.cxx
+src/recon_buildblock/IterativeReconstruction.cxx
+src/recon_test/CMakeLists.txt
+src/recon_test/test_FBP3DRP.cxx
+
+-------------------------------
+Sun, 7 Jun 2020 23:56:56 +0000  Kris Thielemans  
+
+correction in logic in test_FBP2D
+- last test was overriding results from previous tests
+- compare() was doing the wrong comparison
+
+
+src/include/stir/RunTests.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/recon_test/test_FBP2D.cxx
+
+-------------------------------
+Sun, 7 Jun 2020 07:22:05 +0100  Kris Thielemans  
+
+Merge pull request #568 from KrisThielemans/ReconImprovements
+Safety improvements for reconstruction (mostly FBP)
+
+-------------------------------
+Sat, 6 Jun 2020 21:17:23 +0000  Kris Thielemans  
+
+work-around SWIG problem for FBP2D
+
+
+src/include/stir/analytic/FBP2D/FBP2DReconstruction.h
+
+-------------------------------
+Sat, 6 Jun 2020 18:10:27 +0000  Kris Thielemans  
+
+add C++ test for FBP2D (and framework for others)
+do a simple test with forward projection and reconstruction and
+see if the image is "close enough"
+
+
+src/include/stir/RunTests.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/recon_test/CMakeLists.txt
+src/recon_test/test_FBP2D.cxx
+
+-------------------------------
+Sat, 6 Jun 2020 18:00:42 +0000  Kris Thielemans  
+
+move FBP2DReconstruction tests to set_up()
+They were not run when using the `set_*` functions, but only
+at construction or after parsing.
+
+Fixes #545
+
+
+src/analytic/FBP2D/FBP2DReconstruction.cxx
+src/include/stir/analytic/FBP2D/FBP2DReconstruction.h
+src/recon_buildblock/AnalyticReconstruction.cxx
+
+-------------------------------
+Sat, 6 Jun 2020 17:58:12 +0000  Kris Thielemans  
+
+Reconstruction::set_post_processor_sptr now forces a new call of set_up
+Fixes #544
+
+
+src/recon_buildblock/Reconstruction.cxx
+
+-------------------------------
+Sat, 6 Jun 2020 14:01:38 +0100  Kris Thielemans  
+
+Merge pull request #566 from KrisThielemans/ITK4.9
+require ITK 4.9
+
+-------------------------------
+Sat, 6 Jun 2020 10:58:02 +0000  Kris Thielemans  
+
+require ITK 4.9
+fixes #114
+
+
+CMakeLists.txt
+
+-------------------------------
+Sat, 6 Jun 2020 10:46:02 +0000  Kris Thielemans  
+
+bring MPI support up-to-date
+Use "new" projector convention.
+
+Fixes #523
+
+
+src/recon_buildblock/DistributedWorker.cxx
+
+-------------------------------
+Tue, 2 Jun 2020 16:33:37 +0100  richard  
+
+axpby and iterator doc [ci skip]
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Tue, 2 Jun 2020 16:28:58 +0100  Richard Brown  
+
+ProjDataInMemory forward iterator (#558)
+ProjDataInMemory forwards Array<1,float> iterators
+
+src/include/stir/ProjDataInMemory.h
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Tue, 2 Jun 2020 13:29:58 +0100  Kris Thielemans  
+
+Merge pull request #561 from KrisThielemans/Array_axpby
+add axpby to Array and related changes in ProjData
+
+-------------------------------
+Tue, 2 Jun 2020 09:10:45 +0000  Kris Thielemans  
+
+relax assert on data-pointer access in VectorWithOffset
+The test was too stringent. We now only check if there is no data_ptr access
+if the array gets reallocated or deleted.
+
+
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Tue, 2 Jun 2020 09:10:45 +0000  Kris Thielemans  
+
+convert axpby to member template
+This makes it more general, but also avoids problems when Array is used with an elemT that isn't "numerical"
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+
+-------------------------------
+Tue, 2 Jun 2020 09:10:45 +0000  Kris Thielemans  
+
+add axpby to Array and related changes in ProjData
+- add axpby to NumericVectorWithOffset and Array
+- use Array::axbpy in ProjData::axbpy
+- change buffer in ProjDataInMemory to Array<1,float> such that we have
+axbpy for free (and remove boost dependency)
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/ProjDataInMemory.h
+src/test/test_Array.cxx
+
+-------------------------------
+Sat, 30 May 2020 20:27:12 +0100  Richard Brown  
+
+add axpby for ProjData (#557)
+Add `axpby` for `ProjData` (a*x+b*y). The generic version is quite slow as it works via `get/set_segment`. Specialisation for `ProjDataInMemory` is fast though as it works on the buffer.
+
+`ProjDataInMemory` buffer is now directly a `float` array to enable this. This will also be useful for other things later.
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_4.1.htm
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+src/test/CMakeLists.txt
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Sat, 30 May 2020 09:03:24 +0000  Kris Thielemans  
+
+add .inl files to Doxygen parsing
+Some .inl files contain doxygen comments, but they were currently ignored.
+
+
+src/Doxyfile.in
+
+-------------------------------
+Thu, 28 May 2020 06:49:46 +0000  Kris Thielemans  
+
+Merge pull request #390 from pwadhwa351/GE_Signa_Updates
+Addition of support for GE signa PET/MR data
+
+-------------------------------
+Wed, 27 May 2020 22:39:59 +0000  Kris Thielemans  
+
+added some TODO messages on GE Singles
+
+
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Wed, 27 May 2020 22:30:21 +0000  Kris Thielemans  
+
+add GE namespace and doxygen group
+Also minor corrections to doxygen
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/IO/IO_registries.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/data_buildblock/data_buildblock_registries.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/ProjDataGEHDF5.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/doxygengroups.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/recon_buildblock/recon_buildblock_registries.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Wed, 27 May 2020 21:50:04 +0000  Kris Thielemans  
+
+corrections in doxygen
+Dimension->Signa PET/MR
+
+
+src/include/stir/listmode/CListRecordGESigna.h
+
+-------------------------------
+Wed, 27 May 2020 21:50:04 +0000  Kris Thielemans  
+
+a few more comments about hard-wired numbers in GE Signa
+
+
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/listmode/CListRecordGESigna.h
+
+-------------------------------
+Wed, 27 May 2020 21:49:54 +0000  Kris Thielemans  
+
+renamed ProjDataFromHDF5 to ProjDataGEHDF5
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataGEHDF5.cxx
+src/include/stir/ProjDataGEHDF5.h
+
+-------------------------------
+Wed, 27 May 2020 11:39:29 +0000  Kris Thielemans  
+
+fix UseCXX macro (which is now a function)
+Argument handling in CMake macro's tripped me up. This version
+improves on #550 and should work (test locally).
+
+Fixes #99
+
+
+src/cmake/SetC++Version.cmake
+
+-------------------------------
+Sat, 23 May 2020 07:21:53 +0000  Kris Thielemans  
+
+corrected copyright statement
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+
+-------------------------------
+Sat, 23 May 2020 07:16:11 +0000  Kris Thielemans  
+
+updated release notes for GE Signa PET/MR support
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Sat, 23 May 2020 06:49:42 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/release_4' into GE_Signa_Updates
+
+
+-------------------------------
+Fri, 22 May 2020 14:43:40 +0000  Kris Thielemans  
+
+make messages for make_distribution.sh more helpful [ci skip]
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Fri, 22 May 2020 14:41:47 +0000  Kris Thielemans  
+
+Merge pull request #549 from UCL/release_4.0
+merge Release 4.0 updates to release_4
+
+-------------------------------
 Fri, 22 May 2020 09:36:23 +0000  Kris Thielemans  
 
 set cmake_policy CMP0025 to NEW
@@ -61,6 +4399,28 @@ removed obsolete member variable
 
 
 src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+
+-------------------------------
+Tue, 19 May 2020 16:13:16 +0000  Kris Thielemans  
+
+Merge pull request #536 from danieldeidda/TEW-524
+Triple-energy window scatter correction with different window widths.
+
+fixes #524
+
+-------------------------------
+Tue, 19 May 2020 15:19:13 +0100  danieldeidda  
+
+ update release notes
+
+
+documentation/release_4.1.htm
+
+-------------------------------
+Tue, 19 May 2020 09:42:22 +0100  Richard Brown  
+
+Merge pull request #541 from rijobro/exe_arg_parse
+fix argument parsing
 
 -------------------------------
 Mon, 18 May 2020 18:28:25 +0100  danieldeidda  
@@ -143,6 +4503,14 @@ src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
 src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
 
 -------------------------------
+Thu, 14 May 2020 17:05:12 +0100  richard  
+
+fix argument parsing
+
+
+src/listmode_utilities/conv_NiftyPET_stir.cxx
+
+-------------------------------
 Wed, 13 May 2020 18:02:46 +0100  danieldeidda  
 
 do safe assignment of anatomical_prior_sptr and anatomical_SD
@@ -173,6 +4541,179 @@ fix SyneRBI/SIRF#654: moved non-parsing operations in set_up().
 
 
 src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 13 May 2020 12:09:27 +0530  pwadhwa351  
+
+Modification in copyright statement.
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+
+-------------------------------
+Wed, 13 May 2020 00:08:34 +0530  pwadhwa351  
+
+Include author, copyrights. Add a few notes.
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/Scanner.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/conv_GEHDF5_to_interfile.cxx
+
+-------------------------------
+Tue, 12 May 2020 17:07:23 +0000  Kris Thielemans  
+
+Merge pull request #534 from danieldeidda/KOSMAPOSL_529
+fixes #529 (problem with write_update_image in KOSMAPOSL)
+
+-------------------------------
+Tue, 12 May 2020 16:06:01 +0100  danieldeidda  
+
+fix #524: the window width are assumed to be different and both ar used in the estimation.
+
+
+src/utilities/estimate_triple_energy_window_scatter_sinogram.cxx
+
+-------------------------------
+Tue, 12 May 2020 15:19:14 +0100  danieldeidda  
+
+fix #529: remove write_update_image since it's inherited from OSMAPOSL
+
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+
+-------------------------------
+Mon, 11 May 2020 21:26:27 +0000  Kris Thielemans  
+
+Merge branch 'release_4' into GE_Signa_Updates
+
+
+-------------------------------
+Mon, 11 May 2020 18:18:33 +0100  robbietuk  
+
+Modify the computation of the log-likelihood to use doubles. (#528)
+Modify the computation of the log-likelihood to use doubles before taking log, improving numerical stability.
+
+Fixes #527
+
+documentation/release_4.1.htm
+src/buildblock/recon_array_functions.cxx
+
+-------------------------------
+Fri, 8 May 2020 18:16:59 +0000  Kris Thielemans  
+
+Merge pull request #526 from KrisThielemans/BinNormAttnWarning
+BinNormalisationFromAttenuationImage: warn only if necessary
+
+-------------------------------
+Fri, 8 May 2020 13:06:36 +0100  Kris Thielemans  
+
+BinNormalisationFromAttenuationImage: only write warning if suspicious attenuation image
+The previous code also wrote a warning (more intended as information). Now we write a warning
+if the values in the attenuation image seem strange.
+
+
+src/recon_buildblock/BinNormalisationFromAttenuationImage.cxx
+
+-------------------------------
+Fri, 8 May 2020 07:16:56 +0000  Kris Thielemans  
+
+Merge pull request #525 from rijobro/no_graphviz_warning
+no graphviz warning if documentation not being built
+
+-------------------------------
+Wed, 6 May 2020 17:16:53 +0100  richard  
+
+no graphviz warning if documentation not being built
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Wed, 6 May 2020 17:16:25 +0100  richard  
+
+Revert "no graphviz warning if documentation not being built"
+This reverts commit 7a15ba10a62cf29d2631f693cb67462ab037857f.
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Wed, 6 May 2020 17:15:54 +0100  richard  
+
+no graphviz warning if documentation not being built
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Fri, 1 May 2020 14:18:20 +0100  Richard Brown  
+
+Nifty pet fixes (#521)
+* small niftypet fixes
+* add test bash script
+* .cpp to .cxx
+* option to truncate FOV
+
+examples/samples/OSMAPOSL_NiftyPET.par
+recon_test_pack/NiftyPET_test.sh
+src/include/stir/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.h
+src/listmode_utilities/lm_to_projdata_NiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/NiftyPETHelper.cxx
+src/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.cxx
+
+-------------------------------
+Wed, 29 Apr 2020 14:56:31 +0100  Richard Brown  
+
+NiftyPET GPU functionality - projectors and unlisting
+NiftyPET GPU functionality - projectors and unlisting
+
+CMakeLists.txt
+documentation/STIR-UsersGuide.tex
+documentation/release_4.1.htm
+examples/samples/OSMAPOSL_NiftyPET.par
+src/cmake/FindNiftyPET.cmake
+src/cmake/STIRConfig.cmake.in
+src/cmake/STIRConfig.h.in
+src/cmake/stir_dirs.cmake
+src/include/stir/doxygengroups.h
+src/include/stir/listmode/LmToProjData.h
+src/include/stir/listmode/LmToProjDataAbstract.h
+src/include/stir/listmode/NiftyPET_listmode/LmToProjDataNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.h
+src/include/stir/recon_buildblock/NiftyPET_projector/NiftyPETHelper.h
+src/include/stir/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.h
+src/listmode_buildblock/CMakeLists.txt
+src/listmode_buildblock/LmToProjDataAbstract.cxx
+src/listmode_buildblock/NiftyPET_listmode/LmToProjDataNiftyPET.cxx
+src/listmode_utilities/CMakeLists.txt
+src/listmode_utilities/conv_NiftyPET_stir.cxx
+src/listmode_utilities/lm_to_projdata_NiftyPET.cpp
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/NiftyPETHelper.cxx
+src/recon_buildblock/NiftyPET_projector/ProjectorByBinPairUsingNiftyPET.cxx
+src/recon_buildblock/recon_buildblock_registries.cxx
+src/test/NiftyPET_projector/CMakeLists.txt
+src/test/NiftyPET_projector/test_ProjectorNiftyPET_adjoint.cxx
+
+-------------------------------
+Tue, 28 Apr 2020 13:15:47 +0000  Kris Thielemans  
+
+Merge branch 'release_4.0' into release_4
+
 
 -------------------------------
 Tue, 28 Apr 2020 11:58:12 +0000  Kris Thielemans  
@@ -226,6 +4767,33 @@ closes #520
 
 
 src/listmode_buildblock/CListRecordECAT8_32bit.cxx
+
+-------------------------------
+Sat, 25 Apr 2020 07:42:14 +0100  robbietuk  
+
+Relative difference prior (#335)
+Used the quadratic penalty code to implement the RDP from  J. Nuyts, D. Bequ, P. Dupont, and L. Mortelmans, “A Concave Prior Penalizing Relative Differences for Maximum-a-Posteriori Reconstruction in Emission Tomography,” vol. 49, no. 1, pp. 56–60, 2002. Eq. 5 and 6.
+
+Added a small float in denominator of value and gradient calculations to avoid division by zero.
+
+Co-Authored-By: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_4.1.htm
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/recon_buildblock/recon_buildblock_registries.cxx
+src/swig/stir.i
+
+-------------------------------
+Fri, 24 Apr 2020 14:44:06 +0000  Kris Thielemans  
+
+added skeleton release notes [ci skip]
+
+
+documentation/release_4.1.htm
 
 -------------------------------
 Fri, 24 Apr 2020 11:50:40 +0000  Kris Thielemans  
@@ -2637,6 +7205,17 @@ src/include/stir/ProjDataInMemory.h
 src/test/test_proj_data_in_memory.cxx
 
 -------------------------------
+Sat, 26 Oct 2019 23:00:33 +0100  pwadhwa351  
+
+Changes made to remove the TimeDefinition bare pointer. Now the time_framedefinitions are extracted from the exam info sptr.
+
+
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
 Fri, 25 Oct 2019 18:06:43 +0100  Richard Brown  
 
 Set verbosity from parameter file (#410)
@@ -2651,6 +7230,78 @@ src/buildblock/Verbosity.cxx
 src/include/stir/recon_buildblock/Reconstruction.h
 src/recon_buildblock/Reconstruction.cxx
 src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Fri, 25 Oct 2019 17:25:45 +0100  pwadhwa351  
+
+Fix in construct_randoms_from_GEsingles utility
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 25 Oct 2019 17:14:26 +0100  pwadhwa351  
+
+Modifications now allow to run utilities to extract projdata from HDF5 files.
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/Scanner.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/listmode_buildblock/CListModeDataGESigna.cxx
+
+-------------------------------
+Wed, 23 Oct 2019 13:06:34 +0100  pwadhwa351  
+
+Last bit of requested changes.
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+
+-------------------------------
+Wed, 23 Oct 2019 12:50:25 +0100  pwadhwa351  
+
+Code review changes
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Wed, 23 Oct 2019 12:36:09 +0100  pwadhwa351  
+
+SinglesRatesFromGEHDF5 Registered in data_buildblock_registries
+
+
+src/data_buildblock/data_buildblock_registries.cxx
+
+-------------------------------
+Wed, 23 Oct 2019 12:17:05 +0100  pwadhwa351  
+
+Removed bare pointer for TimeFrame definitions, renamed HDF5Wrapper to GEHDF5Wrapper; removed scanner_Sptr from CListModeData
+
+
+src/IO/CMakeLists.txt
+src/IO/GEHDF5Wrapper.cxx
+src/buildblock/ProjDataFromHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/GEHDF5Wrapper.inl
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/ProjDataFromHDF5.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListModeData.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
 
 -------------------------------
 Tue, 22 Oct 2019 20:25:00 +0000  Kris Thielemans  
@@ -2731,6 +7382,27 @@ Closes #283
 src/swig/stir.i
 
 -------------------------------
+Tue, 22 Oct 2019 08:31:26 +0100  pwadhwa351  
+
+Further changes to add copyrights and address comments
+
+
+src/IO/HDF5Wrapper.cxx
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/HDF5Wrapper.inl
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/ProjDataFromHDF5.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
 Tue, 22 Oct 2019 07:13:42 +0000  Kris Thielemans  
 
 Merge remote-tracking branch 'origin/master' into OPENMP_target
@@ -2803,6 +7475,19 @@ Merge pull request #400 from KrisThielemans/more_run_time_checks
 add run-time checks
 
 -------------------------------
+Mon, 21 Oct 2019 14:47:48 +0100  pwadhwa351  
+
+Changes made to adapt for requested comments
+
+
+src/IO/HDF5Wrapper.cxx
+src/buildblock/ProjDataFromHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/HDF5Wrapper.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
 Mon, 21 Oct 2019 09:54:45 +0100  richard  
 
 return success value of bash scripts
@@ -2838,6 +7523,15 @@ src/iterative/OSSPS/OSSPSReconstruction.cxx
 src/recon_buildblock/AnalyticReconstruction.cxx
 src/recon_buildblock/IterativeReconstruction.cxx
 src/recon_buildblock/Reconstruction.cxx
+
+-------------------------------
+Sun, 20 Oct 2019 19:23:03 +0000  Kris Thielemans  
+
+[TRAVIS] disable clang-6 test again
+The trusty version on travis doesn't have clang-6 in apt. we could sort this out, but it is not urgent, and my attempts shouldn't have been in this PR. (sorry for the back-and-forth)
+
+
+.travis.yml
 
 -------------------------------
 Sun, 20 Oct 2019 18:39:12 +0100  Kris Thielemans  
@@ -2907,10 +7601,29 @@ Correct location of installed registries in STIRConfig.cmake
 CMakeLists.txt
 
 -------------------------------
+Sun, 20 Oct 2019 00:03:13 +0000  Kris Thielemans  
+
+[TRAVIS] forgot to install clang6
+
+
+.travis.yml
+
+-------------------------------
 Sun, 20 Oct 2019 00:17:43 +0100  Kris Thielemans  
 
 Merge pull request #398 from KrisThielemans/FIX_install_registries
 install source files for STIR registries
+
+-------------------------------
+Sat, 19 Oct 2019 22:44:04 +0000  Kris Thielemans  
+
+[TRAVIS] attempt to fix clang
+clang generates tons of warnings about auto_ptr with C++-11, causing the Travis
+log file limit to be exceeded. HDF5 forces C++-11, so we now attempt to
+pass -Wno-deprecated-declarations
+
+
+.travis.yml
 
 -------------------------------
 Sat, 19 Oct 2019 22:27:59 +0000  Kris Thielemans  
@@ -2923,6 +7636,40 @@ CMakeLists.txt
 src/cmake/STIRConfig.cmake.in
 
 -------------------------------
+Sat, 19 Oct 2019 22:29:22 +0100  pwadhwa351  
+
+Merged travis and release changes
+
+
+-------------------------------
+Sat, 19 Oct 2019 22:28:27 +0100  pwadhwa351  
+
+Doxygen added HDF5Wrapper; Changes requested for ProjDataFromHDF5,HDF5Wrapper and BinNormalisationFromGEHDF5 included
+
+
+src/IO/HDF5Wrapper.cxx
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataFromHDF5.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/ProjDataFromHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Sat, 19 Oct 2019 21:02:55 +0000  Kris Thielemans  
+
+enable C++-11 for HDF5 code
+
+
+CMakeLists.txt
+documentation/release_4.0.htm
+
+-------------------------------
+Sat, 19 Oct 2019 20:36:41 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into GE_Signa_Updates
+
+
+-------------------------------
 Sat, 19 Oct 2019 20:30:57 +0100  Kris Thielemans  
 
 [TRAVIS] correct the g++-5 c++11 line
@@ -2931,10 +7678,71 @@ fixes #396
 .travis.yml
 
 -------------------------------
+Sat, 19 Oct 2019 18:04:40 +0000  Kris Thielemans  
+
+fixed HDF5 STIRConfig.cmake
+
+
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Sat, 19 Oct 2019 17:49:06 +0000  Kris Thielemans  
+
+[TRAVIS] enable hdf5 for Linux (except 1 of them)
+
+
+.travis.yml
+
+-------------------------------
+Sat, 19 Oct 2019 16:31:48 +0000  Kris Thielemans  
+
+fix CMake files for GESigna
+
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/cmake/STIRConfig.cmake.in
+src/cmake/STIRConfig.h.in
+
+-------------------------------
+Sat, 19 Oct 2019 15:59:28 +0100  pwadhwa351  
+
+Merge with master
+
+
+-------------------------------
+Sat, 19 Oct 2019 15:53:03 +0100  pwadhwa351  
+
+Authors added and licence changes made in few files
+
+
+src/IO/HDF5Wrapper.cxx
+src/buildblock/Scanner.cxx
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/HDF5Wrapper.inl
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/Scanner.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+
+-------------------------------
 Sat, 19 Oct 2019 15:36:53 +0100  Kris Thielemans  
 
 Merge pull request #394 from rijobro/fix_data_processor_travis
 increase test_data_processor_projector threshold
+
+-------------------------------
+Sat, 19 Oct 2019 13:07:44 +0100  pwadhwa351  
+
+Changes made in CMakeLists to resolve Travis error log
+
+
+CMakeLists.txt
+src/include/stir/listmode/CListModeData.h
+src/utilities/CMakeLists.txt
 
 -------------------------------
 Sat, 19 Oct 2019 10:34:57 +0100  richard  
@@ -2954,6 +7762,17 @@ src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndL
 src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
 
 -------------------------------
+Fri, 18 Oct 2019 14:43:24 +0100  pwadhwa351  
+
+HDF5 compilation errors resolved.
+
+
+CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/utilities/CMakeLists.txt
+src/utilities/read_write_singles.cxx
+
+-------------------------------
 Fri, 18 Oct 2019 13:32:23 +0100  Richard Brown  
 
 tidy the data processor projector PR  (#391)
@@ -2962,6 +7781,12 @@ tidy the data processor projector PR
 documentation/STIR-UsersGuide.tex
 examples/samples/back_projector_proj_matrix_ray_tracing_post_smoothing.par
 examples/samples/forward_projector_proj_matrix_ray_tracing_pre_smoothing.par
+
+-------------------------------
+Thu, 17 Oct 2019 18:26:23 +0100  pwadhwa351  
+
+Merge branch 'master' into GE_Signa_Updates
+
 
 -------------------------------
 Thu, 17 Oct 2019 14:48:32 +0100  Richard Brown  
@@ -5508,6 +10333,22 @@ src/include/stir/OSSPS/OSSPSReconstruction.h
 src/include/stir/recon_buildblock/IterativeReconstruction.h
 
 -------------------------------
+Fri, 30 Nov 2018 17:28:11 +0000  pw351  
+
+A bit faster.
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Fri, 30 Nov 2018 17:10:37 +0000  pw351  
+
+Fix for randoms
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
 Thu, 29 Nov 2018 08:19:25 +0000  Kris Thielemans  
 
 install documentation
@@ -5611,6 +10452,43 @@ Tue, 27 Nov 2018 17:01:11 +1000  Ashley Gillman
 documentation/STIR-UsersGuide.tex
 documentation/release_3.1.htm
 src/cmake/stir_test_exe_targets.cmake
+
+-------------------------------
+Sun, 25 Nov 2018 21:45:39 +0000  pw351  
+
+Flip view and tangential positions:geo sino
+
+
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
+Sun, 25 Nov 2018 12:53:11 +0000  pw351  
+
+Changes to read_geo_factors due to changes in ProjDataFromHDF5
+
+
+src/utilities/conv_GEHDF5_to_interfile.cxx
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
+Sun, 25 Nov 2018 11:18:33 +0000  pw351  
+
+Process efficiency factors accurately.
+
+
+src/include/stir/ProjDataFromHDF5.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Sun, 25 Nov 2018 11:08:34 +0000  pw351  
+
+BinNormalisationFromGEHDF5; Efficiency Factors In HDF5 Wrapper
+
+
+src/IO/HDF5Wrapper.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
 
 -------------------------------
 Mon, 5 Nov 2018 21:10:54 +0000  Kris Thielemans  
@@ -5902,6 +10780,26 @@ Postfilter parametric images (as well as dynamic and single images). Templated s
 src/utilities/postfilter.cxx
 
 -------------------------------
+Thu, 11 Oct 2018 11:28:37 +0100  pw351  
+
+Initialisations implementations
+
+
+src/include/stir/ProjDataFromHDF5.h
+
+-------------------------------
+Wed, 10 Oct 2018 22:03:19 +0100  pw351  
+
+Consistency within STIr sinograms implementations
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+src/include/stir/listmode/CListRecordGESigna.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
 Wed, 10 Oct 2018 11:30:35 +0100  Richard Brown  
 
 Move local to experimental (#259)
@@ -6138,6 +11036,40 @@ Input is dynamic with multiple time frames. The output parametric image is going
 src/modelling_utilities/apply_patlak_to_images.cxx
 
 -------------------------------
+Mon, 8 Oct 2018 15:28:06 +0100  pw351  
+
+Minor fix for the scaling factor.
+
+
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
+Mon, 8 Oct 2018 15:02:30 +0100  pw351  
+
+Removed redundant utility called read_write_singles
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Mon, 8 Oct 2018 11:28:04 +0100  pw351  
+
+Reading geometric correction factors works.
+
+
+src/IO/HDF5Wrapper.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
+Fri, 5 Oct 2018 13:49:44 +0100  pw351  
+
+Change to read the slice numbers.
+
+
+src/utilities/read_geo_factors.cxx
+
+-------------------------------
 Fri, 5 Oct 2018 06:28:07 +0100  Richard Brown  
 
 Executable to do non-rigid image transformation (#252)
@@ -6145,6 +11077,18 @@ Executable to do non-rigid image transformation (#252)
 
 src/local/motion_utilities/CMakeLists.txt
 src/local/motion_utilities/non_rigid_transform.cxx
+
+-------------------------------
+Thu, 4 Oct 2018 16:47:54 +0100  pw351  
+
+Reading geometric correction factors.
+
+
+src/IO/HDF5Wrapper.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/ProjDataFromHDF5.h
+src/utilities/CMakeLists.txt
+src/utilities/read_geo_factors.cxx
 
 -------------------------------
 Thu, 4 Oct 2018 15:07:23 +0100  Richard Brown  
@@ -6212,6 +11156,24 @@ corrected doxygen for PLSPrior [skip ci]
 
 
 src/include/stir/recon_buildblock/PLSPrior.h
+
+-------------------------------
+Tue, 2 Oct 2018 14:41:20 +0100  pw351  
+
+This utility can read the viewgrams and convert to STIR interfile.
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+src/utilities/conv_GEHDF5_to_interfile.cxx
+
+-------------------------------
+Mon, 1 Oct 2018 22:56:50 +0100  pw351  
+
+Modification to be able to read the projection data from HDF5 file.
+
+
+src/buildblock/ProjDataFromHDF5.cxx
+src/utilities/conv_GEHDF5_to_interfile.cxx
 
 -------------------------------
 Mon, 1 Oct 2018 16:28:38 +0100  evgueni-ovtchinnikov  
@@ -6345,6 +11307,14 @@ Only implemented for 2 parameters at the moment, but easy to expand.
 
 src/modelling_utilities/CMakeLists.txt
 src/modelling_utilities/make_parametric_image_from_components.cxx
+
+-------------------------------
+Mon, 3 Sep 2018 12:10:54 +0100  pw351  
+
+Total size of tmp array correction
+
+
+src/buildblock/ProjDataFromHDF5.cxx
 
 -------------------------------
 Mon, 3 Sep 2018 07:03:44 +0200  Kris Thielemans  
@@ -6508,6 +11478,92 @@ Refactoring - formatting and variable name changes for readability.
 src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
 
 -------------------------------
+Tue, 14 Aug 2018 14:19:55 +0100  Nikos Efthimiou  
+
+Get_viewgram implemented but not tested, yet.
+
+
+src/IO/HDF5Wrapper.cxx
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataFromHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/HDF5Wrapper.inl
+src/include/stir/ProjDataFromHDF5.h
+src/utilities/CMakeLists.txt
+src/utilities/conv_GEHDF5_to_interfile.cxx
+
+-------------------------------
+Mon, 13 Aug 2018 18:25:03 +0100  pw351  
+
+Scanner and exam_info initialisation
+
+
+src/IO/HDF5Wrapper.cxx
+
+-------------------------------
+Mon, 13 Aug 2018 15:10:26 +0100  pw351  
+
+ProjDataFromHDF5 reading and testing
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataFromHDF5.cxx
+src/include/stir/ProjDataFromHDF5.h
+src/utilities/CMakeLists.txt
+src/utilities/conv_GEHDF5_to_interfile.cxx
+
+-------------------------------
+Mon, 13 Aug 2018 14:00:01 +0100  pw351  
+
+Utility to print out the singles read from GE HDF5
+
+
+src/utilities/CMakeLists.txt
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/read_write_singles.cxx
+
+-------------------------------
+Mon, 13 Aug 2018 12:52:17 +0100  Nikos Efthimiou  
+
+Merge remote-tracking branch 'origin/introduction_of_HDF5_wrapper' into introduction_of_HDF5_wrapper
+
+
+-------------------------------
+Mon, 13 Aug 2018 12:51:29 +0100  Nikos Efthimiou  
+
+Fix for the singles.
+* An option to pass a pointer to individual rows has been added in the Wrapper
+* The slice numbering was corrected
+
+src/IO/HDF5Wrapper.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/HDF5Wrapper.h
+
+-------------------------------
+Mon, 13 Aug 2018 11:46:52 +0100  pw351  
+
+Flip detector number to read singles data
+
+
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Sun, 12 Aug 2018 22:16:24 +0100  Nikos Efthimiou  
+
+Modifications to use the HDF5Wrapper for Singles
+* Member variables of SinglesRatesFromGEHDF5 that were shared were converted to shared_ptr<>. Small edits through out the file. 
+* The function read_singles_from_listmode_file() was reformed to use functionality from the HDF5Wrapper. 
+* The HDF5Wrapper got a new function to read the complete dataset in an Array<2, uint> 
+* Improvents (incomplete) to store the time slices as TimeFrameDefintions in the ExamInfo
+
+src/IO/HDF5Wrapper.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+
+-------------------------------
 Sun, 12 Aug 2018 20:39:55 +0100  Ashley Gillman  
 
 OSMAPOSL's computations should be virtual.
@@ -6516,12 +11572,112 @@ OSMAPOSL's computations should be virtual.
 src/include/stir/OSMAPOSL/OSMAPOSLReconstruction.h
 
 -------------------------------
+Sun, 12 Aug 2018 13:22:47 +0100  pw351  
+
+Dataspace-correction suggested by N.E.
+
+
+src/IO/HDF5Wrapper.cxx
+
+-------------------------------
+Fri, 10 Aug 2018 22:33:16 +0100  pw351  
+
+Changes to declare size_of_record
+
+
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+
+-------------------------------
 Fri, 10 Aug 2018 15:02:26 +0100  Kris Thielemans  
 
 updated Shape_buildblock dependencies
 needs to depend on numerics_buildblock
 
 src/Shape_buildblock/CMakeLists.txt
+
+-------------------------------
+Fri, 10 Aug 2018 02:48:30 +0100  Nikos Efthimiou  
+
+lm_to_projdata with HDF5Wrapper works.
+* HDF5Wrapper::Get_next() for listmode events is finished. Testing needed. 
+* Minor edits in HDF5Wrapper::initialise_scanner_from_HDF5(). Mainly reordering code. 
+* New function HDF5Wrapper::initialise_exam_info() which needs populating. 
+
+src/IO/HDF5Wrapper.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/listmode/CListRecordGESigna.h
+
+-------------------------------
+Thu, 9 Aug 2018 12:02:22 +0100  pw351  
+
+Scanner parameters
+
+
+src/IO/HDF5Wrapper.cxx
+
+-------------------------------
+Wed, 8 Aug 2018 21:34:45 +0100  pw351  
+
+Initialising Scanner
+
+
+src/IO/HDF5Wrapper.cxx
+
+-------------------------------
+Wed, 8 Aug 2018 10:56:08 +0100  pw351  
+
+Merge branch 'introduction_of_HDF5_wrapper' of https://github.com/CCPPETMR/Hackathon-STIR into introduction_of_HDF5_wrapper
+
+
+-------------------------------
+Wed, 8 Aug 2018 10:54:28 +0100  pw351  
+
+Added scanner information and tags
+
+
+src/IO/HDF5Wrapper.cxx
+
+-------------------------------
+Tue, 7 Aug 2018 19:00:00 +0100  Nikos Efthimiou  
+
+Progress on HDF5 listmode and wrapper
+* InputStreamWithRecordsFromHDF5 does not depend on HDF5, but it calls the wrapper for most of its needs (almost finshed and clean up needed)
+* HDF5Wrapper can initialise listmode data and output the next event for the InputStream
+* CListModeDataHDF5 does not depend on HDF5 library but makes light use of the wrapper (could be dropped entirely)
+
+
+src/IO/HDF5Wrapper.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Tue, 7 Aug 2018 13:16:02 +0100  Nikos Efthimiou  
+
+Introduction of the HDF5Wrapper
+
+
+src/IO/CMakeLists.txt
+src/IO/GEHDF5Data.cxx
+src/IO/HDF5Wrapper.cxx
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataFromHDF5.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/IO/HDF5Wrapper.h
+src/include/stir/ProjDataFromHDF5.h
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
 
 -------------------------------
 Tue, 7 Aug 2018 11:45:01 +0100  Kris Thielemans  
@@ -6650,6 +11806,17 @@ src/test/test_DynamicDiscretisedDensity.cxx
 src/test/test_multiple_proj_data.cxx
 
 -------------------------------
+Sun, 29 Jul 2018 10:46:19 +0100  pw351  
+
+Added ProjDataFromGEHDF5 and geometric correction factors in BinNormalisationFromGEHDF5 from the HDF5 files. Not yet complete.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataFromGEHDF5.cxx
+src/include/stir/ProjDataFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
 Fri, 27 Jul 2018 11:21:56 +0100  Daniel Deidda  
 
 1st commit with KOSMAPOSL
@@ -6717,6 +11884,63 @@ Refactor OSMAPOSL gradient, sensitivity, and multiplicative updates.
 
 src/include/stir/OSMAPOSL/OSMAPOSLReconstruction.h
 src/iterative/OSMAPOSL/OSMAPOSLReconstruction.cxx
+
+-------------------------------
+Wed, 11 Jul 2018 14:34:31 +0100  pw351  
+
+Removing the outputs that are redundant.
+
+
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Wed, 11 Jul 2018 13:59:16 +0100  pw351  
+
+Bin_Normalisation:set_up error corrected.
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 11 Jul 2018 12:10:42 +0100  pw351  
+
+Flip in axial direction for normalisation sinogram.
+
+
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+
+-------------------------------
+Wed, 11 Jul 2018 12:07:33 +0100  pw351  
+
+Changes to account for flip in axial direction and author copyrights added
+
+
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Wed, 11 Jul 2018 11:58:08 +0100  pw351  
+
+Added files to support random corrections with STIR.
+
+
+src/buildblock/Scanner.cxx
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/include/stir/data/SinglesRatesFromGEHDF5.h
+src/utilities/CMakeLists.txt
+src/utilities/construct_randoms_from_GEsingles.cxx
+
+-------------------------------
+Tue, 3 Jul 2018 12:30:58 +0100  pw351  
+
+Scanner Parameters Changed for GE SIGNA Scanner.
+
+
+src/buildblock/Scanner.cxx
 
 -------------------------------
 Tue, 3 Jul 2018 03:45:42 +0100  Nikos Efthimiou  
@@ -6831,6 +12055,12 @@ fix_bug_read_file
 src/buildblock/Scanner.cxx
 src/scatter_buildblock/ScatterEstimation.cxx
 src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Thu, 21 Jun 2018 12:38:45 +0100  Kris Thielemans  
+
+Merge branch 'master' into GE_Signa
+
 
 -------------------------------
 Tue, 12 Jun 2018 03:17:24 +0100  Nikos Efthimiou  
@@ -8881,6 +14111,14 @@ now causes a fatal error, so this error was now obvious.
 src/display/CMakeLists.txt
 
 -------------------------------
+Tue, 27 Jun 2017 17:39:20 +0100  Ottavia  
+
+Let GE_Signa reading code if it is an HDF5 file
+
+
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+
+-------------------------------
 Tue, 27 Jun 2017 17:29:39 +0100  Kris Thielemans  
 
 let git ignore some Mac files
@@ -9075,6 +14313,23 @@ src/recon_buildblock/DataSymmetriesForDensels.cxx
 src/test/test_Array.cxx
 src/test/test_VectorWithOffset.cxx
 src/test/test_export_array.cxx
+
+-------------------------------
+Thu, 9 Feb 2017 15:13:03 +0000  Elise  
+
+modified src/IO/IO_registries.cxx and src/listmode_buildblock/CMakeLists.txt to allow compilation without installing HDF5 library
+
+
+src/IO/IO_registries.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Wed, 8 Feb 2017 13:43:25 +0000  Ottavia  
+
+removed some debugging code that entered by accident
+
+
+src/listmode_utilities/list_lm_events.cxx
 
 -------------------------------
 Sat, 21 Jan 2017 08:05:47 +0000  Kris Thielemans  
@@ -9394,6 +14649,29 @@ moved the declaration of coords out of the loop for speed-up in visual studio
 src/recon_buildblock/ProjMatrixElemsForOneBin.cxx
 
 -------------------------------
+Fri, 2 Dec 2016 14:27:37 +0000  Ottavia  
+
+Clean up and more documentation in GE Signa files.
+
+
+src/IO/GEHDF5Data.cxx
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/listmode/CListRecordGESigna.h
+
+-------------------------------
+Sat, 12 Nov 2016 13:58:59 +0000  Kris Thielemans  
+
+Merge branch 'master' into GE_Signa
+
+
+-------------------------------
+Sat, 12 Nov 2016 11:18:26 +0000  Kris Thielemans  
+
+Merge branch 'master' into GE_Signa
+
+
+-------------------------------
 Fri, 11 Nov 2016 07:37:27 +0000  Kris Thielemans  
 
 avoid warnings about unsigned to signed conversion
@@ -9681,6 +14959,22 @@ src/scatter_buildblock/single_scatter_integrals.cxx
 src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
 
 -------------------------------
+Wed, 21 Sep 2016 01:55:48 +0100  Kris Thielemans  
+
+first version of GE PETMR normalisation code
+ugly copy-paste from ECAT8 code, with a bit of reading of HDF5.
+It only supports efficiencies at the moment.
+
+no guarantees yet
+
+
+src/include/stir/IO/GEHDF5Data.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/recon_buildblock_registries.cxx
+
+-------------------------------
 Tue, 20 Sep 2016 08:15:30 +0100  Kris Thielemans  
 
 Merge pull request #49 from NikEfth/_fix_issue_48_CMakeROOTvariable
@@ -9693,6 +14987,12 @@ Changed the name of HAS_GLOBAL_ROOT to CERN_ROOT_CONFIG
 
 
 src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Mon, 19 Sep 2016 21:16:42 +0100  Kris THIELEMANS  
+
+Merge branch 'master' into GE_Signa
+
 
 -------------------------------
 Mon, 19 Sep 2016 15:06:58 +0100  Kris Thielemans  
@@ -9766,6 +15066,17 @@ src/scatter_buildblock/ScatterEstimationByBin.cxx
 src/scatter_buildblock/ScatterSimulation.cxx
 
 -------------------------------
+Wed, 14 Sep 2016 18:15:02 +0100  Ottavia  
+
+Modified CListModeDataGESigna.h and CListModeDataGESigna.cxx. Added InputStreamWithRecordsFromHDF5.h and InputStreamWithRecordsFromHDF5.inl to be able to read the data from the hdf5 dataset by using the hdf5 library: we read each event as an hyperslab from the whole dataset which is defined inside the file as /ListData/listdata
+
+
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.h
+src/include/stir/IO/InputStreamWithRecordsFromHDF5.inl
+src/include/stir/listmode/CListModeDataGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+
+-------------------------------
 Wed, 14 Sep 2016 16:13:55 +0100  Nikos E  
 
 Cleaning up and rearraging ScatterEstimationByBin, ScatterSimulation, SingleScatterSimulation
@@ -9823,6 +15134,14 @@ src/include/stir/scatter/ScatterEstimationByBin.h
 src/scatter_buildblock/ScatterEstimationByBin.cxx
 
 -------------------------------
+Tue, 13 Sep 2016 16:01:58 +0100  Ottavia  
+
+I added some lines of code (into the CListModeDataGESigna::open_lm_file) to try to read info from the hdf5 file: the scanner name and the manufacturer. It works and it prints the info on the screen.
+
+
+src/listmode_buildblock/CListModeDataGESigna.cxx
+
+-------------------------------
 Mon, 12 Sep 2016 23:50:23 +0100  Nikos E  
 
 Removed some unessesary includes and improved some doxygen strings.
@@ -9867,6 +15186,19 @@ src/scatter_utilities/estimate_scatter.cxx
 src/scatter_utilities/simulate_scatter.cxx
 
 -------------------------------
+Mon, 12 Sep 2016 15:36:47 +0100  Ottavia  
+
+Added the defition of the class GEHDF5Data, in order to use the hdf5 file libraries to read the PET ME Signa datasets. We had to include those libraries into the src/CMakeLists.txt and src/IO/CMakeLists.txt and we modified CListModeDataGESigna.h and CListModeDataGESigna.cxx to make use of the newly defined GEHDF5Data class.
+
+
+src/CMakeLists.txt
+src/IO/CMakeLists.txt
+src/IO/GEHDF5Data.cxx
+src/include/stir/IO/GEHDF5Data.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+
+-------------------------------
 Mon, 12 Sep 2016 15:07:58 +0100  Nikos E  
 
 Restored missed files
@@ -9908,6 +15240,22 @@ src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
 src/scatter_utilities/CMakeLists.txt
 src/scatter_utilities/estimate_scatter.cxx
 src/scatter_utilities/simulate_scatter.cxx
+
+-------------------------------
+Fri, 9 Sep 2016 16:02:32 +0100  Ottavia  
+
+merged master
+
+
+-------------------------------
+Tue, 6 Sep 2016 17:59:39 +0100  Ottavia  
+
+New version that WORKS. If you use list_to_lm you will see the time stamps and coincidences printed on screen. The correct offset to be set into CListModeDataGESigna.cxx is: stream_ptr->seekg(12492704);
+
+
+src/include/stir/listmode/CListRecordGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/listmode_utilities/list_lm_events.cxx
 
 -------------------------------
 Mon, 5 Sep 2016 15:51:37 +0100  Nikos Efthimiou  
@@ -10779,6 +16127,31 @@ Comments for the Travis CI config file
 
 
 .travis.yml
+
+-------------------------------
+Mon, 8 Aug 2016 15:38:14 +0100  Ottavia  
+
+first checking of files for GE Signa
+won't work yet!
+
+(check-in with Kris Thielemans)
+
+
+src/IO/IO_registries.cxx
+src/include/stir/IO/GESignaListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataGESigna.h
+src/include/stir/listmode/CListRecordGESigna.h
+src/listmode_buildblock/CListModeDataGESigna.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Mon, 8 Aug 2016 14:06:05 +0100  Ottavia  
+
+added scanner info for GE Signa PET/MR
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
 
 -------------------------------
 Tue, 2 Aug 2016 18:09:28 +0200  David Völgyes  

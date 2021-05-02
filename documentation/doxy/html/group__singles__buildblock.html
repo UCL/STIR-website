@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -40,7 +40,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#files">Files</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Singles rates etc<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__data__buildblock.html">Acquisition data building blocks</a></div></div>  </div>
 </div><!--header-->
@@ -50,33 +51,55 @@ Collaboration diagram for Singles rates etc:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__singles__buildblock.png" border="0" alt="" usemap="#group____singles____buildblock"/>
 <map name="group____singles____buildblock" id="group____singles____buildblock">
-<area shape="rect" id="node2" href="group__data__buildblock.html" title="Acquisition data building\l blocks" alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node1" href="group__GE.html" title="support for GE data" alt="" coords="613,23,761,49"/>
+<area shape="rect" id="node3" href="group__data__buildblock.html" title="Acquisition data building\l blocks" alt="" coords="5,15,188,57"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:randoms__from__singles_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="randoms__from__singles_8cxx.html">randoms_from_singles.cxx</a></td></tr>
+<tr class="memdesc:randoms__from__singles_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__singles__buildblock.html#ga6a0a3de9251746563ba30d4c3aeb3e88" title="Estimate randoms from singles. ">stir::randoms_from_singles</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRates_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRates_8cxx.html">SinglesRates.cxx</a></td></tr>
 <tr class="memdesc:SinglesRates_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1FrameSinglesRates.html" title="A single frame of singles information. ">stir::FrameSinglesRates</a> and <a class="el" href="classstir_1_1SinglesRates.html" title="The base-class for using singles info. ">stir::SinglesRates</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesForTimeFrames_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesForTimeFrames_8cxx.html">SinglesRatesForTimeFrames.cxx</a></td></tr>
 <tr class="memdesc:SinglesRatesForTimeFrames_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames. ">stir::SinglesRatesForTimeFrames</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SinglesRatesForTimeSlices_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesForTimeSlices_8cxx.html">SinglesRatesForTimeSlices.cxx</a></td></tr>
+<tr class="memdesc:SinglesRatesForTimeSlices_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals. ">stir::SinglesRatesForTimeSlices</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesFromECAT7_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromECAT7_8cxx.html">SinglesRatesFromECAT7.cxx</a></td></tr>
 <tr class="memdesc:SinglesRatesFromECAT7_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file. ">stir::ecat::ecat7::SinglesRatesFromECAT7</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SinglesRatesFromGEHDF5_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromGEHDF5_8cxx.html">SinglesRatesFromGEHDF5.cxx</a></td></tr>
+<tr class="memdesc:SinglesRatesFromGEHDF5_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format...">stir::GE::RDF_HDF5::SinglesRatesFromGEHDF5</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesFromSglFile_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromSglFile_8cxx.html">SinglesRatesFromSglFile.cxx</a></td></tr>
 <tr class="memdesc:SinglesRatesFromSglFile_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file. ">stir::ecat::ecat7::SinglesRatesFromECAT7</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:randoms__from__singles_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="randoms__from__singles_8h.html">randoms_from_singles.h</a></td></tr>
+<tr class="memdesc:randoms__from__singles_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">declare stir:randoms_from_singles <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRates_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRates_8h.html">SinglesRates.h</a></td></tr>
 <tr class="memdesc:SinglesRates_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SinglesRates.html" title="The base-class for using singles info. ">stir::SinglesRates</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SinglesRates_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRates_8inl.html">SinglesRates.inl</a></td></tr>
+<tr class="memdesc:SinglesRates_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of class <a class="el" href="classstir_1_1SinglesRates.html" title="The base-class for using singles info. ">stir::SinglesRates</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesForTimeFrames_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesForTimeFrames_8h.html">SinglesRatesForTimeFrames.h</a></td></tr>
 <tr class="memdesc:SinglesRatesForTimeFrames_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames. ">stir::SinglesRatesForTimeFrames</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SinglesRatesForTimeSlices_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesForTimeSlices_8h.html">SinglesRatesForTimeSlices.h</a></td></tr>
+<tr class="memdesc:SinglesRatesForTimeSlices_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals. ">stir::SinglesRatesForTimeSlices</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesFromECAT7_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromECAT7_8h.html">SinglesRatesFromECAT7.h</a></td></tr>
 <tr class="memdesc:SinglesRatesFromECAT7_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file. ">stir::ecat::ecat7::SinglesRatesFromECAT7</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:SinglesRatesFromGEHDF5_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromGEHDF5_8h.html">SinglesRatesFromGEHDF5.h</a></td></tr>
+<tr class="memdesc:SinglesRatesFromGEHDF5_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format...">stir::GE::RDF_HDF5::SinglesRatesFromGEHDF5</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRatesFromSglFile_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRatesFromSglFile_8h.html">SinglesRatesFromSglFile.h</a></td></tr>
 <tr class="memdesc:SinglesRatesFromSglFile_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class stir::SinglesRatesFromSglFile. <br /></td></tr>
@@ -93,18 +116,82 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for singles rates that are recorded in time frames.  <a href="classstir_1_1SinglesRatesForTimeFrames.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html">stir::SinglesRatesForTimeSlices</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for singles that are recorded at equal time intervals.  <a href="classstir_1_1SinglesRatesForTimeSlices.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html">stir::ecat::ecat7::SinglesRatesFromECAT7</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that extracts singles info from an ECAT7 sinogram file.  <a href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html">stir::GE::RDF_HDF5::SinglesRatesFromGEHDF5</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for reading singles over the number of time samples from an <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> HDF5 .BLF listmode file format.  <a href="classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html">stir::ecat::ecat7::SinglesRatesFromSglFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for reading/writing singles from an ECAT7 .sgl file.  <a href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga6a0a3de9251746563ba30d4c3aeb3e88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__singles__buildblock.html#ga6a0a3de9251746563ba30d4c3aeb3e88">stir::randoms_from_singles</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const <a class="el" href="classstir_1_1SinglesRates.html">SinglesRates</a> &amp;singles, const float coincidence_time_window)</td></tr>
+<tr class="memdesc:ga6a0a3de9251746563ba30d4c3aeb3e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate randoms from singles.  <a href="group__singles__buildblock.html#ga6a0a3de9251746563ba30d4c3aeb3e88">More...</a><br /></td></tr>
+<tr class="separator:ga6a0a3de9251746563ba30d4c3aeb3e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga6a0a3de9251746563ba30d4c3aeb3e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a0a3de9251746563ba30d4c3aeb3e88">&#9670;&nbsp;</a></span>randoms_from_singles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::randoms_from_singles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;&#160;</td>
+          <td class="paramname"><em>proj_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1SinglesRates.html">SinglesRates</a> &amp;&#160;</td>
+          <td class="paramname"><em>singles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>coincidence_time_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimate randoms from singles. </p>
+<p>This uses the formula <img class="formulaInl" alt="$ R_{ij}= \tau S_i S_j $" src="form_109.png"/> (with <img class="formulaInl" alt="$\tau$" src="form_110.png"/> the <code>coincidence_time_window</code>) for finding the randoms-rate in terms of the singles-rates. The function then takes duration properly into account using the following procedure.</p>
+<p>We actually have total counts in the singles for sinograms and need total counts in the randoms. Assuming the radioactivity distribution is stationary and only decays, and dropping indices <img class="formulaInl" alt="$i,j$" src="form_115.png"/>, we get </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]" src="form_116.png"/>
+</p>
+<p> Integrating over time, and writing $r$ for the integral of $R$ etc </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t) \]" src="form_117.png"/>
+</p>
+<p> converting that to total singles $s$ in the time frame, we get </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_t1^t2 dt\,exp (-\lambda t)\right)^2} \]" src="form_118.png"/>
+</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd><p class="startdd">Dead-time is currently completely ignored. </p>
+<p class="enddd">The function currently assumes F-18 half-life. </p>
+</dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga8c1ea83fd11e3e7ebaf78ebff345b87a">stir::decay_correction_factor()</a>, <a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae7b96d9b9add37501ee1af381e0cb8bf">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1SinglesRates.html#a849ce3b47e6eace5a1748d4b6afc9a9f">stir::SinglesRates::get_singles()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">stir::multiply_crystal_factors()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

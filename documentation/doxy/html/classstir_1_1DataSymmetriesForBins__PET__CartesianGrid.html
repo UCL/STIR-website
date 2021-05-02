@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -82,9 +82,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a57ca79414d7efea7534f34ae7a1249cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a57ca79414d7efea7534f34ae7a1249cd">num_related_bins</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;b) const</td></tr>
 <tr class="memdesc:a57ca79414d7efea7534f34ae7a1249cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of bins related to 'b'  <a href="#a57ca79414d7efea7534f34ae7a1249cd">More...</a><br /></td></tr>
 <tr class="separator:a57ca79414d7efea7534f34ae7a1249cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add59591808cff8e64acbd97fe4f626b4"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classstir_1_1SymmetryOperation.html">SymmetryOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#add59591808cff8e64acbd97fe4f626b4">find_symmetry_operation_from_basic_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:add59591808cff8e64acbd97fe4f626b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an arbitrary bin 'b', find the basic bin and the corresponding symmetry operation  <a href="#add59591808cff8e64acbd97fe4f626b4">More...</a><br /></td></tr>
-<tr class="separator:add59591808cff8e64acbd97fe4f626b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98daf3f9ee46f1c9f247381f56efc99e"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classstir_1_1SymmetryOperation.html">SymmetryOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a98daf3f9ee46f1c9f247381f56efc99e">find_symmetry_operation_from_basic_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:a98daf3f9ee46f1c9f247381f56efc99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an arbitrary bin 'b', find the basic bin and the corresponding symmetry operation  <a href="#a98daf3f9ee46f1c9f247381f56efc99e">More...</a><br /></td></tr>
+<tr class="separator:a98daf3f9ee46f1c9f247381f56efc99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98a23b96a7cbf4340d71f31b5ca4ce5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a98a23b96a7cbf4340d71f31b5ca4ce5f">find_basic_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;b) const</td></tr>
 <tr class="memdesc:a98a23b96a7cbf4340d71f31b5ca4ce5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an arbitrary bin 'b', find the basic bin  <a href="#a98a23b96a7cbf4340d71f31b5ca4ce5f">More...</a><br /></td></tr>
 <tr class="separator:a98a23b96a7cbf4340d71f31b5ca4ce5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,6 +323,8 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a62531e2439767d3e72ff6b65244f7cda">stir::DataSymmetriesForBins</a>.</p>
 
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>.</p>
+
 </div>
 </div>
 <a id="a57ca79414d7efea7534f34ae7a1249cd"></a>
@@ -354,10 +356,12 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a0e4b1f620b82d8df0b785b8d8e4d445b">stir::DataSymmetriesForBins</a>.</p>
 
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+
 </div>
 </div>
-<a id="add59591808cff8e64acbd97fe4f626b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add59591808cff8e64acbd97fe4f626b4">&#9670;&nbsp;</a></span>find_symmetry_operation_from_basic_bin()</h2>
+<a id="a98daf3f9ee46f1c9f247381f56efc99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98daf3f9ee46f1c9f247381f56efc99e">&#9670;&nbsp;</a></span>find_symmetry_operation_from_basic_bin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +370,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unique_ptr&lt;<a class="el" href="classstir_1_1SymmetryOperation.html">SymmetryOperation</a>&gt; stir::DataSymmetriesForBins_PET_CartesianGrid::find_symmetry_operation_from_basic_bin </td>
+          <td class="memname">unique_ptr&lt; <a class="el" href="classstir_1_1SymmetryOperation.html">SymmetryOperation</a> &gt; stir::DataSymmetriesForBins_PET_CartesianGrid::find_symmetry_operation_from_basic_bin </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -384,6 +388,8 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 <p>sets 'b' to the corresponding 'basic' bin and returns the symmetry transformation from 'basic' to 'b'. </p>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af1bcd775c3c8e53e96f03ee59d4eb929">stir::DataSymmetriesForBins</a>.</p>
+
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
 
 </div>
 </div>
@@ -417,6 +423,8 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a629fa74fa3e69acd616844c16fa96019">stir::DataSymmetriesForBins</a>.</p>
 
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+
 </div>
 </div>
 <a id="a226be820f543f23a417bcb1ae1f004a6"></a>
@@ -448,6 +456,8 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#ac16420138275f5b4a9eb653301d0352b">stir::DataSymmetriesForViewSegmentNumbers</a>.</p>
 
+<p class="reference">References <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a4743e5f2ecc108be2cc70e55525889c8">stir::ViewSegmentNumbers::segment_num()</a>, and <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a1617faa1623970b35a40b77f5923efa4">stir::ViewSegmentNumbers::view_num()</a>.</p>
+
 </div>
 </div>
 <a id="a61fbe78e1539e930e075ecb8818536fe"></a>
@@ -478,6 +488,8 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 <p>sets 'v_s' to the corresponding 'basic' view/segment and returns true if 'v_s' is changed (i.e. it was NOT a basic view/segment). </p>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers</a>.</p>
+
+<p class="reference">References <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a4743e5f2ecc108be2cc70e55525889c8">stir::ViewSegmentNumbers::segment_num()</a>, and <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a1617faa1623970b35a40b77f5923efa4">stir::ViewSegmentNumbers::view_num()</a>.</p>
 
 </div>
 </div>
@@ -513,12 +525,13 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock/<a class="el" href="DataSymmetriesForBins__PET__CartesianGrid_8h_source.html">DataSymmetriesForBins_PET_CartesianGrid.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock/<a class="el" href="DataSymmetriesForBins__PET__CartesianGrid_8inl.html">DataSymmetriesForBins_PET_CartesianGrid.inl</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/recon_buildblock/<a class="el" href="DataSymmetriesForBins__PET__CartesianGrid_8cxx.html">DataSymmetriesForBins_PET_CartesianGrid.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -124,6 +124,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:transform__3d__object_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transform__3d__object_8h.html">transform_3d_object.h</a></td></tr>
 <tr class="memdesc:transform__3d__object_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of functions to re-interpolate an image or projection data to a new coordinate system. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transform__3d__object_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transform__3d__object_8inl.html">transform_3d_object.inl</a></td></tr>
+<tr class="memdesc:transform__3d__object_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions to re-interpolate an image. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -358,6 +361,8 @@ template&lt;class ObjectTransformationT , class PushInterpolatorT &gt; </div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1PushTransposeLinearInterpolator.html" title="A function object to push values at the grid of the input array into the output array. ">PushTransposeLinearInterpolator</a> for an example interpolator.</dd></dl>
 <dl class="section user"><dt>Developer's note</dt><dd>This function is inline to avoid template instantiation problems. </dd></dl>
 
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="group__motion.html#gad79cf166422ffc3b7f701fd1e7a897fe">stir::transpose_of_transform_3d_object()</a>.</p>
 
 </div>
@@ -422,6 +427,8 @@ template&lt;class ObjectTransformationT , class PullInterpolatorT &gt; </div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1PullLinearInterpolator.html" title="A function object to pull interpolated values from the input array into the grid points of the output...">PullLinearInterpolator</a> for an example interpolator.</dd></dl>
 <dl class="section user"><dt>Developer's note</dt><dd>This function is inline to avoid template instantiation problems. </dd></dl>
 
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="group__motion.html#ga0adbd95408531c79d46fd53888d95db3">stir::transform_3d_object()</a>.</p>
 
 </div>
@@ -460,7 +467,7 @@ template&lt;class ObjectTransformationT , class PullInterpolatorT &gt; </div>
 
 <p>transform image data </p>
 <p>Currently only supports VoxelOnCartesianGrid image. Uses (tri)linear interpolation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>cannot use <a class="el" href="classstir_1_1ObjectTransformation.html" title="Base-class for performing (potentially non-rigid) object transformations. ">ObjectTransformation</a> yet as it needs the inverse transformation </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>cannot use <a class="el" href="classstir_1_1ObjectTransformation.html" title="Base-class for performing (potentially non-rigid) object transformations. ">ObjectTransformation</a> yet as it needs the inverse transformation </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1RigidObject3DTransformation.html#aba8b925e4e653456a7601cb6dccf6270">stir::RigidObject3DTransformation::inverse()</a>, and <a class="el" href="group__motion.html#ga596e32f68bef0e42546dd8602d20e855">stir::transform_3d_object_pull_interpolation()</a>.</p>
 
@@ -539,7 +546,7 @@ template&lt;class ObjectTransformationT , class PullInterpolatorT &gt; </div>
 </div><div class="memdoc">
 
 <p>transform image data using transposed matrix </p>
-<p>Implements the transpose (not the inverse) of <a class="el" href="group__motion.html#ga0adbd95408531c79d46fd53888d95db3" title="transform image data ">transform_3d_object(DiscretisedDensity&lt;3,float&gt;&amp;, const DiscretisedDensity&lt;3,float&gt;&amp;,const RigidObject3DTransformation&amp;)</a> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo:</a></b></dt><dd>cannot use <a class="el" href="classstir_1_1ObjectTransformation.html" title="Base-class for performing (potentially non-rigid) object transformations. ">ObjectTransformation</a> yet as it needs the inverse transformation </dd></dl>
+<p>Implements the transpose (not the inverse) of <a class="el" href="group__motion.html#ga0adbd95408531c79d46fd53888d95db3" title="transform image data ">transform_3d_object(DiscretisedDensity&lt;3,float&gt;&amp;, const DiscretisedDensity&lt;3,float&gt;&amp;,const RigidObject3DTransformation&amp;)</a> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>cannot use <a class="el" href="classstir_1_1ObjectTransformation.html" title="Base-class for performing (potentially non-rigid) object transformations. ">ObjectTransformation</a> yet as it needs the inverse transformation </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1RigidObject3DTransformation.html#aba8b925e4e653456a7601cb6dccf6270">stir::RigidObject3DTransformation::inverse()</a>, and <a class="el" href="group__motion.html#gadbecd6957849336162578375b7c24e38">stir::transform_3d_object_push_interpolation()</a>.</p>
 
@@ -592,7 +599,7 @@ template&lt;class ObjectTransformationT , class PullInterpolatorT &gt; </div>
 <p>transform projection data </p>
 <p>Currently only supports non-arccorrected data. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjData.html#a1aec0be02894de32aaa1f0d584e0f398">stir::ProjData::get_empty_segment_by_view()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a802ccb525abc71e64b741549847ae605">stir::SegmentByView&lt; elemT &gt;::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#aed58d9ac4c017e1c97b1294ddd5ce838">stir::SegmentByView&lt; elemT &gt;::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a8c2054009dbe03af3f32daf8055fcacf">stir::SegmentByView&lt; elemT &gt;::get_max_view_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#add10bed27abe7e70a737bf8c4abe88be">stir::SegmentByView&lt; elemT &gt;::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a18b59788878f49dd347e7038d0918934">stir::SegmentByView&lt; elemT &gt;::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a0428f78246186c2de898d20aed29d485">stir::SegmentByView&lt; elemT &gt;::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae70c2f4e25cbf6b678d0d260dedcfb8a">stir::ProjData::get_segment_by_view()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a37318097f15657959e51bcc76d52e847">stir::RigidObject3DTransformation::transform_bin()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjData.html#a1aec0be02894de32aaa1f0d584e0f398">stir::ProjData::get_empty_segment_by_view()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a802ccb525abc71e64b741549847ae605">stir::SegmentByView&lt; elemT &gt;::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#aed58d9ac4c017e1c97b1294ddd5ce838">stir::SegmentByView&lt; elemT &gt;::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a8c2054009dbe03af3f32daf8055fcacf">stir::SegmentByView&lt; elemT &gt;::get_max_view_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#add10bed27abe7e70a737bf8c4abe88be">stir::SegmentByView&lt; elemT &gt;::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a18b59788878f49dd347e7038d0918934">stir::SegmentByView&lt; elemT &gt;::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a0428f78246186c2de898d20aed29d485">stir::SegmentByView&lt; elemT &gt;::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae70c2f4e25cbf6b678d0d260dedcfb8a">stir::ProjData::get_segment_by_view()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a37318097f15657959e51bcc76d52e847">stir::RigidObject3DTransformation::transform_bin()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="group__motion.html#ga41e1ab2afd8bd440b055d38d843db4ac">stir::transform_3d_object()</a>.</p>
 
@@ -601,7 +608,7 @@ template&lt;class ObjectTransformationT , class PullInterpolatorT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

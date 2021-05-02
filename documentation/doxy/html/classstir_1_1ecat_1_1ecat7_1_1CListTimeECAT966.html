@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -59,7 +59,8 @@ Inheritance diagram for stir::ecat::ecat7::CListTimeECAT966:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966__inherit__graph.png" border="0" usemap="#stir_1_1ecat_1_1ecat7_1_1CListTimeECAT966_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1ecat_1_1ecat7_1_1CListTimeECAT966_inherit__map" id="stir_1_1ecat_1_1ecat7_1_1CListTimeECAT966_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="24,5,131,32"/>
+<area shape="rect" id="node2" href="classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node3" href="classstir_1_1ListGatingInput.html" title="A class recording external input to the scanner (normally used for gating) " alt="" coords="137,5,287,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -77,8 +78,8 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_in_
 <tr class="memitem:a8b2e57d09ee1d62446c873b7bec7bf8b"><td class="memItemLeft" align="right" valign="top"><a id="a8b2e57d09ee1d62446c873b7bec7bf8b"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_in_millisecs</b> (const unsigned long time_in_millisecs)</td></tr>
 <tr class="separator:a8b2e57d09ee1d62446c873b7bec7bf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a73672327ef12b541065a5b51a66aa"><td class="memItemLeft" align="right" valign="top"><a id="ae3a73672327ef12b541065a5b51a66aa"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_gating</b> () const</td></tr>
+<tr class="memitem:ae3a73672327ef12b541065a5b51a66aa"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966.html#ae3a73672327ef12b541065a5b51a66aa">get_gating</a> () const</td></tr>
+<tr class="memdesc:ae3a73672327ef12b541065a5b51a66aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">get gating-related info  <a href="#ae3a73672327ef12b541065a5b51a66aa">More...</a><br /></td></tr>
 <tr class="separator:ae3a73672327ef12b541065a5b51a66aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76681f7a2bb7717e13cf1d5386f90fc7"><td class="memItemLeft" align="right" valign="top"><a id="a76681f7a2bb7717e13cf1d5386f90fc7"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_gating</b> (unsigned int g)</td></tr>
@@ -93,13 +94,44 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_in_secs</b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing and using a timing 'event' from a listmode file from the ECAT 966 scanner. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3a73672327ef12b541065a5b51a66aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a73672327ef12b541065a5b51a66aa">&#9670;&nbsp;</a></span>get_gating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int stir::ecat::ecat7::CListTimeECAT966::get_gating </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get gating-related info </p>
+<p>Generally, gates are numbered from 0 to some maximum value. </p>
+
+<p>Implements <a class="el" href="classstir_1_1ListGatingInput.html#af084616d473ece9ef5632aed257e99f9">stir::ListGatingInput</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/<a class="el" href="CListRecordECAT966_8h_source.html">CListRecordECAT966.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

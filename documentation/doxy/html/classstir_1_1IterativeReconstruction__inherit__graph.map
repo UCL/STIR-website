@@ -1,11 +1,12 @@
 <map id="stir::IterativeReconstruction&lt; TargetT &gt;" name="stir::IterativeReconstruction&lt; TargetT &gt;">
 <area shape="rect" id="node7" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; OSMAPOSLReconstruction\l\&lt; TargetT \&gt;, Reconstruction\l\&lt; TargetT \&gt;, IterativeReconstruction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="1355,5,1613,91"/>
-<area shape="rect" id="node9" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; OSSPSReconstruction\l\&lt; TargetT \&gt;, Reconstruction\l\&lt; TargetT \&gt;, IterativeReconstruction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="1355,115,1613,200"/>
+<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; OSSPSReconstruction\l\&lt; TargetT \&gt;, Reconstruction\l\&lt; TargetT \&gt;, IterativeReconstruction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="1355,115,1613,200"/>
 <area shape="rect" id="node2" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="907,83,1053,125"/>
 <area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="631,41,857,82"/>
 <area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,51,200,77"/>
 <area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,73,412,114"/>
 <area shape="rect" id="node6" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="677,107,811,133"/>
 <area shape="rect" id="node8" href="$classstir_1_1OSMAPOSLReconstruction.html" title="Implementation of the Ordered Subsets version of Green&#39;s MAP One Step Late algorithm. " alt="" coords="1663,27,1881,69"/>
-<area shape="rect" id="node10" href="$classstir_1_1OSSPSReconstruction.html" title="Implementation of the relaxed Ordered Subsets Separable Paraboloidal Surrogate ( OSSPS) ..." alt="" coords="1677,137,1867,178"/>
+<area shape="rect" id="node9" href="$classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; KOSMAPOSLReconstruction\l\&lt; TargetT \&gt;, Reconstruction\l\&lt; TargetT \&gt;, OSMAPOSLReconstruction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="1931,5,2205,91"/>
+<area shape="rect" id="node11" href="$classstir_1_1OSSPSReconstruction.html" title="Implementation of the relaxed Ordered Subsets Separable Paraboloidal Surrogate ( OSSPS) ..." alt="" coords="1677,137,1867,178"/>
 </map>

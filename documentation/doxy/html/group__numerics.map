@@ -1,5 +1,7 @@
 <map id="Numerical algorithms" name="Numerical algorithms">
-<area shape="rect" id="node1" href="$group__BSpline.html" title="Classes and functions\l for B&#45;spline interpolation." alt="" coords="365,5,557,47"/>
-<area shape="rect" id="node2" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,42,103,69"/>
-<area shape="rect" id="node3" href="$group__DFT.html" title="Discrete Fourier transforms" alt="" coords="361,71,561,98"/>
+<area shape="rect" id="node1" href="$group__BSpline.html" title="Classes and functions\l for B&#45;spline interpolation." alt="" coords="388,5,580,47"/>
+<area shape="rect" id="node2" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,101,103,127"/>
+<area shape="rect" id="node3" href="$group__DFT.html" title="Discrete Fourier transforms" alt="" coords="384,71,584,98"/>
+<area shape="rect" id="node4" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="417,123,551,164"/>
+<area shape="rect" id="node6" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="404,188,564,229"/>
 </map>

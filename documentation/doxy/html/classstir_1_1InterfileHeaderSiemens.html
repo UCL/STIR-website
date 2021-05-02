@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -313,6 +313,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>process_status_index</
 <tr class="memitem:a3ad60dc43eb2b20f79fb6e2e8f570ba8 inherit pub_attribs_classstir_1_1InterfileHeader"><td class="memItemLeft" align="right" valign="top"><a id="a3ad60dc43eb2b20f79fb6e2e8f570ba8"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>data_file_name</b></td></tr>
 <tr class="separator:a3ad60dc43eb2b20f79fb6e2e8f570ba8 inherit pub_attribs_classstir_1_1InterfileHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655b6b698d9919bc805fc8a53d2a24ae inherit pub_attribs_classstir_1_1InterfileHeader"><td class="memItemLeft" align="right" valign="top"><a id="a655b6b698d9919bc805fc8a53d2a24ae"></a>
+<a class="el" href="structstir_1_1DateTimeStrings.html">DateTimeStrings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>study_date_time</b></td></tr>
+<tr class="separator:a655b6b698d9919bc805fc8a53d2a24ae inherit pub_attribs_classstir_1_1InterfileHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb31af75899c8903ee8aab9e5d4460be inherit pub_attribs_classstir_1_1InterfileHeader"><td class="memItemLeft" align="right" valign="top"><a id="afb31af75899c8903ee8aab9e5d4460be"></a>
 <a class="el" href="classstir_1_1NumericType.html">NumericType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfileHeader.html#afb31af75899c8903ee8aab9e5d4460be">type_of_numbers</a></td></tr>
 <tr class="memdesc:afb31af75899c8903ee8aab9e5d4460be inherit pub_attribs_classstir_1_1InterfileHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be determined from number_format_index and bytes_per_pixel. <br /></td></tr>
@@ -414,7 +417,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;
 
 <p>This will be called at the end of the parsing. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if everything OK, true if not </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
 <p class="enddd">rename to <code>post_parsing()</code> </p>
 </dd></dl>
 
@@ -422,7 +425,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;
 
 <p>Reimplemented in <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#aea36cf6b58b0f3e7e14b4d093ae4338e">stir::InterfileListmodeHeaderSiemens</a>, <a class="el" href="classstir_1_1InterfilePDFSHeaderSiemens.html#ae7d24990011aa8c35e5aeeb46a998b7a">stir::InterfilePDFSHeaderSiemens</a>, and <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">stir::KeyParser::add_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a402cb40676f6927f4bbf1903ab5f7e43">stir::KeyParser::add_vectorised_key()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07a90f7ab94a5c0175d1ba8897bfd8c21ff">stir::ByteOrder::big_endian</a>, <a class="el" href="classstir_1_1InterfileHeader.html#ab29f87477fba0d1032def52f15dfb736">stir::InterfileHeader::file_byte_order</a>, <a class="el" href="classstir_1_1KeyParser.html#a715e180ed62dd9b63abcdf9b813f3d42">stir::KeyParser::ignore_key()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07acda14071ef018559f45ae271e0cff5a2">stir::ByteOrder::little_endian</a>, <a class="el" href="classstir_1_1InterfileHeader.html#a8743393c0f40de928cbf8031ebac5055">stir::InterfileHeader::lower_en_window_thresholds</a>, <a class="el" href="classstir_1_1InterfileHeader.html#af9cee00c096a2c401260f29139128094">stir::InterfileHeader::post_processing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">stir::KeyParser::remove_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a05b0dc0a34dc427ffda4de8154ae31e6">stir::KeyParser::set_variable()</a>, and <a class="el" href="classstir_1_1InterfileHeader.html#a943d050039ccbc0fbabc05771073b2ab">stir::InterfileHeader::upper_en_window_thresholds</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">stir::KeyParser::add_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a402cb40676f6927f4bbf1903ab5f7e43">stir::KeyParser::add_vectorised_key()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07a90f7ab94a5c0175d1ba8897bfd8c21ff">stir::ByteOrder::big_endian</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1InterfileHeader.html#ab29f87477fba0d1032def52f15dfb736">stir::InterfileHeader::file_byte_order</a>, <a class="el" href="classstir_1_1KeyParser.html#a715e180ed62dd9b63abcdf9b813f3d42">stir::KeyParser::ignore_key()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07acda14071ef018559f45ae271e0cff5a2">stir::ByteOrder::little_endian</a>, <a class="el" href="classstir_1_1InterfileHeader.html#a8743393c0f40de928cbf8031ebac5055">stir::InterfileHeader::lower_en_window_thresholds</a>, <a class="el" href="classstir_1_1InterfileHeader.html#af9cee00c096a2c401260f29139128094">stir::InterfileHeader::post_processing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">stir::KeyParser::remove_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a05b0dc0a34dc427ffda4de8154ae31e6">stir::KeyParser::set_variable()</a>, <a class="el" href="classstir_1_1InterfileHeader.html#a943d050039ccbc0fbabc05771073b2ab">stir::InterfileHeader::upper_en_window_thresholds</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>.</p>
 
@@ -435,7 +438,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:24 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -92,9 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76124164c4e6d493d463fc13cbf8f17a"><td class="memItemLeft" align="right" valign="top">const out_elemT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html#a76124164c4e6d493d463fc13cbf8f17a">operator()</a> (const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> &gt; &amp;relative_positions) const</td></tr>
 <tr class="memdesc:a76124164c4e6d493d463fc13cbf8f17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute value of the interpolator.  <a href="#a76124164c4e6d493d463fc13cbf8f17a">More...</a><br /></td></tr>
 <tr class="separator:a76124164c4e6d493d463fc13cbf8f17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41135fab880653ecab9b80cca54769b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, out_elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html#a41135fab880653ecab9b80cca54769b0">gradient</a> (const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> &gt; &amp;relative_positions) const</td></tr>
-<tr class="memdesc:a41135fab880653ecab9b80cca54769b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradient of the interpolator.  <a href="#a41135fab880653ecab9b80cca54769b0">More...</a><br /></td></tr>
-<tr class="separator:a41135fab880653ecab9b80cca54769b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c92405a5f4291393e4f2f7c2eb5470f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, out_elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html#a6c92405a5f4291393e4f2f7c2eb5470f">gradient</a> (const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> &gt; &amp;relative_positions) const</td></tr>
+<tr class="memdesc:a6c92405a5f4291393e4f2f7c2eb5470f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute gradient of the interpolator.  <a href="#a6c92405a5f4291393e4f2f7c2eb5470f">More...</a><br /></td></tr>
+<tr class="separator:a6c92405a5f4291393e4f2f7c2eb5470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elemT, typename constantsT = in_elemT&gt;<br />
@@ -175,7 +175,7 @@ template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elem
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elemT, typename constantsT = in_elemT&gt; </div>
+template&lt;int num_dimensions, typename out_elemT , typename in_elemT, typename constantsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -196,7 +196,7 @@ template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elem
 </div><div class="memdoc">
 
 <p>Compute the coefficients for the B-splines from an array of samples. </p>
-<p>When the order of the spline is larger than 1, the coefficients multiplying the basic splines are not equal to the samples. This variable stores them for further use. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>rename </dd></dl>
+<p>When the order of the spline is larger than 1, the coefficients multiplying the basic splines are not equal to the samples. This variable stores them for further use. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>rename </dd></dl>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elem
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elemT, typename constantsT = in_elemT&gt; </div>
+template&lt;int num_dimensions, typename out_elemT , typename in_elemT , typename constantsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -234,23 +234,23 @@ template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elem
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the interpolated value.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
 
 </div>
 </div>
-<a id="a41135fab880653ecab9b80cca54769b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41135fab880653ecab9b80cca54769b0">&#9670;&nbsp;</a></span>gradient()</h2>
+<a id="a6c92405a5f4291393e4f2f7c2eb5470f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c92405a5f4291393e4f2f7c2eb5470f">&#9670;&nbsp;</a></span>gradient()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elemT, typename constantsT = in_elemT&gt; </div>
+template&lt;int num_dimensions, typename out_elemT , typename in_elemT , typename constantsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt;num_dimensions, out_elemT&gt; <a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html">stir::BSpline::BSplinesRegularGrid</a>&lt; num_dimensions, out_elemT, in_elemT, constantsT &gt;::gradient </td>
+          <td class="memname">const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, out_elemT &gt; <a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html">stir::BSpline::BSplinesRegularGrid</a>&lt; num_dimensions, out_elemT, in_elemT, constantsT &gt;::gradient </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, <a class="el" href="group__BSpline.html#ga2217885f19f4ad3f5b969773fc01b752">pos_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>relative_positions</em></td><td>)</td>
@@ -272,17 +272,18 @@ template&lt;int num_dimensions, typename out_elemT, typename in_elemT = out_elem
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the gradient</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/numerics/<a class="el" href="BSplinesRegularGrid_8h_source.html">BSplinesRegularGrid.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/numerics/<a class="el" href="BSplinesRegularGrid_8inl.html">BSplinesRegularGrid.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

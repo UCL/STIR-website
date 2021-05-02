@@ -1,0 +1,5 @@
+<map id="stir::GE::RDF_HDF5::CListModeDataGEHDF5" name="stir::GE::RDF_HDF5::CListModeDataGEHDF5">
+<area shape="rect" id="node2" href="$classstir_1_1CListModeData.html" title="The base class for reading list mode data. " alt="" coords="21,155,171,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="26,80,166,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="37,5,155,32"/>
+</map>

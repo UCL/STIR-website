@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STIR: ECAT6 and ECAT7 support in the IO library</title>
+<title>STIR: ECAT6 ... ECAT8 support in the IO library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -44,17 +44,17 @@ $(function() {
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ECAT6 and ECAT7 support in the IO library<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__IO.html">Input/Output Library</a></div></div>  </div>
+<div class="title">ECAT6 ... ECAT8 support in the IO library<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__IO.html">Input/Output Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for ECAT6 and ECAT7 support in the IO library:</div>
+Collaboration diagram for ECAT6 ... ECAT8 support in the IO library:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__ECAT.png" border="0" alt="" usemap="#group____ECAT"/>
 <map name="group____ECAT" id="group____ECAT">
-<area shape="rect" id="node3" href="group__utilities.html" title="Utility programs" alt="" coords="686,117,814,144"/>
-<area shape="rect" id="node4" href="group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="663,229,837,270"/>
-<area shape="rect" id="node5" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="663,347,837,389"/>
+<area shape="rect" id="node3" href="group__utilities.html" title="Utility programs" alt="" coords="674,117,802,144"/>
+<area shape="rect" id="node4" href="group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="651,229,825,270"/>
+<area shape="rect" id="node5" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="651,347,825,389"/>
 <area shape="rect" id="node2" href="group__IO.html" title="Input/Output Library" alt="" coords="5,281,157,308"/>
 </map>
 </td></tr></table></center>
@@ -1593,7 +1593,7 @@ num_frames field &gt; 0 </li>
 <p>Create a new ECAT6 sinogram file and write the data in there. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Only data without axial compression can be handled by the ECAT6 3D sinogram format, and hence also by this function (CTI span==1), except when write_2D_sinograms==true </dd></dl>
 
-<p class="reference">References <a class="el" href="group__ECAT.html#ga555def1e00b9e5ca1d1ad3e7d69bc319">stir::ecat::ecat6::cti_create()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__ECAT.html#gae6fce1aac41c405a968ea597e855c5c3">stir::ecat::ecat6::make_ECAT6_Main_header()</a>.</p>
+<p class="reference">References <a class="el" href="group__ECAT.html#ga555def1e00b9e5ca1d1ad3e7d69bc319">stir::ecat::ecat6::cti_create()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__ECAT.html#gae6fce1aac41c405a968ea597e855c5c3">stir::ecat::ecat6::make_ECAT6_Main_header()</a>.</p>
 
 </div>
 </div>
@@ -1746,7 +1746,7 @@ This does NOT write the main header. </dd></dl>
 <p>Fill in most of the main header given an orig_name and a proj_data_info. </p>
 <p>It gets the scanner from the proj_data_info object. Sets file_type, num_planes, plane_separation as well </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ae7d7f1602935cee9bab03cc11c6bd76f">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="group__ECAT.html#gae6fce1aac41c405a968ea597e855c5c3">stir::ecat::ecat6::make_ECAT6_Main_header()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="group__ECAT.html#gae6fce1aac41c405a968ea597e855c5c3">stir::ecat::ecat6::make_ECAT6_Main_header()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1869,7 @@ num_frames field &gt; 0 </li>
 <p>Write an (extra) image to an existing ECAT7 file. </p>
 <p>Some consistency checks are performed between the image and the data in the main header </p><dl class="section warning"><dt>Warning</dt><dd>This does NOT write the main header. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#affaa1f6d8bf2b2c9a2dfaafc0fd23b96">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_length()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_length()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -1950,7 +1950,7 @@ num_frames field &gt; 0 </li>
 <p>Create a new ECAT7 sinogram file and write the data in there. </p>
 <p>Note that not all <em>output_type</em> are supported by the ECAT7 format. If a wrong type is used, it will be forced to floats. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ExamData.html#ae7cc85a7f893ef94655c2bb13e15a2a4">stir::ExamData::get_exam_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a04e8e9adacb9c95f39ddef294bb9b111">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__ECAT.html#ga68328bc9ecb7785af35f46b391a554fa">stir::ecat::ecat7::make_ECAT7_main_header()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ExamData.html#ae7cc85a7f893ef94655c2bb13e15a2a4">stir::ExamData::get_exam_info_ptr()</a>, <a class="el" href="classstir_1_1ProjData.html#ae07792ed69fec6a4ecae1b44a1f7a9ca">stir::ProjData::get_proj_data_info_ptr()</a>, and <a class="el" href="group__ECAT.html#ga68328bc9ecb7785af35f46b391a554fa">stir::ecat::ecat7::make_ECAT7_main_header()</a>.</p>
 
 </div>
 </div>
@@ -2120,7 +2120,7 @@ num_frames field &gt; 0 </li>
 <dd>
 The <code>acquisition_type</code> field will be set to either <code>TransmissionScan</code> or <code>StaticEmission</code>, depending on <em>write_as_attenuation</em>. This is not necessarily correct. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a0ead8999a950857bf511eb7bacabbe9e">stir::Scanner::get_default_bin_size()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a23784d7224ea5721fbc7310238161eb8">stir::ProjDataInfo::get_num_axial_poss()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a24130652d8054c564d222db0666ad417">stir::ProjDataInfo::get_sampling_in_s()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#ae7d7f1602935cee9bab03cc11c6bd76f">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="group__ECAT.html#ga68328bc9ecb7785af35f46b391a554fa">stir::ecat::ecat7::make_ECAT7_main_header()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a0ead8999a950857bf511eb7bacabbe9e">stir::Scanner::get_default_bin_size()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">stir::ProjDataInfo::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a23784d7224ea5721fbc7310238161eb8">stir::ProjDataInfo::get_num_axial_poss()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a24130652d8054c564d222db0666ad417">stir::ProjDataInfo::get_sampling_in_s()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="group__ECAT.html#ga68328bc9ecb7785af35f46b391a554fa">stir::ecat::ecat7::make_ECAT7_main_header()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -2350,7 +2350,7 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 <p>Find the value used in the ECAT Main header for a given scanner. </p>
 <p>Returns 0 if the scanner is not recognised </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">stir::Scanner::get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#ae93f8f0dc3493fda8bbff60cb82628a1">stir::Scanner::get_type()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">stir::Scanner::get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#a151e9ff906ed795438d22bf4c6b0f9eb">stir::Scanner::get_type()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa4d135a68d3b5dd7e5d4f0aaaec3b3d3">stir::ecat::ecat6::ECAT6OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a3dc53435807308c45387cd575fddd904">stir::ecat::ecat7::ECAT7OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a31efd9d510690094c7fc507c822cf1db">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a82e1a0b1d33d29397e2633bd1c71787d">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;::post_processing()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
 
@@ -2375,7 +2375,7 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 <p>Find the scanner corresponding to the system type in the main header. </p>
 <p>Returns a Scanner(Scanner::Unknown_Scanner) object when the scanner is not recognised. </p>
 
-<p class="reference">Referenced by <a class="el" href="group__ECAT.html#ga384905f428f9196b3c948bc4b9f1265d">stir::ecat::ecat7::find_scanner()</a>, <a class="el" href="group__ECAT.html#ga27dadb527c595c424a9f5024509ef492">stir::ecat::ecat6::find_scanner_from_ECAT6_Main_header()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityInputFileFormat.html#a2ae3869902acf91d575726d38fb16d9e">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityInputFileFormat::read_from_file()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html#a0aa1b126880d69a216d89899af2ba073">stir::ecat::ecat7::SinglesRatesFromECAT7::read_singles_from_file()</a>, <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#a0e97ca9b7f59ea248a43278b710e9d59">stir::ecat::BinNormalisationFromECAT8::set_up()</a>, and <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html#a7e21278e9fb77838fe2ce9d106fcfcb7">stir::ecat::ecat7::BinNormalisationFromECAT7::set_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="group__ECAT.html#ga384905f428f9196b3c948bc4b9f1265d">stir::ecat::ecat7::find_scanner()</a>, <a class="el" href="group__ECAT.html#ga27dadb527c595c424a9f5024509ef492">stir::ecat::ecat6::find_scanner_from_ECAT6_Main_header()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityInputFileFormat.html#a2ae3869902acf91d575726d38fb16d9e">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityInputFileFormat::read_from_file()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html#a0aa1b126880d69a216d89899af2ba073">stir::ecat::ecat7::SinglesRatesFromECAT7::read_singles_from_file()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html#a7e21278e9fb77838fe2ce9d106fcfcb7">stir::ecat::ecat7::BinNormalisationFromECAT7::set_up()</a>, and <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#a0e97ca9b7f59ea248a43278b710e9d59">stir::ecat::BinNormalisationFromECAT8::set_up()</a>.</p>
 
 </div>
 </div>
@@ -2452,7 +2452,7 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf975a92b5600fe1942cfeb18f5ee9fe.html">STIR</a></li><li class="navelem"><a class="el" href="dir_87ae7feb76449a838062947fcfbc37f1.html">src</a></li><li class="navelem"><a class="el" href="dir_737888a340e53aa66c900da3a4ac51f7.html">include</a></li><li class="navelem"><a class="el" href="dir_3e8c71b7f2899a5cb50f7f3ee44081d2.html">stir</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_0b75bdf102f5cf4910d6429d56a66609.html">sirfuser</a></li><li class="navelem"><a class="el" href="dir_bf00ec6aee8436d9dd9bdb27c8ba69c2.html">devel</a></li><li class="navelem"><a class="el" href="dir_f033b80aa1e53a09c27a870e567321ae.html">STIRdistrib</a></li><li class="navelem"><a class="el" href="dir_dee4efe29267f8f1fbd97b7b185bc024.html">STIR</a></li><li class="navelem"><a class="el" href="dir_4d737faa33632d919b5a76c7a560514d.html">src</a></li><li class="navelem"><a class="el" href="dir_a02104478bda72235ead8713d4759134.html">include</a></li><li class="navelem"><a class="el" href="dir_b362d050fbe6d98140ed06b65ae8ad4c.html">stir</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -56,7 +56,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="shared__ptr_8h_source.html">stir/shared_ptr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ArrayFunctionObject_8h_source.html">stir/ArrayFunctionObject.h</a>&quot;</code><br />
-<code>#include &quot;stir/ArrayFunction.inl&quot;</code><br />
+<code>#include &quot;<a class="el" href="ArrayFunction_8inl.html">stir/ArrayFunction.inl</a>&quot;</code><br />
 </div>
 <p><a href="ArrayFunction_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -74,34 +74,34 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga11477a6832f707f0edfb731fe6e8dd2e"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga11477a6832f707f0edfb731fe6e8dd2e"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga11477a6832f707f0edfb731fe6e8dd2e">stir::in_place_log</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:ga11477a6832f707f0edfb731fe6e8dd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their logarithm, 1D version.  <a href="group__Array.html#ga11477a6832f707f0edfb731fe6e8dd2e">More...</a><br /></td></tr>
-<tr class="separator:ga11477a6832f707f0edfb731fe6e8dd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga024facf6d1745d0bc005dbe92405926e"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
-<tr class="memitem:ga024facf6d1745d0bc005dbe92405926e"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga024facf6d1745d0bc005dbe92405926e">stir::in_place_log</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:ga024facf6d1745d0bc005dbe92405926e"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply log to each element of the multi-dimensional array  <a href="group__Array.html#ga024facf6d1745d0bc005dbe92405926e">More...</a><br /></td></tr>
-<tr class="separator:ga024facf6d1745d0bc005dbe92405926e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04482ac1702789342633df5205d009d7"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga04482ac1702789342633df5205d009d7"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga04482ac1702789342633df5205d009d7">stir::in_place_exp</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:ga04482ac1702789342633df5205d009d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their exponentiation, 1D version.  <a href="group__Array.html#ga04482ac1702789342633df5205d009d7">More...</a><br /></td></tr>
-<tr class="separator:ga04482ac1702789342633df5205d009d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8ef8ba3909aae0c00930a062997b386"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
-<tr class="memitem:gaf8ef8ba3909aae0c00930a062997b386"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaf8ef8ba3909aae0c00930a062997b386">stir::in_place_exp</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:gaf8ef8ba3909aae0c00930a062997b386"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply exp to each element of the multi-dimensional array  <a href="group__Array.html#gaf8ef8ba3909aae0c00930a062997b386">More...</a><br /></td></tr>
-<tr class="separator:gaf8ef8ba3909aae0c00930a062997b386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11373343e0f4b8de8134200126633fa5"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga11373343e0f4b8de8134200126633fa5"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga11373343e0f4b8de8134200126633fa5">stir::in_place_abs</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:ga11373343e0f4b8de8134200126633fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their absolute value, 1D version.  <a href="group__Array.html#ga11373343e0f4b8de8134200126633fa5">More...</a><br /></td></tr>
-<tr class="separator:ga11373343e0f4b8de8134200126633fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga836bb6c37fefed3b5123e59070c569bd"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
-<tr class="memitem:ga836bb6c37fefed3b5123e59070c569bd"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga836bb6c37fefed3b5123e59070c569bd">stir::in_place_abs</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;v)</td></tr>
-<tr class="memdesc:ga836bb6c37fefed3b5123e59070c569bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">store absolute value of each element of the multi-dimensional array  <a href="group__Array.html#ga836bb6c37fefed3b5123e59070c569bd">More...</a><br /></td></tr>
-<tr class="separator:ga836bb6c37fefed3b5123e59070c569bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga200a7bcda1e8b15c0fad5cd3207a0688"><td class="memTemplParams" colspan="2">template&lt;class T , class FUNCTION &gt; </td></tr>
-<tr class="memitem:ga200a7bcda1e8b15c0fad5cd3207a0688"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga200a7bcda1e8b15c0fad5cd3207a0688">stir::in_place_apply_function</a> (T &amp;v, FUNCTION f)</td></tr>
-<tr class="memdesc:ga200a7bcda1e8b15c0fad5cd3207a0688"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply any function(object) to each element of the multi-dimensional array  <a href="group__Array.html#ga200a7bcda1e8b15c0fad5cd3207a0688">More...</a><br /></td></tr>
-<tr class="separator:ga200a7bcda1e8b15c0fad5cd3207a0688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed499ce03e8ed268bdefbce1c9b12319"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:gaed499ce03e8ed268bdefbce1c9b12319"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaed499ce03e8ed268bdefbce1c9b12319">stir::in_place_log</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:gaed499ce03e8ed268bdefbce1c9b12319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their logarithm, 1D version.  <a href="group__Array.html#gaed499ce03e8ed268bdefbce1c9b12319">More...</a><br /></td></tr>
+<tr class="separator:gaed499ce03e8ed268bdefbce1c9b12319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f97351a1c6034e8168f8629a00379c0"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
+<tr class="memitem:ga5f97351a1c6034e8168f8629a00379c0"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga5f97351a1c6034e8168f8629a00379c0">stir::in_place_log</a> (Array&lt; num_dimensions, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:ga5f97351a1c6034e8168f8629a00379c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply log to each element of the multi-dimensional array  <a href="group__Array.html#ga5f97351a1c6034e8168f8629a00379c0">More...</a><br /></td></tr>
+<tr class="separator:ga5f97351a1c6034e8168f8629a00379c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae26d891efa680f66d87ae6f3e5691f8e"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:gae26d891efa680f66d87ae6f3e5691f8e"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gae26d891efa680f66d87ae6f3e5691f8e">stir::in_place_exp</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:gae26d891efa680f66d87ae6f3e5691f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their exponentiation, 1D version.  <a href="group__Array.html#gae26d891efa680f66d87ae6f3e5691f8e">More...</a><br /></td></tr>
+<tr class="separator:gae26d891efa680f66d87ae6f3e5691f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b1cab1692b8f296ad359d60efa491c2"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
+<tr class="memitem:ga5b1cab1692b8f296ad359d60efa491c2"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga5b1cab1692b8f296ad359d60efa491c2">stir::in_place_exp</a> (Array&lt; num_dimensions, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:ga5b1cab1692b8f296ad359d60efa491c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply exp to each element of the multi-dimensional array  <a href="group__Array.html#ga5b1cab1692b8f296ad359d60efa491c2">More...</a><br /></td></tr>
+<tr class="separator:ga5b1cab1692b8f296ad359d60efa491c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bdf4204b0d79ce85a14f8b77bf0045b"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:ga0bdf4204b0d79ce85a14f8b77bf0045b"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga0bdf4204b0d79ce85a14f8b77bf0045b">stir::in_place_abs</a> (Array&lt; 1, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:ga0bdf4204b0d79ce85a14f8b77bf0045b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace elements by their absolute value, 1D version.  <a href="group__Array.html#ga0bdf4204b0d79ce85a14f8b77bf0045b">More...</a><br /></td></tr>
+<tr class="separator:ga0bdf4204b0d79ce85a14f8b77bf0045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea5138c38421e8f8e618d678a8796f58"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
+<tr class="memitem:gaea5138c38421e8f8e618d678a8796f58"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaea5138c38421e8f8e618d678a8796f58">stir::in_place_abs</a> (Array&lt; num_dimensions, elemT &gt; &amp;v)</td></tr>
+<tr class="memdesc:gaea5138c38421e8f8e618d678a8796f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">store absolute value of each element of the multi-dimensional array  <a href="group__Array.html#gaea5138c38421e8f8e618d678a8796f58">More...</a><br /></td></tr>
+<tr class="separator:gaea5138c38421e8f8e618d678a8796f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76807fa3ee90ce0e5dedb092f3507690"><td class="memTemplParams" colspan="2">template&lt;class T , class FUNCTION &gt; </td></tr>
+<tr class="memitem:ga76807fa3ee90ce0e5dedb092f3507690"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga76807fa3ee90ce0e5dedb092f3507690">stir::in_place_apply_function</a> (T &amp;v, FUNCTION f)</td></tr>
+<tr class="memdesc:ga76807fa3ee90ce0e5dedb092f3507690"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply any function(object) to each element of the multi-dimensional array  <a href="group__Array.html#ga76807fa3ee90ce0e5dedb092f3507690">More...</a><br /></td></tr>
+<tr class="separator:ga76807fa3ee90ce0e5dedb092f3507690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga252955f8443f3f8c60326c17af5e5ad6"><td class="memTemplParams" colspan="2">template&lt;int num_dim, typename elemT , typename FunctionObjectPtr &gt; </td></tr>
 <tr class="memitem:ga252955f8443f3f8c60326c17af5e5ad6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga252955f8443f3f8c60326c17af5e5ad6">stir::in_place_apply_array_function_on_1st_index</a> (Array&lt; num_dim, elemT &gt; &amp;array, FunctionObjectPtr f)</td></tr>
 <tr class="memdesc:ga252955f8443f3f8c60326c17af5e5ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a function object on all possible 1d arrays extracted by keeping all indices fixed, except the first one.  <a href="group__Array.html#ga252955f8443f3f8c60326c17af5e5ad6">More...</a><br /></td></tr>
@@ -155,11 +155,11 @@ PARAPET project</dd></dl>
 <li>
 functions which work on all <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects, and which change every element of the array: <ul>
 <li>
-<a class="el" href="group__Array.html#ga11477a6832f707f0edfb731fe6e8dd2e" title="Replace elements by their logarithm, 1D version. ">stir::in_place_log</a>, <a class="el" href="group__Array.html#ga04482ac1702789342633df5205d009d7" title="Replace elements by their exponentiation, 1D version. ">stir::in_place_exp</a> (these work only well when elements are float or double) </li>
+<a class="el" href="group__Array.html#gaed499ce03e8ed268bdefbce1c9b12319" title="Replace elements by their logarithm, 1D version. ">stir::in_place_log</a>, <a class="el" href="group__Array.html#gae26d891efa680f66d87ae6f3e5691f8e" title="Replace elements by their exponentiation, 1D version. ">stir::in_place_exp</a> (these work only well when elements are float or double) </li>
 <li>
-<a class="el" href="group__Array.html#ga11373343e0f4b8de8134200126633fa5" title="Replace elements by their absolute value, 1D version. ">stir::in_place_abs</a> (does not work on complex numbers) </li>
+<a class="el" href="group__Array.html#ga0bdf4204b0d79ce85a14f8b77bf0045b" title="Replace elements by their absolute value, 1D version. ">stir::in_place_abs</a> (does not work on complex numbers) </li>
 <li>
-<a class="el" href="group__Array.html#ga200a7bcda1e8b15c0fad5cd3207a0688" title="apply any function(object) to each element of the multi-dimensional array ">stir::in_place_apply_function</a> </li>
+<a class="el" href="group__Array.html#ga76807fa3ee90ce0e5dedb092f3507690" title="apply any function(object) to each element of the multi-dimensional array ">stir::in_place_apply_function</a> </li>
 <li>
 <a class="el" href="group__Array.html#ga252955f8443f3f8c60326c17af5e5ad6" title="Apply a function object on all possible 1d arrays extracted by keeping all indices fixed...">stir::in_place_apply_array_function_on_1st_index</a> </li>
 <li>
@@ -179,7 +179,7 @@ Analoguous functions that take out_array and in_array <ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

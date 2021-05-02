@@ -1,0 +1,6 @@
+<map id="stir::GE::RDF_HDF5::CListRecordGEHDF5" name="stir::GE::RDF_HDF5::CListRecordGEHDF5">
+<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="5,162,112,189"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="136,155,357,196"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="187,80,307,107"/>
+<area shape="rect" id="node5" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="191,5,302,32"/>
+</map>

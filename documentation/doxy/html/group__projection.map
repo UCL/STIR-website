@@ -1,4 +1,5 @@
 <map id="Projection building blocks" name="Projection building blocks">
-<area shape="rect" id="node3" href="$group__symmetries.html" title="Symmetries building\l blocks" alt="" coords="419,5,576,47"/>
-<area shape="rect" id="node2" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node1" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="629,149,855,190"/>
+<area shape="rect" id="node4" href="$group__symmetries.html" title="Symmetries building\l blocks" alt="" coords="663,214,821,255"/>
+<area shape="rect" id="node3" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,182,180,223"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -152,7 +152,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_activity_image_sp
 <tr class="memitem:a0d998a135b6dcfade863e27f0875fc57"><td class="memItemLeft" align="right" valign="top"><a id="a0d998a135b6dcfade863e27f0875fc57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_activity_image</b> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a0d998a135b6dcfade863e27f0875fc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c26430c5f2607be0052f087c0ac2aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a01c26430c5f2607be0052f087c0ac2aa">set_exam_info_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;)</td></tr>
+<tr class="memitem:add304a5a8bb7fb2610b1d581d27de8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#add304a5a8bb7fb2610b1d581d27de8dd">set_exam_info</a> (const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;)</td></tr>
+<tr class="separator:add304a5a8bb7fb2610b1d581d27de8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c26430c5f2607be0052f087c0ac2aa"><td class="memItemLeft" align="right" valign="top"><a id="a01c26430c5f2607be0052f087c0ac2aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exam_info_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;)</td></tr>
 <tr class="separator:a01c26430c5f2607be0052f087c0ac2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3add16f1720c1a68d581d9b436630c72"><td class="memItemLeft" align="right" valign="top"><a id="a3add16f1720c1a68d581d9b436630c72"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_proj_data_sptr</b> (shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
@@ -217,31 +220,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (const char
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Compton scatter cross sections</div></td></tr>
-<tr class="memitem:ab34eb3aa8df40584a062a591a5b77cc9"><td class="memItemLeft" align="right" valign="top"><a id="ab34eb3aa8df40584a062a591a5b77cc9"></a>
+<tr class="memitem:a8ad145aa5ec73bc8a03f806fb1aed189"><td class="memItemLeft" align="right" valign="top"><a id="a8ad145aa5ec73bc8a03f806fb1aed189"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>dif_Compton_cross_section</b> (const float cos_theta, float energy)</td></tr>
-<tr class="separator:ab34eb3aa8df40584a062a591a5b77cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ccd4c9d46f116abf0755ea91840af8"><td class="memItemLeft" align="right" valign="top"><a id="a75ccd4c9d46f116abf0755ea91840af8"></a>
+<tr class="separator:a8ad145aa5ec73bc8a03f806fb1aed189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60829984a4122b66f556ea46df4816c9"><td class="memItemLeft" align="right" valign="top"><a id="a60829984a4122b66f556ea46df4816c9"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>total_Compton_cross_section</b> (float energy)</td></tr>
-<tr class="separator:a75ccd4c9d46f116abf0755ea91840af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f27321a3d2b172fa339f85bf90d983a"><td class="memItemLeft" align="right" valign="top"><a id="a9f27321a3d2b172fa339f85bf90d983a"></a>
+<tr class="separator:a60829984a4122b66f556ea46df4816c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66718ac6c477d38296db7a82bfcdb71b"><td class="memItemLeft" align="right" valign="top"><a id="a66718ac6c477d38296db7a82bfcdb71b"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>photon_energy_after_Compton_scatter</b> (const float cos_theta, const float energy)</td></tr>
-<tr class="separator:a9f27321a3d2b172fa339f85bf90d983a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bb55d2b9c24726871f420a82bae5f2"><td class="memItemLeft" align="right" valign="top"><a id="a40bb55d2b9c24726871f420a82bae5f2"></a>
+<tr class="separator:a66718ac6c477d38296db7a82bfcdb71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11263de78cf44a59cc1c7dd2ef4016e7"><td class="memItemLeft" align="right" valign="top"><a id="a11263de78cf44a59cc1c7dd2ef4016e7"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>photon_energy_after_Compton_scatter_511keV</b> (const float cos_theta)</td></tr>
-<tr class="separator:a40bb55d2b9c24726871f420a82bae5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789066142fe0b28f7772067266053da2"><td class="memItemLeft" align="right" valign="top"><a id="a789066142fe0b28f7772067266053da2"></a>
+<tr class="separator:a11263de78cf44a59cc1c7dd2ef4016e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119a5b89718d86813d7e5cbf3141f67a"><td class="memItemLeft" align="right" valign="top"><a id="a119a5b89718d86813d7e5cbf3141f67a"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>total_Compton_cross_section_relative_to_511keV</b> (const float energy)</td></tr>
-<tr class="separator:a789066142fe0b28f7772067266053da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a119a5b89718d86813d7e5cbf3141f67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classstir_1_1RegisteredObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classstir_1_1RegisteredObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredObject.html">stir::RegisteredObject&lt; ScatterSimulation &gt;</a></td></tr>
-<tr class="memitem:aecf46d55efe4d3202758fc6bf469d03b inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#aecf46d55efe4d3202758fc6bf469d03b">read_registered_object</a> (std::istream *in, const std::string &amp;registered_name)</td></tr>
-<tr class="memdesc:aecf46d55efe4d3202758fc6bf469d03b inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new object (of a type derived from Root, its actual type determined by the registered_name parameter) by parsing the istream.  <a href="classstir_1_1RegisteredObject.html#aecf46d55efe4d3202758fc6bf469d03b">More...</a><br /></td></tr>
-<tr class="separator:aecf46d55efe4d3202758fc6bf469d03b inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6cf58af45c9c9ee400c3579bc879710 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#ac6cf58af45c9c9ee400c3579bc879710">ask_type_and_parameters</a> ()</td></tr>
-<tr class="memdesc:ac6cf58af45c9c9ee400c3579bc879710 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">ask the user for the type, and then calls read_registered_object(0, type)  <a href="classstir_1_1RegisteredObject.html#ac6cf58af45c9c9ee400c3579bc879710">More...</a><br /></td></tr>
-<tr class="separator:ac6cf58af45c9c9ee400c3579bc879710 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4227972e387d38dbbd94dd65efdd103f inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a4227972e387d38dbbd94dd65efdd103f">list_registered_names</a> (std::ostream &amp;stream)</td></tr>
-<tr class="memdesc:a4227972e387d38dbbd94dd65efdd103f inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all possible registered names to the stream.  <a href="classstir_1_1RegisteredObject.html#a4227972e387d38dbbd94dd65efdd103f">More...</a><br /></td></tr>
-<tr class="separator:a4227972e387d38dbbd94dd65efdd103f inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32357a52b98c87a1c38a162355c874e inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#aa32357a52b98c87a1c38a162355c874e">read_registered_object</a> (std::istream *in, const std::string &amp;registered_name)</td></tr>
+<tr class="memdesc:aa32357a52b98c87a1c38a162355c874e inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new object (of a type derived from Root, its actual type determined by the registered_name parameter) by parsing the istream.  <a href="classstir_1_1RegisteredObject.html#aa32357a52b98c87a1c38a162355c874e">More...</a><br /></td></tr>
+<tr class="separator:aa32357a52b98c87a1c38a162355c874e inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ba04aadc52e375e5e97961ddb8f5e1 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a20ba04aadc52e375e5e97961ddb8f5e1">ask_type_and_parameters</a> ()</td></tr>
+<tr class="memdesc:a20ba04aadc52e375e5e97961ddb8f5e1 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">ask the user for the type, and then calls read_registered_object(0, type)  <a href="classstir_1_1RegisteredObject.html#a20ba04aadc52e375e5e97961ddb8f5e1">More...</a><br /></td></tr>
+<tr class="separator:a20ba04aadc52e375e5e97961ddb8f5e1 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7946572a60fac083300e2baaf650d6b8 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a7946572a60fac083300e2baaf650d6b8">list_registered_names</a> (std::ostream &amp;stream)</td></tr>
+<tr class="memdesc:a7946572a60fac083300e2baaf650d6b8 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all possible registered names to the stream.  <a href="classstir_1_1RegisteredObject.html#a7946572a60fac083300e2baaf650d6b8">More...</a><br /></td></tr>
+<tr class="separator:a7946572a60fac083300e2baaf650d6b8 inherit pub_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -439,16 +442,16 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>integral_betw
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_methods_classstir_1_1RegisteredObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classstir_1_1RegisteredObject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classstir_1_1RegisteredObject.html">stir::RegisteredObject&lt; ScatterSimulation &gt;</a></td></tr>
-<tr class="memitem:a401a1c556650c19dda9caf183151c787 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1RegisteredObject.html#aa6dc41fd8a2cb0a5e1118aa32df98711">RegistryType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a401a1c556650c19dda9caf183151c787">registry</a> ()</td></tr>
-<tr class="memdesc:a401a1c556650c19dda9caf183151c787 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function returning the registry.  <a href="classstir_1_1RegisteredObject.html#a401a1c556650c19dda9caf183151c787">More...</a><br /></td></tr>
-<tr class="separator:a401a1c556650c19dda9caf183151c787 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480c831d74fb41ff32787a908a07bbd3 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1RegisteredObject.html#aa6dc41fd8a2cb0a5e1118aa32df98711">RegistryType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a480c831d74fb41ff32787a908a07bbd3">registry</a> ()</td></tr>
+<tr class="memdesc:a480c831d74fb41ff32787a908a07bbd3 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function returning the registry.  <a href="classstir_1_1RegisteredObject.html#a480c831d74fb41ff32787a908a07bbd3">More...</a><br /></td></tr>
+<tr class="separator:a480c831d74fb41ff32787a908a07bbd3 inherit pro_static_methods_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simulate the scatter probability using a model-based approach. </p>
 <p>This base class intends to computes a Compton scatter estimate using an analytical approximation of an integral. It takes as input an emission image and an attenuation image. This is effectively an implementation of the simulation part of the algorithms of Watson and Ollinger. The base class takes care of downsampling and upsampling, book-keeping, caching and looping over bins.</p>
 <p>One non-standard feature is that you can specify a different attenuation image to find the scatter points and one to compute the integrals over the attenuation image. The idea is that maybe you want to compute the integrals on a finer grid then you sample the attenuation image. This is probably not very useful though.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000146">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000161">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000162">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
 <dl class="section user"><dt>References</dt><dd>This implementation is described in the following <ol>
 <li>
 C. Tsoumpas, P. Aguiar, K. S. Nikita, D. Ros, K. Thielemans, <em>Evaluation of the Single Scatter Simulation Algorithm Implemented in the STIR Library</em>, Proc. of IEEE Medical Imaging Conf. 2004, vol. 6 pp. 3361 - 3365.  </li>
@@ -478,7 +481,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a85ddfdb6ce7dd4ba61b560f70a2cba62">set_density_image_for_scatter_points()</a>.</p>
 
@@ -486,16 +489,16 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 
 </div>
 </div>
-<a id="a01c26430c5f2607be0052f087c0ac2aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01c26430c5f2607be0052f087c0ac2aa">&#9670;&nbsp;</a></span>set_exam_info_sptr()</h2>
+<a id="add304a5a8bb7fb2610b1d581d27de8dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add304a5a8bb7fb2610b1d581d27de8dd">&#9670;&nbsp;</a></span>set_exam_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void stir::ScatterSimulation::set_exam_info_sptr </td>
+          <td class="memname">void stir::ScatterSimulation::set_exam_info </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>arg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -503,7 +506,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><div class="memdoc">
 <p>Since July 2016, the information for the energy window and energy resolution are stored in <a class="el" href="classstir_1_1ExamInfo.html" title="a class for storing information about 1 exam (or scan) ">ExamInfo</a>. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ExamInfo.html#a6717559481cb65d033e544a825ebcd8c">stir::ExamInfo::create_shared_clone()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ad6f6a5c14423039b87fc014f66d62c17">get_exam_info_sptr()</a>.</p>
 
@@ -654,7 +657,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 
 <p>Reimplemented in <a class="el" href="classstir_1_1SingleScatterSimulation.html#a0572ac90c12834eefad954d9e6806385">stir::SingleScatterSimulation</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a58fd07a23cc6f50d3da290ca489d67eb">activity_image_filename</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a274fc1fa9d2f852f48e9f11168c1546e">activity_image_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#abbf4a6cf110457b11050379d492788df">downsample_density_image_for_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">downsample_scanner()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a1da6abb9f9fabb1ed93cb9d96b9fcc40">get_density_image_for_scatter_points_sptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1Scanner.html#aa8f604e2efd17d51fc7e4c672893f242">stir::Scanner::get_num_rings()</a>, <a class="el" href="classstir_1_1Scanner.html#a813db3baed2672316f3eb0da461491df">stir::Scanner::get_ring_spacing()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#ad2956cf0d7b81718fb48ba8604e3d3c1">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a8bed3211dee815fef24e0eed74a9db35">initialise_cache_for_scattpoint_det_integrals_over_activity()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ad64dc03896944736f0b4244211ea81d1">initialise_cache_for_scattpoint_det_integrals_over_attenuation()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a8edb7ad134ab83216f0d4ff82b52cd17">output_proj_data_sptr</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a905ab47dcdb78a56d2bc88212d4e6830">remove_cache_for_integrals_over_activity()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#aa90121ef6321392ace57a452b21582b7">remove_cache_for_integrals_over_attenuation()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#aaf1dd64ea30202fa1f0d30d76cc888b0">sample_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a85ddfdb6ce7dd4ba61b560f70a2cba62">set_density_image_for_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a32a2c2baedcbc5e8eaa14dae8d4e5c66">zoom_size_xy</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a27bc15c04a1ef2ae78a6552b546a5a2f">zoom_size_z</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a05c905f385686c0b752f3bab214e6545">zoom_xy</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#ae35e08c567b5039d18fae81892177e58">zoom_z</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a58fd07a23cc6f50d3da290ca489d67eb">activity_image_filename</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a274fc1fa9d2f852f48e9f11168c1546e">activity_image_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#abbf4a6cf110457b11050379d492788df">downsample_density_image_for_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">downsample_scanner()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a1da6abb9f9fabb1ed93cb9d96b9fcc40">get_density_image_for_scatter_points_sptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1Scanner.html#aa8f604e2efd17d51fc7e4c672893f242">stir::Scanner::get_num_rings()</a>, <a class="el" href="classstir_1_1Scanner.html#a813db3baed2672316f3eb0da461491df">stir::Scanner::get_ring_spacing()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a8bed3211dee815fef24e0eed74a9db35">initialise_cache_for_scattpoint_det_integrals_over_activity()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ad64dc03896944736f0b4244211ea81d1">initialise_cache_for_scattpoint_det_integrals_over_attenuation()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a905ab47dcdb78a56d2bc88212d4e6830">remove_cache_for_integrals_over_activity()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#aa90121ef6321392ace57a452b21582b7">remove_cache_for_integrals_over_attenuation()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#aaf1dd64ea30202fa1f0d30d76cc888b0">sample_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a85ddfdb6ce7dd4ba61b560f70a2cba62">set_density_image_for_scatter_points()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a32a2c2baedcbc5e8eaa14dae8d4e5c66">zoom_size_xy</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a27bc15c04a1ef2ae78a6552b546a5a2f">zoom_size_z</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a05c905f385686c0b752f3bab214e6545">zoom_xy</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#ae35e08c567b5039d18fae81892177e58">zoom_z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a5dd082570a71a04f28aad1ed06fc1e9e">initialise_keymap()</a>, and <a class="el" href="classstir_1_1SingleScatterSimulation.html#a0572ac90c12834eefad954d9e6806385">stir::SingleScatterSimulation::post_processing()</a>.</p>
 
@@ -686,7 +689,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>find scatter points </p>
 <p>This function sets scatt_points_vector and scatter_volume. It will also remove any cached integrals as they would be incorrect otherwise. </p>
 
-<p class="reference">References <a class="el" href="group__Coordinate.html#ga02de94d5ae05274ed2296c547742f604">stir::convert_int_to_float()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ae9324e75048cf1b5956132ae218e3885">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#ad2956cf0d7b81718fb48ba8604e3d3c1">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
+<p class="reference">References <a class="el" href="group__Coordinate.html#ga5a5493e3ee6159b3aac7b72bc0068f28">stir::convert_int_to_float()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#abbf4a6cf110457b11050379d492788df">downsample_density_image_for_scatter_points()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>.</p>
 
@@ -778,7 +781,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>set-up cache for attenuation integrals </p>
 <dl class="section warning"><dt>Warning</dt><dd>This will not remove existing cached data (if the sizes match). If you need this, call remove_cache_for_scattpoint_det_integrals_over_attenuation() first. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#aed0410b14fbc21f5b11632738dbca877">stir::VectorWithOffset&lt; T &gt;::resize()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#aa0d7c80102ef873b5d60c52f3db4348d">stir::VectorWithOffset&lt; T &gt;::resize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>.</p>
 
@@ -810,7 +813,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>set-up cache for activity integrals </p>
 <dl class="section warning"><dt>Warning</dt><dd>This will not remove existing cached data (if the sizes match). If you need this, call remove_cache_for_scattpoint_det_integrals_over_activity() first. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#aed0410b14fbc21f5b11632738dbca877">stir::VectorWithOffset&lt; T &gt;::resize()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#aa0d7c80102ef873b5d60c52f3db4348d">stir::VectorWithOffset&lt; T &gt;::resize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>.</p>
 
@@ -838,7 +841,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><div class="memdoc">
 <p>Exam info extracted from the scanner template </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ad6f6a5c14423039b87fc014f66d62c17">get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a01c26430c5f2607be0052f087c0ac2aa">set_exam_info_sptr()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ad6f6a5c14423039b87fc014f66d62c17">get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#add304a5a8bb7fb2610b1d581d27de8dd">set_exam_info()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>.</p>
 
 </div>
 </div>
@@ -871,6 +874,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/scatter/<a class="el" href="ScatterSimulation_8h_source.html">ScatterSimulation.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/scatter/<a class="el" href="ScatterSimulation_8inl.html">ScatterSimulation.inl</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/scatter_buildblock/<a class="el" href="cached__single__scatter__integrals_8cxx.html">cached_single_scatter_integrals.cxx</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/scatter_buildblock/<a class="el" href="sample__scatter__points_8cxx.html">sample_scatter_points.cxx</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/scatter_buildblock/<a class="el" href="scatter__detection__modelling_8cxx.html">scatter_detection_modelling.cxx</a></li>
@@ -880,7 +884,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

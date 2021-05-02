@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf975a92b5600fe1942cfeb18f5ee9fe.html">STIR</a></li><li class="navelem"><a class="el" href="dir_87ae7feb76449a838062947fcfbc37f1.html">src</a></li><li class="navelem"><a class="el" href="dir_0fab907e4d58631643e32ea5b8ea2c69.html">numerics_buildblock</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_0b75bdf102f5cf4910d6429d56a66609.html">sirfuser</a></li><li class="navelem"><a class="el" href="dir_bf00ec6aee8436d9dd9bdb27c8ba69c2.html">devel</a></li><li class="navelem"><a class="el" href="dir_f033b80aa1e53a09c27a870e567321ae.html">STIRdistrib</a></li><li class="navelem"><a class="el" href="dir_dee4efe29267f8f1fbd97b7b185bc024.html">STIR</a></li><li class="navelem"><a class="el" href="dir_4d737faa33632d919b5a76c7a560514d.html">src</a></li><li class="navelem"><a class="el" href="dir_dc661e76eb54ac8681172eab4661ba1d.html">numerics_buildblock</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,19 +102,19 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga29615dcd9f6d0afe79026d1c96d22af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the inverse of the one-dimensional discrete fourier transform of a real array (of even size).  <a href="group__DFT.html#ga29615dcd9f6d0afe79026d1c96d22af0">More...</a><br /></td></tr>
 <tr class="separator:ga29615dcd9f6d0afe79026d1c96d22af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7c46b9cad81152690570df6293cf896"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename T &gt; </td></tr>
-<tr class="memitem:gae7c46b9cad81152690570df6293cf896"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, std::complex&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#gae7c46b9cad81152690570df6293cf896">stir::fourier_for_real_data</a> (const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T &gt; &amp;c, const int sign=1)</td></tr>
+<tr class="memitem:gae7c46b9cad81152690570df6293cf896"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, std::complex&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#gae7c46b9cad81152690570df6293cf896">stir::fourier_for_real_data</a> (const Array&lt; num_dimensions, T &gt; &amp;c, const int sign=1)</td></tr>
 <tr class="memdesc:gae7c46b9cad81152690570df6293cf896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute discrete fourier transform of a real array (with the last dimensions of even size).  <a href="group__DFT.html#gae7c46b9cad81152690570df6293cf896">More...</a><br /></td></tr>
 <tr class="separator:gae7c46b9cad81152690570df6293cf896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ec352e9ab3937a290dc51cabaf6901b"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename T &gt; </td></tr>
-<tr class="memitem:ga9ec352e9ab3937a290dc51cabaf6901b"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga9ec352e9ab3937a290dc51cabaf6901b">stir::inverse_fourier_for_real_data_corrupting_input</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, std::complex&lt; T &gt; &gt; &amp;c, const int sign=1)</td></tr>
+<tr class="memitem:ga9ec352e9ab3937a290dc51cabaf6901b"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga9ec352e9ab3937a290dc51cabaf6901b">stir::inverse_fourier_for_real_data_corrupting_input</a> (Array&lt; num_dimensions, std::complex&lt; T &gt; &gt; &amp;c, const int sign=1)</td></tr>
 <tr class="memdesc:ga9ec352e9ab3937a290dc51cabaf6901b"><td class="mdescLeft">&#160;</td><td class="mdescRight">As <a class="el" href="group__DFT.html#ga92b644405e55adba21ad7cc2dd609864" title="Compute the inverse of the discrete fourier transform of a real array (with the last dimension of eve...">inverse_fourier_for_real_data()</a>, but avoiding the copy of the input array.  <a href="group__DFT.html#ga9ec352e9ab3937a290dc51cabaf6901b">More...</a><br /></td></tr>
 <tr class="separator:ga9ec352e9ab3937a290dc51cabaf6901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92b644405e55adba21ad7cc2dd609864"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename T &gt; </td></tr>
-<tr class="memitem:ga92b644405e55adba21ad7cc2dd609864"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga92b644405e55adba21ad7cc2dd609864">stir::inverse_fourier_for_real_data</a> (const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, std::complex&lt; T &gt; &gt; &amp;c, const int sign=1)</td></tr>
+<tr class="memitem:ga92b644405e55adba21ad7cc2dd609864"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga92b644405e55adba21ad7cc2dd609864">stir::inverse_fourier_for_real_data</a> (const Array&lt; num_dimensions, std::complex&lt; T &gt; &gt; &amp;c, const int sign=1)</td></tr>
 <tr class="memdesc:ga92b644405e55adba21ad7cc2dd609864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the inverse of the discrete fourier transform of a real array (with the last dimension of even size).  <a href="group__DFT.html#ga92b644405e55adba21ad7cc2dd609864">More...</a><br /></td></tr>
 <tr class="separator:ga92b644405e55adba21ad7cc2dd609864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e81076ca4c51e5b9f6e43bddbb3a068"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename T &gt; </td></tr>
-<tr class="memitem:ga5e81076ca4c51e5b9f6e43bddbb3a068"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, std::complex&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga5e81076ca4c51e5b9f6e43bddbb3a068">stir::pos_frequencies_to_all</a> (const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, std::complex&lt; T &gt; &gt; &amp;c)</td></tr>
+<tr class="memitem:ga5e81076ca4c51e5b9f6e43bddbb3a068"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, std::complex&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__DFT.html#ga5e81076ca4c51e5b9f6e43bddbb3a068">stir::pos_frequencies_to_all</a> (const Array&lt; num_dimensions, std::complex&lt; T &gt; &gt; &amp;c)</td></tr>
 <tr class="memdesc:ga5e81076ca4c51e5b9f6e43bddbb3a068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds negative frequencies to the last dimension of a complex array by complex conjugation.  <a href="group__DFT.html#ga5e81076ca4c51e5b9f6e43bddbb3a068">More...</a><br /></td></tr>
 <tr class="separator:ga5e81076ca4c51e5b9f6e43bddbb3a068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3303e072e1b90b39360a81b7c49ce18c"><td class="memItemLeft" align="right" valign="top"><a id="a3303e072e1b90b39360a81b7c49ce18c"></a>
@@ -174,7 +174,7 @@ template void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::fourie
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

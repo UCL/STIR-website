@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -61,8 +61,9 @@ Inheritance diagram for stir::LmToProjData:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1LmToProjData__inherit__graph.png" border="0" usemap="#stir_1_1LmToProjData_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1LmToProjData_inherit__map" id="stir_1_1LmToProjData_inherit__map">
-<area shape="rect" id="node3" href="classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction. " alt="" coords="5,155,196,181"/>
-<area shape="rect" id="node2" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="31,5,171,32"/>
+<area shape="rect" id="node4" href="classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction. " alt="" coords="7,229,198,256"/>
+<area shape="rect" id="node2" href="classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node3" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="33,5,173,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -74,10 +75,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#abf3a3858bc3404aeef247c1e8e21cfdf">LmToProjData</a> ()</td></tr>
 <tr class="memdesc:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#abf3a3858bc3404aeef247c1e8e21cfdf">More...</a><br /></td></tr>
 <tr class="separator:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fda6fc329f339135ab3e585b334c4f3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a1fda6fc329f339135ab3e585b334c4f3">set_up</a> ()</td></tr>
+<tr class="memdesc:a1fda6fc329f339135ab3e585b334c4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform various checks.  <a href="#a1fda6fc329f339135ab3e585b334c4f3">More...</a><br /></td></tr>
+<tr class="separator:a1fda6fc329f339135ab3e585b334c4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751ec1351febc5123dce868be5d0afec"><td class="memItemLeft" align="right" valign="top"><a id="a751ec1351febc5123dce868be5d0afec"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a751ec1351febc5123dce868be5d0afec">process_data</a> ()</td></tr>
 <tr class="memdesc:a751ec1351febc5123dce868be5d0afec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function does the actual work. <br /></td></tr>
 <tr class="separator:a751ec1351febc5123dce868be5d0afec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Functions to get/set parameters</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This can be used as alternative to the parsing mechanism. </p><dl class="section warning"><dt>Warning</dt><dd>Be careful with setting shared pointers. If you modify the objects in one place, all objects that use the shared pointer will be affected. </dd></dl>
+</div></td></tr>
+<tr class="memitem:ab0bf59705cb69bf718436136cde8ed52"><td class="memItemLeft" align="right" valign="top"><a id="ab0bf59705cb69bf718436136cde8ed52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_template_proj_data_info_sptr</b> (shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
+<tr class="separator:ab0bf59705cb69bf718436136cde8ed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef753d74390423ba263add07282d99cc"><td class="memItemLeft" align="right" valign="top"><a id="aef753d74390423ba263add07282d99cc"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_template_proj_data_info_sptr</b> ()</td></tr>
+<tr class="separator:aef753d74390423ba263add07282d99cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b22b6d743c282a28d73460248963c40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a3b22b6d743c282a28d73460248963c40">set_input_data</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamData.html">ExamData</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a3b22b6d743c282a28d73460248963c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">set input data  <a href="#a3b22b6d743c282a28d73460248963c40">More...</a><br /></td></tr>
+<tr class="separator:a3b22b6d743c282a28d73460248963c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521461e2f00f8af099227c6a19c8499a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a521461e2f00f8af099227c6a19c8499a">set_input_data</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a521461e2f00f8af099227c6a19c8499a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set input data  <a href="#a521461e2f00f8af099227c6a19c8499a">More...</a><br /></td></tr>
+<tr class="separator:a521461e2f00f8af099227c6a19c8499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c47c7604f90e6d00b59d9d9379adeb2"><td class="memItemLeft" align="right" valign="top"><a id="a3c47c7604f90e6d00b59d9d9379adeb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_filename_prefix</b> (const std::string &amp;)</td></tr>
+<tr class="separator:a3c47c7604f90e6d00b59d9d9379adeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02534aa43184762ada72fe166b0d08b4"><td class="memItemLeft" align="right" valign="top"><a id="a02534aa43184762ada72fe166b0d08b4"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_output_filename_prefix</b> () const</td></tr>
+<tr class="separator:a02534aa43184762ada72fe166b0d08b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5919ac1cf147fdc119550aa2f8fd8cb8"><td class="memItemLeft" align="right" valign="top"><a id="a5919ac1cf147fdc119550aa2f8fd8cb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_store_prompts</b> (bool)</td></tr>
+<tr class="separator:a5919ac1cf147fdc119550aa2f8fd8cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b8318f6fe4bfdefcfc6b10fc716f65"><td class="memItemLeft" align="right" valign="top"><a id="ac4b8318f6fe4bfdefcfc6b10fc716f65"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_store_prompts</b> () const</td></tr>
+<tr class="separator:ac4b8318f6fe4bfdefcfc6b10fc716f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dab00f6df47ce5bc70e4e17c2f077d"><td class="memItemLeft" align="right" valign="top"><a id="a77dab00f6df47ce5bc70e4e17c2f077d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_store_delayeds</b> (bool)</td></tr>
+<tr class="separator:a77dab00f6df47ce5bc70e4e17c2f077d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029564bb0939fb4c10314777d6af0e83"><td class="memItemLeft" align="right" valign="top"><a id="a029564bb0939fb4c10314777d6af0e83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_store_delayeds</b> () const</td></tr>
+<tr class="separator:a029564bb0939fb4c10314777d6af0e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bf1646632620d0311d23fbfd9b48e4"><td class="memItemLeft" align="right" valign="top"><a id="a45bf1646632620d0311d23fbfd9b48e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_segments_in_memory</b> (int)</td></tr>
+<tr class="separator:a45bf1646632620d0311d23fbfd9b48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329835c3e7cc20ff6637b27409ed3bc7"><td class="memItemLeft" align="right" valign="top"><a id="a329835c3e7cc20ff6637b27409ed3bc7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_segments_in_memory</b> () const</td></tr>
+<tr class="separator:a329835c3e7cc20ff6637b27409ed3bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a83c442a71980895e71b289b24cd401"><td class="memItemLeft" align="right" valign="top"><a id="a2a83c442a71980895e71b289b24cd401"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_events_to_store</b> (long int)</td></tr>
+<tr class="separator:a2a83c442a71980895e71b289b24cd401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf6720332baa3d2a00391b3281ddcb0"><td class="memItemLeft" align="right" valign="top"><a id="afaf6720332baa3d2a00391b3281ddcb0"></a>
+long int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_events_to_store</b> () const</td></tr>
+<tr class="separator:afaf6720332baa3d2a00391b3281ddcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee4cdec6ddfd6279fc2518d68feb691"><td class="memItemLeft" align="right" valign="top"><a id="a5ee4cdec6ddfd6279fc2518d68feb691"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_frame_definitions</b> (const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;)</td></tr>
+<tr class="separator:a5ee4cdec6ddfd6279fc2518d68feb691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5482cb12789def7b2837c922d6702132"><td class="memItemLeft" align="right" valign="top"><a id="a5482cb12789def7b2837c922d6702132"></a>
+const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_frame_definitions</b> () const</td></tr>
+<tr class="separator:a5482cb12789def7b2837c922d6702132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classstir_1_1LmToProjDataAbstract"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1LmToProjDataAbstract')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1LmToProjDataAbstract.html">stir::LmToProjDataAbstract</a></td></tr>
+<tr class="memitem:a8d9968b7858b6677200f55602d1b6dfc inherit pub_methods_classstir_1_1LmToProjDataAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a8d9968b7858b6677200f55602d1b6dfc"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataAbstract.html#a8d9968b7858b6677200f55602d1b6dfc">~LmToProjDataAbstract</a> ()</td></tr>
+<tr class="memdesc:a8d9968b7858b6677200f55602d1b6dfc inherit pub_methods_classstir_1_1LmToProjDataAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a8d9968b7858b6677200f55602d1b6dfc inherit pub_methods_classstir_1_1LmToProjDataAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -161,6 +221,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a289d2d1b2cf9e8affc89e557969a1e12">delayed_increment</a></td></tr>
 <tr class="memdesc:a289d2d1b2cf9e8affc89e557969a1e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable that will be set to 1,0 or -1, according to store_prompts and store_delayeds. <br /></td></tr>
 <tr class="separator:a289d2d1b2cf9e8affc89e557969a1e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8150f29e60d7241b70af575fe1a578a"><td class="memItemLeft" align="right" valign="top"><a id="ae8150f29e60d7241b70af575fe1a578a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#ae8150f29e60d7241b70af575fe1a578a">_already_setup</a></td></tr>
+<tr class="memdesc:ae8150f29e60d7241b70af575fe1a578a"><td class="mdescLeft">&#160;</td><td class="mdescRight">an internal bool variable to check if the object has been set-up or not <br /></td></tr>
+<tr class="separator:ae8150f29e60d7241b70af575fe1a578a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">parsing variables</div></td></tr>
 <tr class="memitem:a604f7aabd81b9a12ee0baaeafc69889c"><td class="memItemLeft" align="right" valign="top"><a id="a604f7aabd81b9a12ee0baaeafc69889c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>input_filename</b></td></tr>
@@ -285,7 +349,7 @@ store delayeds only<br />
 </ul>
 <dl class="section user"><dt>Notes for developers</dt><dd></dd></dl>
 <p>The class provides several virtual functions. If a derived class overloads these, the default behaviour might change. For example, <a class="el" href="classstir_1_1LmToProjData.html#a4b260985d647a3809f0e8648f2ab6652" title="will be called to get the bin for a coincidence event ">get_bin_from_event()</a> might do motion correction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd><p class="startdd">Currently, there is no support for gating or energy windows. This could in principle be added by a derived class, but it would be better to do it here. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000074">Todo:</a></b></dt><dd><p class="startdd">Currently, there is no support for gating or energy windows. This could in principle be added by a derived class, but it would be better to do it here. </p>
 <p>Timing info or so for <a class="el" href="classstir_1_1LmToProjData.html#a4b260985d647a3809f0e8648f2ab6652" title="will be called to get the bin for a coincidence event ">get_bin_from_event()</a> for rotating scanners etc. </p>
 <p class="enddd">There is overlap between the normalisation and the current treatment of bin.get_bin_value(). This is really because we should be using something like a EventNormalisation class for pre-normalisation.</p>
 </dd></dl>
@@ -335,6 +399,98 @@ store delayeds only<br />
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3b22b6d743c282a28d73460248963c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b22b6d743c282a28d73460248963c40">&#9670;&nbsp;</a></span>set_input_data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LmToProjData::set_input_data </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ExamData.html">ExamData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set input data </p>
+<p>will throw of the input data is not of type <code><a class="el" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. ">ListModeData</a></code> </p>
+
+</div>
+</div>
+<a id="a521461e2f00f8af099227c6a19c8499a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521461e2f00f8af099227c6a19c8499a">&#9670;&nbsp;</a></span>set_input_data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LmToProjData::set_input_data </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set input data </p>
+<p>will throw of the input data is not of type <code><a class="el" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. ">ListModeData</a></code> </p>
+
+</div>
+</div>
+<a id="a1fda6fc329f339135ab3e585b334c4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fda6fc329f339135ab3e585b334c4f3">&#9670;&nbsp;</a></span>set_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> stir::LmToProjData::set_up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform various checks. </p>
+<p>Note: this is currently called by <a class="el" href="classstir_1_1LmToProjData.html#a8a82d1fa90b34e2ca3a896b53db3957d" title="This will be called at the end of the parsing. ">post_processing()</a>. This will change in version 5.0 </p>
+
+<p>Reimplemented from <a class="el" href="classstir_1_1LmToProjDataAbstract.html#af4751990877c3b8fde40e01b94a3fd81">stir::LmToProjDataAbstract</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classstir_1_1LmToProjDataWithMC.html#afaa831b96815928b4f7666279c7e3bfb">stir::LmToProjDataWithMC</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+</div>
+</div>
 <a id="aeead7806727335ed5eb5dd084b9f9bf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeead7806727335ed5eb5dd084b9f9bf9">&#9670;&nbsp;</a></span>start_new_time_frame()</h2>
 
@@ -401,7 +557,7 @@ store delayeds only<br />
 </div><div class="memdoc">
 
 <p>will be called to get the bin for a coincidence event </p>
-<p>If bin.get_bin_value()&lt;=0, the event will be ignored. Otherwise, the value will be used as a bin-normalisation factor (on top of anything done by normalisation_ptr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000070">Todo:</a></b></dt><dd>Would need timing info or so for e.g. time dependent normalisation or angle info for a rotating scanner. </dd></dl>
+<p>If bin.get_bin_value()&lt;=0, the event will be ignored. Otherwise, the value will be used as a bin-normalisation factor (on top of anything done by normalisation_ptr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000075">Todo:</a></b></dt><dd>Would need timing info or so for e.g. time dependent normalisation or angle info for a rotating scanner. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#af34309374c1942f4a554f01eab3ef6e0">stir::Bin::set_bin_value()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -432,7 +588,7 @@ store delayeds only<br />
 </div><div class="memdoc">
 
 <p>A function that should return the number of uncompressed bins in the current bin. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000071">Todo:</a></b></dt><dd>it is not compatiable with e.g. HiDAC doesn't belong here anyway (more <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>?) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000076">Todo:</a></b></dt><dd>it is not compatiable with e.g. HiDAC doesn't belong here anyway (more <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>?) </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a6adbe7c3e2c80e7e73813c0b7d0e0fd4">stir::ProjDataInfoCylindrical::get_num_ring_pairs_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab4329e79f386e32863b1e8c2fe0444a7">stir::ProjDataInfoCylindrical::get_view_mashing_factor()</a>, and <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>.</p>
 
@@ -499,7 +655,7 @@ store delayeds only<br />
 
 <p>Reimplemented in <a class="el" href="classstir_1_1LmToProjDataWithMC.html#a8f4bf29fe124f977a7a290bc5a771a5d">stir::LmToProjDataWithMC</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">stir::Scanner::get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">stir::Scanner::parameter_info()</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -611,7 +767,7 @@ store delayeds only<br />
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

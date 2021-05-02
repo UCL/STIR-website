@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf975a92b5600fe1942cfeb18f5ee9fe.html">STIR</a></li><li class="navelem"><a class="el" href="dir_87ae7feb76449a838062947fcfbc37f1.html">src</a></li><li class="navelem"><a class="el" href="dir_737888a340e53aa66c900da3a4ac51f7.html">include</a></li><li class="navelem"><a class="el" href="dir_3e8c71b7f2899a5cb50f7f3ee44081d2.html">stir</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_0b75bdf102f5cf4910d6429d56a66609.html">sirfuser</a></li><li class="navelem"><a class="el" href="dir_bf00ec6aee8436d9dd9bdb27c8ba69c2.html">devel</a></li><li class="navelem"><a class="el" href="dir_f033b80aa1e53a09c27a870e567321ae.html">STIRdistrib</a></li><li class="navelem"><a class="el" href="dir_dee4efe29267f8f1fbd97b7b185bc024.html">STIR</a></li><li class="navelem"><a class="el" href="dir_4d737faa33632d919b5a76c7a560514d.html">src</a></li><li class="navelem"><a class="el" href="dir_a02104478bda72235ead8713d4759134.html">include</a></li><li class="navelem"><a class="el" href="dir_b362d050fbe6d98140ed06b65ae8ad4c.html">stir</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -51,10 +51,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This file declares the <a class="el" href="group__Array.html#ga29b397533a51414e1cb495ca3903099a" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions. This is a function to convert <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to a different numeric type.  
+<p>This file declares the <a class="el" href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions. This is a function to convert <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to a different numeric type.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">stir/common.h</a>&quot;</code><br />
-<code>#include &quot;stir/convert_array.inl&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert__array_8inl.html">stir/convert_array.inl</a>&quot;</code><br />
 </div>
 <p><a href="convert__array_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -76,27 +76,27 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaa5bb010e50caacfa64f8568fbef591cd"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T1 , class T2 , class scaleT &gt; </td></tr>
-<tr class="memitem:gaa5bb010e50caacfa64f8568fbef591cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd">stir::find_scale_factor</a> (scaleT &amp;scale_factor, const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T1 &gt; &amp;data_in, const NumericInfo&lt; T2 &gt; info_for_out_type)</td></tr>
+<tr class="memitem:gaa5bb010e50caacfa64f8568fbef591cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd">stir::find_scale_factor</a> (scaleT &amp;scale_factor, const Array&lt; num_dimensions, T1 &gt; &amp;data_in, const NumericInfo&lt; T2 &gt; info_for_out_type)</td></tr>
 <tr class="memdesc:gaa5bb010e50caacfa64f8568fbef591cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that finds a scale factor to use when converting data to a new type.  <a href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd">More...</a><br /></td></tr>
 <tr class="separator:gaa5bb010e50caacfa64f8568fbef591cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29b397533a51414e1cb495ca3903099a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T1 , class T2 , class scaleT &gt; </td></tr>
-<tr class="memitem:ga29b397533a51414e1cb495ca3903099a"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga29b397533a51414e1cb495ca3903099a">stir::convert_array</a> (scaleT &amp;scale_factor, const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T1 &gt; &amp;data_in, const NumericInfo&lt; T2 &gt; info2)</td></tr>
-<tr class="memdesc:ga29b397533a51414e1cb495ca3903099a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that returns a new <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> (of the same dimension) with elements of type <code>T2</code>.  <a href="group__Array.html#ga29b397533a51414e1cb495ca3903099a">More...</a><br /></td></tr>
-<tr class="separator:ga29b397533a51414e1cb495ca3903099a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa732f225afedbdd7e23c51ac7a879769"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T1 , class T2 , class scaleT &gt; </td></tr>
+<tr class="memitem:gaa732f225afedbdd7e23c51ac7a879769"><td class="memTemplItemLeft" align="right" valign="top">Array&lt; num_dimensions, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769">stir::convert_array</a> (scaleT &amp;scale_factor, const Array&lt; num_dimensions, T1 &gt; &amp;data_in, const NumericInfo&lt; T2 &gt; info2)</td></tr>
+<tr class="memdesc:gaa732f225afedbdd7e23c51ac7a879769"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that returns a new <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> (of the same dimension) with elements of type <code>T2</code>.  <a href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769">More...</a><br /></td></tr>
+<tr class="separator:gaa732f225afedbdd7e23c51ac7a879769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8508ec2aa627b002cfcd8d30e2824bf"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T1 , class T2 , class scaleT &gt; </td></tr>
-<tr class="memitem:gaf8508ec2aa627b002cfcd8d30e2824bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaf8508ec2aa627b002cfcd8d30e2824bf">stir::convert_array</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T2 &gt; &amp;data_out, scaleT &amp;scale_factor, const Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, T1 &gt; &amp;data_in)</td></tr>
+<tr class="memitem:gaf8508ec2aa627b002cfcd8d30e2824bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gaf8508ec2aa627b002cfcd8d30e2824bf">stir::convert_array</a> (Array&lt; num_dimensions, T2 &gt; &amp;data_out, scaleT &amp;scale_factor, const Array&lt; num_dimensions, T1 &gt; &amp;data_in)</td></tr>
 <tr class="memdesc:gaf8508ec2aa627b002cfcd8d30e2824bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <code>data_in</code> <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to <code>data_out</code> (with elements of different types) such that <code>data_in</code> == <code>data_out</code> * <code>scale_factor</code>.  <a href="group__Array.html#gaf8508ec2aa627b002cfcd8d30e2824bf">More...</a><br /></td></tr>
 <tr class="separator:gaf8508ec2aa627b002cfcd8d30e2824bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file declares the <a class="el" href="group__Array.html#ga29b397533a51414e1cb495ca3903099a" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions. This is a function to convert <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to a different numeric type. </p>
+<div class="textblock"><p>This file declares the <a class="el" href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769" title="A function that returns a new Array (of the same dimension) with elements of type T2...">stir::convert_array</a> functions. This is a function to convert <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to a different numeric type. </p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
 <dd>
 PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

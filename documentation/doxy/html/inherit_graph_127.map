@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1PushTransposeLinearInterpolator.html" title="A function object to push values at the grid of the input array into the output array. " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node1" href="$classstir_1_1PtrBeginEndAllFunction.html" title="stir::PtrBeginEndAllFunction\l\&lt; TopLevelIterT, boost::pointee\l\&lt; boost::iterator_value\&lt; TopLevelIterT\l \&gt;::type \&gt;::type::const_full_iterator \&gt;" alt="" coords="5,5,280,76"/>
+<area shape="rect" id="node2" href="$classstir_1_1ConstPtrBeginEndAllFunction.html" title="Convenience class where the 2nd level iterator is a const_full_iterator. " alt="" coords="328,20,521,61"/>
 </map>

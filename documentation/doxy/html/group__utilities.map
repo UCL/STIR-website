@@ -1,9 +1,11 @@
 <map id="Utility programs" name="Utility programs">
-<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="526,50,669,91"/>
-<area shape="rect" id="node2" href="$group__ECAT.html" title="ECAT6 and ECAT7 support\l in the IO library" alt="" coords="503,190,692,231"/>
-<area shape="rect" id="node5" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="503,256,692,283"/>
-<area shape="rect" id="node6" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="522,307,673,349"/>
-<area shape="rect" id="node7" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="510,373,685,414"/>
-<area shape="rect" id="node8" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="488,438,707,479"/>
-<area shape="rect" id="node4" href="$group__main__programs.html" title="Executables" alt="" coords="5,285,107,312"/>
+<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="536,89,679,130"/>
+<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="533,155,681,181"/>
+<area shape="rect" id="node3" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="495,206,720,247"/>
+<area shape="rect" id="node4" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="519,333,696,374"/>
+<area shape="rect" id="node7" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="513,399,702,425"/>
+<area shape="rect" id="node8" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="532,450,683,491"/>
+<area shape="rect" id="node9" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="520,515,695,557"/>
+<area shape="rect" id="node10" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="498,581,717,622"/>
+<area shape="rect" id="node6" href="$group__main__programs.html" title="Executables" alt="" coords="5,377,107,404"/>
 </map>

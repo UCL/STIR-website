@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -79,9 +79,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7783aea54d392895e83abd6dbce3f65"><td class="memItemLeft" align="right" valign="top">static Base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#ac7783aea54d392895e83abd6dbce3f65">read_from_stream</a> (std::istream *)</td></tr>
-<tr class="memdesc:ac7783aea54d392895e83abd6dbce3f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new object (of type Derived) by parsing the istream.  <a href="#ac7783aea54d392895e83abd6dbce3f65">More...</a><br /></td></tr>
-<tr class="separator:ac7783aea54d392895e83abd6dbce3f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efc30dcaf35a1029c6bd099acb3f6a4"><td class="memItemLeft" align="right" valign="top">static Base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a4efc30dcaf35a1029c6bd099acb3f6a4">read_from_stream</a> (std::istream *)</td></tr>
+<tr class="memdesc:a4efc30dcaf35a1029c6bd099acb3f6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new object (of type Derived) by parsing the istream.  <a href="#a4efc30dcaf35a1029c6bd099acb3f6a4">More...</a><br /></td></tr>
+<tr class="separator:a4efc30dcaf35a1029c6bd099acb3f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -95,7 +95,7 @@ class stir::RegisteredParsingObject&lt; Derived, Base, Parent &gt;</h3>
 
 <p>Parent class for all leaves in a <a class="el" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi...">RegisteredObject</a> hierarchy that do parsing of parameter files. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi...">RegisteredObject</a> for an explanation why you would use this class.</dd></dl>
-<p><a class="el" href="classstir_1_1RegisteredParsingObject.html#ac7783aea54d392895e83abd6dbce3f65" title="Construct a new object (of type Derived) by parsing the istream. ">RegisteredParsingObject::read_from_stream</a> is implemented in terms of ParsingObject::parse.</p>
+<p><a class="el" href="classstir_1_1RegisteredParsingObject.html#a4efc30dcaf35a1029c6bd099acb3f6a4" title="Construct a new object (of type Derived) by parsing the istream. ">RegisteredParsingObject::read_from_stream</a> is implemented in terms of ParsingObject::parse.</p>
 <p>Requirements on the class <em>Base:</em> </p><ul>
 <li>It needs to be derived from RegisteredObject&lt;Base&gt;</li>
 </ul>
@@ -113,22 +113,22 @@ class stir::RegisteredParsingObject&lt; Derived, Base, Parent &gt;</h3>
 <p>A leaf will be entered in the hierarchy by declaring a variable as follows: </p><div class="fragment"><div class="line">Derived::RegisterIt dummy;</div></div><!-- fragment --><p> As soon as the variable is destructed, the leaf will be taken out of the registry (but see todo). If you want to add it as long as the program runs, use a static variable.</p>
 <p>Currently, STIR has static variables in files for each module (for instance, <a class="el" href="buildblock__registries_8cxx.html" title="File that registers all stir::RegisterObject children in buildblock. ">buildblock_registries.cxx</a>). Note that these files have to be linked explicitly into your program, as opposed to sticking it in a library. This is because the linker will think that the variables in that file are never referenced, so would not include it in the final executable (to try to remove redundant object files). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac7783aea54d392895e83abd6dbce3f65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7783aea54d392895e83abd6dbce3f65">&#9670;&nbsp;</a></span>read_from_stream()</h2>
+<a id="a4efc30dcaf35a1029c6bd099acb3f6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4efc30dcaf35a1029c6bd099acb3f6a4">&#9670;&nbsp;</a></span>read_from_stream()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Derived, typename Base, typename Parent = Base&gt; </div>
+template&lt;typename Derived , typename Base , typename Parent &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Base* <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject</a>&lt; Derived, Base, Parent &gt;::read_from_stream </td>
+          <td class="memname">Base * <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject</a>&lt; Derived, Base, Parent &gt;::read_from_stream </td>
           <td>(</td>
           <td class="paramtype">std::istream *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -141,17 +141,18 @@ template&lt;typename Derived, typename Base, typename Parent = Base&gt; </div>
 
 <p>Construct a new object (of type Derived) by parsing the istream. </p>
 <p>When the istream * is 0, questions are asked interactively.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000135">Todo:</a></b></dt><dd>Currently, the return value is a <em>Base*</em>. Preferably, it should be a <em>Derived*</em>, but it seems the registration machinery would need extra (unsafe) reinterpret_casts to get that to work. (TODO find a remedy). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo:</a></b></dt><dd>Currently, the return value is a <em>Base*</em>. Preferably, it should be a <em>Derived*</em>, but it seems the registration machinery would need extra (unsafe) reinterpret_casts to get that to work. (TODO find a remedy). </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="RegisteredParsingObject_8h_source.html">RegisteredParsingObject.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="RegisteredParsingObject_8inl.html">RegisteredParsingObject.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -68,10 +68,10 @@ Inheritance diagram for stir::CListEventSAFIR&lt; Derived &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae24f572d22f1c757815c7a41a6d5dce1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ae24f572d22f1c757815c7a41a6d5dce1">CListEventSAFIR</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DetectorCoordinateMapFromFile.html">DetectorCoordinateMapFromFile</a> &gt; map)</td></tr>
 <tr class="separator:ae24f572d22f1c757815c7a41a6d5dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1d6369a15032b08e8962e04eae70f2d"><td class="memItemLeft" align="right" valign="top"><a id="ab1d6369a15032b08e8962e04eae70f2d"></a>
-virtual <a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ab1d6369a15032b08e8962e04eae70f2d">get_LOR</a> () const</td></tr>
-<tr class="memdesc:ab1d6369a15032b08e8962e04eae70f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> corresponding to the given event. <br /></td></tr>
-<tr class="separator:ab1d6369a15032b08e8962e04eae70f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c20d56952766a9d7905515ea4e5f8b"><td class="memItemLeft" align="right" valign="top"><a id="a29c20d56952766a9d7905515ea4e5f8b"></a>
+virtual <a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b">get_LOR</a> () const</td></tr>
+<tr class="memdesc:a29c20d56952766a9d7905515ea4e5f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> corresponding to the given event. <br /></td></tr>
+<tr class="separator:a29c20d56952766a9d7905515ea4e5f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe05be23254a6ec9c3188f86bb46475"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#affe05be23254a6ec9c3188f86bb46475">is_valid_template</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;) const</td></tr>
 <tr class="memdesc:affe05be23254a6ec9c3188f86bb46475"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if the template is valid for <a class="el" href="classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. ">LmToProjData</a>.  <a href="#affe05be23254a6ec9c3188f86bb46475">More...</a><br /></td></tr>
 <tr class="separator:affe05be23254a6ec9c3188f86bb46475"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,7 +102,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CListRecordSAFIR</b>
 <div class="textblock"><h3>template&lt;class Derived&gt;<br />
 class stir::CListEventSAFIR&lt; Derived &gt;</h3>
 
-<p>Provides interface of the record class to STIR by implementing <a class="el" href="classstir_1_1CListEventSAFIR.html#ab1d6369a15032b08e8962e04eae70f2d" title="Returns LOR corresponding to the given event. ">get_LOR()</a>. It uses a map from detector indices to coordinates to specify <a class="el" href="classstir_1_1LORAs2Points.html" title="A class for LORs. ">LORAs2Points</a> from given detection pair indices.</p>
+<p>Provides interface of the record class to STIR by implementing <a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b" title="Returns LOR corresponding to the given event. ">get_LOR()</a>. It uses a map from detector indices to coordinates to specify <a class="el" href="classstir_1_1LORAs2Points.html" title="A class for LORs. ">LORAs2Points</a> from given detection pair indices.</p>
 <p>The record has the following format (for little-endian byte order) </p><div class="fragment"><div class="line"><span class="keywordtype">unsigned</span> ringA : 8;</div><div class="line"><span class="keywordtype">unsigned</span> ringB : 8;</div><div class="line"><span class="keywordtype">unsigned</span> detA : 16;</div><div class="line"><span class="keywordtype">unsigned</span> detB : 16;</div><div class="line"><span class="keywordtype">unsigned</span> layerA : 4;</div><div class="line"><span class="keywordtype">unsigned</span> layerB : 4;</div><div class="line"><span class="keywordtype">unsigned</span> reserved : 6;</div><div class="line"><span class="keywordtype">unsigned</span> isRandom : 1;</div><div class="line"><span class="keywordtype">unsigned</span> type : 1;</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae24f572d22f1c757815c7a41a6d5dce1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae24f572d22f1c757815c7a41a6d5dce1">&#9670;&nbsp;</a></span>CListEventSAFIR()</h2>
@@ -167,13 +167,14 @@ template&lt;class Derived&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/<a class="el" href="CListRecordSAFIR_8h_source.html">CListRecordSAFIR.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/CListRecordSAFIR.inl</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

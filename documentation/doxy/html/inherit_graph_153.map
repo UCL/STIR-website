@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; int \&gt;" alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node1" href="$classstir_1_1Timer.html" title="A general base class for timers. Interface is like a stop watch. " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1CPUTimer.html" title="A class for measuring elapsed CPU time. " alt="" coords="143,5,259,32"/>
 </map>

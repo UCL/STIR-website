@@ -1,0 +1,7 @@
+<map id="stir::TestOSMAPOSL" name="stir::TestOSMAPOSL">
+<area shape="rect" id="node2" href="$classstir_1_1PoissonLLReconstructionTests.html" title="stir::PoissonLLReconstruction\lTests\&lt; target_type \&gt;" alt="" coords="868,35,1079,76"/>
+<area shape="rect" id="node3" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="515,5,695,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,29,113,55"/>
+<area shape="rect" id="node5" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction. " alt="" coords="163,51,343,92"/>
+<area shape="rect" id="node6" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="500,71,711,112"/>
+</map>

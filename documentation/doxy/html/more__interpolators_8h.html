@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bf975a92b5600fe1942cfeb18f5ee9fe.html">STIR</a></li><li class="navelem"><a class="el" href="dir_87ae7feb76449a838062947fcfbc37f1.html">src</a></li><li class="navelem"><a class="el" href="dir_737888a340e53aa66c900da3a4ac51f7.html">include</a></li><li class="navelem"><a class="el" href="dir_7b9787500e7e4985b366c74f3f1234bc.html">stir_experimental</a></li><li class="navelem"><a class="el" href="dir_f573676e1c37c808a76a705bb0a40a9e.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_0b75bdf102f5cf4910d6429d56a66609.html">sirfuser</a></li><li class="navelem"><a class="el" href="dir_bf00ec6aee8436d9dd9bdb27c8ba69c2.html">devel</a></li><li class="navelem"><a class="el" href="dir_f033b80aa1e53a09c27a870e567321ae.html">STIRdistrib</a></li><li class="navelem"><a class="el" href="dir_dee4efe29267f8f1fbd97b7b185bc024.html">STIR</a></li><li class="navelem"><a class="el" href="dir_4d737faa33632d919b5a76c7a560514d.html">src</a></li><li class="navelem"><a class="el" href="dir_a02104478bda72235ead8713d4759134.html">include</a></li><li class="navelem"><a class="el" href="dir_3750c33c88b3b3518d43451032721ad2.html">stir_experimental</a></li><li class="navelem"><a class="el" href="dir_03d43a16f5ed9c2dadb9cef966cd9196.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -55,7 +55,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="BasicCoordinate_8h_source.html">stir/BasicCoordinate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
-<code>#include &quot;stir_experimental/numerics/more_interpolators.inl&quot;</code><br />
+<code>#include &quot;<a class="el" href="more__interpolators_8inl.html">stir_experimental/numerics/more_interpolators.inl</a>&quot;</code><br />
 </div>
 <p><a href="more__interpolators_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,7 +87,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga7ea1b16f83a5ee1fe9e13a0fe906f191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull <em>value</em> from the input array using nearest neigbour interpolation.  <a href="group__numerics.html#ga7ea1b16f83a5ee1fe9e13a0fe906f191">More...</a><br /></td></tr>
 <tr class="separator:ga7ea1b16f83a5ee1fe9e13a0fe906f191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga687c7b6806d9f144e778de54ca689a2f"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT , class positionT , class valueT &gt; </td></tr>
-<tr class="memitem:ga687c7b6806d9f144e778de54ca689a2f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__numerics.html#ga687c7b6806d9f144e778de54ca689a2f">stir::push_nearest_neighbour_interpolate</a> (Array&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, elemT &gt; &amp;out, const BasicCoordinate&lt; <a class="el" href="group__Array.html#ga8067164d633c6db184febbe9b16249d3">num_dimensions</a>, positionT &gt; &amp;point_in_output_coords, valueT value)</td></tr>
+<tr class="memitem:ga687c7b6806d9f144e778de54ca689a2f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__numerics.html#ga687c7b6806d9f144e778de54ca689a2f">stir::push_nearest_neighbour_interpolate</a> (Array&lt; num_dimensions, elemT &gt; &amp;out, const BasicCoordinate&lt; num_dimensions, positionT &gt; &amp;point_in_output_coords, valueT value)</td></tr>
 <tr class="memdesc:ga687c7b6806d9f144e778de54ca689a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push <em>value</em> into the output array using nearest neigbour interpolation.  <a href="group__numerics.html#ga687c7b6806d9f144e778de54ca689a2f">More...</a><br /></td></tr>
 <tr class="separator:ga687c7b6806d9f144e778de54ca689a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d64047f77525dc4ebc7beea989ce291"><td class="memTemplParams" colspan="2">
@@ -108,7 +108,7 @@ template&lt;class elemT , class positionT , class valueT &gt; </td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

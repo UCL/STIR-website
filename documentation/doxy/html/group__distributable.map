@@ -1,4 +1,5 @@
 <map id="distributable building blocks" name="distributable building blocks">
-<area shape="rect" id="node1" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="459,5,593,47"/>
-<area shape="rect" id="node2" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node1" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="473,5,607,47"/>
+<area shape="rect" id="node2" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,35,180,76"/>
+<area shape="rect" id="node3" href="$group__numerics.html" title="Numerical algorithms" alt="" coords="459,71,621,98"/>
 </map>

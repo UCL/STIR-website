@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -60,8 +60,14 @@ Files</h2></td></tr>
 <tr class="memitem:read__data__1d_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="read__data__1d_8h.html">read_data_1d.h</a></td></tr>
 <tr class="memdesc:read__data__1d_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad" title="This is an internal function called by read_data(). It does the actual reading to std::istream...">stir::read_data_1d()</a> functions for reading 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects from file. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:read__data__1d_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="read__data__1d_8inl.html">read_data_1d.inl</a></td></tr>
+<tr class="memdesc:read__data__1d_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad" title="This is an internal function called by read_data(). It does the actual reading to std::istream...">stir::read_data_1d()</a> functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:write__data__1d_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="write__data__1d_8h.html">write_data_1d.h</a></td></tr>
 <tr class="memdesc:write__data__1d_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875" title="This is an internal function called by write_data(). It does the actual writing to std::ostream...">stir::write_data_1d()</a> functions for writing 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to file. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:write__data__1d_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="write__data__1d_8inl.html">write_data_1d.inl</a></td></tr>
+<tr class="memdesc:write__data__1d_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875" title="This is an internal function called by write_data(). It does the actual writing to std::ostream...">stir::write_data_1d()</a> functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -126,6 +132,8 @@ template&lt;class elemT &gt; </div>
 <p>This is an internal function called by <code><a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">read_data()</a></code>. It does the actual reading to <code>std::istream</code>. </p>
 <p>This function might propagate any exceptions by std::istream::read. </p>
 
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#aca0beefe260d0476ec9630de7cd81e33">stir::VectorWithOffset&lt; T &gt;::get_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1099b6f96b83b9f61ced929ab5e05322">stir::ByteOrder::is_native_order()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a6d5ec338892b62cad731355530628c31">stir::VectorWithOffset&lt; T &gt;::release_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aec5c52350ad01a1b87d03c85a0eb0060">stir::VectorWithOffset&lt; T &gt;::size()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+
 </div>
 </div>
 <a id="ga4418189143eea7d24627e84e02bfd875"></a>
@@ -178,6 +186,8 @@ template&lt;class elemT &gt; </div>
 
 <p>This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>std::ostream</code>. </p>
 <p>This function does not throw any exceptions. Exceptions thrown by std::ostream::write are caught. </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d">stir::VectorWithOffset&lt; T &gt;::get_const_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1099b6f96b83b9f61ced929ab5e05322">stir::ByteOrder::is_native_order()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a06bc75b62129576f3a8c09c3b850d89f">stir::VectorWithOffset&lt; T &gt;::release_const_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aec5c52350ad01a1b87d03c85a0eb0060">stir::VectorWithOffset&lt; T &gt;::size()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -232,12 +242,14 @@ template&lt;class elemT &gt; </div>
 <p>This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>FILE*</code> using stdio functions. </p>
 <p>This function does not throw any exceptions. </p>
 
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d">stir::VectorWithOffset&lt; T &gt;::get_const_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1ByteOrder.html#a1099b6f96b83b9f61ced929ab5e05322">stir::ByteOrder::is_native_order()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a06bc75b62129576f3a8c09c3b850d89f">stir::VectorWithOffset&lt; T &gt;::release_const_data_ptr()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#aec5c52350ad01a1b87d03c85a0eb0060">stir::VectorWithOffset&lt; T &gt;::size()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

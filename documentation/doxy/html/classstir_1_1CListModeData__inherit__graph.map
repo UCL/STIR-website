@@ -4,6 +4,7 @@
 <area shape="rect" id="node6" href="$classstir_1_1CListModeDataSAFIR.html" title="Class for reading SAFIR listmode data with variable geometry. " alt="" coords="597,107,784,149"/>
 <area shape="rect" id="node7" href="$classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html" title="A class that reads the listmode data for Siemens scanners. " alt="" coords="598,173,783,214"/>
 <area shape="rect" id="node8" href="$classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html" title="A class that reads the listmode data for ECAT scanners. " alt="" coords="557,238,824,279"/>
-<area shape="rect" id="node2" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="172,115,312,141"/>
-<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,115,124,141"/>
+<area shape="rect" id="node9" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html" title="A class that reads the listmode data for GE scanners using the RDF9 format. " alt="" coords="600,303,781,345"/>
+<area shape="rect" id="node2" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="172,148,312,175"/>
+<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,148,124,175"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -79,19 +79,27 @@ $(function() {
 , <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">stir::ForwardProjectorByBin</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#a6c3b6f203ad7f47a159be6a5edb7ee65">stir::GeneralisedPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a6c3580a0b5c46e00528d199d8bb24562">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1PLSPrior.html#a94a775307b10c1bf9efe1b7a86dafb37">stir::PLSPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ProjectorByBinPair.html#a2c61918b0a0d2c1aef887c4d69f8df4b">stir::ProjectorByBinPair</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a88bbb9f8318746eb7d89778c37954f43">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Reconstruction.html#a37a8cfc04fb10037d3c0a83ee516d971">stir::Reconstruction&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a18c29d181c1ee7f42d4ed5ae15d7aa8d">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests</a>
 </li>
 <li>check_consistency()
 : <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">stir::Scanner</a>
 </li>
+<li>check_GE_signature()
+: <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5Wrapper.html#a017f56e769be93995568d41ca2e58468">stir::GE::RDF_HDF5::GEHDF5Wrapper</a>
+</li>
 <li>check_if_equal()
-: <a class="el" href="classstir_1_1RunTests.html#a24e1b6eae710b407212fc9c8ffc4bf93">stir::RunTests</a>
+: <a class="el" href="classstir_1_1RunTests.html#ab394483b2a389b13d9699cbe71e449bb">stir::RunTests</a>
 </li>
 <li>check_if_equal_generic()
 : <a class="el" href="classstir_1_1RunTests.html#a6e8d0c619839dca05520a0ea0fb57c02">stir::RunTests</a>
+</li>
+<li>check_if_less()
+: <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests</a>
 </li>
 <li>check_if_zero()
 : <a class="el" href="classstir_1_1RunTests.html#a7d37c02403250865f79225f5db2a863a">stir::RunTests</a>
@@ -120,6 +128,9 @@ $(function() {
 <li>CListModeDataECAT8_32bit()
 : <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#aa3973ddeb0a4a852d9e7a9a45cbc7fb1">stir::ecat::CListModeDataECAT8_32bit</a>
 </li>
+<li>CListModeDataGEHDF5()
+: <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a5b0a28aaa586b0b6b8dc48108bcc86f4">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>
+</li>
 <li>CListModeDataLMF()
 : <a class="el" href="classstir_1_1CListModeDataLMF.html#a01fffaaea30777a21ed2747e1f34867b">stir::CListModeDataLMF</a>
 </li>
@@ -129,16 +140,19 @@ $(function() {
 <li>CListModeDataSAFIR()
 : <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a36233223a75df35ecde4d98725b159a6">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 </li>
+<li>CListRecordGEHDF5()
+: <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a6e6207161c2c9e334aa3529c20996550">stir::GE::RDF_HDF5::CListRecordGEHDF5</a>
+</li>
 <li>clone()
 : <a class="el" href="classstir_1_1Box3D.html#aafd7607648f4dc1a8eeffa02114f3919">stir::Box3D</a>
-, <a class="el" href="classstir_1_1CombinedShape3D.html#a29cdef3c2e892f765b4e65b38d0316a7">stir::CombinedShape3D&lt; operation &gt;</a>
+, <a class="el" href="classstir_1_1CombinedShape3D.html#abe65bf121f0bc621f274bd98d824eee7">stir::CombinedShape3D&lt; operation &gt;</a>
 , <a class="el" href="classstir_1_1DiscretisedDensity.html#aef4a19db70ddfbb07f51cc4381f4e910">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1DiscretisedShape3D.html#a1abb6563b16fa19b322932326fdc945e">stir::DiscretisedShape3D</a>
 , <a class="el" href="classstir_1_1Ellipsoid.html#a4daa7413753893230e317d6430951456">stir::Ellipsoid</a>
 , <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a175ec3b21d96a35a25b8578f0c40e29a">stir::EllipsoidalCylinder</a>
-, <a class="el" href="classstir_1_1ExamInfo.html#a687d1b4aec9647e04f64a9741d15c362">stir::ExamInfo</a>
+, <a class="el" href="classstir_1_1ExamInfo.html#a7b575718e8a15c146847aacad6aa0b4c">stir::ExamInfo</a>
 , <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#ac4b1072891578c135036ff332e0d97f5">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
-, <a class="el" href="classstir_1_1PixelsOnCartesianGrid.html#a5b8b764db6202515c949ec5ac6e80bf2">stir::PixelsOnCartesianGrid&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1PixelsOnCartesianGrid.html#a4539c3a2623c06c1be8293d593f30852">stir::PixelsOnCartesianGrid&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">stir::ProjDataInfo</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html#ac635a1ac89a8f74b3647353b24280107">stir::ProjDataInfoCylindricalArcCorr</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ada85e251b4acc8790de8a8cc034d1161">stir::ProjDataInfoCylindricalNoArcCorr</a>
@@ -148,17 +162,22 @@ $(function() {
 <li>ColsherFilter()
 : <a class="el" href="classstir_1_1ColsherFilter.html#a8c8a6bbc7256dcefc890fc1b1890e3a5">stir::ColsherFilter</a>
 </li>
+<li>compare()
+: <a class="el" href="classstir_1_1ReconstructionTests.html#a9b0fc408499588803887349bddbea9cb">stir::ReconstructionTests&lt; TargetT &gt;</a>
+</li>
 <li>compute_gradient()
 : <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">stir::GeneralisedPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a809d1742e6050793a90513f5098e9bee">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77">stir::PLSPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a5dc50b7f8caf38874c0d8610950822a7">stir::QuadraticPrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a17803a8048c605b34598d4b52f243e07">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 </li>
 <li>compute_Hessian()
 : <a class="el" href="classstir_1_1QuadraticPrior.html#ace819eb248600e65ce6347a0e3c14084">stir::QuadraticPrior&lt; elemT &gt;</a>
 </li>
 <li>compute_objective_function()
-: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a211f21d59b7d47f605a2f38a643bda68">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 </li>
 <li>compute_objective_function_without_penalty()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a2de6d1650b0eb144a73941a5f0ade96b">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
@@ -175,7 +194,7 @@ $(function() {
 <li>compute_sub_gradient_without_penalty()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a3d490db9b1171fc0fa198c93af4d78cb">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a351a7cf4f32a62dc9c1bbdd5d5e0aee7">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>
-, <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#a4d0a376c5582cccd59a2bb749ebb3670">stir::SumOfGeneralisedObjectiveFunctions&lt; ObjFuncT, TargetT, ParentT &gt;</a>
+, <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#ad0e1104f45c2b6c735e4a6d849184f28">stir::SumOfGeneralisedObjectiveFunctions&lt; ObjFuncT, TargetT, ParentT &gt;</a>
 </li>
 <li>compute_sub_gradient_without_penalty_plus_sensitivity()
 : <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#ae2fa8de7964f84cd9990151e44669f62">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>
@@ -189,10 +208,24 @@ $(function() {
 : <a class="el" href="classstir_1_1FilterRootPrior.html#af75cc8ef2d29112752075b721a75fff4">stir::FilterRootPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#afa6d6e88ce44aed622b37aca1548910e">stir::GeneralisedPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#aa30796752010654a8d95cc7a62daba1d">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1PLSPrior.html#a23af0ed4b934022821417dfebda75b17">stir::PLSPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a6f6ad894c01b826c2846e9255d6b8ff1">stir::QuadraticPrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#aa4f5a24e4d4f4ccf28283b6763941486">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
+</li>
+<li>construct_input_data()
+: <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; TargetT &gt;</a>
+</li>
+<li>construct_log_likelihood()
+: <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a9a2e90e137b56c48d20b74a3c06c6a5c">stir::PoissonLLReconstructionTests&lt; TargetT &gt;</a>
 </li>
 <li>construct_proj_data_info()
 : <a class="el" href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c">stir::ProjDataInfo</a>
+</li>
+<li>construct_reconstructor()
+: <a class="el" href="classstir_1_1ReconstructionTests.html#ac6b366183e66a297eca0128b369e2938">stir::ReconstructionTests&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1TestFBP2D.html#a8b6836c0b575d7b208b71fef5d8db5fb">stir::TestFBP2D</a>
+, <a class="el" href="classstir_1_1TestFBP3DRP.html#aa04306aeea76da65619cf3e14db1b618">stir::TestFBP3DRP</a>
+, <a class="el" href="classstir_1_1TestOSMAPOSL.html#ae2a609c326217421b090f346ba5402d3">stir::TestOSMAPOSL</a>
 </li>
 <li>construct_single_density()
 : <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#aa97ef49f3c0d220591c92e11f23afbda">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
@@ -206,7 +239,7 @@ $(function() {
 <li>construct_target_ptr()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ac7d1bb65ad36569c4e78d81745e7db07">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#ae0c3ebfa9bff5faad1db04fd9b22c40d">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>
-, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a4ea50eeb2f34fe3c0097ad4b9836c295">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#ac3e1bf9673a00080a6c5371ccabb299d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a88ea5bb2b9f9f7473410f0ac07da2032">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#afa0231cff22583af5773ba9d89a318c0">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>
 </li>
@@ -214,8 +247,23 @@ $(function() {
 : <a class="el" href="classstir_1_1DiscretisedShape3D.html#a4a83d4a79e8a43dafef1263cc1f8beac">stir::DiscretisedShape3D</a>
 , <a class="el" href="classstir_1_1Shape3D.html#ac1853acdcef8475e61fb3a93e35765b3">stir::Shape3D</a>
 </li>
+<li>convert_image_niftyPET_to_stir()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#ac39e65f9779bbb144dad982636ed72d8">stir::NiftyPETHelper</a>
+</li>
+<li>convert_image_stir_to_niftyPET()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#ac7e15b6f1686cf8efdb52bafdec31fec">stir::NiftyPETHelper</a>
+</li>
+<li>convert_proj_data_niftyPET_to_stir()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#af45ed34f82e6d22e9bbf6d1140aa9a74">stir::NiftyPETHelper</a>
+</li>
+<li>convert_proj_data_stir_to_niftyPET()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#a990a10f6613fbdf8fb9d32e404f29f04">stir::NiftyPETHelper</a>
+</li>
 <li>convert_to_total_frame_counts()
 : <a class="el" href="classstir_1_1ModelMatrix.html#a99799660075beda3f1135378fbb94ecc">stir::ModelMatrix&lt; num_param &gt;</a>
+</li>
+<li>convert_viewgram_stir_to_niftyPET()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#a41e41eaefa2cb7d47f70e1e07528d02d">stir::NiftyPETHelper</a>
 </li>
 <li>coord1()
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#ad18a9e3e5a0629c8290a86b184120261">stir::ProjMatrixElemsForOneBinValue</a>
@@ -227,12 +275,12 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#acdebd556b99027246b1c9011fc7d5cbc">stir::ProjMatrixElemsForOneBinValue</a>
 </li>
 <li>coordinates_equal()
-: <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#a83c034b0b0c804132bda5a20bf9fc4b6">stir::ProjMatrixElemsForOneBinValue</a>
-, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html#a39e84c57df8561d5f0d7ae80456e4620">stir::ProjMatrixElemsForOneDenselValue</a>
+: <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#a6ae03c36d78511c72adacbdd0a517c5d">stir::ProjMatrixElemsForOneBinValue</a>
+, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html#af76d96fcfbbf6910eb288f22a4dc795a">stir::ProjMatrixElemsForOneDenselValue</a>
 </li>
 <li>coordinates_less()
-: <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#a74ebe77329843bfb1c45b516c68fef0e">stir::ProjMatrixElemsForOneBinValue</a>
-, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html#a2585fdd4caaac79413ec055515e885d6">stir::ProjMatrixElemsForOneDenselValue</a>
+: <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html#af1df183ba4b73de9eb9bcb93a026ba67">stir::ProjMatrixElemsForOneBinValue</a>
+, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html#a412016d992df773ab5ac0253d79b9359">stir::ProjMatrixElemsForOneDenselValue</a>
 </li>
 <li>Copy()
 : <a class="el" href="classImage.html#a083647168e844379abc1095c01962bb4">Image</a>
@@ -246,15 +294,30 @@ $(function() {
 <li>create_image()
 : <a class="el" href="classstir_1_1IOTests__ParametricDiscretisedDensity.html#aafed383820a9ae586ee04dd6d088ee6b">stir::IOTests_ParametricDiscretisedDensity</a>
 </li>
+<li>create_niftyPET_image()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#a625ee2eaf78ca058a52a308ed0f778f0">stir::NiftyPETHelper</a>
+</li>
+<li>create_niftyPET_sinogram_no_gaps()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#aa1e7656093969f66be77de6fa101d93d">stir::NiftyPETHelper</a>
+</li>
+<li>create_niftyPET_sinogram_with_gaps()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#a46b9c90989cfff81e7346f2843b9c415">stir::NiftyPETHelper</a>
+</li>
 <li>create_shared_clone()
-: <a class="el" href="classstir_1_1ExamInfo.html#a917dce05eb53d699ba21273f245c3eb8">stir::ExamInfo</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#a926807d20073d214ca81cf2b7eae994b">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ExamInfo.html#aa83536e912405140263215719b5356e4">stir::ExamInfo</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb">stir::ProjDataInfo</a>
+</li>
+<li>create_stir_im()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#a4a7b49589b7557c1ffb3cba30428769c">stir::NiftyPETHelper</a>
+</li>
+<li>create_stir_sino()
+: <a class="el" href="classstir_1_1NiftyPETHelper.html#aed820a170de1284f5d55261ec896112f">stir::NiftyPETHelper</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:34 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

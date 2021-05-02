@@ -1,7 +1,9 @@
 <map id="Tests of the basic building blocks" name="Tests of the basic building blocks">
-<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="593,5,736,47"/>
-<area shape="rect" id="node2" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="573,87,756,143"/>
-<area shape="rect" id="node4" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="585,187,744,214"/>
-<area shape="rect" id="node6" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="585,276,745,317"/>
-<area shape="rect" id="node5" href="$group__alltest.html" title="Test code for STIR" alt="" coords="5,141,144,167"/>
+<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="593,14,736,55"/>
+<area shape="rect" id="node2" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="573,127,756,183"/>
+<area shape="rect" id="node3" href="$group__date__time.html" title="Items related to date\l/time processing" alt="" coords="585,209,744,250"/>
+<area shape="rect" id="node5" href="$group__numerics.html" title="Numerical algorithms" alt="" coords="583,292,746,319"/>
+<area shape="rect" id="node6" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="585,371,744,397"/>
+<area shape="rect" id="node8" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="585,450,745,491"/>
+<area shape="rect" id="node7" href="$group__alltest.html" title="Test code for STIR" alt="" coords="5,247,144,273"/>
 </map>

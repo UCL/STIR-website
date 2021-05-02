@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.0.2</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -274,8 +274,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>map_element</b></td>
 The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 <p>Main problem: when non-trivial callback functions have to be used, you need to do it via a derived class (as <a class="el" href="classstir_1_1KeyParser.html" title="A class to parse Interfile headers. ">KeyParser</a> requires pointers to member functions.)</p>
 <dl class="section warning"><dt>Warning</dt><dd>As <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a" title="add a keyword. When parsing, parse its value as a float and put it in *variable_ptr ...">KeyParser::add_key</a> stores pointers to the variables where you want your results, it is somewhat dangerous to copy a <a class="el" href="classstir_1_1KeyParser.html" title="A class to parse Interfile headers. ">KeyParser</a> object. That is, its keymap will still point to the same variables.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000050">Todo:</a></b></dt><dd>add checking functions in the map, as in </dd></dl>
-<div class="fragment"><div class="line"><a class="code" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a>(<span class="stringliteral">&quot;my key&quot;</span>,&amp;my_value, check_positive); </div></div><!-- fragment --> <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo:</a></b></dt><dd>add facilities for checking (while parsing) if a keyword was present before the current one </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd>add checking functions in the map, as in </dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a>(<span class="stringliteral">&quot;my key&quot;</span>,&amp;my_value, check_positive); </div></div><!-- fragment --> <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000055">Todo:</a></b></dt><dd>add facilities for checking (while parsing) if a keyword was present before the current one </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a08ca6f6fc94772b3f2832b438a0a6b43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08ca6f6fc94772b3f2832b438a0a6b43">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/2]</span></h2>
@@ -304,7 +304,7 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 </div><div class="memdoc">
 
 <p><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise </p>
-<p>if  write_warnings is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
+<p>if <em>write_warnings</em> is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#aa3973ddeb0a4a852d9e7a9a45cbc7fb1">stir::ecat::CListModeDataECAT8_32bit::CListModeDataECAT8_32bit()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="namespacedistributed.html#a59355c8b36a8904c9f869ed1a8ca6023">distributed::receive_and_construct_exam_and_proj_data_info_ptr()</a>, <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#a0e97ca9b7f59ea248a43278b710e9d59">stir::ecat::BinNormalisationFromECAT8::set_up()</a>, and <a class="el" href="classstir_1_1TimeFrameDefinitions.html#af863595d5f7123c15bca6704515056e7">stir::TimeFrameDefinitions::TimeFrameDefinitions()</a>.</p>
 
@@ -337,7 +337,7 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 </div><div class="memdoc">
 
 <p><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise </p>
-<p>if  write_warnings is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
+<p>if <em>write_warnings</em> is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -492,7 +492,7 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#a46de0f60836c7e79938fdda780641381">start_parsing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1AbsTimeIntervalFromDynamicData.html#a2e8f912d3fcfeae3ed864421bab32e15">stir::AbsTimeIntervalFromDynamicData::AbsTimeIntervalFromDynamicData()</a>, <a class="el" href="classstir_1_1AbsTimeIntervalFromECAT7ACF.html#abcdf6a876759e327cf373a3f871a1691">stir::AbsTimeIntervalFromECAT7ACF::AbsTimeIntervalFromECAT7ACF()</a>, <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#ac6c1214080116aaade987256b1eb84ce">stir::DiscretisedShape3D::DiscretisedShape3D()</a>, <a class="el" href="classstir_1_1SeparableCartesianMetzImageFilter.html#a51fce83a63606e9062998c9b18a58949">stir::SeparableCartesianMetzImageFilter&lt; elemT &gt;::get_max_kernel_sizes()</a>, <a class="el" href="classstir_1_1SingleScatterSimulation.html#a458b8c10b5842d8334175f06cb9832e5">stir::SingleScatterSimulation::initialise_keymap()</a>, <a class="el" href="classstir_1_1SeparableGaussianImageFilter.html#a08ffab306b8127f4f8057c63fd8ff0d5">stir::SeparableGaussianImageFilter&lt; elemT &gt;::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#a53019277d10511dbc5d2b065aa519948">stir::InputStreamFromROOTFileForECATPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#abc14bcad3b88e037248fc209e8b065b8">stir::InputStreamFromROOTFileForCylindricalPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#a0e97ca9b7f59ea248a43278b710e9d59">stir::ecat::BinNormalisationFromECAT8::set_up()</a>, and <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a49f0b2bae4660791e9efb62e4ddadc89">stir::RigidObject3DMotionFromPolaris::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1AbsTimeIntervalFromDynamicData.html#a2e8f912d3fcfeae3ed864421bab32e15">stir::AbsTimeIntervalFromDynamicData::AbsTimeIntervalFromDynamicData()</a>, <a class="el" href="classstir_1_1AbsTimeIntervalFromECAT7ACF.html#abcdf6a876759e327cf373a3f871a1691">stir::AbsTimeIntervalFromECAT7ACF::AbsTimeIntervalFromECAT7ACF()</a>, <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#ac6c1214080116aaade987256b1eb84ce">stir::DiscretisedShape3D::DiscretisedShape3D()</a>, <a class="el" href="classstir_1_1SeparableCartesianMetzImageFilter.html#a51fce83a63606e9062998c9b18a58949">stir::SeparableCartesianMetzImageFilter&lt; elemT &gt;::get_max_kernel_sizes()</a>, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#aedb64c5fb954e5c09985b56d5f251e83">stir::BackProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a992445a0da1d3ab7c9e254bce355af71">stir::ForwardProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1SingleScatterSimulation.html#a458b8c10b5842d8334175f06cb9832e5">stir::SingleScatterSimulation::initialise_keymap()</a>, <a class="el" href="classstir_1_1SeparableGaussianImageFilter.html#a08ffab306b8127f4f8057c63fd8ff0d5">stir::SeparableGaussianImageFilter&lt; elemT &gt;::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#a53019277d10511dbc5d2b065aa519948">stir::InputStreamFromROOTFileForECATPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#abc14bcad3b88e037248fc209e8b065b8">stir::InputStreamFromROOTFileForCylindricalPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#af38923176710a95e928624c99d19381b">stir::ProjMatrixByBinUsingInterpolation::ProjMatrixByBinUsingInterpolation()</a>, <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#a0e97ca9b7f59ea248a43278b710e9d59">stir::ecat::BinNormalisationFromECAT8::set_up()</a>, and <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a49f0b2bae4660791e9efb62e4ddadc89">stir::RigidObject3DMotionFromPolaris::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +541,7 @@ template&lt;typename ParsingClass &gt; </div>
     ; keywords here appropriate to a Median ImageFilter
   End SomeReconstruction Parameters:= ;
 </pre> 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ template&lt;typename ParsingClass &gt; </div>
 
 <p>Ask interactively for values for all keywords. </p>
 <p>Keywords are asked in the order they are inserted in the keymap.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000052">Todo:</a></b></dt><dd>any consistency checks are currently done by <a class="el" href="classstir_1_1KeyParser.html#a1a9a476639a8bc800bee613f5178f722" title="This will be called at the end of the parsing. ">post_processing()</a> at the end of the parsing. It should be possible to have checks after every question such that it can be repeated.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000056">Todo:</a></b></dt><dd>any consistency checks are currently done by <a class="el" href="classstir_1_1KeyParser.html#a1a9a476639a8bc800bee613f5178f722" title="This will be called at the end of the parsing. ">post_processing()</a> at the end of the parsing. It should be possible to have checks after every question such that it can be repeated.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>breaks with for 'vectorised' keys. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ab85972eee166cdc25ce3e901a89f40b5">do_nothing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a46de0f60836c7e79938fdda780641381">start_parsing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a58b886da1a41689c63624a41913b8ea4">stop_parsing()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
@@ -705,7 +705,7 @@ template&lt;typename ParsingClass &gt; </div>
 
 <p>This will be called at the end of the parsing. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if everything OK, true if not </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
 <p class="enddd">rename to <code>post_parsing()</code> </p>
 </dd></dl>
 
@@ -738,7 +738,7 @@ template&lt;typename ParsingClass &gt; </div>
 </div><div class="memdoc">
 
 <p>convert 'rough' keyword into a standardised form </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd>Implementation note: this function is non-static such that it can be overloaded. Probably a template with a function object would be better. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000058">Todo:</a></b></dt><dd>Implementation note: this function is non-static such that it can be overloaded. Probably a template with a function object would be better. </dd></dl>
 <p>This follows Interfile 3.3 conventions: </p><ul>
 <li>
 The characters <code>space</code>, <code>tab</code>, <code>underscore</code>, <code>!</code> are all treated as white space and ignored. </li>
@@ -1039,7 +1039,7 @@ Case is ignored. </li>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1InterfileHeaderSiemens.html#a3754b86f34a8ada9deeae2340e95db86">stir::InterfileHeaderSiemens::post_processing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1InterfileHeaderSiemens.html#a3754b86f34a8ada9deeae2340e95db86">stir::InterfileHeaderSiemens::post_processing()</a>, and <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1118,7 @@ Case is ignored. </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 22 2020 09:05:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
