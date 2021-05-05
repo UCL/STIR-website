@@ -43,7 +43,7 @@ on geometry of the scanner etc, STIR needs an additional header. In addition,
 there is much more to do then just reading the data of course. The following
 external projects can help</p>
 <ul>
-  <li><a href="https://github.com/UCL/STIR-GATE-Connection.git" target=_"_parent">STIR-GATE-Connection</a> is an open-source project aiming to facilitate the
+  <li><a href="https://github.com/UCL/STIR-GATE-Connection.git" target="_parent">STIR-GATE-Connection</a> is an open-source project aiming to facilitate the
     connection between GATE and STIR taking into account image conversions,
     conventions etc. It also estimates the data corrections needed for reconstruction.
   </li>
