@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -121,9 +121,9 @@ class stir::SeparableMetzArrayFilter&lt; num_dimensions, elemT &gt;</h3>
 
 <p>Separable Metz filtering in <code>n</code> - dimensions. </p>
 <p>The Metz filter is easiest defined in frequency space. For a <code>fwhm</code> <code>s</code> and power <code>P</code>, its (continuous) Fourier transform is given by </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]" src="form_93.png"/>
+<img class="formulaDsp" alt="\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]" src="form_111.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$ G(k,s) $" src="form_94.png"/> is the Fourier transform of a Gaussian with FWHM <code>s</code>, normalised such that <img class="formulaInl" alt="$G(0,s) = 1$" src="form_95.png"/>.</p>
+<p> where <img class="formulaInl" alt="$ G(k,s) $" src="form_112.png"/> is the Fourier transform of a Gaussian with FWHM <code>s</code>, normalised such that <img class="formulaInl" alt="$G(0,s) = 1$" src="form_113.png"/>.</p>
 <p>For power 0, the Metz filter is just a Gaussian. For higher power, mid-range frequencies are more and more amplified. The first figure shows the FT of the Metz filter with <code>fwhm</code> 1, for powers 0, 0.5, 1, ... 3 (lowest curve is Gaussian). </p><div class="image">
 <img src="FTMetz.jpg" alt="FTMetz.jpg"/>
 </div>
@@ -131,7 +131,7 @@ class stir::SeparableMetzArrayFilter&lt; num_dimensions, elemT &gt;</h3>
 <img src="Metz.jpg" alt="Metz.jpg"/>
 </div>
   Note that from the definition it follows that </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]" src="form_96.png"/>
+<img class="formulaDsp" alt="\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]" src="form_114.png"/>
 </p>
 <p> The final figure illustrates the relation between the actual FWHM of the Metz filter and the FWHM of the underlying Gaussian. </p><div class="image">
 <img src="MetzFWHM.jpg" alt="MetzFWHM.jpg"/>
@@ -233,7 +233,7 @@ template&lt;int num_dimensions, typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

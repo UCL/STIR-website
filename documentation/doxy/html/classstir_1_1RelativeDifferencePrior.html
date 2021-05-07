@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -225,7 +225,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ae3fde6f3b09c80e3c2d237148bcfff5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="memItemLeft" align="right" valign="top"><a id="a76a80efbf83a99b13b6b52d1c4992c0b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a76a80efbf83a99b13b6b52d1c4992c0b">kappa_filename</a></td></tr>
-<tr class="memdesc:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image that will be read by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a14748e18360e190b78fde5406d6f3e43" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
+<tr class="memdesc:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image that will be read by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a14748e18360e190b78fde5406d6f3e43" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
 <tr class="separator:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abc351b677ce31d811ee7469a34ffb1ad inherit pro_attribs_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="abc351b677ce31d811ee7469a34ffb1ad"></a>
@@ -276,10 +276,10 @@ class stir::RelativeDifferencePrior&lt; elemT &gt;</h3>
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements a Relative Difference prior. </p>
 <p>The gradient of the prior is computed as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g_r = \sum_{dr} w_{dr} * \frac{\left(\lambda_{j}-\lambda_{k}\right)\left(\gamma\left|\lambda_{j}-\lambda_{k}\right|+\lambda_{j}+3 \lambda_{k} + 2 \epsilon \right)} {\left(\lambda_{j}+\lambda_{k}+\gamma\left|\lambda_{j}-\lambda_{k}\right| + \epsilon \right)^{2}} * \kappa_r * \kappa_{r+dr} \]" src="form_113.png"/>
+<img class="formulaDsp" alt="\[ g_r = \sum_{dr} w_{dr} * \frac{\left(\lambda_{j}-\lambda_{k}\right)\left(\gamma\left|\lambda_{j}-\lambda_{k}\right|+\lambda_{j}+3 \lambda_{k} + 2 \epsilon \right)} {\left(\lambda_{j}+\lambda_{k}+\gamma\left|\lambda_{j}-\lambda_{k}\right| + \epsilon \right)^{2}} * \kappa_r * \kappa_{r+dr} \]" src="form_108.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$\lambda$" src="form_34.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_59.png"/> and <img class="formulaInl" alt="$dr$" src="form_89.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_90.png"/> are non-zero. <img class="formulaInl" alt="$\gamma$" src="form_42.png"/> is a smoothing scalar term and the <img class="formulaInl" alt="$\epsilon$" src="form_114.png"/> is a small non-negative value included to prevent division by zero. Please note that the RDP is only well defined for non-negative voxel values. For more details, see: <em> J. Nuyts, D. Beque, P. Dupont, and L. Mortelmans, “A Concave Prior Penalizing Relative Differences for Maximum-a-Posteriori <a class="el" href="classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi...">Reconstruction</a> in Emission Tomography,” vol. 49, no. 1, pp. 56–60, 2002. </em></p>
-<p>The <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_91.png"/>'s.</p>
+<p>where <img class="formulaInl" alt="$\lambda$" src="form_41.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_76.png"/> and <img class="formulaInl" alt="$dr$" src="form_106.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_107.png"/> are non-zero. <img class="formulaInl" alt="$\gamma$" src="form_49.png"/> is a smoothing scalar term and the <img class="formulaInl" alt="$\epsilon$" src="form_109.png"/> is a small non-negative value included to prevent division by zero. Please note that the RDP is only well defined for non-negative voxel values. For more details, see: <em> J. Nuyts, D. Beque, P. Dupont, and L. Mortelmans, “A Concave Prior Penalizing Relative Differences for Maximum-a-Posteriori <a class="el" href="classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi...">Reconstruction</a> in Emission Tomography,” vol. 49, no. 1, pp. 56–60, 2002. </em></p>
+<p>The <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_69.png"/>'s.</p>
 <p>By default, a 3x3 or 3x3x3 neighbourhood is used where the weights are set to x-voxel_size divided by the Euclidean distance between the points.</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">  Relative Difference Prior Parameters:=
   ; next defaults to 0, set to 1 for 2D inverse Euclidean weights, 0 for 3D 
@@ -543,7 +543,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

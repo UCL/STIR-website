@@ -1,4 +1,53 @@
 -------------------------------
+Fri, 7 May 2021 07:31:04 +0000  Kris Thielemans  
+
+updated credits
+
+
+documentation/credits.htm
+
+-------------------------------
+Fri, 7 May 2021 07:20:50 +0000  Kris Thielemans  
+
+release 4.1.1
+
+
+CMakeLists.txt
+LICENSE.txt
+VERSION.txt
+documentation/history.htm
+documentation/release_4.1.htm
+
+-------------------------------
+Thu, 6 May 2021 18:18:48 +0100  Kris Thielemans  
+
+Merge pull request #881 from KrisThielemans/fix_RFS
+correct scale factor in randoms_from_singles
+
+Fixes #880
+
+-------------------------------
+Thu, 6 May 2021 12:13:32 +0000  Kris Thielemans  
+
+correct scale factor in randoms_from_singles
+There was a mistake due to formulas derived with lambda,
+but applied with half-life...
+
+Also improved the `info` message a bit.
+
+
+src/data_buildblock/randoms_from_singles.cxx
+
+-------------------------------
+Mon, 3 May 2021 07:10:04 +0000  Kris Thielemans  
+
+updated release_4.1 notes [ci skip]
+cleaned-up `SinglesRates` info
+
+
+documentation/release_4.1.htm
+
+-------------------------------
 Sun, 2 May 2021 10:00:51 +0000  Kris Thielemans  
 
 updated VERSION.txt etc for release of version 4.1.0

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -553,7 +553,7 @@ class stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion
 
 <p>a base class for LogLikelihood of independent Poisson variables where the mean values are linear combinations of the gated images. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \begin{array}{lcl} \Lambda_{\nu}^{(s+1)}&amp;&amp;=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\ &amp;&amp;\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow \tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]" src="form_72.png"/>
+<img class="formulaDsp" alt="\[ \begin{array}{lcl} \Lambda_{\nu}^{(s+1)}&amp;&amp;=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\ &amp;&amp;\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow \tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]" src="form_89.png"/>
 </p>
  <dl class="section user"><dt>Parameters for parsing</dt><dd></dd></dl>
 <p>For more information: Tsoumpas et al (2013) Physics in Medicine and Biology </p>
@@ -635,7 +635,7 @@ template&lt;typename TargetT &gt; </div>
 <p>This should compute the gradient of the (unregularised) objective function plus the (sub)sensitivity. </p>
 <p>This function is used for instance by OSMAPOSL.</p>
 <p>This computes </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_71.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_88.png"/>
 </p>
 <p> (see the class general documentation). The sum will however be restricted to a subset. </p>
 
@@ -1055,7 +1055,7 @@ template&lt;typename TargetT &gt; </div>
 <p>This should compute the gradient of the (unregularised) objective function plus the (sub)sensitivity. </p>
 <p>This function is used for instance by OSMAPOSL.</p>
 <p>This computes </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_71.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_88.png"/>
 </p>
 <p> (see the class general documentation). The sum will however be restricted to a subset. </p>
 
@@ -1282,7 +1282,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

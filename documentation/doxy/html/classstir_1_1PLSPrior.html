@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -232,7 +232,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:afad1ef6500da28af5789997096d5262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63c875750fb5ad451850cc3e869eb04"><td class="memItemLeft" align="right" valign="top"><a id="ae63c875750fb5ad451850cc3e869eb04"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ae63c875750fb5ad451850cc3e869eb04">kappa_filename</a></td></tr>
-<tr class="memdesc:ae63c875750fb5ad451850cc3e869eb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image that will be read by <a class="el" href="classstir_1_1PLSPrior.html#ad6cde9c4e1f94a0031cfce689e562f09" title="the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword i...">post_processing()</a> <br /></td></tr>
+<tr class="memdesc:ae63c875750fb5ad451850cc3e869eb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image that will be read by <a class="el" href="classstir_1_1PLSPrior.html#ad6cde9c4e1f94a0031cfce689e562f09" title="the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword i...">post_processing()</a> <br /></td></tr>
 <tr class="separator:ae63c875750fb5ad451850cc3e869eb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac23ee1c80657f5646ae69cf527988d35"><td class="memItemLeft" align="right" valign="top"><a id="ac23ee1c80657f5646ae69cf527988d35"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>anatomical_filename</b></td></tr>
@@ -291,16 +291,16 @@ class stir::PLSPrior&lt; elemT &gt;</h3>
 
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements the anatomical penalty function, Parallel Level Sets (PLS), proposed by Matthias J. Ehrhardt et. al in "PET Reconstruction With an Anatomical MRI
 Prior Using Parallel Level Sets", IEEE Trans. med. Imag., vol. 35, no. 9, Sept. 2016. <a href="https://doi.org/10.1109/TMI.2016.2549601">https://doi.org/10.1109/TMI.2016.2549601</a> Note that PLS becomes smoothed TV when an uniform anatomical image is provided. </p>
-<p>The prior has 2 parameters alpha and eta. It is computed for an image <img class="formulaInl" alt="$ f $" src="form_124.png"/> as</p>
+<p>The prior has 2 parameters alpha and eta. It is computed for an image <img class="formulaInl" alt="$ f $" src="form_62.png"/> as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]" src="form_125.png"/>
+<img class="formulaDsp" alt="\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]" src="form_63.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$ f $" src="form_124.png"/> is the PET image, <img class="formulaInl" alt="$ \xi $" src="form_126.png"/> is the normalised gradient of the anatomical image calculated as follows:</p>
+<p> where <img class="formulaInl" alt="$ f $" src="form_62.png"/> is the PET image, <img class="formulaInl" alt="$ \xi $" src="form_64.png"/> is the normalised gradient of the anatomical image calculated as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]" src="form_127.png"/>
+<img class="formulaDsp" alt="\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]" src="form_65.png"/>
 </p>
-<p>with <img class="formulaInl" alt="$ v $" src="form_128.png"/> the anatomical image, <img class="formulaInl" alt="$ \alpha $" src="form_129.png"/> controls the edge-preservation property of PLS, and depends on the scale of the emission image, and <img class="formulaInl" alt="$ \eta $" src="form_130.png"/> avoids division by zero, and depends on the scale of the anatomical image.</p>
-<p>A <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_91.png"/>'s.</p>
+<p>with <img class="formulaInl" alt="$ v $" src="form_66.png"/> the anatomical image, <img class="formulaInl" alt="$ \alpha $" src="form_67.png"/> controls the edge-preservation property of PLS, and depends on the scale of the emission image, and <img class="formulaInl" alt="$ \eta $" src="form_68.png"/> avoids division by zero, and depends on the scale of the anatomical image.</p>
+<p>A <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_69.png"/>'s.</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">PLS Prior Parameters:=
 ; next defaults to 0, set to 1 for 2D images, 0 for 3D
 only 2D:= 0
@@ -484,7 +484,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

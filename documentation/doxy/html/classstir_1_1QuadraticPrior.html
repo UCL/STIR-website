@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -211,7 +211,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a1646ee82569e71a4453c4531a8cb6e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a300ec0543c6b201f0f52ff9217a0306b"><td class="memItemLeft" align="right" valign="top"><a id="a300ec0543c6b201f0f52ff9217a0306b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a300ec0543c6b201f0f52ff9217a0306b">kappa_filename</a></td></tr>
-<tr class="memdesc:a300ec0543c6b201f0f52ff9217a0306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image that will be read by <a class="el" href="classstir_1_1QuadraticPrior.html#a5630b6c7ade1c80185a150e1b3fd5ac7" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
+<tr class="memdesc:a300ec0543c6b201f0f52ff9217a0306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image that will be read by <a class="el" href="classstir_1_1QuadraticPrior.html#a5630b6c7ade1c80185a150e1b3fd5ac7" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
 <tr class="separator:a300ec0543c6b201f0f52ff9217a0306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abc351b677ce31d811ee7469a34ffb1ad inherit pro_attribs_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="abc351b677ce31d811ee7469a34ffb1ad"></a>
@@ -262,10 +262,10 @@ class stir::QuadraticPrior&lt; elemT &gt;</h3>
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements a quadratic Gibbs prior. </p>
 <p>The gradient of the prior is computed as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]" src="form_88.png"/>
+<img class="formulaDsp" alt="\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]" src="form_105.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$\lambda$" src="form_34.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_59.png"/> and <img class="formulaInl" alt="$dr$" src="form_89.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_90.png"/> are non-zero.</p>
-<p>The <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_91.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_91.png"/>'s.</p>
+<p> where <img class="formulaInl" alt="$\lambda$" src="form_41.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_76.png"/> and <img class="formulaInl" alt="$dr$" src="form_106.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_107.png"/> are non-zero.</p>
+<p>The <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_69.png"/>'s.</p>
 <p>By default, a 3x3 or 3x3x3 neigbourhood is used where the weights are set to x-voxel_size divided by the Euclidean distance between the points.</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">Quadratic Prior Parameters:=
 ; next defaults to 0, set to 1 for 2D inverse Euclidean weights, 0 for 3D 
@@ -538,7 +538,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

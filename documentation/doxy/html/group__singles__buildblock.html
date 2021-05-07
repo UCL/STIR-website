@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -170,15 +170,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Estimate randoms from singles. </p>
-<p>This uses the formula <img class="formulaInl" alt="$ R_{ij}= \tau S_i S_j $" src="form_109.png"/> (with <img class="formulaInl" alt="$\tau$" src="form_110.png"/> the <code>coincidence_time_window</code>) for finding the randoms-rate in terms of the singles-rates. The function then takes duration properly into account using the following procedure.</p>
-<p>We actually have total counts in the singles for sinograms and need total counts in the randoms. Assuming the radioactivity distribution is stationary and only decays, and dropping indices <img class="formulaInl" alt="$i,j$" src="form_115.png"/>, we get </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]" src="form_116.png"/>
+<p>This uses the formula <img class="formulaInl" alt="$ R_{ij}= \tau S_i S_j $" src="form_6.png"/> (with <img class="formulaInl" alt="$\tau$" src="form_7.png"/> the <code>coincidence_time_window</code>) for finding the randoms-rate in terms of the singles-rates. The function then takes duration properly into account using the following procedure.</p>
+<p>We actually have total counts in the singles for sinograms and need total counts in the randoms. Assuming the radioactivity distribution is stationary and only decays, and dropping indices <img class="formulaInl" alt="$i,j$" src="form_8.png"/>, we get </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]" src="form_9.png"/>
 </p>
 <p> Integrating over time, and writing $r$ for the integral of $R$ etc </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t) \]" src="form_117.png"/>
+<img class="formulaDsp" alt="\[ r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t) \]" src="form_10.png"/>
 </p>
 <p> converting that to total singles $s$ in the time frame, we get </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_t1^t2 dt\,exp (-\lambda t)\right)^2} \]" src="form_118.png"/>
+<img class="formulaDsp" alt="\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_t1^t2 dt\,exp (-\lambda t)\right)^2} \]" src="form_11.png"/>
 </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd><p class="startdd">Dead-time is currently completely ignored. </p>
 <p class="enddd">The function currently assumes F-18 half-life. </p>
@@ -191,7 +191,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

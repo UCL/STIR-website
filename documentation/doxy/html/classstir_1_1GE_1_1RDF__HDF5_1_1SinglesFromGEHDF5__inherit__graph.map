@@ -1,6 +1,0 @@
-<map id="stir::GE::RDF_HDF5::SinglesFromGEHDF5" name="stir::GE::RDF_HDF5::SinglesFromGEHDF5">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesFromGEHDF5, SinglesRates \&gt;" alt="" coords="95,215,371,256"/>
-<area shape="rect" id="node3" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info. " alt="" coords="19,103,154,130"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="178,96,387,137"/>
-</map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -860,7 +860,7 @@ template&lt;class coordT &gt; </div>
 
 <p>Compute decay-correction factor for a time frame. </p>
 <p>This function computes the factor needed to convert <em>average number of counts per second</em> to <em>activity at time 0</em>, i.e. it returns </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \frac{(t_2-t_1)}{ \int_{t_1}^{t_2} \! 2^{-t/\mathrm{halflife}} \, dt} \]" src="form_6.png"/>
+<img class="formulaDsp" alt="\[ \frac{(t_2-t_1)}{ \int_{t_1}^{t_2} \! 2^{-t/\mathrm{halflife}} \, dt} \]" src="form_12.png"/>
 </p>
  
 <p class="reference">Referenced by <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html#a96b8fc81da4adff2e27fbd8d19e1bfba">stir::DynamicDiscretisedDensity::decay_correct_frames()</a>, <a class="el" href="classstir_1_1PlasmaData.html#af7ad33c07f73db9d3636cd24d27f3eb8">stir::PlasmaData::decay_correct_PlasmaData()</a>, <a class="el" href="classstir_1_1PatlakPlot.html#a947ef913935520ce5f301c335ee28132">stir::PatlakPlot::get_model_matrix()</a>, and <a class="el" href="group__singles__buildblock.html#ga6a0a3de9251746563ba30d4c3aeb3e88">stir::randoms_from_singles()</a>.</p>
@@ -903,7 +903,7 @@ template&lt;class coordT &gt; </div>
 
 <p>Computes the decay-correction factor for activity at a given time point. </p>
 <p>This function computes the correction factor to convert activity at t0 + <em>rel_time</em> to activity at t0, i.e. </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ 2^{(\mathrm{rel\_time} / \mathrm{halflife})} \]" src="form_7.png"/>
+<img class="formulaDsp" alt="\[ 2^{(\mathrm{rel\_time} / \mathrm{halflife})} \]" src="form_13.png"/>
 </p>
  
 </div>
@@ -1574,7 +1574,7 @@ template&lt;class STRING &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

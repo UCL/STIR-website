@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -484,13 +484,13 @@ template&lt;class elemT &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Succeeded::yes if <em>max_num_iterations</em> was not reached. However, you probably want to check if the norm of the difference between <code>m.max_eigenvector</code> and <code> max_eigenvalue*max_eigenvector</code> is small (compared to max_eigenvalue).</dd></dl>
 <p>Computation uses the <em>power</em> method, see for instance <a href="http://www.maths.lth.se/na/courses/FMN050/FMN050-05/eigenE.pdf">http://www.maths.lth.se/na/courses/FMN050/FMN050-05/eigenE.pdf</a>.</p>
 <p>The method consists in computing </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[v^{n+1}=m.v^{n}\]" src="form_25.png"/>
+<img class="formulaDsp" alt="\[v^{n+1}=m.v^{n}\]" src="form_32.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]" src="form_26.png"/>
+<img class="formulaDsp" alt="\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]" src="form_33.png"/>
 </p>
-<p> with <img class="formulaInl" alt="$ v^{0}=\mathrm{start} $" src="form_27.png"/> for <img class="formulaInl" alt="$ n$" src="form_28.png"/> big enough such that <img class="formulaInl" alt="$ \mathrm{norm}(v^{n+1}-v^{n})$" src="form_29.png"/> becomes smaller than <em>tolerance</em>. The eigenvalue is then computed using the Rayleigh quotient </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[v.m.v \over v.v \]" src="form_30.png"/>
+<p> with <img class="formulaInl" alt="$ v^{0}=\mathrm{start} $" src="form_34.png"/> for <img class="formulaInl" alt="$ n$" src="form_35.png"/> big enough such that <img class="formulaInl" alt="$ \mathrm{norm}(v^{n+1}-v^{n})$" src="form_36.png"/> becomes smaller than <em>tolerance</em>. The eigenvalue is then computed using the Rayleigh quotient </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[v.m.v \over v.v \]" src="form_37.png"/>
 </p>
 <p>This will converge to the eigenvector which has the largest absolute eigenvalue. The method fails when the matrix has more than 1 largest absolute eigenvalue (e.g. with opposite sign). </p>
 
@@ -1003,7 +1003,7 @@ template&lt;int num_dimensions, class elemT , class positionT , class valueT &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

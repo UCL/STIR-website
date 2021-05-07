@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -484,22 +484,22 @@ class stir::OSSPSReconstruction&lt; TargetT &gt;</h3>
 <p>See S. Ahn and J. A. Fessler, <em>Globally convergent image reconstruction for emission tomography using relaxed ordered subsets algorithms,</em> IEEE Trans. Med. Imag., vol. 22, no. 3, pp. 613-626, May 2003.</p>
 <p>OSSPS is a relaxed preconditioned sub-gradient descent algorithm:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \lambda^\mathrm{new} = \lambda + \zeta D \nabla \Psi \]" src="form_33.png"/>
+<img class="formulaDsp" alt="\[ \lambda^\mathrm{new} = \lambda + \zeta D \nabla \Psi \]" src="form_40.png"/>
 </p>
-<p>with <img class="formulaInl" alt="$\lambda$" src="form_34.png"/> the parameters to be estimated, <img class="formulaInl" alt="$\Psi$" src="form_35.png"/> the objective function (see class <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr...">GeneralisedObjectiveFunction</a>) <img class="formulaInl" alt="$D$" src="form_36.png"/> a diagonal matrix (the preconditioner) and <img class="formulaInl" alt="$\zeta$" src="form_37.png"/> an iteration-dependent number called the relaxation parameter (see below).</p>
-<p><img class="formulaInl" alt="$D$" src="form_36.png"/> depends on <img class="formulaInl" alt="$\Psi$" src="form_35.png"/>. The data-dependent term in the preconditioner suggested in Ahn and Fessler turns out to be equal to the product of the Hessian of <img class="formulaInl" alt="$\Psi$" src="form_35.png"/> summed over all columns (while using the data plug-in approach for approximating the Hessian close to the solution). Therefore, this OSSPS implementation uses GeneralisedObjectiveFunction::add_multiplication_with_approximate_Hessian_without_penalty. It is thus completely generic and can be applied to any objective function implemented in STIR.</p>
+<p>with <img class="formulaInl" alt="$\lambda$" src="form_41.png"/> the parameters to be estimated, <img class="formulaInl" alt="$\Psi$" src="form_42.png"/> the objective function (see class <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr...">GeneralisedObjectiveFunction</a>) <img class="formulaInl" alt="$D$" src="form_43.png"/> a diagonal matrix (the preconditioner) and <img class="formulaInl" alt="$\zeta$" src="form_44.png"/> an iteration-dependent number called the relaxation parameter (see below).</p>
+<p><img class="formulaInl" alt="$D$" src="form_43.png"/> depends on <img class="formulaInl" alt="$\Psi$" src="form_42.png"/>. The data-dependent term in the preconditioner suggested in Ahn and Fessler turns out to be equal to the product of the Hessian of <img class="formulaInl" alt="$\Psi$" src="form_42.png"/> summed over all columns (while using the data plug-in approach for approximating the Hessian close to the solution). Therefore, this OSSPS implementation uses GeneralisedObjectiveFunction::add_multiplication_with_approximate_Hessian_without_penalty. It is thus completely generic and can be applied to any objective function implemented in STIR.</p>
 <p>Note that the exact paraboloidal surrogate algorithm by Erdogan and Fessler is currently not implemented.</p>
 <p>When no prior info is specified, this should converge to the Maximum Likelihood solution (but in a very different way from MLEM!).</p>
 <p>Note that this implementation probably assumes 'balanced subsets', i.e.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[\sum_{b \in \mathrm{subset}} P_{bv} = \sum_b P_{bv} \over \mathrm{numsubsets} \]" src="form_38.png"/>
+<img class="formulaDsp" alt="\[\sum_{b \in \mathrm{subset}} P_{bv} = \sum_b P_{bv} \over \mathrm{numsubsets} \]" src="form_45.png"/>
 </p>
 <dl class="section user"><dt>Relaxation scheme</dt><dd></dd></dl>
 <p>The relaxation value for the additive update follows the suggestion from Ahn and Fessler:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \zeta= { \alpha \over 1+ \gamma n } \]" src="form_39.png"/>
+<img class="formulaDsp" alt="\[ \zeta= { \alpha \over 1+ \gamma n } \]" src="form_46.png"/>
 </p>
-<p>with <img class="formulaInl" alt="$n$" src="form_40.png"/> the (full) iteration number. The parameter <img class="formulaInl" alt="$\alpha$" src="form_41.png"/> corresponds to the class member <code>relaxation_parameter</code>, and <img class="formulaInl" alt="$\gamma$" src="form_42.png"/> to <code>relaxation_gamma</code>. Ahn and Fessler recommend to set <img class="formulaInl" alt="$\alpha \approx 1$" src="form_43.png"/> and <img class="formulaInl" alt="$\gamma$" src="form_42.png"/> small (e.g. 0.1).</p>
+<p>with <img class="formulaInl" alt="$n$" src="form_47.png"/> the (full) iteration number. The parameter <img class="formulaInl" alt="$\alpha$" src="form_48.png"/> corresponds to the class member <code>relaxation_parameter</code>, and <img class="formulaInl" alt="$\gamma$" src="form_49.png"/> to <code>relaxation_gamma</code>. Ahn and Fessler recommend to set <img class="formulaInl" alt="$\alpha \approx 1$" src="form_50.png"/> and <img class="formulaInl" alt="$\gamma$" src="form_49.png"/> small (e.g. 0.1).</p>
 <dl class="section warning"><dt>Warning</dt><dd>This class should be the last in the <a class="el" href="classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi...">Reconstruction</a> hierarchy. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo:</a></b></dt><dd>split into a preconditioned subgradient descent class and something that computes the preconditioner. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -622,7 +622,7 @@ template&lt;class TargetT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 2 2021 10:00:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
