@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a5211a9c866839287500b96aae6d5edf8">write_log</a> (const double simulation_time, const float total_scatter)</td></tr>
 <tr class="memdesc:a5211a9c866839287500b96aae6d5edf8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the log of the process. <br /></td></tr>
 <tr class="separator:a5211a9c866839287500b96aae6d5edf8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d38af16f76ae65b5cbed25d69d95a20 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a0d38af16f76ae65b5cbed25d69d95a20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a0d38af16f76ae65b5cbed25d69d95a20">set_use_cache</a> (const bool)</td></tr>
+<tr class="memdesc:a0d38af16f76ae65b5cbed25d69d95a20 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable caching of line integrals. <br /></td></tr>
+<tr class="separator:a0d38af16f76ae65b5cbed25d69d95a20 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc79e106b2a726a1565b13775c72c07 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="aabc79e106b2a726a1565b13775c72c07"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#aabc79e106b2a726a1565b13775c72c07">get_use_cache</a> () const</td></tr>
+<tr class="memdesc:aabc79e106b2a726a1565b13775c72c07 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if line integrals are cached or not. <br /></td></tr>
+<tr class="separator:aabc79e106b2a726a1565b13775c72c07 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003e482515724826a9dade319390a4e8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a003e482515724826a9dade319390a4e8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_template_proj_data_info</b> () const</td></tr>
 <tr class="separator:a003e482515724826a9dade319390a4e8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,14 +142,14 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;
 <tr class="memitem:a68af5d956a8ac21373c404e766ea7534 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a68af5d956a8ac21373c404e766ea7534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_scatter_points</b> () const</td></tr>
 <tr class="separator:a68af5d956a8ac21373c404e766ea7534 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b230520b1ae03ca8ada9a3f501759b inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a93b230520b1ae03ca8ada9a3f501759b"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a93b230520b1ae03ca8ada9a3f501759b">get_template_proj_data_info_sptr</a> () const</td></tr>
-<tr class="memdesc:a93b230520b1ae03ca8ada9a3f501759b inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the template <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>. <br /></td></tr>
-<tr class="separator:a93b230520b1ae03ca8ada9a3f501759b inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f6a5c14423039b87fc014f66d62c17 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ad6f6a5c14423039b87fc014f66d62c17"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#ad6f6a5c14423039b87fc014f66d62c17">get_exam_info_sptr</a> () const</td></tr>
-<tr class="memdesc:ad6f6a5c14423039b87fc014f66d62c17 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classstir_1_1ExamInfo.html" title="a class for storing information about 1 exam (or scan) ">ExamInfo</a> as shared pointer. <br /></td></tr>
-<tr class="separator:ad6f6a5c14423039b87fc014f66d62c17 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d1ad7d5a00b1933f06847bf0b0583f inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a74d1ad7d5a00b1933f06847bf0b0583f"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a74d1ad7d5a00b1933f06847bf0b0583f">get_template_proj_data_info_sptr</a> () const</td></tr>
+<tr class="memdesc:a74d1ad7d5a00b1933f06847bf0b0583f inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the template <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>. <br /></td></tr>
+<tr class="separator:a74d1ad7d5a00b1933f06847bf0b0583f inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72227244dbe2a9099f6e0053b062239d inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a72227244dbe2a9099f6e0053b062239d"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a72227244dbe2a9099f6e0053b062239d">get_exam_info_sptr</a> () const</td></tr>
+<tr class="memdesc:a72227244dbe2a9099f6e0053b062239d inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classstir_1_1ExamInfo.html" title="a class for storing information about 1 exam (or scan) ">ExamInfo</a>. <br /></td></tr>
+<tr class="separator:a72227244dbe2a9099f6e0053b062239d inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68d332acf0f9175e5d10717d627ef55 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ab68d332acf0f9175e5d10717d627ef55"></a>
 const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_activity_image</b> () const</td></tr>
 <tr class="separator:ab68d332acf0f9175e5d10717d627ef55 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,31 +159,31 @@ const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensi
 <tr class="memitem:afdb61291fe071c2072e9bad8514dc686 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="afdb61291fe071c2072e9bad8514dc686"></a>
 const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_attenuation_image_for_scatter_points</b> () const</td></tr>
 <tr class="separator:afdb61291fe071c2072e9bad8514dc686 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da6abb9f9fabb1ed93cb9d96b9fcc40 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a1da6abb9f9fabb1ed93cb9d96b9fcc40">get_density_image_for_scatter_points_sptr</a> () const</td></tr>
-<tr class="separator:a1da6abb9f9fabb1ed93cb9d96b9fcc40 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c88f0d5f79a88ebbcd1ace3d2d47801 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a8c88f0d5f79a88ebbcd1ace3d2d47801">get_density_image_for_scatter_points_sptr</a> () const</td></tr>
+<tr class="separator:a8c88f0d5f79a88ebbcd1ace3d2d47801 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b73d1cf3f1be6519b36517d3ea6e78 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a47b73d1cf3f1be6519b36517d3ea6e78"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_template_proj_data_info</b> (const std::string &amp;)</td></tr>
 <tr class="separator:a47b73d1cf3f1be6519b36517d3ea6e78 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673d1055a0473ae63b6f5d72c1b420b4 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a673d1055a0473ae63b6f5d72c1b420b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_template_proj_data_info</b> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;)</td></tr>
 <tr class="separator:a673d1055a0473ae63b6f5d72c1b420b4 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a004b7b2d60771bfc9c0f90b8a62b7f inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a8a004b7b2d60771bfc9c0f90b8a62b7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_activity_image_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;)</td></tr>
-<tr class="separator:a8a004b7b2d60771bfc9c0f90b8a62b7f inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee2e69e48e2c1242e5b6badc7ad7dd6 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a9ee2e69e48e2c1242e5b6badc7ad7dd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_activity_image_sptr</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;)</td></tr>
+<tr class="separator:a9ee2e69e48e2c1242e5b6badc7ad7dd6 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d998a135b6dcfade863e27f0875fc57 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a0d998a135b6dcfade863e27f0875fc57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_activity_image</b> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a0d998a135b6dcfade863e27f0875fc57 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add304a5a8bb7fb2610b1d581d27de8dd inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#add304a5a8bb7fb2610b1d581d27de8dd">set_exam_info</a> (const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;)</td></tr>
 <tr class="separator:add304a5a8bb7fb2610b1d581d27de8dd inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c26430c5f2607be0052f087c0ac2aa inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a01c26430c5f2607be0052f087c0ac2aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exam_info_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;)</td></tr>
-<tr class="separator:a01c26430c5f2607be0052f087c0ac2aa inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1eb606927ff9de77ff2806176e24bb inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="aab1eb606927ff9de77ff2806176e24bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exam_info_sptr</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;)</td></tr>
+<tr class="separator:aab1eb606927ff9de77ff2806176e24bb inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3add16f1720c1a68d581d9b436630c72 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a3add16f1720c1a68d581d9b436630c72"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_proj_data_sptr</b> (shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;)</td></tr>
 <tr class="separator:a3add16f1720c1a68d581d9b436630c72 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac018bb9de3522129fce02b923437c1 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="abac018bb9de3522129fce02b923437c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;)</td></tr>
-<tr class="separator:abac018bb9de3522129fce02b923437c1 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3e09250773dbfb4dd7fb501aea255c inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a8e3e09250773dbfb4dd7fb501aea255c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image_sptr</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;)</td></tr>
+<tr class="separator:a8e3e09250773dbfb4dd7fb501aea255c inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3804b6c24956293e4c21455f4f9a39 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="aae3804b6c24956293e4c21455f4f9a39"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image</b> (const std::string &amp;)</td></tr>
 <tr class="separator:aae3804b6c24956293e4c21455f4f9a39 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,12 +191,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data</a> (const std::string &amp;)</td></tr>
 <tr class="memdesc:a3b0ca6588a50ef6504d6a04f4addd7dd inherit pub_methods_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function depends on the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> of the scanner. You first have to set that. <br /></td></tr>
 <tr class="separator:a3b0ca6588a50ef6504d6a04f4addd7dd inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ddc748db23c037f8828ec34b0e2aa8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a23ddc748db23c037f8828ec34b0e2aa8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_proj_data_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;, const std::string &amp;)</td></tr>
-<tr class="separator:a23ddc748db23c037f8828ec34b0e2aa8 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3774d1c9ba0bae060b13cf21ed72fd2 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ae3774d1c9ba0bae060b13cf21ed72fd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image_for_scatter_points_sptr</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;)</td></tr>
-<tr class="separator:ae3774d1c9ba0bae060b13cf21ed72fd2 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f720a8c9012021ed1e1a5d03614dc68 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a0f720a8c9012021ed1e1a5d03614dc68"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_proj_data_sptr</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;, const std::string &amp;)</td></tr>
+<tr class="separator:a0f720a8c9012021ed1e1a5d03614dc68 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f580c8f94b741f7f701189d5d49a77 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a40f580c8f94b741f7f701189d5d49a77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density_image_for_scatter_points_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;)</td></tr>
+<tr class="separator:a40f580c8f94b741f7f701189d5d49a77 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ea8c16be7af5c8e8c869dc2f13f4f4 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a02ea8c16be7af5c8e8c869dc2f13f4f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_image_downsample_factors</b> (float factor_xy=1.f, float factor_z=1.f, int _size_zoom_xy=-1, int _size_zoom_z=-1)</td></tr>
 <tr class="separator:a02ea8c16be7af5c8e8c869dc2f13f4f4 inherit pub_methods_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,9 +254,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SingleScatterSimulation.html#a0572ac90c12834eefad954d9e6806385">post_processing</a> ()</td></tr>
 <tr class="memdesc:a0572ac90c12834eefad954d9e6806385"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to check acceptable parameter ranges, etc... <br /></td></tr>
 <tr class="separator:a0572ac90c12834eefad954d9e6806385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91134097d198c846a094e0c43a7d9f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SingleScatterSimulation.html#ab91134097d198c846a094e0c43a7d9f6">simulate_for_one_scatter_point</a> (const std::size_t scatter_point_num, const unsigned det_num_A, const unsigned det_num_B)</td></tr>
-<tr class="memdesc:ab91134097d198c846a094e0c43a7d9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">simulate_for_one_scatter_point  <a href="#ab91134097d198c846a094e0c43a7d9f6">More...</a><br /></td></tr>
-<tr class="separator:ab91134097d198c846a094e0c43a7d9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8cfaf775ed11ad06837e7a09a68873"><td class="memItemLeft" align="right" valign="top"><a id="a7e8cfaf775ed11ad06837e7a09a68873"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SingleScatterSimulation.html#a7e8cfaf775ed11ad06837e7a09a68873">simulate_for_one_scatter_point</a> (const std::size_t scatter_point_num, const unsigned det_num_A, const unsigned det_num_B)</td></tr>
+<tr class="memdesc:a7e8cfaf775ed11ad06837e7a09a68873"><td class="mdescLeft">&#160;</td><td class="mdescRight">simulate single scatter for one scatter point <br /></td></tr>
+<tr class="separator:a7e8cfaf775ed11ad06837e7a09a68873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a213926b352103b19514d36bfe7a72f12"><td class="memItemLeft" align="right" valign="top"><a id="a213926b352103b19514d36bfe7a72f12"></a>
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SingleScatterSimulation.html#a213926b352103b19514d36bfe7a72f12">scatter_estimate</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin)</td></tr>
 <tr class="memdesc:a213926b352103b19514d36bfe7a72f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual function that computes the scatter for one (downsampled) bin <br /></td></tr>
@@ -380,9 +389,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scatter_volume</b></
 <tr class="memitem:ab99b1383b257c398c7a0ae342dcecaf9 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ab99b1383b257c398c7a0ae342dcecaf9"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>template_proj_data_filename</b></td></tr>
 <tr class="separator:ab99b1383b257c398c7a0ae342dcecaf9 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd13a3b48716373041c106966fddbfa inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="aebd13a3b48716373041c106966fddbfa"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_cyl_noarc_cor_sptr</b></td></tr>
-<tr class="separator:aebd13a3b48716373041c106966fddbfa inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf1ada1ddef692624b52ca51102b3f7 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="afaf1ada1ddef692624b52ca51102b3f7"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_cyl_noarc_cor_sptr</b></td></tr>
+<tr class="separator:afaf1ada1ddef692624b52ca51102b3f7 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673d6de75fd70e0133207ddc96c1d50b inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a></td></tr>
 <tr class="separator:a673d6de75fd70e0133207ddc96c1d50b inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c608084e9f67b4dff6956ea67d1d748 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a2c608084e9f67b4dff6956ea67d1d748"></a>
@@ -394,13 +403,13 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>density_image_
 <tr class="memitem:abc5e221d9be881c75a2d0be0e20cb58c inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="abc5e221d9be881c75a2d0be0e20cb58c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>density_image_for_scatter_points_output_filename</b></td></tr>
 <tr class="separator:abc5e221d9be881c75a2d0be0e20cb58c inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de9fe8db6396f2d4f982b705acfc0bc inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a3de9fe8db6396f2d4f982b705acfc0bc"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>density_image_sptr</b></td></tr>
-<tr class="separator:a3de9fe8db6396f2d4f982b705acfc0bc inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274fc1fa9d2f852f48e9f11168c1546e inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a274fc1fa9d2f852f48e9f11168c1546e"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a274fc1fa9d2f852f48e9f11168c1546e">activity_image_sptr</a></td></tr>
-<tr class="memdesc:a274fc1fa9d2f852f48e9f11168c1546e inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to hold the current activity estimation. <br /></td></tr>
-<tr class="separator:a274fc1fa9d2f852f48e9f11168c1546e inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d4bc66fc3bdc0b4d6104c18f6c920d inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="a35d4bc66fc3bdc0b4d6104c18f6c920d"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>density_image_sptr</b></td></tr>
+<tr class="separator:a35d4bc66fc3bdc0b4d6104c18f6c920d inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae810d50ae490df463e440b765d0cfaaf inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ae810d50ae490df463e440b765d0cfaaf"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#ae810d50ae490df463e440b765d0cfaaf">activity_image_sptr</a></td></tr>
+<tr class="memdesc:ae810d50ae490df463e440b765d0cfaaf inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to hold the current activity estimation. <br /></td></tr>
+<tr class="separator:ae810d50ae490df463e440b765d0cfaaf inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada599c16fcf58dd6e2074c696b76ace8 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="memItemLeft" align="right" valign="top"><a id="ada599c16fcf58dd6e2074c696b76ace8"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a></td></tr>
 <tr class="memdesc:ada599c16fcf58dd6e2074c696b76ace8 inherit pro_attribs_classstir_1_1ScatterSimulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output proj_data fileanme prefix. <br /></td></tr>
@@ -464,64 +473,8 @@ std::vector&lt; <a class="el" href="classstir_1_1CartesianCoordinate3D.html">Car
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PET single scatter simulation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000163">Todo:</a></b></dt><dd>The class is specific to PET so should be renamed accordingly. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab91134097d198c846a094e0c43a7d9f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab91134097d198c846a094e0c43a7d9f6">&#9670;&nbsp;</a></span>simulate_for_one_scatter_point()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float stir::SingleScatterSimulation::simulate_for_one_scatter_point </td>
-          <td>(</td>
-          <td class="paramtype">const std::size_t&#160;</td>
-          <td class="paramname"><em>scatter_point_num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned&#160;</td>
-          <td class="paramname"><em>det_num_A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned&#160;</td>
-          <td class="paramname"><em>det_num_B</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>simulate_for_one_scatter_point </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scatter_point_num</td><td></td></tr>
-    <tr><td class="paramname">det_num_A</td><td></td></tr>
-    <tr><td class="paramname">det_num_B</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-<p class="reference">References <a class="el" href="group__Coordinate.html#gadbdf0d99cabd5c3c7db9eb0fdb38bcfb">stir::cos_angle()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, and <a class="el" href="group__Coordinate.html#ga5d087edb9c8d2db898c61f64cbdcc846">stir::norm_squared()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000172">Todo:</a></b></dt><dd>The class is specific to PET so should be renamed accordingly. </dd></dl>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0db9ccff56c04ea004431dc4db24a5c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0db9ccff56c04ea004431dc4db24a5c9">&#9670;&nbsp;</a></span>registered_name</h2>
 
@@ -557,7 +510,7 @@ std::vector&lt; <a class="el" href="classstir_1_1CartesianCoordinate3D.html">Car
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classboost_1_1shared__ptr.html" title="A smart pointer class: multiple shared_ptr&#39;s refer to one object. " alt="" coords="5,5,179,32"/>
+<area shape="rect" id="node1" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; DetectionPosition\&lt; unsigned\l int \&gt;, boost::equality_comparable\l\&lt; DetectionPosition\&lt; unsigned int \&gt; \&gt; \&gt;" alt="" coords="5,5,297,76"/>
+<area shape="rect" id="node2" href="$classstir_1_1DetectionPosition.html" title="stir::DetectionPosition\&lt;\&gt;" alt="" coords="345,27,533,54"/>
 </map>

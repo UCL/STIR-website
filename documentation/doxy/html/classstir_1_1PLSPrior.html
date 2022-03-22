@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ae8c7a7f54982aa3c0dc6b9b44b2659ee">PLSPrior</a> (const bool <a class="el" href="classstir_1_1PLSPrior.html#a75f319f1ab80e246d482f69ebbc5ac32">only_2D</a>, float penalization_factor)</td></tr>
 <tr class="memdesc:ae8c7a7f54982aa3c0dc6b9b44b2659ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs it explicitly. <br /></td></tr>
 <tr class="separator:ae8c7a7f54982aa3c0dc6b9b44b2659ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4ba86f8b0bbdfa74ccf1b7e50a6205"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a0a4ba86f8b0bbdfa74ccf1b7e50a6205">set_up</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a0a4ba86f8b0bbdfa74ccf1b7e50a6205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object.  <a href="#a0a4ba86f8b0bbdfa74ccf1b7e50a6205">More...</a><br /></td></tr>
-<tr class="separator:a0a4ba86f8b0bbdfa74ccf1b7e50a6205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a6992fa06a4a9dce8a1fabd83c79d5202">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object.  <a href="#a6992fa06a4a9dce8a1fabd83c79d5202">More...</a><br /></td></tr>
+<tr class="separator:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23af0ed4b934022821417dfebda75b17"><td class="memItemLeft" align="right" valign="top"><a id="a23af0ed4b934022821417dfebda75b17"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a23af0ed4b934022821417dfebda75b17">compute_value</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
 <tr class="memdesc:a23af0ed4b934022821417dfebda75b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function <br /></td></tr>
@@ -92,15 +92,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77">compute_gradient</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_gradient, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
 <tr class="memdesc:aec647c998531538de990f43b405b4c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient <br /></td></tr>
 <tr class="separator:aec647c998531538de990f43b405b4c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f30b141cfd97bf037f56afd7e5db1c"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ae4f30b141cfd97bf037f56afd7e5db1c">get_kappa_sptr</a> () const</td></tr>
-<tr class="memdesc:ae4f30b141cfd97bf037f56afd7e5db1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current kappa image  <a href="#ae4f30b141cfd97bf037f56afd7e5db1c">More...</a><br /></td></tr>
-<tr class="separator:ae4f30b141cfd97bf037f56afd7e5db1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105fdd71d081f2746412f8b00d804526"><td class="memItemLeft" align="right" valign="top"><a id="a105fdd71d081f2746412f8b00d804526"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_anatomical_grad_sptr</b> (int direction) const</td></tr>
-<tr class="separator:a105fdd71d081f2746412f8b00d804526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a6b539e31a8f3a26060846db20abbe"><td class="memItemLeft" align="right" valign="top"><a id="a73a6b539e31a8f3a26060846db20abbe"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_norm_sptr</b> () const</td></tr>
-<tr class="separator:a73a6b539e31a8f3a26060846db20abbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a8ffa5ae0361d2bec026beb65045bf4d9">get_kappa_sptr</a> () const</td></tr>
+<tr class="memdesc:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current kappa image  <a href="#a8ffa5ae0361d2bec026beb65045bf4d9">More...</a><br /></td></tr>
+<tr class="separator:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc638a588f3000e61c892431ec26d8b"><td class="memItemLeft" align="right" valign="top"><a id="a8dc638a588f3000e61c892431ec26d8b"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_anatomical_grad_sptr</b> (int direction) const</td></tr>
+<tr class="separator:a8dc638a588f3000e61c892431ec26d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072cc154c0907b40c8f41177c4631ed5"><td class="memItemLeft" align="right" valign="top"><a id="a072cc154c0907b40c8f41177c4631ed5"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_norm_sptr</b> () const</td></tr>
+<tr class="separator:a072cc154c0907b40c8f41177c4631ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb398cbd9cf613c661d1022006aff6e6"><td class="memItemLeft" align="right" valign="top"><a id="aeb398cbd9cf613c661d1022006aff6e6"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#aeb398cbd9cf613c661d1022006aff6e6">get_eta</a> () const</td></tr>
 <tr class="memdesc:aeb398cbd9cf613c661d1022006aff6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get eta and alpha parameters <br /></td></tr>
@@ -116,22 +116,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a3ab7c22709196b6b7dde33be1d37694f">set_alpha</a> (const double)</td></tr>
 <tr class="memdesc:a3ab7c22709196b6b7dde33be1d37694f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set alpha parameter <br /></td></tr>
 <tr class="separator:a3ab7c22709196b6b7dde33be1d37694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbc738c1f03b44344999dbcd169e9ba"><td class="memItemLeft" align="right" valign="top"><a id="a0fbc738c1f03b44344999dbcd169e9ba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a0fbc738c1f03b44344999dbcd169e9ba">set_anatomical_image_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:a0fbc738c1f03b44344999dbcd169e9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">set anatomical pointer <br /></td></tr>
-<tr class="separator:a0fbc738c1f03b44344999dbcd169e9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722693170e46ace52f9426fef2958de1"><td class="memItemLeft" align="right" valign="top"><a id="a722693170e46ace52f9426fef2958de1"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a722693170e46ace52f9426fef2958de1">get_anatomical_image_sptr</a> () const</td></tr>
-<tr class="memdesc:a722693170e46ace52f9426fef2958de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get anatomical pointer <br /></td></tr>
-<tr class="separator:a722693170e46ace52f9426fef2958de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace249c6dc1fa5615d332af1dfa85b689"><td class="memItemLeft" align="right" valign="top"><a id="ace249c6dc1fa5615d332af1dfa85b689"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ace249c6dc1fa5615d332af1dfa85b689">set_anatomical_image_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
+<tr class="memdesc:ace249c6dc1fa5615d332af1dfa85b689"><td class="mdescLeft">&#160;</td><td class="mdescRight">set anatomical pointer <br /></td></tr>
+<tr class="separator:ace249c6dc1fa5615d332af1dfa85b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678362ea0cf3425a11a43de1c2e38a0c"><td class="memItemLeft" align="right" valign="top"><a id="a678362ea0cf3425a11a43de1c2e38a0c"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a678362ea0cf3425a11a43de1c2e38a0c">get_anatomical_image_sptr</a> () const</td></tr>
+<tr class="memdesc:a678362ea0cf3425a11a43de1c2e38a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get anatomical pointer <br /></td></tr>
+<tr class="separator:a678362ea0cf3425a11a43de1c2e38a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0f67ac66488550cd78be21f7712871"><td class="memItemLeft" align="right" valign="top"><a id="a2f0f67ac66488550cd78be21f7712871"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a2f0f67ac66488550cd78be21f7712871">set_anatomical_filename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:a2f0f67ac66488550cd78be21f7712871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set anatomical filename. <br /></td></tr>
 <tr class="separator:a2f0f67ac66488550cd78be21f7712871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fd525dee150d234bf73460fdedeb54"><td class="memItemLeft" align="right" valign="top"><a id="af6fd525dee150d234bf73460fdedeb54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#af6fd525dee150d234bf73460fdedeb54">set_kappa_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:af6fd525dee150d234bf73460fdedeb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
-<tr class="separator:af6fd525dee150d234bf73460fdedeb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0f098a089df28d7ac6888e13e2e060"><td class="memItemLeft" align="right" valign="top"><a id="a7d0f098a089df28d7ac6888e13e2e060"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a7d0f098a089df28d7ac6888e13e2e060">set_kappa_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
+<tr class="memdesc:a7d0f098a089df28d7ac6888e13e2e060"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
+<tr class="separator:a7d0f098a089df28d7ac6888e13e2e060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3103f7205109991c8dda70fa7666db"><td class="memItemLeft" align="right" valign="top"><a id="ade3103f7205109991c8dda70fa7666db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ade3103f7205109991c8dda70fa7666db">set_kappa_filename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:ade3103f7205109991c8dda70fa7666db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set kappa filename. <br /></td></tr>
@@ -161,16 +161,19 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#ad46b519fe2250ee5a440c1a36d29b086">add_multiplication_with_approximate_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const</td></tr>
 <tr class="memdesc:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#ad46b519fe2250ee5a440c1a36d29b086">More...</a><br /></td></tr>
 <tr class="separator:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const</td></tr>
+<tr class="memdesc:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">More...</a><br /></td></tr>
+<tr class="separator:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a8c16dbc788bf565da852f94106fd9d6e"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a8c16dbc788bf565da852f94106fd9d6e">set_up</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -324,8 +327,8 @@ gradient filename prefix:=
 END PLS Prior Parameters:=
 </pre> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a4ba86f8b0bbdfa74ccf1b7e50a6205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a4ba86f8b0bbdfa74ccf1b7e50a6205">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a6992fa06a4a9dce8a1fabd83c79d5202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6992fa06a4a9dce8a1fabd83c79d5202">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +341,7 @@ template&lt;typename elemT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::set_up </td>
           <td>(</td>
-          <td class="paramtype">shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;&#160;</td>
           <td class="paramname"><em>target_sptr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -351,12 +354,12 @@ template&lt;typename elemT &gt; </div>
 </div><div class="memdoc">
 
 <p>Has to be called before using this object. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000129">Todo:</a></b></dt><dd>set the anatomical image to zero if not defined </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000139">Todo:</a></b></dt><dd>set the anatomical image to zero if not defined </dd></dl>
 
 </div>
 </div>
-<a id="ae4f30b141cfd97bf037f56afd7e5db1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4f30b141cfd97bf037f56afd7e5db1c">&#9670;&nbsp;</a></span>get_kappa_sptr()</h2>
+<a id="a8ffa5ae0361d2bec026beb65045bf4d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffa5ae0361d2bec026beb65045bf4d9">&#9670;&nbsp;</a></span>get_kappa_sptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +367,7 @@ template&lt;typename elemT &gt; </div>
 template&lt;typename elemT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::get_kappa_sptr </td>
+          <td class="memname">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::get_kappa_sptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -375,7 +378,7 @@ template&lt;typename elemT &gt; </div>
 <p>get current kappa image </p>
 <dl class="section warning"><dt>Warning</dt><dd>As this function returns a shared_ptr, this is dangerous. You should not modify the image by manipulating the image refered to by this pointer. Unpredictable results will occur. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1PLSPrior.html#af6fd525dee150d234bf73460fdedeb54">stir::PLSPrior&lt; elemT &gt;::set_kappa_sptr()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1PLSPrior.html#a7d0f098a089df28d7ac6888e13e2e060">stir::PLSPrior&lt; elemT &gt;::set_kappa_sptr()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1PLSPrior.html#a3ab7c22709196b6b7dde33be1d37694f">stir::PLSPrior&lt; elemT &gt;::set_alpha()</a>.</p>
 
@@ -484,7 +487,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

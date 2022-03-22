@@ -125,3 +125,16 @@
 \form#124:${[}n_z,n_y,n_x{]}$
 \form#125:$\phi$
 \form#126:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
+\form#127:\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_{t1}^{t2} dt\,exp (-\lambda t)\right)^2} \]
+\form#128:\[ \mu = a + b * \mathrm{HU} \]
+\form#129:$a=a1, b=b1$
+\form#130:$\mathrm{HI} < \mathrm{break}$
+\form#131:\[ f = \sum_{dr} w_{dr} 1/scalar^2 * log(cosh(\lambda_r - \lambda_{r+dr})) * \kappa_r * \kappa_{r+dr})) \]
+\form#132:\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]
+\form#133:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = y_i / ((P \lambda)_i + a_i)^2; \]
+\form#134:\[ h_i^{''}(y_i) \approx -1/y_i \]
+\form#135:\[ H_{jk} = - \sum_i P_{ij}(1/y_i) P_{ik} \]
+\form#136:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = - y_i / ((P \lambda)_i + a_i)^2; \]
+\form#137:\[ H_{jk} = - \sum_i P_{ij}(y_i / ((P \lambda)_i + a_i)^2) P_{ik} \]
+\form#138:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
+\form#139:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -100,9 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a277092c78bc48fb4003de662983d9814"><td class="memItemLeft" align="right" valign="top"><a id="a277092c78bc48fb4003de662983d9814"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>get_isotope_halflife</b> () const</td></tr>
 <tr class="separator:a277092c78bc48fb4003de662983d9814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e1b5e2d8fdba7d5f265dbef6eafebc"><td class="memItemLeft" align="right" valign="top"><a id="ac7e1b5e2d8fdba7d5f265dbef6eafebc"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><b>get_calibration_factor</b> () const</td></tr>
-<tr class="separator:ac7e1b5e2d8fdba7d5f265dbef6eafebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1c983d4fd558ea48254fcb16352d9f"><td class="memItemLeft" align="right" valign="top"><a id="a9b1c983d4fd558ea48254fcb16352d9f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>get_calibration_factor</b> () const</td></tr>
+<tr class="separator:a9b1c983d4fd558ea48254fcb16352d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1fd9f29305a8b32197ce9b8412fa65"><td class="memItemLeft" align="right" valign="top"><a id="aaf1fd9f29305a8b32197ce9b8412fa65"></a>
 const <a class="el" href="classstir_1_1DiscretisedDensity.html">singleDiscDensT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DynamicDiscretisedDensity.html#aaf1fd9f29305a8b32197ce9b8412fa65">at</a> (const unsigned int frame_num) const</td></tr>
 <tr class="memdesc:aaf1fd9f29305a8b32197ce9b8412fa65"><td class="mdescLeft">&#160;</td><td class="mdescRight">at method <br /></td></tr>
@@ -140,9 +140,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate_frames</b> 
 <tr class="memitem:a84259eb117e4d00254f69af47d3094ba"><td class="memItemLeft" align="right" valign="top"><a id="a84259eb117e4d00254f69af47d3094ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_if_decay_corrected</b> (const bool is_decay_corrected)</td></tr>
 <tr class="separator:a84259eb117e4d00254f69af47d3094ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5a01734522ea6d9e416b76977b0f1d"><td class="memItemLeft" align="right" valign="top"><a id="a4c5a01734522ea6d9e416b76977b0f1d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_isotope_halflife</b> (const float isotope_halflife)</td></tr>
-<tr class="separator:a4c5a01734522ea6d9e416b76977b0f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1549fd83f8b6d23b665599e9ef6c118"><td class="memItemLeft" align="right" valign="top"><a id="ad1549fd83f8b6d23b665599e9ef6c118"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_calibration_factor</b> (const float calibration_factor)</td></tr>
 <tr class="separator:ad1549fd83f8b6d23b665599e9ef6c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,22 +192,22 @@ const <a class="el" href="classstir_1_1DiscretisedDensity.html">singleDiscDensT<
 <tr class="memitem:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#a361e3590d91c93142fe4a45025bc92e3">ExamData</a> ()</td></tr>
 <tr class="memdesc:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. ">ExamData</a>.  <a href="classstir_1_1ExamData.html#a361e3590d91c93142fe4a45025bc92e3">More...</a><br /></td></tr>
 <tr class="separator:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87c704f6ddab54a0d76c081758f682e inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ad87c704f6ddab54a0d76c081758f682e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ExamData</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;_this_exam)</td></tr>
-<tr class="separator:ad87c704f6ddab54a0d76c081758f682e inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d01d1a7050584183712716c6590650d inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a4d01d1a7050584183712716c6590650d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExamData</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;_this_exam)</td></tr>
+<tr class="separator:a4d01d1a7050584183712716c6590650d inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fd5daac0ac93648836522e0a41d4461 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a4fd5daac0ac93648836522e0a41d4461"></a>
 virtual const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_exam_info</b> () const</td></tr>
 <tr class="separator:a4fd5daac0ac93648836522e0a41d4461 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ae7cc85a7f893ef94655c2bb13e15a2a4"></a>
-virtual const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ae7cc85a7f893ef94655c2bb13e15a2a4">get_exam_info_ptr</a> () const</td></tr>
-<tr class="memdesc:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to exam info. <br /></td></tr>
-<tr class="separator:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">get_exam_info_sptr</a> () const</td></tr>
-<tr class="memdesc:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to exam info.  <a href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">More...</a><br /></td></tr>
-<tr class="separator:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ad79c2d7818f982ac85b2e94ceba830c5"></a>
+virtual shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ad79c2d7818f982ac85b2e94ceba830c5">get_exam_info_sptr</a> () const</td></tr>
+<tr class="memdesc:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to exam info. <br /></td></tr>
+<tr class="separator:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">set_exam_info</a> (<a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> const &amp;)</td></tr>
 <tr class="memdesc:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">change exam info  <a href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">More...</a><br /></td></tr>
 <tr class="separator:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051771db16aa4cf1a166268e38fc0214 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a051771db16aa4cf1a166268e38fc0214"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exam_info_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; new_exam_info_sptr)</td></tr>
+<tr class="separator:a051771db16aa4cf1a166268e38fc0214 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -221,13 +218,13 @@ static <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicD
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ExamData"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ExamData')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ExamData.html">stir::ExamData</a></td></tr>
-<tr class="memitem:adadeeea3b276abba113d060460e5ea37 inherit pro_attribs_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="adadeeea3b276abba113d060460e5ea37"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exam_info_sptr</b></td></tr>
-<tr class="separator:adadeeea3b276abba113d060460e5ea37 inherit pro_attribs_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfba46635e65118247f05146f562bfd inherit pro_attribs_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="acdfba46635e65118247f05146f562bfd"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exam_info_sptr</b></td></tr>
+<tr class="separator:acdfba46635e65118247f05146f562bfd inherit pro_attribs_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class of multiple image frames, one for each time frame Each time frame is a <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity&lt;3,float&gt;</a> </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>template in <code>elemT</code> and numDimensions? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>template in <code>elemT</code> and numDimensions? </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a41a30078395ebe93a7027593993b82c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a30078395ebe93a7027593993b82c9">&#9670;&nbsp;</a></span>hierarchy_base_type</h2>
@@ -355,7 +352,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

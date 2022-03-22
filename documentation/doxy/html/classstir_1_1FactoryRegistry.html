@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -88,7 +88,7 @@ class stir::FactoryRegistry&lt; Key, Factory, Compare &gt;</h3>
 <p>A factory is supposed to be an object which can create another object, although this is not really enfored by the implementation of <a class="el" href="classstir_1_1FactoryRegistry.html" title="This class can be used to store &#39;factories&#39; and their corresponding keys. It is essentially a map...">FactoryRegistry</a>.</p>
 <dl class="section user"><dt>Type requirements</dt><dd></dd></dl>
 <p>Key,Factory,Compare must be suitable as defined for std::map. In addition, <a class="el" href="classstir_1_1FactoryRegistry.html#ab4fc0eba31e990698cc001b3ebf591b9" title="List all keys to an ostream, separated by newlines. ">FactoryRegistry::list_keys()</a> requires that operator&lt;&lt;(ostream&amp;, const Key&amp;) is defined.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>Probably it would be better to store pointers to factories. However, in that case, the destructor of <a class="el" href="classstir_1_1FactoryRegistry.html" title="This class can be used to store &#39;factories&#39; and their corresponding keys. It is essentially a map...">FactoryRegistry</a> would have to deallocate these factory objects. This would mean that factories have to be allocated with new, and hence would prevent using simple function pointers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>Probably it would be better to store pointers to factories. However, in that case, the destructor of <a class="el" href="classstir_1_1FactoryRegistry.html" title="This class can be used to store &#39;factories&#39; and their corresponding keys. It is essentially a map...">FactoryRegistry</a> would have to deallocate these factory objects. This would mean that factories have to be allocated with new, and hence would prevent using simple function pointers. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afe45833c88e4e3d5a58f85bd2589c5c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe45833c88e4e3d5a58f85bd2589c5c5">&#9670;&nbsp;</a></span>add_to_registry()</h2>
@@ -175,7 +175,7 @@ template&lt;class Key , class Factory , class Compare &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

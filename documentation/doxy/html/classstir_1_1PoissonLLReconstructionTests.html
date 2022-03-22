@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -69,10 +69,13 @@ Inheritance diagram for stir::PoissonLLReconstructionTests&lt; TargetT &gt;:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d1075dbd9d15fd0fda2f1bb69f1dca6"><td class="memItemLeft" align="right" valign="top"><a id="a7d1075dbd9d15fd0fda2f1bb69f1dca6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a7d1075dbd9d15fd0fda2f1bb69f1dca6">PoissonLLReconstructionTests</a> (const std::string &amp;proj_data_filename=&quot;&quot;, const std::string &amp;density_filename=&quot;&quot;)</td></tr>
-<tr class="memdesc:a7d1075dbd9d15fd0fda2f1bb69f1dca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with. <br /></td></tr>
-<tr class="separator:a7d1075dbd9d15fd0fda2f1bb69f1dca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e555964f50a1f66fbc8f6a7f55c23e8"><td class="memItemLeft" align="right" valign="top"><a id="a5e555964f50a1f66fbc8f6a7f55c23e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a5e555964f50a1f66fbc8f6a7f55c23e8">PoissonLLReconstructionTests</a> (const std::string &amp;projector_pair_filename=&quot;&quot;, const std::string &amp;proj_data_filename=&quot;&quot;, const std::string &amp;density_filename=&quot;&quot;)</td></tr>
+<tr class="memdesc:a5e555964f50a1f66fbc8f6a7f55c23e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with. <br /></td></tr>
+<tr class="separator:a5e555964f50a1f66fbc8f6a7f55c23e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a0260de34bd2dac272531d0ccf9e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">construct_projector_pair</a> (const std::string &amp;filename=&quot;&quot;)</td></tr>
+<tr class="memdesc:ae3a0260de34bd2dac272531d0ccf9e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses projector-pair file to initialise the projector pair  <a href="#ae3a0260de34bd2dac272531d0ccf9e35">More...</a><br /></td></tr>
+<tr class="separator:ae3a0260de34bd2dac272531d0ccf9e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2e90e137b56c48d20b74a3c06c6a5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a9a2e90e137b56c48d20b74a3c06c6a5c">construct_log_likelihood</a> ()</td></tr>
 <tr class="memdesc:a9a2e90e137b56c48d20b74a3c06c6a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates Poisson log likelihood  <a href="#a9a2e90e137b56c48d20b74a3c06c6a5c">More...</a><br /></td></tr>
 <tr class="separator:a9a2e90e137b56c48d20b74a3c06c6a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,6 +84,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ReconstructionTests.html#a34983130f1aaebe1777096a9abe8bfc5">ReconstructionTests</a> (const std::string &amp;proj_data_filename=&quot;&quot;, const std::string &amp;density_filename=&quot;&quot;)</td></tr>
 <tr class="memdesc:a34983130f1aaebe1777096a9abe8bfc5 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with. <br /></td></tr>
 <tr class="separator:a34983130f1aaebe1777096a9abe8bfc5 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d939bfeef43e67b1b4f87c4c2e6b606 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="memItemLeft" align="right" valign="top"><a id="a7d939bfeef43e67b1b4f87c4c2e6b606"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ReconstructionTests.html#a7d939bfeef43e67b1b4f87c4c2e6b606">construct_default_proj_data_info_uptr</a> () const</td></tr>
+<tr class="memdesc:a7d939bfeef43e67b1b4f87c4c2e6b606 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">default proj_data_info <br /></td></tr>
+<tr class="separator:a7d939bfeef43e67b1b4f87c4c2e6b606 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30871b0b5efcb824b1add7d08d0ca852 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">construct_input_data</a> ()</td></tr>
 <tr class="memdesc:a30871b0b5efcb824b1add7d08d0ca852 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates input  <a href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">More...</a><br /></td></tr>
 <tr class="separator:a30871b0b5efcb824b1add7d08d0ca852 inherit pub_methods_classstir_1_1ReconstructionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +215,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac3d049a49119214c3c26e626f28471bb"><td class="memItemLeft" align="right" valign="top"><a id="ac3d049a49119214c3c26e626f28471bb"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; TargetT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_objective_function_sptr</b></td></tr>
 <tr class="separator:ac3d049a49119214c3c26e626f28471bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f99532dacff3c31a16414f5ec4a4ea8"><td class="memItemLeft" align="right" valign="top"><a id="a9f99532dacff3c31a16414f5ec4a4ea8"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjectorByBinPair.html">ProjectorByBinPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_projector_pair_sptr</b></td></tr>
+<tr class="separator:a9f99532dacff3c31a16414f5ec4a4ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ReconstructionTests"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ReconstructionTests')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ReconstructionTests.html">stir::ReconstructionTests&lt; TargetT &gt;</a></td></tr>
 <tr class="memitem:a49015a75834b98d0f9ee67b5db4c9795 inherit pro_attribs_classstir_1_1ReconstructionTests"><td class="memItemLeft" align="right" valign="top"><a id="a49015a75834b98d0f9ee67b5db4c9795"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_proj_data_filename</b></td></tr>
@@ -254,6 +264,29 @@ class stir::PoissonLLReconstructionTests&lt; TargetT &gt;</h3>
 
 <p>Base class for tests for iterative reconstruction that use <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3a0260de34bd2dac272531d0ccf9e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a0260de34bd2dac272531d0ccf9e35">&#9670;&nbsp;</a></span>construct_projector_pair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TargetT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html">stir::PoissonLLReconstructionTests</a>&lt; TargetT &gt;::construct_projector_pair </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parses projector-pair file to initialise the projector pair </p>
+<p>defaults to using the ray-tracing matrix </p>
+
+</div>
+</div>
 <a id="a9a2e90e137b56c48d20b74a3c06c6a5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a2e90e137b56c48d20b74a3c06c6a5c">&#9670;&nbsp;</a></span>construct_log_likelihood()</h2>
 
@@ -290,7 +323,7 @@ template&lt;class TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

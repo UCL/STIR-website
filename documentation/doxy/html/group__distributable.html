@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -116,9 +116,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaada573d812a582abc182c8f77ac19e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gaada573d812a582abc182c8f77ac19e96">stir::setup_distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjectorByBinPair.html">ProjectorByBinPair</a> &gt; &amp;proj_pair_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;exam_info_sptr, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *const proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;target_sptr, const bool zero_seg0_end_planes, const bool distributed_cache_enabled)</td></tr>
-<tr class="memdesc:gaada573d812a582abc182c8f77ac19e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up parameters before calling <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#gaada573d812a582abc182c8f77ac19e96">More...</a><br /></td></tr>
-<tr class="separator:gaada573d812a582abc182c8f77ac19e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8794e68a9e8007d820dd7c2320be80f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9">stir::setup_distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjectorByBinPair.html">ProjectorByBinPair</a> &gt; &amp;proj_pair_sptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;exam_info_sptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; proj_data_info_sptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;target_sptr, const bool zero_seg0_end_planes, const bool distributed_cache_enabled)</td></tr>
+<tr class="memdesc:ga8794e68a9e8007d820dd7c2320be80f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up parameters before calling <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9">More...</a><br /></td></tr>
+<tr class="separator:ga8794e68a9e8007d820dd7c2320be80f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c">stir::end_distributable_computation</a> ()</td></tr>
 <tr class="memdesc:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">clean-up after a sequence of computations  <a href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c">More...</a><br /></td></tr>
 <tr class="separator:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +174,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaada573d812a582abc182c8f77ac19e96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaada573d812a582abc182c8f77ac19e96">&#9670;&nbsp;</a></span>setup_distributable_computation()</h2>
+<a id="ga8794e68a9e8007d820dd7c2320be80f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8794e68a9e8007d820dd7c2320be80f9">&#9670;&nbsp;</a></span>setup_distributable_computation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,19 +189,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>exam_info_sptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *const&#160;</td>
-          <td class="paramname"><em>proj_data_info_ptr</em>, </td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td>
+          <td class="paramname"><em>proj_data_info_sptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>target_sptr</em>, </td>
         </tr>
         <tr>
@@ -226,7 +226,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 
 <p>set-up parameters before calling <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> </p>
 <p>Empty unless STIR_MPI is defined, in which case it sends parameters to the slaves (see <a class="el" href="classstir_1_1DistributedWorker.html" title="This implements the Worker for the stir::distributable_computation() function. ">stir::DistributedWorker</a>).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>currently uses some global variables for configuration in the distributed namespace. This needs to be converted to a class, e.g. <code>DistributedMaster</code> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo:</a></b></dt><dd>currently uses some global variables for configuration in the distributed namespace. This needs to be converted to a class, e.g. <code>DistributedMaster</code> </dd></dl>
 
 <p class="reference">References <a class="el" href="namespacedistributed.html#a199dcf2f9801f6f123b52fb5764fb0ab">distributed::first_iteration</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="namespacedistributed.html#ab9aec49846a416019dee2c367250c6b7">distributed::send_int_value()</a>, and <a class="el" href="group__threads.html#gaab63637ee659286c969ae2bb0d479b26">stir::set_num_threads()</a>.</p>
 
@@ -391,7 +391,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 <p>Subsets are currently defined on views. A particular <em>subset_num</em> contains all views which are symmetry related to </p><div class="fragment"><div class="line">proj_data_ptr-&gt;min_view_num()+subset_num + n*num_subsets</div></div><!-- fragment --><p> for n=0,1,,.. <code>and</code> for which the above view_num is 'basic' (for some segment_num in the range).</p>
 <p>Symmetries are determined by using the 3rd argument to set_projectors_and_symmetries().</p>
 <dl class="section user"><dt>Usage</dt><dd></dd></dl>
-<p>You first need to call <a class="el" href="group__distributable.html#gaada573d812a582abc182c8f77ac19e96" title="set-up parameters before calling distributable_computation() ">setup_distributable_computation()</a>, then you can do multiple calls to <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> with different images (but the same projection data, as this is potentially cached). If you want to change the image characteristics (e.g. size, or origin so), you have to call <a class="el" href="group__distributable.html#gaada573d812a582abc182c8f77ac19e96" title="set-up parameters before calling distributable_computation() ">setup_distributable_computation()</a> again. Finally, end the sequence of computations by a call to <a class="el" href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c" title="clean-up after a sequence of computations ">end_distributable_computation()</a>.</p>
+<p>You first need to call <a class="el" href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9" title="set-up parameters before calling distributable_computation() ">setup_distributable_computation()</a>, then you can do multiple calls to <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> with different images (but the same projection data, as this is potentially cached). If you want to change the image characteristics (e.g. size, or origin so), you have to call <a class="el" href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9" title="set-up parameters before calling distributable_computation() ">setup_distributable_computation()</a> again. Finally, end the sequence of computations by a call to <a class="el" href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c" title="clean-up after a sequence of computations ">end_distributable_computation()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">output_image_ptr</td><td>will store the output image if non-zero. </td></tr>
@@ -416,7 +416,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 <dl class="section warning"><dt>Warning</dt><dd>There is NO check that the resulting subsets are balanced.</dd>
 <dd>
 The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are such that symmetries map this range onto itself (i.e. no segment_num is obtained outside the range). This usually means that <em>min_segment_num</em> = -<em>max_segment_num</em>. This assumption is checked with assert().</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>The subset-scheme should be moved somewhere else (a Subset class?).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo:</a></b></dt><dd>The subset-scheme should be moved somewhere else (a Subset class?).</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If STIR_MPI is defined, there can only be one set_up active, as the slaves use only one set of variabiles to store projectors etc.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1DistributedWorker.html" title="This implements the Worker for the stir::distributable_computation() function. ">DistributedWorker</a> for how the slaves perform the computation if <a class="el" href="distributed__functions_8h.html#a40f23b74dcce69610a7f844c2c08efeb" title="Precompiler-define that needs to be set to enable the parallel version of stir::distributable_computa...">STIR_MPI</a> is defined. </dd></dl>
 
@@ -587,7 +587,7 @@ The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are
 <p>This function essentially implements a loop over segments and all views in the current subset in the parallel case. </p>
 <p>This provides the same functionality as <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>, but enables caching of <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a> such that they don't need to be sent multiple times.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Do not call this function directly. Use <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo:</a></b></dt><dd>Merge this functionality into <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo:</a></b></dt><dd>Merge this functionality into <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a></dd></dl>
 
 <p class="reference">References <a class="el" href="namespacedistributed.html#a199dcf2f9801f6f123b52fb5764fb0ab">distributed::first_iteration</a>, <a class="el" href="namespacedistributed.html#abbf56163d0c90c62669ee75a8a7137ef">distributed::send_bool_value()</a>, and <a class="el" href="namespacedistributed.html#a1f1f47fba560b9a9c810c85dc601af60">distributed::test</a>.</p>
 
@@ -613,7 +613,7 @@ The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

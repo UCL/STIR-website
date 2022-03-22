@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,8 +78,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html#a37db3f4dba6b20fe222e1d4b0a709e03">can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, const std::string &amp;singles_filename) const</td></tr>
 <tr class="memdesc:a37db3f4dba6b20fe222e1d4b0a709e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if it's an ECAT7 file by reading the main header and if the scanner is supported. */. <br /></td></tr>
 <tr class="separator:a37db3f4dba6b20fe222e1d4b0a709e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec6036b2f7000e6fe5bc9977bf56efb"><td class="memItemLeft" align="right" valign="top"><a id="acec6036b2f7000e6fe5bc9977bf56efb"></a>
-virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read_from_file</b> (std::istream &amp;input) const</td></tr>
+<tr class="memitem:acec6036b2f7000e6fe5bc9977bf56efb"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html#acec6036b2f7000e6fe5bc9977bf56efb">read_from_file</a> (std::istream &amp;input) const</td></tr>
+<tr class="memdesc:acec6036b2f7000e6fe5bc9977bf56efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a stream  <a href="#acec6036b2f7000e6fe5bc9977bf56efb">More...</a><br /></td></tr>
 <tr class="separator:acec6036b2f7000e6fe5bc9977bf56efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad476ec6dd621ae52ea9b22d0c7c17bdd"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html#ad476ec6dd621ae52ea9b22d0c7c17bdd">read_from_file</a> (const std::string &amp;filename) const</td></tr>
 <tr class="memdesc:ad476ec6dd621ae52ea9b22d0c7c17bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the data via the .sgl file  <a href="#ad476ec6dd621ae52ea9b22d0c7c17bdd">More...</a><br /></td></tr>
@@ -109,8 +109,42 @@ typedef <a class="el" href="classstir_1_1ListModeData.html">ListModeData</a>&#16
 </ul>
 <p>This class expects to be passed the name of the .sgl file. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acec6036b2f7000e6fe5bc9977bf56efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec6036b2f7000e6fe5bc9977bf56efb">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; stir::ecat::ecat7::ECAT966ListmodeInputFileFormat::read_from_file </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read data from a stream </p>
+<p>This function should throw an exception if the read fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This member throws for most implementations. Use a filename instead. </dd></dl>
+
+<p>Implements <a class="el" href="classstir_1_1InputFileFormat.html#a7ab512e824773415be5b74fb1dae4978">stir::InputFileFormat&lt; ListModeData &gt;</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+</div>
+</div>
 <a id="ad476ec6dd621ae52ea9b22d0c7c17bdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad476ec6dd621ae52ea9b22d0c7c17bdd">&#9670;&nbsp;</a></span>read_from_file()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad476ec6dd621ae52ea9b22d0c7c17bdd">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +170,7 @@ typedef <a class="el" href="classstir_1_1ListModeData.html">ListModeData</a>&#16
 <p>read the data via the .sgl file </p>
 <p>We first remove the suffix (either .sgl or _1.sgl) and then call <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343" title="Constructor taking a prefix for the filename. ">ecat::ecat7::CListModeDataECAT::CListModeDataECAT(const std::string&amp;)</a> </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1InputFileFormat.html">stir::InputFileFormat&lt; ListModeData &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1InputFileFormat.html#a92c3484f045b9cb0ed322884d23bb3d6">stir::InputFileFormat&lt; ListModeData &gt;</a>.</p>
 
 <p class="reference">References <a class="el" href="namespacestir.html#aa3e25198e600d7b89f049544926585a4">stir::find_pos_of_extension()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
 
@@ -148,7 +182,7 @@ typedef <a class="el" href="classstir_1_1ListModeData.html">ListModeData</a>&#16
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:22 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

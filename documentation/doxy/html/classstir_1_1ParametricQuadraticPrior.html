@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,10 +111,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricQuadraticPrior.html#aebad8d5fbec345025f2a1621327d346a">set_kappa_sptr</a> (const shared_ptr&lt; TargetT &gt; &amp;)</td></tr>
 <tr class="memdesc:aebad8d5fbec345025f2a1621327d346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
 <tr class="separator:aebad8d5fbec345025f2a1621327d346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3766b1a4b816554383d619835a5438"><td class="memItemLeft" align="right" valign="top"><a id="a2a3766b1a4b816554383d619835a5438"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a2a3766b1a4b816554383d619835a5438">set_up</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a2a3766b1a4b816554383d619835a5438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a2a3766b1a4b816554383d619835a5438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd4ca565d4fb24071d404d2c152b96"><td class="memItemLeft" align="right" valign="top"><a id="a16bd4ca565d4fb24071d404d2c152b96"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a16bd4ca565d4fb24071d404d2c152b96">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a16bd4ca565d4fb24071d404d2c152b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a16bd4ca565d4fb24071d404d2c152b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfdb323f15a0777712dcf0a276243ea"><td class="memTemplParams" colspan="2"><a id="a4dfdb323f15a0777712dcf0a276243ea"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a4dfdb323f15a0777712dcf0a276243ea"><td class="memTemplItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registered_name</b></td></tr>
@@ -129,16 +129,19 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
 <tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; TargetT &gt;</a></td></tr>
+<tr class="memitem:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">accumulate_Hessian_times_input</a> (TargetT &amp;output, const TargetT &amp;current_estimate, const TargetT &amp;input) const</td></tr>
+<tr class="memdesc:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">More...</a><br /></td></tr>
+<tr class="separator:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a8c16dbc788bf565da852f94106fd9d6e"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a8c16dbc788bf565da852f94106fd9d6e">set_up</a> (shared_ptr&lt; TargetT &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const TargetT &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -388,7 +391,7 @@ template&lt;typename TargetT &gt; </div>
 </div><div class="memdoc">
 
 <p>This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>. </p>
-<p>Default implementation just call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a>. This function needs to be overriden by the derived class. </p>
+<p>Default implementation just call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a>. This function needs to be overridden by the derived class. This method assumes that the hessian of the prior is 1 and hence the function quadratic. Instead, <a class="el" href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7" title="This should compute the multiplication of the Hessian with a vector and add it to output...">accumulate_Hessian_times_input()</a> should be used. This method remains for backwards comparability. </p><dl class="section warning"><dt>Warning</dt><dd>The derived class should accumulate in <em>output</em>. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedPrior.html#ad46b519fe2250ee5a440c1a36d29b086">stir::GeneralisedPrior&lt; TargetT &gt;</a>.</p>
 
@@ -575,7 +578,7 @@ template&lt;typename TargetT &gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000190">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a2a3766b1a4b816554383d619835a5438" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000199">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a16bd4ca565d4fb24071d404d2c152b96" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#ac5cec7ab8c9afaf1f863ad7aa7dfdbb7">stir::ParametricQuadraticPrior&lt; TargetT &gt;::get_weights()</a>, and <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#afdad138636fbfcace3e2b70fcf9e4335">stir::ParametricQuadraticPrior&lt; TargetT &gt;::set_weights()</a>.</p>
 
@@ -588,7 +591,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

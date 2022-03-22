@@ -1,5 +1,5 @@
 <map id="stir::CListModeDataSAFIR&lt; CListRecordT &gt;" name="stir::CListModeDataSAFIR&lt; CListRecordT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1CListModeData.html" title="The base class for reading list mode data. " alt="" coords="24,155,173,181"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="24,155,173,181"/>
 <area shape="rect" id="node3" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="29,80,169,107"/>
 <area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="39,5,158,32"/>
 </map>

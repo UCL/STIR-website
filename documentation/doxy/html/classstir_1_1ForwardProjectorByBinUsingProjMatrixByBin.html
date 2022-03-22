@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -73,9 +73,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec3c38a928206d0a0a3ff94c7caa6c02"><td class="memItemLeft" align="right" valign="top"><a id="aec3c38a928206d0a0a3ff94c7caa6c02"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ForwardProjectorByBinUsingProjMatrixByBin</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjMatrixByBin.html">ProjMatrixByBin</a> &gt; &amp;proj_matrix_ptr)</td></tr>
 <tr class="separator:aec3c38a928206d0a0a3ff94c7caa6c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c7ee70f926250cd0f0f928128e627f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a8c7ee70f926250cd0f0f928128e627f6">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:a8c7ee70f926250cd0f0f928128e627f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a8c7ee70f926250cd0f0f928128e627f6">More...</a><br /></td></tr>
-<tr class="separator:a8c7ee70f926250cd0f0f928128e627f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308d4f86fa742665a3e75c71eb487aae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a308d4f86fa742665a3e75c71eb487aae">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
+<tr class="memdesc:a308d4f86fa742665a3e75c71eb487aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a308d4f86fa742665a3e75c71eb487aae">More...</a><br /></td></tr>
+<tr class="separator:a308d4f86fa742665a3e75c71eb487aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada535932adc29570f6e83d222d94e957"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#ada535932adc29570f6e83d222d94e957">get_symmetries_used</a> () const</td></tr>
 <tr class="memdesc:ada535932adc29570f6e83d222d94e957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs on which symmetries the projector handles.  <a href="#ada535932adc29570f6e83d222d94e957">More...</a><br /></td></tr>
 <tr class="separator:ada535932adc29570f6e83d222d94e957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +184,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>actual_forward_project</b> (<a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt; &amp;viewgrams, const int min_axial_pos_num, const int max_axial_pos_num, const int min_tangential_pos_num, const int max_tangential_pos_num)</td></tr>
 <tr class="separator:ae6584b65c0b8ee1deb32d189f01b142d inherit pro_methods_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6166322bb35b9f53cbd515b584d5ee inherit pro_methods_classstir_1_1ForwardProjectorByBin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;density_info) const</td></tr>
-<tr class="memdesc:a5d6166322bb35b9f53cbd515b584d5ee inherit pro_methods_classstir_1_1ForwardProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ab4b72c15b4e59d60fd3f2c95f55d8de6" title="Stores all necessary geometric info. ">set_up()</a>  <a href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">More...</a><br /></td></tr>
+<tr class="memdesc:a5d6166322bb35b9f53cbd515b584d5ee inherit pro_methods_classstir_1_1ForwardProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a>  <a href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">More...</a><br /></td></tr>
 <tr class="separator:a5d6166322bb35b9f53cbd515b584d5ee inherit pro_methods_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
@@ -200,11 +200,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_already_set_up</b></
 <tr class="separator:ac6546af3548fb87e2754fd5a0197aea8 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71813d9cd38e49d540acad9d6090435 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="af71813d9cd38e49d540acad9d6090435"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a></td></tr>
-<tr class="memdesc:af71813d9cd38e49d540acad9d6090435 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The density ptr set with <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ab4b72c15b4e59d60fd3f2c95f55d8de6" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="memdesc:af71813d9cd38e49d540acad9d6090435 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The density ptr set with <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
 <tr class="separator:af71813d9cd38e49d540acad9d6090435 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11be609f61c780ae1e2e7a20c56ea1e7 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="a11be609f61c780ae1e2e7a20c56ea1e7"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_pre_data_processor_sptr</b></td></tr>
 <tr class="separator:a11be609f61c780ae1e2e7a20c56ea1e7 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7fd743977dc90ea9ba6ca1348697d3 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="aae7fd743977dc90ea9ba6ca1348697d3"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a></td></tr>
+<tr class="memdesc:aae7fd743977dc90ea9ba6ca1348697d3 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> set by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="separator:aae7fd743977dc90ea9ba6ca1348697d3 inherit pro_attribs_classstir_1_1ForwardProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -214,8 +218,8 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 <div class="textblock"><p>This implements the <a class="el" href="classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors. ">ForwardProjectorByBin</a> interface, given any <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> object</p>
 <p>It stores a shared_ptr to a <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> object, which will be used to get the relevant elements of the projection matrix. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8c7ee70f926250cd0f0f928128e627f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c7ee70f926250cd0f0f928128e627f6">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a308d4f86fa742665a3e75c71eb487aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308d4f86fa742665a3e75c71eb487aae">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,13 +230,13 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
         <tr>
           <td class="memname">void stir::ForwardProjectorByBinUsingProjMatrixByBin::set_up </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>proj_data_info_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -251,9 +255,9 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 <p>Stores all necessary geometric info. </p>
 <p>Note that the density_info_ptr is not stored in this object. It's only used to get some info on sizes etc. </p>
 
-<p>Implements <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ab4b72c15b4e59d60fd3f2c95f55d8de6">stir::ForwardProjectorByBin</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596">stir::ForwardProjectorByBin</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ab4b72c15b4e59d60fd3f2c95f55d8de6">stir::ForwardProjectorByBin::set_up()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596">stir::ForwardProjectorByBin::set_up()</a>.</p>
 
 </div>
 </div>
@@ -321,7 +325,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

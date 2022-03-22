@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -125,10 +125,6 @@ PARAPET project</dd></dl>
 <p class="startli">#defines STIR_NO_COVARIANT_RETURN_TYPES when the compiler does not support virtual functions of a derived class differing only in the return type. Define when your compiler does not handle the following: </p><div class="fragment"><div class="line"><span class="keyword">class </span>A { <span class="keyword">virtual</span> A* f();}</div><div class="line"><span class="keyword">class </span>B:A { <span class="keyword">virtual</span> B* f(); }</div></div><!-- fragment --><p class="endli"></p>
 </li>
 <li>
-<p class="startli">defines STIR_NO_UNIQUE_PTR when the compiler has no std::unique_ptr support.</p>
-<p class="endli"></p>
-</li>
-<li>
 <p class="startli">preprocessor definitions which attempt to determine the operating system this is going to run on. use as #ifdef <b>OS_WIN</b> ... #elif ... #endif Possible values are <b>OS_WIN</b>, <b>OS_MAC</b>, <b>OS_VAX</b>, <b>OS_UNIX</b> The <b>OS_UNIX</b> case has 'subbranches'. At the moment we attempt to find out on <b>OS_AIX</b>, <b>OS_SUN</b>, <b>OS_OSF</b>, <b>OS_LINUX</b>. (If the attempts fail to determine the correct OS, you can pass the correct value as a preprocessor definition to the compiler)</p>
 <p class="endli"></p>
 </li>
@@ -173,7 +169,7 @@ For old compilers (check the source!), overloads of std::copy for built-in types
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

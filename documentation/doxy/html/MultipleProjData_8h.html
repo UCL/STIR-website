@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -43,7 +43,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">MultipleProjData.h File Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__data__buildblock.html">Acquisition data building blocks</a></div></div>  </div>
 </div><!--header-->
@@ -56,15 +58,29 @@ $(function() {
 <code>#include &quot;<a class="el" href="shared__ptr_8h_source.html">stir/shared_ptr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="is__null__ptr_8h_source.html">stir/is_null_ptr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="copy__fill_8h_source.html">stir/copy_fill.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="MultipleProjData_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstir_1_1CopyFill_3_01MultipleProjData_01_4.html">stir::CopyFill&lt; MultipleProjData &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all bins to a range specified by an iterator.  <a href="structstir_1_1CopyFill_3_01MultipleProjData_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacestir"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html">stir</a></td></tr>
 <tr class="memdesc:namespacestir"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for the STIR library (and some/most of its applications) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad3524d18aaf87838952fa8de1a74fd4d"><td class="memTemplParams" colspan="2">template&lt;typename iterT &gt; </td></tr>
+<tr class="memitem:ad3524d18aaf87838952fa8de1a74fd4d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#ad3524d18aaf87838952fa8de1a74fd4d">stir::fill_from</a> (MultipleProjData &amp;stir_object, iterT iter, iterT)</td></tr>
+<tr class="memdesc:ad3524d18aaf87838952fa8de1a74fd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set all elements of a MultipleProjData from an iterator  <a href="namespacestir.html#ad3524d18aaf87838952fa8de1a74fd4d">More...</a><br /></td></tr>
+<tr class="separator:ad3524d18aaf87838952fa8de1a74fd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of class stir::MultipleProjData. </p>
@@ -72,7 +88,7 @@ Namespaces</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

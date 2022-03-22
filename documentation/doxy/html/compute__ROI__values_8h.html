@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -53,6 +53,7 @@ $(function() {
 <p>Declaration of various function that computes ROI values.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ROIValues_8h_source.html">stir/evaluation/ROIValues.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="VoxelsOnCartesianGrid_8h_source.html">stir/VoxelsOnCartesianGrid.h</a>&quot;</code><br />
 </div>
 <p><a href="compute__ROI__values_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -80,17 +81,23 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions to compute ROI values</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Shapes are first discretised using Shape3D::construct_volume. This can make fuzzy boundaries (when the <em>num_samples</em> argument is not (1,1,1), or when DiscretisedShape3D needs zooming). Mean and stddev are computed using weighted versions, taking this smoothness into account, while ROI_min and max are ignore those weights. </p>
+<tr><td colspan="2"><div class="groupText"><p>Shapes can be first discretised using Shape3D::construct_volume or a Shape3D parsed. This can make fuzzy boundaries (when the <em>num_samples</em> argument is not (1,1,1), or when DiscretisedShape3D needs zooming). Mean and stddev are computed using weighted versions, taking this smoothness into account, while ROI_min and max are ignore those weights. </p>
 </div></td></tr>
 <tr class="memitem:a033f8276bab0515f9b5bcb3e4e1f26cb"><td class="memItemLeft" align="right" valign="top"><a id="a033f8276bab0515f9b5bcb3e4e1f26cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_ROI_values_per_plane</b> (VectorWithOffset&lt; ROIValues &gt; &amp;values, const DiscretisedDensity&lt; 3, float &gt; &amp;density, const Shape3D &amp;shape, const CartesianCoordinate3D&lt; int &gt; &amp;num_samples)</td></tr>
 <tr class="separator:a033f8276bab0515f9b5bcb3e4e1f26cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3aa3d2aac789d330102f76bdc44bfd"><td class="memItemLeft" align="right" valign="top"><a id="a8b3aa3d2aac789d330102f76bdc44bfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_ROI_values_per_plane</b> (VectorWithOffset&lt; ROIValues &gt; &amp;values, const DiscretisedDensity&lt; 3, float &gt; &amp;density, const DiscretisedDensity&lt; 3, float &gt; &amp;discretised_shape)</td></tr>
+<tr class="separator:a8b3aa3d2aac789d330102f76bdc44bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998a2df5b228dcbb324be7595a3c7b75"><td class="memItemLeft" align="right" valign="top"><a id="a998a2df5b228dcbb324be7595a3c7b75"></a>
 ROIValues&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_total_ROI_values</b> (const VectorWithOffset&lt; ROIValues &gt; &amp;values)</td></tr>
 <tr class="separator:a998a2df5b228dcbb324be7595a3c7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e94d4a8a2dc40acf0f56d9121d00c3"><td class="memItemLeft" align="right" valign="top"><a id="aa1e94d4a8a2dc40acf0f56d9121d00c3"></a>
 ROIValues&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_total_ROI_values</b> (const DiscretisedDensity&lt; 3, float &gt; &amp;image, const Shape3D &amp;shape, const CartesianCoordinate3D&lt; int &gt; &amp;num_samples)</td></tr>
 <tr class="separator:aa1e94d4a8a2dc40acf0f56d9121d00c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15ed840d440a798fc51ddfb379ce399"><td class="memItemLeft" align="right" valign="top"><a id="ad15ed840d440a798fc51ddfb379ce399"></a>
+ROIValues&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_total_ROI_values</b> (const DiscretisedDensity&lt; 3, float &gt; &amp;image, const DiscretisedDensity&lt; 3, float &gt; &amp;discretised_shape)</td></tr>
+<tr class="separator:ad15ed840d440a798fc51ddfb379ce399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9b98ac76191991a43399c5c4c12cb3"><td class="memItemLeft" align="right" valign="top"><a id="a8d9b98ac76191991a43399c5c4c12cb3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::compute_plane_range_ROI_values_per_plane</b> (VectorWithOffset&lt; ROIValues &gt; &amp;values, const DiscretisedDensity&lt; 3, float &gt; &amp;density, const CartesianCoordinate2D&lt; int &gt; &amp;plane_range, const Shape3D &amp;shape, const CartesianCoordinate3D&lt; int &gt; &amp;num_samples)</td></tr>
 <tr class="separator:a8d9b98ac76191991a43399c5c4c12cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +126,7 @@ VectorWithOffset&lt; float &gt;&#160;</td><td class="memItemRight" valign="botto
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

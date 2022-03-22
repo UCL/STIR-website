@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -67,7 +67,7 @@ $(function() {
 <code>#include &quot;itkOrientImageFilter.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="info_8h_source.html">stir/info.h</a>&quot;</code><br />
 <code>#include &quot;boost/format.hpp&quot;</code><br />
-<code>#include &quot;boost/lexical_cast.hpp&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -89,19 +89,22 @@ typedef DiscretisedDensity&lt; 3, float &gt;&#160;</td><td class="memItemRight" 
 <tr class="memitem:adaaf7863a5216054bf8dc53d61390a6a"><td class="memItemLeft" align="right" valign="top"><a id="adaaf7863a5216054bf8dc53d61390a6a"></a>
 typedef VoxelsOnCartesianGrid&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::STIRImageSingleConcrete</b></td></tr>
 <tr class="separator:adaaf7863a5216054bf8dc53d61390a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdba9c3d9a00ff9a2fa2f66df567a8db"><td class="memItemLeft" align="right" valign="top"><a id="abdba9c3d9a00ff9a2fa2f66df567a8db"></a>
-typedef VoxelsOnCartesianGrid&lt; CartesianCoordinate3D&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::STIRImageMulti</b></td></tr>
-<tr class="separator:abdba9c3d9a00ff9a2fa2f66df567a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967815d898f423e279060847662859b3"><td class="memItemLeft" align="right" valign="top"><a id="a967815d898f423e279060847662859b3"></a>
+typedef DiscretisedDensity&lt; 3, CartesianCoordinate3D&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::STIRImageMulti</b></td></tr>
+<tr class="separator:a967815d898f423e279060847662859b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614921622cede53ed12adb90715d3225"><td class="memItemLeft" align="right" valign="top"><a id="a614921622cede53ed12adb90715d3225"></a>
+typedef VoxelsOnCartesianGrid&lt; CartesianCoordinate3D&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::STIRImageMultiConcrete</b></td></tr>
+<tr class="separator:a614921622cede53ed12adb90715d3225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ab8885d729d02578f7b98cab55945b"><td class="memItemLeft" align="right" valign="top"><a id="a37ab8885d729d02578f7b98cab55945b"></a>
 typedef itk::MetaDataObject&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::MetaDataStringType</b></td></tr>
 <tr class="separator:a37ab8885d729d02578f7b98cab55945b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8983ecb45750273bbd38ff4fa589892f"><td class="memTemplParams" colspan="2"><a id="a8983ecb45750273bbd38ff4fa589892f"></a>
+<tr class="memitem:ae85fcb9b933eb2b1319899237612179f"><td class="memTemplParams" colspan="2"><a id="ae85fcb9b933eb2b1319899237612179f"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:a8983ecb45750273bbd38ff4fa589892f"><td class="memTemplItemLeft" align="right" valign="top">STIRImageMulti::full_value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::ITK_pixel_to_STIR_pixel</b> (typename ITKImageMulti::PixelType itk_pixel, const STIRImageMulti &amp;stir_image, bool is_displacement_field)</td></tr>
-<tr class="separator:a8983ecb45750273bbd38ff4fa589892f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85fcb9b933eb2b1319899237612179f"><td class="memTemplItemLeft" align="right" valign="top">STIRImageMultiConcrete::full_value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::ITK_pixel_to_STIR_pixel</b> (typename ITKImageMulti::PixelType itk_pixel, const STIRImageMultiConcrete &amp;stir_image, bool is_displacement_field)</td></tr>
+<tr class="separator:ae85fcb9b933eb2b1319899237612179f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1dcc45696f97fa5111b2d91b160cb2e"><td class="memTemplParams" colspan="2"><a id="ad1dcc45696f97fa5111b2d91b160cb2e"></a>
 template&lt;typename ITKImageType &gt; </td></tr>
 <tr class="memitem:ad1dcc45696f97fa5111b2d91b160cb2e"><td class="memTemplItemLeft" align="right" valign="top">ITKImageType::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::orient_ITK_image</b> (const typename ITKImageType::Pointer itk_image_orig, const shared_ptr&lt; ExamInfo &gt; exam_info_sptr)</td></tr>
@@ -127,7 +130,7 @@ Ashley Gillman </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

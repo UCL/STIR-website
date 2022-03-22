@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -74,9 +74,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#ac2860643d51f0c0ec58e8fa66c7f4894">ProjMatrixByBinUsingSolidAngle</a> ()</td></tr>
 <tr class="memdesc:ac2860643d51f0c0ec58e8fa66c7f4894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (calls set_defaults()) <br /></td></tr>
 <tr class="separator:ac2860643d51f0c0ec58e8fa66c7f4894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2416d5117790139b189d8de77255d43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#ad2416d5117790139b189d8de77255d43">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:ad2416d5117790139b189d8de77255d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#ad2416d5117790139b189d8de77255d43">More...</a><br /></td></tr>
-<tr class="separator:ad2416d5117790139b189d8de77255d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9911850dd29959dd8361053ee73dc45e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#a9911850dd29959dd8361053ee73dc45e">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
+<tr class="memdesc:a9911850dd29959dd8361053ee73dc45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a9911850dd29959dd8361053ee73dc45e">More...</a><br /></td></tr>
+<tr class="separator:a9911850dd29959dd8361053ee73dc45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; ProjMatrixByBinUsingSolidAngle, ProjMatrixByBin, ProjMatrixByBin &gt;</a></td></tr>
 <tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
@@ -217,8 +217,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes projection matrix elements for <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a> images by using a Solid Angle model. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad2416d5117790139b189d8de77255d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2416d5117790139b189d8de77255d43">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a9911850dd29959dd8361053ee73dc45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9911850dd29959dd8361053ee73dc45e">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,13 +229,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
         <tr>
           <td class="memname">void stir::ProjMatrixByBinUsingSolidAngle::set_up </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>proj_data_info_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -254,7 +254,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
 <p>Stores all necessary geometric info. </p>
 <p>Note that the density_info_ptr is not stored in this object. It's only used to get some info on sizes etc. </p>
 
-<p>Implements <a class="el" href="classstir_1_1ProjMatrixByBin.html#a590e1a52c00f09f7bc143a354a4175ed">stir::ProjMatrixByBin</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1ProjMatrixByBin.html#a980a5752fc68b8ec3642d9065182eb28">stir::ProjMatrixByBin</a>.</p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, <a class="el" href="classstir_1_1Array.html#a75983a3289d6190a0848a3a240938cfd">stir::Array&lt; num_dimensions, elemT &gt;::get_regular_range()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
 
@@ -292,7 +292,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

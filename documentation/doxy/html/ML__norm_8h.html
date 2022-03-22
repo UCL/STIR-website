@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -122,18 +122,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_geo_nor
 <tr class="memitem:aff69a420efc71382b1661b7a098ec792"><td class="memItemLeft" align="right" valign="top"><a id="aff69a420efc71382b1661b7a098ec792"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_block_norm</b> (BlockData &amp;norm_block_data, const BlockData &amp;measured_block_data, const DetPairData &amp;model)</td></tr>
 <tr class="separator:aff69a420efc71382b1661b7a098ec792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae3b7f0f99d87cc33fb2dc553d65674"><td class="memItemLeft" align="right" valign="top"><a id="a7ae3b7f0f99d87cc33fb2dc553d65674"></a>
-shared_ptr&lt; ProjDataInfoCylindricalNoArcCorr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const ProjDataInfo &amp;proj_data_info)</td></tr>
-<tr class="separator:a7ae3b7f0f99d87cc33fb2dc553d65674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8855170eeb16cac4de1290ca862e14e"><td class="memItemLeft" align="right" valign="top"><a id="ac8855170eeb16cac4de1290ca862e14e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_fan_data</b> (FanProjData &amp;fan_data, const ProjData &amp;proj_data)</td></tr>
-<tr class="separator:ac8855170eeb16cac4de1290ca862e14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92463d1076367eded208f6af09794c0b"><td class="memItemLeft" align="right" valign="top"><a id="a92463d1076367eded208f6af09794c0b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::set_fan_data</b> (ProjData &amp;proj_data, const FanProjData &amp;fan_data)</td></tr>
-<tr class="separator:a92463d1076367eded208f6af09794c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109d9e9866a229b494be555be2b0a5f1"><td class="memItemLeft" align="right" valign="top"><a id="a109d9e9866a229b494be555be2b0a5f1"></a>
+shared_ptr&lt; const ProjDataInfoCylindricalNoArcCorr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const ProjDataInfo &amp;proj_data_info)</td></tr>
+<tr class="separator:a109d9e9866a229b494be555be2b0a5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memItemLeft" align="right" valign="top"><a id="ac20985a59cf1dee7cc6049bb4a091eed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#ac20985a59cf1dee7cc6049bb4a091eed">stir::make_fan_data_remove_gaps</a> (FanProjData &amp;fan_data, const ProjData &amp;proj_data)</td></tr>
+<tr class="memdesc:ac20985a59cf1dee7cc6049bb4a091eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make fan_data from projecion file while removing the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+<tr class="separator:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memItemLeft" align="right" valign="top"><a id="adf8bd05e524c8ef0e9ce2e1e9c289c14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#adf8bd05e524c8ef0e9ce2e1e9c289c14">stir::set_fan_data_add_gaps</a> (ProjData &amp;proj_data, const FanProjData &amp;fan_data, const float gap_value)</td></tr>
+<tr class="memdesc:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make proj_data from fan_data while adding the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+<tr class="separator:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d666979cd053dd0e68e7bf52685c370"><td class="memItemLeft" align="right" valign="top"><a id="a3d666979cd053dd0e68e7bf52685c370"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::apply_block_norm</b> (FanProjData &amp;fan_data, const BlockData3D &amp;block_data, const bool apply)</td></tr>
 <tr class="separator:a3d666979cd053dd0e68e7bf52685c370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b09628a31d5bba5213180a6ea1caa2"><td class="memItemLeft" align="right" valign="top"><a id="aa0b09628a31d5bba5213180a6ea1caa2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::apply_geo_norm</b> (FanProjData &amp;fan_data, const GeoData3D &amp;geo_data, const bool apply)</td></tr>
+<tr class="separator:aa0b09628a31d5bba5213180a6ea1caa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac33a1c17468c693767d56cbaef973b6e"><td class="memItemLeft" align="right" valign="top"><a id="ac33a1c17468c693767d56cbaef973b6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::apply_efficiencies</b> (FanProjData &amp;fan_data, const DetectorEfficiencies &amp;efficiencies, const bool apply)</td></tr>
 <tr class="separator:ac33a1c17468c693767d56cbaef973b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_fan_sum_da
 <tr class="memitem:a065d71fad91a5964744e952fe3f60302"><td class="memItemLeft" align="right" valign="top"><a id="a065d71fad91a5964744e952fe3f60302"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_fan_sum_data</b> (Array&lt; 2, float &gt; &amp;data_fan_sums, const DetectorEfficiencies &amp;efficiencies, const int max_ring_diff, const int half_fan_size)</td></tr>
 <tr class="separator:a065d71fad91a5964744e952fe3f60302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33862898196cf8c0d62ad8569ad0b38"><td class="memItemLeft" align="right" valign="top"><a id="ac33862898196cf8c0d62ad8569ad0b38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_geo_data</b> (GeoData3D &amp;geo_data, const FanProjData &amp;fan_data)</td></tr>
+<tr class="separator:ac33862898196cf8c0d62ad8569ad0b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d59c3684bd37789d46cf66061c1d99d"><td class="memItemLeft" align="right" valign="top"><a id="a2d59c3684bd37789d46cf66061c1d99d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_block_data</b> (BlockData3D &amp;block_data, const FanProjData &amp;fan_data)</td></tr>
 <tr class="separator:a2d59c3684bd37789d46cf66061c1d99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,30 +163,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_efficie
 <tr class="memitem:a556a41400061ab3a2cd37f79a5b98ed0"><td class="memItemLeft" align="right" valign="top"><a id="a556a41400061ab3a2cd37f79a5b98ed0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_efficiencies</b> (DetectorEfficiencies &amp;efficiencies, const Array&lt; 2, float &gt; &amp;data_fan_sums, const int max_ring_diff, const int half_fan_size)</td></tr>
 <tr class="separator:a556a41400061ab3a2cd37f79a5b98ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820f1dc639669c7ce821ff0686b742cf"><td class="memItemLeft" align="right" valign="top"><a id="a820f1dc639669c7ce821ff0686b742cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_geo_norm</b> (GeoData3D &amp;norm_geo_data, const GeoData3D &amp;measured_geo_data, const FanProjData &amp;model)</td></tr>
+<tr class="separator:a820f1dc639669c7ce821ff0686b742cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c996d54fcd6996a5a10cfe4747b7a3b"><td class="memItemLeft" align="right" valign="top"><a id="a1c996d54fcd6996a5a10cfe4747b7a3b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_block_norm</b> (BlockData3D &amp;norm_block_data, const BlockData3D &amp;measured_block_data, const FanProjData &amp;model)</td></tr>
 <tr class="separator:a1c996d54fcd6996a5a10cfe4747b7a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008e1e306dd5ce46d2dc87d2c8218fb6"><td class="memItemLeft" align="right" valign="top"><a id="a008e1e306dd5ce46d2dc87d2c8218fb6"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const float a, const float b, const float threshold_a=0)</td></tr>
-<tr class="separator:a008e1e306dd5ce46d2dc87d2c8218fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2f6b5ec6d246f8da3084f1711191759"><td class="memTemplParams" colspan="2"><a id="aa2f6b5ec6d246f8da3084f1711191759"></a>
+<tr class="memitem:a3a872c44816a48f16a14405845f5e761"><td class="memItemLeft" align="right" valign="top"><a id="a3a872c44816a48f16a14405845f5e761"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const double a, const double b, const double threshold_a=0)</td></tr>
+<tr class="separator:a3a872c44816a48f16a14405845f5e761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2ae664561ae66dc009fdf2a03eb541"><td class="memTemplParams" colspan="2"><a id="ace2ae664561ae66dc009fdf2a03eb541"></a>
 template&lt;int num_dimensions, typename elemT &gt; </td></tr>
-<tr class="memitem:aa2f6b5ec6d246f8da3084f1711191759"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::KL</b> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const Array&lt; num_dimensions, elemT &gt; &amp;b, const float threshold_a=0)</td></tr>
-<tr class="separator:aa2f6b5ec6d246f8da3084f1711191759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32796fe2d05990ea511a9dec59ec601a"><td class="memItemLeft" align="right" valign="top"><a id="a32796fe2d05990ea511a9dec59ec601a"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const DetPairData &amp;d1, const DetPairData &amp;d2, const float threshold)</td></tr>
-<tr class="separator:a32796fe2d05990ea511a9dec59ec601a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7e4789d8d93b3a40c76351965c3b52"><td class="memItemLeft" align="right" valign="top"><a id="a6a7e4789d8d93b3a40c76351965c3b52"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const FanProjData &amp;d1, const FanProjData &amp;d2, const float threshold)</td></tr>
-<tr class="separator:a6a7e4789d8d93b3a40c76351965c3b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2ae664561ae66dc009fdf2a03eb541"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::KL</b> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const Array&lt; num_dimensions, elemT &gt; &amp;b, const double threshold_a=0)</td></tr>
+<tr class="separator:ace2ae664561ae66dc009fdf2a03eb541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ec27bf748fe679c8febf6049ce9672"><td class="memItemLeft" align="right" valign="top"><a id="a74ec27bf748fe679c8febf6049ce9672"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const DetPairData &amp;d1, const DetPairData &amp;d2, const double threshold)</td></tr>
+<tr class="separator:a74ec27bf748fe679c8febf6049ce9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ac98917c51fe34a31e7fce774a8d26"><td class="memItemLeft" align="right" valign="top"><a id="ab0ac98917c51fe34a31e7fce774a8d26"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const FanProjData &amp;d1, const FanProjData &amp;d2, const double threshold)</td></tr>
+<tr class="separator:ab0ac98917c51fe34a31e7fce774a8d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Preliminary things for ML normalisation factor estimation. </p>
-<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
+<p>Algorithms are described in</p>
+<ol type="1">
+<li>Darren Hogg, Kris Thielemans, Terence J. Spinks, and Nicolas Spyrou. 2001. &lt;cite&gt;Maximum-Likelihood Estimation of Normalisation Factors for PET&lt;/cite&gt; In 2001 IEEE Nuclear Science Symposium Conference Record, 4:2065-2069. San Diego, CA, USA: IEEE. <a href="https://doi.org/10.1109/nssmic.2001.1009231">https://doi.org/10.1109/nssmic.2001.1009231</a>.</li>
+<li>Jacobson, Matthew W., and Kris Thielemans. 2008. &lt;cite&gt;Optimizability of Loglikelihoods for the Estimation of Detector Efficiencies and Singles Rates in PET&lt;/cite&gt; In 2008 IEEE Nuclear Science Symposium and Medical Imaging Conference (2008 NSS/MIC), 4580-4586. IEEE. <a href="https://doi.org/10.1109/nssmic.2008.4774352">https://doi.org/10.1109/nssmic.2008.4774352</a>.</li>
+<li>Tahereh Niknejad, Stefaan Tavernier, Joao Varela, and Kris Thielemans, &lt;cite&gt;Validation of 3D Model-Based Maximum-Likelihood Estimation of Normalisation Factors for Partial Ring Positron Emission Tomography&lt;/cite&gt; In 2016 IEEE Nuclear Science Symposium, Medical Imaging Conference and Room-Temperature Semiconductor Detector Workshop (NSS/MIC/RTSD), 1-5. <a href="https://doi.org/10.1109/NSSMIC.2016.8069577">DOI: 10.1109/NSSMIC.2016.8069577</a>.</li>
+</ol>
+<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
+<dd>
+Tahereh Niknejad </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

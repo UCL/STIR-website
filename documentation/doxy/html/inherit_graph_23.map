@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. " alt="" coords="5,13,77,39"/>
-<area shape="rect" id="node2" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="125,5,303,47"/>
+<area shape="rect" id="node1" href="$classstir_1_1BeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a stir full iterator for the 2n..." alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$classstir_1_1ConstBeginEndAllFunction.html" title="Convenience class where the 2nd level iterator is a const_full_iterator. " alt="" coords="259,5,479,47"/>
 </map>

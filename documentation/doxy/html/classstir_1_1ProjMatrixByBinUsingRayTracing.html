@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -74,9 +74,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#ac6f0a888a415fe40b7cefee136eaae2f">ProjMatrixByBinUsingRayTracing</a> ()</td></tr>
 <tr class="memdesc:ac6f0a888a415fe40b7cefee136eaae2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (calls set_defaults()) <br /></td></tr>
 <tr class="separator:ac6f0a888a415fe40b7cefee136eaae2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ec9b92ea4329cd1f39b0f038afb65c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#a1ec9b92ea4329cd1f39b0f038afb65c2">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:a1ec9b92ea4329cd1f39b0f038afb65c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a1ec9b92ea4329cd1f39b0f038afb65c2">More...</a><br /></td></tr>
-<tr class="separator:a1ec9b92ea4329cd1f39b0f038afb65c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af962c3e6211c3c0fe3e41d1c0f71d10c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#af962c3e6211c3c0fe3e41d1c0f71d10c">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
+<tr class="memdesc:af962c3e6211c3c0fe3e41d1c0f71d10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#af962c3e6211c3c0fe3e41d1c0f71d10c">More...</a><br /></td></tr>
+<tr class="separator:af962c3e6211c3c0fe3e41d1c0f71d10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">If a cylindrical FOV or the whole image will be handled</div></td></tr>
 <tr class="memitem:a47d891994b41f13e05b185834ec0be9f"><td class="memItemLeft" align="right" valign="top"><a id="a47d891994b41f13e05b185834ec0be9f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_restrict_to_cylindrical_FOV</b> () const</td></tr>
@@ -296,8 +296,8 @@ Care should be taken to select the number of rays in tangential direction such t
 Current implementation assumes that z voxel size is either smaller than or exactly twice the sampling in axial direction of the segments.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>Currently, strange things happen if the z voxel size is not exactly equal to half the ring spacing of the scanner. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1ec9b92ea4329cd1f39b0f038afb65c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ec9b92ea4329cd1f39b0f038afb65c2">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="af962c3e6211c3c0fe3e41d1c0f71d10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af962c3e6211c3c0fe3e41d1c0f71d10c">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,13 +308,13 @@ Current implementation assumes that z voxel size is either smaller than or exact
         <tr>
           <td class="memname">void stir::ProjMatrixByBinUsingRayTracing::set_up </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>proj_data_info_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -333,7 +333,7 @@ Current implementation assumes that z voxel size is either smaller than or exact
 <p>Stores all necessary geometric info. </p>
 <p>Note that the density_info_ptr is not stored in this object. It's only used to get some info on sizes etc. </p>
 
-<p>Implements <a class="el" href="classstir_1_1ProjMatrixByBin.html#a590e1a52c00f09f7bc143a354a4175ed">stir::ProjMatrixByBin</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1ProjMatrixByBin.html#a980a5752fc68b8ec3642d9065182eb28">stir::ProjMatrixByBin</a>.</p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, and <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>.</p>
 
@@ -371,7 +371,7 @@ Current implementation assumes that z voxel size is either smaller than or exact
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

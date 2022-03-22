@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -218,7 +218,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <div class="textblock"><p>Class for shapes with orientation. </p>
 <p>Orientation is specified by giving a 3x3 matrix specifying 3 direction vectors. Note that these vectors do not necessarily have to be orthogonal nor have unit-norm (in fact, <a class="el" href="classstir_1_1Shape3DWithOrientation.html#abe8b2b13d925f093ac6469c1e995379e" title="scale the whole shape ">scale()</a> will rescale these direction vectors). Of course, they should not be parallel, but this is not checked.</p>
 <p>Functions like <code>is_inside_shape(coord)</code> should compute the coordinate to be used in the calculation as <code>matrix_multiply(direction_vectors, coord-origin)</code>, or best practice is to call <code>transform_to_shape_coords(coords)</code>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000172">Todo:</a></b></dt><dd>A previous release had Euler angle code. However, it is currently disabled as there were bugs in it.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo:</a></b></dt><dd>A previous release had Euler angle code. However, it is currently disabled as there were bugs in it.</dd></dl>
 <dl class="section user"><dt>Parameters</dt><dd><pre class="fragment">   ; any parameters of Shape3D
 
    ; parameters that enable to use non-default axes
@@ -457,7 +457,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -85,10 +85,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9ae93afe4436891737c82188f4dee99"><td class="memItemLeft" align="right" valign="top"><a id="ac9ae93afe4436891737c82188f4dee99"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParametricDiscretisedDensity</b> (const base_type &amp;density)</td></tr>
 <tr class="separator:ac9ae93afe4436891737c82188f4dee99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4382ac081944f87aa9197c571bdb658e"><td class="memItemLeft" align="right" valign="top"><a id="a4382ac081944f87aa9197c571bdb658e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#a4382ac081944f87aa9197c571bdb658e">ParametricDiscretisedDensity</a> (const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;dyn_im)</td></tr>
-<tr class="memdesc:a4382ac081944f87aa9197c571bdb658e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create blank parametric image from a dynamic image. <br /></td></tr>
+<tr class="memitem:a4382ac081944f87aa9197c571bdb658e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#a4382ac081944f87aa9197c571bdb658e">ParametricDiscretisedDensity</a> (const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;dyn_im)</td></tr>
+<tr class="memdesc:a4382ac081944f87aa9197c571bdb658e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create blank parametric image from a dynamic image.  <a href="#a4382ac081944f87aa9197c571bdb658e">More...</a><br /></td></tr>
 <tr class="separator:a4382ac081944f87aa9197c571bdb658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c6a45284f56960f8399d3dfb1b9972"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#a97c6a45284f56960f8399d3dfb1b9972">ParametricDiscretisedDensity</a> (const SingleDiscretisedDensityType &amp;im)</td></tr>
+<tr class="memdesc:a97c6a45284f56960f8399d3dfb1b9972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create blank parametric image from a single <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a>.  <a href="#a97c6a45284f56960f8399d3dfb1b9972">More...</a><br /></td></tr>
+<tr class="separator:a97c6a45284f56960f8399d3dfb1b9972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bcf2b87a22227b184c42c1f059c6de4"><td class="memItemLeft" align="right" valign="top"><a id="a0bcf2b87a22227b184c42c1f059c6de4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update_parametric_image</b> (const SingleDiscretisedDensityType &amp;single_density, const unsigned int param_num)</td></tr>
 <tr class="separator:a0bcf2b87a22227b184c42c1f059c6de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,11 +175,12 @@ class stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</h3>
 <p>Class to store parametric images. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">DiscDensT</td><td>should be a class for storing an image, e.g. <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a>&lt;KineticParameters&lt;..&gt;</td></tr>
+    <tr><td class="paramname">DiscDensT</td><td>should be a class for storing an image, e.g. <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a>&lt;KineticParameters&lt;..&gt; &gt;</td></tr>
   </table>
   </dd>
 </dl>
-<p>This class stores parametric images as an image of parameters (as opposed to a sequence of images, one for each parameter). However, it provides various functions to get single images out, e.g. corresponding to a single parameter, or by applying a function on all parameters. </p>
+<p>This class stores parametric images as an image of parameters (as opposed to a sequence of images, one for each parameter). However, it provides various functions to get single images out, e.g. corresponding to a single parameter, or by applying a function on all parameters.</p>
+<p>Note that the <a class="el" href="classstir_1_1ExamInfo.html" title="a class for storing information about 1 exam (or scan) ">ExamInfo</a> object stored by the image can contain multiple time frames (presumably corresponding to the time frames of the data where the parametric image is derived from). In some cases, there could only be a single time frame (start to end of the study). </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5e68904963ec976b4d965634d9d853bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e68904963ec976b4d965634d9d853bb">&#9670;&nbsp;</a></span>hierarchy_base_type</h2>
@@ -199,6 +202,53 @@ template&lt;typename DiscDensT&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4382ac081944f87aa9197c571bdb658e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4382ac081944f87aa9197c571bdb658e">&#9670;&nbsp;</a></span>ParametricDiscretisedDensity() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DiscDensT&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1ParametricDiscretisedDensity.html">stir::ParametricDiscretisedDensity</a>&lt; DiscDensT &gt;::<a class="el" href="classstir_1_1ParametricDiscretisedDensity.html">ParametricDiscretisedDensity</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;&#160;</td>
+          <td class="paramname"><em>dyn_im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create blank parametric image from a dynamic image. </p>
+<p>Uses only its geometric/exam info and timing </p>
+
+</div>
+</div>
+<a id="a97c6a45284f56960f8399d3dfb1b9972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c6a45284f56960f8399d3dfb1b9972">&#9670;&nbsp;</a></span>ParametricDiscretisedDensity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DiscDensT&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1ParametricDiscretisedDensity.html">stir::ParametricDiscretisedDensity</a>&lt; DiscDensT &gt;::<a class="el" href="classstir_1_1ParametricDiscretisedDensity.html">ParametricDiscretisedDensity</a> </td>
+          <td>(</td>
+          <td class="paramtype">const SingleDiscretisedDensityType &amp;&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create blank parametric image from a single <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a>. </p>
+<p>Uses only its geometric/exam info and timing </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/IO/<a class="el" href="ECAT7ParametricDensityOutputFileFormat_8h_source.html">ECAT7ParametricDensityOutputFileFormat.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/modelling/<a class="el" href="ParametricDiscretisedDensity_8h_source.html">ParametricDiscretisedDensity.h</a></li>
@@ -206,7 +256,7 @@ template&lt;typename DiscDensT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

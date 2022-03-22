@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -79,9 +79,9 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#aedb64c5fb954e5c09985b56d5f251e83">initialise_keymap</a> ()</td></tr>
 <tr class="memdesc:aedb64c5fb954e5c09985b56d5f251e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keymap. <br /></td></tr>
 <tr class="separator:aedb64c5fb954e5c09985b56d5f251e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a2a53bd63851512dab2fdbc492e659a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#a2a2a53bd63851512dab2fdbc492e659a">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_sptr)</td></tr>
-<tr class="memdesc:a2a2a53bd63851512dab2fdbc492e659a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a2a2a53bd63851512dab2fdbc492e659a">More...</a><br /></td></tr>
-<tr class="separator:a2a2a53bd63851512dab2fdbc492e659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17b433fed774b5447131f5de3645f08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#af17b433fed774b5447131f5de3645f08">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_sptr)</td></tr>
+<tr class="memdesc:af17b433fed774b5447131f5de3645f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#af17b433fed774b5447131f5de3645f08">More...</a><br /></td></tr>
+<tr class="separator:af17b433fed774b5447131f5de3645f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf3d54f6e8023f615ec53244330ccb2e"><td class="memItemLeft" align="right" valign="top"><a id="adf3d54f6e8023f615ec53244330ccb2e"></a>
 virtual const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#adf3d54f6e8023f615ec53244330ccb2e">get_symmetries_used</a> () const</td></tr>
 <tr class="memdesc:adf3d54f6e8023f615ec53244330ccb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Symmetries not used, so returns <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all...">TrivialDataSymmetriesForBins</a>. <br /></td></tr>
@@ -187,7 +187,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aa12f51f28a04b4f6f800063449199432 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">This actually does the back projection. There are two versions of this code to enable backwards compatibility.  <a href="classstir_1_1BackProjectorByBin.html#aa12f51f28a04b4f6f800063449199432">More...</a><br /></td></tr>
 <tr class="separator:aa12f51f28a04b4f6f800063449199432 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4406ce274d7aed309b405aaf80adbef9 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBin.html#a4406ce274d7aed309b405aaf80adbef9">check</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;density_info) const</td></tr>
-<tr class="memdesc:a4406ce274d7aed309b405aaf80adbef9 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1BackProjectorByBin.html#ab4ad95b392e7daaf10a0f658c0bd1b59" title="Stores all necessary geometric info. ">set_up()</a>  <a href="classstir_1_1BackProjectorByBin.html#a4406ce274d7aed309b405aaf80adbef9">More...</a><br /></td></tr>
+<tr class="memdesc:a4406ce274d7aed309b405aaf80adbef9 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1BackProjectorByBin.html#a563f610192ed12fb65d001873988ec9d" title="Stores all necessary geometric info. ">set_up()</a>  <a href="classstir_1_1BackProjectorByBin.html#a4406ce274d7aed309b405aaf80adbef9">More...</a><br /></td></tr>
 <tr class="separator:a4406ce274d7aed309b405aaf80adbef9 inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2b0b76a2da30aa95d35cb6ecee203e inherit pro_methods_classstir_1_1BackProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="a9a2b0b76a2da30aa95d35cb6ecee203e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBin.html#a9a2b0b76a2da30aa95d35cb6ecee203e">set_defaults</a> ()</td></tr>
@@ -236,11 +236,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_already_set_up</b></
 <tr class="separator:a28820f5e6311ad00ef41db9d15d0b810 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fdee9fef2cb1c07c699c22f2abf2bb9 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="a9fdee9fef2cb1c07c699c22f2abf2bb9"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBin.html#a9fdee9fef2cb1c07c699c22f2abf2bb9">_density_sptr</a></td></tr>
-<tr class="memdesc:a9fdee9fef2cb1c07c699c22f2abf2bb9 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone of the density sptr set with <a class="el" href="classstir_1_1BackProjectorByBin.html#ab4ad95b392e7daaf10a0f658c0bd1b59" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="memdesc:a9fdee9fef2cb1c07c699c22f2abf2bb9 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone of the density sptr set with <a class="el" href="classstir_1_1BackProjectorByBin.html#a563f610192ed12fb65d001873988ec9d" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
 <tr class="separator:a9fdee9fef2cb1c07c699c22f2abf2bb9 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94b483867e6a079c6e02650b738a5407 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="a94b483867e6a079c6e02650b738a5407"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_post_data_processor_sptr</b></td></tr>
 <tr class="separator:a94b483867e6a079c6e02650b738a5407 inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8e58a10a96febe53125ec1f11e19dc inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memItemLeft" align="right" valign="top"><a id="a5d8e58a10a96febe53125ec1f11e19dc"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BackProjectorByBin.html#a5d8e58a10a96febe53125ec1f11e19dc">_proj_data_info_sptr</a></td></tr>
+<tr class="memdesc:a5d8e58a10a96febe53125ec1f11e19dc inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> set by <a class="el" href="classstir_1_1BackProjectorByBin.html#a563f610192ed12fb65d001873988ec9d" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="separator:a5d8e58a10a96febe53125ec1f11e19dc inherit pro_attribs_classstir_1_1BackProjectorByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -253,8 +257,8 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 <li>Only debugged for span 11. </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2a2a53bd63851512dab2fdbc492e659a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a2a53bd63851512dab2fdbc492e659a">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="af17b433fed774b5447131f5de3645f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17b433fed774b5447131f5de3645f08">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,13 +269,13 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
         <tr>
           <td class="memname">void stir::BackProjectorByBinNiftyPET::set_up </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>proj_data_info_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_sptr</em>&#160;</td>
         </tr>
         <tr>
@@ -288,11 +292,11 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 </div><div class="memdoc">
 
 <p>Stores all necessary geometric info. </p>
-<p>If necessary, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#a2a2a53bd63851512dab2fdbc492e659a" title="Stores all necessary geometric info. ">set_up()</a> can be called more than once. </p>
+<p>If necessary, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#af17b433fed774b5447131f5de3645f08" title="Stores all necessary geometric info. ">set_up()</a> can be called more than once. </p>
 
-<p>Implements <a class="el" href="classstir_1_1BackProjectorByBin.html#ab4ad95b392e7daaf10a0f658c0bd1b59">stir::BackProjectorByBin</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1BackProjectorByBin.html#a563f610192ed12fb65d001873988ec9d">stir::BackProjectorByBin</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1BackProjectorByBin.html#a9fdee9fef2cb1c07c699c22f2abf2bb9">stir::BackProjectorByBin::_density_sptr</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a4406ce274d7aed309b405aaf80adbef9">stir::BackProjectorByBin::check()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a46b9c90989cfff81e7346f2843b9c415">stir::NiftyPETHelper::create_niftyPET_sinogram_with_gaps()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#adf3d54f6e8023f615ec53244330ccb2e">get_symmetries_used()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a1927897b626dc135138b63c2baeb1c4c">stir::NiftyPETHelper::set_att()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a18bbff1e3d1108ebc13207c7bd4aa032">stir::NiftyPETHelper::set_cuda_device_id()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#ac6713bd733ca4191d5dcfaad3a8713c3">stir::NiftyPETHelper::set_scanner_type()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a6746e41a40c08091a8d5f31710439577">stir::NiftyPETHelper::set_span()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#ab4ad95b392e7daaf10a0f658c0bd1b59">stir::BackProjectorByBin::set_up()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#af7944abee9f1772edbf7b670233bb127">stir::NiftyPETHelper::set_up()</a>, and <a class="el" href="classstir_1_1NiftyPETHelper.html#a7532c4c2848bd8d4a9f6835ba3ebe0c3">stir::NiftyPETHelper::set_verbose()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1BackProjectorByBin.html#a9fdee9fef2cb1c07c699c22f2abf2bb9">stir::BackProjectorByBin::_density_sptr</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a4406ce274d7aed309b405aaf80adbef9">stir::BackProjectorByBin::check()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a46b9c90989cfff81e7346f2843b9c415">stir::NiftyPETHelper::create_niftyPET_sinogram_with_gaps()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#adf3d54f6e8023f615ec53244330ccb2e">get_symmetries_used()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a1927897b626dc135138b63c2baeb1c4c">stir::NiftyPETHelper::set_att()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a18bbff1e3d1108ebc13207c7bd4aa032">stir::NiftyPETHelper::set_cuda_device_id()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#ac6713bd733ca4191d5dcfaad3a8713c3">stir::NiftyPETHelper::set_scanner_type()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#a6746e41a40c08091a8d5f31710439577">stir::NiftyPETHelper::set_span()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a563f610192ed12fb65d001873988ec9d">stir::BackProjectorByBin::set_up()</a>, <a class="el" href="classstir_1_1NiftyPETHelper.html#af7944abee9f1772edbf7b670233bb127">stir::NiftyPETHelper::set_up()</a>, and <a class="el" href="classstir_1_1NiftyPETHelper.html#a7532c4c2848bd8d4a9f6835ba3ebe0c3">stir::NiftyPETHelper::set_verbose()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#aedb64c5fb954e5c09985b56d5f251e83">initialise_keymap()</a>.</p>
 
@@ -394,7 +398,7 @@ shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcesso
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

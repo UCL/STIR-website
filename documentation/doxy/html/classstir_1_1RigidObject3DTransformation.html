@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -176,6 +176,11 @@ Friends</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classstir_1_1ObjectTransformation"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstir_1_1ObjectTransformation')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classstir_1_1ObjectTransformation.html">stir::ObjectTransformation&lt; 3, float &gt;</a></td></tr>
+<tr class="memitem:af83da2fdda0e1369bae42cb72badcd0b inherit pub_types_classstir_1_1ObjectTransformation"><td class="memItemLeft" align="right" valign="top"><a id="af83da2fdda0e1369bae42cb72badcd0b"></a>
+typedef <a class="el" href="classstir_1_1ObjectTransformation.html">ObjectTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectTransformation.html#af83da2fdda0e1369bae42cb72badcd0b">hierarchy_base_type</a></td></tr>
+<tr class="memdesc:af83da2fdda0e1369bae42cb72badcd0b inherit pub_types_classstir_1_1ObjectTransformation"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef used by read_from_file <br /></td></tr>
+<tr class="separator:af83da2fdda0e1369bae42cb72badcd0b inherit pub_types_classstir_1_1ObjectTransformation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classstir_1_1RegisteredObject"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classstir_1_1RegisteredObject')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classstir_1_1RegisteredObject.html">stir::RegisteredObject&lt; Root &gt;</a></td></tr>
 <tr class="memitem:a4497941e1fe3ec79b7a75085d75488fb inherit pro_types_classstir_1_1RegisteredObject"><td class="memItemLeft" align="right" valign="top"><a id="a4497941e1fe3ec79b7a75085d75488fb"></a>
 typedef Root *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObject.html#a4497941e1fe3ec79b7a75085d75488fb">RootFactory</a>) (std::istream *)</td></tr>
@@ -219,10 +224,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </p>
 <p> where the quaternion is specified as <img class="formulaInl" alt="${[}q0,qz,qy,qx{]}$" src="form_123.png"/>, while the translation is initialised in the usual (in STIR) reverse order, e.g. </p><div class="fragment"><div class="line">CartesianCoordinate3D&lt;float&gt; t(tz,ty,tx);</div></div><!-- fragment --><p> Note that this transformation is the inverse of Horn's.</p>
 <p>This implements a translation followed by a rotation. The quaternion is constructed by as follows:<br />
- A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_124.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_125.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_126.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
+ A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_124.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_125.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_126.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000190">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
 <p>This class can transform coordinates and <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> object belonging to some projection data.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The Euler angles are probably different from the ones used in the <a class="el" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. ">Shape3D</a> hierarchy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000191">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa10c393c8b165344dc4191913b93b06c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c393c8b165344dc4191913b93b06c">&#9670;&nbsp;</a></span>RigidObject3DTransformation()</h2>
@@ -411,7 +416,7 @@ template&lt;class Iter1T , class Iter2T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

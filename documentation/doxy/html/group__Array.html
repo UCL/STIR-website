@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -512,7 +512,7 @@ template&lt;class elemT &gt; </div>
 
 <p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, and <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a2b4a4511bcf57c9d71b68be0a8eb1aff">stir::BinNormalisationFromAttenuationImage::apply()</a>, <a class="el" href="group__Array.html#ga5b1cab1692b8f296ad359d60efa491c2">stir::in_place_exp()</a>, <a class="el" href="classstir_1_1ArrayTests.html#adb5a8ae3de33bae386fb37c578f6e698">stir::ArrayTests::run_tests()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#af37ae22c039dac3435f7c8e3548b2d42">stir::BinNormalisationFromAttenuationImage::undo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#aa8d680ead38833e51ee04c33874a6e07">stir::BinNormalisationFromAttenuationImage::apply()</a>, <a class="el" href="group__Array.html#ga5b1cab1692b8f296ad359d60efa491c2">stir::in_place_exp()</a>, <a class="el" href="classstir_1_1ArrayTests.html#adb5a8ae3de33bae386fb37c578f6e698">stir::ArrayTests::run_tests()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a814600afd7d8bc86a248a363564efe31">stir::BinNormalisationFromAttenuationImage::undo()</a>.</p>
 
 </div>
 </div>
@@ -698,7 +698,7 @@ template&lt;int num_dim, typename elemT , typename FunctionObjectPtr &gt; </div>
 <p>Apply a function object on all possible 1d arrays extracted by keeping all indices fixed, except the first one. </p>
 <p>For the 2d case, this amounts to applying a function on all columns of the matrix.</p>
 <p>For a 3d case, the following pseudo-code illustrates what happens. </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> all i2,i3</div><div class="line">{</div><div class="line">  <span class="keywordflow">for</span> all i</div><div class="line">  {</div><div class="line">    a[i] = array[i][i2][i3];</div><div class="line">  }</div><div class="line">  (*f)(a);</div><div class="line">  <span class="keywordflow">for</span> all i</div><div class="line">  {</div><div class="line">    array[i][i2][i3] = a[i];</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>The array has to be regular. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd><p class="startdd">Add a 1D specialisation as the current implementation would be really inefficient in this case. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd><p class="startdd">Add a 1D specialisation as the current implementation would be really inefficient in this case. </p>
 <p class="enddd">Add a specialisation such that this function would handle function objects and (smart) pointers to function objects. At the moment, it's only the latter. </p>
 </dd></dl>
 
@@ -803,7 +803,7 @@ template&lt;int num_dim, typename elemT , typename FunctionObjectPtrIter &gt; </
 
 <p>Apply a sequence of 1d array-function objects on every dimension of the input array. </p>
 <p>The sequence of function object pointers is specified by iterators. There must be num_dim function objects in the sequence, i.e. stop-start==num_dim.</p>
-<p>The n-th function object (**(start+n)) is applied on the n-th index of the array. So, (*start) is applied using in_place_apply_array_function_on_1st_index(array, *start). Similarly, (*(start+1) is applied using in_place_apply_array_function_on_1st_index(array[i], *(start+1)) for every i. And so on. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Add a specialisation such that this function would handle function objects and (smart) pointers to function objects. At the moment, it's only the latter. </dd></dl>
+<p>The n-th function object (**(start+n)) is applied on the n-th index of the array. So, (*start) is applied using in_place_apply_array_function_on_1st_index(array, *start). Similarly, (*(start+1) is applied using in_place_apply_array_function_on_1st_index(array[i], *(start+1)) for every i. And so on. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Add a specialisation such that this function would handle function objects and (smart) pointers to function objects. At the moment, it's only the latter. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a147a665c5ab7818c5197fac452bcff9b">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::begin()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#ab5ea6073b3daf75f23f1b545d0b6593f">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::end()</a>, and <a class="el" href="group__Array.html#ga252955f8443f3f8c60326c17af5e5ad6">stir::in_place_apply_array_function_on_1st_index()</a>.</p>
 
@@ -861,7 +861,7 @@ template&lt;int num_dim, typename elemT , typename FunctionObjectPtrIter &gt; </
 
 <p>Apply a sequence of 1d array-function objects on every dimension of the input array, store in output array. </p>
 <p>The sequence of function object pointers is specified by iterators. There must be num_dim function objects in the sequence, i.e. stop-start==num_dim.</p>
-<p>The n-th function object (**(start+n)) is applied on the n-th indices of the arrays. So, (*start) is applied using </p><div class="fragment"><div class="line"><a class="code" href="group__Array.html#ga88587c349f737be1cf681d5a37e17932">apply_array_function_on_1st_index</a>(out_array, in_array, *start).</div></div><!-- fragment --><p> and so on. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Add a specialisation such that this function would handle iterators of function objects and (smart) pointers to function objects. At the moment, it's only the latter. </dd></dl>
+<p>The n-th function object (**(start+n)) is applied on the n-th indices of the arrays. So, (*start) is applied using </p><div class="fragment"><div class="line"><a class="code" href="group__Array.html#ga88587c349f737be1cf681d5a37e17932">apply_array_function_on_1st_index</a>(out_array, in_array, *start).</div></div><!-- fragment --><p> and so on. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Add a specialisation such that this function would handle iterators of function objects and (smart) pointers to function objects. At the moment, it's only the latter. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__Array.html#ga88587c349f737be1cf681d5a37e17932">stir::apply_array_function_on_1st_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1Array.html#a75983a3289d6190a0848a3a240938cfd">stir::Array&lt; num_dimensions, elemT &gt;::get_regular_range()</a>, and <a class="el" href="classstir_1_1Array.html#a0c55638d8e5ddd950370b07e3f6eb7f9">stir::Array&lt; num_dimensions, elemT &gt;::is_regular()</a>.</p>
 
@@ -918,7 +918,7 @@ template&lt;int num_dim, typename elemT &gt; </div>
 </div><div class="memdoc">
 
 <p>Apply a sequence of 1d array-function objects of a specific type on every dimension of the input array, store in output array. </p>
-<p>This function uses optimisations possible because <a class="el" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n-dimensional Arrays. ">ArrayFunctionObject</a> gives information on sizes etc. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Modify such that this function would handle function objects and (smart) pointers to <a class="el" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n-dimensional Arrays. ">ArrayFunctionObject</a> objects. At the moment, it's only the latter. </dd></dl>
+<p>This function uses optimisations possible because <a class="el" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n-dimensional Arrays. ">ArrayFunctionObject</a> gives information on sizes etc. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>Modify such that this function would handle function objects and (smart) pointers to <a class="el" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n-dimensional Arrays. ">ArrayFunctionObject</a> objects. At the moment, it's only the latter. </dd></dl>
 
 </div>
 </div>
@@ -1079,7 +1079,7 @@ template&lt;int num_dimensions, class T &gt; </div>
 <p>Compute centre of gravity of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. </p>
 <p>Calls find_unweighted_centre_of_gravity and divides the result with the sum of all the elements in the array.</p>
 <dl class="section warning"><dt>Warning</dt><dd>When the sum is 0, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> is called. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>better error handling </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>better error handling </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="group__Array.html#ga12ab323ce3931767afce1f04eee1d862">stir::find_unweighted_centre_of_gravity()</a>, <a class="el" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187">stir::sum()</a>, and <a class="el" href="classstir_1_1Array.html#ab264a137a11b26dd484292408ee70044">stir::Array&lt; num_dimensions, elemT &gt;::sum()</a>.</p>
 
@@ -1440,7 +1440,7 @@ template&lt;class OutputIteratorT , class InputIteratorT , class scaleT &gt; </d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

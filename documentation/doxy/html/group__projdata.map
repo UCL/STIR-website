@@ -1,5 +1,6 @@
 <map id="Items related to projection data" name="Items related to projection data">
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="654,24,802,51"/>
-<area shape="rect" id="node3" href="$group__LOR.html" title="Items related to Line\l Of Responses (preliminary)" alt="" coords="627,98,829,139"/>
-<area shape="rect" id="node4" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,61,164,88"/>
+<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="654,32,802,59"/>
+<area shape="rect" id="node3" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="661,114,795,155"/>
+<area shape="rect" id="node4" href="$group__LOR.html" title="Items related to Line\l Of Responses (preliminary)" alt="" coords="627,179,829,221"/>
+<area shape="rect" id="node5" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,92,164,119"/>
 </map>

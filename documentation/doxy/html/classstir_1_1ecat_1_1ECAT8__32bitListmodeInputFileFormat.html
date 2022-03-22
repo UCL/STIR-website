@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,11 +70,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaabcb1fd9e2a5a2f0ab72a8b3cc90c31"><td class="memItemLeft" align="right" valign="top"><a id="aaabcb1fd9e2a5a2f0ab72a8b3cc90c31"></a>
 virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const</td></tr>
 <tr class="separator:aaabcb1fd9e2a5a2f0ab72a8b3cc90c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89eddab4acd773a1d2be07cf1a4552d8"><td class="memItemLeft" align="right" valign="top"><a id="a89eddab4acd773a1d2be07cf1a4552d8"></a>
-virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read_from_file</b> (std::istream &amp;input) const</td></tr>
+<tr class="memitem:a89eddab4acd773a1d2be07cf1a4552d8"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ECAT8__32bitListmodeInputFileFormat.html#a89eddab4acd773a1d2be07cf1a4552d8">read_from_file</a> (std::istream &amp;input) const</td></tr>
+<tr class="memdesc:a89eddab4acd773a1d2be07cf1a4552d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a stream  <a href="#a89eddab4acd773a1d2be07cf1a4552d8">More...</a><br /></td></tr>
 <tr class="separator:a89eddab4acd773a1d2be07cf1a4552d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d097667264011812d29709cfda178f"><td class="memItemLeft" align="right" valign="top"><a id="a95d097667264011812d29709cfda178f"></a>
-virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read_from_file</b> (const std::string &amp;filename) const</td></tr>
+<tr class="memitem:a95d097667264011812d29709cfda178f"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ecat_1_1ECAT8__32bitListmodeInputFileFormat.html#a95d097667264011812d29709cfda178f">read_from_file</a> (const std::string &amp;filename) const</td></tr>
+<tr class="memdesc:a95d097667264011812d29709cfda178f"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a filename  <a href="#a95d097667264011812d29709cfda178f">More...</a><br /></td></tr>
 <tr class="separator:a95d097667264011812d29709cfda178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1InputFileFormat"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1InputFileFormat')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1InputFileFormat.html">stir::InputFileFormat&lt; ListModeData &gt;</a></td></tr>
 <tr class="memitem:a46f8565bafe8bc88f9cb2fb19f1c04e3 inherit pub_methods_classstir_1_1InputFileFormat"><td class="memItemLeft" align="right" valign="top"><a id="a46f8565bafe8bc88f9cb2fb19f1c04e3"></a>
@@ -99,13 +99,80 @@ typedef <a class="el" href="classstir_1_1ListModeData.html">ListModeData</a>&#16
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for being able to read list mode data from the ECAT 8_32bit scanner via the listmode-data registry. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89eddab4acd773a1d2be07cf1a4552d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89eddab4acd773a1d2be07cf1a4552d8">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; stir::ecat::ECAT8_32bitListmodeInputFileFormat::read_from_file </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read data from a stream </p>
+<p>This function should throw an exception if the read fails.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This member throws for most implementations. Use a filename instead. </dd></dl>
+
+<p>Implements <a class="el" href="classstir_1_1InputFileFormat.html#a7ab512e824773415be5b74fb1dae4978">stir::InputFileFormat&lt; ListModeData &gt;</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+</div>
+</div>
+<a id="a95d097667264011812d29709cfda178f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d097667264011812d29709cfda178f">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; stir::ecat::ECAT8_32bitListmodeInputFileFormat::read_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>read data from a filename </p>
+<p>This function should throw an exception if the read fails.</p>
+<p>Default implementation used <code>open_read_binary</code> and <code>read_from_file(std::istream&amp;)</code>. </p>
+
+<p>Reimplemented from <a class="el" href="classstir_1_1InputFileFormat.html#a92c3484f045b9cb0ed322884d23bb3d6">stir::InputFileFormat&lt; ListModeData &gt;</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/IO/<a class="el" href="ECAT8__32bitListmodeInputFileFormat_8h_source.html">ECAT8_32bitListmodeInputFileFormat.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:22 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

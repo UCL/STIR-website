@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,9 @@ const bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_only_2D</b>
 <tr class="memitem:a97655dc71536ba6f05efcb1350d12077"><td class="memItemLeft" align="right" valign="top"><a id="a97655dc71536ba6f05efcb1350d12077"></a>
 const bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_hybrid</b> () const</td></tr>
 <tr class="separator:a97655dc71536ba6f05efcb1350d12077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4576304463194d4a6d0b12210515c1ec"><td class="memItemLeft" align="right" valign="top"><a id="a4576304463194d4a6d0b12210515c1ec"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>get_freeze_iterative_kernel_at_subiter_num</b> () const</td></tr>
+<tr class="separator:a4576304463194d4a6d0b12210515c1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e0f0e6d6062aa00e4024afab3e358"><td class="memItemLeft" align="right" valign="top"><a id="a0c0e0f0e6d6062aa00e4024afab3e358"></a>
 std::vector&lt; shared_ptr&lt; TargetT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_anatomical_prior_sptrs</b> ()</td></tr>
 <tr class="separator:a0c0e0f0e6d6062aa00e4024afab3e358"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +170,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_only_2D</b> (cons
 <tr class="memitem:a681818df91bc577dceb41b533401e620"><td class="memItemLeft" align="right" valign="top"><a id="a681818df91bc577dceb41b533401e620"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_hybrid</b> (const bool)</td></tr>
 <tr class="separator:a681818df91bc577dceb41b533401e620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab793a99d4f9b34c15ab77b8cd2474e8d"><td class="memItemLeft" align="right" valign="top"><a id="ab793a99d4f9b34c15ab77b8cd2474e8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_freeze_iterative_kernel_at_subiter_num</b> (const int)</td></tr>
+<tr class="separator:ab793a99d4f9b34c15ab77b8cd2474e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; KOSMAPOSLReconstruction&lt; TargetT &gt;, Reconstruction&lt; TargetT &gt;, OSMAPOSLReconstruction&lt; TargetT &gt; &gt;</a></td></tr>
 <tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
@@ -217,6 +223,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#af38c91f4151464373ac8f191a2d8a191">set_minimum_relative_change</a> (const double)</td></tr>
 <tr class="memdesc:af38c91f4151464373ac8f191a2d8a191 inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict updates (smaller relative updates will be thresholded) <br /></td></tr>
 <tr class="separator:af38c91f4151464373ac8f191a2d8a191 inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af272c8198276907bb2c400bfbaed1926 inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="memItemLeft" align="right" valign="top"><a id="af272c8198276907bb2c400bfbaed1926"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_enforce_initial_positivity</b> (const bool)</td></tr>
+<tr class="separator:af272c8198276907bb2c400bfbaed1926 inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16508ef2d7cc29d94a3c281c1cbb0de inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="memItemLeft" align="right" valign="top"><a id="af16508ef2d7cc29d94a3c281c1cbb0de"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#af16508ef2d7cc29d94a3c281c1cbb0de">set_write_update_image</a> (const int)</td></tr>
 <tr class="memdesc:af16508ef2d7cc29d94a3c281c1cbb0de inherit pub_methods_classstir_1_1OSMAPOSLReconstruction"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean value to determine if the update images have to be written to disk <br /></td></tr>
@@ -508,6 +517,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>dimy</b></td></tr>
 <tr class="memitem:ade2e54cd857ae0d5ef852d8c602a3c27"><td class="memItemLeft" align="right" valign="top"><a id="ade2e54cd857ae0d5ef852d8c602a3c27"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>dimx</b></td></tr>
 <tr class="separator:ade2e54cd857ae0d5ef852d8c602a3c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e8c948033cec1ba75215692dfb082c"><td class="memItemLeft" align="right" valign="top"><a id="a71e8c948033cec1ba75215692dfb082c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>freeze_iterative_kernel_at_subiter_num</b></td></tr>
+<tr class="separator:a71e8c948033cec1ba75215692dfb082c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30fabded66126a5537b43569355239e"><td class="memItemLeft" align="right" valign="top"><a id="af30fabded66126a5537b43569355239e"></a>
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sigma_m</b></td></tr>
 <tr class="separator:af30fabded66126a5537b43569355239e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -532,6 +544,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>sigma_dm</b></td></
 <tr class="memitem:a46c0da03a6d8603d9026589c7d9da912"><td class="memItemLeft" align="right" valign="top"><a id="a46c0da03a6d8603d9026589c7d9da912"></a>
 <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>max_ind</b></td></tr>
 <tr class="separator:a46c0da03a6d8603d9026589c7d9da912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbdbd3e7be518a3776377ea1ba34b86"><td class="memItemLeft" align="right" valign="top"><a id="a7bbdbd3e7be518a3776377ea1ba34b86"></a>
+shared_ptr&lt; TargetT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterative_kernel_image_frozen_sptr</b></td></tr>
+<tr class="separator:a7bbdbd3e7be518a3776377ea1ba34b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1OSMAPOSLReconstruction"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1OSMAPOSLReconstruction')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a></td></tr>
 <tr class="memitem:a4052cf561233559d607b398537167369 inherit pro_attribs_classstir_1_1OSMAPOSLReconstruction"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a4052cf561233559d607b398537167369">enforce_initial_positivity</a></td></tr>
 <tr class="memdesc:a4052cf561233559d607b398537167369 inherit pro_attribs_classstir_1_1OSMAPOSLReconstruction"><td class="mdescLeft">&#160;</td><td class="mdescRight">operations prior to the iterations  <a href="classstir_1_1OSMAPOSLReconstruction.html#a4052cf561233559d607b398537167369">More...</a><br /></td></tr>
@@ -695,7 +710,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 class stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</h3>
 
 <p>A reconstructor class appropriate for emission data. </p>
-<p>This class implements the iterative algorithm obtained using the Kernel method (KEM) and Hybrid kernel method (HKEM). This implementation corresponds to the one presented by Deidda D et al, ``Hybrid PET-MR list-mode kernelized expectation maximization reconstruction", Inverse Problems, 2019, DOI: <a href="https://doi.org/10.1088/1361-6420/ab013f">https://doi.org/10.1088/1361-6420/ab013f</a>. However, this allows also sinogram-based reconstruction. Furtermore, it is possible to use multiple side information images (they can be anatomical images or images from different modalities). This extension is called multiplexing-HKEM and is described in Deidda et al. ``Multiplexing Kernelized Expectation Maximization <a class="el" href="classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi...">Reconstruction</a> for PET-MR." IEEE NSS/MIC Proceedings (NSS/MIC) 2018, DOI: <a href="https://doi.org/10.1109/NSSMIC.2018.8824312">https://doi.org/10.1109/NSSMIC.2018.8824312</a>. Each voxel value of the image, <img class="formulaInl" alt="$ \boldsymbol{\lambda}$" src="form_16.png"/>, can be represented as a linear combination using the kernel method. If we have an image with prior information, we can construct for each voxel <img class="formulaInl" alt="$ j $" src="form_17.png"/> of the emission image a feature vector, <img class="formulaInl" alt="$ \boldsymbol{v}_j $" src="form_18.png"/>, using the prior information. The voxel value, <img class="formulaInl" alt="$\lambda_j$" src="form_19.png"/>, can then be described using the kernel matrix</p>
+<p>This class implements the iterative algorithm obtained using the Kernel method (KEM) and Hybrid kernel method (HKEM). This implementation corresponds to the one presented by Deidda D et al, "Hybrid PET-MR list-mode kernelized expectation maximization reconstruction", Inverse Problems, 2019, DOI: <a href="https://doi.org/10.1088/1361-6420/ab013f">https://doi.org/10.1088/1361-6420/ab013f</a>. However, this allows also sinogram-based reconstruction. Furtermore, it is possible to use multiple side information images (they can be anatomical images or images from different modalities). This extension is called multiplexing-HKEM and is described in Deidda et al. "Multiplexing Kernelized Expectation Maximization
+Reconstruction for PET-MR." IEEE NSS/MIC Proceedings (NSS/MIC) 2018, DOI: <a href="https://doi.org/10.1109/NSSMIC.2018.8824312">https://doi.org/10.1109/NSSMIC.2018.8824312</a>. Each voxel value of the image, <img class="formulaInl" alt="$ \boldsymbol{\lambda}$" src="form_16.png"/>, can be represented as a linear combination using the kernel method. If we have an image with prior information, we can construct for each voxel <img class="formulaInl" alt="$ j $" src="form_17.png"/> of the emission image a feature vector, <img class="formulaInl" alt="$ \boldsymbol{v}_j $" src="form_18.png"/>, using the prior information. The voxel value, <img class="formulaInl" alt="$\lambda_j$" src="form_19.png"/>, can then be described using the kernel matrix</p>
 <p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \lambda_j= \sum_{l=1}^L \alpha_l k_{jl} \]" src="form_20.png"/>
 </p>
@@ -768,7 +784,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

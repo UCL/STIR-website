@@ -7,43 +7,43 @@
 <area shape="rect" id="node9" href="$classstir_1_1MyApp.html" title="A class for moving an image according to average motion in the frame. " alt="" coords="261,1248,355,1275"/>
 <area shape="rect" id="node10" href="$classstir_1_1PrepareProjData.html" title="A preliminary class to prepare files for iterative reconstruction. " alt="" coords="229,1299,387,1325"/>
 <area shape="rect" id="node11" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="211,1349,405,1376"/>
-<area shape="rect" id="node44" href="$classstir_1_1SAFIRCListmodeInputFileFormat.html" title="stir::SAFIRCListmodeInput\lFileFormat" alt="" coords="213,1401,403,1442"/>
-<area shape="rect" id="node45" href="$classstir_1_1ScatterEstimation.html" title="Estimate the scatter probability using a model&#45;based approach. " alt="" coords="225,1467,391,1493"/>
+<area shape="rect" id="node43" href="$classstir_1_1SAFIRCListmodeInputFileFormat.html" title="Class for reading SAFIR coincidence listmode data. " alt="" coords="213,1401,403,1442"/>
+<area shape="rect" id="node44" href="$classstir_1_1ScatterEstimation.html" title="Estimate the scatter probability using a model&#45;based approach. " alt="" coords="225,1467,391,1493"/>
+<area shape="rect" id="node45" href="$classstir_1_1SqrtHessianRowSum.html" title="Implementations of two square root Hessian row sum computation methods, as proposed by Tsai et al..." alt="" coords="215,1518,401,1559"/>
 <area shape="rect" id="node46" href="$classstir_1_1TimeFrameMotion.html" title="A class for encoding average motion in the frames. " alt="" coords="224,2660,392,2687"/>
 <area shape="rect" id="node6" href="$classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="481,5,623,32"/>
 <area shape="rect" id="node7" href="$classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction. " alt="" coords="960,5,1151,32"/>
-<area shape="rect" id="node12" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; AbsTimeInterval \&gt;" alt="" coords="974,2077,1137,2118"/>
-<area shape="rect" id="node14" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="965,1330,1145,1371"/>
-<area shape="rect" id="node16" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="973,1537,1138,1578"/>
-<area shape="rect" id="node17" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; DataProcessor\&lt; DataT \&gt; \&gt;" alt="" coords="948,911,1163,953"/>
-<area shape="rect" id="node18" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ForwardProjectorByBin \&gt;" alt="" coords="955,1126,1155,1167"/>
-<area shape="rect" id="node19" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedObjectiveFunction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="940,1848,1171,1904"/>
-<area shape="rect" id="node20" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; DataT \&gt; \&gt;" alt="" coords="941,2303,1170,2345"/>
-<area shape="rect" id="node21" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="939,2373,1172,2429"/>
-<area shape="rect" id="node22" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="939,1761,1172,1817"/>
-<area shape="rect" id="node23" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; TargetT \&gt; \&gt;" alt="" coords="936,1967,1175,2009"/>
-<area shape="rect" id="node24" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; InputStreamFromROOTFile \&gt;" alt="" coords="944,2149,1167,2190"/>
-<area shape="rect" id="node25" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; KineticModel \&gt;" alt="" coords="974,1397,1137,1438"/>
-<area shape="rect" id="node26" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ObjectTransformation\l\&lt; num_dimensions, elemT \&gt; \&gt;" alt="" coords="942,563,1169,619"/>
-<area shape="rect" id="node27" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DataT \&gt; \&gt;" alt="" coords="939,2463,1172,2505"/>
-<area shape="rect" id="node28" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="937,1616,1174,1672"/>
-<area shape="rect" id="node29" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DynamicDiscretised\lDensity \&gt; \&gt;" alt="" coords="908,95,1203,151"/>
-<area shape="rect" id="node30" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Parametric\lDiscretisedDensity\&lt; DiscDensityT \&gt; \&gt; \&gt;" alt="" coords="910,208,1201,264"/>
-<area shape="rect" id="node31" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Parametric\lDiscretisedDensity\&lt; DiscretisedDensity\lT \&gt; \&gt; \&gt;" alt="" coords="914,373,1197,443"/>
-<area shape="rect" id="node32" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjDataRebinning \&gt;" alt="" coords="969,291,1141,333"/>
-<area shape="rect" id="node33" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="969,2235,1141,2277"/>
-<area shape="rect" id="node34" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByBin \&gt;" alt="" coords="974,655,1137,697"/>
-<area shape="rect" id="node35" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByDensel \&gt;" alt="" coords="965,826,1145,867"/>
-<area shape="rect" id="node36" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="945,1193,1166,1249"/>
-<area shape="rect" id="node37" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="942,995,1169,1037"/>
-<area shape="rect" id="node38" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="961,2546,1150,2587"/>
-<area shape="rect" id="node39" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ScatterSimulation \&gt;" alt="" coords="971,1465,1139,1506"/>
-<area shape="rect" id="node40" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="974,754,1137,795"/>
-<area shape="rect" id="node41" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="974,490,1137,531"/>
-<area shape="rect" id="node42" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SpatialTransformation \&gt;" alt="" coords="958,1061,1153,1102"/>
-<area shape="rect" id="node43" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="471,1290,633,1331"/>
-<area shape="rect" id="node13" href="$classstir_1_1AbsTimeInterval.html" title="Base class for specifying a time interval (in absolute time) " alt="" coords="1262,2084,1421,2111"/>
-<area shape="rect" id="node15" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. " alt="" coords="1252,1337,1431,1364"/>
+<area shape="rect" id="node12" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; AbsTimeInterval \&gt;" alt="" coords="974,2075,1137,2117"/>
+<area shape="rect" id="node14" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="965,1306,1145,1347"/>
+<area shape="rect" id="node15" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="973,1571,1138,1613"/>
+<area shape="rect" id="node16" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; DataProcessor\&lt; DataT \&gt; \&gt;" alt="" coords="948,914,1163,955"/>
+<area shape="rect" id="node17" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ForwardProjectorByBin \&gt;" alt="" coords="955,1131,1155,1173"/>
+<area shape="rect" id="node18" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedObjectiveFunction\l\&lt; TargetT \&gt; \&gt;" alt="" coords="940,1844,1171,1900"/>
+<area shape="rect" id="node19" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; DataT \&gt; \&gt;" alt="" coords="941,2281,1170,2322"/>
+<area shape="rect" id="node20" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="939,2356,1172,2412"/>
+<area shape="rect" id="node21" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="939,1737,1172,1793"/>
+<area shape="rect" id="node22" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; TargetT \&gt; \&gt;" alt="" coords="936,1979,1175,2021"/>
+<area shape="rect" id="node23" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; InputStreamFromROOTFile \&gt;" alt="" coords="944,2142,1167,2183"/>
+<area shape="rect" id="node24" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; KineticModel \&gt;" alt="" coords="974,1415,1137,1457"/>
+<area shape="rect" id="node25" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ObjectTransformation\l\&lt; num_dimensions, elemT \&gt; \&gt;" alt="" coords="942,556,1169,612"/>
+<area shape="rect" id="node26" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DataT \&gt; \&gt;" alt="" coords="939,2455,1172,2497"/>
+<area shape="rect" id="node27" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="937,1644,1174,1700"/>
+<area shape="rect" id="node28" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DynamicDiscretised\lDensity \&gt; \&gt;" alt="" coords="908,95,1203,151"/>
+<area shape="rect" id="node29" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Parametric\lDiscretisedDensity\&lt; DiscDensityT \&gt; \&gt; \&gt;" alt="" coords="910,208,1201,264"/>
+<area shape="rect" id="node30" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Parametric\lDiscretisedDensity\&lt; DiscretisedDensity\lT \&gt; \&gt; \&gt;" alt="" coords="914,375,1197,446"/>
+<area shape="rect" id="node31" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjDataRebinning \&gt;" alt="" coords="969,307,1141,349"/>
+<area shape="rect" id="node32" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="969,2210,1141,2251"/>
+<area shape="rect" id="node33" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByBin \&gt;" alt="" coords="974,662,1137,703"/>
+<area shape="rect" id="node34" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByDensel \&gt;" alt="" coords="965,835,1145,877"/>
+<area shape="rect" id="node35" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="945,1204,1166,1260"/>
+<area shape="rect" id="node36" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Reconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="942,997,1169,1038"/>
+<area shape="rect" id="node37" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="961,2559,1150,2601"/>
+<area shape="rect" id="node38" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ScatterSimulation \&gt;" alt="" coords="971,1502,1139,1543"/>
+<area shape="rect" id="node39" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="974,746,1137,787"/>
+<area shape="rect" id="node40" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="974,477,1137,518"/>
+<area shape="rect" id="node41" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SpatialTransformation \&gt;" alt="" coords="958,1063,1153,1105"/>
+<area shape="rect" id="node42" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="471,1290,633,1331"/>
+<area shape="rect" id="node13" href="$classstir_1_1AbsTimeInterval.html" title="Base class for specifying a time interval (in absolute time) " alt="" coords="1252,2083,1411,2109"/>
 <area shape="rect" id="node47" href="$classstir_1_1MoveImage.html" title="A class for moving an image according to average motion in the frame. " alt="" coords="489,2635,615,2661"/>
 <area shape="rect" id="node48" href="$classstir_1_1MoveProjData.html" title="A class for moving projection data according to average motion in the frame. " alt="" coords="481,2685,623,2712"/>
 <area shape="rect" id="node49" href="$classstir_1_1ReportMovement.html" title="A class for reporting the movement within the frame w.r.t. to the reference position. " alt="" coords="471,2736,633,2763"/>

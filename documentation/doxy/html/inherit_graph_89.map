@@ -1,8 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. " alt="" coords="41,119,192,146"/>
-<area shape="rect" id="node2" href="$classstir_1_1LORAs2Points.html" title="A class for LORs. " alt="" coords="317,5,457,47"/>
-<area shape="rect" id="node3" href="$classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html" title="A class for LORs. " alt="" coords="292,137,481,193"/>
-<area shape="rect" id="node4" href="$classstir_1_1LORInAxialAndSinogramCoordinates.html" title="A class for LORs. " alt="" coords="282,217,491,259"/>
-<area shape="rect" id="node5" href="$classstir_1_1LORInCylinderCoordinates.html" title="A class for LORs. " alt="" coords="276,71,497,112"/>
-<area shape="rect" id="node6" href="$classstir_1_1LORCylindricalCoordinates__z__and__radius.html" title="An internal class for LORs. Do not use. " alt="" coords="5,177,228,219"/>
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="192,13,279,39"/>
+<area shape="rect" id="node3" href="$classstir_1_1Line.html" title="A class used by the Interfile parser. " alt="" coords="327,13,405,39"/>
 </map>

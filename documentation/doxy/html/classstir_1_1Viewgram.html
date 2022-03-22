@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,14 +70,14 @@ Inheritance diagram for stir::Viewgram&lt; elemT &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0687664fa733f74ddb91cafcb3e65335"><td class="memItemLeft" align="right" valign="top"><a id="a0687664fa733f74ddb91cafcb3e65335"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a0687664fa733f74ddb91cafcb3e65335">Viewgram</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int v_num, const int s_num)</td></tr>
-<tr class="memdesc:a0687664fa733f74ddb91cafcb3e65335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from proj_data_info pointer, view and segment number. Data are set to 0. <br /></td></tr>
-<tr class="separator:a0687664fa733f74ddb91cafcb3e65335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66041be69e1003b9cb955c45b2ab414"><td class="memItemLeft" align="right" valign="top"><a id="af66041be69e1003b9cb955c45b2ab414"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#af66041be69e1003b9cb955c45b2ab414">Viewgram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;p, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int v_num, const int s_num)</td></tr>
-<tr class="memdesc:af66041be69e1003b9cb955c45b2ab414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with data set to the array. <br /></td></tr>
-<tr class="separator:af66041be69e1003b9cb955c45b2ab414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfee338cbdb3b48dee437f48a9f772a8"><td class="memItemLeft" align="right" valign="top"><a id="abfee338cbdb3b48dee437f48a9f772a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#abfee338cbdb3b48dee437f48a9f772a8">Viewgram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int v_num, const int s_num)</td></tr>
+<tr class="memdesc:abfee338cbdb3b48dee437f48a9f772a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from proj_data_info pointer, view and segment number. Data are set to 0. <br /></td></tr>
+<tr class="separator:abfee338cbdb3b48dee437f48a9f772a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a05b5cf9d606b07e7af4e36c02a626"><td class="memItemLeft" align="right" valign="top"><a id="a17a05b5cf9d606b07e7af4e36c02a626"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a17a05b5cf9d606b07e7af4e36c02a626">Viewgram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;p, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int v_num, const int s_num)</td></tr>
+<tr class="memdesc:a17a05b5cf9d606b07e7af4e36c02a626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with data set to the array. <br /></td></tr>
+<tr class="separator:a17a05b5cf9d606b07e7af4e36c02a626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e4203468bc1c20f5042e7beaf54cf0"><td class="memItemLeft" align="right" valign="top"><a id="a75e4203468bc1c20f5042e7beaf54cf0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a75e4203468bc1c20f5042e7beaf54cf0">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a75e4203468bc1c20f5042e7beaf54cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get segment number. <br /></td></tr>
@@ -120,12 +120,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:afa63efdac54a3a64ae9159b1213bf607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#afa63efdac54a3a64ae9159b1213bf607">resize</a> (const <a class="el" href="classstir_1_1IndexRange.html">IndexRange</a>&lt; 2 &gt; &amp;range)</td></tr>
 <tr class="memdesc:afa63efdac54a3a64ae9159b1213bf607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloading <a class="el" href="classstir_1_1Array.html#a9418d996f9cc0be0dbf54ad05cc36a03" title="change the array to a new range of indices, new elements are set to 0 ">Array::resize</a>.  <a href="#afa63efdac54a3a64ae9159b1213bf607">More...</a><br /></td></tr>
 <tr class="separator:afa63efdac54a3a64ae9159b1213bf607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade595441bab5d6a5c881ffab02f2cbc5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#ade595441bab5d6a5c881ffab02f2cbc5">get_proj_data_info_ptr</a> () const</td></tr>
-<tr class="memdesc:ade595441bab5d6a5c881ffab02f2cbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the proj_data_info pointer.  <a href="#ade595441bab5d6a5c881ffab02f2cbc5">More...</a><br /></td></tr>
-<tr class="separator:ade595441bab5d6a5c881ffab02f2cbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821e7acd351b3767f3d1a077a47e1d2a"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a821e7acd351b3767f3d1a077a47e1d2a">get_proj_data_info_sptr</a> () const</td></tr>
-<tr class="memdesc:a821e7acd351b3767f3d1a077a47e1d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info.  <a href="#a821e7acd351b3767f3d1a077a47e1d2a">More...</a><br /></td></tr>
-<tr class="separator:a821e7acd351b3767f3d1a077a47e1d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cc2ff5dc601d56518c382c961b1209"><td class="memItemLeft" align="right" valign="top"><a id="a74cc2ff5dc601d56518c382c961b1209"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a74cc2ff5dc601d56518c382c961b1209">get_proj_data_info_sptr</a> () const</td></tr>
+<tr class="memdesc:a74cc2ff5dc601d56518c382c961b1209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info. <br /></td></tr>
+<tr class="separator:a74cc2ff5dc601d56518c382c961b1209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Equality</div></td></tr>
 <tr class="memitem:a55d8d2660e96933544a5f01fc290839b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html#a55d8d2660e96933544a5f01fc290839b">has_same_characteristics</a> (<a class="el" href="classstir_1_1Viewgram.html">self_type</a> const &amp;, std::string &amp;explanation) const</td></tr>
 <tr class="memdesc:a55d8d2660e96933544a5f01fc290839b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the 2 objects have the proj_data_info, segment_num etc.  <a href="#a55d8d2660e96933544a5f01fc290839b">More...</a><br /></td></tr>
@@ -192,6 +190,14 @@ elemT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">fill</a> (const elemT &amp;n)</td></tr>
 <tr class="memdesc:abd56d694053e27f36d9c4aceed6a3845 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill elements with value n (overrides VectorWithOffset::fill) <br /></td></tr>
 <tr class="separator:abd56d694053e27f36d9c4aceed6a3845 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top"><a id="a5a7ddd6d8cd8b39dea6108b842dd38d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#a5a7ddd6d8cd8b39dea6108b842dd38d0">apply_lower_threshold</a> (const elemT &amp;l)</td></tr>
+<tr class="memdesc:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements below value to the value (overrides VectorWithOffset::fill) <br /></td></tr>
+<tr class="separator:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top"><a id="af7e86a880bfb1a841b828e25f4c64d7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#af7e86a880bfb1a841b828e25f4c64d7f">apply_upper_threshold</a> (const elemT &amp;u)</td></tr>
+<tr class="memdesc:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements above value to the value (overrides VectorWithOffset::fill) <br /></td></tr>
+<tr class="separator:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#a0c55638d8e5ddd950370b07e3f6eb7f9">is_regular</a> () const</td></tr>
 <tr class="memdesc:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the index range is 'regular'  <a href="classstir_1_1Array.html#a0c55638d8e5ddd950370b07e3f6eb7f9">More...</a><br /></td></tr>
 <tr class="separator:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -419,6 +425,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ac3cbbc39532fa95ee7121cb251ab43d0">fill</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;n)</td></tr>
 <tr class="memdesc:ac3cbbc39532fa95ee7121cb251ab43d0 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">fill elements with value <em>n</em> <br /></td></tr>
 <tr class="separator:ac3cbbc39532fa95ee7121cb251ab43d0 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top"><a id="ab98c3a331e8c28874b22531bc0476ce7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ab98c3a331e8c28874b22531bc0476ce7">apply_lower_threshold</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;lower)</td></tr>
+<tr class="memdesc:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements below value to the value. <br /></td></tr>
+<tr class="separator:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top"><a id="ae9568ae99b900a0c9b86c4b3699c27e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ae9568ae99b900a0c9b86c4b3699c27e1">apply_upper_threshold</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;upper)</td></tr>
+<tr class="memdesc:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements above value to the value. <br /></td></tr>
+<tr class="separator:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">get_length</a> () const</td></tr>
 <tr class="memdesc:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of elements in this vector  <a href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">More...</a><br /></td></tr>
 <tr class="separator:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,68 +710,6 @@ template&lt;typename elemT &gt; </div>
 
 </div>
 </div>
-<a id="ade595441bab5d6a5c881ffab02f2cbc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade595441bab5d6a5c881ffab02f2cbc5">&#9670;&nbsp;</a></span>get_proj_data_info_ptr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> * <a class="el" href="classstir_1_1Viewgram.html">stir::Viewgram</a>&lt; elemT &gt;::get_proj_data_info_ptr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the proj_data_info pointer. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Do not use this pointer after the <a class="el" href="classstir_1_1Viewgram.html" title="A class for 2d projection data. ">Viewgram</a> object is destructed. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ArcCorrection.html#a407d3a6f4fe726a86dd4f47a40c35a05">stir::ArcCorrection::do_arc_correction()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a69d9eea997bc555ef4365bf262dedc4e">stir::ForwardProjectorByBinUsingRayTracing::get_symmetries_used()</a>, <a class="el" href="classstir_1_1Viewgram.html#a55d8d2660e96933544a5f01fc290839b">stir::Viewgram&lt; float &gt;::has_same_characteristics()</a>, <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html#ac673d2b41318e2b9f16796b1dcab55b3">stir::BackProjectorByBinUsingInterpolation::use_piecewise_linear_interpolation()</a>, and <a class="el" href="namespacestir.html#a923e416f1e4a40554e700f3df8c6ecf6">stir::zoom_viewgram()</a>.</p>
-
-</div>
-</div>
-<a id="a821e7acd351b3767f3d1a077a47e1d2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821e7acd351b3767f3d1a077a47e1d2a">&#9670;&nbsp;</a></span>get_proj_data_info_sptr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; <a class="el" href="classstir_1_1Viewgram.html">stir::Viewgram</a>&lt; elemT &gt;::get_proj_data_info_sptr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get shared pointer to proj data info. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Use with care. If you modify the object in a shared ptr, everything using the same shared pointer will be affected. </dd></dl>
-
-</div>
-</div>
 <a id="a55d8d2660e96933544a5f01fc290839b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55d8d2660e96933544a5f01fc290839b">&#9670;&nbsp;</a></span>has_same_characteristics() <span class="overload">[1/2]</span></h2>
 
@@ -846,7 +798,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:22 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

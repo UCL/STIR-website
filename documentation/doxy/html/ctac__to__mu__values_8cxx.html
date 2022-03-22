@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -52,14 +52,15 @@ $(function() {
 
 <p>Produces an image of mu-values from a CT/CTAC.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="info_8h_source.html">stir/info.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="info_8h_source.html">stir/info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Succeeded_8h_source.html">stir/Succeeded.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="OutputFileFormat_8h_source.html">stir/IO/OutputFileFormat.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="HUToMuImageProcessor_8h_source.html">stir/HUToMuImageProcessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="read__from__file_8h_source.html">stir/IO/read_from_file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="write__to__file_8h_source.html">stir/IO/write_to_file.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DiscretisedDensity_8h_source.html">stir/DiscretisedDensity.h</a>&quot;</code><br />
 <code>#include &quot;stir/getopt.h&quot;</code><br />
-<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;exception&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -69,24 +70,22 @@ typedef <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDen
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7aabb3352de4cab1064077aa7bd4d69"><td class="memItemLeft" align="right" valign="top"><a id="aa7aabb3352de4cab1064077aa7bd4d69"></a>
-<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_record_from_json</b> (nlohmann::json &amp;output_json, std::string &amp;manufacturer, const nlohmann::json input_json, const std::string &amp;keV_str, const std::string &amp;kVp_str)</td></tr>
-<tr class="separator:aa7aabb3352de4cab1064077aa7bd4d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459ae276e41b50447691972cc686ddf7"><td class="memItemLeft" align="right" valign="top"><a id="a459ae276e41b50447691972cc686ddf7"></a>
-<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply_bilinear_scaling_to_HU</b> (<a class="el" href="classstir_1_1DiscretisedDensity.html">FloatImageType</a> &amp;output_image_sptr, const <a class="el" href="classstir_1_1DiscretisedDensity.html">FloatImageType</a> &amp;input_image_sptr, const nlohmann::json &amp;transform)</td></tr>
-<tr class="separator:a459ae276e41b50447691972cc686ddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top"><a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Produces an image of mu-values from a CT/CTAC. </p>
-<dl class="section author"><dt>Author</dt><dd>Benjamin A. Thomas</dd></dl>
-<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line">ctac_to_mu_values -o output_filename -i input_volume -j slope_filename -m manufacturer_name [-v kilovoltage_peak] -k target_photon_energy</div></div><!-- fragment --> Default value for tube voltage is 120 kV. </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Benjamin A. Thomas </dd>
+<dd>
+Kris Thielemans</dd></dl>
+<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line">ctac_to_mu_values -o output_filename -i input_volume -j slope_filename -m manufacturer_name [-v kilovoltage_peak] -k target_photon_energy</div></div><!-- fragment --> Default value for tube voltage is 120 kV. For PET, the <code>target_photon_energy</code> has to be 511.</dd></dl>
+<p>This convert HU to mu-values using a piece-wise linear curve. </p><dl class="section see"><dt>See also</dt><dd>HUToMuImageProcessor for details on file format etc</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This utility currently does not implement post-filtering to PET resolution, nor resampling to the PET voxel-size. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

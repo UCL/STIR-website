@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,10 +78,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">~ProjMatrixByBinSPECTUB</a> ()</td></tr>
 <tr class="memdesc:a4236872a84c83b95c955feaedc2098ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor (deallocates UB SPECT memory) <br /></td></tr>
 <tr class="separator:a4236872a84c83b95c955feaedc2098ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a0f98ed6a75c8a3c9de13e04134907"><td class="memItemLeft" align="right" valign="top"><a id="ac0a0f98ed6a75c8a3c9de13e04134907"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ac0a0f98ed6a75c8a3c9de13e04134907">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:ac0a0f98ed6a75c8a3c9de13e04134907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks all necessary geometric info. <br /></td></tr>
-<tr class="separator:ac0a0f98ed6a75c8a3c9de13e04134907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69877dda450dc8cec15881e2683c98bf"><td class="memItemLeft" align="right" valign="top"><a id="a69877dda450dc8cec15881e2683c98bf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
+<tr class="memdesc:a69877dda450dc8cec15881e2683c98bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks all necessary geometric info. <br /></td></tr>
+<tr class="separator:a69877dda450dc8cec15881e2683c98bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4186117d4c65e128cad7f12d3c2a3aec"><td class="memItemLeft" align="right" valign="top"><a id="a4186117d4c65e128cad7f12d3c2a3aec"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_keep_all_views_in_cache</b> () const</td></tr>
 <tr class="separator:a4186117d4c65e128cad7f12d3c2a3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,7 +289,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 
 <p>Enable keeping the matrix in memory. </p>
 <p>This speeds-up the calculations, but can use a lot of memory.</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ac0a0f98ed6a75c8a3c9de13e04134907" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 
 <p>Set type of attenuation modelling. </p>
 <p>Has to be "no", "simple" or "full"</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ac0a0f98ed6a75c8a3c9de13e04134907" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
@@ -336,7 +336,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 <p>Sets attenuation image. </p>
 <p>The image has to have same characteristics as the emission image currently.</p>
 <p>Will call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a74692b8e659755ae0a40c7e535ca26e1" title="Set type of attenuation modelling. ">set_attenuation_type()</a> to set to "simple" if it was set to "no".</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ac0a0f98ed6a75c8a3c9de13e04134907" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>.</p>
 
@@ -379,7 +379,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 <pre class="fragment"> sigma_at_depth = collimator_slope * depth_in_mm + collimator sigma 0
 </pre><p>Set slope and sigma_0 to zero for "geometrical" modelling.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Values are in mm</dd></dl>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ac0a0f98ed6a75c8a3c9de13e04134907" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

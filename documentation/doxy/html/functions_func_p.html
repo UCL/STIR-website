@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -42,7 +42,8 @@ $(function() {
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>parabolic_surrogate_curvature()
-: <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a1a68d68ed01174341934dd0c8c37be11">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1LogcoshPrior.html#a633a15d9ff672adc71c5c00bc31001d6">stir::LogcoshPrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a1a68d68ed01174341934dd0c8c37be11">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PriorWithParabolicSurrogate.html#a4232cfdb50d0f5485938b7c2b87b9e1f">stir::PriorWithParabolicSurrogate&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#ae95158d59c032a23cf29566455aa4394">stir::QuadraticPrior&lt; elemT &gt;</a>
 </li>
@@ -55,9 +56,14 @@ $(function() {
 : <a class="el" href="classstir_1_1ExamInfo.html#ad38e2a4feed07c419ff4768431d2e044">stir::ExamInfo</a>
 , <a class="el" href="classstir_1_1KeyParser.html#a4e5b0bca8a73d015c9fef5dbe6aebb71">stir::KeyParser</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a0082cb29815df1b8d7769072817f48f5">stir::ProjDataInfo</a>
+, <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html#af295c8125ce0e9b7c56310b371997777">stir::ProjDataInfoBlocksOnCylindricalNoArcCorr</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#aa554ccec20e799695b260adc87249c19">stir::ProjDataInfoCylindrical</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html#a34b759186988660a693b6cdbadb41a28">stir::ProjDataInfoCylindricalArcCorr</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ac88adec6ab17faab1a66b82de310fbdd">stir::ProjDataInfoCylindricalNoArcCorr</a>
+, <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a6e0dc753c036c0a012112e1f2dfe203e">stir::ProjDataInfoGeneric</a>
+, <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a3bfbe8e10e6c856d5bac342e84e0becf">stir::ProjDataInfoGenericNoArcCorr</a>
+, <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#a588f561ca37abfdd402805de496d3a21">stir::ProjDataInfoSubsetByView</a>
+, <a class="el" href="classstir_1_1Radionuclide.html#a3eff6eb899e0ca0f2a91111d8f802b76">stir::Radionuclide</a>
 , <a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">stir::RegisteredParsingObject&lt; Derived, Base, Parent &gt;</a>
 , <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">stir::Scanner</a>
 </li>
@@ -82,11 +88,14 @@ $(function() {
 <li>PlasmaData()
 : <a class="el" href="classstir_1_1PlasmaData.html#adb6c0e8a2d4515dbca7c07f363c28d52">stir::PlasmaData</a>
 </li>
+<li>PlasmaSample()
+: <a class="el" href="classstir_1_1PlasmaSample.html#a2a21a2f314aabd51cd83022d69a365e2">stir::PlasmaSample</a>
+</li>
 <li>PLSPrior()
 : <a class="el" href="classstir_1_1PLSPrior.html#a9e3bc4a50f75f8d4e19f3c684ab7800c">stir::PLSPrior&lt; elemT &gt;</a>
 </li>
 <li>PoissonLLReconstructionTests()
-: <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a7d1075dbd9d15fd0fda2f1bb69f1dca6">stir::PoissonLLReconstructionTests&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#a5e555964f50a1f66fbc8f6a7f55c23e8">stir::PoissonLLReconstructionTests&lt; TargetT &gt;</a>
 </li>
 <li>PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion()
 : <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a6071d9454249c16a63425f33227a3545">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>
@@ -99,6 +108,7 @@ $(function() {
 </li>
 <li>post_processing()
 : <a class="el" href="classstir_1_1AnalyticReconstruction.html#a1278fdf0a9dce2ea94a9a9ca39934b57">stir::AnalyticReconstruction</a>
+, <a class="el" href="classstir_1_1BinNormalisationWithCalibration.html#a8839ef588a3c1ffb7e5a6475891ef854">stir::BinNormalisationWithCalibration</a>
 , <a class="el" href="classstir_1_1CreateTailMaskFromACFs.html#a570e38700fe472e198a6aab429d59c0b">stir::CreateTailMaskFromACFs</a>
 , <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa4d135a68d3b5dd7e5d4f0aaaec3b3d3">stir::ecat::ecat6::ECAT6OutputFileFormat</a>
 , <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a31efd9d510690094c7fc507c822cf1db">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>
@@ -108,6 +118,7 @@ $(function() {
 , <a class="el" href="classstir_1_1EllipsoidalCylinder.html#aa0af6b5501e8a7e8b282eb72ea6d657f">stir::EllipsoidalCylinder</a>
 , <a class="el" href="classstir_1_1FindMCNormFactors.html#aee1fa74d246cebb0e6fef5eb3f7e32e7">stir::FindMCNormFactors</a>
 , <a class="el" href="classstir_1_1FourierRebinning.html#af8e2cc5c2da3223960f7bacb84665cac">stir::FourierRebinning</a>
+, <a class="el" href="classstir_1_1HUToMuImageProcessor.html#a316971f74adb84b6eda6e15119936705">stir::HUToMuImageProcessor&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a67485d77a8dfab1fb9c11413e8661c10">stir::InputStreamFromROOTFile</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a61db0765a707939ff3f6d81a812b8d0d">stir::InputStreamFromROOTFileForCylindricalPET</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#a1bc50284f3bbb1c1408701b35a90abb4">stir::InputStreamFromROOTFileForECATPET</a>
@@ -128,10 +139,12 @@ $(function() {
 , <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a2e2689100a7a023f39b2886e3130ecf9">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1LmToProjData.html#a8a82d1fa90b34e2ca3a896b53db3957d">stir::LmToProjData</a>
 , <a class="el" href="classstir_1_1LmToProjDataWithMC.html#a8f4bf29fe124f977a7a290bc5a771a5d">stir::LmToProjDataWithMC</a>
+, <a class="el" href="classstir_1_1LogcoshPrior.html#a4f3bebf331933dba656b9cc049200d53">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1MatchTrackerAndScanner.html#aa8bc923c9d0688cfc91a07af30713b6a">stir::MatchTrackerAndScanner</a>
 , <a class="el" href="classstir_1_1MoveImage.html#a4fb833dcac55caf4de6a6c53b37329ae">stir::MoveImage</a>
 , <a class="el" href="classstir_1_1MoveProjData.html#afae9f9a88554a1ab534dc2d03823461a">stir::MoveProjData</a>
 , <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#a1e1c97bc03afc28088440667676d13c5">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>
+, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#adefdb0efb4d17ca1e44809818b3603cb">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>
 , <a class="el" href="classstir_1_1MyApp.html#a3145cf2b45377a5fa46a7d392d852dce">stir::MyApp</a>
 , <a class="el" href="classstir_1_1NonRigidObjectTransformationUsingBSplines.html#a5377021e5c32e92e399bf002f2d078d5">stir::NonRigidObjectTransformationUsingBSplines&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#ad16655b014c8a3cfd27c4cb9a82916bc">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a>
@@ -187,6 +200,7 @@ $(function() {
 : <a class="el" href="classstir_1_1LmToProjData.html#a751ec1351febc5123dce868be5d0afec">stir::LmToProjData</a>
 , <a class="el" href="classstir_1_1LmToProjDataAbstract.html#a8449539a2a85dad8efbd48dd1d40149e">stir::LmToProjDataAbstract</a>
 , <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">stir::ScatterEstimation</a>
+, <a class="el" href="classstir_1_1SqrtHessianRowSum.html#af5dd77ec146a2c9bf9a0f2e869d96cab">stir::SqrtHessianRowSum&lt; TargetT &gt;</a>
 </li>
 <li>process_data_for_view_segment_num()
 : <a class="el" href="classstir_1_1ScatterSimulation.html#a2e07a52a3b49a7f40c7b602aac98702e">stir::ScatterSimulation</a>
@@ -196,34 +210,46 @@ $(function() {
 , <a class="el" href="classstir_1_1LmToProjDataWithMC.html#a09e13bc1a038aa02a3aa70a1ff634c40">stir::LmToProjDataWithMC</a>
 </li>
 <li>ProjData()
-: <a class="el" href="classstir_1_1ProjData.html#ab431a1afe3beb3da87ec9e8c03ff4114">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#ad249ce5dea4d5996568b226391005b43">stir::ProjData</a>
 </li>
 <li>ProjDataFromStream()
-: <a class="el" href="classstir_1_1ProjDataFromStream.html#af8d9043babe19f0a0c7fcbf02db56ee7">stir::ProjDataFromStream</a>
+: <a class="el" href="classstir_1_1ProjDataFromStream.html#aa65768c1e4709e4934f7855d154f7095">stir::ProjDataFromStream</a>
 </li>
 <li>ProjDataInfo()
-: <a class="el" href="classstir_1_1ProjDataInfo.html#a9d8ca84e6637ac2b6e19c6ebb00871cc">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjDataInfo.html#aeeacacc89e8391666e9de2289f226d13">stir::ProjDataInfo</a>
+</li>
+<li>ProjDataInfoBlocksOnCylindricalNoArcCorr()
+: <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html#ae6126d242dab237ad78372983ec6dd77">stir::ProjDataInfoBlocksOnCylindricalNoArcCorr</a>
 </li>
 <li>ProjDataInfoCTI()
 : <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">stir::ProjDataInfo</a>
 </li>
 <li>ProjDataInfoCylindrical()
-: <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a480daa46e80e5919615937c31b25260d">stir::ProjDataInfoCylindrical</a>
+: <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab3d19ad019a3b26cf5af4a130d7da619">stir::ProjDataInfoCylindrical</a>
 </li>
 <li>ProjDataInfoCylindricalArcCorr()
 : <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html#a67869f2e941153165831ca3886d44511">stir::ProjDataInfoCylindricalArcCorr</a>
 </li>
 <li>ProjDataInfoCylindricalNoArcCorr()
-: <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a3392fd5a875c88b7d2ebfdfb14065840">stir::ProjDataInfoCylindricalNoArcCorr</a>
+: <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#afc8fcaafc2dcff46f87ffc9a43bf21fb">stir::ProjDataInfoCylindricalNoArcCorr</a>
 </li>
 <li>ProjDataInfoGE()
 : <a class="el" href="classstir_1_1ProjDataInfo.html#aa2fa1aba19f7ff68a2112bbc23ce4369">stir::ProjDataInfo</a>
+</li>
+<li>ProjDataInfoGeneric()
+: <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#aabb956aa858903acaf088baa88aa595f">stir::ProjDataInfoGeneric</a>
+</li>
+<li>ProjDataInfoGenericNoArcCorr()
+: <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#af4e6595f27e73e502840a39a54907c1a">stir::ProjDataInfoGenericNoArcCorr</a>
+</li>
+<li>ProjDataInfoSubsetByView()
+: <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#a82035d439e9c4b833483259c15a52534">stir::ProjDataInfoSubsetByView</a>
 </li>
 <li>ProjDataInMemory()
 : <a class="el" href="classstir_1_1ProjDataInMemory.html#aa04a43c1efd50f4cafc1c45bd25f20df">stir::ProjDataInMemory</a>
 </li>
 <li>ProjDataInterfile()
-: <a class="el" href="classstir_1_1ProjDataInterfile.html#a7de61f7fb69ad9eb6134b2b9f943a4a6">stir::ProjDataInterfile</a>
+: <a class="el" href="classstir_1_1ProjDataInterfile.html#a3d4ce7143f12e0bb2afba667b850c940">stir::ProjDataInterfile</a>
 </li>
 <li>ProjectorByBinPair()
 : <a class="el" href="classstir_1_1ProjectorByBinPair.html#a496329b297e1966116dd300787fcacd1">stir::ProjectorByBinPair</a>
@@ -231,11 +257,14 @@ $(function() {
 <li>ProjectorByBinPairUsingNiftyPET()
 : <a class="el" href="classstir_1_1ProjectorByBinPairUsingNiftyPET.html#a954f5e89d0773e7b71daae642865b9f3">stir::ProjectorByBinPairUsingNiftyPET</a>
 </li>
+<li>ProjectorByBinPairUsingParallelproj()
+: <a class="el" href="classstir_1_1ProjectorByBinPairUsingParallelproj.html#a289afd79bd3c251e110508e3ac22a72d">stir::ProjectorByBinPairUsingParallelproj</a>
+</li>
 <li>ProjectorByBinPairUsingProjMatrixByBin()
-: <a class="el" href="classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html#a8524585571824070cd2d7f94b7e7c7b5">stir::ProjectorByBinPairUsingProjMatrixByBin</a>
+: <a class="el" href="classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html#afa8133459580a68db2e0282ef15f035c">stir::ProjectorByBinPairUsingProjMatrixByBin</a>
 </li>
 <li>ProjectorByBinPairUsingSeparateProjectors()
-: <a class="el" href="classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html#a818e011d5a16c445b8cbc7a15adeb93c">stir::ProjectorByBinPairUsingSeparateProjectors</a>
+: <a class="el" href="classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html#addaf35b32870536a7a54ccb16e6e542d">stir::ProjectorByBinPairUsingSeparateProjectors</a>
 </li>
 <li>ProjMatrixByBin()
 : <a class="el" href="classstir_1_1ProjMatrixByBin.html#a7f2e7d84849fa3b7491f4a0bd48fc42b">stir::ProjMatrixByBin</a>
@@ -271,7 +300,7 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#ac2a44beda29c10955e200d11bb4f0dcc">stir::ProjMatrixElemsForOneBin</a>
 </li>
 <li>ProjMatrixElemsForOneDensel()
-: <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a1b8bd3e5deaa64e4d2561b1c9386a988">stir::ProjMatrixElemsForOneDensel</a>
+: <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af12fab8cbb9702ba73299c1818d6b494">stir::ProjMatrixElemsForOneDensel</a>
 </li>
 <li>push_back()
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a614ed76acb47d4b588323297f2569180">stir::ProjMatrixElemsForOneBin</a>
@@ -284,7 +313,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:30 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

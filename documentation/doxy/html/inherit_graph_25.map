@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1BoundaryConditions.html" title="Preliminary class to specify boundary conditions for filters. " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node1" href="$classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. " alt="" coords="5,13,77,39"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="125,5,303,47"/>
 </map>

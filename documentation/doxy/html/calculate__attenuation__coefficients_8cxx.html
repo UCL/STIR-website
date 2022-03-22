@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -84,9 +84,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates attenuation coefficients (as an alternative to <code>correct_projdata</code>). </p>
 <dl class="section user"><dt>Usage</dt><dd><pre class="fragment">   calculate_attenuation_coefficients
-           [--PMRT]  --AF|--ACF &lt;output filename &gt; &lt;input image file name&gt; &lt;template_proj_data&gt;
+           [--PMRT --NOPMRT]  --AF|--ACF &lt;output filename &gt; &lt;input image file name&gt; &lt;template_proj_data&gt; [forwardprojector-parfile]
 </pre> <code>&ndash;ACF</code> calculates the attenuation correction factors, <code>&ndash;AF</code> calculates the attenuation factor (i.e. the inverse of the ACFs).</dd></dl>
 <p>The option <code>&ndash;PMRT</code> forces forward projection using the Probability Matrix Using Ray Tracing (<a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Length of Intersectio...">stir::ProjMatrixByBinUsingRayTracing</a>).</p>
+<p>The option <code>&ndash;NOPMRT</code> forces forward projection using the (old) Ray Tracing</p>
+<dl class="section user"><dt>Optionally include a parameter file for specifying the forward projector (overrules &ndash;PMRT and &ndash;NOPMRT options)</dt><dd><pre class="fragment">Forward Projector parameters:=
+  type := Matrix
+    Forward projector Using Matrix Parameters :=
+      Matrix type := Ray Tracing
+       Ray tracing matrix parameters :=
+       End Ray tracing matrix parameters :=
+      End Forward Projector Using Matrix Parameters :=
+End:=
+</pre></dd></dl>
 <p>The attenuation_image has to contain an estimate of the mu-map for the image. It will be used to estimate attenuation factors as exp(-forw_proj(*attenuation_image_ptr)).</p>
 <dl class="section warning"><dt>Warning</dt><dd>attenuation image data are supposed to be in units cm^-1. Reference: water has mu .096 cm^-1.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Sanida Mustafovic </dd>
@@ -95,7 +105,7 @@ Kris Thielemans </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -49,12 +49,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This program lists basic image info.  
+<p>This program lists basic image info. It works for dynamic images.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="VoxelsOnCartesianGrid_8h_source.html">stir/VoxelsOnCartesianGrid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DynamicDiscretisedDensity_8h_source.html">stir/DynamicDiscretisedDensity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stream_8h_source.html">stir/stream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Succeeded_8h_source.html">stir/Succeeded.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="unique__ptr_8h_source.html">stir/unique_ptr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="read__from__file_8h_source.html">stir/IO/read_from_file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="date__time__functions_8h_source.html">stir/date_time_functions.h</a>&quot;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><table class="memberdecls">
@@ -65,13 +67,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This program lists basic image info. </p>
+<div class="textblock"><p>This program lists basic image info. It works for dynamic images. </p>
+<p>Exam info and numerical info can be listed, depending on command line options. Run the utility to get a usage message.</p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>It only supports <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">stir::VoxelsOnCartesianGrid</a> type of images. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

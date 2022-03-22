@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -59,7 +59,7 @@ Inheritance diagram for stir::CListModeDataSAFIR&lt; CListRecordT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1CListModeDataSAFIR__inherit__graph.png" border="0" usemap="#stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map" id="stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1CListModeData.html" title="The base class for reading list mode data. " alt="" coords="24,155,173,181"/>
+<area shape="rect" id="node2" href="classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="24,155,173,181"/>
 <area shape="rect" id="node3" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="29,80,169,107"/>
 <area shape="rect" id="node4" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="39,5,158,32"/>
 </map>
@@ -67,8 +67,8 @@ Inheritance diagram for stir::CListModeDataSAFIR&lt; CListRecordT &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a36233223a75df35ecde4d98725b159a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataSAFIR.html#a36233223a75df35ecde4d98725b159a6">CListModeDataSAFIR</a> (const std::string &amp;listmode_filename, const std::string &amp;crystal_map_filename, const std::string &amp;template_proj_data_filename)</td></tr>
-<tr class="separator:a36233223a75df35ecde4d98725b159a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30210ec3c370689df34b2227c7813da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">CListModeDataSAFIR</a> (const std::string &amp;listmode_filename, const std::string &amp;crystal_map_filename, const std::string &amp;template_proj_data_filename, const double lor_randomization_sigma=0.0)</td></tr>
+<tr class="separator:aa30210ec3c370689df34b2227c7813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5dd113e12102b3e4d2bf421d89054f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">get_name</a> () const</td></tr>
 <tr class="memdesc:a3a5dd113e12102b3e4d2bf421d89054f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the list mode data.  <a href="#a3a5dd113e12102b3e4d2bf421d89054f">More...</a><br /></td></tr>
 <tr class="separator:a3a5dd113e12102b3e4d2bf421d89054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,36 +109,37 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 <tr class="memitem:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">virtual unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a9cf6b87145336be3c563401063e1cbd6">get_total_number_of_events</a> () const</td></tr>
 <tr class="memdesc:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of events in the listmode file.  <a href="classstir_1_1ListModeData.html#a9cf6b87145336be3c563401063e1cbd6">More...</a><br /></td></tr>
 <tr class="separator:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d94ee10e38e658aa6eece8c53a18a2 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a64d94ee10e38e658aa6eece8c53a18a2"></a>
-virtual shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_proj_data_info_sptr</b> () const</td></tr>
-<tr class="separator:a64d94ee10e38e658aa6eece8c53a18a2 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af213674270d7c27c02e8e9d4fce281b9 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="af213674270d7c27c02e8e9d4fce281b9"></a>
-const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_proj_data_info_ptr</b> () const</td></tr>
-<tr class="separator:af213674270d7c27c02e8e9d4fce281b9 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3539845efc3d96303063f2f493fd692e inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a3539845efc3d96303063f2f493fd692e"></a>
+virtual shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_proj_data_info_sptr</b> () const</td></tr>
+<tr class="separator:a3539845efc3d96303063f2f493fd692e inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ExamData"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ExamData')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ExamData.html">stir::ExamData</a></td></tr>
 <tr class="memitem:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#a361e3590d91c93142fe4a45025bc92e3">ExamData</a> ()</td></tr>
 <tr class="memdesc:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. ">ExamData</a>.  <a href="classstir_1_1ExamData.html#a361e3590d91c93142fe4a45025bc92e3">More...</a><br /></td></tr>
 <tr class="separator:a361e3590d91c93142fe4a45025bc92e3 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87c704f6ddab54a0d76c081758f682e inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ad87c704f6ddab54a0d76c081758f682e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ExamData</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;_this_exam)</td></tr>
-<tr class="separator:ad87c704f6ddab54a0d76c081758f682e inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d01d1a7050584183712716c6590650d inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a4d01d1a7050584183712716c6590650d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExamData</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;_this_exam)</td></tr>
+<tr class="separator:a4d01d1a7050584183712716c6590650d inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fd5daac0ac93648836522e0a41d4461 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a4fd5daac0ac93648836522e0a41d4461"></a>
 virtual const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_exam_info</b> () const</td></tr>
 <tr class="separator:a4fd5daac0ac93648836522e0a41d4461 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ae7cc85a7f893ef94655c2bb13e15a2a4"></a>
-virtual const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ae7cc85a7f893ef94655c2bb13e15a2a4">get_exam_info_ptr</a> () const</td></tr>
-<tr class="memdesc:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to exam info. <br /></td></tr>
-<tr class="separator:ae7cc85a7f893ef94655c2bb13e15a2a4 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">get_exam_info_sptr</a> () const</td></tr>
-<tr class="memdesc:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to exam info.  <a href="classstir_1_1ExamData.html#ac26a19b44a1207ef320cbc5938b2153b">More...</a><br /></td></tr>
-<tr class="separator:ac26a19b44a1207ef320cbc5938b2153b inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="ad79c2d7818f982ac85b2e94ceba830c5"></a>
+virtual shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ad79c2d7818f982ac85b2e94ceba830c5">get_exam_info_sptr</a> () const</td></tr>
+<tr class="memdesc:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to exam info. <br /></td></tr>
+<tr class="separator:ad79c2d7818f982ac85b2e94ceba830c5 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">set_exam_info</a> (<a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> const &amp;)</td></tr>
 <tr class="memdesc:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="mdescLeft">&#160;</td><td class="mdescRight">change exam info  <a href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">More...</a><br /></td></tr>
 <tr class="separator:ab1a74a047cf4164f76f4ec2f1a49d0a9 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051771db16aa4cf1a166268e38fc0214 inherit pub_methods_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="a051771db16aa4cf1a166268e38fc0214"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exam_info_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; new_exam_info_sptr)</td></tr>
+<tr class="separator:a051771db16aa4cf1a166268e38fc0214 inherit pub_methods_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classstir_1_1ListModeData"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstir_1_1ListModeData')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classstir_1_1ListModeData.html">stir::ListModeData</a></td></tr>
+<tr class="memitem:a16068053cfbd1a188d7d7d3eadd72a0b inherit pub_types_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a16068053cfbd1a188d7d7d3eadd72a0b"></a>
+typedef <a class="el" href="classstir_1_1ListModeData.html">ListModeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a16068053cfbd1a188d7d7d3eadd72a0b">hierarchy_base_type</a></td></tr>
+<tr class="memdesc:a16068053cfbd1a188d7d7d3eadd72a0b inherit pub_types_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef used by read_from_file <br /></td></tr>
+<tr class="separator:a16068053cfbd1a188d7d7d3eadd72a0b inherit pub_types_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51893647e70d643932778121c68c7c67 inherit pub_types_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a51893647e70d643932778121c68c7c67"></a>
 typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a></td></tr>
 <tr class="memdesc:a51893647e70d643932778121c68c7c67 inherit pub_types_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this typedef for save/set_get_position. <br /></td></tr>
@@ -151,17 +152,17 @@ virtual shared_ptr&lt; <a class="el" href="classstir_1_1ListRecord.html">ListRec
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_next</b> (<a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &amp;event) const</td></tr>
 <tr class="separator:ab362e1943ed391d1afa250327a817e1d inherit pro_methods_classstir_1_1CListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ListModeData"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ListModeData')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ListModeData.html">stir::ListModeData</a></td></tr>
-<tr class="memitem:aed0b9fcc7543f750121d1a161c88acb3 inherit pro_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="aed0b9fcc7543f750121d1a161c88acb3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_proj_data_info_sptr</b> (shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
-<tr class="separator:aed0b9fcc7543f750121d1a161c88acb3 inherit pro_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976c01086a0da148a9a035405d0fbd19 inherit pro_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a976c01086a0da148a9a035405d0fbd19"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_proj_data_info_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
+<tr class="separator:a976c01086a0da148a9a035405d0fbd19 inherit pro_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ListModeData"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ListModeData')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ListModeData.html">stir::ListModeData</a></td></tr>
-<tr class="memitem:abbadbdf9a2bd0d2220dad790ae6bda23 inherit pro_attribs_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#abbadbdf9a2bd0d2220dad790ae6bda23">proj_data_info_sptr</a></td></tr>
-<tr class="memdesc:abbadbdf9a2bd0d2220dad790ae6bda23 inherit pro_attribs_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be set by the derived class.  <a href="classstir_1_1ListModeData.html#abbadbdf9a2bd0d2220dad790ae6bda23">More...</a><br /></td></tr>
-<tr class="separator:abbadbdf9a2bd0d2220dad790ae6bda23 inherit pro_attribs_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee37d4d167bbe3bf4f1fc78947f3ad9 inherit pro_attribs_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#acee37d4d167bbe3bf4f1fc78947f3ad9">proj_data_info_sptr</a></td></tr>
+<tr class="memdesc:acee37d4d167bbe3bf4f1fc78947f3ad9 inherit pro_attribs_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be set by the derived class.  <a href="classstir_1_1ListModeData.html#acee37d4d167bbe3bf4f1fc78947f3ad9">More...</a><br /></td></tr>
+<tr class="separator:acee37d4d167bbe3bf4f1fc78947f3ad9 inherit pro_attribs_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ExamData"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ExamData')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ExamData.html">stir::ExamData</a></td></tr>
-<tr class="memitem:adadeeea3b276abba113d060460e5ea37 inherit pro_attribs_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="adadeeea3b276abba113d060460e5ea37"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exam_info_sptr</b></td></tr>
-<tr class="separator:adadeeea3b276abba113d060460e5ea37 inherit pro_attribs_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfba46635e65118247f05146f562bfd inherit pro_attribs_classstir_1_1ExamData"><td class="memItemLeft" align="right" valign="top"><a id="acdfba46635e65118247f05146f562bfd"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>exam_info_sptr</b></td></tr>
+<tr class="separator:acdfba46635e65118247f05146f562bfd inherit pro_attribs_classstir_1_1ExamData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class CListRecordT&gt;<br />
@@ -170,8 +171,8 @@ class stir::CListModeDataSAFIR&lt; CListRecordT &gt;</h3>
 <p>Class for reading SAFIR listmode data with variable geometry. </p>
 <dl class="section user"><dt></dt><dd>By providing crystal map and template projection data files, the coordinates are read from files and used defining the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> coordinates. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a36233223a75df35ecde4d98725b159a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36233223a75df35ecde4d98725b159a6">&#9670;&nbsp;</a></span>CListModeDataSAFIR()</h2>
+<a id="aa30210ec3c370689df34b2227c7813da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa30210ec3c370689df34b2227c7813da">&#9670;&nbsp;</a></span>CListModeDataSAFIR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +195,13 @@ template&lt;class CListRecordT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>template_proj_data_filename</em>&#160;</td>
+          <td class="paramname"><em>template_proj_data_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>lor_randomization_sigma</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -243,7 +250,7 @@ template&lt;class CListRecordT &gt; </div>
 
 <p class="reference">References <a class="el" href="classstir_1_1CListModeDataSAFIR.html#abd68dff257d9ee59310af2d8a4f4c4aa">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::get_empty_record_sptr()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a36233223a75df35ecde4d98725b159a6">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +314,7 @@ template&lt;class CListRecordT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function should save the position in input file. This is not implemented but disabled. Returns 0 in the moement. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000065">Todo:</a></b></dt><dd>Maybe provide real implementation? </dd></dl>
+<p>This function should save the position in input file. This is not implemented but disabled. Returns 0 in the moement. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000068">Todo:</a></b></dt><dd>Maybe provide real implementation? </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1ListModeData.html#a5a521b628dfecaa18368b631ad453e1d">stir::ListModeData</a>.</p>
 
@@ -337,7 +344,7 @@ template&lt;class CListRecordT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns just false in the moment. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>Implement this properly to check for delayed events in LM files. </dd></dl>
+<p>Returns just false in the moment. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd>Implement this properly to check for delayed events in LM files. </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1CListModeData.html#a6e321d12d8d8a9ea5ddaf132760f2101">stir::CListModeData</a>.</p>
 
@@ -345,12 +352,12 @@ template&lt;class CListRecordT &gt; </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/<a class="el" href="CListModeDataSAFIR_8h_source.html">CListModeDataSAFIR.h</a></li>
-<li>/home/sirfuser/devel/STIRdistrib/STIR/src/listmode_buildblock/CListModeDataSAFIR.cxx</li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/listmode_buildblock/<a class="el" href="CListModeDataSAFIR_8cxx.html">CListModeDataSAFIR.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

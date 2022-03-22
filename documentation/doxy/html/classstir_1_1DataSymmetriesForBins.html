@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -69,9 +69,9 @@ Inheritance diagram for stir::DataSymmetriesForBins:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63b59978b31edd263353c5f7d8966d56"><td class="memItemLeft" align="right" valign="top"><a id="a63b59978b31edd263353c5f7d8966d56"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataSymmetriesForBins</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;<a class="el" href="classstir_1_1DataSymmetriesForBins.html#aa73148234abab483c96d041dc173a964">proj_data_info_ptr</a>)</td></tr>
-<tr class="separator:a63b59978b31edd263353c5f7d8966d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9b393e920cba769959965c4f9a30ae"><td class="memItemLeft" align="right" valign="top"><a id="afd9b393e920cba769959965c4f9a30ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataSymmetriesForBins</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;<a class="el" href="classstir_1_1DataSymmetriesForBins.html#abfb6df2d26eaabef84024a93420929fa">proj_data_info_ptr</a>)</td></tr>
+<tr class="separator:afd9b393e920cba769959965c4f9a30ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca2172dc7bc15697e4c0a61f54652509"><td class="memItemLeft" align="right" valign="top"><a id="aca2172dc7bc15697e4c0a61f54652509"></a>
 virtual <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetriesForBins</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const =0</td></tr>
 <tr class="separator:aca2172dc7bc15697e4c0a61f54652509"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,10 +133,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa73148234abab483c96d041dc173a964"><td class="memItemLeft" align="right" valign="top"><a id="aa73148234abab483c96d041dc173a964"></a>
-const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins.html#aa73148234abab483c96d041dc173a964">proj_data_info_ptr</a></td></tr>
-<tr class="memdesc:aa73148234abab483c96d041dc173a964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member storing the info needed by <a class="el" href="classstir_1_1DataSymmetriesForBins.html#acd8822ee924f54d20c295b765c370db8" title="fills in a vector with all the bins that are related to &#39;b&#39; (including itself) ">get_related_bins()</a> et al. <br /></td></tr>
-<tr class="separator:aa73148234abab483c96d041dc173a964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb6df2d26eaabef84024a93420929fa"><td class="memItemLeft" align="right" valign="top"><a id="abfb6df2d26eaabef84024a93420929fa"></a>
+const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForBins.html#abfb6df2d26eaabef84024a93420929fa">proj_data_info_ptr</a></td></tr>
+<tr class="memdesc:abfb6df2d26eaabef84024a93420929fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member storing the info needed by <a class="el" href="classstir_1_1DataSymmetriesForBins.html#acd8822ee924f54d20c295b765c370db8" title="fills in a vector with all the bins that are related to &#39;b&#39; (including itself) ">get_related_bins()</a> et al. <br /></td></tr>
+<tr class="separator:abfb6df2d26eaabef84024a93420929fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -148,7 +148,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for encoding/finding symmetries common to the geometry of the projection data and the discretised density. </p>
 <p>This class is mainly (only?) useful for <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> classes and their 'users'. Together with <a class="el" href="classstir_1_1SymmetryOperation.html" title="Encodes symmetry operation on image coordinates and projection data coordinates. ">SymmetryOperation</a>, it provides the basic way to be able to write generic code without knowing which particular symmetries the data have.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo:</a></b></dt><dd>I have used <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> here to have the 4 coordinates, but <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> has data as well which is not really necessary here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo:</a></b></dt><dd>I have used <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> here to have the 4 coordinates, but <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> has data as well which is not really necessary here. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acd8822ee924f54d20c295b765c370db8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd8822ee924f54d20c295b765c370db8">&#9670;&nbsp;</a></span>get_related_bins() <span class="overload">[1/2]</span></h2>
@@ -517,7 +517,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

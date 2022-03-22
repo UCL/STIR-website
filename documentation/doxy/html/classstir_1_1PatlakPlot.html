@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -86,9 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afec9c3bfba5007820a0ab7fb3c3c6033"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#afec9c3bfba5007820a0ab7fb3c3c6033">get_dynamic_image_from_parametric_image</a> (<a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;dyn_image, const <a class="el" href="namespacestir.html#aff63e79ede41b0d0e9a8bc594ceda608">ParametricVoxelsOnCartesianGrid</a> &amp;par_image) const</td></tr>
 <tr class="memdesc:afec9c3bfba5007820a0ab7fb3c3c6033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the parametric image with the model matrix to get the corresponding dynamic image.  <a href="#afec9c3bfba5007820a0ab7fb3c3c6033">More...</a><br /></td></tr>
 <tr class="separator:afec9c3bfba5007820a0ab7fb3c3c6033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac602dfb1038193f1cc1393e196c5a3ab"><td class="memItemLeft" align="right" valign="top"><a id="ac602dfb1038193f1cc1393e196c5a3ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#ac602dfb1038193f1cc1393e196c5a3ab">apply_linear_regression</a> (<a class="el" href="namespacestir.html#aff63e79ede41b0d0e9a8bc594ceda608">ParametricVoxelsOnCartesianGrid</a> &amp;par_image, const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;dyn_image) const</td></tr>
-<tr class="memdesc:ac602dfb1038193f1cc1393e196c5a3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the common method used to estimate the parametric images from the dynamic images. <br /></td></tr>
+<tr class="memitem:ac602dfb1038193f1cc1393e196c5a3ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#ac602dfb1038193f1cc1393e196c5a3ab">apply_linear_regression</a> (<a class="el" href="namespacestir.html#aff63e79ede41b0d0e9a8bc594ceda608">ParametricVoxelsOnCartesianGrid</a> &amp;par_image, const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;dyn_image) const</td></tr>
+<tr class="memdesc:ac602dfb1038193f1cc1393e196c5a3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the common method used to estimate the parametric images from the dynamic images.  <a href="#ac602dfb1038193f1cc1393e196c5a3ab">More...</a><br /></td></tr>
 <tr class="separator:ac602dfb1038193f1cc1393e196c5a3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa9056551fe058b1fdf64a19b1aeaad"><td class="memItemLeft" align="right" valign="top"><a id="a6aa9056551fe058b1fdf64a19b1aeaad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a6aa9056551fe058b1fdf64a19b1aeaad">set_defaults</a> ()</td></tr>
@@ -101,13 +100,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4d71c9e6ca03f5bf250fa204d6c8de17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ModelMatrix.html">ModelMatrix</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a4d71c9e6ca03f5bf250fa204d6c8de17">get_model_matrix</a> () const</td></tr>
 <tr class="memdesc:a4d71c9e6ca03f5bf250fa204d6c8de17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply gets model matrix, if it has been already stored.  <a href="#a4d71c9e6ca03f5bf250fa204d6c8de17">More...</a><br /></td></tr>
 <tr class="separator:a4d71c9e6ca03f5bf250fa204d6c8de17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947ef913935520ce5f301c335ee28132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ModelMatrix.html">ModelMatrix</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a947ef913935520ce5f301c335ee28132">get_model_matrix</a> (const <a class="el" href="classstir_1_1PlasmaData.html">PlasmaData</a> &amp;plasma_data, const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;time_frame_definitions, const unsigned int starting_frame)</td></tr>
-<tr class="memdesc:a947ef913935520ce5f301c335ee28132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates model matrix from plasma data (Must be already sorted in appropriate frames).  <a href="#a947ef913935520ce5f301c335ee28132">More...</a><br /></td></tr>
-<tr class="separator:a947ef913935520ce5f301c335ee28132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93480151d89be421ba6846084c433dad"><td class="memItemLeft" align="right" valign="top"><a id="a93480151d89be421ba6846084c433dad"></a>
+<a class="el" href="classstir_1_1ModelMatrix.html">ModelMatrix</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a93480151d89be421ba6846084c433dad">get_model_matrix</a> (const <a class="el" href="classstir_1_1PlasmaData.html">PlasmaData</a> &amp;plasma_data, const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;time_frame_definitions, const unsigned int starting_frame)</td></tr>
+<tr class="memdesc:a93480151d89be421ba6846084c433dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates model matrix from plasma data (Must be already sorted in appropriate frames). <br /></td></tr>
+<tr class="separator:a93480151d89be421ba6846084c433dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5ca066fb9d71f0082b6a6d6e8a8e34"><td class="memItemLeft" align="right" valign="top"><a id="a6b5ca066fb9d71f0082b6a6d6e8a8e34"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a6b5ca066fb9d71f0082b6a6d6e8a8e34">get_starting_frame</a> () const</td></tr>
 <tr class="memdesc:a6b5ca066fb9d71f0082b6a6d6e8a8e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frame that the <a class="el" href="classstir_1_1PatlakPlot.html" title="Patlak kinetic model. ">PatlakPlot</a> linearization is assumed to be valid. <br /></td></tr>
 <tr class="separator:a6b5ca066fb9d71f0082b6a6d6e8a8e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50967609814264c9c5ae6ef87b013423"><td class="memItemLeft" align="right" valign="top"><a id="a50967609814264c9c5ae6ef87b013423"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a50967609814264c9c5ae6ef87b013423">get_ending_frame</a> () const</td></tr>
+<tr class="memdesc:a50967609814264c9c5ae6ef87b013423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of the last frame available. <br /></td></tr>
+<tr class="separator:a50967609814264c9c5ae6ef87b013423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10020b59eeacbbec9f54eebbed9f1193"><td class="memItemLeft" align="right" valign="top"><a id="a10020b59eeacbbec9f54eebbed9f1193"></a>
 <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html#a10020b59eeacbbec9f54eebbed9f1193">get_time_frame_definitions</a> () const</td></tr>
 <tr class="memdesc:a10020b59eeacbbec9f54eebbed9f1193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classstir_1_1TimeFrameDefinitions.html" title="Class used for storing time frame durations. ">TimeFrameDefinitions</a> that the <a class="el" href="classstir_1_1PatlakPlot.html" title="Patlak kinetic model. ">PatlakPlot</a> linearization is assumed to be valid: ChT::Check. <br /></td></tr>
@@ -270,7 +274,7 @@ end Patlak Plot Parameters:=
 <li>The plasma data is assumed to be in decaying counts.</li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd>Should be derived from LinearModels, but when non-linear models will be introduced, as well. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>Should be derived from LinearModels, but when non-linear models will be introduced, as well. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2bc3e3859d09a0877d902a8faf5468c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bc3e3859d09a0877d902a8faf5468c6">&#9670;&nbsp;</a></span>PatlakPlot()</h2>
@@ -294,7 +298,7 @@ end Patlak Plot Parameters:=
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4d71c9e6ca03f5bf250fa204d6c8de17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d71c9e6ca03f5bf250fa204d6c8de17">&#9670;&nbsp;</a></span>get_model_matrix() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d71c9e6ca03f5bf250fa204d6c8de17">&#9670;&nbsp;</a></span>get_model_matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,45 +318,6 @@ end Patlak Plot Parameters:=
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1modellingTests.html#ab76dd38e824923b55a96c5eb28c048f5">stir::modellingTests::run_tests()</a>.</p>
-
-</div>
-</div>
-<a id="a947ef913935520ce5f301c335ee28132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a947ef913935520ce5f301c335ee28132">&#9670;&nbsp;</a></span>get_model_matrix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classstir_1_1ModelMatrix.html">ModelMatrix</a>&lt; 2 &gt; stir::PatlakPlot::get_model_matrix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1PlasmaData.html">PlasmaData</a> &amp;&#160;</td>
-          <td class="paramname"><em>plasma_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;&#160;</td>
-          <td class="paramname"><em>time_frame_definitions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>starting_frame</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates model matrix from plasma data (Must be already sorted in appropriate frames). </p>
-<p>Create model matrix from plasma data (has to be in appropriate frames) </p>
-
-<p class="reference">References <a class="el" href="classstir_1_1PlasmaData.html#af6686f80909c5a043eeb031eb3d01a96">stir::PlasmaData::begin()</a>, <a class="el" href="group__buildblock.html#ga8c1ea83fd11e3e7ebaf78ebff345b87a">stir::decay_correction_factor()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1PlasmaData.html#a20da79b33d41426e9f00324c6e2ec143">stir::PlasmaData::get_isotope_halflife()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +357,9 @@ end Patlak Plot Parameters:=
 
 <p>Multiplies the dynamic image with the model gradient. </p>
 <p>For a linear model the model gradient is the transpose of the model matrix. So, the dynamic image is "projected" from time domain to the parameter domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
 
 </div>
 </div>
@@ -433,9 +398,9 @@ end Patlak Plot Parameters:=
 </div><div class="memdoc">
 
 <p>Multiplies the dynamic image with the model gradient and add to original <code>parametric_image</code>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000090">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
 
 </div>
 </div>
@@ -474,9 +439,42 @@ end Patlak Plot Parameters:=
 </div><div class="memdoc">
 
 <p>Multiplies the parametric image with the model matrix to get the corresponding dynamic image. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000091">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
+
+</div>
+</div>
+<a id="ac602dfb1038193f1cc1393e196c5a3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac602dfb1038193f1cc1393e196c5a3ab">&#9670;&nbsp;</a></span>apply_linear_regression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::PatlakPlot::apply_linear_regression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestir.html#aff63e79ede41b0d0e9a8bc594ceda608">ParametricVoxelsOnCartesianGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>par_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">DynamicDiscretisedDensity</a> &amp;&#160;</td>
+          <td class="paramname"><em>dyn_image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the common method used to estimate the parametric images from the dynamic images. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000092">Todo:</a></b></dt><dd>There is currently no check if the time frame definitions from <em>dyn_image</em> are the same as the ones encoded in the model. </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, and <a class="el" href="group__buildblock.html#ga6791494ac912a0c7675f5768b5dd99fd">stir::linear_regression()</a>.</p>
 
 </div>
 </div>
@@ -487,7 +485,7 @@ end Patlak Plot Parameters:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

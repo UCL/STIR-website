@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -132,13 +132,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_min_tangential_pos
 <tr class="memitem:ace849615efa5d17e77959f74dad54672"><td class="memItemLeft" align="right" valign="top"><a id="ace849615efa5d17e77959f74dad54672"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_max_tangential_pos_num</b> () const</td></tr>
 <tr class="separator:ace849615efa5d17e77959f74dad54672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2ec811b58aa7e9c0795d412d0bbc0fb"><td class="memItemLeft" align="right" valign="top"><a id="ae2ec811b58aa7e9c0795d412d0bbc0fb"></a>
-const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelatedViewgrams.html#ae2ec811b58aa7e9c0795d412d0bbc0fb">get_proj_data_info_ptr</a> () const</td></tr>
-<tr class="memdesc:ae2ec811b58aa7e9c0795d412d0bbc0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> of this object. <br /></td></tr>
-<tr class="separator:ae2ec811b58aa7e9c0795d412d0bbc0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0169f53f906cf6286a1264ea03811bc"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelatedViewgrams.html#ae0169f53f906cf6286a1264ea03811bc">get_proj_data_info_sptr</a> () const</td></tr>
-<tr class="memdesc:ae0169f53f906cf6286a1264ea03811bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info.  <a href="#ae0169f53f906cf6286a1264ea03811bc">More...</a><br /></td></tr>
-<tr class="separator:ae0169f53f906cf6286a1264ea03811bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e880a7d9379ad5e203baaf017f57e1"><td class="memItemLeft" align="right" valign="top"><a id="ab3e880a7d9379ad5e203baaf017f57e1"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelatedViewgrams.html#ab3e880a7d9379ad5e203baaf017f57e1">get_proj_data_info_sptr</a> () const</td></tr>
+<tr class="memdesc:ab3e880a7d9379ad5e203baaf017f57e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info. <br /></td></tr>
+<tr class="separator:ab3e880a7d9379ad5e203baaf017f57e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb96a60695d1fe2f33b03e3365447666"><td class="memItemLeft" align="right" valign="top"><a id="acb96a60695d1fe2f33b03e3365447666"></a>
 const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelatedViewgrams.html#acb96a60695d1fe2f33b03e3365447666">get_symmetries_ptr</a> () const</td></tr>
 <tr class="memdesc:acb96a60695d1fe2f33b03e3365447666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the symmetries used in constructing this object. <br /></td></tr>
@@ -272,7 +269,7 @@ template&lt;typename elemT&gt; </div>
 </div><div class="memdoc">
 
 <p>a private constructor which simply sets the members </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo:</a></b></dt><dd>Currently public for the STIR_MPI version </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000163">Todo:</a></b></dt><dd>Currently public for the STIR_MPI version </dd></dl>
 
 </div>
 </div>
@@ -337,7 +334,7 @@ template&lt;typename elemT &gt; </div>
 <p>get 'basic' segment_num </p>
 <p>see <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">DataSymmetriesForViewSegmentNumbers</a> for definition of 'basic' </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingProjMatrixByBin.html#afb1e85f9d4ba47f43df4ad457bdc9fe9">stir::BackProjectorByBinUsingProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1FBP3DRPReconstruction.html#a5febdb95573647a33f9e02bb7d38c80d">stir::FBP3DRPReconstruction::do_colsher_filter_view()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#ada535932adc29570f6e83d222d94e957">stir::ForwardProjectorByBinUsingProjMatrixByBin::get_symmetries_used()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a69d9eea997bc555ef4365bf262dedc4e">stir::ForwardProjectorByBinUsingRayTracing::get_symmetries_used()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ae7358b3242e7f019ca2710f0a87f80e7">stir::RelatedViewgrams&lt; float &gt;::has_same_characteristics()</a>, and <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html#ac673d2b41318e2b9f16796b1dcab55b3">stir::BackProjectorByBinUsingInterpolation::use_piecewise_linear_interpolation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingProjMatrixByBin.html#afb1e85f9d4ba47f43df4ad457bdc9fe9">stir::BackProjectorByBinUsingProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1BackProjectorByBinParallelproj.html#a6e9228a446fb5a1c8ee1f9f0a6660ea8">stir::BackProjectorByBinParallelproj::actual_back_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#ada535932adc29570f6e83d222d94e957">stir::ForwardProjectorByBinUsingProjMatrixByBin::get_symmetries_used()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a40e32263f2ffd1651f523e0a40db3d49">stir::ForwardProjectorByBinParallelproj::get_symmetries_used()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a69d9eea997bc555ef4365bf262dedc4e">stir::ForwardProjectorByBinUsingRayTracing::get_symmetries_used()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ae7358b3242e7f019ca2710f0a87f80e7">stir::RelatedViewgrams&lt; float &gt;::has_same_characteristics()</a>, and <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html#ac673d2b41318e2b9f16796b1dcab55b3">stir::BackProjectorByBinUsingInterpolation::use_piecewise_linear_interpolation()</a>.</p>
 
 </div>
 </div>
@@ -369,39 +366,7 @@ template&lt;typename elemT &gt; </div>
 <p>get 'basic' view_segment_num </p>
 <p>see <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">DataSymmetriesForViewSegmentNumbers</a> for definition of 'basic' </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#ac50aa809e132e1fd8143061f4c310876">stir::ForwardProjectorByBinNiftyPET::actual_forward_project()</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#ad029a643526d839286b46c02ea5ccc60">stir::BinNormalisationFromML2D::apply()</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#ad381c0e007b616b5aac2d4d747d7d110">stir::BinNormalisationFromProjData::apply()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a171dff56100ad503dc230f55b4ab6fbd">stir::BackProjectorByBin::back_project()</a>, <a class="el" href="classstir_1_1ArcCorrection.html#a407d3a6f4fe726a86dd4f47a40c35a05">stir::ArcCorrection::do_arc_correction()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#af74578b425251f471f1c9a79b47f3655">stir::BinNormalisationFromML2D::undo()</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a988b82c4349111e5f4e11eb422570563">stir::BinNormalisationFromProjData::undo()</a>, and <a class="el" href="namespacestir.html#aea872700aa9933869324dd93547666ba">stir::zoom_viewgrams()</a>.</p>
-
-</div>
-</div>
-<a id="ae0169f53f906cf6286a1264ea03811bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0169f53f906cf6286a1264ea03811bc">&#9670;&nbsp;</a></span>get_proj_data_info_sptr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; <a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; elemT &gt;::get_proj_data_info_sptr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get shared pointer to proj data info. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Use with care. If you modify the object in a shared ptr, everything using the same shared pointer will be affected. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#ad381c0e007b616b5aac2d4d747d7d110">stir::BinNormalisationFromProjData::apply()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#a97ce06783944055ee8fdf6ad7238edc2">stir::BinNormalisation::apply()</a>, <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a2b4a4511bcf57c9d71b68be0a8eb1aff">stir::BinNormalisationFromAttenuationImage::apply()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a171dff56100ad503dc230f55b4ab6fbd">stir::BackProjectorByBin::back_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a988b82c4349111e5f4e11eb422570563">stir::BinNormalisationFromProjData::undo()</a>, <a class="el" href="classstir_1_1BinNormalisation.html#aa647ffbe81a5bc18c2a7e30eab0c22f4">stir::BinNormalisation::undo()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#af37ae22c039dac3435f7c8e3548b2d42">stir::BinNormalisationFromAttenuationImage::undo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#ac50aa809e132e1fd8143061f4c310876">stir::ForwardProjectorByBinNiftyPET::actual_forward_project()</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#ad029a643526d839286b46c02ea5ccc60">stir::BinNormalisationFromML2D::apply()</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#af8ee92e298b8843379b101eb979c5929">stir::BinNormalisationFromProjData::apply()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a171dff56100ad503dc230f55b4ab6fbd">stir::BackProjectorByBin::back_project()</a>, <a class="el" href="classstir_1_1ArcCorrection.html#a407d3a6f4fe726a86dd4f47a40c35a05">stir::ArcCorrection::do_arc_correction()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a40e32263f2ffd1651f523e0a40db3d49">stir::ForwardProjectorByBinParallelproj::get_symmetries_used()</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#af74578b425251f471f1c9a79b47f3655">stir::BinNormalisationFromML2D::undo()</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a7b6bf6e6803fc5511f5b2f6b9914695c">stir::BinNormalisationFromProjData::undo()</a>, and <a class="el" href="namespacestir.html#aea872700aa9933869324dd93547666ba">stir::zoom_viewgrams()</a>.</p>
 
 </div>
 </div>
@@ -734,7 +699,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ class stir::ArrayFilter1DUsingConvolution&lt; elemT &gt;</h3>
 <dl class="section user"><dt>Example 2</dt><dd>A filter which shifts the output 1 index to the right, i.e. <img class="formulaInl" alt="$ out_i = in_{i-1}$" src="form_1.png"/> <div class="fragment"><div class="line">VectorWithOffset&lt;float&gt; kernel(1,1);</div><div class="line">kernel[1] = 1.F;</div><div class="line">ArrayFilter1DUsingConvolution&lt;float&gt; right_shift_filter(kernel);</div></div><!-- fragment --></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>1 argument operator() currently leaves the array with the the same index range, i.e. it does not extend it with the kernel size or so.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>ArrayFilter1DUsingSymmetricConvolution for an implementation when the kernel is symmetric. (Note: it's not clear if that implementation results in faster execution).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>implement other boundary conditions </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>implement other boundary conditions </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a979ec983b2868e670a39f03421a39b7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a979ec983b2868e670a39f03421a39b7e">&#9670;&nbsp;</a></span>ArrayFilter1DUsingConvolution()</h2>
@@ -203,7 +203,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

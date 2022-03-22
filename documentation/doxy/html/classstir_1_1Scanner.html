@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -46,6 +46,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classstir_1_1Scanner-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">stir::Scanner Class Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a></div></div>  </div>
@@ -88,19 +89,21 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>Discovery690</b>, 
 <b>DiscoveryMI3ring</b>, 
 <b>DiscoveryMI4ring</b>, 
-<b>HZLR</b>, 
+<b>DiscoveryMI5ring</b>, 
 <br />
-&#160;&#160;<b>RATPET</b>, 
+&#160;&#160;<b>HZLR</b>, 
+<b>RATPET</b>, 
 <b>PANDA</b>, 
 <b>HYPERimage</b>, 
-<b>nanoPET</b>, 
 <br />
-&#160;&#160;<b>HRRT</b>, 
+&#160;&#160;<b>nanoPET</b>, 
+<b>HRRT</b>, 
 <b>Allegro</b>, 
 <b>GeminiTF</b>, 
-<b>User_defined_scanner</b>, 
 <br />
-&#160;&#160;<b>Unknown_scanner</b>
+&#160;&#160;<b>SAFIRDualRingPrototype</b>, 
+<b>User_defined_scanner</b>, 
+<b>Unknown_scanner</b>
 <br />
  }<tr class="memdesc:a67a1829773e3df52965769e9e1b0a9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for all predefined scanners <br /></td></tr>
 </td></tr>
@@ -112,12 +115,15 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aa4721090630f50e208147e88b8f485f2">Scanner</a> (<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> scanner_type)</td></tr>
 <tr class="memdesc:aa4721090630f50e208147e88b8f485f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor that takes scanner type as an input argument <br /></td></tr>
 <tr class="separator:aa4721090630f50e208147e88b8f485f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda8b1b4d119f8587360d47dbebc4c80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#adda8b1b4d119f8587360d47dbebc4c80">Scanner</a> (<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> type_v, const std::list&lt; std::string &gt; &amp;list_of_names_v, int num_detectors_per_ring_v, int num_rings_v, int max_num_non_arccorrected_bins_v, int default_num_arccorrected_bins_v, float inner_ring_radius_v, float average_depth_of_interaction_v, float ring_spacing_v, float bin_size_v, float intrinsic_tilt_v, int num_axial_blocks_per_bucket_v, int num_transaxial_blocks_per_bucket_v, int num_axial_crystals_per_block_v, int num_transaxial_crystals_per_block_v, int num_axial_crystals_per_singles_unit_v, int num_transaxial_crystals_per_singles_unit_v, int num_detector_layers_v, float energy_resolution_v=-1.0f, float reference_energy_v=-1.0f)</td></tr>
-<tr class="memdesc:adda8b1b4d119f8587360d47dbebc4c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor -(list of names)  <a href="#adda8b1b4d119f8587360d47dbebc4c80">More...</a><br /></td></tr>
-<tr class="separator:adda8b1b4d119f8587360d47dbebc4c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969da4dd7e759dda35376d6ebac55d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a969da4dd7e759dda35376d6ebac55d4a">Scanner</a> (<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> type_v, const std::string &amp;name, int num_detectors_per_ring_v, int num_rings_v, int max_num_non_arccorrected_bins_v, int default_num_arccorrected_bins_v, float inner_ring_radius_v, float average_depth_of_interaction_v, float ring_spacing_v, float bin_size_v, float intrinsic_tilt_v, int num_axial_blocks_per_bucket_v, int num_transaxial_blocks_per_bucket_v, int num_axial_crystals_per_block_v, int num_transaxial_crystals_per_block_v, int num_axial_crystals_per_singles_unit_v, int num_transaxial_crystals_per_singles_unit_v, int num_detector_layers_v, float energy_resolution_v=-1.0f, float reference_energy_v=-1.0f)</td></tr>
-<tr class="memdesc:a969da4dd7e759dda35376d6ebac55d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor ( a single name)  <a href="#a969da4dd7e759dda35376d6ebac55d4a">More...</a><br /></td></tr>
-<tr class="separator:a969da4dd7e759dda35376d6ebac55d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad753e96aa669914a4c917fee9ac9bab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ad753e96aa669914a4c917fee9ac9bab5">Scanner</a> (<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> type_v, const std::list&lt; std::string &gt; &amp;list_of_names_v, int num_detectors_per_ring_v, int num_rings_v, int max_num_non_arccorrected_bins_v, int default_num_arccorrected_bins_v, float inner_ring_radius_v, float average_depth_of_interaction_v, float ring_spacing_v, float bin_size_v, float intrinsic_tilt_v, int num_axial_blocks_per_bucket_v, int num_transaxial_blocks_per_bucket_v, int num_axial_crystals_per_block_v, int num_transaxial_crystals_per_block_v, int num_axial_crystals_per_singles_unit_v, int num_transaxial_crystals_per_singles_unit_v, int num_detector_layers_v, float energy_resolution_v=-1.0f, float reference_energy_v=-1.0f, const std::string &amp;scanner_orientation_v=&quot;X&quot;, const std::string &amp;scanner_geometry_v=&quot;Cylindrical&quot;, float axial_crystal_spacing_v=-1.0f, float transaxial_crystal_spacing_v=-1.0f, float axial_block_spacing_v=-1.0f, float transaxial_block_spacing_v=-1.0f, const std::string &amp;crystal_map_file_name=&quot;&quot;)</td></tr>
+<tr class="memdesc:ad753e96aa669914a4c917fee9ac9bab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor -(list of names)  <a href="#ad753e96aa669914a4c917fee9ac9bab5">More...</a><br /></td></tr>
+<tr class="separator:ad753e96aa669914a4c917fee9ac9bab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7073c982ada9c52a2e299d9b177e25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a6f7073c982ada9c52a2e299d9b177e25">Scanner</a> (<a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> type_v, const std::string &amp;name, int num_detectors_per_ring_v, int num_rings_v, int max_num_non_arccorrected_bins_v, int default_num_arccorrected_bins_v, float inner_ring_radius_v, float average_depth_of_interaction_v, float ring_spacing_v, float bin_size_v, float intrinsic_tilt_v, int num_axial_blocks_per_bucket_v, int num_transaxial_blocks_per_bucket_v, int num_axial_crystals_per_block_v, int num_transaxial_crystals_per_block_v, int num_axial_crystals_per_singles_unit_v, int num_transaxial_crystals_per_singles_unit_v, int num_detector_layers_v, float energy_resolution_v=-1.0f, float reference_energy_v=-1.0f, const std::string &amp;scanner_orientation_v=&quot;X&quot;, const std::string &amp;scanner_geometry_v=&quot;Cylindrical&quot;, float axial_crystal_spacing_v=-1.0f, float transaxial_crystal_spacing_v=-1.0f, float axial_block_spacing_v=-1.0f, float transaxial_block_spacing_v=-1.0f, const std::string &amp;crystal_map_file_name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a6f7073c982ada9c52a2e299d9b177e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor ( a single name)  <a href="#a6f7073c982ada9c52a2e299d9b177e25">More...</a><br /></td></tr>
+<tr class="separator:a6f7073c982ada9c52a2e299d9b177e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a8f45783f2a9edd968cdbef6b4ddcf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf">set_up</a> ()</td></tr>
+<tr class="memdesc:aa3a8f45783f2a9edd968cdbef6b4ddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialised internal geometry.  <a href="#aa3a8f45783f2a9edd968cdbef6b4ddcf">More...</a><br /></td></tr>
+<tr class="separator:aa3a8f45783f2a9edd968cdbef6b4ddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818f5ce3f759845abfa9296f7491de1d"><td class="memItemLeft" align="right" valign="top"><a id="a818f5ce3f759845abfa9296f7491de1d"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info</a> () const</td></tr>
 <tr class="memdesc:a818f5ce3f759845abfa9296f7491de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner parameters as a std::string <br /></td></tr>
@@ -171,6 +177,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_axial_singles_unit
 <tr class="memitem:a7610f4625afbf6d6cb73a55a1881586e"><td class="memItemLeft" align="right" valign="top"><a id="a7610f4625afbf6d6cb73a55a1881586e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_transaxial_singles_unit</b> (int singles_bin_index) const</td></tr>
 <tr class="separator:a7610f4625afbf6d6cb73a55a1881586e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf05437cd8dbf51737f76d0e60bed1dd"><td class="memItemLeft" align="right" valign="top"><a id="aaf05437cd8dbf51737f76d0e60bed1dd"></a>
+<a class="el" href="classstir_1_1DetectionPosition.html">stir::DetectionPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aaf05437cd8dbf51737f76d0e60bed1dd">get_det_pos_for_index</a> (const <a class="el" href="classstir_1_1DetectionPosition.html">stir::DetectionPosition</a>&lt;&gt; &amp;det_pos) const</td></tr>
+<tr class="memdesc:aaf05437cd8dbf51737f76d0e60bed1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the STIR detection position (det#, ring#, layer#) given the detection position id in the input crystal map. <br /></td></tr>
+<tr class="separator:aaf05437cd8dbf51737f76d0e60bed1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341cf3927fd7be657cba4bd4755341bb"><td class="memItemLeft" align="right" valign="top"><a id="a341cf3927fd7be657cba4bd4755341bb"></a>
+<a class="el" href="classstir_1_1CartesianCoordinate3D.html">stir::CartesianCoordinate3D</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a341cf3927fd7be657cba4bd4755341bb">get_coordinate_for_det_pos</a> (const <a class="el" href="classstir_1_1DetectionPosition.html">stir::DetectionPosition</a>&lt;&gt; &amp;det_pos) const</td></tr>
+<tr class="memdesc:a341cf3927fd7be657cba4bd4755341bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Cartesian coordinates (x,y,z) given the STIR detection position (det#, ring#, layer#) <br /></td></tr>
+<tr class="separator:a341cf3927fd7be657cba4bd4755341bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af893e347f158e5221b96a8c84002f5e4"><td class="memItemLeft" align="right" valign="top"><a id="af893e347f158e5221b96a8c84002f5e4"></a>
+<a class="el" href="classstir_1_1CartesianCoordinate3D.html">stir::CartesianCoordinate3D</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#af893e347f158e5221b96a8c84002f5e4">get_coordinate_for_index</a> (const <a class="el" href="classstir_1_1DetectionPosition.html">stir::DetectionPosition</a>&lt;&gt; &amp;det_pos) const</td></tr>
+<tr class="memdesc:af893e347f158e5221b96a8c84002f5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Cartesian coordinates (x,y,z) given the detection position id in the input crystal map. <br /></td></tr>
+<tr class="separator:af893e347f158e5221b96a8c84002f5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afba9fe4df732445ebfb357d55af69a"><td class="memItemLeft" align="right" valign="top"><a id="a3afba9fe4df732445ebfb357d55af69a"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a3afba9fe4df732445ebfb357d55af69a">find_detection_position_given_cartesian_coordinate</a> (<a class="el" href="classstir_1_1DetectionPosition.html">DetectionPosition</a>&lt;&gt; &amp;det_pos, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;cart_coord) const</td></tr>
+<tr class="memdesc:a3afba9fe4df732445ebfb357d55af69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find detection position at a coordinate. <br /></td></tr>
+<tr class="separator:a3afba9fe4df732445ebfb357d55af69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406cf1a69b36ed86f0779d1f73cc5a69"><td class="memItemLeft" align="right" valign="top"><a id="a406cf1a69b36ed86f0779d1f73cc5a69"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1DetectorCoordinateMap.html">DetectorCoordinateMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_detector_map_sptr</b> () const</td></tr>
+<tr class="separator:a406cf1a69b36ed86f0779d1f73cc5a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions returning geometrical info</div></td></tr>
 <tr class="memitem:aa8f604e2efd17d51fc7e4c672893f242"><td class="memItemLeft" align="right" valign="top"><a id="aa8f604e2efd17d51fc7e4c672893f242"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aa8f604e2efd17d51fc7e4c672893f242">get_num_rings</a> () const</td></tr>
@@ -209,9 +234,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a0ead8999a950857bf511eb7bacabbe9e">get_default_bin_size</a> () const</td></tr>
 <tr class="memdesc:a0ead8999a950857bf511eb7bacabbe9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get default arc-corrected bin size <br /></td></tr>
 <tr class="separator:a0ead8999a950857bf511eb7bacabbe9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa371b02399f36703d56e0f18e7e7b3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a6aa371b02399f36703d56e0f18e7e7b3">get_default_intrinsic_tilt</a> () const</td></tr>
-<tr class="memdesc:a6aa371b02399f36703d56e0f18e7e7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get intrinsic tilt in raw sinogram data (in radians)  <a href="#a6aa371b02399f36703d56e0f18e7e7b3">More...</a><br /></td></tr>
-<tr class="separator:a6aa371b02399f36703d56e0f18e7e7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea7e93345d5e46d2ddeebc9a8e1af34"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a3ea7e93345d5e46d2ddeebc9a8e1af34">get_intrinsic_azimuthal_tilt</a> () const</td></tr>
+<tr class="memdesc:a3ea7e93345d5e46d2ddeebc9a8e1af34"><td class="mdescLeft">&#160;</td><td class="mdescRight">get intrinsic tilt in raw sinogram data (in radians)  <a href="#a3ea7e93345d5e46d2ddeebc9a8e1af34">More...</a><br /></td></tr>
+<tr class="separator:a3ea7e93345d5e46d2ddeebc9a8e1af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Info on crystals per block etc.</div></td></tr>
 <tr class="memitem:ac4c9be8c075ff4e7c0331aa8e9d6f4d2"><td class="memItemLeft" align="right" valign="top"><a id="ac4c9be8c075ff4e7c0331aa8e9d6f4d2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ac4c9be8c075ff4e7c0331aa8e9d6f4d2">get_num_transaxial_blocks_per_bucket</a> () const</td></tr>
@@ -304,11 +329,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a5c46537b3b25b282c1759f92177f0447">set_num_transaxial_crystals_per_singles_unit</a> (const int &amp;new_num)</td></tr>
 <tr class="memdesc:a5c46537b3b25b282c1759f92177f0447"><td class="mdescLeft">&#160;</td><td class="mdescRight">set number of transaxial crystals per singles unit <br /></td></tr>
 <tr class="separator:a5c46537b3b25b282c1759f92177f0447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d03d14d65fd6ff3e2c4b8c23788110"><td class="memItemLeft" align="right" valign="top"><a id="a30d03d14d65fd6ff3e2c4b8c23788110"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a30d03d14d65fd6ff3e2c4b8c23788110">set_scanner_orientation</a> (const std::string &amp;new_scanner_orientation)</td></tr>
+<tr class="memdesc:a30d03d14d65fd6ff3e2c4b8c23788110"><td class="mdescLeft">&#160;</td><td class="mdescRight">name functions to set block geometry info set scanner orientation <br /></td></tr>
+<tr class="separator:a30d03d14d65fd6ff3e2c4b8c23788110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7517bd49b68b0e2cd36d3c5d9629d14c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c">set_scanner_geometry</a> (const std::string &amp;new_scanner_geometry)</td></tr>
+<tr class="memdesc:a7517bd49b68b0e2cd36d3c5d9629d14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set scanner geometry  <a href="#a7517bd49b68b0e2cd36d3c5d9629d14c">More...</a><br /></td></tr>
+<tr class="separator:a7517bd49b68b0e2cd36d3c5d9629d14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb99eaeb647258c512f3e52ff73380db"><td class="memItemLeft" align="right" valign="top"><a id="adb99eaeb647258c512f3e52ff73380db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#adb99eaeb647258c512f3e52ff73380db">set_axial_crystal_spacing</a> (const float &amp;new_spacing)</td></tr>
+<tr class="memdesc:adb99eaeb647258c512f3e52ff73380db"><td class="mdescLeft">&#160;</td><td class="mdescRight">set crystal spacing in axial direction <br /></td></tr>
+<tr class="separator:adb99eaeb647258c512f3e52ff73380db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504a26f222f0556a16ca66cef572a729"><td class="memItemLeft" align="right" valign="top"><a id="a504a26f222f0556a16ca66cef572a729"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a504a26f222f0556a16ca66cef572a729">set_transaxial_crystal_spacing</a> (const float &amp;new_spacing)</td></tr>
+<tr class="memdesc:a504a26f222f0556a16ca66cef572a729"><td class="mdescLeft">&#160;</td><td class="mdescRight">set crystal spacing in transaxial direction <br /></td></tr>
+<tr class="separator:a504a26f222f0556a16ca66cef572a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d6953003115ff273c55591e3bf1e1e"><td class="memItemLeft" align="right" valign="top"><a id="ac7d6953003115ff273c55591e3bf1e1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ac7d6953003115ff273c55591e3bf1e1e">set_axial_block_spacing</a> (const float &amp;new_spacing)</td></tr>
+<tr class="memdesc:ac7d6953003115ff273c55591e3bf1e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set block spacing in axial direction <br /></td></tr>
+<tr class="separator:ac7d6953003115ff273c55591e3bf1e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9886380260bd06cb4c3344b06d331ebd"><td class="memItemLeft" align="right" valign="top"><a id="a9886380260bd06cb4c3344b06d331ebd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a9886380260bd06cb4c3344b06d331ebd">set_transaxial_block_spacing</a> (const float &amp;new_spacing)</td></tr>
+<tr class="memdesc:a9886380260bd06cb4c3344b06d331ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set block spacing in transaxial direction <br /></td></tr>
+<tr class="separator:a9886380260bd06cb4c3344b06d331ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39234dccc640096bacb6b5463658e80e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a39234dccc640096bacb6b5463658e80e">set_crystal_map_file_name</a> (const std::string &amp;new_crystal_map_file_name)</td></tr>
+<tr class="memdesc:a39234dccc640096bacb6b5463658e80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set crystal map file name for the generic geometry  <a href="#a39234dccc640096bacb6b5463658e80e">More...</a><br /></td></tr>
+<tr class="separator:a39234dccc640096bacb6b5463658e80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">number of "fake" crystals per block, inserted by the scanner</div></td></tr>
 <tr class="memitem:aa52bf602bb4303feeaead04910ba2550"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aa52bf602bb4303feeaead04910ba2550">get_num_virtual_axial_crystals_per_block</a> () const</td></tr>
 <tr class="separator:aa52bf602bb4303feeaead04910ba2550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb91c82d2eab159c9f3688bb468b847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#adcb91c82d2eab159c9f3688bb468b847">get_num_virtual_transaxial_crystals_per_block</a> () const</td></tr>
 <tr class="separator:adcb91c82d2eab159c9f3688bb468b847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91a81adefd851fb9f522c1b679e26ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aa91a81adefd851fb9f522c1b679e26ff">set_num_virtual_axial_crystals_per_block</a> (int)</td></tr>
+<tr class="separator:aa91a81adefd851fb9f522c1b679e26ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5478f0a8f0496bfabde119ff397990a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a5478f0a8f0496bfabde119ff397990a5">set_num_virtual_transaxial_crystals_per_block</a> (int)</td></tr>
+<tr class="separator:a5478f0a8f0496bfabde119ff397990a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">functions to get block geometry info</div></td></tr>
+<tr class="memitem:ac2785a1c8a661a95617b2b77601863b3"><td class="memItemLeft" align="right" valign="top"><a id="ac2785a1c8a661a95617b2b77601863b3"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ac2785a1c8a661a95617b2b77601863b3">get_scanner_orientation</a> () const</td></tr>
+<tr class="memdesc:ac2785a1c8a661a95617b2b77601863b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner orientation <br /></td></tr>
+<tr class="separator:ac2785a1c8a661a95617b2b77601863b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b488e1e4d8a02ab41bbba889350aeb"><td class="memItemLeft" align="right" valign="top"><a id="a70b488e1e4d8a02ab41bbba889350aeb"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a70b488e1e4d8a02ab41bbba889350aeb">get_scanner_geometry</a> () const</td></tr>
+<tr class="memdesc:a70b488e1e4d8a02ab41bbba889350aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner geometry <br /></td></tr>
+<tr class="separator:a70b488e1e4d8a02ab41bbba889350aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaed6cd1900b071dfa0d830c17bd8b4b"><td class="memItemLeft" align="right" valign="top"><a id="aeaed6cd1900b071dfa0d830c17bd8b4b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aeaed6cd1900b071dfa0d830c17bd8b4b">get_axial_crystal_spacing</a> () const</td></tr>
+<tr class="memdesc:aeaed6cd1900b071dfa0d830c17bd8b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get crystal spacing in axial direction <br /></td></tr>
+<tr class="separator:aeaed6cd1900b071dfa0d830c17bd8b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b6fc8e7e6c34975fe1f98ab57e896c"><td class="memItemLeft" align="right" valign="top"><a id="ad1b6fc8e7e6c34975fe1f98ab57e896c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ad1b6fc8e7e6c34975fe1f98ab57e896c">get_transaxial_crystal_spacing</a> () const</td></tr>
+<tr class="memdesc:ad1b6fc8e7e6c34975fe1f98ab57e896c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get crystal spacing in transaxial direction <br /></td></tr>
+<tr class="separator:ad1b6fc8e7e6c34975fe1f98ab57e896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4e05636ea0b2eee8391438c72d61e1"><td class="memItemLeft" align="right" valign="top"><a id="a9e4e05636ea0b2eee8391438c72d61e1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a9e4e05636ea0b2eee8391438c72d61e1">get_axial_block_spacing</a> () const</td></tr>
+<tr class="memdesc:a9e4e05636ea0b2eee8391438c72d61e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get block spacing in axial direction <br /></td></tr>
+<tr class="separator:a9e4e05636ea0b2eee8391438c72d61e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c55d75f51f89e184a7c4f57e94030b"><td class="memItemLeft" align="right" valign="top"><a id="ae2c55d75f51f89e184a7c4f57e94030b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ae2c55d75f51f89e184a7c4f57e94030b">get_transaxial_block_spacing</a> () const</td></tr>
+<tr class="memdesc:ae2c55d75f51f89e184a7c4f57e94030b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get block spacing in transaxial direction <br /></td></tr>
+<tr class="separator:ae2c55d75f51f89e184a7c4f57e94030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">functions to get generic geometry info</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>get crystal map file name </p>
+</div></td></tr>
+<tr class="memitem:ae46b139f02e4569ff9e2d38731e1456f"><td class="memItemLeft" align="right" valign="top"><a id="ae46b139f02e4569ff9e2d38731e1456f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_crystal_map_file_name</b> () const</td></tr>
+<tr class="separator:ae46b139f02e4569ff9e2d38731e1456f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions to get detector responce info</div></td></tr>
 <tr class="memitem:a672d57decc33db7a24e4bac8d9c65d4c"><td class="memItemLeft" align="right" valign="top"><a id="a672d57decc33db7a24e4bac8d9c65d4c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a672d57decc33db7a24e4bac8d9c65d4c">get_energy_resolution</a> () const</td></tr>
@@ -354,10 +440,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a827591aec41f9afcbc1c08e4d0d7d14d">set_default_bin_size</a> (const float &amp;new_size)</td></tr>
 <tr class="memdesc:a827591aec41f9afcbc1c08e4d0d7d14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set default arc-corrected bin size <br /></td></tr>
 <tr class="separator:a827591aec41f9afcbc1c08e4d0d7d14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57b886ed960ca0ee83446da8df46296d"><td class="memItemLeft" align="right" valign="top"><a id="a57b886ed960ca0ee83446da8df46296d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a57b886ed960ca0ee83446da8df46296d">set_default_intrinsic_tilt</a> (const float &amp;new_tilt)</td></tr>
-<tr class="memdesc:a57b886ed960ca0ee83446da8df46296d"><td class="mdescLeft">&#160;</td><td class="mdescRight">in degrees <br /></td></tr>
-<tr class="separator:a57b886ed960ca0ee83446da8df46296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4412398503b328f72e5964c0b59fe1c"><td class="memItemLeft" align="right" valign="top"><a id="ae4412398503b328f72e5964c0b59fe1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ae4412398503b328f72e5964c0b59fe1c">set_intrinsic_azimuthal_tilt</a> (const float new_tilt)</td></tr>
+<tr class="memdesc:ae4412398503b328f72e5964c0b59fe1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">in degrees <br /></td></tr>
+<tr class="separator:ae4412398503b328f72e5964c0b59fe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -370,8 +456,18 @@ static <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><t
 <tr class="separator:abb9123220d0389766fedcebf0c908353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d7bbcfaf9230e09166a9ce02cb7f47"><td class="memItemLeft" align="right" valign="top"><a id="a24d7bbcfaf9230e09166a9ce02cb7f47"></a>
 static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a24d7bbcfaf9230e09166a9ce02cb7f47">list_all_names</a> ()</td></tr>
-<tr class="memdesc:a24d7bbcfaf9230e09166a9ce02cb7f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the list of all names for the particular scanner <br /></td></tr>
+<tr class="memdesc:a24d7bbcfaf9230e09166a9ce02cb7f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a string listing names for all predefined scanners <br /></td></tr>
 <tr class="separator:a24d7bbcfaf9230e09166a9ce02cb7f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d70949056a5e03670e1fca3071b5b40"><td class="memItemLeft" align="right" valign="top"><a id="a3d70949056a5e03670e1fca3071b5b40"></a>
+static std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a3d70949056a5e03670e1fca3071b5b40">get_names_of_predefined_scanners</a> ()</td></tr>
+<tr class="memdesc:a3d70949056a5e03670e1fca3071b5b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list with the names for each predefined scanner <br /></td></tr>
+<tr class="separator:a3d70949056a5e03670e1fca3071b5b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8cbee1736ca02145500af87afb844bfe"><td class="memItemLeft" align="right" valign="top"><a id="a8cbee1736ca02145500af87afb844bfe"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td></tr>
+<tr class="separator:a8cbee1736ca02145500af87afb844bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing some info on the scanner. </p>
@@ -387,13 +483,14 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </ul>
 <p>A further complication is that some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data (corresponding to gaps between detector blocks). We currently define the blocks as the "virtual" ones, but provide extra members to find out how many of these virtual crystals there are.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is only sensible for discrete detector-based scanners. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000165">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
 <p class="enddd">derive from <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a> </p>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
+<pre class="fragment">\warning You have to call set_up() after using the \c set_* functions (except set_params()).
+</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000166">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adda8b1b4d119f8587360d47dbebc4c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adda8b1b4d119f8587360d47dbebc4c80">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
+<a id="ad753e96aa669914a4c917fee9ac9bab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad753e96aa669914a4c917fee9ac9bab5">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +613,49 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>reference_energy_v</em> = <code>-1.0f</code>&#160;</td>
+          <td class="paramname"><em>reference_energy_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>scanner_orientation_v</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>scanner_geometry_v</em> = <code>&quot;Cylindrical&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>axial_crystal_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>transaxial_crystal_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>axial_block_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>transaxial_block_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>crystal_map_file_name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -533,13 +672,13 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a6aa371b02399f36703d56e0f18e7e7b3" title="get intrinsic tilt in raw sinogram data (in radians) ">get_default_intrinsic_tilt()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a3ea7e93345d5e46d2ddeebc9a8e1af34" title="get intrinsic tilt in raw sinogram data (in radians) ">get_intrinsic_azimuthal_tilt()</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when block/bucket info are inconsistent </dd></dl>
 
 </div>
 </div>
-<a id="a969da4dd7e759dda35376d6ebac55d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a969da4dd7e759dda35376d6ebac55d4a">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[2/2]</span></h2>
+<a id="a6f7073c982ada9c52a2e299d9b177e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7073c982ada9c52a2e299d9b177e25">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +801,49 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>reference_energy_v</em> = <code>-1.0f</code>&#160;</td>
+          <td class="paramname"><em>reference_energy_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>scanner_orientation_v</em> = <code>&quot;X&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>scanner_geometry_v</em> = <code>&quot;Cylindrical&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>axial_crystal_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>transaxial_crystal_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>axial_block_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>transaxial_block_spacing_v</em> = <code>-1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>crystal_map_file_name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -679,12 +860,46 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a6aa371b02399f36703d56e0f18e7e7b3" title="get intrinsic tilt in raw sinogram data (in radians) ">get_default_intrinsic_tilt()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a3ea7e93345d5e46d2ddeebc9a8e1af34" title="get intrinsic tilt in raw sinogram data (in radians) ">get_intrinsic_azimuthal_tilt()</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when block/bucket info are inconsistent </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c">set_scanner_geometry()</a>, and <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf">set_up()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa3a8f45783f2a9edd968cdbef6b4ddcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a8f45783f2a9edd968cdbef6b4ddcf">&#9670;&nbsp;</a></span>set_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialised internal geometry. </p>
+<p>Currently called in the set_params() functions, but needs to be called explicitly when afterwards using any of the other <code>set_</code> functions </p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1Scanner.html#aa52bf602bb4303feeaead04910ba2550">get_num_virtual_axial_crystals_per_block()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a6f7073c982ada9c52a2e299d9b177e25">Scanner()</a>.</p>
+
+</div>
+</div>
 <a id="a2dd6bc8b5428e5538c3d36d945bc0fba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dd6bc8b5428e5538c3d36d945bc0fba">&#9670;&nbsp;</a></span>check_consistency()</h2>
 
@@ -702,10 +917,12 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>checks consistency </p>
 <p>Calls <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">warning()</a> with diagnostics when there are problems </p>
+<p>Check consistency of axial and transaxial spacing for block geometry</p>
+<p>Check if the crystal map is correct and given </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1Scanner.html#a9e4e05636ea0b2eee8391438c72d61e1">get_axial_block_spacing()</a>, <a class="el" href="classstir_1_1Scanner.html#aeaed6cd1900b071dfa0d830c17bd8b4b">get_axial_crystal_spacing()</a>, <a class="el" href="classstir_1_1Scanner.html#a77bb4d5db5dad9d4aa53972eaeef9622">get_inner_ring_radius()</a>, <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#a15e170304472fa114f549622b04e5ff9">get_num_axial_blocks()</a>, <a class="el" href="classstir_1_1Scanner.html#a9ec12e2216bc3be9837e7c93689c20ff">get_num_axial_blocks_per_bucket()</a>, <a class="el" href="classstir_1_1Scanner.html#a4025238ed14b4cd0a1a95b7cd7fea953">get_num_axial_buckets()</a>, <a class="el" href="classstir_1_1Scanner.html#ae0df6c71b8b5f7aef6f21de8f7607940">get_num_axial_crystals_per_block()</a>, <a class="el" href="classstir_1_1Scanner.html#a565ec89dfb044155549287640d49b7c9">get_num_axial_crystals_per_bucket()</a>, <a class="el" href="classstir_1_1Scanner.html#a6b19689cf948596bba5e51ae3a63af5a">get_num_axial_crystals_per_singles_unit()</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">get_num_detectors_per_ring()</a>, <a class="el" href="classstir_1_1Scanner.html#aa8f604e2efd17d51fc7e4c672893f242">get_num_rings()</a>, <a class="el" href="classstir_1_1Scanner.html#a79fd8ebcad7813d17cbc6b1f4f2af994">get_num_transaxial_blocks()</a>, <a class="el" href="classstir_1_1Scanner.html#ac4c9be8c075ff4e7c0331aa8e9d6f4d2">get_num_transaxial_blocks_per_bucket()</a>, <a class="el" href="classstir_1_1Scanner.html#a4d9d161b9fbe7d20e3bb989fac61ffae">get_num_transaxial_buckets()</a>, <a class="el" href="classstir_1_1Scanner.html#ab0949d1bf7cf7242d666f0fec6fd5f2b">get_num_transaxial_crystals_per_block()</a>, <a class="el" href="classstir_1_1Scanner.html#a531672b7ae182559e35bd9c68467d8e4">get_num_transaxial_crystals_per_bucket()</a>, <a class="el" href="classstir_1_1Scanner.html#a58b9987c68701f1573550f27d0037a68">get_num_transaxial_crystals_per_singles_unit()</a>, <a class="el" href="classstir_1_1Scanner.html#aa52bf602bb4303feeaead04910ba2550">get_num_virtual_axial_crystals_per_block()</a>, <a class="el" href="classstir_1_1Scanner.html#a70b488e1e4d8a02ab41bbba889350aeb">get_scanner_geometry()</a>, <a class="el" href="classstir_1_1Scanner.html#ae2c55d75f51f89e184a7c4f57e94030b">get_transaxial_block_spacing()</a>, <a class="el" href="classstir_1_1Scanner.html#ad1b6fc8e7e6c34975fe1f98ab57e896c">get_transaxial_crystal_spacing()</a>, <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#afe621ee50581789c9eb0ce0de8f344bc">list_names()</a>, <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>, and <a class="el" href="classstir_1_1Scanner.html#a5478f0a8f0496bfabde119ff397990a5">set_num_virtual_transaxial_crystals_per_block()</a>.</p>
 
 </div>
 </div>
@@ -734,9 +951,9 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>get the maximum number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_num_non_arccorrected_tangential_poss()</code> or so. Even better would be to replace it by a name relating to the number of detectors that are in coincidence with a a single detector in the ring, as that is the physical reason why there is a maximum number anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo:</a></b></dt><dd>change name </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>change name </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>, <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -765,7 +982,9 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 <p>get the default number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_default_num_arccorrected_tangential_poss()</code> or so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000158">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
 </div>
 </div>
@@ -797,8 +1016,8 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<a id="a6aa371b02399f36703d56e0f18e7e7b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aa371b02399f36703d56e0f18e7e7b3">&#9670;&nbsp;</a></span>get_default_intrinsic_tilt()</h2>
+<a id="a3ea7e93345d5e46d2ddeebc9a8e1af34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea7e93345d5e46d2ddeebc9a8e1af34">&#9670;&nbsp;</a></span>get_intrinsic_azimuthal_tilt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -807,7 +1026,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float stir::Scanner::get_default_intrinsic_tilt </td>
+          <td class="memname">float stir::Scanner::get_intrinsic_azimuthal_tilt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -821,8 +1040,9 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 
 <p>get intrinsic tilt in raw sinogram data (in radians) </p>
-<p>Some scanners construct sinograms where the first view does not correspond to the vertical. This angle tells you how much the image will be rotated when this tilt is ignored in the reconstruction algorithm. It uses the same coordinate system as <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000159">Todo:</a></b></dt><dd>we still have to decide if <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a> will take this tilt into account or not. At present, STIR ignores the intrinsic tilt. </dd></dl>
+<p>Some scanners construct sinograms where the first view does not correspond to the vertical. This angle tells you how much the image will be rotated when this tilt is ignored in the reconstruction algorithm. It uses the same coordinate system as <a class="el" href="classstir_1_1ProjDataInfo.html#af184359e9af5f284cc3628e607824d07" title="Get azimuthal angle phi of the normal to the projection plane. ">ProjDataInfo::get_phi()</a>. </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ac88adec6ab17faab1a66b82de310fbdd">stir::ProjDataInfoCylindricalNoArcCorr::parameter_info()</a>, and <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
 </div>
 </div>
@@ -840,8 +1060,13 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data. The other members of the class return the size of the "virtual" block. With these functions you can find its true size.</p>
+<p>Some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data. The other members of the class return the size of the "virtual" block. With these functions you can find its true size (or set it).</p>
+<p>You have to call <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf" title="Initialised internal geometry. ">set_up()</a> after using the <code>set_*</code> functions.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>The current list is bound to be incomplete. would be better to stick it in set_params(). </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#adcb91c82d2eab159c9f3688bb468b847">get_num_virtual_transaxial_crystals_per_block()</a>, and <a class="el" href="classstir_1_1Scanner.html#a151e9ff906ed795438d22bf4c6b0f9eb">get_type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency()</a>, <a class="el" href="classstir_1_1Scanner.html#aa91a81adefd851fb9f522c1b679e26ff">set_num_virtual_axial_crystals_per_block()</a>, and <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf">set_up()</a>.</p>
 
 </div>
 </div>
@@ -860,6 +1085,56 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
       </table>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>The current list is bound to be incomplete. would be better to stick it in set_params(). </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a151e9ff906ed795438d22bf4c6b0f9eb">get_type()</a>, and <a class="el" href="classstir_1_1Scanner.html#aa91a81adefd851fb9f522c1b679e26ff">set_num_virtual_axial_crystals_per_block()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#aa52bf602bb4303feeaead04910ba2550">get_num_virtual_axial_crystals_per_block()</a>, and <a class="el" href="classstir_1_1Scanner.html#a5478f0a8f0496bfabde119ff397990a5">set_num_virtual_transaxial_crystals_per_block()</a>.</p>
+
+</div>
+</div>
+<a id="aa91a81adefd851fb9f522c1b679e26ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91a81adefd851fb9f522c1b679e26ff">&#9670;&nbsp;</a></span>set_num_virtual_axial_crystals_per_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_num_virtual_axial_crystals_per_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Can currently only set to hard-wired values. Otherwise calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1Scanner.html#aa52bf602bb4303feeaead04910ba2550">get_num_virtual_axial_crystals_per_block()</a>, and <a class="el" href="classstir_1_1Scanner.html#a5478f0a8f0496bfabde119ff397990a5">set_num_virtual_transaxial_crystals_per_block()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#adcb91c82d2eab159c9f3688bb468b847">get_num_virtual_transaxial_crystals_per_block()</a>.</p>
+
+</div>
+</div>
+<a id="a5478f0a8f0496bfabde119ff397990a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5478f0a8f0496bfabde119ff397990a5">&#9670;&nbsp;</a></span>set_num_virtual_transaxial_crystals_per_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_num_virtual_transaxial_crystals_per_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Can currently only set to hard-wired values. Otherwise calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1Scanner.html#adcb91c82d2eab159c9f3688bb468b847">get_num_virtual_transaxial_crystals_per_block()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#aa91a81adefd851fb9f522c1b679e26ff">set_num_virtual_axial_crystals_per_block()</a>.</p>
 
 </div>
 </div>
@@ -888,7 +1163,62 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 
 <p>set scanner type </p>
-<p>Be careful to keep consistency by setting all relevant parameters </p>
+<p>Be careful to keep consistency by setting all relevant parameters.</p>
+<p>You have to call <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf" title="Initialised internal geometry. ">set_up()</a> after using any of these. </p>
+
+</div>
+</div>
+<a id="a7517bd49b68b0e2cd36d3c5d9629d14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7517bd49b68b0e2cd36d3c5d9629d14c">&#9670;&nbsp;</a></span>set_scanner_geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_scanner_geometry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>new_scanner_geometry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set scanner geometry </p>
+<p>Will also read the detector map from file if the geometry is <code>Generic</code> </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#afe621ee50581789c9eb0ce0de8f344bc">list_names()</a>, and <a class="el" href="classstir_1_1Scanner.html#a6f7073c982ada9c52a2e299d9b177e25">Scanner()</a>.</p>
+
+</div>
+</div>
+<a id="a39234dccc640096bacb6b5463658e80e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39234dccc640096bacb6b5463658e80e">&#9670;&nbsp;</a></span>set_crystal_map_file_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_crystal_map_file_name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>new_crystal_map_file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set crystal map file name for the generic geometry </p>
+<dl class="section warning"><dt>Warning</dt><dd>, data is not read yet. use <a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="set scanner geometry ">set_scanner_geometry()</a> after calling this function </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#afe621ee50581789c9eb0ce0de8f344bc">list_names()</a>.</p>
 
 </div>
 </div>
@@ -900,7 +1230,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

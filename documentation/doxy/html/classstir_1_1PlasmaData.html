@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for storing plasma samples of a single study.  
+<p>A class for storing plasma and blood samples of a single study.  
  <a href="classstir_1_1PlasmaData.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="PlasmaData_8h_source.html">stir/modelling/PlasmaData.h</a>&quot;</code></p>
@@ -64,7 +64,7 @@ typedef plot_type::const_iterator&#160;</td><td class="memItemRight" valign="bot
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb6c0e8a2d4515dbca7c07f363c28d52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#adb6c0e8a2d4515dbca7c07f363c28d52">PlasmaData</a> (const std::vector&lt; PlasmaSample &gt; &amp;plasma_blood_plot)</td></tr>
+<tr class="memitem:adb6c0e8a2d4515dbca7c07f363c28d52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#adb6c0e8a2d4515dbca7c07f363c28d52">PlasmaData</a> (const std::vector&lt; <a class="el" href="classstir_1_1PlasmaSample.html">PlasmaSample</a> &gt; &amp;plasma_blood_plot)</td></tr>
 <tr class="memdesc:adb6c0e8a2d4515dbca7c07f363c28d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor giving a vector  <a href="#adb6c0e8a2d4515dbca7c07f363c28d52">More...</a><br /></td></tr>
 <tr class="separator:adb6c0e8a2d4515dbca7c07f363c28d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eae45c245d84a8f86f124e9d74d57dc"><td class="memItemLeft" align="right" valign="top"><a id="a2eae45c245d84a8f86f124e9d74d57dc"></a>
@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab59b0c0e5b479da933e9d734b44877d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation to read the input function from ONLY a 3-columns data file (Time-InputFunctionRadioactivity-WholeBloodRadioactivity).  <a href="#ab59b0c0e5b479da933e9d734b44877d1">More...</a><br /></td></tr>
 <tr class="separator:ab59b0c0e5b479da933e9d734b44877d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ca86e565684c970e6099e141198429"><td class="memItemLeft" align="right" valign="top"><a id="ab1ca86e565684c970e6099e141198429"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#ab1ca86e565684c970e6099e141198429">set_plot</a> (const std::vector&lt; PlasmaSample &gt; &amp;plasma_blood_plot)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#ab1ca86e565684c970e6099e141198429">set_plot</a> (const std::vector&lt; <a class="el" href="classstir_1_1PlasmaSample.html">PlasmaSample</a> &gt; &amp;plasma_blood_plot)</td></tr>
 <tr class="memdesc:ab1ca86e565684c970e6099e141198429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the plasma_blood_plot. <br /></td></tr>
 <tr class="separator:ab1ca86e565684c970e6099e141198429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96be0f19043f9c2bd94a13788942e5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1PlasmaData.html">PlasmaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#a96be0f19043f9c2bd94a13788942e5c2">get_sample_data_in_frames</a> (<a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> time_frame_def)</td></tr>
@@ -95,9 +95,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#a3e23cbf15c23f020fa61c0c70886293d">get_time_shift</a> ()</td></tr>
 <tr class="memdesc:a3e23cbf15c23f020fa61c0c70886293d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the time shift. <br /></td></tr>
 <tr class="separator:a3e23cbf15c23f020fa61c0c70886293d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58c30599bfa0b135d025bd9b12a88e9"><td class="memItemLeft" align="right" valign="top"><a id="ab58c30599bfa0b135d025bd9b12a88e9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_if_decay_corrected</b> () const</td></tr>
-<tr class="separator:ab58c30599bfa0b135d025bd9b12a88e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14148bc76dcf11267b7bef38c8724195"><td class="memItemLeft" align="right" valign="top"><a id="a14148bc76dcf11267b7bef38c8724195"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_is_decay_corrected</b> () const</td></tr>
+<tr class="separator:a14148bc76dcf11267b7bef38c8724195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20da79b33d41426e9f00324c6e2ec143"><td class="memItemLeft" align="right" valign="top"><a id="a20da79b33d41426e9f00324c6e2ec143"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#a20da79b33d41426e9f00324c6e2ec143">get_isotope_halflife</a> () const</td></tr>
 <tr class="memdesc:a20da79b33d41426e9f00324c6e2ec143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the isotope halflife. <br /></td></tr>
@@ -108,9 +108,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td colspan="2"><div class="groupHeader">Functions to set parameters</div></td></tr>
 <tr class="memitem:a27cae281f8f7117154a01cd7bd9f70f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#a27cae281f8f7117154a01cd7bd9f70f8">set_time_frame_definitions</a> (const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;plasma_fdef)</td></tr>
 <tr class="separator:a27cae281f8f7117154a01cd7bd9f70f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac62389f9c184e24da4cc4aa1b8eda605"><td class="memItemLeft" align="right" valign="top"><a id="ac62389f9c184e24da4cc4aa1b8eda605"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_if_decay_corrected</b> (const bool is_decay_corrected)</td></tr>
-<tr class="separator:ac62389f9c184e24da4cc4aa1b8eda605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3b3ec07377b9d5db3639007a400951"><td class="memItemLeft" align="right" valign="top"><a id="a3a3b3ec07377b9d5db3639007a400951"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_is_decay_corrected</b> (const bool is_decay_corrected)</td></tr>
+<tr class="separator:a3a3b3ec07377b9d5db3639007a400951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac768ddb9227af432b223929868511bc9"><td class="memItemLeft" align="right" valign="top"><a id="ac768ddb9227af432b223929868511bc9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PlasmaData.html#ac768ddb9227af432b223929868511bc9">set_isotope_halflife</a> (const double isotope_halflife)</td></tr>
 <tr class="memdesc:ac768ddb9227af432b223929868511bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the isotope halflife. <br /></td></tr>
@@ -132,7 +132,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
 <tr class="separator:af3312bc0285b56fe133d0d1fba21bd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for storing plasma samples of a single study. </p>
+<div class="textblock"><p>A class for storing plasma and blood samples of a single study. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1PlasmaSample.html">PlasmaSample</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb6c0e8a2d4515dbca7c07f363c28d52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6c0e8a2d4515dbca7c07f363c28d52">&#9670;&nbsp;</a></span>PlasmaData()</h2>
@@ -146,7 +147,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
         <tr>
           <td class="memname">stir::PlasmaData::PlasmaData </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; PlasmaSample &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classstir_1_1PlasmaSample.html">PlasmaSample</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>plasma_blood_plot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -159,7 +160,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
 </div><div class="memdoc">
 
 <p>constructor giving a vector </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd>Better to use iterators </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>Better to use iterators </dd></dl>
 
 </div>
 </div>
@@ -217,7 +218,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
 </div><div class="memdoc">
 
 <p>Implementation to read the input function from ONLY a 3-columns data file (Time-InputFunctionRadioactivity-WholeBloodRadioactivity). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000090">Todo:</a></b></dt><dd>Implementation to set the input units. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>Implementation to set the input units. </dd></dl>
 <p>Implementation to read the input function from ONLY a 3-columns data file (Time-InputFunctionRadioactivity-TotalBloodRadioactivity). </p><dl class="section warning"><dt>Warning</dt><dd>Assumes that the input function is not corrected for decay. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
@@ -252,7 +253,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
 
 <p>Sorts the plasma_data into frames. </p>
 <p>Sorts the plasma_data into frames </p><dl class="section warning"><dt>Warning</dt><dd>It corrects for decay if the data are not decay corrected. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classstir_1_1PlasmaData.html" title="A class for storing plasma samples of a single study. ">PlasmaData</a> are in start-end frames time mode. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classstir_1_1PlasmaData.html" title="A class for storing plasma and blood samples of a single study. ">PlasmaData</a> are in start-end frames time mode. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1TimeFrameDefinitions.html#ae49e7dfcaf3fab582477a181ed8ba58b">stir::TimeFrameDefinitions::get_num_frames()</a>, <a class="el" href="group__numerics.html#gae4be7a4f83838ee58c1b9b6b01f10f0c">stir::integrate_discrete_function()</a>, <a class="el" href="classstir_1_1PlasmaData.html#ac768ddb9227af432b223929868511bc9">set_isotope_halflife()</a>, <a class="el" href="classstir_1_1PlasmaData.html#a27cae281f8f7117154a01cd7bd9f70f8">set_time_frame_definitions()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -297,7 +298,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

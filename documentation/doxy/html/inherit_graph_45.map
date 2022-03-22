@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1DynamicProjData.html" title="Dynamic projection data. " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node1" href="$structstir_1_1detail_1_1is__not__1d.html" title="a class used to signify it&#39;s not a 1D array " alt="" coords="5,13,164,39"/>
+<area shape="rect" id="node2" href="$structstir_1_1detail_1_1test__if__1d.html" title="a templated class used to check if it&#39;s a 1D array or not This class only exists to allow a work&#45;arou..." alt="" coords="212,5,416,47"/>
 </map>

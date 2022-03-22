@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -374,7 +374,7 @@ template&lt;typename TargetT&gt; </div>
 
 <p>operations prior to the reconstruction </p>
 <p>Will do various consistency checks and return Succeeded::no if something is wrong.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>Currently, <a class="el" href="classstir_1_1Reconstruction.html#a595decb0763564b00a9f4b91ac4ac000" title="operations prior to the reconstruction ">set_up()</a> is called by <a class="el" href="classstir_1_1Reconstruction.html#a3a21f515d15e20c4281e3643aa170472" title="executes the reconstruction ">reconstruct()</a>. This is in contrast with some other class hierarchies in STIR where <a class="el" href="classstir_1_1Reconstruction.html#a595decb0763564b00a9f4b91ac4ac000" title="operations prior to the reconstruction ">set_up()</a> has to be called before any actual processing. Maybe this should be made consistent. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo:</a></b></dt><dd>Currently, <a class="el" href="classstir_1_1Reconstruction.html#a595decb0763564b00a9f4b91ac4ac000" title="operations prior to the reconstruction ">set_up()</a> is called by <a class="el" href="classstir_1_1Reconstruction.html#a3a21f515d15e20c4281e3643aa170472" title="executes the reconstruction ">reconstruct()</a>. This is in contrast with some other class hierarchies in STIR where <a class="el" href="classstir_1_1Reconstruction.html#a595decb0763564b00a9f4b91ac4ac000" title="operations prior to the reconstruction ">set_up()</a> has to be called before any actual processing. Maybe this should be made consistent. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1IterativeReconstruction.html#a2747755ff1a8808c69eb7b9eef6b6017">stir::IterativeReconstruction&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a04d0a94edb98ddf9090f839c628d340d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1OSSPSReconstruction.html#a0197031bd4d82d98711796081323a2b9">stir::OSSPSReconstruction&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1FBP2DReconstruction.html#a9fcbf97ea116b86c46f7ca6f6a51c711">stir::FBP2DReconstruction</a>, and <a class="el" href="classstir_1_1FBP3DRPReconstruction.html#a9e491b60149eaeffdb6f00fe3f85c772">stir::FBP3DRPReconstruction</a>.</p>
 
@@ -555,7 +555,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p>This function initialises all parameters, either via parsing, or by calling ask_parameters() (when parameter_filename is the empty string). </p>
 <p>It should be called in the constructor of the last class in the hierarchy. At that time, all Interfile keys will have been initialised, and ask_parameters() will be the appropriate virtual function, such that questions are asked for all parameters.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd>It currently calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when something goes wrong. It should return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> (or throw an exception). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000154">Todo:</a></b></dt><dd>It currently calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when something goes wrong. It should return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> (or throw an exception). </dd></dl>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ template&lt;typename TargetT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -85,10 +85,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">compute_gradient</a> (DataT &amp;prior_gradient, const DataT &amp;current_estimate)</td></tr>
 <tr class="memdesc:a9615269cdf383e712d28034ef9f07636"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient by applying the filter <br /></td></tr>
 <tr class="separator:a9615269cdf383e712d28034ef9f07636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f9419f5628fe8c63c8da24cd6b1381"><td class="memItemLeft" align="right" valign="top"><a id="ad9f9419f5628fe8c63c8da24cd6b1381"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ad9f9419f5628fe8c63c8da24cd6b1381">set_up</a> (shared_ptr&lt; DataT &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:ad9f9419f5628fe8c63c8da24cd6b1381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:ad9f9419f5628fe8c63c8da24cd6b1381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69782a3b5470cc70df65960c406f3c79"><td class="memItemLeft" align="right" valign="top"><a id="a69782a3b5470cc70df65960c406f3c79"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a69782a3b5470cc70df65960c406f3c79">set_up</a> (shared_ptr&lt; const DataT &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a69782a3b5470cc70df65960c406f3c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a69782a3b5470cc70df65960c406f3c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; FilterRootPrior&lt; DataT &gt;, GeneralisedPrior&lt; DataT &gt;, GeneralisedPrior&lt; DataT &gt; &gt;</a></td></tr>
 <tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
@@ -102,16 +102,19 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#ad46b519fe2250ee5a440c1a36d29b086">add_multiplication_with_approximate_Hessian</a> (DataT &amp;output, const DataT &amp;input) const</td></tr>
 <tr class="memdesc:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#ad46b519fe2250ee5a440c1a36d29b086">More...</a><br /></td></tr>
 <tr class="separator:ad46b519fe2250ee5a440c1a36d29b086 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">accumulate_Hessian_times_input</a> (DataT &amp;output, const DataT &amp;current_estimate, const DataT &amp;input) const</td></tr>
+<tr class="memdesc:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#a033f9a4717122e2e4886626eaaa5b6f7">More...</a><br /></td></tr>
+<tr class="separator:a033f9a4717122e2e4886626eaaa5b6f7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a8c16dbc788bf565da852f94106fd9d6e"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a8c16dbc788bf565da852f94106fd9d6e">set_up</a> (shared_ptr&lt; DataT &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a8c16dbc788bf565da852f94106fd9d6e inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const DataT &gt; const &amp;target_sptr)</td></tr>
+<tr class="memdesc:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -283,7 +286,7 @@ template&lt;typename DataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

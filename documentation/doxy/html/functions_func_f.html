@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -60,11 +60,12 @@ $(function() {
 : <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1BasicCoordinate.html#aab9bea857d387d3cf99ada9034b840ec">stir::BasicCoordinate&lt; num_dimensions, coordT &gt;</a>
 , <a class="el" href="classstir_1_1ProjData.html#a93e155fb1cae1f57eb6e4c02e92ec9b8">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#ad01761d127a7ae2db4314fc47d5c1cee">stir::ProjDataInMemory</a>
 , <a class="el" href="classstir_1_1RelatedViewgrams.html#a34380e361b5e4d927d163c07221a98bd">stir::RelatedViewgrams&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1VectorWithOffset.html#ac3cbbc39532fa95ee7121cb251ab43d0">stir::VectorWithOffset&lt; T &gt;</a>
 </li>
 <li>fill_from()
-: <a class="el" href="classstir_1_1ProjData.html#a75d6666e8400a3e0abd556924448ec0f">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a56b471a9a5444933dc0322683ba938c5">stir::ProjData</a>
 </li>
 <li>fill_nonidentifiable_target_parameters()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#abe5bfcded32b6d3339b5bb1be1995c75">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
@@ -88,8 +89,15 @@ $(function() {
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#a38c4a7baf1a3bb1b9dead965eea5d040">stir::TrivialDataSymmetriesForBins</a>
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForViewSegmentNumbers.html#a5c3eee601486878997303d81b6778f85">stir::TrivialDataSymmetriesForViewSegmentNumbers</a>
 </li>
+<li>find_cartesian_coordinates_of_detection()
+: <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a6d15cf31011bc919c349d9deeaaf9fd4">stir::ProjDataInfoGenericNoArcCorr</a>
+</li>
 <li>find_closest_transformation()
 : <a class="el" href="classstir_1_1RigidObject3DTransformation.html#ae50cebd519cbea6fe9587d0de02cc893">stir::RigidObject3DTransformation</a>
+</li>
+<li>find_detection_position_given_cartesian_coordinate()
+: <a class="el" href="classstir_1_1DetectorCoordinateMap.html#ac7f7f58ce8098f0fa57bb4368e00118c">stir::DetectorCoordinateMap</a>
+, <a class="el" href="classstir_1_1Scanner.html#a3afba9fe4df732445ebfb357d55af69a">stir::Scanner</a>
 </li>
 <li>find_factory()
 : <a class="el" href="classstir_1_1FactoryRegistry.html#a7849a282e10819208073c82f4cc11b73">stir::FactoryRegistry&lt; Key, Factory, Compare &gt;</a>
@@ -109,7 +117,8 @@ $(function() {
 , <a class="el" href="classstir_1_1RelatedViewgrams.html#aa66d767be61652640cc384618ce97102">stir::RelatedViewgrams&lt; elemT &gt;</a>
 </li>
 <li>find_scanner_coordinates_given_cartesian_coordinates()
-: <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a813520639619ebff7b479d275800109e">stir::ProjDataInfoCylindricalNoArcCorr</a>
+: <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html#a8e3163f397c4309e9f30ef4682b17b6e">stir::ProjDataInfoBlocksOnCylindricalNoArcCorr</a>
+, <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a813520639619ebff7b479d275800109e">stir::ProjDataInfoCylindricalNoArcCorr</a>
 </li>
 <li>find_symmetry_operation_from_basic_bin()
 : <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af1bcd775c3c8e53e96f03ee59d4eb929">stir::DataSymmetriesForBins</a>
@@ -125,9 +134,9 @@ $(function() {
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#a4fe161d07acd5c8c63b7f01fe82008bd">stir::TrivialDataSymmetriesForBins</a>
 </li>
 <li>forward_project()
-: <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin</a>
+: <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a8290d322f4fbad9c81b4fcd0c8395661">stir::ForwardProjectorByBin</a>
 , <a class="el" href="classstir_1_1NiftyPETHelper.html#abd0212e4039a75dd6756b766ccf69ced">stir::NiftyPETHelper</a>
-, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#adf0468c7f1ba0b51043af7146c1b59d7">stir::ProjMatrixElemsForOneBin</a>
+, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a4a7aa941d72c83605ead4fbdc7f2830d">stir::ProjMatrixElemsForOneBin</a>
 </li>
 <li>ForwardProjectorByBin()
 : <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a169152cc413089ea2bc07d5e76a3bc64">stir::ForwardProjectorByBin</a>
@@ -135,8 +144,11 @@ $(function() {
 <li>ForwardProjectorByBinNiftyPET()
 : <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#ae65be840e57ce6453df54bd38afedb9b">stir::ForwardProjectorByBinNiftyPET</a>
 </li>
+<li>ForwardProjectorByBinParallelproj()
+: <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a57728afb2c268bac2acc6aa7512c7400">stir::ForwardProjectorByBinParallelproj</a>
+</li>
 <li>ForwardProjectorByBinUsingRayTracing()
-: <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a8198ff3c38548b0241740456bf5fc13e">stir::ForwardProjectorByBinUsingRayTracing</a>
+: <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a95c1af4a2ebf5bced1039480b63a8c59">stir::ForwardProjectorByBinUsingRayTracing</a>
 </li>
 <li>FourierRebinning()
 : <a class="el" href="classstir_1_1FourierRebinning.html#a99e27a26817985c87ee48eb7c8feb492">stir::FourierRebinning</a>
@@ -145,13 +157,13 @@ $(function() {
 : <a class="el" href="classstir_1_1FrameSinglesRates.html#adab4345311b1497915f5ae82a206dcbe">stir::FrameSinglesRates</a>
 </li>
 <li>FullArrayIterator()
-: <a class="el" href="classstir_1_1FullArrayIterator.html#a6417d94fd5555322aaa6cae0bcdb3208">stir::FullArrayIterator&lt; topleveliterT, restiterT, elemT, _Ref, _Ptr &gt;</a>
+: <a class="el" href="classstir_1_1FullArrayIterator.html#a26ebfa7509d4043aa85b1521406c689b">stir::FullArrayIterator&lt; topleveliterT, restiterT, elemT, _Ref, _Ptr &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:33 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:30 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -201,9 +201,9 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <div class="textblock"><p>The base class for all 3 dimensional shapes. </p>
 <p><a class="el" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. ">Shape3D</a> objects are intended to represent geometrical object with sharp boundaries. So, a point is inside or shape, or it is not (i.e. no fuzzyness).</p>
 <p>The only derived class where this is relaxed is <a class="el" href="classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. ">DiscretisedShape3D</a>. However, this then needs some special treatment for some member functions, and you have to be somewhat careful with that class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>This could/should be generalised to allow general fuzzy shapes. Probably the only thing to change is to let <a class="el" href="classstir_1_1Shape3D.html#aa7327f75ae28f41ed8b7305bc2ea65d6" title="determine if a point is inside the shape or not (up to floating point errors) ">is_inside_shape()</a> return a float (between 0 and 1). This would solve some issues with DiscretisedDhape3D.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo:</a></b></dt><dd>The restriction to the 3D case for this base class largely comes from the <a class="el" href="classstir_1_1Shape3D.html#ac1853acdcef8475e61fb3a93e35765b3" title="construct an image representation the shape in a discretised manner ">construct_volume()</a> member (and the origin parsing members)</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000169">Todo:</a></b></dt><dd>This base class really should have no origin member. For example, <a class="el" href="classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. ">DiscretisedShape3D</a> now has effectively two. Instead, we should have an additional class Shape3DWithOrigin. Easy to do.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000176">Todo:</a></b></dt><dd>This could/should be generalised to allow general fuzzy shapes. Probably the only thing to change is to let <a class="el" href="classstir_1_1Shape3D.html#aa7327f75ae28f41ed8b7305bc2ea65d6" title="determine if a point is inside the shape or not (up to floating point errors) ">is_inside_shape()</a> return a float (between 0 and 1). This would solve some issues with DiscretisedDhape3D.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000177">Todo:</a></b></dt><dd>The restriction to the 3D case for this base class largely comes from the <a class="el" href="classstir_1_1Shape3D.html#ac1853acdcef8475e61fb3a93e35765b3" title="construct an image representation the shape in a discretised manner ">construct_volume()</a> member (and the origin parsing members)</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000178">Todo:</a></b></dt><dd>This base class really should have no origin member. For example, <a class="el" href="classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. ">DiscretisedShape3D</a> now has effectively two. Instead, we should have an additional class Shape3DWithOrigin. Easy to do.</dd></dl>
 <dl class="section user"><dt>Parsing</dt><dd>This base class defines the following keywords for parsing <pre class="fragment">; specify origin as {z,y,x}
 origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 </pre> </dd></dl>
@@ -330,7 +330,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
   </dd>
 </dl>
 <p>This is really only well defined for shapes with sharp boundaries. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1DiscretisedShape3D.html#a4a70cbb33ebd77b628131de3ed41e956" title="determine if a point is inside a non-zero voxel or not ">DiscretisedShape3D::is_inside_shape</a> for some discussion. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo:</a></b></dt><dd>replace by floating point return value? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000179">Todo:</a></b></dt><dd>replace by floating point return value? </dd></dl>
 
 <p>Implemented in <a class="el" href="classstir_1_1EllipsoidalCylinder.html#affc4e0c4c747547646cf4a4b00fb7a6e">stir::EllipsoidalCylinder</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#a4a70cbb33ebd77b628131de3ed41e956">stir::DiscretisedShape3D</a>, <a class="el" href="classstir_1_1Box3D.html#a8a9d697c36e3c851722db1f01380d8ea">stir::Box3D</a>, <a class="el" href="classstir_1_1Ellipsoid.html#ac0825338f0a979f21ce42ab595e7e2d9">stir::Ellipsoid</a>, and <a class="el" href="classstir_1_1CombinedShape3D.html#a9e52c10dbe1df5d8daf57689fe473dc9">stir::CombinedShape3D&lt; operation &gt;</a>.</p>
 
@@ -364,7 +364,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 <p>Uses <a class="el" href="classstir_1_1Shape3D.html#ade5cbb236ce1a04f68f1804b1997d982" title="set the origin of the shape-coordinate system ">set_origin()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Shape3D.html#a9e153d6b2ed85617c5b305e70e6c5359" title="scale the whole shape ">scale()</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1DiscretisedShape3D.html#aabc290183989260b46a29af5782866a5">stir::DiscretisedShape3D</a>, and <a class="el" href="classstir_1_1CombinedShape3D.html#a9065b0058abf9e437ba6363427c034df">stir::CombinedShape3D&lt; operation &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1CombinedShape3D.html#a9065b0058abf9e437ba6363427c034df">stir::CombinedShape3D&lt; operation &gt;</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Shape3D.html#a475167a8307f559880b088006b51e8fd">scale_around_origin()</a>.</p>
 
@@ -438,7 +438,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 
 <p>construct an image representation the shape in a discretised manner </p>
 <p>In principle, each voxel is sub-sampled to allow smoother edges. </p><dl class="section warning"><dt>Warning</dt><dd>Shapes have to be larger than the voxel size for sensible results. For efficiency reasons, the current implementation of this function does a first pass through the image where <a class="el" href="classstir_1_1Shape3D.html#aa7327f75ae28f41ed8b7305bc2ea65d6" title="determine if a point is inside the shape or not (up to floating point errors) ">is_inside_shape()</a> is called only for the centre of the voxels. After this, only edge voxels are resampled. So, if a shape lies between the centre of all voxels, it will not be sampled at all. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000171">Todo:</a></b></dt><dd><p class="startdd">Get rid of restriction to allow only VoxelsOnCartesianGrid&lt;float&gt; (but that's rather hard) </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000180">Todo:</a></b></dt><dd><p class="startdd">Get rid of restriction to allow only VoxelsOnCartesianGrid&lt;float&gt; (but that's rather hard) </p>
 <p class="enddd">Potentially this should fill a <a class="el" href="classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. ">DiscretisedShape3D</a>. </p>
 </dd></dl>
 
@@ -446,7 +446,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 
 <p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, <a class="el" href="classstir_1_1PixelsOnCartesianGrid.html#a3f14eb41b126acea5a97291dcde4dac1">stir::PixelsOnCartesianGrid&lt; elemT &gt;::get_pixel_size()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; target_type &gt;::construct_input_data()</a>, and <a class="el" href="classstir_1_1ROITests.html#ac6af41117483abb9ed9954cc3fec7547">stir::ROITests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; target_type &gt;::construct_input_data()</a>, <a class="el" href="classstir_1_1ROITests.html#ac6af41117483abb9ed9954cc3fec7547">stir::ROITests::run_tests()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +488,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

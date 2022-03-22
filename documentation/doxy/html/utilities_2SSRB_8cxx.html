@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -56,33 +56,41 @@ $(function() {
 <code>#include &quot;<a class="el" href="SSRB_8h_source.html">stir/SSRB.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ProjDataInterfile_8h_source.html">stir/ProjDataInterfile.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afb7ac92b946427e51c3aabc70a41939a"><td class="memItemLeft" align="right" valign="top"><a id="afb7ac92b946427e51c3aabc70a41939a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>classic_SSRB</b> (int argc, char **argv)</td></tr>
+<tr class="separator:afb7ac92b946427e51c3aabc70a41939a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877ddbc025b835e87a3c99a1b297f0ca"><td class="memItemLeft" align="right" valign="top"><a id="a877ddbc025b835e87a3c99a1b297f0ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>template_based_SSRB</b> (int argc, char **argv)</td></tr>
+<tr class="separator:a877ddbc025b835e87a3c99a1b297f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main program for <a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>. </p>
-<dl class="section author"><dt>Author</dt><dd>Kris Thielemans</dd></dl>
-<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">SSRB</a> [-t num_tangential_poss_to_trim] \</div><div class="line">     output_filename input_projdata_name [num_segments_to_combine \</div><div class="line">   [ num_views_to_combine [do_normalisation [max_in_segment_num_to_process ]]]]</div></div><!-- fragment --> </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kris Thielemans &amp; Robert Twyman</dd></dl>
+<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">SSRB</a> [-t num_tangential_poss_to_trim] \</div><div class="line">     output_filename input_projdata_name [num_segments_to_combine \</div><div class="line">   [ num_views_to_combine [do_normalisation [max_in_segment_num_to_process ]]]]</div></div><!-- fragment --> <div class="fragment"><div class="line"><a class="code" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">SSRB</a> --<span class="keyword">template</span> template_projdata_filename output_filename input_projdata_name [do_normalisation]</div></div><!-- fragment --> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_segments_to_combine</td><td>has to be odd. It is used as the number of segments in the original data to combine. </td></tr>
     <tr><td class="paramname">num_views_to_combine</td><td>has to be at least 1 (which is the default). It is used as the number of views in the original data to combine. </td></tr>
     <tr><td class="paramname">num_tangential_poss_to_trim</td><td>has to be smaller than the available number of tangential positions. </td></tr>
     <tr><td class="paramname">do_normalisation</td><td>has to be 1 (normalise the result, which is the default) or 0 </td></tr>
-    <tr><td class="paramname">max_in_segment_num_to_process</td><td>defaults to all segments</td></tr>
+    <tr><td class="paramname">max_in_segment_num_to_process</td><td>defaults to all segments </td></tr>
+    <tr><td class="paramname">template_projdata_filename,indicated</td><td>by the &ndash;template option, a template projection data which SSRB will map to.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><a class="code" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">SSRB</a> out in.hs 3 2</div></div><!-- fragment --> If in.hs is a file without axial compression (span=1) nor mashing, then the output would correspond to a span=3 file with mashing factor 2, and would be normalised (at least as far as SSRB concerns). <em>num_segments_to_combine=3</em> results in ring differences -1,0,1 to be combined all into segment 0, etc. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>(const std::string&amp; output_filename, const <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>&amp; in_projdata, const int num_segments_to_combine, const int num_views_to_combine, const int num_tang_poss_to_trim, const bool do_normalisation, const int max_in_segment_num_to_process ) for info on parameters and restrictions. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f" title="construct new ProjDataInfo that is appropriate for rebinned data ">stir::SSRB</a>(const std::string&amp; output_filename, const <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a>&amp; in_projdata, const int num_segments_to_combine, const int num_views_to_combine, const int num_tang_poss_to_trim, const bool do_normalisation, const int max_in_segment_num_to_process ) for info on parameters and restrictions. <div class="fragment"><div class="line"><a class="code" href="group__projdata.html#gac58540d3d092496da3c2c10836a6a77f">SSRB</a> --<span class="keyword">template</span> template_sino.hs out in.hs 1</div></div><!-- fragment --> This use SSRB to convert in.hs into the shape of template_sino.hs and save the result as interile out. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:24 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,5 +1,5 @@
 <map id="stir::ListModeData" name="stir::ListModeData">
-<area shape="rect" id="node3" href="$classstir_1_1CListModeData.html" title="The base class for reading list mode data. " alt="" coords="376,148,525,175"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="376,148,525,175"/>
 <area shape="rect" id="node10" href="$classstir_1_1SPECTListModeData.html" title="The base class for reading SPECT list mode data.This class (and SPECTListRecord) is specific to SPECT..." alt="" coords="360,199,541,225"/>
 <area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,173,124,200"/>
 <area shape="rect" id="node4" href="$classstir_1_1CListModeDataLMF.html" title="A class that reads the listmode data from an LMF file. " alt="" coords="635,5,810,32"/>

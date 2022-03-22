@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -156,14 +156,14 @@ typedef boost::reverse_iterator&lt; <a class="el" href="classstir_1_1detail_1_1V
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7c1f055e05c38b81eb83939d1d1158e"><td class="memItemLeft" align="right" valign="top"><a id="ad7c1f055e05c38b81eb83939d1d1158e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#ad7c1f055e05c38b81eb83939d1d1158e">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;v, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
-<tr class="memdesc:ad7c1f055e05c38b81eb83939d1d1158e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. <br /></td></tr>
-<tr class="separator:ad7c1f055e05c38b81eb83939d1d1158e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d5177254db80a7cae1010bd6b802c2"><td class="memItemLeft" align="right" valign="top"><a id="a61d5177254db80a7cae1010bd6b802c2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a61d5177254db80a7cae1010bd6b802c2">SegmentBySinogram</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
-<tr class="memdesc:a61d5177254db80a7cae1010bd6b802c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0. <br /></td></tr>
-<tr class="separator:a61d5177254db80a7cae1010bd6b802c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07accca1ac8cf87db79427ec702f771a"><td class="memItemLeft" align="right" valign="top"><a id="a07accca1ac8cf87db79427ec702f771a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a07accca1ac8cf87db79427ec702f771a">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;v, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
+<tr class="memdesc:a07accca1ac8cf87db79427ec702f771a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. <br /></td></tr>
+<tr class="separator:a07accca1ac8cf87db79427ec702f771a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0396f27164f167f91d381352e950916a"><td class="memItemLeft" align="right" valign="top"><a id="a0396f27164f167f91d381352e950916a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a0396f27164f167f91d381352e950916a">SegmentBySinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
+<tr class="memdesc:a0396f27164f167f91d381352e950916a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0. <br /></td></tr>
+<tr class="separator:a0396f27164f167f91d381352e950916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38b634f77b3104515bb85b4d9818f71"><td class="memItemLeft" align="right" valign="top"><a id="af38b634f77b3104515bb85b4d9818f71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#af38b634f77b3104515bb85b4d9818f71">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; elemT &gt; &amp;)</td></tr>
 <tr class="memdesc:af38b634f77b3104515bb85b4d9818f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion from 1 storage order to the other. <br /></td></tr>
@@ -238,13 +238,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1Segment.html">Segment</a>&lt; elemT &gt; &amp;) const</td></tr>
 <tr class="separator:aaa6f6703ac5b563eb9a46612eb380f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1Segment"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1Segment')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1Segment.html">stir::Segment&lt; elemT &gt;</a></td></tr>
-<tr class="memitem:a0dfb2fd134d210786165198bb34f33e3 inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a0dfb2fd134d210786165198bb34f33e3"></a>
-const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a0dfb2fd134d210786165198bb34f33e3">get_proj_data_info_ptr</a> () const</td></tr>
-<tr class="memdesc:a0dfb2fd134d210786165198bb34f33e3 inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the proj data info pointer. <br /></td></tr>
-<tr class="separator:a0dfb2fd134d210786165198bb34f33e3 inherit pub_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c40652848af4a6e224879361de56f38 inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a5c40652848af4a6e224879361de56f38">get_proj_data_info_sptr</a> () const</td></tr>
-<tr class="memdesc:a5c40652848af4a6e224879361de56f38 inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info.  <a href="classstir_1_1Segment.html#a5c40652848af4a6e224879361de56f38">More...</a><br /></td></tr>
-<tr class="separator:a5c40652848af4a6e224879361de56f38 inherit pub_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad042b71f7e146af0b634f55b6823c577 inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="ad042b71f7e146af0b634f55b6823c577"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">get_proj_data_info_sptr</a> () const</td></tr>
+<tr class="memdesc:ad042b71f7e146af0b634f55b6823c577 inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info. <br /></td></tr>
+<tr class="separator:ad042b71f7e146af0b634f55b6823c577 inherit pub_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9c5c4801521562a64b31f26ab8514a inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a4b9c5c4801521562a64b31f26ab8514a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a4b9c5c4801521562a64b31f26ab8514a inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the segment number. <br /></td></tr>
@@ -314,6 +311,14 @@ elemT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">fill</a> (const elemT &amp;n)</td></tr>
 <tr class="memdesc:abd56d694053e27f36d9c4aceed6a3845 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill elements with value n (overrides VectorWithOffset::fill) <br /></td></tr>
 <tr class="separator:abd56d694053e27f36d9c4aceed6a3845 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top"><a id="a5a7ddd6d8cd8b39dea6108b842dd38d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#a5a7ddd6d8cd8b39dea6108b842dd38d0">apply_lower_threshold</a> (const elemT &amp;l)</td></tr>
+<tr class="memdesc:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements below value to the value (overrides VectorWithOffset::fill) <br /></td></tr>
+<tr class="separator:a5a7ddd6d8cd8b39dea6108b842dd38d0 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top"><a id="af7e86a880bfb1a841b828e25f4c64d7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#af7e86a880bfb1a841b828e25f4c64d7f">apply_upper_threshold</a> (const elemT &amp;u)</td></tr>
+<tr class="memdesc:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements above value to the value (overrides VectorWithOffset::fill) <br /></td></tr>
+<tr class="separator:af7e86a880bfb1a841b828e25f4c64d7f inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html#a0c55638d8e5ddd950370b07e3f6eb7f9">is_regular</a> () const</td></tr>
 <tr class="memdesc:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the index range is 'regular'  <a href="classstir_1_1Array.html#a0c55638d8e5ddd950370b07e3f6eb7f9">More...</a><br /></td></tr>
 <tr class="separator:a0c55638d8e5ddd950370b07e3f6eb7f9 inherit pub_methods_classstir_1_1Array"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,6 +546,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ac3cbbc39532fa95ee7121cb251ab43d0">fill</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;n)</td></tr>
 <tr class="memdesc:ac3cbbc39532fa95ee7121cb251ab43d0 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">fill elements with value <em>n</em> <br /></td></tr>
 <tr class="separator:ac3cbbc39532fa95ee7121cb251ab43d0 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top"><a id="ab98c3a331e8c28874b22531bc0476ce7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ab98c3a331e8c28874b22531bc0476ce7">apply_lower_threshold</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;lower)</td></tr>
+<tr class="memdesc:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements below value to the value. <br /></td></tr>
+<tr class="separator:ab98c3a331e8c28874b22531bc0476ce7 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top"><a id="ae9568ae99b900a0c9b86c4b3699c27e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ae9568ae99b900a0c9b86c4b3699c27e1">apply_upper_threshold</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; &amp;upper)</td></tr>
+<tr class="memdesc:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets elements above value to the value. <br /></td></tr>
+<tr class="separator:ae9568ae99b900a0c9b86c4b3699c27e1 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">get_length</a> () const</td></tr>
 <tr class="memdesc:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of elements in this vector  <a href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">More...</a><br /></td></tr>
 <tr class="separator:a9179fdbe02bc4cb22fde51599537e2b5 inherit pub_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -681,17 +694,17 @@ const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>ren
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1Segment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1Segment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1Segment.html">stir::Segment&lt; elemT &gt;</a></td></tr>
-<tr class="memitem:a14cabcf0570eef5e29b40bff8472c07d inherit pro_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a14cabcf0570eef5e29b40bff8472c07d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int s_num)</td></tr>
-<tr class="separator:a14cabcf0570eef5e29b40bff8472c07d inherit pro_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45822cc7f80eff7cc4b1a68607e66a1d inherit pro_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a45822cc7f80eff7cc4b1a68607e66a1d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr_v, const int s_num)</td></tr>
+<tr class="separator:a45822cc7f80eff7cc4b1a68607e66a1d inherit pro_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1VectorWithOffset"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1VectorWithOffset')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:a18a1331e3af6ea9a1d5b5ff177f4ae19 inherit pro_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a18a1331e3af6ea9a1d5b5ff177f4ae19">check_state</a> () const</td></tr>
 <tr class="memdesc:a18a1331e3af6ea9a1d5b5ff177f4ae19 inherit pro_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called internally to see if all variables are consistent.  <a href="classstir_1_1VectorWithOffset.html#a18a1331e3af6ea9a1d5b5ff177f4ae19">More...</a><br /></td></tr>
 <tr class="separator:a18a1331e3af6ea9a1d5b5ff177f4ae19 inherit pro_methods_classstir_1_1VectorWithOffset"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1Segment"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1Segment')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1Segment.html">stir::Segment&lt; elemT &gt;</a></td></tr>
-<tr class="memitem:adfcecfe030191251cafbb028f048c81b inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="adfcecfe030191251cafbb028f048c81b"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_ptr</b></td></tr>
-<tr class="separator:adfcecfe030191251cafbb028f048c81b inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa448729929d45530e890871714ef544f inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="aa448729929d45530e890871714ef544f"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_sptr</b></td></tr>
+<tr class="separator:aa448729929d45530e890871714ef544f inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0462cdd91d966933b28a89c26dd64d32 inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a0462cdd91d966933b28a89c26dd64d32"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>segment_num</b></td></tr>
 <tr class="separator:a0462cdd91d966933b28a89c26dd64d32 inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -770,7 +783,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

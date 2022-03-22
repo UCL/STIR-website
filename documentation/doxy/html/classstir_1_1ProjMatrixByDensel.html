@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -73,9 +73,9 @@ Inheritance diagram for stir::ProjMatrixByDensel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa38fd1e660f37b23911736f3b2381a3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#aa38fd1e660f37b23911736f3b2381a3a">set_up</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)=0</td></tr>
-<tr class="memdesc:aa38fd1e660f37b23911736f3b2381a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called before any calculation is performed.  <a href="#aa38fd1e660f37b23911736f3b2381a3a">More...</a><br /></td></tr>
-<tr class="separator:aa38fd1e660f37b23911736f3b2381a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4ebf1ad4385dbe6abcf4186db0fef3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a0d4ebf1ad4385dbe6abcf4186db0fef3">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)=0</td></tr>
+<tr class="memdesc:a0d4ebf1ad4385dbe6abcf4186db0fef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called before any calculation is performed.  <a href="#a0d4ebf1ad4385dbe6abcf4186db0fef3">More...</a><br /></td></tr>
+<tr class="separator:a0d4ebf1ad4385dbe6abcf4186db0fef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecda7b5a2738763297bf6c3e2d60c8f6"><td class="memItemLeft" align="right" valign="top"><a id="aecda7b5a2738763297bf6c3e2d60c8f6"></a>
 virtual const <a class="el" href="classstir_1_1DataSymmetriesForDensels.html">DataSymmetriesForDensels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#aecda7b5a2738763297bf6c3e2d60c8f6">get_symmetries_ptr</a> () const =0</td></tr>
 <tr class="memdesc:aecda7b5a2738763297bf6c3e2d60c8f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to an object encoding all symmetries that are used by this <a class="el" href="classstir_1_1ProjMatrixByDensel.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;Densel&#39;...">ProjMatrixByDensel</a> <br /></td></tr>
@@ -182,8 +182,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>This class provides essentially only 2 public members: a method to get a 'row' of the matrix, and a method to get information on the symmetries.</p>
 <p>Currently, the class provides for some (basic) caching. This functionality will probably be moved to a new class ProjMatrixByDenselWithCache. (TODO) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa38fd1e660f37b23911736f3b2381a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa38fd1e660f37b23911736f3b2381a3a">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a0d4ebf1ad4385dbe6abcf4186db0fef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4ebf1ad4385dbe6abcf4186db0fef3">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,13 +194,13 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
         <tr>
           <td class="memname">virtual void stir::ProjMatrixByDensel::set_up </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>proj_data_info_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -219,7 +219,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>To be called before any calculation is performed. </p>
 <p>Note that get_proj_matrix_elems_for_one_Densel() will expect objects of compatible sizes and other info. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#a647066a16dd64c9ab0c703685dd8ee1c">stir::ProjMatrixByDenselUsingRayTracing</a>, and <a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#ac7f5c086cfd43a0ef02cf9906ad77d50">stir::ProjMatrixByDenselOnCartesianGridUsingElement</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#af953767171e78b7229285dd9a3791a90">stir::ProjMatrixByDenselUsingRayTracing</a>, and <a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a6a8ddb1bf4a2c5a03b79c5dea28baf2f">stir::ProjMatrixByDenselOnCartesianGridUsingElement</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

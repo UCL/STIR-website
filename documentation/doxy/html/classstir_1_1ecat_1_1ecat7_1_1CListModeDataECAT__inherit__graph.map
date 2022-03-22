@@ -1,5 +1,5 @@
 <map id="stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;" name="stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1CListModeData.html" title="The base class for reading list mode data. " alt="" coords="64,155,213,181"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="64,155,213,181"/>
 <area shape="rect" id="node3" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="69,80,209,107"/>
 <area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="79,5,198,32"/>
 </map>

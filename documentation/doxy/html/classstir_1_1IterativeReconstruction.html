@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
   </td>
  </tr>
@@ -459,7 +459,7 @@ inter-iteration filter type :=
 ; write objective function value to stderr at certain subiterations
 ; default value of 0 means: do not write it at all.
 report_objective_function_values_interval:=0
-</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo:</a></b></dt><dd><p class="startdd">move subset things somewhere else </p>
+</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000130">Todo:</a></b></dt><dd><p class="startdd">move subset things somewhere else </p>
 <p class="enddd">all the <code>compute</code> functions should be <code>const</code>. </p>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -512,7 +512,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p>Gets a pointer to the initial data. </p>
 <p>This is either read from file, or constructed by construct_target_ptr(). In the latter case, its values are set to 0 or 1, depending on the value of <a class="el" href="classstir_1_1IterativeReconstruction.html#adb451d24d9eccdd5b62f553f583edd4e" title="name of the file containing the data for intializing the reconstruction ">IterativeReconstruction::initial_data_filename</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo:</a></b></dt><dd><p class="startdd">Dependency on explicit strings "1" or "0" in <a class="el" href="classstir_1_1IterativeReconstruction.html#adb451d24d9eccdd5b62f553f583edd4e" title="name of the file containing the data for intializing the reconstruction ">IterativeReconstruction::initial_data_filename</a> is not nice. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000131">Todo:</a></b></dt><dd><p class="startdd">Dependency on explicit strings "1" or "0" in <a class="el" href="classstir_1_1IterativeReconstruction.html#adb451d24d9eccdd5b62f553f583edd4e" title="name of the file containing the data for intializing the reconstruction ">IterativeReconstruction::initial_data_filename</a> is not nice. </p>
 <p class="enddd">should not return a 'bare' pointer. </p>
 </dd></dl>
 
@@ -725,7 +725,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p>operations prior to the reconstruction </p>
 <p>Will do various consistency checks and return Succeeded::no if something is wrong.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>Currently, <a class="el" href="classstir_1_1IterativeReconstruction.html#a2747755ff1a8808c69eb7b9eef6b6017" title="operations prior to the reconstruction ">set_up()</a> is called by <a class="el" href="classstir_1_1IterativeReconstruction.html#a88b6ca7c4d08884bf35c84153882887b" title="executes the reconstruction ">reconstruct()</a>. This is in contrast with some other class hierarchies in STIR where <a class="el" href="classstir_1_1IterativeReconstruction.html#a2747755ff1a8808c69eb7b9eef6b6017" title="operations prior to the reconstruction ">set_up()</a> has to be called before any actual processing. Maybe this should be made consistent. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo:</a></b></dt><dd>Currently, <a class="el" href="classstir_1_1IterativeReconstruction.html#a2747755ff1a8808c69eb7b9eef6b6017" title="operations prior to the reconstruction ">set_up()</a> is called by <a class="el" href="classstir_1_1IterativeReconstruction.html#a88b6ca7c4d08884bf35c84153882887b" title="executes the reconstruction ">reconstruct()</a>. This is in contrast with some other class hierarchies in STIR where <a class="el" href="classstir_1_1IterativeReconstruction.html#a2747755ff1a8808c69eb7b9eef6b6017" title="operations prior to the reconstruction ">set_up()</a> has to be called before any actual processing. Maybe this should be made consistent. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1Reconstruction.html#a595decb0763564b00a9f4b91ac4ac000">stir::Reconstruction&lt; TargetT &gt;</a>.</p>
 
@@ -809,7 +809,7 @@ template&lt;class TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 7 2021 07:21:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

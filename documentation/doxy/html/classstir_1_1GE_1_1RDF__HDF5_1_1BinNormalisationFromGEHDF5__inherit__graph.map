@@ -1,6 +1,6 @@
 <map id="stir::GE::RDF_HDF5::BinNormalisationFromGEHDF5" name="stir::GE::RDF_HDF5::BinNormalisationFromGEHDF5">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromGEHDF5,\l BinNormalisation \&gt;" alt="" coords="126,215,365,271"/>
-<area shape="rect" id="node3" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="6,103,170,130"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="5,5,171,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="194,96,403,137"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromGEHDF5,\l BinNormalisation, BinNormalisationWith\lCalibration \&gt;" alt="" coords="715,24,1005,95"/>
+<area shape="rect" id="node3" href="$classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="226,5,421,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,169,39"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="219,71,428,112"/>
 </map>
