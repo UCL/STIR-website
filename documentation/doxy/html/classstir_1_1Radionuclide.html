@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -46,7 +46,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classstir_1_1Radionuclide-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stir::Radionuclide Class Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a> &raquo; <a class="el" href="group__projdata.html">Items related to projection data</a></div></div>  </div>
+<div class="title">stir::Radionuclide Class Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a> &raquo; <a class="el" href="group__ancillary.html">Items related to ancillary information such as radionuclide, patient info etc</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -57,26 +57,25 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ebdbf80deeebdb5a11caa3097a32279"><td class="memItemLeft" align="right" valign="top"><a id="a6ebdbf80deeebdb5a11caa3097a32279"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#a6ebdbf80deeebdb5a11caa3097a32279">Radionuclide</a> ()</td></tr>
-<tr class="memdesc:a6ebdbf80deeebdb5a11caa3097a32279"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor <br /></td></tr>
+<tr class="memitem:a6ebdbf80deeebdb5a11caa3097a32279"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#a6ebdbf80deeebdb5a11caa3097a32279">Radionuclide</a> ()</td></tr>
+<tr class="memdesc:a6ebdbf80deeebdb5a11caa3097a32279"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="#a6ebdbf80deeebdb5a11caa3097a32279">More...</a><br /></td></tr>
 <tr class="separator:a6ebdbf80deeebdb5a11caa3097a32279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c622427aa7cb46b17f1b26576a282c6"><td class="memItemLeft" align="right" valign="top"><a id="a0c622427aa7cb46b17f1b26576a282c6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#a0c622427aa7cb46b17f1b26576a282c6">Radionuclide</a> (const std::string &amp;name, float energy, float branching_ratio, float half_life, <a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a> modality)</td></tr>
-<tr class="memdesc:a0c622427aa7cb46b17f1b26576a282c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constructor : constructs a radionuclide with all it's information. <br /></td></tr>
+<tr class="memdesc:a0c622427aa7cb46b17f1b26576a282c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constructor : constructs a radionuclide with all its information. <br /></td></tr>
 <tr class="separator:a0c622427aa7cb46b17f1b26576a282c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae04607f81c4cb675a92eae3bef18153"><td class="memItemLeft" align="right" valign="top"><a id="aae04607f81c4cb675a92eae3bef18153"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#aae04607f81c4cb675a92eae3bef18153">get_name</a> () const</td></tr>
-<tr class="memdesc:aae04607f81c4cb675a92eae3bef18153"><td class="mdescLeft">&#160;</td><td class="mdescRight">get name <br /></td></tr>
+<tr class="memdesc:aae04607f81c4cb675a92eae3bef18153"><td class="mdescLeft">&#160;</td><td class="mdescRight">get name (normally in DICOM format) <br /></td></tr>
 <tr class="separator:aae04607f81c4cb675a92eae3bef18153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f4f62261c804181d3b7f223487f99ae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#a9f4f62261c804181d3b7f223487f99ae">get_energy</a> (bool check=true) const</td></tr>
-<tr class="memdesc:a9f4f62261c804181d3b7f223487f99ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">get energy  <a href="#a9f4f62261c804181d3b7f223487f99ae">More...</a><br /></td></tr>
+<tr class="memdesc:a9f4f62261c804181d3b7f223487f99ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">get energy (in keV)  <a href="#a9f4f62261c804181d3b7f223487f99ae">More...</a><br /></td></tr>
 <tr class="separator:a9f4f62261c804181d3b7f223487f99ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97360474848f14bde60cb2117bfac0d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#a97360474848f14bde60cb2117bfac0d8">get_branching_ratio</a> (bool check=true) const</td></tr>
 <tr class="memdesc:a97360474848f14bde60cb2117bfac0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get branching_ratio  <a href="#a97360474848f14bde60cb2117bfac0d8">More...</a><br /></td></tr>
 <tr class="separator:a97360474848f14bde60cb2117bfac0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33841ea6b0e8b4b26f3c315a0e8b959"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#ae33841ea6b0e8b4b26f3c315a0e8b959">get_half_life</a> (bool check=true) const</td></tr>
-<tr class="memdesc:ae33841ea6b0e8b4b26f3c315a0e8b959"><td class="mdescLeft">&#160;</td><td class="mdescRight">get half_life  <a href="#ae33841ea6b0e8b4b26f3c315a0e8b959">More...</a><br /></td></tr>
+<tr class="memdesc:ae33841ea6b0e8b4b26f3c315a0e8b959"><td class="mdescLeft">&#160;</td><td class="mdescRight">get half_life (in seconds)  <a href="#ae33841ea6b0e8b4b26f3c315a0e8b959">More...</a><br /></td></tr>
 <tr class="separator:ae33841ea6b0e8b4b26f3c315a0e8b959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4fc4fb6e0aa3c6398d1d8c88b6e0af5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Radionuclide.html#af4fc4fb6e0aa3c6398d1d8c88b6e0af5">get_modality</a> (bool check=true) const</td></tr>
 <tr class="memdesc:af4fc4fb6e0aa3c6398d1d8c88b6e0af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get modality  <a href="#af4fc4fb6e0aa3c6398d1d8c88b6e0af5">More...</a><br /></td></tr>
@@ -91,7 +90,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing radionuclide information. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<dl class="section see"><dt>See also</dt><dd>RadionuclideDB </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6ebdbf80deeebdb5a11caa3097a32279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebdbf80deeebdb5a11caa3097a32279">&#9670;&nbsp;</a></span>Radionuclide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stir::Radionuclide::Radionuclide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default constructor </p>
+<p>Set name to "Unknown" and other values to invalid numbers (e.g. -1) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9f4f62261c804181d3b7f223487f99ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f4f62261c804181d3b7f223487f99ae">&#9670;&nbsp;</a></span>get_energy()</h2>
 
@@ -108,7 +129,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>get energy </p>
+<p>get energy (in keV) </p>
 <p>if <em>check=<code>true</code>,</em> calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if value not set (i.e. is negative) </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
@@ -154,7 +175,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>get half_life </p>
+<p>get half_life (in seconds) </p>
 <p>if <em>check=<code>true</code>,</em> calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if value not set (i.e. is negative) </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
@@ -213,7 +234,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

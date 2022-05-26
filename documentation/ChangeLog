@@ -1,4 +1,1312 @@
 -------------------------------
+Thu, 26 May 2022 20:56:10 +0100  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 5.0.2
+
+
+LICENSE.txt
+
+-------------------------------
+Thu, 26 May 2022 20:55:10 +0100  Kris Thielemans  
+
+v5.0.2 version
+
+
+CMakeLists.txt
+VERSION.txt
+
+-------------------------------
+Thu, 26 May 2022 21:15:47 +0200  Kris Thielemans  
+
+Merge pull request #1050 from UCL/fixgeneri_get_phi_1043
+fix test_projdata_info for get_phi
+
+-------------------------------
+Thu, 26 May 2022 16:32:36 +0100  danieldeidda  
+
+fix test_projdata_info for get_phi
+
+
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Thu, 26 May 2022 13:36:40 +0200  Kris Thielemans  
+
+Merge pull request #1045 from UCL/fixgeneri_get_phi_1043
+fixing issue #1043 (get_phi could be wrong for block/generic scanners)
+
+-------------------------------
+Wed, 25 May 2022 19:33:18 +0100  danieldeidda  
+
+fixing issue #1043
+
+
+src/include/stir/ProjDataInfoGeneric.inl
+
+-------------------------------
+Mon, 16 May 2022 16:36:05 +0100  Kris Thielemans  
+
+fix STIRConfig.cmake.in
+when finding HDF5
+- was using SILENT as opposed to QUIET
+- was using REQUIRED after COMPONENTS
+
+fixes #1037
+
+
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Wed, 11 May 2022 22:09:44 +0100  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 5.0.1
+
+
+CMakeLists.txt
+LICENSE.txt
+
+-------------------------------
+Wed, 11 May 2022 22:05:18 +0100  Kris Thielemans  
+
+prepare for 5.0.1 [ci skip]
+
+
+VERSION.txt
+documentation/history.htm
+
+-------------------------------
+Wed, 11 May 2022 21:56:40 +0100  Kris Thielemans  
+
+fixed zenodo.json
+
+
+.zenodo.json
+
+-------------------------------
+Wed, 11 May 2022 21:41:48 +0100  Kris Thielemans  
+
+updated release notes
+
+
+documentation/release_5.0.htm
+
+-------------------------------
+Wed, 11 May 2022 21:20:46 +0100  Kris Thielemans  
+
+Merge pull request #1026 from KrisThielemans/RadioNuclideDBnoJSON
+Radionuclide code improvements. including fixes, more tests etc. WARNING: this changes the radionucle_info.json format.
+
+-------------------------------
+Wed, 11 May 2022 21:15:36 +0100  Kris Thielemans  
+
+increase verbosity level in RadionuclideDB [ci skip]
+set verbosity level if info() statements to 3, to avoid too much
+output
+
+
+src/buildblock/RadionuclideDB.cxx
+
+-------------------------------
+Mon, 9 May 2022 14:59:02 +0100  Daniel Deidda  
+
+Update test_radionuclide.cxx
+
+
+src/test/test_radionuclide.cxx
+
+-------------------------------
+Sat, 7 May 2022 21:46:55 +0100  Kris Thielemans  
+
+make run_tests_modelling.sh more stable
+awk processing depended on info statements. Now only look at lines
+that contain min/max
+
+
+recon_test_pack/run_tests_modelling.sh
+
+-------------------------------
+Sat, 7 May 2022 19:42:32 +0100  Kris Thielemans  
+
+Merge branch 'master' into RadioNuclideDBnoJSON
+
+
+-------------------------------
+Sat, 7 May 2022 19:42:01 +0100  Kris Thielemans  
+
+[CMAKE] fix typo in previous commit
+
+
+scripts/CMakeLists.txt
+
+-------------------------------
+Sat, 7 May 2022 18:51:30 +0100  Kris Thielemans  
+
+[CMake] make json dependency public
+As we include nlohmann/json.hpp in RadionuclideDB.h, it needs
+to be a public dependency.
+
+
+src/buildblock/CMakeLists.txt
+
+-------------------------------
+Sat, 7 May 2022 18:51:09 +0100  Kris Thielemans  
+
+add tests for Y90 radionuclide
+
+
+src/test/test_radionuclide.cxx
+
+-------------------------------
+Sat, 7 May 2022 18:41:30 +0100  Kris Thielemans  
+
+changed format of the radionuclide database JSON format
+The database now contains multiple decays per radioisotope.
+This will allow having multiple gamma energies for one radionuclide.
+
+
+src/buildblock/RadionuclideDB.cxx
+src/config/radionuclide_info.json
+src/include/stir/RadionuclideDB.h
+
+-------------------------------
+Sat, 7 May 2022 13:40:26 +0100  Kris Thielemans  
+
+Merge branch 'master' into RadioNuclideDBnoJSON
+
+
+-------------------------------
+Sat, 7 May 2022 12:33:27 +0100  Kris Thielemans  
+
+[CMake] add missing extension
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Sat, 7 May 2022 12:29:36 +0100  Kris Thielemans  
+
+install some scripts even when BUILD_EXECUTABLES=OFF
+some scripts do not depend on STIR executables, and are
+useful elsewhere.
+
+Fixes #894
+
+
+scripts/CMakeLists.txt
+scripts/IO/CMakeLists.txt
+
+-------------------------------
+Sat, 30 Apr 2022 15:20:19 +0100  Kris Thielemans  
+
+[GHA] only upload log files if job fails
+correction of syntax
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 30 Apr 2022 09:36:52 +0100  Kris Thielemans  
+
+Merge pull request #1031 from KrisThielemans/GHAtmate
+GitHub actions and appveyor improvements
+
+-------------------------------
+Sat, 30 Apr 2022 09:36:02 +0100  Kris Thielemans  
+
+[doc] minimal additions to developer guide [ci skip]
+added some info on languages and CI
+
+
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Sat, 30 Apr 2022 09:34:45 +0100  Kris Thielemans  
+
+[GHA] only upload log files if job failed
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 30 Apr 2022 07:20:20 +0100  Kris Thielemans  
+
+[GHA] fix name for artifact for log files
+Looks like ${{ github.job }} does not work. Copy-paste
+the whole name then.
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 30 Apr 2022 07:19:59 +0100  Kris Thielemans  
+
+[GHA] fix ctest exclude statement in Debug mode
+looks like ctestignores more than 2 -E options... Using a regexp now
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Fri, 29 Apr 2022 22:24:22 +0100  Kris Thielemans  
+
+[GHA] upload log files and add tmate
+make GitHub Actions debugging easier
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Fri, 29 Apr 2022 21:23:48 +0100  Kris Thielemans  
+
+[AppVeyor] skip commits on specific files
+
+
+.appveyor.yml
+
+-------------------------------
+Wed, 27 Apr 2022 01:08:40 +0100  Kris Thielemans  
+
+make run_test_zoom_image.sh more robust
+when parsing output of list_projdata_info, explicitly look for the "sum".
+This solves a problem when info() statements throw up lots of other things.
+
+
+recon_test_pack/run_test_zoom_image.sh
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+RadionuclideDB::get_radionuclide uses warning
+Calling error() was too drastic as most files will not have the
+necessary info. Instead use warning() and return default-constructed
+Radionuclide (i.e. set the "unknown")
+
+
+src/buildblock/RadionuclideDB.cxx
+src/include/stir/RadionuclideDB.h
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+[CMake] set STIR_CONFIG_DIR to source directory for most ctests
+ctest can be run before installation, so we need to set the STIR_CONFIG_DIR
+environment variable to where the JSON files are in the source directory
+
+
+src/cmake/stir_test_exe_targets.cmake
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+RadionuclideDB: correct parsing of modality keyword
+
+
+src/buildblock/RadionuclideDB.cxx
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+rename kev and BRatio in radionuclide.json
+changed keV and branching_ratio
+
+
+src/buildblock/RadionuclideDB.cxx
+src/config/radionuclide_info.json
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+add test for Radionuclide code
+this will likely fail because of 2 reasons:
+- modality keyword problems
+- when test code is run before install, it won't find the JSON files
+
+
+src/test/CMakeLists.txt
+src/test/test_radionuclide.cxx
+
+-------------------------------
+Tue, 26 Apr 2022 23:35:17 +0100  Kris Thielemans  
+
+improvements to Radionuclide code
+- better handling of defaults in RadionuclideDB ("default" or "")
+- more checks/info when JSON support is disabled
+- more information when JSON parsing failed
+- more doxygen
+
+
+src/buildblock/RadionuclideDB.cxx
+src/include/stir/Radionuclide.h
+src/include/stir/RadionuclideDB.h
+
+-------------------------------
+Tue, 26 Apr 2022 14:27:21 +0100  Kris Thielemans  
+
+Merge pull request #1021 from danieldeidda/correct_sampling
+ fixing sampling calculation for ProjDataInfoGeneric
+
+-------------------------------
+Tue, 19 Apr 2022 16:50:20 +0100  Kris Thielemans  
+
+Merge pull request #1023 from robbietuk/GHA/DOWNLOAD_ZENODO_TEST_DATA_OFF
+Download Zenodo test data off by default
+
+-------------------------------
+Tue, 19 Apr 2022 09:38:10 +0100  Kris Thielemans  
+
+Merge pull request #1019 from KrisThielemans/SWIG_reorder
+[SWIG] split stir.i and change order of declarations
+
+Fixes #1018
+
+-------------------------------
+Tue, 19 Apr 2022 09:30:06 +0100  Kris Thielemans  
+
+update release notes [ci skip]
+
+
+documentation/release_5.0.htm
+
+-------------------------------
+Fri, 15 Apr 2022 15:51:09 +0100  Kris Thielemans  
+
+some more checks on ProjDataInfo::get_subset
+
+
+src/test/test_proj_data_info_subsets.cxx
+
+-------------------------------
+Fri, 15 Apr 2022 15:49:20 +0100  Kris Thielemans  
+
+fix python demo
+
+
+examples/python/recon_demo.py
+
+-------------------------------
+Fri, 15 Apr 2022 11:59:31 +0100  Kris Thielemans  
+
+[SWIG] update copyright headers
+
+
+src/swig/stir.i
+src/swig/stir_normalisation.i
+src/swig/stir_objectivefunctions.i
+src/swig/stir_priors.i
+src/swig/stir_projectors.i
+src/swig/stir_reconstruction.i
+src/swig/stir_shapes.i
+
+-------------------------------
+Wed, 13 Apr 2022 21:06:40 -0700  Robert Twyman  
+
+DOWNLOAD_ZENODO_TEST_DATA=OFF and update GHA with root to TRUE
+
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Wed, 13 Apr 2022 13:55:44 +0100  danieldeidda  
+
+ fixing sampling calculation for ProjDataInfoGeneric
+
+
+src/include/stir/ProjDataInfoGeneric.inl
+
+-------------------------------
+Tue, 12 Apr 2022 23:08:19 +0100  Kris Thielemans  
+
+[SWIG] split stir.i and change order of declarations
+The GeneralisedObjectiveFunction hierarchy was defined before
+normalisation and projectors, leading to problems setting/getting
+corresponding members.
+
+As this was very messy, I've split stir.i in several files.
+It still leads to one huge *wrap.cxx but at least reading stir.i
+is now a bit easier. (still work to do).
+
+This commit also fixes a line in SWIG for ProjData::get_subset,
+but that function is still ignored, so it doesn't change the actual
+Python interface.
+
+
+src/swig/stir.i
+src/swig/stir_dataprocessors.i
+src/swig/stir_normalisation.i
+src/swig/stir_objectivefunctions.i
+src/swig/stir_priors.i
+src/swig/stir_projectors.i
+src/swig/stir_reconstruction.i
+src/swig/stir_shapes.i
+
+-------------------------------
+Tue, 5 Apr 2022 22:34:44 +0100  Kris Thielemans  
+
+add a ROOT job to GHA (#1017)
+test ROOT on Github Actions
+
+[appveyor skip]
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Tue, 5 Apr 2022 18:14:47 +0100  Kris Thielemans  
+
+Merge pull request #1016 from robbietuk/ROOT/ScannerRotationChanges
+Root/scanner rotation changes.
+
+WARNING: breaks backwards compatibility for ROOT data
+
+-------------------------------
+Tue, 5 Apr 2022 08:54:03 -0700  Robert Twyman  
+
+[ci skip] Improve cmake log and fix filepath issue
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Tue, 5 Apr 2022 07:50:30 -0700  Robert Twyman  
+
+Add Zenodo test download to Cmake
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Sun, 3 Apr 2022 10:25:00 +0100  Kris Thielemans  
+
+updated documentation for ROOT rotation/translation [ci skip]
+- release_5.0.htm: moved text on ROOT rotation to "backwards incompatibility"
+section, with some minor tweaks
+- STIR User's guide:
+  - expanded the section on ROOT, including translation
+  - added brief info on CMake variables
+  - corrected some text on C++ version
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.0.htm
+
+-------------------------------
+Fri, 1 Apr 2022 01:23:47 +0100  robbietuk  
+
+[ci skip] Release notes and geometry commetry details update (from code review)
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_5.0.htm
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/geometry.mac
+
+-------------------------------
+Thu, 31 Mar 2022 17:20:55 -0700  Robert Twyman  
+
+[ci skip] Change all #if STIR_ROOT_ROTATION_AS_V4 to use #ifdef
+
+
+src/IO/InputStreamFromROOTFile.cxx
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/include/stir/IO/InputStreamFromROOTFile.h
+src/include/stir/IO/InputStreamFromROOTFile.inl
+src/include/stir/listmode/CListRecordROOT.h
+src/listmode_buildblock/CListRecordROOT.cxx
+
+-------------------------------
+Thu, 31 Mar 2022 17:15:29 -0700  Robert Twyman  
+
+[ci skip] General fixes and README
+- Fix issue with `round_sig(x)` function when 0 is input.
+- Update README with more details of DebugScripts
+- Comment out `generate_image` from pretest because it is never used. The test was changed to use the `generate_image` class in C++. 
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+examples/ROOT_files/ROOT_STIR_consistency/README.md
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+
+-------------------------------
+Thu, 31 Mar 2022 17:10:09 -0700  Robert Twyman  
+
+10x activity for point sources with z shift away from origin
+
+
+examples/ROOT_files/ROOT_STIR_consistency/README.md
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test1.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test2.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test3.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test4.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test5.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test6.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test7.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test8.mac
+
+-------------------------------
+Thu, 31 Mar 2022 17:09:02 -0700  Robert Twyman  
+
+Reduce the number of point sources to 8 and README changes
+Correct the z shift between STIR and GATE from 75.21 mm to 75.31 mm.
+
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+examples/ROOT_files/ROOT_STIR_consistency/README.md
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image1.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image10.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image11.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image12.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image2.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image3.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image4.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image5.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image6.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image7.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image8.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image9.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test1.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test10.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test11.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test12.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test2.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test3.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test4.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test5.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test6.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test7.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test8.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test9.mac
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Thu, 31 Mar 2022 14:35:00 -0700  Robert Twyman  
+
+Refactor source_test#.mac files and replaced deprecated macro entries
+Also removes all mention of commented out ellopsoid parameters 
+
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test1.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test10.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test11.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test12.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test2.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test3.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test4.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test5.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test6.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test7.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test8.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test9.mac
+
+-------------------------------
+Wed, 30 Mar 2022 17:03:36 -0700  Robert Twyman  
+
+[ci skip] remove debugging lines from python script
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+
+-------------------------------
+Wed, 30 Mar 2022 17:00:18 -0700  Robert Twyman  
+
+[ci skip] offset (num of detectors) parameter removal documented in release notes
+
+
+documentation/release_5.0.htm
+
+-------------------------------
+Wed, 30 Mar 2022 16:42:15 -0700  Robert Twyman  
+
+[ci skip] STIR GATE Geometry alignment subsubsection in UsersGuide
+
+
+documentation/STIR-UsersGuide.tex
+
+-------------------------------
+Wed, 30 Mar 2022 15:50:54 -0700  Robert Twyman  
+
+[ci skip] offset (num of detectors) is now legacy STIR
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.0.htm
+examples/ROOT_files/ROOT_STIR_consistency/root_header_test_template.hroot
+examples/samples/root_header.hroot
+examples/samples/root_headerECAT.hroot
+recon_test_pack/root_header.hroot
+src/IO/InputStreamFromROOTFile.cxx
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/include/stir/IO/InputStreamFromROOTFile.h
+src/include/stir/IO/InputStreamFromROOTFile.inl
+src/include/stir/IO/InputStreamFromROOTFileForCylindricalPET.h
+src/include/stir/IO/InputStreamFromROOTFileForECATPET.h
+src/listmode_buildblock/CListRecordROOT.cxx
+
+-------------------------------
+Wed, 30 Mar 2022 10:21:18 -0700  Robert Twyman  
+
+Merge branch 'ROOT/removing_quarter_of_detectors' into ROOT/ScannerRotationChanges
+
+
+-------------------------------
+Wed, 30 Mar 2022 10:01:56 -0700  Robert Twyman  
+
+Rotate the Gate geometry
+
+
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/geometry.mac
+
+-------------------------------
+Wed, 30 Mar 2022 10:01:56 -0700  Robert Twyman  
+
+Modifications to python debug script to use numpy arrays and improved printing
+This involves changes to 
+ - the coordinates to now use 2D numpy arrays
+- the print tables now print the position and offset (for loop changes were needed for sizing of every entry etc...), not perfect.
+- Use more arrays everywhere, instead of lists.
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+
+-------------------------------
+Wed, 30 Mar 2022 10:01:56 -0700  Robert Twyman  
+
+Disable quarter_of_detectors and enable test_view_offset_root
+
+
+src/include/stir/listmode/CListRecordROOT.h
+src/listmode_buildblock/CListRecordROOT.cxx
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Wed, 30 Mar 2022 09:56:11 +0100  Kris Thielemans  
+
+Merge pull request #1015 from KrisThielemans/remove_scanner_orientation
+remove obsolete scanner_orientation (for block scanner)
+
+-------------------------------
+Tue, 29 Mar 2022 18:01:53 +0100  Kris Thielemans  
+
+Merge pull request #991 from robbietuk/ROOT/ViewOffsetTest
+GATE/ROOT STIR LOR consistency test
+
+-------------------------------
+Tue, 29 Mar 2022 09:37:14 -0700  Robert Twyman  
+
+Disable test_view_offset_root test as data not uploaded
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Tue, 29 Mar 2022 09:36:23 -0700  Robert Twyman  
+
+[ci skip] Debug script improvements and comments
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+
+-------------------------------
+Tue, 29 Mar 2022 09:23:27 -0700  Robert Twyman  
+
+[ci skip] cmake test fails if more than 5% of events are outside tolerance.
+Other small fixes
+
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Tue, 29 Mar 2022 09:18:08 -0700  Robert Twyman  
+
+[ci skip] Improve table drawing by using padding for entry lengths
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+
+-------------------------------
+Tue, 29 Mar 2022 09:49:24 +0100  Kris Thielemans  
+
+remove obsolete scanner_orientation (for block scanner)
+pkhateri introduced X/Y orientation but this wasn't used anymore.
+This removes the member from Scanner and also from the Interfile header.
+
+Also removed a small bug for Generic that a check was using
+scanner_orientation as opposed to scanner_geometry.
+
+
+src/IO/InterfileHeader.cxx
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/buildblock/Scanner.cxx
+src/include/stir/IO/InterfileHeader.h
+src/include/stir/Scanner.h
+src/include/stir/Scanner.inl
+
+-------------------------------
+Mon, 28 Mar 2022 22:03:28 +0100  Kris Thielemans  
+
+Merge pull request #1014 from jvavrek/master
+remove register keyword from display_array.cxx
+
+-------------------------------
+Mon, 28 Mar 2022 11:11:52 -0700  Robert Twyman  
+
+[ci skip] cleanup and simplifications
+
+
+documentation/release_5.0.htm
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+people/eliseemond/.gitignore
+
+-------------------------------
+Mon, 28 Mar 2022 10:45:09 -0700  Jayson Vavrek  
+
+remove register keyword from display_array.cxx
+
+
+src/display/display_array.cxx
+
+-------------------------------
+Sun, 27 Mar 2022 19:33:33 -0700  Robert Twyman  
+
+[ci skip] Run only one test_view_offset_root test
+
+
+src/recon_test/CMakeLists.txt
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Sun, 27 Mar 2022 19:13:29 -0700  Robert Twyman  
+
+[ci skip] Run all 12 point source tests in same executable from ROOT_STIR_consistency directory
+
+
+src/recon_test/CMakeLists.txt
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Sun, 27 Mar 2022 17:05:56 -0700  Robert Twyman  
+
+[ci skip] Geometry changes and remove D690 from GATE mac filenames
+
+
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/csorter.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/digitiser.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/geometry.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/main_GATE_macro_template.mac
+examples/ROOT_files/ROOT_STIR_consistency/root_header_test_template.hroot
+
+-------------------------------
+Sun, 27 Mar 2022 16:34:55 -0700  Robert Twyman  
+
+[ci skip] Add a debug script for interpreting the results output of `test_view_offset_root` script
+
+
+examples/ROOT_files/ROOT_STIR_consistency/DebugScripts/debug_view_offset_consistency.py
+
+-------------------------------
+Sun, 27 Mar 2022 15:08:42 -0700  Robert Twyman  
+
+[ci skip] Use an improved D690 scanner geometry
+
+
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/geometry_D690.mac
+examples/ROOT_files/ROOT_STIR_consistency/root_header_test_template.hroot
+
+-------------------------------
+Sun, 27 Mar 2022 15:04:54 -0700  Robert Twyman  
+
+[ci ski[] Changes to digitiser and physics model to improve the geometry tests
+
+
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/digitiser_D690.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/physics.mac
+
+-------------------------------
+Sun, 27 Mar 2022 14:05:23 -0700  Robert Twyman  
+
+Merge remote-tracking branch 'origin/master' into ROOT/ViewOffsetTest
+
+
+-------------------------------
+Sun, 27 Mar 2022 18:08:22 +0100  robbietuk  
+
+Set default value for half_block = 0 when reading ROOT files (#1012)
+Set default value for half_block = 0 and introduce STIR_ROOT_ROTATION_AS_V4
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+CMakeLists.txt
+documentation/release_5.0.htm
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/cmake/STIRConfig.h.in
+
+-------------------------------
+Fri, 25 Mar 2022 18:25:22 -0700  Robert Twyman  
+
+[ci skip] Save the coordinates of the closes voxels to file
+This will be supported by python code.
+
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 16:33:56 -0700  Robert Twyman  
+
+Add many of the ROOT_STIR_consistency files to gitignore.
+
+
+.gitignore
+
+-------------------------------
+Fri, 25 Mar 2022 16:04:36 -0700  Robert Twyman  
+
+CMake to use new location of ROOT files.
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Fri, 25 Mar 2022 16:02:25 -0700  Robert Twyman  
+
+Small changes to run_pretest_script
+includes using sed, rather than gsed.
+
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+
+-------------------------------
+Fri, 25 Mar 2022 15:44:40 -0700  Robert Twyman  
+
+Merge branch 'ROOT/ViewOffsetTestMoveFiles' into ROOT/ViewOffsetTest
+
+
+-------------------------------
+Fri, 25 Mar 2022 15:44:31 -0700  Robert Twyman  
+
+Improve pretest_script, update README, and fix naming issues with main Gate macro file
+
+
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/main_GATE_macro_template.mac
+examples/ROOT_files/ROOT_STIR_consistency/README.md
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+
+-------------------------------
+Fri, 25 Mar 2022 15:32:10 -0700  Robert Twyman  
+
+Creation of SourceFiles Directory
+
+
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image1.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image10.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image11.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image12.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image2.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image3.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image4.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image5.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image6.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image7.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image8.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/generate_image9.par
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test1.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test10.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test11.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test12.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test2.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test3.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test4.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test5.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test6.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test7.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test8.mac
+examples/ROOT_files/ROOT_STIR_consistency/SourceFiles/source_test9.mac
+
+-------------------------------
+Fri, 25 Mar 2022 14:52:52 -0700  Robert Twyman  
+
+Move all ROOT and GATE files to examples/ROOT_files
+
+
+examples/ROOT_files/GATE_test_macro/README.txt
+examples/ROOT_files/GATE_test_macro/benchPET.mac
+examples/ROOT_files/GATE_test_macro/digitizer.mac
+examples/ROOT_files/GATE_test_macro/geometry.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/GateMaterials.db
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/csorter_D690.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/digitiser_D690.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/geometry_D690.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/main_D690_template.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/physics.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test1.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test10.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test11.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test12.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test2.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test3.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test4.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test5.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test6.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test7.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test8.mac
+examples/ROOT_files/ROOT_STIR_consistency/Gate_macros/source_test9.mac
+examples/ROOT_files/ROOT_STIR_consistency/README.md
+examples/ROOT_files/ROOT_STIR_consistency/generate_image1.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image10.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image11.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image12.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image2.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image3.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image4.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image5.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image6.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image7.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image8.par
+examples/ROOT_files/ROOT_STIR_consistency/generate_image9.par
+examples/ROOT_files/ROOT_STIR_consistency/root_header_test_template.hroot
+examples/ROOT_files/ROOT_STIR_consistency/run_pretest_script.sh
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Release notes for GenerateImage and test_view_offset_root
+
+
+documentation/release_5.0.htm
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Swap documentation from generate_image to GenerateImage
+
+
+src/include/stir/Shape/GenerateImage.h
+src/utilities/generate_image.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Small documentation changes and rename methods
+
+
+src/Shape_buildblock/GenerateImage.cxx
+src/include/stir/Shape/GenerateImage.h
+src/recon_test/test_view_offset_root.cxx
+src/utilities/generate_image.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Documentation
+
+
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Rename test_lm_data_closest_approach to process_list_data
+
+
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Update root consistency test to generate point source image with GenerateImage rather than load from file.
+Also fix some messaging regarding main
+
+src/recon_test/CMakeLists.txt
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Split generate_image (utility) and GenerateImage (class)
+
+
+src/Shape_buildblock/CMakeLists.txt
+src/Shape_buildblock/GenerateImage.cxx
+src/include/stir/Shape/GenerateImage.h
+src/utilities/generate_image.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+Changes to generate image to split saving from compute()
+
+
+src/utilities/generate_image.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Sed and CMakeList test fixes
+
+
+recon_test_pack/ROOT_STIR_consistency/root_header_test_template.hroot
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Remove lm_to_projdata files. Not needed.
+
+
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test1.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test10.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test11.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test12.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test2.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test3.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test4.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test5.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test6.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test7.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test8.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test9.par
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Add generation of .hroot files from template and remove pre-created
+
+
+recon_test_pack/ROOT_STIR_consistency/root_header_test10.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test11.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test12.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test2.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test3.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test4.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test5.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test6.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test7.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test8.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test9.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test_template.hroot
+recon_test_pack/ROOT_STIR_consistency/run_pretest_script.sh
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Remove Gate main_D690_test* files as created by run_pretest_script.sh
+
+
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test1.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test10.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test11.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test12.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test2.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test3.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test4.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test5.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test6.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test7.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test8.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test9.mac
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Robert Twyman  
+
+[ci skip] Create STIR ROOT consistency test and supporting files
+
+
+people/eliseemond/ROOT-STIR-consistency/README.md
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/README.md
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/digitiser_D690.mac
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/getTimingResolution.py
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/main_D690_centre.mac
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/source_centre.mac
+people/eliseemond/ROOT-STIR-consistency/make_plot.py
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/GateMaterials.db
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/csorter_D690.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/digitiser_D690.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/geometry_D690.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_template.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test1.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test10.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test11.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test12.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test2.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test3.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test4.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test5.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test6.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test7.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test8.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/main_D690_test9.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/physics.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test1.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test10.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test11.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test12.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test2.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test3.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test4.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test5.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test6.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test7.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test8.mac
+recon_test_pack/ROOT_STIR_consistency/Gate_macros/source_test9.mac
+recon_test_pack/ROOT_STIR_consistency/README.md
+recon_test_pack/ROOT_STIR_consistency/generate_image1.par
+recon_test_pack/ROOT_STIR_consistency/generate_image10.par
+recon_test_pack/ROOT_STIR_consistency/generate_image11.par
+recon_test_pack/ROOT_STIR_consistency/generate_image12.par
+recon_test_pack/ROOT_STIR_consistency/generate_image2.par
+recon_test_pack/ROOT_STIR_consistency/generate_image3.par
+recon_test_pack/ROOT_STIR_consistency/generate_image4.par
+recon_test_pack/ROOT_STIR_consistency/generate_image5.par
+recon_test_pack/ROOT_STIR_consistency/generate_image6.par
+recon_test_pack/ROOT_STIR_consistency/generate_image7.par
+recon_test_pack/ROOT_STIR_consistency/generate_image8.par
+recon_test_pack/ROOT_STIR_consistency/generate_image9.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test1.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test10.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test11.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test12.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test2.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test3.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test4.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test5.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test6.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test7.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test8.par
+recon_test_pack/ROOT_STIR_consistency/lm_to_projdata_test9.par
+recon_test_pack/ROOT_STIR_consistency/root_header_test1.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test10.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test11.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test12.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test2.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test3.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test4.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test5.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test6.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test7.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test8.hroot
+recon_test_pack/ROOT_STIR_consistency/root_header_test9.hroot
+recon_test_pack/ROOT_STIR_consistency/run_pretest_script.sh
+src/recon_test/CMakeLists.txt
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Elise Emond  
+
+README.md for ROOT consistency check for TOF
+
+
+people/eliseemond/ROOT-STIR-consistency/README.md
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Elise Emond  
+
+Update README.md
+
+
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/README.md
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Elise Emond  
+
+Gate/STIR time resolution calibration
+For more information, please check the 2017 MIC presentation I have done
+during the STIR user's meeting.
+
+
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/README.md
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/digitiser_D690.mac
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/getTimingResolution.py
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/main_D690_centre.mac
+people/eliseemond/ROOT-STIR-consistency/TOFresolutionConsistency/source_centre.mac
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Elise Emond  
+
+The .hroot files were missing
+
+
+people/eliseemond/ROOT-STIR-consistency/root_header_test1.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test10.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test11.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test12.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test2.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test3.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test4.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test5.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test6.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test7.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test8.hroot
+people/eliseemond/ROOT-STIR-consistency/root_header_test9.hroot
+
+-------------------------------
+Fri, 25 Mar 2022 14:46:04 -0700  Elise Emond  
+
+Files for STIR+ROOT check (symmetries, unlisting etc.)
+
+
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/GateMaterials.db
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/csorter_D690.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/digitiser_D690.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/geometry_D690.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_template.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test1.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test10.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test11.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test12.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test2.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test3.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test4.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test5.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test6.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test7.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test8.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/main_D690_test9.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/physics.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test1.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test10.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test11.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test12.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test2.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test3.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test4.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test5.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test6.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test7.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test8.mac
+people/eliseemond/ROOT-STIR-consistency/Gate_macros/source_test9.mac
+people/eliseemond/ROOT-STIR-consistency/generate_image1.par
+people/eliseemond/ROOT-STIR-consistency/generate_image10.par
+people/eliseemond/ROOT-STIR-consistency/generate_image11.par
+people/eliseemond/ROOT-STIR-consistency/generate_image12.par
+people/eliseemond/ROOT-STIR-consistency/generate_image2.par
+people/eliseemond/ROOT-STIR-consistency/generate_image3.par
+people/eliseemond/ROOT-STIR-consistency/generate_image4.par
+people/eliseemond/ROOT-STIR-consistency/generate_image5.par
+people/eliseemond/ROOT-STIR-consistency/generate_image6.par
+people/eliseemond/ROOT-STIR-consistency/generate_image7.par
+people/eliseemond/ROOT-STIR-consistency/generate_image8.par
+people/eliseemond/ROOT-STIR-consistency/generate_image9.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test1.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test10.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test11.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test12.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test2.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test3.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test4.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test5.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test6.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test7.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test8.par
+people/eliseemond/ROOT-STIR-consistency/lm_to_projdata_test9.par
+people/eliseemond/ROOT-STIR-consistency/make_plot.py
+people/eliseemond/ROOT-STIR-consistency/run_pretest_script.sh
+
+-------------------------------
+Fri, 25 Mar 2022 14:45:44 -0700  Elise Emond  
+
+Some changes for positron range: one medium
+
+
+people/eliseemond/.gitignore
+
+-------------------------------
 Tue, 22 Mar 2022 20:15:28 +0000  Kris Thielemans  
 
 no longer tag with stir_rel_5.0.0 etc [skip ci]

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -751,9 +751,9 @@ class stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</h3>
 <p>This class is templated with the number of dimensions (should be 1, 2 or 3) and the type of the data.</p>
 <p>It defines functionality common to all discretised densities: the data structure itself (<a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>) and an origin.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The origin is always a <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D&lt;float&gt;</a>, independent of what coordinate system (or even dimension) this class represents. Similarly, the functions that translate from indices to physical coordinates assume that the later is 3D.</dd></dl>
-<p>Iterative algorithms generally assume that the activity density can be discretised in some way. That is, the continuous density can be approximated by having a linear combination of some basis-functions. The reconstruction problem will try to estimate the coefficients <img class="formulaInl" alt="$\lambda_{ijk}$" src="form_14.png"/> of the discretised density</p>
+<p>Iterative algorithms generally assume that the activity density can be discretised in some way. That is, the continuous density can be approximated by having a linear combination of some basis-functions. The reconstruction problem will try to estimate the coefficients <img class="formulaInl" alt="$\lambda_{ijk}$" src="form_15.png"/> of the discretised density</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \sum_{ijk} \lambda_{ijk} b_{ijk}({\bar x}) \]" src="form_15.png"/>
+<img class="formulaDsp" alt="\[ \sum_{ijk} \lambda_{ijk} b_{ijk}({\bar x}) \]" src="form_16.png"/>
 </p>
 <p>The base class corresponding to this kind of data is <a class="el" href="classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. ">DiscretisedDensity</a>. We assume that the set of basisfunctions can be characterised by 3 indices (ijk) such that i runs over a range of integers i1..i2, j runs over a similar range that can however depend on i, and k runs over a similar range that can depend on i and j. This concept of ranges is embodied in the <a class="el" href="classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. ">IndexRange</a> class. Multi-dimensional arrays which have such ranges are encoded by the <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> class. This forms the data structure for the set of coefficients of the basisfunctions, hence <a class="el" href="classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. ">DiscretisedDensity</a> is derived from the <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> class.</p>
 <p>In most useful cases, the basisfunctions will be translations of a single function b(x) (although scaling etc could occur depending on ijk). This means that the discretisation has a certain grid, corresponding to the centre of the basisfunctions. This structure is the next level in the image hierarchy. Currently we have the class <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. ">DiscretisedDensityOnCartesianGrid</a> to implement the case where the grid is formed by an orthogonal set of vectors. Another case would be e.g. DiscretisedDensityOnCylindricalGrid, but we have not implemented this yet.</p>
@@ -1254,7 +1254,7 @@ template&lt;int num_dimensions, typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

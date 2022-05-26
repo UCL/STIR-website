@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -294,15 +294,15 @@ class stir::PLSPrior&lt; elemT &gt;</h3>
 
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements the anatomical penalty function, Parallel Level Sets (PLS), proposed by Matthias J. Ehrhardt et. al in "PET Reconstruction With an Anatomical MRI
 Prior Using Parallel Level Sets", IEEE Trans. med. Imag., vol. 35, no. 9, Sept. 2016. <a href="https://doi.org/10.1109/TMI.2016.2549601">https://doi.org/10.1109/TMI.2016.2549601</a> Note that PLS becomes smoothed TV when an uniform anatomical image is provided. </p>
-<p>The prior has 2 parameters alpha and eta. It is computed for an image <img class="formulaInl" alt="$ f $" src="form_62.png"/> as</p>
+<p>The prior has 2 parameters alpha and eta. It is computed for an image <img class="formulaInl" alt="$ f $" src="form_70.png"/> as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]" src="form_63.png"/>
+<img class="formulaDsp" alt="\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]" src="form_71.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$ f $" src="form_62.png"/> is the PET image, <img class="formulaInl" alt="$ \xi $" src="form_64.png"/> is the normalised gradient of the anatomical image calculated as follows:</p>
+<p> where <img class="formulaInl" alt="$ f $" src="form_70.png"/> is the PET image, <img class="formulaInl" alt="$ \xi $" src="form_72.png"/> is the normalised gradient of the anatomical image calculated as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]" src="form_65.png"/>
+<img class="formulaDsp" alt="\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]" src="form_73.png"/>
 </p>
-<p>with <img class="formulaInl" alt="$ v $" src="form_66.png"/> the anatomical image, <img class="formulaInl" alt="$ \alpha $" src="form_67.png"/> controls the edge-preservation property of PLS, and depends on the scale of the emission image, and <img class="formulaInl" alt="$ \eta $" src="form_68.png"/> avoids division by zero, and depends on the scale of the anatomical image.</p>
+<p>with <img class="formulaInl" alt="$ v $" src="form_74.png"/> the anatomical image, <img class="formulaInl" alt="$ \alpha $" src="form_75.png"/> controls the edge-preservation property of PLS, and depends on the scale of the emission image, and <img class="formulaInl" alt="$ \eta $" src="form_76.png"/> avoids division by zero, and depends on the scale of the anatomical image.</p>
 <p>A <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_69.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_69.png"/>'s.</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">PLS Prior Parameters:=
 ; next defaults to 0, set to 1 for 2D images, 0 for 3D
@@ -487,7 +487,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:27 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

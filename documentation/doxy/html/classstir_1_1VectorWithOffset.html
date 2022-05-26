@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -381,7 +381,7 @@ class stir::VectorWithOffset&lt; T &gt;</h3>
 <dl class="section warning"><dt>Warning</dt><dd>This class does not satisfy full Container requirements. </dd>
 <dd>
 Current implementation relies on shifting a <code>T*</code> outside the range of allocated data. This is not guaranteed to be valid by ANSI C++. It is fine however as long as the <code>min_index</code> is negative and such that <code>abs(min_index)</code> is smaller than <code>max_index</code>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>add allocator template as in std::vector. This is non-trivial as we would have to use uninitialized_copy etc. in some places. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000185">Todo:</a></b></dt><dd>add allocator template as in std::vector. This is non-trivial as we would have to use uninitialized_copy etc. in some places. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa8e4459a7c7d929ec347bcc4311793dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8e4459a7c7d929ec347bcc4311793dc">&#9670;&nbsp;</a></span>value_type</h2>
@@ -549,7 +549,7 @@ template&lt;class T &gt; </div>
 
 <p>change the range of the vector, new elements are set to <code>T()</code> </p>
 <p>New memory is allocated if the range grows outside the range specified by <a class="el" href="classstir_1_1VectorWithOffset.html#acd11c494f2c0ce80781004068ba705fb" title="get min_index within allocated range ">get_capacity_min_index()</a> till <a class="el" href="classstir_1_1VectorWithOffset.html#abbc49c87e5bee68fac33646558001bb8" title="get max_index within allocated range ">get_capacity_max_index()</a>. Data is then copied and old memory deallocated (unless <a class="el" href="classstir_1_1VectorWithOffset.html#a68696b46943dfbd63124b3287bad24d6" title="check if this object owns the memory for the data ">owns_memory_for_data()</a> is false).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000185">Todo:</a></b></dt><dd>in principle reallocation could be avoided when the new range would fit in the old one by shifting. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000186">Todo:</a></b></dt><dd>in principle reallocation could be avoided when the new range would fit in the old one by shifting. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a314c48aa183083a7173252286d04feab">stir::Array&lt; 1, elemT &gt;</a>.</p>
 
@@ -883,7 +883,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:28 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

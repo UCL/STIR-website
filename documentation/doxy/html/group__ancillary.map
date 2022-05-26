@@ -1,3 +1,6 @@
 <map id="Items related to ancillary information such as radionuclide, patient info etc" name="Items related to ancillary information such as radionuclide, patient info etc">
-<area shape="rect" id="node1" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,20,164,47"/>
+<area shape="rect" id="node1" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="658,22,793,63"/>
+<area shape="rect" id="node2" href="$group__numerics.html" title="Numerical algorithms" alt="" coords="644,120,807,147"/>
+<area shape="rect" id="node3" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,75,164,101"/>
+<area shape="rect" id="node4" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="645,171,805,213"/>
 </map>

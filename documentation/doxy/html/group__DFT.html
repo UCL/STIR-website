@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -238,7 +238,7 @@ template&lt;typename T &gt; </div>
 <dd>
 Currently, the length of the array has to be a power of 2.</dd></dl>
 <p>The convention used is as follows. For a vector of length <em>n</em>, the result is </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ r_s = \sum_{s=0}^{n-1} c_r e^{\mathrm{sign} 2\pi i r s/n} \]" src="form_31.png"/>
+<img class="formulaDsp" alt="\[ r_s = \sum_{s=0}^{n-1} c_r e^{\mathrm{sign} 2\pi i r s/n} \]" src="form_35.png"/>
 </p>
 <p> This means that the zero-frequency will be returned in <code>c[0]</code></p>
 <p>This function can be used with more general type of <em>c</em> (if instantiated in <a class="el" href="fourier_8cxx.html" title="Functions for computing discrete fourier transforms. ">fourier.cxx</a>). The type <em>T</em> has to be such that <em>T::value_type</em>, <em>T::reference</em> and <code> T::reference T::operator[](const int)</code> exist. Moreover, numerical operations <code>operator*=(T::reference, std::complex&lt;float&gt;)</code>, <code>operator+=(T::reference, T::value_type)</code> and <code>operator*=(T::reference, int)</code>, have to be defined as well. </p>
@@ -543,7 +543,7 @@ template&lt;int num_dimensions, typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

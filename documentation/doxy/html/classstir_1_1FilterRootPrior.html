@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -204,12 +204,12 @@ class stir::FilterRootPrior&lt; DataT &gt;</h3>
 
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements 'generalised' priors a la the Median Root Prior (which was invented by Sakari Alenius). </p>
 <p>This class takes an <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a> object (i.e. a filter), and computes the prior 'gradient' as </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]" src="form_55.png"/>
+<img class="formulaDsp" alt="\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]" src="form_58.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$ \lambda$" src="form_56.png"/> is the data where to compute the gradient, and <img class="formulaInl" alt="$F$" src="form_57.png"/> is the data obtained by filtering <img class="formulaInl" alt="$\lambda$" src="form_41.png"/>.</p>
+<p> where <img class="formulaInl" alt="$ \lambda$" src="form_59.png"/> is the data where to compute the gradient, and <img class="formulaInl" alt="$F$" src="form_60.png"/> is the data obtained by filtering <img class="formulaInl" alt="$\lambda$" src="form_8.png"/>.</p>
 <p>However, we need to avoid division by 0, as it might cause a NaN or an 'infinity'. So, we replace the quotient above by<br />
- if <img class="formulaInl" alt="$|\lambda_v| &lt; M*|F_v| $" src="form_58.png"/> then <img class="formulaInl" alt="${\lambda_v \over F_v}$" src="form_59.png"/> else <img class="formulaInl" alt="$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$" src="form_60.png"/>,<br />
- where <img class="formulaInl" alt="$M$" src="form_61.png"/> is an arbitrary threshold on the quotient (fixed to 1000 when I wrote this documentation, but check <a class="el" href="FilterRootPrior_8cxx.html" title="implementation of the stir::FilterRootPrior class ">FilterRootPrior.cxx</a> if you want to be sure).</p>
+ if <img class="formulaInl" alt="$|\lambda_v| &lt; M*|F_v| $" src="form_61.png"/> then <img class="formulaInl" alt="${\lambda_v \over F_v}$" src="form_62.png"/> else <img class="formulaInl" alt="$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$" src="form_63.png"/>,<br />
+ where <img class="formulaInl" alt="$M$" src="form_64.png"/> is an arbitrary threshold on the quotient (fixed to 1000 when I wrote this documentation, but check <a class="el" href="FilterRootPrior_8cxx.html" title="implementation of the stir::FilterRootPrior class ">FilterRootPrior.cxx</a> if you want to be sure).</p>
 <p>Note that for nearly all filters, this is not a real prior, as this 'gradient' is <em>not</em> the gradient of a function. This can be checked by computing the 'Hessian' (i.e. the partial derivatives of the components of the gradient). For most (interesting) filters, the Hessian will no be symmetric.</p>
 <p>The Median Root Prior is obtained by using a <a class="el" href="classstir_1_1MedianImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements median filtering. ">MedianImageFilter3D</a> as <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -286,7 +286,7 @@ template&lt;typename DataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

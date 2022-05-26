@@ -1,10 +1,11 @@
 <map id="Tests of the basic building blocks" name="Tests of the basic building blocks">
-<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="573,35,801,61"/>
-<area shape="rect" id="node2" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="616,86,759,127"/>
-<area shape="rect" id="node3" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="596,199,779,255"/>
-<area shape="rect" id="node4" href="$group__date__time.html" title="Items related to date\l/time processing" alt="" coords="608,281,767,322"/>
-<area shape="rect" id="node6" href="$group__numerics.html" title="Numerical algorithms" alt="" coords="606,364,769,391"/>
-<area shape="rect" id="node7" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="608,443,767,469"/>
-<area shape="rect" id="node9" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="607,522,767,563"/>
-<area shape="rect" id="node8" href="$group__alltest.html" title="Test code for STIR" alt="" coords="5,296,144,323"/>
+<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="581,37,809,64"/>
+<area shape="rect" id="node2" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="623,89,766,130"/>
+<area shape="rect" id="node3" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="603,201,786,257"/>
+<area shape="rect" id="node4" href="$group__date__time.html" title="Items related to date\l/time processing" alt="" coords="615,283,774,325"/>
+<area shape="rect" id="node6" href="$group__numerics.html" title="Numerical algorithms" alt="" coords="613,367,776,393"/>
+<area shape="rect" id="node7" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="615,445,774,472"/>
+<area shape="rect" id="node9" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="615,525,775,566"/>
+<area shape="rect" id="node10" href="$group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="573,608,816,664"/>
+<area shape="rect" id="node8" href="$group__alltest.html" title="Test code for STIR" alt="" coords="5,367,144,393"/>
 </map>

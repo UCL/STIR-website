@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -711,25 +711,25 @@ class stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</h3>
 
 <p>A reconstructor class appropriate for emission data. </p>
 <p>This class implements the iterative algorithm obtained using the Kernel method (KEM) and Hybrid kernel method (HKEM). This implementation corresponds to the one presented by Deidda D et al, "Hybrid PET-MR list-mode kernelized expectation maximization reconstruction", Inverse Problems, 2019, DOI: <a href="https://doi.org/10.1088/1361-6420/ab013f">https://doi.org/10.1088/1361-6420/ab013f</a>. However, this allows also sinogram-based reconstruction. Furtermore, it is possible to use multiple side information images (they can be anatomical images or images from different modalities). This extension is called multiplexing-HKEM and is described in Deidda et al. "Multiplexing Kernelized Expectation Maximization
-Reconstruction for PET-MR." IEEE NSS/MIC Proceedings (NSS/MIC) 2018, DOI: <a href="https://doi.org/10.1109/NSSMIC.2018.8824312">https://doi.org/10.1109/NSSMIC.2018.8824312</a>. Each voxel value of the image, <img class="formulaInl" alt="$ \boldsymbol{\lambda}$" src="form_16.png"/>, can be represented as a linear combination using the kernel method. If we have an image with prior information, we can construct for each voxel <img class="formulaInl" alt="$ j $" src="form_17.png"/> of the emission image a feature vector, <img class="formulaInl" alt="$ \boldsymbol{v}_j $" src="form_18.png"/>, using the prior information. The voxel value, <img class="formulaInl" alt="$\lambda_j$" src="form_19.png"/>, can then be described using the kernel matrix</p>
+Reconstruction for PET-MR." IEEE NSS/MIC Proceedings (NSS/MIC) 2018, DOI: <a href="https://doi.org/10.1109/NSSMIC.2018.8824312">https://doi.org/10.1109/NSSMIC.2018.8824312</a>. Each voxel value of the image, <img class="formulaInl" alt="$ \boldsymbol{\lambda}$" src="form_20.png"/>, can be represented as a linear combination using the kernel method. If we have an image with prior information, we can construct for each voxel <img class="formulaInl" alt="$ j $" src="form_21.png"/> of the emission image a feature vector, <img class="formulaInl" alt="$ \boldsymbol{v}_j $" src="form_22.png"/>, using the prior information. The voxel value, <img class="formulaInl" alt="$\lambda_j$" src="form_23.png"/>, can then be described using the kernel matrix</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \lambda_j= \sum_{l=1}^L \alpha_l k_{jl} \]" src="form_20.png"/>
+<img class="formulaDsp" alt="\[ \lambda_j= \sum_{l=1}^L \alpha_l k_{jl} \]" src="form_24.png"/>
 </p>
-<p>where <img class="formulaInl" alt="$k_{jl}$" src="form_21.png"/> is the <img class="formulaInl" alt="$jl^{th}$" src="form_22.png"/> kernel element of the matrix, <img class="formulaInl" alt="$\boldsymbol{K}$" src="form_23.png"/>. The resulting algorithm with OSEM, for example, is the following:</p>
+<p>where <img class="formulaInl" alt="$k_{jl}$" src="form_25.png"/> is the <img class="formulaInl" alt="$jl^{th}$" src="form_26.png"/> kernel element of the matrix, <img class="formulaInl" alt="$\boldsymbol{K}$" src="form_27.png"/>. The resulting algorithm with OSEM, for example, is the following:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \alpha^{(n+1)}_j = \frac{ \alpha^{(n)}_j }{\sum_{m} k^{(n)}_{jm} \sum_i p_{mi}} \sum_{m}k^{(n)}_{jm}\sum_i p_{mi}\frac{ y_i }{\sum_{q} p_{iq} \sum_l k^{(n)}_{ql}\alpha^{(n)}_l + s_i} \]" src="form_24.png"/>
+<img class="formulaDsp" alt="\[ \alpha^{(n+1)}_j = \frac{ \alpha^{(n)}_j }{\sum_{m} k^{(n)}_{jm} \sum_i p_{mi}} \sum_{m}k^{(n)}_{jm}\sum_i p_{mi}\frac{ y_i }{\sum_{q} p_{iq} \sum_l k^{(n)}_{ql}\alpha^{(n)}_l + s_i} \]" src="form_28.png"/>
 </p>
-<p>where the element, <img class="formulaInl" alt="$ jl $" src="form_25.png"/>, of the kernel can be written as:</p>
+<p>where the element, <img class="formulaInl" alt="$ jl $" src="form_29.png"/>, of the kernel can be written as:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ k^{(n)}_{jl} = k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) \cdot k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l); \]" src="form_26.png"/>
+<img class="formulaDsp" alt="\[ k^{(n)}_{jl} = k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) \cdot k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l); \]" src="form_30.png"/>
 </p>
 <p>with</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{v}_j-\boldsymbol{v}_l \|^2}{2 \sigma_m^2} \right) \exp \left(- \frac{\tiny \| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny 2 \sigma_{dm}^2} \right) \]" src="form_27.png"/>
+<img class="formulaDsp" alt="\[ k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{v}_j-\boldsymbol{v}_l \|^2}{2 \sigma_m^2} \right) \exp \left(- \frac{\tiny \| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny 2 \sigma_{dm}^2} \right) \]" src="form_31.png"/>
 </p>
 <p>being the MR component of the kernel and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l \|^2}{2 \sigma_p^2} \right) \exp \left(\tiny - \frac{\| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny{2 \sigma_{dp}^2}} \right) \]" src="form_28.png"/>
+<img class="formulaDsp" alt="\[ k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l \|^2}{2 \sigma_p^2} \right) \exp \left(\tiny - \frac{\| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny{2 \sigma_{dp}^2}} \right) \]" src="form_32.png"/>
 </p>
 <p>is the part coming from the emission iterative update. Here, the Gaussian kernel functions have been modulated by the distance between voxels in the image space.</p>
 <dl class="section user"><dt>Parameters for parsing</dt><dd></dd></dl>
@@ -784,7 +784,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

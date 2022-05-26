@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -209,9 +209,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exclude_unscatter
 <tr class="memitem:a5a5df74f17e4d6b9f121ecc1568d8a0d inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memItemLeft" align="right" valign="top"><a id="a5a5df74f17e4d6b9f121ecc1568d8a0d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_exclude_random_events</b> (bool)</td></tr>
 <tr class="separator:a5a5df74f17e4d6b9f121ecc1568d8a0d inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd16d0777268353257e287f01777864 inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memItemLeft" align="right" valign="top"><a id="a2fd16d0777268353257e287f01777864"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_detectors_offset</b> (int)</td></tr>
-<tr class="separator:a2fd16d0777268353257e287f01777864 inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab935bfd3295fd3f9528d55e97eb382f inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memItemLeft" align="right" valign="top"><a id="aab935bfd3295fd3f9528d55e97eb382f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_low_energy_window</b> (float)</td></tr>
 <tr class="separator:aab935bfd3295fd3f9528d55e97eb382f inherit pub_methods_classstir_1_1InputStreamFromROOTFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -433,10 +430,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamFromROOTFile.html#af5c95f4e37913f47680bc9d7a480b145">up_energy_window</a></td></tr>
 <tr class="memdesc:af5c95f4e37913f47680bc9d7a480b145 inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper energy threshold. Default is 0 (keV) <br /></td></tr>
 <tr class="separator:af5c95f4e37913f47680bc9d7a480b145 inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4db9629c6dd39f26d969132f4965cf inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="memItemLeft" align="right" valign="top"><a id="acd4db9629c6dd39f26d969132f4965cf"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamFromROOTFile.html#acd4db9629c6dd39f26d969132f4965cf">offset_dets</a></td></tr>
-<tr class="memdesc:acd4db9629c6dd39f26d969132f4965cf inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">This value will apply a rotation on the detectors' id in the same ring. <br /></td></tr>
-<tr class="separator:acd4db9629c6dd39f26d969132f4965cf inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82527f0b1183b4891766deab6ca7872e inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="memItemLeft" align="right" valign="top"><a id="a82527f0b1183b4891766deab6ca7872e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a82527f0b1183b4891766deab6ca7872e">singles_readout_depth</a></td></tr>
 <tr class="memdesc:a82527f0b1183b4891766deab6ca7872e inherit pro_attribs_classstir_1_1InputStreamFromROOTFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the singles_readout_depth from GATE's online documentation: (<a href="http://wiki.opengatecollaboration.org/index.php/Users_Guide_V7.2:Digitizer_and_readout_parameters">here</a> ) </p><blockquote class="doxtable">
@@ -686,7 +679,6 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       Singles readout depth := 1
       exclude scattered events := ${EXCLUDE_SCATTERED}
       exclude random events := ${EXCLUDE_RANDOM}
-      offset (num of detectors) := 0
       low energy window (keV) := 0
       upper energy window (keV):= 10000
 
@@ -719,7 +711,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 
 <p>Implements <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#aea490db55bf849181d9c40f0aad326b3">stir::InputStreamFromROOTFile</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a6b929d3fb6d639f7f2ff5491a8ae0227">stir::InputStreamFromROOTFile::check_brentry_randoms_scatter_energy_conditions()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a866c13c0e97e6ef13789830cac497ceb">stir::InputStreamFromROOTFile::current_position</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a68e960243a2928804234e4080b61c66b">stir::InputStreamFromROOTFile::get_num_axial_crystals_per_block_v()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#aa2ba43dba5faca483ac2a50bfe0f71b3">stir::InputStreamFromROOTFile::get_num_transaxial_crystals_per_block_v()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#af5071f6c59fb1faa8341a944e28c95b8">stir::InputStreamFromROOTFile::GetEntryCheck()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a5536998a5b433f46a4f0589cb296e9f5">half_block</a>, <a class="el" href="classstir_1_1CListRecordROOT.html#a7df0e84bbf8b72e826fe7f2c2a8fe024">stir::CListRecordROOT::init_from_data()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a35db0ea0d3abeb531c3352bd15d1a009">method_info()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a27acc7ccb74dceeb570c99d4e1290aac">stir::InputStreamFromROOTFile::nentries</a>, and <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#acd4db9629c6dd39f26d969132f4965cf">stir::InputStreamFromROOTFile::offset_dets</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a6b929d3fb6d639f7f2ff5491a8ae0227">stir::InputStreamFromROOTFile::check_brentry_randoms_scatter_energy_conditions()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a866c13c0e97e6ef13789830cac497ceb">stir::InputStreamFromROOTFile::current_position</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a68e960243a2928804234e4080b61c66b">stir::InputStreamFromROOTFile::get_num_axial_crystals_per_block_v()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#aa2ba43dba5faca483ac2a50bfe0f71b3">stir::InputStreamFromROOTFile::get_num_transaxial_crystals_per_block_v()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#af5071f6c59fb1faa8341a944e28c95b8">stir::InputStreamFromROOTFile::GetEntryCheck()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a5536998a5b433f46a4f0589cb296e9f5">half_block</a>, <a class="el" href="classstir_1_1CListRecordROOT.html#a7df0e84bbf8b72e826fe7f2c2a8fe024">stir::CListRecordROOT::init_from_data()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a35db0ea0d3abeb531c3352bd15d1a009">method_info()</a>, and <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a27acc7ccb74dceeb570c99d4e1290aac">stir::InputStreamFromROOTFile::nentries</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a4aa24582a9840ee445be23a55e396cdb">InputStreamFromROOTFileForCylindricalPET()</a>.</p>
 
@@ -794,7 +786,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:26 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

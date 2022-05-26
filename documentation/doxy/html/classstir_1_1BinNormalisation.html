@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.0.2</span>
    </div>
   </td>
  </tr>
@@ -214,7 +214,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for implementing bin-wise normalisation of data. </p>
 <p>As part of the measurement model in PET, there usually is some multiplicative correction for every bin, as in </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ P^\mathrm{full}_{bv} = \mathrm{norm}_b P^\mathrm{normalised}_{bv} \]" src="form_53.png"/>
+<img class="formulaDsp" alt="\[ P^\mathrm{full}_{bv} = \mathrm{norm}_b P^\mathrm{normalised}_{bv} \]" src="form_56.png"/>
 </p>
 <p> This multiplicative correction is usually split in the <code>normalisation</code> factors (which are scanner dependent) and the <code>attenuation</code> factors (which are object dependent).</p>
 <p>The present class can be used for both of these factors. </p>
@@ -353,7 +353,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>Return the 'efficiency' factor for a single bin. </p>
-<p>With the notation of the class documentation, this returns the factor <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_54.png"/>.</p>
+<p>With the notation of the class documentation, this returns the factor <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_57.png"/>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Some derived classes might implement this very inefficiently. </dd></dl>
 
 <p>Implemented in <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a945d8e73c94b95726eeac0ff05895395">stir::ChainedBinNormalisation</a>, <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a761440f2305cdbd833b5b75a0587b629">stir::BinNormalisationFromAttenuationImage</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a373f5676f567983302a709011fe990c5">stir::BinNormalisationFromProjData</a>, <a class="el" href="classstir_1_1BinNormalisationWithCalibration.html#a16517c63014bd932cd5aec2a4065b015">stir::BinNormalisationWithCalibration</a>, <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html#a17a67df60535f64844755a07882b426b">stir::BinNormalisationSinogramRescaling</a>, and <a class="el" href="classstir_1_1TrivialBinNormalisation.html#a60a9d41efd61788c260cbf77089e292e">stir::TrivialBinNormalisation</a>.</p>
@@ -385,7 +385,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>normalise some data </p>
-<p>This would be used for instance to precorrect unnormalised data. With the notation of the class documentation, this would <code>divide</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_54.png"/>.</p>
+<p>This would be used for instance to precorrect unnormalised data. With the notation of the class documentation, this would <code>divide</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_57.png"/>.</p>
 <p>Default implementation divides with the factors returned by <a class="el" href="classstir_1_1BinNormalisation.html#adce7601a8ce295d6bc107e0ccea72657" title="Return the &#39;efficiency&#39; factor for a single bin. ">get_bin_efficiency()</a> (after applying a threshold to avoid division by 0). </p>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a210286b20576ae76b4d16018560f16dc">stir::ChainedBinNormalisation</a>, <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#aa8d680ead38833e51ee04c33874a6e07">stir::BinNormalisationFromAttenuationImage</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#af8ee92e298b8843379b101eb979c5929">stir::BinNormalisationFromProjData</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#ad029a643526d839286b46c02ea5ccc60">stir::BinNormalisationFromML2D</a>, <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html#a2ed7482f90bc51b814f77e8b29b24f2a">stir::BinNormalisationSinogramRescaling</a>, and <a class="el" href="classstir_1_1TrivialBinNormalisation.html#a21cbe93751f9b20bbf586ca51975bcbd">stir::TrivialBinNormalisation</a>.</p>
@@ -421,7 +421,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>undo the normalisation of some data </p>
-<p>This would be used for instance to bring geometrically forward projected data to the mean of the measured data. With the notation of the class documentation, this would <code>multiply</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_54.png"/>.</p>
+<p>This would be used for instance to bring geometrically forward projected data to the mean of the measured data. With the notation of the class documentation, this would <code>multiply</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_57.png"/>.</p>
 <p>Default implementation multiplies with the factors returned by <a class="el" href="classstir_1_1BinNormalisation.html#adce7601a8ce295d6bc107e0ccea72657" title="Return the &#39;efficiency&#39; factor for a single bin. ">get_bin_efficiency()</a>. </p>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a452079c6a4f431f76b5dc026bd344591">stir::ChainedBinNormalisation</a>, <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a814600afd7d8bc86a248a363564efe31">stir::BinNormalisationFromAttenuationImage</a>, <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a7b6bf6e6803fc5511f5b2f6b9914695c">stir::BinNormalisationFromProjData</a>, <a class="el" href="classstir_1_1BinNormalisationFromML2D.html#af74578b425251f471f1c9a79b47f3655">stir::BinNormalisationFromML2D</a>, <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html#a14b23c9195c901b7b5b1b75ca3896ee1">stir::BinNormalisationSinogramRescaling</a>, and <a class="el" href="classstir_1_1TrivialBinNormalisation.html#a0f976061593dad4b7d1ac32181d5fb67">stir::TrivialBinNormalisation</a>.</p>
@@ -459,7 +459,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>normalise some data </p>
-<p>This would be used for instance to precorrect unnormalised data. With the notation of the class documentation, this would <code>divide</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_54.png"/>.</p>
+<p>This would be used for instance to precorrect unnormalised data. With the notation of the class documentation, this would <code>divide</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_57.png"/>.</p>
 <p>This just loops over all <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a>.</p>
 <p>The default value for the symmetries means that <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all...">TrivialDataSymmetriesForBins</a> will be used. </p>
 
@@ -494,7 +494,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>undo the normalisation of some data </p>
-<p>This would be used for instance to bring geometrically forward projected data to the mean of the measured data. With the notation of the class documentation, this would <code>multiply</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_54.png"/>.</p>
+<p>This would be used for instance to bring geometrically forward projected data to the mean of the measured data. With the notation of the class documentation, this would <code>multiply</code> by the factors <img class="formulaInl" alt="$\mathrm{norm}_b $" src="form_57.png"/>.</p>
 <p>This just loops over all <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a>.</p>
 <p>The default value for the symmetries means that <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all...">TrivialDataSymmetriesForBins</a> will be used. </p>
 
@@ -543,7 +543,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 22 2022 20:12:25 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
