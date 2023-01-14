@@ -1,11 +1,11 @@
 <map id="Utility programs" name="Utility programs">
-<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="536,89,679,130"/>
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="533,155,681,181"/>
-<area shape="rect" id="node3" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="495,206,720,247"/>
-<area shape="rect" id="node4" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="519,333,696,374"/>
-<area shape="rect" id="node7" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="513,399,702,425"/>
-<area shape="rect" id="node8" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="532,450,683,491"/>
-<area shape="rect" id="node9" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="520,515,695,557"/>
-<area shape="rect" id="node10" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="498,581,717,622"/>
-<area shape="rect" id="node6" href="$group__main__programs.html" title="Executables" alt="" coords="5,377,107,404"/>
+<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="497,85,625,126"/>
+<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="493,151,629,177"/>
+<area shape="rect" id="node3" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="457,202,664,243"/>
+<area shape="rect" id="node4" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="473,329,648,370"/>
+<area shape="rect" id="node7" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="469,395,652,421"/>
+<area shape="rect" id="node8" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="494,446,627,487"/>
+<area shape="rect" id="node9" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="481,511,640,553"/>
+<area shape="rect" id="node10" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="463,577,658,618"/>
+<area shape="rect" id="node6" href="$group__main__programs.html" title="Executables" alt="" coords="5,373,100,400"/>
 </map>

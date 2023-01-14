@@ -1,6 +1,6 @@
 <map id="stir::TimeFrameMotion" name="stir::TimeFrameMotion">
-<area shape="rect" id="node3" href="$classstir_1_1MoveImage.html" title="A class for moving an image according to average motion in the frame. " alt="" coords="5,155,132,181"/>
-<area shape="rect" id="node4" href="$classstir_1_1MoveProjData.html" title="A class for moving projection data according to average motion in the frame. " alt="" coords="156,155,299,181"/>
-<area shape="rect" id="node5" href="$classstir_1_1ReportMovement.html" title="A class for reporting the movement within the frame w.r.t. to the reference position. " alt="" coords="323,155,486,181"/>
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="157,5,297,32"/>
+<area shape="rect" id="node3" href="$classstir_1_1MoveImage.html" title="A class for moving an image according to average motion in the frame. " alt="" coords="5,155,121,181"/>
+<area shape="rect" id="node4" href="$classstir_1_1MoveProjData.html" title="A class for moving projection data according to average motion in the frame. " alt="" coords="146,155,277,181"/>
+<area shape="rect" id="node5" href="$classstir_1_1ReportMovement.html" title="A class for reporting the movement within the frame w.r.t. to the reference position. " alt="" coords="301,155,449,181"/>
+<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="146,5,277,32"/>
 </map>

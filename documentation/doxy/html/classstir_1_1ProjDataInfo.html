@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -62,12 +62,12 @@ Inheritance diagram for stir::ProjDataInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1ProjDataInfo__inherit__graph.png" border="0" usemap="#stir_1_1ProjDataInfo_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1ProjDataInfo_inherit__map" id="stir_1_1ProjDataInfo_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="185,78,387,105"/>
-<area shape="rect" id="node7" href="classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. " alt="" coords="198,129,374,171"/>
-<area shape="rect" id="node3" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="435,5,636,47"/>
-<area shape="rect" id="node4" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="435,71,636,112"/>
-<area shape="rect" id="node5" href="classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="444,137,627,163"/>
-<area shape="rect" id="node6" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors. " alt="" coords="684,129,867,171"/>
+<area shape="rect" id="node2" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="175,78,357,105"/>
+<area shape="rect" id="node7" href="classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. " alt="" coords="185,129,347,171"/>
+<area shape="rect" id="node3" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="405,5,588,47"/>
+<area shape="rect" id="node4" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="405,71,588,112"/>
+<area shape="rect" id="node5" href="classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="413,137,580,163"/>
+<area shape="rect" id="node6" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors. " alt="" coords="636,129,803,171"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -92,6 +92,9 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo<
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#acd1bfe4dd813b3aa190b713345fcceeb">~ProjDataInfo</a> ()</td></tr>
 <tr class="memdesc:acd1bfe4dd813b3aa190b713345fcceeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:acd1bfe4dd813b3aa190b713345fcceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fce4073e426a4cfeb08a4725e5fc66"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ad6fce4073e426a4cfeb08a4725e5fc66">get_original_view_nums</a> () const</td></tr>
+<tr class="memdesc:ad6fce4073e426a4cfeb08a4725e5fc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of view numbers in the "original" data if subsets are used.  <a href="#ad6fce4073e426a4cfeb08a4725e5fc66">More...</a><br /></td></tr>
+<tr class="separator:ad6fce4073e426a4cfeb08a4725e5fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4e785f8388daa878c91e22ce126e49"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Bin.html">Bin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5b4e785f8388daa878c91e22ce126e49">get_bin</a> (const <a class="el" href="classstir_1_1LOR.html">LOR</a>&lt; float &gt; &amp;) const =0</td></tr>
 <tr class="memdesc:a5b4e785f8388daa878c91e22ce126e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the bin in the projection data that 'contains' an <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.  <a href="#a5b4e785f8388daa878c91e22ce126e49">More...</a><br /></td></tr>
 <tr class="separator:a5b4e785f8388daa878c91e22ce126e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,7 +566,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">ProjDataInfoCTI()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::CListModeDataECAT()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::CListModeDataECAT()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
 
 </div>
 </div>
@@ -935,6 +938,37 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad6fce4073e426a4cfeb08a4725e5fc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fce4073e426a4cfeb08a4725e5fc66">&#9670;&nbsp;</a></span>get_original_view_nums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; stir::ProjDataInfo::get_original_view_nums </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of view numbers in the "original" data if subsets are used. </p>
+<p><a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. ">ProjDataInfoSubsetByView</a> can be used to construct a subset of data. It might be useful to know what the original view numbers were.</p>
+<p>The default implementation just returns a list from <code>min_view_num</code> to <code>max_view_num</code>, but <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. ">ProjDataInfoSubsetByView</a> overrides it. </p>
+
+<p>Reimplemented in <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#ac0fb14c4a75dc8abdab16e1033ab7c9d">stir::ProjDataInfoSubsetByView</a>.</p>
+
+</div>
+</div>
 <a id="aa93a0f17acb8805241511214f18d1246"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa93a0f17acb8805241511214f18d1246">&#9670;&nbsp;</a></span>get_tantheta()</h2>
 
@@ -1092,6 +1126,8 @@ Protected Member Functions</h2></td></tr>
 <p>The 0 of the z-axis is chosen in the middle of the scanner.</p>
 <p>Default implementation is equivalent to </p><div class="fragment"><div class="line"><a class="code" href="classstir_1_1ProjDataInfo.html#a8eb6bc35a9ad36469423cf53c111737b">get_t</a>(bin)/<a class="code" href="classstir_1_1ProjDataInfo.html#a8994635af4f4a54e46faef589b7572fd">get_costheta</a>(bin)</div></div><!-- fragment --> 
 <p>Reimplemented in <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#a458a30c72067af678f19ffae04e90c71">stir::ProjDataInfoSubsetByView</a>, <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">stir::ProjDataInfoGeneric</a>, and <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="group__projdata.html#gac59c21a7117084ae6bf59c43016fae04">stir::interpolate_axial_position()</a>.</p>
 
 </div>
 </div>
@@ -1296,7 +1332,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ad8f3a3e6c0915cec13d205387cd64e0c">stir::ProjDataInfoCylindricalNoArcCorr</a>, <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#abe0e318e0b36a24b192e40bc7c69553a">stir::ProjDataInfoGenericNoArcCorr</a>, <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#af32d29e072ececa51b9e4e96a7625ae0">stir::ProjDataInfoSubsetByView</a>, and <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html#a262ee2ef3fe1b45c5ba10ac50459474b">stir::ProjDataInfoCylindricalArcCorr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1CListEventSAFIR.html#ab51d0a9dd05b09ad49112693c9add1ee">stir::CListEventSAFIR&lt; CListRecordSAFIR &gt;::get_bin()</a>, <a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090">stir::ListEvent::get_bin()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#aaf300c463a66047e8d9346ca91cdde64">stir::ProjDataInfoTests::set_blocks_projdata_info()</a>, and <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a37318097f15657959e51bcc76d52e847">stir::RigidObject3DTransformation::transform_bin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListEventSAFIR.html#ab51d0a9dd05b09ad49112693c9add1ee">stir::CListEventSAFIR&lt; CListRecordSAFIR&lt; DataType &gt; &gt;::get_bin()</a>, <a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090">stir::ListEvent::get_bin()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#aaf300c463a66047e8d9346ca91cdde64">stir::ProjDataInfoTests::set_blocks_projdata_info()</a>, and <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a37318097f15657959e51bcc76d52e847">stir::RigidObject3DTransformation::transform_bin()</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1413,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

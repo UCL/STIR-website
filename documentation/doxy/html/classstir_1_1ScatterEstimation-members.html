@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -70,6 +70,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#a852e6094644e95dc0d1d94eeaebda1a0">input_projdata_2d_sptr</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#a5307cc76151c003ff790758bcd8d2055">input_projdata_filename</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#acdc605a15c52ab41915aeb36fbf5bea6">input_projdata_sptr</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#a8f0f1812cf39209c876d7ea9a6af5875">make_2D_projdata_sptr</a>(const shared_ptr&lt; ProjData &gt; in_3d_sptr)</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>make_2D_projdata_sptr</b>(const shared_ptr&lt; ProjData &gt; in_3d_sptr, string template_filename) (defined in <a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a>)</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#acbcc957a4321d7c3840f9485d372aa1a">mask_image_filename</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#ab03f8924b921f10fa4909fe4b350b836">mask_projdata_filename</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#a3d823b413eb93823fda273a0d9c72a20">mask_projdata_sptr</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -118,12 +120,12 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_scatter_simulation_method_sptr</b>(const shared_ptr&lt; ScatterSimulation &gt;) (defined in <a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a>)</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#a3ba6aebef60bff5fd4cf4850537e68cf">set_up</a>()</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#ad3ff1d6214ec59be4294a66b6cc106c8">tail_mask_par_filename</a></td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">upsample_and_fit_scatter_estimate</a>(ProjData &amp;scaled_scatter_proj_data, const ProjData &amp;emission_proj_data, const ProjData &amp;scatter_proj_data, BinNormalisation &amp;scatter_normalisation, const ProjData &amp;weights_proj_data, const float min_scale_factor, const float max_scale_factor, const unsigned half_filter_width, BSpline::BSplineType spline_type, const bool remove_interleaving=true)</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html#acd61848f8e9064f0f949d939154415ce">upsample_and_fit_scatter_estimate</a>(ProjData &amp;scaled_scatter_proj_data, const ProjData &amp;emission_proj_data, const ProjData &amp;scatter_proj_data, BinNormalisation &amp;scatter_normalisation, const ProjData &amp;weights_proj_data, const float min_scale_factor, const float max_scale_factor, const unsigned half_filter_width, BSpline::BSplineType spline_type=BSpline::BSplineType::linear, const bool remove_interleaving=true)</td><td class="entry"><a class="el" href="classstir_1_1ScatterEstimation.html">stir::ScatterEstimation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~ParsingObject</b>() (defined in <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a>)</td><td class="entry"><a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

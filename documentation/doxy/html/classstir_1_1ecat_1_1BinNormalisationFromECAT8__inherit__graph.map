@@ -1,6 +1,6 @@
 <map id="stir::ecat::BinNormalisationFromECAT8" name="stir::ecat::BinNormalisationFromECAT8">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT8,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="715,24,975,95"/>
-<area shape="rect" id="node3" href="$classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="226,5,421,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,169,39"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="219,71,428,112"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT8,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="653,24,885,95"/>
+<area shape="rect" id="node3" href="$classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="211,5,385,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,152,39"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="201,71,395,112"/>
 </map>

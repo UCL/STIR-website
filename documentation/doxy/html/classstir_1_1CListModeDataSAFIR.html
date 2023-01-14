@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -59,9 +59,9 @@ Inheritance diagram for stir::CListModeDataSAFIR&lt; CListRecordT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1CListModeDataSAFIR__inherit__graph.png" border="0" usemap="#stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map" id="stir_1_1CListModeDataSAFIR_3_01CListRecordT_01_4_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="24,155,173,181"/>
-<area shape="rect" id="node3" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="29,80,169,107"/>
-<area shape="rect" id="node4" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="39,5,158,32"/>
+<area shape="rect" id="node2" href="classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data.The only difference w..." alt="" coords="25,155,164,181"/>
+<area shape="rect" id="node3" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="30,80,159,107"/>
+<area shape="rect" id="node4" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="39,5,150,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -69,6 +69,9 @@ Inheritance diagram for stir::CListModeDataSAFIR&lt; CListRecordT &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa30210ec3c370689df34b2227c7813da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">CListModeDataSAFIR</a> (const std::string &amp;listmode_filename, const std::string &amp;crystal_map_filename, const std::string &amp;template_proj_data_filename, const double lor_randomization_sigma=0.0)</td></tr>
 <tr class="separator:aa30210ec3c370689df34b2227c7813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae272539743d08d28ebf35b414c8706b0"><td class="memItemLeft" align="right" valign="top"><a id="ae272539743d08d28ebf35b414c8706b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CListModeDataSAFIR</b> (const std::string &amp;listmode_filename, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;<a class="el" href="classstir_1_1ListModeData.html#acee37d4d167bbe3bf4f1fc78947f3ad9">proj_data_info_sptr</a>)</td></tr>
+<tr class="separator:ae272539743d08d28ebf35b414c8706b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5dd113e12102b3e4d2bf421d89054f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">get_name</a> () const</td></tr>
 <tr class="memdesc:a3a5dd113e12102b3e4d2bf421d89054f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the list mode data.  <a href="#a3a5dd113e12102b3e4d2bf421d89054f">More...</a><br /></td></tr>
 <tr class="separator:a3a5dd113e12102b3e4d2bf421d89054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +215,7 @@ template&lt;class CListRecordT &gt; </div>
 </div><div class="memdoc">
 <p>Constructor </p><dl class="section user"><dt></dt><dd>Takes as arguments the filenames of the coicidence listmode file, the crystal map (text) file, and the template projection data file </dd></dl>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::get_name()</a>, and <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::get_name()</a>, <a class="el" href="classstir_1_1ListModeData.html#acee37d4d167bbe3bf4f1fc78947f3ad9">stir::ListModeData::proj_data_info_sptr</a>, and <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>.</p>
 
 </div>
 </div>
@@ -314,7 +317,7 @@ template&lt;class CListRecordT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function should save the position in input file. This is not implemented but disabled. Returns 0 in the moement. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000068">Todo:</a></b></dt><dd>Maybe provide real implementation? </dd></dl>
+<p>This function should save the position in input file. This is not implemented but disabled. Returns 0 in the moement. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd>Maybe provide real implementation? </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1ListModeData.html#a5a521b628dfecaa18368b631ad453e1d">stir::ListModeData</a>.</p>
 
@@ -344,7 +347,7 @@ template&lt;class CListRecordT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns just false in the moment. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd>Implement this properly to check for delayed events in LM files. </dd></dl>
+<p>Returns just false in the moment. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000070">Todo:</a></b></dt><dd>Implement this properly to check for delayed events in LM files. </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1CListModeData.html#a6e321d12d8d8a9ea5ddaf132760f2101">stir::CListModeData</a>.</p>
 
@@ -357,7 +360,7 @@ template&lt;class CListRecordT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

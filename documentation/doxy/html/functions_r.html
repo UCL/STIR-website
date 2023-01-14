@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -83,9 +83,10 @@ $(function() {
 , <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#a1630988194775a617894f55d103ab4d8">stir::MultiDynamicDiscretisedDensityInputFileFormat</a>
 , <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityInputFileFormat.html#a0470f35ef7361e24c7e79632956dfc58">stir::MultiParametricDiscretisedDensityInputFileFormat</a>
 , <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#aac2bea9e13a2b6554fffec20791eb710">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
+, <a class="el" href="classstir_1_1PENNListmodeInputFileFormat.html#aae26e5eb827401f2f17ed9ced628dfef">stir::PENNListmodeInputFileFormat</a>
 , <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ROOTListmodeInputFileFormat.html#a05255261d0a81adee41e48907192b391">stir::ROOTListmodeInputFileFormat</a>
-, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a9ff9ef8f6fc6bfadff586a4217df46f2">stir::SAFIRCListmodeInputFileFormat</a>
+, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a1b9a6bee0e097b0af6d6e2e8c85140d7">stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;</a>
 </li>
 <li>read_from_files()
 : <a class="el" href="classstir_1_1GatedSpatialTransformation.html#af93ea5b5301c7f7898015f74254686f9">stir::GatedSpatialTransformation</a>
@@ -131,6 +132,9 @@ $(function() {
 <li>recompute_atten_projdata
 : <a class="el" href="classstir_1_1ScatterEstimation.html#adb3583b0b4ee2bebc4d7802ad5f2bfd8">stir::ScatterEstimation</a>
 </li>
+<li>recompute_cache
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#afbc0dba5bc25b667e78a77ba2ad1c95d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
+</li>
 <li>recompute_mask_image
 : <a class="el" href="classstir_1_1ScatterEstimation.html#a2888fb4f785b5b2b7879164d9c035f20">stir::ScatterEstimation</a>
 </li>
@@ -157,6 +161,9 @@ $(function() {
 </li>
 <li>recycle()
 : <a class="el" href="classstir_1_1VectorWithOffset.html#ac191bacb3ad44a3fd32b794c96a5f819">stir::VectorWithOffset&lt; T &gt;</a>
+</li>
+<li>reduce_memory_usage
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#ac05a0d0b248906745d5ca9bc2fc017c0">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
 </li>
 <li>reduce_segment_range()
 : <a class="el" href="classstir_1_1ProjDataInfo.html#a9b5cec174a139ef435137fd79f295cf8">stir::ProjDataInfo</a>
@@ -230,6 +237,7 @@ $(function() {
 , <a class="el" href="classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html#a17792c575ed2fe3186600013d98f352b">stir::ProjectorByBinPairUsingProjMatrixByBin</a>
 , <a class="el" href="classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html#aa058106aad4eb8d73c8a15c9937f8a67">stir::ProjectorByBinPairUsingSeparateProjectors</a>
 , <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a1e142bb75a2f21ae445ca03b3da28da4">stir::ProjMatrixByBinFromFile</a>
+, <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a6ba97024a587efe4afb31f2fc2e10d3d">stir::ProjMatrixByBinPinholeSPECTUB</a>
 , <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#acf51fcbff5031ea108aabe2472a5e0ca">stir::ProjMatrixByBinSinglePhoton</a>
 , <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ada9baf0e388fd3abc2b82bdfb3c98514">stir::ProjMatrixByBinSPECTUB</a>
 , <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a4f676918e2d6a1cd08302a7176b795a1">stir::ProjMatrixByBinUsingInterpolation</a>
@@ -263,7 +271,7 @@ $(function() {
 : <a class="el" href="classstir_1_1RelatedDensels.html#a6450c67f42607febb0e3c642425477e8">stir::RelatedDensels</a>
 </li>
 <li>RelatedViewgrams()
-: <a class="el" href="classstir_1_1RelatedViewgrams.html#a14a01d3c84b8e230fc61960234a85832">stir::RelatedViewgrams&lt; elemT &gt;</a>
+: <a class="el" href="classstir_1_1RelatedViewgrams.html#aa8fae579683f0f510fb71c553b21fb1c">stir::RelatedViewgrams&lt; elemT &gt;</a>
 </li>
 <li>RelativeDifferencePrior()
 : <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a905ce4150322c61e9bbd82dc13921f35">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
@@ -310,10 +318,11 @@ $(function() {
 <li>reserve()
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a7fc85821eea11616e9e829bb1cc11b75">stir::ProjMatrixElemsForOneBin</a>
 , <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a32599b41a46bd23a15e34f5ebcf9d500">stir::ProjMatrixElemsForOneDensel</a>
-, <a class="el" href="classstir_1_1VectorWithOffset.html#a63670ee608334fd578f8dac0a6c63cc7">stir::VectorWithOffset&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1VectorWithOffset.html#a737237fe3ff32e3f6da2f0463e414a32">stir::VectorWithOffset&lt; T &gt;</a>
 </li>
 <li>reset()
 : <a class="el" href="classstir_1_1CListModeDataLMF.html#a49176a84077cd42aec23a6add6068e28">stir::CListModeDataLMF</a>
+, <a class="el" href="classstir_1_1CListModeDataPENN.html#a7cc58e8585b6987552a33a6d82867e85">stir::CListModeDataPENN</a>
 , <a class="el" href="classstir_1_1CListModeDataROOT.html#a5f57abe9dc810ea3b8c7f563feff0c1d">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aee71173bdf71a71a031021e0904de8a6">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1DataProcessor.html#ae26f4d090308dab0e2d12c01c27d9bc9">stir::DataProcessor&lt; DataT &gt;</a>
@@ -324,19 +333,23 @@ $(function() {
 , <a class="el" href="classstir_1_1HighResWallClockTimer.html#afc7b2dc2224608f15e8b29f69a094daf">stir::HighResWallClockTimer</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a62552344a9d6efa1391de76bd5a188f2">stir::InputStreamFromROOTFile</a>
 , <a class="el" href="classstir_1_1InputStreamWithRecords.html#a305c274a3dcf256237916f3fef7ee46a">stir::InputStreamWithRecords&lt; RecordT, OptionsT &gt;</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENN.html#a00e13aa30f704bee06612d6c00cfa7b5">stir::InputStreamWithRecordsFromUPENN</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html#a70cefc59aa397b65871b2e07f00c9907">stir::InputStreamWithRecordsFromUPENNbin</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html#a999d549772fb522415daffaf2f9b457e">stir::InputStreamWithRecordsFromUPENNtxt</a>
 , <a class="el" href="classstir_1_1ListModeData.html#aae816f04f055d814adfd9e4df462c707">stir::ListModeData</a>
+, <a class="el" href="classstir_1_1ListModeData__dummy.html#a89c9a72c6f316ab8b2ec5e5303773138">stir::ListModeData_dummy</a>
 </li>
 <li>reset_timers()
 : <a class="el" href="classstir_1_1TimedObject.html#a248ec6be3210f8cc2ac629827b8f22d0">stir::TimedObject</a>
 </li>
 <li>resize()
 : <a class="el" href="classstir_1_1Array.html#a9418d996f9cc0be0dbf54ad05cc36a03">stir::Array&lt; num_dimensions, elemT &gt;</a>
-, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#ac65faff0e0771445f96174092d147bca">stir::Array&lt; 1, elemT &gt;</a>
+, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a314c48aa183083a7173252286d04feab">stir::Array&lt; 1, elemT &gt;</a>
 , <a class="el" href="classstir_1_1IndexRange_3_011_01_4.html#a233cde14fd40511af7845553d8c7546d">stir::IndexRange&lt; 1 &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a6f5905dbaa499d14c1b8a4dac9e33a08">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#ab2ad88d72b5774737fb6cada3663937d">stir::SegmentByView&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Sinogram.html#aa8b93bf6e959aa719362eb263d9c7f26">stir::Sinogram&lt; elemT &gt;</a>
-, <a class="el" href="classstir_1_1VectorWithOffset.html#ae004d6afb65cd638863788ecf9d323b1">stir::VectorWithOffset&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1VectorWithOffset.html#aa0d7c80102ef873b5d60c52f3db4348d">stir::VectorWithOffset&lt; T &gt;</a>
 , <a class="el" href="classstir_1_1Viewgram.html#afa63efdac54a3a64ae9159b1213bf607">stir::Viewgram&lt; elemT &gt;</a>
 </li>
 <li>rest_iter_type
@@ -403,7 +416,8 @@ $(function() {
 , <a class="el" href="classstir_1_1find__fwhm__in__imageTests.html#adb72bd93a418611ff93fe341fd97b627">stir::find_fwhm_in_imageTests</a>
 , <a class="el" href="classstir_1_1FourierTests.html#a14393b2c773c6dca933e4b1b3f14ac3d">stir::FourierTests</a>
 , <a class="el" href="classstir_1_1GeneralisedPoissonNoiseGeneratorTests.html#af1adad14b1806a71099ea4d1f5c02af8">stir::GeneralisedPoissonNoiseGeneratorTests</a>
-, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#aca1bff258ee437f92968bb5c3e1906da">stir::GeneralisedPriorTests</a>
+, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#ad05484ce8ce8d981bbf344478047a542">stir::GeneralisedPriorTests</a>
+, <a class="el" href="classstir_1_1ImagingModalityTests.html#ae487d4c1ee3df7a0d40daeaa23ec6437">stir::ImagingModalityTests</a>
 , <a class="el" href="classstir_1_1IndexRange__Tests.html#a09eb491919d0994c58e15ad8193d74c4">stir::IndexRange_Tests</a>
 , <a class="el" href="classstir_1_1integrate__discrete__functionTests.html#a7be2b080e1720da18fb0e9efa6743774">stir::integrate_discrete_functionTests</a>
 , <a class="el" href="classstir_1_1IOTests.html#a2f4882f480a5c4fde18ccfc8a07c059d">stir::IOTests&lt; A &gt;</a>
@@ -446,7 +460,7 @@ $(function() {
 , <a class="el" href="classstir_1_1zoom__imageTests.html#a8d66509b20e092a1911fcf257229c77e">stir::zoom_imageTests</a>
 </li>
 <li>run_tests_for_objective_function()
-: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#aa7b61a23f08f175cc62724e717c05874">stir::GeneralisedPriorTests</a>
+: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">stir::GeneralisedPriorTests</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests</a>
 </li>
 <li>run_transformation()
@@ -459,7 +473,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:57 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

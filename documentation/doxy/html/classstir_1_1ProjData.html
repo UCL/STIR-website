@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -61,12 +61,12 @@ Inheritance diagram for stir::ProjData:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1ProjData__inherit__graph.png" border="0" usemap="#stir_1_1ProjData_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1ProjData_inherit__map" id="stir_1_1ProjData_inherit__map">
-<area shape="rect" id="node3" href="classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. " alt="" coords="347,5,493,47"/>
-<area shape="rect" id="node4" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="327,71,513,98"/>
-<area shape="rect" id="node7" href="classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="329,122,511,149"/>
-<area shape="rect" id="node2" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,71,124,98"/>
-<area shape="rect" id="node5" href="classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="561,46,733,73"/>
-<area shape="rect" id="node6" href="classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="569,97,726,123"/>
+<area shape="rect" id="node3" href="classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. " alt="" coords="323,5,469,47"/>
+<area shape="rect" id="node4" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="311,71,481,98"/>
+<area shape="rect" id="node7" href="classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="311,122,481,149"/>
+<area shape="rect" id="node2" href="classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,71,116,98"/>
+<area shape="rect" id="node5" href="classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="529,46,687,73"/>
+<area shape="rect" id="node6" href="classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="537,97,679,123"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -229,6 +229,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a058b3825775109dddd4411e045b29bba">size_all</a> () const</td></tr>
 <tr class="memdesc:a058b3825775109dddd4411e045b29bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total size of the data. <br /></td></tr>
 <tr class="separator:a058b3825775109dddd4411e045b29bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8669a3aff40c96df0713b99688167fe4"><td class="memItemLeft" align="right" valign="top"><a id="a8669a3aff40c96df0713b99688167fe4"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a8669a3aff40c96df0713b99688167fe4">get_original_view_nums</a> () const</td></tr>
+<tr class="memdesc:a8669a3aff40c96df0713b99688167fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward <a class="el" href="classstir_1_1ProjDataInfo.html#ad6fce4073e426a4cfeb08a4725e5fc66" title="Return a list of view numbers in the &quot;original&quot; data if subsets are used. ">ProjDataInfo::get_original_view_nums()</a> <br /></td></tr>
+<tr class="separator:a8669a3aff40c96df0713b99688167fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e5b2d17d8f027b062f7d3b6c57945f"><td class="memItemLeft" align="right" valign="top"><a id="ab0e5b2d17d8f027b062f7d3b6c57945f"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#ab0e5b2d17d8f027b062f7d3b6c57945f">write_to_file</a> (const std::string &amp;filename) const</td></tr>
 <tr class="memdesc:ab0e5b2d17d8f027b062f7d3b6c57945f"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes data to a file in Interfile format <br /></td></tr>
@@ -406,7 +410,7 @@ ECAT 7 3D sinograms and attenuation files </li>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; 3, elemT &gt;::fill()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInMemory.html#a2828a4765c29bebb5e643a21bdf7bc19">stir::ProjDataInMemory::fill()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ae175820cd1d4566044893c3f1d4964d6">stir::ForwardProjectorByBin::forward_project()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInMemory.html#a2828a4765c29bebb5e643a21bdf7bc19">stir::ProjDataInMemory::fill()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ae175820cd1d4566044893c3f1d4964d6">stir::ForwardProjectorByBin::forward_project()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#acd61848f8e9064f0f949d939154415ce">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
 </div>
 </div>
@@ -508,6 +512,8 @@ template&lt;typename iterT &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>there is no range-check on <em>array_iter</em> </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; 3, elemT &gt;::begin_all()</a>, and <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; 3, elemT &gt;::end_all()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#acd61848f8e9064f0f949d939154415ce">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
 </div>
 </div>
@@ -619,8 +625,7 @@ template&lt;typename iterT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>a*x+b*y (</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ProjData.html#a263bc2d92887cba5968a501693b4001f" title="set values of the array to x*a+y*b, where a and b are scalar, and x and y are ProjData ...">xapyb</a>) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>a*x+b*y (use xapyb) </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1ProjDataInMemory.html#aff65d439b16328a44d66dce4409cc96f">stir::ProjDataInMemory</a>.</p>
 
@@ -638,7 +643,7 @@ template&lt;typename iterT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

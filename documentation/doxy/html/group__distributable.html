@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -53,10 +53,10 @@ Collaboration diagram for distributable building blocks:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__distributable.png" border="0" alt="" usemap="#group____distributable"/>
 <map name="group____distributable" id="group____distributable">
-<area shape="rect" id="node1" href="group__test.html" title="Tests of the basic\l building blocks" alt="" coords="513,5,647,47"/>
-<area shape="rect" id="node2" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,64,180,105"/>
-<area shape="rect" id="node3" href="group__numerics.html" title="Numerical algorithms" alt="" coords="499,71,661,98"/>
-<area shape="rect" id="node5" href="group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="459,122,701,178"/>
+<area shape="rect" id="node1" href="group__test.html" title="Tests of the basic\l building blocks" alt="" coords="465,5,592,47"/>
+<area shape="rect" id="node2" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="5,64,164,105"/>
+<area shape="rect" id="node3" href="group__numerics.html" title="Numerical algorithms" alt="" coords="456,71,601,98"/>
+<area shape="rect" id="node5" href="group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="420,122,637,178"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -126,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">stir::distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ForwardProjectorByBin.html">ForwardProjectorByBin</a> &gt; &amp;forward_projector_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1BackProjectorByBin.html">BackProjectorByBin</a> &gt; &amp;back_projector_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;symmetries_sptr, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *output_image_ptr, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;additive_binwise_correction, const shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, <a class="el" href="group__distributable.html#gadfab5b00692657d7beb222e61f3f5b34">RPC_process_related_viewgrams_type</a> *RPC_process_related_viewgrams, <a class="el" href="classstir_1_1DistributedCachingInformation.html">DistributedCachingInformation</a> *caching_info_ptr)</td></tr>
 <tr class="memdesc:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">More...</a><br /></td></tr>
 <tr class="separator:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7f34c024eef05fb64204b14eac2734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjMatrixByBin.html">ProjMatrixByBin</a> &gt; PM_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *output_image_ptr, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; <a class="el" href="structstir_1_1BinAndCorr.html">BinAndCorr</a> &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
+<tr class="memdesc:gadf7f34c024eef05fb64204b14eac2734"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">More...</a><br /></td></tr>
+<tr class="separator:gadf7f34c024eef05fb64204b14eac2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Task-ids currently understood by stir::DistributedWorker</h2></td></tr>
@@ -227,7 +230,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 
 <p>set-up parameters before calling <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> </p>
 <p>Empty unless STIR_MPI is defined, in which case it sends parameters to the slaves (see <a class="el" href="classstir_1_1DistributedWorker.html" title="This implements the Worker for the stir::distributable_computation() function. ">stir::DistributedWorker</a>).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo:</a></b></dt><dd>currently uses some global variables for configuration in the distributed namespace. This needs to be converted to a class, e.g. <code>DistributedMaster</code> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000128">Todo:</a></b></dt><dd>currently uses some global variables for configuration in the distributed namespace. This needs to be converted to a class, e.g. <code>DistributedMaster</code> </dd></dl>
 
 <p class="reference">References <a class="el" href="namespacedistributed.html#a199dcf2f9801f6f123b52fb5764fb0ab">distributed::first_iteration</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="namespacedistributed.html#ab9aec49846a416019dee2c367250c6b7">distributed::send_int_value()</a>, and <a class="el" href="group__threads.html#gaab63637ee659286c969ae2bb0d479b26">stir::set_num_threads()</a>.</p>
 
@@ -417,11 +420,94 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_esti
 <dl class="section warning"><dt>Warning</dt><dd>There is NO check that the resulting subsets are balanced.</dd>
 <dd>
 The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are such that symmetries map this range onto itself (i.e. no segment_num is obtained outside the range). This usually means that <em>min_segment_num</em> = -<em>max_segment_num</em>. This assumption is checked with assert().</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo:</a></b></dt><dd>The subset-scheme should be moved somewhere else (a Subset class?).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000129">Todo:</a></b></dt><dd>The subset-scheme should be moved somewhere else (a Subset class?).</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If STIR_MPI is defined, there can only be one set_up active, as the slaves use only one set of variabiles to store projectors etc.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1DistributedWorker.html" title="This implements the Worker for the stir::distributable_computation() function. ">DistributedWorker</a> for how the slaves perform the computation if <a class="el" href="distributed__functions_8h.html#a40f23b74dcce69610a7f844c2c08efeb" title="Precompiler-define that needs to be set to enable the parallel version of stir::distributable_computa...">STIR_MPI</a> is defined. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1DistributedWorker.html#ac62d006c8b94b1caf72a6a40699b1d8f">stir::DistributedWorker&lt; TargetT &gt;::start()</a>.</p>
+
+</div>
+</div>
+<a id="gadf7f34c024eef05fb64204b14eac2734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf7f34c024eef05fb64204b14eac2734">&#9670;&nbsp;</a></span>LM_distributable_computation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LM_distributable_computation </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjMatrixByBin.html">ProjMatrixByBin</a> &gt;&#160;</td>
+          <td class="paramname"><em>PM_sptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_sptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *&#160;</td>
+          <td class="paramname"><em>output_image_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *&#160;</td>
+          <td class="paramname"><em>input_image_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structstir_1_1BinAndCorr.html">BinAndCorr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>record_cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>subset_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_subsets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>has_add</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>accumulate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function essentially implements a loop over a cached listmode file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">has_add</td><td>if <code>true</code>, the additive term in <code>record_cache</code> is taken into account </td></tr>
+    <tr><td class="paramname">accumulate</td><td>if <code>true</code>, add to <code>output_image_ptr</code>, otherwise fill it with zeroes before doing anything. ! </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;::fill()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="classstir_1_1HighResWallClockTimer.html#ae6c9db325db13994f09b4973c812a51a">stir::HighResWallClockTimer::start()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a85c6e3086f3641fdbf80e46b96a0051d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;::actual_compute_subset_gradient_without_penalty()</a>.</p>
 
 </div>
 </div>
@@ -588,7 +674,7 @@ The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are
 <p>This function essentially implements a loop over segments and all views in the current subset in the parallel case. </p>
 <p>This provides the same functionality as <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>, but enables caching of <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a> such that they don't need to be sent multiple times.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Do not call this function directly. Use <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a> instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo:</a></b></dt><dd>Merge this functionality into <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000130">Todo:</a></b></dt><dd>Merge this functionality into <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a></dd></dl>
 
 <p class="reference">References <a class="el" href="namespacedistributed.html#a199dcf2f9801f6f123b52fb5764fb0ab">distributed::first_iteration</a>, <a class="el" href="namespacedistributed.html#abbf56163d0c90c62669ee75a8a7137ef">distributed::send_bool_value()</a>, and <a class="el" href="namespacedistributed.html#a1f1f47fba560b9a9c810c85dc601af60">distributed::test</a>.</p>
 
@@ -614,7 +700,7 @@ The function assumes that <em>min_segment_num</em>, <em>max_segment_num</em> are
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

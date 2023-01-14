@@ -1,6 +1,6 @@
 <map id="stir::OSSPSReconstruction&lt; TargetT &gt;" name="stir::OSSPSReconstruction&lt; TargetT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; OSSPSReconstruction\&lt; TargetT\l \&gt;, Reconstruction\&lt; TargetT \&gt;\l, IterativeReconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="696,31,971,101"/>
-<area shape="rect" id="node3" href="$classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objectsThis is the base class for all iterative reconstructio..." alt="" coords="205,5,407,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="5,5,152,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="201,84,411,125"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; OSSPSReconstruction\&lt; TargetT\l \&gt;, Reconstruction\&lt; TargetT \&gt;\l, IterativeReconstruction\&lt; TargetT \&gt; \&gt;" alt="" coords="645,31,892,101"/>
+<area shape="rect" id="node3" href="$classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objectsThis is the base class for all iterative reconstructio..." alt="" coords="196,5,379,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="5,5,141,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="191,84,384,125"/>
 </map>

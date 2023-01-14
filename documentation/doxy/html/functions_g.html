@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -54,7 +54,7 @@ $(function() {
 : <a class="el" href="classstir_1_1GeneralisedPoissonNoiseGenerator.html#a57995256466b0120a0553d134dc4a0ee">stir::GeneralisedPoissonNoiseGenerator</a>
 </li>
 <li>GeneralisedPriorTests()
-: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#ae4822ed73575b748c7650771f19b56c3">stir::GeneralisedPriorTests</a>
+: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#aed2f2e6c37b360bc32a4a9662cc00aa4">stir::GeneralisedPriorTests</a>
 </li>
 <li>generate_random()
 : <a class="el" href="classstir_1_1GeneralisedPoissonNoiseGenerator.html#ad87faa29c718185823b3474c03b19f89">stir::GeneralisedPoissonNoiseGenerator</a>
@@ -80,6 +80,9 @@ $(function() {
 </li>
 <li>get_as_string()
 : <a class="el" href="classstir_1_1FilePath.html#aec9976032cc842f37c62a42cc2fe98f5">stir::FilePath</a>
+</li>
+<li>get_attenuation_type()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a83207a8f9bbe4e1860f2a3159bb17c5c">stir::ProjMatrixByBinPinholeSPECTUB</a>
 </li>
 <li>get_average_depth_of_interaction()
 : <a class="el" href="classstir_1_1Scanner.html#a894f1b98015552e263c82a9377d9d9a7">stir::Scanner</a>
@@ -146,6 +149,7 @@ $(function() {
 : <a class="el" href="classstir_1_1BinNormalisation.html#adce7601a8ce295d6bc107e0ccea72657">stir::BinNormalisation</a>
 , <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a761440f2305cdbd833b5b75a0587b629">stir::BinNormalisationFromAttenuationImage</a>
 , <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a373f5676f567983302a709011fe990c5">stir::BinNormalisationFromProjData</a>
+, <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#accd350a24c4305bbe8a8dfee16340cb4">stir::BinNormalisationPETFromComponents</a>
 , <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html#a17a67df60535f64844755a07882b426b">stir::BinNormalisationSinogramRescaling</a>
 , <a class="el" href="classstir_1_1BinNormalisationWithCalibration.html#a16517c63014bd932cd5aec2a4065b015">stir::BinNormalisationWithCalibration</a>
 , <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a945d8e73c94b95726eeac0ff05895395">stir::ChainedBinNormalisation</a>
@@ -181,6 +185,15 @@ $(function() {
 </li>
 <li>get_byte_order_in_stream()
 : <a class="el" href="classstir_1_1ProjDataFromStream.html#a460018ca3718f051dcd7fc35d7e4ed17">stir::ProjDataFromStream</a>
+</li>
+<li>get_cache_filename()
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#abbb7f8230b4b84e474029f508141c86c">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
+</li>
+<li>get_cache_max_size()
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a5335f66cf754fe0c2de48bd1a556aaa7">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
+</li>
+<li>get_cache_path()
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#afab8f067030ccb0d4114984fa6da89c5">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
 </li>
 <li>get_cached_proj_matrix_elems_for_one_bin()
 : <a class="el" href="classstir_1_1ProjMatrixByBin.html#aded0f037a4ba1109e6aa5f82bfd6a108">stir::ProjMatrixByBin</a>
@@ -237,7 +250,7 @@ $(function() {
 : <a class="el" href="classstir_1_1ROIValues.html#a000c2fa62a90009c8b99d175d16bc034">stir::ROIValues</a>
 </li>
 <li>get_data()
-: <a class="el" href="classstir_1_1CListRecordSAFIR.html#a0f21b4f98207f04ef58af5ceb31d0354">stir::CListRecordSAFIR</a>
+: <a class="el" href="classstir_1_1CListRecordSAFIR.html#a5390f0f43ac15c7b4e09907b9b898ade">stir::CListRecordSAFIR&lt; DataType &gt;</a>
 </li>
 <li>get_data_ptr()
 : <a class="el" href="classstir_1_1ProjDataInMemory.html#a08f6bf35201f1a568ca304293134f237">stir::ProjDataInMemory</a>
@@ -285,17 +298,22 @@ $(function() {
 <li>get_detection_position()
 : <a class="el" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html#a0aa5137917477aefb7ba2825a9d8da16">stir::CListEventCylindricalScannerWithDiscreteDetectors</a>
 , <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ac2044be3af1753096b94ef494605a99c">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
+, <a class="el" href="classstir_1_1CListEventPENN.html#a1605782fb772f16cfaf6c1d8848582c9">stir::CListEventPENN</a>
 , <a class="el" href="classstir_1_1ecat_1_1CListEventECAT8__32bit.html#a3a0a8031f5a0b82329c152d25e2e0add">stir::ecat::CListEventECAT8_32bit</a>
 , <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a48440860841938b6cb503ee4ed113e02">stir::GE::RDF_HDF5::CListRecordGEHDF5</a>
 </li>
 <li>get_detection_position_pair()
-: <a class="el" href="classstir_1_1CListEventDataSAFIR.html#a35ed21da396c4c7fc7eeae09c323d8f4">stir::CListEventDataSAFIR</a>
+: <a class="el" href="classstir_1_1CListEventDataNeuroLF.html#ab6eb30404417ed0c5fbf2203187c06ad">stir::CListEventDataNeuroLF</a>
+, <a class="el" href="classstir_1_1CListEventDataSAFIR.html#a35ed21da396c4c7fc7eeae09c323d8f4">stir::CListEventDataSAFIR</a>
 </li>
 <li>get_direction_vectors()
 : <a class="el" href="classstir_1_1Shape3DWithOrientation.html#a3be595bc68bb06900178da37b4b81c7e">stir::Shape3DWithOrientation</a>
 </li>
 <li>get_discretised_density()
 : <a class="el" href="classstir_1_1DiscretisedShape3D.html#a67fbf3ab8401d787de7c0031b5b06303">stir::DiscretisedShape3D</a>
+</li>
+<li>get_doi_correction()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#aa8f4e450a53665bc1f96e27fbcc9f62c">stir::ProjMatrixByBinPinholeSPECTUB</a>
 </li>
 <li>get_dynamic_image_from_parametric_image()
 : <a class="el" href="classstir_1_1PatlakPlot.html#afec9c3bfba5007820a0ab7fb3c3c6033">stir::PatlakPlot</a>
@@ -328,6 +346,7 @@ $(function() {
 <li>get_empty_record_sptr()
 : <a class="el" href="classstir_1_1CListModeData.html#a221c9c1013bd1cf47079ff744490bce3">stir::CListModeData</a>
 , <a class="el" href="classstir_1_1CListModeDataLMF.html#ae00a1f045484e84a20b76bdf2fbbbf3e">stir::CListModeDataLMF</a>
+, <a class="el" href="classstir_1_1CListModeDataPENN.html#a68f445d878c1de2f6fbc466788ebcaff">stir::CListModeDataPENN</a>
 , <a class="el" href="classstir_1_1CListModeDataROOT.html#aeb4d4702bca2ae07c9e7776572d6f2a4">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1CListModeDataSAFIR.html#abd68dff257d9ee59310af2d8a4f4c4aa">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#a9865e1c35fa9afcc154a0b79594f7226">stir::ecat::CListModeDataECAT8_32bit</a>
@@ -517,6 +536,9 @@ $(function() {
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a33bd28eeff1d8311d71f83ed9b8428e1">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ab093da4be387048383ea663c58b352ea">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 </li>
+<li>get_keep_all_views_in_cache()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a3c806c530f2869a844863cc3a22717eb">stir::ProjMatrixByBinPinholeSPECTUB</a>
+</li>
 <li>get_keyword()
 : <a class="el" href="classstir_1_1KeyParser.html#abf4c2ecb4ba6a7896cc3e4303523a64f">stir::KeyParser</a>
 </li>
@@ -548,6 +570,12 @@ $(function() {
 , <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">stir::ProjDataInfoGeneric</a>
 , <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#a458a30c72067af678f19ffae04e90c71">stir::ProjDataInfoSubsetByView</a>
 </li>
+<li>get_mask_from_attenuation_map()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#ac6306c22c3e4e271762504a4e7b9281f">stir::ProjMatrixByBinPinholeSPECTUB</a>
+</li>
+<li>get_mask_image_sptr()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a2204333c2676d3b6668dd7959813c037">stir::ProjMatrixByBinPinholeSPECTUB</a>
+</li>
 <li>get_max()
 : <a class="el" href="classstir_1_1ROIValues.html#a422519ea85255f09e0b9e86cc5bf2c70">stir::ROIValues</a>
 </li>
@@ -557,6 +585,9 @@ $(function() {
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#ab836f7a1a7c407be8d96d802ce6d9853">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a802ccb525abc71e64b741549847ae605">stir::SegmentByView&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Viewgram.html#af29713292e51533e5ed7be7225c137d4">stir::Viewgram&lt; elemT &gt;</a>
+</li>
+<li>get_max_FOV_radius()
+: <a class="el" href="classstir_1_1Scanner.html#af0b9a4aaf3378d2a54925072662c3d1b">stir::Scanner</a>
 </li>
 <li>get_max_index()
 : <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;</a>
@@ -579,6 +610,9 @@ $(function() {
 <li>get_max_segment_num()
 : <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">stir::ProjDataInfo</a>
+</li>
+<li>get_max_segment_num_to_process()
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#afe0068cbe532371dead30f89bf9261db">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
 </li>
 <li>get_max_tangential_pos_num()
 : <a class="el" href="classstir_1_1ProjData.html#a581c37630fd579ed236d675407669dd4">stir::ProjData</a>
@@ -603,6 +637,9 @@ $(function() {
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a8ef31d5beac7c8e6e93c56e5d73ee51e">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a8c2054009dbe03af3f32daf8055fcacf">stir::SegmentByView&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Sinogram.html#a2c0fd54fdd6342276ebe4463633f4fe8">stir::Sinogram&lt; elemT &gt;</a>
+</li>
+<li>get_maximum_number_of_sigmas()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#afdba14997ec54e5fc386218ecd0b1819">stir::ProjMatrixByBinPinholeSPECTUB</a>
 </li>
 <li>get_maximum_ring_difference()
 : <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#aa6549a5c2390a079f7f6e0f1ad14329b">stir::InterfileListmodeHeaderSiemens</a>
@@ -662,12 +699,15 @@ $(function() {
 , <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a8f644dcf6342e56f82ed2b64c255d279">stir::RigidObject3DMotionFromPolaris</a>
 </li>
 <li>get_name()
-: <a class="el" href="classstir_1_1CListModeDataROOT.html#aefd2094874286c105598276f7af0faf1">stir::CListModeDataROOT</a>
+: <a class="el" href="classstir_1_1CListModeDataPENN.html#a6230367cf0246cc84bb34d78a496eb0a">stir::CListModeDataPENN</a>
+, <a class="el" href="classstir_1_1CListModeDataROOT.html#aefd2094874286c105598276f7af0faf1">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#a981a4fa7adcfe0fc742c4ddfd54ffc64">stir::ecat::CListModeDataECAT8_32bit</a>
 , <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#ac2ee2b87c8889238f881527aa0dd4c9a">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a8cef3b7bc2d6d37f503549c39f89b7d7">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>
+, <a class="el" href="classstir_1_1ImagingModality.html#a5a057b7db443cfd3fc49e6d8bd44e1b9">stir::ImagingModality</a>
 , <a class="el" href="classstir_1_1ListModeData.html#a7bf8b22663fdd55c06d7a23ffd348fc3">stir::ListModeData</a>
+, <a class="el" href="classstir_1_1ListModeData__dummy.html#aada5c2696bbce6d9adf54c60d10d953d">stir::ListModeData_dummy</a>
 , <a class="el" href="classstir_1_1Radionuclide.html#aae04607f81c4cb675a92eae3bef18153">stir::Radionuclide</a>
 , <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">stir::Scanner</a>
 </li>
@@ -683,6 +723,7 @@ $(function() {
 <li>get_next_record()
 : <a class="el" href="classstir_1_1CListModeData.html#acfdaff0bb12cc2839e0035e76c2b3dba">stir::CListModeData</a>
 , <a class="el" href="classstir_1_1CListModeDataLMF.html#a0d3f539423780cbb18905fad6058b96f">stir::CListModeDataLMF</a>
+, <a class="el" href="classstir_1_1CListModeDataPENN.html#a01d66418efa09655a052ec4c60f63e48">stir::CListModeDataPENN</a>
 , <a class="el" href="classstir_1_1CListModeDataROOT.html#aa88e9238914b82e2c69ea57bd25d7ff4">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a74ee7e4fdbdb77a61c119b1d29cd97ca">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#af5e294b90cf5576496d914fa7cd1fdd3">stir::ecat::CListModeDataECAT8_32bit</a>
@@ -887,6 +928,9 @@ $(function() {
 <li>get_num_virtual_transaxial_crystals_per_block()
 : <a class="el" href="classstir_1_1Scanner.html#adcb91c82d2eab159c9f3688bb468b847">stir::Scanner</a>
 </li>
+<li>get_object_radius()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#ad2842dfd94aecfbe383c3450da649248">stir::ProjMatrixByBinPinholeSPECTUB</a>
+</li>
 <li>get_objective_function()
 : <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a3ddbb589d784051ebac1db8ec39c5db5">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a>
 </li>
@@ -913,7 +957,9 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#ae790287c3e4ce8d88b4aa3a9f5c894e3">stir::ProjDataInfoSubsetByView</a>
 </li>
 <li>get_original_view_nums()
-: <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#ac0fb14c4a75dc8abdab16e1033ab7c9d">stir::ProjDataInfoSubsetByView</a>
+: <a class="el" href="classstir_1_1ProjData.html#a8669a3aff40c96df0713b99688167fe4">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#ad6fce4073e426a4cfeb08a4725e5fc66">stir::ProjDataInfo</a>
+, <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#ac0fb14c4a75dc8abdab16e1033ab7c9d">stir::ProjDataInfoSubsetByView</a>
 </li>
 <li>get_output()
 : <a class="el" href="classstir_1_1BackProjectorByBin.html#af131c4295318105ecf0d3bacddf11d85">stir::BackProjectorByBin</a>
@@ -934,7 +980,7 @@ $(function() {
 : <a class="el" href="classstir_1_1SqrtHessianRowSum.html#a999153e25aaab23681092ab779877f2a">stir::SqrtHessianRowSum&lt; TargetT &gt;</a>
 </li>
 <li>get_parameters()
-: <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a4c4638b0f5895054ccc5fa2583b456ed">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a7e5075a29b7f5a8afc1bbdbea1994dde">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#ab90ce3b3da03e0e6b1791aacf5be55f9">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1OSSPSReconstruction.html#a2eac9f490d42defa28429d9e63e13a1a">stir::OSSPSReconstruction&lt; TargetT &gt;</a>
 </li>
@@ -981,6 +1027,9 @@ $(function() {
 <li>get_proj_matrix_elems_for_one_densel()
 : <a class="el" href="classstir_1_1ProjMatrixByDensel.html#a8c8b131cf8651f9139308405a0a9106f">stir::ProjMatrixByDensel</a>
 </li>
+<li>get_psf_correction()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#ab204c2643fd6d6441a994d830210146a">stir::ProjMatrixByBinPinholeSPECTUB</a>
+</li>
 <li>get_quaternion()
 : <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a2e820678d99873c2f554206c4dc5e98c">stir::RigidObject3DTransformation</a>
 </li>
@@ -1001,7 +1050,8 @@ $(function() {
 : <a class="el" href="classstir_1_1Scanner.html#a0a9afb895c38a27e371ed03474808bf0">stir::Scanner</a>
 </li>
 <li>get_registered_name()
-: <a class="el" href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">stir::RegisteredObjectBase</a>
+: <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a43b5ba22ca9aff40acd0d1ae88d6ebc3">stir::BinNormalisationPETFromComponents</a>
+, <a class="el" href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">stir::RegisteredObjectBase</a>
 , <a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">stir::RegisteredParsingObject&lt; Derived, Base, Parent &gt;</a>
 </li>
 <li>get_regular_range()
@@ -1162,7 +1212,7 @@ $(function() {
 : <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature</a>
 </li>
 <li>get_singles()
-: <a class="el" href="classstir_1_1SinglesRates.html#a849ce3b47e6eace5a1748d4b6afc9a9f">stir::SinglesRates</a>
+: <a class="el" href="classstir_1_1SinglesRates.html#ac48494fd7b5075520d21cd0f39135257">stir::SinglesRates</a>
 , <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#a010699c234f553fe65a6d71048ce0088">stir::SinglesRatesForTimeFrames</a>
 , <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#af95009e29f0edbdaea7a3951aeaa5f31">stir::SinglesRatesForTimeSlices</a>
 </li>
@@ -1187,6 +1237,9 @@ $(function() {
 </li>
 <li>get_slice_start_time()
 : <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#ab7f780ff45174492e7612b1e626de19a">stir::SinglesRatesForTimeSlices</a>
+</li>
+<li>get_spatial_resolution_PSF()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a8a8deb1f782c58c9c9c70592a0b2fcec">stir::ProjMatrixByBinPinholeSPECTUB</a>
 </li>
 <li>get_start_subiteration_num()
 : <a class="el" href="classstir_1_1IterativeReconstruction.html#ac15aff4eb21054d2693be17061348cb6">stir::IterativeReconstruction&lt; TargetT &gt;</a>
@@ -1216,6 +1269,9 @@ $(function() {
 </li>
 <li>get_subiteration_num()
 : <a class="el" href="classstir_1_1IterativeReconstruction.html#a1cf71b7e2898d66e6c4a347b4bea5302">stir::IterativeReconstruction&lt; TargetT &gt;</a>
+</li>
+<li>get_subsampling_factor_PSF()
+: <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a804e3795f220eee3a7f15fdc1c69ff09">stir::ProjMatrixByBinPinholeSPECTUB</a>
 </li>
 <li>get_subsensitivity_filenames()
 : <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>
@@ -1313,7 +1369,8 @@ $(function() {
 : <a class="el" href="classstir_1_1RunTests.html#a02c227ae7dd4237c526c3128142e5ac5">stir::RunTests</a>
 </li>
 <li>get_total_number_of_events()
-: <a class="el" href="classstir_1_1CListModeDataROOT.html#a5bab0b973bff0289a94c601e28774f88">stir::CListModeDataROOT</a>
+: <a class="el" href="classstir_1_1CListModeDataPENN.html#a8cf78ce7d944cadb717da41f7df5f62e">stir::CListModeDataPENN</a>
+, <a class="el" href="classstir_1_1CListModeDataROOT.html#a5bab0b973bff0289a94c601e28774f88">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a37e9166e3379b348348e900aed821766">stir::InputStreamFromROOTFile</a>
 , <a class="el" href="classstir_1_1ListModeData.html#a9cf6b87145336be3c563401063e1cbd6">stir::ListModeData</a>
 </li>
@@ -1419,7 +1476,7 @@ $(function() {
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#af6b2e196df565a98e9852cfcf7c62abb">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a4d0331278312dd2c854fa7191cbc6197">stir::SegmentByView&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Sinogram.html#a109d9c7d54858871ff27868c1ada4742">stir::Sinogram&lt; elemT &gt;</a>
-, <a class="el" href="classstir_1_1VectorWithOffset.html#ae270ee579120b0b96033d9472c9acfec">stir::VectorWithOffset&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1VectorWithOffset.html#a61c3169c6470ef4ed47c426ec4629a3e">stir::VectorWithOffset&lt; T &gt;</a>
 , <a class="el" href="classstir_1_1Viewgram.html#a062c536619d446a565179414551cedff">stir::Viewgram&lt; elemT &gt;</a>
 </li>
 <li>grow_z_range()
@@ -1429,7 +1486,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:57 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

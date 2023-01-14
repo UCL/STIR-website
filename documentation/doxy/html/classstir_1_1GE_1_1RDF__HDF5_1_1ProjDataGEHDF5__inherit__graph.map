@@ -1,4 +1,4 @@
 <map id="stir::GE::RDF_HDF5::ProjDataGEHDF5" name="stir::GE::RDF_HDF5::ProjDataGEHDF5">
-<area shape="rect" id="node2" href="$classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. " alt="" coords="25,80,131,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="19,5,137,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. " alt="" coords="29,80,127,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="23,5,133,32"/>
 </map>

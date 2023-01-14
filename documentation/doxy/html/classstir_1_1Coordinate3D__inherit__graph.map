@@ -1,13 +1,13 @@
 <map id="stir::Coordinate3D&lt; coordT &gt;" name="stir::Coordinate3D&lt; coordT &gt;">
-<area shape="rect" id="node6" href="$classstir_1_1CartesianCoordinate3D.html" title="CartesianCoordinate3D\l\&lt; elemT \&gt;" alt="" coords="1633,5,1807,47"/>
-<area shape="rect" id="node7" href="$classstir_1_1CartesianCoordinate3D.html" title="CartesianCoordinate3D\l\&lt; float \&gt;" alt="" coords="1633,71,1807,112"/>
-<area shape="rect" id="node8" href="$classstir_1_1CartesianCoordinate3D.html" title="a templated class for 3&#45;dimensional coordinates. " alt="" coords="1624,136,1816,177"/>
-<area shape="rect" id="node12" href="$classstir_1_1Coordinate3D.html" title="stir::Coordinate3D\l\&lt; int \&gt;" alt="" coords="1650,207,1790,248"/>
-<area shape="rect" id="node2" href="$classstir_1_1BasicCoordinate.html" title="stir::BasicCoordinate\l\&lt; 3, coordT \&gt;" alt="" coords="1177,88,1335,129"/>
-<area shape="rect" id="node3" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; BasicCoordinate\&lt; num\l_dimensions, coordT \&gt;, boost\l::equality_comparable\&lt; BasicCoordinate\l\&lt; num_dimensions, coordT \&gt; \&gt; \&gt;" alt="" coords="483,66,771,151"/>
-<area shape="rect" id="node5" href="$classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions &#45;dimensional coordi..." alt="" coords="820,117,1035,159"/>
-<area shape="rect" id="node4" href="$structboost_1_1partially__ordered.html" title="Boost class to define all comparison operators given only 2 (see operators.hpp) " alt="" coords="5,88,183,129"/>
-<area shape="rect" id="node9" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; elemT \&gt;" alt="" coords="1940,64,2132,105"/>
-<area shape="rect" id="node10" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; float \&gt;" alt="" coords="1940,129,2132,171"/>
-<area shape="rect" id="node11" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; int \&gt;" alt="" coords="1940,207,2132,248"/>
+<area shape="rect" id="node6" href="$classstir_1_1CartesianCoordinate3D.html" title="CartesianCoordinate3D\l\&lt; elemT \&gt;" alt="" coords="1484,5,1643,47"/>
+<area shape="rect" id="node7" href="$classstir_1_1CartesianCoordinate3D.html" title="CartesianCoordinate3D\l\&lt; float \&gt;" alt="" coords="1484,71,1643,112"/>
+<area shape="rect" id="node8" href="$classstir_1_1CartesianCoordinate3D.html" title="a templated class for 3&#45;dimensional coordinates. " alt="" coords="1476,136,1651,177"/>
+<area shape="rect" id="node12" href="$classstir_1_1Coordinate3D.html" title="stir::Coordinate3D\l\&lt; int \&gt;" alt="" coords="1499,207,1627,248"/>
+<area shape="rect" id="node2" href="$classstir_1_1BasicCoordinate.html" title="stir::BasicCoordinate\l\&lt; 3, coordT \&gt;" alt="" coords="1064,88,1208,129"/>
+<area shape="rect" id="node3" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; BasicCoordinate\&lt; num\l_dimensions, coordT \&gt;, boost\l::equality_comparable\&lt; BasicCoordinate\l\&lt; num_dimensions, coordT \&gt; \&gt; \&gt;" alt="" coords="433,66,691,151"/>
+<area shape="rect" id="node5" href="$classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions &#45;dimensional coordi..." alt="" coords="740,117,932,159"/>
+<area shape="rect" id="node4" href="$structboost_1_1partially__ordered.html" title="Boost class to define all comparison operators given only 2 (see operators.hpp) " alt="" coords="5,88,163,129"/>
+<area shape="rect" id="node9" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; elemT \&gt;" alt="" coords="1764,64,1939,105"/>
+<area shape="rect" id="node10" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; float \&gt;" alt="" coords="1764,129,1939,171"/>
+<area shape="rect" id="node11" href="$classstir_1_1CartesianCoordinate3D.html" title="stir::CartesianCoordinate3\lD\&lt; int \&gt;" alt="" coords="1764,207,1939,248"/>
 </map>

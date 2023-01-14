@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -62,12 +62,12 @@ Inheritance diagram for stir::ScatterSimulation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1ScatterSimulation__inherit__graph.png" border="0" usemap="#stir_1_1ScatterSimulation_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1ScatterSimulation_inherit__map" id="stir_1_1ScatterSimulation_inherit__map">
-<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SingleScatterSimulation,\l ScatterSimulation, ScatterSimulation \&gt;" alt="" coords="1233,5,1515,61"/>
-<area shape="rect" id="node2" href="classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ScatterSimulation \&gt;" alt="" coords="800,13,968,54"/>
-<area shape="rect" id="node3" href="classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,20,389,47"/>
-<area shape="rect" id="node5" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,42,601,83"/>
-<area shape="rect" id="node4" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,145,47"/>
-<area shape="rect" id="node7" href="classstir_1_1SingleScatterSimulation.html" title="PET single scatter simulation. " alt="" coords="1564,20,1771,47"/>
+<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SingleScatterSimulation,\l ScatterSimulation, ScatterSimulation \&gt;" alt="" coords="1141,5,1393,61"/>
+<area shape="rect" id="node2" href="classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ScatterSimulation \&gt;" alt="" coords="743,13,892,54"/>
+<area shape="rect" id="node3" href="classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="185,20,364,47"/>
+<area shape="rect" id="node5" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,42,563,83"/>
+<area shape="rect" id="node4" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,136,47"/>
+<area shape="rect" id="node7" href="classstir_1_1SingleScatterSimulation.html" title="PET single scatter simulation. " alt="" coords="1443,20,1629,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -323,9 +323,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scatter_volume</b></
 <tr class="memitem:ab99b1383b257c398c7a0ae342dcecaf9"><td class="memItemLeft" align="right" valign="top"><a id="ab99b1383b257c398c7a0ae342dcecaf9"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>template_proj_data_filename</b></td></tr>
 <tr class="separator:ab99b1383b257c398c7a0ae342dcecaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaf1ada1ddef692624b52ca51102b3f7"><td class="memItemLeft" align="right" valign="top"><a id="afaf1ada1ddef692624b52ca51102b3f7"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_cyl_noarc_cor_sptr</b></td></tr>
-<tr class="separator:afaf1ada1ddef692624b52ca51102b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0549833c54855983026313e782f328d3"><td class="memItemLeft" align="right" valign="top"><a id="a0549833c54855983026313e782f328d3"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_sptr</b></td></tr>
+<tr class="separator:a0549833c54855983026313e782f328d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673d6de75fd70e0133207ddc96c1d50b"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a></td></tr>
 <tr class="separator:a673d6de75fd70e0133207ddc96c1d50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c608084e9f67b4dff6956ea67d1d748"><td class="memItemLeft" align="right" valign="top"><a id="a2c608084e9f67b4dff6956ea67d1d748"></a>
@@ -458,8 +458,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Simulate the scatter probability using a model-based approach. </p>
 <p>This base class intends to computes a Compton scatter estimate using an analytical approximation of an integral. It takes as input an emission image and an attenuation image. This is effectively an implementation of the simulation part of the algorithms of Watson and Ollinger. The base class takes care of downsampling and upsampling, book-keeping, caching and looping over bins.</p>
 <p>One non-standard feature is that you can specify a different attenuation image to find the scatter points and one to compute the integrals over the attenuation image. The idea is that maybe you want to compute the integrals on a finer grid then you sample the attenuation image. This is probably not very useful though.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000171">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
 <dl class="section user"><dt>References</dt><dd>This implementation is described in the following <ol>
 <li>
 C. Tsoumpas, P. Aguiar, K. S. Nikita, D. Ros, K. Thielemans, <em>Evaluation of the Single Scatter Simulation Algorithm Implemented in the STIR Library</em>, Proc. of IEEE Medical Imaging Conf. 2004, vol. 6 pp. 3361 - 3365.  </li>
@@ -489,7 +489,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a85ddfdb6ce7dd4ba61b560f70a2cba62">set_density_image_for_scatter_points()</a>.</p>
 
@@ -575,7 +575,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>Downsample the scanner keeping the total axial length the same. </p>
 <p>If <code>new_num_rings&lt;=0</code>, use rings of approximately 2 cm thickness. If <code>new_num_dets</code> &lt;=0, use the default set (currently set in <a class="el" href="classstir_1_1ScatterSimulation.html#adfa6aa72012190de92cd2956a1041c3f" title="Set defaults before parsing. ">set_defaults()</a>) </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a0fbc794ed00c00fa3eb9585b62925346">downsample_scanner_dets</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a16f862ea893cb68ed7b9d8b8aa630da9">downsample_scanner_rings</a>, <a class="el" href="classstir_1_1Scanner.html#aeba39b832436927867bee200f63569a5">stir::Scanner::get_max_num_non_arccorrected_bins()</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">stir::ProjDataInfo::ProjDataInfoCTI()</a>, and <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a0fbc794ed00c00fa3eb9585b62925346">downsample_scanner_dets</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a16f862ea893cb68ed7b9d8b8aa630da9">downsample_scanner_rings</a>, <a class="el" href="classstir_1_1Scanner.html#aeba39b832436927867bee200f63569a5">stir::Scanner::get_max_num_non_arccorrected_bins()</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">stir::ProjDataInfo::ProjDataInfoCTI()</a>, <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>.</p>
 
@@ -892,7 +892,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

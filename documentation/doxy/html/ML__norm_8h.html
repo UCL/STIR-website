@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -56,6 +56,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="ProjData_8h_source.html">stir/ProjData.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ProjDataInfoCylindricalNoArcCorr_8h_source.html">stir/ProjDataInfoCylindricalNoArcCorr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ProjDataInfoBlocksOnCylindricalNoArcCorr_8h_source.html">stir/ProjDataInfoBlocksOnCylindricalNoArcCorr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndexRange2D_8h_source.html">stir/IndexRange2D.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sinogram_8h_source.html">stir/Sinogram.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
@@ -85,6 +86,9 @@ typedef FanProjData&#160;</td><td class="memItemRight" valign="bottom"><b>stir::
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9a56b2080f70e2b33fdb0a2755d3d848"><td class="memItemLeft" align="right" valign="top"><a id="a9a56b2080f70e2b33fdb0a2755d3d848"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const ProjDataInfo &amp;proj_data_info)</td></tr>
+<tr class="separator:a9a56b2080f70e2b33fdb0a2755d3d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393dc726c87c1c9872a2ce19c4535eaf"><td class="memItemLeft" align="right" valign="top"><a id="a393dc726c87c1c9872a2ce19c4535eaf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data</a> (DetPairData &amp;det_pair_data, const ProjDataInfo &amp;proj_data_info, const int segment_num, const int ax_pos_num)</td></tr>
 <tr class="memdesc:a393dc726c87c1c9872a2ce19c4535eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a DetPairData of appropriate dimensions and fills it with 0. <br /></td></tr>
@@ -122,16 +126,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_geo_nor
 <tr class="memitem:aff69a420efc71382b1661b7a098ec792"><td class="memItemLeft" align="right" valign="top"><a id="aff69a420efc71382b1661b7a098ec792"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::iterate_block_norm</b> (BlockData &amp;norm_block_data, const BlockData &amp;measured_block_data, const DetPairData &amp;model)</td></tr>
 <tr class="separator:aff69a420efc71382b1661b7a098ec792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109d9e9866a229b494be555be2b0a5f1"><td class="memItemLeft" align="right" valign="top"><a id="a109d9e9866a229b494be555be2b0a5f1"></a>
-shared_ptr&lt; const ProjDataInfoCylindricalNoArcCorr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stir::get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const ProjDataInfo &amp;proj_data_info)</td></tr>
-<tr class="separator:a109d9e9866a229b494be555be2b0a5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memItemLeft" align="right" valign="top"><a id="ac20985a59cf1dee7cc6049bb4a091eed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#ac20985a59cf1dee7cc6049bb4a091eed">stir::make_fan_data_remove_gaps</a> (FanProjData &amp;fan_data, const ProjData &amp;proj_data)</td></tr>
-<tr class="memdesc:ac20985a59cf1dee7cc6049bb4a091eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make fan_data from projecion file while removing the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::make_fan_data_remove_gaps</b> (FanProjData &amp;fan_data, const ProjData &amp;proj_data)</td></tr>
 <tr class="separator:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memItemLeft" align="right" valign="top"><a id="adf8bd05e524c8ef0e9ce2e1e9c289c14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#adf8bd05e524c8ef0e9ce2e1e9c289c14">stir::set_fan_data_add_gaps</a> (ProjData &amp;proj_data, const FanProjData &amp;fan_data, const float gap_value)</td></tr>
-<tr class="memdesc:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make proj_data from fan_data while adding the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::set_fan_data_add_gaps</b> (ProjData &amp;proj_data, const FanProjData &amp;fan_data, const float gap_value)</td></tr>
 <tr class="separator:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d666979cd053dd0e68e7bf52685c370"><td class="memItemLeft" align="right" valign="top"><a id="a3d666979cd053dd0e68e7bf52685c370"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::apply_block_norm</b> (FanProjData &amp;fan_data, const BlockData3D &amp;block_data, const bool apply)</td></tr>
@@ -193,11 +192,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>stir::KL</b> (const
 </ol>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
 <dd>
-Tahereh Niknejad </dd></dl>
+Tahereh Niknejad </dd>
+<dd>
+Daniel Deidda </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

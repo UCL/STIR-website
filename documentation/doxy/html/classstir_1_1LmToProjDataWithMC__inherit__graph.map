@@ -1,5 +1,5 @@
 <map id="stir::LmToProjDataWithMC" name="stir::LmToProjDataWithMC">
-<area shape="rect" id="node2" href="$classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="32,155,173,181"/>
-<area shape="rect" id="node3" href="$classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="5,80,200,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="33,5,173,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="30,155,162,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="5,80,187,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="31,5,161,32"/>
 </map>

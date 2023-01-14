@@ -1,7 +1,7 @@
 <map id="stir::RigidObject3DTransformation" name="stir::RigidObject3DTransformation">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DTransformation,\l ObjectTransformation\&lt; 3, float\l \&gt;, ObjectTransformation\&lt; 3, float \&gt; \&gt;" alt="" coords="820,74,1095,145"/>
-<area shape="rect" id="node3" href="$classstir_1_1ObjectTransformation.html" title="stir::ObjectTransformation\l\&lt; 3, float \&gt;" alt="" coords="357,49,548,90"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="5,5,220,61"/>
-<area shape="rect" id="node5" href="$classstir_1_1ObjectTransformation.html" title="Base&#45;class for performing (potentially non&#45;rigid) object transformations. " alt="" coords="7,86,219,127"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="348,127,557,169"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DTransformation,\l ObjectTransformation\&lt; 3, float\l \&gt;, ObjectTransformation\&lt; 3, float \&gt; \&gt;" alt="" coords="747,74,989,145"/>
+<area shape="rect" id="node3" href="$classstir_1_1ObjectTransformation.html" title="stir::ObjectTransformation\l\&lt; 3, float \&gt;" alt="" coords="322,49,495,90"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="5,5,195,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1ObjectTransformation.html" title="Base&#45;class for performing (potentially non&#45;rigid) object transformations. " alt="" coords="6,86,194,127"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="312,127,505,169"/>
 </map>

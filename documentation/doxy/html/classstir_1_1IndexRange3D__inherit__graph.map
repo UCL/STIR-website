@@ -1,6 +1,6 @@
 <map id="stir::IndexRange3D" name="stir::IndexRange3D">
-<area shape="rect" id="node2" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1069,21,1236,48"/>
-<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions&#45;1 \&gt; \&gt;" alt="" coords="475,14,757,55"/>
-<area shape="rect" id="node5" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="807,43,979,85"/>
-<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,21,204,48"/>
+<area shape="rect" id="node2" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="969,21,1119,48"/>
+<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions&#45;1 \&gt; \&gt;" alt="" coords="432,14,681,55"/>
+<area shape="rect" id="node5" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="731,43,885,85"/>
+<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,21,187,48"/>
 </map>

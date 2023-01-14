@@ -1,48 +1,48 @@
 <map id="stir::VectorWithOffset&lt; T &gt;" name="stir::VectorWithOffset&lt; T &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="533,412,787,439"/>
-<area shape="rect" id="node23" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::ArrayFunction\lObject\&lt; 1, elemT \&gt; \&gt; \&gt;" alt="" coords="541,865,779,921"/>
-<area shape="rect" id="node24" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::DataProcessor\l\&lt; TargetT \&gt; \&gt; \&gt;" alt="" coords="538,945,782,1001"/>
-<area shape="rect" id="node25" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; elemT \&gt; \&gt;" alt="" coords="572,1025,748,1081"/>
-<area shape="rect" id="node26" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; shared_ptr\&lt; RingNumPairs \&gt; \&gt; \&gt;" alt="" coords="531,1105,789,1161"/>
-<area shape="rect" id="node27" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; float \&gt;" alt="" coords="579,1186,741,1227"/>
-<area shape="rect" id="node28" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; elemT \&gt;" alt="" coords="579,799,741,841"/>
-<area shape="rect" id="node29" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; int \&gt;" alt="" coords="579,1251,741,1293"/>
-<area shape="rect" id="node30" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::QuadraticPrior\l\&lt; float \&gt; \&gt;" alt="" coords="579,1317,741,1373"/>
-<area shape="rect" id="node31" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l&#45;1, elemT \&gt; \&gt;" alt="" coords="561,719,759,775"/>
-<area shape="rect" id="node32" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; ViewTangPosSwap \&gt; \&gt;" alt="" coords="567,1397,753,1453"/>
-<area shape="rect" id="node33" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; MapProjMatrixElemsForOneBin \&gt; \&gt;" alt="" coords="527,1477,793,1533"/>
-<area shape="rect" id="node34" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; int \&gt; \&gt;" alt="" coords="572,1557,748,1613"/>
-<area shape="rect" id="node35" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; TargetT \&gt; \&gt;" alt="" coords="561,1638,759,1679"/>
-<area shape="rect" id="node36" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; Det1Det2 \&gt; \&gt;" alt="" coords="572,1704,748,1760"/>
-<area shape="rect" id="node37" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::PoissonLogLikelihood\lWithLinearModelForMeanAndProjData \&gt;" alt="" coords="519,1784,801,1840"/>
-<area shape="rect" id="node38" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::BinNormalisation \&gt; \&gt;" alt="" coords="513,1865,807,1906"/>
-<area shape="rect" id="node39" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions&#45;1 \&gt; \&gt;" alt="" coords="519,1930,801,1971"/>
-<area shape="rect" id="node3" href="$classstir_1_1Array.html" title="Array\&lt; 1, float \&gt;" alt="" coords="1081,5,1213,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1Array.html" title="Array\&lt; 1, T \&gt;" alt="" coords="1092,56,1203,83"/>
-<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="Array\&lt; 2, float \&gt;" alt="" coords="1081,107,1213,133"/>
-<area shape="rect" id="node7" href="$classstir_1_1Array.html" title="Array\&lt; 2, int \&gt;" alt="" coords="1087,157,1207,184"/>
-<area shape="rect" id="node8" href="$classstir_1_1Array.html" title="Array\&lt; 3, float \&gt;" alt="" coords="1081,208,1213,235"/>
-<area shape="rect" id="node9" href="$classstir_1_1Array.html" title="Array\&lt; 3, std::pair\l\&lt; stir::BasicCoordinate\l\&lt; 3, elemT \&gt;, elemT \&gt; \&gt;" alt="" coords="1053,259,1241,315"/>
-<area shape="rect" id="node10" href="$classstir_1_1Array.html" title="Array\&lt; 3, stir::BasicCoordinate\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="1036,339,1259,381"/>
-<area shape="rect" id="node11" href="$classstir_1_1Array.html" title="Array\&lt; 3, unsigned\l char \&gt;" alt="" coords="1074,405,1221,446"/>
-<area shape="rect" id="node12" href="$classstir_1_1Array.html" title="Array\&lt; 4, float \&gt;" alt="" coords="1081,471,1213,497"/>
-<area shape="rect" id="node13" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="1054,522,1241,563"/>
-<area shape="rect" id="node14" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="1049,587,1245,629"/>
-<area shape="rect" id="node15" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="1054,653,1241,694"/>
-<area shape="rect" id="node16" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions&#45;1,\l elemT \&gt;, elemT \&gt;" alt="" coords="1039,719,1255,775"/>
-<area shape="rect" id="node21" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="1039,805,1255,846"/>
-<area shape="rect" id="node6" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="1485,107,1661,133"/>
-<area shape="rect" id="node17" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1897,635,2070,661"/>
-<area shape="rect" id="node18" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1897,700,2070,727"/>
-<area shape="rect" id="node19" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l&#45;1, elemT \&gt;" alt="" coords="1877,797,2089,838"/>
-<area shape="rect" id="node20" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="1465,667,1681,709"/>
-<area shape="rect" id="node22" href="$classstir_1_1Array_3_011_00_01elemT_01_4.html" title="The 1&#45;dimensional (partial) specialisation of Array. " alt="" coords="1487,877,1660,904"/>
-<area shape="rect" id="node40" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="1490,1815,1657,1841"/>
-<area shape="rect" id="node42" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1490,1893,1657,1920"/>
-<area shape="rect" id="node44" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 4 \&gt;" alt="" coords="1490,1984,1657,2011"/>
-<area shape="rect" id="node46" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; num\l_dimensions&#45;1 \&gt;" alt="" coords="1487,2045,1659,2086"/>
-<area shape="rect" id="node47" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="1061,1930,1233,1971"/>
-<area shape="rect" id="node41" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges. " alt="" coords="1910,1815,2057,1841"/>
-<area shape="rect" id="node43" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges..." alt="" coords="1910,1893,2057,1920"/>
-<area shape="rect" id="node45" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges. " alt="" coords="1910,1984,2057,2011"/>
+<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="482,412,713,439"/>
+<area shape="rect" id="node23" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::ArrayFunction\lObject\&lt; 1, elemT \&gt; \&gt; \&gt;" alt="" coords="490,865,705,921"/>
+<area shape="rect" id="node24" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::DataProcessor\l\&lt; TargetT \&gt; \&gt; \&gt;" alt="" coords="487,945,707,1001"/>
+<area shape="rect" id="node25" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; elemT \&gt; \&gt;" alt="" coords="517,1025,678,1081"/>
+<area shape="rect" id="node26" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; shared_ptr\&lt; RingNumPairs \&gt; \&gt; \&gt;" alt="" coords="483,1105,711,1161"/>
+<area shape="rect" id="node27" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; float \&gt;" alt="" coords="523,1186,672,1227"/>
+<area shape="rect" id="node28" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; elemT \&gt;" alt="" coords="523,799,672,841"/>
+<area shape="rect" id="node29" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; int \&gt;" alt="" coords="523,1251,672,1293"/>
+<area shape="rect" id="node30" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::QuadraticPrior\l\&lt; float \&gt; \&gt;" alt="" coords="523,1317,672,1373"/>
+<area shape="rect" id="node31" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l&#45;1, elemT \&gt; \&gt;" alt="" coords="510,719,685,775"/>
+<area shape="rect" id="node32" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; ViewTangPosSwap \&gt; \&gt;" alt="" coords="511,1397,683,1453"/>
+<area shape="rect" id="node33" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; MapProjMatrixElemsForOneBin \&gt; \&gt;" alt="" coords="477,1477,718,1533"/>
+<area shape="rect" id="node34" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; int \&gt; \&gt;" alt="" coords="517,1557,678,1613"/>
+<area shape="rect" id="node35" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; TargetT \&gt; \&gt;" alt="" coords="509,1638,685,1679"/>
+<area shape="rect" id="node36" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; Det1Det2 \&gt; \&gt;" alt="" coords="517,1704,678,1760"/>
+<area shape="rect" id="node37" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::PoissonLogLikelihood\lWithLinearModelForMeanAndProjData \&gt;" alt="" coords="469,1784,725,1840"/>
+<area shape="rect" id="node38" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::BinNormalisation \&gt; \&gt;" alt="" coords="469,1865,725,1906"/>
+<area shape="rect" id="node39" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions&#45;1 \&gt; \&gt;" alt="" coords="473,1930,722,1971"/>
+<area shape="rect" id="node3" href="$classstir_1_1Array.html" title="Array\&lt; 1, float \&gt;" alt="" coords="973,5,1091,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1Array.html" title="Array\&lt; 1, T \&gt;" alt="" coords="982,56,1082,83"/>
+<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="Array\&lt; 2, float \&gt;" alt="" coords="973,107,1091,133"/>
+<area shape="rect" id="node7" href="$classstir_1_1Array.html" title="Array\&lt; 2, int \&gt;" alt="" coords="979,157,1085,184"/>
+<area shape="rect" id="node8" href="$classstir_1_1Array.html" title="Array\&lt; 3, float \&gt;" alt="" coords="973,208,1091,235"/>
+<area shape="rect" id="node9" href="$classstir_1_1Array.html" title="Array\&lt; 3, std::pair\l\&lt; stir::BasicCoordinate\l\&lt; 3, elemT \&gt;, elemT \&gt; \&gt;" alt="" coords="949,259,1115,315"/>
+<area shape="rect" id="node10" href="$classstir_1_1Array.html" title="Array\&lt; 3, stir::BasicCoordinate\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="931,339,1133,381"/>
+<area shape="rect" id="node11" href="$classstir_1_1Array.html" title="Array\&lt; 3, unsigned\l char \&gt;" alt="" coords="966,405,1098,446"/>
+<area shape="rect" id="node12" href="$classstir_1_1Array.html" title="Array\&lt; 4, float \&gt;" alt="" coords="973,471,1091,497"/>
+<area shape="rect" id="node13" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="949,522,1115,563"/>
+<area shape="rect" id="node14" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="945,587,1119,629"/>
+<area shape="rect" id="node15" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="949,653,1115,694"/>
+<area shape="rect" id="node16" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions&#45;1,\l elemT \&gt;, elemT \&gt;" alt="" coords="933,719,1131,775"/>
+<area shape="rect" id="node21" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="933,805,1131,846"/>
+<area shape="rect" id="node6" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="1338,107,1493,133"/>
+<area shape="rect" id="node17" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1707,635,1861,661"/>
+<area shape="rect" id="node18" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1707,700,1861,727"/>
+<area shape="rect" id="node19" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l&#45;1, elemT \&gt;" alt="" coords="1689,797,1879,838"/>
+<area shape="rect" id="node20" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="1319,667,1512,709"/>
+<area shape="rect" id="node22" href="$classstir_1_1Array_3_011_00_01elemT_01_4.html" title="The 1&#45;dimensional (partial) specialisation of Array. " alt="" coords="1338,877,1493,904"/>
+<area shape="rect" id="node40" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="1341,1815,1490,1841"/>
+<area shape="rect" id="node42" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1341,1893,1490,1920"/>
+<area shape="rect" id="node44" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 4 \&gt;" alt="" coords="1341,1984,1490,2011"/>
+<area shape="rect" id="node46" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; num\l_dimensions&#45;1 \&gt;" alt="" coords="1338,2045,1493,2086"/>
+<area shape="rect" id="node47" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="955,1930,1109,1971"/>
+<area shape="rect" id="node41" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges. " alt="" coords="1717,1815,1851,1841"/>
+<area shape="rect" id="node43" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges..." alt="" coords="1717,1893,1851,1920"/>
+<area shape="rect" id="node45" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges. " alt="" coords="1717,1984,1851,2011"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -44,10 +44,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classstir_1_1CListEventSAFIR-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stir::CListEventSAFIR&lt; Derived &gt; Class Template Reference</div>  </div>
+<div class="title">stir::CListEventSAFIR&lt; Derived &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__listmode.html">Support classes for reading list mode data</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -57,10 +56,10 @@ Inheritance diagram for stir::CListEventSAFIR&lt; Derived &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1CListEventSAFIR__inherit__graph.png" border="0" usemap="#stir_1_1CListEventSAFIR_3_01Derived_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1CListEventSAFIR_3_01Derived_01_4_inherit__map" id="stir_1_1CListEventSAFIR_3_01Derived_01_4_inherit__map">
-<area shape="rect" id="node4" href="classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR \&gt;" alt="" coords="5,261,171,303"/>
-<area shape="rect" id="node2" href="classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="28,81,148,108"/>
-<area shape="rect" id="node3" href="classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="33,5,143,32"/>
-<area shape="rect" id="node5" href="classstir_1_1CListRecordSAFIR.html" title="Class for general record, containing a union of data, time and raw record and providing access to cer..." alt="" coords="6,352,170,379"/>
+<area shape="rect" id="node4" href="classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="5,276,245,317"/>
+<area shape="rect" id="node2" href="classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="69,81,182,108"/>
+<area shape="rect" id="node3" href="classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="74,5,177,32"/>
+<area shape="rect" id="node5" href="classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="45,367,206,408"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -81,7 +80,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:affe05be23254a6ec9c3188f86bb46475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c8211e0615b6f6819d473940a559b1"><td class="memItemLeft" align="right" valign="top"><a id="af5c8211e0615b6f6819d473940a559b1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#af5c8211e0615b6f6819d473940a559b1">is_prompt</a> () const</td></tr>
-<tr class="memdesc:af5c8211e0615b6f6819d473940a559b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if random/delayed. <br /></td></tr>
+<tr class="memdesc:af5c8211e0615b6f6819d473940a559b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if delayed. <br /></td></tr>
 <tr class="separator:af5c8211e0615b6f6819d473940a559b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51bea3f5e06da6074be98507d478133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ac51bea3f5e06da6074be98507d478133">set_map_sptr</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DetectorCoordinateMap.html">DetectorCoordinateMap</a> &gt; new_map_sptr)</td></tr>
 <tr class="memdesc:ac51bea3f5e06da6074be98507d478133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set map for detector indices to coordinates.  <a href="#ac51bea3f5e06da6074be98507d478133">More...</a><br /></td></tr>
@@ -92,19 +91,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a63c3f96d017ce32040b585c10cc0c1ec inherit pub_methods_classstir_1_1CListEvent"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEvent.html#a63c3f96d017ce32040b585c10cc0c1ec">set_prompt</a> (const bool prompt=true)</td></tr>
 <tr class="memdesc:a63c3f96d017ce32040b585c10cc0c1ec inherit pub_methods_classstir_1_1CListEvent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the event from prompt to delayed or vice versa.  <a href="classstir_1_1CListEvent.html#a63c3f96d017ce32040b585c10cc0c1ec">More...</a><br /></td></tr>
 <tr class="separator:a63c3f96d017ce32040b585c10cc0c1ec inherit pub_methods_classstir_1_1CListEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa9d8184eb6dc26384f0b51d52675846a"><td class="memItemLeft" align="right" valign="top"><a id="aa9d8184eb6dc26384f0b51d52675846a"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>CListRecordSAFIR</b></td></tr>
-<tr class="separator:aa9d8184eb6dc26384f0b51d52675846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Derived&gt;<br />
 class stir::CListEventSAFIR&lt; Derived &gt;</h3>
 
 <p>Provides interface of the record class to STIR by implementing <a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b" title="Returns LOR corresponding to the given event. ">get_LOR()</a>. It uses an optional map from detector indices to coordinates to specify <a class="el" href="classstir_1_1LORAs2Points.html" title="A class for LORs. ">LORAs2Points</a> from given detection pair indices.</p>
-<p>The record has the following format (for little-endian byte order) </p><div class="fragment"><div class="line"><span class="keywordtype">unsigned</span> ringA : 8;</div><div class="line"><span class="keywordtype">unsigned</span> ringB : 8;</div><div class="line"><span class="keywordtype">unsigned</span> detA : 16;</div><div class="line"><span class="keywordtype">unsigned</span> detB : 16;</div><div class="line"><span class="keywordtype">unsigned</span> layerA : 4;</div><div class="line"><span class="keywordtype">unsigned</span> layerB : 4;</div><div class="line"><span class="keywordtype">unsigned</span> reserved : 6;</div><div class="line"><span class="keywordtype">unsigned</span> isRandom : 1;</div><div class="line"><span class="keywordtype">unsigned</span> type : 1;</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>The record has the following format (for little-endian byte order) </p><div class="fragment"><div class="line"><span class="keywordtype">unsigned</span> ringA : 8;</div><div class="line"><span class="keywordtype">unsigned</span> ringB : 8;</div><div class="line"><span class="keywordtype">unsigned</span> detA : 16;</div><div class="line"><span class="keywordtype">unsigned</span> detB : 16;</div><div class="line"><span class="keywordtype">unsigned</span> layerA : 4;</div><div class="line"><span class="keywordtype">unsigned</span> layerB : 4;</div><div class="line"><span class="keywordtype">unsigned</span> reserved : 6;</div><div class="line"><span class="keywordtype">unsigned</span> isDelayed : 1;</div><div class="line"><span class="keywordtype">unsigned</span> type : 1;</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1c76279e167f827013e70d3e53c6a0fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c76279e167f827013e70d3e53c6a0fc">&#9670;&nbsp;</a></span>CListEventSAFIR()</h2>
 
@@ -235,7 +228,7 @@ template&lt;class Derived&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

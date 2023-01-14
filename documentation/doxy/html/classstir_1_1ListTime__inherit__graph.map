@@ -1,9 +1,9 @@
 <map id="stir::ListTime" name="stir::ListTime">
-<area shape="rect" id="node2" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="181,5,333,32"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general record, containing a union of data, time and raw record and providing access to cer..." alt="" coords="175,56,339,83"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListTimeROOT.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="180,107,333,133"/>
-<area shape="rect" id="node5" href="$classstir_1_1ecat_1_1CListTimeECAT8__32bit.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="160,158,353,199"/>
-<area shape="rect" id="node6" href="$classstir_1_1ecat_1_1ecat7_1_1CListRecordECAT962.html" title="A class for a general element of a listmode file. " alt="" coords="179,223,334,265"/>
-<area shape="rect" id="node7" href="$classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 966 scanner..." alt="" coords="185,289,329,330"/>
-<area shape="rect" id="node8" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="177,354,336,395"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="171,5,317,32"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="163,57,325,98"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListTimeROOT.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="171,123,317,149"/>
+<area shape="rect" id="node5" href="$classstir_1_1ecat_1_1CListTimeECAT8__32bit.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="152,174,336,215"/>
+<area shape="rect" id="node6" href="$classstir_1_1ecat_1_1ecat7_1_1CListRecordECAT962.html" title="A class for a general element of a listmode file. " alt="" coords="168,239,320,281"/>
+<area shape="rect" id="node7" href="$classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 966 scanner..." alt="" coords="175,305,313,346"/>
+<area shape="rect" id="node8" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="165,370,323,411"/>
 </map>

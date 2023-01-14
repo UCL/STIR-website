@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -62,11 +62,11 @@ Inheritance diagram for stir::RigidObject3DTransformation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1RigidObject3DTransformation__inherit__graph.png" border="0" usemap="#stir_1_1RigidObject3DTransformation_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1RigidObject3DTransformation_inherit__map" id="stir_1_1RigidObject3DTransformation_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DTransformation,\l ObjectTransformation\&lt; 3, float\l \&gt;, ObjectTransformation\&lt; 3, float \&gt; \&gt;" alt="" coords="820,74,1095,145"/>
-<area shape="rect" id="node3" href="classstir_1_1ObjectTransformation.html" title="stir::ObjectTransformation\l\&lt; 3, float \&gt;" alt="" coords="357,49,548,90"/>
-<area shape="rect" id="node4" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="5,5,220,61"/>
-<area shape="rect" id="node5" href="classstir_1_1ObjectTransformation.html" title="Base&#45;class for performing (potentially non&#45;rigid) object transformations. " alt="" coords="7,86,219,127"/>
-<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="348,127,557,169"/>
+<area shape="rect" id="node2" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DTransformation,\l ObjectTransformation\&lt; 3, float\l \&gt;, ObjectTransformation\&lt; 3, float \&gt; \&gt;" alt="" coords="747,74,989,145"/>
+<area shape="rect" id="node3" href="classstir_1_1ObjectTransformation.html" title="stir::ObjectTransformation\l\&lt; 3, float \&gt;" alt="" coords="322,49,495,90"/>
+<area shape="rect" id="node4" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="5,5,195,61"/>
+<area shape="rect" id="node5" href="classstir_1_1ObjectTransformation.html" title="Base&#45;class for performing (potentially non&#45;rigid) object transformations. " alt="" coords="6,86,194,127"/>
+<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="312,127,505,169"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -220,14 +220,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
  B.K. Horn, <em>Closed-form solution of absolute orientation using unit quaternions</em>, J. Opt. Soc. Am. A Vol.4 No. 6, (1987) p.629.</p>
 <dl class="section warning"><dt>Warning</dt><dd>STIR uses a left-handed coordinate-system.</dd></dl>
 <p>The transformation that is applied is as follows </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ r' = \mathrm{conj}(q)(r-t)q \]" src="form_130.png"/>
+<img class="formulaDsp" alt="\[ r' = \mathrm{conj}(q)(r-t)q \]" src="form_134.png"/>
 </p>
-<p> where the quaternion is specified as <img class="formulaInl" alt="${[}q0,qz,qy,qx{]}$" src="form_131.png"/>, while the translation is initialised in the usual (in STIR) reverse order, e.g. </p><div class="fragment"><div class="line">CartesianCoordinate3D&lt;float&gt; t(tz,ty,tx);</div></div><!-- fragment --><p> Note that this transformation is the inverse of Horn's.</p>
+<p> where the quaternion is specified as <img class="formulaInl" alt="${[}q0,qz,qy,qx{]}$" src="form_135.png"/>, while the translation is initialised in the usual (in STIR) reverse order, e.g. </p><div class="fragment"><div class="line">CartesianCoordinate3D&lt;float&gt; t(tz,ty,tx);</div></div><!-- fragment --><p> Note that this transformation is the inverse of Horn's.</p>
 <p>This implements a translation followed by a rotation. The quaternion is constructed by as follows:<br />
- A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_132.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_133.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_134.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000191">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
+ A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_136.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_137.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_138.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
 <p>This class can transform coordinates and <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> object belonging to some projection data.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The Euler angles are probably different from the ones used in the <a class="el" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. ">Shape3D</a> hierarchy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000192">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa10c393c8b165344dc4191913b93b06c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c393c8b165344dc4191913b93b06c">&#9670;&nbsp;</a></span>RigidObject3DTransformation()</h2>
@@ -416,7 +416,7 @@ template&lt;class Iter1T , class Iter2T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

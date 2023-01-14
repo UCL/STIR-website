@@ -1,0 +1,10 @@
+<map id="stir::InputStreamWithRecordsFromUPENN" name="stir::InputStreamWithRecordsFromUPENN">
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; InputStreamWithRecordsFromUPENNbin,\l InputStreamWithRecordsFromUPENN,\l InputStreamWithRecordsFromUPENN \&gt;" alt="" coords="1279,5,1559,76"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; InputStreamWithRecordsFromUPENNtxt,\l InputStreamWithRecordsFromUPENN,\l InputStreamWithRecordsFromUPENN \&gt;" alt="" coords="1279,100,1558,171"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; InputStreamWithRecordsFrom\lUPENN \&gt;" alt="" coords="775,61,985,117"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="185,75,364,102"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,97,563,139"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,75,136,102"/>
+<area shape="rect" id="node7" href="$classstir_1_1InputStreamWithRecordsFromUPENNbin.html" title="Class for reading binary listmode files from the PENNPet Explorer scanner. " alt="" coords="1608,20,1803,61"/>
+<area shape="rect" id="node9" href="$classstir_1_1InputStreamWithRecordsFromUPENNtxt.html" title="Class for reading listmode files in text format from the PENNPet Explorer scanner. " alt="" coords="1608,115,1803,156"/>
+</map>

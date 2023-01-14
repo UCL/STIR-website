@@ -1,6 +1,6 @@
 <map id="stir::ProjectorByBinPairUsingNiftyPET" name="stir::ProjectorByBinPairUsingNiftyPET">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingNiftyPET,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="673,30,963,86"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. " alt="" coords="246,13,417,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="5,5,177,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="227,69,436,111"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingNiftyPET,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="629,30,896,86"/>
+<area shape="rect" id="node3" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. " alt="" coords="228,13,387,39"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="5,5,161,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="211,69,404,111"/>
 </map>

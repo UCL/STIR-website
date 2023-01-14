@@ -1,7 +1,7 @@
-<map id="stir::CListRecordSAFIR" name="stir::CListRecordSAFIR">
-<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="5,269,112,295"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR \&gt;" alt="" coords="136,261,301,303"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="135,81,255,108"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="216,157,373,199"/>
-<area shape="rect" id="node5" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="139,5,250,32"/>
+<map id="stir::CListRecordSAFIR&lt; DataType &gt;" name="stir::CListRecordSAFIR&lt; DataType &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="21,283,119,310"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="143,276,383,317"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="183,81,296,108"/>
+<area shape="rect" id="node6" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="261,157,415,199"/>
+<area shape="rect" id="node5" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="188,5,291,32"/>
 </map>

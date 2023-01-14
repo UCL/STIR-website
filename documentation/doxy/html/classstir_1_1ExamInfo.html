@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -59,9 +59,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41b0e4864c0034d6ce3761d267d6d56b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamInfo.html#a41b0e4864c0034d6ce3761d267d6d56b">ExamInfo</a> ()</td></tr>
-<tr class="memdesc:a41b0e4864c0034d6ce3761d267d6d56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a41b0e4864c0034d6ce3761d267d6d56b">More...</a><br /></td></tr>
-<tr class="separator:a41b0e4864c0034d6ce3761d267d6d56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7bc8b0119d8a87f91f5bc7961018f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ExamInfo.html#a5d7bc8b0119d8a87f91f5bc7961018f1">ExamInfo</a> (const <a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a> modality=ImagingModality::Unknown)</td></tr>
+<tr class="memdesc:a5d7bc8b0119d8a87f91f5bc7961018f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a5d7bc8b0119d8a87f91f5bc7961018f1">More...</a><br /></td></tr>
+<tr class="separator:a5d7bc8b0119d8a87f91f5bc7961018f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ecbebbd42a97397761f760e8c38eb4"><td class="memItemLeft" align="right" valign="top"><a id="a02ecbebbd42a97397761f760e8c38eb4"></a>
 const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_frame_definitions</b> () const</td></tr>
 <tr class="separator:a02ecbebbd42a97397761f760e8c38eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +164,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>calibration_factor</
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>this is very incomplete at the moment. Things like bed positions, gating, isotopes etc etc are all missing</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>This should be an abtract registered object, in order to serve as a complete base function for every input data type.</dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a41b0e4864c0034d6ce3761d267d6d56b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41b0e4864c0034d6ce3761d267d6d56b">&#9670;&nbsp;</a></span>ExamInfo()</h2>
+<a id="a5d7bc8b0119d8a87f91f5bc7961018f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7bc8b0119d8a87f91f5bc7961018f1">&#9670;&nbsp;</a></span>ExamInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,13 +176,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>calibration_factor</
         <tr>
           <td class="memname">stir::ExamInfo::ExamInfo </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a>&#160;</td>
+          <td class="paramname"><em>modality</em> = <code>ImagingModality::Unknown</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -225,7 +226,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>calibration_factor</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

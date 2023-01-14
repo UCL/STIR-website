@@ -1,8 +1,8 @@
 <map id="stir::ColsherFilter" name="stir::ColsherFilter">
-<area shape="rect" id="node2" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="835,47,1037,89"/>
-<area shape="rect" id="node3" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; num_dimensions, float \&gt;" alt="" coords="475,5,680,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1ArrayFunctionObject.html" title="stir::ArrayFunctionObject\l\&lt; num_dimensions, float \&gt;" alt="" coords="11,13,211,54"/>
-<area shape="rect" id="node5" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="5,81,217,137"/>
-<area shape="rect" id="node6" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i.e. potentially non&#45;symmetric) kernel using DFTs. " alt="" coords="448,85,707,141"/>
-<area shape="rect" id="node7" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="869,113,1003,140"/>
+<area shape="rect" id="node2" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="stir::ArrayFilterUsingReal\lDFTWithPadding\&lt; 2, float \&gt;" alt="" coords="755,47,941,89"/>
+<area shape="rect" id="node3" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; num_dimensions, float \&gt;" alt="" coords="429,5,610,61"/>
+<area shape="rect" id="node4" href="$classstir_1_1ArrayFunctionObject.html" title="stir::ArrayFunctionObject\l\&lt; num_dimensions, float \&gt;" alt="" coords="11,13,188,54"/>
+<area shape="rect" id="node5" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="5,81,193,137"/>
+<area shape="rect" id="node6" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i.e. potentially non&#45;symmetric) kernel using DFTs. " alt="" coords="401,85,637,141"/>
+<area shape="rect" id="node7" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="787,113,909,140"/>
 </map>

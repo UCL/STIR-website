@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ class stir::NestedIterator&lt; topleveliterT, GetRestRangeFunctionT &gt;</h3>
 <dl class="section user"><dt>examples</dt><dd>Here is an example using a vector of lists of integers. <div class="fragment"><div class="line"><span class="keyword">typedef</span> std::list&lt;int&gt; C2;</div><div class="line"><span class="keyword">typedef</span> std::vector&lt;C2&gt; C1;</div><div class="line">C1 c;</div><div class="line"><span class="keyword">typedef</span> NestedIterator&lt;C1::iterator&gt; FullIter;</div><div class="line">FullIter fiter(c.begin(),c.end());</div><div class="line"><span class="keyword">const</span> FullIter fiter_end(c.end(),c.end());</div><div class="line"><span class="keywordflow">while</span> (fiter != fiter_end)</div><div class="line">{ ... }</div></div><!-- fragment --> Here is an example using a vector of (smart) pointers to 2D arrays, where we want to iterate over all elements of all 2D arrays. <div class="fragment"><div class="line"><span class="keyword">typedef</span> Array&lt;2,int&gt; C2;</div><div class="line"><span class="keyword">typedef</span> std::vector&lt;shared_ptr&lt;C2&gt; &gt; C1;</div><div class="line">C1 c;</div><div class="line"><span class="keyword">typedef</span> NestedIterator&lt;C1::iterator, PtrBeginEndAllFunction&lt;C1::iterator&gt; &gt; FullIter;</div><div class="line">FullIter fiter(c.begin(),c.end());</div><div class="line"><span class="keyword">const</span> FullIter fiter_end(c.end(),c.end());</div><div class="line"><span class="keywordflow">while</span> (fiter != fiter_end)</div><div class="line">{ ... }</div></div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Implementation note</dt><dd></dd></dl>
 <p>The 2nd template argument would really be better implemented as a template template. However, some compilers still don't support this.</p>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug:</a></b></dt><dd>At present, <code>iterator_category</code> typedef is hard-wired to be <code>std::forward_iterator_tag</code>. This would be incorrect if <code>topleveliterT</code> or <code>rest_iter_type</code> is only an input or output iterator. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>At present, <code>iterator_category</code> typedef is hard-wired to be <code>std::forward_iterator_tag</code>. This would be incorrect if <code>topleveliterT</code> or <code>rest_iter_type</code> is only an input or output iterator. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addf3f50c875cb80271ef41f3f957783d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addf3f50c875cb80271ef41f3f957783d">&#9670;&nbsp;</a></span>NestedIterator()</h2>
@@ -190,7 +190,7 @@ template&lt;typename othertopleveliterT , typename otherGetRestRangeFunctionT &g
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

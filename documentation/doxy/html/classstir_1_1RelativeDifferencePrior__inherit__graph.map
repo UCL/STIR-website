@@ -1,7 +1,7 @@
 <map id="stir::RelativeDifferencePrior&lt; elemT &gt;" name="stir::RelativeDifferencePrior&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="972,66,1279,166"/>
-<area shape="rect" id="node3" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="449,41,619,97"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="5,5,239,61"/>
-<area shape="rect" id="node5" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined..." alt="" coords="43,86,201,127"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="429,142,639,183"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="883,66,1156,166"/>
+<area shape="rect" id="node3" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="409,41,563,97"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="5,5,213,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined..." alt="" coords="37,86,181,127"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="389,142,583,183"/>
 </map>

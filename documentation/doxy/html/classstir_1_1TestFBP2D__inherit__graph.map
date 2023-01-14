@@ -1,5 +1,5 @@
 <map id="stir::TestFBP2D" name="stir::TestFBP2D">
-<area shape="rect" id="node2" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="5,185,185,227"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="36,5,144,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction. " alt="" coords="112,81,292,123"/>
+<area shape="rect" id="node2" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="5,185,175,227"/>
+<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="32,5,137,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction. " alt="" coords="107,81,276,123"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="stir::PresmoothingForwardProjectorByBin" name="stir::PresmoothingForwardProjectorByBin">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; PresmoothingForwardProjectorBy\lBin, ForwardProjectorByBin \&gt;" alt="" coords="732,55,987,111"/>
-<area shape="rect" id="node3" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors. " alt="" coords="260,35,459,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="38,5,173,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ForwardProjectorByBin \&gt;" alt="" coords="5,57,205,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="255,86,464,127"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; PresmoothingForwardProjectorBy\lBin, ForwardProjectorByBin \&gt;" alt="" coords="672,55,901,111"/>
+<area shape="rect" id="node3" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors. " alt="" coords="240,35,423,61"/>
+<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="34,5,157,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ForwardProjectorByBin \&gt;" alt="" coords="5,57,185,98"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="235,86,428,127"/>
 </map>

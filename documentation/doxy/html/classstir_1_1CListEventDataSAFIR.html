@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -44,14 +44,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classstir_1_1CListEventDataSAFIR-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stir::CListEventDataSAFIR Class Reference</div>  </div>
+<div class="title">stir::CListEventDataSAFIR Class Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__listmode.html">Support classes for reading list mode data</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class for record with coincidence data.  
+<p>Class for record with coincidence data using SAFIR bitfield definition.  
  <a href="classstir_1_1CListEventDataSAFIR.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="CListRecordSAFIR_8h_source.html">stir/listmode/CListRecordSAFIR.h</a>&quot;</code></p>
@@ -64,21 +63,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a35ed21da396c4c7fc7eeae09c323d8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c32751c97cdc7f5bace63e60623351f"><td class="memItemLeft" align="right" valign="top"><a id="a4c32751c97cdc7f5bace63e60623351f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataSAFIR.html#a4c32751c97cdc7f5bace63e60623351f">is_prompt</a> () const</td></tr>
-<tr class="memdesc:a4c32751c97cdc7f5bace63e60623351f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if random/delayed. <br /></td></tr>
+<tr class="memdesc:a4c32751c97cdc7f5bace63e60623351f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if delayed. <br /></td></tr>
 <tr class="separator:a4c32751c97cdc7f5bace63e60623351f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac425fcdf3c24a55c124e046208e53345"><td class="memItemLeft" align="right" valign="top"><a id="ac425fcdf3c24a55c124e046208e53345"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataSAFIR.html#ac425fcdf3c24a55c124e046208e53345">is_time</a> () const</td></tr>
+<tr class="memdesc:ac425fcdf3c24a55c124e046208e53345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 1 if if event is time and 0 if it is prompt. <br /></td></tr>
+<tr class="separator:ac425fcdf3c24a55c124e046208e53345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a207b0676577164ca636fba24a5e281"><td class="memItemLeft" align="right" valign="top"><a id="a1a207b0676577164ca636fba24a5e281"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataSAFIR.html#a1a207b0676577164ca636fba24a5e281">set_prompt</a> (const bool prompt=true)</td></tr>
 <tr class="memdesc:a1a207b0676577164ca636fba24a5e281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to set "promptness" of event. <br /></td></tr>
 <tr class="separator:a1a207b0676577164ca636fba24a5e281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa9d8184eb6dc26384f0b51d52675846a"><td class="memItemLeft" align="right" valign="top"><a id="aa9d8184eb6dc26384f0b51d52675846a"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>CListRecordSAFIR</b></td></tr>
-<tr class="separator:aa9d8184eb6dc26384f0b51d52675846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for record with coincidence data. </p>
+<div class="textblock"><p>Class for record with coincidence data using SAFIR bitfield definition. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/<a class="el" href="CListRecordSAFIR_8h_source.html">CListRecordSAFIR.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/listmode/<a class="el" href="CListRecordSAFIR_8inl.html">CListRecordSAFIR.inl</a></li>
@@ -86,7 +83,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CListRecordSAFIR</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

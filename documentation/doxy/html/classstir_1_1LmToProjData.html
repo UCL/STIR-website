@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -61,9 +61,9 @@ Inheritance diagram for stir::LmToProjData:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1LmToProjData__inherit__graph.png" border="0" usemap="#stir_1_1LmToProjData_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1LmToProjData_inherit__map" id="stir_1_1LmToProjData_inherit__map">
-<area shape="rect" id="node4" href="classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction. " alt="" coords="7,229,198,256"/>
-<area shape="rect" id="node2" href="classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="5,80,200,107"/>
-<area shape="rect" id="node3" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="33,5,173,32"/>
+<area shape="rect" id="node4" href="classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction. " alt="" coords="6,229,186,256"/>
+<area shape="rect" id="node2" href="classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data, i.e. (3d) sinograms. " alt="" coords="5,80,187,107"/>
+<area shape="rect" id="node3" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="31,5,161,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -103,6 +103,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_filename_p
 <tr class="memitem:a02534aa43184762ada72fe166b0d08b4"><td class="memItemLeft" align="right" valign="top"><a id="a02534aa43184762ada72fe166b0d08b4"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_output_filename_prefix</b> () const</td></tr>
 <tr class="separator:a02534aa43184762ada72fe166b0d08b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1219760f56b508f52eaa117528cb3bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#ac1219760f56b508f52eaa117528cb3bb">set_output_projdata_sptr</a> (shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:ac1219760f56b508f52eaa117528cb3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">set projdata to be filled with output  <a href="#ac1219760f56b508f52eaa117528cb3bb">More...</a><br /></td></tr>
+<tr class="separator:ac1219760f56b508f52eaa117528cb3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5919ac1cf147fdc119550aa2f8fd8cb8"><td class="memItemLeft" align="right" valign="top"><a id="a5919ac1cf147fdc119550aa2f8fd8cb8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_store_prompts</b> (bool)</td></tr>
 <tr class="separator:a5919ac1cf147fdc119550aa2f8fd8cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +273,10 @@ shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormal
 shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a78da0e7c48436602fc504feed6e2da4c">post_normalisation_ptr</a></td></tr>
 <tr class="memdesc:a78da0e7c48436602fc504feed6e2da4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be used for post-normalisation. <br /></td></tr>
 <tr class="separator:a78da0e7c48436602fc504feed6e2da4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bd35fcc9b7a2b4580205d4c947b6d6"><td class="memItemLeft" align="right" valign="top"><a id="a60bd35fcc9b7a2b4580205d4c947b6d6"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a60bd35fcc9b7a2b4580205d4c947b6d6">output_proj_data_sptr</a></td></tr>
+<tr class="memdesc:a60bd35fcc9b7a2b4580205d4c947b6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be used to return the output directly, if set. <br /></td></tr>
+<tr class="separator:a60bd35fcc9b7a2b4580205d4c947b6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -349,7 +356,7 @@ store delayeds only<br />
 </ul>
 <dl class="section user"><dt>Notes for developers</dt><dd></dd></dl>
 <p>The class provides several virtual functions. If a derived class overloads these, the default behaviour might change. For example, <a class="el" href="classstir_1_1LmToProjData.html#a4b260985d647a3809f0e8648f2ab6652" title="will be called to get the bin for a coincidence event ">get_bin_from_event()</a> might do motion correction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo:</a></b></dt><dd><p class="startdd">Currently, there is no support for gating or energy windows. This could in principle be added by a derived class, but it would be better to do it here. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo:</a></b></dt><dd><p class="startdd">Currently, there is no support for gating or energy windows. This could in principle be added by a derived class, but it would be better to do it here. </p>
 <p>Timing info or so for <a class="el" href="classstir_1_1LmToProjData.html#a4b260985d647a3809f0e8648f2ab6652" title="will be called to get the bin for a coincidence event ">get_bin_from_event()</a> for rotating scanners etc. </p>
 <p class="enddd">There is overlap between the normalisation and the current treatment of bin.get_bin_value(). This is really because we should be using something like a EventNormalisation class for pre-normalisation.</p>
 </dd></dl>
@@ -457,6 +464,27 @@ store delayeds only<br />
 
 </div>
 </div>
+<a id="ac1219760f56b508f52eaa117528cb3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1219760f56b508f52eaa117528cb3bb">&#9670;&nbsp;</a></span>set_output_projdata_sptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LmToProjData::set_output_projdata_sptr </td>
+          <td>(</td>
+          <td class="paramtype">shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set projdata to be filled with output </p>
+<p>will only store data from the last defined time frame! </p>
+
+</div>
+</div>
 <a id="a1fda6fc329f339135ab3e585b334c4f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fda6fc329f339135ab3e585b334c4f3">&#9670;&nbsp;</a></span>set_up()</h2>
 
@@ -557,7 +585,7 @@ store delayeds only<br />
 </div><div class="memdoc">
 
 <p>will be called to get the bin for a coincidence event </p>
-<p>If bin.get_bin_value()&lt;=0, the event will be ignored. Otherwise, the value will be used as a bin-normalisation factor (on top of anything done by normalisation_ptr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo:</a></b></dt><dd>Would need timing info or so for e.g. time dependent normalisation or angle info for a rotating scanner. </dd></dl>
+<p>If bin.get_bin_value()&lt;=0, the event will be ignored. Otherwise, the value will be used as a bin-normalisation factor (on top of anything done by normalisation_ptr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo:</a></b></dt><dd>Would need timing info or so for e.g. time dependent normalisation or angle info for a rotating scanner. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#af34309374c1942f4a554f01eab3ef6e0">stir::Bin::set_bin_value()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -588,7 +616,7 @@ store delayeds only<br />
 </div><div class="memdoc">
 
 <p>A function that should return the number of uncompressed bins in the current bin. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo:</a></b></dt><dd>it is not compatiable with e.g. HiDAC doesn't belong here anyway (more <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>?) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo:</a></b></dt><dd>it is not compatiable with e.g. HiDAC doesn't belong here anyway (more <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>?) </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a6adbe7c3e2c80e7e73813c0b7d0e0fd4">stir::ProjDataInfoCylindrical::get_num_ring_pairs_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab4329e79f386e32863b1e8c2fe0444a7">stir::ProjDataInfoCylindrical::get_view_mashing_factor()</a>, and <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>.</p>
 
@@ -767,7 +795,7 @@ store delayeds only<br />
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

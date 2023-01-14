@@ -1,10 +1,10 @@
 <map id="stir::SinglesRatesForTimeSlices" name="stir::SinglesRatesForTimeSlices">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromGEHDF5,\l SinglesRates, SinglesRatesForTime\lSlices \&gt;" alt="" coords="1212,5,1467,76"/>
-<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromSglFile,\l SinglesRates, SinglesRatesForTime\lSlices \&gt;" alt="" coords="1212,100,1467,171"/>
-<area shape="rect" id="node2" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info. " alt="" coords="791,75,925,102"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="579,68,741,109"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,81,200,107"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,103,412,144"/>
-<area shape="rect" id="node7" href="$classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format..." alt="" coords="1516,20,1715,61"/>
-<area shape="rect" id="node9" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html" title="A class for reading/writing singles from an ECAT7 .sgl file. " alt="" coords="1525,115,1705,156"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromGEHDF5,\l SinglesRates, SinglesRatesForTime\lSlices \&gt;" alt="" coords="1136,5,1375,76"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SinglesRatesFromSglFile,\l SinglesRates, SinglesRatesForTime\lSlices \&gt;" alt="" coords="1136,100,1375,171"/>
+<area shape="rect" id="node2" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info. " alt="" coords="736,75,863,102"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SinglesRates \&gt;" alt="" coords="537,68,687,109"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,81,184,107"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="233,103,383,144"/>
+<area shape="rect" id="node7" href="$classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format..." alt="" coords="1424,20,1616,61"/>
+<area shape="rect" id="node9" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html" title="A class for reading/writing singles from an ECAT7 .sgl file. " alt="" coords="1435,115,1605,156"/>
 </map>

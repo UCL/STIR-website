@@ -1,7 +1,7 @@
 <map id="stir::BackProjectorByBinUsingProjMatrixByBin" name="stir::BackProjectorByBinUsingProjMatrixByBin">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BackProjectorByBinUsingProjMatrix\lByBin, BackProjectorByBin \&gt;" alt="" coords="695,52,963,108"/>
-<area shape="rect" id="node3" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. " alt="" coords="250,35,429,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="28,5,163,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="5,57,185,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="235,91,444,133"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BackProjectorByBinUsingProjMatrix\lByBin, BackProjectorByBin \&gt;" alt="" coords="644,52,888,108"/>
+<area shape="rect" id="node3" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. " alt="" coords="231,35,397,61"/>
+<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="25,5,148,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="5,57,168,98"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="217,91,411,133"/>
 </map>

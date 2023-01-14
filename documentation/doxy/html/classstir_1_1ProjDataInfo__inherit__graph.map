@@ -1,8 +1,8 @@
 <map id="stir::ProjDataInfo" name="stir::ProjDataInfo">
-<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="185,78,387,105"/>
-<area shape="rect" id="node7" href="$classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. " alt="" coords="198,129,374,171"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="435,5,636,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="435,71,636,112"/>
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="444,137,627,163"/>
-<area shape="rect" id="node6" href="$classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors. " alt="" coords="684,129,867,171"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="175,78,357,105"/>
+<area shape="rect" id="node7" href="$classstir_1_1ProjDataInfoSubsetByView.html" title="Projection data info for data corresponding to a subset sampling by views. " alt="" coords="185,129,347,171"/>
+<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindricalArcCorr.html" title="Projection data info for arc&#45;corrected data. " alt="" coords="405,5,588,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected. " alt="" coords="405,71,588,112"/>
+<area shape="rect" id="node5" href="$classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="413,137,580,163"/>
+<area shape="rect" id="node6" href="$classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors. " alt="" coords="636,129,803,171"/>
 </map>

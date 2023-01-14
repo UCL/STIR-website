@@ -1,7 +1,7 @@
 <map id="stir::MultiDynamicDiscretisedDensityOutputFileFormat" name="stir::MultiDynamicDiscretisedDensityOutputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; MultiDynamicDiscretisedDensity\lOutputFileFormat, OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt;, OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt; \&gt;" alt="" coords="1177,73,1531,159"/>
-<area shape="rect" id="node3" href="$classstir_1_1OutputFileFormat.html" title="stir::OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt;" alt="" coords="564,49,797,90"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DynamicDiscretised\lDensity \&gt; \&gt;" alt="" coords="5,5,300,61"/>
-<area shape="rect" id="node5" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files. " alt="" coords="71,86,234,127"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="576,142,785,183"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; MultiDynamicDiscretisedDensity\lOutputFileFormat, OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt;, OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt; \&gt;" alt="" coords="1065,73,1384,159"/>
+<area shape="rect" id="node3" href="$classstir_1_1OutputFileFormat.html" title="stir::OutputFileFormat\l\&lt; DynamicDiscretisedDensity \&gt;" alt="" coords="511,49,720,90"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; DynamicDiscretised\lDensity \&gt; \&gt;" alt="" coords="5,5,271,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files. " alt="" coords="63,86,213,127"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="519,142,712,183"/>
 </map>

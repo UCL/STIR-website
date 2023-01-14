@@ -1,0 +1,6 @@
+<map id="stir::BinNormalisationPETFromComponents" name="stir::BinNormalisationPETFromComponents">
+<area shape="rect" id="node2" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="33,276,180,303"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="32,185,181,227"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="12,5,191,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="123,81,272,123"/>
+</map>

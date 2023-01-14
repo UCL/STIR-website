@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -60,10 +60,10 @@ Inheritance diagram for stir::GE::RDF_HDF5::BinNormalisationFromGEHDF5:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5__inherit__graph.png" border="0" usemap="#stir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5_inherit__map" id="stir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromGEHDF5,\l BinNormalisation, BinNormalisationWith\lCalibration \&gt;" alt="" coords="715,24,1005,95"/>
-<area shape="rect" id="node3" href="classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="226,5,421,47"/>
-<area shape="rect" id="node4" href="classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,169,39"/>
-<area shape="rect" id="node5" href="classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="219,71,428,112"/>
+<area shape="rect" id="node2" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromGEHDF5,\l BinNormalisation, BinNormalisationWith\lCalibration \&gt;" alt="" coords="653,24,912,95"/>
+<area shape="rect" id="node3" href="classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="211,5,385,47"/>
+<area shape="rect" id="node4" href="classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,152,39"/>
+<area shape="rect" id="node5" href="classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="201,71,395,112"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -221,6 +221,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>check</b> (co
 <tr class="memitem:ac0e328cd1db7c26d69e53d6144b10aee inherit pro_attribs_classstir_1_1BinNormalisation"><td class="memItemLeft" align="right" valign="top"><a id="ac0e328cd1db7c26d69e53d6144b10aee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_already_set_up</b></td></tr>
 <tr class="separator:ac0e328cd1db7c26d69e53d6144b10aee inherit pro_attribs_classstir_1_1BinNormalisation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043c5ac9353c4de0453458a3f5481cab inherit pro_attribs_classstir_1_1BinNormalisation"><td class="memItemLeft" align="right" valign="top"><a id="a043c5ac9353c4de0453458a3f5481cab"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_sptr</b></td></tr>
+<tr class="separator:a043c5ac9353c4de0453458a3f5481cab inherit pro_attribs_classstir_1_1BinNormalisation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -240,7 +243,7 @@ normalisation filename:= myfile.hn
 ; use_crystal_interference_factors:=1
 End Bin Normalisation From GEHDF5:=
 </pre></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo:</a></b></dt><dd>dead-time is not yet implemented</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo:</a></b></dt><dd>dead-time is not yet implemented</dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a416558b845e4a48e5cf679023713b105"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a416558b845e4a48e5cf679023713b105">&#9670;&nbsp;</a></span>BinNormalisationFromGEHDF5()</h2>
@@ -313,7 +316,7 @@ End Bin Normalisation From GEHDF5:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

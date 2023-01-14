@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -68,9 +68,10 @@ $(function() {
 , <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#a1630988194775a617894f55d103ab4d8">stir::MultiDynamicDiscretisedDensityInputFileFormat</a>
 , <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityInputFileFormat.html#a0470f35ef7361e24c7e79632956dfc58">stir::MultiParametricDiscretisedDensityInputFileFormat</a>
 , <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#aac2bea9e13a2b6554fffec20791eb710">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
+, <a class="el" href="classstir_1_1PENNListmodeInputFileFormat.html#aae26e5eb827401f2f17ed9ced628dfef">stir::PENNListmodeInputFileFormat</a>
 , <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ROOTListmodeInputFileFormat.html#a05255261d0a81adee41e48907192b391">stir::ROOTListmodeInputFileFormat</a>
-, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a9ff9ef8f6fc6bfadff586a4217df46f2">stir::SAFIRCListmodeInputFileFormat</a>
+, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a1b9a6bee0e097b0af6d6e2e8c85140d7">stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;</a>
 </li>
 <li>read_from_files()
 : <a class="el" href="classstir_1_1GatedSpatialTransformation.html#af93ea5b5301c7f7898015f74254686f9">stir::GatedSpatialTransformation</a>
@@ -188,6 +189,7 @@ $(function() {
 </li>
 <li>reset()
 : <a class="el" href="classstir_1_1CListModeDataLMF.html#a49176a84077cd42aec23a6add6068e28">stir::CListModeDataLMF</a>
+, <a class="el" href="classstir_1_1CListModeDataPENN.html#a7cc58e8585b6987552a33a6d82867e85">stir::CListModeDataPENN</a>
 , <a class="el" href="classstir_1_1CListModeDataROOT.html#a5f57abe9dc810ea3b8c7f563feff0c1d">stir::CListModeDataROOT</a>
 , <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aee71173bdf71a71a031021e0904de8a6">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>
 , <a class="el" href="classstir_1_1DataProcessor.html#ae26f4d090308dab0e2d12c01c27d9bc9">stir::DataProcessor&lt; DataT &gt;</a>
@@ -198,7 +200,11 @@ $(function() {
 , <a class="el" href="classstir_1_1HighResWallClockTimer.html#afc7b2dc2224608f15e8b29f69a094daf">stir::HighResWallClockTimer</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a62552344a9d6efa1391de76bd5a188f2">stir::InputStreamFromROOTFile</a>
 , <a class="el" href="classstir_1_1InputStreamWithRecords.html#a305c274a3dcf256237916f3fef7ee46a">stir::InputStreamWithRecords&lt; RecordT, OptionsT &gt;</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENN.html#a00e13aa30f704bee06612d6c00cfa7b5">stir::InputStreamWithRecordsFromUPENN</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html#a70cefc59aa397b65871b2e07f00c9907">stir::InputStreamWithRecordsFromUPENNbin</a>
+, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html#a999d549772fb522415daffaf2f9b457e">stir::InputStreamWithRecordsFromUPENNtxt</a>
 , <a class="el" href="classstir_1_1ListModeData.html#aae816f04f055d814adfd9e4df462c707">stir::ListModeData</a>
+, <a class="el" href="classstir_1_1ListModeData__dummy.html#a89c9a72c6f316ab8b2ec5e5303773138">stir::ListModeData_dummy</a>
 </li>
 <li>reset_timers()
 : <a class="el" href="classstir_1_1TimedObject.html#a248ec6be3210f8cc2ac629827b8f22d0">stir::TimedObject</a>
@@ -255,7 +261,8 @@ $(function() {
 , <a class="el" href="classstir_1_1find__fwhm__in__imageTests.html#adb72bd93a418611ff93fe341fd97b627">stir::find_fwhm_in_imageTests</a>
 , <a class="el" href="classstir_1_1FourierTests.html#a14393b2c773c6dca933e4b1b3f14ac3d">stir::FourierTests</a>
 , <a class="el" href="classstir_1_1GeneralisedPoissonNoiseGeneratorTests.html#af1adad14b1806a71099ea4d1f5c02af8">stir::GeneralisedPoissonNoiseGeneratorTests</a>
-, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#aca1bff258ee437f92968bb5c3e1906da">stir::GeneralisedPriorTests</a>
+, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#ad05484ce8ce8d981bbf344478047a542">stir::GeneralisedPriorTests</a>
+, <a class="el" href="classstir_1_1ImagingModalityTests.html#ae487d4c1ee3df7a0d40daeaa23ec6437">stir::ImagingModalityTests</a>
 , <a class="el" href="classstir_1_1IndexRange__Tests.html#a09eb491919d0994c58e15ad8193d74c4">stir::IndexRange_Tests</a>
 , <a class="el" href="classstir_1_1integrate__discrete__functionTests.html#a7be2b080e1720da18fb0e9efa6743774">stir::integrate_discrete_functionTests</a>
 , <a class="el" href="classstir_1_1IOTests.html#a2f4882f480a5c4fde18ccfc8a07c059d">stir::IOTests&lt; A &gt;</a>
@@ -298,7 +305,7 @@ $(function() {
 , <a class="el" href="classstir_1_1zoom__imageTests.html#a8d66509b20e092a1911fcf257229c77e">stir::zoom_imageTests</a>
 </li>
 <li>run_tests_for_objective_function()
-: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#aa7b61a23f08f175cc62724e717c05874">stir::GeneralisedPriorTests</a>
+: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">stir::GeneralisedPriorTests</a>
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests</a>
 </li>
 <li>run_transformation()
@@ -311,7 +318,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:57 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -51,15 +51,15 @@ Collaboration diagram for Utility programs:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__utilities.png" border="0" alt="" usemap="#group____utilities"/>
 <map name="group____utilities" id="group____utilities">
-<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="536,89,679,130"/>
-<area shape="rect" id="node2" href="group__GE.html" title="support for GE data" alt="" coords="533,155,681,181"/>
-<area shape="rect" id="node3" href="group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="495,206,720,247"/>
-<area shape="rect" id="node4" href="group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="519,333,696,374"/>
-<area shape="rect" id="node7" href="group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="513,399,702,425"/>
-<area shape="rect" id="node8" href="group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="532,450,683,491"/>
-<area shape="rect" id="node9" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="520,515,695,557"/>
-<area shape="rect" id="node10" href="group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="498,581,717,622"/>
-<area shape="rect" id="node6" href="group__main__programs.html" title="Executables" alt="" coords="5,377,107,404"/>
+<area shape="rect" id="node1" href="group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="497,85,625,126"/>
+<area shape="rect" id="node2" href="group__GE.html" title="support for GE data" alt="" coords="493,151,629,177"/>
+<area shape="rect" id="node3" href="group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="457,202,664,243"/>
+<area shape="rect" id="node4" href="group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="473,329,648,370"/>
+<area shape="rect" id="node7" href="group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="469,395,652,421"/>
+<area shape="rect" id="node8" href="group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="494,446,627,487"/>
+<area shape="rect" id="node9" href="group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="481,511,640,553"/>
+<area shape="rect" id="node10" href="group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="463,577,658,618"/>
+<area shape="rect" id="node6" href="group__main__programs.html" title="Executables" alt="" coords="5,373,100,400"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -233,7 +233,7 @@ Files</h2></td></tr>
 <tr class="memdesc:apply__normfactors_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalisation factors using an ML approach. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__normfactors3D_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__normfactors3D_8cxx.html">apply_normfactors3D.cxx</a></td></tr>
-<tr class="memdesc:apply__normfactors3D_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalisation factors to projection data. <br /></td></tr>
+<tr class="memdesc:apply__normfactors3D_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalisation factors estimated using the ML code to projection data. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:attenuation__coefficients__to__projections_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attenuation__coefficients__to__projections_8cxx.html">attenuation_coefficients_to_projections.cxx</a></td></tr>
 <tr class="memdesc:attenuation__coefficients__to__projections_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the logarithm of attenuation coefficients to 'convert' them to line integrals. <br /></td></tr>
@@ -397,6 +397,9 @@ Files</h2></td></tr>
 <tr class="memitem:stir__write__pgm_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stir__write__pgm_8cxx.html">stir_write_pgm.cxx</a></td></tr>
 <tr class="memdesc:stir__write__pgm_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program writes a PGM bitmap for an image (preliminary) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:conv__UPENN__projdata__to__STIR_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__UPENN__projdata__to__STIR_8cxx.html">conv_UPENN_projdata_to_STIR.cxx</a></td></tr>
+<tr class="memdesc:conv__UPENN__projdata__to__STIR_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert PennPET Explorer-type of sinogram to STIR-type The PennPET projdata skip over the gaps, the &ndash;gaps options adds them back to STIR's projdata. Without the &ndash;gaps flag the output will match the input (as closely as possibly). &ndash;inv: should be used for the attenuation correction &ndash;up_treshold should be used with normalisation (typically 13) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:warp__and__accumulate__gated__images_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warp__and__accumulate__gated__images_8cxx.html">warp_and_accumulate_gated_images.cxx</a></td></tr>
 <tr class="memdesc:warp__and__accumulate__gated__images_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program corrects the motion from an image. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,7 +426,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

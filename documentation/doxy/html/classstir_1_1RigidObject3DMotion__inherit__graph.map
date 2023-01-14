@@ -1,8 +1,8 @@
 <map id="stir::RigidObject3DMotion" name="stir::RigidObject3DMotion">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DMotionFromPolaris,\l RigidObject3DMotion, RigidObject3DMotion \&gt;" alt="" coords="1297,5,1620,61"/>
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="821,13,1011,54"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="195,20,389,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="439,42,601,83"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,145,47"/>
-<area shape="rect" id="node7" href="$classstir_1_1RigidObject3DMotionFromPolaris.html" title="A class for handling motion information from the Polaris tracker. " alt="" coords="1669,13,1857,54"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DMotionFromPolaris,\l RigidObject3DMotion, RigidObject3DMotion \&gt;" alt="" coords="1205,5,1500,61"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="764,13,935,54"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="185,20,364,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,42,563,83"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,20,136,47"/>
+<area shape="rect" id="node7" href="$classstir_1_1RigidObject3DMotionFromPolaris.html" title="A class for handling motion information from the Polaris tracker. " alt="" coords="1549,13,1721,54"/>
 </map>

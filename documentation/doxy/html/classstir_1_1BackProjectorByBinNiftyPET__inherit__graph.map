@@ -1,7 +1,7 @@
 <map id="stir::BackProjectorByBinNiftyPET" name="stir::BackProjectorByBinNiftyPET">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BackProjectorByBinNiftyPET,\l BackProjectorByBin \&gt;" alt="" coords="160,215,385,271"/>
-<area shape="rect" id="node3" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. " alt="" coords="74,103,253,130"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="5,13,140,39"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="164,5,344,47"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="277,96,487,137"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BackProjectorByBinNiftyPET,\l BackProjectorByBin \&gt;" alt="" coords="146,215,355,271"/>
+<area shape="rect" id="node3" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors. " alt="" coords="67,103,232,130"/>
+<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="5,13,128,39"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BackProjectorByBin \&gt;" alt="" coords="152,5,315,47"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="257,96,450,137"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -41,11 +41,20 @@ $(function() {
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>cache_lm_file
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#ae49c3242a7be52ebe4b7a6fa49de24e2">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
+</li>
+<li>cache_path
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a7ae002d2aabc51f18d2553ac6403d5e1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
+</li>
 <li>cache_proj_matrix_elems_for_one_bin()
 : <a class="el" href="classstir_1_1ProjMatrixByBin.html#a9737ef0503e11c78e9ed294a7fa3d798">stir::ProjMatrixByBin</a>
 </li>
 <li>cache_proj_matrix_elems_for_one_densel()
 : <a class="el" href="classstir_1_1ProjMatrixByDensel.html#a4c261e8056ebbca17e5a11aefc277407">stir::ProjMatrixByDensel</a>
+</li>
+<li>cache_size
+: <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a7c7628d44844f8bf86fb3adb61c59c69">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>
 </li>
 <li>caching_info_ptr
 : <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a7a0aacf9b7b5fe764412638d782065b1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>
@@ -63,7 +72,7 @@ $(function() {
 <li>can_read()
 : <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html#a4a14c23975e11ba5b51ae39bc8d8b046">stir::ecat::ecat7::ECAT966ListmodeInputFileFormat</a>
 , <a class="el" href="classstir_1_1ITKImageInputFileFormat.html#ae75e788ddb1158dd32435d491c4bf6be">stir::ITKImageInputFileFormat&lt; STIRImageType &gt;</a>
-, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a2445908665ad8f6a6eaa8b6ce48fb3a7">stir::SAFIRCListmodeInputFileFormat</a>
+, <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#ad3ef5b2e154b1c2f3533ff9d41901f04">stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;</a>
 </li>
 <li>capacity()
 : <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#afd6b1548e6f40579a85e3c13909f1972">stir::ProjMatrixElemsForOneBin</a>
@@ -149,6 +158,9 @@ $(function() {
 <li>CListModeDataLMF()
 : <a class="el" href="classstir_1_1CListModeDataLMF.html#a01fffaaea30777a21ed2747e1f34867b">stir::CListModeDataLMF</a>
 </li>
+<li>CListModeDataPENN()
+: <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN</a>
+</li>
 <li>CListModeDataROOT()
 : <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT</a>
 </li>
@@ -205,17 +217,19 @@ $(function() {
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a17803a8048c605b34598d4b52f243e07">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 </li>
 <li>compute_Hessian()
-: <a class="el" href="classstir_1_1LogcoshPrior.html#a1e0b40c750229d9c44549a60d6ba98d6">stir::LogcoshPrior&lt; elemT &gt;</a>
-, <a class="el" href="classstir_1_1QuadraticPrior.html#ace819eb248600e65ce6347a0e3c14084">stir::QuadraticPrior&lt; elemT &gt;</a>
+: <a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">stir::GeneralisedPrior&lt; DataT &gt;</a>
 </li>
 <li>compute_Hessian_row_sum()
 : <a class="el" href="classstir_1_1SqrtHessianRowSum.html#ae82236d9635326286fd1fa3d955ac9f0">stir::SqrtHessianRowSum&lt; TargetT &gt;</a>
+</li>
+<li>compute_kernelised_image()
+: <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a74b1aeff4fbf3a7d949557367c673286">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
 </li>
 <li>compute_objective_function()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a211f21d59b7d47f605a2f38a643bda68">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 </li>
 <li>compute_objective_function_without_penalty()
-: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a2de6d1650b0eb144a73941a5f0ade96b">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a2b4fabaae9c18869ae00efa6f74ab57f">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 </li>
 <li>compute_penalty()
 : <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a77ce28ba6826afc2fbd303b65946b6d4">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
@@ -247,6 +261,9 @@ $(function() {
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a6f6ad894c01b826c2846e9255d6b8ff1">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#aa4f5a24e4d4f4ccf28283b6763941486">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 </li>
+<li>configure_prior_tests()
+: <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a617bfa46d3a05af995784503c66c89c6">stir::GeneralisedPriorTests</a>
+</li>
 <li>const_full_iterator
 : <a class="el" href="classstir_1_1Array.html#acc1d8cae60977a1e4010b2d9cfbc383c">stir::Array&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a357bd6d39c4f86cfd55935fce72c69b5">stir::Array&lt; 1, elemT &gt;</a>
@@ -276,7 +293,7 @@ $(function() {
 , <a class="el" href="classstir_1_1TestOSMAPOSL.html#ae2a609c326217421b090f346ba5402d3">stir::TestOSMAPOSL</a>
 </li>
 <li>construct_single_density()
-: <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#aa97ef49f3c0d220591c92e11f23afbda">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
+: <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#ad074c9630de570e414cfc5f86630d63e">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
 </li>
 <li>construct_single_density_using_function()
 : <a class="el" href="classstir_1_1ParametricDiscretisedDensity.html#a8d59195099f3e0705540a09e03b2d4db">stir::ParametricDiscretisedDensity&lt; DiscDensT &gt;</a>
@@ -355,7 +372,7 @@ $(function() {
 : <a class="el" href="classstir_1_1NiftyPETHelper.html#a46b9c90989cfff81e7346f2843b9c415">stir::NiftyPETHelper</a>
 </li>
 <li>create_shared_clone()
-: <a class="el" href="classstir_1_1ExamInfo.html#aa83536e912405140263215719b5356e4">stir::ExamInfo</a>
+: <a class="el" href="classstir_1_1ExamInfo.html#a6717559481cb65d033e544a825ebcd8c">stir::ExamInfo</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb">stir::ProjDataInfo</a>
 </li>
 <li>create_stir_im()
@@ -380,7 +397,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:57 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

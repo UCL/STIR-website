@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -59,9 +59,9 @@ Inheritance diagram for stir::MinimalArrayFilter3D&lt; elemT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1MinimalArrayFilter3D__inherit__graph.png" border="0" usemap="#stir_1_1MinimalArrayFilter3D_3_01elemT_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1MinimalArrayFilter3D_3_01elemT_01_4_inherit__map" id="stir_1_1MinimalArrayFilter3D_3_01elemT_01_4_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="619,5,824,61"/>
-<area shape="rect" id="node3" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="5,21,217,62"/>
-<area shape="rect" id="node4" href="classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="267,45,479,101"/>
+<area shape="rect" id="node2" href="classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="559,5,740,61"/>
+<area shape="rect" id="node3" href="classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="5,21,193,62"/>
+<area shape="rect" id="node4" href="classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="243,45,431,101"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -104,7 +104,7 @@ class stir::MinimalArrayFilter3D&lt; elemT &gt;</h3>
 <p>The minimum value for a 1D array of 2n+1 elements is defined as the minimum element of the sorted array.</p>
 <p>For 3D images, the current filter works by extracting all neigbours (given by the mask) to a 1D array, and getting the minimal of that array.</p>
 <p>This implementation of the minimal filter handles edges by taking the minimum of all available pixels. For instance, when a 3x3 mask is used, and the pixel-to-be-filtered is at the left edge, there will be only 6 pixels in the mask (instead of 9).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd><p class="startdd">Currently, the mask is determined in terms of the mask radius (in pixels), where size = 2*radius+1. This could easily be relaxed. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd><p class="startdd">Currently, the mask is determined in terms of the mask radius (in pixels), where size = 2*radius+1. This could easily be relaxed. </p>
 <p class="enddd">generalise to n-dimensions </p>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -147,7 +147,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

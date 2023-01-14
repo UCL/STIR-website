@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -60,16 +60,16 @@ Inheritance diagram for stir::Shape3DWithOrientation:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1Shape3DWithOrientation__inherit__graph.png" border="0" usemap="#stir_1_1Shape3DWithOrientation_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1Shape3DWithOrientation_inherit__map" id="stir_1_1Shape3DWithOrientation_inherit__map">
-<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1185,5,1516,47"/>
-<area shape="rect" id="node8" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1223,71,1478,127"/>
-<area shape="rect" id="node10" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1237,151,1465,207"/>
-<area shape="rect" id="node2" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="765,86,875,113"/>
-<area shape="rect" id="node3" href="classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="553,79,716,120"/>
-<area shape="rect" id="node4" href="classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,91,200,118"/>
-<area shape="rect" id="node5" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,113,412,155"/>
-<area shape="rect" id="node7" href="classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1604,13,1699,39"/>
-<area shape="rect" id="node9" href="classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1598,86,1705,113"/>
-<area shape="rect" id="node11" href="classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1565,166,1737,193"/>
+<area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1105,5,1405,47"/>
+<area shape="rect" id="node8" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1138,71,1373,127"/>
+<area shape="rect" id="node10" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1152,151,1359,207"/>
+<area shape="rect" id="node2" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="712,86,815,113"/>
+<area shape="rect" id="node3" href="classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="513,79,663,120"/>
+<area shape="rect" id="node4" href="classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,91,184,118"/>
+<area shape="rect" id="node5" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="233,113,383,155"/>
+<area shape="rect" id="node7" href="classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1488,13,1576,39"/>
+<area shape="rect" id="node9" href="classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1483,86,1581,113"/>
+<area shape="rect" id="node11" href="classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1455,166,1609,193"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -218,7 +218,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <div class="textblock"><p>Class for shapes with orientation. </p>
 <p>Orientation is specified by giving a 3x3 matrix specifying 3 direction vectors. Note that these vectors do not necessarily have to be orthogonal nor have unit-norm (in fact, <a class="el" href="classstir_1_1Shape3DWithOrientation.html#abe8b2b13d925f093ac6469c1e995379e" title="scale the whole shape ">scale()</a> will rescale these direction vectors). Of course, they should not be parallel, but this is not checked.</p>
 <p>Functions like <code>is_inside_shape(coord)</code> should compute the coordinate to be used in the calculation as <code>matrix_multiply(direction_vectors, coord-origin)</code>, or best practice is to call <code>transform_to_shape_coords(coords)</code>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo:</a></b></dt><dd>A previous release had Euler angle code. However, it is currently disabled as there were bugs in it.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000195">Todo:</a></b></dt><dd>A previous release had Euler angle code. However, it is currently disabled as there were bugs in it.</dd></dl>
 <dl class="section user"><dt>Parameters</dt><dd><pre class="fragment">   ; any parameters of Shape3D
 
    ; parameters that enable to use non-default axes
@@ -457,7 +457,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

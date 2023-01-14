@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,11 @@ Public Types</h2></td></tr>
 <b>GeminiTF</b>, 
 <br />
 &#160;&#160;<b>SAFIRDualRingPrototype</b>, 
+<b>UPENN_5rings</b>, 
+<b>UPENN_5rings_no_gaps</b>, 
+<b>UPENN_6rings</b>, 
+<br />
+&#160;&#160;<b>UPENN_6rings_no_gaps</b>, 
 <b>User_defined_scanner</b>, 
 <b>Unknown_scanner</b>
 <br />
@@ -218,6 +223,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a77bb4d5db5dad9d4aa53972eaeef9622">get_inner_ring_radius</a> () const</td></tr>
 <tr class="memdesc:a77bb4d5db5dad9d4aa53972eaeef9622"><td class="mdescLeft">&#160;</td><td class="mdescRight">get inner ring radius <br /></td></tr>
 <tr class="separator:a77bb4d5db5dad9d4aa53972eaeef9622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b9a4aaf3378d2a54925072662c3d1b"><td class="memItemLeft" align="right" valign="top"><a id="af0b9a4aaf3378d2a54925072662c3d1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#af0b9a4aaf3378d2a54925072662c3d1b">get_max_FOV_radius</a> () const</td></tr>
+<tr class="memdesc:af0b9a4aaf3378d2a54925072662c3d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get maximum field of view radius <br /></td></tr>
+<tr class="separator:af0b9a4aaf3378d2a54925072662c3d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae841e418b47e1efcfc8811d950c23f0e"><td class="memItemLeft" align="right" valign="top"><a id="ae841e418b47e1efcfc8811d950c23f0e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ae841e418b47e1efcfc8811d950c23f0e">get_effective_ring_radius</a> () const</td></tr>
 <tr class="memdesc:ae841e418b47e1efcfc8811d950c23f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get effective ring radius <br /></td></tr>
@@ -361,9 +370,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5478f0a8f0496bfabde119ff397990a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a5478f0a8f0496bfabde119ff397990a5">set_num_virtual_transaxial_crystals_per_block</a> (int)</td></tr>
 <tr class="separator:a5478f0a8f0496bfabde119ff397990a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">functions to get block geometry info</div></td></tr>
-<tr class="memitem:a70b488e1e4d8a02ab41bbba889350aeb"><td class="memItemLeft" align="right" valign="top"><a id="a70b488e1e4d8a02ab41bbba889350aeb"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a70b488e1e4d8a02ab41bbba889350aeb">get_scanner_geometry</a> () const</td></tr>
-<tr class="memdesc:a70b488e1e4d8a02ab41bbba889350aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner geometry <br /></td></tr>
+<tr class="memitem:a70b488e1e4d8a02ab41bbba889350aeb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a70b488e1e4d8a02ab41bbba889350aeb">get_scanner_geometry</a> () const</td></tr>
+<tr class="memdesc:a70b488e1e4d8a02ab41bbba889350aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get scanner geometry  <a href="#a70b488e1e4d8a02ab41bbba889350aeb">More...</a><br /></td></tr>
 <tr class="separator:a70b488e1e4d8a02ab41bbba889350aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaed6cd1900b071dfa0d830c17bd8b4b"><td class="memItemLeft" align="right" valign="top"><a id="aeaed6cd1900b071dfa0d830c17bd8b4b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#aeaed6cd1900b071dfa0d830c17bd8b4b">get_axial_crystal_spacing</a> () const</td></tr>
@@ -475,11 +483,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 </ul>
 <p>A further complication is that some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data (corresponding to gaps between detector blocks). We currently define the blocks as the "virtual" ones, but provide extra members to find out how many of these virtual crystals there are.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is only sensible for discrete detector-based scanners. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000165">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000178">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
 <p class="enddd">derive from <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a> </p>
 </dd></dl>
 <pre class="fragment">\warning You have to call set_up() after using the \c set_* functions (except set_params()).
-</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000166">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
+</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000179">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af491e65bf3d29698e996a9cc19af29ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af491e65bf3d29698e996a9cc19af29ce">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
@@ -659,6 +667,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a3ea7e93345d5e46d2ddeebc9a8e1af34" title="get intrinsic tilt in raw sinogram data (in radians) ">get_intrinsic_azimuthal_tilt()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scanner_geometry_v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="name functions to set block geometry info set scanner geometry ">set_scanner_geometry()</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when block/bucket info are inconsistent </dd></dl>
 
 </div>
@@ -841,6 +856,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a3ea7e93345d5e46d2ddeebc9a8e1af34" title="get intrinsic tilt in raw sinogram data (in radians) ">get_intrinsic_azimuthal_tilt()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scanner_geometry_v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="name functions to set block geometry info set scanner geometry ">set_scanner_geometry()</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> when block/bucket info are inconsistent </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c">set_scanner_geometry()</a>, and <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf">set_up()</a>.</p>
@@ -931,7 +953,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 <p>get the maximum number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_num_non_arccorrected_tangential_poss()</code> or so. Even better would be to replace it by a name relating to the number of detectors that are in coincidence with a a single detector in the ring, as that is the physical reason why there is a maximum number anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>change name </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000180">Todo:</a></b></dt><dd>change name </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>, <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
 
@@ -962,7 +984,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 <p>get the default number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_default_num_arccorrected_tangential_poss()</code> or so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
@@ -1118,6 +1140,36 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 </div>
 </div>
+<a id="a70b488e1e4d8a02ab41bbba889350aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b488e1e4d8a02ab41bbba889350aeb">&#9670;&nbsp;</a></span>get_scanner_geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string stir::Scanner::get_scanner_geometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get scanner geometry </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="name functions to set block geometry info set scanner geometry ">set_scanner_geometry</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency()</a>, <a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data()</a>, and <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
+
+</div>
+</div>
 <a id="a489eb448547905e4332e29872fe3849b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a489eb448547905e4332e29872fe3849b">&#9670;&nbsp;</a></span>set_type()</h2>
 
@@ -1165,7 +1217,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 </div><div class="memdoc">
 
 <p>name functions to set block geometry info set scanner geometry </p>
-<p>Will also read the detector map from file if the geometry is <code>Generic</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_scanner_geometry</td><td>"Cylindrical", "BlocksOnCylindrical" or "Generic"</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Will also read the detector map from file if the geometry is <code>"Generic"</code>. </p><dl class="section warning"><dt>Warning</dt><dd>you need to call <a class="el" href="classstir_1_1Scanner.html#aa3a8f45783f2a9edd968cdbef6b4ddcf" title="Initialised internal geometry. ">set_up()</a> after calling this function.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="name functions to set block geometry info set scanner geometry ">set_scanner_geometry</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#afe621ee50581789c9eb0ce0de8f344bc">list_names()</a>, and <a class="el" href="classstir_1_1Scanner.html#a0cbf6654fc21df1b8b3a1f17bb78b014">Scanner()</a>.</p>
 
@@ -1210,7 +1269,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

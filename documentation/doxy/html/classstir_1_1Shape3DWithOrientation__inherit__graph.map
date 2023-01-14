@@ -1,12 +1,12 @@
 <map id="stir::Shape3DWithOrientation" name="stir::Shape3DWithOrientation">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1185,5,1516,47"/>
-<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1223,71,1478,127"/>
-<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1237,151,1465,207"/>
-<area shape="rect" id="node2" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="765,86,875,113"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="553,79,716,120"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,91,200,118"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="249,113,412,155"/>
-<area shape="rect" id="node7" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1604,13,1699,39"/>
-<area shape="rect" id="node9" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1598,86,1705,113"/>
-<area shape="rect" id="node11" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1565,166,1737,193"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1105,5,1405,47"/>
+<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1138,71,1373,127"/>
+<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1152,151,1359,207"/>
+<area shape="rect" id="node2" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="712,86,815,113"/>
+<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="513,79,663,120"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,91,184,118"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="233,113,383,155"/>
+<area shape="rect" id="node7" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1488,13,1576,39"/>
+<area shape="rect" id="node9" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1483,86,1581,113"/>
+<area shape="rect" id="node11" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1455,166,1609,193"/>
 </map>

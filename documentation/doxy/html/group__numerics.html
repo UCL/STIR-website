@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -53,12 +53,12 @@ Collaboration diagram for Numerical algorithms:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__numerics.png" border="0" alt="" usemap="#group____numerics"/>
 <map name="group____numerics" id="group____numerics">
-<area shape="rect" id="node1" href="group__BSpline.html" title="Classes and functions\l for B&#45;spline interpolation." alt="" coords="409,5,601,47"/>
-<area shape="rect" id="node2" href="group__STIR__library.html" title="STIR library" alt="" coords="5,130,103,157"/>
-<area shape="rect" id="node3" href="group__DFT.html" title="Discrete Fourier transforms" alt="" coords="405,71,605,98"/>
-<area shape="rect" id="node4" href="group__test.html" title="Tests of the basic\l building blocks" alt="" coords="438,123,573,164"/>
-<area shape="rect" id="node6" href="group__distributable.html" title="distributable building\l blocks" alt="" coords="425,188,585,229"/>
-<area shape="rect" id="node7" href="group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="384,254,627,310"/>
+<area shape="rect" id="node1" href="group__BSpline.html" title="Classes and functions\l for B&#45;spline interpolation." alt="" coords="382,5,553,47"/>
+<area shape="rect" id="node2" href="group__STIR__library.html" title="STIR library" alt="" coords="5,130,97,157"/>
+<area shape="rect" id="node3" href="group__DFT.html" title="Discrete Fourier transforms" alt="" coords="377,71,558,98"/>
+<area shape="rect" id="node4" href="group__test.html" title="Tests of the basic\l building blocks" alt="" coords="404,123,531,164"/>
+<area shape="rect" id="node6" href="group__distributable.html" title="distributable building\l blocks" alt="" coords="397,188,537,229"/>
+<area shape="rect" id="node7" href="group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="359,254,576,310"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -247,7 +247,7 @@ template&lt;class elemT &gt; </div>
 
 <p>Compute the determinant of a matrix. </p>
 <p>Matrix indices can start from any number.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>Only works for low dimensions for now. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>Only works for low dimensions for now. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Shape3DWithOrientation.html#ae4feb24b76a3619e4457ddb21a7ea890">stir::Shape3DWithOrientation::get_volume_of_unit_cell()</a>.</p>
 
@@ -306,7 +306,7 @@ template&lt;class NumeratorIterT , class DenominatorIterT , class small_numT &gt
 <p>Because of potential numerical rounding problems, we test if a number is 0 by comparing its absolute value with a small value, which is determined by multiplying the maximum in the <code>numerator</code> range with <em>small_num</em>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This function does not test for non-zero numbers by 0. Results in that case will likely depend on your processor and/or compiler settings. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a5f9d1898afa5fc4db156c8ef4e512fe4">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;::set_sigma_m()</a>, and <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a0df6a6e35d0afa43704b43f32e820d5d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;::update_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a9bc04167c7743ea33ba5f864be5ee866">stir::BinNormalisationPETFromComponents::apply()</a>, <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a74b1aeff4fbf3a7d949557367c673286">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;::compute_kernelised_image()</a>, and <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a0df6a6e35d0afa43704b43f32e820d5d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;::update_estimate()</a>.</p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ template&lt;class elemT &gt; </div>
   </dd>
 </dl>
 <p>This will attempt to find the eigenvector which has the largest eigenvalue. The method fails when the matrix has a negative eigenvalue of the same magnitude as the largest eigenvalue.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>the algorithm would work with hermitian matrices, but the code needs one small adjustment. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo:</a></b></dt><dd>the algorithm would work with hermitian matrices, but the code needs one small adjustment. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__numerics.html#gaf89fe263ca8190c22691680019d27425">stir::absolute_max_eigenvector_using_power_method()</a>, and <a class="el" href="group__numerics.html#ga25f8b20733c8815ede894044aa71ef5e">stir::absolute_max_eigenvector_using_shifted_power_method()</a>.</p>
 
@@ -919,7 +919,7 @@ template&lt;class FunctionType , class elemT , class positionT &gt; </div>
   </dd>
 </dl>
 <p>Symbolically, this function does the following computation for every index in the array </p><div class="fragment"><div class="line">out(index) = func(index * step - offset)</div></div><!-- fragment --><dl class="section user"><dt>requirement for type FunctionType</dt><dd>Due to the calling sequence above, the following has to be defined <div class="fragment"><div class="line">elemT FunctionType::operator(<span class="keyword">const</span> BasicCoordinate&lt;3, positionT&gt;&amp;)</div></div><!-- fragment --></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1IndexRange.html#a8447f3ed2474bbd6e2fba16da8ab150c">stir::IndexRange&lt; num_dimensions &gt;::get_regular_range()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -1004,7 +1004,7 @@ template&lt;int num_dimensions, class elemT , class positionT , class valueT &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

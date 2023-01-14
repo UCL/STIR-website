@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -55,6 +55,8 @@ $(function() {
 <p>Declaration of the main functions that perform parallel processing.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="shared__ptr_8h_source.html">stir/shared_ptr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Bin_8h_source.html">stir/Bin.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="distributable_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -90,6 +92,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">stir::distributable_computation</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr)</td></tr>
 <tr class="memdesc:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">More...</a><br /></td></tr>
 <tr class="separator:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7f34c024eef05fb64204b14eac2734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation</a> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
+<tr class="memdesc:gadf7f34c024eef05fb64204b14eac2734"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">More...</a><br /></td></tr>
+<tr class="separator:gadf7f34c024eef05fb64204b14eac2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -108,7 +113,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_di
 <tr class="memitem:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memItemLeft" align="right" valign="top">
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_sensitivity_computation</b> =44</td></tr>
 <tr class="separator:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Tag-names currently used by stir::distributable_computation and related functions0</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Tag-names currently used by stir::distributable_computation and related functions</div></td></tr>
 <tr class="memitem:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memItemLeft" align="right" valign="top"><a id="afc83c8ab339a4e60d4512d1c1cb86f20"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::AVAILABLE_NOTIFICATION_TAG</b> =2</td></tr>
 <tr class="separator:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +147,9 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::USE_OUTPUT
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of the main functions that perform parallel processing. </p>
-<dl class="section author"><dt>Author</dt><dd>Alexey Zverovich </dd>
+<dl class="section author"><dt>Author</dt><dd>Nikos Efthimiou </dd>
+<dd>
+Alexey Zverovich </dd>
 <dd>
 Kris Thielemans </dd>
 <dd>
@@ -154,7 +161,7 @@ PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

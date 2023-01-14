@@ -1,5 +1,5 @@
 <map id="stir::IOTests_ParametricDiscretisedDensity" name="stir::IOTests_ParametricDiscretisedDensity">
-<area shape="rect" id="node2" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; Parametric\lVoxelsOnCartesianGrid \&gt;" alt="" coords="5,185,192,227"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="39,5,147,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="115,81,253,108"/>
+<area shape="rect" id="node2" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; Parametric\lVoxelsOnCartesianGrid \&gt;" alt="" coords="5,185,176,227"/>
+<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="33,5,138,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="107,81,235,108"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="stir::InterfilePDFSHeaderSPECT" name="stir::InterfilePDFSHeaderSPECT">
-<area shape="rect" id="node2" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="31,155,179,181"/>
-<area shape="rect" id="node3" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="5,80,205,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="48,5,163,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="28,155,161,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="40,5,149,32"/>
 </map>

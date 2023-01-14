@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ParametricVoxelsOnCartesian\lGrid \&gt;" alt="" coords="5,31,236,87"/>
-<area shape="rect" id="node2" href="$classstir_1_1InterfileParametricDiscretisedDensityInputFileFormat.html" title="Class for reading images in Interfile file&#45;format. " alt="" coords="284,5,531,47"/>
-<area shape="rect" id="node3" href="$classstir_1_1MultiParametricDiscretisedDensityInputFileFormat.html" title="Class for reading images in Multi file&#45;format. " alt="" coords="294,71,521,112"/>
+<area shape="rect" id="node1" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="5,63,151,119"/>
+<area shape="rect" id="node2" href="$classstir_1_1ecat_1_1ecat6_1_1ECAT6ImageInputFileFormat.html" title="Class for reading images in ECAT6 file&#45;format. " alt="" coords="199,5,391,47"/>
+<area shape="rect" id="node3" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7ImageInputFileFormat.html" title="Class for reading images in ECAT7 file&#45;format. " alt="" coords="199,71,391,112"/>
+<area shape="rect" id="node4" href="$classstir_1_1InterfileImageInputFileFormat.html" title="Class for reading images in Interfile file&#45;format. " alt="" coords="217,136,373,177"/>
 </map>

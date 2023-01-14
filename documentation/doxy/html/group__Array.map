@@ -1,6 +1,6 @@
 <map id="Items relating to vectors and (multi&#45;dimensional) arrays" name="Items relating to vectors and (multi&#45;dimensional) arrays">
-<area shape="rect" id="node2" href="$group__Array__IO.html" title="Functions that implement\l IO for Array objects" alt="" coords="633,5,821,47"/>
-<area shape="rect" id="node3" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="660,96,795,137"/>
-<area shape="rect" id="node4" href="$group__Array__detail.html" title="Implementation details\l used by Array classes" alt="" coords="640,173,815,215"/>
-<area shape="rect" id="node5" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,114,164,141"/>
+<area shape="rect" id="node2" href="$group__Array__IO.html" title="Functions that implement\l IO for Array objects" alt="" coords="581,5,751,47"/>
+<area shape="rect" id="node3" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="603,96,729,137"/>
+<area shape="rect" id="node4" href="$group__Array__detail.html" title="Implementation details\l used by Array classes" alt="" coords="588,173,744,215"/>
+<area shape="rect" id="node5" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="5,114,151,141"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="stir::ReconstructionTests&lt; TargetT &gt;" name="stir::ReconstructionTests&lt; TargetT &gt;">
-<area shape="rect" id="node3" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="500,5,711,47"/>
-<area shape="rect" id="node6" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="515,73,695,115"/>
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,49,113,75"/>
-<area shape="rect" id="node4" href="$classstir_1_1PoissonLLReconstructionTests.html" title="stir::PoissonLLReconstruction\lTests\&lt; target_type \&gt;" alt="" coords="868,11,1079,52"/>
-<area shape="rect" id="node5" href="$classstir_1_1TestOSMAPOSL.html" title="Test class for OSMAPOSL. " alt="" coords="1128,18,1276,45"/>
-<area shape="rect" id="node7" href="$classstir_1_1TestFBP2D.html" title="Test class for FBP2D. " alt="" coords="914,86,1033,113"/>
-<area shape="rect" id="node8" href="$classstir_1_1TestFBP3DRP.html" title="Test class for FBP3DRP. " alt="" coords="905,137,1041,163"/>
+<area shape="rect" id="node3" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="471,5,668,47"/>
+<area shape="rect" id="node6" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="485,73,654,115"/>
+<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,49,111,75"/>
+<area shape="rect" id="node4" href="$classstir_1_1PoissonLLReconstructionTests.html" title="stir::PoissonLLReconstruction\lTests\&lt; target_type \&gt;" alt="" coords="809,11,1007,52"/>
+<area shape="rect" id="node5" href="$classstir_1_1TestOSMAPOSL.html" title="Test class for OSMAPOSL. " alt="" coords="1056,18,1204,45"/>
+<area shape="rect" id="node7" href="$classstir_1_1TestFBP2D.html" title="Test class for FBP2D. " alt="" coords="849,86,967,113"/>
+<area shape="rect" id="node8" href="$classstir_1_1TestFBP3DRP.html" title="Test class for FBP3DRP. " alt="" coords="840,137,976,163"/>
 </map>

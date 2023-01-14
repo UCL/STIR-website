@@ -1,6 +1,6 @@
 <map id="stir::ProjDataInfoGenericNoArcCorr" name="stir::ProjDataInfoGenericNoArcCorr">
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html" title="Projection data info for data from a scanner with discrete dtectors organised by blocks. " alt="" coords="19,319,193,360"/>
-<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="15,155,197,181"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="5,80,207,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. " alt="" coords="40,5,172,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html" title="Projection data info for data from a scanner with discrete dtectors organised by blocks. " alt="" coords="15,319,178,360"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="13,155,180,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. " alt="" coords="36,5,157,32"/>
 </map>

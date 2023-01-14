@@ -1,4 +1,4 @@
 <map id="stir::ConstPtrBeginEndAllFunction&lt; TopLevelIterT &gt;" name="stir::ConstPtrBeginEndAllFunction&lt; TopLevelIterT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1PtrBeginEndAllFunction.html" title="stir::PtrBeginEndAllFunction\l\&lt; TopLevelIterT, boost::pointee\l\&lt; boost::iterator_value\&lt; TopLevelIterT\l \&gt;::type \&gt;::type::const_full_iterator \&gt;" alt="" coords="481,29,756,99"/>
-<area shape="rect" id="node3" href="$classstir_1_1PtrBeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a pointer to a stir full iterat..." alt="" coords="5,43,211,85"/>
+<area shape="rect" id="node2" href="$classstir_1_1PtrBeginEndAllFunction.html" title="stir::PtrBeginEndAllFunction\l\&lt; TopLevelIterT, boost::pointee\l\&lt; boost::iterator_value\&lt; TopLevelIterT\l \&gt;::type \&gt;::type::const_full_iterator \&gt;" alt="" coords="436,29,680,99"/>
+<area shape="rect" id="node3" href="$classstir_1_1PtrBeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a pointer to a stir full iterat..." alt="" coords="5,43,195,85"/>
 </map>

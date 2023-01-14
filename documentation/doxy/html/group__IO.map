@@ -1,6 +1,6 @@
 <map id="Input/Output Library" name="Input/Output Library">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,232,103,259"/>
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="604,84,752,111"/>
-<area shape="rect" id="node3" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="589,269,767,310"/>
-<area shape="rect" id="node5" href="$group__InterfileIO.html" title="Interfile support in\l the IO library" alt="" coords="607,334,749,375"/>
+<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,230,97,257"/>
+<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="573,82,709,109"/>
+<area shape="rect" id="node3" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="553,267,728,308"/>
+<area shape="rect" id="node5" href="$group__InterfileIO.html" title="Interfile support in\l the IO library" alt="" coords="577,332,704,374"/>
 </map>

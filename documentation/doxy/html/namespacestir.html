@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Bin.html">Bin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing coordinates and value of a single projection bin.  <a href="classstir_1_1Bin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstir_1_1BinAndCorr.html">BinAndCorr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A small bundle of a <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> and its additive correction value.  <a href="structstir_1_1BinAndCorr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for implementing bin-wise normalisation of data.  <a href="classstir_1_1BinNormalisation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationFromProjData.html">BinNormalisationFromProjData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin-wise normalisation of data. ">BinNormalisation</a> class that gets the normalisation factors from a <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a> object.  <a href="classstir_1_1BinNormalisationFromProjData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html">BinNormalisationPETFromComponents</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin-wise normalisation of data. ">BinNormalisation</a> class that uses component-based normalisation for PET.  <a href="classstir_1_1BinNormalisationPETFromComponents.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html">BinNormalisationSinogramRescaling</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html" title="The BinNormalisationSinogramRescaling class gets normaliastion factors by dividing forward projection...">BinNormalisationSinogramRescaling</a> class gets normaliastion factors by dividing forward projection of the fitted cyl. to the precorrecred data.  <a href="classstir_1_1BinNormalisationSinogramRescaling.html#details">More...</a><br /></td></tr>
@@ -210,8 +216,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataLMF.html">CListEventDataLMF</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for storing and using a coincidence event from a listmode file.  <a href="classstir_1_1CListEventDataLMF.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataNeuroLF.html">CListEventDataNeuroLF</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for record with coincidence data using NeuroLF bitfield definition.  <a href="classstir_1_1CListEventDataNeuroLF.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventDataSAFIR.html">CListEventDataSAFIR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for record with coincidence data.  <a href="classstir_1_1CListEventDataSAFIR.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for record with coincidence data using SAFIR bitfield definition.  <a href="classstir_1_1CListEventDataSAFIR.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventPENN.html">CListEventPENN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for handling PENNPet Explorer events.  <a href="classstir_1_1CListEventPENN.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html">CListEventSAFIR</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +232,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataLMF.html">CListModeDataLMF</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that reads the listmode data from an LMF file.  <a href="classstir_1_1CListModeDataLMF.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataPENN.html">CListModeDataPENN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for listmode data for PENNPET Explorer scanner.  <a href="classstir_1_1CListModeDataPENN.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListModeDataROOT.html">CListModeDataROOT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class that reads ROOT files, generated by GATE, as listmode data.  <a href="classstir_1_1CListModeDataROOT.html#details">More...</a><br /></td></tr>
@@ -234,13 +249,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for a general element of a listmode file for a Siemens scanner using the ROOT files.  <a href="classstir_1_1CListRecordROOT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListRecordSAFIR.html">CListRecordSAFIR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for general record, containing a union of data, time and raw record and providing access to certain elements.  <a href="classstir_1_1CListRecordSAFIR.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for general SAFIR record, containing a union of data, time and raw record and providing access to certain elements.  <a href="classstir_1_1CListRecordSAFIR.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListTimeDataLMF.html">CListTimeDataLMF</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing and using a timing 'event' from a listmode file.  <a href="classstir_1_1CListTimeDataLMF.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListTimeDataSAFIR.html">CListTimeDataSAFIR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for record with time data.  <a href="classstir_1_1CListTimeDataSAFIR.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for record with time data using SAFIR bitfield definition.  <a href="classstir_1_1CListTimeDataSAFIR.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListTimeROOT.html">CListTimeROOT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing and using a timing 'event' from a listmode file from the ECAT 8_32bit scanner.  <a href="classstir_1_1CListTimeROOT.html#details">More...</a><br /></td></tr>
@@ -467,6 +482,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class in the <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a> hierarchy that convert from Hounsfield Units to mu-values.  <a href="classstir_1_1HUToMuImageProcessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for encoding the modality.  <a href="classstir_1_1ImagingModality.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModalityTests.html">ImagingModalityTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for <a class="el" href="classstir_1_1ImagingModality.html" title="Class for encoding the modality. ">ImagingModality</a>.  <a href="classstir_1_1ImagingModalityTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1IndexRange.html">IndexRange</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class defines ranges which can be 'irregular'.  <a href="classstir_1_1IndexRange.html#details">More...</a><br /></td></tr>
@@ -503,6 +522,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamWithRecords.html">InputStreamWithRecords</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class to read data from a (presumably binary) stream.  <a href="classstir_1_1InputStreamWithRecords.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENN.html">InputStreamWithRecordsFromUPENN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for reading listmode files from the PENNPet Explorer scanner.  <a href="classstir_1_1InputStreamWithRecordsFromUPENN.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html">InputStreamWithRecordsFromUPENNbin</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for reading binary listmode files from the PENNPet Explorer scanner.  <a href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html">InputStreamWithRecordsFromUPENNtxt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for reading listmode files in text format from the PENNPet Explorer scanner.  <a href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1integrate__discrete__functionTests.html">integrate_discrete_functionTests</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple class to test the integrate_discrete_function function.  <a href="classstir_1_1integrate__discrete__functionTests.html#details">More...</a><br /></td></tr>
@@ -611,6 +639,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html">ListModeData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for reading list mode data.  <a href="classstir_1_1ListModeData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData__dummy.html">ListModeData_dummy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to trick the Objective function that we have list mode data, when we only have cache.  <a href="classstir_1_1ListModeData__dummy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListRecord.html">ListRecord</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for a general element of a list mode file.  <a href="classstir_1_1ListRecord.html#details">More...</a><br /></td></tr>
@@ -827,6 +858,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PatlakPlot.html">PatlakPlot</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Patlak kinetic model.  <a href="classstir_1_1PatlakPlot.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PENNListmodeInputFileFormat.html">PENNListmodeInputFileFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for PENN listmode file format support.  <a href="classstir_1_1PENNListmodeInputFileFormat.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PixelsOnCartesianGrid.html">PixelsOnCartesianGrid</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is used to represent pixelised densities on a rectangular grid (2D).  <a href="classstir_1_1PixelsOnCartesianGrid.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -967,6 +1001,9 @@ Prior Using Parallel Level Sets", IEEE Trans. med. Imag., vol. 35, no. 9, Sept. 
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html">ProjMatrixByBinFromFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads/writes a projection matrix from/to file.  <a href="classstir_1_1ProjMatrixByBinFromFile.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html">ProjMatrixByBinPinholeSPECTUB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates projection matrix for pinhole SPECT studies.  <a href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html">ProjMatrixByBinSinglePhoton</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 'projection matrix' to implement a model for a single photon acquisition in terms of the detector efficiencies.  <a href="classstir_1_1ProjMatrixByBinSinglePhoton.html#details">More...</a><br /></td></tr>
@@ -1526,6 +1563,12 @@ template std::list&lt; <a class="el" href="structstir_1_1ResolutionIndex.html">R
 <tr class="memitem:gaeec875f80087bc22d831902d22735841"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ancillary.html#gaeec875f80087bc22d831902d22735841">get_STIR_config_dir</a> ()</td></tr>
 <tr class="memdesc:gaeec875f80087bc22d831902d22735841"><td class="mdescLeft">&#160;</td><td class="mdescRight">find string with the (full) path of the directory where looks for STIR configuration files  <a href="group__ancillary.html#gaeec875f80087bc22d831902d22735841">More...</a><br /></td></tr>
 <tr class="separator:gaeec875f80087bc22d831902d22735841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28a015cf0d011424351b92222e57cf4d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ancillary.html#ga28a015cf0d011424351b92222e57cf4d">get_STIR_doc_dir</a> ()</td></tr>
+<tr class="memdesc:ga28a015cf0d011424351b92222e57cf4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">find string with the (full) path of the directory where the STIR documentation was installed  <a href="group__ancillary.html#ga28a015cf0d011424351b92222e57cf4d">More...</a><br /></td></tr>
+<tr class="separator:ga28a015cf0d011424351b92222e57cf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2eb4d2ca32c8ee5fa54c3445cb519ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ancillary.html#gaf2eb4d2ca32c8ee5fa54c3445cb519ba">get_STIR_examples_dir</a> ()</td></tr>
+<tr class="memdesc:gaf2eb4d2ca32c8ee5fa54c3445cb519ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">find string with the (full) path of the directory where the STIR examples are installed  <a href="group__ancillary.html#gaf2eb4d2ca32c8ee5fa54c3445cb519ba">More...</a><br /></td></tr>
+<tr class="separator:gaf2eb4d2ca32c8ee5fa54c3445cb519ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a674b256e49c1eadcd4f614dded8acc3e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#a674b256e49c1eadcd4f614dded8acc3e">standardise_interfile_keyword</a> (const std::string &amp;keyword)</td></tr>
 <tr class="memdesc:a674b256e49c1eadcd4f614dded8acc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a (Interfile) keyword into a standard form.  <a href="#a674b256e49c1eadcd4f614dded8acc3e">More...</a><br /></td></tr>
 <tr class="separator:a674b256e49c1eadcd4f614dded8acc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1547,9 +1590,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:add9363aa55c49094522ceabaf0fdde7b"><td class="memItemLeft" align="right" valign="top"><a id="add9363aa55c49094522ceabaf0fdde7b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>make_det_pair_data</b> (DetPairData &amp;det_pair_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const int segment_num, const int ax_pos_num)</td></tr>
 <tr class="separator:add9363aa55c49094522ceabaf0fdde7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f50d643f835fae85ac3d4d800fe71b"><td class="memItemLeft" align="right" valign="top"><a id="ad9f50d643f835fae85ac3d4d800fe71b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_det_pair_data</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const DetPairData &amp;det_pair_data, const int segment_num, const int ax_pos_num)</td></tr>
-<tr class="separator:ad9f50d643f835fae85ac3d4d800fe71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5254345bfa9afcfa39298e3720880f"><td class="memItemLeft" align="right" valign="top"><a id="a6e5254345bfa9afcfa39298e3720880f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_block_norm</b> (DetPairData &amp;det_pair_data, const <a class="el" href="classstir_1_1Array.html">BlockData</a> &amp;block_data, const bool apply)</td></tr>
 <tr class="separator:a6e5254345bfa9afcfa39298e3720880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1592,16 +1632,17 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <tr class="memitem:a7c96df7c67372c40467d133886f4f66c"><td class="memItemLeft" align="right" valign="top"><a id="a7c96df7c67372c40467d133886f4f66c"></a>
 std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::istream &amp;s, FanProjData &amp;fan_data)</td></tr>
 <tr class="separator:a7c96df7c67372c40467d133886f4f66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109d9e9866a229b494be555be2b0a5f1"><td class="memItemLeft" align="right" valign="top"><a id="a109d9e9866a229b494be555be2b0a5f1"></a>
-shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info)</td></tr>
-<tr class="separator:a109d9e9866a229b494be555be2b0a5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a56b2080f70e2b33fdb0a2755d3d848"><td class="memItemLeft" align="right" valign="top"><a id="a9a56b2080f70e2b33fdb0a2755d3d848"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_fan_info</b> (int &amp;num_rings, int &amp;num_detectors_per_ring, int &amp;max_ring_diff, int &amp;fan_size, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info)</td></tr>
+<tr class="separator:a9a56b2080f70e2b33fdb0a2755d3d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f50d643f835fae85ac3d4d800fe71b"><td class="memItemLeft" align="right" valign="top"><a id="ad9f50d643f835fae85ac3d4d800fe71b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_det_pair_data</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const DetPairData &amp;det_pair_data, const int segment_num, const int ax_pos_num)</td></tr>
+<tr class="separator:ad9f50d643f835fae85ac3d4d800fe71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memItemLeft" align="right" valign="top"><a id="ac20985a59cf1dee7cc6049bb4a091eed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#ac20985a59cf1dee7cc6049bb4a091eed">make_fan_data_remove_gaps</a> (FanProjData &amp;fan_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data)</td></tr>
-<tr class="memdesc:ac20985a59cf1dee7cc6049bb4a091eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make fan_data from projecion file while removing the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_fan_data_remove_gaps</b> (FanProjData &amp;fan_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data)</td></tr>
 <tr class="separator:ac20985a59cf1dee7cc6049bb4a091eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memItemLeft" align="right" valign="top"><a id="adf8bd05e524c8ef0e9ce2e1e9c289c14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html#adf8bd05e524c8ef0e9ce2e1e9c289c14">set_fan_data_add_gaps</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const FanProjData &amp;fan_data, const float gap_value)</td></tr>
-<tr class="memdesc:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">**** This function make proj_data from fan_data while adding the intermodule gaps **** //// *** fan_data doesn't have gaps, proj_data has gaps *** /// <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_fan_data_add_gaps</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const FanProjData &amp;fan_data, const float gap_value)</td></tr>
 <tr class="separator:adf8bd05e524c8ef0e9ce2e1e9c289c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d666979cd053dd0e68e7bf52685c370"><td class="memItemLeft" align="right" valign="top"><a id="a3d666979cd053dd0e68e7bf52685c370"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_block_norm</b> (FanProjData &amp;fan_data, const BlockData3D &amp;block_data, const bool apply)</td></tr>
@@ -1642,9 +1683,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>iterate_block_norm</b
 <tr class="memitem:ab0ac98917c51fe34a31e7fce774a8d26"><td class="memItemLeft" align="right" valign="top"><a id="ab0ac98917c51fe34a31e7fce774a8d26"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>KL</b> (const FanProjData &amp;d1, const FanProjData &amp;d2, const double threshold)</td></tr>
 <tr class="separator:ab0ac98917c51fe34a31e7fce774a8d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c767bbcb498163836b684e26f5dd125"><td class="memTemplParams" colspan="2"><a id="a6c767bbcb498163836b684e26f5dd125"></a>
+template&lt;class TProjDataInfo &gt; </td></tr>
+<tr class="memitem:a6c767bbcb498163836b684e26f5dd125"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>multiply_crystal_factors_help</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const TProjDataInfo &amp;proj_data_info, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;efficiencies, const float global_factor)</td></tr>
+<tr class="separator:a6c767bbcb498163836b684e26f5dd125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">multiply_crystal_factors</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;efficiencies, const float global_factor)</td></tr>
 <tr class="memdesc:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct proj-data as a multiple of crystal efficiencies (or singles)  <a href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">More...</a><br /></td></tr>
 <tr class="separator:gaeddbaa80aaf07f85fc2e5b1164a09b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42d8b6dbee1c1382bd50252b34470fd"><td class="memItemLeft" align="right" valign="top"><a id="af42d8b6dbee1c1382bd50252b34470fd"></a>
+template void&#160;</td><td class="memItemRight" valign="bottom"><b>multiply_crystal_factors_help</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;, const <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &amp;, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;, const float)</td></tr>
+<tr class="separator:af42d8b6dbee1c1382bd50252b34470fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb6310686548e4b72f14a7952f1699f"><td class="memItemLeft" align="right" valign="top"><a id="abdb6310686548e4b72f14a7952f1699f"></a>
+template void&#160;</td><td class="memItemRight" valign="bottom"><b>multiply_crystal_factors_help</b> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;, const <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html">ProjDataInfoBlocksOnCylindricalNoArcCorr</a> &amp;, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt; &amp;, const float)</td></tr>
+<tr class="separator:abdb6310686548e4b72f14a7952f1699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ca464253bd66c4143dc86cbb35f20a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threads.html#ga7ca464253bd66c4143dc86cbb35f20a8">get_max_num_threads</a> ()</td></tr>
 <tr class="memdesc:ga7ca464253bd66c4143dc86cbb35f20a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current maximum number of threads.  <a href="group__threads.html#ga7ca464253bd66c4143dc86cbb35f20a8">More...</a><br /></td></tr>
 <tr class="separator:ga7ca464253bd66c4143dc86cbb35f20a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2628,6 +2679,13 @@ template&lt;int num_dimensions, class elemT &gt; </td></tr>
 <tr class="memitem:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ForwardProjectorByBin.html">ForwardProjectorByBin</a> &gt; &amp;forward_projector_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1BackProjectorByBin.html">BackProjectorByBin</a> &gt; &amp;back_projector_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;symmetries_sptr, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *output_image_ptr, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;additive_binwise_correction, const shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, <a class="el" href="group__distributable.html#gadfab5b00692657d7beb222e61f3f5b34">RPC_process_related_viewgrams_type</a> *RPC_process_related_viewgrams, <a class="el" href="classstir_1_1DistributedCachingInformation.html">DistributedCachingInformation</a> *caching_info_ptr)</td></tr>
 <tr class="memdesc:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">More...</a><br /></td></tr>
 <tr class="separator:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7f34c024eef05fb64204b14eac2734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">LM_distributable_computation</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjMatrixByBin.html">ProjMatrixByBin</a> &gt; PM_sptr, const shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *output_image_ptr, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; <a class="el" href="structstir_1_1BinAndCorr.html">BinAndCorr</a> &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
+<tr class="memdesc:gadf7f34c024eef05fb64204b14eac2734"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">More...</a><br /></td></tr>
+<tr class="separator:gadf7f34c024eef05fb64204b14eac2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8a0cc7a0d13780acea4707734dcc301"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__recon__buildblock.html#gaf8a0cc7a0d13780acea4707734dcc301">ML_estimate_component_based_normalisation</a> (const std::string &amp;out_filename_prefix, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;measured_data, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;model_data, int num_eff_iterations, int num_iterations, bool do_geo, bool do_block, bool do_symmetry_per_block, bool do_KL, bool do_display)</td></tr>
+<tr class="memdesc:gaf8a0cc7a0d13780acea4707734dcc301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find normalisation factors using a maximum likelihood approach. <br /></td></tr>
+<tr class="separator:gaf8a0cc7a0d13780acea4707734dcc301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3479edf895fbef60302cf0138ff24474"><td class="memItemLeft" align="right" valign="top"><a id="a3479edf895fbef60302cf0138ff24474"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html">ProjMatrixElemsForOneBinValue</a> &amp;el1, const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBinValue.html">ProjMatrixElemsForOneBinValue</a> &amp;el2)</td></tr>
 <tr class="separator:a3479edf895fbef60302cf0138ff24474"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2956,6 +3014,10 @@ template&lt;typename STIRImageType &gt; </td></tr>
 <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extend_sinogram_in_views</b> (const <a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt; &amp;sino, const int min_view_extension, const int max_view_extension)</td></tr>
 <tr class="separator:gaaae5507f65bf64459d17316399c89d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:gac59c21a7117084ae6bf59c43016fae04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gac59c21a7117084ae6bf59c43016fae04">interpolate_axial_position</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_out, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_in)</td></tr>
+<tr class="memdesc:gac59c21a7117084ae6bf59c43016fae04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform linear Interpolation.  <a href="group__projdata.html#gac59c21a7117084ae6bf59c43016fae04">More...</a><br /></td></tr>
+<tr class="separator:gac59c21a7117084ae6bf59c43016fae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga0cb657b2de00a68eb0b235a89861f477"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga0cb657b2de00a68eb0b235a89861f477">interpolate_projdata</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_out, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data_in, const <a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSpline::BSplineType</a> spline_type, const bool remove_interleaving=false, const bool use_view_offset=false)</td></tr>
 <tr class="memdesc:ga0cb657b2de00a68eb0b235a89861f477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform B-Splines Interpolation.  <a href="group__projdata.html#ga0cb657b2de00a68eb0b235a89861f477">More...</a><br /></td></tr>
 <tr class="separator:ga0cb657b2de00a68eb0b235a89861f477"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3265,7 +3327,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_null_ptr</b> (cons
 <tr class="separator:a99f8146294edae892b5a00992f49c28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">A collection of error functions.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>The erf() is a high precision implementation of the error function. The erfc() is the complementary of the erf(), which should be equal to 1-erf(), but with higher precision when erf is close to 1.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>replace with boost::erf </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>replace with boost::erf </dd></dl>
 </div></td></tr>
 <tr class="memitem:a1b07924360d9a5f3a779c3e7d004338d"><td class="memItemLeft" align="right" valign="top"><a id="a1b07924360d9a5f3a779c3e7d004338d"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>erf</b> (double)</td></tr>
@@ -3484,7 +3546,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>task_do_distribu
 <tr class="memitem:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memItemLeft" align="right" valign="top">
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>task_do_distributable_sensitivity_computation</b> =44</td></tr>
 <tr class="separator:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Tag-names currently used by stir::distributable_computation and related functions0</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Tag-names currently used by stir::distributable_computation and related functions</div></td></tr>
 <tr class="memitem:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memItemLeft" align="right" valign="top"><a id="afc83c8ab339a4e60d4512d1c1cb86f20"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>AVAILABLE_NOTIFICATION_TAG</b> =2</td></tr>
 <tr class="separator:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3617,7 +3679,7 @@ Repeated white space is replaced with a single space </li>
 All letters are made lowercase. </li>
 </ul>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a49c753a6681453637440df4a1683f61b">stir::SAFIRCListmodeInputFileFormat::can_read()</a>, <a class="el" href="group__date__time.html#ga48ccf13414fad4cac9a3a5affa9f441a">DICOM_date_time_to_DT()</a>, <a class="el" href="group__date__time.html#ga3530d66480074fff3394ea8814c2f307">DICOM_datetime_to_secs_since_Unix_epoch()</a>, <a class="el" href="classstir_1_1Scanner.html#abb9123220d0389766fedcebf0c908353">stir::Scanner::get_scanner_from_name()</a>, <a class="el" href="classstir_1_1ImagingModality.html#ac85ff82eaa4fb0ca9c12f7e9c6d874ce">stir::ImagingModality::ImagingModality()</a>, <a class="el" href="group__date__time.html#gaec5273318a66922abcb485bb1001be61">Interfile_datetime_to_DICOM()</a>, <a class="el" href="group__InterfileIO.html#ga4189a51813ae80c0025bbc2241186d02">is_interfile_signature()</a>, <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>, <a class="el" href="classstir_1_1InterfilePDFSHeaderSiemens.html#ae7d24990011aa8c35e5aeeb46a998b7a">stir::InterfilePDFSHeaderSiemens::post_processing()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a1719db75c5bc2b016432de6bd811660f">stir::ProjMatrixByBinFromFile::ProjMatrixByBinFromFile()</a>, and <a class="el" href="classstir_1_1KeyParser.html#ae88a689951a4b3179493c3aae392520b">stir::KeyParser::standardise_keyword()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#ad3ef5b2e154b1c2f3533ff9d41901f04">stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;::can_read()</a>, <a class="el" href="group__date__time.html#ga48ccf13414fad4cac9a3a5affa9f441a">DICOM_date_time_to_DT()</a>, <a class="el" href="group__date__time.html#ga3530d66480074fff3394ea8814c2f307">DICOM_datetime_to_secs_since_Unix_epoch()</a>, <a class="el" href="classstir_1_1ImagingModality.html#a5a057b7db443cfd3fc49e6d8bd44e1b9">stir::ImagingModality::get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#abb9123220d0389766fedcebf0c908353">stir::Scanner::get_scanner_from_name()</a>, <a class="el" href="group__date__time.html#gaec5273318a66922abcb485bb1001be61">Interfile_datetime_to_DICOM()</a>, <a class="el" href="group__InterfileIO.html#ga4189a51813ae80c0025bbc2241186d02">is_interfile_signature()</a>, <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>, <a class="el" href="classstir_1_1InterfilePDFSHeaderSiemens.html#ae7d24990011aa8c35e5aeeb46a998b7a">stir::InterfilePDFSHeaderSiemens::post_processing()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a1719db75c5bc2b016432de6bd811660f">stir::ProjMatrixByBinFromFile::ProjMatrixByBinFromFile()</a>, and <a class="el" href="classstir_1_1KeyParser.html#ae88a689951a4b3179493c3aae392520b">stir::KeyParser::standardise_keyword()</a>.</p>
 
 </div>
 </div>
@@ -3771,7 +3833,7 @@ All letters are made lowercase. </li>
 
 <p>return a pointer to the start of the filename (i.e. after directory specifications) </p>
 <p>The returned pointer is between filename_with_directory and (filename_with_directory+strlen(filename_with_directory)+1). This highest value is used when it looks like a directory name.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>use <a class="el" href="namespacestir.html#a17babb972c083f5de4118fac0bd367ce" title="return the position of the start of the filename (i.e. after directory specifications) ...">find_pos_of_filename()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>use <a class="el" href="namespacestir.html#a17babb972c083f5de4118fac0bd367ce" title="return the position of the start of the filename (i.e. after directory specifications) ...">find_pos_of_filename()</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function works only with string manipulations. There is no check if the 'filename' part actually corresponds to a directory on disk. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="namespacestir.html#a389b6025253821b95ef4695895f5f084">add_extension()</a>, <a class="el" href="namespacestir.html#aa3e25198e600d7b89f049544926585a4">find_pos_of_extension()</a>, <a class="el" href="namespacestir.html#a17467cba8070cf997ddeea511eb4748f">get_directory_name()</a>, <a class="el" href="classstir_1_1FilenameTests.html#a020f4a17d5ab25c47c7d1494788479f8">stir::FilenameTests::run_tests()</a>, <a class="el" href="group__ECAT.html#ga222ea301abcc7020be2ca37115fe9c65">stir::ecat::ecat7::write_basic_interfile_header_for_ECAT7()</a>, and <a class="el" href="group__InterfileIO.html#ga32c591bc1a3da0f29e140fab2af3c674">write_basic_interfile_PDFS_header()</a>.</p>
@@ -3856,7 +3918,7 @@ All letters are made lowercase. </li>
 <dl class="section warning"><dt>Warning</dt><dd>This function works only with string manipulations. There is no check if the 'filename' part actually corresponds to a directory on disk.</dd>
 <dd>
 assumes that directory_name points to enough allocated space </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacestir.html#a9557bb2877f7cd3cab758c6ca5fc4680" title="Returns a string with the directory part from &#39;filename_with_directory&#39;. ">get_directory_name(const std::string&amp;)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacestir.html#a9557bb2877f7cd3cab758c6ca5fc4680" title="Returns a string with the directory part from &#39;filename_with_directory&#39;. ">get_directory_name(const std::string&amp;)</a> </dd></dl>
 
 <p class="reference">References <a class="el" href="namespacestir.html#a00998214121776df4b736633c52f2227">find_filename()</a>.</p>
 
@@ -4017,7 +4079,7 @@ assumes that directory_name points to enough allocated space </dd></dl>
 </div><div class="memdoc">
 
 <p>Asks for a filename (appending an extension if none is provided) and stores the string where file_in_directory_name points to. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacestir.html#a459a4eba9e2d827d34d524a5c4620fa1" title="Asks for a filename (appending an extension if none is provided). ">ask_filename_with_extension(const std::string&amp;, const std::string&amp;)</a>;</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacestir.html#a459a4eba9e2d827d34d524a5c4620fa1" title="Asks for a filename (appending an extension if none is provided). ">ask_filename_with_extension(const std::string&amp;, const std::string&amp;)</a>;</dd></dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> filename[<a class="code" href="group__buildblock.html#ga6a419b22b914c4d55130a163fddd602d">max_filename_length</a>];</div><div class="line"><a class="code" href="namespacestir.html#a459a4eba9e2d827d34d524a5c4620fa1">ask_filename_with_extension</a>(filename, <span class="stringliteral">&quot;Input file name ?&quot;</span>, <span class="stringliteral">&quot;.img&quot;</span>);</div></div><!-- fragment --> <dl class="section warning"><dt>Warning</dt><dd><em>file_in_directory_name</em> has to be preallocated (with size <code>max_filename_length</code>) </dd>
 <dd>
 starting or ending spaces are NOT stripped. </dd></dl>
@@ -5672,7 +5734,7 @@ template&lt;typename integerT &gt; </div>
 <p>This function is templated in the output type for convenience of implementation.</p>
 <dl class="section warning"><dt>Warning</dt><dd>if an unsigned type is used for <code>integerT</code>, the result for negative <em>x</em> will be system dependent</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18" title="Implements rounding of floating point numbers. ">round(const float)</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000164">Todo:</a></b></dt><dd>add code to check that <code>integerT</code> is really an integer type at compilation time </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000177">Todo:</a></b></dt><dd>add code to check that <code>integerT</code> is really an integer type at compilation time </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html#aeaf15fa9cc25ee462b0dd39dabf1d282">stir::DynamicDiscretisedDensity::write_to_ecat7()</a>.</p>
 
@@ -6089,7 +6151,7 @@ template&lt;typename forw_iterT , typename elemT &gt; </div>
 <p>Threshold a sequence from above. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacestir.html#af2a2856420211fada600e4aa1bd516af" title="Threshold a sequence from above and below. ">threshold_upper_lower</a> for type requirements </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1VectorWithOffset.html#ae9568ae99b900a0c9b86c4b3699c27e1">stir::VectorWithOffset&lt; IndexRange&lt; num_dimensions-1 &gt; &gt;::apply_upper_threshold()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1VectorWithOffset.html#ae9568ae99b900a0c9b86c4b3699c27e1">stir::VectorWithOffset&lt; IndexRange&lt; num_dimensions-1 &gt; &gt;::apply_upper_threshold()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#acd61848f8e9064f0f949d939154415ce">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
 </div>
 </div>
@@ -6138,7 +6200,7 @@ template&lt;typename forw_iterT , typename elemT &gt; </div>
 <p>Threshold a sequence from below. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacestir.html#af2a2856420211fada600e4aa1bd516af" title="Threshold a sequence from above and below. ">threshold_upper_lower</a> for type requirements </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1VectorWithOffset.html#ab98c3a331e8c28874b22531bc0476ce7">stir::VectorWithOffset&lt; IndexRange&lt; num_dimensions-1 &gt; &gt;::apply_lower_threshold()</a>, <a class="el" href="classstir_1_1MatchTrackerAndScanner.html#abe1dd1c5151d5af0c48853a9dd91a9cd">stir::MatchTrackerAndScanner::run()</a>, <a class="el" href="namespacestir.html#a2cb6e5c742537ee5459d61b125a14c84">threshold_min_to_small_positive_value()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#ace6b465e634d39ff125681d5b384d1bd">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1VectorWithOffset.html#ab98c3a331e8c28874b22531bc0476ce7">stir::VectorWithOffset&lt; IndexRange&lt; num_dimensions-1 &gt; &gt;::apply_lower_threshold()</a>, <a class="el" href="classstir_1_1MatchTrackerAndScanner.html#abe1dd1c5151d5af0c48853a9dd91a9cd">stir::MatchTrackerAndScanner::run()</a>, <a class="el" href="namespacestir.html#a2cb6e5c742537ee5459d61b125a14c84">threshold_min_to_small_positive_value()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#acd61848f8e9064f0f949d939154415ce">stir::ScatterEstimation::upsample_and_fit_scatter_estimate()</a>.</p>
 
 </div>
 </div>
@@ -6624,7 +6686,7 @@ template&lt;class FSTREAM &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

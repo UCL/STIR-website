@@ -1,7 +1,7 @@
 <map id="stir::ProjMatrixByBinSinglePhoton" name="stir::ProjMatrixByBinSinglePhoton">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjMatrixByBinSinglePhoton,\l ProjMatrixByBin, ProjMatrixByBin \&gt;" alt="" coords="711,62,968,118"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;..." alt="" coords="245,42,399,69"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByBin \&gt;" alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="19,71,154,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="217,93,427,135"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjMatrixByBinSinglePhoton,\l ProjMatrixByBin, ProjMatrixByBin \&gt;" alt="" coords="659,62,893,118"/>
+<area shape="rect" id="node3" href="$classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;..." alt="" coords="229,42,372,69"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjMatrixByBin \&gt;" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="19,71,141,98"/>
+<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="204,93,397,135"/>
 </map>

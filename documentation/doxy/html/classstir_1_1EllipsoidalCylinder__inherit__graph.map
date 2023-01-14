@@ -1,6 +1,6 @@
 <map id="stir::EllipsoidalCylinder" name="stir::EllipsoidalCylinder">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="671,25,899,81"/>
-<area shape="rect" id="node3" href="$classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. " alt="" coords="164,5,376,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="5,5,115,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="165,57,375,98"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="621,25,828,81"/>
+<area shape="rect" id="node3" href="$classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. " alt="" coords="158,5,350,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="157,57,351,98"/>
 </map>

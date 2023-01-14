@@ -18,7 +18,7 @@ Links might not work!
 </p>
 -->
 
-Current release: version 5.0.0, dated 22 March 2020.
+Current release: version 5.1.0, dated 14 January 2023.
 <!-- (but <a href="#patches">see here for patches</a>) 
 <a href="#prerelease">See here for 3.0 beta</a>-->
 
@@ -78,21 +78,15 @@ you like, and read recon_test_pack/README.txt. </p>
 recon_test_pack with the current release, but it's not recommended.</p>
 -->
 
-<p>If your system does not have the boost include files, you should download 
+<p>If your system does not have the boost include files, you should install via your package manager, or download 
 them from the <a href=http://boost.org target="_parent">Boost web-site</a>. Note that STIR
 currently does not require you to build the boost libraries, as only
-the include files are used.</p>
-<p>Finally, if you want ECAT support, you should get the ECAT matrix library from
-Merence Sibomana and Christian Michel. However, the <a href="ftp://ftp.topo.ucl.ac.be/pub/ecat">official site</a> is sometimes
-unavailable and we cannot redistribute the software due to licensing
-conditions. You might find a version on the
-<a href=http://www.opengatecollaboration.org/ target="_parent">OpenGATE web-site</a>. 
+  the include files are used. See the User's Guide for more information on dependencies,
+as there are many optional dependencies that allow enhanced STIR functionality.</p>
+
 Please use the 
 stir-users mailing list for questions.
 
-
-<p >If you can't handle zip files, see <a
-href="http://www.info-zip.org/" target="_parent">the InfoZip web-site</a>. </p>
 
 <a href="#contents">Back to contents</a>
 
@@ -227,7 +221,8 @@ distribution from this web-site. See our <a href="../contributing">page with mor
 
 <p >Please register on our <a
 href="../mailing_lists.htm">mailing lists.</a> Questions about our
-software will ONLY be answered when directed to one of the mailing lists.</p>
+  software will ONLY be answered when directed to one of the mailing lists
+  or via GitHub issues.</p>
 
 <p>After extracting the files, please check STIR/buildblock/Scanner.cxx to see
 if the parameters of your scanner are correct. If not, let us know. You might
@@ -240,7 +235,7 @@ to recognise the scanner in the Interfile header file (*.hs)).</p>
 
 <p ><!-- Created: Thu Jun 15 08:33:10 BST 2000 -->
 <!-- hhmts start -->
-Last modified: May 25 2018
+Last modified: Jan 14 2023
 <!-- hhmts end --></p>
 
 

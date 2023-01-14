@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -177,8 +177,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This stores the non-zero projection matrix elements for every 'densel' that contributes to a given bin. </p>
 <p>In the usual terminology, this class implements a <a class="el" href="classstir_1_1Line.html" title="A class used by the Interfile parser. ">Line</a> (or Tube) of Response (<a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>, or TOR).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000149">Todo:</a></b></dt><dd>Most of the members of this class would work just as well for a (not yet existing) class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html" title="This stores the non-zero projection matrix elements for every &#39;voxel&#39;. ">ProjMatrixElemsForOneDensel</a>. This means that we should derived both from a common base class, templated in the type of element.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo:</a></b></dt><dd>It might be useful to template this class in terms of the element-type as well. That way, we could have 'compact' elements, efficient elements, etc. However, doing this will probably only be useful if all <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> classes are then templated as well, which would be a pain. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000162">Todo:</a></b></dt><dd>Most of the members of this class would work just as well for a (not yet existing) class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html" title="This stores the non-zero projection matrix elements for every &#39;voxel&#39;. ">ProjMatrixElemsForOneDensel</a>. This means that we should derived both from a common base class, templated in the type of element.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000163">Todo:</a></b></dt><dd>It might be useful to template this class in terms of the element-type as well. That way, we could have 'compact' elements, efficient elements, etc. However, doing this will probably only be useful if all <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> classes are then templated as well, which would be a pain. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7e72fad7117fa4c058138d5f4820ebf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e72fad7117fa4c058138d5f4820ebf7">&#9670;&nbsp;</a></span>value_type</h2>
@@ -274,7 +274,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>add a new value_type object at the end </p>
 <dl class="section warning"><dt>Warning</dt><dd>For future compatibility, it is required (but not checked) that the elements are added such that calling <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a3dc3ccfc3967d20fa59c17dbcf1ae7d1" title="Sort the elements on coordinates of the voxels. ">sort()</a> after the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a614ed76acb47d4b588323297f2569180" title="add a new value_type object at the end ">push_back()</a> would not change the order of the elements. Otherwise, schemes for 'incremental' storing of coordinates would require too much overhead. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#ae05fff5d0d62d13755a445d8e371b161">merge()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a13ad2e597ca39ad41e3e86ea910df5e1">stir::ProjMatrixByBinSinglePhoton::set_up()</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">stir::ProjMatrixByBinSPECTUB::~ProjMatrixByBinSPECTUB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#ae05fff5d0d62d13755a445d8e371b161">merge()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a13ad2e597ca39ad41e3e86ea910df5e1">stir::ProjMatrixByBinSinglePhoton::set_up()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a37d34ed37768459bda1d37ce81c56f98">stir::ProjMatrixByBinPinholeSPECTUB::~ProjMatrixByBinPinholeSPECTUB()</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">stir::ProjMatrixByBinSPECTUB::~ProjMatrixByBinSPECTUB()</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ this is a fairly CPU intensive operation. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

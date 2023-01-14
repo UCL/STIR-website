@@ -1,7 +1,7 @@
 <map id="stir::InterfileRawDataHeaderSiemens" name="stir::InterfileRawDataHeaderSiemens">
-<area shape="rect" id="node5" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemesn listmode data (in PETLINK format) ..." alt="" coords="5,319,213,360"/>
-<area shape="rect" id="node6" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="237,319,419,360"/>
-<area shape="rect" id="node2" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="117,155,321,181"/>
-<area shape="rect" id="node3" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="145,80,293,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="119,5,319,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemesn listmode data (in PETLINK format) ..." alt="" coords="5,319,192,360"/>
+<area shape="rect" id="node6" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="217,319,386,360"/>
+<area shape="rect" id="node2" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="108,155,292,181"/>
+<area shape="rect" id="node3" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="133,80,267,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="111,5,289,32"/>
 </map>

@@ -1,16 +1,16 @@
 <map id="Basic building blocks" name="Basic building blocks">
-<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="563,5,791,32"/>
-<area shape="rect" id="node2" href="$group__geometry.html" title="Items related to simple\l geometric calculations" alt="" coords="590,57,765,98"/>
-<area shape="rect" id="node3" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,425,103,452"/>
-<area shape="rect" id="node4" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="606,122,749,163"/>
-<area shape="rect" id="node5" href="$group__DataProcessor.html" title="Data processors" alt="" coords="614,188,741,215"/>
-<area shape="rect" id="node6" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="586,239,769,295"/>
-<area shape="rect" id="node7" href="$group__date__time.html" title="Items related to date\l/time processing" alt="" coords="598,319,757,361"/>
-<area shape="rect" id="node8" href="$group__threads.html" title="Items relating to threading\l of certain STIR functions." alt="" coords="579,385,775,426"/>
-<area shape="rect" id="node9" href="$group__copy__fill.html" title="Generic fill/copy functionality\l for STIR object from/to iterators" alt="" coords="561,450,793,491"/>
-<area shape="rect" id="node10" href="$group__densitydata.html" title="Items related to image data" alt="" coords="575,516,779,543"/>
-<area shape="rect" id="node11" href="$group__buildblock__detail.html" title="Implementation details\l for buildblock" alt="" coords="590,567,765,609"/>
-<area shape="rect" id="node12" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="610,633,745,674"/>
-<area shape="rect" id="node13" href="$group__Coordinate.html" title="Items relating to coordinates" alt="" coords="572,699,783,725"/>
-<area shape="rect" id="node15" href="$group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="556,749,799,805"/>
+<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="527,5,730,32"/>
+<area shape="rect" id="node2" href="$group__geometry.html" title="Items related to simple\l geometric calculations" alt="" coords="551,57,707,98"/>
+<area shape="rect" id="node3" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,425,97,452"/>
+<area shape="rect" id="node4" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="565,122,693,163"/>
+<area shape="rect" id="node5" href="$group__DataProcessor.html" title="Data processors" alt="" coords="569,188,688,215"/>
+<area shape="rect" id="node6" href="$group__Array.html" title="Items relating to vectors\l and (multi&#45;dimensional)\l arrays" alt="" coords="547,239,710,295"/>
+<area shape="rect" id="node7" href="$group__date__time.html" title="Items related to date\l/time processing" alt="" coords="557,319,700,361"/>
+<area shape="rect" id="node8" href="$group__threads.html" title="Items relating to threading\l of certain STIR functions." alt="" coords="541,385,717,426"/>
+<area shape="rect" id="node9" href="$group__copy__fill.html" title="Generic fill/copy functionality\l for STIR object from/to iterators" alt="" coords="523,450,734,491"/>
+<area shape="rect" id="node10" href="$group__densitydata.html" title="Items related to image data" alt="" coords="538,516,719,543"/>
+<area shape="rect" id="node11" href="$group__buildblock__detail.html" title="Implementation details\l for buildblock" alt="" coords="552,567,705,609"/>
+<area shape="rect" id="node12" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="565,633,692,674"/>
+<area shape="rect" id="node13" href="$group__Coordinate.html" title="Items relating to coordinates" alt="" coords="535,699,722,725"/>
+<area shape="rect" id="node15" href="$group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="520,749,737,805"/>
 </map>

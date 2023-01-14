@@ -1,6 +1,6 @@
 <map id="stir::DiscretisedShape3D" name="stir::DiscretisedShape3D">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; DiscretisedShape3D, Shape3D,\l Shape3D \&gt;" alt="" coords="59,215,298,271"/>
-<area shape="rect" id="node3" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="32,103,141,130"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="166,96,375,137"/>
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; DiscretisedShape3D, Shape3D,\l Shape3D \&gt;" alt="" coords="98,215,318,271"/>
+<area shape="rect" id="node3" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="29,103,131,130"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="155,96,349,137"/>
 </map>

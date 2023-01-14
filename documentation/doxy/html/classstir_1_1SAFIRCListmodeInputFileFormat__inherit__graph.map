@@ -1,5 +1,5 @@
-<map id="stir::SAFIRCListmodeInputFileFormat" name="stir::SAFIRCListmodeInputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="5,109,157,151"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="5,5,157,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="182,117,322,143"/>
+<map id="stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;" name="stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="5,109,144,151"/>
+<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="168,117,299,143"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -43,25 +43,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_bug000005"></a>Class <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html">stir::BackProjectorByBinUsingInterpolation</a>  </dt>
+<dt><a class="anchor" id="_bug000004"></a>Class <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html">stir::BackProjectorByBinUsingInterpolation</a>  </dt>
 <dd>Currently this implementation has problems on certain processors due to floating point rounding errors. Intel *86 and PowerPC give correct results, SunSparc has a problem at tangential_pos_num==0 (also HP stations give problems).  </dd>
-<dt><a class="anchor" id="_bug000007"></a>Member <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a06636a3cfe6c8a56956a139ddc645548">stir::EllipsoidalCylinder::EllipsoidalCylinder</a>  (const float length_z, const float radius_y, const float radius_x, const float theta_1, const float theta_2, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D&lt; float &gt;</a> &amp;centre, const <a class="el" href="classstir_1_1Array.html">Array&lt; 2, float &gt;</a> &amp;direction_vectors=diagonal_matrix(3, 1.F))</dt>
+<dt><a class="anchor" id="_bug000006"></a>Member <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a06636a3cfe6c8a56956a139ddc645548">stir::EllipsoidalCylinder::EllipsoidalCylinder</a>  (const float length_z, const float radius_y, const float radius_x, const float theta_1, const float theta_2, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D&lt; float &gt;</a> &amp;centre, const <a class="el" href="classstir_1_1Array.html">Array&lt; 2, float &gt;</a> &amp;direction_vectors=diagonal_matrix(3, 1.F))</dt>
 <dd>angles <em>theta_1</em> and <em>theta_2</em> are currently in degrees, while STIR conventions dictate radians.  </dd>
-<dt><a class="anchor" id="_bug000002"></a>Member <a class="el" href="classstir_1_1KeyParser.html#acee4511c9040f002985af97336d84ffd">stir::KeyParser::ask_parameters</a>  ()</dt>
+<dt><a class="anchor" id="_bug000001"></a>Member <a class="el" href="classstir_1_1KeyParser.html#acee4511c9040f002985af97336d84ffd">stir::KeyParser::ask_parameters</a>  ()</dt>
 <dd>breaks with for 'vectorised' keys.  </dd>
-<dt><a class="anchor" id="_bug000001"></a>Member <a class="el" href="classstir_1_1KeyParser.html#a4e5b0bca8a73d015c9fef5dbe6aebb71">stir::KeyParser::parameter_info</a>  () const</dt>
-<dd>breaks with 'vectorised' keys.  </dd>
-<dt><a class="anchor" id="_bug000003"></a>Class <a class="el" href="classstir_1_1NestedIterator.html">stir::NestedIterator&lt; topleveliterT, GetRestRangeFunctionT &gt;</a>  </dt>
+<dt><a class="anchor" id="_bug000002"></a>Class <a class="el" href="classstir_1_1NestedIterator.html">stir::NestedIterator&lt; topleveliterT, GetRestRangeFunctionT &gt;</a>  </dt>
 <dd>At present, <code>iterator_category</code> typedef is hard-wired to be <code>std::forward_iterator_tag</code>. This would be incorrect if <code>topleveliterT</code> or <code>rest_iter_type</code> is only an input or output iterator.  </dd>
-<dt><a class="anchor" id="_bug000004"></a>Member <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af36a2ba30d8ae8fb592dbba4fd153599">stir::ProjDataInfoCylindrical::sampling_corresponds_to_physical_rings</a>  </dt>
+<dt><a class="anchor" id="_bug000003"></a>Member <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af36a2ba30d8ae8fb592dbba4fd153599">stir::ProjDataInfoCylindrical::sampling_corresponds_to_physical_rings</a>  </dt>
 <dd>The value of this variable is currently set by checking if the scanner is a HiDAC scanner. This needs to be changed.  </dd>
-<dt><a class="anchor" id="_bug000006"></a>Class <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html">stir::ProjMatrixByBinUsingRayTracing</a>  </dt>
+<dt><a class="anchor" id="_bug000005"></a>Class <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html">stir::ProjMatrixByBinUsingRayTracing</a>  </dt>
 <dd>Currently, strange things happen if the z voxel size is not exactly equal to half the ring spacing of the scanner. </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

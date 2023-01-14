@@ -1,4 +1,2238 @@
 -------------------------------
+Sat, 14 Jan 2023 14:16:46 +0000  Kris Thielemans  
+
+minor doxygen fixes
+
+
+src/Doxyfile.in
+src/include/stir/Array.h
+src/include/stir/KeyParser.h
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+src/include/stir/doxygengroups.h
+
+-------------------------------
+Sat, 14 Jan 2023 13:51:02 +0000  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 5.1.0
+
+
+LICENSE.txt
+
+-------------------------------
+Sat, 14 Jan 2023 13:40:17 +0000  Kris Thielemans  
+
+[CI] don't run CI on *.htm files [skip ci]
+
+
+.appveyor.yml
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 14 Jan 2023 13:36:50 +0000  Kris Thielemans  
+
+update release date for 5.1.0
+
+
+documentation/history.htm
+documentation/release_5.1.htm
+
+-------------------------------
+Sat, 14 Jan 2023 13:36:06 +0000  Kris Thielemans  
+
+Merge pull request #1138 from KrisThielemans/fix_non_arccorr_bins
+fix num bins in uncompressed proj-data-info construction
+
+-------------------------------
+Sat, 14 Jan 2023 13:32:22 +0000  Kris Thielemans  
+
+Merge pull request #1140 from KrisThielemans/better_CMake_warnings
+Better CMake warnings and messages
+
+-------------------------------
+Sat, 14 Jan 2023 13:31:08 +0000  Kris Thielemans  
+
+better CMake warnings/messages
+- set CMP0074 to NEW (which will avoid warning about BOOST_ROOT)
+- explicitly use CONFIG mode in find_package for ITK, parallelproj
+and nlohmann_json to let CMake give a clearer message what needs to
+be done (i.e. set *_DIR)
+- warn about parallelproj < 1.2.13
+- improve a few messages
+
+
+CMakeLists.txt
+documentation/release_5.1.htm
+src/CMakeLists.txt
+src/cmake/STIRConfig.cmake.in
+src/swig/CMakeLists.txt
+
+-------------------------------
+Sat, 14 Jan 2023 13:18:30 +0000  Kris Thielemans  
+
+Merge pull request #1137 from UCL/Appveyor-2022
+[AppVeyor] use VS 2015, 2019 and 2022, drop 2013
+[GHA] don't launch actions if irrelevant files are changed
+
+-------------------------------
+Sat, 14 Jan 2023 13:16:06 +0000  Kris Thielemans  
+
+[Appveyor] set BUILD_DOCUMENTATION=OFF to save time
+[appveyor skip]
+
+
+.appveyor.yml
+
+-------------------------------
+Sat, 14 Jan 2023 13:15:29 +0000  Kris Thielemans  
+
+[AppVeyor] use VS 2015, 2019 and 2022, drop 2013
+addresses #1136
+
+
+.appveyor.yml
+
+-------------------------------
+Sat, 14 Jan 2023 13:15:29 +0000  Kris Thielemans  
+
+[GHA] add paths-ignore for PRs
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Fri, 13 Jan 2023 23:53:37 +0000  Kris Thielemans  
+
+fix num bins in uncompressed proj-data-info construction
+This fixes some lines that used default_num_arc_corrected_bins
+as opposed to max_num_non_arccorrected_bins. However, these
+have zero impact on performance.
+
+Fixes https://github.com/UCL/STIR/issues/1134, see there for more
+detail.
+
+
+src/include/stir/listmode/CListEventCylindricalScannerWithDiscreteDetectors.inl
+src/listmode_buildblock/LmToProjData.cxx
+src/utilities/list_detector_and_bin_info.cxx
+
+-------------------------------
+Fri, 13 Jan 2023 11:29:50 +0000  Kris Thielemans  
+
+Merge pull request #1135 from robbietuk/gitignore/VSCode
+Add VSCode build directory to gitignore
+
+-------------------------------
+Thu, 12 Jan 2023 17:47:08 -0800  robbietuk  
+
+Add VSCode build directory to gitignore
+
+
+.gitignore
+
+-------------------------------
+Thu, 12 Jan 2023 23:32:12 +0000  Kris Thielemans  
+
+added missing include file
+
+
+src/include/stir/DiscretisedDensity.inl
+
+-------------------------------
+Thu, 12 Jan 2023 23:09:17 +0000  Kris Thielemans  
+
+updated credits
+
+
+documentation/credits.htm
+
+-------------------------------
+Thu, 12 Jan 2023 23:00:22 +0000  Kris Thielemans  
+
+update zenodo
+- update authors via git-fame.sh
+- add some publications
+
+
+.zenodo.json
+
+-------------------------------
+Thu, 12 Jan 2023 22:59:19 +0000  Kris Thielemans  
+
+update git-fame.sh
+- remove restriction on 2003 as actually some information is useful
+(although it overcounts KT)
+- add more explanation on author credits
+
+
+scripts/maintenance/git-fame.sh
+
+-------------------------------
+Sun, 8 Jan 2023 21:50:07 +0000  Kris Thielemans  
+
+update git-fame.sh [ci skip]
+- exclude more files
+- don't bother with JSON output anymore as we no longer use zenodo.json
+
+
+scripts/maintenance/git-fame.sh
+
+-------------------------------
+Sun, 8 Jan 2023 21:49:50 +0000  Kris Thielemans  
+
+update mailmap
+
+
+.mailmap
+
+-------------------------------
+Sun, 8 Jan 2023 09:33:00 +0000  Kris Thielemans  
+
+Merge pull request #1124 from KrisThielemans/betterSPECTMessage
+Better SPECT message if attenuation doesn't match
+
+-------------------------------
+Sun, 8 Jan 2023 00:28:50 +0000  Kris Thielemans  
+
+[GHA] ignore some files
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 7 Jan 2023 23:40:33 +0000  Kris Thielemans  
+
+SPECT: show explanation when the attenuation image has different characteristics
+
+
+documentation/release_5.1.htm
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Sat, 7 Jan 2023 23:40:33 +0000  Kris Thielemans  
+
+improve returned explanation for has_same_characteristics
+add origin and grid spacings to explanation
+
+
+src/include/stir/DiscretisedDensity.inl
+src/include/stir/DiscretisedDensityOnCartesianGrid.inl
+
+-------------------------------
+Sat, 7 Jan 2023 23:39:14 +0000  Kris Thielemans  
+
+Merge pull request #1098 from KrisThielemans/priorFixes
+fix bugs in Hessians Prior code
+
+-------------------------------
+Sat, 7 Jan 2023 23:36:46 +0000  Kris Thielemans  
+
+[GHA] increase ccache size (#1126)
+Debug builds have hardly any cache hits. That's likely because the size is too small.
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 7 Jan 2023 21:22:10 +0000  Kris Thielemans  
+
+[GHA] run apt update first
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 7 Jan 2023 21:19:57 +0000  Kris Thielemans  
+
+minor optimisation in priors
+in accumulate_Hessian_times_input, do not do any calculations if weight is zero
+
+
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sat, 7 Jan 2023 21:14:47 +0000  Kris Thielemans  
+
+fix numerical precision in test for x^T Hx > 0
+- allow for small negative values
+- accumulate using double, not float
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sat, 7 Jan 2023 21:12:15 +0000  Kris Thielemans  
+
+correct QuadraticPrior::accumulate_Hessian_times_input
+dx == dy == dx == 0 does not what you'd think
+
+
+src/recon_buildblock/QuadraticPrior.cxx
+
+-------------------------------
+Thu, 5 Jan 2023 10:14:01 +0000  Kris Thielemans  
+
+Merge pull request #1121 from KrisThielemans/prepRelease5.1
+Prep release 5.1.0 wioth various small fixes
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+set version to 5.1.
+
+
+VERSION.txt
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+avoid warnings when parsing Siemens listmode header
+
+
+src/IO/InterfileHeaderSiemens.cxx
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+sligthly less confusing parameter_info()
+"radionuclide" was listed twice
+
+
+src/buildblock/ExamInfo.cxx
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+added energy resolution for DSTE
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+replace a few std:cerr with calls to info()
+
+
+src/recon_buildblock/IterativeReconstruction.cxx
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+add v5.1.0
+
+
+documentation/history.htm
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+minor updates and set version to 5.1
+
+
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:58 +0000  Kris Thielemans  
+
+update release_5.1.htm
+
+
+documentation/release_5.1.htm
+
+-------------------------------
+Wed, 4 Jan 2023 18:01:51 +0000  Kris Thielemans  
+
+require parallelproj 1.0 (#1117)
+require parallelproj 1.0 but test with 1.2.10
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+documentation/release_5.1.htm
+
+-------------------------------
+Tue, 3 Jan 2023 14:16:48 +0000  markus-jehl  
+
+Issue/1070 Making BlocksOnCylindrical projection tests faster (#1116)
+* Speeding up test execution time by subsampling projection data.
+
+* Sped up the axial projection test as well now, by reducing the views by a factor of 4.
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Tue, 3 Jan 2023 12:55:42 +0000  Kris Thielemans  
+
+Merge pull request #1120 from KrisThielemans/listmodeRandomNaming
+Listmode "random" renaming to "delayed" for SAFIR and ECAT
+
+-------------------------------
+Mon, 2 Jan 2023 10:00:17 +0000  Kris Thielemans  
+
+rename (private) random bitfields to delayed
+Fixes #1064
+
+
+documentation/release_5.1.htm
+src/include/stir/listmode/CListRecordECAT8_32bit.h
+src/include/stir/listmode/CListRecordECAT962.h
+src/include/stir/listmode/CListRecordECAT966.h
+src/include/stir/listmode/CListRecordSAFIR.h
+
+-------------------------------
+Mon, 2 Jan 2023 09:44:16 +0000  Kris Thielemans  
+
+minor SAFIR updates (authorship etc)
+
+
+examples/SAFIR-listmode-virtual-scanner/.gitignore
+src/include/stir/listmode/CListRecordSAFIR.h
+src/include/stir/listmode/CListRecordSAFIR.inl
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+
+-------------------------------
+Mon, 2 Jan 2023 09:11:24 +0000  Kris Thielemans  
+
+Merge pull request #1118 from KrisThielemans/configEtc
+add get_STIR_doc_dir and get_STIR_examples_dir, fix stir_config
+
+-------------------------------
+Mon, 2 Jan 2023 09:09:16 +0000  Kris Thielemans  
+
+small fixes in stir_config
+- correct wrong option error
+- do not use error()
+
+
+src/utilities/stir_config.cxx
+
+-------------------------------
+Sun, 1 Jan 2023 22:21:46 +0000  Kris Thielemans  
+
+use stir_config to find examples
+As opposed to hardwiring pardir (or assuming they files are in the source dir),
+use `stir_config --examples-dir`
+
+
+examples/GE-Signa-PETMR/register_GEAC.sh
+examples/GE-Signa-PETMR/scatter_and_recon.sh
+examples/Siemens-mMR/process_NEMA_data.sh
+examples/Siemens-mMR/scatter_and_recon.sh
+examples/Siemens-mMR/unlist_and_randoms.sh
+recon_test_pack/run_scatter_tests.sh
+
+-------------------------------
+Sun, 1 Jan 2023 22:20:53 +0000  Kris Thielemans  
+
+install examples with correct permissions
+- use USE_SOURCE_PERMISSIONS to preserve executable permissions for scripts
+- fix some permissions of a few files
+
+fixes #1119
+
+
+CMakeLists.txt
+examples/python/data_analysis/convert_all_python_to_ipynb.sh
+examples/samples/compute_sqrt_Hessian_row_sum.par
+
+-------------------------------
+Sun, 1 Jan 2023 22:17:25 +0000  Kris Thielemans  
+
+update release notes and users guide on stir_config etc
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.1.htm
+
+-------------------------------
+Sun, 1 Jan 2023 17:38:34 +0000  Kris Thielemans  
+
+[CMake] remove obsolete installation lines
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Sun, 1 Jan 2023 17:36:31 +0000  Kris Thielemans  
+
+[SWIG] add find_STIR_config.h
+
+
+src/swig/stir.i
+
+-------------------------------
+Sun, 1 Jan 2023 17:34:10 +0000  Kris Thielemans  
+
+add functions for display doc/examples dir
+- add get_STIR_doc_dir and get_STIR_examples_dir
+- update stir_config utility
+  - add switches
+  - only output what has been asked (fixed uninitialised bools)
+  - only output info without description, for easier parsing
+
+
+CMakeLists.txt
+src/buildblock/find_STIR_config.cxx
+src/cmake/STIRConfig.h.in
+src/include/stir/find_STIR_config.h
+src/utilities/stir_config.cxx
+
+-------------------------------
+Thu, 29 Dec 2022 19:24:27 +0000  Kris Thielemans  
+
+Merge pull request #1094 from KrisThielemans/listmodeComments
+listmode reconstruction fixes
+
+-------------------------------
+Thu, 29 Dec 2022 16:28:13 +0000  Kris Thielemans  
+
+speed-up run_test_listmode_recon.sh
+- do not recompute sensitivity every time
+- fix name of sensitivity image (was seg2, but using max seg 1)
+
+
+recon_test_pack/OSMAPOSL_test_lm.par
+recon_test_pack/OSMAPOSL_test_proj.par
+recon_test_pack/run_test_listmode_recon.sh
+
+-------------------------------
+Thu, 29 Dec 2022 14:56:22 +0000  Kris Thielemans  
+
+minor fixes for PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin
+- document subsets
+- relax error condition for gradient calculation to check if num_subsets>1
+- write warning when re-reading cached files
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Wed, 28 Dec 2022 21:28:30 +0000  Kris Thielemans  
+
+fix problems with max segment/ring-difference to process
+- remove spurious argument of get() function
+- fix conflict between new and obsolete keyword when parsing
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Wed, 28 Dec 2022 08:13:38 +0000  Kris Thielemans  
+
+minor fix to listmode recon test script
+Depending on settings, rm can error out if a file doesn't exist, so use rm -f
+
+[appveyor skip]
+
+
+recon_test_pack/run_test_listmode_recon.sh
+
+-------------------------------
+Wed, 28 Dec 2022 01:39:25 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into listmodeComments
+
+
+-------------------------------
+Wed, 28 Dec 2022 00:49:34 +0000  Kris Thielemans  
+
+update listmode recon documentation
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.1.htm
+examples/samples/OSMAPOSL_listmode_emml_with_projmatrix.par
+recon_test_pack/OSMAPOSL_test_lm.par
+
+-------------------------------
+Wed, 28 Dec 2022 00:03:02 +0000  Kris Thielemans  
+
+fix listmode recon parameter file
+It was using a projector pair, as opposed to a single matrix, resulting in
+warning messages
+
+
+recon_test_pack/OSMAPOSL_test_lm.par
+
+-------------------------------
+Wed, 28 Dec 2022 00:03:02 +0000  Kris Thielemans  
+
+increase verbosity level if info() calls in listmode obj-fun
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Wed, 28 Dec 2022 00:03:02 +0000  Kris Thielemans  
+
+lm_to_projdata outputs parameter_info() to stderr
+
+
+src/listmode_utilities/lm_to_projdata.cxx
+
+-------------------------------
+Wed, 28 Dec 2022 00:02:49 +0000  Kris Thielemans  
+
+fix time frame handling (with/out cache) in listmode objective function
+- fix handling of multiple cache files introduced in previous commit
+- fix handling of time frame information (fixes #1115)
+- fix documentation on caching now that multiple cache files are supported
+- recon_test_pack test now tests for non-zero start time
+
+
+examples/samples/OSMAPOSL_listmode_emml_with_projmatrix.par
+recon_test_pack/run_test_listmode_recon.sh
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/distributable.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Fri, 23 Dec 2022 16:16:02 -0500  Nikos Efthimiou  
+
+* New functions to read and write mulitple cache files * Reconstruct from multiple cache files.
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/distributable.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Fri, 23 Dec 2022 10:13:03 +0000  Kris Thielemans  
+
+clean-up of listmode objective function
+- do not rely on time_frame_defs_filename to determine if we are using time frames or not
+- simplify non-cached loop regarding when to stop (now essentially the same as the cached loop)
+- added a sample .par file for listmode recon
+
+
+examples/samples/OSMAPOSL_listmode_emml_with_projmatrix.par
+recon_test_pack/run_test_listmode_recon.sh
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Thu, 22 Dec 2022 08:05:21 +0000  Kris Thielemans  
+
+removed add_view_seg_to_sensitivity in listmode objfun as no longer used
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Wed, 21 Dec 2022 10:26:45 +0000  Kris Thielemans  
+
+fix caching of additive data for listmode recon
+- fix memory leak
+- make thread-safe
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Wed, 21 Dec 2022 10:26:07 +0000  Kris Thielemans  
+
+listmode recon fixes
+- fix issue that cache_path  was ignored when writing
+- fix handling of time frame when caching
+- disabled skip_lm_input_file for the moment as it isn't quite stable
+- added more doxygen
+- modified run_test_listmode.sh to run both all events and a time limit,
+while making screen output cleaner
+
+
+recon_test_pack/OSMAPOSL_test_lm.par
+recon_test_pack/OSMAPOSL_test_proj.par
+recon_test_pack/lm_to_projdata.par
+recon_test_pack/run_test_listmode_recon.sh
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 19 Dec 2022 15:33:35 +0000  markus-jehl  
+
+Issue/1070 adding parallelproj tests (#1113)
+* Fixing parallelproj build of SWIG interface.
+
+* Complete restructuring of BlocksOnCylindrical tests and adding parallelproj support. 
+
+* Added a test to confirm parallelproj and ray tracing do roughly the same thing.
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/swig/stir_projectors.i
+
+-------------------------------
+Fri, 9 Dec 2022 11:20:18 +0000  markus-jehl  
+
+Issue/1101 adapt safir format for positrigo (#1106)
+Add support to read NeuroLF listmode format, based on SAFIR. The headers are the same but the bit-encoding is slightly different. The SAFIR classes were templated to avoid duplication.
+
+Fixes #1101.
+
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.1.htm
+src/IO/IO_registries.cxx
+src/include/stir/IO/SAFIRCListmodeInputFileFormat.h
+src/include/stir/listmode/CListRecordSAFIR.h
+src/include/stir/listmode/CListRecordSAFIR.inl
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+
+-------------------------------
+Wed, 7 Dec 2022 20:57:37 +0000  Matthew Strugari  
+
+Finalize PinholeSPECTUB sample parameter files (#1110)
+Updated PinholeSPECTUB sample parameter files for mask configuration
+
+
+examples/samples/PinholeSPECTUB/FBP2D_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSEM_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSOSLMRP_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSSPSQP_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/forward_project_PinholeSPECTUB.par
+
+-------------------------------
+Thu, 1 Dec 2022 10:52:51 +0000  Kris Thielemans  
+
+Merge pull request #1100 from mastergari/PinholeSPECT_v2
+Addtion of `PinholeSPECTUB` code by Matthew Strugari and Carles Falcon
+
+-------------------------------
+Wed, 30 Nov 2022 11:12:20 +0000  mastergari  
+
+Added PinholeSPECTUB to release notes
+
+
+documentation/release_5.1.htm
+
+-------------------------------
+Mon, 28 Nov 2022 19:36:14 +0000  mastergari  
+
+Updated recon_test_pack README.txt for SPECT tests.
+
+
+recon_test_pack/README.txt
+
+-------------------------------
+Mon, 28 Nov 2022 17:21:35 +0000  mastergari  
+
+Updated PinholeSPECTUB test with smaller dataset
+
+
+recon_test_pack/SPECT/PinholeSPECTUB/FBP2D.par
+recon_test_pack/SPECT/PinholeSPECTUB/OSEM.par
+recon_test_pack/SPECT/PinholeSPECTUB/attmap.hv
+recon_test_pack/SPECT/PinholeSPECTUB/attmap.v
+recon_test_pack/SPECT/PinholeSPECTUB/init.hv
+recon_test_pack/SPECT/PinholeSPECTUB/init.v
+recon_test_pack/SPECT/PinholeSPECTUB/input.hs
+recon_test_pack/SPECT/PinholeSPECTUB/input.s
+recon_test_pack/SPECT/PinholeSPECTUB/mask.hv
+recon_test_pack/SPECT/PinholeSPECTUB/mask.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP2D_psfno_doino_attno_maskno.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_7.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_7.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_7.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskfile_4.v
+
+-------------------------------
+Mon, 28 Nov 2022 17:21:30 +0000  mastergari  
+
+Updated SPECT tests
+
+
+recon_test_pack/SPECT/PinholeSPECTUB/run_PinholeSPECTUB_tests.sh
+recon_test_pack/SPECT/SPECTUB/run_SPECTUB_tests.sh
+recon_test_pack/SPECT/run_SPECT_tests.sh
+
+-------------------------------
+Sat, 26 Nov 2022 19:44:03 +0000  Kris Thielemans  
+
+Merge branch 'master' into PinholeSPECT_v2
+
+
+-------------------------------
+Sat, 26 Nov 2022 18:34:27 +0000  Kris Thielemans  
+
+Merge pull request #1105 from KrisThielemans/GHAupdates
+GHA updates (as GHA upgraded to Ubuntu 22.04 etc)
+
+-------------------------------
+Sat, 26 Nov 2022 16:45:43 +0000  Kris Thielemans  
+
+[GHA] force XCode 14.1 on MacOS due to linker bug
+Fixes #1103
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 26 Nov 2022 14:38:14 +0000  Kris Thielemans  
+
+[GHA} add libomp-dev when using clang
+Needed for OpenMP support. Fixes #1104
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Fri, 25 Nov 2022 14:47:56 +0000  mastergari  
+
+Correct spelling in comment
+
+
+src/include/stir/recon_buildblock/PinholeSPECTUB_Tools.h
+src/recon_buildblock/PinholeSPECTUB_Weight3d.cxx
+
+-------------------------------
+Fri, 25 Nov 2022 14:47:40 +0000  mastergari  
+
+Moved cout messages to stir::info
+
+
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+
+-------------------------------
+Fri, 25 Nov 2022 14:47:29 +0000  mastergari  
+
+Add get/set functions for SIRF PinholeSPECTUB and modify masking statements
+
+
+documentation/STIR-UsersGuide.tex
+recon_test_pack/SPECT/PinholeSPECTUB/FBP2D.par
+recon_test_pack/SPECT/PinholeSPECTUB/OSEM.par
+recon_test_pack/SPECT/PinholeSPECTUB/detector.txt
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskfile_4.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskfile_4.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskfile_4.v
+src/include/stir/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.h
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+
+-------------------------------
+Fri, 25 Nov 2022 14:47:11 +0000  mastergari  
+
+Added PinholeSPECTUB sample files
+
+
+examples/samples/PinholeSPECTUB/FBP2D_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSEM_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSOSLMRP_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/OSSPSQP_PinholeSPECTUB.par
+examples/samples/PinholeSPECTUB/collimator27_cyl.txt
+examples/samples/PinholeSPECTUB/collimator27_pol.txt
+examples/samples/PinholeSPECTUB/collimator27_pol_MPH.txt
+examples/samples/PinholeSPECTUB/detector27.txt
+examples/samples/PinholeSPECTUB/forward_project_PinholeSPECTUB.par
+
+-------------------------------
+Fri, 25 Nov 2022 14:46:58 +0000  mastergari  
+
+Renamed SPECTUB files to distinguish from PinholeSPECTUB
+
+
+examples/samples/FBP2D_SPECTUB.par
+examples/samples/OSEM_SPECTUB.par
+examples/samples/OSMAPOSL_osem_SPECTUB.par
+examples/samples/forward_project_SPECTUB.par
+examples/samples/write_proj_matrix_by_bin_SPECTUB.par
+
+-------------------------------
+Fri, 25 Nov 2022 14:46:38 +0000  mastergari  
+
+Added PinholeSPECTUB documentation to STIR-UsersGuide
+
+
+documentation/STIR-UsersGuide.tex
+documentation/graphics/STIR-UsersGuide_PinholeSPECTUB.eps
+documentation/graphics/STIR-UsersGuide_PinholeSPECTUB.png
+
+-------------------------------
+Fri, 25 Nov 2022 14:45:05 +0000  mastergari  
+
+Prevent calculation with uninitialized values in DOI correction
+
+
+src/recon_buildblock/PinholeSPECTUB_Weight3d.cxx
+
+-------------------------------
+Fri, 25 Nov 2022 14:44:24 +0000  mastergari  
+
+PinholeSPECTUB integration
+
+
+recon_test_pack/README.txt
+recon_test_pack/SPECT/PinholeSPECTUB/FBP2D.par
+recon_test_pack/SPECT/PinholeSPECTUB/OSEM.par
+recon_test_pack/SPECT/PinholeSPECTUB/README.txt
+recon_test_pack/SPECT/PinholeSPECTUB/attmap.hv
+recon_test_pack/SPECT/PinholeSPECTUB/attmap.v
+recon_test_pack/SPECT/PinholeSPECTUB/collimator.txt
+recon_test_pack/SPECT/PinholeSPECTUB/detector.txt
+recon_test_pack/SPECT/PinholeSPECTUB/init.hv
+recon_test_pack/SPECT/PinholeSPECTUB/init.v
+recon_test_pack/SPECT/PinholeSPECTUB/input.hs
+recon_test_pack/SPECT/PinholeSPECTUB/input.s
+recon_test_pack/SPECT/PinholeSPECTUB/mask.hv
+recon_test_pack/SPECT/PinholeSPECTUB/mask.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP2D_psfno_doino_attno_maskno.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP2D_psfno_doino_attno_maskno.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP2D_psfno_doino_attno_maskno.v
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskexplicit_4.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskexplicit_4.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_psfno_doino_attsimple_maskexplicit_4.v
+recon_test_pack/SPECT/PinholeSPECTUB/run_PinholeSPECT_tests.sh
+recon_test_pack/SPECT/SPECTUB/FBP2D.par
+recon_test_pack/SPECT/SPECTUB/OSEM_2DPSF.par
+recon_test_pack/SPECT/SPECTUB/OSEM_3DPSF.par
+recon_test_pack/SPECT/SPECTUB/README.txt
+recon_test_pack/SPECT/SPECTUB/attMapRec.hv
+recon_test_pack/SPECT/SPECTUB/attMapRec.v
+recon_test_pack/SPECT/SPECTUB/init.hv
+recon_test_pack/SPECT/SPECTUB/init.v
+recon_test_pack/SPECT/SPECTUB/input.hs
+recon_test_pack/SPECT/SPECTUB/input.s
+recon_test_pack/SPECT/SPECTUB/mask.hv
+recon_test_pack/SPECT/SPECTUB/mask.v
+recon_test_pack/SPECT/SPECTUB/org/FBP.hv
+recon_test_pack/SPECT/SPECTUB/org/FBP.v
+recon_test_pack/SPECT/SPECTUB/org/OSEM_2DPSF_16.hv
+recon_test_pack/SPECT/SPECTUB/org/OSEM_2DPSF_16.v
+recon_test_pack/SPECT/SPECTUB/org/OSEM_3DPSF_4.hv
+recon_test_pack/SPECT/SPECTUB/org/OSEM_3DPSF_4.v
+recon_test_pack/SPECT/SPECTUB/run_SPECT_tests.sh
+src/include/stir/recon_buildblock/PinholeSPECTUB_Tools.h
+src/include/stir/recon_buildblock/PinholeSPECTUB_Weight3d.h
+src/include/stir/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.h
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/PinholeSPECTUB_Weight3d.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+src/recon_buildblock/recon_buildblock_registries.cxx
+
+-------------------------------
+Fri, 25 Nov 2022 11:28:38 +0000  mastergari  
+
+Remove wm_SPECT_mph2 configuration files and documentation from early versions
+
+
+wm_SPECT_mph2/configuration-files/collimator27_cyl.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h2v.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h2v_2mm.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h_esq.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h_right.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2v.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2v_up.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_round.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_sq.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_sq_a6.txt
+wm_SPECT_mph2/configuration-files/collimator8_pol_sq_a6.txt
+wm_SPECT_mph2/configuration-files/detector101x1.txt
+wm_SPECT_mph2/configuration-files/detector101x27.txt
+wm_SPECT_mph2/configuration-files/detector101x8.txt
+wm_SPECT_mph2/configuration-files/detector10x1.txt
+wm_SPECT_mph2/configuration-files/detector50x1.txt
+wm_SPECT_mph2/configuration-files/detector50x27.txt
+wm_SPECT_mph2/configuration-files/detector51x1.txt
+wm_SPECT_mph2/configuration-files/detector51x27.txt
+wm_SPECT_mph2/configuration-files/param_pwm.txt
+wm_SPECT_mph2/configuration-files/params_mph1.txt
+wm_SPECT_mph2/configuration-files/params_mph27.txt
+wm_SPECT_mph2/documentation/manual.md
+wm_SPECT_mph2/documentation/sign-convention.png
+wm_SPECT_mph2/etc/collimator27_pol.txt
+wm_SPECT_mph2/etc/collimator27_pol_2h2v.txt
+wm_SPECT_mph2/etc/detector27.txt
+wm_SPECT_mph2/etc/params_mph27.txt
+
+-------------------------------
+Thu, 24 Nov 2022 23:32:36 +0000  Kris Thielemans  
+
+Prepare wm_SPECT_mph2 files for PinholeSPECTUB
+
+
+src/include/stir/recon_buildblock/PinholeSPECTUB_Tools.h
+src/include/stir/recon_buildblock/PinholeSPECTUB_Weight3d.h
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/PinholeSPECTUB_Weight3d.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+wm_SPECT_mph2/CMakeLists.txt
+
+-------------------------------
+Thu, 24 Nov 2022 23:15:12 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'wmh/master-correct-authorship' into PinholeSPECTUB
+
+
+-------------------------------
+Thu, 17 Nov 2022 11:47:25 +0000  Kris Thielemans  
+
+avoid warnings (bugs?) in Hessians Prior code
+code contained dz == dy == dx == 0, but this is surprising
+in C++. it probably translates to something like
+(dz == ( dy == (dx == 0))), which be what we want, but
+probably not.
+
+
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Wed, 16 Nov 2022 17:04:44 +0000  Kris Thielemans  
+
+Merge pull request #1085 from danieldeidda/templating_functions
+ template normalisation and random functionality for BlocksOnCylindrical
+
+-------------------------------
+Wed, 16 Nov 2022 16:55:54 +0000  Kris Thielemans  
+
+update release notes
+[ci skip]
+appveyor skip]
+
+
+documentation/release_5.1.htm
+
+-------------------------------
+Wed, 16 Nov 2022 15:03:02 +0000  Kris Thielemans  
+
+more doxygen on set_scanner_geometry
+
+
+src/include/stir/Scanner.h
+
+-------------------------------
+Wed, 16 Nov 2022 15:03:02 +0000  Kris Thielemans  
+
+correct test_ML_norm for block geometry
+currently still need to force SAFIR scanner to have block geometry
+
+
+src/test/test_ML_norm.cxx
+
+-------------------------------
+Wed, 16 Nov 2022 15:03:02 +0000  nmdicom-recon  
+
+ making normalisation and random functionality templated to support BlockOnCylindrical
+also simplify pointers declaration with auto;
+add test for BlockOnCylindrical in test_ML_norm
+
+
+src/buildblock/ML_norm.cxx
+src/buildblock/multiply_crystal_factors.cxx
+src/include/stir/ML_norm.h
+src/test/test_ML_norm.cxx
+
+-------------------------------
+Wed, 16 Nov 2022 12:50:18 +0000  Kris Thielemans  
+
+[SWIG] moved projdata things to separate file
+
+
+src/swig/stir.i
+src/swig/stir_projdata.i
+
+-------------------------------
+Tue, 15 Nov 2022 18:44:37 +0000  Kris Thielemans  
+
+Merge pull request #1096 from KrisThielemans/SWIG_improvements
+SWIG improvements: mainly cleanup of the interface file but also a few small fixes related to `_sptr` naming and `ExamInfo`
+
+-------------------------------
+Tue, 15 Nov 2022 18:43:24 +0000  Kris Thielemans  
+
+Merge pull request #1076 from markus-jehl/issue/1070-second-iteration-changes-for-parallelproj-interface
+Issue/1070 second iteration changes for parallelproj interface
+
+-------------------------------
+Mon, 14 Nov 2022 18:21:07 +0000  Kris Thielemans  
+
+[SWIG] moved image IO to separate file
+
+
+src/swig/stir.i
+src/swig/stir_projectors.i
+src/swig/stir_voxels.i
+src/swig/stir_voxels_IO.i
+
+-------------------------------
+Mon, 14 Nov 2022 14:44:31 +0000  Kris Thielemans  
+
+[SWIG] rename get_output_proj*data_sptr to get_output_proj_data
+also moved some more renames of *sptr to specific interface files
+
+
+src/swig/stir.i
+src/swig/stir_objectivefunctions.i
+src/swig/stir_projectors.i
+src/swig/stir_reconstruction.i
+
+-------------------------------
+Sun, 13 Nov 2022 20:36:45 +0000  Kris Thielemans  
+
+[PYTHON] add exam_info to demo
+
+
+examples/python/projector_demo.py
+
+-------------------------------
+Sun, 13 Nov 2022 20:32:50 +0000  Kris Thielemans  
+
+[SWIG] more clean-up of stir.i
+- moved various bits to separate files (still some more to do)
+- also made sure that ExamInfo is defined before VoxelsOnCartesianGrid, resolving
+a problem with the latter's constructors.
+
+
+src/swig/stir.i
+src/swig/stir_array.i
+src/swig/stir_coordinates.i
+
+-------------------------------
+Sun, 13 Nov 2022 17:53:05 +0000  Kris Thielemans  
+
+[SWIG] ExamInfo etc additions
+Also created a macro to make it easier for adding __repr__
+
+
+src/swig/stir.i
+src/swig/stir_exam.i
+src/swig/stir_objectivefunctions.i
+
+-------------------------------
+Tue, 8 Nov 2022 01:27:16 +0000  Kris Thielemans  
+
+list mode objective function hierarchy re-org
+- moved a lot of things from PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin
+to PoissonLogLikelihoodWithLinearModelForMeanAndListModeData, in an attempt to make things
+more consistent.
+- moved most things from post_processing() to set_up_before_sensitivity()
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 7 Nov 2022 22:21:58 +0000  Kris Thielemans  
+
+minor clean-up
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 7 Nov 2022 17:45:26 +0000  Kris Thielemans  
+
+removed some unused variables
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 7 Nov 2022 17:43:59 +0000  Kris Thielemans  
+
+listmode objective function cache file improvements
+Write some diagnostics when reading/writing failed.
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 7 Nov 2022 17:37:24 +0000  Kris Thielemans  
+
+more KTTODO comments
+[ci skip]
+[appveyor skip]
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 7 Nov 2022 16:42:48 +0000  Kris Thielemans  
+
+add KTTODO comments for things to resolve
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Sat, 5 Nov 2022 18:42:06 +0000  Kris Thielemans  
+
+removed non-ASCII character in doxygen
+This breaks doxy2swig, and is in any case not necessary.
+
+[ci skip]
+
+
+src/include/stir/recon_buildblock/BinNormalisationPETFromComponents.h
+
+-------------------------------
+Sat, 5 Nov 2022 11:03:12 +0000  Kris Thielemans  
+
+illustrate a few more parameters in forward_projector*par samples
+[ci skip]
+
+
+examples/samples/forward_projector_parallelproj.par
+examples/samples/forward_projector_proj_matrix_ray_tracing.par
+
+-------------------------------
+Sat, 5 Nov 2022 11:01:03 +0000  Kris Thielemans  
+
+list_image_info writes some errors if failed to read
+
+
+src/utilities/list_image_info.cxx
+
+-------------------------------
+Sat, 5 Nov 2022 09:12:01 +0000  Kris Thielemans  
+
+correct templates in Siemens-mMR example
+[ci skip]
+
+
+examples/Siemens-mMR/template_span1.hs
+examples/Siemens-mMR/template_span11.hs
+
+-------------------------------
+Thu, 3 Nov 2022 19:57:27 +0000  Kris Thielemans  
+
+Merge pull request #1092 from KrisThielemans/remove_binary_unary_function
+Remove std::binary/unary_function
+
+Fixes #1091
+
+-------------------------------
+Thu, 3 Nov 2022 17:52:14 +0000  Kris Thielemans  
+
+[GHA] add run with explicit c++17 request
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Thu, 3 Nov 2022 17:51:56 +0000  Kris Thielemans  
+
+remove deprecated std::binary_function and unary_function
+These are deprecated since c++11, and removed in c++17.
+
+fixes #1091
+
+
+src/IO/InterfileHeader.cxx
+src/IO/InterfileHeaderSiemens.cxx
+src/IO/InterfilePDFSHeaderSPECT.cxx
+src/include/stir/DetectorCoordinateMap.h
+src/include/stir/Shape/CombinedShape3D.h
+src/include/stir/interfile_keyword_functions.h
+src/include/stir/numerics/norm.h
+src/include/stir/numerics/norm.inl
+src/include/stir/stir_math.h
+src/utilities/estimate_triple_energy_window_scatter_sinogram.cxx
+src/utilities/stir_math.cxx
+
+-------------------------------
+Wed, 2 Nov 2022 09:49:39 +0000  Kris Thielemans  
+
+updated 5.1 release notes
+[ci skip]
+
+
+documentation/release_5.1.htm
+
+-------------------------------
+Wed, 2 Nov 2022 08:17:09 +0000  robbietuk  
+
+PyQt5 sinogram visualisation  (#1059)
+Visualisation UI for projection data. Currently added as a a Python example. Includes a brief README on how to launch from command line and how to use from within Python
+
+
+examples/python/projdata_visualisation/BackendTools/ImageTools.py
+examples/python/projdata_visualisation/BackendTools/STIRInterface.py
+examples/python/projdata_visualisation/BackendTools/UIGroupboxProjdataDimensions.py
+examples/python/projdata_visualisation/ProjDataVisualisation.py
+examples/python/projdata_visualisation/README.md
+examples/python/projdata_visualisation/demo_ProjDataVisualisation.py
+
+-------------------------------
+Fri, 28 Oct 2022 17:59:24 +0100  Kris Thielemans  
+
+fix openmp problem in ProjDataInfoCylindrical (#1088)
+The change in #1084 was not thread-safe as the
+ring_diff_arrays_computed variable was set before
+all arrays were initialised. This meant that another
+thread could believe this they were initialised anyway.
+
+To make this change, I had to remove some assert()
+in compute_segment_axial_pos_to_ring_pair that checked if
+the function is the inverse of get_segment_axial_pos_num_for_ring_pair,
+as this led to infinite recursion. However, that is checked
+in test_proj_data_info anyway.
+
+Fixes #1086
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+
+-------------------------------
+Thu, 27 Oct 2022 16:36:20 +0100  samdporter  
+
+Exposed SPECTUBMatrix in python swig (#1087)
+
+
+src/swig/stir.i
+src/swig/stir_projectors.i
+
+-------------------------------
+Wed, 26 Oct 2022 09:36:16 +0100  Kris Thielemans  
+
+Merge pull request #1081 from markus-jehl/issue/1080-merge-small-python-support-changes
+Issue/1080 merge small python support changes
+
+-------------------------------
+Tue, 25 Oct 2022 13:20:14 +0200  Markus Jehl  
+
+Fix for appveyor build failure caused by lack of constexpr support in VC 2013.
+
+
+src/buildblock/HUToMuImageProcessor.cxx
+src/include/stir/HUToMuImageProcessor.h
+
+-------------------------------
+Tue, 25 Oct 2022 09:30:55 +0200  Markus Jehl  
+
+Final code review changes. (+4 squashed commit)
+Squashed commit:
+
+[69e7a0ff6] Fixing build by setting modality on exam data first, before assigning.
+
+[4cd86c181] Code review changes.
+
+[549a8a677] Code review changes.
+
+[be1eaeb97] Code review changes.
+
+
+CMakeLists.txt
+documentation/release_5.1.htm
+src/buildblock/CMakeLists.txt
+src/buildblock/HUToMuImageProcessor.cxx
+src/include/stir/HUToMuImageProcessor.h
+src/include/stir/TruncateToCylindricalFOVImageProcessor.h
+src/include/stir/VectorWithOffset.inl
+src/include/stir/listmode/LmToProjData.h
+src/include/stir/listmode/LmToProjDataAbstract.h
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/LmToProjData.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
+src/swig/CMakeLists.txt
+src/swig/stir.i
+
+-------------------------------
+Fri, 21 Oct 2022 17:34:50 +0100  Kris Thielemans  
+
+Merge pull request #1084 from KrisThielemans/ProjDataInfoOpenMPFix
+Fix OpenMP problem in ProjDataInfoCylindrical
+
+-------------------------------
+Thu, 20 Oct 2022 17:38:28 +0100  Kris Thielemans  
+
+Fix OpenMP problem in ProjDataInfoCylindrical
+an internal array was not initialised in a thread-safe manner.
+ProjDataInfo*::get_all_det_pos_pairs_for_bin was therefore not thread-safe.
+
+Fixes #1083
+
+
+documentation/release_5.1.htm
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/include/stir/ProjDataInfoCylindrical.h
+src/include/stir/ProjDataInfoCylindrical.inl
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Thu, 20 Oct 2022 17:29:55 +0100  Kris Thielemans  
+
+Merge pull request #1079 from KrisThielemans/norm_clean_up
+Component-based normalisation clean up
+
+Moved code from the find_ML_normfactors3D and apply_normfactors3D to new functions/classes, adding a bit more documentation along the way.
+
+-------------------------------
+Mon, 17 Oct 2022 11:38:02 +0200  Markus Jehl  
+
+Added default value to interpolation type in upsample_and_fit_scatter_estimate. This is to make function callable in Python, since SWIG doesn't support enums (at least not to my knowledge).
+
+
+src/include/stir/scatter/ScatterEstimation.h
+
+-------------------------------
+Fri, 14 Oct 2022 13:46:12 +0200  Markus Jehl  
+
+Fixed the issue for the swig problem - stir namespace was missing in one line.
+
+
+src/swig/stir_projectors.i
+
+-------------------------------
+Fri, 14 Oct 2022 11:40:30 +0200  Markus Jehl  
+
+Reordered the swig file, but still getting a cryptic build error "use of undeclared identifier 'smartarg1' on line 123331 of stirPYTHON_wrap.cxx, which is in internalRPProjectorByBinPairUsingSeparateProjectors destructor
+
+
+src/swig/stir_projectors.i
+
+-------------------------------
+Wed, 12 Oct 2022 10:45:43 +0200  Markus Jehl  
+
+Added decay_correction_factor function to SWIG interface
+(cherry picked from commit 594de5fced915bf3e13fc1b26377c3256c091db0)
+
+
+src/swig/stir.i
+
+-------------------------------
+Wed, 12 Oct 2022 10:45:16 +0200  Markus Jehl  
+
+Added TruncateToCylindricalFOVImageProcessor to python interface.
+
+
+src/swig/stir.i
+src/swig/stir_dataprocessors.i
+src/swig/stir_projectors.i
+
+-------------------------------
+Wed, 12 Oct 2022 10:43:19 +0200  Markus Jehl  
+
+Second try at filtering out coincidences in the same transaxial position
+(cherry picked from commit 24919d862e7ea477c7bbf1d6c00fe90dfee3dab7)
+
+
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+src/include/stir/listmode/CListRecordSAFIR.inl
+
+-------------------------------
+Wed, 12 Oct 2022 10:42:57 +0200  Markus Jehl  
+
+Filtering out axial coincidences in LmToProjData and performing save error handling for calling the function with wrong geometry.
+(cherry picked from commit ca819b73b59b46fae4c2547611fdd67af5684960)
+
+
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+src/listmode_buildblock/LmToProjData.cxx
+
+-------------------------------
+Wed, 12 Oct 2022 10:41:47 +0200  Markus Jehl  
+
+Improving fix for turning off output in scatter simulation
+(cherry picked from commit 57354ba5a1b610968b4cb5350de447bb3e08294e)
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 12 Oct 2022 10:41:32 +0200  Markus Jehl  
+
+Removing spurious file writes from scatter estimation and a useless function on the Reconstruction class.
+(cherry picked from commit 1cf968bed467d7f52cdab62754a9120ac04bdb3a)
+
+
+src/include/stir/recon_buildblock/Reconstruction.h
+src/recon_buildblock/Reconstruction.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 12 Oct 2022 10:40:19 +0200  Markus Jehl  
+
+Added option to set radius of TruncateToCylindricalFOV.
+(cherry picked from commit 76695920dc0c823d629b85e68513f93ba9b23cb7)
+
+
+src/buildblock/TruncateToCylindricalFOVImageProcessor.cxx
+src/include/stir/TruncateToCylindricalFOVImageProcessor.h
+
+-------------------------------
+Wed, 12 Oct 2022 09:50:20 +0200  Markus Jehl  
+
+Cherry-pick of "Commit: 6d0c52fff0b98710cc37252dd42cf1e4b7b607b2 [6d0c52f]"
+Added ProjectorByBinPairUsingSeparateProjectors to the SWIG interface.
+
+
+src/swig/stir.i
+src/swig/stir_projectors.i
+
+-------------------------------
+Wed, 12 Oct 2022 09:46:44 +0200  Markus Jehl  
+
+Expose the ITK output format, to be able to write nifti files.
+(cherry picked from commit b9cf1882d52f544c6b2d9c76b02425e9eca89180)
+
+
+CMakeLists.txt
+src/swig/stir.i
+
+-------------------------------
+Wed, 12 Oct 2022 09:44:11 +0200  Markus Jehl  
+
+Cherry-pick of "Commit: f8b7b93c0d5ee8b5dcbafc8d890a317ebd54ab28 [f8b7b93]"
+Make HU to mu translation accessible without requirement for nlohmann-json library. Expose InvertAxis.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/HUToMuImageProcessor.cxx
+src/include/stir/HUToMuImageProcessor.h
+src/swig/stir.i
+src/swig/stir_dataprocessors.i
+
+-------------------------------
+Wed, 12 Oct 2022 09:34:40 +0200  Markus Jehl  
+
+Another go at fixing bug in VectorWithOffset
+(cherry picked from commit 619b2116cdc63a821c87123f6546694b0609c8b7)
+
+
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Wed, 12 Oct 2022 09:34:30 +0200  Markus Jehl  
+
+Bugfix for definition of end-iterator that was highlighted by undefined behaviour sanitiser
+(cherry picked from commit faeca452f3b8308576570947de4b64a8638cac8c)
+
+
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Wed, 12 Oct 2022 09:34:12 +0200  Markus Jehl  
+
+Add optional argument to LmToProjData.process_data() to pass in projdata which can be filled with result. In this case, no file is written.
+(cherry picked from commit 0b02fcd22eb2975e6d21e37b34a5a401edff0215)
+
+
+src/include/stir/listmode/LmToProjData.h
+src/include/stir/listmode/LmToProjDataAbstract.h
+src/listmode_buildblock/LmToProjData.cxx
+
+-------------------------------
+Wed, 12 Oct 2022 09:33:38 +0200  Markus Jehl  
+
+Added SAFIR listmode constructor to read data programmatically.
+(cherry picked from commit db61521e2c9878d784363fe8dc174b5172c2cd08)
+
+
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+
+-------------------------------
+Mon, 10 Oct 2022 09:29:28 +0100  Kris Thielemans  
+
+minor clean-up of apply_normfactors3D.cxx
+- Changed terminology from the confusing "apply_or_undo" to "multiply_or_divide"
+- A tiny bit more documentation
+- commented out some unused variables
+
+
+src/utilities/apply_normfactors3D.cxx
+
+-------------------------------
+Mon, 10 Oct 2022 09:28:53 +0100  Kris Thielemans  
+
+added BinNormalisationPETFromComponents
+Added a class for component-based normalisation: efficiencies/geo/block,
+putting bits of code from ML_norm.h together in one class.
+
+apply_normfactors3D: moved actual normalisation stuff to the new class,
+so this utility is now essentially just command-line processing and
+reading of the norm files.
+
+
+src/include/stir/recon_buildblock/BinNormalisationPETFromComponents.h
+src/recon_buildblock/BinNormalisationPETFromComponents.cxx
+src/recon_buildblock/CMakeLists.txt
+src/utilities/apply_normfactors3D.cxx
+
+-------------------------------
+Sun, 9 Oct 2022 23:34:38 +0100  Kris Thielemans  
+
+change FanProjData3D default constructor
+set all sizes to 0 (they were not initialised before).
+This means we can use them to check if the array is zero
+size or not.
+
+
+src/buildblock/ML_norm.cxx
+
+-------------------------------
+Sun, 9 Oct 2022 23:33:00 +0100  Kris Thielemans  
+
+make BinNormalisation::proj_data_info_sptr protected
+will be needed for next commits
+
+renamed it from _proj_data_info_sptr (i.e. removed leading _)
+
+
+src/include/stir/recon_buildblock/BinNormalisation.h
+src/recon_buildblock/BinNormalisation.cxx
+
+-------------------------------
+Sun, 9 Oct 2022 23:30:01 +0100  Kris Thielemans  
+
+Moved ML estimation algorithm to a function
+Moved it from utilities/find_ML_normfactors.cxx to a new
+function ML_estimate_component_based_normalisation.
+Code is the same.
+
+
+src/include/stir/recon_buildblock/ML_estimate_component_based_normalisation.h
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/ML_estimate_component_based_normalisation.cxx
+src/utilities/find_ML_normfactors3D.cxx
+
+-------------------------------
+Fri, 7 Oct 2022 15:50:49 +0200  Markus Jehl  
+
+Code review changes.
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Thu, 6 Oct 2022 09:00:24 +0200  Markus Jehl  
+
+Handling return value of get_intersections_with_cylinder.
+
+
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Wed, 5 Oct 2022 17:01:08 +0100  Kris Thielemans  
+
+Merge pull request #1075 from KrisThielemans/multiply_crystal_factors_simplification
+simplify multiply_crystal_factors
+
+-------------------------------
+Wed, 5 Oct 2022 16:32:17 +0100  Daniel Deidda  
+
+Update multiply_crystal_factors.cxx
+passing parallel_bin  with initialised view and tang_pos to get_all_det_pos_pairs_for_bin
+
+src/buildblock/multiply_crystal_factors.cxx
+
+-------------------------------
+Tue, 4 Oct 2022 10:51:06 +0200  Markus Jehl  
+
+Renamed outer_FOV_radius to max_FOV_radius.
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/include/stir/Scanner.inl
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Mon, 3 Oct 2022 16:49:23 +0100  Kris Thielemans  
+
+simplify multiply_crystal_factors
+Just use get_all_det_pos_pairs_for_bin() as opposed to complicated logic.
+
+
+src/buildblock/multiply_crystal_factors.cxx
+
+-------------------------------
+Mon, 3 Oct 2022 15:38:01 +0200  Markus Jehl  
+
+Fix of parallelproj interface for non-cylindrical scanners - some LORs were not covered because the inner ring radius was used.
+(cherry picked from commit 045d0b28cf3307d29fe3d9f7b5aa853634176ecd)
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/include/stir/Scanner.inl
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Sat, 1 Oct 2022 08:15:49 +0100  markus-jehl  
+
+Parallelproj support: bugfix for computing LOR intersection with cylinder (#1072)
+Fixes find_LOR_intersections_with_cylinder when called on LORInAxialAndNoArcCorrSinogramCoordinates or LORInCylinderCoordinates. Previously, the LOR endpoints were radially projected outwards, instead of extended and intersected with cylinder. As part of this, the code computing the intersection was slightly modified to align with the equations in the comments.
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_5.1.htm
+src/include/stir/LORCoordinates.h
+src/include/stir/LORCoordinates.inl
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Thu, 1 Sep 2022 07:14:04 +0100  robbietuk  
+
+DiscretisedDensity write_to_file and python example (#953)
+Add write_to_file to VoxelsOnCartesianGrid via swig changes
+
+documentation/release_5.1.htm
+examples/python/recon_demo.py
+src/swig/stir.i
+
+-------------------------------
+Thu, 1 Sep 2022 07:10:37 +0100  robbietuk  
+
+Set CXX14 (min) if ROOT Version >= 6.24 (#1068)
+Newer ROOT version require min of C++14 - https://root.cern/install/build_from_source/#setting-the-c-standard
+
+
+CMakeLists.txt
+documentation/release_5.1.htm
+
+-------------------------------
+Tue, 16 Aug 2022 22:11:42 +0200  Kris Thielemans  
+
+Merge pull request #1066 from NicoleJurjew/master_add_mMR_energy_window
+add energy window information in mMR template sinos
+
+-------------------------------
+Tue, 16 Aug 2022 14:57:01 +0100  NicoleJurjew  
+
+add energy window information in template sinos
+
+
+examples/Siemens-mMR/scatter_template.hs
+examples/Siemens-mMR/template_span1.hs
+examples/Siemens-mMR/template_span11.hs
+
+-------------------------------
+Thu, 11 Aug 2022 09:55:23 +0100  Daniel Deidda  
+
+interpolate_axial: fixing rounding issue causing out of range (#1061)
+* interpolate_axial_position: fix nearest neighbour interpolation for block scanners using get_m (i.e. no longer rely on equidistant spacing)
+* adding scatter developments in the release notes
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_5.1.htm
+src/buildblock/interpolate_axial_position.cxx
+
+-------------------------------
+Fri, 8 Jul 2022 19:05:33 +0200  Kris Thielemans  
+
+Merge pull request #901 from robbietuk/RDP/HessianVectorProduct
+Priors/Hessian method corrections
+
+Fixes #153
+
+-------------------------------
+Thu, 7 Jul 2022 11:21:40 -0700  Robert Twyman Skelly  
+
+[ci skip] Documentation fixes
+
+
+documentation/release_5.1.htm
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Thu, 7 Jul 2022 10:45:11 -0700  Robert Twyman Skelly  
+
+Merge remote-tracking branch 'UCL/master' into RDP/HessianVectorProduct
+
+
+-------------------------------
+Sat, 2 Jul 2022 08:04:47 +0100  Daniel Deidda  
+
+making scatter estimation work for segment different than 0 (#1057)
+
+
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Wed, 29 Jun 2022 20:19:50 +0100  Kris Thielemans  
+
+[GHA] re-enable MacOS without OpenMP (#1055)
+these tests work ok.
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Mon, 27 Jun 2022 14:48:21 -0700  Robert Twyman Skelly  
+
+Clang-Tidy test_priors
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 27 Jun 2022 14:19:02 -0700  Robert Twyman Skelly  
+
+[ci skip] Simplify test prior configuration methods
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 27 Jun 2022 19:28:20 +0200  Kris Thielemans  
+
+Merge pull request #1006 from danieldeidda/blocksScatter
+making scatter work with blocks
+
+-------------------------------
+Sun, 26 Jun 2022 23:21:52 +0200  Kris Thielemans  
+
+Merge pull request #1053 from KrisThielemans/ModalityString
+ImagingModality string improvements
+
+-------------------------------
+Sun, 26 Jun 2022 20:45:02 +0200  Kris Thielemans  
+
+Merge pull request #1048 from KrisThielemans/get_org_views
+add get_original_view_nums() to ProjDataInfo
+
+-------------------------------
+Sun, 26 Jun 2022 19:43:40 +0100  Kris Thielemans  
+
+[GHA] disabled MacOS job
+till we figure out what makes this crash. See https://github.com/UCL/STIR/issues/1036
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sun, 26 Jun 2022 18:06:17 +0100  Kris Thielemans  
+
+add test for ImagingModality
+
+
+src/include/stir/RunTests.h
+src/test/CMakeLists.txt
+src/test/test_ImagingModality.cxx
+
+-------------------------------
+Sun, 26 Jun 2022 18:04:29 +0100  Kris Thielemans  
+
+ImagingModality::get_name returns DICOM string
+Before, get_name() returned the string the ImagingModality was
+constructed with.
+
+Also add doxygen onm supported strings for construction.
+
+
+src/include/stir/ImagingModality.h
+
+-------------------------------
+Fri, 24 Jun 2022 16:01:14 -0700  Robert Twyman  
+
+All prior Hessian methods return void values
+This removes two checks on Succeeded::no in GeneralisedObjectiveFunction
+
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/GeneralisedObjectiveFunction.cxx
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:01:14 -0700  Robert Twyman  
+
+[ci skip] Rework and rename of second derivative methods for priors
+
+
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:01:14 -0700  Robert Twyman  
+
+[ci skip] Remove unnecessary documentation
+
+
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+
+-------------------------------
+Fri, 24 Jun 2022 16:01:14 -0700  robbietuk  
+
+Update src/include/stir/recon_buildblock/LogcoshPrior.h
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/include/stir/recon_buildblock/LogcoshPrior.h
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:46 -0700  robbietuk  
+
+Update src/include/stir/recon_buildblock/GeneralisedPrior.h
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:46 -0700  Robert Twyman  
+
+Remove _is_convex variable and better implement is_convex() method
+Make is_convex() a pure virtual method in GeneralisedPrior to be implemented in each prior.
+
+FilterRoot is not convex as it does not have 0th or 2nd order behaviour 
+
+src/include/stir/recon_buildblock/FilterRootPrior.h
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/PLSPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/FilterRootPrior.cxx
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Cleanup and improve debugging checks
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Add variables and set methods for toggling tests
+Reenable PLS, but disable all numerical tests - just run setup.
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Increase RDP epsilon to be 0.1, increase so well above test `eps` value
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+[ci skip] Add documentation to `test_gradient`
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  robbietuk  
+
+compute_Hessian method to all priors and test improvements in general
+* Add method get_is_convex(), which accesses prior is_convex parameter and only test convexity of priors if convex function
+
+* compute_Hessian method added to generalised prior and errors by default but with different messages depending on is_convex 
+
+* Test rename and create test_Hessian_convexity and test_Hessian_methods
+
+* Add test for compute_Hessian
+
+* RelativeDifferencePrior initialisation call set_defaults
+
+* Modernise `compute_Hessian` for QP and LogCosh. Add `compute_Hessian` for RDP
+
+* Correct RDP second derivative functions
+
+* Major changes to test_Hessian_against_numerical, which loops over each voxel for perturbation response
+
+* Add verbosity suppression to suppress gradient info calls
+
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  robbietuk  
+
+Prior Hessian methods use second partial derivative functions (#14)
+* RDP Documententation
+
+* QP use (off_)diagonal_second_derivative methods and documentation
+
+* Restructure RDP and QP Hessian logic
+
+* Improve RDP and QP documentation
+
+* Implement log cosh accumulate_Hessian_times_input in terms of derivatives
+
+* Documentation
+
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+[ci skip] Add two methods to RDP class :(off_)diagonal_second_derivative
+Updates the math for the RDP
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Improve QP comments
+
+
+src/recon_buildblock/QuadraticPrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Correct math in QP accumulate_Hessian_times_input
+
+
+src/recon_buildblock/QuadraticPrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Reimplementation add_multiplication_with_approximate_Hessian
+
+
+src/recon_buildblock/QuadraticPrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Adds _is_convex variable to priors. default is false
+
+
+src/include/stir/recon_buildblock/GeneralisedPrior.h
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Improve dot product
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+improve Hessian documentation and info
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Test an array of different cases for the Hessian condition
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Adds test_Hessian method
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Make prior test method `test_gradient`
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  Robert Twyman  
+
+Fix issue with logic
+
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+
+-------------------------------
+Fri, 24 Jun 2022 16:00:35 -0700  robbietuk  
+
+RDP/accumulate_Hessian_times_input
+* RDP accumulate_Hessian_times_input
+
+* Added RDP Hessian documentation
+
+* Add div by 0 safety
+
+* Add epsilon to Hessian function
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Fri, 24 Jun 2022 18:11:17 +0100  nmdicom-recon  
+
+reverting to working commit
+
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Thu, 23 Jun 2022 09:34:34 +0100  Daniel Deidda  
+
+ make compute_kernelised_image() public for SIRF (#1052)
+exposes compute_kernelised_image() and updated its doxygen a bit
+
+src/include/stir/KOSMAPOSL/KOSMAPOSLReconstruction.h
+
+-------------------------------
+Tue, 21 Jun 2022 17:40:05 +0100  danieldeidda  
+
+ setting sampling_corresponds_to_physical_rings to false for geometry != Cylindrical
+
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Tue, 21 Jun 2022 16:29:00 +0100  Daniel Deidda  
+
+Update src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Tue, 21 Jun 2022 11:51:23 +0100  danieldeidda  
+
+ [ci skip] change inaccurate name to projdataInfo member pointer in scatter simulation
+
+
+src/include/stir/scatter/ScatterSimulation.h
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/scatter_detection_modelling.cxx
+src/scatter_buildblock/scatter_estimate_for_one_scatter_point.cxx
+
+-------------------------------
+Mon, 20 Jun 2022 17:40:51 +0100  danieldeidda  
+
+ Downsample_scanner: moving condition on new num rings and new det per ring in Cylindrical case; set cylindrical case to 64 det per ring.
+
+
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 15 Jun 2022 12:08:07 +0100  danieldeidda  
+
+leaving transaxial gaps in downsampling for blocks and  forcing num det to 64 in tests
+
+
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+src/include/stir/scatter/ScatterSimulation.h
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Tue, 14 Jun 2022 15:06:01 +0100  danieldeidda  
+
+ changing name of make_2d function and call SSRB in the Cylindrical case
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Tue, 14 Jun 2022 13:38:56 +0100  Daniel Deidda  
+
+Update src/scatter_buildblock/ScatterEstimation.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Tue, 14 Jun 2022 13:38:21 +0100  Daniel Deidda  
+
+Update src/scatter_buildblock/ScatterEstimation.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Tue, 14 Jun 2022 09:11:26 +0100  Kris Thielemans  
+
+minor fixes to HTML files related to 5.0.2 [ci skip]
+
+
+documentation/history.htm
+documentation/release_5.0.htm
+
+-------------------------------
+Wed, 8 Jun 2022 11:02:42 +0100  Kris Thielemans  
+
+Merge branch 'master' into blocksScatter
+
+
+-------------------------------
+Thu, 26 May 2022 21:14:25 +0100  Kris Thielemans  
+
+Merge branch 'release_5.0'
+
+
+-------------------------------
 Thu, 26 May 2022 21:08:45 +0100  Kris Thielemans  
 
 add 5.0.2 to release notes [skip ci]
@@ -38,6 +2272,25 @@ fix test_projdata_info for get_phi
 src/test/test_proj_data_info.cxx
 
 -------------------------------
+Thu, 26 May 2022 13:26:29 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/release_5.0'
+
+
+-------------------------------
+Thu, 26 May 2022 13:25:06 +0100  Kris Thielemans  
+
+add get_original_view_nums() to ProjDataInfo
+Fixes #1046
+
+
+src/buildblock/ProjDataInfo.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/ProjDataInfo.h
+src/test/test_proj_data_info_subsets.cxx
+
+-------------------------------
 Thu, 26 May 2022 13:36:40 +0200  Kris Thielemans  
 
 Merge pull request #1045 from UCL/fixgeneri_get_phi_1043
@@ -52,6 +2305,86 @@ fixing issue #1043
 src/include/stir/ProjDataInfoGeneric.inl
 
 -------------------------------
+Wed, 25 May 2022 15:11:14 +0100  Kris Thielemans  
+
+Merge pull request #1042 from KrisThielemans/SPECTsetup
+fix leaks when using SPECTUB matrix and openmp
+
+-------------------------------
+Sun, 22 May 2022 09:29:52 +0100  Kris Thielemans  
+
+fix leaks when using SPECTUB matrix and openmp
+The SPECTUB matrix set_up() currently sets num_threads to 1
+under certain conditions. However, the (base class) projectors
+create temp data depending on number of threads.
+Therefore, call set_up of the matrix before the one from
+the projector.
+
+
+src/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.cxx
+
+-------------------------------
+Sat, 21 May 2022 22:13:44 +0100  Kris Thielemans  
+
+[GHA] switch MacOS job to Debug [appveyor skip]
+work-around #1036 for now
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 21 May 2022 22:13:44 +0100  Nikos Efthimiou  
+
+Small fixes to listmode reconstruction (#1040)
+* Set has_add correctly when reading from par file
+* Fix when _not_ to activate cache
+* Clear all previous my_* files in ./run_test_listmode_recon.sh to avoid re-using existing cache file
+
+
+recon_test_pack/run_test_listmode_recon.sh
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Fri, 20 May 2022 22:39:11 +0100  Nikos Efthimiou  
+
+set/get functions for listmode recon (#1038)
+add set/get functions for listmode recon as well as capability to work only from cached data.
+
+This is mainly for creating an interface with SIRF
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/include/stir/listmode/ListModeData_dummy.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.h
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Fri, 20 May 2022 22:37:05 +0100  Kris Thielemans  
+
+Merge branch 'release_5.0'
+
+
+-------------------------------
+Thu, 19 May 2022 15:58:20 +0100  danieldeidda  
+
+ ScatterSimulation: fixing num_transax_buckets to be the same as original Scanner
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Tue, 17 May 2022 16:12:37 +0100  danieldeidda  
+
+making interpolate_axial_pos work when projIn and ProjOut info are equal
+
+
+src/buildblock/interpolate_axial_position.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
 Mon, 16 May 2022 16:36:05 +0100  Kris Thielemans  
 
 fix STIRConfig.cmake.in
@@ -63,6 +2396,131 @@ fixes #1037
 
 
 src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Sun, 15 May 2022 22:14:19 +0100  Kris Thielemans  
+
+remove valgrind warning in test of ROOT code
+test worked ok, but valgrind (rightly) complained about uninitialised value.
+It just turns out that it didn't matter.
+
+
+src/recon_test/test_view_offset_root.cxx
+
+-------------------------------
+Sun, 15 May 2022 22:13:45 +0100  Kris Thielemans  
+
+fix bug in ROOT loop introduced in #1030
+
+
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+
+-------------------------------
+Sat, 14 May 2022 21:31:05 +0200  Kris Thielemans  
+
+fix typo
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Sat, 14 May 2022 18:06:51 +0200  Kris Thielemans  
+
+set version to 5.1 as new features
+
+
+CMakeLists.txt
+VERSION.txt
+documentation/release_5.1.htm
+
+-------------------------------
+Sat, 14 May 2022 18:06:51 +0200  Kris Thielemans  
+
+extra ExamInfo constructor allowing specifying modality
+
+
+src/include/stir/ExamInfo.h
+
+-------------------------------
+Sat, 14 May 2022 18:06:51 +0200  Kris Thielemans  
+
+fix openmp #ifdef
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Sat, 14 May 2022 11:41:47 +0100  Nikos Efthimiou  
+
+listmode reconstruction speed-up: Distribute sensitivity calculation and caching (#1030)
+- Distribute sensitivity calculation
+- Add (somewhat experimental?) capability for caching the listmode file during reconstruction, resulting in great speed-up, certainly with OPENMP on.
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+recon_test_pack/OSMAPOSL_test_lm.par
+recon_test_pack/run_test_listmode_recon.sh
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/include/stir/Bin.h
+src/include/stir/IO/InputStreamWithRecords.inl
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/distributable.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Sat, 14 May 2022 10:05:01 +0100  Nikos Efthimiou  
+
+Support for listmode input from PENNPET Explorer (#1028)
+Support both binary and text list input, although the text version needs some work. Depends on UPENN libraries (not part of STIR).
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/IO/CMakeLists.txt
+src/IO/IO_registries.cxx
+src/IO/InputStreamWithRecordsFromUPENN.cxx
+src/IO/InputStreamWithRecordsFromUPENNbin.cxx
+src/IO/InputStreamWithRecordsFromUPENNtxt.cxx
+src/buildblock/Scanner.cxx
+src/cmake/FindJANSSON.cmake
+src/cmake/FindUPENN.cmake
+src/cmake/STIRConfig.h.in
+src/cmake/stir_dirs.cmake
+src/include/stir/IO/InputStreamWithRecordsFromUPENN.h
+src/include/stir/IO/InputStreamWithRecordsFromUPENN.inl
+src/include/stir/IO/InputStreamWithRecordsFromUPENNbin.h
+src/include/stir/IO/InputStreamWithRecordsFromUPENNbin.inl
+src/include/stir/IO/InputStreamWithRecordsFromUPENNtxt.h
+src/include/stir/IO/InputStreamWithRecordsFromUPENNtxt.inl
+src/include/stir/IO/PENNListmodeInputFileFormat.h
+src/include/stir/Scanner.h
+src/include/stir/listmode/CListModeDataPENN.h
+src/include/stir/listmode/CListRecordPENN.h
+src/listmode_buildblock/CListModeDataPENN.cxx
+src/listmode_buildblock/CListRecordPENN.cxx
+src/listmode_buildblock/CMakeLists.txt
+src/test/test_Scanner.cxx
+src/utilities/UPENN/CMakeLists.txt
+src/utilities/UPENN/conv_UPENN_projdata_to_STIR.cxx
+
+-------------------------------
+Fri, 13 May 2022 12:34:10 +0100  danieldeidda  
+
+ calculating scanner lenght acording to geometry
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Thu, 12 May 2022 10:48:08 +0100  danieldeidda  
+
+ making scanner lenght with no gaps for cylindricals
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
 
 -------------------------------
 Wed, 11 May 2022 22:09:44 +0100  Kris Thielemans  
@@ -113,6 +2571,23 @@ output
 
 
 src/buildblock/RadionuclideDB.cxx
+
+-------------------------------
+Tue, 10 May 2022 09:53:51 +0100  Daniel Deidda  
+
+Update src/buildblock/Scanner.cxx
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Tue, 10 May 2022 09:51:59 +0100  danieldeidda  
+
+ defaulting downsampled_det_per_ring to -1 instead of 64; making projdata 2D before interpolation
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
 
 -------------------------------
 Mon, 9 May 2022 14:59:02 +0100  Daniel Deidda  
@@ -204,6 +2679,16 @@ scripts/CMakeLists.txt
 scripts/IO/CMakeLists.txt
 
 -------------------------------
+Tue, 3 May 2022 10:26:41 +0100  danieldeidda  
+
+ EstimateScatter creat function to make 2d projdata and fill the segment in; also changing consistency check on bucket spacing
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
 Sat, 30 Apr 2022 15:20:19 +0100  Kris Thielemans  
 
 [GHA] only upload log files if job fails
@@ -270,6 +2755,42 @@ Fri, 29 Apr 2022 21:23:48 +0100  Kris Thielemans
 
 
 .appveyor.yml
+
+-------------------------------
+Thu, 28 Apr 2022 12:12:25 +0000  Daniel Deidda  
+
+Merge branch 'master' into blocksScatter
+
+
+-------------------------------
+Thu, 28 Apr 2022 13:03:36 +0100  danieldeidda  
+
+maxing intorpolation faster, also adding openMP reduction in loop
+
+
+src/buildblock/interpolate_axial_position.cxx
+
+-------------------------------
+Wed, 27 Apr 2022 17:12:25 +0100  danieldeidda  
+
+[ci skip] addressing comments and small fixes
+
+
+src/buildblock/interpolate_axial_position.cxx
+src/buildblock/inverse_SSRB.cxx
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 27 Apr 2022 16:40:27 +0100  danieldeidda  
+
+fixing 2D projdata in scatter estimation
+
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/buildblock/interpolate_axial_position.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
 
 -------------------------------
 Wed, 27 Apr 2022 01:08:40 +0100  Kris Thielemans  
@@ -424,6 +2945,19 @@ Wed, 13 Apr 2022 13:55:44 +0100  danieldeidda
 src/include/stir/ProjDataInfoGeneric.inl
 
 -------------------------------
+Wed, 13 Apr 2022 12:14:02 +0100  danieldeidda  
+
+- fixed z_shift was using pointA>0 instead we needed pointB to estimate the shift. All instances have inverted sign; - fixed axial upsampling - change scanner_lenght in ScatterSimulation to include gaps
+
+
+src/buildblock/ProjDataInfoBlocksOnCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGeneric.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/buildblock/interpolate_axial_position.cxx
+src/buildblock/interpolate_projdata.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
 Tue, 12 Apr 2022 23:08:19 +0100  Kris Thielemans  
 
 [SWIG] split stir.i and change order of declarations
@@ -497,6 +3031,24 @@ section, with some minor tweaks
 
 documentation/STIR-UsersGuide.tex
 documentation/release_5.0.htm
+
+-------------------------------
+Fri, 1 Apr 2022 15:30:15 +0100  danieldeidda  
+
+- adding interpolate_axial_position() to only upsample the m coordinate; - add condition on Geometry for contructor of ProjDataCylindrical as it gets called by ProjDataGeneric - revert inversSSRB - downsample_scatter is by default true and  downsampled_num_dets=-1 to downsample the view downsampled_num_dets needs to be set >0
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/buildblock/interpolate_axial_position.cxx
+src/buildblock/interpolate_projdata.cxx
+src/buildblock/inverse_SSRB.cxx
+src/include/stir/interpolate_axial_position.h
+src/include/stir/inverse_SSRB.h
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
 
 -------------------------------
 Fri, 1 Apr 2022 01:23:47 +0100  robbietuk  
@@ -1445,6 +3997,19 @@ Removing the hacked BlocksOnCylindrical support in ML_norm
 src/buildblock/ML_norm.cxx
 src/include/stir/ML_norm.h
 src/swig/stir.i
+
+-------------------------------
+Wed, 16 Mar 2022 13:16:04 +0100  daniel.deidda  
+
+making scatter work with blocks
+
+
+src/buildblock/inverse_SSRB.cxx
+src/include/stir/inverse_SSRB.h
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
 
 -------------------------------
 Wed, 9 Mar 2022 15:53:43 +0100  Markus Jehl  
@@ -10778,6 +13343,14 @@ fix STIR matlab ProjData::fill compilation error
 src/swig/stir.i
 
 -------------------------------
+Thu, 15 Oct 2020 16:19:12 +0300  matthew  
+
+Fix initialization of STIR origin offset
+
+
+wm_SPECT_mph2/src/weight3d_SPECT_mph.cpp
+
+-------------------------------
 Wed, 14 Oct 2020 17:36:10 +0000  Kris Thielemans  
 
 convert some output to cout in ProjMatrixByBinSPECTUB to using info()
@@ -14541,6 +17114,39 @@ closes #515
 
 
 src/utilities/CMakeLists.txt
+
+-------------------------------
+Thu, 23 Apr 2020 18:11:38 +0100  Carles Falcon  
+
+added documentation and examples provided by Carles in 2014
+
+
+wm_SPECT_mph2/configuration-files/collimator27_cyl.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h2v.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h2v_2mm.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h_esq.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2h_right.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2v.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_2v_up.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_round.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_sq.txt
+wm_SPECT_mph2/configuration-files/collimator27_pol_sq_a6.txt
+wm_SPECT_mph2/configuration-files/collimator8_pol_sq_a6.txt
+wm_SPECT_mph2/configuration-files/detector101x1.txt
+wm_SPECT_mph2/configuration-files/detector101x27.txt
+wm_SPECT_mph2/configuration-files/detector101x8.txt
+wm_SPECT_mph2/configuration-files/detector10x1.txt
+wm_SPECT_mph2/configuration-files/detector50x1.txt
+wm_SPECT_mph2/configuration-files/detector50x27.txt
+wm_SPECT_mph2/configuration-files/detector51x1.txt
+wm_SPECT_mph2/configuration-files/detector51x27.txt
+wm_SPECT_mph2/configuration-files/param_pwm.txt
+wm_SPECT_mph2/configuration-files/params_mph1.txt
+wm_SPECT_mph2/configuration-files/params_mph27.txt
+wm_SPECT_mph2/documentation/manual.md
+wm_SPECT_mph2/documentation/sign-convention.png
 
 -------------------------------
 Thu, 23 Apr 2020 15:15:20 +0100  Richard Brown  
@@ -30054,6 +32660,38 @@ minor fixes to PET_simulation
 
 
 src/samples/PET_simulation/simulate_data.sh
+
+-------------------------------
+Fri, 7 Mar 2014 17:17:03 +0000  Kris Thielemans  
+
+minor clean-up
+- put function sin own namespace
+- declare global variables in .h files
+- remove "using namespace std" from .h
+
+
+wm_SPECT_mph2/include/weight3d_SPECT_mph.h
+wm_SPECT_mph2/include/wmtools_SPECT_mph.h
+wm_SPECT_mph2/src/weight3d_SPECT_mph.cpp
+wm_SPECT_mph2/src/wmtools_SPECT_mph.cpp
+wm_SPECT_mph2/wm_SPECT_mph.cpp
+
+-------------------------------
+Fri, 7 Mar 2014 16:20:22 +0000  Carles Falcon  
+
+initial check-in of pinhole SPECT code
+
+
+wm_SPECT_mph2/CMakeLists.txt
+wm_SPECT_mph2/etc/collimator27_pol.txt
+wm_SPECT_mph2/etc/collimator27_pol_2h2v.txt
+wm_SPECT_mph2/etc/detector27.txt
+wm_SPECT_mph2/etc/params_mph27.txt
+wm_SPECT_mph2/include/weight3d_SPECT_mph.h
+wm_SPECT_mph2/include/wmtools_SPECT_mph.h
+wm_SPECT_mph2/src/weight3d_SPECT_mph.cpp
+wm_SPECT_mph2/src/wmtools_SPECT_mph.cpp
+wm_SPECT_mph2/wm_SPECT_mph.cpp
 
 -------------------------------
 Tue, 4 Mar 2014 00:24:07 +0000  Kris Thielemans  

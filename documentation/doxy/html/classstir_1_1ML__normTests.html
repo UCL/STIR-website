@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -58,7 +58,7 @@ Inheritance diagram for stir::ML_normTests:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1ML__normTests__inherit__graph.png" border="0" usemap="#stir_1_1ML__normTests_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1ML__normTests_inherit__map" id="stir_1_1ML__normTests_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="23,5,131,32"/>
+<area shape="rect" id="node2" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="20,5,125,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -99,6 +99,9 @@ template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a2000f359bcd56a21acc1ccd6e009a0e4 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">check_if_less</a> (T1 a, T2 b, const std::string &amp;str=&quot;&quot;)</td></tr>
 <tr class="memdesc:a2000f359bcd56a21acc1ccd6e009a0e4 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if a&lt;b <br /></td></tr>
 <tr class="separator:a2000f359bcd56a21acc1ccd6e009a0e4 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6244d09363dde1c2685ec54c25b95896 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a6244d09363dde1c2685ec54c25b95896"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (const std::string &amp;a, const std::string &amp;b, const std::string &amp;str=&quot;&quot;)</td></tr>
+<tr class="separator:a6244d09363dde1c2685ec54c25b95896 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab394483b2a389b13d9699cbe71e449bb inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#ab394483b2a389b13d9699cbe71e449bb">check_if_equal</a> (const double a, const double b, const std::string &amp;str=&quot;&quot;)</td></tr>
 <tr class="separator:ab394483b2a389b13d9699cbe71e449bb inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3055dedad1ded071d48497e7c79d3715 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a3055dedad1ded071d48497e7c79d3715"></a>
@@ -176,9 +179,10 @@ template&lt;int num_dimensions, class coordT &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aeca8cf51d799a1e674707ab7df158698"><td class="memItemLeft" align="right" valign="top"><a id="aeca8cf51d799a1e674707ab7df158698"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>test_proj_data_info</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &gt; proj_data_info_sptr)</td></tr>
-<tr class="separator:aeca8cf51d799a1e674707ab7df158698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bb0b9fdb7c12fce028c5fe7afe3b76"><td class="memTemplParams" colspan="2"><a id="aa8bb0b9fdb7c12fce028c5fe7afe3b76"></a>
+template&lt;class TProjDataInfo &gt; </td></tr>
+<tr class="memitem:aa8bb0b9fdb7c12fce028c5fe7afe3b76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>test_proj_data_info</b> (shared_ptr&lt; TProjDataInfo &gt; proj_data_info_sptr)</td></tr>
+<tr class="separator:aa8bb0b9fdb7c12fce028c5fe7afe3b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a6e8d0c619839dca05520a0ea0fb57c02 inherit pro_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a6e8d0c619839dca05520a0ea0fb57c02"></a>
 template&lt;class T &gt; </td></tr>
@@ -230,11 +234,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Function (to be overloaded) which does the actual tests. </p>
-<p>This function is expected to do a series of calls to <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537" title="Tests if true, str can be used to tell what you are testing. ">check()</a>, <a class="el" href="classstir_1_1RunTests.html#ab394483b2a389b13d9699cbe71e449bb">check_if_equal()</a> etc. </p>
+<p>This function is expected to do a series of calls to <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537" title="Tests if true, str can be used to tell what you are testing. ">check()</a>, check_if_equal() etc. </p>
 
 <p>Implements <a class="el" href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">stir::RunTests</a>.</p>
-
-<p class="reference">References <a class="el" href="classstir_1_1ProjDataInMemory.html#ac41c4021ce34e9fd89856371e6b6c89c">stir::ProjDataInMemory::begin()</a>, <a class="el" href="classstir_1_1ProjDataInMemory.html#a2d3aeadf80432b9d6e11c343aa1c5c78">stir::ProjDataInMemory::end()</a>, <a class="el" href="classstir_1_1ProjDataInMemory.html#ad01761d127a7ae2db4314fc47d5c1cee">stir::ProjDataInMemory::fill()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; 2, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataInMemory.html#a4b3a88b9e0afe92cbe774874c4c97520">stir::ProjDataInMemory::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjData.html#a581c37630fd579ed236d675407669dd4">stir::ProjData::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a83e0d669afc9e7da5b41b713743f5374">stir::ProjDataFromStream::get_sinogram()</a>, <a class="el" href="namespacestir.html#ac20985a59cf1dee7cc6049bb4a091eed">stir::make_fan_data_remove_gaps()</a>, <a class="el" href="group__Coordinate.html#ga5d087edb9c8d2db898c61f64cbdcc846">stir::norm_squared()</a>, <a class="el" href="classstir_1_1ProjDataInMemory.html#a1969e8114eb67919a27bf7eb3a9201b4">stir::ProjDataInMemory::sapyb()</a>, <a class="el" href="namespacestir.html#adf8bd05e524c8ef0e9ce2e1e9c289c14">stir::set_fan_data_add_gaps()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, and <a class="el" href="classstir_1_1ProjData.html#ab0e5b2d17d8f027b062f7d3b6c57945f">stir::ProjData::write_to_file()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +246,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

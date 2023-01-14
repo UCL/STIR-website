@@ -1,8 +1,8 @@
 <map id="support for GE data" name="support for GE data">
-<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="439,67,667,93"/>
-<area shape="rect" id="node3" href="$group__IO.html" title="Input/Output Library" alt="" coords="477,333,629,360"/>
-<area shape="rect" id="node4" href="$group__utilities.html" title="Utility programs" alt="" coords="489,427,617,453"/>
-<area shape="rect" id="node5" href="$group__singles__buildblock.html" title="Singles rates etc" alt="" coords="487,517,618,544"/>
-<area shape="rect" id="node6" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="466,819,639,861"/>
-<area shape="rect" id="node7" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="465,911,640,953"/>
+<area shape="rect" id="node1" href="$group__projdata.html" title="Items related to projection data" alt="" coords="411,64,613,91"/>
+<area shape="rect" id="node3" href="$group__IO.html" title="Input/Output Library" alt="" coords="443,331,581,357"/>
+<area shape="rect" id="node4" href="$group__utilities.html" title="Utility programs" alt="" coords="455,424,569,451"/>
+<area shape="rect" id="node5" href="$group__singles__buildblock.html" title="Singles rates etc" alt="" coords="452,515,572,541"/>
+<area shape="rect" id="node6" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="435,817,589,858"/>
+<area shape="rect" id="node7" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="433,909,591,950"/>
 </map>

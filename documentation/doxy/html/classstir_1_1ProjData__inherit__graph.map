@@ -1,8 +1,8 @@
 <map id="stir::ProjData" name="stir::ProjData">
-<area shape="rect" id="node3" href="$classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. " alt="" coords="347,5,493,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="327,71,513,98"/>
-<area shape="rect" id="node7" href="$classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="329,122,511,149"/>
-<area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,71,124,98"/>
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="561,46,733,73"/>
-<area shape="rect" id="node6" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="569,97,726,123"/>
+<area shape="rect" id="node3" href="$classstir_1_1GE_1_1RDF__HDF5_1_1ProjDataGEHDF5.html" title="A class which reads projection data from a GE HDF5 sinogram file. " alt="" coords="323,5,469,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. " alt="" coords="311,71,481,98"/>
+<area shape="rect" id="node7" href="$classstir_1_1ProjDataGEAdvance.html" title="A class which reads projection data from a GE Advance sinogram file. " alt="" coords="311,122,481,149"/>
+<area shape="rect" id="node2" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="5,71,116,98"/>
+<area shape="rect" id="node5" href="$classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="529,46,687,73"/>
+<area shape="rect" id="node6" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="537,97,679,123"/>
 </map>

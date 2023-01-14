@@ -1,6 +1,7 @@
 <map id="Support classes for reading list mode data" name="Support classes for reading list mode data">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,269,103,296"/>
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="635,203,783,229"/>
-<area shape="rect" id="node3" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="596,285,821,326"/>
-<area shape="rect" id="node4" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="620,403,797,445"/>
+<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,347,97,373"/>
+<area shape="rect" id="node2" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="601,36,755,92"/>
+<area shape="rect" id="node3" href="$group__GE.html" title="support for GE data" alt="" coords="610,303,746,329"/>
+<area shape="rect" id="node4" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="575,385,781,426"/>
+<area shape="rect" id="node5" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="591,503,765,545"/>
 </map>

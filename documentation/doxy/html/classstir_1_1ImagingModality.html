@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.0.2</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
  </tr>
@@ -51,6 +51,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class for encoding the modality.  
+ <a href="classstir_1_1ImagingModality.html#details">More...</a></p>
+
 <p><code>#include &quot;<a class="el" href="ImagingModality_8h_source.html">stir/ImagingModality.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -75,15 +78,15 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModality.html#acd5de8abe3b2cd5407c58ffa52d43db5">ImagingModality</a> (<a class="el" href="classstir_1_1ImagingModality.html#ab812e1902e669cab75c34d4492641d55">ImagingModalityValue</a> modality_v=Unknown)</td></tr>
 <tr class="memdesc:acd5de8abe3b2cd5407c58ffa52d43db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from enum, set string accordingly. <br /></td></tr>
 <tr class="separator:acd5de8abe3b2cd5407c58ffa52d43db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85ff82eaa4fb0ca9c12f7e9c6d874ce"><td class="memItemLeft" align="right" valign="top"><a id="ac85ff82eaa4fb0ca9c12f7e9c6d874ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModality.html#ac85ff82eaa4fb0ca9c12f7e9c6d874ce">ImagingModality</a> (const std::string &amp;modality_string_v)</td></tr>
-<tr class="memdesc:ac85ff82eaa4fb0ca9c12f7e9c6d874ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from string, set enum accordingly. <br /></td></tr>
+<tr class="memitem:ac85ff82eaa4fb0ca9c12f7e9c6d874ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModality.html#ac85ff82eaa4fb0ca9c12f7e9c6d874ce">ImagingModality</a> (const std::string &amp;modality_string_v)</td></tr>
+<tr class="memdesc:ac85ff82eaa4fb0ca9c12f7e9c6d874ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from string, set enum accordingly.  <a href="#ac85ff82eaa4fb0ca9c12f7e9c6d874ce">More...</a><br /></td></tr>
 <tr class="separator:ac85ff82eaa4fb0ca9c12f7e9c6d874ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16f976b56565a1b0ffe36aa0a4f9376f"><td class="memItemLeft" align="right" valign="top"><a id="a16f976b56565a1b0ffe36aa0a4f9376f"></a>
 <a class="el" href="classstir_1_1ImagingModality.html#ab812e1902e669cab75c34d4492641d55">ImagingModalityValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_modality</b> () const</td></tr>
 <tr class="separator:a16f976b56565a1b0ffe36aa0a4f9376f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a057b7db443cfd3fc49e6d8bd44e1b9"><td class="memItemLeft" align="right" valign="top"><a id="a5a057b7db443cfd3fc49e6d8bd44e1b9"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ImagingModality.html#a5a057b7db443cfd3fc49e6d8bd44e1b9">get_name</a> () const</td></tr>
+<tr class="memdesc:a5a057b7db443cfd3fc49e6d8bd44e1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns name as a standardised string (in DICOM conventions) <br /></td></tr>
 <tr class="separator:a5a057b7db443cfd3fc49e6d8bd44e1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe6a11fd7a78d5a99ba7db2f79eee54"><td class="memItemLeft" align="right" valign="top"><a id="acbe6a11fd7a78d5a99ba7db2f79eee54"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1ImagingModality.html">ImagingModality</a> &amp;mod) const</td></tr>
@@ -99,14 +102,53 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_unknown</b> () con
 <tr class="separator:a0a4029b8d483710f47ffeade5807a7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for encoding the modality </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Class for encoding the modality. </p>
+<p>Modality-names follow DICOM conventions, i.e. "PT", "NM", "MR", "CT", "US", "Optical". </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac85ff82eaa4fb0ca9c12f7e9c6d874ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85ff82eaa4fb0ca9c12f7e9c6d874ce">&#9670;&nbsp;</a></span>ImagingModality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">stir::ImagingModality::ImagingModality </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>modality_string_v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from string, set enum accordingly. </p>
+<p>The argument is first stripped of white-space and converted to lower-case. Then the following are supported:</p><ul>
+<li><code>PT:</code> "pt" or "pet"</li>
+<li><code>NM:</code> "nm" or "nucmed" or "spect"</li>
+<li><code>MR:</code> "mr" or "mri"</li>
+<li><code>CT:</code> "ct" or "cat"</li>
+<li><code>US:</code> ""us" or "ultrasound"
+- \c Optical: "optical"</li>
+<li>else the modality is set to <code>Unknown</code> </li>
+</ul>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="ImagingModality_8h_source.html">ImagingModality.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 26 2022 20:55:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
