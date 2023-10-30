@@ -1,6 +1,7 @@
 <map id="stir::GE::RDF_HDF5::CListRecordGEHDF5" name="stir::GE::RDF_HDF5::CListRecordGEHDF5">
-<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="5,162,104,189"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="128,155,331,196"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="173,80,286,107"/>
-<area shape="rect" id="node5" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="178,5,281,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="19,313,117,339"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="141,305,344,347"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="136,200,349,256"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="181,5,294,32"/>
+<area shape="rect" id="node6" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="259,81,493,123"/>
 </map>

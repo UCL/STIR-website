@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for storing (3d) projection data with a fixed segment_num.  
+<p>A class for storing (3d) projection data with fixed <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a>.  
  <a href="classstir_1_1SegmentBySinogram.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="SegmentBySinogram_8h_source.html">stir/SegmentBySinogram.h</a>&quot;</code></p>
@@ -156,13 +156,19 @@ typedef boost::reverse_iterator&lt; <a class="el" href="classstir_1_1detail_1_1V
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07accca1ac8cf87db79427ec702f771a"><td class="memItemLeft" align="right" valign="top"><a id="a07accca1ac8cf87db79427ec702f771a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a07accca1ac8cf87db79427ec702f771a">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;v, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
-<tr class="memdesc:a07accca1ac8cf87db79427ec702f771a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. <br /></td></tr>
+<tr class="memitem:a5da775d6612db3e5728335aa91d5904e"><td class="memItemLeft" align="right" valign="top"><a id="a5da775d6612db3e5728335aa91d5904e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a5da775d6612db3e5728335aa91d5904e">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;v, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;ind)</td></tr>
+<tr class="memdesc:a5da775d6612db3e5728335aa91d5904e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. <br /></td></tr>
+<tr class="separator:a5da775d6612db3e5728335aa91d5904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c79303ef01fb789c86f295ad518e5c"><td class="memItemLeft" align="right" valign="top"><a id="a69c79303ef01fb789c86f295ad518e5c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a69c79303ef01fb789c86f295ad518e5c">SegmentBySinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;ind)</td></tr>
+<tr class="memdesc:a69c79303ef01fb789c86f295ad518e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0. <br /></td></tr>
+<tr class="separator:a69c79303ef01fb789c86f295ad518e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07accca1ac8cf87db79427ec702f771a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a07accca1ac8cf87db79427ec702f771a">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;v, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
+<tr class="memdesc:a07accca1ac8cf87db79427ec702f771a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>.  <a href="#a07accca1ac8cf87db79427ec702f771a">More...</a><br /></td></tr>
 <tr class="separator:a07accca1ac8cf87db79427ec702f771a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0396f27164f167f91d381352e950916a"><td class="memItemLeft" align="right" valign="top"><a id="a0396f27164f167f91d381352e950916a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a0396f27164f167f91d381352e950916a">SegmentBySinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
-<tr class="memdesc:a0396f27164f167f91d381352e950916a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0. <br /></td></tr>
+<tr class="memitem:a0396f27164f167f91d381352e950916a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#a0396f27164f167f91d381352e950916a">SegmentBySinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr_v, const int segment_num)</td></tr>
+<tr class="memdesc:a0396f27164f167f91d381352e950916a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0.  <a href="#a0396f27164f167f91d381352e950916a">More...</a><br /></td></tr>
 <tr class="separator:a0396f27164f167f91d381352e950916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38b634f77b3104515bb85b4d9818f71"><td class="memItemLeft" align="right" valign="top"><a id="af38b634f77b3104515bb85b4d9818f71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html#af38b634f77b3104515bb85b4d9818f71">SegmentBySinogram</a> (const <a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; elemT &gt; &amp;)</td></tr>
@@ -242,6 +248,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b
 shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">get_proj_data_info_sptr</a> () const</td></tr>
 <tr class="memdesc:ad042b71f7e146af0b634f55b6823c577 inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to proj data info. <br /></td></tr>
 <tr class="separator:ad042b71f7e146af0b634f55b6823c577 inherit pub_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad742f2a097a3e3258681ea1d87071b29 inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="ad742f2a097a3e3258681ea1d87071b29"></a>
+<a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_segment_indices</b> () const</td></tr>
+<tr class="separator:ad742f2a097a3e3258681ea1d87071b29 inherit pub_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9c5c4801521562a64b31f26ab8514a inherit pub_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a4b9c5c4801521562a64b31f26ab8514a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a4b9c5c4801521562a64b31f26ab8514a inherit pub_methods_classstir_1_1Segment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the segment number. <br /></td></tr>
@@ -694,9 +703,9 @@ const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>ren
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1Segment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1Segment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1Segment.html">stir::Segment&lt; elemT &gt;</a></td></tr>
-<tr class="memitem:a45822cc7f80eff7cc4b1a68607e66a1d inherit pro_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a45822cc7f80eff7cc4b1a68607e66a1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr_v, const int s_num)</td></tr>
-<tr class="separator:a45822cc7f80eff7cc4b1a68607e66a1d inherit pro_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b29bd1d83f8559d91bed9928aa894ef inherit pro_methods_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a0b29bd1d83f8559d91bed9928aa894ef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr_v, const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;)</td></tr>
+<tr class="separator:a0b29bd1d83f8559d91bed9928aa894ef inherit pro_methods_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1VectorWithOffset"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1VectorWithOffset')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:a18a1331e3af6ea9a1d5b5ff177f4ae19 inherit pro_methods_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a18a1331e3af6ea9a1d5b5ff177f4ae19">check_state</a> () const</td></tr>
 <tr class="memdesc:a18a1331e3af6ea9a1d5b5ff177f4ae19 inherit pro_methods_classstir_1_1VectorWithOffset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called internally to see if all variables are consistent.  <a href="classstir_1_1VectorWithOffset.html#a18a1331e3af6ea9a1d5b5ff177f4ae19">More...</a><br /></td></tr>
@@ -705,9 +714,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa448729929d45530e890871714ef544f inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="aa448729929d45530e890871714ef544f"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_sptr</b></td></tr>
 <tr class="separator:aa448729929d45530e890871714ef544f inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0462cdd91d966933b28a89c26dd64d32 inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a0462cdd91d966933b28a89c26dd64d32"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>segment_num</b></td></tr>
-<tr class="separator:a0462cdd91d966933b28a89c26dd64d32 inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d80515fd3afaa6f1cd9b1a86b95ccad inherit pro_attribs_classstir_1_1Segment"><td class="memItemLeft" align="right" valign="top"><a id="a3d80515fd3afaa6f1cd9b1a86b95ccad"></a>
+<a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_indices</b></td></tr>
+<tr class="separator:a3d80515fd3afaa6f1cd9b1a86b95ccad inherit pro_attribs_classstir_1_1Segment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1VectorWithOffset"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1VectorWithOffset')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:aebb7f773557682e1a3bfd55612974164 inherit pro_attribs_classstir_1_1VectorWithOffset"><td class="memItemLeft" align="right" valign="top"><a id="aebb7f773557682e1a3bfd55612974164"></a>
 <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions-1, elemT &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aebb7f773557682e1a3bfd55612974164">num</a></td></tr>
@@ -718,8 +727,83 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>segment_num</b></td></
 <div class="textblock"><h3>template&lt;typename elemT&gt;<br />
 class stir::SegmentBySinogram&lt; elemT &gt;</h3>
 
-<p>A class for storing (3d) projection data with a fixed segment_num. </p>
-<p>Storage order is as follows: </p><div class="fragment"><div class="line">segment_by_sino[view_num][axial_pos_num][tangential_pos_num]</div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<p>A class for storing (3d) projection data with fixed <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a>. </p>
+<p>Storage order is as follows: </p><div class="fragment"><div class="line">segment_by_sino[view_num][axial_pos_num][tangential_pos_num]</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a07accca1ac8cf87db79427ec702f771a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07accca1ac8cf87db79427ec702f771a">&#9670;&nbsp;</a></span>SegmentBySinogram() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1SegmentBySinogram.html">stir::SegmentBySinogram</a>&lt; elemT &gt;::<a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_ptr_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that sets the data to a given 3d <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>Use version with <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a> instead </dd></dl>
+
+</div>
+</div>
+<a id="a0396f27164f167f91d381352e950916a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0396f27164f167f91d381352e950916a">&#9670;&nbsp;</a></span>SegmentBySinogram() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1SegmentBySinogram.html">stir::SegmentBySinogram</a>&lt; elemT &gt;::<a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a> </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_ptr_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that sets sizes via the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object, initialising data to 0. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>Use version with <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a> instead </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1SegmentBySinogram.html#a5da775d6612db3e5728335aa91d5904e">stir::SegmentBySinogram&lt; elemT &gt;::SegmentBySinogram()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af6b2e196df565a98e9852cfcf7c62abb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6b2e196df565a98e9852cfcf7c62abb">&#9670;&nbsp;</a></span>grow()</h2>
 
@@ -783,7 +867,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

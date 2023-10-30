@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -67,18 +67,19 @@ Inheritance diagram for stir::Timer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af45cfeb3b67f60927404fbf896474b19"><td class="memItemLeft" align="right" valign="top"><a id="af45cfeb3b67f60927404fbf896474b19"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
-<tr class="separator:af45cfeb3b67f60927404fbf896474b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c317e6c5f1dfcb1446b47d4a15af88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Timer.html#a41c317e6c5f1dfcb1446b47d4a15af88">start</a> (bool do_reset=false)</td></tr>
+<tr class="memdesc:a41c317e6c5f1dfcb1446b47d4a15af88"><td class="mdescLeft">&#160;</td><td class="mdescRight">start stopwatch, optionally resetting first  <a href="#a41c317e6c5f1dfcb1446b47d4a15af88">More...</a><br /></td></tr>
+<tr class="separator:a41c317e6c5f1dfcb1446b47d4a15af88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64c0f28a821dd71980624e82dfd3dcb"><td class="memItemLeft" align="right" valign="top"><a id="ab64c0f28a821dd71980624e82dfd3dcb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Timer.html#ab64c0f28a821dd71980624e82dfd3dcb">stop</a> ()</td></tr>
+<tr class="memdesc:ab64c0f28a821dd71980624e82dfd3dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop stopwatch <br /></td></tr>
 <tr class="separator:ab64c0f28a821dd71980624e82dfd3dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b893fb2c3518031a795fb063d87835"><td class="memItemLeft" align="right" valign="top"><a id="a36b893fb2c3518031a795fb063d87835"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="memitem:a36b893fb2c3518031a795fb063d87835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Timer.html#a36b893fb2c3518031a795fb063d87835">reset</a> ()</td></tr>
+<tr class="memdesc:a36b893fb2c3518031a795fb063d87835"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset stopwatch  <a href="#a36b893fb2c3518031a795fb063d87835">More...</a><br /></td></tr>
 <tr class="separator:a36b893fb2c3518031a795fb063d87835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea24315ad56b184fb19951b73cd8fff0"><td class="memItemLeft" align="right" valign="top"><a id="aea24315ad56b184fb19951b73cd8fff0"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Timer.html#aea24315ad56b184fb19951b73cd8fff0">value</a> () const</td></tr>
-<tr class="memdesc:aea24315ad56b184fb19951b73cd8fff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value is undefined when start() is not called first. <br /></td></tr>
+<tr class="memdesc:aea24315ad56b184fb19951b73cd8fff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value is undefined when <a class="el" href="classstir_1_1Timer.html#a41c317e6c5f1dfcb1446b47d4a15af88" title="start stopwatch, optionally resetting first ">start()</a> is not called first. <br /></td></tr>
 <tr class="separator:aea24315ad56b184fb19951b73cd8fff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -103,14 +104,79 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>previous_total_valu
 <div class="textblock"><p>A general base class for timers. Interface is like a stop watch. </p>
 <dl class="section user"><dt>Example of usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line">DerivedFromTimer t;</div><div class="line">t.start();</div><div class="line"><span class="comment">// do things</span></div><div class="line">cerr &lt;&lt; t.value();</div><div class="line"><span class="comment">// do things</span></div><div class="line">t.stop();</div><div class="line"><span class="comment">// do things</span></div><div class="line">t.reset()</div><div class="line"><span class="comment">// etc</span></div></div><!-- fragment --><p>Derived classes simply have to implement the virtual function double get_current_value() </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a41c317e6c5f1dfcb1446b47d4a15af88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c317e6c5f1dfcb1446b47d4a15af88">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Timer::start </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>do_reset</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>start stopwatch, optionally resetting first </p>
+<p>the stopwatch should not be running already if asking to reset </p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation()</a>, <a class="el" href="classstir_1_1OSSPSReconstruction.html#a40bc9468f258be5ba2bfd1ed5a1efc85">stir::OSSPSReconstruction&lt; TargetT &gt;::precompute_denominator_of_conditioner_without_penalty()</a>, <a class="el" href="classstir_1_1LmToProjData.html#a751ec1351febc5123dce868be5d0afec">stir::LmToProjData::process_data()</a>, <a class="el" href="classstir_1_1FourierRebinning.html#aeba54983ab9ac8b9178fbf140dd867e8">stir::FourierRebinning::rebin()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#ac43b66a90df6733b379752a24db056e9">stir::ProjDataInfoTests::run_Blocks_DOI_test()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#a89eb76dd7a99a17fb57b10112a639d4d">stir::ProjDataInfoTests::run_coordinate_test()</a>, <a class="el" href="classstir_1_1RigidObject3DTransformationTests.html#a901ffa368a73c96b4e478ffd338b07d2">stir::RigidObject3DTransformationTests::run_tests()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">stir::ProjMatrixByBinSPECTUB::set_up()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a019dc9e991a8cde7d9e61811084b0dcd">stir::ProjMatrixByBinPinholeSPECTUB::set_up()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a0d38af16f76ae65b5cbed25d69d95a20">stir::ScatterSimulation::set_use_cache()</a>, <a class="el" href="classstir_1_1Transform3DObjectImageProcessor.html#a7b1a26621dc5b5802647aab11da7fbac">stir::Transform3DObjectImageProcessor&lt; elemT &gt;::Transform3DObjectImageProcessor()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a37d34ed37768459bda1d37ce81c56f98">stir::ProjMatrixByBinPinholeSPECTUB::~ProjMatrixByBinPinholeSPECTUB()</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">stir::ProjMatrixByBinSPECTUB::~ProjMatrixByBinSPECTUB()</a>.</p>
+
+</div>
+</div>
+<a id="a36b893fb2c3518031a795fb063d87835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b893fb2c3518031a795fb063d87835">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Timer::reset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reset stopwatch </p>
+<p>the stopwatch should not be running </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1OSSPSReconstruction.html#a40bc9468f258be5ba2bfd1ed5a1efc85">stir::OSSPSReconstruction&lt; TargetT &gt;::precompute_denominator_of_conditioner_without_penalty()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#ac43b66a90df6733b379752a24db056e9">stir::ProjDataInfoTests::run_Blocks_DOI_test()</a>, <a class="el" href="classstir_1_1ProjDataInfoTests.html#a89eb76dd7a99a17fb57b10112a639d4d">stir::ProjDataInfoTests::run_coordinate_test()</a>, and <a class="el" href="classstir_1_1RigidObject3DTransformationTests.html#a901ffa368a73c96b4e478ffd338b07d2">stir::RigidObject3DTransformationTests::run_tests()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Timer_8h_source.html">Timer.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Timer_8inl.html">Timer.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

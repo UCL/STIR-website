@@ -1,6 +1,7 @@
 <map id="ECAT6 ... ECAT8 support in the IO library" name="ECAT6 ... ECAT8 support in the IO library">
-<area shape="rect" id="node3" href="$group__utilities.html" title="Utility programs" alt="" coords="638,116,753,143"/>
-<area shape="rect" id="node4" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="618,227,773,269"/>
-<area shape="rect" id="node5" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="616,346,775,387"/>
-<area shape="rect" id="node2" href="$group__IO.html" title="Input/Output Library" alt="" coords="5,280,143,307"/>
+<area shape="rect" id="node3" href="$group__utilities.html" title="Utility programs" alt="" coords="638,121,753,148"/>
+<area shape="rect" id="node4" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="618,233,773,274"/>
+<area shape="rect" id="node5" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="616,342,775,383"/>
+<area shape="rect" id="node6" href="$group__InterfileIO.html" title="Interfile support in\l the IO library" alt="" coords="632,427,759,469"/>
+<area shape="rect" id="node2" href="$group__IO.html" title="Input/Output Library" alt="" coords="5,329,143,356"/>
 </map>

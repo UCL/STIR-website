@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,9 @@ $(function() {
 <p>Declaration of <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">stir::warning()</a>  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">stir/common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Verbosity_8h_source.html">stir/Verbosity.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;TextWriter.h&quot;</code><br />
 </div>
 <p><a href="warning_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -68,10 +70,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45e27d9de6cdc69c146e791a825a20da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning</a> (const char *const s,...)</td></tr>
 <tr class="memdesc:ga45e27d9de6cdc69c146e791a825a20da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print warning with format string a la <code>printf</code>.  <a href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">More...</a><br /></td></tr>
 <tr class="separator:ga45e27d9de6cdc69c146e791a825a20da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86c10e7ec133abbe6202467168faa93c"><td class="memTemplParams" colspan="2">template&lt;class STRING &gt; </td></tr>
-<tr class="memitem:ga86c10e7ec133abbe6202467168faa93c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__buildblock.html#ga86c10e7ec133abbe6202467168faa93c">stir::warning</a> (const STRING &amp;string)</td></tr>
-<tr class="memdesc:ga86c10e7ec133abbe6202467168faa93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function for writing warning messages.  <a href="group__buildblock.html#ga86c10e7ec133abbe6202467168faa93c">More...</a><br /></td></tr>
-<tr class="separator:ga86c10e7ec133abbe6202467168faa93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99ee2d3c2bb753973c2702e70f394e4c"><td class="memTemplParams" colspan="2">template&lt;class STRING &gt; </td></tr>
+<tr class="memitem:ga99ee2d3c2bb753973c2702e70f394e4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__buildblock.html#ga99ee2d3c2bb753973c2702e70f394e4c">stir::warning</a> (const STRING &amp;string, const int verbosity_level=1)</td></tr>
+<tr class="memdesc:ga99ee2d3c2bb753973c2702e70f394e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function for writing warning messages.  <a href="group__buildblock.html#ga99ee2d3c2bb753973c2702e70f394e4c">More...</a><br /></td></tr>
+<tr class="separator:ga99ee2d3c2bb753973c2702e70f394e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">stir::warning()</a> </p>
@@ -79,7 +81,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

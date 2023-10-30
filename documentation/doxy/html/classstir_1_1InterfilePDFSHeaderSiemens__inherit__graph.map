@@ -1,5 +1,0 @@
-<map id="stir::InterfilePDFSHeaderSiemens" name="stir::InterfilePDFSHeaderSiemens">
-<area shape="rect" id="node2" href="$classstir_1_1InterfileRawDataHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens PET projection or list mode data ..." alt="" coords="5,155,193,196"/>
-<area shape="rect" id="node3" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="7,80,191,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="33,5,166,32"/>
-</map>

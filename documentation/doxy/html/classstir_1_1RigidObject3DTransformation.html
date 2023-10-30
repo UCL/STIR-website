@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -220,14 +220,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
  B.K. Horn, <em>Closed-form solution of absolute orientation using unit quaternions</em>, J. Opt. Soc. Am. A Vol.4 No. 6, (1987) p.629.</p>
 <dl class="section warning"><dt>Warning</dt><dd>STIR uses a left-handed coordinate-system.</dd></dl>
 <p>The transformation that is applied is as follows </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ r' = \mathrm{conj}(q)(r-t)q \]" src="form_134.png"/>
+<img class="formulaDsp" alt="\[ r' = \mathrm{conj}(q)(r-t)q \]" src="form_137.png"/>
 </p>
-<p> where the quaternion is specified as <img class="formulaInl" alt="${[}q0,qz,qy,qx{]}$" src="form_135.png"/>, while the translation is initialised in the usual (in STIR) reverse order, e.g. </p><div class="fragment"><div class="line">CartesianCoordinate3D&lt;float&gt; t(tz,ty,tx);</div></div><!-- fragment --><p> Note that this transformation is the inverse of Horn's.</p>
+<p> where the quaternion is specified as <img class="formulaInl" alt="${[}q0,qz,qy,qx{]}$" src="form_138.png"/>, while the translation is initialised in the usual (in STIR) reverse order, e.g. </p><div class="fragment"><div class="line">CartesianCoordinate3D&lt;float&gt; t(tz,ty,tx);</div></div><!-- fragment --><p> Note that this transformation is the inverse of Horn's.</p>
 <p>This implements a translation followed by a rotation. The quaternion is constructed by as follows:<br />
- A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_136.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_137.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_138.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
+ A rotation around the axis with direction <img class="formulaInl" alt="${[}n_z,n_y,n_x{]}$" src="form_139.png"/> and angle <img class="formulaInl" alt="$\phi$" src="form_140.png"/> corresponds to a quaternion <img class="formulaInl" alt="${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$" src="form_141.png"/>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000203">Todo:</a></b></dt><dd>Document sign choice for rotation.</dd></dl>
 <p>This class can transform coordinates and <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> object belonging to some projection data.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The Euler angles are probably different from the ones used in the <a class="el" href="classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. ">Shape3D</a> hierarchy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo:</a></b></dt><dd>define Euler angles (the code is derived from the Polaris manual) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa10c393c8b165344dc4191913b93b06c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c393c8b165344dc4191913b93b06c">&#9670;&nbsp;</a></span>RigidObject3DTransformation()</h2>
@@ -362,7 +362,7 @@ template&lt;class Iter1T , class Iter2T &gt; </div>
 
 <p>Transform bin from some projection data. </p>
 <p>Finds 'closest' (in some sense) bin to the transformed <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.</p>
-<p>if NEW_ROT is not #defined at compilation time, it will throw an exception when arc-corrected data is used. </p>
+<p>if <code>NEW_ROT</code> is not <code>#defined</code> at compilation time, it will throw an exception when arc-corrected data is used. </p>
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#a5b4e785f8388daa878c91e22ce126e49">stir::ProjDataInfo::get_bin()</a>, <a class="el" href="classstir_1_1Bin.html#a50a74430151a74b2914f510bd37e6899">stir::Bin::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a4f1cb72c33d4f53e9ee95ca046c70e19">stir::ProjDataInfo::get_LOR()</a>, <a class="el" href="classstir_1_1Scanner.html#aa8f604e2efd17d51fc7e4c672893f242">stir::Scanner::get_num_rings()</a>, <a class="el" href="classstir_1_1Scanner.html#a813db3baed2672316f3eb0da461491df">stir::Scanner::get_ring_spacing()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="classstir_1_1Bin.html#af34309374c1942f4a554f01eab3ef6e0">stir::Bin::set_bin_value()</a>, and <a class="el" href="classstir_1_1RigidObject3DTransformation.html#ac3168d7ff43e13a35443bb0efc271531">transform_point()</a>.</p>
 
@@ -416,7 +416,7 @@ template&lt;class Iter1T , class Iter2T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

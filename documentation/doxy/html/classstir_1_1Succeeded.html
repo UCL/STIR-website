@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -65,25 +65,29 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab970fd9cebb5c1ba097e32012e60e13e"><td class="memItemLeft" align="right" valign="top"><a id="ab970fd9cebb5c1ba097e32012e60e13e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Succeeded</b> (const value &amp;v)</td></tr>
-<tr class="separator:ab970fd9cebb5c1ba097e32012e60e13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3a7bca76706d9c7b1b5b81913f2a6a"><td class="memItemLeft" align="right" valign="top"><a id="aab3a7bca76706d9c7b1b5b81913f2a6a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Succeeded</b> (const value &amp;v=yes)</td></tr>
+<tr class="separator:aab3a7bca76706d9c7b1b5b81913f2a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541c71fc0bfe652f466e4897030bc165"><td class="memItemLeft" align="right" valign="top"><a id="a541c71fc0bfe652f466e4897030bc165"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> &amp;v2) const</td></tr>
 <tr class="separator:a541c71fc0bfe652f466e4897030bc165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5544bd15a000c93e04f89fbd6602a33"><td class="memItemLeft" align="right" valign="top"><a id="ae5544bd15a000c93e04f89fbd6602a33"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> &amp;v2) const</td></tr>
 <tr class="separator:ae5544bd15a000c93e04f89fbd6602a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436b85a752a0911988d288758613c078"><td class="memItemLeft" align="right" valign="top"><a id="a436b85a752a0911988d288758613c078"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Succeeded.html#a436b85a752a0911988d288758613c078">succeeded</a> () const</td></tr>
+<tr class="memdesc:a436b85a752a0911988d288758613c078"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function returns if it is equal to Succeeded::yes <br /></td></tr>
+<tr class="separator:a436b85a752a0911988d288758613c078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>a class containing an enumeration type that can be used by functions to signal successful operation or not </p>
-<p>Example: </p><div class="fragment"><div class="line">Succeeded f() { do_something;  <span class="keywordflow">return</span> Succeeded::yes; }</div><div class="line"><span class="keywordtype">void</span> g() { <span class="keywordflow">if</span> (f() == Succeeded::no) <a class="code" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">error</a>(<span class="stringliteral">&quot;Error calling f&quot;</span>); }</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Example: </p><div class="fragment"><div class="line">Succeeded f() { do_something;  <span class="keywordflow">return</span> Succeeded::yes; }</div><div class="line"><span class="keywordtype">void</span> g() { <span class="keywordflow">if</span> (f() == Succeeded::no) <a class="code" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">error</a>(<span class="stringliteral">&quot;Error calling f&quot;</span>); }</div><div class="line"><span class="comment">// the latter can also be written as</span></div><div class="line"><span class="keywordtype">void</span> g2() { <span class="keywordflow">if</span> (!f().<a class="code" href="classstir_1_1Succeeded.html#a436b85a752a0911988d288758613c078">succeeded</a>()) <a class="code" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">error</a>(<span class="stringliteral">&quot;Error calling f&quot;</span>); }</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Succeeded_8h_source.html">Succeeded.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

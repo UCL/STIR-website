@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -61,6 +61,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Succeeded_8h_source.html">stir/Succeeded.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test__if__1d_8h_source.html">stir/detail/test_if_1d.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="write__data__1d_8h_source.html">stir/IO/write_data_1d.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="warning_8h_source.html">stir/warning.h</a>&quot;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -135,14 +136,14 @@ template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; 
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE :                                   <a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">\</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">      return                                             \</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">        write_data</a>(s, data,                              \</div><div class="line">                   NumericInfo&lt;TYPENAME TypeForNumericType&lt;NUMERICTYPE &gt;::type&gt;(), \</div><div class="line">                   scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_gac57494c546fbd03f2ba3b7d4747522d7"><div class="ttname"><a href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</div><div class="ttdoc">Write the data of an Array to file as a different type. </div><div class="ttdef"><b>Definition:</b> write_data.inl:196</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE :                                   <a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">\</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">      return                                             \</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">        write_data</a>(s, data,                              \</div><div class="line">                   NumericInfo&lt;TYPENAME TypeForNumericType&lt;NUMERICTYPE &gt;::type&gt;(), \</div><div class="line">                   scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_gac57494c546fbd03f2ba3b7d4747522d7"><div class="ttname"><a href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</div><div class="ttdoc">Write the data of an Array to file as a different type. </div><div class="ttdef"><b>Definition:</b> write_data.inl:197</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

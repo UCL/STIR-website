@@ -7,7 +7,7 @@
 <area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,122,563,163"/>
 <area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,100,136,127"/>
 <area shape="rect" id="node7" href="$classstir_1_1CombinedShape3D.html" title="A class that allows combining several shapes using logical operations. " alt="" coords="1383,13,1544,54"/>
-<area shape="rect" id="node9" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. " alt="" coords="1379,85,1547,112"/>
+<area shape="rect" id="node9" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised as a volume. " alt="" coords="1379,85,1547,112"/>
 <area shape="rect" id="node11" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1313,137,1613,178"/>
 <area shape="rect" id="node13" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1346,203,1581,259"/>
 <area shape="rect" id="node15" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1360,283,1567,339"/>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_geometric_factors
 <tr class="memitem:ae315ac0ecca2dbbb74167c64dfc03628"><td class="memItemLeft" align="right" valign="top"><a id="ae315ac0ecca2dbbb74167c64dfc03628"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_crystal_interference_factors</b> () const</td></tr>
 <tr class="separator:ae315ac0ecca2dbbb74167c64dfc03628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0dc1e8555323a2331f7050e6af88d3"><td class="memItemLeft" align="right" valign="top"><a id="a5f0dc1e8555323a2331f7050e6af88d3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_axial_effects_factors</b> () const</td></tr>
+<tr class="separator:a5f0dc1e8555323a2331f7050e6af88d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; BinNormalisationFromECAT8, BinNormalisation, BinNormalisationWithCalibration &gt;</a></td></tr>
 <tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
@@ -231,19 +234,31 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDat
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin-wise normalisation of data. ">BinNormalisation</a> class that gets the normalisation factors from an ECAT8 3D normalisation file. Note that you have to point it to the "Interfile" header. </p>
-<dl class="section user"><dt>Parsing example</dt><dd><pre class="fragment">Bin Normalisation type := from ecat7
-Bin Normalisation From ECAT8:=
-normalisation filename:= myfile.hn
+<dl class="section user"><dt>Parsing example</dt><dd><pre class="fragment"> Bin Normalisation type := from ecat8
+ Bin Normalisation From ECAT8:=
+ normalisation filename:= myfile.n.hdr
 
-; next keywords can be used to switch off some of the normalisation components
-; do not use unless you know why
-; use_gaps:=1
-; use_detector_efficiencies:=1
-; use_dead_time:=1
-; use_geometric_factors:=1
-; use_crystal_interference_factors:=1
-End Bin Normalisation From ECAT8:=
-</pre></dd></dl>
+ ; next keywords can be used to switch off some of the normalisation components
+ ; do not use unless you know why.
+ ; Default values are indicated below (i.e. use all of them)
+ ; use_gaps:=1
+ ; use_detector_efficiencies:=1
+ ; use_dead_time:=1
+ ; use_geometric_factors:=1
+ ; use_crystal_interference_factors:=1
+ ; use_axial_effects_factors:=1
+
+ ; keyword that can be used to write the components to a separate text files for debugging
+ ; files are written in the current directory and are called geom_out.txt etc.
+ ; write_components_to_file := 0
+ End Bin Normalisation From ECAT8:=</pre></dd></dl>
+<dl class="section user"><dt>More information</dt><dd></dd></dl>
+<p>Siemens stores <code>axial effects</code>, i.e. one number per sinogram. This normally limits the use of the file to data that have been acquired with the same <code>span</code>, which is usually 11 for present Siemens scanners.</p>
+<p>We work around this in 2 ways:</p><ul>
+<li>we assume that the <code>axial_effects_factor</code> is the same for every ring pair contributing to a particular Siemens sinogram</li>
+<li>if there is no corresponding Siemens sinogram (i.e. the norm file has been acquired with a particular maximum ring difference, smaller than what is actually possible with the scanner), we use an <code>axial_effects_factor</code> of 1. This should be reasonable as the numbers are around 1 (on the mMR).</li>
+</ul>
+<p>This strategy allows us to give normalisation factor for span=1 data, even if the norm file is for span=11.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo:</a></b></dt><dd>dead-time is not yet implemented</dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a10e753b34cac30030fc7ed3ef2549103"></a>
@@ -306,7 +321,7 @@ End Bin Normalisation From ECAT8:=
 
 <p>Reimplemented from <a class="el" href="classstir_1_1BinNormalisationWithCalibration.html#ab1db6d202ff95588c9865cd71b20b003">stir::BinNormalisationWithCalibration</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">stir::KeyParser::add_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a2f9888661e50ab3a45504abd91e57d72">stir::KeyParser::add_start_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#aa92a7db6e8ab333adf8741acfcd95cb9">stir::KeyParser::add_stop_key()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;::fill()</a>, <a class="el" href="group__ECAT.html#gac4110d030c894cb5c26f251a8fc42b0d">stir::ecat::find_scanner_from_ECAT_system_type()</a>, <a class="el" href="namespacestir.html#a17467cba8070cf997ddeea511eb4748f">stir::get_directory_name()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="group__buildblock.html#ga6a419b22b914c4d55130a163fddd602d">stir::max_filename_length</a>, <a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43">stir::KeyParser::parse()</a>, <a class="el" href="namespacestir.html#a123cd5289dfc1cec3f34f0d33b398dc9">stir::prepend_directory_name()</a>, <a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">stir::read_data()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1Array.html#abd56d694053e27f36d9c4aceed6a3845">stir::Array&lt; num_dimensions, elemT &gt;::fill()</a>, <a class="el" href="namespacestir.html#a17467cba8070cf997ddeea511eb4748f">stir::get_directory_name()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af570c808b1c83a91e0d8e0eb84f8cee0">stir::ProjDataInfoCylindrical::get_max_ring_difference()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="group__buildblock.html#ga6a419b22b914c4d55130a163fddd602d">stir::max_filename_length</a>, <a class="el" href="namespacestir.html#a6cbc492c69ff66b7be1fa0babc73e315">stir::open_read_binary()</a>, <a class="el" href="namespacestir.html#a123cd5289dfc1cec3f34f0d33b398dc9">stir::prepend_directory_name()</a>, <a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">stir::read_data()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +332,7 @@ End Bin Normalisation From ECAT8:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

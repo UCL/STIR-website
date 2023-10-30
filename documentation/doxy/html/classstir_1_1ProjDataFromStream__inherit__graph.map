@@ -1,6 +1,5 @@
 <map id="stir::ProjDataFromStream" name="stir::ProjDataFromStream">
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. " alt="" coords="5,229,163,256"/>
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="187,229,330,256"/>
-<area shape="rect" id="node2" href="$classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. " alt="" coords="121,80,220,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="115,5,226,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjDataInterfile.html" title="A class which reads/writes projection data from/to a (binary) stream, but creates the corresponding I..." alt="" coords="19,229,162,256"/>
+<area shape="rect" id="node2" href="$classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. " alt="" coords="41,80,140,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="35,5,146,32"/>
 </map>

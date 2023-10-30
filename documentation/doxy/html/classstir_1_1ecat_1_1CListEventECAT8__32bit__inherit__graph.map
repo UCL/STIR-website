@@ -1,5 +1,6 @@
 <map id="stir::ecat::CListEventECAT8_32bit" name="stir::ecat::CListEventECAT8_32bit">
-<area shape="rect" id="node2" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="5,155,208,196"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="50,80,163,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="55,5,158,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="11,305,213,347"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="5,200,219,256"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="50,5,163,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="129,81,362,123"/>
 </map>

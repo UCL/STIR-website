@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -60,6 +60,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="Succeeded_8h_source.html">stir/Succeeded.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SegmentBySinogram_8h_source.html">stir/SegmentBySinogram.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SegmentByView_8h_source.html">stir/SegmentByView.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SegmentIndices_8h_source.html">stir/SegmentIndices.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ViewgramIndices_8h_source.html">stir/ViewgramIndices.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SinogramIndices_8h_source.html">stir/SinogramIndices.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ExamData_8h_source.html">stir/ExamData.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ProjData_8inl.html">stir/ProjData.inl</a>&quot;</code><br />
 </div>
@@ -71,10 +74,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing viewgrams which are related by symmetry.  <a href="classstir_1_1RelatedViewgrams.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentBySinogram.html">stir::SegmentBySinogram&lt; elemT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing (3d) projection data with a fixed segment_num.  <a href="classstir_1_1SegmentBySinogram.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing (3d) projection data with fixed <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a>.  <a href="classstir_1_1SegmentBySinogram.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SegmentByView.html">stir::SegmentByView&lt; elemT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing (3d) projection data with a fixed segment_num.  <a href="classstir_1_1SegmentByView.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for storing (3d) projection data with fixed <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a>.  <a href="classstir_1_1SegmentByView.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Viewgram.html">stir::Viewgram&lt; elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for 2d projection data.  <a href="classstir_1_1Viewgram.html#details">More...</a><br /></td></tr>
@@ -102,7 +105,7 @@ PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

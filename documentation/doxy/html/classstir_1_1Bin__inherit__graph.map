@@ -1,3 +1,5 @@
 <map id="stir::Bin" name="stir::Bin">
-<area shape="rect" id="node2" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="5,80,168,121"/>
+<area shape="rect" id="node4" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="5,229,168,271"/>
+<area shape="rect" id="node2" href="$classstir_1_1ViewgramIndices.html" title="A very simple class to store all dincies to get a (2D) Viewgram. " alt="" coords="13,80,161,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. " alt="" coords="15,5,158,32"/>
 </map>

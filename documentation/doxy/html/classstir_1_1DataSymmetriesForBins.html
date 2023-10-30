@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ac16420138275f5b4a9eb653301d0352b inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#ac16420138275f5b4a9eb653301d0352b">num_related_view_segment_numbers</a> (const <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const</td></tr>
 <tr class="memdesc:ac16420138275f5b4a9eb653301d0352b inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of view_segment_numbers related to 'v_s'  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#ac16420138275f5b4a9eb653301d0352b">More...</a><br /></td></tr>
 <tr class="separator:ac16420138275f5b4a9eb653301d0352b inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top"><a id="af330d13d5963b1347a753837c8ba87ef"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_related_viewgram_indices</b> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;ind) const</td></tr>
+<tr class="separator:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2d0bd18e31e12547e3fb008da7b064 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">find_basic_view_segment_numbers</a> (<a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const =0</td></tr>
 <tr class="memdesc:a8d2d0bd18e31e12547e3fb008da7b064 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an arbitrary view/segment, find the basic view/segment  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">More...</a><br /></td></tr>
 <tr class="separator:a8d2d0bd18e31e12547e3fb008da7b064 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +190,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 <p>fills in a vector with all the bins that are related to 'b' (including itself) </p>
 <p>range for axial_pos_num and tangential_pos_num is taken from the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object passed in the constructor </p><dl class="section warning"><dt>Warning</dt><dd><code>b</code> has to be a 'basic' bin </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1DataSymmetriesForBins.html#ab414fa2b856c37c59e9f9df756e190ca">is_basic()</a>.</p>
 
@@ -257,7 +260,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 
 <p>Reimplemented in <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#a16d530c69764550cd4ce960424056673">stir::TrivialDataSymmetriesForBins</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a9be4ca353e4fb4a6163830ff4328d36a">find_symmetry_operation_from_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a9be4ca353e4fb4a6163830ff4328d36a">find_symmetry_operation_from_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +302,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 <p>range for axial_pos_num and tangential_pos_num is taken from the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> object passed in the constructor </p><dl class="section warning"><dt>Warning</dt><dd><code>b</code> has to be a 'basic' bin </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>6 argument version of <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af6f6b928d4309c5bb93b63c7f0191bf9" title="fills in a vector with the axial and tangential position numbers related to this bin ...">get_related_bins_factorised()</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingProjMatrixByBin.html#afb1e85f9d4ba47f43df4ad457bdc9fe9">stir::BackProjectorByBinUsingProjMatrixByBin::actual_back_project()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#ada535932adc29570f6e83d222d94e957">stir::ForwardProjectorByBinUsingProjMatrixByBin::get_symmetries_used()</a>.</p>
 
@@ -364,7 +367,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 </div><div class="memdoc">
 
 <p>fills in a vector with the axial and tangential position numbers related to this bin </p>
-<p>It is guaranteed (or at least, it should be by the implementation of the derived class) that these AxTangPosNumbers are related for all related <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> for this bin.</p>
+<p>It is guaranteed (or at least, it should be by the implementation of the derived class) that these AxTangPosNumbers are related for all related <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> for this bin.</p>
 <p>So, you can find all related bins by calling get_related_ViewSegmentNumbers() and <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af6f6b928d4309c5bb93b63c7f0191bf9" title="fills in a vector with the axial and tangential position numbers related to this bin ...">get_related_bins_factorised()</a>, which is what the default implementation does. (A derived class might do this in a more optimal way.)</p>
 <dl class="section warning"><dt>Warning</dt><dd><code>b</code> has to be a 'basic' bin </dd></dl>
 
@@ -517,7 +520,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>An (abstract base) class for storing 3d projection dataThis stores a subset of the data accessible via a <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a> object, where the segment_num is fixed.  
+<p>An (abstract base) class for storing 3d projection dataThis stores a subset of the data accessible via a <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a> object, where the <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a> are fixed.  
  <a href="classstir_1_1Segment.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="Segment_8h_source.html">stir/Segment.h</a>&quot;</code></p>
@@ -62,8 +62,8 @@ Inheritance diagram for stir::Segment&lt; elemT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1Segment__inherit__graph.png" border="0" usemap="#stir_1_1Segment_3_01elemT_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1Segment_3_01elemT_01_4_inherit__map" id="stir_1_1Segment_3_01elemT_01_4_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="5,80,176,121"/>
-<area shape="rect" id="node3" href="classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="201,80,346,121"/>
+<area shape="rect" id="node2" href="classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="5,80,176,121"/>
+<area shape="rect" id="node3" href="classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="201,80,346,121"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -83,6 +83,9 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDat
 <tr class="memitem:a56531d5aa6d57d76dcaeead15c076b61"><td class="memItemLeft" align="right" valign="top"><a id="a56531d5aa6d57d76dcaeead15c076b61"></a>
 virtual StorageOrder&#160;</td><td class="memItemRight" valign="bottom"><b>get_storage_order</b> () const =0</td></tr>
 <tr class="separator:a56531d5aa6d57d76dcaeead15c076b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad742f2a097a3e3258681ea1d87071b29"><td class="memItemLeft" align="right" valign="top"><a id="ad742f2a097a3e3258681ea1d87071b29"></a>
+<a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_segment_indices</b> () const</td></tr>
+<tr class="separator:ad742f2a097a3e3258681ea1d87071b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9c5c4801521562a64b31f26ab8514a"><td class="memItemLeft" align="right" valign="top"><a id="a4b9c5c4801521562a64b31f26ab8514a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a4b9c5c4801521562a64b31f26ab8514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the segment number. <br /></td></tr>
@@ -151,25 +154,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a45822cc7f80eff7cc4b1a68607e66a1d"><td class="memItemLeft" align="right" valign="top"><a id="a45822cc7f80eff7cc4b1a68607e66a1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr_v, const int s_num)</td></tr>
-<tr class="separator:a45822cc7f80eff7cc4b1a68607e66a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b29bd1d83f8559d91bed9928aa894ef"><td class="memItemLeft" align="right" valign="top"><a id="a0b29bd1d83f8559d91bed9928aa894ef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Segment</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr_v, const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;)</td></tr>
+<tr class="separator:a0b29bd1d83f8559d91bed9928aa894ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa448729929d45530e890871714ef544f"><td class="memItemLeft" align="right" valign="top"><a id="aa448729929d45530e890871714ef544f"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>proj_data_info_sptr</b></td></tr>
 <tr class="separator:aa448729929d45530e890871714ef544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0462cdd91d966933b28a89c26dd64d32"><td class="memItemLeft" align="right" valign="top"><a id="a0462cdd91d966933b28a89c26dd64d32"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>segment_num</b></td></tr>
-<tr class="separator:a0462cdd91d966933b28a89c26dd64d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d80515fd3afaa6f1cd9b1a86b95ccad"><td class="memItemLeft" align="right" valign="top"><a id="a3d80515fd3afaa6f1cd9b1a86b95ccad"></a>
+<a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_indices</b></td></tr>
+<tr class="separator:a3d80515fd3afaa6f1cd9b1a86b95ccad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename elemT&gt;<br />
 class stir::Segment&lt; elemT &gt;</h3>
 
 <p>An (abstract base) class for storing 3d projection data</p>
-<p>This stores a subset of the data accessible via a <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a> object, where the segment_num is fixed. </p>
+<p>This stores a subset of the data accessible via a <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">ProjData</a> object, where the <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a> are fixed. </p>
 <p>At the moment, 2 'storage modes' are supported (and implemented as derived classes).</p>
 <p>The template argument <code>elemT</code> is used to specify the data-type of the elements of the 3d object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -272,7 +275,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -159,17 +159,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="memitem:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency</a> () const</td></tr>
 <tr class="memdesc:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks consistency  <a href="#a2dd6bc8b5428e5538c3d36d945bc0fba">More...</a><br /></td></tr>
 <tr class="separator:a2dd6bc8b5428e5538c3d36d945bc0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0ef051db0f7eba6cecc899bee0d037"><td class="memItemLeft" align="right" valign="top"><a id="adf0ef051db0f7eba6cecc899bee0d037"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#adf0ef051db0f7eba6cecc899bee0d037">set_energy_resolution</a> (const float new_num)</td></tr>
-<tr class="memdesc:adf0ef051db0f7eba6cecc899bee0d037"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the energy resolution of the system A negative value indicates, unknown || not set <br /></td></tr>
+<tr class="memitem:adf0ef051db0f7eba6cecc899bee0d037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#adf0ef051db0f7eba6cecc899bee0d037">set_energy_resolution</a> (const float new_num)</td></tr>
+<tr class="memdesc:adf0ef051db0f7eba6cecc899bee0d037"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the energy resolution of the system  <a href="#adf0ef051db0f7eba6cecc899bee0d037">More...</a><br /></td></tr>
 <tr class="separator:adf0ef051db0f7eba6cecc899bee0d037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac365bfd11c93ac184d9fbe2c0e962a"><td class="memItemLeft" align="right" valign="top"><a id="a2ac365bfd11c93ac184d9fbe2c0e962a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a2ac365bfd11c93ac184d9fbe2c0e962a">set_reference_energy</a> (const float new_num)</td></tr>
-<tr class="memdesc:a2ac365bfd11c93ac184d9fbe2c0e962a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the reference energy of the energy resolution A negative value indicates, unknown || not set <br /></td></tr>
+<tr class="memitem:a2ac365bfd11c93ac184d9fbe2c0e962a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a2ac365bfd11c93ac184d9fbe2c0e962a">set_reference_energy</a> (const float new_num)</td></tr>
+<tr class="memdesc:a2ac365bfd11c93ac184d9fbe2c0e962a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the reference energy (in keV) of the energy resolution  <a href="#a2ac365bfd11c93ac184d9fbe2c0e962a">More...</a><br /></td></tr>
 <tr class="separator:a2ac365bfd11c93ac184d9fbe2c0e962a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4244e89159ea5a40145468acdde000"><td class="memItemLeft" align="right" valign="top"><a id="a2a4244e89159ea5a40145468acdde000"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_energy_information</b> () const</td></tr>
-<tr class="separator:a2a4244e89159ea5a40145468acdde000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e93595944c668f8c292262b04a384e"><td class="memItemLeft" align="right" valign="top"><a id="a29e93595944c668f8c292262b04a384e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_singles_bin_index</b> (int axial_index, int transaxial_index) const</td></tr>
 <tr class="separator:a29e93595944c668f8c292262b04a384e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,15 +390,17 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memitem:ae46b139f02e4569ff9e2d38731e1456f"><td class="memItemLeft" align="right" valign="top"><a id="ae46b139f02e4569ff9e2d38731e1456f"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_crystal_map_file_name</b> () const</td></tr>
 <tr class="separator:ae46b139f02e4569ff9e2d38731e1456f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Functions to get detector responce info</div></td></tr>
-<tr class="memitem:a672d57decc33db7a24e4bac8d9c65d4c"><td class="memItemLeft" align="right" valign="top"><a id="a672d57decc33db7a24e4bac8d9c65d4c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a672d57decc33db7a24e4bac8d9c65d4c">get_energy_resolution</a> () const</td></tr>
-<tr class="memdesc:a672d57decc33db7a24e4bac8d9c65d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the energy resolution of the system <br /></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Functions to get detector response info</div></td></tr>
+<tr class="memitem:a672d57decc33db7a24e4bac8d9c65d4c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a672d57decc33db7a24e4bac8d9c65d4c">get_energy_resolution</a> () const</td></tr>
+<tr class="memdesc:a672d57decc33db7a24e4bac8d9c65d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the energy resolution as a fraction at the reference energy  <a href="#a672d57decc33db7a24e4bac8d9c65d4c">More...</a><br /></td></tr>
 <tr class="separator:a672d57decc33db7a24e4bac8d9c65d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9afb895c38a27e371ed03474808bf0"><td class="memItemLeft" align="right" valign="top"><a id="a0a9afb895c38a27e371ed03474808bf0"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a0a9afb895c38a27e371ed03474808bf0">get_reference_energy</a> () const</td></tr>
-<tr class="memdesc:a0a9afb895c38a27e371ed03474808bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the reference energy of the energy resolution <br /></td></tr>
+<tr class="memitem:a0a9afb895c38a27e371ed03474808bf0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a0a9afb895c38a27e371ed03474808bf0">get_reference_energy</a> () const</td></tr>
+<tr class="memdesc:a0a9afb895c38a27e371ed03474808bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the reference energy in keV of the energy resolution  <a href="#a0a9afb895c38a27e371ed03474808bf0">More...</a><br /></td></tr>
 <tr class="separator:a0a9afb895c38a27e371ed03474808bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4244e89159ea5a40145468acdde000"><td class="memItemLeft" align="right" valign="top"><a id="a2a4244e89159ea5a40145468acdde000"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a2a4244e89159ea5a40145468acdde000">has_energy_information</a> () const</td></tr>
+<tr class="memdesc:a2a4244e89159ea5a40145468acdde000"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>true</code> if energy_resolution and reference_energy are set <br /></td></tr>
+<tr class="separator:a2a4244e89159ea5a40145468acdde000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions setting info</div></td></tr>
 <tr class="memitem:a489eb448547905e4332e29872fe3849b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a489eb448547905e4332e29872fe3849b">set_type</a> (const <a class="el" href="classstir_1_1Scanner.html#a67a1829773e3df52965769e9e1b0a9dc">Type</a> &amp;new_type)</td></tr>
 <tr class="memdesc:a489eb448547905e4332e29872fe3849b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set scanner type  <a href="#a489eb448547905e4332e29872fe3849b">More...</a><br /></td></tr>
@@ -483,11 +480,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 </ul>
 <p>A further complication is that some scanners (including many Siemens scanners) insert virtual crystals in the sinogram data (corresponding to gaps between detector blocks). We currently define the blocks as the "virtual" ones, but provide extra members to find out how many of these virtual crystals there are.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is only sensible for discrete detector-based scanners. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000178">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000177">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
 <p class="enddd">derive from <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a> </p>
 </dd></dl>
 <pre class="fragment">\warning You have to call set_up() after using the \c set_* functions (except set_params()).
-</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000179">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
+</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000178">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af491e65bf3d29698e996a9cc19af29ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af491e65bf3d29698e996a9cc19af29ce">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
@@ -953,9 +950,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 <p>get the maximum number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_num_non_arccorrected_tangential_poss()</code> or so. Even better would be to replace it by a name relating to the number of detectors that are in coincidence with a a single detector in the ring, as that is the physical reason why there is a maximum number anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000180">Todo:</a></b></dt><dd>change name </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000179">Todo:</a></b></dt><dd>change name </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>, <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -984,7 +981,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 <p>get the default number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_default_num_arccorrected_tangential_poss()</code> or so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000180">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
@@ -1170,6 +1167,67 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 </div>
 </div>
+<a id="a672d57decc33db7a24e4bac8d9c65d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672d57decc33db7a24e4bac8d9c65d4c">&#9670;&nbsp;</a></span>get_energy_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stir::Scanner::get_energy_resolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the energy resolution as a fraction at the reference energy </p>
+<p>Values for PET scanners are around 0.1 at 511 keV, depending on the scanner of course.</p>
+<p>If less than or equal to 0, it is assumed to be unknown. </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
+
+</div>
+</div>
+<a id="a0a9afb895c38a27e371ed03474808bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9afb895c38a27e371ed03474808bf0">&#9670;&nbsp;</a></span>get_reference_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stir::Scanner::get_reference_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the reference energy in keV of the energy resolution </p>
+<p>For PET, normally set to 511 </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
+
+</div>
+</div>
 <a id="a489eb448547905e4332e29872fe3849b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a489eb448547905e4332e29872fe3849b">&#9670;&nbsp;</a></span>set_type()</h2>
 
@@ -1261,6 +1319,64 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 
 </div>
 </div>
+<a id="adf0ef051db0f7eba6cecc899bee0d037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0ef051db0f7eba6cecc899bee0d037">&#9670;&nbsp;</a></span>set_energy_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_energy_resolution </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>new_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the energy resolution of the system </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a672d57decc33db7a24e4bac8d9c65d4c" title="get the energy resolution as a fraction at the reference energy ">get_energy_resolution()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2ac365bfd11c93ac184d9fbe2c0e962a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac365bfd11c93ac184d9fbe2c0e962a">&#9670;&nbsp;</a></span>set_reference_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::Scanner::set_reference_energy </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>new_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the reference energy (in keV) of the energy resolution </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a0a9afb895c38a27e371ed03474808bf0" title="get the reference energy in keV of the energy resolution ">get_reference_energy()</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="Scanner_8h_source.html">Scanner.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/buildblock/<a class="el" href="Scanner_8cxx.html">Scanner.cxx</a></li>
@@ -1269,7 +1385,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlocksTests</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for encoding/finding NO symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>).  
+<p>A class for encoding/finding NO symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>).  
  <a href="classstir_1_1TrivialDataSymmetriesForViewSegmentNumbers.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="TrivialDataSymmetriesForViewSegmentNumbers_8h_source.html">stir/TrivialDataSymmetriesForViewSegmentNumbers.h</a>&quot;</code></p>
@@ -85,6 +85,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a05a36773f351e4804978335261f4fb5a">operator!=</a> (const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &amp;) const</td></tr>
 <tr class="memdesc:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check inequality.  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a05a36773f351e4804978335261f4fb5a">More...</a><br /></td></tr>
 <tr class="separator:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top"><a id="af330d13d5963b1347a753837c8ba87ef"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_related_viewgram_indices</b> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;ind) const</td></tr>
+<tr class="separator:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a4087ccd0e8b04789c92cb8010626aaa3">is_basic</a> (const <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const</td></tr>
 <tr class="memdesc:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">test if a view/segment is 'basic'  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a4087ccd0e8b04789c92cb8010626aaa3">More...</a><br /></td></tr>
 <tr class="separator:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,7 +100,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 <tr class="separator:ad746a346de3e8f1f19ce96ca1cc59316 inherit pro_types_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for encoding/finding NO symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>). </p>
+<div class="textblock"><p>A class for encoding/finding NO symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>). </p>
 <p>This class is mainly useful if you need a <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)...">DataSymmetriesForViewSegmentNumbers</a> object (e.g. for <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a>), but do not need/have projectors. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6a30baa01cd7658edf9bb58e2eef944f"></a>
@@ -169,7 +172,7 @@ typedef <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -52,7 +52,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for encoding/finding symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>).  
+<p>A class for encoding/finding symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>).  
  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="DataSymmetriesForViewSegmentNumbers_8h_source.html">stir/DataSymmetriesForViewSegmentNumbers.h</a>&quot;</code></p>
@@ -86,6 +86,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ac16420138275f5b4a9eb653301d0352b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#ac16420138275f5b4a9eb653301d0352b">num_related_view_segment_numbers</a> (const <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const</td></tr>
 <tr class="memdesc:ac16420138275f5b4a9eb653301d0352b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of view_segment_numbers related to 'v_s'  <a href="#ac16420138275f5b4a9eb653301d0352b">More...</a><br /></td></tr>
 <tr class="separator:ac16420138275f5b4a9eb653301d0352b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330d13d5963b1347a753837c8ba87ef"><td class="memItemLeft" align="right" valign="top"><a id="af330d13d5963b1347a753837c8ba87ef"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_related_viewgram_indices</b> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;ind) const</td></tr>
+<tr class="separator:af330d13d5963b1347a753837c8ba87ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2d0bd18e31e12547e3fb008da7b064"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">find_basic_view_segment_numbers</a> (<a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const =0</td></tr>
 <tr class="memdesc:a8d2d0bd18e31e12547e3fb008da7b064"><td class="mdescLeft">&#160;</td><td class="mdescRight">given an arbitrary view/segment, find the basic view/segment  <a href="#a8d2d0bd18e31e12547e3fb008da7b064">More...</a><br /></td></tr>
 <tr class="separator:a8d2d0bd18e31e12547e3fb008da7b064"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,9 +108,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a323b815ffb39d957dbaa3de1f7cfdd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for encoding/finding symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>). </p>
+<div class="textblock"><p>A class for encoding/finding symmetries. Works only on <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> (instead of <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>). </p>
 <p>This class (mainly used in <a class="el" href="classstir_1_1RelatedViewgrams.html" title="A class for storing viewgrams which are related by symmetry. ">RelatedViewgrams</a> and the projectors) is useful to store and use all information on symmetries common between the image representation and the projection data.</p>
-<p>The class mainly defines members to find <code>basic</code> <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a>. These form a 'basis' for all <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> in the sense that all <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> can be obtained by using symmetry operations on the 'basic' ones. </p>
+<p>The class mainly defines members to find <code>basic</code> <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a>. These form a 'basis' for all <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> in the sense that all <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> can be obtained by using symmetry operations on the 'basic' ones.</p>
+<dl class="section user"><dt>Warning: This class wil be renamed/revised to work with <code>ViewgramIndices</code> instead.</dt><dd></dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afce3cbbdeb7c8ede40ace815b4ef78a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afce3cbbdeb7c8ede40ace815b4ef78a8">&#9670;&nbsp;</a></span>operator==()</h2>
@@ -284,7 +288,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,0 +1,12 @@
+<map id="stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;" name="stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;">
+<area shape="rect" id="node4" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="752,153,965,209"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="157,168,271,195"/>
+<area shape="rect" id="node3" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="5,168,108,195"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="1015,161,1217,202"/>
+<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="1736,16,1999,72"/>
+<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="1736,100,1999,156"/>
+<area shape="rect" id="node8" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="1267,63,1529,119"/>
+<area shape="rect" id="node9" href="$classstir_1_1CListEventPENN.html" title="Class for handling PENNPet Explorer events. " alt="" coords="1323,193,1473,220"/>
+<area shape="rect" id="node10" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="1303,245,1493,286"/>
+<area shape="rect" id="node11" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="1319,310,1477,351"/>
+</map>

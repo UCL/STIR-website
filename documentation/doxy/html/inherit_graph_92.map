@@ -1,4 +1,25 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node2" href="$classstir_1_1SPECTListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="164,5,320,32"/>
+<area shape="rect" id="node1" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="5,607,108,633"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="173,581,287,608"/>
+<area shape="rect" id="node18" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file. " alt="" coords="156,632,304,659"/>
+<area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="352,479,592,521"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="365,297,579,353"/>
+<area shape="rect" id="node15" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="395,633,549,674"/>
+<area shape="rect" id="node16" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="355,698,589,739"/>
+<area shape="rect" id="node17" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="949,663,1095,689"/>
+<area shape="rect" id="node4" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="941,429,1103,470"/>
+<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="640,217,843,258"/>
+<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="891,136,1153,192"/>
+<area shape="rect" id="node9" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="891,283,1153,339"/>
+<area shape="rect" id="node11" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="891,5,1153,61"/>
+<area shape="rect" id="node12" href="$classstir_1_1CListEventPENN.html" title="Class for handling PENNPet Explorer events. " alt="" coords="947,85,1097,112"/>
+<area shape="rect" id="node13" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="927,217,1117,258"/>
+<area shape="rect" id="node14" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="943,363,1101,405"/>
+<area shape="rect" id="node8" href="$classstir_1_1ecat_1_1ecat7_1_1CListEventECAT966.html" title="Class for storing and using a coincidence event from a listmode file from the ECAT 966 scanner..." alt="" coords="1205,143,1349,185"/>
+<area shape="rect" id="node10" href="$classstir_1_1ecat_1_1ecat7_1_1CListRecordECAT962.html" title="A class for a general element of a listmode file. " alt="" coords="1201,487,1353,529"/>
+<area shape="rect" id="node19" href="$classstir_1_1ListGatingInput.html" title="A class recording external input to the scanner (normally used for gating) " alt="" coords="673,751,809,777"/>
+<area shape="rect" id="node20" href="$classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 966 scanner..." alt="" coords="953,714,1091,755"/>
+<area shape="rect" id="node21" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="692,531,791,557"/>
+<area shape="rect" id="node22" href="$classstir_1_1CListTimeROOT.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="949,545,1095,572"/>
+<area shape="rect" id="node23" href="$classstir_1_1ecat_1_1CListTimeECAT8__32bit.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="930,597,1114,638"/>
 </map>

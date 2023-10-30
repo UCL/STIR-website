@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -60,8 +60,6 @@ $(function() {
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;boost/math/constants/constants.hpp&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="error_8h_source.html">stir/error.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="warning_8h_source.html">stir/warning.h</a>&quot;</code><br />
 </div>
 <p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,33 +116,22 @@ PARAPET project</dd></dl>
 <h3>Macros and system dependencies:</h3>
 <ul>
 <li>
-<p class="startli">macros for namespace support: #defines STIR_NO_NAMESPACES if the compiler does not support namespaces #defines START_NAMESPACE_STIR etc.</p>
+<p class="startli">macros for namespace support: <code>#defines</code> <code>START_NAMESPACE_STIR</code> etc. </p>
 <p class="endli"></p>
 </li>
 <li>
-<p class="startli">#defines STIR_NO_COVARIANT_RETURN_TYPES when the compiler does not support virtual functions of a derived class differing only in the return type. Define when your compiler does not handle the following: </p><div class="fragment"><div class="line"><span class="keyword">class </span>A { <span class="keyword">virtual</span> A* f();}</div><div class="line"><span class="keyword">class </span>B:A { <span class="keyword">virtual</span> B* f(); }</div></div><!-- fragment --><p class="endli"></p>
-</li>
+preprocessor definitions which attempt to determine the operating system this is going to run on. use as <code>"#ifdef  __OS_WIN__ ... #elif ... #endif"</code> Possible values are <b>OS_WIN</b>, <b>OS_MAC</b>, <b>OS_VAX</b>, <b>OS_UNIX</b> The <b>OS_UNIX</b> case has 'subbranches'. At the moment we attempt to find out on <b>OS_AIX</b>, <b>OS_SUN</b>, <b>OS_OSF</b>, <b>OS_LINUX</b>. (If the attempts fail to determine the correct OS, you can pass the correct value as a preprocessor definition to the compiler)  </li>
 <li>
-<p class="startli">preprocessor definitions which attempt to determine the operating system this is going to run on. use as #ifdef <b>OS_WIN</b> ... #elif ... #endif Possible values are <b>OS_WIN</b>, <b>OS_MAC</b>, <b>OS_VAX</b>, <b>OS_UNIX</b> The <b>OS_UNIX</b> case has 'subbranches'. At the moment we attempt to find out on <b>OS_AIX</b>, <b>OS_SUN</b>, <b>OS_OSF</b>, <b>OS_LINUX</b>. (If the attempts fail to determine the correct OS, you can pass the correct value as a preprocessor definition to the compiler)</p>
+<p class="startli"><code>#includes</code> cstdio, cstdlib, cstring, cmath </p>
 <p class="endli"></p>
 </li>
 <li>
-<p class="startli">#includes cstdio, cstdlib, cstring, cmath</p>
-<p class="endli"></p>
-</li>
-<li>
-<p class="startli">a trick to get ANSI C++ 'for' scoping rules work for compilers which do not follow the new standard</p>
-<p class="endli"></p>
-</li>
-<li>
-<p class="startli">#ifdef STIR_ASSERT, then define our own assert, else include &lt;cassert&gt;</p>
-<p class="endli"></p>
-</li>
+<code>#ifdef</code> <code>STIR_ASSERT</code>, then define our own assert, else include &lt;cassert&gt;  </li>
 </ul>
 <h3>Speeding up std::copy</h3>
 <ul>
 <li>
-For old compilers (check the source!), overloads of std::copy for built-in types to use memmove (so it's faster) </li>
+For old compilers (check the source!), overloads of std::copy for built-in types to use memmove (so it's faster)  </li>
 </ul>
 <h3>stir namespace members declared here</h3>
 <ul>
@@ -161,15 +148,11 @@ For old compilers (check the source!), overloads of std::copy for built-in types
 <ul>
 <li>
 <code>stir/config.h</code> sets various preprocessor defines (generated from STIRConfig.in) </li>
-<li>
-<code><a class="el" href="error_8h.html" title="Declaration of stir::error() ">stir/error.h</a></code> defining <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">stir::error</a> </li>
-<li>
-<code><a class="el" href="warning_8h.html" title="Declaration of stir::warning() ">stir/warning.h</a></code> defining <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">stir::warning</a> </li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structstir_1_1CopyFill.html" title="Helper class for stir::copy_to and stir::fill_from. " alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node1" href="$classstir_1_1DataSymmetriesForDensels.html" title="A class for encoding/finding symmetries common to the geometry of the projection data and the discret..." alt="" coords="5,13,219,39"/>
+<area shape="rect" id="node2" href="$classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="267,5,480,47"/>
 </map>

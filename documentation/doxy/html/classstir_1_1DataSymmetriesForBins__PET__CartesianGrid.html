@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,9 @@ virtual unique_ptr&lt; <a class="el" href="classstir_1_1SymmetryOperation.html">
 <tr class="memitem:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a05a36773f351e4804978335261f4fb5a">operator!=</a> (const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &amp;) const</td></tr>
 <tr class="memdesc:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check inequality.  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a05a36773f351e4804978335261f4fb5a">More...</a><br /></td></tr>
 <tr class="separator:a05a36773f351e4804978335261f4fb5a inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top"><a id="af330d13d5963b1347a753837c8ba87ef"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_related_viewgram_indices</b> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;ind) const</td></tr>
+<tr class="separator:af330d13d5963b1347a753837c8ba87ef inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a4087ccd0e8b04789c92cb8010626aaa3">is_basic</a> (const <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;v_s) const</td></tr>
 <tr class="memdesc:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="mdescLeft">&#160;</td><td class="mdescRight">test if a view/segment is 'basic'  <a href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a4087ccd0e8b04789c92cb8010626aaa3">More...</a><br /></td></tr>
 <tr class="separator:a4087ccd0e8b04789c92cb8010626aaa3 inherit pub_methods_classstir_1_1DataSymmetriesForViewSegmentNumbers"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,13 +318,13 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 </div><div class="memdoc">
 
 <p>fills in a vector with the axial and tangential position numbers related to this bin </p>
-<p>It is guaranteed (or at least, it should be by the implementation of the derived class) that these AxTangPosNumbers are related for all related <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="A very simple class to store view and segment numbers. ">ViewSegmentNumbers</a> for this bin.</p>
+<p>It is guaranteed (or at least, it should be by the implementation of the derived class) that these AxTangPosNumbers are related for all related <a class="el" href="classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices ">ViewSegmentNumbers</a> for this bin.</p>
 <p>So, you can find all related bins by calling get_related_ViewSegmentNumbers() and <a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a0810e9873175e20d6c09d58ee50b8b8c" title="fills in a vector with the axial and tangential position numbers related to this bin ...">get_related_bins_factorised()</a>, which is what the default implementation does. (A derived class might do this in a more optimal way.)</p>
 <dl class="section warning"><dt>Warning</dt><dd><code>b</code> has to be a 'basic' bin </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a62531e2439767d3e72ff6b65244f7cda">stir::DataSymmetriesForBins</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -354,7 +357,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a0e4b1f620b82d8df0b785b8d8e4d445b">stir::DataSymmetriesForBins</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae7500ddd6fb8b83d2a02e331eaa19010">stir::ProjDataInfoCylindrical::get_ring_pair_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae7500ddd6fb8b83d2a02e331eaa19010">stir::ProjDataInfoCylindrical::get_ring_pair_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +390,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af1bcd775c3c8e53e96f03ee59d4eb929">stir::DataSymmetriesForBins</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +424,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a629fa74fa3e69acd616844c16fa96019">stir::DataSymmetriesForBins</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -454,7 +457,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#ac16420138275f5b4a9eb653301d0352b">stir::DataSymmetriesForViewSegmentNumbers</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a4743e5f2ecc108be2cc70e55525889c8">stir::ViewSegmentNumbers::segment_num()</a>, and <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a1617faa1623970b35a40b77f5923efa4">stir::ViewSegmentNumbers::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -487,7 +490,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 
 <p>Implements <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae7500ddd6fb8b83d2a02e331eaa19010">stir::ProjDataInfoCylindrical::get_ring_pair_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a4743e5f2ecc108be2cc70e55525889c8">stir::ViewSegmentNumbers::segment_num()</a>, and <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a1617faa1623970b35a40b77f5923efa4">stir::ViewSegmentNumbers::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae7500ddd6fb8b83d2a02e331eaa19010">stir::ProjDataInfoCylindrical::get_ring_pair_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +532,7 @@ axial shift <em>do_symmetry_shift_z</em>  </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,6 @@ $(function() {
 <li>get_axial_block_spacing()
 : <a class="el" href="classstir_1_1Scanner.html#a9e4e05636ea0b2eee8391438c72d61e1">stir::Scanner</a>
 </li>
-<li>get_axial_compression()
-: <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#abc550d64d602f907159471e2700b5514">stir::InterfileListmodeHeaderSiemens</a>
-</li>
 <li>get_axial_crystal_spacing()
 : <a class="el" href="classstir_1_1Scanner.html#aeaed6cd1900b071dfa0d830c17bd8b4b">stir::Scanner</a>
 </li>
@@ -125,7 +122,10 @@ $(function() {
 : <a class="el" href="classstir_1_1RelatedViewgrams.html#a90f157711f22621521654f2e80017b43">stir::RelatedViewgrams&lt; elemT &gt;</a>
 </li>
 <li>get_basic_view_segment_num()
-: <a class="el" href="classstir_1_1RelatedViewgrams.html#afbf73c3a2042626fa8a0a1e40bb6d8f5">stir::RelatedViewgrams&lt; elemT &gt;</a>
+: <a class="el" href="classstir_1_1RelatedViewgrams.html#ab22ec8a45e3b9064264e9ad6306eba69">stir::RelatedViewgrams&lt; elemT &gt;</a>
+</li>
+<li>get_basic_viewgram_indices()
+: <a class="el" href="classstir_1_1RelatedViewgrams.html#adb3a9151cc29302ddf16bb853ba7731c">stir::RelatedViewgrams&lt; elemT &gt;</a>
 </li>
 <li>get_bed_position_horizontal()
 : <a class="el" href="classstir_1_1ProjDataInfo.html#a03c532101a1a6143cf145cae44bbd064">stir::ProjDataInfo</a>
@@ -134,9 +134,9 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjDataInfo.html#a3b3575ec66862a3f819c0295a5ca12ad">stir::ProjDataInfo</a>
 </li>
 <li>get_bin()
-: <a class="el" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html#a6cd119fb400056493e7be3c76de8706d">stir::CListEventCylindricalScannerWithDiscreteDetectors</a>
-, <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ae7cf99f811322f0396d7b67348f090f5">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
+: <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ae7cf99f811322f0396d7b67348f090f5">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
 , <a class="el" href="classstir_1_1CListEventSAFIR.html#ab51d0a9dd05b09ad49112693c9add1ee">stir::CListEventSAFIR&lt; Derived &gt;</a>
+, <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#ac0a95446bd0ccb04a5917dab4500c116">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;</a>
 , <a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090">stir::ListEvent</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a5b4e785f8388daa878c91e22ce126e49">stir::ProjDataInfo</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindricalArcCorr.html#a262ee2ef3fe1b45c5ba10ac50459474b">stir::ProjDataInfoCylindricalArcCorr</a>
@@ -296,9 +296,9 @@ $(function() {
 , <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a61d31d81408353b65c43141204de6e78">stir::ProjDataInfoGenericNoArcCorr</a>
 </li>
 <li>get_detection_position()
-: <a class="el" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html#a0aa5137917477aefb7ba2825a9d8da16">stir::CListEventCylindricalScannerWithDiscreteDetectors</a>
-, <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ac2044be3af1753096b94ef494605a99c">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
+: <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ac2044be3af1753096b94ef494605a99c">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
 , <a class="el" href="classstir_1_1CListEventPENN.html#a1605782fb772f16cfaf6c1d8848582c9">stir::CListEventPENN</a>
+, <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a2271b998ba0d97d4466076c41b7b06c0">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;</a>
 , <a class="el" href="classstir_1_1ecat_1_1CListEventECAT8__32bit.html#a3a0a8031f5a0b82329c152d25e2e0add">stir::ecat::CListEventECAT8_32bit</a>
 , <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a48440860841938b6cb503ee4ed113e02">stir::GE::RDF_HDF5::CListRecordGEHDF5</a>
 </li>
@@ -356,24 +356,24 @@ $(function() {
 , <a class="el" href="classstir_1_1SPECTListModeData.html#ab7c31ae27236a3ecc67112586d68c980">stir::SPECTListModeData</a>
 </li>
 <li>get_empty_related_viewgrams()
-: <a class="el" href="classstir_1_1ProjData.html#a9c9ed7749f1480707f08378e81619625">stir::ProjData</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#ad7b240d1ae03ce50472210a388154adf">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjData.html#aa1a6ea4581594636e3c5ffc8926d0c9d">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#a04c92de5313eaa937f50c79d6f642614">stir::ProjDataInfo</a>
 </li>
 <li>get_empty_segment_by_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#ab4db619200d5729739977c1d75ea318c">stir::ProjData</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjData.html#a0f4ff96f1c755bfb46d0a7d5e9803d12">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#aad1a50eb350bffa449f01074d69054fd">stir::ProjDataInfo</a>
 </li>
 <li>get_empty_segment_by_view()
-: <a class="el" href="classstir_1_1ProjData.html#a1aec0be02894de32aaa1f0d584e0f398">stir::ProjData</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjData.html#a214a0011f3dead6e11ed53a557d4c092">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#afb228dd821ac76fabb06b363074e4dd6">stir::ProjDataInfo</a>
 </li>
 <li>get_empty_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#ae1093b25f19ac0fb916e97646b4984f7">stir::ProjData</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjData.html#a12c8065ba182d21e5ee1fe1a7c941456">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#a6b80443774898590d4558163f7dbe253">stir::ProjDataInfo</a>
 </li>
 <li>get_empty_viewgram()
-: <a class="el" href="classstir_1_1ProjData.html#a0eda7b386700bc147b8e74aabe4d19c1">stir::ProjData</a>
-, <a class="el" href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">stir::ProjDataInfo</a>
+: <a class="el" href="classstir_1_1ProjData.html#a02239e64e2fcd0e19c40e27daed730b2">stir::ProjData</a>
+, <a class="el" href="classstir_1_1ProjDataInfo.html#a9072da99f09c871618a178e5a204e019">stir::ProjDataInfo</a>
 </li>
 <li>get_empty_voxels_on_cartesian_grid()
 : <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#af0a9f9f9714979856095146b08946c13">stir::VoxelsOnCartesianGrid&lt; elemT &gt;</a>
@@ -542,12 +542,15 @@ $(function() {
 <li>get_keyword()
 : <a class="el" href="classstir_1_1KeyParser.html#abf4c2ecb4ba6a7896cc3e4303523a64f">stir::KeyParser</a>
 </li>
+<li>get_label_index()
+: <a class="el" href="classstir_1_1DiscretisedShape3D.html#ab7487af632ec2e29308ea34540774bf6">stir::DiscretisedShape3D</a>
+</li>
 <li>get_length()
 : <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; T &gt;</a>
 </li>
 <li>get_LOR()
-: <a class="el" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html#acf5318b6f7c0c81c6563231adc105470">stir::CListEventCylindricalScannerWithDiscreteDetectors</a>
-, <a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b">stir::CListEventSAFIR&lt; Derived &gt;</a>
+: <a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b">stir::CListEventSAFIR&lt; Derived &gt;</a>
+, <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a2e5e26c6f4d8e6dfa168d2f1b1cbecc4">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;</a>
 , <a class="el" href="classstir_1_1ListEvent.html#aa3ff35d983c9c3856cfa7fc17d0d7d4c">stir::ListEvent</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a4f1cb72c33d4f53e9ee95ca046c70e19">stir::ProjDataInfo</a>
 , <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#acdd1c91be93adca968dcf669253132b9">stir::ProjDataInfoCylindrical</a>
@@ -640,9 +643,6 @@ $(function() {
 </li>
 <li>get_maximum_number_of_sigmas()
 : <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#afdba14997ec54e5fc386218ecd0b1819">stir::ProjMatrixByBinPinholeSPECTUB</a>
-</li>
-<li>get_maximum_ring_difference()
-: <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#aa6549a5c2390a079f7f6e0f1ad14329b">stir::InterfileListmodeHeaderSiemens</a>
 </li>
 <li>get_mean()
 : <a class="el" href="classstir_1_1ROIValues.html#a9e3d2c17341c0d1817fa8e51e4551d4a">stir::ROIValues</a>
@@ -798,6 +798,12 @@ $(function() {
 , <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#a5a8b68236a4122158fabbb2de8a11551">stir::InputStreamFromROOTFileForCylindricalPET</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#aa6b1b4371ec809a95927b4cd3de2f312">stir::InputStreamFromROOTFileForECATPET</a>
 </li>
+<li>get_num_downsample_scanner_dets()
+: <a class="el" href="classstir_1_1ScatterSimulation.html#a01355d535ce9abec622c0ad3c26971c8">stir::ScatterSimulation</a>
+</li>
+<li>get_num_downsample_scanner_rings()
+: <a class="el" href="classstir_1_1ScatterSimulation.html#ae202092a8bdc5538a1b2793491a61868">stir::ScatterSimulation</a>
+</li>
 <li>get_num_frames()
 : <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#af812e4aad8176f41286a0353b79d9934">stir::SinglesRatesForTimeFrames</a>
 , <a class="el" href="classstir_1_1TimeFrameDefinitions.html#ae49e7dfcaf3fab582477a181ed8ba58b">stir::TimeFrameDefinitions</a>
@@ -822,9 +828,6 @@ $(function() {
 <li>get_num_planes_per_scanner_ring()
 : <a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a2bb9eb9e6ab04a0794714f49da2d4ee3">stir::DataSymmetriesForBins_PET_CartesianGrid</a>
 , <a class="el" href="classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html#adf8291a037a0fd36e61717e2e6368897">stir::DataSymmetriesForDensels_PET_CartesianGrid</a>
-</li>
-<li>get_num_projections()
-: <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#a2ab93f57f354384d94da65885fb75a19">stir::InterfileListmodeHeaderSiemens</a>
 </li>
 <li>get_num_related_bins()
 : <a class="el" href="classstir_1_1RelatedBins.html#a2087312977b0ad7cb53e0e17bfefa365">stir::RelatedBins</a>
@@ -914,8 +917,7 @@ $(function() {
 : <a class="el" href="classstir_1_1RelatedViewgrams.html#a44c94ed4f2dcd6dd7d5e1a1034a05d63">stir::RelatedViewgrams&lt; elemT &gt;</a>
 </li>
 <li>get_num_views()
-: <a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html#a94238f0ae8a71572bf27594b8f4b8f38">stir::InterfileListmodeHeaderSiemens</a>
-, <a class="el" href="classstir_1_1ProjData.html#a8e162fbc5ca9e32ff104003fe0a39dd1">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a8e162fbc5ca9e32ff104003fe0a39dd1">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a3b3532da9bac92e19e2bffac2bb38407">stir::ProjDataInfo</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a06a6c25c04dd445585c63f3a744a156d">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#af05877330eee6b5c33f0975b0d606976">stir::SegmentByView&lt; elemT &gt;</a>
@@ -997,7 +999,7 @@ $(function() {
 , <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#abdef34762e71532d7fca5035258b3791">stir::ProjDataInfoSubsetByView</a>
 </li>
 <li>get_physical_coordinates_for_indices()
-: <a class="el" href="classstir_1_1DiscretisedDensity.html#a66fdc416fec752218f752faf46c56725">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</a>
+: <a class="el" href="classstir_1_1DiscretisedDensity.html#aced02b384b869233e7a722a46227a756">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</a>
 </li>
 <li>get_physical_coordinates_for_LPS_coordinates()
 : <a class="el" href="classstir_1_1DiscretisedDensity.html#ab5f6d03c111812ab027ac6b4a2b4d81f">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</a>
@@ -1065,7 +1067,7 @@ $(function() {
 , <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#ab78544f671d339f42a42c950c2746466">stir::RigidObject3DMotionFromPolaris</a>
 </li>
 <li>get_related_bins()
-: <a class="el" href="classstir_1_1DataSymmetriesForBins.html#acd8822ee924f54d20c295b765c370db8">stir::DataSymmetriesForBins</a>
+: <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a25fb5da3c6182c8b6aae253b3535ba39">stir::DataSymmetriesForBins</a>
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#a16d530c69764550cd4ce960424056673">stir::TrivialDataSymmetriesForBins</a>
 </li>
 <li>get_related_bins_factorised()
@@ -1084,7 +1086,7 @@ $(function() {
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForViewSegmentNumbers.html#a8339e99d7838fcd7de9733eb1f9b7faa">stir::TrivialDataSymmetriesForViewSegmentNumbers</a>
 </li>
 <li>get_related_viewgrams()
-: <a class="el" href="classstir_1_1ProjData.html#a3a37927cc53b1bc2ad9e847aae817e84">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#ad639c98f833bcbbac756559813c58b7b">stir::ProjData</a>
 </li>
 <li>get_relative_coordinates_for_indices()
 : <a class="el" href="classstir_1_1DiscretisedDensity.html#a4fae1276c2d3825ccd604c29766bbe4b">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;</a>
@@ -1184,12 +1186,14 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae0ff857fa3831b8be8b26dba411f5488">stir::ProjDataInfoCylindrical</a>
 </li>
 <li>get_segment_by_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#a244fd252e09baa11ad2593d47440c225">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a3766de54f90ca8454fda35fb39995a1f">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#a0c7164d2fff7a4ef201b12bb0b2ea25f">stir::ProjDataFromStream</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a55d1d54b1e11c18ca0e695201e52bfdc">stir::ProjDataInMemory</a>
 </li>
 <li>get_segment_by_view()
-: <a class="el" href="classstir_1_1ProjData.html#ae70c2f4e25cbf6b678d0d260dedcfb8a">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#aac263f68713e68dd91c77341940a8645">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#a3e442b85a769c03ff4276e33fc86eea1">stir::ProjDataFromStream</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a3fca9a8dfe700b2490998a84f96343cd">stir::ProjDataInMemory</a>
 </li>
 <li>get_segment_num()
 : <a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">stir::Segment&lt; elemT &gt;</a>
@@ -1217,16 +1221,17 @@ $(function() {
 , <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#af95009e29f0edbdaea7a3951aeaa5f31">stir::SinglesRatesForTimeSlices</a>
 </li>
 <li>get_singles_rate()
-: <a class="el" href="classstir_1_1FrameSinglesRates.html#abe0cdb84f5d4b9d2878e471c82898062">stir::FrameSinglesRates</a>
+: <a class="el" href="classstir_1_1FrameSinglesRates.html#a9136f7ef37cffc53d931093ca8a72baa">stir::FrameSinglesRates</a>
 , <a class="el" href="classstir_1_1SinglesRates.html#a9baa4433b1e6679b9b85690a6a8c117b">stir::SinglesRates</a>
 </li>
 <li>get_singles_time_interval()
 : <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#a675f80bdde97c7f329cbb34fee9a2381">stir::SinglesRatesForTimeSlices</a>
 </li>
 <li>get_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#a229bcfb28cc1617a887b9d2e65171f0f">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a9458cb56edd2126d898f4d6732827409">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#a83e0d669afc9e7da5b41b713743f5374">stir::ProjDataFromStream</a>
 , <a class="el" href="classstir_1_1ProjDataGEAdvance.html#a5f44aaa1614c981a29c3fc83f15183c8">stir::ProjDataGEAdvance</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#ac1873527f8ae6b00a581e2ac43d2a58e">stir::ProjDataInMemory</a>
 , <a class="el" href="classstir_1_1Segment.html#a7bd21dc933b59f4ab0f2ea67ec3f401d">stir::Segment&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a3f7cf8d92b77b406858fe91208e57848">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a50cf8c92751d4426feb377ea844fcdca">stir::SegmentByView&lt; elemT &gt;</a>
@@ -1234,6 +1239,9 @@ $(function() {
 <li>get_sinogram_and_ring_coordinates()
 : <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListEventDataECAT962.html#a84e7611fad48ae16a28c4284f92afead">stir::ecat::ecat7::CListEventDataECAT962</a>
 , <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListEventDataECAT966.html#aae7f1fd57e3a78fee995ee248510ca7a">stir::ecat::ecat7::CListEventDataECAT966</a>
+</li>
+<li>get_sinogram_indices()
+: <a class="el" href="classstir_1_1Sinogram.html#a0ad857288b7526d4f5ac31983fe1866d">stir::Sinogram&lt; elemT &gt;</a>
 </li>
 <li>get_slice_start_time()
 : <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#ab7f780ff45174492e7612b1e626de19a">stir::SinglesRatesForTimeSlices</a>
@@ -1421,9 +1429,13 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjData.html#afc95d7492a7da4f72f50527658d1e830">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#add0dfa9f96e6f1433212ffd04ef9623d">stir::ProjDataFromStream</a>
 , <a class="el" href="classstir_1_1ProjDataGEAdvance.html#a7d5b4df7c32a70b126f8bc4af6cda220">stir::ProjDataGEAdvance</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a4e327592d3614c655f75885a017a79a4">stir::ProjDataInMemory</a>
 , <a class="el" href="classstir_1_1Segment.html#ab9877ab2b604c7ced4423028982a98af">stir::Segment&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a396c3f6309746650a1a10184dce7ac39">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#ab541e227313db0ac3e723de5657144e8">stir::SegmentByView&lt; elemT &gt;</a>
+</li>
+<li>get_viewgram_indices()
+: <a class="el" href="classstir_1_1Viewgram.html#a38adb5f7cc43a1f7cac7d3d9e07ebf30">stir::Viewgram&lt; elemT &gt;</a>
 </li>
 <li>get_volume_of_unit_cell()
 : <a class="el" href="classstir_1_1Shape3DWithOrientation.html#ae4feb24b76a3619e4457ddb21a7ea890">stir::Shape3DWithOrientation</a>
@@ -1434,6 +1446,9 @@ $(function() {
 <li>get_voxel_weight()
 : <a class="el" href="classstir_1_1DiscretisedShape3D.html#ad7b9ba52d36e31091e1f202fb448e85f">stir::DiscretisedShape3D</a>
 , <a class="el" href="classstir_1_1Shape3D.html#ab00f4f2a061a9a875446373572ad3179">stir::Shape3D</a>
+</li>
+<li>get_wall_clock_timer_value()
+: <a class="el" href="classstir_1_1TimedObject.html#a39b9924e874ce94ddba9068765794658">stir::TimedObject</a>
 </li>
 <li>get_weights()
 : <a class="el" href="classstir_1_1LogcoshPrior.html#a357b31499fbd643d52d5d877574bd583">stir::LogcoshPrior&lt; elemT &gt;</a>
@@ -1471,7 +1486,7 @@ $(function() {
 </li>
 <li>grow()
 : <a class="el" href="classstir_1_1Array.html#a65d8d70124654379b1bc507829e14b67">stir::Array&lt; num_dimensions, elemT &gt;</a>
-, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a48fc2fa3002ddbe4593782f130b47b67">stir::Array&lt; 1, elemT &gt;</a>
+, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a08af1f7966eba8301b4880709f7ea79f">stir::Array&lt; 1, elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelatedViewgrams.html#aee961f18d1589bb2f1f7d8fa6790c943">stir::RelatedViewgrams&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#af6b2e196df565a98e9852cfcf7c62abb">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a4d0331278312dd2c854fa7191cbc6197">stir::SegmentByView&lt; elemT &gt;</a>
@@ -1486,7 +1501,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:44:10 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

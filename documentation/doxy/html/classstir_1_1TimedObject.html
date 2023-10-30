@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -119,13 +119,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a23a18a40b2f1e1bb4132c1c5347cf12d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">stop_timers</a> () const</td></tr>
 <tr class="memdesc:a23a18a40b2f1e1bb4132c1c5347cf12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all timers kept by this object  <a href="#a23a18a40b2f1e1bb4132c1c5347cf12d">More...</a><br /></td></tr>
 <tr class="separator:a23a18a40b2f1e1bb4132c1c5347cf12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03301ca66aa639b11129f4081c4cca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#ad03301ca66aa639b11129f4081c4cca8">start_timers</a> () const</td></tr>
-<tr class="memdesc:ad03301ca66aa639b11129f4081c4cca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="#ad03301ca66aa639b11129f4081c4cca8">More...</a><br /></td></tr>
-<tr class="separator:ad03301ca66aa639b11129f4081c4cca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4085959b7fca857cd90f8d1ab78400c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9">start_timers</a> (bool do_reset=false) const</td></tr>
+<tr class="memdesc:a4085959b7fca857cd90f8d1ab78400c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="#a4085959b7fca857cd90f8d1ab78400c9">More...</a><br /></td></tr>
+<tr class="separator:a4085959b7fca857cd90f8d1ab78400c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9f1ebea34cc8858ae8d12547ed849f"><td class="memItemLeft" align="right" valign="top"><a id="a1e9f1ebea34cc8858ae8d12547ed849f"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a1e9f1ebea34cc8858ae8d12547ed849f">get_CPU_timer_value</a> () const</td></tr>
-<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the timer (since first use or last reset) <br /></td></tr>
+<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the CPU timer (since first use or last reset) <br /></td></tr>
 <tr class="separator:a1e9f1ebea34cc8858ae8d12547ed849f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b9924e874ce94ddba9068765794658"><td class="memItemLeft" align="right" valign="top"><a id="a39b9924e874ce94ddba9068765794658"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a39b9924e874ce94ddba9068765794658">get_wall_clock_timer_value</a> () const</td></tr>
+<tr class="memdesc:a39b9924e874ce94ddba9068765794658"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the wall-clock timer (since first use or last reset) <br /></td></tr>
+<tr class="separator:a39b9924e874ce94ddba9068765794658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>base class for all objects which need timers. At the moment, there's only a CPU timer. </p>
@@ -157,12 +161,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <p>stop all timers kept by this object </p>
 <p>Note: function is const such that it can be called in a function of a derived class that is const. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1DataProcessor.html#ada20dff76c8a59988ef1db22b5de3947">stir::DataProcessor&lt; TargetT &gt;::apply()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a171dff56100ad503dc230f55b4ab6fbd">stir::BackProjectorByBin::back_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1DataProcessor.html#adceefca94f0a82be063dd0e56b3c21a2">stir::DataProcessor&lt; TargetT &gt;::set_up()</a>, <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>, and <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html#ac673d2b41318e2b9f16796b1dcab55b3">stir::BackProjectorByBinUsingInterpolation::use_piecewise_linear_interpolation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1DataProcessor.html#ada20dff76c8a59988ef1db22b5de3947">stir::DataProcessor&lt; TargetT &gt;::apply()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1DataProcessor.html#adceefca94f0a82be063dd0e56b3c21a2">stir::DataProcessor&lt; TargetT &gt;::set_up()</a>, and <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>.</p>
 
 </div>
 </div>
-<a id="ad03301ca66aa639b11129f4081c4cca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad03301ca66aa639b11129f4081c4cca8">&#9670;&nbsp;</a></span>start_timers()</h2>
+<a id="a4085959b7fca857cd90f8d1ab78400c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4085959b7fca857cd90f8d1ab78400c9">&#9670;&nbsp;</a></span>start_timers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +177,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">void stir::TimedObject::start_timers </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>do_reset</em> = <code>false</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -187,7 +192,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <p>start all timers kept by this object </p>
 <p>Note: function is const such that it can be called in a function of a derived class that is const. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1DataProcessor.html#ada20dff76c8a59988ef1db22b5de3947">stir::DataProcessor&lt; TargetT &gt;::apply()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a171dff56100ad503dc230f55b4ab6fbd">stir::BackProjectorByBin::back_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">stir::ForwardProjectorByBin::forward_project()</a>, <a class="el" href="classstir_1_1DataProcessor.html#adceefca94f0a82be063dd0e56b3c21a2">stir::DataProcessor&lt; TargetT &gt;::set_up()</a>, <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>, and <a class="el" href="classstir_1_1BackProjectorByBinUsingInterpolation.html#ac673d2b41318e2b9f16796b1dcab55b3">stir::BackProjectorByBinUsingInterpolation::use_piecewise_linear_interpolation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1DataProcessor.html#ada20dff76c8a59988ef1db22b5de3947">stir::DataProcessor&lt; TargetT &gt;::apply()</a>, <a class="el" href="classstir_1_1DataProcessor.html#adceefca94f0a82be063dd0e56b3c21a2">stir::DataProcessor&lt; TargetT &gt;::set_up()</a>, and <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>.</p>
 
 </div>
 </div>
@@ -198,7 +203,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

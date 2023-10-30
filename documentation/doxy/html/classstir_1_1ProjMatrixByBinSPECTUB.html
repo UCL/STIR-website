@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -74,6 +74,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a63d7c5ba813b6778dd4eb7385bcfd65a">ProjMatrixByBinSPECTUB</a> ()</td></tr>
 <tr class="memdesc:a63d7c5ba813b6778dd4eb7385bcfd65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (calls set_defaults()) <br /></td></tr>
 <tr class="separator:a63d7c5ba813b6778dd4eb7385bcfd65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b260ebd31ffe94eee89997da7a8846"><td class="memItemLeft" align="right" valign="top"><a id="aa4b260ebd31ffe94eee89997da7a8846"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ProjMatrixByBinSPECTUB</b> (const <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html">ProjMatrixByBinSPECTUB</a> &amp;)=delete</td></tr>
+<tr class="separator:aa4b260ebd31ffe94eee89997da7a8846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4236872a84c83b95c955feaedc2098ea"><td class="memItemLeft" align="right" valign="top"><a id="a4236872a84c83b95c955feaedc2098ea"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">~ProjMatrixByBinSPECTUB</a> ()</td></tr>
 <tr class="memdesc:a4236872a84c83b95c955feaedc2098ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor (deallocates UB SPECT memory) <br /></td></tr>
@@ -103,9 +106,9 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">D
 <tr class="memitem:a3efc2720551ceac1d795c1b59d03f63a"><td class="memItemLeft" align="right" valign="top"><a id="a3efc2720551ceac1d795c1b59d03f63a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_attenuation_image_sptr</b> (const std::string &amp;value)</td></tr>
 <tr class="separator:a3efc2720551ceac1d795c1b59d03f63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aba85154e719015156b174e98a951f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a8aba85154e719015156b174e98a951f2">set_resolution_model</a> (const float collimator_sigma_0_in_mm, const float collimator_slope_in_mm, const bool full_3D=true)</td></tr>
-<tr class="memdesc:a8aba85154e719015156b174e98a951f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters for the depth-dependent resolution model.  <a href="#a8aba85154e719015156b174e98a951f2">More...</a><br /></td></tr>
-<tr class="separator:a8aba85154e719015156b174e98a951f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#aa246bdf6cc8e19f7d9575ee9ca695c24">set_resolution_model</a> (const float collimator_sigma_0_in_mm, const float collimator_slope, const bool full_3D=true)</td></tr>
+<tr class="memdesc:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters for the depth-dependent resolution model.  <a href="#aa246bdf6cc8e19f7d9575ee9ca695c24">More...</a><br /></td></tr>
+<tr class="separator:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; ProjMatrixByBinSPECTUB, ProjMatrixByBin, ProjMatrixByBin &gt;</a></td></tr>
 <tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
@@ -167,13 +170,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">stop_timers</a> () const</td></tr>
 <tr class="memdesc:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all timers kept by this object  <a href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">More...</a><br /></td></tr>
 <tr class="separator:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#ad03301ca66aa639b11129f4081c4cca8">start_timers</a> () const</td></tr>
-<tr class="memdesc:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="classstir_1_1TimedObject.html#ad03301ca66aa639b11129f4081c4cca8">More...</a><br /></td></tr>
-<tr class="separator:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9">start_timers</a> (bool do_reset=false) const</td></tr>
+<tr class="memdesc:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9">More...</a><br /></td></tr>
+<tr class="separator:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top"><a id="a1e9f1ebea34cc8858ae8d12547ed849f"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a1e9f1ebea34cc8858ae8d12547ed849f">get_CPU_timer_value</a> () const</td></tr>
-<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the timer (since first use or last reset) <br /></td></tr>
+<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the CPU timer (since first use or last reset) <br /></td></tr>
 <tr class="separator:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top"><a id="a39b9924e874ce94ddba9068765794658"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a39b9924e874ce94ddba9068765794658">get_wall_clock_timer_value</a> () const</td></tr>
+<tr class="memdesc:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the wall-clock timer (since first use or last reset) <br /></td></tr>
+<tr class="separator:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -342,8 +349,8 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 
 </div>
 </div>
-<a id="a8aba85154e719015156b174e98a951f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aba85154e719015156b174e98a951f2">&#9670;&nbsp;</a></span>set_resolution_model()</h2>
+<a id="aa246bdf6cc8e19f7d9575ee9ca695c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa246bdf6cc8e19f7d9575ee9ca695c24">&#9670;&nbsp;</a></span>set_resolution_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +365,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>collimator_slope_in_mm</em>, </td>
+          <td class="paramname"><em>collimator_slope</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -415,7 +422,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

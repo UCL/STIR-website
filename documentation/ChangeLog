@@ -1,4 +1,2649 @@
 -------------------------------
+Mon, 30 Oct 2023 05:21:06 +0000  Kris Thielemans  
+
+Merge pull request #1285 from KrisThielemans/prepv5.2.0
+Prepare for v5.2.0
+
+-------------------------------
+Sun, 29 Oct 2023 23:49:54 +0000  Kris Thielemans  
+
+reduce amount of doxygen warnings
+
+
+src/Doxyfile.in
+src/experimental/utilities/list_TAC_ROI_values.cxx
+src/include/stir/DetectorCoordinateMap.h
+src/include/stir/GeometryBlocksOnCylindrical.h
+src/include/stir/HighResWallClockTimer.h
+src/include/stir/recon_buildblock/ForwardProjectorByBinUsingRayTracing.h
+src/include/stir/recon_buildblock/PLSPrior.h
+src/include/stir/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.h
+src/include/stir/recon_buildblock/ProjMatrixByBinUsingRayTracing.h
+src/include/stir_experimental/modelling/BloodFrameData.inl
+src/include/stir_experimental/motion/RigidObject3DTransformation.h
+src/include/stir_experimental/recon_buildblock/ProjMatrixByDenselOnCartesianGridUsingElement.h
+src/include/stir_experimental/recon_buildblock/ProjMatrixByDenselUsingRayTracing.h
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_linear.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_piecewise_linear.cxx
+
+-------------------------------
+Sun, 29 Oct 2023 23:49:54 +0000  Kris Thielemans  
+
+corrected doxygen and removed some obsolete macros
+
+
+src/include/stir/common.h
+
+-------------------------------
+Sun, 29 Oct 2023 23:49:54 +0000  Kris Thielemans  
+
+update release 5.2.0 dates
+
+
+documentation/history.htm
+documentation/release_5.2.htm
+
+-------------------------------
+Sun, 29 Oct 2023 23:49:54 +0000  Kris Thielemans  
+
+add PR template
+
+
+.github/PULL_REQUEST_TEMPLATE.md
+
+-------------------------------
+Sun, 29 Oct 2023 21:54:23 +0000  Kris Thielemans  
+
+removed mention of Travis
+
+
+CONTRIBUTING.md
+
+-------------------------------
+Sun, 29 Oct 2023 21:51:32 +0000  Kris Thielemans  
+
+updated version number to 5.2.0
+
+
+CMakeLists.txt
+VERSION.txt
+recon_test_pack/run_ML_norm_tests.sh
+recon_test_pack/run_root_GATE.sh
+recon_test_pack/run_scatter_tests.sh
+recon_test_pack/run_test_listmode_recon.sh
+recon_test_pack/run_test_simulate_and_recon.sh
+recon_test_pack/run_test_simulate_and_recon_with_motion.sh
+recon_test_pack/run_test_zoom_image.sh
+recon_test_pack/run_tests.sh
+recon_test_pack/simulate_PET_data_for_tests.sh
+
+-------------------------------
+Sun, 29 Oct 2023 21:44:13 +0000  Kris Thielemans  
+
+update STIR general overview and user's guide
+The general overview was wildly out-of-date... Now somewhat ok.
+
+The User's guide still contained old material as well, now removed.
+
+
+documentation/STIR-UsersGuide.tex
+documentation/STIR-general-overview.tex
+documentation/release_5.2.htm
+
+-------------------------------
+Sun, 29 Oct 2023 15:47:11 +0000  Kris Thielemans  
+
+updated mailmap and CITATION.cff
+
+
+.mailmap
+CITATION.cff
+scripts/maintenance/git-fame.sh
+
+-------------------------------
+Sun, 29 Oct 2023 14:18:09 +0000  Kris Thielemans  
+
+update developer's overview
+It was wildly out-of-date w.r.t. C++ ffeatures etc.
+
+
+documentation/STIR-developers-overview.tex
+documentation/release_5.2.htm
+
+-------------------------------
+Thu, 26 Oct 2023 16:59:24 +0100  Kris Thielemans  
+
+Merge pull request #1281 from KrisThielemans/reduceWarnings
+Reduce warnings and minor improvements for clarity
+
+-------------------------------
+Thu, 26 Oct 2023 12:12:18 +0100  Kris Thielemans  
+
+sensible error when wring ProjData with subsets
+we cannot do this yet, but the error was confusing.
+
+also minor code clean-up
+
+
+src/IO/interfile.cxx
+
+-------------------------------
+Thu, 26 Oct 2023 12:03:13 +0100  Kris Thielemans  
+
+Avoid re-running set_up() for ProjMatrixByBinUsingRayTracing
+The `set_up()` method now skips further processing if it was already called
+with data of the same characteristics. This will means that any cached data
+will be re-used, potentially leading to a speed-up when re-using it from Python.
+
+
+documentation/release_5.2.htm
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+
+-------------------------------
+Thu, 26 Oct 2023 11:39:54 +0100  Kris Thielemans  
+
+convert some warning() to info()
+in Debug mode ProjData.read_from_file was writing warnings about which file
+format was going to be used. These are now converted to info() calls
+at verbosity-level 3.
+
+Also cleaned up some old-style calls to error().
+
+
+src/buildblock/ProjData.cxx
+
+-------------------------------
+Thu, 26 Oct 2023 08:32:37 +0100  Kris Thielemans  
+
+update warnings
+- make warning on too small num_tangential_LORs clearer
+- remove warning on too large voxel-size for backprojection, as the matrix
+will always give artefacts for backprojecting (unless using many many LORs)
+
+
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+
+-------------------------------
+Thu, 26 Oct 2023 08:39:09 +0200  Kris Thielemans  
+
+Merge pull request #1279 from KrisThielemans/mMRscatterScale
+use different min/max thresholds for scatter scale for mMR example
+
+-------------------------------
+Thu, 26 Oct 2023 07:37:16 +0100  Kris Thielemans  
+
+use different min/max thresholds for scatter scale for mMR example [ci skip]
+Fixes #1163
+
+
+documentation/release_5.2.htm
+examples/Siemens-mMR/scatter_and_recon.sh
+examples/Siemens-mMR/scatter_estimation_par_files/README.md
+examples/Siemens-mMR/scatter_estimation_par_files/postfilter_Gaussian_for_mask.par
+examples/Siemens-mMR/scatter_estimation_par_files/run_reconstruction.par
+examples/Siemens-mMR/scatter_estimation_par_files/scatter_estimation.par
+examples/Siemens-mMR/scatter_estimation_par_files/tail_fitting.par
+
+-------------------------------
+Wed, 25 Oct 2023 15:22:56 +0200  Kris Thielemans  
+
+Merge pull request #1276 from KrisThielemans/parsingFix
+fix buffer-overrun when parsing if no keyword on line
+
+-------------------------------
+Wed, 25 Oct 2023 15:06:35 +0200  Kris Thielemans  
+
+Merge pull request #1278 from KrisThielemans/CMakeCMP0023Fix
+[CMake] avoid CMP0023 warning
+
+-------------------------------
+Wed, 25 Oct 2023 09:27:17 +0100  Kris Thielemans  
+
+[CMake] avoid CMP0023 warning
+add PUBLIC in most target_link_libraries statements (except if PRIVATE)_
+
+
+src/IO/CMakeLists.txt
+src/Shape_buildblock/CMakeLists.txt
+src/analytic/FBP2D/CMakeLists.txt
+src/analytic/FBP3DRP/CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/data_buildblock/CMakeLists.txt
+src/display/CMakeLists.txt
+src/eval_buildblock/CMakeLists.txt
+src/experimental/buildblock/CMakeLists.txt
+src/experimental/listmode/CMakeLists.txt
+src/experimental/motion/CMakeLists.txt
+src/experimental/motion_utilities/CMakeLists.txt
+src/experimental/recon_buildblock/CMakeLists.txt
+src/iterative/KOSMAPOSL/CMakeLists.txt
+src/iterative/OSMAPOSL/CMakeLists.txt
+src/iterative/OSSPS/CMakeLists.txt
+src/listmode_buildblock/CMakeLists.txt
+src/modelling_buildblock/CMakeLists.txt
+src/numerics_buildblock/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+src/scatter_buildblock/CMakeLists.txt
+src/spatial_transformation_buildblock/CMakeLists.txt
+src/swig/CMakeLists.txt
+src/utilities/UPENN/CMakeLists.txt
+
+-------------------------------
+Wed, 25 Oct 2023 07:55:41 +0100  Kris Thielemans  
+
+fix buffer-overrun when parsing if no keyword on line
+
+
+src/buildblock/KeyParser.cxx
+
+-------------------------------
+Wed, 25 Oct 2023 08:39:55 +0200  Kris Thielemans  
+
+Merge pull request #1275 from KrisThielemans/SPECTradiuswarning
+SPECTUB: write warning if image radius is larger than detector radius
+
+-------------------------------
+Tue, 24 Oct 2023 23:01:23 +0100  Kris Thielemans  
+
+SPECTUB: write warning if image radius is larger than detector radius
+
+
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Wed, 18 Oct 2023 23:21:36 +0200  Kris Thielemans  
+
+Merge pull request #1273 from KrisThielemans/ProjDataIndices
+Introduce classes for ProjData indices
+
+-------------------------------
+Wed, 18 Oct 2023 22:20:57 +0100  Kris Thielemans  
+
+minor updates to release notes for v5.2
+- fixes to text on SegmentIndices etc
+- flag that we will require C++ 14 in the next major version
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Mon, 16 Oct 2023 20:49:23 +0100  Kris Thielemans  
+
+fix assert statement after updating to *Indices
+
+
+src/include/stir/Sinogram.inl
+src/include/stir/Viewgram.inl
+
+-------------------------------
+Mon, 16 Oct 2023 12:27:04 +0100  Kris Thielemans  
+
+minimal update to work with ViewgramIndices
+A lot of work to be done here, but that has to be after the next release.
+
+
+src/include/stir/DataSymmetriesForViewSegmentNumbers.h
+
+-------------------------------
+Mon, 16 Oct 2023 07:30:08 +0100  Kris Thielemans  
+
+update release notes
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Mon, 16 Oct 2023 07:30:08 +0100  Kris Thielemans  
+
+Add constructors and get* members using *Indices classes
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/SegmentBySinogram.cxx
+src/buildblock/SegmentByView.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInfo.h
+src/include/stir/RelatedViewgrams.h
+src/include/stir/RelatedViewgrams.inl
+src/include/stir/Segment.h
+src/include/stir/Segment.inl
+src/include/stir/SegmentBySinogram.h
+src/include/stir/SegmentBySinogram.inl
+src/include/stir/SegmentByView.h
+src/include/stir/SegmentByView.inl
+src/include/stir/Sinogram.h
+src/include/stir/Sinogram.inl
+src/include/stir/ViewSegmentNumbers.h
+src/include/stir/Viewgram.h
+src/include/stir/Viewgram.inl
+src/swig/stir_projdata.i
+
+-------------------------------
+Sat, 14 Oct 2023 23:25:16 +0100  Kris Thielemans  
+
+implemented *Indices classes for projdata indexing
+
+
+src/include/stir/Bin.h
+src/include/stir/Bin.inl
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/SegmentIndices.h
+src/include/stir/SegmentIndices.inl
+src/include/stir/SinogramIndices.h
+src/include/stir/SinogramIndices.inl
+src/include/stir/ViewSegmentNumbers.h
+src/include/stir/ViewSegmentNumbers.inl
+src/include/stir/ViewgramIndices.h
+src/include/stir/ViewgramIndices.inl
+
+-------------------------------
+Tue, 10 Oct 2023 21:44:59 +0200  Kris Thielemans  
+
+Merge pull request #1272 from markus-jehl/issue/1201-test-interpolate-projdata-instability
+Making interpolate projdata tests more stable
+
+-------------------------------
+Sun, 8 Oct 2023 20:14:02 +0200  Kris Thielemans  
+
+Merge pull request #1271 from UCL/GHA-reenable-ROOT-test
+[GHA] re-enable GATE ROOT test.
+
+Fixes #1242
+
+-------------------------------
+Sun, 8 Oct 2023 18:46:01 +0100  Kris Thielemans  
+
+[GHA] re-enable GATE ROOT test
+Fixes #1242
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Mon, 2 Oct 2023 12:47:47 +0200  Kris Thielemans  
+
+Merge pull request #1269 from markus-jehl/issue/1268-listmode-reconstruction-creates-cache-files-with-wrong-numbers
+Expose listmode reconstruction in SWIG and fix an issue with cache naming
+
+-------------------------------
+Mon, 2 Oct 2023 09:08:14 +0000  Markus Jehl  
+
+Exposed listmode reconstruction in SWIG and fixed an issue with cache file naming.
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/swig/stir.i
+src/swig/stir_objectivefunctions.i
+
+-------------------------------
+Sun, 1 Oct 2023 11:19:27 +0200  Kris Thielemans  
+
+Merge pull request #1267 from KrisThielemans/KeyParserKeywordFix
+Allow KeyParser keyword with colon
+
+-------------------------------
+Sun, 1 Oct 2023 00:58:20 +0100  Kris Thielemans  
+
+cope better with Siemens Interfile date/time keywords
+make a function that ignores keyword for all (?) time zones
+
+
+src/IO/InterfileHeaderSiemens.cxx
+src/include/stir/IO/InterfileHeaderSiemens.h
+
+-------------------------------
+Sun, 1 Oct 2023 00:29:23 +0100  Kris Thielemans  
+
+Check for := when parsing Interfile headers
+we checked only for :, resulting that keywords that contain a : were not possible.
+
+
+documentation/release_5.2.htm
+src/buildblock/KeyParser.cxx
+src/include/stir/KeyParser.h
+
+-------------------------------
+Sun, 1 Oct 2023 00:26:21 +0100  Kris Thielemans  
+
+correct README regarding default value of pardir
+
+
+examples/Siemens-mMR/README.md
+
+-------------------------------
+Sun, 1 Oct 2023 00:25:04 +0100  Kris Thielemans  
+
+Merge pull request #631 from UCL/ECAT8axial_effects
+use axial_effects for ECAT8 normalisation
+
+-------------------------------
+Sat, 30 Sep 2023 23:13:25 +0100  Kris Thielemans  
+
+update badges in README.md
+
+
+README.md
+
+-------------------------------
+Sat, 30 Sep 2023 22:53:23 +0100  Kris Thielemans  
+
+replace .zenodo.json with CITATION.cff (#1266)
+replace .zenodo.json with CITATION.cff
+
+Fixes #193
+
+.appveyor.yml
+.github/workflows/build-test.yml
+.github/workflows/cffconvert.yml
+.zenodo.json
+CITATION.cff
+
+-------------------------------
+Thu, 28 Sep 2023 00:46:39 +0100  Kris Thielemans  
+
+Merge pull request #1265 from markus-jehl/issue/1255-data-races-normal-distribution
+Create one normal distribution per omp thread to avoid data races
+
+-------------------------------
+Wed, 27 Sep 2023 13:00:14 +0000  Markus Jehl  
+
+Made constructor explicit and added special handling for case with sigma equals zero.
+
+
+src/include/stir/DetectorCoordinateMap.h
+
+-------------------------------
+Wed, 27 Sep 2023 08:36:50 +0000  Markus Jehl  
+
+Also storing separate generators per thread.
+
+
+src/include/stir/DetectorCoordinateMap.h
+
+-------------------------------
+Tue, 26 Sep 2023 11:58:14 +0000  Markus Jehl  
+
+Create one normal distribution per omp thread to avoid data races
+
+
+src/include/stir/DetectorCoordinateMap.h
+
+-------------------------------
+Mon, 25 Sep 2023 14:18:29 +0000  Markus Jehl  
+
+Changed the projdata comparison to focus on the shape, rather than voxel values.
+
+
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Sun, 24 Sep 2023 10:19:21 +0100  Kris Thielemans  
+
+Merge pull request #1264 from KrisThielemans/minorFixesImprovements
+Minor fixes.improvements (mostly SWIG)
+
+-------------------------------
+Sat, 23 Sep 2023 22:21:52 +0100  Kris Thielemans  
+
+[SWIG] added RadionuclideDB
+
+
+documentation/release_5.2.htm
+examples/python/construct_projdata_demo.py
+src/swig/stir_exam.i
+src/swig/test/python/test_buildblock.py
+
+-------------------------------
+Sat, 23 Sep 2023 22:21:52 +0100  Kris Thielemans  
+
+[SWIG] add DetectionPosition(Pair) and reduce warnings
+Also make Bin.time_frame_num a variable in Python like other members
+
+
+documentation/release_5.2.htm
+src/swig/stir.i
+src/swig/stir_projdata.i
+src/swig/stir_reconstruction.i
+src/swig/test/python/test_buildblock.py
+
+-------------------------------
+Sat, 23 Sep 2023 22:21:14 +0100  Kris Thielemans  
+
+add Succeeded.succeeded() method
+this enables more concise code (avoiding the need for comparing with Succeeded::yes
+which is especially verbose in Python).
+
+
+documentation/release_5.2.htm
+examples/python/recon_demo.py
+src/include/stir/Succeeded.h
+
+-------------------------------
+Sat, 23 Sep 2023 22:21:14 +0100  Kris Thielemans  
+
+friendlier IterativeReconstruction::set_up()
+- throw as opposed to return Succeeded::no, improving user experience in Python
+- more informative messages if anything is wrong
+
+
+src/recon_buildblock/IterativeReconstruction.cxx
+
+-------------------------------
+Sat, 23 Sep 2023 08:22:53 +0100  Kris Thielemans  
+
+one more unitialised variable in ProjMatrixByBinSPECTUB
+
+
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Tue, 19 Sep 2023 21:35:02 +0100  Kris Thielemans  
+
+fix listmode recon with caching after ProjDataInMemory change
+We converted additive sinogram to ProjDataFromStream to
+access get_bin_value(). This failed for ProjDataInMemory
+since #1260 as it is no longer derived from ProjDataFromStream,
+so I had to work-around this.
+
+This functionality is currently only tested on the TOF branch,
+so I hadn't noticed the problem in #1260.
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Tue, 19 Sep 2023 16:34:54 +0100  Kris Thielemans  
+
+Merge pull request #1246 from samdporter/SPECTUB_coll_slope_bug
+fix SPECTUB bug with collimator slope division by 10
+
+-------------------------------
+Tue, 19 Sep 2023 13:42:39 +0100  samdporter  
+
+Update release_5.2.htm to reflect bug fix
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Tue, 19 Sep 2023 11:01:57 +0100  Kris Thielemans  
+
+Merge pull request #1260 from KrisThielemans/ProjDataInMemoryViaArray
+rewrite ProjDataInMemory to avoid streams
+
+-------------------------------
+Mon, 18 Sep 2023 00:33:16 +0100  Kris Thielemans  
+
+Merge pull request #1258 from KrisThielemans/fixalready_setup
+fix logic for already_setup in set_* functions
+
+-------------------------------
+Mon, 18 Sep 2023 00:08:39 +0100  Kris Thielemans  
+
+Merge pull request #1256 from KrisThielemans/threadSaferProjDataInfo
+[OpenMP] improve thread-safety of ProjDataInfo*NoArcCorr
+
+-------------------------------
+Sun, 17 Sep 2023 22:30:40 +0100  Kris Thielemans  
+
+rewrite ProjDataInMemory to avoid streams
+It was derived from ProjDataFromStream, which meant we had to write less code.
+However, this meant it was slower than just doing the copies from memory directly.
+
+Also, due to a limitation in boost::interprocess::bufferstream, total size
+was limited to 2 GB.
+
+Bits of the code are currently ugly to be compatible with both master and the TOF branch.
+
+Fixes #1240
+
+
+documentation/release_5.2.htm
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Sun, 17 Sep 2023 19:00:12 +0100  Kris Thielemans  
+
+fix logic for already_setup in set_* functions
+Previous implementation meant that already_setup could be
+set to true, even if it wasn't.
+
+Fixes #1257
+
+
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+
+-------------------------------
+Sun, 17 Sep 2023 18:34:04 +0100  Kris Thielemans  
+
+[OpenMP] improve thread-safety of ProjDataInfo*NoArcCorr
+Add missing `atomic write` statements. It might not resolve all problems
+though, see https://github.com/UCL/STIR/issues/1255.
+
+Also add an optional compilation variable to guarantee thread-safe
+operations, but it is slow.
+
+
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+
+-------------------------------
+Sun, 17 Sep 2023 18:32:08 +0100  Kris Thielemans  
+
+Merge pull request #1254 from KrisThielemans/RemoveBackProjectorExtraReduce
+[OpenMP] remove a superfluous reduction of backprojected images
+
+-------------------------------
+Sun, 17 Sep 2023 17:33:38 +0100  Kris Thielemans  
+
+Merge pull request #1253 from KrisThielemans/fixFourierOpenMP
+Fix race-conditions in fourier
+
+-------------------------------
+Sun, 17 Sep 2023 13:58:57 +0100  Kris Thielemans  
+
+[OpenMP] remove a superfluous reduction of backprojected images
+There is one in `get_output()`.
+
+Fixes #1093
+
+
+src/recon_buildblock/BackProjectorByBin.cxx
+
+-------------------------------
+Sun, 17 Sep 2023 13:46:35 +0100  Kris Thielemans  
+
+removed some work-arounds for pre-C++11
+a tiny bit of code clean-up
+
+
+src/numerics_buildblock/fourier.cxx
+
+-------------------------------
+Sun, 17 Sep 2023 13:39:33 +0100  Kris Thielemans  
+
+fix data-race BUG in fourier when using OpenMP
+The fourier code used static variables to store exp(i*_PI/pow(2,k)).
+Those were not guarded for multi-threading, resulting in
+occasional data-races.
+
+So now, we use local variables, which might be re-computed but it probably
+takes very little time (although I didn't check).
+
+Fixes #1251
+
+
+src/numerics_buildblock/fourier.cxx
+
+-------------------------------
+Sun, 17 Sep 2023 00:24:49 +0100  Kris Thielemans  
+
+Merge pull request #1247 from KrisThielemans/ParallelProjOldOMPFix
+Parallelproj old OpenMP fix, as well as Appveyor improvements
+
+-------------------------------
+Sat, 16 Sep 2023 23:06:34 +0100  Kris Thielemans  
+
+fix HighResWallClockTimer for WIN32 (#1250)
+reported values were wrong
+
+Fixes #1248
+
+src/include/stir/HighResWallClockTimer.h
+
+-------------------------------
+Sat, 16 Sep 2023 20:56:23 +0100  Kris Thielemans  
+
+update Interfile headers to avoid warnings (#1249) [ci skip]
+- add modality and patient orientation etc
+- make sure SPECT images have SPECT info
+- also remove some keywords with default values
+- removed some .ahv files as not used
+
+recon_test_pack/RPTsens_seg3_PM.hv
+recon_test_pack/RPTsens_seg4.hv
+recon_test_pack/SPECT/PinholeSPECTUB/attmap.hv
+recon_test_pack/SPECT/PinholeSPECTUB/init.hv
+recon_test_pack/SPECT/PinholeSPECTUB/mask.hv
+recon_test_pack/SPECT/PinholeSPECTUB/org/FBP.ahv
+recon_test_pack/SPECT/PinholeSPECTUB/org/OSEM_7.ahv
+recon_test_pack/SPECT/SPECTUB/attMapRec.hv
+recon_test_pack/SPECT/SPECTUB/init.hv
+recon_test_pack/SPECT/SPECTUB/input.hs
+recon_test_pack/SPECT/SPECTUB/mask.hv
+recon_test_pack/SPECT/SPECTUB/org/FBP.hv
+recon_test_pack/SPECT/SPECTUB/org/OSEM_2DPSF_16.hv
+recon_test_pack/SPECT/SPECTUB/org/OSEM_3DPSF_4.hv
+recon_test_pack/Siemens_mMR_seg2.hs
+recon_test_pack/Utahscat600k_ca_seg4.hs
+recon_test_pack/scatter_cylinder.hs
+recon_test_pack/template_for_ROOT_scanner.hs
+recon_test_pack/test_image_3.hv
+recon_test_pack/test_image_5.hv
+recon_test_pack/test_image_OSSPS_PM_QP_8.hv
+recon_test_pack/test_image_PM_MRP_6.hv
+recon_test_pack/test_image_PM_QP_6.hv
+recon_test_pack/test_image_PM_QPweights_6.hv
+
+-------------------------------
+Sat, 16 Sep 2023 20:50:48 +0100  Kris Thielemans  
+
+cope with VS 2015 (_Pragma doesn't exist yet)
+
+
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Sat, 16 Sep 2023 18:49:57 +0100  Kris Thielemans  
+
+[Appveyor] run pytest
+[actions skip]
+
+
+.appveyor.yml
+
+-------------------------------
+Sat, 16 Sep 2023 15:37:31 +0100  Kris Thielemans  
+
+add /bigobj flag to SWIG wrappers for MSVC
+we get an error `C1128: number of sections exceeded object file format limit: compile with /bigobj`
+so add that flag
+
+
+src/swig/CMakeLists.txt
+
+-------------------------------
+Fri, 15 Sep 2023 22:33:06 +0100  Kris Thielemans  
+
+[CMake] require v3.12 on Windows
+This is to avoid having to write some more work-arounds
+
+
+CMakeLists.txt
+documentation/release_5.2.htm
+
+-------------------------------
+Fri, 15 Sep 2023 22:33:06 +0100  Kris Thielemans  
+
+cope with older OpenMP
+atomic write only exists since 3.1
+
+
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Fri, 15 Sep 2023 22:33:06 +0100  Kris Thielemans  
+
+[Appveyor] use conda and parallelproj
+- test python
+- install parallelproj
+
+
+.appveyor.yml
+
+-------------------------------
+Thu, 14 Sep 2023 15:31:17 +0100  Sam Porter  
+
+fix SPECTUB bug with collimator slope division by 10
+
+
+src/include/stir/recon_buildblock/ProjMatrixByBinSPECTUB.h
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Tue, 12 Sep 2023 21:57:24 +0100  Kris Thielemans  
+
+Merge pull request #1244 from danieldeidda/globInit
+ SPECTUB: initialising old global values: fixing #1232
+
+-------------------------------
+Tue, 12 Sep 2023 09:58:13 +0100  nmdicom-recon  
+
+ small changes
+
+
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Mon, 11 Sep 2023 07:36:16 +0100  Kris Thielemans  
+
+Merge pull request #1245 from UCL/release_5.1
+Merge in release 5.1.2
+
+-------------------------------
+Mon, 11 Sep 2023 07:33:25 +0100  Kris Thielemans  
+
+release 5.1.2
+
+
+CMakeLists.txt
+VERSION.txt
+documentation/release_5.1.htm
+
+-------------------------------
+Mon, 11 Sep 2023 07:32:59 +0100  Kris Thielemans  
+
+Increase threshold for scatter test
+backport bf0366a92f0409191cda9a98c7bdb28791a8aa01 on release 5.1 branch,
+but also correct echo statement
+
+Occasional numerical errors cause the difference to be larger than 6%, so increased it to 7%.
+
+Fixes #1164
+
+
+recon_test_pack/run_scatter_tests.sh
+
+-------------------------------
+Sun, 10 Sep 2023 00:34:56 +0100  Kris Thielemans  
+
+Merge pull request #1237 from KrisThielemans/timings
+add utility to perform timings and some performance improvements
+
+-------------------------------
+Sat, 9 Sep 2023 13:56:08 +0100  Kris Thielemans  
+
+clean-up and doc of stir_timings
+also added extra options for friendlier usage
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.2.htm
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Sat, 9 Sep 2023 11:49:43 +0100  Kris Thielemans  
+
+added timings for ProjData and Poisson log-likelihoood
+
+
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Fri, 8 Sep 2023 16:19:57 +0100  nmdicom-recon  
+
+ SPECTUB: initilising old global values fixing #1232
+
+
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Thu, 7 Sep 2023 18:39:29 +0100  Kris Thielemans  
+
+Merge tag 'rel_5.1.1'
+merge fixes since 5.1.0
+
+
+-------------------------------
+Thu, 7 Sep 2023 13:14:08 +0100  markus-jehl  
+
+Disable logging within distributed OpenMP calls by default and make all logging thread safe. (#1243)
+* Changed logging level to 3 for the distributable thread updates. Added critical section to text writer.
+
+* Updated release notes.
+
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.2.htm
+src/buildblock/TextWriter.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Tue, 29 Aug 2023 14:42:45 +0100  Kris Thielemans  
+
+avoid some nested calls of start/stop_timers
+Timers were stopped too early due to nested calls. This is now
+checked by asserts (by adding HighResWallClockTimer), allowing me
+to catch these problems.
+
+
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/include/stir/DataProcessor.inl
+
+-------------------------------
+Tue, 29 Aug 2023 14:16:31 +0100  Kris Thielemans  
+
+multi-thread ParallelprojHelper
+The loop to construct xstart/end etc is now multi-threaded (although a little bit uglier!).
+
+Testing shows a speed-up of about 2-3. Using too many threads is counterproductive, so
+I limited to 8 (not necessarily optimal!).
+
+
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Tue, 29 Aug 2023 13:39:35 +0100  Kris Thielemans  
+
+remove start/stop timers in functions that are called multi-threaded
+TimedObject is not thread-safe, and timing results were incorrect.
+Currently just remove the calls.
+
+work-around https://github.com/UCL/STIR/issues/1238
+
+
+src/recon_buildblock/BackProjectorByBin.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation.cxx
+src/recon_buildblock/ForwardProjectorByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingRayTracing.cxx
+
+-------------------------------
+Tue, 29 Aug 2023 13:38:17 +0100  Kris Thielemans  
+
+remove assert on timer already running
+
+
+src/include/stir/HighResWallClockTimer.h
+
+-------------------------------
+Tue, 29 Aug 2023 09:45:43 +0100  Kris Thielemans  
+
+add basic utility to perform timings
+
+
+src/utilities/CMakeLists.txt
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Tue, 29 Aug 2023 09:29:40 +0100  Kris Thielemans  
+
+add HighResWallClockTimer to TimedObject
+
+
+src/include/stir/TimedObject.h
+src/include/stir/TimedObject.inl
+
+-------------------------------
+Tue, 29 Aug 2023 09:28:05 +0100  Kris Thielemans  
+
+add optional do_reset argument to Timer
+This is convenient but also means it is the same as HighResWallClockTimer
+
+
+src/include/stir/Timer.h
+src/include/stir/Timer.inl
+
+-------------------------------
+Tue, 29 Aug 2023 08:47:21 +0100  Kris Thielemans  
+
+fix problem in parallelproj projector pair set_up causing slow-down
+set_up() had the wrong signature, such that the helper was created twice
+and hence the start/end arrays computed twice
+
+
+src/include/stir/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.h
+src/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.cxx
+
+-------------------------------
+Sat, 26 Aug 2023 08:25:06 +0100  Kris Thielemans  
+
+version 5.1.1
+just 2 commits related to numerical precision in tests
+
+
+CMakeLists.txt
+VERSION.txt
+documentation/history.htm
+documentation/release_5.1.htm
+
+-------------------------------
+Fri, 25 Aug 2023 18:00:41 +0100  Kris Thielemans  
+
+make python test less senstivity to rounding error
+
+
+src/swig/test/python/test_buildblock.py
+
+-------------------------------
+Fri, 25 Aug 2023 10:32:33 +0100  Kris Thielemans  
+
+fix xy imagesize of FBP SPECTUB image in test
+The code determining the xy image size is sensitive to rounding errors,
+so we now say in the .par file what the test expects.
+
+Fixes #1193
+
+
+recon_test_pack/SPECT/SPECTUB/FBP2D.par
+
+-------------------------------
+Sun, 20 Aug 2023 17:14:22 +0100  Kris Thielemans  
+
+Merge pull request #1234 from KrisThielemans/fixSPECTUBFBP_test_pack_imagesize
+fix xy imagesize of FBP SPECTUB image in test
+
+-------------------------------
+Sun, 20 Aug 2023 08:31:29 +0100  Kris Thielemans  
+
+fix xy imagesize of FBP SPECTUB image in test
+The code determining the xy image size is sensitive to rounding errors,
+so we now say in the .par file what the test expects.
+
+Fixes #1193
+
+
+recon_test_pack/SPECT/SPECTUB/FBP2D.par
+
+-------------------------------
+Fri, 18 Aug 2023 16:49:36 +0100  Kris Thielemans  
+
+make ScatterSimulation::detection_efficiency public
+
+
+src/include/stir/scatter/ScatterSimulation.h
+
+-------------------------------
+Thu, 17 Aug 2023 22:06:59 +0100  Kris Thielemans  
+
+Fix and simplify get_tantheta etc for ProjDataInfoGeneric (#1231)
+- Fix get_tantheta to correctly invert theta value when obtained from LOR that is being flipped when obtaining phi and s by using get_LOR
+- Simplifications of get_s()
+- make sure that find_LOR_intersections_with_cylinder(LORAs2Points&, ...) returns points in some order as input (they were swapped)
+- expand test_projdata_info to run more views
+- Updated release notes.
+
+Fixes #1223
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+-------------------------------
+Thu, 17 Aug 2023 15:23:42 +0000  Markus Jehl  
+
+Updated release notes.
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Thu, 17 Aug 2023 14:08:01 +0000  Markus Jehl  
+
+Simplifications of the changes.
+
+
+src/include/stir/LORCoordinates.inl
+src/include/stir/ProjDataInfoGeneric.inl
+
+-------------------------------
+Tue, 8 Aug 2023 18:54:13 +0100  Kris Thielemans  
+
+Merge pull request #1225 from KrisThielemans/upsample_scatter_fix_1224
+fix allocation in upsample_and_fit_scatter_estimate
+
+-------------------------------
+Mon, 7 Aug 2023 13:50:24 +0000  Markus Jehl  
+
+Added functionality to invert theta value when obtained from LOR that is being flipped when obtaining phi and s.
+
+
+src/include/stir/LORCoordinates.inl
+src/include/stir/ProjDataInfoGeneric.inl
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Sun, 23 Jul 2023 21:55:47 +0100  Kris Thielemans  
+
+[Python] fix ProjData_read_from_file (#1230)
+stir.ProjData_read_from_file is not available since SWIG 4.1, so use stir.ProjData.read_from_file (available from at least SWIG 3.0)
+
+[ci skip]
+
+
+
+documentation/release_5.2.htm
+examples/python/plot_sinogram_profiles.py
+examples/python/projdata_visualisation/BackendTools/STIRInterface.py
+examples/python/projdata_visualisation/demo_ProjDataVisualisation.py
+
+-------------------------------
+Wed, 19 Jul 2023 08:02:56 +0100  robbietuk  
+
+GHA - Add C++ demos (#1228)
+* GHA - Add C++ demos to build configuration and test
+
+* Some modifications to demos to make this possible (switch off display)
+
+* Include iomanip in demo5
+
+---------
+
+Co-authored-by: Robert Twyman Skelly <robert@prescientimaging.com>
+
+.github/workflows/build-test.yml
+examples/C++/src/demo3.cxx
+examples/C++/src/demo5_line_search.cxx
+
+-------------------------------
+Tue, 18 Jul 2023 13:04:07 +0100  Kris Thielemans  
+
+Merge pull request #1221 from robbietuk/DemoBackProjectorChange
+Change back projectors in demos. Fixes #1220
+
+-------------------------------
+Mon, 17 Jul 2023 16:42:06 -0700  Robert Twyman Skelly  
+
+[ci skip] Use auto and make_shared and update README
+
+
+examples/C++/src/README.md
+examples/C++/src/demo1.cxx
+examples/C++/src/demo3.cxx
+
+-------------------------------
+Fri, 14 Jul 2023 18:27:54 +0100  Kris Thielemans  
+
+CListEventECAT8_32bit should use get_max_num_non_arccorrected_bins
+Siemens listmode data is always non-arccorrected, so we should use
+get_max_num_non_arccorrected_bins, not get_default_num_arccorrected_bins
+to determine the relation between offsets and detection positions
+
+Fixes #1226
+
+
+src/listmode_buildblock/CListRecordECAT8_32bit.cxx
+
+-------------------------------
+Fri, 14 Jul 2023 18:22:32 +0100  Kris Thielemans  
+
+fix allocation in upsample_and_fit_scatter_estimate
+As interpolate_projdata only handles segment 0 at present, we only need
+to create an appropriately sized direct_scatter projdata.
+
+Also minor clean-up of this function (localise variable, remove unused
+variable, extra comments)
+
+Fixes #1224
+
+
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+
+-------------------------------
+Mon, 10 Jul 2023 11:48:50 +0100  Kris Thielemans  
+
+Merge pull request #1222 from KrisThielemans/CListEventTemplated
+prepare CListEventCylindricalScannerWithDiscreteDetectors for non-cylindrical scanners by templating
+
+-------------------------------
+Sun, 9 Jul 2023 14:10:07 +0100  Kris Thielemans  
+
+prepare CListEventCylindricalScannerWithDiscreteDetectors for non-cylindrical
+- move all functionality to template class CListEventScannerWithDiscreteDetectors<ProjDataInfoT>
+- keep CListEventCylindricalScannerWithDiscreteDetectors as derived class such that this change
+is backwards compatible
+
+
+documentation/release_5.2.htm
+src/include/stir/listmode/CListEventCylindricalScannerWithDiscreteDetectors.h
+src/include/stir/listmode/CListEventScannerWithDiscreteDetectors.h
+src/include/stir/listmode/CListEventScannerWithDiscreteDetectors.inl
+
+-------------------------------
+Wed, 5 Jul 2023 12:05:16 -0700  Robert Twyman Skelly  
+
+Simplify demo2 includes
+
+
+examples/C++/src/demo2.cxx
+
+-------------------------------
+Wed, 5 Jul 2023 11:59:56 -0700  Robert Twyman Skelly  
+
+Change back projectors in demos
+
+
+examples/C++/src/README.md
+examples/C++/src/demo1.cxx
+examples/C++/src/demo2.cxx
+examples/C++/src/demo3.cxx
+
+-------------------------------
+Sun, 2 Jul 2023 22:59:32 +0100  Kris Thielemans  
+
+Merge pull request #1219 from robbietuk/DemoREADMEUpdate
+Demo README update
+
+-------------------------------
+Sun, 2 Jul 2023 22:50:14 +0100  Kris Thielemans  
+
+more clarifications in the examples/C++ README
+
+
+examples/C++/src/README.md
+examples/C++/src/extra_stir_dirs.cmake
+
+-------------------------------
+Sat, 1 Jul 2023 16:40:20 -0700  Robert Twyman Skelly  
+
+[ci skip] Further README updates
+
+
+examples/C++/src/README.md
+
+-------------------------------
+Sat, 1 Jul 2023 13:20:02 -0700  Robert Twyman Skelly  
+
+Make README markdown and update content
+
+
+examples/C++/src/README.md
+examples/C++/src/README.txt
+
+-------------------------------
+Tue, 13 Jun 2023 07:13:02 +0100  Kris Thielemans  
+
+[CMake] add .h and .i as dependencies for SWIG (#1218)
+Currently adding all .h files, which is too much, but waiting for
+a fix on the CMake side.
+
+
+documentation/release_5.2.htm
+src/swig/CMakeLists.txt
+
+-------------------------------
+Sat, 10 Jun 2023 14:09:39 +0100  Kris Thielemans  
+
+Merge pull request #1207 from Robert-PrescientImaging/python/sapyb
+Extend VoxelsOnCartesianGrid to include sapyb and test
+
+-------------------------------
+Thu, 8 Jun 2023 16:22:50 +0100  Kris Thielemans  
+
+Merge pull request #1217 from Robert-PrescientImaging/cmake_documentation
+Update FindCERN_ROOT to clarify documentation
+
+-------------------------------
+Thu, 8 Jun 2023 08:40:30 +0100  Kris Thielemans  
+
+Update FindCERN_ROOT.cmake
+some more clarification and fixes
+
+src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Wed, 7 Jun 2023 14:54:02 -0700  rts  
+
+Update FindCERN_ROOT to clarify documentation
+
+
+src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Tue, 6 Jun 2023 15:52:31 +0100  Kris Thielemans  
+
+Merge pull request #1214 from Robert-PrescientImaging/gitignore_install
+.gitignore install/ directory
+
+-------------------------------
+Mon, 5 Jun 2023 10:21:43 -0700  rts  
+
+[ci skip] Add install dir to the gitignore
+Similar to build/, vscode creates an install/ directory that is annoying for tracking. 
+
+.gitignore
+
+-------------------------------
+Sun, 4 Jun 2023 00:10:40 +0100  Kris Thielemans  
+
+Merge pull request #1212 from mastergari/rmglobals
+Change PinholeSPECTUB global variables to class members
+
+-------------------------------
+Sun, 4 Jun 2023 00:10:05 +0100  Kris Thielemans  
+
+[GHA] reduce disk space requirements (#1213)
+gcc-12 Ubuntu jobs were now running out of space.
+
+- added`apt clean`
+- removing dotnet, android, and pre-cached tools such as  Ruby
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 3 Jun 2023 16:31:42 +0100  Kris Thielemans  
+
+fixes to documentation (mostly related to priors)
+priors now all give documentation for the value (not just the gradient).
+Various formulas were fixed.
+
+
+documentation/STIR-UsersGuide.tex
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/include/stir/recon_buildblock/PLSPrior.h
+src/include/stir/recon_buildblock/QuadraticPrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+
+-------------------------------
+Fri, 2 Jun 2023 11:45:42 -0300  mastergari  
+
+Update release notes 5.2 for PinholeSPECTUB globals
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Fri, 2 Jun 2023 11:29:04 -0300  mastergari  
+
+Change PinholeSPECTUB global variables to class members to fix #1211
+
+
+documentation/release_5.2.htm
+src/include/stir/recon_buildblock/PinholeSPECTUB_Tools.h
+src/include/stir/recon_buildblock/PinholeSPECTUB_Weight3d.h
+src/include/stir/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.h
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/PinholeSPECTUB_Weight3d.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+
+-------------------------------
+Tue, 30 May 2023 23:57:36 +0100  Kris Thielemans  
+
+fix location of input file in demo [ci skip]
+SPECT files got moved
+
+
+examples/matlab/plot_demo.m
+
+-------------------------------
+Tue, 30 May 2023 12:14:47 +0100  markus-jehl  
+
+FBP2D OpenMP fix for clang (#1206)
+* Adopted the same parallelisation used in back projection to avoid the clang thread safety problems in FBP2D. This makes the problem go away. Not sure if this is clang-bug or not.
+
+Fixes #1190
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+src/analytic/FBP2D/FBP2DReconstruction.cxx
+
+-------------------------------
+Thu, 25 May 2023 14:35:08 +0100  Daniel Deidda  
+
+ making ECAT8 LM input file format can_read specific to siemens ecat8 (#1208)
+check more of the signature to require a Siemens specific word ("PETLINK") such that other listmode formats can use Interfile headers as well
+
+---------
+
+Co-authored-by: nmdicom-recon <nmdicom-recon@feijoa.npl.co.uk>
+
+src/include/stir/IO/ECAT8_32bitListmodeInputFileFormat.h
+
+-------------------------------
+Tue, 23 May 2023 14:19:13 -0700  rts  
+
+Extend VoxelsOnCartesianGrid to include sapyb and test
+
+
+src/swig/stir_voxels.i
+src/swig/test/python/test_buildblock.py
+
+-------------------------------
+Fri, 19 May 2023 21:05:26 +0100  Kris Thielemans  
+
+cope with different span for axial_effects in ECAT8 norm
+before we were using a single axial effect factor. Now, we
+will use all of them appropriate for a particular span.
+Results are the same for span=11.
+
+Also
+- removed the unused "span" member variable
+- write warning about larger max ring diffs in set_up() to avoid
+local static variable
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Fri, 19 May 2023 19:13:05 +0100  Kris Thielemans  
+
+correct order of axial effects for ECAT8 norm
+There was a duplicate line in the other order. Removed now
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Thu, 18 May 2023 07:27:43 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into ECAT8axial_effects
+
+
+-------------------------------
+Thu, 18 May 2023 07:25:17 +0100  Kris Thielemans  
+
+ECAT8 norm divide by axial effects
+We found that we need to divide as opposed to multiply with the axial effect factors
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Thu, 18 May 2023 07:20:46 +0100  Kris Thielemans  
+
+BinNormalisationFromECAT8 new keyword for outputting text files
+added write_components_to_file keyword (only setable via parsing)
+by default set to false.
+
+
+examples/Siemens-mMR/correct_projdata.par
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Wed, 17 May 2023 22:17:23 +0100  Kris Thielemans  
+
+clean-up of InterfileHeaderSiemens and release notes
+
+
+documentation/release_5.2.htm
+src/IO/InterfileHeaderSiemens.cxx
+src/include/stir/IO/InterfileHeaderSiemens.h
+
+-------------------------------
+Wed, 17 May 2023 17:51:19 +0100  markus-jehl  
+
+Modified the inline error() function to also throw a runtime_error (#1192)
+* To avoid circular dependencies, removed error and warning from common.h and was then able to replace cerr with TextWriter in the `inline` versions of `error` and `warning`. This allows intercepting error and warning messages.
+
+* Add a verbosity level to `warning` (defaulting to 1), such that they get suppressed when setting verbosity to 0.
+
+* Updated release notes and removed commented code from common.h
+
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.2.htm
+examples/C++/src/demo4_obj_fun.cxx
+examples/C++/src/demo5_line_search.cxx
+src/IO/ECAT7DynamicDiscretisedDensityInputFileFormat.cxx
+src/IO/GEHDF5Wrapper.cxx
+src/IO/ITKImageInputFileFormat.cxx
+src/IO/ITKOutputFileFormat.cxx
+src/IO/InputStreamFromROOTFile.cxx
+src/IO/InputStreamFromROOTFileForCylindricalPET.cxx
+src/IO/InputStreamFromROOTFileForECATPET.cxx
+src/IO/InputStreamWithRecordsFromUPENNbin.cxx
+src/IO/InputStreamWithRecordsFromUPENNtxt.cxx
+src/IO/InterfileDynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/InterfileHeader.cxx
+src/IO/InterfileHeaderSiemens.cxx
+src/IO/InterfilePDFSHeaderSPECT.cxx
+src/IO/InterfileParametricDiscretisedDensityOutputFileFormat.cxx
+src/IO/MultiDynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/MultiParametricDiscretisedDensityOutputFileFormat.cxx
+src/IO/ecat6_utils.cxx
+src/IO/interfile.cxx
+src/IO/stir_AVW.cxx
+src/IO/stir_ecat6.cxx
+src/IO/stir_ecat7.cxx
+src/IO/stir_ecat_common.cxx
+src/Shape_buildblock/Box3D.cxx
+src/Shape_buildblock/DiscretisedShape3D.cxx
+src/Shape_buildblock/Ellipsoid.cxx
+src/Shape_buildblock/EllipsoidalCylinder.cxx
+src/Shape_buildblock/GenerateImage.cxx
+src/Shape_buildblock/Shape3DWithOrientation.cxx
+src/SimSET/conv_SimSET_projdata_to_STIR.cxx
+src/analytic/FBP2D/FBP2DReconstruction.cxx
+src/analytic/FBP2D/RampFilter.cxx
+src/analytic/FBP3DRP/ColsherFilter.cxx
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/buildblock/ArcCorrection.cxx
+src/buildblock/ArrayFilter1DUsingConvolution.cxx
+src/buildblock/ArrayFilter3DUsingConvolution.cxx
+src/buildblock/ArrayFilterUsingRealDFTWithPadding.cxx
+src/buildblock/DetectorCoordinateMap.cxx
+src/buildblock/DiscretisedDensity.cxx
+src/buildblock/DynamicDiscretisedDensity.cxx
+src/buildblock/DynamicProjData.cxx
+src/buildblock/FilePath.cxx
+src/buildblock/GatedProjData.cxx
+src/buildblock/GeneralisedPoissonNoiseGenerator.cxx
+src/buildblock/HUToMuImageProcessor.cxx
+src/buildblock/KeyParser.cxx
+src/buildblock/ML_norm.cxx
+src/buildblock/MultipleDataSetHeader.cxx
+src/buildblock/MultipleProjData.cxx
+src/buildblock/NonseparableConvolutionUsingRealDFTImageFilter.cxx
+src/buildblock/ParsingObject.cxx
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataFromStream.cxx
+src/buildblock/ProjDataGEAdvance.cxx
+src/buildblock/ProjDataGEHDF5.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/ProjDataInfoBlocksOnCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoCylindrical.cxx
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGeneric.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/buildblock/ProjDataInfoSubsetByView.cxx
+src/buildblock/ProjDataInterfile.cxx
+src/buildblock/Radionuclide.cxx
+src/buildblock/RadionuclideDB.cxx
+src/buildblock/SSRB.cxx
+src/buildblock/Scanner.cxx
+src/buildblock/SeparableCartesianMetzImageFilter.cxx
+src/buildblock/SeparableConvolutionImageFilter.cxx
+src/buildblock/SeparableGaussianArrayFilter.cxx
+src/buildblock/SeparableGaussianImageFilter.cxx
+src/buildblock/Sinogram.cxx
+src/buildblock/TimeGateDefinitions.cxx
+src/buildblock/VoxelsOnCartesianGrid.cxx
+src/buildblock/centre_of_gravity.cxx
+src/buildblock/date_time_functions.cxx
+src/buildblock/extend_projdata.cxx
+src/buildblock/find_fwhm_in_image.cxx
+src/buildblock/interpolate_axial_position.cxx
+src/buildblock/interpolate_projdata.cxx
+src/buildblock/inverse_SSRB.cxx
+src/buildblock/line.cxx
+src/buildblock/linear_regression.cxx
+src/buildblock/multiply_crystal_factors.cxx
+src/buildblock/num_threads.cxx
+src/buildblock/recon_array_functions.cxx
+src/buildblock/scale_sinograms.cxx
+src/buildblock/utilities.cxx
+src/buildblock/zoom.cxx
+src/data_buildblock/SinglesRatesFromECAT7.cxx
+src/data_buildblock/SinglesRatesFromGEHDF5.cxx
+src/data_buildblock/SinglesRatesFromSglFile.cxx
+src/display/display_array.cxx
+src/eval_buildblock/compute_ROI_values.cxx
+src/experimental/IO/ECAT7DynamicDiscretisedDensityOutputFileFormat.cxx
+src/experimental/buildblock/AbsTimeIntervalFromDynamicData.cxx
+src/experimental/buildblock/AbsTimeIntervalFromECAT7ACF.cxx
+src/experimental/buildblock/AbsTimeIntervalWithParsing.cxx
+src/experimental/buildblock/ModifiedInverseAveragingImageFilterAll.cxx
+src/experimental/buildblock/ModifiedInverseAverigingArrayFilter.cxx
+src/experimental/buildblock/ModifiedInverseAverigingImageFilter.cxx
+src/experimental/buildblock/NonseparableSpatiallyVaryingFilters.cxx
+src/experimental/buildblock/NonseparableSpatiallyVaryingFilters3D.cxx
+src/experimental/buildblock/multiply_plane_scale_factorsImageProcessor.cxx
+src/experimental/iterative/OSSPS/line_search.cxx
+src/experimental/listmode/CListModeDataLMF.cxx
+src/experimental/listmode/LmToProjDataWithMC.cxx
+src/experimental/listmode_utilities/change_lm_time_tags.cxx
+src/experimental/listmode_utilities/get_singles_info.cxx
+src/experimental/motion/MatchTrackerAndScanner.cxx
+src/experimental/motion/NonRigidObjectTransformationUsingBSplines.cxx
+src/experimental/motion/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.cxx
+src/experimental/motion/Polaris_MT_File.cxx
+src/experimental/motion/RigidObject3DMotion.cxx
+src/experimental/motion/RigidObject3DMotionFromPolaris.cxx
+src/experimental/motion/RigidObject3DTransformation.cxx
+src/experimental/motion/TimeFrameMotion.cxx
+src/experimental/motion/Transform3DObjectImageProcessor.cxx
+src/experimental/motion/transform_3d_object.cxx
+src/experimental/motion_utilities/find_motion_corrected_norm_factors.cxx
+src/experimental/motion_utilities/list_deformation_vectors.cxx
+src/experimental/motion_utilities/move_image.cxx
+src/experimental/motion_utilities/move_projdata.cxx
+src/experimental/motion_utilities/non_rigid_transform.cxx
+src/experimental/motion_utilities/remove_corrupted_sinograms.cxx
+src/experimental/motion_utilities/report_movement.cxx
+src/experimental/motion_utilities/rigid_object_transform_image.cxx
+src/experimental/motion_utilities/rigid_object_transform_projdata.cxx
+src/experimental/recon_buildblock/BinNormalisationFromML2D.cxx
+src/experimental/recon_buildblock/BinNormalisationSinogramRescaling.cxx
+src/experimental/recon_buildblock/BinNormalisationUsingProfile.cxx
+src/experimental/recon_buildblock/DataSymmetriesForDensels_PET_CartesianGrid.cxx
+src/experimental/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.cxx
+src/experimental/recon_buildblock/PostsmoothingForwardProjectorByBin.cxx
+src/experimental/recon_buildblock/ProjMatrixByBinSinglePhoton.cxx
+src/experimental/recon_buildblock/ProjMatrixByBinUsingSolidAngle.cxx
+src/experimental/recon_buildblock/ProjMatrixByBinWithPositronRange.cxx
+src/experimental/recon_buildblock/ProjMatrixByDenselOnCartesianGridUsingElement.cxx
+src/experimental/recon_buildblock/ProjMatrixByDenselUsingRayTracing.cxx
+src/experimental/recon_test/fwdtestDensel.cxx
+src/experimental/test/test_proj_data_info_LOR.cxx
+src/experimental/utilities/AVWROI.cxx
+src/experimental/utilities/Bland_Altman_plot.cxx
+src/experimental/utilities/CoG.cxx
+src/experimental/utilities/add_ecat7_header_to_sgl.cxx
+src/experimental/utilities/add_side_shields.cxx
+src/experimental/utilities/apply_plane_rescale_factors.cxx
+src/experimental/utilities/change_mhead_file_type.cxx
+src/experimental/utilities/compute_gradient.cxx
+src/experimental/utilities/compute_plane_rescale_factors.cxx
+src/experimental/utilities/create_normfactors3D.cxx
+src/experimental/utilities/fillwith1.cxx
+src/experimental/utilities/fillwithotherprojdata.cxx
+src/experimental/utilities/find_sinogram_rescaling_factors.cxx
+src/experimental/utilities/fit_cylinder.cxx
+src/experimental/utilities/interpolate_projdata.cxx
+src/experimental/utilities/inverse_SSRB.cxx
+src/experimental/utilities/list_TAC_ROI_values.cxx
+src/experimental/utilities/precompute_denominator_SPS.cxx
+src/experimental/utilities/prepare_projdata.cxx
+src/experimental/utilities/remove_sinograms.cxx
+src/experimental/utilities/show_ecat7_header.cxx
+src/experimental/utilities/threshold_norm_data.cxx
+src/experimental/utilities/zero_projdata_from_norm.cxx
+src/include/stir/Array.inl
+src/include/stir/DataProcessor.inl
+src/include/stir/DynamicProjData.h
+src/include/stir/FactoryRegistry.inl
+src/include/stir/IO/InputFileFormatRegistry.txx
+src/include/stir/IO/InputStreamFromROOTFile.h
+src/include/stir/IO/InputStreamFromROOTFileForCylindricalPET.inl
+src/include/stir/IO/InputStreamWithRecords.inl
+src/include/stir/IO/InputStreamWithRecordsFromUPENNbin.inl
+src/include/stir/IO/InputStreamWithRecordsFromUPENNtxt.inl
+src/include/stir/IO/OutputFileFormat.txx
+src/include/stir/IO/read_data.inl
+src/include/stir/IO/read_data_1d.inl
+src/include/stir/IO/write_data.inl
+src/include/stir/IO/write_data_1d.inl
+src/include/stir/ImagingModality.h
+src/include/stir/ML_norm.h
+src/include/stir/MultipleDataSetHeader.inl
+src/include/stir/MultipleProjData.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/ProjDataInfoCylindrical.inl
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+src/include/stir/VectorWithOffset.inl
+src/include/stir/common.h
+src/include/stir/error.h
+src/include/stir/find_fwhm_in_image.inl
+src/include/stir/listmode/CListRecordGEHDF5.h
+src/include/stir/listmode/CListRecordROOT.h
+src/include/stir/listmode/CListRecordSAFIR.inl
+src/include/stir/listmode/ListModeData.h
+src/include/stir/listmode/ListModeData_dummy.h
+src/include/stir/listmode/NiftyPET_listmode/LmToProjDataNiftyPET.h
+src/include/stir/modelling/ModelMatrix.inl
+src/include/stir/modelling/PlasmaData.inl
+src/include/stir/numerics/BSplines_weights.inl
+src/include/stir/numerics/integrate_discrete_function.inl
+src/include/stir/numerics/max_eigenvector.h
+src/include/stir/numerics/sampling_functions.inl
+src/include/stir/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.inl
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.txx
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.txx
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/ProjDataRebinning.h
+src/include/stir/recon_buildblock/SumOfGeneralisedObjectiveFunctions.inl
+src/include/stir/recon_buildblock/test/PoissonLLReconstructionTests.h
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/include/stir/stream.inl
+src/include/stir/utilities.inl
+src/include/stir/warning.h
+src/include/stir_experimental/modelling/BloodFrameData.inl
+src/include/stir_experimental/motion/bin_interpolate.h
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+src/iterative/OSMAPOSL/OSMAPOSLReconstruction.cxx
+src/iterative/OSSPS/OSSPSReconstruction.cxx
+src/listmode_buildblock/CListModeDataECAT.cxx
+src/listmode_buildblock/CListModeDataGEHDF5.cxx
+src/listmode_buildblock/CListModeDataPENN.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/CListRecordPENN.cxx
+src/listmode_buildblock/CListRecordROOT.cxx
+src/listmode_buildblock/ListModeData.cxx
+src/listmode_buildblock/LmToProjData.cxx
+src/listmode_buildblock/LmToProjDataBootstrap.cxx
+src/listmode_buildblock/LmToProjDataWithRandomRejection.cxx
+src/listmode_utilities/add_ecat7_header_to_sgl.cxx
+src/listmode_utilities/conv_NiftyPET_stir.cxx
+src/listmode_utilities/list_lm_countrates.cxx
+src/listmode_utilities/list_lm_info.cxx
+src/listmode_utilities/lm_fansums.cxx
+src/listmode_utilities/rebin_sgl_file.cxx
+src/listmode_utilities/scan_sgl_file.cxx
+src/modelling_buildblock/ParametricDiscretisedDensity.cxx
+src/modelling_buildblock/PatlakPlot.cxx
+src/modelling_utilities/extract_single_images_from_parametric_image.cxx
+src/modelling_utilities/get_dynamic_images_from_parametric_images.cxx
+src/modelling_utilities/make_parametric_image_from_components.cxx
+src/numerics_buildblock/determinant.cxx
+src/numerics_buildblock/fourier.cxx
+src/recon_buildblock/AnalyticReconstruction.cxx
+src/recon_buildblock/BackProjectorByBin.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation.cxx
+src/recon_buildblock/BackProjectorByBinUsingInterpolation_3DCho.cxx
+src/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.cxx
+src/recon_buildblock/BackProjectorByBinUsingSquareProjMatrixByBin.cxx
+src/recon_buildblock/BinNormalisationFromAttenuationImage.cxx
+src/recon_buildblock/BinNormalisationFromECAT7.cxx
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/recon_buildblock/BinNormalisationSPECT.cxx
+src/recon_buildblock/BinNormalisationWithCalibration.cxx
+src/recon_buildblock/ChainedBinNormalisation.cxx
+src/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/recon_buildblock/DistributedCachingInformation.cxx
+src/recon_buildblock/FilterRootPrior.cxx
+src/recon_buildblock/ForwardProjectorByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.cxx
+src/recon_buildblock/ForwardProjectorByBinUsingRayTracing.cxx
+src/recon_buildblock/FourierRebinning.cxx
+src/recon_buildblock/GeneralisedObjectiveFunction.cxx
+src/recon_buildblock/GeneralisedPrior.cxx
+src/recon_buildblock/IterativeReconstruction.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/ML_estimate_component_based_normalisation.cxx
+src/recon_buildblock/NiftyPET_projector/BackProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/ForwardProjectorByBinNiftyPET.cxx
+src/recon_buildblock/NiftyPET_projector/NiftyPETHelper.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMean.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_buildblock/PostsmoothingBackProjectorByBin.cxx
+src/recon_buildblock/PresmoothingForwardProjectorByBin.cxx
+src/recon_buildblock/ProjDataRebinning.cxx
+src/recon_buildblock/ProjMatrixByBinFromFile.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinUsingInterpolation.cxx
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+src/recon_buildblock/ProjMatrixElemsForOneBin.cxx
+src/recon_buildblock/ProjMatrixElemsForOneDensel.cxx
+src/recon_buildblock/ProjectorByBinPair.cxx
+src/recon_buildblock/ProjectorByBinPairUsingProjMatrixByBin.cxx
+src/recon_buildblock/ProjectorByBinPairUsingSeparateProjectors.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RayTraceVoxelsOnCartesianGrid.cxx
+src/recon_buildblock/Reconstruction.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/recon_buildblock/SqrtHessianRowSum.cxx
+src/recon_buildblock/distributable.cxx
+src/recon_buildblock/distributed_functions.cxx
+src/recon_test/fwdtest.cxx
+src/scatter_buildblock/CreateTailMaskFromACFs.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/SingleScatterSimulation.cxx
+src/scatter_buildblock/sample_scatter_points.cxx
+src/scatter_buildblock/scatter_detection_modelling.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+src/scatter_utilities/create_tail_mask_from_ACFs.cxx
+src/spatial_transformation_buildblock/GatedSpatialTransformation.cxx
+src/spatial_transformation_buildblock/InvertAxis.cxx
+src/spatial_transformation_buildblock/warp_image.cxx
+src/test/NiftyPET_projector/test_ProjectorNiftyPET_adjoint.cxx
+src/test/modelling/test_ParametricDiscretisedDensity.cxx
+src/test/test_DateTime.cxx
+src/test/test_DynamicDiscretisedDensity.cxx
+src/test/test_Scanner.cxx
+src/test/test_export_array.cxx
+src/test/test_proj_data_maths.cxx
+src/utilities/apply_normfactors.cxx
+src/utilities/apply_normfactors3D.cxx
+src/utilities/attenuation_coefficients_to_projections.cxx
+src/utilities/calculate_attenuation_coefficients.cxx
+src/utilities/compare_image.cxx
+src/utilities/construct_randoms_from_GEsingles.cxx
+src/utilities/construct_randoms_from_singles.cxx
+src/utilities/conv_AVW.cxx
+src/utilities/conv_GATE_raw_ECAT_projdata_to_interfile.cxx
+src/utilities/correct_projdata.cxx
+src/utilities/ctac_to_mu_values.cxx
+src/utilities/do_linear_regression.cxx
+src/utilities/ecat/conv_to_ecat6.cxx
+src/utilities/ecat/conv_to_ecat7.cxx
+src/utilities/ecat/convecat6_if.cxx
+src/utilities/ecat/copy_ecat7_header.cxx
+src/utilities/ecat/ecat_swap_corners.cxx
+src/utilities/estimate_triple_energy_window_scatter_sinogram.cxx
+src/utilities/extract_single_images_from_dynamic_image.cxx
+src/utilities/find_ML_normfactors.cxx
+src/utilities/find_ML_singles_from_delayed.cxx
+src/utilities/find_maxima_in_image.cxx
+src/utilities/find_recovery_coefficients_in_image_quality_phantom_nema_nu4.cxx
+src/utilities/find_sum_projection_of_viewgram_and_sinogram.cxx
+src/utilities/forward_project.cxx
+src/utilities/get_time_frame_info.cxx
+src/utilities/list_ROI_values.cxx
+src/utilities/list_image_info.cxx
+src/utilities/list_projdata_info.cxx
+src/utilities/postfilter.cxx
+src/utilities/rebin_projdata.cxx
+src/utilities/separate_true_from_random_scatter_for_necr.cxx
+src/utilities/shift_image.cxx
+src/utilities/stir_math.cxx
+src/utilities/stir_write_pgm.cxx
+src/utilities/zoom_image.cxx
+
+-------------------------------
+Wed, 17 May 2023 16:15:44 +0100  Kris Thielemans  
+
+Merge pull request #1205 from markus-jehl/issue/1201-add-more-output-to-interpolation-test-checks
+Replaced check() with check_if_less() for interpolation tests.
+
+-------------------------------
+Tue, 16 May 2023 14:58:38 +0100  Kris Thielemans  
+
+ignore a few more keywords from the ECAT8 norm header
+
+
+src/IO/InterfileHeaderSiemens.cxx
+
+-------------------------------
+Tue, 16 May 2023 14:50:14 +0100  Kris Thielemans  
+
+force ECAT8 norm file to be not-arccorrected
+variable was not initialised before
+
+also do an explicit run-time error check and clean-up some
+white-space
+
+
+src/IO/InterfileHeaderSiemens.cxx
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Tue, 16 May 2023 10:08:12 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into ECAT8axial_effects
+
+
+-------------------------------
+Fri, 12 May 2023 12:54:24 +0000  Markus Jehl  
+
+Replaced check() with check_if_less() for interpolation tests.
+
+
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Thu, 11 May 2023 14:22:07 +0100  Kris Thielemans  
+
+Merge pull request #1203 from KrisThielemans/CMake_libs
+CMake fixes
+
+- remove a warning about a missing extension
+- fix linking problems with CListModeDataGEHDF5 #1202
+
+-------------------------------
+Thu, 11 May 2023 12:36:24 +0100  Kris Thielemans  
+
+[CMake] fix case-mismatch in FindJANSSON.cmake
+fixes #1139
+
+Of course, the package is called Jansson, so maybe we should rename this to FindJansson.cmake
+but as I have no way to check this, I won't.
+
+
+src/cmake/FindJANSSON.cmake
+
+-------------------------------
+Thu, 11 May 2023 12:29:42 +0100  Kris Thielemans  
+
+[CMake] change dependencies/stir_libs to remove linking problem
+STIR libraries recursively depend on eachother (bad!), with the biggest
+problem related to the IO lib. With this change, the dependencies listed
+in CMake are a bit simpler, and it fixes a problem with GEHDF5 linking
+introduced recently.
+
+Fixes #1202
+
+
+src/cmake/stir_dirs.cmake
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 11 May 2023 12:29:07 +0100  Kris Thielemans  
+
+[CMake] add explicit .cxx for a file to avoid a CMake warning
+
+
+src/IO/CMakeLists.txt
+
+-------------------------------
+Sat, 6 May 2023 20:48:56 +0100  Kris Thielemans  
+
+Merge pull request #1198 from KrisThielemans/more_CI
+More CI jobs on GitHub Actions
+
+-------------------------------
+Sat, 6 May 2023 20:00:32 +0100  Kris Thielemans  
+
+[GHA] use checkout@v3 to avoid warnings about nodejs
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 20:00:32 +0100  Kris Thielemans  
+
+[GHA] disabled MacOS clang job due to unresolved problem
+see https://github.com/UCL/STIR/issues/1200
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 20:00:32 +0100  Kris Thielemans  
+
+[GHA] add gcc 12 job on Ubuntu
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 20:00:32 +0100  Kris Thielemans  
+
+[GHA] add ITK on some Ubuntu jobs
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 20:00:32 +0100  Kris Thielemans  
+
+[GHA] add clang job on MacOS
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 14:28:04 +0100  Kris Thielemans  
+
+[GHA] use parallelproj 1.3.7
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 6 May 2023 13:56:31 +0100  Kris Thielemans  
+
+update HUToMu.par example [ci skip]
+
+
+examples/samples/postfilter_HUToMu.par
+
+-------------------------------
+Fri, 5 May 2023 23:22:41 +0100  Kris Thielemans  
+
+Merge pull request #1197 from KrisThielemans/fix_HDF5_ITK_CMake2
+[CMake] fix ITK/HDF5 dependency if they disabled but are found by dependencies
+
+-------------------------------
+Fri, 5 May 2023 23:21:47 +0100  Kris Thielemans  
+
+Merge pull request #1196 from KrisThielemans/ROI_label
+add capability for discreted shapes with labels
+
+-------------------------------
+Fri, 5 May 2023 23:18:25 +0100  Kris Thielemans  
+
+add doc on discretised shapes with label index [ci skip]
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.2.htm
+examples/samples/list_ROI_values_with_label_image.par
+src/include/stir/Shape/DiscretisedShape3D.h
+
+-------------------------------
+Fri, 5 May 2023 20:43:37 +0100  Kris Thielemans  
+
+[CMake] fix ITK/HDF5 dependency if they are found by dependencies
+When using ITK, but disabling HDF5, we were including some
+STIR files depending on HDF5 anyway, resulting in linking failures.
+This was because we were using HDF5_FOUND. Now we use our own variable
+HAVE_HDF5.
+
+A similar fix was applied for ITK, although it's more unlikely
+that ITK is found by some other library I guess.
+
+Fixes #1165
+
+
+src/IO/CMakeLists.txt
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Fri, 28 Apr 2023 18:29:54 +0100  Kris Thielemans  
+
+add capability for discreted shapes with labels
+segmentations often give 1 file with values 0,1,2,3... for each mask.
+We now have a "label_index" parameter for the discretised shape to say
+which index you want.
+
+
+src/Shape_buildblock/DiscretisedShape3D.cxx
+src/include/stir/Shape/DiscretisedShape3D.h
+src/test/test_ROIs.cxx
+
+-------------------------------
+Fri, 21 Apr 2023 13:05:26 +0100  Kris Thielemans  
+
+change filenames used by SPECT_dicom_to_interfile
+include explicit energy window number in case names are the same.
+
+Fixes #1189
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Thu, 20 Apr 2023 13:10:23 +0100  Kris Thielemans  
+
+Move GEHDF5ListmodeInputFileFormat implementation to .cxx (#1188)
+This means that the .h file, and therefore IO_registries.cxx, no
+longer needs access to HDF5 include files, avoiding linking problems.
+
+Fixes #1186
+
+src/IO/CMakeLists.txt
+src/IO/GEHDF5ListmodeInputFileFormat.cxx
+src/include/stir/IO/GEHDF5ListmodeInputFileFormat.h
+
+-------------------------------
+Thu, 20 Apr 2023 08:26:58 +0100  Robert-PrescientImaging  
+
+Fixes bug in Projdata visualisation via Python (#1187)
+when clicking "Browse" or "Load" buttons, the image did not update.
+
+examples/python/projdata_visualisation/BackendTools/STIRInterface.py
+
+-------------------------------
+Wed, 19 Apr 2023 23:37:23 +0100  Kris Thielemans  
+
+SPECT raw DICOM: output files without spaces in filename
+Fixes #1185
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Wed, 19 Apr 2023 23:37:23 +0100  Kris Thielemans  
+
+SPECT raw dicom: make energy information optional
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Wed, 19 Apr 2023 15:53:59 +0100  Daniel Deidda  
+
+ changing SPECTUB global variables to class members (#1169)
+* change global variables to class members. In internal functions, pass variables explicitly.
+
+* use const * Rrad where possible.
+
+* remove comments and add info to release5.3
+
+---------
+
+Co-authored-by: nmdicom-recon <nmdicom-recon@feijoa.npl.co.uk>
+
+documentation/release_5.2.htm
+src/include/stir/recon_buildblock/ProjMatrixByBinSPECTUB.h
+src/include/stir/recon_buildblock/SPECTUB_Tools.h
+src/include/stir/recon_buildblock/SPECTUB_Weight3d.h
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+src/recon_buildblock/SPECTUB_Tools.cxx
+src/recon_buildblock/SPECTUB_Weight3d.cxx
+
+-------------------------------
+Wed, 19 Apr 2023 07:52:21 +0100  Kris Thielemans  
+
+make radionuclide info optional in SPECT DICOM
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Tue, 11 Apr 2023 12:43:13 +0100  Kris Thielemans  
+
+Merge pull request #1182 from KrisThielemans/SPECT_dicom_to_interfile
+SPECT DICOM to interfile utility (rebased)
+
+-------------------------------
+Sat, 8 Apr 2023 16:04:21 +0100  Kris Thielemans  
+
+Merge pull request #1181 from KrisThielemans/issue/1161-improvements-to-scatter-estimation-interpolation_clean
+Issue/1161 improvements to scatter estimation interpolation clean
+
+-------------------------------
+Sat, 8 Apr 2023 14:27:27 +0100  Kris Thielemans  
+
+added SPECT_dicom_to_interfile to release notes and User's Guide
+
+
+documentation/STIR-UsersGuide.tex
+documentation/release_5.2.htm
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 13:39:11 +0100  Kris Thielemans  
+
+only build SPECT DICOM file if ITK is present
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Sat, 8 Apr 2023 13:39:11 +0100  Kris Thielemans  
+
+check SPECT number of frames
+add warning if values don't fit
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 13:39:11 +0100  Kris Thielemans  
+
+handle multiple energy windows in SPECT DICOM
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 13:39:11 +0100  Kris Thielemans  
+
+remove some compiler warnings
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 13:39:11 +0100  nmdicom-recon  
+
+update utility that extracts interfile+binary from dicom data
+various improvements such as rotation direction, radionuclide etc
+
+
+src/utilities/CMakeLists.txt
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 13:22:02 +0100  Benjamin Thomas  
+
+first version of utility to convert SPECT raw DICOM to Interfile
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 10:03:21 +0100  Kris Thielemans  
+
+renamed test_interpolate_scatter to test_interpolate_projdata
+
+
+documentation/release_5.2.htm
+src/test/CMakeLists.txt
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 10:03:21 +0100  Kris Thielemans  
+
+minor updates to release notes
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Sat, 8 Apr 2023 10:03:21 +0100  Kris Thielemans  
+
+fix extend_sinogram_in_views for STIR_VERSION >= 6.0
+
+
+src/buildblock/extend_projdata.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 10:03:21 +0100  Kris Thielemans  
+
+make extend_segment work for oblique segments
+However this is untested
+
+
+src/buildblock/extend_projdata.cxx
+
+-------------------------------
+Sat, 8 Apr 2023 10:03:21 +0100  Markus Jehl  
+
+rework functions for interpolating projdata for scatter, mostly for BlocksOnCylindrical
+- Fixed inverse SSRB by always linearly interpolating between the two closest slices. This
+  makes it work for BlocksOnCylindrical as well
+- Rework extend_* functions: new extend_segment function that works on more cases, deprecated others
+This works with BlocksOnCylindrical and view-offset. Fixes #1177
+- interpolate_projdata rewrite, including use linear interpolation in axial direction for BlocksOnCylindrical
+- Deprecate interpolate_axial_position which used nearest neighbour
+- Remove use_view_offset parameter from interpolate_projdata functions (always use view offset)
+- Fixed #1178 offset handling in sample_function_on_regular_grid, add sample_function_using_index_converter
+- add test function
+- Updated release notes.
+
+Fixes #1109
+Fixes #1161
+
+
+documentation/release_5.2.htm
+src/buildblock/extend_projdata.cxx
+src/buildblock/interpolate_axial_position.cxx
+src/buildblock/interpolate_projdata.cxx
+src/buildblock/inverse_SSRB.cxx
+src/include/stir/extend_projdata.h
+src/include/stir/interpolate_axial_position.h
+src/include/stir/interpolate_projdata.h
+src/include/stir/numerics/sampling_functions.h
+src/include/stir/numerics/sampling_functions.inl
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/upsample_and_fit_scatter_estimate.cxx
+src/test/CMakeLists.txt
+src/test/test_interpolate_scatter.cxx
+
+-------------------------------
+Fri, 31 Mar 2023 12:24:25 +0100  Kris Thielemans  
+
+changed headers from LGPL to Apache 2.0 in a few remaining files
+Fixes #1179
+
+
+src/experimental/listmode/CListModeDataLMF.cxx
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/include/stir/recon_buildblock/BinNormalisationFromGEHDF5.h
+src/include/stir_experimental/listmode/CListModeDataLMF.h
+src/include/stir_experimental/listmode/CListRecordLMF.h
+src/modelling_buildblock/modelling_registries.cxx
+src/recon_buildblock/BinNormalisationFromECAT7.cxx
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/recon_buildblock/BinNormalisationSPECT.cxx
+src/recon_buildblock/recon_buildblock_registries.cxx
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/recon_test/test_view_offset_root.cxx
+src/scatter_buildblock/scatter_registries.cxx
+
+-------------------------------
+Thu, 30 Mar 2023 16:01:26 +0100  markus-jehl  
+
+Parallelising fan-data to proj-data function in ML_norm.cxx  (#1168)
+* Parallelised the function that converts from FanData3D to ProjData. Others are unfortunately hard to make thread-safe.
+
+* Updated release notes.
+
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.2.htm
+src/buildblock/ML_norm.cxx
+
+-------------------------------
+Thu, 16 Mar 2023 08:38:35 +0000  Kris Thielemans  
+
+Merge pull request #1174 from Robert-PrescientImaging/ScatterSim/downsample_scanner
+Scatter simulation: extra set/get methods
+
+-------------------------------
+Wed, 15 Mar 2023 13:01:40 -0700  Robert  
+
+Add get/set method for downsample_scanner_bool, num_downsample_scanner_rings and num_downsample_scanner_dets
+
+
+src/include/stir/scatter/ScatterSimulation.h
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 8 Mar 2023 13:06:53 +0000  markus-jehl  
+
+Changing error handling to throw runtime_error instead of string. (#1131)
+* Changing error handling to throw std::runtime_error instead of string.
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.2.htm
+src/buildblock/error.cxx
+
+-------------------------------
+Wed, 8 Mar 2023 13:05:21 +0000  Kris Thielemans  
+
+Merge pull request #1160 from markus-jehl/issue/1112-scatter-estimation-depends-on-normalisation-scale
+ScatterEstimation convergence changes: re-use previous reconstructed image by default
+
+-------------------------------
+Wed, 8 Mar 2023 13:03:45 +0000  Kris Thielemans  
+
+Update release_5.2.htm
+rewrote the description of the updates to the scatter estimate a bit
+
+documentation/release_5.2.htm
+
+-------------------------------
+Mon, 6 Mar 2023 09:01:21 +0000  Kris Thielemans  
+
+Merge pull request #1171 from Robert-PrescientImaging/ProjDataVisualisation/OlderPyQt5Fixes
+Projdata visualisation PyQt5 fix for older python and PyQt5 versions
+
+Fixes ##1170
+
+-------------------------------
+Fri, 3 Mar 2023 15:06:23 -0800  Robert  
+
+Try various PyQt5 calls for similar functionality.
+PyQt5 changed some Enums and method names between minor versions. Try one and then try and another if it doesn't work.
+
+examples/python/projdata_visualisation/BackendTools/UIGroupboxProjdataDimensions.py
+examples/python/projdata_visualisation/ProjDataVisualisation.py
+
+-------------------------------
+Fri, 3 Mar 2023 15:04:24 -0800  Robert  
+
+Simplify method type hints.
+
+
+examples/python/projdata_visualisation/BackendTools/STIRInterface.py
+examples/python/projdata_visualisation/BackendTools/UIGroupboxProjdataDimensions.py
+
+-------------------------------
+Sat, 25 Feb 2023 14:50:40 +0000  Kris Thielemans  
+
+[CMake] make DISABLE_HDF5 and DISABLE_ITK robust (#1166)
+Fixes https://github.com/UCL/STIR/issues/1165
+
+src/CMakeLists.txt
+
+-------------------------------
+Thu, 23 Feb 2023 12:16:08 +0000  Kris Thielemans  
+
+Increase threshold for scatter test
+Occasional numerical errors cause the difference to be larger than 6%, so increased it to 7%.
+
+Fixes #1164
+
+recon_test_pack/run_scatter_tests.sh
+
+-------------------------------
+Tue, 21 Feb 2023 16:35:54 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into ECAT8axial_effects
+
+
+-------------------------------
+Tue, 21 Feb 2023 08:16:49 +0000  Markus Jehl  
+
+Making get function const
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Mon, 20 Feb 2023 10:08:33 +0000  Markus Jehl  
+
+Added a variable to re-enable reconstruction reset if desired.
+
+
+documentation/release_5.2.htm
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Sun, 19 Feb 2023 18:41:15 +0000  Kris Thielemans  
+
+relax numerical check
+The RDP test still failed occasionally.
+
+Fixes #1162
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Wed, 15 Feb 2023 16:39:21 +0000  Markus Jehl  
+
+Updated the release notes [ci skip]
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Wed, 15 Feb 2023 15:41:13 +0000  samdporter  
+
+Update ParallelProj minimum version (#1150)
+Update ParallelProj minimum version to 1.0.1 as 1.0.0 had a bug causing compilation errors.
+
+CMakeLists.txt
+
+-------------------------------
+Wed, 15 Feb 2023 11:19:46 +0000  Markus Jehl  
+
+Fixed the issue by removing lines that reset the activity image to 1 at set_up and in each iteration. Plus some code tidy-up that happened along the way during the investigation.
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Mon, 13 Feb 2023 18:43:09 +0000  markus-jehl  
+
+Scatter simulation: use actual number of non_arccorrected bins (#1152)
+* Previously, max_num_non_arccorrected bins were used, which could be wrong, or too large. Instead, the actual proj_data_info tangential bin number should be used.
+
+* Added check  in ProjDataInfo*NoArcCorr constructed for number of tangential positions to be smaller or equal to max num non arc corrected bins. 
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_5.2.htm
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Fri, 10 Feb 2023 23:52:44 +0700  Kris Thielemans  
+
+Merge pull request #1158 from KrisThielemans/is_trivial_fixes
+BinNormalisation*::is_trivial fixes. Fixes #1153
+
+-------------------------------
+Thu, 9 Feb 2023 07:53:44 +0000  Kris Thielemans  
+
+precompute BinNormalisationPETFromComponents::is_trivial
+We check this now once in `set_up()`, such that calling is_trivial()
+itself is really fast.
+
+
+src/include/stir/recon_buildblock/BinNormalisationPETFromComponents.h
+src/recon_buildblock/BinNormalisationPETFromComponents.cxx
+
+-------------------------------
+Thu, 9 Feb 2023 07:53:01 +0000  Kris Thielemans  
+
+BinNormalisationFromProjdata::is_trivial now always returns false
+We were going through all of the projection data to check if they
+are all 1, but this takes time (especially when they are all 1).
+In fact, it slowed us down in distributable_computation as it was
+checked for every RelatedViewgrams.
+
+As the case where the whole ProjData is set to 1 will never occur
+in "real life", we save ourselves some time/complications
+by returning false.
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromProjData.h
+src/recon_buildblock/BinNormalisationFromProjData.cxx
+
+-------------------------------
+Wed, 8 Feb 2023 01:09:33 +0700  Kris Thielemans  
+
+Merge pull request #1155 from mastergari/master
+Fix #1154 SPECTUBPinhole path to lowercase bug and update path error message
+
+-------------------------------
+Wed, 8 Feb 2023 01:07:43 +0700  Kris Thielemans  
+
+Merge pull request #1143 from Robert-PrescientImaging/ScatterSimulationErrorMsgFix
+Update scatter simulation error message
+
+-------------------------------
+Tue, 7 Feb 2023 10:48:11 -0400  mastergari  
+
+Fix #1154 path to lowercase bug and update path error message
+
+
+src/recon_buildblock/PinholeSPECTUB_Tools.cxx
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+
+-------------------------------
+Mon, 6 Feb 2023 19:46:33 +0700  Kris Thielemans  
+
+Merge pull request #1141 from KrisThielemans/OBJECT_library
+[CMake] Use an object library for STIR_REGISTRIES
+
+-------------------------------
+Mon, 6 Feb 2023 12:35:37 +0000  Kris Thielemans  
+
+updated release notes
+
+
+documentation/release_5.2.htm
+
+-------------------------------
+Mon, 6 Feb 2023 12:27:44 +0000  Kris Thielemans  
+
+Merge branch 'master' into OBJECT_library
+
+
+-------------------------------
+Mon, 6 Feb 2023 19:19:29 +0700  Kris Thielemans  
+
+Merge pull request #1149 from KrisThielemans/energyDoc
+improve doc on energy_resolution etc
+
+-------------------------------
+Mon, 6 Feb 2023 07:52:45 +0000  Kris Thielemans  
+
+updated 5.1 release notes
+
+
+documentation/release_5.1.htm
+documentation/release_5.2.htm
+
+-------------------------------
+Mon, 6 Feb 2023 07:42:14 +0000  Kris Thielemans  
+
+Scanner: add tests/improve messages about energy resolution
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Mon, 6 Feb 2023 07:21:22 +0000  Kris Thielemans  
+
+improve doc on energy_resolution etc
+
+
+examples/samples/PET_Interfile_header.hs
+src/include/stir/IO/InterfileHeader.h
+src/include/stir/Scanner.h
+src/include/stir/scatter/ScatterSimulation.h
+src/scatter_buildblock/scatter_detection_modelling.cxx
+
+-------------------------------
+Wed, 1 Feb 2023 04:55:24 +0000  Kris Thielemans  
+
+correct/complete doxygen in QuadraticPrior [ci skip]
+
+
+src/include/stir/recon_buildblock/QuadraticPrior.h
+
+-------------------------------
+Thu, 26 Jan 2023 13:53:18 +0000  Kris Thielemans  
+
+correct usage message and variable name
+replace "apply_or_undo" with "multiply_or_divide"
+
+
+src/utilities/apply_normfactors.cxx
+src/utilities/apply_normfactors3D.cxx
+
+-------------------------------
+Tue, 24 Jan 2023 15:56:30 -0800  Robert-PrescientImaging  
+
+Update scatter simulation error message
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Mon, 16 Jan 2023 06:46:21 +0000  Kris Thielemans  
+
+make export of STIR_REGISTRIES work for all CMake versions > 3.1 (probably)
+
+
+CMakeLists.txt
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Mon, 16 Jan 2023 06:46:21 +0000  Kris Thielemans  
+
+update/add documentation on using STIR as external project
+
+
+documentation/STIR-UsersGuide.tex
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Sun, 15 Jan 2023 22:26:03 +0000  Kris Thielemans  
+
+fix export of stir_registries
+We still need to use the STIR_REGISTRIES variable as
+target_link_libraries does not use object libraries transitively.
+
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/cmake/STIRConfig.cmake.in
+
+-------------------------------
+Sun, 15 Jan 2023 13:49:52 +0000  Kris Thielemans  
+
+fix boost include for stir_registries
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Sun, 15 Jan 2023 00:51:25 +0000  Kris Thielemans  
+
+[CMake] Use an object library for STIR_REGISTRIES
+Using an object library means that the registries get compiled only once,
+therefore speeding up the build process quite a lot.
+
+It's also easier to use when building a project that uses STIR as
+we just need to depend on STIR_LIBRARIES. However, we do set
+the STIR_REGISTRIES variable empty at export, such that external
+libraries can still use
+  add_executable(bla ${STIR_REGISTRIES})
+
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/cmake/STIRConfig.cmake.in
+src/cmake/stir_dirs.cmake
+src/cmake/stir_exe_targets.cmake
+src/cmake/stir_test_exe_targets.cmake
+src/experimental/motion_test/CMakeLists.txt
+src/recon_test/CMakeLists.txt
+src/swig/CMakeLists.txt
+
+-------------------------------
+Sat, 14 Jan 2023 23:47:35 +0000  Kris Thielemans  
+
+make_distribution.sh: slightly more friendly output to stdout [skip ci]
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
 Sat, 14 Jan 2023 14:16:46 +0000  Kris Thielemans  
 
 minor doxygen fixes
@@ -6593,6 +9238,23 @@ get_radionuclide_from_json returns radionuclide() if JSON not found
 src/buildblock/RadionuclideDB.cxx
 
 -------------------------------
+Tue, 24 Aug 2021 09:24:03 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into ECAT8axial_effects
+
+
+-------------------------------
+Tue, 24 Aug 2021 09:22:30 +0100  Kris Thielemans  
+
+BinNormalisationForECAT8 axial_effects extrapolation
+Siemens data is often acquired with max_ring_difference < num_rings-1, and the
+axial_effects stored are therefore limited. We now extrapolate them to just use 1.
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
 Mon, 23 Aug 2021 12:21:35 +0100  Kris Thielemans  
 
 Merge pull request #921 from KrisThielemans/KeyParser_vectorised_info
@@ -6626,12 +9288,76 @@ src/buildblock/KeyParser.cxx
 src/include/stir/KeyParser.h
 
 -------------------------------
+Sat, 21 Aug 2021 13:35:49 +0100  Kris Thielemans  
+
+fix wrong use of exam_info in BinNormalisation::set_up()
+unclear use of member variable and argument, probably was a bug
+that the argument was ignored.
+
+
+src/recon_buildblock/BinNormalisation.cxx
+
+-------------------------------
+Sat, 21 Aug 2021 13:35:49 +0100  Kris Thielemans  
+
+conversion fix in BinNormalisationFromECAT8
+fix to accomodate VS2015
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Sat, 21 Aug 2021 13:35:49 +0100  Kris Thielemans  
+
+take new use of axial effects into account in the mMR sample.par files
+
+
+examples/Siemens-mMR/correct_projdata_no_axial_effects.par
+examples/Siemens-mMR/correct_projdata_only_counts.par
+
+-------------------------------
+Sat, 21 Aug 2021 02:08:17 +0100  Kris Thielemans  
+
+fix bug in axial_effects for ECAT8 norm
+we were using the wrong variable in a loop in construct_sino_lookup_table.
+Also use number of non-tof sinograms.
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Sat, 21 Aug 2021 02:00:46 +0100  Kris Thielemans  
+
+major revision of BinNormalisationFromECAT8 header parsing
+- created new class InterfileNormHeaderSiemens where all the parsing is
+done (moving some bits from BinNormalisationFromECAT8, but adding much
+more)
+- add more consistency checks after parsing (still not enough)
+- fix problem that we always assumed span=11 in the norm header
+as we now parse it
+- fix creating of internal proj_data_info which assumed
+max_ring_difference=num_rings-1 as we now parse it
+
+
+src/IO/InterfileHeader.cxx
+src/IO/InterfileHeaderSiemens.cxx
+src/include/stir/IO/InterfileHeaderSiemens.h
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
 Thu, 19 Aug 2021 16:06:00 +0100  danieldeidda  
 
 romoving INFO message that was causing bash scripts to fail
 
 
 src/buildblock/find_STIR_config.cxx
+
+-------------------------------
+Thu, 19 Aug 2021 06:46:25 +0100  Kris Thielemans  
+
+Merge branch 'master' into ECAT8axial_effects
+
 
 -------------------------------
 Mon, 9 Aug 2021 17:06:00 +0100  Kris Thielemans  
@@ -14452,6 +17178,22 @@ src/test/test_Array.cxx
 src/test/test_proj_data_maths.cxx
 
 -------------------------------
+Wed, 5 Aug 2020 11:02:19 +0100  danieldeidda  
+
+ fixed get_bin_efficiency and call find_axial_factors() with ring1 and ring2; save axial effects to file; added interfileRawDataHeaderSiemens; initialise view and tang_pos to 0 in construct_sino_lookup_table().
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
+Wed, 29 Jul 2020 11:51:59 +0100  danieldeidda  
+
+make the creation of the projdatainfo shorter
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
 Wed, 29 Jul 2020 08:44:52 +0200  Parisa Khateri  
 
 fix a bug
@@ -14723,6 +17465,14 @@ src/include/stir/Scanner.h
 src/include/stir/Scanner.inl
 
 -------------------------------
+Thu, 16 Jul 2020 15:36:31 +0100  danieldeidda  
+
+ECAT8norm: completed function, construct_sino_lookup_table(), for axial effects
+
+
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+
+-------------------------------
 Thu, 16 Jul 2020 13:00:34 +0200  Parisa Khateri  
 
 add SAFIRDualRingPrototype to the list of defined scanners
@@ -14911,6 +17661,16 @@ Indent correct_projdata
 
 
 src/utilities/correct_projdata.cxx
+
+-------------------------------
+Mon, 13 Jul 2020 15:52:33 +0000  Kris Thielemans  
+
+first attempt to use axial_effects for ECAT8 normalisation
+untested
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
 
 -------------------------------
 Mon, 13 Jul 2020 12:41:16 +0100  Abder Biguri  

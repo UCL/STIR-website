@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -69,14 +69,24 @@ Inheritance diagram for stir::Sinogram&lt; elemT &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c8448c569283c0c566315c791355440"><td class="memItemLeft" align="right" valign="top"><a id="a1c8448c569283c0c566315c791355440"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a1c8448c569283c0c566315c791355440">Sinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int ax_pos_num, const int segment_num)</td></tr>
-<tr class="memdesc:a1c8448c569283c0c566315c791355440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram from proj_data_info pointer, ring and segment number. Data are set to 0. <br /></td></tr>
+<tr class="memitem:af19a9a898a5150820340bfb1f5864438"><td class="memItemLeft" align="right" valign="top"><a id="af19a9a898a5150820340bfb1f5864438"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#af19a9a898a5150820340bfb1f5864438">Sinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr, const <a class="el" href="classstir_1_1SinogramIndices.html">SinogramIndices</a> &amp;)</td></tr>
+<tr class="memdesc:af19a9a898a5150820340bfb1f5864438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram from proj_data_info pointe and indices. Data are set to 0. <br /></td></tr>
+<tr class="separator:af19a9a898a5150820340bfb1f5864438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3fe86ddbec8c415f6f5132a77fab6c"><td class="memItemLeft" align="right" valign="top"><a id="aee3fe86ddbec8c415f6f5132a77fab6c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#aee3fe86ddbec8c415f6f5132a77fab6c">Sinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;p, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr, const <a class="el" href="classstir_1_1SinogramIndices.html">SinogramIndices</a> &amp;)</td></tr>
+<tr class="memdesc:aee3fe86ddbec8c415f6f5132a77fab6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram with data set to the array. <br /></td></tr>
+<tr class="separator:aee3fe86ddbec8c415f6f5132a77fab6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8448c569283c0c566315c791355440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a1c8448c569283c0c566315c791355440">Sinogram</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int ax_pos_num, const int segment_num)</td></tr>
+<tr class="memdesc:a1c8448c569283c0c566315c791355440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram from proj_data_info pointer, axial position and segment number. Data are set to 0.  <a href="#a1c8448c569283c0c566315c791355440">More...</a><br /></td></tr>
 <tr class="separator:a1c8448c569283c0c566315c791355440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09814b1367143ccbbe9e696b46a50e7f"><td class="memItemLeft" align="right" valign="top"><a id="a09814b1367143ccbbe9e696b46a50e7f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a09814b1367143ccbbe9e696b46a50e7f">Sinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;p, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int ax_pos_num, const int segment_num)</td></tr>
-<tr class="memdesc:a09814b1367143ccbbe9e696b46a50e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram with data set to the array. <br /></td></tr>
+<tr class="memitem:a09814b1367143ccbbe9e696b46a50e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a09814b1367143ccbbe9e696b46a50e7f">Sinogram</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;p, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const int ax_pos_num, const int segment_num)</td></tr>
+<tr class="memdesc:a09814b1367143ccbbe9e696b46a50e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct sinogram with data set to the array.  <a href="#a09814b1367143ccbbe9e696b46a50e7f">More...</a><br /></td></tr>
 <tr class="separator:a09814b1367143ccbbe9e696b46a50e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad857288b7526d4f5ac31983fe1866d"><td class="memItemLeft" align="right" valign="top"><a id="a0ad857288b7526d4f5ac31983fe1866d"></a>
+<a class="el" href="classstir_1_1SinogramIndices.html">SinogramIndices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a0ad857288b7526d4f5ac31983fe1866d">get_sinogram_indices</a> () const</td></tr>
+<tr class="memdesc:a0ad857288b7526d4f5ac31983fe1866d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get indices. <br /></td></tr>
+<tr class="separator:a0ad857288b7526d4f5ac31983fe1866d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68fdc08abb0f1524a8bea1ebcc369e13"><td class="memItemLeft" align="right" valign="top"><a id="a68fdc08abb0f1524a8bea1ebcc369e13"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Sinogram.html#a68fdc08abb0f1524a8bea1ebcc369e13">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a68fdc08abb0f1524a8bea1ebcc369e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get segment number. <br /></td></tr>
@@ -659,8 +669,111 @@ typedef boost::reverse_iterator&lt; <a class="el" href="classstir_1_1detail_1_1V
 class stir::Sinogram&lt; elemT &gt;</h3>
 
 <p>A class for 2d projection data. </p>
-<p>This represents a subset of the full projection. segment_num and axial_pos_num are fixed. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>This represents a subset of the full projection. <a class="el" href="classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. ">SegmentIndices</a> and axial_pos_num are fixed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1c8448c569283c0c566315c791355440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8448c569283c0c566315c791355440">&#9670;&nbsp;</a></span>Sinogram() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Sinogram.html">stir::Sinogram</a>&lt; elemT &gt;::<a class="el" href="classstir_1_1Sinogram.html">Sinogram</a> </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ax_pos_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct sinogram from proj_data_info pointer, axial position and segment number. Data are set to 0. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>Use version with <a class="el" href="classstir_1_1SinogramIndices.html" title="A very simple class to store all dincies to get a (2D) Sinogram. ">SinogramIndices</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a09814b1367143ccbbe9e696b46a50e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09814b1367143ccbbe9e696b46a50e7f">&#9670;&nbsp;</a></span>Sinogram() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Sinogram.html">stir::Sinogram</a>&lt; elemT &gt;::<a class="el" href="classstir_1_1Sinogram.html">Sinogram</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, elemT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ax_pos_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct sinogram with data set to the array. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Use version with <a class="el" href="classstir_1_1SinogramIndices.html" title="A very simple class to store all dincies to get a (2D) Sinogram. ">SinogramIndices</a> instead. </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1Sinogram.html#af19a9a898a5150820340bfb1f5864438">stir::Sinogram&lt; elemT &gt;::Sinogram()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a109d9c7d54858871ff27868c1ada4742"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a109d9c7d54858871ff27868c1ada4742">&#9670;&nbsp;</a></span>grow()</h2>
 
@@ -682,7 +795,7 @@ template&lt;typename elemT &gt; </div>
 <p>Overloading <a class="el" href="classstir_1_1Array.html#a65d8d70124654379b1bc507829e14b67" title="grow the array to a new range of indices, new elements are set to 0 ">Array::grow</a>. </p>
 <p>This makes sure that the new <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> dimensions are the same as those in the <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> member. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#a83e0d669afc9e7da5b41b713743f5374">stir::ProjDataFromStream::get_sinogram()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInMemory.html#ac1873527f8ae6b00a581e2ac43d2a58e">stir::ProjDataInMemory::get_sinogram()</a>, and <a class="el" href="classstir_1_1ProjDataFromStream.html#a83e0d669afc9e7da5b41b713743f5374">stir::ProjDataFromStream::get_sinogram()</a>.</p>
 
 </div>
 </div>
@@ -801,7 +914,7 @@ template&lt;typename elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

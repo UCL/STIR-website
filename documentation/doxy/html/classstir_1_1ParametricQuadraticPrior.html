@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -262,7 +262,7 @@ class stir::ParametricQuadraticPrior&lt; TargetT &gt;</h3>
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements a quadratic Gibbs prior. </p>
 <p>The gradient of the prior is computed as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]" src="form_119.png"/>
+<img class="formulaDsp" alt="\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]" src="form_142.png"/>
 </p>
 <p> where <img class="formulaInl" alt="$\lambda$" src="form_8.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_70.png"/> and <img class="formulaInl" alt="$dr$" src="form_71.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_72.png"/> are non-zero.</p>
 <p>The <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_73.png"/>'s.</p>
@@ -584,7 +584,7 @@ template&lt;typename TargetT &gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000213">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a16bd4ca565d4fb24071d404d2c152b96" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000212">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a16bd4ca565d4fb24071d404d2c152b96" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#ac5cec7ab8c9afaf1f863ad7aa7dfdbb7">stir::ParametricQuadraticPrior&lt; TargetT &gt;::get_weights()</a>, and <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#afdad138636fbfcace3e2b70fcf9e4335">stir::ParametricQuadraticPrior&lt; TargetT &gt;::set_weights()</a>.</p>
 
@@ -597,7 +597,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

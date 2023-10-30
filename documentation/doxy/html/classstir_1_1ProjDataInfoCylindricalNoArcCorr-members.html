@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -74,10 +74,14 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a08a17368bdc3f8e7c3bb0b1b5e7cd6ec">get_det_num_pair_for_view_tangential_pos_num</a>(int &amp;det1_num, int &amp;det2_num, const int view_num, const int tang_pos_num) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">stir::ProjDataInfoCylindricalNoArcCorr</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#ae346d00436f9a48fbc142aabe0b85846">get_det_pair_for_bin</a>(int &amp;det1_num, int &amp;ring1_num, int &amp;det2_num, int &amp;ring2_num, const Bin &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">stir::ProjDataInfoCylindricalNoArcCorr</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a91d17e431dad398a978a408126a5ff8c">get_det_pos_pair_for_bin</a>(DetectionPositionPair&lt;&gt; &amp;, const Bin &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">stir::ProjDataInfoCylindricalNoArcCorr</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#ad7b240d1ae03ce50472210a388154adf">get_empty_related_viewgrams</a>(const ViewSegmentNumbers &amp;, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">get_empty_segment_by_sinogram</a>(const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a04c92de5313eaa937f50c79d6f642614">get_empty_related_viewgrams</a>(const ViewgramIndices &amp;, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#aad1a50eb350bffa449f01074d69054fd">get_empty_segment_by_sinogram</a>(const SegmentIndices &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">get_empty_segment_by_sinogram</a>(const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#afb228dd821ac76fabb06b363074e4dd6">get_empty_segment_by_view</a>(const SegmentIndices &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">get_empty_segment_by_view</a>(const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">get_empty_sinogram</a>(const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a6b80443774898590d4558163f7dbe253">get_empty_sinogram</a>(const SinogramIndices &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">get_empty_sinogram</a>(const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a9072da99f09c871618a178e5a204e019">get_empty_viewgram</a>(const ViewgramIndices &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">get_empty_viewgram</a>(const int view_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#acdd1c91be93adca968dcf669253132b9">get_LOR</a>(LORInAxialAndNoArcCorrSinogramCoordinates&lt; float &gt; &amp;lor, const Bin &amp;bin) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html">stir::ProjDataInfoCylindrical</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">get_m</a>(const Bin &amp;) const</td><td class="entry"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html">stir::ProjDataInfoCylindrical</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
@@ -162,7 +166,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

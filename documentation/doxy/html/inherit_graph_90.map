@@ -1,12 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="5,122,115,149"/>
-<area shape="rect" id="node2" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="163,122,341,149"/>
-<area shape="rect" id="node3" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="389,122,523,149"/>
-<area shape="rect" id="node4" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="571,46,755,73"/>
-<area shape="rect" id="node8" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images " alt="" coords="578,97,747,123"/>
-<area shape="rect" id="node9" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="578,147,747,174"/>
-<area shape="rect" id="node10" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data " alt="" coords="578,199,747,240"/>
-<area shape="rect" id="node5" href="$classstir_1_1InterfileRawDataHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens PET projection or list mode data ..." alt="" coords="803,39,991,80"/>
-<area shape="rect" id="node6" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemesn listmode data (in PETLINK format) ..." alt="" coords="1039,5,1225,47"/>
-<area shape="rect" id="node7" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="1047,71,1217,112"/>
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,5,132,47"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="180,13,260,39"/>
+<area shape="rect" id="node3" href="$classstir_1_1Line.html" title="A class used by the Interfile parser. " alt="" coords="308,13,380,39"/>
 </map>

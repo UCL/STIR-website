@@ -1,0 +1,7 @@
+<map id="stir::SegmentIndices" name="stir::SegmentIndices">
+<area shape="rect" id="node2" href="$classstir_1_1SinogramIndices.html" title="A very simple class to store all dincies to get a (2D) Sinogram. " alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1ViewgramIndices.html" title="A very simple class to store all dincies to get a (2D) Viewgram. " alt="" coords="175,80,323,107"/>
+<area shape="rect" id="node4" href="$classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. " alt="" coords="141,155,207,181"/>
+<area shape="rect" id="node6" href="$classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices " alt="" coords="232,155,415,181"/>
+<area shape="rect" id="node5" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="93,229,255,271"/>
+</map>

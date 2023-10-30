@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,8 @@ Collaboration diagram for Interfile support in the IO library:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__InterfileIO.png" border="0" alt="" usemap="#group____InterfileIO"/>
 <map name="group____InterfileIO" id="group____InterfileIO">
-<area shape="rect" id="node1" href="group__IO.html" title="Input/Output Library" alt="" coords="5,13,143,39"/>
+<area shape="rect" id="node1" href="group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="515,5,689,47"/>
+<area shape="rect" id="node2" href="group__IO.html" title="Input/Output Library" alt="" coords="5,13,143,39"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -68,7 +69,7 @@ Files</h2></td></tr>
 <tr class="memdesc:InterfileHeader_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file declares the classes <a class="el" href="classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data ">stir::InterfileHeader</a>, <a class="el" href="classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images ">stir::InterfileImageHeader</a>, <a class="el" href="classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ...">stir::InterfilePDFSHeader</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:InterfileHeaderSiemens_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InterfileHeaderSiemens_8h.html">InterfileHeaderSiemens.h</a></td></tr>
-<tr class="memdesc:InterfileHeaderSiemens_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file declares the classes <a class="el" href="classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data ">stir::InterfileHeaderSiemens</a>, <a class="el" href="classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images ">stir::InterfileImageHeader</a>, <a class="el" href="classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ...">stir::InterfilePDFSHeader</a>. <br /></td></tr>
+<tr class="memdesc:InterfileHeaderSiemens_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file declares the classes stir::InterfileHeaderSiemens, stir::InterfileRawDataHeaderSiemens, stir::InterfilePDFSHeaderSiemens, stir::InterfileListmodeHeaderSiemens, stir:InterfileNormHeaderSiemens. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:InterfileOutputFileFormat_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InterfileOutputFileFormat_8h.html">InterfileOutputFileFormat.h</a></td></tr>
 <tr class="memdesc:InterfileOutputFileFormat_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1InterfileOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Interfile format. ">stir::InterfileOutputFileFormat</a>. <br /></td></tr>
@@ -89,7 +90,7 @@ Files</h2></td></tr>
 <tr class="memdesc:InterfileHeader_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementations for the <a class="el" href="classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data ">stir::InterfileHeader</a> class <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:InterfileHeaderSiemens_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InterfileHeaderSiemens_8cxx.html">InterfileHeaderSiemens.cxx</a></td></tr>
-<tr class="memdesc:InterfileHeaderSiemens_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementations for the <a class="el" href="classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data ">stir::InterfileHeaderSiemens</a> class <br /></td></tr>
+<tr class="memdesc:InterfileHeaderSiemens_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementations for the stir::InterfileHeaderSiemens classes <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:InterfileOutputFileFormat_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InterfileOutputFileFormat_8cxx.html">InterfileOutputFileFormat.cxx</a></td></tr>
 <tr class="memdesc:InterfileOutputFileFormat_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of class <a class="el" href="classstir_1_1InterfileOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Interfile format. ">stir::InterfileOutputFileFormat</a>. <br /></td></tr>
@@ -117,18 +118,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfilePDFSHeader.html">stir::InterfilePDFSHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a class for Interfile keywords (and parsing) specific to projection data (i.e. <a class="el" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. ">ProjDataFromStream</a>)  <a href="classstir_1_1InterfilePDFSHeader.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfileHeaderSiemens.html">stir::InterfileHeaderSiemens</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a class for Interfile keywords (and parsing) common to all types of data  <a href="classstir_1_1InterfileHeaderSiemens.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html">stir::InterfileRawDataHeaderSiemens</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a class for Interfile keywords (and parsing) specific to Siemens PET projection or list mode data  <a href="classstir_1_1InterfileRawDataHeaderSiemens.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfilePDFSHeaderSiemens.html">stir::InterfilePDFSHeaderSiemens</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a class for Interfile keywords (and parsing) specific to projection data (i.e. <a class="el" href="classstir_1_1ProjDataFromStream.html" title="A class which reads/writes projection data from/to a (binary) stream. ">ProjDataFromStream</a>)  <a href="classstir_1_1InterfilePDFSHeaderSiemens.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfileListmodeHeaderSiemens.html">stir::InterfileListmodeHeaderSiemens</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a class for Interfile keywords (and parsing) specific to Siemesn listmode data (in PETLINK format)  <a href="classstir_1_1InterfileListmodeHeaderSiemens.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1InterfileOutputFileFormat.html">stir::InterfileOutputFileFormat</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files. ">OutputFileFormat</a> paradigm for the Interfile format.  <a href="classstir_1_1InterfileOutputFileFormat.html#details">More...</a><br /></td></tr>
@@ -815,7 +804,7 @@ template&lt;class elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

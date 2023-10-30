@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2f90bebcb4fd07bc484c0876c7575d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a2f90bebcb4fd07bc484c0876c7575d8f">downsample_images_to_scanner_size</a> ()</td></tr>
 <tr class="memdesc:a2f90bebcb4fd07bc484c0876c7575d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downsamples activity and attenuation images to voxel sizes appropriate for the (downsampled) scanner.  <a href="#a2f90bebcb4fd07bc484c0876c7575d8f">More...</a><br /></td></tr>
 <tr class="separator:a2f90bebcb4fd07bc484c0876c7575d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133c9b3f5c8f336402d167d798dbe0d9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a133c9b3f5c8f336402d167d798dbe0d9">detection_efficiency</a> (const float energy) const</td></tr>
+<tr class="memdesc:a133c9b3f5c8f336402d167d798dbe0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">gamma-energy-part of the detection efficiency  <a href="#a133c9b3f5c8f336402d167d798dbe0d9">More...</a><br /></td></tr>
+<tr class="separator:a133c9b3f5c8f336402d167d798dbe0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8c82e7557ea44b70c15300f29043dd"><td class="memItemLeft" align="right" valign="top"><a id="ada8c82e7557ea44b70c15300f29043dd"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_up</b> ()</td></tr>
 <tr class="separator:ada8c82e7557ea44b70c15300f29043dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +204,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad891111c69b44722697d4049a05e254e"><td class="memItemLeft" align="right" valign="top"><a id="ad891111c69b44722697d4049a05e254e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_cache_enabled</b> (const bool)</td></tr>
 <tr class="separator:ad891111c69b44722697d4049a05e254e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ad870be7a084a1f15b6289f27abe6150e"><td class="memItemLeft" align="right" valign="top"><a id="ad870be7a084a1f15b6289f27abe6150e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#ad870be7a084a1f15b6289f27abe6150e">set_downsample_scanner_bool</a> (const bool arg)</td></tr>
+<tr class="memdesc:ad870be7a084a1f15b6289f27abe6150e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and set methods for the downsample_scanner_bool. <br /></td></tr>
+<tr class="separator:ad870be7a084a1f15b6289f27abe6150e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946373ab615c68d79f71650122a83758"><td class="memItemLeft" align="right" valign="top"><a id="a946373ab615c68d79f71650122a83758"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_downsample_scanner_bool</b> () const</td></tr>
+<tr class="separator:a946373ab615c68d79f71650122a83758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ae202092a8bdc5538a1b2793491a61868"><td class="memItemLeft" align="right" valign="top"><a id="ae202092a8bdc5538a1b2793491a61868"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#ae202092a8bdc5538a1b2793491a61868">get_num_downsample_scanner_rings</a> () const</td></tr>
+<tr class="memdesc:ae202092a8bdc5538a1b2793491a61868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and set methods for downsample_scanner_rings. <br /></td></tr>
+<tr class="separator:ae202092a8bdc5538a1b2793491a61868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5b8a69f0d172f4cba6efda2ffd3488"><td class="memItemLeft" align="right" valign="top"><a id="a3b5b8a69f0d172f4cba6efda2ffd3488"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_downsample_scanner_rings</b> (const int arg)</td></tr>
+<tr class="separator:a3b5b8a69f0d172f4cba6efda2ffd3488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a01355d535ce9abec622c0ad3c26971c8"><td class="memItemLeft" align="right" valign="top"><a id="a01355d535ce9abec622c0ad3c26971c8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterSimulation.html#a01355d535ce9abec622c0ad3c26971c8">get_num_downsample_scanner_dets</a> () const</td></tr>
+<tr class="memdesc:a01355d535ce9abec622c0ad3c26971c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and set methods for downsample_scanner_dets. <br /></td></tr>
+<tr class="separator:a01355d535ce9abec622c0ad3c26971c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2831920518e71f2d73f775fa2f654d"><td class="memItemLeft" align="right" valign="top"><a id="a8c2831920518e71f2d73f775fa2f654d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_downsample_scanner_dets</b> (const int arg)</td></tr>
+<tr class="separator:a8c2831920518e71f2d73f775fa2f654d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredObjectBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredObjectBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a></td></tr>
 <tr class="memitem:a9eb7d6e93407316c0780e2121e522ae4 inherit pub_methods_classstir_1_1RegisteredObjectBase"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">get_registered_name</a> () const =0</td></tr>
 <tr class="memdesc:a9eb7d6e93407316c0780e2121e522ae4 inherit pub_methods_classstir_1_1RegisteredObjectBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the type of the object.  <a href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">More...</a><br /></td></tr>
@@ -407,9 +434,6 @@ detection related functions</h2></td></tr>
 <tr class="memitem:aa9d145e29a495b018596fb41cd702f94"><td class="memItemLeft" align="right" valign="top"><a id="aa9d145e29a495b018596fb41cd702f94"></a>
 std::vector&lt; <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>detection_points_vector</b></td></tr>
 <tr class="separator:aa9d145e29a495b018596fb41cd702f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133c9b3f5c8f336402d167d798dbe0d9"><td class="memItemLeft" align="right" valign="top"><a id="a133c9b3f5c8f336402d167d798dbe0d9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>detection_efficiency</b> (const float energy) const</td></tr>
-<tr class="separator:a133c9b3f5c8f336402d167d798dbe0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50b523f7b41132e7affdb32dfd228e4"><td class="memItemLeft" align="right" valign="top"><a id="ab50b523f7b41132e7affdb32dfd228e4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>find_detectors</b> (unsigned &amp;det_num_A, unsigned &amp;det_num_B, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin) const</td></tr>
 <tr class="separator:ab50b523f7b41132e7affdb32dfd228e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -458,8 +482,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Simulate the scatter probability using a model-based approach. </p>
 <p>This base class intends to computes a Compton scatter estimate using an analytical approximation of an integral. It takes as input an emission image and an attenuation image. This is effectively an implementation of the simulation part of the algorithms of Watson and Ollinger. The base class takes care of downsampling and upsampling, book-keeping, caching and looping over bins.</p>
 <p>One non-standard feature is that you can specify a different attenuation image to find the scatter points and one to compute the integrals over the attenuation image. The idea is that maybe you want to compute the integrals on a finer grid then you sample the attenuation image. This is probably not very useful though.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo:</a></b></dt><dd>detector coordinates are derived from <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>, but areas and orientations are determined by using a cylindrical scanner.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>variables/function named <code>density</code> really should use <code>attenuation</code>. This is currently only done for a few variables, but parsing keywords are correct.</dd></dl>
 <dl class="section user"><dt>References</dt><dd>This implementation is described in the following <ol>
 <li>
 C. Tsoumpas, P. Aguiar, K. S. Nikita, D. Ros, K. Thielemans, <em>Evaluation of the Single Scatter Simulation Algorithm Implemented in the STIR Library</em>, Proc. of IEEE Medical Imaging Conf. 2004, vol. 6 pp. 3361 - 3365.  </li>
@@ -489,7 +513,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#a85ddfdb6ce7dd4ba61b560f70a2cba62">set_density_image_for_scatter_points()</a>.</p>
 
@@ -514,7 +538,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><div class="memdoc">
 <p>Since July 2016, the information for the energy window and energy resolution are stored in <a class="el" href="classstir_1_1ExamInfo.html" title="a class for storing information about 1 exam (or scan) ">ExamInfo</a>. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ExamInfo.html#a6717559481cb65d033e544a825ebcd8c">stir::ExamInfo::create_shared_clone()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ExamInfo.html#a6717559481cb65d033e544a825ebcd8c">stir::ExamInfo::create_shared_clone()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ad870be7a084a1f15b6289f27abe6150e">set_downsample_scanner_bool()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">template_exam_info_sptr</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a72227244dbe2a9099f6e0053b062239d">get_exam_info_sptr()</a>.</p>
 
@@ -575,7 +599,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>Downsample the scanner keeping the total axial length the same. </p>
 <p>If <code>new_num_rings&lt;=0</code>, use rings of approximately 2 cm thickness. If <code>new_num_dets</code> &lt;=0, use the default set (currently set in <a class="el" href="classstir_1_1ScatterSimulation.html#adfa6aa72012190de92cd2956a1041c3f" title="Set defaults before parsing. ">set_defaults()</a>) </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a0fbc794ed00c00fa3eb9585b62925346">downsample_scanner_dets</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a16f862ea893cb68ed7b9d8b8aa630da9">downsample_scanner_rings</a>, <a class="el" href="classstir_1_1Scanner.html#aeba39b832436927867bee200f63569a5">stir::Scanner::get_max_num_non_arccorrected_bins()</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">stir::ProjDataInfo::ProjDataInfoCTI()</a>, <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a0fbc794ed00c00fa3eb9585b62925346">downsample_scanner_dets</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a16f862ea893cb68ed7b9d8b8aa630da9">downsample_scanner_rings</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#ada599c16fcf58dd6e2074c696b76ace8">output_proj_data_filename</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">stir::ProjDataInfo::ProjDataInfoCTI()</a>, <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>, and <a class="el" href="classstir_1_1ScatterSimulation.html#a3b0ca6588a50ef6504d6a04f4addd7dd">set_output_proj_data()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a5c6c2b8ae9a277f45caf1a94975a2517">post_processing()</a>.</p>
 
@@ -601,6 +625,36 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>Another way to resolve that is to smooth the images before the scatter simulation. This is currently not implemented in this class. </p><dl class="section warning"><dt>Warning</dt><dd>This function should be called after having set all data. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ScatterSimulation.html#ae810d50ae490df463e440b765d0cfaaf">activity_image_sptr</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a3734e2275c87308233e49888671f5c94">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_empty_copy()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a905ab47dcdb78a56d2bc88212d4e6830">remove_cache_for_integrals_over_activity()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#aa90121ef6321392ace57a452b21582b7">remove_cache_for_integrals_over_attenuation()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a84746a9bb523a979ed1ea2077f97ae31">set_attenuation_threshold()</a>, and <a class="el" href="namespacestir.html#a29e5dea45344553f0cd3c8d75e6ecf9c">stir::zoom_image()</a>.</p>
+
+</div>
+</div>
+<a id="a133c9b3f5c8f336402d167d798dbe0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133c9b3f5c8f336402d167d798dbe0d9">&#9670;&nbsp;</a></span>detection_efficiency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stir::ScatterSimulation::detection_efficiency </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>energy</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gamma-energy-part of the detection efficiency </p>
+<p>Formula used is based on a Gaussian pdf for the efficiency, with </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ FWHM_E = \alpha \sqrt(E) \]" src="form_124.png"/>
+</p>
+<p> where the proportionality constant <img class="formulaInl" alt="$\alpha$" src="form_51.png"/> is determined by the energy FWHM of the <a class="el" href="classstir_1_1Scanner.html" title="A class for storing some info on the scanner. ">Scanner</a> at the reference energy.</p>
+<p>This pdf is then integrated from the lower to the upper energy window limits.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a672d57decc33db7a24e4bac8d9c65d4c" title="get the energy resolution as a fraction at the reference energy ">Scanner::get_energy_resolution</a> </dd>
+<dd>
+<a class="el" href="classstir_1_1Scanner.html#a0a9afb895c38a27e371ed03474808bf0" title="get the reference energy in keV of the energy resolution ">Scanner::get_reference_energy</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 </div>
 </div>
@@ -631,7 +685,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 <p>computes scatter for one viewgram </p>
 <dl class="section return"><dt>Returns</dt><dd>total scatter estimated for this viewgram </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a8edb7ad134ab83216f0d4ff82b52cd17">output_proj_data_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a1d2a0aadfb8843f647befccb940f7415">scatter_estimate()</a>, <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a4743e5f2ecc108be2cc70e55525889c8">stir::ViewSegmentNumbers::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewSegmentNumbers.html#a1617faa1623970b35a40b77f5923efa4">stir::ViewSegmentNumbers::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a8edb7ad134ab83216f0d4ff82b52cd17">output_proj_data_sptr</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a1d2a0aadfb8843f647befccb940f7415">scatter_estimate()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#a0d38af16f76ae65b5cbed25d69d95a20">set_use_cache()</a>.</p>
 
@@ -892,7 +946,7 @@ I Polycarpou, P K Marsden and C Tsoumpas, <em>A comparative investigation of sca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

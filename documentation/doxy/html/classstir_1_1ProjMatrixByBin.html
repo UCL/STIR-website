@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -148,13 +148,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">stop_timers</a> () const</td></tr>
 <tr class="memdesc:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all timers kept by this object  <a href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">More...</a><br /></td></tr>
 <tr class="separator:a23a18a40b2f1e1bb4132c1c5347cf12d inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#ad03301ca66aa639b11129f4081c4cca8">start_timers</a> () const</td></tr>
-<tr class="memdesc:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="classstir_1_1TimedObject.html#ad03301ca66aa639b11129f4081c4cca8">More...</a><br /></td></tr>
-<tr class="separator:ad03301ca66aa639b11129f4081c4cca8 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9">start_timers</a> (bool do_reset=false) const</td></tr>
+<tr class="memdesc:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all timers kept by this object  <a href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9">More...</a><br /></td></tr>
+<tr class="separator:a4085959b7fca857cd90f8d1ab78400c9 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top"><a id="a1e9f1ebea34cc8858ae8d12547ed849f"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a1e9f1ebea34cc8858ae8d12547ed849f">get_CPU_timer_value</a> () const</td></tr>
-<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the timer (since first use or last reset) <br /></td></tr>
+<tr class="memdesc:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the CPU timer (since first use or last reset) <br /></td></tr>
 <tr class="separator:a1e9f1ebea34cc8858ae8d12547ed849f inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top"><a id="a39b9924e874ce94ddba9068765794658"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a39b9924e874ce94ddba9068765794658">get_wall_clock_timer_value</a> () const</td></tr>
+<tr class="memdesc:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current value of the wall-clock timer (since first use or last reset) <br /></td></tr>
+<tr class="separator:a39b9924e874ce94ddba9068765794658 inherit pub_methods_classstir_1_1TimedObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -302,7 +306,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>Note that <a class="el" href="classstir_1_1ProjMatrixByBin.html#a9ade76e137791338a39fa73161759c30" title="The main method for getting a row of the matrix. ">get_proj_matrix_elems_for_one_bin()</a> will expect objects of compatible sizes and other info.</p>
 <dl class="section warning"><dt>Warning</dt><dd>: Any implementation of set_up in a derived class has to call <a class="el" href="classstir_1_1ProjMatrixByBin.html#a980a5752fc68b8ec3642d9065182eb28" title="To be called before any calculation is performed. ">ProjMatrixByBin::set_up</a> first. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a019dc9e991a8cde7d9e61811084b0dcd">stir::ProjMatrixByBinPinholeSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#af962c3e6211c3c0fe3e41d1c0f71d10c">stir::ProjMatrixByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a2e6fe287cbc07685b51b7c58ec13d1cd">stir::ProjMatrixByBinFromFile</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">stir::ProjMatrixByBinSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a6e9b4d0f51cbb971dc39eda24fc2255a">stir::ProjMatrixByBinUsingInterpolation</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a13ad2e597ca39ad41e3e86ea910df5e1">stir::ProjMatrixByBinSinglePhoton</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#a9911850dd29959dd8361053ee73dc45e">stir::ProjMatrixByBinUsingSolidAngle</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinWithPositronRange.html#adbb85fd9fe44e136bd7b0c635ba9efe4">stir::ProjMatrixByBinWithPositronRange</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a019dc9e991a8cde7d9e61811084b0dcd">stir::ProjMatrixByBinPinholeSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#af962c3e6211c3c0fe3e41d1c0f71d10c">stir::ProjMatrixByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">stir::ProjMatrixByBinSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a2e6fe287cbc07685b51b7c58ec13d1cd">stir::ProjMatrixByBinFromFile</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a6e9b4d0f51cbb971dc39eda24fc2255a">stir::ProjMatrixByBinUsingInterpolation</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a13ad2e597ca39ad41e3e86ea910df5e1">stir::ProjMatrixByBinSinglePhoton</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#a9911850dd29959dd8361053ee73dc45e">stir::ProjMatrixByBinUsingSolidAngle</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinWithPositronRange.html#adbb85fd9fe44e136bd7b0c635ba9efe4">stir::ProjMatrixByBinWithPositronRange</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a6e9b4d0f51cbb971dc39eda24fc2255a">stir::ProjMatrixByBinUsingInterpolation::set_up()</a>.</p>
 
@@ -501,7 +505,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>The method that tries to get data from the cache. </p>
 <p>If it succeeds, it overwrites the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">ProjMatrixElemsForOneBin</a> parameter and returns Succeeded::yes, otherwise it does not touch the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">ProjMatrixElemsForOneBin</a> and returns Succeeded::false. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#af07cca830120baf2a133911e7ccd58b6">stir::ProjMatrixElemsForOneBin::get_bin()</a>, <a class="el" href="namespacestir.html#a36bee634263e39c34efae7ed49465687">stir::open_write_binary()</a>, <a class="el" href="classstir_1_1Bin.html#a78e11f7873d3c640d9b5033ef22cb650">stir::Bin::segment_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#af07cca830120baf2a133911e7ccd58b6">stir::ProjMatrixElemsForOneBin::get_bin()</a>, <a class="el" href="namespacestir.html#a36bee634263e39c34efae7ed49465687">stir::open_write_binary()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -513,7 +517,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

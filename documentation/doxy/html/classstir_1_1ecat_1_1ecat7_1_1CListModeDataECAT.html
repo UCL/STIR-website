@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ class stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</h3>
 
 <p>A class that reads the listmode data for ECAT scanners. </p>
 <p>This file format is currently used by the HR+ and HR++. It stores the coincidence data in multiple .lm files, with a maximum filesize of about 2 GB (to avoid problems with OS limits on filesize). In addition, there is a .sgl file with the singles rate per 'bucket'-per-ring (roughly every 2 seconds). The .sgl also contains a 'main_header' with some scanner and patient info.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd>This class currently relies in the fact that vector&lt;&gt;::size_type == SavedPosition </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>This class currently relies in the fact that vector&lt;&gt;::size_type == SavedPosition </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3739933432d421275648db144ee12343"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3739933432d421275648db144ee12343">&#9670;&nbsp;</a></span>CListModeDataECAT()</h2>
@@ -193,7 +193,7 @@ template&lt;class CListRecordT &gt; </div>
 
 <p>Constructor taking a prefix for the filename. </p>
 <p>If the listmode files are called something_1.lm, something_2.lm etc. Then this constructor should be called with the argument "something"</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000065">Todo:</a></b></dt><dd>Maybe allow for passing e.g. something_2.lm in case the first lm file is missing. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd>Maybe allow for passing e.g. something_2.lm in case the first lm file is missing. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c">stir::ProjDataInfo::construct_proj_data_info()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3a15edb018fbc6407258a571ac9fa242df">stir::PatientPosition::FFDL</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3a571113da5302311d47d14ce957d525cc">stir::PatientPosition::FFDR</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3addda9ecacb17451272303e4441e4f382">stir::PatientPosition::FFP</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3aeda66a74bd8b347367a2dfceeaa55709">stir::PatientPosition::FFS</a>, <a class="el" href="group__ECAT.html#ga384905f428f9196b3c948bc4b9f1265d">stir::ecat::ecat7::find_scanner()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#ac2ee2b87c8889238f881527aa0dd4c9a">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::get_name()</a>, <a class="el" href="classstir_1_1ListModeData.html#a639c578bcecb3c38d67a4f3ba70ed5f8">stir::ListModeData::get_scanner_ptr()</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3a1234ddc2db4ba8dbb09105db05d39456">stir::PatientPosition::HFDL</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3a7816e930e6d5e3b9a07a03b6dabf1ae9">stir::PatientPosition::HFDR</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3ab29620e0f7e4ccc51ff033addf1ed75d">stir::PatientPosition::HFP</a>, <a class="el" href="classstir_1_1PatientPosition.html#a054bcc3d0d7313ae45ce3679fbfb64d3a17b013f436e9dbb49a24921e20784b1a">stir::PatientPosition::HFS</a>, <a class="el" href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">stir::ExamData::set_exam_info()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -298,7 +298,7 @@ template&lt;class CListRecordT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000216">Todo:</a></b></dt><dd>Currently switches over to the next .lm file whenever <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3563227cfd7f39c4e4adaac571063391">get_next_record()</a> on the current file fails. This even happens when it failed not because of EOF, or if the listmode file is shorter than 2 GB. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000215">Todo:</a></b></dt><dd>Currently switches over to the next .lm file whenever <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3563227cfd7f39c4e4adaac571063391">get_next_record()</a> on the current file fails. This even happens when it failed not because of EOF, or if the listmode file is shorter than 2 GB. </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1CListModeData.html#acfdaff0bb12cc2839e0035e76c2b3dba">stir::CListModeData</a>.</p>
 
@@ -375,7 +375,7 @@ template&lt;class CListRecordT&gt; </div>
 </div><div class="memdoc">
 
 <p>returns <code>true</code>, as ECAT listmode data stores delayed events (and prompts) </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>this might depend on the acquisition parameters </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000065">Todo:</a></b></dt><dd>this might depend on the acquisition parameters </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1CListModeData.html#a6e321d12d8d8a9ea5ddaf132760f2101">stir::CListModeData</a>.</p>
 
@@ -388,7 +388,7 @@ template&lt;class CListRecordT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

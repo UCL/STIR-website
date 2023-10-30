@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -197,7 +197,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_disabled</b></t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes projection matrix elements for <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a> images by using a Length of Intersection (LOI) model. </p>
-<p>Currently, the LOIs are divided by voxel_size.x(), unless NEWSCALE is #defined during compilation time of <a class="el" href="ProjMatrixByDenselUsingRayTracing_8cxx.html" title="non-inline implementations for ProjMatrixByDenselUsingRayTracing ">ProjMatrixByDenselUsingRayTracing.cxx</a>.</p>
+<p>Currently, the LOIs are divided by voxel_size.x(), unless <code>NEWSCALE</code> is <code>#defined</code> during compilation time of <a class="el" href="ProjMatrixByDenselUsingRayTracing_8cxx.html" title="non-inline implementations for ProjMatrixByDenselUsingRayTracing ">ProjMatrixByDenselUsingRayTracing.cxx</a>.</p>
 <p>If the z voxel size is exactly twice the sampling in axial direction, multiple LORs are used, to avoid missing voxels. (TODOdoc describe how).</p>
 <p>Currently, a FOV is used which is circular, and is slightly 'inside' the image (i.e. the radius is about 1 voxel smaller than the maximum possible).</p>
 <p>The implementation uses <a class="el" href="group__recon__buildblock.html#ga6daefbe022ad326711ac017fc0a5febf" title="RayTraceVoxelsOnCartesianGrid finds the Length of Intersections (LOIs) of an LOR with a grid of voxel...">RayTraceVoxelsOnCartesianGrid()</a>.</p>
@@ -296,7 +296,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 
 <p>Implements <a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a9ab36af9d54cae6725ca7bb03a746c3a">stir::ProjMatrixByDenselOnCartesianGridUsingElement</a>.</p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a8eb6bc35a9ad36469423cf53c111737b">stir::ProjDataInfo::get_t()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aa93a0f17acb8805241511214f18d1246">stir::ProjDataInfo::get_tantheta()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1Bin.html#ad02c03e0365496afa18689b2ed7f6394">stir::Bin::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1Scanner.html#a597cc048d2b4198d6264a681a407b6cd">stir::Scanner::get_num_detectors_per_ring()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a8eb6bc35a9ad36469423cf53c111737b">stir::ProjDataInfo::get_t()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#aa93a0f17acb8805241511214f18d1246">stir::ProjDataInfo::get_tantheta()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -332,7 +332,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

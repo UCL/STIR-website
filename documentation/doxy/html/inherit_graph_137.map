@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1PtrBeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a pointer to a stir full iterat..." alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node1" href="$classstir_1_1PtrBeginEndFunction.html" title="stir::PtrBeginEndFunction\l\&lt; TopLevelIterT, boost\l::pointee\&lt; boost::iterator\l_value\&lt; TopLevelIterT \&gt;::type\l \&gt;::type::const_iterator \&gt;" alt="" coords="5,5,203,91"/>
+<area shape="rect" id="node2" href="$classstir_1_1ConstPtrBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator. " alt="" coords="251,27,457,69"/>
 </map>

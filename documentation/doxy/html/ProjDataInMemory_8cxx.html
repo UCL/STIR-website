@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -43,7 +43,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ProjDataInMemory.cxx File Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a> &raquo; <a class="el" href="group__projdata.html">Items related to projection data</a></div></div>  </div>
 </div><!--header-->
@@ -57,23 +58,41 @@ $(function() {
 <code>#include &quot;<a class="el" href="SegmentByView_8h_source.html">stir/SegmentByView.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Bin_8h_source.html">stir/Bin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="is__null__ptr_8h_source.html">stir/is_null_ptr.h</a>&quot;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;boost/interprocess/streams/bufferstream.hpp&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacestir"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html">stir</a></td></tr>
 <tr class="memdesc:namespacestir"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for the STIR library (and some/most of its applications) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacestir_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir_1_1detail.html">stir::detail</a></td></tr>
+<tr class="memdesc:namespacestir_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for the implementation details of the STIR library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memTemplParams" colspan="2"><a id="a2b6920d63af85b763cd3a171ec1f53a1"></a>
+template&lt;int num_dimensions&gt; </td></tr>
+<tr class="memitem:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::copy_data_from_buffer</b> (const Array&lt; 1, float &gt; &amp;buffer, Array&lt; num_dimensions, float &gt; &amp;array, std::streamoff offset)</td></tr>
+<tr class="separator:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadecec3b9c484e54cf794786419ec2fb"><td class="memTemplParams" colspan="2"><a id="aadecec3b9c484e54cf794786419ec2fb"></a>
+template&lt;int num_dimensions&gt; </td></tr>
+<tr class="memitem:aadecec3b9c484e54cf794786419ec2fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::copy_data_to_buffer</b> (Array&lt; 1, float &gt; &amp;buffer, const Array&lt; num_dimensions, float &gt; &amp;array, std::streamoff offset)</td></tr>
+<tr class="separator:aadecec3b9c484e54cf794786419ec2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementations for non-inline functions of class <a class="el" href="classstir_1_1ProjDataInMemory.html" title="A class which reads/writes projection data from/to memory. ">stir::ProjDataInMemory</a>. </p>
-<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
+<dd>
+Nikos Efthimiou </dd>
+<dd>
+Gemma Fardell </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

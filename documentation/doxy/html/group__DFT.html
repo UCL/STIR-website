@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -196,6 +196,8 @@ template&lt;typename T &gt; </div>
 <p>Compute the inverse of the multi-dimensional discrete fourier transform. </p>
 <p>The scale factor is such that <code>inverse_fourier(fourier(c,sign),sign)==c</code>, aside from numerical error of course. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DFT.html#ga6e9f0966e99dd2fc6c5112115f57a7e9" title="Compute multi-dimensional discrete fourier transform. ">fourier</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="group__DFT.html#gaf16c068bc07b259903d8c6725ea26f06">stir::inverse_fourier_1d_for_real_data_corrupting_input()</a>.</p>
+
 </div>
 </div>
 <a id="ga5ce1d0fc0582b40899b821605a241ae2"></a>
@@ -365,6 +367,8 @@ template&lt;typename T &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>Because of implementation issues, a temporary copy of the input data <code>c</code> has to be made. This obviously affects performance. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DFT.html#ga881be303dec92c2fb910f70b8179a652" title="Compute one-dimensional discrete fourier transform of a real array (of even size). ">fourier_1d_for_real_data()</a> </dd></dl>
 
+<p class="reference">References <a class="el" href="group__DFT.html#gaf16c068bc07b259903d8c6725ea26f06">stir::inverse_fourier_1d_for_real_data_corrupting_input()</a>.</p>
+
 </div>
 </div>
 <a id="gaf16c068bc07b259903d8c6725ea26f06"></a>
@@ -398,6 +402,10 @@ template&lt;typename T &gt; </div>
 <p>As <a class="el" href="group__DFT.html#ga29615dcd9f6d0afe79026d1c96d22af0" title="Compute the inverse of the one-dimensional discrete fourier transform of a real array (of even size)...">inverse_fourier_1d_for_real_data()</a>, but avoiding the copy of the input array. </p>
 <dl class="section warning"><dt>Warning</dt><dd>destroys values in (and resizes) first argument <em>c</em> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DFT.html#ga29615dcd9f6d0afe79026d1c96d22af0" title="Compute the inverse of the one-dimensional discrete fourier transform of a real array (of even size)...">inverse_fourier_1d_for_real_data()</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="group__DFT.html#ga38d56f39d09b8b3672d51bf34008d40a">stir::inverse_fourier()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="group__DFT.html#ga29615dcd9f6d0afe79026d1c96d22af0">stir::inverse_fourier_1d_for_real_data()</a>.</p>
 
 </div>
 </div>
@@ -543,7 +551,7 @@ template&lt;int num_dimensions, typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

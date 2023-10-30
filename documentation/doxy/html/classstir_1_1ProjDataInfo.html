@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -277,26 +277,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="memdesc:a2b77e58ea3681ab1a4b398b173e15786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <code>*this</code> contains <code>proj</code>.  <a href="#a2b77e58ea3681ab1a4b398b173e15786">More...</a><br /></td></tr>
 <tr class="separator:a2b77e58ea3681ab1a4b398b173e15786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions that return sinograms etc (filled with 0)</div></td></tr>
-<tr class="memitem:a5800c2f823e109af780b785ca04658e4"><td class="memItemLeft" align="right" valign="top"><a id="a5800c2f823e109af780b785ca04658e4"></a>
-<a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">get_empty_viewgram</a> (const int view_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a5800c2f823e109af780b785ca04658e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty viewgram. <br /></td></tr>
+<tr class="memitem:a9072da99f09c871618a178e5a204e019"><td class="memItemLeft" align="right" valign="top"><a id="a9072da99f09c871618a178e5a204e019"></a>
+<a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a9072da99f09c871618a178e5a204e019">get_empty_viewgram</a> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;) const</td></tr>
+<tr class="memdesc:a9072da99f09c871618a178e5a204e019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty viewgram. <br /></td></tr>
+<tr class="separator:a9072da99f09c871618a178e5a204e019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b80443774898590d4558163f7dbe253"><td class="memItemLeft" align="right" valign="top"><a id="a6b80443774898590d4558163f7dbe253"></a>
+<a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a6b80443774898590d4558163f7dbe253">get_empty_sinogram</a> (const <a class="el" href="classstir_1_1SinogramIndices.html">SinogramIndices</a> &amp;) const</td></tr>
+<tr class="memdesc:a6b80443774898590d4558163f7dbe253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty_sinogram. <br /></td></tr>
+<tr class="separator:a6b80443774898590d4558163f7dbe253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb228dd821ac76fabb06b363074e4dd6"><td class="memItemLeft" align="right" valign="top"><a id="afb228dd821ac76fabb06b363074e4dd6"></a>
+<a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#afb228dd821ac76fabb06b363074e4dd6">get_empty_segment_by_view</a> (const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;) const</td></tr>
+<tr class="memdesc:afb228dd821ac76fabb06b363074e4dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment sino. <br /></td></tr>
+<tr class="separator:afb228dd821ac76fabb06b363074e4dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1a50eb350bffa449f01074d69054fd"><td class="memItemLeft" align="right" valign="top"><a id="aad1a50eb350bffa449f01074d69054fd"></a>
+<a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aad1a50eb350bffa449f01074d69054fd">get_empty_segment_by_sinogram</a> (const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;) const</td></tr>
+<tr class="memdesc:aad1a50eb350bffa449f01074d69054fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view. <br /></td></tr>
+<tr class="separator:aad1a50eb350bffa449f01074d69054fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5800c2f823e109af780b785ca04658e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">get_empty_viewgram</a> (const int view_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
+<tr class="memdesc:a5800c2f823e109af780b785ca04658e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty viewgram.  <a href="#a5800c2f823e109af780b785ca04658e4">More...</a><br /></td></tr>
 <tr class="separator:a5800c2f823e109af780b785ca04658e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c122085027d6e5ba8b2ff862272d181"><td class="memItemLeft" align="right" valign="top"><a id="a5c122085027d6e5ba8b2ff862272d181"></a>
-<a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">get_empty_sinogram</a> (const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a5c122085027d6e5ba8b2ff862272d181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty_sinogram. <br /></td></tr>
+<tr class="memitem:a5c122085027d6e5ba8b2ff862272d181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">get_empty_sinogram</a> (const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
+<tr class="memdesc:a5c122085027d6e5ba8b2ff862272d181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty_sinogram.  <a href="#a5c122085027d6e5ba8b2ff862272d181">More...</a><br /></td></tr>
 <tr class="separator:a5c122085027d6e5ba8b2ff862272d181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ba38fc709005ef198006181691324c"><td class="memItemLeft" align="right" valign="top"><a id="aa3ba38fc709005ef198006181691324c"></a>
-<a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">get_empty_segment_by_view</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:aa3ba38fc709005ef198006181691324c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment sino. <br /></td></tr>
+<tr class="memitem:aa3ba38fc709005ef198006181691324c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">get_empty_segment_by_view</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
+<tr class="memdesc:aa3ba38fc709005ef198006181691324c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment sino.  <a href="#aa3ba38fc709005ef198006181691324c">More...</a><br /></td></tr>
 <tr class="separator:aa3ba38fc709005ef198006181691324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd883ed0f34bbe376194fb8bf6ad301"><td class="memItemLeft" align="right" valign="top"><a id="a9bd883ed0f34bbe376194fb8bf6ad301"></a>
-<a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">get_empty_segment_by_sinogram</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a9bd883ed0f34bbe376194fb8bf6ad301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view. <br /></td></tr>
+<tr class="memitem:a9bd883ed0f34bbe376194fb8bf6ad301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">get_empty_segment_by_sinogram</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
+<tr class="memdesc:a9bd883ed0f34bbe376194fb8bf6ad301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view.  <a href="#a9bd883ed0f34bbe376194fb8bf6ad301">More...</a><br /></td></tr>
 <tr class="separator:a9bd883ed0f34bbe376194fb8bf6ad301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b240d1ae03ce50472210a388154adf"><td class="memItemLeft" align="right" valign="top"><a id="ad7b240d1ae03ce50472210a388154adf"></a>
-<a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ad7b240d1ae03ce50472210a388154adf">get_empty_related_viewgrams</a> (const <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:ad7b240d1ae03ce50472210a388154adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty related viewgrams, where the symmetries_ptr specifies the symmetries to use. <br /></td></tr>
-<tr class="separator:ad7b240d1ae03ce50472210a388154adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c92de5313eaa937f50c79d6f642614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a04c92de5313eaa937f50c79d6f642614">get_empty_related_viewgrams</a> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;, const bool make_num_tangential_poss_odd=false) const</td></tr>
+<tr class="memdesc:a04c92de5313eaa937f50c79d6f642614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty related viewgrams, where the symmetries_ptr specifies the symmetries to use.  <a href="#a04c92de5313eaa937f50c79d6f642614">More...</a><br /></td></tr>
+<tr class="separator:a04c92de5313eaa937f50c79d6f642614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -495,7 +506,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Old name for <a class="el" href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c" title="Construct a ProjDataInfo suitable with a given span. ">construct_proj_data_info()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -566,7 +577,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">ProjDataInfoCTI()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::CListModeDataECAT()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1InterfileRawDataHeaderSiemens.html#ad9e29007720a4c8d04e3d6307a8da1d8">stir::InterfileRawDataHeaderSiemens::post_processing()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::CListModeDataECAT()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1138,7 @@ Protected Member Functions</h2></td></tr>
 <p>Default implementation is equivalent to </p><div class="fragment"><div class="line"><a class="code" href="classstir_1_1ProjDataInfo.html#a8eb6bc35a9ad36469423cf53c111737b">get_t</a>(bin)/<a class="code" href="classstir_1_1ProjDataInfo.html#a8994635af4f4a54e46faef589b7572fd">get_costheta</a>(bin)</div></div><!-- fragment --> 
 <p>Reimplemented in <a class="el" href="classstir_1_1ProjDataInfoSubsetByView.html#a458a30c72067af678f19ffae04e90c71">stir::ProjDataInfoSubsetByView</a>, <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">stir::ProjDataInfoGeneric</a>, and <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="group__projdata.html#gac59c21a7117084ae6bf59c43016fae04">stir::interpolate_axial_position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="group__projdata.html#ga2ead0a5701b689f8eab3352fce92ff0f">stir::interpolate_axial_position()</a>.</p>
 
 </div>
 </div>
@@ -1372,6 +1383,189 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5800c2f823e109af780b785ca04658e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5800c2f823e109af780b785ca04658e4">&#9670;&nbsp;</a></span>get_empty_viewgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt; stir::ProjDataInfo::get_empty_viewgram </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>view_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>make_num_tangential_poss_odd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get empty viewgram. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a649f9d722765ee211751d9441e839489">get_max_tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">get_num_tangential_poss()</a>.</p>
+
+</div>
+</div>
+<a id="a5c122085027d6e5ba8b2ff862272d181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c122085027d6e5ba8b2ff862272d181">&#9670;&nbsp;</a></span>get_empty_sinogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt; stir::ProjDataInfo::get_empty_sinogram </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ax_pos_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>make_num_tangential_poss_odd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get empty_sinogram. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a649f9d722765ee211751d9441e839489">get_max_tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">get_num_tangential_poss()</a>.</p>
+
+</div>
+</div>
+<a id="aa3ba38fc709005ef198006181691324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ba38fc709005ef198006181691324c">&#9670;&nbsp;</a></span>get_empty_segment_by_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt; stir::ProjDataInfo::get_empty_segment_by_view </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>make_num_tangential_poss_odd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get empty segment sino. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a649f9d722765ee211751d9441e839489">get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">get_min_segment_num()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">get_num_tangential_poss()</a>.</p>
+
+</div>
+</div>
+<a id="a9bd883ed0f34bbe376194fb8bf6ad301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd883ed0f34bbe376194fb8bf6ad301">&#9670;&nbsp;</a></span>get_empty_segment_by_sinogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt; stir::ProjDataInfo::get_empty_segment_by_sinogram </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>segment_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>make_num_tangential_poss_odd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get empty segment view. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">clone()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#af84cfb2229160862c25a86e66955e744">get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a649f9d722765ee211751d9441e839489">get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a721c0d148c70dcbd4f150a9d2804051f">get_min_segment_num()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">get_num_tangential_poss()</a>.</p>
+
+</div>
+</div>
+<a id="a04c92de5313eaa937f50c79d6f642614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c92de5313eaa937f50c79d6f642614">&#9670;&nbsp;</a></span>get_empty_related_viewgrams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt; stir::ProjDataInfo::get_empty_related_viewgrams </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewgram_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>symmetries_used</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>make_num_tangential_poss_odd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get empty related viewgrams, where the symmetries_ptr specifies the symmetries to use. </p>
+<p>make_num_tangential_poss_odd has to be <code>false</code> </p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#a9072da99f09c871618a178e5a204e019">get_empty_viewgram()</a>.</p>
+
+</div>
+</div>
 <a id="a94d84e2cfbc2c70ea483b099af045775"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94d84e2cfbc2c70ea483b099af045775">&#9670;&nbsp;</a></span>blindly_equals()</h2>
 
@@ -1413,7 +1607,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:20 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

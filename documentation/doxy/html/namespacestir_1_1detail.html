@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
   </td>
  </tr>
@@ -86,6 +86,14 @@ template void&#160;</td><td class="memItemRight" valign="bottom"><b>linear_regre
 <tr class="memitem:a64b7396e375aaa06ee5a4278a4e69f08"><td class="memItemLeft" align="right" valign="top"><a id="a64b7396e375aaa06ee5a4278a4e69f08"></a>
 template void&#160;</td><td class="memItemRight" valign="bottom"><b>linear_regression_compute_fit_from_S</b> (double &amp;constant, double &amp;scale, double &amp;chi_square, double &amp;variance_of_constant, double &amp;variance_of_scale, double &amp;covariance_of_constant_with_scale, const double S, const double Sx, const double Sy, const double Syy, const double Stt, const double Sty, const std::size_t data_size, const bool use_estimated_variance)</td></tr>
 <tr class="separator:a64b7396e375aaa06ee5a4278a4e69f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memTemplParams" colspan="2"><a id="a2b6920d63af85b763cd3a171ec1f53a1"></a>
+template&lt;int num_dimensions&gt; </td></tr>
+<tr class="memitem:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>copy_data_from_buffer</b> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, float &gt; &amp;buffer, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, float &gt; &amp;array, std::streamoff offset)</td></tr>
+<tr class="separator:a2b6920d63af85b763cd3a171ec1f53a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadecec3b9c484e54cf794786419ec2fb"><td class="memTemplParams" colspan="2"><a id="aadecec3b9c484e54cf794786419ec2fb"></a>
+template&lt;int num_dimensions&gt; </td></tr>
+<tr class="memitem:aadecec3b9c484e54cf794786419ec2fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>copy_data_to_buffer</b> (<a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, float &gt; &amp;buffer, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, float &gt; &amp;array, std::streamoff offset)</td></tr>
+<tr class="separator:aadecec3b9c484e54cf794786419ec2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d0ecce16a9140c4384a7f630ffcdda"><td class="memTemplParams" colspan="2"><a id="a04d0ecce16a9140c4384a7f630ffcdda"></a>
 template&lt;int num_dimensions, typename T &gt; </td></tr>
 <tr class="memitem:a04d0ecce16a9140c4384a7f630ffcdda"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; num_dimensions, int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_min_indices_help</b> (<a class="el" href="structstir_1_1detail_1_1is__not__1d.html">is_not_1d</a>, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, T &gt; &amp;a)</td></tr>
@@ -169,7 +177,7 @@ std::vector&lt; <a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSe
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

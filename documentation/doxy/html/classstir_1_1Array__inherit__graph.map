@@ -31,6 +31,6 @@
 <area shape="rect" id="node18" href="$classstir_1_1Sinogram.html" title="A class for 2d projection data. " alt="" coords="1858,303,2021,330"/>
 <area shape="rect" id="node19" href="$classstir_1_1Viewgram.html" title="A class for 2d projection data. " alt="" coords="1856,253,2023,279"/>
 <area shape="rect" id="node20" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="2331,670,2485,697"/>
-<area shape="rect" id="node33" href="$classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="1854,983,2025,1024"/>
-<area shape="rect" id="node34" href="$classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with a fixed segment_num. " alt="" coords="1867,917,2012,959"/>
+<area shape="rect" id="node33" href="$classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="1854,983,2025,1024"/>
+<area shape="rect" id="node34" href="$classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="1867,917,2012,959"/>
 </map>

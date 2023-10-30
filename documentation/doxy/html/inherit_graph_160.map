@@ -255,7 +255,7 @@
 <area shape="rect" id="node249" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; DiscretisedShape3D, Shape3D,\l Shape3D \&gt;" alt="" coords="1161,1929,1381,1985"/>
 <area shape="rect" id="node251" href="$classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. " alt="" coords="1175,1799,1367,1825"/>
 <area shape="rect" id="node248" href="$classstir_1_1CombinedShape3D.html" title="A class that allows combining several shapes using logical operations. " alt="" coords="1603,1939,1765,1981"/>
-<area shape="rect" id="node250" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised. " alt="" coords="1600,2005,1768,2032"/>
+<area shape="rect" id="node250" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised as a volume. " alt="" coords="1600,2005,1768,2032"/>
 <area shape="rect" id="node252" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1534,1793,1834,1834"/>
 <area shape="rect" id="node254" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1567,1859,1801,1915"/>
 <area shape="rect" id="node256" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1581,1712,1787,1768"/>
