@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -89,33 +89,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabb956aa858903acaf088baa88aa595f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#aabb956aa858903acaf088baa88aa595f">ProjDataInfoGeneric</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;num_axial_poss_per_segment, const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;min_ring_diff, const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;max_ring_diff, const int num_views, const int num_tangential_poss)</td></tr>
 <tr class="memdesc:aabb956aa858903acaf088baa88aa595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor given all the necessary information.  <a href="#aabb956aa858903acaf088baa88aa595f">More...</a><br /></td></tr>
 <tr class="separator:aabb956aa858903acaf088baa88aa595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65ac4ae6a6599f06cf26627586998f9"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#af65ac4ae6a6599f06cf26627586998f9">get_tantheta</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:af65ac4ae6a6599f06cf26627586998f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tangent of the co-polar angle of the normal to the projection plane.  <a href="#af65ac4ae6a6599f06cf26627586998f9">More...</a><br /></td></tr>
-<tr class="separator:af65ac4ae6a6599f06cf26627586998f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5ac95673a081169c875554bf804338"><td class="memItemLeft" align="right" valign="top"><a id="a4c5ac95673a081169c875554bf804338"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a4c5ac95673a081169c875554bf804338">get_phi</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:a4c5ac95673a081169c875554bf804338"><td class="mdescLeft">&#160;</td><td class="mdescRight">find phi from correspoding lor <br /></td></tr>
-<tr class="separator:a4c5ac95673a081169c875554bf804338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7805fa707fc0d331667103d1af7cf00f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a7805fa707fc0d331667103d1af7cf00f">get_t</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:a7805fa707fc0d331667103d1af7cf00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of the (roughly) axial coordinate in the projection plane (in mm)  <a href="#a7805fa707fc0d331667103d1af7cf00f">More...</a><br /></td></tr>
-<tr class="separator:a7805fa707fc0d331667103d1af7cf00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4822f4dc1c579fd5ee10b281660d22"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">get_m</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:afb4822f4dc1c579fd5ee10b281660d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return z-coordinate of the middle of the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.  <a href="#afb4822f4dc1c579fd5ee10b281660d22">More...</a><br /></td></tr>
-<tr class="separator:afb4822f4dc1c579fd5ee10b281660d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab938e422fd002aec184e06886bb592bf"><td class="memItemLeft" align="right" valign="top"><a id="ab938e422fd002aec184e06886bb592bf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#ab938e422fd002aec184e06886bb592bf">get_LOR</a> (<a class="el" href="classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html">LORInAxialAndNoArcCorrSinogramCoordinates</a>&lt; float &gt; &amp;lor, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin) const</td></tr>
-<tr class="memdesc:ab938e422fd002aec184e06886bb592bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">warning Find lor from cartesian coordinates of detector pair <br /></td></tr>
-<tr class="separator:ab938e422fd002aec184e06886bb592bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331cf2a2aaad9c05fde1178a7e081b40"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a331cf2a2aaad9c05fde1178a7e081b40">get_tantheta</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a331cf2a2aaad9c05fde1178a7e081b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tangent of the co-polar angle of the normal to the projection plane.  <a href="#a331cf2a2aaad9c05fde1178a7e081b40">More...</a><br /></td></tr>
+<tr class="separator:a331cf2a2aaad9c05fde1178a7e081b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9930111b64dd7f49c832df64f78e27"><td class="memItemLeft" align="right" valign="top"><a id="a8b9930111b64dd7f49c832df64f78e27"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a8b9930111b64dd7f49c832df64f78e27">get_phi</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a8b9930111b64dd7f49c832df64f78e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">find phi from correspoding lor <br /></td></tr>
+<tr class="separator:a8b9930111b64dd7f49c832df64f78e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ccdd0230283c16c9d7b1e6e9db116dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a1ccdd0230283c16c9d7b1e6e9db116dc">get_t</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a1ccdd0230283c16c9d7b1e6e9db116dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of the (roughly) axial coordinate in the projection plane (in mm)  <a href="#a1ccdd0230283c16c9d7b1e6e9db116dc">More...</a><br /></td></tr>
+<tr class="separator:a1ccdd0230283c16c9d7b1e6e9db116dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b29069ba39a8c07230b9fbf2e49680"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a14b29069ba39a8c07230b9fbf2e49680">get_m</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a14b29069ba39a8c07230b9fbf2e49680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return z-coordinate of the middle of the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.  <a href="#a14b29069ba39a8c07230b9fbf2e49680">More...</a><br /></td></tr>
+<tr class="separator:a14b29069ba39a8c07230b9fbf2e49680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669ac0a8fbfbe033fce9228cd7d4140f"><td class="memItemLeft" align="right" valign="top"><a id="a669ac0a8fbfbe033fce9228cd7d4140f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a669ac0a8fbfbe033fce9228cd7d4140f">get_LOR</a> (<a class="el" href="classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html">LORInAxialAndNoArcCorrSinogramCoordinates</a>&lt; float &gt; &amp;lor, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin) const override</td></tr>
+<tr class="memdesc:a669ac0a8fbfbe033fce9228cd7d4140f"><td class="mdescLeft">&#160;</td><td class="mdescRight">warning Find lor from cartesian coordinates of detector pair <br /></td></tr>
+<tr class="separator:a669ac0a8fbfbe033fce9228cd7d4140f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c166dcaf0529d56f48a9ac5d3555688"><td class="memItemLeft" align="right" valign="top"><a id="a0c166dcaf0529d56f48a9ac5d3555688"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_azimuthal_angle_offset</b> (const float <a class="el" href="group__Coordinate.html#ga534d8b44ffea46fe900b00257bc804dc">angle</a>)=delete</td></tr>
 <tr class="separator:a0c166dcaf0529d56f48a9ac5d3555688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33de807d2e8f5c2c117a4c911feb16e5"><td class="memItemLeft" align="right" valign="top"><a id="a33de807d2e8f5c2c117a4c911feb16e5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_azimuthal_angle_sampling</b> (const float <a class="el" href="group__Coordinate.html#ga534d8b44ffea46fe900b00257bc804dc">angle</a>)=delete</td></tr>
 <tr class="separator:a33de807d2e8f5c2c117a4c911feb16e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecfb734f569c221cd3b90a4d1bcb9d84"><td class="memItemLeft" align="right" valign="top"><a id="aecfb734f569c221cd3b90a4d1bcb9d84"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#aecfb734f569c221cd3b90a4d1bcb9d84">set_num_views</a> (const int new_num_views)</td></tr>
-<tr class="memdesc:aecfb734f569c221cd3b90a4d1bcb9d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">set new number of views (currently calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> unless nothing changes) <br /></td></tr>
-<tr class="separator:aecfb734f569c221cd3b90a4d1bcb9d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8150a4c6657af07e93def2ce9eb3edbd"><td class="memItemLeft" align="right" valign="top"><a id="a8150a4c6657af07e93def2ce9eb3edbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a8150a4c6657af07e93def2ce9eb3edbd">set_num_views</a> (const int new_num_views) override</td></tr>
+<tr class="memdesc:a8150a4c6657af07e93def2ce9eb3edbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set new number of views (currently calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> unless nothing changes) <br /></td></tr>
+<tr class="separator:a8150a4c6657af07e93def2ce9eb3edbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15009b4b8addf5cad4a95301b1ac91fa"><td class="memItemLeft" align="right" valign="top"><a id="a15009b4b8addf5cad4a95301b1ac91fa"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_azimuthal_angle_sampling</b> () const =delete</td></tr>
 <tr class="separator:a15009b4b8addf5cad4a95301b1ac91fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,22 +135,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ring_radii_for_al
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a4c49cec3756e226af420d0d7f699d281">get_ring_spacing</a> () const</td></tr>
 <tr class="memdesc:a4c49cec3756e226af420d0d7f699d281"><td class="mdescLeft">&#160;</td><td class="mdescRight">return an average ring-spacing (from <a class="el" href="classstir_1_1Scanner.html" title="A class for storing some info on the scanner. ">Scanner</a>) <br /></td></tr>
 <tr class="separator:a4c49cec3756e226af420d0d7f699d281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc1beaecb6abe147f4210dd5454de97"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a3fc1beaecb6abe147f4210dd5454de97">get_sampling_in_t</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:a3fc1beaecb6abe147f4210dd5454de97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the <code>t</code> coordinate.  <a href="#a3fc1beaecb6abe147f4210dd5454de97">More...</a><br /></td></tr>
-<tr class="separator:a3fc1beaecb6abe147f4210dd5454de97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efcce8ddd22d2dd228b46efc9d19124"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a4efcce8ddd22d2dd228b46efc9d19124">get_sampling_in_m</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:a4efcce8ddd22d2dd228b46efc9d19124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the <code>m</code> coordinate.  <a href="#a4efcce8ddd22d2dd228b46efc9d19124">More...</a><br /></td></tr>
-<tr class="separator:a4efcce8ddd22d2dd228b46efc9d19124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82962cc7ba1282281b3225f1f9f27ee9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a82962cc7ba1282281b3225f1f9f27ee9">get_sampling_in_t</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a82962cc7ba1282281b3225f1f9f27ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the <code>t</code> coordinate.  <a href="#a82962cc7ba1282281b3225f1f9f27ee9">More...</a><br /></td></tr>
+<tr class="separator:a82962cc7ba1282281b3225f1f9f27ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb29be7308ed9969743cf02ee0ceb20"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a5fb29be7308ed9969743cf02ee0ceb20">get_sampling_in_m</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const override</td></tr>
+<tr class="memdesc:a5fb29be7308ed9969743cf02ee0ceb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the <code>m</code> coordinate.  <a href="#a5fb29be7308ed9969743cf02ee0ceb20">More...</a><br /></td></tr>
+<tr class="separator:a5fb29be7308ed9969743cf02ee0ceb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48254e749f6a6af3266be6a9a830d57"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#aa48254e749f6a6af3266be6a9a830d57">get_axial_sampling</a> (int segment_num) const override</td></tr>
 <tr class="memdesc:aa48254e749f6a6af3266be6a9a830d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the axial sampling (e.g in z_direction)  <a href="#aa48254e749f6a6af3266be6a9a830d57">More...</a><br /></td></tr>
 <tr class="separator:aa48254e749f6a6af3266be6a9a830d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace9d6f629187383c11bb1b1968308f25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#ace9d6f629187383c11bb1b1968308f25">axial_sampling_is_uniform</a> () const override</td></tr>
 <tr class="memdesc:ace9d6f629187383c11bb1b1968308f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if axial sampling makes sense.  <a href="#ace9d6f629187383c11bb1b1968308f25">More...</a><br /></td></tr>
 <tr class="separator:ace9d6f629187383c11bb1b1968308f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0dc753c036c0a012112e1f2dfe203e"><td class="memItemLeft" align="right" valign="top"><a id="a6e0dc753c036c0a012112e1f2dfe203e"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a6e0dc753c036c0a012112e1f2dfe203e">parameter_info</a> () const</td></tr>
-<tr class="memdesc:a6e0dc753c036c0a012112e1f2dfe203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string describing the object. <br /></td></tr>
-<tr class="separator:a6e0dc753c036c0a012112e1f2dfe203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570cd25d57e7727fd9d45ca3627cef58"><td class="memItemLeft" align="right" valign="top"><a id="a570cd25d57e7727fd9d45ca3627cef58"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a570cd25d57e7727fd9d45ca3627cef58">parameter_info</a> () const override</td></tr>
+<tr class="memdesc:a570cd25d57e7727fd9d45ca3627cef58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string describing the object. <br /></td></tr>
+<tr class="separator:a570cd25d57e7727fd9d45ca3627cef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ProjDataInfoCylindrical"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ProjDataInfoCylindrical')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html">stir::ProjDataInfoCylindrical</a></td></tr>
 <tr class="memitem:ab3d19ad019a3b26cf5af4a130d7da619 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top"><a id="ab3d19ad019a3b26cf5af4a130d7da619"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab3d19ad019a3b26cf5af4a130d7da619">ProjDataInfoCylindrical</a> ()</td></tr>
@@ -167,6 +167,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ac40fcaa29526160463e17cfd742d5858">set_azimuthal_angle_sampling</a> (const float <a class="el" href="group__Coordinate.html#ga534d8b44ffea46fe900b00257bc804dc">angle</a>)</td></tr>
 <tr class="memdesc:ac40fcaa29526160463e17cfd742d5858 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the azimuthal sampling (in radians) <br /></td></tr>
 <tr class="separator:ac40fcaa29526160463e17cfd742d5858 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bec33d7dc5752679256df07ecd35809 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a6bec33d7dc5752679256df07ecd35809">set_tof_mash_factor</a> (const int new_num) override</td></tr>
+<tr class="memdesc:a6bec33d7dc5752679256df07ecd35809 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tof mashing factor (for TOF scanners).  <a href="classstir_1_1ProjDataInfoCylindrical.html#a6bec33d7dc5752679256df07ecd35809">More...</a><br /></td></tr>
+<tr class="separator:a6bec33d7dc5752679256df07ecd35809 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ccfc3c537c4cead71425b350ab30aa4 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top"><a id="a0ccfc3c537c4cead71425b350ab30aa4"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a0ccfc3c537c4cead71425b350ab30aa4">get_azimuthal_angle_offset</a> () const</td></tr>
 <tr class="memdesc:a0ccfc3c537c4cead71425b350ab30aa4 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get azimuthal angle offset (in radians) <br /></td></tr>
@@ -195,18 +198,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af1e7b7e0666e34656540b47d7bbf7d04">set_max_ring_difference</a> (int max_ring_diff_v, int segment_num)</td></tr>
 <tr class="memdesc:af1e7b7e0666e34656540b47d7bbf7d04 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum ring difference. <br /></td></tr>
 <tr class="separator:af1e7b7e0666e34656540b47d7bbf7d04 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3188bb8f586fe3f58f5f8f1b50e57ffc inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a3188bb8f586fe3f58f5f8f1b50e57ffc">set_num_axial_poss_per_segment</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;num_axial_poss_per_segment)</td></tr>
-<tr class="memdesc:a3188bb8f586fe3f58f5f8f1b50e57ffc inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of axial positions per segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#a3188bb8f586fe3f58f5f8f1b50e57ffc">More...</a><br /></td></tr>
-<tr class="separator:a3188bb8f586fe3f58f5f8f1b50e57ffc inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ad44ebe3f913274a75f9c4f30215a3c inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a9ad44ebe3f913274a75f9c4f30215a3c">set_min_axial_pos_num</a> (const int min_ax_pos_num, const int segment_num)</td></tr>
-<tr class="memdesc:a9ad44ebe3f913274a75f9c4f30215a3c inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set minimum axial position number for 1 segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#a9ad44ebe3f913274a75f9c4f30215a3c">More...</a><br /></td></tr>
-<tr class="separator:a9ad44ebe3f913274a75f9c4f30215a3c inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9536df5200504bb7d978156294088dd inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#af9536df5200504bb7d978156294088dd">set_max_axial_pos_num</a> (const int max_ax_pos_num, const int segment_num)</td></tr>
-<tr class="memdesc:af9536df5200504bb7d978156294088dd inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum axial position number for 1 segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#af9536df5200504bb7d978156294088dd">More...</a><br /></td></tr>
-<tr class="separator:af9536df5200504bb7d978156294088dd inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d62e263ea0258b0a996bfd4c429b02 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a51d62e263ea0258b0a996bfd4c429b02">reduce_segment_range</a> (const int min_segment_num, const int max_segment_num)</td></tr>
-<tr class="memdesc:a51d62e263ea0258b0a996bfd4c429b02 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new range of segment numbers.  <a href="classstir_1_1ProjDataInfoCylindrical.html#a51d62e263ea0258b0a996bfd4c429b02">More...</a><br /></td></tr>
-<tr class="separator:a51d62e263ea0258b0a996bfd4c429b02 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a475ca312ed1df13a3eaf0586f4e263 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a0a475ca312ed1df13a3eaf0586f4e263">set_num_axial_poss_per_segment</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;num_axial_poss_per_segment) override</td></tr>
+<tr class="memdesc:a0a475ca312ed1df13a3eaf0586f4e263 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of axial positions per segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#a0a475ca312ed1df13a3eaf0586f4e263">More...</a><br /></td></tr>
+<tr class="separator:a0a475ca312ed1df13a3eaf0586f4e263 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebaeace8f28b9213eb24ec8c7448623 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#adebaeace8f28b9213eb24ec8c7448623">set_min_axial_pos_num</a> (const int min_ax_pos_num, const int segment_num) override</td></tr>
+<tr class="memdesc:adebaeace8f28b9213eb24ec8c7448623 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set minimum axial position number for 1 segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#adebaeace8f28b9213eb24ec8c7448623">More...</a><br /></td></tr>
+<tr class="separator:adebaeace8f28b9213eb24ec8c7448623 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15527dd4318cca49c379273c9a37ab08 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a15527dd4318cca49c379273c9a37ab08">set_max_axial_pos_num</a> (const int max_ax_pos_num, const int segment_num) override</td></tr>
+<tr class="memdesc:a15527dd4318cca49c379273c9a37ab08 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum axial position number for 1 segment.  <a href="classstir_1_1ProjDataInfoCylindrical.html#a15527dd4318cca49c379273c9a37ab08">More...</a><br /></td></tr>
+<tr class="separator:a15527dd4318cca49c379273c9a37ab08 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef494fa671cc0714c4ce73dac575cf68 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#aef494fa671cc0714c4ce73dac575cf68">reduce_segment_range</a> (const int min_segment_num, const int max_segment_num) override</td></tr>
+<tr class="memdesc:aef494fa671cc0714c4ce73dac575cf68 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new range of segment numbers.  <a href="classstir_1_1ProjDataInfoCylindrical.html#aef494fa671cc0714c4ce73dac575cf68">More...</a><br /></td></tr>
+<tr class="separator:aef494fa671cc0714c4ce73dac575cf68 inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3939aed17c5239b72a28f6cb196b7b4d inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top"><a id="a3939aed17c5239b72a28f6cb196b7b4d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a3939aed17c5239b72a28f6cb196b7b4d">set_ring_radii_for_all_views</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; float &gt; &amp;new_ring_radius)</td></tr>
 <tr class="memdesc:a3939aed17c5239b72a28f6cb196b7b4d inherit pub_methods_classstir_1_1ProjDataInfoCylindrical"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set detector ring radius for all views. <br /></td></tr>
@@ -256,6 +259,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aeeacacc89e8391666e9de2289f226d13 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aeeacacc89e8391666e9de2289f226d13">ProjDataInfo</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;num_axial_pos_per_segment, const int num_views, const int num_tangential_poss)</td></tr>
 <tr class="memdesc:aeeacacc89e8391666e9de2289f226d13 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor setting all relevant info for a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>.  <a href="classstir_1_1ProjDataInfo.html#aeeacacc89e8391666e9de2289f226d13">More...</a><br /></td></tr>
 <tr class="separator:aeeacacc89e8391666e9de2289f226d13 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5cf3984f8dc643a7812bc61404062d inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="aeb5cf3984f8dc643a7812bc61404062d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aeb5cf3984f8dc643a7812bc61404062d">ProjDataInfo</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; int &gt; &amp;num_axial_pos_per_segment, const int num_views, const int num_tangential_poss, const int tof_mash_factor)</td></tr>
+<tr class="memdesc:aeb5cf3984f8dc643a7812bc61404062d inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded Contructor with TOF initialisation. <br /></td></tr>
+<tr class="separator:aeb5cf3984f8dc643a7812bc61404062d inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1c183724f65b977ce65bf0a90eb275 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="ade1c183724f65b977ce65bf0a90eb275"></a>
 virtual <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275">clone</a> () const =0</td></tr>
 <tr class="memdesc:ade1c183724f65b977ce65bf0a90eb275 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard trick for a 'virtual copy-constructor'. <br /></td></tr>
@@ -264,16 +271,24 @@ virtual <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#
 shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb">create_shared_clone</a> () const</td></tr>
 <tr class="memdesc:a22121efcbc3740e9752995585d2086eb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classstir_1_1ProjDataInfo.html#ade1c183724f65b977ce65bf0a90eb275" title="Standard trick for a &#39;virtual copy-constructor&#39;. ">clone()</a> but return a shared_ptr. <br /></td></tr>
 <tr class="separator:a22121efcbc3740e9752995585d2086eb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1daeade99c27b583b2c0b4abf199f29f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a1daeade99c27b583b2c0b4abf199f29f"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a1daeade99c27b583b2c0b4abf199f29f">create_non_tof_clone</a> () const</td></tr>
+<tr class="memdesc:a1daeade99c27b583b2c0b4abf199f29f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb" title="Like clone() but return a shared_ptr. ">create_shared_clone()</a> but returns a non-tof version of <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> setting tof mashing factor = 0. <br /></td></tr>
+<tr class="separator:a1daeade99c27b583b2c0b4abf199f29f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1bfe4dd813b3aa190b713345fcceeb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="acd1bfe4dd813b3aa190b713345fcceeb"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#acd1bfe4dd813b3aa190b713345fcceeb">~ProjDataInfo</a> ()</td></tr>
 <tr class="memdesc:acd1bfe4dd813b3aa190b713345fcceeb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:acd1bfe4dd813b3aa190b713345fcceeb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74a2ce146cd1557f99cc0eeb044ae3f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="ac74a2ce146cd1557f99cc0eeb044ae3f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ac74a2ce146cd1557f99cc0eeb044ae3f">is_tof_data</a> () const</td></tr>
+<tr class="memdesc:ac74a2ce146cd1557f99cc0eeb044ae3f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if TOF data from tof_mash_factor and num_tof_bins. <br /></td></tr>
+<tr class="separator:ac74a2ce146cd1557f99cc0eeb044ae3f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6fce4073e426a4cfeb08a4725e5fc66 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ad6fce4073e426a4cfeb08a4725e5fc66">get_original_view_nums</a> () const</td></tr>
 <tr class="memdesc:ad6fce4073e426a4cfeb08a4725e5fc66 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of view numbers in the "original" data if subsets are used.  <a href="classstir_1_1ProjDataInfo.html#ad6fce4073e426a4cfeb08a4725e5fc66">More...</a><br /></td></tr>
 <tr class="separator:ad6fce4073e426a4cfeb08a4725e5fc66 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4e785f8388daa878c91e22ce126e49 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Bin.html">Bin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5b4e785f8388daa878c91e22ce126e49">get_bin</a> (const <a class="el" href="classstir_1_1LOR.html">LOR</a>&lt; float &gt; &amp;) const =0</td></tr>
-<tr class="memdesc:a5b4e785f8388daa878c91e22ce126e49 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the bin in the projection data that 'contains' an <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.  <a href="classstir_1_1ProjDataInfo.html#a5b4e785f8388daa878c91e22ce126e49">More...</a><br /></td></tr>
-<tr class="separator:a5b4e785f8388daa878c91e22ce126e49 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29594945a0cec246736d7efda7fbd9b6 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Bin.html">Bin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a29594945a0cec246736d7efda7fbd9b6">get_bin</a> (const <a class="el" href="classstir_1_1LOR.html">LOR</a>&lt; float &gt; &amp;, const double delta_time=0.0) const =0</td></tr>
+<tr class="memdesc:a29594945a0cec246736d7efda7fbd9b6 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the bin in the projection data that 'contains' an <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>.  <a href="classstir_1_1ProjDataInfo.html#a29594945a0cec246736d7efda7fbd9b6">More...</a><br /></td></tr>
+<tr class="separator:a29594945a0cec246736d7efda7fbd9b6 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb5eeea49a59cf9eb8c279bc5123b52 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="aadb5eeea49a59cf9eb8c279bc5123b52"></a>
 const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">get_scanner_ptr</a> () const</td></tr>
 <tr class="memdesc:aadb5eeea49a59cf9eb8c279bc5123b52 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scanner pointer. <br /></td></tr>
@@ -282,9 +297,8 @@ const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><td
 shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a612c74a079bb4f32216612ab9d22e6b8">get_scanner_sptr</a> () const</td></tr>
 <tr class="memdesc:a612c74a079bb4f32216612ab9d22e6b8 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scanner shared pointer. <br /></td></tr>
 <tr class="separator:a612c74a079bb4f32216612ab9d22e6b8 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fcddd5b22756cdb6579be6f6559cfd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a04fcddd5b22756cdb6579be6f6559cfd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a04fcddd5b22756cdb6579be6f6559cfd">set_bed_position_horizontal</a> (const float bed_position_horizontal_arg)</td></tr>
-<tr class="memdesc:a04fcddd5b22756cdb6579be6f6559cfd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set horizontal bed position. <br /></td></tr>
+<tr class="memitem:a04fcddd5b22756cdb6579be6f6559cfd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a04fcddd5b22756cdb6579be6f6559cfd">set_bed_position_horizontal</a> (const float bed_position_horizontal_arg)</td></tr>
+<tr class="memdesc:a04fcddd5b22756cdb6579be6f6559cfd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector which holds the lower and higher boundary for each TOF position, without the application of TOF mashing, in mm, for faster access.  <a href="classstir_1_1ProjDataInfo.html#a04fcddd5b22756cdb6579be6f6559cfd">More...</a><br /></td></tr>
 <tr class="separator:a04fcddd5b22756cdb6579be6f6559cfd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c532101a1a6143cf145cae44bbd064 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a03c532101a1a6143cf145cae44bbd064"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a03c532101a1a6143cf145cae44bbd064">get_bed_position_horizontal</a> () const</td></tr>
@@ -310,9 +324,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_energy_informatio
 <tr class="memitem:a6e26954dddc59f2a7c55c6a74b3d2dbc inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a6e26954dddc59f2a7c55c6a74b3d2dbc">set_max_tangential_pos_num</a> (const int max_tang_poss)</td></tr>
 <tr class="memdesc:a6e26954dddc59f2a7c55c6a74b3d2dbc inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum tangential position number.  <a href="classstir_1_1ProjDataInfo.html#a6e26954dddc59f2a7c55c6a74b3d2dbc">More...</a><br /></td></tr>
 <tr class="separator:a6e26954dddc59f2a7c55c6a74b3d2dbc inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b5259be5239f1de9486faef48475bb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#af8b5259be5239f1de9486faef48475bb">set_tof_mash_factor</a> (const int new_num)</td></tr>
-<tr class="memdesc:af8b5259be5239f1de9486faef48475bb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tof mashing factor (for TOF scanners).  <a href="classstir_1_1ProjDataInfo.html#af8b5259be5239f1de9486faef48475bb">More...</a><br /></td></tr>
-<tr class="separator:af8b5259be5239f1de9486faef48475bb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549084ea6a6ebc73447cabecad26ea0c inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a549084ea6a6ebc73447cabecad26ea0c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a549084ea6a6ebc73447cabecad26ea0c">get_num_segments</a> () const</td></tr>
 <tr class="memdesc:a549084ea6a6ebc73447cabecad26ea0c inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of segments. <br /></td></tr>
@@ -329,6 +340,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#adc2344c460442748210697d18ec1f52b">get_num_tangential_poss</a> () const</td></tr>
 <tr class="memdesc:adc2344c460442748210697d18ec1f52b inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of tangential positions. <br /></td></tr>
 <tr class="separator:adc2344c460442748210697d18ec1f52b inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0ea1c7694fb8962b3e9994e1c16599 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a3e0ea1c7694fb8962b3e9994e1c16599"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a3e0ea1c7694fb8962b3e9994e1c16599">get_tof_bin</a> (const double delta) const</td></tr>
+<tr class="memdesc:a3e0ea1c7694fb8962b3e9994e1c16599 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of tof bin for a given time difference. <br /></td></tr>
+<tr class="separator:a3e0ea1c7694fb8962b3e9994e1c16599 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13de6e6a11b20a5766de10c97302689 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="ac13de6e6a11b20a5766de10c97302689"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ac13de6e6a11b20a5766de10c97302689">get_num_tof_poss</a> () const</td></tr>
 <tr class="memdesc:ac13de6e6a11b20a5766de10c97302689 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of TOF bins. <br /></td></tr>
@@ -377,9 +392,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a7586df45c46af902002c27869ae5774f">get_max_tof_pos_num</a> () const</td></tr>
 <tr class="memdesc:a7586df45c46af902002c27869ae5774f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the last timgin position. <br /></td></tr>
 <tr class="separator:a7586df45c46af902002c27869ae5774f inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2065df977f0ec143fa9fc5051401b346 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a2065df977f0ec143fa9fc5051401b346"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a2065df977f0ec143fa9fc5051401b346">get_num_sinograms</a> () const</td></tr>
-<tr class="memdesc:a2065df977f0ec143fa9fc5051401b346 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of sinograms. <br /></td></tr>
+<tr class="memitem:a2065df977f0ec143fa9fc5051401b346 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a2065df977f0ec143fa9fc5051401b346">get_num_sinograms</a> () const</td></tr>
+<tr class="memdesc:a2065df977f0ec143fa9fc5051401b346 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of sinograms.  <a href="classstir_1_1ProjDataInfo.html#a2065df977f0ec143fa9fc5051401b346">More...</a><br /></td></tr>
 <tr class="separator:a2065df977f0ec143fa9fc5051401b346 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6ef4c7eef02e8da6c63b1ea6ee25bb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ada6ef4c7eef02e8da6c63b1ea6ee25bb">get_num_non_tof_sinograms</a> () const</td></tr>
 <tr class="memdesc:ada6ef4c7eef02e8da6c63b1ea6ee25bb inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of non-tof sinograms.  <a href="classstir_1_1ProjDataInfo.html#ada6ef4c7eef02e8da6c63b1ea6ee25bb">More...</a><br /></td></tr>
@@ -394,9 +408,21 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:acb8c0c26d8ddf9419d8186b39888eca3 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#acb8c0c26d8ddf9419d8186b39888eca3">get_s</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const =0</td></tr>
 <tr class="memdesc:acb8c0c26d8ddf9419d8186b39888eca3 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of the tangential coordinate in the projection plane (in mm)  <a href="classstir_1_1ProjDataInfo.html#acb8c0c26d8ddf9419d8186b39888eca3">More...</a><br /></td></tr>
 <tr class="separator:acb8c0c26d8ddf9419d8186b39888eca3 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e4d8d8580f568fb0a2d781399c0530 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a23e4d8d8580f568fb0a2d781399c0530"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a23e4d8d8580f568fb0a2d781399c0530">get_k</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:a23e4d8d8580f568fb0a2d781399c0530 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value of the TOF location along the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> (in mm) k is a line segment connecting the centers of the two detectors. <br /></td></tr>
+<tr class="separator:a23e4d8d8580f568fb0a2d781399c0530 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac819c17859589692185745bc1d37673 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="aac819c17859589692185745bc1d37673"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aac819c17859589692185745bc1d37673">get_tof_delta_time</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:aac819c17859589692185745bc1d37673 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the TOF timing difference (in ps) <br /></td></tr>
+<tr class="separator:aac819c17859589692185745bc1d37673 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24130652d8054c564d222db0666ad417 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a24130652d8054c564d222db0666ad417">get_sampling_in_s</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
 <tr class="memdesc:a24130652d8054c564d222db0666ad417 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the <code>s</code> coordinate.  <a href="classstir_1_1ProjDataInfo.html#a24130652d8054c564d222db0666ad417">More...</a><br /></td></tr>
 <tr class="separator:a24130652d8054c564d222db0666ad417 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66edaaed6aa30ada231895c03fef79d2 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a66edaaed6aa30ada231895c03fef79d2"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a66edaaed6aa30ada231895c03fef79d2">get_sampling_in_k</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:a66edaaed6aa30ada231895c03fef79d2 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sampling distance in the k <code>coordinate</code>. <br /></td></tr>
+<tr class="separator:a66edaaed6aa30ada231895c03fef79d2 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae72d1bf76c457f5dd03d08249f802d5a inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="ae72d1bf76c457f5dd03d08249f802d5a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ae72d1bf76c457f5dd03d08249f802d5a">operator==</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj) const</td></tr>
 <tr class="memdesc:ae72d1bf76c457f5dd03d08249f802d5a inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">check equality <br /></td></tr>
@@ -423,21 +449,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aad1a50eb350bffa449f01074d69054fd">get_empty_segment_by_sinogram</a> (const <a class="el" href="classstir_1_1SegmentIndices.html">SegmentIndices</a> &amp;) const</td></tr>
 <tr class="memdesc:aad1a50eb350bffa449f01074d69054fd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view. <br /></td></tr>
 <tr class="separator:aad1a50eb350bffa449f01074d69054fd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5800c2f823e109af780b785ca04658e4 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">get_empty_viewgram</a> (const int view_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a5800c2f823e109af780b785ca04658e4 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty viewgram.  <a href="classstir_1_1ProjDataInfo.html#a5800c2f823e109af780b785ca04658e4">More...</a><br /></td></tr>
-<tr class="separator:a5800c2f823e109af780b785ca04658e4 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c122085027d6e5ba8b2ff862272d181 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">get_empty_sinogram</a> (const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a5c122085027d6e5ba8b2ff862272d181 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty_sinogram.  <a href="classstir_1_1ProjDataInfo.html#a5c122085027d6e5ba8b2ff862272d181">More...</a><br /></td></tr>
-<tr class="separator:a5c122085027d6e5ba8b2ff862272d181 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ba38fc709005ef198006181691324c inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">get_empty_segment_by_view</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:aa3ba38fc709005ef198006181691324c inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment sino.  <a href="classstir_1_1ProjDataInfo.html#aa3ba38fc709005ef198006181691324c">More...</a><br /></td></tr>
-<tr class="separator:aa3ba38fc709005ef198006181691324c inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd883ed0f34bbe376194fb8bf6ad301 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">get_empty_segment_by_sinogram</a> (const int segment_num, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a9bd883ed0f34bbe376194fb8bf6ad301 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view.  <a href="classstir_1_1ProjDataInfo.html#a9bd883ed0f34bbe376194fb8bf6ad301">More...</a><br /></td></tr>
-<tr class="separator:a9bd883ed0f34bbe376194fb8bf6ad301 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c92de5313eaa937f50c79d6f642614 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a04c92de5313eaa937f50c79d6f642614">get_empty_related_viewgrams</a> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;, const bool make_num_tangential_poss_odd=false) const</td></tr>
-<tr class="memdesc:a04c92de5313eaa937f50c79d6f642614 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty related viewgrams, where the symmetries_ptr specifies the symmetries to use.  <a href="classstir_1_1ProjDataInfo.html#a04c92de5313eaa937f50c79d6f642614">More...</a><br /></td></tr>
-<tr class="separator:a04c92de5313eaa937f50c79d6f642614 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67adcba5b672990b6b1487a5052ac298 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a67adcba5b672990b6b1487a5052ac298">get_empty_viewgram</a> (const int view_num, const int segment_num, const bool make_num_tangential_poss_odd=false, const int timing_pos_num=0) const</td></tr>
+<tr class="memdesc:a67adcba5b672990b6b1487a5052ac298 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty viewgram.  <a href="classstir_1_1ProjDataInfo.html#a67adcba5b672990b6b1487a5052ac298">More...</a><br /></td></tr>
+<tr class="separator:a67adcba5b672990b6b1487a5052ac298 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d703c525c086ff762d640ef17212e31 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a2d703c525c086ff762d640ef17212e31">get_empty_sinogram</a> (const int ax_pos_num, const int segment_num, const bool make_num_tangential_poss_odd=false, const int timing_pos_num=0) const</td></tr>
+<tr class="memdesc:a2d703c525c086ff762d640ef17212e31 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty_sinogram.  <a href="classstir_1_1ProjDataInfo.html#a2d703c525c086ff762d640ef17212e31">More...</a><br /></td></tr>
+<tr class="separator:a2d703c525c086ff762d640ef17212e31 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6edab9ec8547ddaff2c593ecb22c343 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentByView.html">SegmentByView</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ab6edab9ec8547ddaff2c593ecb22c343">get_empty_segment_by_view</a> (const int segment_num, const bool make_num_tangential_poss_odd=false, const int timing_pos_num=0) const</td></tr>
+<tr class="memdesc:ab6edab9ec8547ddaff2c593ecb22c343 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment sino.  <a href="classstir_1_1ProjDataInfo.html#ab6edab9ec8547ddaff2c593ecb22c343">More...</a><br /></td></tr>
+<tr class="separator:ab6edab9ec8547ddaff2c593ecb22c343 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3e943b7bd99114cf43f6ad54808dcd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#afe3e943b7bd99114cf43f6ad54808dcd">get_empty_segment_by_sinogram</a> (const int segment_num, const bool make_num_tangential_poss_odd=false, const int timing_pos_num=0) const</td></tr>
+<tr class="memdesc:afe3e943b7bd99114cf43f6ad54808dcd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty segment view.  <a href="classstir_1_1ProjDataInfo.html#afe3e943b7bd99114cf43f6ad54808dcd">More...</a><br /></td></tr>
+<tr class="separator:afe3e943b7bd99114cf43f6ad54808dcd inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac038c3d4734638774e2f590bc6011075 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ac038c3d4734638774e2f590bc6011075">get_empty_related_viewgrams</a> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;, const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> &gt; &amp;, const bool make_num_tangential_poss_odd=false, const int timing_pos_num=0) const</td></tr>
+<tr class="memdesc:ac038c3d4734638774e2f590bc6011075 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get empty related viewgrams, where the symmetries_ptr specifies the symmetries to use.  <a href="classstir_1_1ProjDataInfo.html#ac038c3d4734638774e2f590bc6011075">More...</a><br /></td></tr>
+<tr class="separator:ac038c3d4734638774e2f590bc6011075 inherit pub_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -456,28 +482,37 @@ Additional Inherited Members</h2></td></tr>
 static <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aa089c06b98d13915ecbefc09989b9f84">ask_parameters</a> ()</td></tr>
 <tr class="memdesc:aa089c06b98d13915ecbefc09989b9f84 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask for the details and return a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> pointer. <br /></td></tr>
 <tr class="separator:aa089c06b98d13915ecbefc09989b9f84 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fa1aba19f7ff68a2112bbc23ce4369 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aa2fa1aba19f7ff68a2112bbc23ce4369">ProjDataInfoGE</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true)</td></tr>
-<tr class="memdesc:aa2fa1aba19f7ff68a2112bbc23ce4369 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> with span=3 for segment 0, but span=1 for others.  <a href="classstir_1_1ProjDataInfo.html#aa2fa1aba19f7ff68a2112bbc23ce4369">More...</a><br /></td></tr>
-<tr class="separator:aa2fa1aba19f7ff68a2112bbc23ce4369 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1583497fd984adc41e5b465c039eb7 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">ProjDataInfoCTI</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const int span, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true)</td></tr>
-<tr class="memdesc:a0c1583497fd984adc41e5b465c039eb7 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old name for <a class="el" href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c" title="Construct a ProjDataInfo suitable with a given span. ">construct_proj_data_info()</a>  <a href="classstir_1_1ProjDataInfo.html#a0c1583497fd984adc41e5b465c039eb7">More...</a><br /></td></tr>
-<tr class="separator:a0c1583497fd984adc41e5b465c039eb7 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98d6e2bf1d6249b1fd70ff9c655877c inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static unique_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c">construct_proj_data_info</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_sptr, const int span, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true)</td></tr>
-<tr class="memdesc:ae98d6e2bf1d6249b1fd70ff9c655877c inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> suitable with a given span.  <a href="classstir_1_1ProjDataInfo.html#ae98d6e2bf1d6249b1fd70ff9c655877c">More...</a><br /></td></tr>
-<tr class="separator:ae98d6e2bf1d6249b1fd70ff9c655877c inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa005dbd5317469355f03fcd06c0914a inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#aaa005dbd5317469355f03fcd06c0914a">ProjDataInfoGE</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true, const int tof_mash_factor=0)</td></tr>
+<tr class="memdesc:aaa005dbd5317469355f03fcd06c0914a inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> with span=3 for segment 0, but span=1 for others.  <a href="classstir_1_1ProjDataInfo.html#aaa005dbd5317469355f03fcd06c0914a">More...</a><br /></td></tr>
+<tr class="separator:aaa005dbd5317469355f03fcd06c0914a inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebb5cb14b7b1d53a960dabf2b9e8d97 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a3ebb5cb14b7b1d53a960dabf2b9e8d97">ProjDataInfoCTI</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_ptr, const int span, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true, const int tof_mash_factor=0)</td></tr>
+<tr class="memdesc:a3ebb5cb14b7b1d53a960dabf2b9e8d97 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old name for <a class="el" href="classstir_1_1ProjDataInfo.html#a0b2432be5ef89ee539b19b18b5c70f2e" title="Construct a ProjDataInfo suitable with a given span. ">construct_proj_data_info()</a>  <a href="classstir_1_1ProjDataInfo.html#a3ebb5cb14b7b1d53a960dabf2b9e8d97">More...</a><br /></td></tr>
+<tr class="separator:a3ebb5cb14b7b1d53a960dabf2b9e8d97 inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2432be5ef89ee539b19b18b5c70f2e inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top">static unique_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a0b2432be5ef89ee539b19b18b5c70f2e">construct_proj_data_info</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_sptr, const int span, const int max_delta, const int num_views, const int num_tangential_poss, const bool arc_corrected=true, const int tof_mash_factor=0)</td></tr>
+<tr class="memdesc:a0b2432be5ef89ee539b19b18b5c70f2e inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> suitable with a given span.  <a href="classstir_1_1ProjDataInfo.html#a0b2432be5ef89ee539b19b18b5c70f2e">More...</a><br /></td></tr>
+<tr class="separator:a0b2432be5ef89ee539b19b18b5c70f2e inherit pub_static_methods_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classstir_1_1ProjDataInfo"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classstir_1_1ProjDataInfo')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td></tr>
+<tr class="memitem:a6538e26c922b237504bcec0187b16c5c inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a6538e26c922b237504bcec0187b16c5c"></a>
+<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; <a class="el" href="structstir_1_1ProjDataInfo_1_1Float1Float2.html">Float1Float2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a6538e26c922b237504bcec0187b16c5c">tof_bin_boundaries_mm</a></td></tr>
+<tr class="memdesc:a6538e26c922b237504bcec0187b16c5c inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector which holds the lower and higher boundary for each TOF position in mm, for faster access. <br /></td></tr>
+<tr class="separator:a6538e26c922b237504bcec0187b16c5c inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2732fdd84bfa10a0173bcdca8d5593 inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a9d2732fdd84bfa10a0173bcdca8d5593"></a>
+<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; <a class="el" href="structstir_1_1ProjDataInfo_1_1Float1Float2.html">Float1Float2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfo.html#a9d2732fdd84bfa10a0173bcdca8d5593">tof_bin_boundaries_ps</a></td></tr>
+<tr class="memdesc:a9d2732fdd84bfa10a0173bcdca8d5593 inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector which holds the lower and higher boundary for each TOF position in ps`, for faster access. <br /></td></tr>
+<tr class="separator:a9d2732fdd84bfa10a0173bcdca8d5593 inherit pub_attribs_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classstir_1_1ProjDataInfo"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classstir_1_1ProjDataInfo')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classstir_1_1ProjDataInfo.html">stir::ProjDataInfo</a></td></tr>
 <tr class="memitem:a579a22963020d7026c6a2e7a5e6dd8d0 inherit pro_types_classstir_1_1ProjDataInfo"><td class="memItemLeft" align="right" valign="top"><a id="a579a22963020d7026c6a2e7a5e6dd8d0"></a>
 typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>root_type</b></td></tr>
 <tr class="separator:a579a22963020d7026c6a2e7a5e6dd8d0 inherit pro_types_classstir_1_1ProjDataInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ProjDataInfoCylindrical"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ProjDataInfoCylindrical')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html">stir::ProjDataInfoCylindrical</a></td></tr>
-<tr class="memitem:a07e8bab60481eb2215fe701872196430 inherit pro_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a07e8bab60481eb2215fe701872196430">blindly_equals</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">root_type</a> *const) const =0</td></tr>
-<tr class="separator:a07e8bab60481eb2215fe701872196430 inherit pro_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219a527a5867b654214ae891a19a1dd8 inherit pro_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a219a527a5867b654214ae891a19a1dd8">blindly_equals</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">root_type</a> *const) const override=0</td></tr>
+<tr class="separator:a219a527a5867b654214ae891a19a1dd8 inherit pro_methods_classstir_1_1ProjDataInfoCylindrical"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>projection data info for data corresponding to 'Generic' sampling. </p>
 <p>This isn't completely generic as it assumes that there is "axial" (or "ring") coordinate and a "transaxial" (or "crystal"). However, their spacing can be arbitrary.</p>
 <p>Currently this class is derived from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">ProjDataInfoCylindrical</a>. Arguably it should be the other way around. However, this would break backwards compatibility dramatically, and break other pull-requests in progress. We will leave this for later. At present, we just <code>delete</code> some member functions that do not make sense in the Generic case. There are a few ones left which might be removed in future, but are currently still used.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo:</a></b></dt><dd>change hierarchy order, i.e. derive from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">ProjDataInfoCylindrical</a> from <a class="el" href="classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. ">ProjDataInfoGeneric</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo:</a></b></dt><dd>change hierarchy order, i.e. derive from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. ">ProjDataInfoCylindrical</a> from <a class="el" href="classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. ">ProjDataInfoGeneric</a>. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aabb956aa858903acaf088baa88aa595f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabb956aa858903acaf088baa88aa595f">&#9670;&nbsp;</a></span>ProjDataInfoGeneric()</h2>
@@ -533,13 +568,13 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 <p>The min and max ring difference in each segment are passed as VectorWithOffsets. All three vectors have to have index ranges from min_segment_num to max_segment_num.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Most of this library assumes that segment 0 corresponds to an average ring difference of 0. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a07e8bab60481eb2215fe701872196430">stir::ProjDataInfoCylindrical::blindly_equals()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a94d84e2cfbc2c70ea483b099af045775">stir::ProjDataInfo::blindly_equals()</a>, and <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#aecfb734f569c221cd3b90a4d1bcb9d84">set_num_views()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a219a527a5867b654214ae891a19a1dd8">stir::ProjDataInfoCylindrical::blindly_equals()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#a94d84e2cfbc2c70ea483b099af045775">stir::ProjDataInfo::blindly_equals()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af65ac4ae6a6599f06cf26627586998f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af65ac4ae6a6599f06cf26627586998f9">&#9670;&nbsp;</a></span>get_tantheta()</h2>
+<a id="a331cf2a2aaad9c05fde1178a7e081b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331cf2a2aaad9c05fde1178a7e081b40">&#9670;&nbsp;</a></span>get_tantheta()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +592,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -565,12 +600,12 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 <p>Get tangent of the co-polar angle of the normal to the projection plane. </p>
 <p>theta=0 for 'direct' planes (i.e. projection planes parallel to the scanner axis) </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a77e09030b77bbdf1281adec2f7b54aac">stir::ProjDataInfoCylindrical</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a4f1f576fce145764e972fa99d3b8b4e1">stir::ProjDataInfoCylindrical</a>.</p>
 
 </div>
 </div>
-<a id="a7805fa707fc0d331667103d1af7cf00f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7805fa707fc0d331667103d1af7cf00f">&#9670;&nbsp;</a></span>get_t()</h2>
+<a id="a1ccdd0230283c16c9d7b1e6e9db116dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ccdd0230283c16c9d7b1e6e9db116dc">&#9670;&nbsp;</a></span>get_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +623,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -596,12 +631,12 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 <p>Get value of the (roughly) axial coordinate in the projection plane (in mm) </p>
 <p>t-axis is defined to be orthogonal to the s-axis (and to the vector normal to the projection plane </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#acd056a0434ad9ea66e6bed6335d2ff21">stir::ProjDataInfoCylindrical</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#aaaec74586623794f111b234b5d78b667">stir::ProjDataInfoCylindrical</a>.</p>
 
 </div>
 </div>
-<a id="afb4822f4dc1c579fd5ee10b281660d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb4822f4dc1c579fd5ee10b281660d22">&#9670;&nbsp;</a></span>get_m()</h2>
+<a id="a14b29069ba39a8c07230b9fbf2e49680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b29069ba39a8c07230b9fbf2e49680">&#9670;&nbsp;</a></span>get_m()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +654,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -628,12 +663,12 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 <p>The 0 of the z-axis is chosen in the middle of the scanner.</p>
 <p>warning In generic geometry m is calculated directly from lor while in cylindrical geometry m is calculated using m_offset and axial_sampling </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a63ccce35ffdf6f6a5ca32647e74ca256">stir::ProjDataInfoCylindrical</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae82aef50c5a626f207d55e51c975e9e1">stir::ProjDataInfoCylindrical</a>.</p>
 
 </div>
 </div>
-<a id="a3fc1beaecb6abe147f4210dd5454de97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fc1beaecb6abe147f4210dd5454de97">&#9670;&nbsp;</a></span>get_sampling_in_t()</h2>
+<a id="a82962cc7ba1282281b3225f1f9f27ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82962cc7ba1282281b3225f1f9f27ee9">&#9670;&nbsp;</a></span>get_sampling_in_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,19 +686,19 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get sampling distance in the <code>t</code> coordinate. </p>
-<p>For some coordinate systems, this might depend on the <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>. The default implementation computes it as </p><div class="fragment"><div class="line">1/2(<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a7805fa707fc0d331667103d1af7cf00f">get_t</a>(..., ax_pos+1,...)-<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a7805fa707fc0d331667103d1af7cf00f">get_t</a>(..., ax_pos-1,...)))</div></div><!-- fragment --> 
-<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a907fb1e6dd56c3a7ce73e6c7225e0211">stir::ProjDataInfoCylindrical</a>.</p>
+<p>For some coordinate systems, this might depend on the <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>. The default implementation computes it as </p><div class="fragment"><div class="line">1/2(<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a1ccdd0230283c16c9d7b1e6e9db116dc">get_t</a>(..., ax_pos+1,...)-<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a1ccdd0230283c16c9d7b1e6e9db116dc">get_t</a>(..., ax_pos-1,...)))</div></div><!-- fragment --> 
+<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a2fb53dd9ccc19e0a08b465d514c8b5ff">stir::ProjDataInfoCylindrical</a>.</p>
 
 </div>
 </div>
-<a id="a4efcce8ddd22d2dd228b46efc9d19124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4efcce8ddd22d2dd228b46efc9d19124">&#9670;&nbsp;</a></span>get_sampling_in_m()</h2>
+<a id="a5fb29be7308ed9969743cf02ee0ceb20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb29be7308ed9969743cf02ee0ceb20">&#9670;&nbsp;</a></span>get_sampling_in_m()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,14 +716,14 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get sampling distance in the <code>m</code> coordinate. </p>
-<p>For some coordinate systems, this might depend on the <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>. The default implementation computes it as </p><div class="fragment"><div class="line">1/2(<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">get_m</a>(..., ax_pos+1,...)-<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#afb4822f4dc1c579fd5ee10b281660d22">get_m</a>(..., ax_pos-1,...)))</div></div><!-- fragment --> 
-<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a8e6284548f761c3df37397d6cad6614b">stir::ProjDataInfoCylindrical</a>.</p>
+<p>For some coordinate systems, this might depend on the <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a>. The default implementation computes it as </p><div class="fragment"><div class="line">1/2(<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a14b29069ba39a8c07230b9fbf2e49680">get_m</a>(..., ax_pos+1,...)-<a class="code" href="classstir_1_1ProjDataInfoGeneric.html#a14b29069ba39a8c07230b9fbf2e49680">get_m</a>(..., ax_pos-1,...)))</div></div><!-- fragment --> 
+<p>Reimplemented from <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ad6a1468b30bd2ef9250789e380d364bb">stir::ProjDataInfoCylindrical</a>.</p>
 
 </div>
 </div>
@@ -761,7 +796,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

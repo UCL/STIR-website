@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa216eea1277b1056ed920a89b149c05"><td class="memItemLeft" align="right" valign="top"><a id="afa216eea1277b1056ed920a89b149c05"></a>
 virtual <a class="el" href="classstir_1_1LOR.html">LOR</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const =0</td></tr>
 <tr class="separator:afa216eea1277b1056ed920a89b149c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9037d89366131eed1c11391bf26120d"><td class="memItemLeft" align="right" valign="top"><a id="ab9037d89366131eed1c11391bf26120d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LOR.html#ab9037d89366131eed1c11391bf26120d">is_swapped</a> () const =0</td></tr>
+<tr class="memdesc:ab9037d89366131eed1c11391bf26120d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> direction is opposite from normal. <br /></td></tr>
+<tr class="separator:ab9037d89366131eed1c11391bf26120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ed7a286dc77781d0d302aff9ef7b85"><td class="memItemLeft" align="right" valign="top"><a id="ae7ed7a286dc77781d0d302aff9ef7b85"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>change_representation</b> (<a class="el" href="classstir_1_1LORInCylinderCoordinates.html">LORInCylinderCoordinates</a>&lt; coordT &gt; &amp;, const double radius) const =0</td></tr>
 <tr class="separator:ae7ed7a286dc77781d0d302aff9ef7b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,6 +96,7 @@ class stir::LOR&lt; coordT &gt;</h3>
 
 <p>A base class for specifying an <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> with geometric coordinates. </p>
 <p>A Line-of-Response (<a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>) is really just a line in 3D. You can specify a line in several ways, each if which is more convenient for some application. This class provides a common base for all of these.</p>
+<p>Note that we take direction of the line into account (since after STIR 3.0). This is necessary for TOF support for instance. This is currently done by providing the <a class="el" href="classstir_1_1LOR.html#ab9037d89366131eed1c11391bf26120d" title="Return if the LOR direction is opposite from normal. ">is_swapped()</a> member.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This is all preliminary and likely to change. </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="LORCoordinates_8h_source.html">LORCoordinates.h</a></li>
@@ -99,7 +104,7 @@ class stir::LOR&lt; coordT &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

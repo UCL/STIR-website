@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -74,33 +74,33 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a98ba6becb2f145bcdb26c6fc989374c5">FilterRootPrior</a> ()</td></tr>
 <tr class="memdesc:a98ba6becb2f145bcdb26c6fc989374c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (no filter) <br /></td></tr>
 <tr class="separator:a98ba6becb2f145bcdb26c6fc989374c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8292f32facb10e13b505ef5e36a6eed2"><td class="memItemLeft" align="right" valign="top"><a id="a8292f32facb10e13b505ef5e36a6eed2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a8292f32facb10e13b505ef5e36a6eed2">FilterRootPrior</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; DataT &gt; &gt;const &amp;, const float penalization_factor)</td></tr>
-<tr class="memdesc:a8292f32facb10e13b505ef5e36a6eed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs it explicitly. <br /></td></tr>
-<tr class="separator:a8292f32facb10e13b505ef5e36a6eed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7041a6e03fb486176eb0df1aa391b9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ac7041a6e03fb486176eb0df1aa391b9f">is_convex</a> () const</td></tr>
-<tr class="memdesc:ac7041a6e03fb486176eb0df1aa391b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#ac7041a6e03fb486176eb0df1aa391b9f">More...</a><br /></td></tr>
-<tr class="separator:ac7041a6e03fb486176eb0df1aa391b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af75cc8ef2d29112752075b721a75fff4"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#af75cc8ef2d29112752075b721a75fff4">compute_value</a> (const DataT &amp;current_estimate)</td></tr>
-<tr class="memdesc:af75cc8ef2d29112752075b721a75fff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function  <a href="#af75cc8ef2d29112752075b721a75fff4">More...</a><br /></td></tr>
-<tr class="separator:af75cc8ef2d29112752075b721a75fff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9615269cdf383e712d28034ef9f07636"><td class="memItemLeft" align="right" valign="top"><a id="a9615269cdf383e712d28034ef9f07636"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">compute_gradient</a> (DataT &amp;prior_gradient, const DataT &amp;current_estimate)</td></tr>
-<tr class="memdesc:a9615269cdf383e712d28034ef9f07636"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient by applying the filter <br /></td></tr>
-<tr class="separator:a9615269cdf383e712d28034ef9f07636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69782a3b5470cc70df65960c406f3c79"><td class="memItemLeft" align="right" valign="top"><a id="a69782a3b5470cc70df65960c406f3c79"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a69782a3b5470cc70df65960c406f3c79">set_up</a> (shared_ptr&lt; const DataT &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a69782a3b5470cc70df65960c406f3c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a69782a3b5470cc70df65960c406f3c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0926d5ef69e2ca8b3b71a3ec70fdf17a"><td class="memItemLeft" align="right" valign="top"><a id="a0926d5ef69e2ca8b3b71a3ec70fdf17a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a0926d5ef69e2ca8b3b71a3ec70fdf17a">FilterRootPrior</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; DataT &gt;&gt; const &amp;, const float penalization_factor)</td></tr>
+<tr class="memdesc:a0926d5ef69e2ca8b3b71a3ec70fdf17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs it explicitly. <br /></td></tr>
+<tr class="separator:a0926d5ef69e2ca8b3b71a3ec70fdf17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132936972dbe6175325d329d0273150f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a132936972dbe6175325d329d0273150f">is_convex</a> () const override</td></tr>
+<tr class="memdesc:a132936972dbe6175325d329d0273150f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#a132936972dbe6175325d329d0273150f">More...</a><br /></td></tr>
+<tr class="separator:a132936972dbe6175325d329d0273150f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4101f820186f0ecaf501462efa26a818"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a4101f820186f0ecaf501462efa26a818">compute_value</a> (const DataT &amp;current_estimate) override</td></tr>
+<tr class="memdesc:a4101f820186f0ecaf501462efa26a818"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function  <a href="#a4101f820186f0ecaf501462efa26a818">More...</a><br /></td></tr>
+<tr class="separator:a4101f820186f0ecaf501462efa26a818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5062f209eecffb8455190e66b79e406"><td class="memItemLeft" align="right" valign="top"><a id="ad5062f209eecffb8455190e66b79e406"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">compute_gradient</a> (DataT &amp;prior_gradient, const DataT &amp;current_estimate) override</td></tr>
+<tr class="memdesc:ad5062f209eecffb8455190e66b79e406"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient by applying the filter <br /></td></tr>
+<tr class="separator:ad5062f209eecffb8455190e66b79e406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7852f04f2c9551fdc8eee9ad3f7bc3"><td class="memItemLeft" align="right" valign="top"><a id="ade7852f04f2c9551fdc8eee9ad3f7bc3"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ade7852f04f2c9551fdc8eee9ad3f7bc3">set_up</a> (shared_ptr&lt; const DataT &gt; const &amp;target_sptr) override</td></tr>
+<tr class="memdesc:ade7852f04f2c9551fdc8eee9ad3f7bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:ade7852f04f2c9551fdc8eee9ad3f7bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; FilterRootPrior&lt; DataT &gt;, GeneralisedPrior&lt; DataT &gt;, GeneralisedPrior&lt; DataT &gt; &gt;</a></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DataT &gt;</a></td></tr>
 <tr class="memitem:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">compute_Hessian</a> (DataT &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const DataT &amp;current_image_estimate) const</td></tr>
 <tr class="memdesc:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes a single row of the Hessian.  <a href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">More...</a><br /></td></tr>
@@ -140,17 +140,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (const char
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a68b62ed097e12970a48329ce8dfbec76"><td class="memItemLeft" align="right" valign="top">static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a68b62ed097e12970a48329ce8dfbec76">registered_name</a></td></tr>
-<tr class="memdesc:a68b62ed097e12970a48329ce8dfbec76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name which will be used when parsing a <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> object.  <a href="#a68b62ed097e12970a48329ce8dfbec76">More...</a><br /></td></tr>
+<tr class="memitem:a68b62ed097e12970a48329ce8dfbec76"><td class="memItemLeft" align="right" valign="top"><a id="a68b62ed097e12970a48329ce8dfbec76"></a>
+static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#a68b62ed097e12970a48329ce8dfbec76">registered_name</a> = &quot;FilterRootPrior&quot;</td></tr>
+<tr class="memdesc:a68b62ed097e12970a48329ce8dfbec76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name which will be used when parsing a <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> object. <br /></td></tr>
 <tr class="separator:a68b62ed097e12970a48329ce8dfbec76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad85126e1adbed629ff9717091dc7df7a"><td class="memItemLeft" align="right" valign="top"><a id="ad85126e1adbed629ff9717091dc7df7a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ad85126e1adbed629ff9717091dc7df7a">check</a> (DataT const &amp;current_image_estimate) const</td></tr>
-<tr class="memdesc:ad85126e1adbed629ff9717091dc7df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
-<tr class="separator:ad85126e1adbed629ff9717091dc7df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93d43d07a5cb74836e64cb5ae6bf06c"><td class="memItemLeft" align="right" valign="top"><a id="ad93d43d07a5cb74836e64cb5ae6bf06c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html#ad93d43d07a5cb74836e64cb5ae6bf06c">check</a> (DataT const &amp;current_image_estimate) const override</td></tr>
+<tr class="memdesc:ad93d43d07a5cb74836e64cb5ae6bf06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
+<tr class="separator:ad93d43d07a5cb74836e64cb5ae6bf06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DataT &gt;</a></td></tr>
+<tr class="memitem:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">set_defaults</a> () override</td></tr>
+<tr class="memdesc:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">More...</a><br /></td></tr>
+<tr class="separator:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets key for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">More...</a><br /></td></tr>
+<tr class="separator:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a6c3b6f203ad7f47a159be6a5edb7ee65"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a6c3b6f203ad7f47a159be6a5edb7ee65">check</a> (DataT const &amp;current_estimate) const</td></tr>
 <tr class="memdesc:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
@@ -219,8 +226,8 @@ class stir::FilterRootPrior&lt; DataT &gt;</h3>
 <p>Note that for nearly all filters, this is not a real prior, as this 'gradient' is <em>not</em> the gradient of a function. This can be checked by computing the 'Hessian' (i.e. the partial derivatives of the components of the gradient). For most (interesting) filters, the Hessian will no be symmetric.</p>
 <p>The Median Root Prior is obtained by using a <a class="el" href="classstir_1_1MedianImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements median filtering. ">MedianImageFilter3D</a> as <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac7041a6e03fb486176eb0df1aa391b9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7041a6e03fb486176eb0df1aa391b9f">&#9670;&nbsp;</a></span>is_convex()</h2>
+<a id="a132936972dbe6175325d329d0273150f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132936972dbe6175325d329d0273150f">&#9670;&nbsp;</a></span>is_convex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +246,7 @@ template&lt;typename DataT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -249,14 +256,10 @@ template&lt;typename DataT &gt; </div>
 
 <p>Implements <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1FilterRootPrior.html#af75cc8ef2d29112752075b721a75fff4">stir::FilterRootPrior&lt; DataT &gt;::compute_value()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1FilterRootPrior.html#a8292f32facb10e13b505ef5e36a6eed2">stir::FilterRootPrior&lt; DataT &gt;::FilterRootPrior()</a>.</p>
-
 </div>
 </div>
-<a id="af75cc8ef2d29112752075b721a75fff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af75cc8ef2d29112752075b721a75fff4">&#9670;&nbsp;</a></span>compute_value()</h2>
+<a id="a4101f820186f0ecaf501462efa26a818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4101f820186f0ecaf501462efa26a818">&#9670;&nbsp;</a></span>compute_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +279,7 @@ template&lt;typename DataT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -286,38 +289,7 @@ template&lt;typename DataT &gt; </div>
 
 <p>Implements <a class="el" href="classstir_1_1GeneralisedPrior.html#afa6d6e88ce44aed622b37aca1548910e">stir::GeneralisedPrior&lt; DataT &gt;</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1FilterRootPrior.html#ac7041a6e03fb486176eb0df1aa391b9f">stir::FilterRootPrior&lt; DataT &gt;::is_convex()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a68b62ed097e12970a48329ce8dfbec76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68b62ed097e12970a48329ce8dfbec76">&#9670;&nbsp;</a></span>registered_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename DataT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char *const <a class="el" href="classstir_1_1FilterRootPrior.html">stir::FilterRootPrior</a>&lt; DataT &gt;::registered_name</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">  <span class="stringliteral">&quot;FilterRootPrior&quot;</span></div></div><!-- fragment -->
-<p>Name which will be used when parsing a <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> object. </p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1FilterRootPrior.html#ad85126e1adbed629ff9717091dc7df7a">stir::FilterRootPrior&lt; DataT &gt;::check()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +300,7 @@ template&lt;typename DataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

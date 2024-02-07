@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -48,7 +48,7 @@ $(function() {
 : <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin</a>
 </li>
 <li>target_data_sptr
-: <a class="el" href="classstir_1_1Reconstruction.html#a8b3c68e8016b388c6ec427d4669ca76e">stir::Reconstruction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1Reconstruction.html#a3000b79f9ee51dddf2c365fa9cc0300c">stir::Reconstruction&lt; TargetT &gt;</a>
 </li>
 <li>template_exam_info_sptr
 : <a class="el" href="classstir_1_1ScatterSimulation.html#a673d6de75fd70e0133207ddc96c1d50b">stir::ScatterSimulation</a>
@@ -58,6 +58,9 @@ $(function() {
 </li>
 <li>test_adjoints()
 : <a class="el" href="classstir_1_1TestGPUProjectors.html#afd0905cccaf988a37a632f151eef1dc0">stir::TestGPUProjectors</a>
+</li>
+<li>test_FastErf()
+: <a class="el" href="classstir_1_1erfTests.html#ae8c0a13f79c6410a651416107f56c5e2">stir::erfTests</a>
 </li>
 <li>test_gradient()
 : <a class="el" href="classstir_1_1GeneralisedPriorTests.html#abbf3baf66aa8d88ad15b17a994a3b9a0">stir::GeneralisedPriorTests</a>
@@ -76,6 +79,9 @@ $(function() {
 </li>
 <li>test_objective_function_Hessian_concavity()
 : <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a2743fe76a4d1bf86d51e9b4f276cc285">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests</a>
+</li>
+<li>test_stir_erf()
+: <a class="el" href="classstir_1_1erfTests.html#af01dd7decd7e46403674eabaebe435d9">stir::erfTests</a>
 </li>
 <li>TestBSplineTransformation()
 : <a class="el" href="classstir_1_1TestBSplineTransformation.html#a89725bd17ff52a4cf1c0663ef7f63ee2">stir::TestBSplineTransformation</a>
@@ -117,24 +123,36 @@ $(function() {
 : <a class="el" href="classstir_1_1TimedBlock_3_01TimerT_0ATimer_01_4.html#adf9657c39629e8ec72051913b9ea3500">stir::TimedBlock&lt; TimerT=Timer &gt;</a>
 </li>
 <li>TimeFrameDefinitions()
-: <a class="el" href="classstir_1_1TimeFrameDefinitions.html#af863595d5f7123c15bca6704515056e7">stir::TimeFrameDefinitions</a>
+: <a class="el" href="classstir_1_1TimeFrameDefinitions.html#abadcd92ebc05ad3f46e476cd39e8b911">stir::TimeFrameDefinitions</a>
 </li>
 <li>TimeGateDefinitions()
 : <a class="el" href="classstir_1_1TimeGateDefinitions.html#a3aa149b3c0bbc5158829aade7c5c38bc">stir::TimeGateDefinitions</a>
+</li>
+<li>timing_pos_num()
+: <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices</a>
+</li>
+<li>tof_bin_boundaries_mm
+: <a class="el" href="classstir_1_1ProjDataInfo.html#a6538e26c922b237504bcec0187b16c5c">stir::ProjDataInfo</a>
+</li>
+<li>tof_bin_boundaries_ps
+: <a class="el" href="classstir_1_1ProjDataInfo.html#a9d2732fdd84bfa10a0173bcdca8d5593">stir::ProjDataInfo</a>
+</li>
+<li>tof_enabled
+: <a class="el" href="classstir_1_1ProjMatrixByBin.html#acca6c553174539c5187dc2d0b85e0ed5">stir::ProjMatrixByBin</a>
 </li>
 <li>tolerance
 : <a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">stir::RunTests</a>
 </li>
 <li>Transform3DObjectImageProcessor()
-: <a class="el" href="classstir_1_1Transform3DObjectImageProcessor.html#a7b1a26621dc5b5802647aab11da7fbac">stir::Transform3DObjectImageProcessor&lt; elemT &gt;</a>
+: <a class="el" href="classstir_1_1Transform3DObjectImageProcessor.html#a5841af759989d9ead9b33fac3c18ce3f">stir::Transform3DObjectImageProcessor&lt; elemT &gt;</a>
 </li>
 <li>transform_bin()
 : <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a37318097f15657959e51bcc76d52e847">stir::RigidObject3DTransformation</a>
 </li>
 <li>transform_point()
 : <a class="el" href="classstir_1_1NonRigidObjectTransformationUsingBSplines.html#a811dc31d1761381a8baddbb638926b3d">stir::NonRigidObjectTransformationUsingBSplines&lt; num_dimensions, elemT &gt;</a>
-, <a class="el" href="classstir_1_1ObjectTransformation.html#a67c981b25c3b5a3228899092350172a1">stir::ObjectTransformation&lt; num_dimensions, elemT &gt;</a>
-, <a class="el" href="classstir_1_1RigidObject3DTransformation.html#ac3168d7ff43e13a35443bb0efc271531">stir::RigidObject3DTransformation</a>
+, <a class="el" href="classstir_1_1ObjectTransformation.html#a258727bb2ee9995f509346dd637bf1cb">stir::ObjectTransformation&lt; num_dimensions, elemT &gt;</a>
+, <a class="el" href="classstir_1_1RigidObject3DTransformation.html#a5a601bd41373063b4e26cdf41ffd1053">stir::RigidObject3DTransformation</a>
 </li>
 <li>transform_to_shape_coords()
 : <a class="el" href="classstir_1_1Shape3DWithOrientation.html#a4805d14ae021c11fa26b238c3e9d7291">stir::Shape3DWithOrientation</a>
@@ -158,7 +176,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:44:10 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:25:00 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

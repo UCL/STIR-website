@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -134,6 +134,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a4c9044db9437a6002d3a780ec0a7976d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ReportMovement.html#a4c9044db9437a6002d3a780ec0a7976d">post_processing</a> ()</td></tr>
 <tr class="memdesc:a4c9044db9437a6002d3a780ec0a7976d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a4c9044db9437a6002d3a780ec0a7976d">More...</a><br /></td></tr>
 <tr class="separator:a4c9044db9437a6002d3a780ec0a7976d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classstir_1_1TimeFrameMotion"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1TimeFrameMotion')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1TimeFrameMotion.html">stir::TimeFrameMotion</a></td></tr>
+<tr class="memitem:a441c08e28b0301f168eee4986bfa8778 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memItemLeft" align="right" valign="top"><a id="a441c08e28b0301f168eee4986bfa8778"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameMotion.html#a441c08e28b0301f168eee4986bfa8778">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a441c08e28b0301f168eee4986bfa8778 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="mdescLeft">&#160;</td><td class="mdescRight">parsing functions <br /></td></tr>
+<tr class="separator:a441c08e28b0301f168eee4986bfa8778 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3fd101970399cb48fd1644ac87bc09 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memItemLeft" align="right" valign="top"><a id="a6d3fd101970399cb48fd1644ac87bc09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameMotion.html#a6d3fd101970399cb48fd1644ac87bc09">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a6d3fd101970399cb48fd1644ac87bc09 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:a6d3fd101970399cb48fd1644ac87bc09 inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eacf5d0683157ad36a3157dfc23a02c inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameMotion.html#a3eacf5d0683157ad36a3157dfc23a02c">post_processing</a> () override</td></tr>
+<tr class="memdesc:a3eacf5d0683157ad36a3157dfc23a02c inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="classstir_1_1TimeFrameMotion.html#a3eacf5d0683157ad36a3157dfc23a02c">More...</a><br /></td></tr>
+<tr class="separator:a3eacf5d0683157ad36a3157dfc23a02c inherit pro_methods_classstir_1_1TimeFrameMotion"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -159,9 +171,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>output_filenam
 
   ; parameters from TimeFrameMotion
 
-  reference point 1:={50,0,0} 
-  reference point 2:={100,0,30} 
-  reference point 3:={100,0,-30} 
+  reference point 1:={50,0,0}
+  reference point 2:={100,0,30}
+  reference point 3:={100,0,-30}
 
   ; next defaults to 'report_movement'
   output filename prefix := somestring
@@ -194,7 +206,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>output_filenam
 <p>This will be called at the end of the parsing. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if everything OK, true if not </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1TimeFrameMotion.html#a279b121d1d361889ed1a18e2539e14e3">stir::TimeFrameMotion</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">stir::ParsingObject</a>.</p>
 
 </div>
 </div>
@@ -204,7 +216,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>output_filenam
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

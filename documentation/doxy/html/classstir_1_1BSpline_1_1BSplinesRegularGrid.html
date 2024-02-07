@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -65,9 +65,9 @@ Inheritance diagram for stir::BSpline::BSplinesRegularGrid&lt; num_dimensions, o
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bacc5a0f9471a4bc422c9cab136dc18"><td class="memItemLeft" align="right" valign="top"><a id="a2bacc5a0f9471a4bc422c9cab136dc18"></a>
+<tr class="memitem:ad4a4dedb764d9540f3f3410dfdbb123c"><td class="memItemLeft" align="right" valign="top"><a id="ad4a4dedb764d9540f3f3410dfdbb123c"></a>
 <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, out_elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_coefficients</b> () const</td></tr>
-<tr class="separator:a2bacc5a0f9471a4bc422c9cab136dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad4a4dedb764d9540f3f3410dfdbb123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e19998660cdc2ff7330f884b59f729"><td class="memItemLeft" align="right" valign="top"><a id="a38e19998660cdc2ff7330f884b59f729"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BSpline_1_1BSplinesRegularGrid.html#a38e19998660cdc2ff7330f884b59f729">BSplinesRegularGrid</a> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; num_dimensions, in_elemT &gt; &amp;input, const <a class="el" href="group__BSpline.html#gaa4a83dae28c1550670e3fc9482fb2fe1">BSplineType</a> &amp;this_type=cubic)</td></tr>
 <tr class="memdesc:a38e19998660cdc2ff7330f884b59f729"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor given an array of samples and the spline type <br /></td></tr>
@@ -102,7 +102,7 @@ class stir::BSpline::BSplinesRegularGrid&lt; num_dimensions, out_elemT, in_elemT
 
 <p>A class for n-dimensional <a class="el" href="namespacestir_1_1BSpline.html" title="Namespace for functions and classes for B-Spline interpolation in the STIR library. ">BSpline</a> interpolation when the input samples are on a regular grid. </p>
 <p>This class provides essentially an n-dimensional function, so can be used as a function object.</p>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">Array&lt;3,float&gt; some_data = ....;</div><div class="line"></div><div class="line">BSplinesRegularGrid&lt;3, float&gt; interpolator(cubic);</div><div class="line"></div><div class="line">interpolator.set_coef(some_data);</div><div class="line"></div><div class="line">Coordinate3D&lt;double&gt; position(1.2, 3.4, 5.6);</div><div class="line"></div><div class="line"><span class="keywordtype">float</span> value = interpolator(position);</div></div><!-- fragment --> <pre class="fragment">\warning The implementation currently uses mirror boundary conditions. This means you 
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">Array&lt;3,float&gt; some_data = ....;</div><div class="line"></div><div class="line">BSplinesRegularGrid&lt;3, float&gt; interpolator(cubic);</div><div class="line"></div><div class="line">interpolator.set_coef(some_data);</div><div class="line"></div><div class="line">Coordinate3D&lt;double&gt; position(1.2, 3.4, 5.6);</div><div class="line"></div><div class="line"><span class="keywordtype">float</span> value = interpolator(position);</div></div><!-- fragment --> <pre class="fragment">\warning The implementation currently uses mirror boundary conditions. This means you
 can ask for values of the interpolator outside the original grid, but the results
 might not be what you expect.</pre> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -196,7 +196,7 @@ template&lt;int num_dimensions, typename out_elemT , typename in_elemT, typename
 </div><div class="memdoc">
 
 <p>Compute the coefficients for the B-splines from an array of samples. </p>
-<p>When the order of the spline is larger than 1, the coefficients multiplying the basic splines are not equal to the samples. This variable stores them for further use. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>rename </dd></dl>
+<p>When the order of the spline is larger than 1, the coefficients multiplying the basic splines are not equal to the samples. This variable stores them for further use. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>rename </dd></dl>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ template&lt;int num_dimensions, typename out_elemT , typename in_elemT , typenam
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the interpolated value.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ template&lt;int num_dimensions, typename out_elemT , typename in_elemT , typenam
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the gradient</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>should probably be templated in pos_type. </dd></dl>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ template&lt;int num_dimensions, typename out_elemT , typename in_elemT , typenam
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

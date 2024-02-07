@@ -11,13 +11,13 @@
 <area shape="rect" id="node13" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="658,953,825,994"/>
 <area shape="rect" id="node14" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="655,1018,828,1059"/>
 <area shape="rect" id="node15" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="658,1083,825,1125"/>
-<area shape="rect" id="node16" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions&#45;1,\l elemT \&gt;, elemT \&gt;" alt="" coords="642,508,841,564"/>
+<area shape="rect" id="node16" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions \l&#45; 1, elemT \&gt;, elemT \&gt;" alt="" coords="642,508,841,564"/>
 <area shape="rect" id="node39" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="642,1149,841,1190"/>
 <area shape="rect" id="node2" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,741,187,768"/>
 <area shape="rect" id="node6" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="2059,463,2213,489"/>
 <area shape="rect" id="node17" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1422,1025,1577,1052"/>
 <area shape="rect" id="node20" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1422,48,1577,75"/>
-<area shape="rect" id="node23" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l&#45;1, elemT \&gt;" alt="" coords="1405,959,1594,1001"/>
+<area shape="rect" id="node23" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l &#45; 1, elemT \&gt;" alt="" coords="1405,959,1594,1001"/>
 <area shape="rect" id="node24" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="1008,515,1201,557"/>
 <area shape="rect" id="node18" href="$classstir_1_1Sinogram.html" title="A class for 2d projection data. " alt="" coords="1791,1025,1953,1052"/>
 <area shape="rect" id="node19" href="$classstir_1_1Viewgram.html" title="A class for 2d projection data. " alt="" coords="1789,744,1955,771"/>

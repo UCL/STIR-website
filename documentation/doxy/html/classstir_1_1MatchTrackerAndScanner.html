@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -82,9 +82,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>get_frame_start_tim
 <tr class="memitem:a2f9588e226c9b63da1f7109165c8b4c3"><td class="memItemLeft" align="right" valign="top"><a id="a2f9588e226c9b63da1f7109165c8b4c3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>get_frame_end_time</b> (unsigned frame_num) const</td></tr>
 <tr class="separator:a2f9588e226c9b63da1f7109165c8b4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f596753503416cc76cb65adcc27c1e3"><td class="memItemLeft" align="right" valign="top"><a id="a9f596753503416cc76cb65adcc27c1e3"></a>
-const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_image_filename_prefix</b> () const</td></tr>
-<tr class="separator:a9f596753503416cc76cb65adcc27c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81297be7b0346308101752e35ef2d1b1"><td class="memItemLeft" align="right" valign="top"><a id="a81297be7b0346308101752e35ef2d1b1"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_image_filename_prefix</b> () const</td></tr>
+<tr class="separator:a81297be7b0346308101752e35ef2d1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c6a936aa9d7b84f419c185ae5d3c32"><td class="memItemLeft" align="right" valign="top"><a id="a73c6a936aa9d7b84f419c185ae5d3c32"></a>
 const <a class="el" href="classstir_1_1RigidObject3DMotion.html">RigidObject3DMotion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_motion</b> () const</td></tr>
 <tr class="separator:a73c6a936aa9d7b84f419c185ae5d3c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,17 +113,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (const char
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad100ce6973006535f9e66ed7a47a54a9"><td class="memItemLeft" align="right" valign="top"><a id="ad100ce6973006535f9e66ed7a47a54a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#ad100ce6973006535f9e66ed7a47a54a9">set_defaults</a> ()</td></tr>
-<tr class="memdesc:ad100ce6973006535f9e66ed7a47a54a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">parsing functions <br /></td></tr>
-<tr class="separator:ad100ce6973006535f9e66ed7a47a54a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35af15c9a9993b72d8bc87d06305ec6a"><td class="memItemLeft" align="right" valign="top"><a id="a35af15c9a9993b72d8bc87d06305ec6a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#a35af15c9a9993b72d8bc87d06305ec6a">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a35af15c9a9993b72d8bc87d06305ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
-<tr class="separator:a35af15c9a9993b72d8bc87d06305ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8bc923c9d0688cfc91a07af30713b6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#aa8bc923c9d0688cfc91a07af30713b6a">post_processing</a> ()</td></tr>
-<tr class="memdesc:aa8bc923c9d0688cfc91a07af30713b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#aa8bc923c9d0688cfc91a07af30713b6a">More...</a><br /></td></tr>
-<tr class="separator:aa8bc923c9d0688cfc91a07af30713b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac280a4d1ba139a8f459c78e46c3cd947"><td class="memItemLeft" align="right" valign="top"><a id="ac280a4d1ba139a8f459c78e46c3cd947"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#ac280a4d1ba139a8f459c78e46c3cd947">set_defaults</a> () override</td></tr>
+<tr class="memdesc:ac280a4d1ba139a8f459c78e46c3cd947"><td class="mdescLeft">&#160;</td><td class="mdescRight">parsing functions <br /></td></tr>
+<tr class="separator:ac280a4d1ba139a8f459c78e46c3cd947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47139bb65ee84e338854d32aaf284937"><td class="memItemLeft" align="right" valign="top"><a id="a47139bb65ee84e338854d32aaf284937"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#a47139bb65ee84e338854d32aaf284937">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a47139bb65ee84e338854d32aaf284937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:a47139bb65ee84e338854d32aaf284937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa678e4539aaaf9095df53e33be164f76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#aa678e4539aaaf9095df53e33be164f76">post_processing</a> () override</td></tr>
+<tr class="memdesc:aa678e4539aaaf9095df53e33be164f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#aa678e4539aaaf9095df53e33be164f76">More...</a><br /></td></tr>
+<tr class="separator:aa678e4539aaaf9095df53e33be164f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -143,16 +143,16 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>_current_frame_end_
 <tr class="memitem:a4f8873a01c9882c4cc0d3fbc9a115452"><td class="memItemLeft" align="right" valign="top"><a id="a4f8873a01c9882c4cc0d3fbc9a115452"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>_current_frame_start_time</b></td></tr>
 <tr class="separator:a4f8873a01c9882c4cc0d3fbc9a115452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd41b0b37bb3db764c5ebb21747025bf"><td class="memItemLeft" align="right" valign="top"><a id="afd41b0b37bb3db764c5ebb21747025bf"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#afd41b0b37bb3db764c5ebb21747025bf">frame_definition_filename</a></td></tr>
-<tr class="memdesc:afd41b0b37bb3db764c5ebb21747025bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">parsing variables <br /></td></tr>
-<tr class="separator:afd41b0b37bb3db764c5ebb21747025bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f4be36e9777fd82107f9e3b0a7be31"><td class="memItemLeft" align="right" valign="top"><a id="a60f4be36e9777fd82107f9e3b0a7be31"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MatchTrackerAndScanner.html#a60f4be36e9777fd82107f9e3b0a7be31">frame_definition_filename</a></td></tr>
+<tr class="memdesc:a60f4be36e9777fd82107f9e3b0a7be31"><td class="mdescLeft">&#160;</td><td class="mdescRight">parsing variables <br /></td></tr>
+<tr class="separator:a60f4be36e9777fd82107f9e3b0a7be31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ef3fc1a9a40b0ecbf754b2e30db58c"><td class="memItemLeft" align="right" valign="top"><a id="a02ef3fc1a9a40b0ecbf754b2e30db58c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>scan_start_time</b></td></tr>
 <tr class="separator:a02ef3fc1a9a40b0ecbf754b2e30db58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3315a9cd8b14f907bc1b28421e774abe"><td class="memItemLeft" align="right" valign="top"><a id="a3315a9cd8b14f907bc1b28421e774abe"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>_image_filename_prefix</b></td></tr>
-<tr class="separator:a3315a9cd8b14f907bc1b28421e774abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb60fcf2d60f4c586e4fa3708801d83d"><td class="memItemLeft" align="right" valign="top"><a id="acb60fcf2d60f4c586e4fa3708801d83d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_image_filename_prefix</b></td></tr>
+<tr class="separator:acb60fcf2d60f4c586e4fa3708801d83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad450d041ea4c6c5b9aa8d4e7b49828ba"><td class="memItemLeft" align="right" valign="top"><a id="ad450d041ea4c6c5b9aa8d4e7b49828ba"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</b></td></tr>
 <tr class="separator:ad450d041ea4c6c5b9aa8d4e7b49828ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +177,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</
 <dl class="section user"><dt>Example par file</dt><dd><pre class="fragment">  MoveImage Parameters:=
   ; see TimeFrameDefinitions
   time frame_definition filename := frame_definition_filename
-  
+
   ; next parameter is optional (and not normally necessary)
-  ; it can be used if the frame definitions are relative to another scan as what 
+  ; it can be used if the frame definitions are relative to another scan as what
   ; is used to for the rigid object motion (i.e. currently the list mode data used
   ;  for the Polaris synchronisation)
   ; scan_start_time_secs_since_1970_UTC
@@ -188,7 +188,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</
   ; specify motion, see stir::RigidObject3DMotion
   Rigid Object 3D Motion Type := type
 
-  ; optional field to determine relative threshold to apply to 
+  ; optional field to determine relative threshold to apply to
   ; the image before taking the centre of gravity
   ; it is relative to the maximum in each image (i.e. .5 would be at half the maximum)
   ; default is .1
@@ -218,12 +218,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</
 <p>finds the match when all parameters have been set </p>
 <p>will store the transformation as part of this object, but also write it to stdout </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="group__Array.html#ga11c05dcba3ccd6ef648d4a217a009d6f">stir::find_centre_of_gravity_in_mm()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="namespacestir.html#adb5d5586ec57da1b5ecabbebb1a697a4">stir::indices_at_maximum()</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, <a class="el" href="namespacestir.html#a6c602d976b9fa3dc9a2daf6d42a6f660">stir::threshold_lower()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="group__Array.html#ga11c05dcba3ccd6ef648d4a217a009d6f">stir::find_centre_of_gravity_in_mm()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="namespacestir.html#a7784ab0e5027d1c4d129459d3322215a">stir::indices_at_maximum()</a>, <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, <a class="el" href="namespacestir.html#a6c602d976b9fa3dc9a2daf6d42a6f660">stir::threshold_lower()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
-<a id="aa8bc923c9d0688cfc91a07af30713b6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8bc923c9d0688cfc91a07af30713b6a">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="aa678e4539aaaf9095df53e33be164f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa678e4539aaaf9095df53e33be164f76">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -261,7 +261,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>relative_threshold</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

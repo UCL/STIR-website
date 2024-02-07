@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -82,15 +82,15 @@ Inheritance diagram for stir::PoissonLogLikelihoodWithLinearModelForMean&lt; Tar
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a351a7cf4f32a62dc9c1bbdd5d5e0aee7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a351a7cf4f32a62dc9c1bbdd5d5e0aee7">compute_sub_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)</td></tr>
-<tr class="memdesc:a351a7cf4f32a62dc9c1bbdd5d5e0aee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the subset gradient of the (unregularised) objective function.  <a href="#a351a7cf4f32a62dc9c1bbdd5d5e0aee7">More...</a><br /></td></tr>
-<tr class="separator:a351a7cf4f32a62dc9c1bbdd5d5e0aee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ccb0e304436def1a338a8c5c46d276"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a35ccb0e304436def1a338a8c5c46d276">compute_sub_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num) override</td></tr>
+<tr class="memdesc:a35ccb0e304436def1a338a8c5c46d276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the subset gradient of the (unregularised) objective function.  <a href="#a35ccb0e304436def1a338a8c5c46d276">More...</a><br /></td></tr>
+<tr class="separator:a35ccb0e304436def1a338a8c5c46d276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fccb66cc658b9f3d613e83b8d9b0938"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6fccb66cc658b9f3d613e83b8d9b0938">compute_sub_gradient_without_penalty_plus_sensitivity</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)</td></tr>
 <tr class="memdesc:a6fccb66cc658b9f3d613e83b8d9b0938"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the subset gradient of the (unregularised) objective function plus the subset sensitivity.  <a href="#a6fccb66cc658b9f3d613e83b8d9b0938">More...</a><br /></td></tr>
 <tr class="separator:a6fccb66cc658b9f3d613e83b8d9b0938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe82f5f8802ddbede7798fef74d56ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a3fe82f5f8802ddbede7798fef74d56ab">set_up</a> (shared_ptr&lt; TargetT &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a3fe82f5f8802ddbede7798fef74d56ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up sensitivity etc if possible  <a href="#a3fe82f5f8802ddbede7798fef74d56ab">More...</a><br /></td></tr>
-<tr class="separator:a3fe82f5f8802ddbede7798fef74d56ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84807542f51263ad6033af38cfee8b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac84807542f51263ad6033af38cfee8b5">set_up</a> (shared_ptr&lt; TargetT &gt; const &amp;target_sptr) override</td></tr>
+<tr class="memdesc:ac84807542f51263ad6033af38cfee8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up sensitivity etc if possible  <a href="#ac84807542f51263ad6033af38cfee8b5">More...</a><br /></td></tr>
+<tr class="separator:ac84807542f51263ad6033af38cfee8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3af6c10b3de9b0410538a7e7e897f1aa"><td class="memItemLeft" align="right" valign="top"><a id="a3af6c10b3de9b0410538a7e7e897f1aa"></a>
 const TargetT &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a3af6c10b3de9b0410538a7e7e897f1aa">get_sensitivity</a> () const</td></tr>
 <tr class="memdesc:a3af6c10b3de9b0410538a7e7e897f1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the total sensitivity. <br /></td></tr>
@@ -116,10 +116,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a785b137dfe9c515f485ba847273cb183"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">get_subsensitivity_filenames</a> () const</td></tr>
 <tr class="memdesc:a785b137dfe9c515f485ba847273cb183"><td class="mdescLeft">&#160;</td><td class="mdescRight">get filename pattern to read (or write) the subset sensitivities  <a href="#a785b137dfe9c515f485ba847273cb183">More...</a><br /></td></tr>
 <tr class="separator:a785b137dfe9c515f485ba847273cb183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e1af7b4bedf6fc9114a8bb54db1c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a59e1af7b4bedf6fc9114a8bb54db1c56">fill_nonidentifiable_target_parameters</a> (TargetT &amp;target, const float value) const</td></tr>
-<tr class="separator:a59e1af7b4bedf6fc9114a8bb54db1c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c794711edfbc2301bf945aa4334936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ab9c794711edfbc2301bf945aa4334936">fill_nonidentifiable_target_parameters</a> (TargetT &amp;target, const float value) const override</td></tr>
+<tr class="separator:ab9c794711edfbc2301bf945aa4334936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions to set parameters</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>This can be used as alternative to the parsing mechanism. </p><dl class="section warning"><dt>Warning</dt><dd>After using any of these, you have to call <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a3fe82f5f8802ddbede7798fef74d56ab" title="set-up sensitivity etc if possible ">set_up()</a>. </dd>
+<tr><td colspan="2"><div class="groupText"><p>This can be used as alternative to the parsing mechanism. </p><dl class="section warning"><dt>Warning</dt><dd>After using any of these, you have to call <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac84807542f51263ad6033af38cfee8b5" title="set-up sensitivity etc if possible ">set_up()</a>. </dd>
 <dd>
 Be careful with setting shared pointers. If you modify the objects in one place, all objects that use the shared pointer will be affected. </dd></dl>
 </div></td></tr>
@@ -140,9 +140,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a45ae5ad2c2c78cf24a1a95a633e67ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set filename pattern to read (or write) the subset sensitivities  <a href="#a45ae5ad2c2c78cf24a1a95a633e67ab9">More...</a><br /></td></tr>
 <tr class="separator:a45ae5ad2c2c78cf24a1a95a633e67ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedObjectiveFunction')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a></td></tr>
-<tr class="memitem:ac7d1bb65ad36569c4e78d81745e7db07 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="ac7d1bb65ad36569c4e78d81745e7db07"></a>
-virtual TargetT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ac7d1bb65ad36569c4e78d81745e7db07">construct_target_ptr</a> () const =0</td></tr>
-<tr class="memdesc:ac7d1bb65ad36569c4e78d81745e7db07 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a suitable target as determined by the parameters. <br /></td></tr>
+<tr class="memitem:ac7d1bb65ad36569c4e78d81745e7db07 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual TargetT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ac7d1bb65ad36569c4e78d81745e7db07">construct_target_ptr</a> () const =0</td></tr>
+<tr class="memdesc:ac7d1bb65ad36569c4e78d81745e7db07 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a suitable target as determined by the parameters.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#ac7d1bb65ad36569c4e78d81745e7db07">More...</a><br /></td></tr>
 <tr class="separator:ac7d1bb65ad36569c4e78d81745e7db07 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">compute_sub_gradient</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)</td></tr>
 <tr class="memdesc:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the sub-gradient of the objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">More...</a><br /></td></tr>
@@ -195,9 +194,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a711bf385ed5b222b7ea2f77b09db3c0a inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="a711bf385ed5b222b7ea2f77b09db3c0a"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; TargetT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_prior_sptr</b> ()</td></tr>
 <tr class="separator:a711bf385ed5b222b7ea2f77b09db3c0a inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a8d1df3d531d94ed262c051b10c36b5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a9a8d1df3d531d94ed262c051b10c36b5">set_prior_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; TargetT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:a9a8d1df3d531d94ed262c051b10c36b5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the prior.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a9a8d1df3d531d94ed262c051b10c36b5">More...</a><br /></td></tr>
-<tr class="separator:a9a8d1df3d531d94ed262c051b10c36b5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19b31d2e22c5806201dabaaaafd9962 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ab19b31d2e22c5806201dabaaaafd9962">set_prior_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; TargetT &gt;&gt; &amp;)</td></tr>
+<tr class="memdesc:ab19b31d2e22c5806201dabaaaafd9962 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the prior.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#ab19b31d2e22c5806201dabaaaafd9962">More...</a><br /></td></tr>
+<tr class="separator:ab19b31d2e22c5806201dabaaaafd9962 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a191d2641fe116852e66c99212fde3b50 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a191d2641fe116852e66c99212fde3b50">set_input_data</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamData.html">ExamData</a> &gt; &amp;)=0</td></tr>
 <tr class="memdesc:a191d2641fe116852e66c99212fde3b50 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_input_data  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a191d2641fe116852e66c99212fde3b50">More...</a><br /></td></tr>
 <tr class="separator:a191d2641fe116852e66c99212fde3b50 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,15 +269,15 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 <tr class="memitem:a6728f3fa472544336c1601f21cd01ffd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6728f3fa472544336c1601f21cd01ffd">actual_compute_subset_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num, const bool add_sensitivity)=0</td></tr>
 <tr class="memdesc:a6728f3fa472544336c1601f21cd01ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the subset gradient of the objective function without the penalty (optional: add subset sensitivity)  <a href="#a6728f3fa472544336c1601f21cd01ffd">More...</a><br /></td></tr>
 <tr class="separator:a6728f3fa472544336c1601f21cd01ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7844fed4568a1237110fec8d066e0de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ad7844fed4568a1237110fec8d066e0de">set_defaults</a> ()</td></tr>
-<tr class="memdesc:ad7844fed4568a1237110fec8d066e0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets defaults for parsing.  <a href="#ad7844fed4568a1237110fec8d066e0de">More...</a><br /></td></tr>
-<tr class="separator:ad7844fed4568a1237110fec8d066e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f69f3b77d29500723bd5aa573f85c48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a9f69f3b77d29500723bd5aa573f85c48">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a9f69f3b77d29500723bd5aa573f85c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets parsing keys  <a href="#a9f69f3b77d29500723bd5aa573f85c48">More...</a><br /></td></tr>
-<tr class="separator:a9f69f3b77d29500723bd5aa573f85c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3ad1311f0f0eb8a9f2ec874c133fae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6d3ad1311f0f0eb8a9f2ec874c133fae">post_processing</a> ()</td></tr>
-<tr class="memdesc:a6d3ad1311f0f0eb8a9f2ec874c133fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a6d3ad1311f0f0eb8a9f2ec874c133fae">More...</a><br /></td></tr>
-<tr class="separator:a6d3ad1311f0f0eb8a9f2ec874c133fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24114e4d481b1829e72bd574fa5c98c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a24114e4d481b1829e72bd574fa5c98c5">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a24114e4d481b1829e72bd574fa5c98c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets defaults for parsing.  <a href="#a24114e4d481b1829e72bd574fa5c98c5">More...</a><br /></td></tr>
+<tr class="separator:a24114e4d481b1829e72bd574fa5c98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c0b83ce8f415cbfc2d736a108e7f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac7c0b83ce8f415cbfc2d736a108e7f26">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:ac7c0b83ce8f415cbfc2d736a108e7f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets parsing keys  <a href="#ac7c0b83ce8f415cbfc2d736a108e7f26">More...</a><br /></td></tr>
+<tr class="separator:ac7c0b83ce8f415cbfc2d736a108e7f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc8213f94a46c8c9354d232b82c1413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a4bc8213f94a46c8c9354d232b82c1413">post_processing</a> () override</td></tr>
+<tr class="memdesc:a4bc8213f94a46c8c9354d232b82c1413"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a4bc8213f94a46c8c9354d232b82c1413">More...</a><br /></td></tr>
+<tr class="separator:a4bc8213f94a46c8c9354d232b82c1413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedObjectiveFunction')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a></td></tr>
 <tr class="memitem:a89a46ab8367116185a14645f5b22cc85 inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a89a46ab8367116185a14645f5b22cc85">actual_subsets_are_approximately_balanced</a> (std::string &amp;warning_message) const =0</td></tr>
 <tr class="memdesc:a89a46ab8367116185a14645f5b22cc85 inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of function that checks subset balancing.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a89a46ab8367116185a14645f5b22cc85">More...</a><br /></td></tr>
@@ -326,6 +325,9 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <tr class="memitem:a0c290bd64ac9b2018ba2d994590aaec2 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="a0c290bd64ac9b2018ba2d994590aaec2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>num_subsets</b></td></tr>
 <tr class="separator:a0c290bd64ac9b2018ba2d994590aaec2 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875beb74f08a6f881679f6326b698096 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="a875beb74f08a6f881679f6326b698096"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>already_set_up</b></td></tr>
+<tr class="separator:a875beb74f08a6f881679f6326b698096 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1171c563e716259820f59706353bf7b3 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="a1171c563e716259820f59706353bf7b3"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; TargetT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prior_sptr</b></td></tr>
 <tr class="separator:a1171c563e716259820f59706353bf7b3 inherit pro_attribs_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,7 +361,7 @@ class stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</h3>
 <img class="formulaDsp" alt="\[ P_v = \sum_b P_{bv} \]" src="form_92.png"/>
 </p>
 <p> where the sum is over all possible bins (not only those where any counts were detected). We call the vector given by <img class="formulaInl" alt="$P_v$" src="form_93.png"/> the <em>sensitivity</em> because (if <img class="formulaInl" alt="$r=0$" src="form_94.png"/>) it is the total probability of detecting a count (in any bin) originating from <img class="formulaInl" alt="$v$" src="form_95.png"/>.</p>
-<p>This class computes the gradient directly, via <code><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a351a7cf4f32a62dc9c1bbdd5d5e0aee7" title="Compute the subset gradient of the (unregularised) objective function. ">compute_sub_gradient_without_penalty()</a></code>. This method is utilised by the <code>OSSPS</code> algorithm in STIR. However, an additional method (<code><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6fccb66cc658b9f3d613e83b8d9b0938" title="This should compute the subset gradient of the (unregularised) objective function plus the subset sen...">compute_sub_gradient_without_penalty_plus_sensitivity()</a></code>) is provided that computes the sum of the subset gradient (without penalty) and the sensitivity. This method is utilised by the <code>OSMAPOSL</code> algorithm.</p>
+<p>This class computes the gradient directly, via <code><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a35ccb0e304436def1a338a8c5c46d276" title="Compute the subset gradient of the (unregularised) objective function. ">compute_sub_gradient_without_penalty()</a></code>. This method is utilised by the <code>OSSPS</code> algorithm in STIR. However, an additional method (<code><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6fccb66cc658b9f3d613e83b8d9b0938" title="This should compute the subset gradient of the (unregularised) objective function plus the subset sen...">compute_sub_gradient_without_penalty_plus_sensitivity()</a></code>) is provided that computes the sum of the subset gradient (without penalty) and the sensitivity. This method is utilised by the <code>OSMAPOSL</code> algorithm.</p>
 <p>See also <code><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data. ">PoissonLogLikelihoodWithLinearModelForMeanAndListModeData</a></code>.</p>
 <dl class="section user"><dt>Relation with Kullback-Leibler distance</dt><dd></dd></dl>
 <p>Note that up to terms independent of <img class="formulaInl" alt="$\bar y$" src="form_83.png"/>, the log likelihood is equal to minus the Kullback-Leibler generalised distance</p>
@@ -367,8 +369,8 @@ class stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</h3>
 <img class="formulaDsp" alt="\[ \mathrm{KL}(y,\bar y) = \sum_b y_b \mathrm{log}(y_b/\bar y_b) + \bar y_b - y_b \]" src="form_96.png"/>
 </p>
 <p>which has the nice property that <img class="formulaInl" alt="$\mathrm{KL}(y,\bar y)=0$" src="form_97.png"/> implies that <img class="formulaInl" alt="$y=\bar y$" src="form_98.png"/>.</p>
-<dl class="section user"><dt>Parameters for parsing</dt><dd>Defaults are indicated below <pre class="fragment">; specifies if we keep separate sensitivity images (which is more accurate and is 
-; recommended) or if we assume the subsets are exactly balanced 
+<dl class="section user"><dt>Parameters for parsing</dt><dd>Defaults are indicated below <pre class="fragment">; specifies if we keep separate sensitivity images (which is more accurate and is
+; recommended) or if we assume the subsets are exactly balanced
 ; and hence compute the subset-senstivity as sensitivity/num_subsets (this uses less memory).
 use_subset_sensitivities := 1
 ; for recomputing sensitivity, even if a filename is specified
@@ -384,8 +386,8 @@ subset sensitivity filenames:=
 </pre></dd></dl>
 <dl class="section user"><dt>Terminology</dt><dd>We currently use <code>sub_gradient</code> for the gradient of the likelihood of the subset (not the mathematical subgradient). </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a351a7cf4f32a62dc9c1bbdd5d5e0aee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a351a7cf4f32a62dc9c1bbdd5d5e0aee7">&#9670;&nbsp;</a></span>compute_sub_gradient_without_penalty()</h2>
+<a id="a35ccb0e304436def1a338a8c5c46d276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ccb0e304436def1a338a8c5c46d276">&#9670;&nbsp;</a></span>compute_sub_gradient_without_penalty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +423,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -436,6 +438,8 @@ template&lt;typename TargetT &gt; </div>
 <p>Implements <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a3d490db9b1171fc0fa198c93af4d78cb">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#ad0e1104f45c2b6c735e4a6d849184f28">stir::SumOfGeneralisedObjectiveFunctions&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;, TargetT, PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt; &gt;</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 </div>
 </div>
@@ -490,10 +494,12 @@ template&lt;typename TargetT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a0cdcb57e89937541f773e62edbfd3ed3">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>.</p>
 
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
 </div>
 </div>
-<a id="a3fe82f5f8802ddbede7798fef74d56ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe82f5f8802ddbede7798fef74d56ab">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="ac84807542f51263ad6033af38cfee8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84807542f51263ad6033af38cfee8b5">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +519,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -647,8 +653,8 @@ template&lt;typename TargetT &gt; </div>
 
 </div>
 </div>
-<a id="a59e1af7b4bedf6fc9114a8bb54db1c56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59e1af7b4bedf6fc9114a8bb54db1c56">&#9670;&nbsp;</a></span>fill_nonidentifiable_target_parameters()</h2>
+<a id="ab9c794711edfbc2301bf945aa4334936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c794711edfbc2301bf945aa4334936">&#9670;&nbsp;</a></span>fill_nonidentifiable_target_parameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -678,7 +684,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -777,12 +783,12 @@ template&lt;typename TargetT&gt; </div>
 <img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]" src="form_99.png"/>
 </p>
  
-<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ac5fd2933006bfa874f3fb6434e7203be">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a471cff21af709710f2b03d99a4b771b7">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a85c6e3086f3641fdbf80e46b96a0051d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a858c2f0e4c5bba4fb654e80797b8ed5f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#acf49f093a8fedfb727a5bdb80e0d6690">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a95497e181c7ad0389c6b695306cd6899">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a0a8779079ca011ff7ef6b5059f7e6370">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#ae949400da519cc44e26ef88849d5556f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ad7844fed4568a1237110fec8d066e0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7844fed4568a1237110fec8d066e0de">&#9670;&nbsp;</a></span>set_defaults()</h2>
+<a id="a24114e4d481b1829e72bd574fa5c98c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24114e4d481b1829e72bd574fa5c98c5">&#9670;&nbsp;</a></span>set_defaults()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +807,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -809,14 +815,14 @@ template&lt;typename TargetT &gt; </div>
 <p>Sets defaults for parsing. </p>
 <p>Resets <code>sensitivity_filename</code>, <code>subset_sensitivity_filenames</code> to empty, <code>recompute_sensitivity</code> to <code>false</code>, and <code>use_subset_sensitivities</code> to false. </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a1e679fbeb33210e7246fa377c571d29a">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a7e96ad89d64c593d6cd36c195ce16fe9">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a583d1ee1f039d930595ce0f120db4485">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a051c3bed2f95b1638c4f88a940a9a6d3">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#adcb33f6a20cf1d47a894a021d1dcba28">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#ac8010fce0a5539f70569e4a345441c98">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#abcca67c186e40a1472040422406642db">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#ae9690db25ae3941675b8fe774155d196">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#af3429f92e4cb1c70eb77a0cbc076ffd6">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a77a6a0f1592cde80ad5da880c97f4b4b">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#aae43d6da4b83a44467409a080e7aea51">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#abcca67c186e40a1472040422406642db">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a6fddea8a787afc402089bcbd1885c150">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a9f69f3b77d29500723bd5aa573f85c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f69f3b77d29500723bd5aa573f85c48">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
+<a id="ac7c0b83ce8f415cbfc2d736a108e7f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c0b83ce8f415cbfc2d736a108e7f26">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,7 +841,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -843,14 +849,14 @@ template&lt;typename TargetT &gt; </div>
 <p>sets parsing keys </p>
 <p>Has to be called by initialise_keymap in the leaf-class </p>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af598596a0703be897ce03c1eacf2dcda">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ac094cea58ba54853a5894f71b3285ca2">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a9c10597e3d07aebb58be302cfaabef4c">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a0d71d054edded9ecc9c64c8c28a6472f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a3ab0cd058d62345bb6638366b8389136">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a54dfbd3faf93ba25446dae9d707f52a3">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#a6d28e22184066e46219ebd3846e84cc1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a54732f19892dd5cb1c024fafd9c0655a">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ad2622ee1e04f21bc32eedeb977c23472">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#ac26b8b37c7df96d802e141584e82d305">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a874a8abb79861e8450a9400030cb8195">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#a6d28e22184066e46219ebd3846e84cc1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#abf1a19e85bb229a59f2c51746087c43a">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a6d3ad1311f0f0eb8a9f2ec874c133fae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d3ad1311f0f0eb8a9f2ec874c133fae">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="a4bc8213f94a46c8c9354d232b82c1413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc8213f94a46c8c9354d232b82c1413">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -869,7 +875,7 @@ template&lt;typename TargetT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -879,7 +885,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">stir::ParsingObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a205755a97b0f08cb7d0b57d5ea912eeb">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a02905d4c6441c11fc3e54bc8696ead31">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#a458465ea6382263a6a63f13c05e13487">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a6b8c6d8b7199f2a83c169f172fc533f3">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#af2966783dad33ce5b489d66a8bc5b3b5">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#aadb38d4d00cbe15d0550f568562bcb6f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a860e4791419db416d6d210d62a92dc71">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#af00277a06d1c15ca4b6f28dd0ef95ea1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html#ab04fd1b8123ae2b7172408b6a8ea3b94">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#af2966783dad33ce5b489d66a8bc5b3b5">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#aa367a5a63a92d96086e6ce1fbb3170f1">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>.</p>
 
 </div>
 </div>
@@ -891,7 +897,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

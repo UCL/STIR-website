@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Apply the Patlak linear fit using Dynamic Images. </p>
 <dl class="section author"><dt>Author</dt><dd>Charalampos Tsoumpas</dd></dl>
-<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line">apply_patlak_to_images output_parametric_image input_dynamic_image [par_file] </div></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Usage:</dt><dd><div class="fragment"><div class="line">apply_patlak_to_images output_parametric_image input_dynamic_image [par_file]</div></div><!-- fragment --></dd></dl>
 <dl class="section user"><dt></dt><dd><ul>
 <li>The dynamic images will be calibrated only if the calibration factor is given.</li>
 <li>The <em>if_total_cnt</em> is set to true the Dynamic <a class="el" href="classImage.html" title="Reading and writing gipl files. ">Image</a> will have the total number of counts while if set to false it will have the <em>total_number_of_counts/get_duration</em>(frame_num).</li>
@@ -82,12 +82,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="PatlakPlot_8h.html" title="Implementation of functions of class stir::PatlakPlot. ">PatlakPlot.h</a> for the <em>par_file</em> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This implementation does not use wighted least squares because for Patlak Plot only the last frames are used, which they usually have the same duration and similar number of counts.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000219">Todo:</a></b></dt><dd>Reimplement the method for image-based input function.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000220">Todo:</a></b></dt><dd>Add to the Doxygen documentation a reference to their paper and how exactly this utility works. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000223">Todo:</a></b></dt><dd>Reimplement the method for image-based input function.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000224">Todo:</a></b></dt><dd>Add to the Doxygen documentation a reference to their paper and how exactly this utility works. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

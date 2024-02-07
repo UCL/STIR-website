@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,8 @@ const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;&#160;</
 <tr class="memitem:ae835c59ce855b24eef4220656c9df2fc inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ae835c59ce855b24eef4220656c9df2fc">parse</a> (const char *const filename, const bool write_warnings=true)</td></tr>
 <tr class="memdesc:ae835c59ce855b24eef4220656c9df2fc inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise  <a href="classstir_1_1KeyParser.html#ae835c59ce855b24eef4220656c9df2fc">More...</a><br /></td></tr>
 <tr class="separator:ae835c59ce855b24eef4220656c9df2fc inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f12c8e7c160a5b317c445a61ee7817 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a36f12c8e7c160a5b317c445a61ee7817">parse</a> (const std::string &amp;, const bool write_warnings=true)</td></tr>
+<tr class="separator:a36f12c8e7c160a5b317c445a61ee7817 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0df590f8e6b676f5d5410da654021a inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="ace0df590f8e6b676f5d5410da654021a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a> (const std::string &amp;keyword, float *variable_ptr)</td></tr>
 <tr class="memdesc:ace0df590f8e6b676f5d5410da654021a inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a float and put it in *variable_ptr <br /></td></tr>
@@ -104,10 +106,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a5fe39db966516191684e8a21b8194465">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; double &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:a5fe39db966516191684e8a21b8194465 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a double and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
 <tr class="separator:a5fe39db966516191684e8a21b8194465 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc419bdab24cbb90848e4c33bd634e58 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="adc419bdab24cbb90848e4c33bd634e58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#adc419bdab24cbb90848e4c33bd634e58">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; double &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:adc419bdab24cbb90848e4c33bd634e58 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of doubles and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
-<tr class="separator:adc419bdab24cbb90848e4c33bd634e58 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73509c99ddf2a6072e0447459be7a inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="a39e73509c99ddf2a6072e0447459be7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a39e73509c99ddf2a6072e0447459be7a">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; double &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:a39e73509c99ddf2a6072e0447459be7a inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of doubles and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
+<tr class="separator:a39e73509c99ddf2a6072e0447459be7a inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503b8d99edc00f245e3b8c505d940c9a inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="a503b8d99edc00f245e3b8c505d940c9a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a503b8d99edc00f245e3b8c505d940c9a">add_key</a> (const std::string &amp;keyword, int *variable_ptr)</td></tr>
 <tr class="memdesc:a503b8d99edc00f245e3b8c505d940c9a inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a int and put it in *variable_ptr <br /></td></tr>
@@ -120,10 +122,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ad24b5427ebf63dfc5261bec995d26590">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; int &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:ad24b5427ebf63dfc5261bec995d26590 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a int and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
 <tr class="separator:ad24b5427ebf63dfc5261bec995d26590 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020cb14be59d52cac7dc9301c2054ef6 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="a020cb14be59d52cac7dc9301c2054ef6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a020cb14be59d52cac7dc9301c2054ef6">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; int &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:a020cb14be59d52cac7dc9301c2054ef6 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of ints and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
-<tr class="separator:a020cb14be59d52cac7dc9301c2054ef6 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbedfe7fa9da75a107b35e21c060dfb0 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="acbedfe7fa9da75a107b35e21c060dfb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#acbedfe7fa9da75a107b35e21c060dfb0">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; int &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:acbedfe7fa9da75a107b35e21c060dfb0 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of ints and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
+<tr class="separator:acbedfe7fa9da75a107b35e21c060dfb0 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa105e778bdb0f79a2414c62b67fe81e3 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="aa105e778bdb0f79a2414c62b67fe81e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#aa105e778bdb0f79a2414c62b67fe81e3">add_key</a> (const std::string &amp;keyword, long int *variable_ptr)</td></tr>
 <tr class="memdesc:aa105e778bdb0f79a2414c62b67fe81e3 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a int and put it in *variable_ptr <br /></td></tr>
@@ -167,10 +169,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a4c57cacf9f0a3449d9f605e496fabd16">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, float &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:a4c57cacf9f0a3449d9f605e496fabd16 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of floats and put its value in *variable_ptr <br /></td></tr>
 <tr class="separator:a4c57cacf9f0a3449d9f605e496fabd16 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0656bd690ab288672772fc5bbc0b911 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="ae0656bd690ab288672772fc5bbc0b911"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ae0656bd690ab288672772fc5bbc0b911">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:ae0656bd690ab288672772fc5bbc0b911 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of a 3d array of floats and put its value in *variable_ptr <br /></td></tr>
-<tr class="separator:ae0656bd690ab288672772fc5bbc0b911 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc20e072731b32c6ce27f2a533bddbaa inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="adc20e072731b32c6ce27f2a533bddbaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#adc20e072731b32c6ce27f2a533bddbaa">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:adc20e072731b32c6ce27f2a533bddbaa inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of a 3d array of floats and put its value in *variable_ptr <br /></td></tr>
+<tr class="separator:adc20e072731b32c6ce27f2a533bddbaa inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b547427bbe54d728a5a71fc1e205f15 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a3b547427bbe54d728a5a71fc1e205f15">add_key</a> (const std::string &amp;keyword, std::string *variable_ptr)</td></tr>
 <tr class="separator:a3b547427bbe54d728a5a71fc1e205f15 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf7e5099fed5d1e68c923cfdbda8342 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#abcf7e5099fed5d1e68c923cfdbda8342">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::string &gt; *variable_ptr)</td></tr>
@@ -198,6 +200,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a43471a913ec1d55d23b690df8880247f inherit pub_methods_classstir_1_1KeyParser"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a43471a913ec1d55d23b690df8880247f">add_parsing_key</a> (const std::string &amp;keyword, shared_ptr&lt; ParsingClass &gt; *parsed_object_ptr_ptr)</td></tr>
 <tr class="memdesc:a43471a913ec1d55d23b690df8880247f inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">add keyword corresponding to an object that will parse the next keys itself  <a href="classstir_1_1KeyParser.html#a43471a913ec1d55d23b690df8880247f">More...</a><br /></td></tr>
 <tr class="separator:a43471a913ec1d55d23b690df8880247f inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174427fa54ff09cba8765295ebb5bb2 inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">remove_key</a> (const std::string &amp;keyword)</td></tr>
+<tr class="memdesc:a9174427fa54ff09cba8765295ebb5bb2 inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a key from the kep map.  <a href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">More...</a><br /></td></tr>
+<tr class="separator:a9174427fa54ff09cba8765295ebb5bb2 inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d051fee42cb2668484ff8fa90f9b1bb inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a6d051fee42cb2668484ff8fa90f9b1bb">add_alias_key</a> (const std::string &amp;keyword, const std::string &amp;alias, bool deprecated_key=true)</td></tr>
+<tr class="memdesc:a6d051fee42cb2668484ff8fa90f9b1bb inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alias for keyword.  <a href="classstir_1_1KeyParser.html#a6d051fee42cb2668484ff8fa90f9b1bb">More...</a><br /></td></tr>
+<tr class="separator:a6d051fee42cb2668484ff8fa90f9b1bb inherit pub_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b28df9f1085e73e037fa829d99dbd3a inherit pub_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top"><a id="a5b28df9f1085e73e037fa829d99dbd3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a5b28df9f1085e73e037fa829d99dbd3a">print_keywords_to_stream</a> (std::ostream &amp;) const</td></tr>
 <tr class="memdesc:a5b28df9f1085e73e037fa829d99dbd3a inherit pub_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all keywords (in random order) to the stream. <br /></td></tr>
@@ -276,9 +284,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a71a0e8aacf9736fa6c3d31e4425ea655 inherit pro_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a71a0e8aacf9736fa6c3d31e4425ea655">add_key</a> (const std::string &amp;keyword, KeyArgument::type t, void *variable, const int vectorised_key_level, const ASCIIlist_type *const list=0)</td></tr>
 <tr class="memdesc:a71a0e8aacf9736fa6c3d31e4425ea655 inherit pro_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">version that defaults 'function' to set_variable  <a href="classstir_1_1KeyParser.html#a71a0e8aacf9736fa6c3d31e4425ea655">More...</a><br /></td></tr>
 <tr class="separator:a71a0e8aacf9736fa6c3d31e4425ea655 inherit pro_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9174427fa54ff09cba8765295ebb5bb2 inherit pro_methods_classstir_1_1KeyParser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">remove_key</a> (const std::string &amp;keyword)</td></tr>
-<tr class="memdesc:a9174427fa54ff09cba8765295ebb5bb2 inherit pro_methods_classstir_1_1KeyParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a key from the kep map.  <a href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">More...</a><br /></td></tr>
-<tr class="separator:a9174427fa54ff09cba8765295ebb5bb2 inherit pro_methods_classstir_1_1KeyParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -325,7 +330,7 @@ typedef void(KeyParser::*&#160;</td><td class="memItemRight" valign="bottom"><b>
 <p>Just calls <code><a class="el" href="classstir_1_1KeyParser.html#a05b0dc0a34dc427ffda4de8154ae31e6" title="callback function that sets the variable to the value given as the value of the keyword ...">set_variable()</a></code>.</p>
 <p>It is expected that if this is function is re-implemented in a derived class, it calls the base-class version. </p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1InterfileHeader.html#a8618f4fa60b2580f123cf8ee817ff881">stir::InterfileHeader</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1InterfileHeader.html#a6ba95cef07fdc31d6d94e2c556841ae4">stir::InterfileHeader</a>.</p>
 
 </div>
 </div>
@@ -336,7 +341,7 @@ typedef void(KeyParser::*&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

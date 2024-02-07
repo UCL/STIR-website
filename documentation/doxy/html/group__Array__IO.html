@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -136,8 +136,8 @@ template&lt;int num_dimensions, class IStreamT , class elemT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order&#160;</td>
-          <td class="paramname"><em>___BYTEORDER_DEFAULT</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a>&#160;</td>
+          <td class="paramname"><em>byte_order</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,7 +157,7 @@ template&lt;int num_dimensions, class IStreamT , class elemT &gt; </div>
 <p><em>IStreamT</em> is supposed to be stream or file type (see implementations for <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad" title="This is an internal function called by read_data(). It does the actual reading to std::istream...">read_data_1d()</a>).</p>
 <dl class="section warning"><dt>Warning</dt><dd>When an error occurs, the function immediately returns. However, the data might have been partially read from <em>s</em>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#a6019767868e247ffff6e6ed938c4ccd0">stir::ProjDataFromStream::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a0c7164d2fff7a4ef201b12bb0b2ea25f">stir::ProjDataFromStream::get_segment_by_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a3e442b85a769c03ff4276e33fc86eea1">stir::ProjDataFromStream::get_segment_by_view()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a83e0d669afc9e7da5b41b713743f5374">stir::ProjDataFromStream::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataGEAdvance.html#a7d5b4df7c32a70b126f8bc4af6cda220">stir::ProjDataGEAdvance::get_viewgram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#add0dfa9f96e6f1433212ffd04ef9623d">stir::ProjDataFromStream::get_viewgram()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#aace3b482f2734b96c26b0eb9d184f8d2">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::grow_z_range()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a2e6fe287cbc07685b51b7c58ec13d1cd">stir::ProjMatrixByBinFromFile::set_up()</a>, and <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#acf6d583b3f477b6a3ebe711ba6b4d5ce">stir::ecat::BinNormalisationFromECAT8::set_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#a6019767868e247ffff6e6ed938c4ccd0">stir::ProjDataFromStream::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a35bf21dcb8b2660e3342b03b6adfd0fc">stir::ProjDataFromStream::get_segment_by_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream::get_segment_by_view()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#aaa6ceebcb829145371e6e30dfd1d6890">stir::ProjDataFromStream::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a360721daebc3f7daf0b82adf89be7c08">stir::ProjDataFromStream::get_viewgram()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#aace3b482f2734b96c26b0eb9d184f8d2">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::grow_z_range()</a>, <a class="el" href="group__Array__IO.html#gac93d981d596788d175201216e70ca06e">stir::read_data()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a4d44d2220b61f666013bd2b6067286c1">stir::ProjMatrixByBinFromFile::set_up()</a>, and <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#acf6d583b3f477b6a3ebe711ba6b4d5ce">stir::ecat::BinNormalisationFromECAT8::set_up()</a>.</p>
 
 </div>
 </div>
@@ -199,8 +199,8 @@ template&lt;int num_dimensions, class IStreamT , class elemT , class InputType ,
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order&#160;</td>
-          <td class="paramname"><em>___BYTEORDER_DEFAULT</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a>&#160;</td>
+          <td class="paramname"><em>byte_order</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,6 +219,8 @@ template&lt;int num_dimensions, class IStreamT , class elemT , class InputType ,
 <p>This function essentially first calls convert_data() to construct an array with elements of type <em>InputType</em>, and then calls read_data(IStreamT&amp;, const Array&lt;num_dimensions,elemT&gt;&amp;, const <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">ByteOrder</a>, const bool). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">read_data</a>(IStreamT&amp;, const <a class="el" href="group__Array.html">Items relating to vectors and (multi-dimensional) arrays</a>&amp;, const <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">ByteOrder</a>, const bool)</dd>
 <dd>
 <a class="el" href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd" title="A function that finds a scale factor to use when converting data to a new type. ">find_scale_factor()</a> for the meaning of <em>scale_factor</em>. </dd></dl>
+
+<p class="reference">References <a class="el" href="group__Array.html#gaa732f225afedbdd7e23c51ac7a879769">stir::convert_array()</a>, and <a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">stir::read_data()</a>.</p>
 
 </div>
 </div>
@@ -260,8 +262,8 @@ template&lt;int num_dimensions, class IStreamT , class elemT , class ScaleT &gt;
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order&#160;</td>
-          <td class="paramname"><em>___BYTEORDER_DEFAULT</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a>&#160;</td>
+          <td class="paramname"><em>byte_order</em> = <code><a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -278,6 +280,8 @@ template&lt;int num_dimensions, class IStreamT , class elemT , class ScaleT &gt;
 
 <p>Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file as a different type. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">read_data</a>(IStreamT&amp;, const <a class="el" href="group__Array.html">Items relating to vectors and (multi-dimensional) arrays</a>&amp;, NumericInfo&lt;InputType&gt;, ScaleT&amp;, const <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">ByteOrder</a>, const bool) The only difference is that the input type is now specified using <a class="el" href="classstir_1_1NumericType.html" title="provides names for some numeric types and methods for finding their properties. ">NumericType</a>. </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1NumericType.html#aec2c51c5278148252a7cc3f2d9cadad8">stir::NumericType::id</a>.</p>
 
 </div>
 </div>
@@ -337,7 +341,9 @@ template&lt;int num_dimensions, class OStreamT , class elemT &gt; </div>
 <dd>
 For deficient compilers (e.g. VC 6.0), work-arounds are necessary to get this to compile. In particular, this function is then not templated in <code>num_dimensions</code>, but explicitly defined for a few dimensions (see the source). </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#ad80a87cf0aadb7a3ef8a83afcd2896d2">stir::ProjDataFromStream::set_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a4972f567bda43be72179d8f06c68c612">stir::ProjDataFromStream::set_segment()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a262bebfafb612a3c47bc627b348f422a">stir::ProjDataFromStream::set_sinogram()</a>, and <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>.</p>
+<p class="reference">References <a class="el" href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">stir::write_data_with_fixed_scale_factor()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#ad80a87cf0aadb7a3ef8a83afcd2896d2">stir::ProjDataFromStream::set_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a34c6e9537c838d53b9602ec869367833">stir::ProjDataFromStream::set_segment()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a02f9cf9d91289a2b42213316fb840251">stir::ProjDataFromStream::set_sinogram()</a>, <a class="el" href="classstir_1_1ColsherFilter.html#ae533a73f0dd94b0065e1d197989bfd21">stir::ColsherFilter::set_up()</a>, and <a class="el" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data()</a>.</p>
 
 </div>
 </div>
@@ -407,6 +413,8 @@ template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType 
 <a class="el" href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd" title="A function that finds a scale factor to use when converting data to a new type. ">find_scale_factor()</a> for the meaning of <em>scale_factor</em>. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>For deficient compilers (e.g. VC 6.0), work-arounds are necessary to get this to compile. In particular, this function is then not templated in <code>num_dimensions</code>, but explicitly defined for a few dimensions (see the source). </dd></dl>
 
+<p class="reference">References <a class="el" href="group__Array.html#gaa5bb010e50caacfa64f8568fbef591cd">stir::find_scale_factor()</a>, and <a class="el" href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">stir::write_data_with_fixed_scale_factor()</a>.</p>
+
 </div>
 </div>
 <a id="ga7d31f96c70647ffafc36c795fb929c5a"></a>
@@ -474,6 +482,8 @@ template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType 
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data</a>(OStreamT&amp;, const <a class="el" href="group__Array.html">Items relating to vectors and (multi-dimensional) arrays</a>&amp;, NumericInfo&lt;OutputType&gt;, ScaleT&amp;, const <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">ByteOrder</a>, const bool) </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>For deficient compilers (e.g. VC 6.0), work-arounds are necessary to get this to compile. In particular, this function is then not templated in <code>num_dimensions</code>, but explicitly defined for a few dimensions (see the source). </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">stir::write_data()</a>.</p>
+
 </div>
 </div>
 <a id="gac57494c546fbd03f2ba3b7d4747522d7"></a>
@@ -540,12 +550,14 @@ template&lt;int num_dimensions, class OStreamT , class elemT , class ScaleT &gt;
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data</a>(OStreamT&amp;, const <a class="el" href="group__Array.html">Items relating to vectors and (multi-dimensional) arrays</a>&amp;, NumericInfo&lt;OutputType&gt;, ScaleT&amp;, const <a class="el" href="classstir_1_1ByteOrder.html" title="This class provides member functions to find out what byte-order your machine is and to swap numbers...">ByteOrder</a>, const bool) The only difference is that the output type is now specified using <a class="el" href="classstir_1_1NumericType.html" title="provides names for some numeric types and methods for finding their properties. ">NumericType</a>.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>For deficient compilers (e.g. VC 6.0), work-arounds are necessary to get this to compile. In particular, this function is then not templated in <code>num_dimensions</code>, but explicitly defined for a few dimensions (see the source). </dd></dl>
 
+<p class="reference">References <a class="el" href="classstir_1_1NumericType.html#aec2c51c5278148252a7cc3f2d9cadad8">stir::NumericType::id</a>, and <a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

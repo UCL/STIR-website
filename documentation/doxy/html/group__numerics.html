@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,12 @@ Files</h2></td></tr>
 <tr class="memdesc:divide_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of <a class="el" href="group__numerics.html#ga2135eeda219aa6700b50580389a12771" title="division of two ranges, 0/0 = 0 ">stir::divide</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:erf_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="erf_8h.html">erf.h</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:FastErf_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FastErf_8h.html">FastErf.h</a></td></tr>
+<tr class="memdesc:FastErf_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of an erf interpolation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:FastErf_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FastErf_8inl.html">FastErf.inl</a></td></tr>
+<tr class="memdesc:FastErf_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of an erf interpolation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ieeefp_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ieeefp_8h.html">ieeefp.h</a></td></tr>
 <tr class="memdesc:ieeefp_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of work-around macros STIR_isnan and STIR_finite for a few non-portable IEEE floating point functions. <br /></td></tr>
@@ -216,8 +222,8 @@ template&lt;class elemT , class positionT , class valueT &gt; </td></tr>
 <tr class="memitem:ga48d9a302ef1f558d83c26470a5572ad0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__numerics.html#ga48d9a302ef1f558d83c26470a5572ad0">stir::push_transpose_linear_interpolate</a> (<a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;out, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, positionT &gt; &amp;point_in_output_coords, valueT value)</td></tr>
 <tr class="memdesc:ga48d9a302ef1f558d83c26470a5572ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push <em>value</em> into the output array using the transpose of linear interpolation. <br /></td></tr>
 <tr class="separator:ga48d9a302ef1f558d83c26470a5572ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80041a7f116159124e16bb749b993813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga80041a7f116159124e16bb749b993813">stir::extend_segment</a> (const <a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt; &amp;segment, const int view_extension=5, const int axial_extension=5, const int tangential_extension=5)</td></tr>
-<tr class="memdesc:ga80041a7f116159124e16bb749b993813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic function to extend a segment in any or all directions. Axially and tangentially, the segment is filled with the nearest existing value. In view direction, the function wraps around for <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a> that cover 180° or 360° degrees, and throws an error for other angular coverages.  <a href="group__projdata.html#ga80041a7f116159124e16bb749b993813">More...</a><br /></td></tr>
+<tr class="memitem:ga80041a7f116159124e16bb749b993813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__numerics.html#ga80041a7f116159124e16bb749b993813">stir::extend_segment</a> (const <a class="el" href="classstir_1_1SegmentBySinogram.html">SegmentBySinogram</a>&lt; float &gt; &amp;segment, const int view_extension=5, const int axial_extension=5, const int tangential_extension=5)</td></tr>
+<tr class="memdesc:ga80041a7f116159124e16bb749b993813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extension of direct projection data.  <a href="group__numerics.html#ga80041a7f116159124e16bb749b993813">More...</a><br /></td></tr>
 <tr class="separator:ga80041a7f116159124e16bb749b993813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -272,7 +278,10 @@ template&lt;class elemT &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generic function to extend a segment in any or all directions. Axially and tangentially, the segment is filled with the nearest existing value. In view direction, the function wraps around for <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a> that cover 180° or 360° degrees, and throws an error for other angular coverages. </p>
+<p>Extension of direct projection data. </p>
+<p>Functions that extend the given sinogram or segment in the view direction taking periodicity into account, if exists. If the sinogram is not symmetric in tangential position, the values are extrapolated by nearest neighbour known values.</p>
+<p>This is probably only useful before calling interpolation routines, or for FORE.</p>
+<p>Generic function to extend a segment in any or all directions. Axially and tangentially, the segment is filled with the nearest existing value. In view direction, the function wraps around for <a class="el" href="classstir_1_1ProjData.html" title="The (abstract) base class for the projection data. ">stir::ProjData</a> that cover 180° or 360° degrees, and throws an error for other angular coverages.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">segment</td><td>segment to be extended. </td></tr>
@@ -283,7 +292,7 @@ template&lt;class elemT &gt; </td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">stir::Segment&lt; elemT &gt;::get_proj_data_info_sptr()</a>, and <a class="el" href="classstir_1_1Array.html#a65d8d70124654379b1bc507829e14b67">stir::Array&lt; num_dimensions, elemT &gt;::grow()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga583ed7652f3528c16157897a96203bfd">_PI</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">stir::Segment&lt; elemT &gt;::get_proj_data_info_sptr()</a>, and <a class="el" href="classstir_1_1Array.html#a65d8d70124654379b1bc507829e14b67">stir::Array&lt; num_dimensions, elemT &gt;::grow()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +316,7 @@ template&lt;class elemT &gt; </div>
 
 <p>Compute the determinant of a matrix. </p>
 <p>Matrix indices can start from any number.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>Only works for low dimensions for now. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>Only works for low dimensions for now. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Shape3DWithOrientation.html#ae4feb24b76a3619e4457ddb21a7ea890">stir::Shape3DWithOrientation::get_volume_of_unit_cell()</a>.</p>
 
@@ -366,7 +375,7 @@ template&lt;class NumeratorIterT , class DenominatorIterT , class small_numT &gt
 <p>Because of potential numerical rounding problems, we test if a number is 0 by comparing its absolute value with a small value, which is determined by multiplying the maximum in the <code>numerator</code> range with <em>small_num</em>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This function does not test for non-zero numbers by 0. Results in that case will likely depend on your processor and/or compiler settings. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a9bc04167c7743ea33ba5f864be5ee866">stir::BinNormalisationPETFromComponents::apply()</a>, <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a74b1aeff4fbf3a7d949557367c673286">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;::compute_kernelised_image()</a>, and <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#a0df6a6e35d0afa43704b43f32e820d5d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;::update_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a9bc04167c7743ea33ba5f864be5ee866">stir::BinNormalisationPETFromComponents::apply()</a>, <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a74b1aeff4fbf3a7d949557367c673286">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;::compute_kernelised_image()</a>, and <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#aba6cfbd054d95fbead2fd68cab40327d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;::update_estimate()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +432,7 @@ template&lt;typename elemT &gt; </div>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Type <code>elemT</code> should not be an integral type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PlasmaData.html#a96be0f19043f9c2bd94a13788942e5c2">stir::PlasmaData::get_sample_data_in_frames()</a>, and <a class="el" href="classstir_1_1integrate__discrete__functionTests.html#a7be2b080e1720da18fb0e9efa6743774">stir::integrate_discrete_functionTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1PlasmaData.html#a96be0f19043f9c2bd94a13788942e5c2">stir::PlasmaData::get_sample_data_in_frames()</a>, and <a class="el" href="classstir_1_1integrate__discrete__functionTests.html#a00a98bcbff89b9c7c0d8f8f9ee29c6e9">stir::integrate_discrete_functionTests::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -708,7 +717,7 @@ template&lt;class elemT &gt; </div>
   </dd>
 </dl>
 <p>This will attempt to find the eigenvector which has the largest eigenvalue. The method fails when the matrix has a negative eigenvalue of the same magnitude as the largest eigenvalue.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>the algorithm would work with hermitian matrices, but the code needs one small adjustment. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>the algorithm would work with hermitian matrices, but the code needs one small adjustment. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__numerics.html#gaf89fe263ca8190c22691680019d27425">stir::absolute_max_eigenvector_using_power_method()</a>, and <a class="el" href="group__numerics.html#ga25f8b20733c8815ede894044aa71ef5e">stir::absolute_max_eigenvector_using_shifted_power_method()</a>.</p>
 
@@ -904,7 +913,7 @@ template&lt;typename out_iter_t , typename out_coord_iter_t , typename in_iter_t
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>when the out iterators point to an integral type, there is no rounding but truncation.</dd></dl>
-<dl class="section user"><dt>Examples:</dt><dd>Given 2 arrays and zoom and offset parameters <div class="fragment"><div class="line">Array&lt;1,float&gt; in = ...;</div><div class="line">Array&lt;1,float&gt; out = ...;</div><div class="line"><span class="keywordtype">float</span> zoom = ...; <span class="keywordtype">float</span> offset = ...;</div></div><!-- fragment --> the following pieces of code should give the same result (this is tested in test_interpolate): <div class="fragment"><div class="line"><a class="code" href="group__numerics.html#gae67e702dedcca1a7d8427e1a0590797b">overlap_interpolate</a>(out, in, zoom, offset, <span class="keyword">true</span>);</div></div><!-- fragment --> and <div class="fragment"><div class="line">Array&lt;1,float&gt; in_coords(in.get_min_index(), in.get_max_index()+1);</div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=in_coords.get_min_index(); i&lt;=in_coords.get_max_index(); ++i)</div><div class="line">  in_coords[i]=i-.5F;</div><div class="line">Array&lt;1,float&gt; out_coords(out.get_min_index(), out.get_max_index()+1);</div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=out_coords.get_min_index(); i&lt;=out_coords.get_max_index(); ++i)</div><div class="line">  out_coords[i]=(i-.5F)/zoom+offset;</div><div class="line"><a class="code" href="group__numerics.html#gae67e702dedcca1a7d8427e1a0590797b">overlap_interpolate</a>(out.begin(), out.end(),</div><div class="line">              out_coords.begin(), out_coords.end(),</div><div class="line">              in.begin(), in.end(),</div><div class="line">              in_coords.begin(), in_coords.end()</div><div class="line">              );</div></div><!-- fragment --></dd></dl>
+<dl class="section user"><dt>Examples:</dt><dd>Given 2 arrays and zoom and offset parameters <div class="fragment"><div class="line">Array&lt;1,float&gt; in = ...;</div><div class="line">Array&lt;1,float&gt; out = ...;</div><div class="line"><span class="keywordtype">float</span> zoom = ...; <span class="keywordtype">float</span> offset = ...;</div></div><!-- fragment --> the following pieces of code should give the same result (this is tested in test_interpolate): <div class="fragment"><div class="line"><a class="code" href="group__numerics.html#gae67e702dedcca1a7d8427e1a0590797b">overlap_interpolate</a>(out, in, zoom, offset, <span class="keyword">true</span>);</div></div><!-- fragment --> and <div class="fragment"><div class="line">Array&lt;1,float&gt; in_coords(in.get_min_index(), in.get_max_index()+1);</div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=in_coords.get_min_index(); i&lt;=in_coords.get_max_index(); ++i)</div><div class="line">  in_coords[i]=i-.5F;</div><div class="line">Array&lt;1,float&gt; out_coords(out.get_min_index(), out.get_max_index()+1);</div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=out_coords.get_min_index(); i&lt;=out_coords.get_max_index(); ++i)</div><div class="line">  out_coords[i]=(i-.5F)/zoom+offset;</div><div class="line"><a class="code" href="group__numerics.html#gae67e702dedcca1a7d8427e1a0590797b">overlap_interpolate</a>(out.begin(), out.end(),</div><div class="line">                    out_coords.begin(), out_coords.end(),</div><div class="line">                    in.begin(), in.end(),</div><div class="line">                    in_coords.begin(), in_coords.end()</div><div class="line">                    );</div></div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Implementation details:</dt><dd></dd></dl>
 <p>Because this implementation works for arbitrary (numeric) types, it is slightly more complicated than would be necessary for (say) floats. In particular, </p><ul>
 <li>
@@ -979,7 +988,7 @@ template&lt;class FunctionType , class elemT , class positionT &gt; </div>
   </dd>
 </dl>
 <p>Symbolically, this function does the following computation for every index in the array </p><div class="fragment"><div class="line">out(index) = func(index * step - offset)</div></div><!-- fragment --><dl class="section user"><dt>requirement for type FunctionType</dt><dd>Due to the calling sequence above, the following has to be defined <div class="fragment"><div class="line">elemT FunctionType::operator(<span class="keyword">const</span> BasicCoordinate&lt;3, positionT&gt;&amp;)</div></div><!-- fragment --></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1IndexRange.html#a8447f3ed2474bbd6e2fba16da8ab150c">stir::IndexRange&lt; num_dimensions &gt;::get_regular_range()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -1037,7 +1046,7 @@ template&lt;typename elemT , typename FunctionType , typename Lambda &gt; </div>
   </dd>
 </dl>
 <dl class="section user"><dt>requirement for type FunctionType</dt><dd>Due to the calling sequence above, the following has to be defined <div class="fragment"><div class="line">elemT FunctionType::operator(<span class="keyword">const</span> BasicCoordinate&lt;3, positionT&gt;&amp;)</div></div><!-- fragment --></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo:</a></b></dt><dd>At the moment, only the 3D version is implemented, but this could be templated. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1IndexRange.html#a8447f3ed2474bbd6e2fba16da8ab150c">stir::IndexRange&lt; num_dimensions &gt;::get_regular_range()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -1115,14 +1124,14 @@ template&lt;int num_dimensions, class elemT , class positionT , class valueT &gt
 <p>Push <em>value</em> into the output array using nearest neigbour interpolation. </p>
 <p>Adds <em>value</em> to the grid point nearest to <em>point_in_output_coords</em> </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, and <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_min_index()</a>, and <a class="el" href="namespacestir.html#a372ad4cac50cff397e0a334fe570ed18">stir::round()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

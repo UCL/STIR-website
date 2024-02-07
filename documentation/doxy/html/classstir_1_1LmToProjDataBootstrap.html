@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -67,18 +67,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9facce9cef5aadacbaa566c3335cc420"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataBootstrap.html#a9facce9cef5aadacbaa566c3335cc420">LmToProjDataBootstrap</a> (const char *const par_filename, const unsigned int <a class="el" href="classstir_1_1LmToProjDataBootstrap.html#a6ab5051ea9e5a018624e4d3e5eda6648">seed</a>)</td></tr>
 <tr class="memdesc:a9facce9cef5aadacbaa566c3335cc420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that parses from a file but with explicit seed.  <a href="#a9facce9cef5aadacbaa566c3335cc420">More...</a><br /></td></tr>
 <tr class="separator:a9facce9cef5aadacbaa566c3335cc420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c296bd6fa069e357bacec369d4c22a"><td class="memItemLeft" align="right" valign="top"><a id="a44c296bd6fa069e357bacec369d4c22a"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_up</b> ()</td></tr>
-<tr class="separator:a44c296bd6fa069e357bacec369d4c22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3715239e8c08314a1d7b4ae90216c48e"><td class="memItemLeft" align="right" valign="top"><a id="a3715239e8c08314a1d7b4ae90216c48e"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_up</b> () override</td></tr>
+<tr class="separator:a3715239e8c08314a1d7b4ae90216c48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3827bf66d69b57c9bb7d382f2ddd897e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataBootstrap.html#a3827bf66d69b57c9bb7d382f2ddd897e">start_new_time_frame</a> (const unsigned int new_frame_num)</td></tr>
-<tr class="memdesc:a3827bf66d69b57c9bb7d382f2ddd897e"><td class="mdescLeft">&#160;</td><td class="mdescRight">will be called when a new time frame starts  <a href="#a3827bf66d69b57c9bb7d382f2ddd897e">More...</a><br /></td></tr>
-<tr class="separator:a3827bf66d69b57c9bb7d382f2ddd897e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dcb97078095d1e04800d78bde08eff3"><td class="memItemLeft" align="right" valign="top"><a id="a9dcb97078095d1e04800d78bde08eff3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>get_bin_from_event</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ListEvent.html">ListEvent</a> &amp;) const</td></tr>
-<tr class="separator:a9dcb97078095d1e04800d78bde08eff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08345938244da4ed320364206c4ca55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataBootstrap.html#af08345938244da4ed320364206c4ca55">start_new_time_frame</a> (const unsigned int new_frame_num) override</td></tr>
+<tr class="memdesc:af08345938244da4ed320364206c4ca55"><td class="mdescLeft">&#160;</td><td class="mdescRight">will be called when a new time frame starts  <a href="#af08345938244da4ed320364206c4ca55">More...</a><br /></td></tr>
+<tr class="separator:af08345938244da4ed320364206c4ca55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199bc9d5cbae27b08018a3b194657aaf"><td class="memItemLeft" align="right" valign="top"><a id="a199bc9d5cbae27b08018a3b194657aaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_bin_from_event</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ListEvent.html">ListEvent</a> &amp;) const override</td></tr>
+<tr class="separator:a199bc9d5cbae27b08018a3b194657aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -138,8 +138,8 @@ template&lt;typename LmToProjDataT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3827bf66d69b57c9bb7d382f2ddd897e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3827bf66d69b57c9bb7d382f2ddd897e">&#9670;&nbsp;</a></span>start_new_time_frame()</h2>
+<a id="af08345938244da4ed320364206c4ca55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08345938244da4ed320364206c4ca55">&#9670;&nbsp;</a></span>start_new_time_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ template&lt;typename LmToProjDataT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -206,7 +206,7 @@ template&lt;typename LmToProjDataT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -68,14 +68,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -141,7 +141,7 @@ template&lt;typename Derived , typename Base , typename Parent &gt; </div>
 
 <p>Construct a new object (of type Derived) by parsing the istream. </p>
 <p>When the istream * is 0, questions are asked interactively.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000173">Todo:</a></b></dt><dd>Currently, the return value is a <em>Base*</em>. Preferably, it should be a <em>Derived*</em>, but it seems the registration machinery would need extra (unsafe) reinterpret_casts to get that to work. (TODO find a remedy). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000175">Todo:</a></b></dt><dd>Currently, the return value is a <em>Base*</em>. Preferably, it should be a <em>Derived*</em>, but it seems the registration machinery would need extra (unsafe) reinterpret_casts to get that to work. (TODO find a remedy). </dd></dl>
 
 </div>
 </div>
@@ -152,7 +152,7 @@ template&lt;typename Derived , typename Base , typename Parent &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

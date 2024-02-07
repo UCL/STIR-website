@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -67,21 +67,21 @@ Inheritance diagram for stir::CListEventSAFIR&lt; Derived &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c76279e167f827013e70d3e53c6a0fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a1c76279e167f827013e70d3e53c6a0fc">CListEventSAFIR</a> ()</td></tr>
 <tr class="separator:a1c76279e167f827013e70d3e53c6a0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c20d56952766a9d7905515ea4e5f8b"><td class="memItemLeft" align="right" valign="top"><a id="a29c20d56952766a9d7905515ea4e5f8b"></a>
-virtual <a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b">get_LOR</a> () const</td></tr>
-<tr class="memdesc:a29c20d56952766a9d7905515ea4e5f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> corresponding to the given event. <br /></td></tr>
-<tr class="separator:a29c20d56952766a9d7905515ea4e5f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab51d0a9dd05b09ad49112693c9add1ee"><td class="memItemLeft" align="right" valign="top"><a id="ab51d0a9dd05b09ad49112693c9add1ee"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ab51d0a9dd05b09ad49112693c9add1ee">get_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info) const</td></tr>
-<tr class="memdesc:ab51d0a9dd05b09ad49112693c9add1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the default implementation. <br /></td></tr>
-<tr class="separator:ab51d0a9dd05b09ad49112693c9add1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe05be23254a6ec9c3188f86bb46475"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#affe05be23254a6ec9c3188f86bb46475">is_valid_template</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;) const</td></tr>
-<tr class="memdesc:affe05be23254a6ec9c3188f86bb46475"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if the template is valid for <a class="el" href="classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. ">LmToProjData</a>.  <a href="#affe05be23254a6ec9c3188f86bb46475">More...</a><br /></td></tr>
-<tr class="separator:affe05be23254a6ec9c3188f86bb46475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c8211e0615b6f6819d473940a559b1"><td class="memItemLeft" align="right" valign="top"><a id="af5c8211e0615b6f6819d473940a559b1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#af5c8211e0615b6f6819d473940a559b1">is_prompt</a> () const</td></tr>
-<tr class="memdesc:af5c8211e0615b6f6819d473940a559b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if delayed. <br /></td></tr>
-<tr class="separator:af5c8211e0615b6f6819d473940a559b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478b44c11433fbd6fe2c004f789bafe8"><td class="memItemLeft" align="right" valign="top"><a id="a478b44c11433fbd6fe2c004f789bafe8"></a>
+<a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a478b44c11433fbd6fe2c004f789bafe8">get_LOR</a> () const override</td></tr>
+<tr class="memdesc:a478b44c11433fbd6fe2c004f789bafe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> corresponding to the given event. <br /></td></tr>
+<tr class="separator:a478b44c11433fbd6fe2c004f789bafe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d355a38ceec62cb2ecf54f855da64a5"><td class="memItemLeft" align="right" valign="top"><a id="a6d355a38ceec62cb2ecf54f855da64a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a6d355a38ceec62cb2ecf54f855da64a5">get_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info) const override</td></tr>
+<tr class="memdesc:a6d355a38ceec62cb2ecf54f855da64a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the default implementation. <br /></td></tr>
+<tr class="separator:a6d355a38ceec62cb2ecf54f855da64a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73662b2987da4daec8eab7a76c8d953"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ad73662b2987da4daec8eab7a76c8d953">is_valid_template</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;) const override</td></tr>
+<tr class="memdesc:ad73662b2987da4daec8eab7a76c8d953"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if the template is valid for <a class="el" href="classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. ">LmToProjData</a>.  <a href="#ad73662b2987da4daec8eab7a76c8d953">More...</a><br /></td></tr>
+<tr class="separator:ad73662b2987da4daec8eab7a76c8d953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4609e5bf96195b354e129ba6d1f8ee15"><td class="memItemLeft" align="right" valign="top"><a id="a4609e5bf96195b354e129ba6d1f8ee15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#a4609e5bf96195b354e129ba6d1f8ee15">is_prompt</a> () const override</td></tr>
+<tr class="memdesc:a4609e5bf96195b354e129ba6d1f8ee15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 if event is prompt and 1 if delayed. <br /></td></tr>
+<tr class="separator:a4609e5bf96195b354e129ba6d1f8ee15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51bea3f5e06da6074be98507d478133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventSAFIR.html#ac51bea3f5e06da6074be98507d478133">set_map_sptr</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DetectorCoordinateMap.html">DetectorCoordinateMap</a> &gt; new_map_sptr)</td></tr>
 <tr class="memdesc:ac51bea3f5e06da6074be98507d478133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set map for detector indices to coordinates.  <a href="#ac51bea3f5e06da6074be98507d478133">More...</a><br /></td></tr>
 <tr class="separator:ac51bea3f5e06da6074be98507d478133"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,7 +96,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><h3>template&lt;class Derived&gt;<br />
 class stir::CListEventSAFIR&lt; Derived &gt;</h3>
 
-<p>Provides interface of the record class to STIR by implementing <a class="el" href="classstir_1_1CListEventSAFIR.html#a29c20d56952766a9d7905515ea4e5f8b" title="Returns LOR corresponding to the given event. ">get_LOR()</a>. It uses an optional map from detector indices to coordinates to specify <a class="el" href="classstir_1_1LORAs2Points.html" title="A class for LORs. ">LORAs2Points</a> from given detection pair indices.</p>
+<p>Provides interface of the record class to STIR by implementing <a class="el" href="classstir_1_1CListEventSAFIR.html#a478b44c11433fbd6fe2c004f789bafe8" title="Returns LOR corresponding to the given event. ">get_LOR()</a>. It uses an optional map from detector indices to coordinates to specify <a class="el" href="classstir_1_1LORAs2Points.html" title="A class for LORs. ">LORAs2Points</a> from given detection pair indices.</p>
 <p>The record has the following format (for little-endian byte order) </p><div class="fragment"><div class="line"><span class="keywordtype">unsigned</span> ringA : 8;</div><div class="line"><span class="keywordtype">unsigned</span> ringB : 8;</div><div class="line"><span class="keywordtype">unsigned</span> detA : 16;</div><div class="line"><span class="keywordtype">unsigned</span> detB : 16;</div><div class="line"><span class="keywordtype">unsigned</span> layerA : 4;</div><div class="line"><span class="keywordtype">unsigned</span> layerB : 4;</div><div class="line"><span class="keywordtype">unsigned</span> reserved : 6;</div><div class="line"><span class="keywordtype">unsigned</span> isDelayed : 1;</div><div class="line"><span class="keywordtype">unsigned</span> type : 1;</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1c76279e167f827013e70d3e53c6a0fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c76279e167f827013e70d3e53c6a0fc">&#9670;&nbsp;</a></span>CListEventSAFIR()</h2>
@@ -127,8 +127,8 @@ template&lt;class Derived&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="affe05be23254a6ec9c3188f86bb46475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe05be23254a6ec9c3188f86bb46475">&#9670;&nbsp;</a></span>is_valid_template()</h2>
+<a id="ad73662b2987da4daec8eab7a76c8d953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73662b2987da4daec8eab7a76c8d953">&#9670;&nbsp;</a></span>is_valid_template()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +139,7 @@ template&lt;class Derived&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classstir_1_1CListEventSAFIR.html">stir::CListEventSAFIR</a>&lt; Derived &gt;::is_valid_template </td>
+          <td class="memname">bool <a class="el" href="classstir_1_1CListEventSAFIR.html">stir::CListEventSAFIR</a>&lt; Derived &gt;::is_valid_template </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -148,13 +148,13 @@ template&lt;class Derived&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>This method checks if the template is valid for <a class="el" href="classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. ">LmToProjData</a>. </p>
-<p>Used before the actual processing of the data (see issue #61), before calling <a class="el" href="classstir_1_1CListEventSAFIR.html#ab51d0a9dd05b09ad49112693c9add1ee" title="Override the default implementation. ">get_bin()</a> Most scanners have listmode data that correspond to non arc-corrected data and this check avoids a crash when an unsupported template is used as input. </p>
+<p>Used before the actual processing of the data (see issue #61), before calling <a class="el" href="classstir_1_1CListEventSAFIR.html#a6d355a38ceec62cb2ecf54f855da64a5" title="Override the default implementation. ">get_bin()</a> Most scanners have listmode data that correspond to non arc-corrected data and this check avoids a crash when an unsupported template is used as input. </p>
 
 <p>Implements <a class="el" href="classstir_1_1ListEvent.html#a9d3a931f8f42f48e2dad8b911b82dc23">stir::ListEvent</a>.</p>
 
@@ -228,7 +228,7 @@ template&lt;class Derived&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

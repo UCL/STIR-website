@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -67,8 +67,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="distributable_8h_source.html">stir/recon_buildblock/distributable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DataSymmetriesForViewSegmentNumbers_8h_source.html">stir/DataSymmetriesForViewSegmentNumbers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ForwardProjectorByBinUsingProjMatrixByBin_8h_source.html">stir/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="BackProjectorByBinUsingProjMatrixByBin_8h_source.html">stir/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ProjMatrixByBinUsingRayTracing_8h_source.html">stir/recon_buildblock/ProjMatrixByBinUsingRayTracing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="BackProjectorByBinUsingProjMatrixByBin_8h_source.html">stir/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ProjectorByBinPairUsingSeparateProjectors_8h_source.html">stir/recon_buildblock/ProjectorByBinPairUsingSeparateProjectors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="find__basic__vs__nums__in__subsets_8h_source.html">stir/recon_buildblock/find_basic_vs_nums_in_subsets.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BinNormalisationWithCalibration_8h_source.html">stir/recon_buildblock/BinNormalisationWithCalibration.h</a>&quot;</code><br />
@@ -91,15 +91,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a26eddb398851ad27d4ffaf733532a81e"><td class="memItemLeft" align="right" valign="top"><a id="a26eddb398851ad27d4ffaf733532a81e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_compute_gradient</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; &amp;output_image, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, DistributedCachingInformation *caching_info_ptr, const bool add_sensitivity)</td></tr>
-<tr class="separator:a26eddb398851ad27d4ffaf733532a81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6ed60317908f4bb840f59626c7c822a"><td class="memItemLeft" align="right" valign="top"><a id="ab6ed60317908f4bb840f59626c7c822a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_accumulate_loglikelihood</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, const double start_time_of_frame, const double end_time_of_frame, DistributedCachingInformation *caching_info_ptr)</td></tr>
-<tr class="separator:ab6ed60317908f4bb840f59626c7c822a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7b1b739a6b5cd653062c134bc547a1"><td class="memItemLeft" align="right" valign="top"><a id="ace7b1b739a6b5cd653062c134bc547a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_sensitivity_computation</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; &amp;sensitivity, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, const double start_time_of_frame, const double end_time_of_frame, DistributedCachingInformation *caching_info_ptr)</td></tr>
-<tr class="separator:ace7b1b739a6b5cd653062c134bc547a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ca778aae736f61b9fb214437354ce8"><td class="memItemLeft" align="right" valign="top"><a id="a75ca778aae736f61b9fb214437354ce8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_compute_gradient</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; &amp;output_image, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num, const bool add_sensitivity)</td></tr>
+<tr class="separator:a75ca778aae736f61b9fb214437354ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f447a2bf97d317d2f9028e2c7ca954"><td class="memItemLeft" align="right" valign="top"><a id="a72f447a2bf97d317d2f9028e2c7ca954"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_accumulate_loglikelihood</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, const double start_time_of_frame, const double end_time_of_frame, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num)</td></tr>
+<tr class="separator:a72f447a2bf97d317d2f9028e2c7ca954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec24c30d37c4387386ef67ccff08fd8"><td class="memItemLeft" align="right" valign="top"><a id="aaec24c30d37c4387386ef67ccff08fd8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::distributable_sensitivity_computation</b> (const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; &amp;sensitivity, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const shared_ptr&lt; ProjData &gt; &amp;proj_dat, int subset_num, int num_subsets, int min_segment, int max_segment, bool zero_seg0_end_planes, double *log_likelihood_ptr, shared_ptr&lt; ProjData &gt; const &amp;additive_binwise_correction, shared_ptr&lt; BinNormalisation &gt; const &amp;normalisation_sptr, const double start_time_of_frame, const double end_time_of_frame, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num)</td></tr>
+<tr class="separator:aaec24c30d37c4387386ef67ccff08fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a261bb0874dcd5d5ffa01902c0a17abfc"><td class="memTemplParams" colspan="2"><a id="a261bb0874dcd5d5ffa01902c0a17abfc"></a>
 template&lt;bool add_sensitivity&gt; </td></tr>
 <tr class="memitem:a261bb0874dcd5d5ffa01902c0a17abfc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::RPC_process_related_viewgrams_gradient</b> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, RelatedViewgrams&lt; float &gt; *measured_viewgrams_ptr, int &amp;count, int &amp;count2, double *log_likelihood_ptr, const RelatedViewgrams&lt; float &gt; *additive_binwise_correction_ptr, const RelatedViewgrams&lt; float &gt; *mult_viewgrams_ptr)</td></tr>
@@ -123,13 +123,19 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::rim_trunca
 <dd>
 Matthew Jacobson </dd>
 <dd>
+Nikos Efthimiou </dd>
+<dd>
+Elise Emond </dd>
+<dd>
+Robert Twyman </dd>
+<dd>
 Sanida Mustafovic </dd>
 <dd>
 PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

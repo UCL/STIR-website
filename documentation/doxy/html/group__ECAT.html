@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -409,6 +409,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gaf8705e5fa3940974a5717caf06758df4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ECAT.html#gaf8705e5fa3940974a5717caf06758df4">stir::ecat::find_segment_sequence</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;pdi)</td></tr>
 <tr class="memdesc:gaf8705e5fa3940974a5717caf06758df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sequence of how Siemens stores segments.  <a href="group__ECAT.html#gaf8705e5fa3940974a5717caf06758df4">More...</a><br /></td></tr>
 <tr class="separator:gaf8705e5fa3940974a5717caf06758df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga547612c676ae788a04d6f1d1e89172c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ECAT.html#ga547612c676ae788a04d6f1d1e89172c5">stir::ecat::find_timing_poss_sequence</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;pdi)</td></tr>
+<tr class="memdesc:ga547612c676ae788a04d6f1d1e89172c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sequence of how Siemens stores TOF bins.  <a href="group__ECAT.html#ga547612c676ae788a04d6f1d1e89172c5">More...</a><br /></td></tr>
+<tr class="separator:ga547612c676ae788a04d6f1d1e89172c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e1f87ffb390e0e048b50ab882989f8d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ECAT.html#ga3e1f87ffb390e0e048b50ab882989f8d">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityInputFileFormat::actual_can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;input) const</td></tr>
 <tr class="memdesc:ga3e1f87ffb390e0e048b50ab882989f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for reading images in ECAT7 file-format.  <a href="#ga3e1f87ffb390e0e048b50ab882989f8d">More...</a><br /></td></tr>
 <tr class="separator:ga3e1f87ffb390e0e048b50ab882989f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1875,7 +1878,7 @@ num_frames field &gt; 0 </li>
 <p>Write an (extra) image to an existing ECAT7 file. </p>
 <p>Some consistency checks are performed between the image and the data in the main header </p><dl class="section warning"><dt>Warning</dt><dd>This does NOT write the main header. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_length()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_length()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -2358,7 +2361,7 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 
 <p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a9f042339a84cd4b3926261b6f515497b">stir::Scanner::get_name()</a>, <a class="el" href="classstir_1_1Scanner.html#a151e9ff906ed795438d22bf4c6b0f9eb">stir::Scanner::get_type()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa4d135a68d3b5dd7e5d4f0aaaec3b3d3">stir::ecat::ecat6::ECAT6OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a3dc53435807308c45387cd575fddd904">stir::ecat::ecat7::ECAT7OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a31efd9d510690094c7fc507c822cf1db">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a82e1a0b1d33d29397e2633bd1c71787d">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;::post_processing()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a2c35fd4da943df3a861e1023f1526085">stir::ScannerTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a3dc53435807308c45387cd575fddd904">stir::ecat::ecat7::ECAT7OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa4d135a68d3b5dd7e5d4f0aaaec3b3d3">stir::ecat::ecat6::ECAT6OutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a31efd9d510690094c7fc507c822cf1db">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat::post_processing()</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a82e1a0b1d33d29397e2633bd1c71787d">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;::post_processing()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a3dacb2089fa8853eb89cfe1d558a3e98">stir::ScannerTests::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -2408,6 +2411,29 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 
 </div>
 </div>
+<a id="ga547612c676ae788a04d6f1d1e89172c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga547612c676ae788a04d6f1d1e89172c5">&#9670;&nbsp;</a></span>find_timing_poss_sequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; stir::ecat::find_timing_poss_sequence </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>pdi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the sequence of how Siemens stores TOF bins. </p>
+<p>Siemens always stores segments as 0, -1, +1, ... (numbering is in STIR convention) </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjDataInfo.html#ac13de6e6a11b20a5766de10c97302689">stir::ProjDataInfo::get_num_tof_poss()</a>.</p>
+
+</div>
+</div>
 <a id="ga3e1f87ffb390e0e048b50ab882989f8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3e1f87ffb390e0e048b50ab882989f8d">&#9670;&nbsp;</a></span>actual_can_read()</h2>
 
@@ -2449,14 +2475,14 @@ Only data types AttenCor, Byte3dSinogram, Short3dSinogram, Float3dSinogram can b
 
 <p>Implements <a class="el" href="classstir_1_1InputFileFormat.html">stir::InputFileFormat&lt; DynamicDiscretisedDensity &gt;</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature::get_signature()</a>, and <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature::get_signature()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

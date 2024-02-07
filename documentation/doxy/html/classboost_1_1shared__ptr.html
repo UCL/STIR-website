@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -72,13 +72,13 @@ Constructing 2 <a class="el" href="classboost_1_1shared__ptr.html" title="A smar
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example:</dt><dd></dd></dl>
-<div class="fragment"><div class="line">{ </div><div class="line">  <span class="comment">// ok</span></div><div class="line">  shared_ptr&lt;int&gt; i_ptr1(<span class="keyword">new</span> <span class="keywordtype">int</span> (2));</div><div class="line">  shared_ptr&lt;int&gt; i_ptr2(i_ptr1);</div><div class="line">  unique_ptr&lt;int&gt; a_ptr(<span class="keyword">new</span> <span class="keywordtype">int</span>(3));</div><div class="line">  shared_ptr&lt;int&gt; i_ptr3(a_ptr);</div><div class="line">  <span class="comment">// now never use a_ptr anymore</span></div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> * i_ptr = <span class="keyword">new</span> int (2);</div><div class="line">    i_ptr1.reset(i_ptr);</div><div class="line">    <span class="comment">// now never use i_ptr anymore</span></div><div class="line">  }</div><div class="line">}</div><div class="line">{ </div><div class="line">  <span class="comment">// trouble! *i_ptr will be deleted twice !</span></div><div class="line">  <span class="keywordtype">int</span> * i_ptr = <span class="keyword">new</span> int (2);</div><div class="line">  shared_ptr&lt;int&gt; i_ptr1 (i_ptr);</div><div class="line">  shared_ptr&lt;int&gt; i_ptr2 (i_ptr);</div><div class="line">}</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="fragment"><div class="line">{</div><div class="line">  <span class="comment">// ok</span></div><div class="line">  shared_ptr&lt;int&gt; i_ptr1(<span class="keyword">new</span> <span class="keywordtype">int</span> (2));</div><div class="line">  shared_ptr&lt;int&gt; i_ptr2(i_ptr1);</div><div class="line">  unique_ptr&lt;int&gt; a_ptr(<span class="keyword">new</span> <span class="keywordtype">int</span>(3));</div><div class="line">  shared_ptr&lt;int&gt; i_ptr3(a_ptr);</div><div class="line">  <span class="comment">// now never use a_ptr anymore</span></div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> * i_ptr = <span class="keyword">new</span> int (2);</div><div class="line">    i_ptr1.reset(i_ptr);</div><div class="line">    <span class="comment">// now never use i_ptr anymore</span></div><div class="line">  }</div><div class="line">}</div><div class="line">{</div><div class="line">  <span class="comment">// trouble! *i_ptr will be deleted twice !</span></div><div class="line">  <span class="keywordtype">int</span> * i_ptr = <span class="keyword">new</span> int (2);</div><div class="line">  shared_ptr&lt;int&gt; i_ptr1 (i_ptr);</div><div class="line">  shared_ptr&lt;int&gt; i_ptr2 (i_ptr);</div><div class="line">}</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="doxygen__doc__for__boost_8h_source.html">doxygen_doc_for_boost.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

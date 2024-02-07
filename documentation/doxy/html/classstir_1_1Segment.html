@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,10 @@ virtual StorageOrder&#160;</td><td class="memItemRight" valign="bottom"><b>get_s
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">get_segment_num</a> () const</td></tr>
 <tr class="memdesc:a4b9c5c4801521562a64b31f26ab8514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the segment number. <br /></td></tr>
 <tr class="separator:a4b9c5c4801521562a64b31f26ab8514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdffaf30b09072197f5703add7e8471"><td class="memItemLeft" align="right" valign="top"><a id="a8fdffaf30b09072197f5703add7e8471"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a8fdffaf30b09072197f5703add7e8471">get_timing_pos_num</a> () const</td></tr>
+<tr class="memdesc:a8fdffaf30b09072197f5703add7e8471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timing position index. <br /></td></tr>
+<tr class="separator:a8fdffaf30b09072197f5703add7e8471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84ed42cac4f99a84c420eafa647aac5b"><td class="memItemLeft" align="right" valign="top"><a id="a84ed42cac4f99a84c420eafa647aac5b"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>get_min_axial_pos_num</b> () const =0</td></tr>
 <tr class="separator:a84ed42cac4f99a84c420eafa647aac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +129,14 @@ virtual <a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; elemT &
 virtual <a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#ab9877ab2b604c7ced4423028982a98af">get_viewgram</a> (int view_num) const =0</td></tr>
 <tr class="memdesc:ab9877ab2b604c7ced4423028982a98af"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a new viewgram, with data set as in the segment <br /></td></tr>
 <tr class="separator:ab9877ab2b604c7ced4423028982a98af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6c0a471e8cb42693d7c157a7526e92"><td class="memItemLeft" align="right" valign="top"><a id="a8d6c0a471e8cb42693d7c157a7526e92"></a>
+<a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a8d6c0a471e8cb42693d7c157a7526e92">get_sinogram</a> (const <a class="el" href="classstir_1_1SinogramIndices.html">SinogramIndices</a> &amp;s) const</td></tr>
+<tr class="memdesc:a8d6c0a471e8cb42693d7c157a7526e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a new sinogram, with data set as in the segment <br /></td></tr>
+<tr class="separator:a8d6c0a471e8cb42693d7c157a7526e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c97196255e51cbe58a1f93cf93b1e61"><td class="memItemLeft" align="right" valign="top"><a id="a4c97196255e51cbe58a1f93cf93b1e61"></a>
+<a class="el" href="classstir_1_1Viewgram.html">Viewgram</a>&lt; elemT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#a4c97196255e51cbe58a1f93cf93b1e61">get_viewgram</a> (const <a class="el" href="classstir_1_1ViewgramIndices.html">ViewgramIndices</a> &amp;) const</td></tr>
+<tr class="memdesc:a4c97196255e51cbe58a1f93cf93b1e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a new viewgram, with data set as in the segment <br /></td></tr>
+<tr class="separator:a4c97196255e51cbe58a1f93cf93b1e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c662f9bff25d56b652f933a48b3d87"><td class="memItemLeft" align="right" valign="top"><a id="aa6c662f9bff25d56b652f933a48b3d87"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Segment.html#aa6c662f9bff25d56b652f933a48b3d87">set_sinogram</a> (const <a class="el" href="classstir_1_1Sinogram.html">Sinogram</a>&lt; elemT &gt; &amp;s)=0</td></tr>
 <tr class="memdesc:aa6c662f9bff25d56b652f933a48b3d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">set data in segment according to sinogram <code>s</code> <br /></td></tr>
@@ -207,7 +219,7 @@ template&lt;typename elemT &gt; </div>
 <p>Checks if the 2 objects have the proj_data_info, segment_num etc. </p>
 <p>If they do <code>not</code> have the same characteristics, the string <em>explanation</em> explains why. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">stir::Segment&lt; elemT &gt;::get_proj_data_info_sptr()</a>, and <a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">stir::Segment&lt; elemT &gt;::get_segment_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Segment.html#ad042b71f7e146af0b634f55b6823c577">stir::Segment&lt; elemT &gt;::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">stir::Segment&lt; elemT &gt;::get_segment_num()</a>, and <a class="el" href="classstir_1_1Segment.html#a8fdffaf30b09072197f5703add7e8471">stir::Segment&lt; elemT &gt;::get_timing_pos_num()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1SegmentBySinogram.html#af38b634f77b3104515bb85b4d9818f71">stir::SegmentBySinogram&lt; elemT &gt;::SegmentBySinogram()</a>.</p>
 
@@ -275,7 +287,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

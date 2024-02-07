@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -65,24 +65,24 @@ Inheritance diagram for stir::TrivialSymmetryOperation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afb7bd89df9d0dd55ebad0a2fb1a82166"><td class="memItemLeft" align="right" valign="top"><a id="afb7bd89df9d0dd55ebad0a2fb1a82166"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_trivial</b> () const</td></tr>
-<tr class="separator:afb7bd89df9d0dd55ebad0a2fb1a82166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcac049dda4c69e3edf80342a99149ef"><td class="memItemLeft" align="right" valign="top"><a id="adcac049dda4c69e3edf80342a99149ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_bin_coordinates</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;b) const</td></tr>
-<tr class="separator:adcac049dda4c69e3edf80342a99149ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5a585799942ce24e0c70c2dcb2d370"><td class="memItemLeft" align="right" valign="top"><a id="a2c5a585799942ce24e0c70c2dcb2d370"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_view_segment_indices</b> (<a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;n) const</td></tr>
-<tr class="separator:a2c5a585799942ce24e0c70c2dcb2d370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afecb532d2e75d8fdf83477fb633e36b4"><td class="memItemLeft" align="right" valign="top"><a id="afecb532d2e75d8fdf83477fb633e36b4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_image_coordinates</b> (<a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;c) const</td></tr>
-<tr class="separator:afecb532d2e75d8fdf83477fb633e36b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4069d390d49870cac07bec8da4c0a2d"><td class="memItemLeft" align="right" valign="top"><a id="ab4069d390d49870cac07bec8da4c0a2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_proj_matrix_elems_for_one_bin</b> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;lor) const</td></tr>
-<tr class="separator:ab4069d390d49870cac07bec8da4c0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e23b22740e308538722974faaeac4a5"><td class="memItemLeft" align="right" valign="top"><a id="a1e23b22740e308538722974faaeac4a5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_proj_matrix_elems_for_one_densel</b> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const</td></tr>
-<tr class="separator:a1e23b22740e308538722974faaeac4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2c33a1a6add9134d8ec5a36dc654ac"><td class="memItemLeft" align="right" valign="top"><a id="ade2c33a1a6add9134d8ec5a36dc654ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_trivial</b> () const override</td></tr>
+<tr class="separator:ade2c33a1a6add9134d8ec5a36dc654ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577d7cbd5cdb00caef72f18348b867a1"><td class="memItemLeft" align="right" valign="top"><a id="a577d7cbd5cdb00caef72f18348b867a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_bin_coordinates</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;b) const override</td></tr>
+<tr class="separator:a577d7cbd5cdb00caef72f18348b867a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ff1e76ed4e537da70c2fc5db52462c"><td class="memItemLeft" align="right" valign="top"><a id="ab3ff1e76ed4e537da70c2fc5db52462c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_view_segment_indices</b> (<a class="el" href="classstir_1_1ViewSegmentNumbers.html">ViewSegmentNumbers</a> &amp;n) const override</td></tr>
+<tr class="separator:ab3ff1e76ed4e537da70c2fc5db52462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26934855f85af098823d4523bbf8404"><td class="memItemLeft" align="right" valign="top"><a id="ab26934855f85af098823d4523bbf8404"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_image_coordinates</b> (<a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;c) const override</td></tr>
+<tr class="separator:ab26934855f85af098823d4523bbf8404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235b8c8ae163f240a319185ff5acc868"><td class="memItemLeft" align="right" valign="top"><a id="a235b8c8ae163f240a319185ff5acc868"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_proj_matrix_elems_for_one_bin</b> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;lor) const override</td></tr>
+<tr class="separator:a235b8c8ae163f240a319185ff5acc868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26c71188bbb2f9a6474d473f0d07a2d"><td class="memItemLeft" align="right" valign="top"><a id="ad26c71188bbb2f9a6474d473f0d07a2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_proj_matrix_elems_for_one_densel</b> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const override</td></tr>
+<tr class="separator:ad26c71188bbb2f9a6474d473f0d07a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class implementing the trivial case where the symmetry operation does nothing at all. </p>
@@ -92,7 +92,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_pro
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

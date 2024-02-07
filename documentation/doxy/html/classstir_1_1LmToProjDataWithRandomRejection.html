@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,18 +70,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec6e434f2756e813ea0fcebedbd165f8"><td class="memItemLeft" align="right" valign="top"><a id="aec6e434f2756e813ea0fcebedbd165f8"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>set_reject_if_above</b> (const float)</td></tr>
 <tr class="separator:aec6e434f2756e813ea0fcebedbd165f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb41a559ca15b9f9721ec483536e53ab"><td class="memItemLeft" align="right" valign="top"><a id="aeb41a559ca15b9f9721ec483536e53ab"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_up</b> ()</td></tr>
-<tr class="separator:aeb41a559ca15b9f9721ec483536e53ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906812b8fb2727d536b9642efd39261c"><td class="memItemLeft" align="right" valign="top"><a id="a906812b8fb2727d536b9642efd39261c"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_up</b> () override</td></tr>
+<tr class="separator:a906812b8fb2727d536b9642efd39261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9204c55d17ea271d2a434a32373a91f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataWithRandomRejection.html#a9204c55d17ea271d2a434a32373a91f6">start_new_time_frame</a> (const unsigned int new_frame_num)</td></tr>
-<tr class="memdesc:a9204c55d17ea271d2a434a32373a91f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">will be called when a new time frame starts  <a href="#a9204c55d17ea271d2a434a32373a91f6">More...</a><br /></td></tr>
-<tr class="separator:a9204c55d17ea271d2a434a32373a91f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a42d8be1455ea6591cdeffa82ecac2"><td class="memItemLeft" align="right" valign="top"><a id="a12a42d8be1455ea6591cdeffa82ecac2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>get_bin_from_event</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ListEvent.html">ListEvent</a> &amp;) const</td></tr>
-<tr class="separator:a12a42d8be1455ea6591cdeffa82ecac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297f3f949610aec83238a979f347afd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjDataWithRandomRejection.html#a297f3f949610aec83238a979f347afd4">start_new_time_frame</a> (const unsigned int new_frame_num) override</td></tr>
+<tr class="memdesc:a297f3f949610aec83238a979f347afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">will be called when a new time frame starts  <a href="#a297f3f949610aec83238a979f347afd4">More...</a><br /></td></tr>
+<tr class="separator:a297f3f949610aec83238a979f347afd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1e00d3cdddbb512e46df2b599fba0e"><td class="memItemLeft" align="right" valign="top"><a id="a2c1e00d3cdddbb512e46df2b599fba0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_bin_from_event</b> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ListEvent.html">ListEvent</a> &amp;) const override</td></tr>
+<tr class="separator:a2c1e00d3cdddbb512e46df2b599fba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -144,8 +144,8 @@ template&lt;typename LmToProjDataT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9204c55d17ea271d2a434a32373a91f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9204c55d17ea271d2a434a32373a91f6">&#9670;&nbsp;</a></span>start_new_time_frame()</h2>
+<a id="a297f3f949610aec83238a979f347afd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297f3f949610aec83238a979f347afd4">&#9670;&nbsp;</a></span>start_new_time_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ template&lt;typename LmToProjDataT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,7 +212,7 @@ template&lt;typename LmToProjDataT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

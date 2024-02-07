@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,23 +70,24 @@ Inheritance diagram for stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &g
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3aed6b26b5d01d9894bf69732cd2f6d2"><td class="memItemLeft" align="right" valign="top"><a id="a3aed6b26b5d01d9894bf69732cd2f6d2"></a>
-virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const</td></tr>
-<tr class="separator:a3aed6b26b5d01d9894bf69732cd2f6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91baab2f2bea44dc06d4e957e92b22b7"><td class="memItemLeft" align="right" valign="top"><a id="a91baab2f2bea44dc06d4e957e92b22b7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a91baab2f2bea44dc06d4e957e92b22b7">can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;input) const</td></tr>
-<tr class="memdesc:a91baab2f2bea44dc06d4e957e92b22b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks in binary data file for correct signature. <br /></td></tr>
-<tr class="separator:a91baab2f2bea44dc06d4e957e92b22b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ef5b2e154b1c2f3533ff9d41901f04"><td class="memItemLeft" align="right" valign="top"><a id="ad3ef5b2e154b1c2f3533ff9d41901f04"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#ad3ef5b2e154b1c2f3533ff9d41901f04">can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, const std::string &amp;filename) const</td></tr>
-<tr class="memdesc:ad3ef5b2e154b1c2f3533ff9d41901f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks in binary data file for correct signature (can be either "SAFIR CListModeData", "NeuroLF CListModeData" or "MUPET CListModeData"). <br /></td></tr>
-<tr class="separator:ad3ef5b2e154b1c2f3533ff9d41901f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9a6bee0e097b0af6d6e2e8c85140d7"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a1b9a6bee0e097b0af6d6e2e8c85140d7">read_from_file</a> (std::istream &amp;input) const</td></tr>
-<tr class="memdesc:a1b9a6bee0e097b0af6d6e2e8c85140d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a stream  <a href="#a1b9a6bee0e097b0af6d6e2e8c85140d7">More...</a><br /></td></tr>
-<tr class="separator:a1b9a6bee0e097b0af6d6e2e8c85140d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057156d5d67ee2a516945acd37a4a242"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a057156d5d67ee2a516945acd37a4a242">read_from_file</a> (const std::string &amp;filename) const</td></tr>
-<tr class="memdesc:a057156d5d67ee2a516945acd37a4a242"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a filename  <a href="#a057156d5d67ee2a516945acd37a4a242">More...</a><br /></td></tr>
-<tr class="separator:a057156d5d67ee2a516945acd37a4a242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5412e4cac034944a6c240bb28bb2ff80"><td class="memItemLeft" align="right" valign="top"><a id="a5412e4cac034944a6c240bb28bb2ff80"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const override</td></tr>
+<tr class="separator:a5412e4cac034944a6c240bb28bb2ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedea3c84a4d5e636e687f27948f6a205"><td class="memItemLeft" align="right" valign="top"><a id="aedea3c84a4d5e636e687f27948f6a205"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#aedea3c84a4d5e636e687f27948f6a205">can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;input) const override</td></tr>
+<tr class="memdesc:aedea3c84a4d5e636e687f27948f6a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks in binary data file for correct signature. <br /></td></tr>
+<tr class="separator:aedea3c84a4d5e636e687f27948f6a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af784182e29a5a14aa8dc0330277e7e79"><td class="memItemLeft" align="right" valign="top"><a id="af784182e29a5a14aa8dc0330277e7e79"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#af784182e29a5a14aa8dc0330277e7e79">can_read</a> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, const std::string &amp;filename) const override</td></tr>
+<tr class="memdesc:af784182e29a5a14aa8dc0330277e7e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks in binary data file for correct signature (can be either "SAFIR CListModeData", "NeuroLF CListModeData" or "MUPET
+CListModeData"). <br /></td></tr>
+<tr class="separator:af784182e29a5a14aa8dc0330277e7e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db19018be5bacd43a03c9af00605d30"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a7db19018be5bacd43a03c9af00605d30">read_from_file</a> (std::istream &amp;input) const override</td></tr>
+<tr class="memdesc:a7db19018be5bacd43a03c9af00605d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a stream  <a href="#a7db19018be5bacd43a03c9af00605d30">More...</a><br /></td></tr>
+<tr class="separator:a7db19018be5bacd43a03c9af00605d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb57d5e086b0541459e7bdd9cf585f98"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classstir_1_1ListModeData.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#abb57d5e086b0541459e7bdd9cf585f98">read_from_file</a> (const std::string &amp;filename) const override</td></tr>
+<tr class="memdesc:abb57d5e086b0541459e7bdd9cf585f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a filename  <a href="#abb57d5e086b0541459e7bdd9cf585f98">More...</a><br /></td></tr>
+<tr class="separator:abb57d5e086b0541459e7bdd9cf585f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -115,23 +116,23 @@ typedef <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a>&#
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6c73c22d7ccbc701016393eb705241cc"><td class="memItemLeft" align="right" valign="top"><a id="a6c73c22d7ccbc701016393eb705241cc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>actual_can_read</b> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;input) const</td></tr>
-<tr class="separator:a6c73c22d7ccbc701016393eb705241cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a815f37bbbc59025e8f6ce5bdf0fccc0d"><td class="memItemLeft" align="right" valign="top"><a id="a815f37bbbc59025e8f6ce5bdf0fccc0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a815f37bbbc59025e8f6ce5bdf0fccc0d">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a815f37bbbc59025e8f6ce5bdf0fccc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
-<tr class="separator:a815f37bbbc59025e8f6ce5bdf0fccc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f65c67068672689e70489e68300e6b"><td class="memItemLeft" align="right" valign="top"><a id="a09f65c67068672689e70489e68300e6b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a09f65c67068672689e70489e68300e6b">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a09f65c67068672689e70489e68300e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
-<tr class="separator:a09f65c67068672689e70489e68300e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c94758a8ddce15729f77b2a9483c82"><td class="memItemLeft" align="right" valign="top"><a id="a58c94758a8ddce15729f77b2a9483c82"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>actual_can_read</b> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;input) const override</td></tr>
+<tr class="separator:a58c94758a8ddce15729f77b2a9483c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5997a58ba431aaf60d18d4218f5dce7"><td class="memItemLeft" align="right" valign="top"><a id="af5997a58ba431aaf60d18d4218f5dce7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#af5997a58ba431aaf60d18d4218f5dce7">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:af5997a58ba431aaf60d18d4218f5dce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:af5997a58ba431aaf60d18d4218f5dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87fb3c63102326212f57b9c3382955d6"><td class="memItemLeft" align="right" valign="top"><a id="a87fb3c63102326212f57b9c3382955d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a87fb3c63102326212f57b9c3382955d6">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a87fb3c63102326212f57b9c3382955d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
+<tr class="separator:a87fb3c63102326212f57b9c3382955d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf1f4641e4291ad71b76440600d965e"><td class="memItemLeft" align="right" valign="top"><a id="a9bf1f4641e4291ad71b76440600d965e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>actual_do_parsing</b> (const std::string &amp;filename) const</td></tr>
 <tr class="separator:a9bf1f4641e4291ad71b76440600d965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9bdcfc9b54d0c5ebdc5cfcc9862416"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a7f9bdcfc9b54d0c5ebdc5cfcc9862416">post_processing</a> ()</td></tr>
-<tr class="memdesc:a7f9bdcfc9b54d0c5ebdc5cfcc9862416"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a7f9bdcfc9b54d0c5ebdc5cfcc9862416">More...</a><br /></td></tr>
-<tr class="separator:a7f9bdcfc9b54d0c5ebdc5cfcc9862416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3828455162b6a0aae2df54d4aed214cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html#a3828455162b6a0aae2df54d4aed214cd">post_processing</a> () override</td></tr>
+<tr class="memdesc:a3828455162b6a0aae2df54d4aed214cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a3828455162b6a0aae2df54d4aed214cd">More...</a><br /></td></tr>
+<tr class="separator:a3828455162b6a0aae2df54d4aed214cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -174,10 +175,10 @@ class stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;</h3>
 <li>a template projection data file, which defines the scanner</li>
 </ul>
 <p>If the map is not defined, the scanner detectors will be used. Otherwise, the nearest <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a> of the scanner will be selected for each event.</p>
-<p>An example of such a parameter file would be </p><div class="fragment"><div class="line">CListModeDataSAFIR Parameters:=</div><div class="line">        listmode data filename:= listmode_input.clm.safir</div><div class="line">        <span class="keyword">template</span> projection data filename:= &lt;projdata-filename&gt;</div><div class="line">; optional map specifying the actual location of the crystals</div><div class="line">        crystal map filename:= crystal_map.txt </div><div class="line">        ; optional random displacement of the LOR end-points in mm (only used of a map is present)</div><div class="line">LOR randomization (Gaussian) sigma:=0</div><div class="line">END CListModeDataSAFIR Parameters:=</div></div><!-- fragment --><p>The first 32 bytes of the binary file are interpreted as file signature and matched against the strings "MUPET CListModeData\0", "SAFIR CListModeData\0" and "NeuroLF CListModeData\0". If either is successfull, the class claims it can read the file format. The rest of the file is read as records as specified as template parameter, e.g. <a class="el" href="classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ...">CListRecordSAFIR</a>. </p>
+<p>An example of such a parameter file would be </p><div class="fragment"><div class="line">CListModeDataSAFIR Parameters:=</div><div class="line">        listmode data filename:= listmode_input.clm.safir</div><div class="line">        <span class="keyword">template</span> projection data filename:= &lt;projdata-filename&gt;</div><div class="line">; optional map specifying the actual location of the crystals</div><div class="line">        crystal map filename:= crystal_map.txt</div><div class="line">        ; optional random displacement of the LOR end-points in mm (only used of a map is present)</div><div class="line">LOR randomization (Gaussian) sigma:=0</div><div class="line">END CListModeDataSAFIR Parameters:=</div></div><!-- fragment --><p>The first 32 bytes of the binary file are interpreted as file signature and matched against the strings "MUPET CListModeData\0", "SAFIR CListModeData\0" and "NeuroLF CListModeData\0". If either is successfull, the class claims it can read the file format. The rest of the file is read as records as specified as template parameter, e.g. <a class="el" href="classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ...">CListRecordSAFIR</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1b9a6bee0e097b0af6d6e2e8c85140d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b9a6bee0e097b0af6d6e2e8c85140d7">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[1/2]</span></h2>
+<a id="a7db19018be5bacd43a03c9af00605d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db19018be5bacd43a03c9af00605d30">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +189,7 @@ template&lt;class EventDataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html">stir::SAFIRCListmodeInputFileFormat</a>&lt; EventDataType &gt;::read_from_file </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html">stir::SAFIRCListmodeInputFileFormat</a>&lt; EventDataType &gt;::read_from_file </td>
           <td>(</td>
           <td class="paramtype">std::istream &amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -197,7 +198,7 @@ template&lt;class EventDataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,8 +213,8 @@ template&lt;class EventDataType &gt; </div>
 
 </div>
 </div>
-<a id="a057156d5d67ee2a516945acd37a4a242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a057156d5d67ee2a516945acd37a4a242">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[2/2]</span></h2>
+<a id="abb57d5e086b0541459e7bdd9cf585f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb57d5e086b0541459e7bdd9cf585f98">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +225,7 @@ template&lt;class EventDataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html">stir::SAFIRCListmodeInputFileFormat</a>&lt; EventDataType &gt;::read_from_file </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classstir_1_1ListModeData.html">data_type</a>&gt; <a class="el" href="classstir_1_1SAFIRCListmodeInputFileFormat.html">stir::SAFIRCListmodeInputFileFormat</a>&lt; EventDataType &gt;::read_from_file </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -233,7 +234,7 @@ template&lt;class EventDataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -248,8 +249,8 @@ template&lt;class EventDataType &gt; </div>
 
 </div>
 </div>
-<a id="a7f9bdcfc9b54d0c5ebdc5cfcc9862416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f9bdcfc9b54d0c5ebdc5cfcc9862416">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="a3828455162b6a0aae2df54d4aed214cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3828455162b6a0aae2df54d4aed214cd">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +269,7 @@ template&lt;class EventDataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -286,7 +287,7 @@ template&lt;class EventDataType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

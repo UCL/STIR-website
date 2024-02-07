@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -81,20 +81,20 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ae8c7a7f54982aa3c0dc6b9b44b2659ee">PLSPrior</a> (const bool <a class="el" href="classstir_1_1PLSPrior.html#a75f319f1ab80e246d482f69ebbc5ac32">only_2D</a>, float penalization_factor)</td></tr>
 <tr class="memdesc:ae8c7a7f54982aa3c0dc6b9b44b2659ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs it explicitly. <br /></td></tr>
 <tr class="separator:ae8c7a7f54982aa3c0dc6b9b44b2659ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a6992fa06a4a9dce8a1fabd83c79d5202">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object.  <a href="#a6992fa06a4a9dce8a1fabd83c79d5202">More...</a><br /></td></tr>
-<tr class="separator:a6992fa06a4a9dce8a1fabd83c79d5202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fdc402332a1e1410a837e30c49db58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a36fdc402332a1e1410a837e30c49db58">is_convex</a> () const</td></tr>
-<tr class="memdesc:a36fdc402332a1e1410a837e30c49db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#a36fdc402332a1e1410a837e30c49db58">More...</a><br /></td></tr>
-<tr class="separator:a36fdc402332a1e1410a837e30c49db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23af0ed4b934022821417dfebda75b17"><td class="memItemLeft" align="right" valign="top"><a id="a23af0ed4b934022821417dfebda75b17"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a23af0ed4b934022821417dfebda75b17">compute_value</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
-<tr class="memdesc:a23af0ed4b934022821417dfebda75b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function <br /></td></tr>
-<tr class="separator:a23af0ed4b934022821417dfebda75b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec647c998531538de990f43b405b4c77"><td class="memItemLeft" align="right" valign="top"><a id="aec647c998531538de990f43b405b4c77"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77">compute_gradient</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_gradient, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
-<tr class="memdesc:aec647c998531538de990f43b405b4c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient <br /></td></tr>
-<tr class="separator:aec647c998531538de990f43b405b4c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797894bad7f932593674c38a45cf8472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a797894bad7f932593674c38a45cf8472">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; const &amp;target_sptr) override</td></tr>
+<tr class="memdesc:a797894bad7f932593674c38a45cf8472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object.  <a href="#a797894bad7f932593674c38a45cf8472">More...</a><br /></td></tr>
+<tr class="separator:a797894bad7f932593674c38a45cf8472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c88fed5ed069d7387921277a7018e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a12c88fed5ed069d7387921277a7018e0">is_convex</a> () const override</td></tr>
+<tr class="memdesc:a12c88fed5ed069d7387921277a7018e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#a12c88fed5ed069d7387921277a7018e0">More...</a><br /></td></tr>
+<tr class="separator:a12c88fed5ed069d7387921277a7018e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574192e7300f93d4b98635fb04051e5f"><td class="memItemLeft" align="right" valign="top"><a id="a574192e7300f93d4b98635fb04051e5f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a574192e7300f93d4b98635fb04051e5f">compute_value</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) override</td></tr>
+<tr class="memdesc:a574192e7300f93d4b98635fb04051e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function <br /></td></tr>
+<tr class="separator:a574192e7300f93d4b98635fb04051e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107b8d32bd145eb1708453401c7dbc09"><td class="memItemLeft" align="right" valign="top"><a id="a107b8d32bd145eb1708453401c7dbc09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09">compute_gradient</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_gradient, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) override</td></tr>
+<tr class="memdesc:a107b8d32bd145eb1708453401c7dbc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient <br /></td></tr>
+<tr class="separator:a107b8d32bd145eb1708453401c7dbc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a8ffa5ae0361d2bec026beb65045bf4d9">get_kappa_sptr</a> () const</td></tr>
 <tr class="memdesc:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current kappa image  <a href="#a8ffa5ae0361d2bec026beb65045bf4d9">More...</a><br /></td></tr>
 <tr class="separator:a8ffa5ae0361d2bec026beb65045bf4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,10 +119,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a3ab7c22709196b6b7dde33be1d37694f">set_alpha</a> (const double)</td></tr>
 <tr class="memdesc:a3ab7c22709196b6b7dde33be1d37694f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set alpha parameter <br /></td></tr>
 <tr class="separator:a3ab7c22709196b6b7dde33be1d37694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace249c6dc1fa5615d332af1dfa85b689"><td class="memItemLeft" align="right" valign="top"><a id="ace249c6dc1fa5615d332af1dfa85b689"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ace249c6dc1fa5615d332af1dfa85b689">set_anatomical_image_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:ace249c6dc1fa5615d332af1dfa85b689"><td class="mdescLeft">&#160;</td><td class="mdescRight">set anatomical pointer <br /></td></tr>
-<tr class="separator:ace249c6dc1fa5615d332af1dfa85b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab533fd1ad2bf6e84882ca361294ce600"><td class="memItemLeft" align="right" valign="top"><a id="ab533fd1ad2bf6e84882ca361294ce600"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ab533fd1ad2bf6e84882ca361294ce600">set_anatomical_image_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; &amp;)</td></tr>
+<tr class="memdesc:ab533fd1ad2bf6e84882ca361294ce600"><td class="mdescLeft">&#160;</td><td class="mdescRight">set anatomical pointer <br /></td></tr>
+<tr class="separator:ab533fd1ad2bf6e84882ca361294ce600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678362ea0cf3425a11a43de1c2e38a0c"><td class="memItemLeft" align="right" valign="top"><a id="a678362ea0cf3425a11a43de1c2e38a0c"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a678362ea0cf3425a11a43de1c2e38a0c">get_anatomical_image_sptr</a> () const</td></tr>
 <tr class="memdesc:a678362ea0cf3425a11a43de1c2e38a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get anatomical pointer <br /></td></tr>
@@ -131,10 +131,10 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">D
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a2f0f67ac66488550cd78be21f7712871">set_anatomical_filename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:a2f0f67ac66488550cd78be21f7712871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set anatomical filename. <br /></td></tr>
 <tr class="separator:a2f0f67ac66488550cd78be21f7712871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0f098a089df28d7ac6888e13e2e060"><td class="memItemLeft" align="right" valign="top"><a id="a7d0f098a089df28d7ac6888e13e2e060"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a7d0f098a089df28d7ac6888e13e2e060">set_kappa_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:a7d0f098a089df28d7ac6888e13e2e060"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
-<tr class="separator:a7d0f098a089df28d7ac6888e13e2e060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244c0caa2815e3a90c68d28fd70261a2"><td class="memItemLeft" align="right" valign="top"><a id="a244c0caa2815e3a90c68d28fd70261a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a244c0caa2815e3a90c68d28fd70261a2">set_kappa_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; &amp;)</td></tr>
+<tr class="memdesc:a244c0caa2815e3a90c68d28fd70261a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
+<tr class="separator:a244c0caa2815e3a90c68d28fd70261a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3103f7205109991c8dda70fa7666db"><td class="memItemLeft" align="right" valign="top"><a id="ade3103f7205109991c8dda70fa7666db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ade3103f7205109991c8dda70fa7666db">set_kappa_filename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:ade3103f7205109991c8dda70fa7666db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set kappa filename. <br /></td></tr>
@@ -152,14 +152,14 @@ template&lt;&gt; </td></tr>
 <tr class="memitem:adc14480e3d089e3e4fa491aa2a260d89"><td class="memTemplItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registered_name</b></td></tr>
 <tr class="separator:adc14480e3d089e3e4fa491aa2a260d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; PLSPrior&lt; elemT &gt;, GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;, GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt; &gt;</a></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">compute_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) const</td></tr>
 <tr class="memdesc:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes a single row of the Hessian.  <a href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">More...</a><br /></td></tr>
@@ -206,21 +206,29 @@ static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa16e17866613ed2c24234d7c63689b77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#aa16e17866613ed2c24234d7c63689b77">set_defaults</a> ()</td></tr>
-<tr class="memdesc:aa16e17866613ed2c24234d7c63689b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="#aa16e17866613ed2c24234d7c63689b77">More...</a><br /></td></tr>
-<tr class="separator:aa16e17866613ed2c24234d7c63689b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e03404df1a6c62e121c08fbf80eec1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a45e03404df1a6c62e121c08fbf80eec1">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a45e03404df1a6c62e121c08fbf80eec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets key for penalisation factor  <a href="#a45e03404df1a6c62e121c08fbf80eec1">More...</a><br /></td></tr>
-<tr class="separator:a45e03404df1a6c62e121c08fbf80eec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cde9c4e1f94a0031cfce689e562f09"><td class="memItemLeft" align="right" valign="top"><a id="ad6cde9c4e1f94a0031cfce689e562f09"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ad6cde9c4e1f94a0031cfce689e562f09">post_processing</a> ()</td></tr>
-<tr class="memdesc:ad6cde9c4e1f94a0031cfce689e562f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword is present <br /></td></tr>
-<tr class="separator:ad6cde9c4e1f94a0031cfce689e562f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a775307b10c1bf9efe1b7a86dafb37"><td class="memItemLeft" align="right" valign="top"><a id="a94a775307b10c1bf9efe1b7a86dafb37"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a94a775307b10c1bf9efe1b7a86dafb37">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_image_estimate) const</td></tr>
-<tr class="memdesc:a94a775307b10c1bf9efe1b7a86dafb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
-<tr class="separator:a94a775307b10c1bf9efe1b7a86dafb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08349a484c39d8af7f9c8fb315cf1c7c"><td class="memItemLeft" align="right" valign="top"><a id="a08349a484c39d8af7f9c8fb315cf1c7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a08349a484c39d8af7f9c8fb315cf1c7c">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a08349a484c39d8af7f9c8fb315cf1c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
+<tr class="separator:a08349a484c39d8af7f9c8fb315cf1c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f36fc739f4e9404f59da6d03ce2e58"><td class="memItemLeft" align="right" valign="top"><a id="a81f36fc739f4e9404f59da6d03ce2e58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a81f36fc739f4e9404f59da6d03ce2e58">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a81f36fc739f4e9404f59da6d03ce2e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:a81f36fc739f4e9404f59da6d03ce2e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656cd86eb471765207f9b2b21949fbf8"><td class="memItemLeft" align="right" valign="top"><a id="a656cd86eb471765207f9b2b21949fbf8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a656cd86eb471765207f9b2b21949fbf8">post_processing</a> () override</td></tr>
+<tr class="memdesc:a656cd86eb471765207f9b2b21949fbf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword is present <br /></td></tr>
+<tr class="separator:a656cd86eb471765207f9b2b21949fbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c1bbfe71b92063af0dbc0bd18e4bb8"><td class="memItemLeft" align="right" valign="top"><a id="a09c1bbfe71b92063af0dbc0bd18e4bb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#a09c1bbfe71b92063af0dbc0bd18e4bb8">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_image_estimate) const override</td></tr>
+<tr class="memdesc:a09c1bbfe71b92063af0dbc0bd18e4bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
+<tr class="separator:a09c1bbfe71b92063af0dbc0bd18e4bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
+<tr class="memitem:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">set_defaults</a> () override</td></tr>
+<tr class="memdesc:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">More...</a><br /></td></tr>
+<tr class="separator:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets key for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">More...</a><br /></td></tr>
+<tr class="separator:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a6c3b6f203ad7f47a159be6a5edb7ee65"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a6c3b6f203ad7f47a159be6a5edb7ee65">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_estimate) const</td></tr>
 <tr class="memdesc:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
@@ -237,11 +245,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a75f319f1ab80e246d482f69ebbc5ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">can be set during parsing to restrict the gradient calculation to the 2D case <br /></td></tr>
 <tr class="separator:a75f319f1ab80e246d482f69ebbc5ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad1ef6500da28af5789997096d5262b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#afad1ef6500da28af5789997096d5262b">gradient_filename_prefix</a></td></tr>
-<tr class="memdesc:afad1ef6500da28af5789997096d5262b"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77" title="compute gradient ">compute_gradient()</a> is called.  <a href="#afad1ef6500da28af5789997096d5262b">More...</a><br /></td></tr>
+<tr class="memdesc:afad1ef6500da28af5789997096d5262b"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09" title="compute gradient ">compute_gradient()</a> is called.  <a href="#afad1ef6500da28af5789997096d5262b">More...</a><br /></td></tr>
 <tr class="separator:afad1ef6500da28af5789997096d5262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63c875750fb5ad451850cc3e869eb04"><td class="memItemLeft" align="right" valign="top"><a id="ae63c875750fb5ad451850cc3e869eb04"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPrior.html#ae63c875750fb5ad451850cc3e869eb04">kappa_filename</a></td></tr>
-<tr class="memdesc:ae63c875750fb5ad451850cc3e869eb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image that will be read by <a class="el" href="classstir_1_1PLSPrior.html#ad6cde9c4e1f94a0031cfce689e562f09" title="the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword i...">post_processing()</a> <br /></td></tr>
+<tr class="memdesc:ae63c875750fb5ad451850cc3e869eb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image that will be read by <a class="el" href="classstir_1_1PLSPrior.html#a656cd86eb471765207f9b2b21949fbf8" title="the parsing will only override any exixting kappa-image or anatomical-image if the relevant keyword i...">post_processing()</a> <br /></td></tr>
 <tr class="separator:ae63c875750fb5ad451850cc3e869eb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac23ee1c80657f5646ae69cf527988d35"><td class="memItemLeft" align="right" valign="top"><a id="ac23ee1c80657f5646ae69cf527988d35"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>anatomical_filename</b></td></tr>
@@ -333,8 +341,8 @@ gradient filename prefix:=
 END PLS Prior Parameters:=
 </pre> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6992fa06a4a9dce8a1fabd83c79d5202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6992fa06a4a9dce8a1fabd83c79d5202">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a797894bad7f932593674c38a45cf8472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797894bad7f932593674c38a45cf8472">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,25 +355,25 @@ template&lt;typename elemT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::set_up </td>
           <td>(</td>
-          <td class="paramtype">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>target_sptr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Has to be called before using this object. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo:</a></b></dt><dd>set the anatomical image to zero if not defined </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000147">Todo:</a></b></dt><dd>set the anatomical image to zero if not defined </dd></dl>
 
 </div>
 </div>
-<a id="a36fdc402332a1e1410a837e30c49db58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36fdc402332a1e1410a837e30c49db58">&#9670;&nbsp;</a></span>is_convex()</h2>
+<a id="a12c88fed5ed069d7387921277a7018e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c88fed5ed069d7387921277a7018e0">&#9670;&nbsp;</a></span>is_convex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +392,7 @@ template&lt;typename elemT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -416,76 +424,6 @@ template&lt;typename elemT &gt; </div>
 <p>get current kappa image </p>
 <dl class="section warning"><dt>Warning</dt><dd>As this function returns a shared_ptr, this is dangerous. You should not modify the image by manipulating the image refered to by this pointer. Unpredictable results will occur. </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1PLSPrior.html#a7d0f098a089df28d7ac6888e13e2e060">stir::PLSPrior&lt; elemT &gt;::set_kappa_sptr()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PLSPrior.html#a3ab7c22709196b6b7dde33be1d37694f">stir::PLSPrior&lt; elemT &gt;::set_alpha()</a>.</p>
-
-</div>
-</div>
-<a id="aa16e17866613ed2c24234d7c63689b77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16e17866613ed2c24234d7c63689b77">&#9670;&nbsp;</a></span>set_defaults()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::set_defaults </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>sets value for penalisation factor </p>
-<p>Has to be called by set_defaults in the leaf-class </p>
-
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedPrior.html#a45c5fac9239c1ddef8a456b948e20a7f">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PLSPrior.html#ae8c7a7f54982aa3c0dc6b9b44b2659ee">stir::PLSPrior&lt; elemT &gt;::PLSPrior()</a>.</p>
-
-</div>
-</div>
-<a id="a45e03404df1a6c62e121c08fbf80eec1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e03404df1a6c62e121c08fbf80eec1">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1PLSPrior.html">stir::PLSPrior</a>&lt; elemT &gt;::initialise_keymap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>sets key for penalisation factor </p>
-<p>Has to be called by initialise_keymap in the leaf-class </p>
-
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedPrior.html#aea8e3c13ab763890ec89b6780b8ab1a4">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -511,10 +449,10 @@ template&lt;typename elemT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77" title="compute gradient ">compute_gradient()</a> is called. </p>
+<p>filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09" title="compute gradient ">compute_gradient()</a> is called. </p>
 <p>An internal counter is used to keep track of the number of times the gradient is computed. The filename will be constructed by concatenating gradient_filename_prefix and the counter. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PLSPrior.html#aec647c998531538de990f43b405b4c77">stir::PLSPrior&lt; elemT &gt;::compute_gradient()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09">stir::PLSPrior&lt; elemT &gt;::compute_gradient()</a>.</p>
 
 </div>
 </div>
@@ -525,7 +463,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

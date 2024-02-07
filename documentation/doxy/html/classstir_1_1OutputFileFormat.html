@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -173,18 +173,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9fff3eb437ca9296ab61bad5ec7e5792"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a9fff3eb437ca9296ab61bad5ec7e5792">actual_write_to_file</a> (std::string &amp;filename, const DataT &amp;density) const =0</td></tr>
 <tr class="memdesc:a9fff3eb437ca9296ab61bad5ec7e5792"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual function called by <a class="el" href="classstir_1_1OutputFileFormat.html#a38ec2aaf854ddb2a993852c9a8f2c897" title="Write a single image to file. ">write_to_file()</a>  <a href="#a9fff3eb437ca9296ab61bad5ec7e5792">More...</a><br /></td></tr>
 <tr class="separator:a9fff3eb437ca9296ab61bad5ec7e5792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd77e6f7a0538f76e263fa0d664cdd2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a0cd77e6f7a0538f76e263fa0d664cdd2">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a0cd77e6f7a0538f76e263fa0d664cdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for output data type  <a href="#a0cd77e6f7a0538f76e263fa0d664cdd2">More...</a><br /></td></tr>
-<tr class="separator:a0cd77e6f7a0538f76e263fa0d664cdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38451209ad915b57b46780a52d5625db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a38451209ad915b57b46780a52d5625db">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a38451209ad915b57b46780a52d5625db"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets keys for output data type for parsing  <a href="#a38451209ad915b57b46780a52d5625db">More...</a><br /></td></tr>
-<tr class="separator:a38451209ad915b57b46780a52d5625db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fdfbf72167ef0566b4455c60de39a5b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a9fdfbf72167ef0566b4455c60de39a5b">post_processing</a> ()</td></tr>
-<tr class="memdesc:a9fdfbf72167ef0566b4455c60de39a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if parameters have sensible values after parsing.  <a href="#a9fdfbf72167ef0566b4455c60de39a5b">More...</a><br /></td></tr>
-<tr class="separator:a9fdfbf72167ef0566b4455c60de39a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f10a2ddd265407049dc6e6481fe954"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a72f10a2ddd265407049dc6e6481fe954">set_key_values</a> ()</td></tr>
-<tr class="memdesc:a72f10a2ddd265407049dc6e6481fe954"><td class="mdescLeft">&#160;</td><td class="mdescRight">overloaded member for <a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d" title="This will be called before parsing or parameter_info is called. ">ParsingObject::set_key_values()</a>  <a href="#a72f10a2ddd265407049dc6e6481fe954">More...</a><br /></td></tr>
-<tr class="separator:a72f10a2ddd265407049dc6e6481fe954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ebc0aaa06e18ab0b064205887e1d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a82ebc0aaa06e18ab0b064205887e1d16">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a82ebc0aaa06e18ab0b064205887e1d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for output data type  <a href="#a82ebc0aaa06e18ab0b064205887e1d16">More...</a><br /></td></tr>
+<tr class="separator:a82ebc0aaa06e18ab0b064205887e1d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da06fd8df9a3aea3b9df699d5b96993"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a9da06fd8df9a3aea3b9df699d5b96993">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a9da06fd8df9a3aea3b9df699d5b96993"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets keys for output data type for parsing  <a href="#a9da06fd8df9a3aea3b9df699d5b96993">More...</a><br /></td></tr>
+<tr class="separator:a9da06fd8df9a3aea3b9df699d5b96993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3327e3ef05d7708795448fa856388f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#a3327e3ef05d7708795448fa856388f22">post_processing</a> () override</td></tr>
+<tr class="memdesc:a3327e3ef05d7708795448fa856388f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if parameters have sensible values after parsing.  <a href="#a3327e3ef05d7708795448fa856388f22">More...</a><br /></td></tr>
+<tr class="separator:a3327e3ef05d7708795448fa856388f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42f0c3f90f60280870fc63ad491bb87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1OutputFileFormat.html#aa42f0c3f90f60280870fc63ad491bb87">set_key_values</a> () override</td></tr>
+<tr class="memdesc:aa42f0c3f90f60280870fc63ad491bb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">overloaded member for <a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d" title="This will be called before parsing or parameter_info is called. ">ParsingObject::set_key_values()</a>  <a href="#aa42f0c3f90f60280870fc63ad491bb87">More...</a><br /></td></tr>
+<tr class="separator:aa42f0c3f90f60280870fc63ad491bb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -233,7 +233,7 @@ class stir::OutputFileFormat&lt; DataT &gt;</h3>
 
  scale_to_write_data:=0
 </pre> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd><p class="startdd">Support projection data </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000056">Todo:</a></b></dt><dd><p class="startdd">Support projection data </p>
 <p class="enddd">Provide functions that enable the user to inquire about capabilities. For instance, supports_multi_time_frames(), supports_different_xy_pixel_size() etc. </p>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -276,7 +276,7 @@ template&lt;typename DataT&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Succeeded::yes if the file was successfully written.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>In the case of file formats that use a separate header file, the <em>filename</em> argument at input is/should be used as a filename for the file with the actual data. At output however, the name of the header file will/should be returned. This is all a bit messy, so it's <b>recommended</b> to <b>not</b> use an extension for the output filename. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1TestBSplineTransformation.html#a769cf917f3d3036706214588d3e4894d">stir::TestBSplineTransformation::run_transformation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">stir::ScatterEstimation::process_data()</a>, and <a class="el" href="classstir_1_1TestBSplineTransformation.html#a769cf917f3d3036706214588d3e4894d">stir::TestBSplineTransformation::run_transformation()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;typename DataT&gt; </div>
 <p>Returns type actually used. Calls <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da" title="Print warning with format string a la printf. ">warning()</a> with some text if the requested type is not supported.</p>
 <p>Default implementation accepts any byte order. </p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ITKOutputFileFormat.html#aa64673ee83196e628dfb5752e4dd59bd">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#ae587ab9033aa345494ac02112b048ce5">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#af5587c5a96a5a6140fe161cea7327a17">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#a1f958981781693922fb28ba4f738b39e">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a3378cfa281fec2d94163ecca836b494d">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#af51c89f503f6737c52589cbe49bf24fa">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#a2d52db5c301cd07c18a5f9abc08f4797">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#aa2464b4558492f49aeb6402f9b77f8a1">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#ac1f6ab414a529390b580baa91fea0b96">stir::InterfileOutputFileFormat</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#aa23ee29d4d74f3584091bfe08ab96710">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1ITKOutputFileFormat.html#af5dd9fa86ac20c3410ae75be476efcd3">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#abbad6ddb372eb2e608ff924faa15123a">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#ae587ab9033aa345494ac02112b048ce5">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#a1f958981781693922fb28ba4f738b39e">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a3378cfa281fec2d94163ecca836b494d">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#af51c89f503f6737c52589cbe49bf24fa">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#a4844814bbb5443b2b3dcfa8f38bcda09">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#a9329b2c9ab7b33dfdb5093e8dccad5f8">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#aabbd14c610cd8f69effd2e8824e43b98">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, and <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a8e13abb2f1c841224a65e354ea995389">stir::InterfileOutputFileFormat</a>.</p>
 
 </div>
 </div>
@@ -555,12 +555,12 @@ template&lt;typename DataT&gt; </div>
 <p>This function has to be overloaded by the derived class.</p>
 <p>The reason we do not simply make <a class="el" href="classstir_1_1OutputFileFormat.html#a38ec2aaf854ddb2a993852c9a8f2c897" title="Write a single image to file. ">write_to_file()</a> virtual is that we have 2 versions of write_to_file. C++ rules are such that overloading the virtual function in a derived class means that the other version gets hidden. Having the non-virtual <a class="el" href="classstir_1_1OutputFileFormat.html#a38ec2aaf854ddb2a993852c9a8f2c897" title="Write a single image to file. ">write_to_file()</a> call the virtual <a class="el" href="classstir_1_1OutputFileFormat.html#a9fff3eb437ca9296ab61bad5ec7e5792" title="virtual function called by write_to_file() ">actual_write_to_file()</a> solves this problem. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a38b6a855264addeb7b6c18758a8bb685">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#adb553e174e8fc518e1a10b05997cea2a">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ITKOutputFileFormat.html#a242eb42fa794d4e35bf906deac9aaa0f">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#a9a7568a2f9eb02bda7bfd9459d1da6d9">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#ad9629ca23ffde75e69ad9dabf0c9fa87">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#ae1e76310610d9418f384c951cc2d772c">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#ad0c4086baecd257a631ce8bfb60e3edd">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#ab18df23f506c1785686df38844228b0e">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a004e8bda52ff0e7c31fef8539654c3bd">stir::InterfileOutputFileFormat</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#ac982122c301c406c19ee24b38086fd28">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a38b6a855264addeb7b6c18758a8bb685">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ITKOutputFileFormat.html#ae16b419b16be3b2b556419e85c4a0e16">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#a529e680d5cdff5a98b4f6b67c0d2d43d">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#a9a7568a2f9eb02bda7bfd9459d1da6d9">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#adb553e174e8fc518e1a10b05997cea2a">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#ad9629ca23ffde75e69ad9dabf0c9fa87">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#ac8ed10aa7e5768cf0be1f59a1e0d1d75">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#adc34817340bb724a58615d877791bdfa">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#af626247b08a74d47b3380dbcc92d5eb7">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, and <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a199202a072a7953c0df4fa63662eba1b">stir::InterfileOutputFileFormat</a>.</p>
 
 </div>
 </div>
-<a id="a0cd77e6f7a0538f76e263fa0d664cdd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cd77e6f7a0538f76e263fa0d664cdd2">&#9670;&nbsp;</a></span>set_defaults()</h2>
+<a id="a82ebc0aaa06e18ab0b064205887e1d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ebc0aaa06e18ab0b064205887e1d16">&#9670;&nbsp;</a></span>set_defaults()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +571,7 @@ template&lt;typename DataT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::set_defaults </td>
+          <td class="memname">void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::set_defaults </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -579,22 +579,20 @@ template&lt;typename DataT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>sets value for output data type </p>
-<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a0cd77e6f7a0538f76e263fa0d664cdd2" title="sets value for output data type ">set_defaults()</a> in the leaf-class </p>
+<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a82ebc0aaa06e18ab0b064205887e1d16" title="sets value for output data type ">set_defaults()</a> in the leaf-class </p>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#ad5f86478612a06b86e28adf664afcd74">stir::ParsingObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a7d3f9101bac66ac2db36f967864720b8">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ITKOutputFileFormat.html#a04f25ce0a47c8ddb8b137e85b17b636c">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a042ad860bfb051ce1d87e4995c33fa9c">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a461bb014efddb48c5078a9261acc91f7">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#ada0adf6ab33b1a8ac9c3d2cd60f9486b">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#ad7981e5bee264d10333af21654e2ec6a">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#afa0b929938fdab5b8ec2084b83ed18fc">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#a88ed3b497ed5fcf2bd1e1c477fc93c4b">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a3fecfbaa1c1b5da4e5310331eebfc1c6">stir::InterfileOutputFileFormat</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#a8306cbc6b4a5cda91d13a8f29c8349f1">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>.</p>
-
 </div>
 </div>
-<a id="a38451209ad915b57b46780a52d5625db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38451209ad915b57b46780a52d5625db">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
+<a id="a9da06fd8df9a3aea3b9df699d5b96993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da06fd8df9a3aea3b9df699d5b96993">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +603,7 @@ template&lt;typename DataT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::initialise_keymap </td>
+          <td class="memname">void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::initialise_keymap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -613,22 +611,20 @@ template&lt;typename DataT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>sets keys for output data type for parsing </p>
-<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a38451209ad915b57b46780a52d5625db" title="sets keys for output data type for parsing ">initialise_keymap()</a> in the leaf-class </p>
+<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a9da06fd8df9a3aea3b9df699d5b96993" title="sets keys for output data type for parsing ">initialise_keymap()</a> in the leaf-class </p>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#a6997d88d93e295e096a7c2eda925d4b6">stir::ParsingObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#ad5e4e1951363ebc1718989b5e4a88b56">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ITKOutputFileFormat.html#a3fb4dc76ceb69ac5fe8fe2784315f029">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a586bbadd4e754bd4bca8dc4b86f717f5">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a7df094c975623e19b094205ad0a80aad">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa5980a23ae4c0b61ca97000e67d12f57">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#a435a8775c429e5079e2ce4a30af229a3">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#aaedeeb88ce09fb02b8742dd951c15636">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#a20a5d7291a15e760eed00208efb43edb">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a3c8341481e01a9e79371f4b5dd20d49f">stir::InterfileOutputFileFormat</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#a968f254d7ea3f8cf3aa45efef200cd9c">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>.</p>
-
 </div>
 </div>
-<a id="a9fdfbf72167ef0566b4455c60de39a5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fdfbf72167ef0566b4455c60de39a5b">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="a3327e3ef05d7708795448fa856388f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3327e3ef05d7708795448fa856388f22">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,7 +635,7 @@ template&lt;typename DataT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::post_processing </td>
+          <td class="memname">bool <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::post_processing </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -647,22 +643,20 @@ template&lt;typename DataT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Checks if parameters have sensible values after parsing. </p>
-<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a9fdfbf72167ef0566b4455c60de39a5b" title="Checks if parameters have sensible values after parsing. ">post_processing()</a> in the leaf-class </p>
+<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a3327e3ef05d7708795448fa856388f22" title="Checks if parameters have sensible values after parsing. ">post_processing()</a> in the leaf-class </p>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">stir::ParsingObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html#a82e1a0b1d33d29397e2633bd1c71787d">stir::ecat::ecat7::ECAT7ParametricDensityOutputFileFormat&lt; DiscretisedDensityT &gt;</a>, <a class="el" href="classstir_1_1ITKOutputFileFormat.html#a54246d7ad803edebe5fa8fdc22238da5">stir::ITKOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html#a31efd9d510690094c7fc507c822cf1db">stir::ecat::ecat7::ECAT7DynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html#a3dc53435807308c45387cd575fddd904">stir::ecat::ecat7::ECAT7OutputFileFormat</a>, <a class="el" href="classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html#aa4d135a68d3b5dd7e5d4f0aaaec3b3d3">stir::ecat::ecat6::ECAT6OutputFileFormat</a>, <a class="el" href="classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html#ad3a66ce5416c9fe2be2ece784556081f">stir::InterfileParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html#a1e1c97bc03afc28088440667676d13c5">stir::MultiDynamicDiscretisedDensityOutputFileFormat</a>, <a class="el" href="classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html#adefdb0efb4d17ca1e44809818b3603cb">stir::MultiParametricDiscretisedDensityOutputFileFormat&lt; DiscDensityT &gt;</a>, <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#aa5e35a98eb2fe69fb77c5c93887f2f27">stir::InterfileOutputFileFormat</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#a70c838dcdcf9e9b4897e032acfce0da1">stir::InterfileDynamicDiscretisedDensityOutputFileFormat</a>.</p>
-
 </div>
 </div>
-<a id="a72f10a2ddd265407049dc6e6481fe954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72f10a2ddd265407049dc6e6481fe954">&#9670;&nbsp;</a></span>set_key_values()</h2>
+<a id="aa42f0c3f90f60280870fc63ad491bb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42f0c3f90f60280870fc63ad491bb87">&#9670;&nbsp;</a></span>set_key_values()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -673,7 +667,7 @@ template&lt;typename DataT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::set_key_values </td>
+          <td class="memname">void <a class="el" href="classstir_1_1OutputFileFormat.html">stir::OutputFileFormat</a>&lt; DataT &gt;::set_key_values </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -681,13 +675,13 @@ template&lt;typename DataT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>overloaded member for <a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d" title="This will be called before parsing or parameter_info is called. ">ParsingObject::set_key_values()</a> </p>
-<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#a72f10a2ddd265407049dc6e6481fe954" title="overloaded member for ParsingObject::set_key_values() ">set_key_values()</a> in the leaf-class (if it redefines it) </p>
+<p>Has to be called by <a class="el" href="classstir_1_1OutputFileFormat.html#aa42f0c3f90f60280870fc63ad491bb87" title="overloaded member for ParsingObject::set_key_values() ">set_key_values()</a> in the leaf-class (if it redefines it) </p>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">stir::ParsingObject</a>.</p>
 
@@ -727,7 +721,7 @@ template&lt;typename DataT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

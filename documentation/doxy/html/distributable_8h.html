@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,20 +78,20 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gadfab5b00692657d7beb222e61f3f5b34"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadfab5b00692657d7beb222e61f3f5b34">stir::RPC_process_related_viewgrams_type</a>(const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, RelatedViewgrams&lt; float &gt; *measured_viewgrams_ptr, int &amp;count, int &amp;count2, double *log_likelihood_ptr, const RelatedViewgrams&lt; float &gt; *additive_binwise_correction_ptr, const RelatedViewgrams&lt; float &gt; *mult_viewgrams_ptr)</td></tr>
-<tr class="memdesc:gadfab5b00692657d7beb222e61f3f5b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for callback functions for <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#gadfab5b00692657d7beb222e61f3f5b34">More...</a><br /></td></tr>
+<tr class="memdesc:gadfab5b00692657d7beb222e61f3f5b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for callback functions for <a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#gadfab5b00692657d7beb222e61f3f5b34">More...</a><br /></td></tr>
 <tr class="separator:gadfab5b00692657d7beb222e61f3f5b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8794e68a9e8007d820dd7c2320be80f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9">stir::setup_distributable_computation</a> (const shared_ptr&lt; ProjectorByBinPair &gt; &amp;proj_pair_sptr, const shared_ptr&lt; const ExamInfo &gt; &amp;exam_info_sptr, const shared_ptr&lt; const ProjDataInfo &gt; proj_data_info_sptr, const shared_ptr&lt; const DiscretisedDensity&lt; 3, float &gt; &gt; &amp;target_sptr, const bool zero_seg0_end_planes, const bool distributed_cache_enabled)</td></tr>
-<tr class="memdesc:ga8794e68a9e8007d820dd7c2320be80f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up parameters before calling <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#ga8794e68a9e8007d820dd7c2320be80f9">More...</a><br /></td></tr>
-<tr class="separator:ga8794e68a9e8007d820dd7c2320be80f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1428c8a048fceaa88bb0458e93ddfa82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga1428c8a048fceaa88bb0458e93ddfa82">stir::setup_distributable_computation</a> (const shared_ptr&lt; ProjectorByBinPair &gt; &amp;proj_pair_sptr, const shared_ptr&lt; const ExamInfo &gt; &amp;exam_info_sptr, const shared_ptr&lt; const ProjDataInfo &gt; proj_data_info_sptr, const shared_ptr&lt; const DiscretisedDensity&lt; 3, float &gt;&gt; &amp;target_sptr, const bool zero_seg0_end_planes, const bool distributed_cache_enabled)</td></tr>
+<tr class="memdesc:ga1428c8a048fceaa88bb0458e93ddfa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up parameters before calling <a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285" title="This function essentially implements a loop over segments and all views in the current subset...">distributable_computation()</a>  <a href="group__distributable.html#ga1428c8a048fceaa88bb0458e93ddfa82">More...</a><br /></td></tr>
+<tr class="separator:ga1428c8a048fceaa88bb0458e93ddfa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c">stir::end_distributable_computation</a> ()</td></tr>
 <tr class="memdesc:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">clean-up after a sequence of computations  <a href="group__distributable.html#ga614ea1d747cfa038bfb5a32fb6aa6a4c">More...</a><br /></td></tr>
 <tr class="separator:ga614ea1d747cfa038bfb5a32fb6aa6a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">stir::distributable_computation</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr)</td></tr>
-<tr class="memdesc:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20">More...</a><br /></td></tr>
-<tr class="separator:ga080ce96edb2b4b7b628a226bcd7d2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdb1ff752fb5146aac1e4fe85a597285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285">stir::distributable_computation</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num)</td></tr>
+<tr class="memdesc:gabdb1ff752fb5146aac1e4fe85a597285"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285">More...</a><br /></td></tr>
+<tr class="separator:gabdb1ff752fb5146aac1e4fe85a597285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf7f34c024eef05fb64204b14eac2734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation</a> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
 <tr class="memdesc:gadf7f34c024eef05fb64204b14eac2734"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">More...</a><br /></td></tr>
 <tr class="separator:gadf7f34c024eef05fb64204b14eac2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,50 +99,50 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Task-ids currently understood by stir::DistributedWorker</div></td></tr>
-<tr class="memitem:ga9503975418a32fa81b03395ce27aacac"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga9503975418a32fa81b03395ce27aacac">stir::task_stop_processing</a> =0</td></tr>
+<tr class="memitem:ga9503975418a32fa81b03395ce27aacac"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#ga9503975418a32fa81b03395ce27aacac">stir::task_stop_processing</a> = 0</td></tr>
 <tr class="separator:ga9503975418a32fa81b03395ce27aacac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace81e0dc91797e9662f3283a93a8ecbf"><td class="memItemLeft" align="right" valign="top">
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_setup_distributable_computation</b> =200</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_setup_distributable_computation</b> = 200</td></tr>
 <tr class="separator:gace81e0dc91797e9662f3283a93a8ecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf1386325d9e82abd48f1ebc413e0a9d6"><td class="memItemLeft" align="right" valign="top">
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_gradient_computation</b> =42</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_gradient_computation</b> = 42</td></tr>
 <tr class="separator:gaf1386325d9e82abd48f1ebc413e0a9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ff6b1c910fa8e4d5debe22520ce1311"><td class="memItemLeft" align="right" valign="top">
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_loglikelihood_computation</b> =43</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_loglikelihood_computation</b> = 43</td></tr>
 <tr class="separator:ga1ff6b1c910fa8e4d5debe22520ce1311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memItemLeft" align="right" valign="top">
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_sensitivity_computation</b> =44</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::task_do_distributable_sensitivity_computation</b> = 44</td></tr>
 <tr class="separator:gaedea24e200474550e7b4e4d0fc1a7636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Tag-names currently used by stir::distributable_computation and related functions</div></td></tr>
 <tr class="memitem:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memItemLeft" align="right" valign="top"><a id="afc83c8ab339a4e60d4512d1c1cb86f20"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::AVAILABLE_NOTIFICATION_TAG</b> =2</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::AVAILABLE_NOTIFICATION_TAG</b> = 2</td></tr>
 <tr class="separator:afc83c8ab339a4e60d4512d1c1cb86f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49b2adc10dfcf6b4c1402e1a3272b4ac"><td class="memItemLeft" align="right" valign="top"><a id="a49b2adc10dfcf6b4c1402e1a3272b4ac"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_ITERATION_TAG</b> =3</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_ITERATION_TAG</b> = 3</td></tr>
 <tr class="separator:a49b2adc10dfcf6b4c1402e1a3272b4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5b9a55c2a261052a1981bd1fcf8320"><td class="memItemLeft" align="right" valign="top"><a id="a8d5b9a55c2a261052a1981bd1fcf8320"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_RECONSTRUCTION_TAG</b> =4</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_RECONSTRUCTION_TAG</b> = 4</td></tr>
 <tr class="separator:a8d5b9a55c2a261052a1981bd1fcf8320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5d67579617607a279e9e8f2ec05275"><td class="memItemLeft" align="right" valign="top"><a id="a3d5d67579617607a279e9e8f2ec05275"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_NOTIFICATION_TAG</b> =5</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::END_NOTIFICATION_TAG</b> = 5</td></tr>
 <tr class="separator:a3d5d67579617607a279e9e8f2ec05275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bffe6d09ff982402f766130cc33888b"><td class="memItemLeft" align="right" valign="top"><a id="a1bffe6d09ff982402f766130cc33888b"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::BINWISE_CORRECTION_TAG</b> =6</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::BINWISE_CORRECTION_TAG</b> = 6</td></tr>
 <tr class="separator:a1bffe6d09ff982402f766130cc33888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68b2e06af5204f1a9d3d04bcb4a0211"><td class="memItemLeft" align="right" valign="top"><a id="ac68b2e06af5204f1a9d3d04bcb4a0211"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::BINWISE_MULT_TAG</b> =66</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::BINWISE_MULT_TAG</b> = 66</td></tr>
 <tr class="separator:ac68b2e06af5204f1a9d3d04bcb4a0211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e65069d999e9b3b8047959d731ad81"><td class="memItemLeft" align="right" valign="top"><a id="ae5e65069d999e9b3b8047959d731ad81"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::REUSE_VIEWGRAM_TAG</b> =10</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::REUSE_VIEWGRAM_TAG</b> = 10</td></tr>
 <tr class="separator:ae5e65069d999e9b3b8047959d731ad81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1811a33427eedf5b73e6a1e6f5b8847c"><td class="memItemLeft" align="right" valign="top"><a id="a1811a33427eedf5b73e6a1e6f5b8847c"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::NEW_VIEWGRAM_TAG</b> =11</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::NEW_VIEWGRAM_TAG</b> = 11</td></tr>
 <tr class="separator:a1811a33427eedf5b73e6a1e6f5b8847c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807df02b86e83e10579fd1220ce6c677"><td class="memItemLeft" align="right" valign="top"><a id="a807df02b86e83e10579fd1220ce6c677"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::USE_DOUBLE_ARG_TAG</b> =70</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::USE_DOUBLE_ARG_TAG</b> = 70</td></tr>
 <tr class="separator:a807df02b86e83e10579fd1220ce6c677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d84b1cc74386d0f44619ffd9db371e"><td class="memItemLeft" align="right" valign="top"><a id="ab5d84b1cc74386d0f44619ffd9db371e"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::USE_OUTPUT_IMAGE_ARG_TAG</b> =71</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stir::USE_OUTPUT_IMAGE_ARG_TAG</b> = 71</td></tr>
 <tr class="separator:ab5d84b1cc74386d0f44619ffd9db371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -161,7 +161,7 @@ PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

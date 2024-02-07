@@ -1,5 +1,7 @@
 <map id="stir::CListRecordLMF" name="stir::CListRecordLMF">
-<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="5,80,104,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="129,80,242,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="134,5,237,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file. " alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node3" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="11,5,121,32"/>
+<area shape="rect" id="node4" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="151,80,250,107"/>
+<area shape="rect" id="node5" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="275,80,388,107"/>
+<area shape="rect" id="node6" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="280,5,383,32"/>
 </map>

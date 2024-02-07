@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a169152cc413089ea2bc07d5e76a3bc64">ForwardProjectorByBin</a> ()</td></tr>
 <tr class="memdesc:a169152cc413089ea2bc07d5e76a3bc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor calls <a class="el" href="classstir_1_1TimedObject.html#a248ec6be3210f8cc2ac629827b8f22d0" title="reset all timers kept by this object ">reset_timers()</a> <br /></td></tr>
 <tr class="separator:a169152cc413089ea2bc07d5e76a3bc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9020572cc7af0d219e938be711be5596"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_sptr)=0</td></tr>
-<tr class="memdesc:a9020572cc7af0d219e938be711be5596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#a9020572cc7af0d219e938be711be5596">More...</a><br /></td></tr>
-<tr class="separator:a9020572cc7af0d219e938be711be5596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb55ec5ef088028dd110a4cc9d3ab1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;density_info_sptr)=0</td></tr>
+<tr class="memdesc:aceb55ec5ef088028dd110a4cc9d3ab1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all necessary geometric info.  <a href="#aceb55ec5ef088028dd110a4cc9d3ab1c">More...</a><br /></td></tr>
+<tr class="separator:aceb55ec5ef088028dd110a4cc9d3ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7cd9789fc3115b7450e8e7b7ed2d5f"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html">DataSymmetriesForViewSegmentNumbers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used</a> () const =0</td></tr>
 <tr class="memdesc:abd7cd9789fc3115b7450e8e7b7ed2d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs on which symmetries the projector handles.  <a href="#abd7cd9789fc3115b7450e8e7b7ed2d5f">More...</a><br /></td></tr>
 <tr class="separator:abd7cd9789fc3115b7450e8e7b7ed2d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,10 +112,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>forward_project</b> (
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#abe2c93af82e080622fa0e6d9a6fd2148">set_input</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;)</td></tr>
 <tr class="memdesc:abe2c93af82e080622fa0e6d9a6fd2148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set input. <br /></td></tr>
 <tr class="separator:abe2c93af82e080622fa0e6d9a6fd2148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1495d7d786c81a56bbd32952692ba5b6"><td class="memItemLeft" align="right" valign="top"><a id="a1495d7d786c81a56bbd32952692ba5b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a1495d7d786c81a56bbd32952692ba5b6">set_pre_data_processor</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &gt; pre_data_processor_sptr)</td></tr>
-<tr class="memdesc:a1495d7d786c81a56bbd32952692ba5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set data processor to use before forward projection. MUST BE CALLED BEFORE SET_INPUT. <br /></td></tr>
-<tr class="separator:a1495d7d786c81a56bbd32952692ba5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d56839d80987d1ad5dc4f344cc467bf"><td class="memItemLeft" align="right" valign="top"><a id="a3d56839d80987d1ad5dc4f344cc467bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a3d56839d80987d1ad5dc4f344cc467bf">set_pre_data_processor</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt;&gt; pre_data_processor_sptr)</td></tr>
+<tr class="memdesc:a3d56839d80987d1ad5dc4f344cc467bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set data processor to use before forward projection. MUST BE CALLED BEFORE SET_INPUT. <br /></td></tr>
+<tr class="separator:a3d56839d80987d1ad5dc4f344cc467bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1TimedObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1TimedObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1TimedObject.html">stir::TimedObject</a></td></tr>
 <tr class="memitem:a248ec6be3210f8cc2ac629827b8f22d0 inherit pub_methods_classstir_1_1TimedObject"><td class="memItemLeft" align="right" valign="top"><a id="a248ec6be3210f8cc2ac629827b8f22d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimedObject.html#a248ec6be3210f8cc2ac629827b8f22d0">reset_timers</a> ()</td></tr>
@@ -168,17 +168,20 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ae6584b65c0b8ee1deb32d189f01b142d"><td class="memItemLeft" align="right" valign="top"><a id="ae6584b65c0b8ee1deb32d189f01b142d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>actual_forward_project</b> (<a class="el" href="classstir_1_1RelatedViewgrams.html">RelatedViewgrams</a>&lt; float &gt; &amp;viewgrams, const int min_axial_pos_num, const int max_axial_pos_num, const int min_tangential_pos_num, const int max_tangential_pos_num)</td></tr>
 <tr class="separator:ae6584b65c0b8ee1deb32d189f01b142d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9cec70293affa9ef496c4f36107217"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">check</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info) const</td></tr>
+<tr class="memdesc:a7b9cec70293affa9ef496c4f36107217"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a>  <a href="#a7b9cec70293affa9ef496c4f36107217">More...</a><br /></td></tr>
+<tr class="separator:a7b9cec70293affa9ef496c4f36107217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6166322bb35b9f53cbd515b584d5ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;density_info) const</td></tr>
-<tr class="memdesc:a5d6166322bb35b9f53cbd515b584d5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a>  <a href="#a5d6166322bb35b9f53cbd515b584d5ee">More...</a><br /></td></tr>
+<tr class="memdesc:a5d6166322bb35b9f53cbd515b584d5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the arguments are the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a>  <a href="#a5d6166322bb35b9f53cbd515b584d5ee">More...</a><br /></td></tr>
 <tr class="separator:a5d6166322bb35b9f53cbd515b584d5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d672d425f4c2ad46fff432844df924"><td class="memItemLeft" align="right" valign="top"><a id="a15d672d425f4c2ad46fff432844df924"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a15d672d425f4c2ad46fff432844df924">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a15d672d425f4c2ad46fff432844df924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
-<tr class="separator:a15d672d425f4c2ad46fff432844df924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a661783a56af61eb4b62e45fde03f8ff4"><td class="memItemLeft" align="right" valign="top"><a id="a661783a56af61eb4b62e45fde03f8ff4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a661783a56af61eb4b62e45fde03f8ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
-<tr class="separator:a661783a56af61eb4b62e45fde03f8ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efb6a61bd6e1da25c8ea5243b014b9d"><td class="memItemLeft" align="right" valign="top"><a id="a4efb6a61bd6e1da25c8ea5243b014b9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a4efb6a61bd6e1da25c8ea5243b014b9d">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a4efb6a61bd6e1da25c8ea5243b014b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
+<tr class="separator:a4efb6a61bd6e1da25c8ea5243b014b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8446024f25bbed2744cea1a8d4df53dc"><td class="memItemLeft" align="right" valign="top"><a id="a8446024f25bbed2744cea1a8d4df53dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a8446024f25bbed2744cea1a8d4df53dc">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a8446024f25bbed2744cea1a8d4df53dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:a8446024f25bbed2744cea1a8d4df53dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a76911426e945844fe3429191db43af77 inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">post_processing</a> ()</td></tr>
 <tr class="memdesc:a76911426e945844fe3429191db43af77 inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="classstir_1_1ParsingObject.html#a76911426e945844fe3429191db43af77">More...</a><br /></td></tr>
@@ -192,16 +195,16 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac6546af3548fb87e2754fd5a0197aea8"><td class="memItemLeft" align="right" valign="top"><a id="ac6546af3548fb87e2754fd5a0197aea8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_already_set_up</b></td></tr>
 <tr class="separator:ac6546af3548fb87e2754fd5a0197aea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71813d9cd38e49d540acad9d6090435"><td class="memItemLeft" align="right" valign="top"><a id="af71813d9cd38e49d540acad9d6090435"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a></td></tr>
-<tr class="memdesc:af71813d9cd38e49d540acad9d6090435"><td class="mdescLeft">&#160;</td><td class="mdescRight">The density ptr set with <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
-<tr class="separator:af71813d9cd38e49d540acad9d6090435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11be609f61c780ae1e2e7a20c56ea1e7"><td class="memItemLeft" align="right" valign="top"><a id="a11be609f61c780ae1e2e7a20c56ea1e7"></a>
+<tr class="memitem:a9570bd9721283aafea7b1f62ac285176"><td class="memItemLeft" align="right" valign="top"><a id="a9570bd9721283aafea7b1f62ac285176"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9570bd9721283aafea7b1f62ac285176">_density_sptr</a></td></tr>
+<tr class="memdesc:a9570bd9721283aafea7b1f62ac285176"><td class="mdescLeft">&#160;</td><td class="mdescRight">The density ptr set with <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="separator:a9570bd9721283aafea7b1f62ac285176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b2669ec52f0239c9b5449b963235d6"><td class="memItemLeft" align="right" valign="top"><a id="aa7b2669ec52f0239c9b5449b963235d6"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1DataProcessor.html">DataProcessor</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_pre_data_processor_sptr</b></td></tr>
-<tr class="separator:a11be609f61c780ae1e2e7a20c56ea1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa7b2669ec52f0239c9b5449b963235d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7fd743977dc90ea9ba6ca1348697d3"><td class="memItemLeft" align="right" valign="top"><a id="aae7fd743977dc90ea9ba6ca1348697d3"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a></td></tr>
-<tr class="memdesc:aae7fd743977dc90ea9ba6ca1348697d3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> set by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
+<tr class="memdesc:aae7fd743977dc90ea9ba6ca1348697d3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> set by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a> <br /></td></tr>
 <tr class="separator:aae7fd743977dc90ea9ba6ca1348697d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
@@ -237,8 +240,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for all forward projectors. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9020572cc7af0d219e938be711be5596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9020572cc7af0d219e938be711be5596">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="aceb55ec5ef088028dd110a4cc9d3ab1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb55ec5ef088028dd110a4cc9d3ab1c">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +258,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_sptr</em>&#160;</td>
         </tr>
         <tr>
@@ -272,17 +275,17 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>Stores all necessary geometric info. </p>
-<p>If necessary, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> can be called more than once.</p>
-<p>Derived classes can assume that <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a" title="project the volume into the whole or a subset of proj_data, optionally zeroing the rest ...">forward_project()</a> will be called with input corresponding to the arguments of the last call to <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a>.</p>
+<p>If necessary, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a> can be called more than once.</p>
+<p>Derived classes can assume that <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a" title="project the volume into the whole or a subset of proj_data, optionally zeroing the rest ...">forward_project()</a> will be called with input corresponding to the arguments of the last call to <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>there is currently no check on this. </dd>
 <dd>
 Derived classes have to call set_up from the base class. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a77a4c5338ded9bd98e25ed11ea392608">stir::ForwardProjectorByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a818ec3629c9206bf4433892fceb1f734">stir::ForwardProjectorByBinNiftyPET</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a308d4f86fa742665a3e75c71eb487aae">stir::ForwardProjectorByBinUsingProjMatrixByBin</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a9022280a48d1993ae30e2a584b3d7eb5">stir::ForwardProjectorByBinParallelproj</a>, <a class="el" href="classstir_1_1PresmoothingForwardProjectorByBin.html#af3140cdbc5f42f6516a5a61f2f8f0f1c">stir::PresmoothingForwardProjectorByBin</a>, and <a class="el" href="classstir_1_1PostsmoothingForwardProjectorByBin.html#ad365509c33a218559402ba812327fc96">stir::PostsmoothingForwardProjectorByBin</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a6bddec41bf2ac22ec1da5cc8903d5145">stir::ForwardProjectorByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#afcb2f9072040a14a2d9118e3e446677f">stir::ForwardProjectorByBinNiftyPET</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a8221dc918eb48dcc7f0cb7f57b369565">stir::ForwardProjectorByBinParallelproj</a>, <a class="el" href="classstir_1_1PresmoothingForwardProjectorByBin.html#aaee186394b9873956dfaa753dac01fd3">stir::PresmoothingForwardProjectorByBin</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a66027d55040a12209b611aad731cf438">stir::ForwardProjectorByBinUsingProjMatrixByBin</a>, and <a class="el" href="classstir_1_1PostsmoothingForwardProjectorByBin.html#aeaf9d3f69e24435babaf9a19f7749d47">stir::PostsmoothingForwardProjectorByBin</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9570bd9721283aafea7b1f62ac285176">_density_sptr</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a9022280a48d1993ae30e2a584b3d7eb5">stir::ForwardProjectorByBinParallelproj::set_up()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a308d4f86fa742665a3e75c71eb487aae">stir::ForwardProjectorByBinUsingProjMatrixByBin::set_up()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a818ec3629c9206bf4433892fceb1f734">stir::ForwardProjectorByBinNiftyPET::set_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a66027d55040a12209b611aad731cf438">stir::ForwardProjectorByBinUsingProjMatrixByBin::set_up()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a8221dc918eb48dcc7f0cb7f57b369565">stir::ForwardProjectorByBinParallelproj::set_up()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#afcb2f9072040a14a2d9118e3e446677f">stir::ForwardProjectorByBinNiftyPET::set_up()</a>.</p>
 
 </div>
 </div>
@@ -312,7 +315,7 @@ Derived classes have to call set_up from the base class. </dd></dl>
 <p>Informs on which symmetries the projector handles. </p>
 <p>It should get data related by at least those symmetries. Otherwise, a run-time error will occur (unless the derived class has other behaviour). </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#a69d9eea997bc555ef4365bf262dedc4e">stir::ForwardProjectorByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a8574187c63dfd193169c7dc26935bb89">stir::ForwardProjectorByBinNiftyPET</a>, <a class="el" href="classstir_1_1PresmoothingForwardProjectorByBin.html#aa75d8d59f34d0729e701da83f0d80931">stir::PresmoothingForwardProjectorByBin</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#ada535932adc29570f6e83d222d94e957">stir::ForwardProjectorByBinUsingProjMatrixByBin</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a40e32263f2ffd1651f523e0a40db3d49">stir::ForwardProjectorByBinParallelproj</a>, and <a class="el" href="classstir_1_1PostsmoothingForwardProjectorByBin.html#a42637658fbe3eb9868dc537c463eb453">stir::PostsmoothingForwardProjectorByBin</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ForwardProjectorByBinUsingRayTracing.html#af1b1110203398c4a75e27e030e776157">stir::ForwardProjectorByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a8574187c63dfd193169c7dc26935bb89">stir::ForwardProjectorByBinNiftyPET</a>, <a class="el" href="classstir_1_1PresmoothingForwardProjectorByBin.html#a62b1740909711374e4b8deb0ddf23e3f">stir::PresmoothingForwardProjectorByBin</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a82fe6bde405826bdba3161188e77c008">stir::ForwardProjectorByBinParallelproj</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html#a5097d9be2bf6997c1fb0477f040eb813">stir::ForwardProjectorByBinUsingProjMatrixByBin</a>, and <a class="el" href="classstir_1_1PostsmoothingForwardProjectorByBin.html#afdd87d7df90b9af98396d44f297c6995">stir::PostsmoothingForwardProjectorByBin</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>.</p>
 
@@ -366,7 +369,7 @@ Derived classes have to call set_up from the base class. </dd></dl>
 <p>it overwrites the data already present in the projection data.</p>
 <p>The optional arguments can be used to project only a subset of the data. Subsets are determined as per <a class="el" href="group__recon__buildblock.html#gab09fbf8fe96eabb2f9f32fb5fcc3eac8" title="a helper function to find which view/segments are in a subsetThis function is used by projectors and ...">detail::find_basic_vs_nums_in_subset()</a>. However, this usage will likely be phased out at later stage. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a3171c07a13f8a8013d883c0c2fa466ca">actual_forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a52deff054b019817dc4a8db2abcf9b46">stir::RelatedViewgrams&lt; elemT &gt;::begin()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a042cde517164474e9f94f3846c24d1e9">stir::RelatedViewgrams&lt; elemT &gt;::end()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers::find_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab22ec8a45e3b9064264e9ad6306eba69">stir::RelatedViewgrams&lt; elemT &gt;::get_basic_view_segment_num()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a44c94ed4f2dcd6dd7d5e1a1034a05d63">stir::RelatedViewgrams&lt; elemT &gt;::get_num_viewgrams()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab3e880a7d9379ad5e203baaf017f57e1">stir::RelatedViewgrams&lt; elemT &gt;::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abe2c93af82e080622fa0e6d9a6fd2148">set_input()</a>, and <a class="el" href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">stir::TimedObject::stop_timers()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a3171c07a13f8a8013d883c0c2fa466ca">actual_forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a52deff054b019817dc4a8db2abcf9b46">stir::RelatedViewgrams&lt; elemT &gt;::begin()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">check()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a042cde517164474e9f94f3846c24d1e9">stir::RelatedViewgrams&lt; elemT &gt;::end()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers::find_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab22ec8a45e3b9064264e9ad6306eba69">stir::RelatedViewgrams&lt; elemT &gt;::get_basic_view_segment_num()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a44c94ed4f2dcd6dd7d5e1a1034a05d63">stir::RelatedViewgrams&lt; elemT &gt;::get_num_viewgrams()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab3e880a7d9379ad5e203baaf017f57e1">stir::RelatedViewgrams&lt; elemT &gt;::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abe2c93af82e080622fa0e6d9a6fd2148">set_input()</a>, <a class="el" href="classstir_1_1TimedObject.html#a23a18a40b2f1e1bb4132c1c5347cf12d">stir::TimedObject::stop_timers()</a>, and <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices::timing_pos_num()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#ae175820cd1d4566044893c3f1d4964d6">forward_project()</a>.</p>
 
@@ -421,7 +424,7 @@ Derived classes have to call set_up from the base class. </dd></dl>
 <p>project the volume into the whole proj_data </p>
 <p>it overwrites the data already present in the projection data </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjData.html#a93e155fb1cae1f57eb6e4c02e92ec9b8">stir::ProjData::fill()</a>, <a class="el" href="group__recon__buildblock.html#gab09fbf8fe96eabb2f9f32fb5fcc3eac8">stir::detail::find_basic_vs_nums_in_subset()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1ProjData.html#aa1a6ea4581594636e3c5ffc8926d0c9d">stir::ProjData::get_empty_related_viewgrams()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a1ac406cc7051cec1cabd201bd7d860e3">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a2f317b079be1a8d82a2e9f35cf111526">stir::ProjData::set_related_viewgrams()</a>, <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9570bd9721283aafea7b1f62ac285176">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">check()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1ProjData.html#a93e155fb1cae1f57eb6e4c02e92ec9b8">stir::ProjData::fill()</a>, <a class="el" href="group__recon__buildblock.html#gab09fbf8fe96eabb2f9f32fb5fcc3eac8">stir::detail::find_basic_vs_nums_in_subset()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1ProjData.html#a8f5694c7f0bf9248d0f029b9a379074f">stir::ProjData::get_empty_related_viewgrams()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a1ac406cc7051cec1cabd201bd7d860e3">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a2f317b079be1a8d82a2e9f35cf111526">stir::ProjData::set_related_viewgrams()</a>, <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
 </div>
 </div>
@@ -444,12 +447,46 @@ Derived classes have to call set_up from the base class. </dd></dl>
 <p>project the volume into the viewgrams </p>
 <p>it overwrites the data already present in the viewgram </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a3171c07a13f8a8013d883c0c2fa466ca">actual_forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a52deff054b019817dc4a8db2abcf9b46">stir::RelatedViewgrams&lt; elemT &gt;::begin()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a042cde517164474e9f94f3846c24d1e9">stir::RelatedViewgrams&lt; elemT &gt;::end()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers::find_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab22ec8a45e3b9064264e9ad6306eba69">stir::RelatedViewgrams&lt; elemT &gt;::get_basic_view_segment_num()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a44c94ed4f2dcd6dd7d5e1a1034a05d63">stir::RelatedViewgrams&lt; elemT &gt;::get_num_viewgrams()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab3e880a7d9379ad5e203baaf017f57e1">stir::RelatedViewgrams&lt; elemT &gt;::get_proj_data_info_sptr()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9570bd9721283aafea7b1f62ac285176">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a3171c07a13f8a8013d883c0c2fa466ca">actual_forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a52deff054b019817dc4a8db2abcf9b46">stir::RelatedViewgrams&lt; elemT &gt;::begin()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">check()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a042cde517164474e9f94f3846c24d1e9">stir::RelatedViewgrams&lt; elemT &gt;::end()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DataSymmetriesForViewSegmentNumbers.html#a8d2d0bd18e31e12547e3fb008da7b064">stir::DataSymmetriesForViewSegmentNumbers::find_basic_view_segment_numbers()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab22ec8a45e3b9064264e9ad6306eba69">stir::RelatedViewgrams&lt; elemT &gt;::get_basic_view_segment_num()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#a44c94ed4f2dcd6dd7d5e1a1034a05d63">stir::RelatedViewgrams&lt; elemT &gt;::get_num_viewgrams()</a>, <a class="el" href="classstir_1_1RelatedViewgrams.html#ab3e880a7d9379ad5e203baaf017f57e1">stir::RelatedViewgrams&lt; elemT &gt;::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#abd7cd9789fc3115b7450e8e7b7ed2d5f">get_symmetries_used()</a>, and <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices::timing_pos_num()</a>.</p>
+
+</div>
+</div>
+<a id="a7b9cec70293affa9ef496c4f36107217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9cec70293affa9ef496c4f36107217">&#9670;&nbsp;</a></span>check() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::ForwardProjectorByBin::check </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a> </p>
+<p>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if anything is wrong.</p>
+<p>If overriding this function in a derived class, you need to call this one. </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#a0082cb29815df1b8d7769072817f48f5">stir::ProjDataInfo::parameter_info()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a5d6166322bb35b9f53cbd515b584d5ee">check()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a8221dc918eb48dcc7f0cb7f57b369565">stir::ForwardProjectorByBinParallelproj::set_up()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#afcb2f9072040a14a2d9118e3e446677f">stir::ForwardProjectorByBinNiftyPET::set_up()</a>.</p>
 
 </div>
 </div>
 <a id="a5d6166322bb35b9f53cbd515b584d5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d6166322bb35b9f53cbd515b584d5ee">&#9670;&nbsp;</a></span>check()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6166322bb35b9f53cbd515b584d5ee">&#9670;&nbsp;</a></span>check() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,13 +519,12 @@ Derived classes have to call set_up from the base class. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>check if the argument is the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596" title="Stores all necessary geometric info. ">set_up()</a> </p>
+<p>check if the arguments are the same as what was used for <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aceb55ec5ef088028dd110a4cc9d3ab1c" title="Stores all necessary geometric info. ">set_up()</a> </p>
 <p>calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if anything is wrong.</p>
-<p>If overriding this function in a derived class, you need to call this one. </p>
+<p>If overriding this function in a derived class, you need to call this one.</p>
+<p>Calls check(const ProjDataInfo&amp;) </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#af71813d9cd38e49d540acad9d6090435">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#aae7fd743977dc90ea9ba6ca1348697d3">_proj_data_info_sptr</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#a0082cb29815df1b8d7769072817f48f5">stir::ProjDataInfo::parameter_info()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a33f707ceb84025357b6b1ab32d791d0a">forward_project()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a9022280a48d1993ae30e2a584b3d7eb5">stir::ForwardProjectorByBinParallelproj::set_up()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9020572cc7af0d219e938be711be5596">set_up()</a>, and <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a818ec3629c9206bf4433892fceb1f734">stir::ForwardProjectorByBinNiftyPET::set_up()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a9570bd9721283aafea7b1f62ac285176">_density_sptr</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">check()</a>, and <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 </div>
 </div>
@@ -499,7 +535,7 @@ Derived classes have to call set_up from the base class. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

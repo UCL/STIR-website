@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,6 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae835c59ce855b24eef4220656c9df2fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ae835c59ce855b24eef4220656c9df2fc">parse</a> (const char *const filename, const bool write_warnings=true)</td></tr>
 <tr class="memdesc:ae835c59ce855b24eef4220656c9df2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise  <a href="#ae835c59ce855b24eef4220656c9df2fc">More...</a><br /></td></tr>
 <tr class="separator:ae835c59ce855b24eef4220656c9df2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f12c8e7c160a5b317c445a61ee7817"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a36f12c8e7c160a5b317c445a61ee7817">parse</a> (const std::string &amp;, const bool write_warnings=true)</td></tr>
+<tr class="separator:a36f12c8e7c160a5b317c445a61ee7817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0df590f8e6b676f5d5410da654021a"><td class="memItemLeft" align="right" valign="top"><a id="ace0df590f8e6b676f5d5410da654021a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a> (const std::string &amp;keyword, float *variable_ptr)</td></tr>
 <tr class="memdesc:ace0df590f8e6b676f5d5410da654021a"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a float and put it in *variable_ptr <br /></td></tr>
@@ -94,10 +96,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a5fe39db966516191684e8a21b8194465">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; double &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:a5fe39db966516191684e8a21b8194465"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a double and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
 <tr class="separator:a5fe39db966516191684e8a21b8194465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc419bdab24cbb90848e4c33bd634e58"><td class="memItemLeft" align="right" valign="top"><a id="adc419bdab24cbb90848e4c33bd634e58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#adc419bdab24cbb90848e4c33bd634e58">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; double &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:adc419bdab24cbb90848e4c33bd634e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of doubles and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
-<tr class="separator:adc419bdab24cbb90848e4c33bd634e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73509c99ddf2a6072e0447459be7a"><td class="memItemLeft" align="right" valign="top"><a id="a39e73509c99ddf2a6072e0447459be7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a39e73509c99ddf2a6072e0447459be7a">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; double &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:a39e73509c99ddf2a6072e0447459be7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of doubles and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
+<tr class="separator:a39e73509c99ddf2a6072e0447459be7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503b8d99edc00f245e3b8c505d940c9a"><td class="memItemLeft" align="right" valign="top"><a id="a503b8d99edc00f245e3b8c505d940c9a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a503b8d99edc00f245e3b8c505d940c9a">add_key</a> (const std::string &amp;keyword, int *variable_ptr)</td></tr>
 <tr class="memdesc:a503b8d99edc00f245e3b8c505d940c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a int and put it in *variable_ptr <br /></td></tr>
@@ -110,10 +112,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ad24b5427ebf63dfc5261bec995d26590">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; int &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:ad24b5427ebf63dfc5261bec995d26590"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a int and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
 <tr class="separator:ad24b5427ebf63dfc5261bec995d26590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020cb14be59d52cac7dc9301c2054ef6"><td class="memItemLeft" align="right" valign="top"><a id="a020cb14be59d52cac7dc9301c2054ef6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a020cb14be59d52cac7dc9301c2054ef6">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; int &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:a020cb14be59d52cac7dc9301c2054ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of ints and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
-<tr class="separator:a020cb14be59d52cac7dc9301c2054ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbedfe7fa9da75a107b35e21c060dfb0"><td class="memItemLeft" align="right" valign="top"><a id="acbedfe7fa9da75a107b35e21c060dfb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#acbedfe7fa9da75a107b35e21c060dfb0">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::vector&lt; int &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:acbedfe7fa9da75a107b35e21c060dfb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a vectorised keyword. When parsing, parse its value as a list of ints and put it in <code></code>(*variable_ptr)[current_index] <br /></td></tr>
+<tr class="separator:acbedfe7fa9da75a107b35e21c060dfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa105e778bdb0f79a2414c62b67fe81e3"><td class="memItemLeft" align="right" valign="top"><a id="aa105e778bdb0f79a2414c62b67fe81e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#aa105e778bdb0f79a2414c62b67fe81e3">add_key</a> (const std::string &amp;keyword, long int *variable_ptr)</td></tr>
 <tr class="memdesc:aa105e778bdb0f79a2414c62b67fe81e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a int and put it in *variable_ptr <br /></td></tr>
@@ -157,10 +159,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a4c57cacf9f0a3449d9f605e496fabd16">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, float &gt; *variable_ptr)</td></tr>
 <tr class="memdesc:a4c57cacf9f0a3449d9f605e496fabd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of floats and put its value in *variable_ptr <br /></td></tr>
 <tr class="separator:a4c57cacf9f0a3449d9f605e496fabd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0656bd690ab288672772fc5bbc0b911"><td class="memItemLeft" align="right" valign="top"><a id="ae0656bd690ab288672772fc5bbc0b911"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#ae0656bd690ab288672772fc5bbc0b911">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt; &gt; *variable_ptr)</td></tr>
-<tr class="memdesc:ae0656bd690ab288672772fc5bbc0b911"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of a 3d array of floats and put its value in *variable_ptr <br /></td></tr>
-<tr class="separator:ae0656bd690ab288672772fc5bbc0b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc20e072731b32c6ce27f2a533bddbaa"><td class="memItemLeft" align="right" valign="top"><a id="adc20e072731b32c6ce27f2a533bddbaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#adc20e072731b32c6ce27f2a533bddbaa">add_key</a> (const std::string &amp;keyword, <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&gt; *variable_ptr)</td></tr>
+<tr class="memdesc:adc20e072731b32c6ce27f2a533bddbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a keyword. When parsing, parse its value as a 3d <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> of a 3d array of floats and put its value in *variable_ptr <br /></td></tr>
+<tr class="separator:adc20e072731b32c6ce27f2a533bddbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b547427bbe54d728a5a71fc1e205f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a3b547427bbe54d728a5a71fc1e205f15">add_key</a> (const std::string &amp;keyword, std::string *variable_ptr)</td></tr>
 <tr class="separator:a3b547427bbe54d728a5a71fc1e205f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf7e5099fed5d1e68c923cfdbda8342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#abcf7e5099fed5d1e68c923cfdbda8342">add_vectorised_key</a> (const std::string &amp;keyword, std::vector&lt; std::string &gt; *variable_ptr)</td></tr>
@@ -188,6 +190,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a43471a913ec1d55d23b690df8880247f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a43471a913ec1d55d23b690df8880247f">add_parsing_key</a> (const std::string &amp;keyword, shared_ptr&lt; ParsingClass &gt; *parsed_object_ptr_ptr)</td></tr>
 <tr class="memdesc:a43471a913ec1d55d23b690df8880247f"><td class="mdescLeft">&#160;</td><td class="mdescRight">add keyword corresponding to an object that will parse the next keys itself  <a href="#a43471a913ec1d55d23b690df8880247f">More...</a><br /></td></tr>
 <tr class="separator:a43471a913ec1d55d23b690df8880247f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174427fa54ff09cba8765295ebb5bb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">remove_key</a> (const std::string &amp;keyword)</td></tr>
+<tr class="memdesc:a9174427fa54ff09cba8765295ebb5bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a key from the kep map.  <a href="#a9174427fa54ff09cba8765295ebb5bb2">More...</a><br /></td></tr>
+<tr class="separator:a9174427fa54ff09cba8765295ebb5bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d051fee42cb2668484ff8fa90f9b1bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a6d051fee42cb2668484ff8fa90f9b1bb">add_alias_key</a> (const std::string &amp;keyword, const std::string &amp;alias, bool deprecated_key=true)</td></tr>
+<tr class="memdesc:a6d051fee42cb2668484ff8fa90f9b1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alias for keyword.  <a href="#a6d051fee42cb2668484ff8fa90f9b1bb">More...</a><br /></td></tr>
+<tr class="separator:a6d051fee42cb2668484ff8fa90f9b1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b28df9f1085e73e037fa829d99dbd3a"><td class="memItemLeft" align="right" valign="top"><a id="a5b28df9f1085e73e037fa829d99dbd3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a5b28df9f1085e73e037fa829d99dbd3a">print_keywords_to_stream</a> (std::ostream &amp;) const</td></tr>
 <tr class="memdesc:a5b28df9f1085e73e037fa829d99dbd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all keywords (in random order) to the stream. <br /></td></tr>
@@ -252,9 +260,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a71a0e8aacf9736fa6c3d31e4425ea655"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a71a0e8aacf9736fa6c3d31e4425ea655">add_key</a> (const std::string &amp;keyword, KeyArgument::type t, void *variable, const int vectorised_key_level, const ASCIIlist_type *const list=0)</td></tr>
 <tr class="memdesc:a71a0e8aacf9736fa6c3d31e4425ea655"><td class="mdescLeft">&#160;</td><td class="mdescRight">version that defaults 'function' to set_variable  <a href="#a71a0e8aacf9736fa6c3d31e4425ea655">More...</a><br /></td></tr>
 <tr class="separator:a71a0e8aacf9736fa6c3d31e4425ea655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9174427fa54ff09cba8765295ebb5bb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1KeyParser.html#a9174427fa54ff09cba8765295ebb5bb2">remove_key</a> (const std::string &amp;keyword)</td></tr>
-<tr class="memdesc:a9174427fa54ff09cba8765295ebb5bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a key from the kep map.  <a href="#a9174427fa54ff09cba8765295ebb5bb2">More...</a><br /></td></tr>
-<tr class="separator:a9174427fa54ff09cba8765295ebb5bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -273,11 +278,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>map_element</b></td>
 The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 <p>Main problem: when non-trivial callback functions have to be used, you need to do it via a derived class (as <a class="el" href="classstir_1_1KeyParser.html" title="A class to parse Interfile headers. ">KeyParser</a> requires pointers to member functions.)</p>
 <dl class="section warning"><dt>Warning</dt><dd>As <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a" title="add a keyword. When parsing, parse its value as a float and put it in *variable_ptr ...">KeyParser::add_key</a> stores pointers to the variables where you want your results, it is somewhat dangerous to copy a <a class="el" href="classstir_1_1KeyParser.html" title="A class to parse Interfile headers. ">KeyParser</a> object. That is, its keymap will still point to the same variables.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000059">Todo:</a></b></dt><dd>add checking functions in the map, as in </dd></dl>
-<div class="fragment"><div class="line"><a class="code" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a>(<span class="stringliteral">&quot;my key&quot;</span>,&amp;my_value, check_positive); </div></div><!-- fragment --> <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000060">Todo:</a></b></dt><dd>add facilities for checking (while parsing) if a keyword was present before the current one </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd>add checking functions in the map, as in </dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">add_key</a>(<span class="stringliteral">&quot;my key&quot;</span>,&amp;my_value, check_positive); </div></div><!-- fragment --> <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd>add facilities for checking (while parsing) if a keyword was present before the current one </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a08ca6f6fc94772b3f2832b438a0a6b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08ca6f6fc94772b3f2832b438a0a6b43">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ca6f6fc94772b3f2832b438a0a6b43">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,14 +308,14 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 </div><div class="memdoc">
 
 <p><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise </p>
-<p>if <em>write_warnings</em> is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
+<p>if <em>write_warnings</em> is <code>false</code>, warnings about undefined keywords will be supressed. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="namespacedistributed.html#a59355c8b36a8904c9f869ed1a8ca6023">distributed::receive_and_construct_exam_and_proj_data_info_ptr()</a>, and <a class="el" href="classstir_1_1TimeFrameDefinitions.html#af863595d5f7123c15bca6704515056e7">stir::TimeFrameDefinitions::TimeFrameDefinitions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#afcd327e1b699199cd2fe1d3eae76bbce">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad36ccb454f6a6a751465274f54ab9774">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="namespacedistributed.html#a59355c8b36a8904c9f869ed1a8ca6023">distributed::receive_and_construct_exam_and_proj_data_info_ptr()</a>, and <a class="el" href="classstir_1_1TimeFrameDefinitions.html#af863595d5f7123c15bca6704515056e7">stir::TimeFrameDefinitions::TimeFrameDefinitions()</a>.</p>
 
 </div>
 </div>
 <a id="ae835c59ce855b24eef4220656c9df2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae835c59ce855b24eef4220656c9df2fc">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae835c59ce855b24eef4220656c9df2fc">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,9 +341,38 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 </div><div class="memdoc">
 
 <p><a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43" title="parse() returns false if there is some error, true otherwise ">parse()</a> returns false if there is some error, true otherwise </p>
-<p>if <em>write_warnings</em> is <code>false</code>, warnigns about undefined keywords will be supressed. </p>
+<p>if <em>write_warnings</em> is <code>false</code>, warnings about undefined keywords will be supressed. </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+
+</div>
+</div>
+<a id="a36f12c8e7c160a5b317c445a61ee7817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f12c8e7c160a5b317c445a61ee7817">&#9670;&nbsp;</a></span>parse() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stir::KeyParser::parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_warnings</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>if <em>write_warnings</em> is <code>false</code>, warnings about undefined keywords will be supressed. </p>
 
 </div>
 </div>
@@ -491,7 +525,7 @@ The use of the [*] index for vectorised keys is NOT supported.</dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#a46de0f60836c7e79938fdda780641381">start_parsing()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1AbsTimeIntervalFromDynamicData.html#a2e8f912d3fcfeae3ed864421bab32e15">stir::AbsTimeIntervalFromDynamicData::AbsTimeIntervalFromDynamicData()</a>, <a class="el" href="classstir_1_1AbsTimeIntervalFromECAT7ACF.html#abcdf6a876759e327cf373a3f871a1691">stir::AbsTimeIntervalFromECAT7ACF::AbsTimeIntervalFromECAT7ACF()</a>, <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#ab9038a93f3655dbcafed96958ebf8754">stir::DiscretisedShape3D::DiscretisedShape3D()</a>, <a class="el" href="classstir_1_1SeparableCartesianMetzImageFilter.html#a51fce83a63606e9062998c9b18a58949">stir::SeparableCartesianMetzImageFilter&lt; elemT &gt;::get_max_kernel_sizes()</a>, <a class="el" href="classstir_1_1BackProjectorByBinParallelproj.html#a45498d76c771f3be3f67e477c02f4a0b">stir::BackProjectorByBinParallelproj::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a7e8337ab621f6cfcc9b4083e9f9d7993">stir::ForwardProjectorByBinParallelproj::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#aedb64c5fb954e5c09985b56d5f251e83">stir::BackProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a992445a0da1d3ab7c9e254bce355af71">stir::ForwardProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1SingleScatterSimulation.html#a458b8c10b5842d8334175f06cb9832e5">stir::SingleScatterSimulation::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html#a9a2527b89789e75443b0c092f0a57c45">stir::InputStreamWithRecordsFromUPENNbin::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html#a35000c2d440c3e5b4491a1ef12aed3e6">stir::InputStreamWithRecordsFromUPENNtxt::initialise_keymap()</a>, <a class="el" href="classstir_1_1SeparableGaussianImageFilter.html#a08ffab306b8127f4f8057c63fd8ff0d5">stir::SeparableGaussianImageFilter&lt; elemT &gt;::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#a53019277d10511dbc5d2b065aa519948">stir::InputStreamFromROOTFileForECATPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#abc14bcad3b88e037248fc209e8b065b8">stir::InputStreamFromROOTFileForCylindricalPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#af38923176710a95e928624c99d19381b">stir::ProjMatrixByBinUsingInterpolation::ProjMatrixByBinUsingInterpolation()</a>, and <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a49f0b2bae4660791e9efb62e4ddadc89">stir::RigidObject3DMotionFromPolaris::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1AbsTimeIntervalFromDynamicData.html#a2e8f912d3fcfeae3ed864421bab32e15">stir::AbsTimeIntervalFromDynamicData::AbsTimeIntervalFromDynamicData()</a>, <a class="el" href="classstir_1_1AbsTimeIntervalFromECAT7ACF.html#abcdf6a876759e327cf373a3f871a1691">stir::AbsTimeIntervalFromECAT7ACF::AbsTimeIntervalFromECAT7ACF()</a>, <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a5830937da553e2132ff9a31b2be55be7">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#ae01da92b09d187d3c8afd8153f53a8b6">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#ab4b046990b1ce2051d39554ff20b98f0">stir::DiscretisedShape3D::DiscretisedShape3D()</a>, <a class="el" href="classstir_1_1SeparableCartesianMetzImageFilter.html#a51fce83a63606e9062998c9b18a58949">stir::SeparableCartesianMetzImageFilter&lt; elemT &gt;::get_max_kernel_sizes()</a>, <a class="el" href="classstir_1_1BackProjectorByBinParallelproj.html#af7401c490d69af85bdeba55406512284">stir::BackProjectorByBinParallelproj::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinParallelproj.html#a8b8cd8da65cb2f83be9e9027e5c2d51c">stir::ForwardProjectorByBinParallelproj::initialise_keymap()</a>, <a class="el" href="classstir_1_1SingleScatterSimulation.html#a30f7c726d97bd5f93100fd718c16844e">stir::SingleScatterSimulation::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBinNiftyPET.html#aedb64c5fb954e5c09985b56d5f251e83">stir::BackProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBinNiftyPET.html#a992445a0da1d3ab7c9e254bce355af71">stir::ForwardProjectorByBinNiftyPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1SeparableGaussianImageFilter.html#abc8658484bb077352a850aee43572715">stir::SeparableGaussianImageFilter&lt; elemT &gt;::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNtxt.html#a35000c2d440c3e5b4491a1ef12aed3e6">stir::InputStreamWithRecordsFromUPENNtxt::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamWithRecordsFromUPENNbin.html#a9a2527b89789e75443b0c092f0a57c45">stir::InputStreamWithRecordsFromUPENNbin::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForECATPET.html#abf6207d876354f43ed95894950e4c7a2">stir::InputStreamFromROOTFileForECATPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#afc6c3ec0b2e354c576605411f50e923c">stir::InputStreamFromROOTFileForCylindricalPET::initialise_keymap()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a8446024f25bbed2744cea1a8d4df53dc">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#af9aab4f0e94d5a3ef4576c96147ea391">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7d4c76d1800b7d355035a6b66a0a6aab">stir::ScatterEstimation::initialise_keymap()</a>, <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#afcd327e1b699199cd2fe1d3eae76bbce">stir::RigidObject3DMotionFromPolaris::post_processing()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad36ccb454f6a6a751465274f54ab9774">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#af38923176710a95e928624c99d19381b">stir::ProjMatrixByBinUsingInterpolation::ProjMatrixByBinUsingInterpolation()</a>, and <a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a1439c7ea00d5551a5c880056409274d7">stir::RigidObject3DMotionFromPolaris::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -534,13 +568,13 @@ template&lt;typename ParsingClass &gt; </div>
 <p>add keyword corresponding to an object that will parse the next keys itself </p>
 <p>When this keyword is encountered during parsing, the parser ParsingClass::read_registered_object(name) is called, with 'name' set to to the value of the keyword.</p>
 <p>ParsingClass has to be derived from <a class="el" href="classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi...">RegisteredObject</a> (strictly speaking it only has to be derived from Object, and provide a static function void read_registered_object(string&amp;)).</p>
-<p>Example of usage: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>SomeReconstruction </div><div class="line">{</div><div class="line">  SomeReconstruction();</div><div class="line">  ImageProcessor&lt;3,float&gt;* filter_ptr;</div><div class="line">  <span class="keywordtype">double</span> beta;     </div><div class="line">  KeyParser parser;</div><div class="line">};      </div><div class="line"></div><div class="line">SomeReconstruction::SomeReconstruction()</div><div class="line">{</div><div class="line">      beta = 1;</div><div class="line">      filter_ptr = 0;</div><div class="line">      parser.add_start_key(<span class="stringliteral">&quot;SomeReconstructionParameters&quot;</span>);</div><div class="line">      parser.add_key(<span class="stringliteral">&quot;beta &quot;</span>, &amp;beta);</div><div class="line">      parser.add_parsing_key(<span class="stringliteral">&quot;MAP a la MRP filter type&quot;</span>, &amp;filter_ptr);</div><div class="line">      parser.add_stop_key(<span class="stringliteral">&quot;END SomeReconstruction Parameters&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>The .par file then would look as follows </p><pre class="fragment">  SomeReconstructionParameters :=
+<p>Example of usage: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>SomeReconstruction</div><div class="line">{</div><div class="line">  SomeReconstruction();</div><div class="line">  ImageProcessor&lt;3,float&gt;* filter_ptr;</div><div class="line">  <span class="keywordtype">double</span> beta;</div><div class="line">  KeyParser parser;</div><div class="line">};</div><div class="line"></div><div class="line">SomeReconstruction::SomeReconstruction()</div><div class="line">{</div><div class="line">      beta = 1;</div><div class="line">      filter_ptr = 0;</div><div class="line">      parser.add_start_key(<span class="stringliteral">&quot;SomeReconstructionParameters&quot;</span>);</div><div class="line">      parser.add_key(<span class="stringliteral">&quot;beta &quot;</span>, &amp;beta);</div><div class="line">      parser.add_parsing_key(<span class="stringliteral">&quot;MAP a la MRP filter type&quot;</span>, &amp;filter_ptr);</div><div class="line">      parser.add_stop_key(<span class="stringliteral">&quot;END SomeReconstruction Parameters&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>The .par file then would look as follows </p><pre class="fragment">  SomeReconstructionParameters :=
     beta := 0.001
     MAP a la MRP filter type := Median
     ; keywords here appropriate to a Median ImageFilter
   End SomeReconstruction Parameters:= ;
 </pre> 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a3a83373665a23153de5ad1e771eb6c19">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#a07bbecb3da123f2d9ba85198aba5e87e">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#a9615269cdf383e712d28034ef9f07636">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a661783a56af61eb4b62e45fde03f8ff4">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#a1213ce53e95f5bb22dbe05face140d0e">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#af4a883113f5f2ee32f74cbb9a5067d88">stir::ScatterEstimation::initialise_keymap()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#aceaf7c9893842d246996d16c0b03f8a0">stir::ScatterEstimation::post_processing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html#a5830937da553e2132ff9a31b2be55be7">stir::BackProjectorByBinUsingSquareProjMatrixByBin::actual_back_project()</a>, <a class="el" href="classstir_1_1ChainedDataProcessor.html#ae01da92b09d187d3c8afd8153f53a8b6">stir::ChainedDataProcessor&lt; DataT &gt;::ChainedDataProcessor()</a>, <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1PoissonLLReconstructionTests.html#ae3a0260de34bd2dac272531d0ccf9e35">stir::PoissonLLReconstructionTests&lt; target_type &gt;::construct_projector_pair()</a>, <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a8446024f25bbed2744cea1a8d4df53dc">stir::ForwardProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1BackProjectorByBin.html#af9aab4f0e94d5a3ef4576c96147ea391">stir::BackProjectorByBin::initialise_keymap()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a7d4c76d1800b7d355035a6b66a0a6aab">stir::ScatterEstimation::initialise_keymap()</a>, and <a class="el" href="classstir_1_1ScatterEstimation.html#ad36ccb454f6a6a751465274f54ab9774">stir::ScatterEstimation::post_processing()</a>.</p>
 
 </div>
 </div>
@@ -582,6 +616,69 @@ template&lt;typename ParsingClass &gt; </div>
 
 <p>add keyword corresponding to an object that will parse the next keys itself </p>
 <p>As above, but with a shared_ptr </p>
+
+</div>
+</div>
+<a id="a9174427fa54ff09cba8765295ebb5bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9174427fa54ff09cba8765295ebb5bb2">&#9670;&nbsp;</a></span>remove_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stir::KeyParser::remove_key </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keyword</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a key from the kep map. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if it was found, <code>false</code> otherwise </dd></dl>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
+
+</div>
+</div>
+<a id="a6d051fee42cb2668484ff8fa90f9b1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d051fee42cb2668484ff8fa90f9b1bb">&#9670;&nbsp;</a></span>add_alias_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::KeyParser::add_alias_key </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keyword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>alias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deprecated_key</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an alias for keyword. </p>
+<p>If <code>deprecated_key</code> if <code>true</code>, a warning will be written when the alias is encountered.</p>
+<p><code><a class="el" href="classstir_1_1KeyParser.html#a4e5b0bca8a73d015c9fef5dbe6aebb71" title="Returns a string with keywords and their values. ">parameter_info()</a></code> will use the <code>keyword</code>, not the <code>alias</code>. </p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>.</p>
 
 </div>
 </div>
@@ -640,7 +737,7 @@ template&lt;typename ParsingClass &gt; </div>
 
 <p>Ask interactively for values for all keywords. </p>
 <p>Keywords are asked in the order they are inserted in the keymap.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd>any consistency checks are currently done by <a class="el" href="classstir_1_1KeyParser.html#a1a9a476639a8bc800bee613f5178f722" title="This will be called at the end of the parsing. ">post_processing()</a> at the end of the parsing. It should be possible to have checks after every question such that it can be repeated.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>any consistency checks are currently done by <a class="el" href="classstir_1_1KeyParser.html#a1a9a476639a8bc800bee613f5178f722" title="This will be called at the end of the parsing. ">post_processing()</a> at the end of the parsing. It should be possible to have checks after every question such that it can be repeated.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>breaks with for 'vectorised' keys. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ab85972eee166cdc25ce3e901a89f40b5">do_nothing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a46de0f60836c7e79938fdda780641381">start_parsing()</a>, <a class="el" href="classstir_1_1KeyParser.html#a58b886da1a41689c63624a41913b8ea4">stop_parsing()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
@@ -703,11 +800,11 @@ template&lt;typename ParsingClass &gt; </div>
 
 <p>This will be called at the end of the parsing. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if everything OK, true if not </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd><p class="startdd">return <a class="el" href="classstir_1_1Succeeded.html" title="a class containing an enumeration type that can be used by functions to signal successful operation o...">Succeeded</a> instead. </p>
 <p class="enddd">rename to <code>post_parsing()</code> </p>
 </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1InterfilePDFSHeader.html#a2a713f500cba47b52a366969e066e90a">stir::InterfilePDFSHeader</a>, <a class="el" href="classstir_1_1InterfileImageHeader.html#adb4d156da50dc1c8a2e26c01ac802c39">stir::InterfileImageHeader</a>, <a class="el" href="classstir_1_1InterfileHeader.html#af9cee00c096a2c401260f29139128094">stir::InterfileHeader</a>, and <a class="el" href="classstir_1_1InterfilePDFSHeaderSPECT.html#a9c9a50577c1186bc990504c62966194a">stir::InterfilePDFSHeaderSPECT</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1InterfilePDFSHeader.html#aa1f206f4d18f6d144fdd2884b1c540c6">stir::InterfilePDFSHeader</a>, <a class="el" href="classstir_1_1InterfileImageHeader.html#a05968a4db6f5d6383764d48482689e4b">stir::InterfileImageHeader</a>, <a class="el" href="classstir_1_1InterfileHeader.html#ae649f7df5209dac9f73212736f3ada2f">stir::InterfileHeader</a>, and <a class="el" href="classstir_1_1InterfilePDFSHeaderSPECT.html#a7d213b9d81363ae435d4d932fc55623b">stir::InterfilePDFSHeaderSPECT</a>.</p>
 
 </div>
 </div>
@@ -1005,37 +1102,6 @@ Case is ignored. </li>
 
 </div>
 </div>
-<a id="a9174427fa54ff09cba8765295ebb5bb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9174427fa54ff09cba8765295ebb5bb2">&#9670;&nbsp;</a></span>remove_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool stir::KeyParser::remove_key </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>keyword</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes a key from the kep map. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if it was found, <code>false</code> otherwise </dd></dl>
-
-<p class="reference">References <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
-
-</div>
-</div>
 <a id="a05b0dc0a34dc427ffda4de8154ae31e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05b0dc0a34dc427ffda4de8154ae31e6">&#9670;&nbsp;</a></span>set_variable()</h2>
 
@@ -1109,7 +1175,7 @@ Case is ignored. </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

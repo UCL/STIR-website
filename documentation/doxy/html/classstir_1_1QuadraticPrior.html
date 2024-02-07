@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -81,33 +81,33 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#aad41a1a239697ea97a4dddd069b96451">QuadraticPrior</a> (const bool <a class="el" href="classstir_1_1QuadraticPrior.html#a8055943dd3c836e6d94efd32e70ebb07">only_2D</a>, float penalization_factor)</td></tr>
 <tr class="memdesc:aad41a1a239697ea97a4dddd069b96451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs it explicitly. <br /></td></tr>
 <tr class="separator:aad41a1a239697ea97a4dddd069b96451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef2eba59cb73c4bd41cb2a7dabd7c79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a7ef2eba59cb73c4bd41cb2a7dabd7c79">parabolic_surrogate_curvature_depends_on_argument</a> () const</td></tr>
-<tr class="memdesc:a7ef2eba59cb73c4bd41cb2a7dabd7c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that allows skipping some computations if the curvature is independent of the <code>current_estimate</code>.  <a href="#a7ef2eba59cb73c4bd41cb2a7dabd7c79">More...</a><br /></td></tr>
-<tr class="separator:a7ef2eba59cb73c4bd41cb2a7dabd7c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae117fd111f7bf1652a8df695412968d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae117fd111f7bf1652a8df695412968d3">is_convex</a> () const</td></tr>
-<tr class="memdesc:ae117fd111f7bf1652a8df695412968d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#ae117fd111f7bf1652a8df695412968d3">More...</a><br /></td></tr>
-<tr class="separator:ae117fd111f7bf1652a8df695412968d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6ad894c01b826c2846e9255d6b8ff1"><td class="memItemLeft" align="right" valign="top"><a id="a6f6ad894c01b826c2846e9255d6b8ff1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a6f6ad894c01b826c2846e9255d6b8ff1">compute_value</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
-<tr class="memdesc:a6f6ad894c01b826c2846e9255d6b8ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function <br /></td></tr>
-<tr class="separator:a6f6ad894c01b826c2846e9255d6b8ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc50b7f8caf38874c0d8610950822a7"><td class="memItemLeft" align="right" valign="top"><a id="a5dc50b7f8caf38874c0d8610950822a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a5dc50b7f8caf38874c0d8610950822a7">compute_gradient</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_gradient, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
-<tr class="memdesc:a5dc50b7f8caf38874c0d8610950822a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient <br /></td></tr>
-<tr class="separator:a5dc50b7f8caf38874c0d8610950822a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae95158d59c032a23cf29566455aa4394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae95158d59c032a23cf29566455aa4394">parabolic_surrogate_curvature</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;parabolic_surrogate_curvature, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate)</td></tr>
-<tr class="memdesc:ae95158d59c032a23cf29566455aa4394"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the parabolic surrogate for the prior  <a href="#ae95158d59c032a23cf29566455aa4394">More...</a><br /></td></tr>
-<tr class="separator:ae95158d59c032a23cf29566455aa4394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14774caf63fb2471fe1681fe22776042"><td class="memItemLeft" align="right" valign="top"><a id="a14774caf63fb2471fe1681fe22776042"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_Hessian</b> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) const</td></tr>
-<tr class="separator:a14774caf63fb2471fe1681fe22776042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8816ac6b42ea57f17c31a5af3523c2c5"><td class="memItemLeft" align="right" valign="top"><a id="a8816ac6b42ea57f17c31a5af3523c2c5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a8816ac6b42ea57f17c31a5af3523c2c5">add_multiplication_with_approximate_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const</td></tr>
-<tr class="memdesc:a8816ac6b42ea57f17c31a5af3523c2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call accumulate_Hessian_times_input. <br /></td></tr>
-<tr class="separator:a8816ac6b42ea57f17c31a5af3523c2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdec9f6ada4511aca419377910587723"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#afdec9f6ada4511aca419377910587723">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const</td></tr>
-<tr class="memdesc:afdec9f6ada4511aca419377910587723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input. For the quadratic function, the hessian of the prior is 1. Therefore this will return the weights multiplied by the input.  <a href="#afdec9f6ada4511aca419377910587723">More...</a><br /></td></tr>
-<tr class="separator:afdec9f6ada4511aca419377910587723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ba84cf9a3571adaa9650ac9e1fa63a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ab1ba84cf9a3571adaa9650ac9e1fa63a">parabolic_surrogate_curvature_depends_on_argument</a> () const override</td></tr>
+<tr class="memdesc:ab1ba84cf9a3571adaa9650ac9e1fa63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that allows skipping some computations if the curvature is independent of the <code>current_estimate</code>.  <a href="#ab1ba84cf9a3571adaa9650ac9e1fa63a">More...</a><br /></td></tr>
+<tr class="separator:ab1ba84cf9a3571adaa9650ac9e1fa63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab508dd7b551c73d18ed0c84d8990b4f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ab508dd7b551c73d18ed0c84d8990b4f5">is_convex</a> () const override</td></tr>
+<tr class="memdesc:ab508dd7b551c73d18ed0c84d8990b4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#ab508dd7b551c73d18ed0c84d8990b4f5">More...</a><br /></td></tr>
+<tr class="separator:ab508dd7b551c73d18ed0c84d8990b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d03f50b6dc12830ae77509825ff761"><td class="memItemLeft" align="right" valign="top"><a id="ae9d03f50b6dc12830ae77509825ff761"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">compute_value</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) override</td></tr>
+<tr class="memdesc:ae9d03f50b6dc12830ae77509825ff761"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the value of the function <br /></td></tr>
+<tr class="separator:ae9d03f50b6dc12830ae77509825ff761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7279ffb219224aa54b30d8c2a03fa410"><td class="memItemLeft" align="right" valign="top"><a id="a7279ffb219224aa54b30d8c2a03fa410"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">compute_gradient</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_gradient, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) override</td></tr>
+<tr class="memdesc:a7279ffb219224aa54b30d8c2a03fa410"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute gradient <br /></td></tr>
+<tr class="separator:a7279ffb219224aa54b30d8c2a03fa410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96bd3846485c91fe3e5b0d82d7aad8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae96bd3846485c91fe3e5b0d82d7aad8c">parabolic_surrogate_curvature</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;parabolic_surrogate_curvature, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) override</td></tr>
+<tr class="memdesc:ae96bd3846485c91fe3e5b0d82d7aad8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the parabolic surrogate for the prior  <a href="#ae96bd3846485c91fe3e5b0d82d7aad8c">More...</a><br /></td></tr>
+<tr class="separator:ae96bd3846485c91fe3e5b0d82d7aad8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20d2e8e36d236041a5957ad14953a4b"><td class="memItemLeft" align="right" valign="top"><a id="ab20d2e8e36d236041a5957ad14953a4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_Hessian</b> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) const override</td></tr>
+<tr class="separator:ab20d2e8e36d236041a5957ad14953a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0d858ec6d09b7162a1b754434df473"><td class="memItemLeft" align="right" valign="top"><a id="a6a0d858ec6d09b7162a1b754434df473"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a6a0d858ec6d09b7162a1b754434df473">add_multiplication_with_approximate_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
+<tr class="memdesc:a6a0d858ec6d09b7162a1b754434df473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call accumulate_Hessian_times_input. <br /></td></tr>
+<tr class="separator:a6a0d858ec6d09b7162a1b754434df473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e45069e287f23e362bf567480b40e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
+<tr class="memdesc:a1e45069e287f23e362bf567480b40e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input. For the quadratic function, the hessian of the prior is 1. Therefore this will return the weights multiplied by the input.  <a href="#a1e45069e287f23e362bf567480b40e20">More...</a><br /></td></tr>
+<tr class="separator:a1e45069e287f23e362bf567480b40e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0886208c647b0d89399b0b32889a776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae0886208c647b0d89399b0b32889a776">get_weights</a> () const</td></tr>
 <tr class="memdesc:ae0886208c647b0d89399b0b32889a776"><td class="mdescLeft">&#160;</td><td class="mdescRight">get penalty weights for the neighbourhood  <a href="#ae0886208c647b0d89399b0b32889a776">More...</a><br /></td></tr>
 <tr class="separator:ae0886208c647b0d89399b0b32889a776"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,27 +117,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a33bd28eeff1d8311d71f83ed9b8428e1"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a33bd28eeff1d8311d71f83ed9b8428e1">get_kappa_sptr</a> () const</td></tr>
 <tr class="memdesc:a33bd28eeff1d8311d71f83ed9b8428e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current kappa image  <a href="#a33bd28eeff1d8311d71f83ed9b8428e1">More...</a><br /></td></tr>
 <tr class="separator:a33bd28eeff1d8311d71f83ed9b8428e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00194c63b28532ee88c69958e7919b60"><td class="memItemLeft" align="right" valign="top"><a id="a00194c63b28532ee88c69958e7919b60"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a00194c63b28532ee88c69958e7919b60">set_kappa_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; &amp;)</td></tr>
-<tr class="memdesc:a00194c63b28532ee88c69958e7919b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
-<tr class="separator:a00194c63b28532ee88c69958e7919b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13acbe0458d20b90c59d8de24f308053"><td class="memItemLeft" align="right" valign="top"><a id="a13acbe0458d20b90c59d8de24f308053"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a13acbe0458d20b90c59d8de24f308053">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a13acbe0458d20b90c59d8de24f308053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a13acbe0458d20b90c59d8de24f308053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea2e87fcc78511d059131d561d086ec"><td class="memItemLeft" align="right" valign="top"><a id="a7ea2e87fcc78511d059131d561d086ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a7ea2e87fcc78511d059131d561d086ec">set_kappa_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; &amp;)</td></tr>
+<tr class="memdesc:a7ea2e87fcc78511d059131d561d086ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
+<tr class="separator:a7ea2e87fcc78511d059131d561d086ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e2c6bb8ed3a5e9d132013768c4e790"><td class="memItemLeft" align="right" valign="top"><a id="ad9e2c6bb8ed3a5e9d132013768c4e790"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ad9e2c6bb8ed3a5e9d132013768c4e790">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; const &amp;target_sptr) override</td></tr>
+<tr class="memdesc:ad9e2c6bb8ed3a5e9d132013768c4e790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:ad9e2c6bb8ed3a5e9d132013768c4e790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7edf64cb8735092553c2f7b46d9d398d"><td class="memTemplParams" colspan="2"><a id="a7edf64cb8735092553c2f7b46d9d398d"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a7edf64cb8735092553c2f7b46d9d398d"><td class="memTemplItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memTemplItemRight" valign="bottom"><b>registered_name</b></td></tr>
 <tr class="separator:a7edf64cb8735092553c2f7b46d9d398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; QuadraticPrior&lt; elemT &gt;, GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;, PriorWithParabolicSurrogate&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt; &gt;</a></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">compute_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_image_estimate) const</td></tr>
 <tr class="memdesc:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes a single row of the Hessian.  <a href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">More...</a><br /></td></tr>
@@ -184,20 +184,28 @@ static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a88bbb9f8318746eb7d89778c37954f43"><td class="memItemLeft" align="right" valign="top"><a id="a88bbb9f8318746eb7d89778c37954f43"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a88bbb9f8318746eb7d89778c37954f43">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_image_estimate) const</td></tr>
-<tr class="memdesc:a88bbb9f8318746eb7d89778c37954f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
-<tr class="separator:a88bbb9f8318746eb7d89778c37954f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9a0c997e0d65ae548b1963870d893a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a6e9a0c997e0d65ae548b1963870d893a">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a6e9a0c997e0d65ae548b1963870d893a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="#a6e9a0c997e0d65ae548b1963870d893a">More...</a><br /></td></tr>
-<tr class="separator:a6e9a0c997e0d65ae548b1963870d893a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b10adcbb8d61d25b0e8944ff1a64a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a37b10adcbb8d61d25b0e8944ff1a64a9">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a37b10adcbb8d61d25b0e8944ff1a64a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets key for penalisation factor  <a href="#a37b10adcbb8d61d25b0e8944ff1a64a9">More...</a><br /></td></tr>
-<tr class="separator:a37b10adcbb8d61d25b0e8944ff1a64a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5630b6c7ade1c80185a150e1b3fd5ac7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a5630b6c7ade1c80185a150e1b3fd5ac7">post_processing</a> ()</td></tr>
-<tr class="memdesc:a5630b6c7ade1c80185a150e1b3fd5ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a5630b6c7ade1c80185a150e1b3fd5ac7">More...</a><br /></td></tr>
-<tr class="separator:a5630b6c7ade1c80185a150e1b3fd5ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2382cbee450b4f6a093e217510af07"><td class="memItemLeft" align="right" valign="top"><a id="a5d2382cbee450b4f6a093e217510af07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a5d2382cbee450b4f6a093e217510af07">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_image_estimate) const override</td></tr>
+<tr class="memdesc:a5d2382cbee450b4f6a093e217510af07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
+<tr class="separator:a5d2382cbee450b4f6a093e217510af07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6f2ea9d15322f8c5dc08c5c0ce6a77"><td class="memItemLeft" align="right" valign="top"><a id="aec6f2ea9d15322f8c5dc08c5c0ce6a77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#aec6f2ea9d15322f8c5dc08c5c0ce6a77">set_defaults</a> () override</td></tr>
+<tr class="memdesc:aec6f2ea9d15322f8c5dc08c5c0ce6a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
+<tr class="separator:aec6f2ea9d15322f8c5dc08c5c0ce6a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87db7a3a9ff8b2c812053d6d1cb04b67"><td class="memItemLeft" align="right" valign="top"><a id="a87db7a3a9ff8b2c812053d6d1cb04b67"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a87db7a3a9ff8b2c812053d6d1cb04b67">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a87db7a3a9ff8b2c812053d6d1cb04b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:a87db7a3a9ff8b2c812053d6d1cb04b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8d8466e892c3648294b54c70671580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a0e8d8466e892c3648294b54c70671580">post_processing</a> () override</td></tr>
+<tr class="memdesc:a0e8d8466e892c3648294b54c70671580"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a0e8d8466e892c3648294b54c70671580">More...</a><br /></td></tr>
+<tr class="separator:a0e8d8466e892c3648294b54c70671580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
+<tr class="memitem:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">set_defaults</a> () override</td></tr>
+<tr class="memdesc:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">More...</a><br /></td></tr>
+<tr class="separator:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets key for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">More...</a><br /></td></tr>
+<tr class="separator:a9f385565c0a99506bf7e660c144c3c8b inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a6c3b6f203ad7f47a159be6a5edb7ee65"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a6c3b6f203ad7f47a159be6a5edb7ee65">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_estimate) const</td></tr>
 <tr class="memdesc:a6c3b6f203ad7f47a159be6a5edb7ee65 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
@@ -214,14 +222,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a8055943dd3c836e6d94efd32e70ebb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">can be set during parsing to restrict the weights to the 2D case <br /></td></tr>
 <tr class="separator:a8055943dd3c836e6d94efd32e70ebb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee8220859019f5b89ca2d84b5db8d96"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a3ee8220859019f5b89ca2d84b5db8d96">gradient_filename_prefix</a></td></tr>
-<tr class="memdesc:a3ee8220859019f5b89ca2d84b5db8d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1QuadraticPrior.html#a5dc50b7f8caf38874c0d8610950822a7" title="compute gradient ">compute_gradient()</a> is called.  <a href="#a3ee8220859019f5b89ca2d84b5db8d96">More...</a><br /></td></tr>
+<tr class="memdesc:a3ee8220859019f5b89ca2d84b5db8d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410" title="compute gradient ">compute_gradient()</a> is called.  <a href="#a3ee8220859019f5b89ca2d84b5db8d96">More...</a><br /></td></tr>
 <tr class="separator:a3ee8220859019f5b89ca2d84b5db8d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1646ee82569e71a4453c4531a8cb6e66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a1646ee82569e71a4453c4531a8cb6e66">weights</a></td></tr>
-<tr class="memdesc:a1646ee82569e71a4453c4531a8cb6e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">penalty weights  <a href="#a1646ee82569e71a4453c4531a8cb6e66">More...</a><br /></td></tr>
-<tr class="separator:a1646ee82569e71a4453c4531a8cb6e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca478f24568294bd89ff6ba4253d2b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a0ca478f24568294bd89ff6ba4253d2b2">weights</a></td></tr>
+<tr class="memdesc:a0ca478f24568294bd89ff6ba4253d2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">penalty weights  <a href="#a0ca478f24568294bd89ff6ba4253d2b2">More...</a><br /></td></tr>
+<tr class="separator:a0ca478f24568294bd89ff6ba4253d2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a300ec0543c6b201f0f52ff9217a0306b"><td class="memItemLeft" align="right" valign="top"><a id="a300ec0543c6b201f0f52ff9217a0306b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a300ec0543c6b201f0f52ff9217a0306b">kappa_filename</a></td></tr>
-<tr class="memdesc:a300ec0543c6b201f0f52ff9217a0306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image that will be read by <a class="el" href="classstir_1_1QuadraticPrior.html#a5630b6c7ade1c80185a150e1b3fd5ac7" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
+<tr class="memdesc:a300ec0543c6b201f0f52ff9217a0306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image that will be read by <a class="el" href="classstir_1_1QuadraticPrior.html#a0e8d8466e892c3648294b54c70671580" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
 <tr class="separator:a300ec0543c6b201f0f52ff9217a0306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abc351b677ce31d811ee7469a34ffb1ad inherit pro_attribs_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="abc351b677ce31d811ee7469a34ffb1ad"></a>
@@ -280,7 +288,7 @@ class stir::QuadraticPrior&lt; elemT &gt;</h3>
 <p>The <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_73.png"/>'s.</p>
 <p>By default, a 3x3 or 3x3x3 neigbourhood is used where the weights are set to x-voxel_size divided by the Euclidean distance between the points.</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">Quadratic Prior Parameters:=
-; next defaults to 0, set to 1 for 2D inverse Euclidean weights, 0 for 3D 
+; next defaults to 0, set to 1 for 2D inverse Euclidean weights, 0 for 3D
 only 2D:= 0
 ; next can be used to set weights explicitly. Needs to be a 3D array (of floats).
 ' value of only_2D is ignored
@@ -291,12 +299,12 @@ only 2D:= 0
 ; kappa filename:=
 ; use next parameter to get gradient images at every subiteration
 ; see class documentation
-gradient filename prefix:= 
+gradient filename prefix:=
 END Quadratic Prior Parameters:=
 </pre> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7ef2eba59cb73c4bd41cb2a7dabd7c79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ef2eba59cb73c4bd41cb2a7dabd7c79">&#9670;&nbsp;</a></span>parabolic_surrogate_curvature_depends_on_argument()</h2>
+<a id="ab1ba84cf9a3571adaa9650ac9e1fa63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ba84cf9a3571adaa9650ac9e1fa63a">&#9670;&nbsp;</a></span>parabolic_surrogate_curvature_depends_on_argument()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,7 +315,7 @@ template&lt;typename elemT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::parabolic_surrogate_curvature_depends_on_argument </td>
+          <td class="memname">bool <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::parabolic_surrogate_curvature_depends_on_argument </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -315,7 +323,7 @@ template&lt;typename elemT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -327,8 +335,8 @@ template&lt;typename elemT&gt; </div>
 
 </div>
 </div>
-<a id="ae117fd111f7bf1652a8df695412968d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae117fd111f7bf1652a8df695412968d3">&#9670;&nbsp;</a></span>is_convex()</h2>
+<a id="ab508dd7b551c73d18ed0c84d8990b4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab508dd7b551c73d18ed0c84d8990b4f5">&#9670;&nbsp;</a></span>is_convex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +355,7 @@ template&lt;typename elemT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -359,8 +367,8 @@ template&lt;typename elemT &gt; </div>
 
 </div>
 </div>
-<a id="ae95158d59c032a23cf29566455aa4394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae95158d59c032a23cf29566455aa4394">&#9670;&nbsp;</a></span>parabolic_surrogate_curvature()</h2>
+<a id="ae96bd3846485c91fe3e5b0d82d7aad8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96bd3846485c91fe3e5b0d82d7aad8c">&#9670;&nbsp;</a></span>parabolic_surrogate_curvature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,7 +398,7 @@ template&lt;typename elemT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -402,8 +410,8 @@ template&lt;typename elemT&gt; </div>
 
 </div>
 </div>
-<a id="afdec9f6ada4511aca419377910587723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdec9f6ada4511aca419377910587723">&#9670;&nbsp;</a></span>accumulate_Hessian_times_input()</h2>
+<a id="a1e45069e287f23e362bf567480b40e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e45069e287f23e362bf567480b40e20">&#9670;&nbsp;</a></span>accumulate_Hessian_times_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +447,7 @@ template&lt;typename elemT&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -516,72 +524,8 @@ template&lt;typename elemT &gt; </div>
 
 </div>
 </div>
-<a id="a6e9a0c997e0d65ae548b1963870d893a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e9a0c997e0d65ae548b1963870d893a">&#9670;&nbsp;</a></span>set_defaults()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::set_defaults </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>sets value for penalisation factor </p>
-<p>Has to be called by set_defaults in the leaf-class </p>
-
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedPrior.html#a45c5fac9239c1ddef8a456b948e20a7f">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a37b10adcbb8d61d25b0e8944ff1a64a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b10adcbb8d61d25b0e8944ff1a64a9">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::initialise_keymap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>sets key for penalisation factor </p>
-<p>Has to be called by initialise_keymap in the leaf-class </p>
-
-<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedPrior.html#aea8e3c13ab763890ec89b6780b8ab1a4">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a5630b6c7ade1c80185a150e1b3fd5ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5630b6c7ade1c80185a150e1b3fd5ac7">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="a0e8d8466e892c3648294b54c70671580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8d8466e892c3648294b54c70671580">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +544,7 @@ template&lt;typename elemT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -635,13 +579,13 @@ template&lt;typename elemT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1QuadraticPrior.html#a5dc50b7f8caf38874c0d8610950822a7" title="compute gradient ">compute_gradient()</a> is called. </p>
+<p>filename prefix for outputing the gradient whenever <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410" title="compute gradient ">compute_gradient()</a> is called. </p>
 <p>An internal counter is used to keep track of the number of times the gradient is computed. The filename will be constructed by concatenating gradient_filename_prefix and the counter. </p>
 
 </div>
 </div>
-<a id="a1646ee82569e71a4453c4531a8cb6e66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1646ee82569e71a4453c4531a8cb6e66">&#9670;&nbsp;</a></span>weights</h2>
+<a id="a0ca478f24568294bd89ff6ba4253d2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca478f24568294bd89ff6ba4253d2b2">&#9670;&nbsp;</a></span>weights</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,7 +596,7 @@ template&lt;typename elemT&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstir_1_1Array.html">Array</a>&lt;3,float&gt; <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::weights</td>
+          <td class="memname"><a class="el" href="classstir_1_1Array.html">Array</a>&lt;3, float&gt; <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::weights</td>
         </tr>
       </table>
   </td>
@@ -663,7 +607,7 @@ template&lt;typename elemT&gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000165">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1QuadraticPrior.html#a13acbe0458d20b90c59d8de24f308053" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1QuadraticPrior.html#ad9e2c6bb8ed3a5e9d132013768c4e790" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 </div>
 </div>
@@ -674,7 +618,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

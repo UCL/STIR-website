@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ template&lt;class , class , class , class , class &gt; </td></tr>
 class stir::FullArrayIterator&lt; topleveliterT, restiterT, elemT, _Ref, _Ptr &gt;</h3>
 
 <p>Class <a class="el" href="classstir_1_1FullArrayIterator.html" title="Class FullArrayIterator implements (forward) iterators that go through all elements of an Array...">FullArrayIterator</a> implements (forward) iterators that go through all elements of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This class should never be used explicitly, but only through the typedefs <a class="el" href="classstir_1_1Array.html#ac0d0bc59c7dabb31c7d7a32c9a8192f0" title="This defines an iterator type that iterates through all elements. ">Array::full_iterator</a> et al.</dd>
+<dl class="section warning"><dt>Warning</dt><dd>This class should never be used explicitly, but only through the typedefs <a class="el" href="classstir_1_1Array.html#a26311adf861324fae7c9c2014b36267d" title="This defines an iterator type that iterates through all elements. ">Array::full_iterator</a> et al.</dd>
 <dd>
 This class is effectively superseded by <a class="el" href="classstir_1_1NestedIterator.html" title="Class NestedIterator implements a (forward) iterator using a pair of &#39;nested&#39; iterators. ">NestedIterator</a>, although <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> still uses <a class="el" href="classstir_1_1FullArrayIterator.html" title="Class FullArrayIterator implements (forward) iterators that go through all elements of an Array...">FullArrayIterator</a>.</dd></dl>
 <p>This implementation assumes that <em>restiterT</em> has begin_all() and end_all() members. Moreover, for the usual <code>for</code> loops to work, there is a requirement on how the class that uses <a class="el" href="classstir_1_1FullArrayIterator.html" title="Class FullArrayIterator implements (forward) iterators that go through all elements of an Array...">FullArrayIterator</a> implements end_all(). See the implementation of <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475" title="end value for iterating through all elements in the array, see full_iterator ">Array::end_all()</a>. </p>
@@ -220,8 +220,6 @@ template&lt;class topleveliterT, class restiterT, class elemT , class _Ref , cla
 <p>Ideally, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475" title="end value for iterating through all elements in the array, see full_iterator ">Array::end_all()</a> would just call restiterT(). However, when going down the recursion, you will end up with the '1D' case where restiterT is an ordinary iterator, which in the case of <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html" title="The 1-dimensional (partial) specialisation of Array. ">Array&lt;1,elemT&gt;</a> is just an elemT*. Its default constructor does nothing.</p>
 <p>All these complications could be avoided by rewriting operator== as indicated in the code there, but at the expense of worse performance. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1FullArrayIterator.html#a7b5ec565ea082d3faec4e494e3e11c52">stir::FullArrayIterator&lt; topleveliterT, restiterT, elemT, _Ref, _Ptr &gt;::FullArrayIterator()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -263,7 +261,7 @@ template&lt;class topleveliterT , class restiterT , class elemT , class _Ref , c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

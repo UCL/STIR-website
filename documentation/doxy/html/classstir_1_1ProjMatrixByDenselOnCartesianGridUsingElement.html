@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -72,9 +72,9 @@ Inheritance diagram for stir::ProjMatrixByDenselOnCartesianGridUsingElement:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a8ddb1bf4a2c5a03b79c5dea28baf2f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a6a8ddb1bf4a2c5a03b79c5dea28baf2f">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:a6a8ddb1bf4a2c5a03b79c5dea28baf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores necessary geometric info.  <a href="#a6a8ddb1bf4a2c5a03b79c5dea28baf2f">More...</a><br /></td></tr>
-<tr class="separator:a6a8ddb1bf4a2c5a03b79c5dea28baf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee91b1ff389c22328dc67b3561e5a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a8ee91b1ff389c22328dc67b3561e5a70">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;density_info_ptr) override</td></tr>
+<tr class="memdesc:a8ee91b1ff389c22328dc67b3561e5a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores necessary geometric info.  <a href="#a8ee91b1ff389c22328dc67b3561e5a70">More...</a><br /></td></tr>
+<tr class="separator:a8ee91b1ff389c22328dc67b3561e5a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab36af9d54cae6725ca7bb03a746c3a"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a9ab36af9d54cae6725ca7bb03a746c3a">get_element</a> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;densel_ctr) const =0</td></tr>
 <tr class="memdesc:a9ab36af9d54cae6725ca7bb03a746c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">this member computes a single element of the projection matrix  <a href="#a9ab36af9d54cae6725ca7bb03a746c3a">More...</a><br /></td></tr>
 <tr class="separator:a9ab36af9d54cae6725ca7bb03a746c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -83,9 +83,9 @@ Public Member Functions</h2></td></tr>
 virtual const <a class="el" href="classstir_1_1DataSymmetriesForDensels.html">DataSymmetriesForDensels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#aecda7b5a2738763297bf6c3e2d60c8f6">get_symmetries_ptr</a> () const =0</td></tr>
 <tr class="memdesc:aecda7b5a2738763297bf6c3e2d60c8f6 inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to an object encoding all symmetries that are used by this <a class="el" href="classstir_1_1ProjMatrixByDensel.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;Densel&#39;...">ProjMatrixByDensel</a> <br /></td></tr>
 <tr class="separator:aecda7b5a2738763297bf6c3e2d60c8f6 inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8b131cf8651f9139308405a0a9106f inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a8c8b131cf8651f9139308405a0a9106f">get_proj_matrix_elems_for_one_densel</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;, const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a8c8b131cf8651f9139308405a0a9106f inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a column of the matrix.  <a href="classstir_1_1ProjMatrixByDensel.html#a8c8b131cf8651f9139308405a0a9106f">More...</a><br /></td></tr>
-<tr class="separator:a8c8b131cf8651f9139308405a0a9106f inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5fdbeb71bdad10de0bfbadff8201ef inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#aee5fdbeb71bdad10de0bfbadff8201ef">get_proj_matrix_elems_for_one_densel</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;, const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;) const</td></tr>
+<tr class="memdesc:aee5fdbeb71bdad10de0bfbadff8201ef inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a column of the matrix.  <a href="classstir_1_1ProjMatrixByDensel.html#aee5fdbeb71bdad10de0bfbadff8201ef">More...</a><br /></td></tr>
+<tr class="separator:aee5fdbeb71bdad10de0bfbadff8201ef inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f769f19ae78d79006c961cb1381d5cb inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top"><a id="a6f769f19ae78d79006c961cb1381d5cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enable_cache</b> (bool v)</td></tr>
 <tr class="separator:a6f769f19ae78d79006c961cb1381d5cb inherit pub_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +115,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (const char
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a788b101fd56c32b697296e041315af22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a788b101fd56c32b697296e041315af22">calculate_proj_matrix_elems_for_one_densel</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const</td></tr>
-<tr class="memdesc:a788b101fd56c32b697296e041315af22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates all non-zero elements for a particular densel.  <a href="#a788b101fd56c32b697296e041315af22">More...</a><br /></td></tr>
-<tr class="separator:a788b101fd56c32b697296e041315af22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d1e3bb24517d1917c8ea5bcd0e191a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#ad5d1e3bb24517d1917c8ea5bcd0e191a">calculate_proj_matrix_elems_for_one_densel</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const override</td></tr>
+<tr class="memdesc:ad5d1e3bb24517d1917c8ea5bcd0e191a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates all non-zero elements for a particular densel.  <a href="#ad5d1e3bb24517d1917c8ea5bcd0e191a">More...</a><br /></td></tr>
+<tr class="separator:ad5d1e3bb24517d1917c8ea5bcd0e191a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ProjMatrixByDensel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ProjMatrixByDensel')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ProjMatrixByDensel.html">stir::ProjMatrixByDensel</a></td></tr>
 <tr class="memitem:a0b60f78ac5bbc4b581b62735eb5a2ea0 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top"><a id="a0b60f78ac5bbc4b581b62735eb5a2ea0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a0b60f78ac5bbc4b581b62735eb5a2ea0">ProjMatrixByDensel</a> ()</td></tr>
@@ -126,9 +126,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a25ea371d91c1da24eda98d257d23c206 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a25ea371d91c1da24eda98d257d23c206">get_cached_proj_matrix_elems_for_one_densel</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const</td></tr>
 <tr class="memdesc:a25ea371d91c1da24eda98d257d23c206 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method that tries to get data from the cache.  <a href="classstir_1_1ProjMatrixByDensel.html#a25ea371d91c1da24eda98d257d23c206">More...</a><br /></td></tr>
 <tr class="separator:a25ea371d91c1da24eda98d257d23c206 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c261e8056ebbca17e5a11aefc277407 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a4c261e8056ebbca17e5a11aefc277407">cache_proj_matrix_elems_for_one_densel</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a4c261e8056ebbca17e5a11aefc277407 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache.  <a href="classstir_1_1ProjMatrixByDensel.html#a4c261e8056ebbca17e5a11aefc277407">More...</a><br /></td></tr>
-<tr class="separator:a4c261e8056ebbca17e5a11aefc277407 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2ca8bfada3a1a630b6ea45d40b4a81 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByDensel.html#a2d2ca8bfada3a1a630b6ea45d40b4a81">cache_proj_matrix_elems_for_one_densel</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html">ProjMatrixElemsForOneDensel</a> &amp;) const</td></tr>
+<tr class="memdesc:a2d2ca8bfada3a1a630b6ea45d40b4a81 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache.  <a href="classstir_1_1ProjMatrixByDensel.html#a2d2ca8bfada3a1a630b6ea45d40b4a81">More...</a><br /></td></tr>
+<tr class="separator:a2d2ca8bfada3a1a630b6ea45d40b4a81 inherit pro_methods_classstir_1_1ProjMatrixByDensel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad5f86478612a06b86e28adf664afcd74 inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ad5f86478612a06b86e28adf664afcd74"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad5f86478612a06b86e28adf664afcd74">set_defaults</a> ()</td></tr>
@@ -207,8 +207,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <dd>
 Current implementation assumes that x,y voxel sizes are at least as large as the sampling in tangential direction, and that z voxel size is either smaller than or exactly twice the sampling in axial direction of the segments. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6a8ddb1bf4a2c5a03b79c5dea28baf2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8ddb1bf4a2c5a03b79c5dea28baf2f">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a8ee91b1ff389c22328dc67b3561e5a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee91b1ff389c22328dc67b3561e5a70">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +225,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -236,7 +236,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -246,11 +246,11 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 <p>Note that the density_info_ptr is not stored in this object. It's only used to get some info on sizes etc.</p>
 <p>Currently, the proj_data_info_ptr argument is not used. </p>
 
-<p>Implements <a class="el" href="classstir_1_1ProjMatrixByDensel.html#a0d4ebf1ad4385dbe6abcf4186db0fef3">stir::ProjMatrixByDensel</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1ProjMatrixByDensel.html#aa7c8461d8a0393de13269534fa1b56f0">stir::ProjMatrixByDensel</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#af953767171e78b7229285dd9a3791a90">stir::ProjMatrixByDenselUsingRayTracing</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#a5456cd444378c7110d4b16328c20e2ef">stir::ProjMatrixByDenselUsingRayTracing</a>.</p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions-1, elemT &gt; &gt;::get_min_index()</a>, and <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_min_index()</a>, and <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>.</p>
 
 </div>
 </div>
@@ -300,12 +300,12 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 <p>Ideally, get_element should be implemented such that tiny elements are truncated to 0, to avoid storing (and using) elements that not really contribute to the result.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Currently, the densel_ctr has to be in mm and w.r.t. the centre of the scanner. This is a bad idea (it should use dicrete coordinates) and so will change in the future. It's there now for the RT projector to avoid recomputing the coordinates per mm fo revery bin. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#a0100a0515a366ef0aae38c9d548e6535">stir::ProjMatrixByDenselUsingRayTracing</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByDenselUsingRayTracing.html#a014872c1657083bb0e530dbb4f81fb3b">stir::ProjMatrixByDenselUsingRayTracing</a>.</p>
 
 </div>
 </div>
-<a id="a788b101fd56c32b697296e041315af22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a788b101fd56c32b697296e041315af22">&#9670;&nbsp;</a></span>calculate_proj_matrix_elems_for_one_densel()</h2>
+<a id="ad5d1e3bb24517d1917c8ea5bcd0e191a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d1e3bb24517d1917c8ea5bcd0e191a">&#9670;&nbsp;</a></span>calculate_proj_matrix_elems_for_one_densel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +323,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -333,7 +333,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 
 <p>Implements <a class="el" href="classstir_1_1ProjMatrixByDensel.html#adf0786694ad44e51fab4bdd770a74fdf">stir::ProjMatrixByDensel</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a633f36b624f68ccfc2e412acb94ce787">stir::ProjMatrixElemsForOneDensel::get_densel()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a695320c0d3c5e52764f40d470fb92680">stir::ProjMatrixElemsForOneDensel::push_back()</a>, <a class="el" href="classstir_1_1Bin.html#af34309374c1942f4a554f01eab3ef6e0">stir::Bin::set_bin_value()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a90ba7d92be58d07db61d2d1d1b6f2e08">stir::ProjMatrixElemsForOneDensel::size()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, and <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af76b0dd70fca22785f06b7546958f917">stir::ProjMatrixElemsForOneDensel::get_densel()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a695320c0d3c5e52764f40d470fb92680">stir::ProjMatrixElemsForOneDensel::push_back()</a>, <a class="el" href="classstir_1_1Bin.html#af34309374c1942f4a554f01eab3ef6e0">stir::Bin::set_bin_value()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a90ba7d92be58d07db61d2d1d1b6f2e08">stir::ProjMatrixElemsForOneDensel::size()</a>, <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>, and <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ Current implementation assumes that x,y voxel sizes are at least as large as the
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

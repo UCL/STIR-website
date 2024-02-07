@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,9 +78,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae74ec18d12b1e7c61af4a968966e9be8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae74ec18d12b1e7c61af4a968966e9be8">get_singles</a> (int singles_bin_index, unsigned int frame_number) const</td></tr>
 <tr class="memdesc:ae74ec18d12b1e7c61af4a968966e9be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the singles for a particular singles unit and frame number.  <a href="#ae74ec18d12b1e7c61af4a968966e9be8">More...</a><br /></td></tr>
 <tr class="separator:ae74ec18d12b1e7c61af4a968966e9be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010699c234f553fe65a6d71048ce0088"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#a010699c234f553fe65a6d71048ce0088">get_singles</a> (const int singles_bin_index, const double start_time, const double end_time) const</td></tr>
-<tr class="memdesc:a010699c234f553fe65a6d71048ce0088"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the singles for a particular singles unit and a frame with the specified start and end times.  <a href="#a010699c234f553fe65a6d71048ce0088">More...</a><br /></td></tr>
-<tr class="separator:a010699c234f553fe65a6d71048ce0088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae074ab6dbfcf1b95b12e2d8453fe74cb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae074ab6dbfcf1b95b12e2d8453fe74cb">get_singles</a> (const int singles_bin_index, const double start_time, const double end_time) const override</td></tr>
+<tr class="memdesc:ae074ab6dbfcf1b95b12e2d8453fe74cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the singles for a particular singles unit and a frame with the specified start and end times.  <a href="#ae074ab6dbfcf1b95b12e2d8453fe74cb">More...</a><br /></td></tr>
+<tr class="separator:ae074ab6dbfcf1b95b12e2d8453fe74cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48bbd2a84d4670b85b238a50c6fd3976"><td class="memItemLeft" align="right" valign="top"><a id="a48bbd2a84d4670b85b238a50c6fd3976"></a>
 <a class="el" href="classstir_1_1FrameSinglesRates.html">FrameSinglesRates</a> <a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#a48bbd2a84d4670b85b238a50c6fd3976">get_rates_for_frame</a> (double start_time, double end_time) const</td></tr>
 <tr class="memdesc:a48bbd2a84d4670b85b238a50c6fd3976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a FramesSinglesRate - containing the average rates. <br /></td></tr>
@@ -136,9 +136,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (const char
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a38352bffccb3da704b46a04343f54668"><td class="memItemLeft" align="right" valign="top"><a id="a38352bffccb3da704b46a04343f54668"></a>
+<tr class="memitem:a7910214987cbb6506b7568a34629d53a"><td class="memItemLeft" align="right" valign="top"><a id="a7910214987cbb6506b7568a34629d53a"></a>
 <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 2, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_singles</b></td></tr>
-<tr class="separator:a38352bffccb3da704b46a04343f54668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7910214987cbb6506b7568a34629d53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb0f0ed25d90fa3812c61b89c838f608"><td class="memItemLeft" align="right" valign="top"><a id="adb0f0ed25d90fa3812c61b89c838f608"></a>
 <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_time_frame_defs</b></td></tr>
 <tr class="separator:adb0f0ed25d90fa3812c61b89c838f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,8 +227,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a010699c234f553fe65a6d71048ce0088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a010699c234f553fe65a6d71048ce0088">&#9670;&nbsp;</a></span>get_singles() <span class="overload">[2/2]</span></h2>
+<a id="ae074ab6dbfcf1b95b12e2d8453fe74cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae074ab6dbfcf1b95b12e2d8453fe74cb">&#9670;&nbsp;</a></span>get_singles() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +262,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -319,7 +319,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

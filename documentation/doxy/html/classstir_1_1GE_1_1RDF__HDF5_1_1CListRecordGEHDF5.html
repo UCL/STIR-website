@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -59,60 +59,62 @@ Inheritance diagram for stir::GE::RDF_HDF5::CListRecordGEHDF5:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5__inherit__graph.png" border="0" usemap="#stir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5_inherit__map" id="stir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="19,313,117,339"/>
-<area shape="rect" id="node3" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="141,305,344,347"/>
-<area shape="rect" id="node4" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="136,200,349,256"/>
-<area shape="rect" id="node5" href="classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="181,5,294,32"/>
-<area shape="rect" id="node6" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="259,81,493,123"/>
+<area shape="rect" id="node2" href="classstir_1_1CListRecord.html" title="Class for records in a PET list mode file. " alt="" coords="903,5,1025,32"/>
+<area shape="rect" id="node3" href="classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="651,5,762,32"/>
+<area shape="rect" id="node4" href="classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="915,56,1013,83"/>
+<area shape="rect" id="node5" href="classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="863,107,1065,149"/>
+<area shape="rect" id="node6" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="600,100,813,156"/>
+<area shape="rect" id="node7" href="classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="5,117,119,144"/>
+<area shape="rect" id="node8" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="168,139,401,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e6207161c2c9e334aa3529c20996550"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a6e6207161c2c9e334aa3529c20996550">CListRecordGEHDF5</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;scanner_sptr, const unsigned long first_time_stamp)</td></tr>
-<tr class="memdesc:a6e6207161c2c9e334aa3529c20996550"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#a6e6207161c2c9e334aa3529c20996550">More...</a><br /></td></tr>
-<tr class="separator:a6e6207161c2c9e334aa3529c20996550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a888b710531e916caf4be2d01a704ee84"><td class="memItemLeft" align="right" valign="top"><a id="a888b710531e916caf4be2d01a704ee84"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_time</b> () const</td></tr>
-<tr class="separator:a888b710531e916caf4be2d01a704ee84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c01875cab0a746d33f7172e6233ea67"><td class="memItemLeft" align="right" valign="top"><a id="a6c01875cab0a746d33f7172e6233ea67"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_event</b> () const</td></tr>
-<tr class="separator:a6c01875cab0a746d33f7172e6233ea67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60df811c89e9b5e52e7a6f61751ca26b"><td class="memItemLeft" align="right" valign="top"><a id="a60df811c89e9b5e52e7a6f61751ca26b"></a>
-virtual <a class="el" href="classstir_1_1CListEvent.html">CListEvent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> ()</td></tr>
-<tr class="separator:a60df811c89e9b5e52e7a6f61751ca26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39f9fafdc81b0b686769f3b5750a185c"><td class="memItemLeft" align="right" valign="top"><a id="a39f9fafdc81b0b686769f3b5750a185c"></a>
-virtual const <a class="el" href="classstir_1_1CListEvent.html">CListEvent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> () const</td></tr>
-<tr class="separator:a39f9fafdc81b0b686769f3b5750a185c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78dbd6bbda7c2a09111512f9b07d18d4"><td class="memItemLeft" align="right" valign="top"><a id="a78dbd6bbda7c2a09111512f9b07d18d4"></a>
-virtual <a class="el" href="classstir_1_1ListTime.html">ListTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>time</b> ()</td></tr>
-<tr class="separator:a78dbd6bbda7c2a09111512f9b07d18d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d10b2c55ae46dadf87a447db286d85"><td class="memItemLeft" align="right" valign="top"><a id="a60d10b2c55ae46dadf87a447db286d85"></a>
-virtual const <a class="el" href="classstir_1_1ListTime.html">ListTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>time</b> () const</td></tr>
-<tr class="separator:a60d10b2c55ae46dadf87a447db286d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061a3351576303c6c603051feb09bd23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a061a3351576303c6c603051feb09bd23">CListRecordGEHDF5</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_sptr, const unsigned long first_time_stamp)</td></tr>
+<tr class="memdesc:a061a3351576303c6c603051feb09bd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#a061a3351576303c6c603051feb09bd23">More...</a><br /></td></tr>
+<tr class="separator:a061a3351576303c6c603051feb09bd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae461a880be5c41467c11263ce2fe6cc7"><td class="memItemLeft" align="right" valign="top"><a id="ae461a880be5c41467c11263ce2fe6cc7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_time</b> () const override</td></tr>
+<tr class="separator:ae461a880be5c41467c11263ce2fe6cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721277c4682dfd866e5619ad23d6356c"><td class="memItemLeft" align="right" valign="top"><a id="a721277c4682dfd866e5619ad23d6356c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_event</b> () const override</td></tr>
+<tr class="separator:a721277c4682dfd866e5619ad23d6356c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b1dc39d20ae30d9e692024bff5ff4d"><td class="memItemLeft" align="right" valign="top"><a id="a72b1dc39d20ae30d9e692024bff5ff4d"></a>
+<a class="el" href="classstir_1_1CListEvent.html">CListEvent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> () override</td></tr>
+<tr class="separator:a72b1dc39d20ae30d9e692024bff5ff4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2861b8af98b1f352a5de6582bc0abb10"><td class="memItemLeft" align="right" valign="top"><a id="a2861b8af98b1f352a5de6582bc0abb10"></a>
+const <a class="el" href="classstir_1_1CListEvent.html">CListEvent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> () const override</td></tr>
+<tr class="separator:a2861b8af98b1f352a5de6582bc0abb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f6b2cb1689c37da7ceedac0881dfb4"><td class="memItemLeft" align="right" valign="top"><a id="af1f6b2cb1689c37da7ceedac0881dfb4"></a>
+<a class="el" href="classstir_1_1ListTime.html">ListTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>time</b> () override</td></tr>
+<tr class="separator:af1f6b2cb1689c37da7ceedac0881dfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f0911e47211b3df5da639ca15b522f"><td class="memItemLeft" align="right" valign="top"><a id="ae9f0911e47211b3df5da639ca15b522f"></a>
+const <a class="el" href="classstir_1_1ListTime.html">ListTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>time</b> () const override</td></tr>
+<tr class="separator:ae9f0911e47211b3df5da639ca15b522f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a6f71e7e8bc2097c56c0ee80dfcef7"><td class="memItemLeft" align="right" valign="top"><a id="a93a6f71e7e8bc2097c56c0ee80dfcef7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const CListRecord &amp;e2) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1CListRecord.html">CListRecord</a> &amp;e2) const</td></tr>
 <tr class="separator:a93a6f71e7e8bc2097c56c0ee80dfcef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a34785f15370326a957a6b56c56b05"><td class="memItemLeft" align="right" valign="top"><a id="a89a34785f15370326a957a6b56c56b05"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_in_millisecs</b> () const</td></tr>
-<tr class="separator:a89a34785f15370326a957a6b56c56b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b5f069fd81f4e920fab40736ae8b019"><td class="memItemLeft" align="right" valign="top"><a id="a8b5f069fd81f4e920fab40736ae8b019"></a>
-<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_in_millisecs</b> (const unsigned long time_in_millisecs)</td></tr>
-<tr class="separator:a8b5f069fd81f4e920fab40736ae8b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55825d93ba264058b8308827e8d83b2b"><td class="memItemLeft" align="right" valign="top"><a id="a55825d93ba264058b8308827e8d83b2b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b> () const</td></tr>
-<tr class="separator:a55825d93ba264058b8308827e8d83b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b74cb69db302e954a7e32d9e1e7c296"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a3b74cb69db302e954a7e32d9e1e7c296">set_prompt</a> (const bool prompt=true)</td></tr>
-<tr class="memdesc:a3b74cb69db302e954a7e32d9e1e7c296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the event from prompt to delayed or vice versa.  <a href="#a3b74cb69db302e954a7e32d9e1e7c296">More...</a><br /></td></tr>
-<tr class="separator:a3b74cb69db302e954a7e32d9e1e7c296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48440860841938b6cb503ee4ed113e02"><td class="memItemLeft" align="right" valign="top"><a id="a48440860841938b6cb503ee4ed113e02"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a48440860841938b6cb503ee4ed113e02">get_detection_position</a> (<a class="el" href="classstir_1_1DetectionPositionPair.html">DetectionPositionPair</a>&lt;&gt; &amp;det_pos) const</td></tr>
-<tr class="memdesc:a48440860841938b6cb503ee4ed113e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine returns the corresponding detector pair. <br /></td></tr>
-<tr class="separator:a48440860841938b6cb503ee4ed113e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2dfa08b812e23d3b9c87fd5ba39861"><td class="memItemLeft" align="right" valign="top"><a id="a7a2dfa08b812e23d3b9c87fd5ba39861"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a7a2dfa08b812e23d3b9c87fd5ba39861">set_detection_position</a> (const <a class="el" href="classstir_1_1DetectionPositionPair.html">DetectionPositionPair</a>&lt;&gt; &amp;)</td></tr>
-<tr class="memdesc:a7a2dfa08b812e23d3b9c87fd5ba39861"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets in a coincidence event from detector "indices". <br /></td></tr>
-<tr class="separator:a7a2dfa08b812e23d3b9c87fd5ba39861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78c0b4b35971260d2c978165e92f19"><td class="memItemLeft" align="right" valign="top"><a id="a8b78c0b4b35971260d2c978165e92f19"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_in_millisecs</b> () const override</td></tr>
+<tr class="separator:a8b78c0b4b35971260d2c978165e92f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7387f7ba7cd6fd2b4d4b806bc89e1291"><td class="memItemLeft" align="right" valign="top"><a id="a7387f7ba7cd6fd2b4d4b806bc89e1291"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_in_millisecs</b> (const unsigned long time_in_millisecs) override</td></tr>
+<tr class="separator:a7387f7ba7cd6fd2b4d4b806bc89e1291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addae2b4c68a2d1443477a8783972c019"><td class="memItemLeft" align="right" valign="top"><a id="addae2b4c68a2d1443477a8783972c019"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b> () const override</td></tr>
+<tr class="separator:addae2b4c68a2d1443477a8783972c019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebe28664430507683d077efb7a8b964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#abebe28664430507683d077efb7a8b964">set_prompt</a> (const bool prompt=true) override</td></tr>
+<tr class="memdesc:abebe28664430507683d077efb7a8b964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the event from prompt to delayed or vice versa.  <a href="#abebe28664430507683d077efb7a8b964">More...</a><br /></td></tr>
+<tr class="separator:abebe28664430507683d077efb7a8b964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f8baf721267fa2758f350da8d39c95"><td class="memItemLeft" align="right" valign="top"><a id="aa2f8baf721267fa2758f350da8d39c95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#aa2f8baf721267fa2758f350da8d39c95">get_detection_position</a> (<a class="el" href="classstir_1_1DetectionPositionPair.html">DetectionPositionPair</a>&lt;&gt; &amp;det_pos) const override</td></tr>
+<tr class="memdesc:aa2f8baf721267fa2758f350da8d39c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine returns the corresponding detector pair. <br /></td></tr>
+<tr class="separator:aa2f8baf721267fa2758f350da8d39c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b93c5db2e97f370fdb4f09ae5e4216f"><td class="memItemLeft" align="right" valign="top"><a id="a5b93c5db2e97f370fdb4f09ae5e4216f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html#a5b93c5db2e97f370fdb4f09ae5e4216f">set_detection_position</a> (const <a class="el" href="classstir_1_1DetectionPositionPair.html">DetectionPositionPair</a>&lt;&gt; &amp;) override</td></tr>
+<tr class="memdesc:a5b93c5db2e97f370fdb4f09ae5e4216f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets in a coincidence event from detector "indices". <br /></td></tr>
+<tr class="separator:a5b93c5db2e97f370fdb4f09ae5e4216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2065a1562db50489faa9555e4d357a9a"><td class="memItemLeft" align="right" valign="top"><a id="a2065a1562db50489faa9555e4d357a9a"></a>
 virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_of_record_at_ptr</b> (const char *const data_ptr, const std::size_t, const bool do_byte_swap) const</td></tr>
 <tr class="separator:a2065a1562db50489faa9555e4d357a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,21 +129,21 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>get_time_in_secs</b
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_in_secs</b> (const double time_in_secs)</td></tr>
 <tr class="separator:aa0f23e054e2d1021c2467a40592ff34a inherit pub_methods_classstir_1_1ListTime"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoCylindricalNoArcCorr &gt;</a></td></tr>
-<tr class="memitem:aca8cb8dc87612b5eb7f16bac8157c289 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a id="aca8cb8dc87612b5eb7f16bac8157c289"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CListEventScannerWithDiscreteDetectors</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;)</td></tr>
-<tr class="separator:aca8cb8dc87612b5eb7f16bac8157c289 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f22a3388df07bb8cede5ce5de6373d8 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a id="a1f22a3388df07bb8cede5ce5de6373d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CListEventScannerWithDiscreteDetectors</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info)</td></tr>
+<tr class="separator:a1f22a3388df07bb8cede5ce5de6373d8 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16ce55ec86c87b8088fcf65b9d3c787d inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a id="a16ce55ec86c87b8088fcf65b9d3c787d"></a>
 const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_scanner_ptr</b> () const</td></tr>
 <tr class="separator:a16ce55ec86c87b8088fcf65b9d3c787d inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e5e26c6f4d8e6dfa168d2f1b1cbecc4 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a2e5e26c6f4d8e6dfa168d2f1b1cbecc4">get_LOR</a> () const</td></tr>
-<tr class="memdesc:a2e5e26c6f4d8e6dfa168d2f1b1cbecc4 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">find LOR between detector pairs  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a2e5e26c6f4d8e6dfa168d2f1b1cbecc4">More...</a><br /></td></tr>
-<tr class="separator:a2e5e26c6f4d8e6dfa168d2f1b1cbecc4 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a95446bd0ccb04a5917dab4500c116 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#ac0a95446bd0ccb04a5917dab4500c116">get_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info) const</td></tr>
-<tr class="memdesc:ac0a95446bd0ccb04a5917dab4500c116 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">find bin for this event  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#ac0a95446bd0ccb04a5917dab4500c116">More...</a><br /></td></tr>
-<tr class="separator:ac0a95446bd0ccb04a5917dab4500c116 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e9b238e93b23e3ac7015a85b2bd664 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#af2e9b238e93b23e3ac7015a85b2bd664">is_valid_template</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;) const</td></tr>
-<tr class="memdesc:af2e9b238e93b23e3ac7015a85b2bd664 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if the template is valid for LmToProjData.  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#af2e9b238e93b23e3ac7015a85b2bd664">More...</a><br /></td></tr>
-<tr class="separator:af2e9b238e93b23e3ac7015a85b2bd664 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4904dfd44e8946f8deefb758645dc67 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1LORAs2Points.html">LORAs2Points</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#aa4904dfd44e8946f8deefb758645dc67">get_LOR</a> () const override</td></tr>
+<tr class="memdesc:aa4904dfd44e8946f8deefb758645dc67 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">find LOR between detector pairs  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#aa4904dfd44e8946f8deefb758645dc67">More...</a><br /></td></tr>
+<tr class="separator:aa4904dfd44e8946f8deefb758645dc67 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf3e76b8b467361911563cc4507e3e1 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#acbf3e76b8b467361911563cc4507e3e1">get_bin</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;bin, const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;proj_data_info) const override</td></tr>
+<tr class="memdesc:acbf3e76b8b467361911563cc4507e3e1 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">find bin for this event  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#acbf3e76b8b467361911563cc4507e3e1">More...</a><br /></td></tr>
+<tr class="separator:acbf3e76b8b467361911563cc4507e3e1 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13a82b306198a6d81d741ec928a3e6 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a0e13a82b306198a6d81d741ec928a3e6">is_valid_template</a> (const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &amp;) const override</td></tr>
+<tr class="memdesc:a0e13a82b306198a6d81d741ec928a3e6 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if the template is valid for LmToProjData.  <a href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#a0e13a82b306198a6d81d741ec928a3e6">More...</a><br /></td></tr>
+<tr class="separator:a0e13a82b306198a6d81d741ec928a3e6 inherit pub_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -149,17 +151,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a123be948c60c446d9be1c8c3026d9536 inherit pro_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a id="a123be948c60c446d9be1c8c3026d9536"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html">ProjDataInfoCylindricalNoArcCorr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_uncompressed_proj_data_info_sptr</b> () const</td></tr>
 <tr class="separator:a123be948c60c446d9be1c8c3026d9536 inherit pro_methods_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classstir_1_1CListEventScannerWithDiscreteDetectors"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1CListEventScannerWithDiscreteDetectors')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoCylindricalNoArcCorr &gt;</a></td></tr>
-<tr class="memitem:a4c43bc867487d4a9138811e3ff83f185 inherit pro_attribs_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memItemLeft" align="right" valign="top"><a id="a4c43bc867487d4a9138811e3ff83f185"></a>
-shared_ptr&lt; const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scanner_sptr</b></td></tr>
-<tr class="separator:a4c43bc867487d4a9138811e3ff83f185 inherit pro_attribs_classstir_1_1CListEventScannerWithDiscreteDetectors"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for a general element (or "record") of a <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> RDF9 listmode file. </p>
 <p>All types of records are stored in a (private) union with the "basic" classes such as CListEventDataGEHDF5. This class essentially just forwards the work to the "basic" classes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6e6207161c2c9e334aa3529c20996550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e6207161c2c9e334aa3529c20996550">&#9670;&nbsp;</a></span>CListRecordGEHDF5()</h2>
+<a id="a061a3351576303c6c603051feb09bd23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061a3351576303c6c603051feb09bd23">&#9670;&nbsp;</a></span>CListRecordGEHDF5()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,8 +168,8 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> 
         <tr>
           <td class="memname">stir::GE::RDF_HDF5::CListRecordGEHDF5::CListRecordGEHDF5 </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>scanner_sptr</em>, </td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proj_data_info_sptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -199,8 +197,8 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3b74cb69db302e954a7e32d9e1e7c296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b74cb69db302e954a7e32d9e1e7c296">&#9670;&nbsp;</a></span>set_prompt()</h2>
+<a id="abebe28664430507683d077efb7a8b964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebe28664430507683d077efb7a8b964">&#9670;&nbsp;</a></span>set_prompt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +216,7 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -236,7 +234,7 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,11 +1,11 @@
 <map id="stir::IndexRange&lt; num_dimensions &gt;" name="stir::IndexRange&lt; num_dimensions &gt;">
-<area shape="rect" id="node4" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="1073,5,1223,32"/>
-<area shape="rect" id="node6" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1073,56,1223,83"/>
-<area shape="rect" id="node8" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 4 \&gt;" alt="" coords="1073,107,1223,133"/>
-<area shape="rect" id="node10" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; num\l_dimensions&#45;1 \&gt;" alt="" coords="1071,158,1225,199"/>
-<area shape="rect" id="node2" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions&#45;1 \&gt; \&gt;" alt="" coords="432,75,681,117"/>
-<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,83,187,109"/>
-<area shape="rect" id="node5" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges. " alt="" coords="1275,5,1409,32"/>
-<area shape="rect" id="node7" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges..." alt="" coords="1275,56,1409,83"/>
-<area shape="rect" id="node9" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges. " alt="" coords="1275,107,1409,133"/>
+<area shape="rect" id="node4" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; num\l_dimensions &#45; 1 \&gt;" alt="" coords="1044,5,1199,47"/>
+<area shape="rect" id="node5" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="1047,71,1196,98"/>
+<area shape="rect" id="node7" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1047,122,1196,149"/>
+<area shape="rect" id="node9" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 4 \&gt;" alt="" coords="1047,173,1196,199"/>
+<area shape="rect" id="node2" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions\l &#45; 1 \&gt; \&gt;" alt="" coords="432,81,647,137"/>
+<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,95,187,122"/>
+<area shape="rect" id="node6" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges. " alt="" coords="1248,71,1383,98"/>
+<area shape="rect" id="node8" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges..." alt="" coords="1248,122,1383,149"/>
+<area shape="rect" id="node10" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges. " alt="" coords="1248,173,1383,199"/>
 </map>

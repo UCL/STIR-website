@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,12 @@ Inheritance diagram for stir::ProjMatrixByBin:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a980a5752fc68b8ec3642d9065182eb28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a980a5752fc68b8ec3642d9065182eb28">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)=0</td></tr>
-<tr class="memdesc:a980a5752fc68b8ec3642d9065182eb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called before any calculation is performed.  <a href="#a980a5752fc68b8ec3642d9065182eb28">More...</a><br /></td></tr>
-<tr class="separator:a980a5752fc68b8ec3642d9065182eb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422ce01c497e5c9828b74e5bf96f1d5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a422ce01c497e5c9828b74e5bf96f1d5a">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;density_info_ptr)=0</td></tr>
+<tr class="memdesc:a422ce01c497e5c9828b74e5bf96f1d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called before any calculation is performed.  <a href="#a422ce01c497e5c9828b74e5bf96f1d5a">More...</a><br /></td></tr>
+<tr class="separator:a422ce01c497e5c9828b74e5bf96f1d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df93123ce990d76a6ba86cc9b9388fe"><td class="memItemLeft" align="right" valign="top"><a id="a6df93123ce990d76a6ba86cc9b9388fe"></a>
+virtual <a class="el" href="classstir_1_1ProjMatrixByBin.html">ProjMatrixByBin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const =0</td></tr>
+<tr class="separator:a6df93123ce990d76a6ba86cc9b9388fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082de424209ed65bad81bd9896382f58"><td class="memItemLeft" align="right" valign="top"><a id="a082de424209ed65bad81bd9896382f58"></a>
 const <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetriesForBins</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a082de424209ed65bad81bd9896382f58">get_symmetries_ptr</a> () const</td></tr>
 <tr class="memdesc:a082de424209ed65bad81bd9896382f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to an object encoding all symmetries that are used by this <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> <br /></td></tr>
@@ -98,9 +101,9 @@ const <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetrie
 const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetriesForBins</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a167e33f34da78ba80cb71cac17814e5b">get_symmetries_sptr</a> () const</td></tr>
 <tr class="memdesc:a167e33f34da78ba80cb71cac17814e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a shared_ptr to an object encoding all symmetries that are used by this <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> <br /></td></tr>
 <tr class="separator:a167e33f34da78ba80cb71cac17814e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ade76e137791338a39fa73161759c30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9ade76e137791338a39fa73161759c30">get_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9ade76e137791338a39fa73161759c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a row of the matrix.  <a href="#a9ade76e137791338a39fa73161759c30">More...</a><br /></td></tr>
-<tr class="separator:a9ade76e137791338a39fa73161759c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13aad71658eca8479824be6f388d5f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#ad13aad71658eca8479824be6f388d5f2">get_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:ad13aad71658eca8479824be6f388d5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a row of the matrix.  <a href="#ad13aad71658eca8479824be6f388d5f2">More...</a><br /></td></tr>
+<tr class="separator:ad13aad71658eca8479824be6f388d5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cce41b235b6eb8702805f9d132353c"><td class="memItemLeft" align="right" valign="top"><a id="a49cce41b235b6eb8702805f9d132353c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enable_cache</b> (const bool v=true)</td></tr>
 <tr class="separator:a49cce41b235b6eb8702805f9d132353c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,10 +116,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_cache_enabled</b> 
 <tr class="memitem:accd5c20266ec64ed59d42c97f6db4850"><td class="memItemLeft" align="right" valign="top"><a id="accd5c20266ec64ed59d42c97f6db4850"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>does_cache_store_only_basic_bins</b> () const</td></tr>
 <tr class="separator:accd5c20266ec64ed59d42c97f6db4850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9582c0c06a83fb6da096449c1fb0a84a"><td class="memItemLeft" align="right" valign="top"><a id="a9582c0c06a83fb6da096449c1fb0a84a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9582c0c06a83fb6da096449c1fb0a84a">clear_cache</a> () STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9582c0c06a83fb6da096449c1fb0a84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements from the cache. <br /></td></tr>
-<tr class="separator:a9582c0c06a83fb6da096449c1fb0a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada693b419d7e6e62f90eeb2cd384d976"><td class="memItemLeft" align="right" valign="top"><a id="ada693b419d7e6e62f90eeb2cd384d976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#ada693b419d7e6e62f90eeb2cd384d976">clear_cache</a> () const</td></tr>
+<tr class="memdesc:ada693b419d7e6e62f90eeb2cd384d976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements from the cache. <br /></td></tr>
+<tr class="separator:ada693b419d7e6e62f90eeb2cd384d976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredObjectBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredObjectBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a></td></tr>
 <tr class="memitem:a9eb7d6e93407316c0780e2121e522ae4 inherit pub_methods_classstir_1_1RegisteredObjectBase"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">get_registered_name</a> () const =0</td></tr>
 <tr class="memdesc:a9eb7d6e93407316c0780e2121e522ae4 inherit pub_methods_classstir_1_1RegisteredObjectBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the type of the object.  <a href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">More...</a><br /></td></tr>
@@ -163,27 +166,27 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7f2e7d84849fa3b7491f4a0bd48fc42b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a7f2e7d84849fa3b7491f4a0bd48fc42b">ProjMatrixByBin</a> ()</td></tr>
-<tr class="memdesc:a7f2e7d84849fa3b7491f4a0bd48fc42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a4f5fcb02277880b850e0e1118b523daf" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>)  <a href="#a7f2e7d84849fa3b7491f4a0bd48fc42b">More...</a><br /></td></tr>
+<tr class="memdesc:a7f2e7d84849fa3b7491f4a0bd48fc42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a3ce9de7d66b4f9b63a537650c49d0458" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>)  <a href="#a7f2e7d84849fa3b7491f4a0bd48fc42b">More...</a><br /></td></tr>
 <tr class="separator:a7f2e7d84849fa3b7491f4a0bd48fc42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7be7a72c5dc0bd42683404ec7dfc561"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#aa7be7a72c5dc0bd42683404ec7dfc561">calculate_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) const =0</td></tr>
 <tr class="memdesc:aa7be7a72c5dc0bd42683404ec7dfc561"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method needs to be implemented in the derived class.  <a href="#aa7be7a72c5dc0bd42683404ec7dfc561">More...</a><br /></td></tr>
 <tr class="separator:aa7be7a72c5dc0bd42683404ec7dfc561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5fcb02277880b850e0e1118b523daf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a4f5fcb02277880b850e0e1118b523daf">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a4f5fcb02277880b850e0e1118b523daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for caching configuration (enables caching, but for 'basic' bins only)  <a href="#a4f5fcb02277880b850e0e1118b523daf">More...</a><br /></td></tr>
-<tr class="separator:a4f5fcb02277880b850e0e1118b523daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6227f4ef4ee2abd5d2d4b096ae285e62"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a6227f4ef4ee2abd5d2d4b096ae285e62">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a6227f4ef4ee2abd5d2d4b096ae285e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets keys for caching configuration  <a href="#a6227f4ef4ee2abd5d2d4b096ae285e62">More...</a><br /></td></tr>
-<tr class="separator:a6227f4ef4ee2abd5d2d4b096ae285e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1ff12e964b8f17364ebf758d3cd0dc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#afa1ff12e964b8f17364ebf758d3cd0dc">post_processing</a> ()</td></tr>
-<tr class="memdesc:afa1ff12e964b8f17364ebf758d3cd0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if parameters have sensible values.  <a href="#afa1ff12e964b8f17364ebf758d3cd0dc">More...</a><br /></td></tr>
-<tr class="separator:afa1ff12e964b8f17364ebf758d3cd0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce9de7d66b4f9b63a537650c49d0458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a3ce9de7d66b4f9b63a537650c49d0458">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a3ce9de7d66b4f9b63a537650c49d0458"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for caching configuration (enables caching, but for 'basic' bins only)  <a href="#a3ce9de7d66b4f9b63a537650c49d0458">More...</a><br /></td></tr>
+<tr class="separator:a3ce9de7d66b4f9b63a537650c49d0458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf37c726304846cf411ddf1c4abe7cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#aadf37c726304846cf411ddf1c4abe7cf">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:aadf37c726304846cf411ddf1c4abe7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets keys for caching configuration  <a href="#aadf37c726304846cf411ddf1c4abe7cf">More...</a><br /></td></tr>
+<tr class="separator:aadf37c726304846cf411ddf1c4abe7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa52378615d43b33be70c866db2561a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a1fa52378615d43b33be70c866db2561a">post_processing</a> () override</td></tr>
+<tr class="memdesc:a1fa52378615d43b33be70c866db2561a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if parameters have sensible values.  <a href="#a1fa52378615d43b33be70c866db2561a">More...</a><br /></td></tr>
+<tr class="separator:a1fa52378615d43b33be70c866db2561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded0f037a4ba1109e6aa5f82bfd6a108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#aded0f037a4ba1109e6aa5f82bfd6a108">get_cached_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) const</td></tr>
 <tr class="memdesc:aded0f037a4ba1109e6aa5f82bfd6a108"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method that tries to get data from the cache.  <a href="#aded0f037a4ba1109e6aa5f82bfd6a108">More...</a><br /></td></tr>
 <tr class="separator:aded0f037a4ba1109e6aa5f82bfd6a108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9737ef0503e11c78e9ed294a7fa3d798"><td class="memItemLeft" align="right" valign="top"><a id="a9737ef0503e11c78e9ed294a7fa3d798"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9737ef0503e11c78e9ed294a7fa3d798">cache_proj_matrix_elems_for_one_bin</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9737ef0503e11c78e9ed294a7fa3d798"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache. <br /></td></tr>
-<tr class="separator:a9737ef0503e11c78e9ed294a7fa3d798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a84db90210a0c58cf8077bb4103b1e8"><td class="memItemLeft" align="right" valign="top"><a id="a6a84db90210a0c58cf8077bb4103b1e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a6a84db90210a0c58cf8077bb4103b1e8">cache_proj_matrix_elems_for_one_bin</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) const</td></tr>
+<tr class="memdesc:a6a84db90210a0c58cf8077bb4103b1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache. <br /></td></tr>
+<tr class="separator:a6a84db90210a0c58cf8077bb4103b1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -200,6 +203,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_disabled</b></t
 <tr class="memitem:a281ce78b3edb6da048b007408eab50b1"><td class="memItemLeft" align="right" valign="top"><a id="a281ce78b3edb6da048b007408eab50b1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_basic_bins</b></td></tr>
 <tr class="separator:a281ce78b3edb6da048b007408eab50b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca6c553174539c5187dc2d0b85e0ed5"><td class="memItemLeft" align="right" valign="top"><a id="acca6c553174539c5187dc2d0b85e0ed5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#acca6c553174539c5187dc2d0b85e0ed5">tof_enabled</a></td></tr>
+<tr class="memdesc:acca6c553174539c5187dc2d0b85e0ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If activated TOF reconstruction will be performed. <br /></td></tr>
+<tr class="separator:acca6c553174539c5187dc2d0b85e0ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4d9d679afd51354a957231c0993be7"><td class="memItemLeft" align="right" valign="top"><a id="a6d4d9d679afd51354a957231c0993be7"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a6d4d9d679afd51354a957231c0993be7">image_info_sptr</a></td></tr>
+<tr class="memdesc:a6d4d9d679afd51354a957231c0993be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need a local copy of the discretised density in order to find the cartesian coordinates of each voxel. <br /></td></tr>
+<tr class="separator:a6d4d9d679afd51354a957231c0993be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf047e93e2d21edf9985cf633f0246a1"><td class="memItemLeft" align="right" valign="top"><a id="adf047e93e2d21edf9985cf633f0246a1"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#adf047e93e2d21edf9985cf633f0246a1">proj_data_info_sptr</a></td></tr>
+<tr class="memdesc:adf047e93e2d21edf9985cf633f0246a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need a local copy of the proj_data_info to get the integration boundaries and RayTracing. <br /></td></tr>
+<tr class="separator:adf047e93e2d21edf9985cf633f0246a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -262,14 +277,14 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </table>
 </div><div class="memdoc">
 
-<p>default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a4f5fcb02277880b850e0e1118b523daf" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>) </p>
-<p>Note that due to the C++ definition (and some good reasons), <a class="el" href="classstir_1_1ProjMatrixByBin.html#a4f5fcb02277880b850e0e1118b523daf" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">ProjMatrixByBin::set_defaults()</a> is called, even though this is a virtual function. </p>
+<p>default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a3ce9de7d66b4f9b63a537650c49d0458" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>) </p>
+<p>Note that due to the C++ definition (and some good reasons), <a class="el" href="classstir_1_1ProjMatrixByBin.html#a3ce9de7d66b4f9b63a537650c49d0458" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">ProjMatrixByBin::set_defaults()</a> is called, even though this is a virtual function. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a980a5752fc68b8ec3642d9065182eb28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a980a5752fc68b8ec3642d9065182eb28">&#9670;&nbsp;</a></span>set_up()</h2>
+<a id="a422ce01c497e5c9828b74e5bf96f1d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422ce01c497e5c9828b74e5bf96f1d5a">&#9670;&nbsp;</a></span>set_up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +301,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>density_info_ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -303,17 +318,19 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>To be called before any calculation is performed. </p>
-<p>Note that <a class="el" href="classstir_1_1ProjMatrixByBin.html#a9ade76e137791338a39fa73161759c30" title="The main method for getting a row of the matrix. ">get_proj_matrix_elems_for_one_bin()</a> will expect objects of compatible sizes and other info.</p>
-<dl class="section warning"><dt>Warning</dt><dd>: Any implementation of set_up in a derived class has to call <a class="el" href="classstir_1_1ProjMatrixByBin.html#a980a5752fc68b8ec3642d9065182eb28" title="To be called before any calculation is performed. ">ProjMatrixByBin::set_up</a> first. </dd></dl>
+<p>Note that <a class="el" href="classstir_1_1ProjMatrixByBin.html#ad13aad71658eca8479824be6f388d5f2" title="The main method for getting a row of the matrix. ">get_proj_matrix_elems_for_one_bin()</a> will expect objects of compatible sizes and other info.</p>
+<dl class="section warning"><dt>Warning</dt><dd>: Any implementation of set_up in a derived class has to call <a class="el" href="classstir_1_1ProjMatrixByBin.html#a422ce01c497e5c9828b74e5bf96f1d5a" title="To be called before any calculation is performed. ">ProjMatrixByBin::set_up</a> first. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a019dc9e991a8cde7d9e61811084b0dcd">stir::ProjMatrixByBinPinholeSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#af962c3e6211c3c0fe3e41d1c0f71d10c">stir::ProjMatrixByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">stir::ProjMatrixByBinSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a2e6fe287cbc07685b51b7c58ec13d1cd">stir::ProjMatrixByBinFromFile</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a6e9b4d0f51cbb971dc39eda24fc2255a">stir::ProjMatrixByBinUsingInterpolation</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a13ad2e597ca39ad41e3e86ea910df5e1">stir::ProjMatrixByBinSinglePhoton</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#a9911850dd29959dd8361053ee73dc45e">stir::ProjMatrixByBinUsingSolidAngle</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinWithPositronRange.html#adbb85fd9fe44e136bd7b0c635ba9efe4">stir::ProjMatrixByBinWithPositronRange</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjMatrixByBinPinholeSPECTUB.html#a41c0fb9440b500353c5db94544de9541">stir::ProjMatrixByBinPinholeSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingRayTracing.html#a6d680142e71ec5599ae934172bf0cabe">stir::ProjMatrixByBinUsingRayTracing</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91">stir::ProjMatrixByBinSPECTUB</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a4d44d2220b61f666013bd2b6067286c1">stir::ProjMatrixByBinFromFile</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#ad055166d7295d2a488a4c832d5767535">stir::ProjMatrixByBinUsingInterpolation</a>, <a class="el" href="classstir_1_1ProjMatrixByBinSinglePhoton.html#a72e2dc35f69f8afa82234f1abe320d88">stir::ProjMatrixByBinSinglePhoton</a>, <a class="el" href="classstir_1_1ProjMatrixByBinUsingSolidAngle.html#aae308807ffd8b7f729d3a24e8438057c">stir::ProjMatrixByBinUsingSolidAngle</a>, and <a class="el" href="classstir_1_1ProjMatrixByBinWithPositronRange.html#af329cb92611e85540512bbb5a9fce800">stir::ProjMatrixByBinWithPositronRange</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#a6e9b4d0f51cbb971dc39eda24fc2255a">stir::ProjMatrixByBinUsingInterpolation::set_up()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixByBinUsingInterpolation.html#ad055166d7295d2a488a4c832d5767535">stir::ProjMatrixByBinUsingInterpolation::set_up()</a>.</p>
 
 </div>
 </div>
-<a id="a9ade76e137791338a39fa73161759c30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ade76e137791338a39fa73161759c30">&#9670;&nbsp;</a></span>get_proj_matrix_elems_for_one_bin()</h2>
+<a id="ad13aad71658eca8479824be6f388d5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13aad71658eca8479824be6f388d5f2">&#9670;&nbsp;</a></span>get_proj_matrix_elems_for_one_bin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +353,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -349,6 +366,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>The main method for getting a row of the matrix. </p>
 <p>The <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">ProjMatrixElemsForOneBin</a> argument will be overwritten (i.e. data is NOT appended).</p>
 <p>The implementation is inline as it just gets it in terms of the cached_proj_matrix_elems_for_one_bin or calculate_proj_matrix_elems_for_one_bin. </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a78757dff28f349f6816750453eb4d607">stir::ProjMatrixElemsForOneBin::begin()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#abff84e2d04f73ca59c8f6ae6b31c26e0">stir::ProjMatrixElemsForOneBin::check_state()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#aee912a58ba254bac81e7bd1cd64d27ee">stir::ProjMatrixElemsForOneBin::erase()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a502a164e7a7093fda5e82db56066d1fa">stir::ProjMatrixElemsForOneBin::get_bin()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, <a class="el" href="group__Coordinate.html#ga4770b3db3002116b144d80af7afdef39">stir::norm()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a72caf2f334dddd14869c8c87edf9e3d2">stir::ProjMatrixElemsForOneBin::set_bin()</a>, and <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices::timing_pos_num()</a>.</p>
 
 </div>
 </div>
@@ -377,13 +396,13 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><div class="memdoc">
 
 <p>This method needs to be implemented in the derived class. </p>
-<p>bin-coordinates are obtained via the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#af07cca830120baf2a133911e7ccd58b6" title="get the bin coordinates corresponding to this row ">ProjMatrixElemsForOneBin::get_bin()</a> method.</p>
+<p>bin-coordinates are obtained via the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a502a164e7a7093fda5e82db56066d1fa" title="get the bin coordinates corresponding to this row ">ProjMatrixElemsForOneBin::get_bin()</a> method.</p>
 <p>Note that 'calculate' could just as well mean 'get from file' </p>
 
 </div>
 </div>
-<a id="a4f5fcb02277880b850e0e1118b523daf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5fcb02277880b850e0e1118b523daf">&#9670;&nbsp;</a></span>set_defaults()</h2>
+<a id="a3ce9de7d66b4f9b63a537650c49d0458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce9de7d66b4f9b63a537650c49d0458">&#9670;&nbsp;</a></span>set_defaults()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +419,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -414,8 +433,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 
 </div>
 </div>
-<a id="a6227f4ef4ee2abd5d2d4b096ae285e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6227f4ef4ee2abd5d2d4b096ae285e62">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
+<a id="aadf37c726304846cf411ddf1c4abe7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf37c726304846cf411ddf1c4abe7cf">&#9670;&nbsp;</a></span>initialise_keymap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +451,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -446,8 +465,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 
 </div>
 </div>
-<a id="afa1ff12e964b8f17364ebf758d3cd0dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa1ff12e964b8f17364ebf758d3cd0dc">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="a1fa52378615d43b33be70c866db2561a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa52378615d43b33be70c866db2561a">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,7 +483,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -505,7 +524,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>The method that tries to get data from the cache. </p>
 <p>If it succeeds, it overwrites the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">ProjMatrixElemsForOneBin</a> parameter and returns Succeeded::yes, otherwise it does not touch the <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html" title="This stores the non-zero projection matrix elements for every &#39;densel&#39; that contributes to a given bi...">ProjMatrixElemsForOneBin</a> and returns Succeeded::false. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#af07cca830120baf2a133911e7ccd58b6">stir::ProjMatrixElemsForOneBin::get_bin()</a>, <a class="el" href="namespacestir.html#a36bee634263e39c34efae7ed49465687">stir::open_write_binary()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a502a164e7a7093fda5e82db56066d1fa">stir::ProjMatrixElemsForOneBin::get_bin()</a>, <a class="el" href="namespacestir.html#a36bee634263e39c34efae7ed49465687">stir::open_write_binary()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
 </div>
 </div>
@@ -517,7 +536,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

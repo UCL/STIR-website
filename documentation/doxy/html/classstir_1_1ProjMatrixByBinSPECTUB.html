@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -77,14 +77,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4b260ebd31ffe94eee89997da7a8846"><td class="memItemLeft" align="right" valign="top"><a id="aa4b260ebd31ffe94eee89997da7a8846"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ProjMatrixByBinSPECTUB</b> (const <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html">ProjMatrixByBinSPECTUB</a> &amp;)=delete</td></tr>
 <tr class="separator:aa4b260ebd31ffe94eee89997da7a8846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4236872a84c83b95c955feaedc2098ea"><td class="memItemLeft" align="right" valign="top"><a id="a4236872a84c83b95c955feaedc2098ea"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a4236872a84c83b95c955feaedc2098ea">~ProjMatrixByBinSPECTUB</a> ()</td></tr>
-<tr class="memdesc:a4236872a84c83b95c955feaedc2098ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor (deallocates UB SPECT memory) <br /></td></tr>
-<tr class="separator:a4236872a84c83b95c955feaedc2098ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69877dda450dc8cec15881e2683c98bf"><td class="memItemLeft" align="right" valign="top"><a id="a69877dda450dc8cec15881e2683c98bf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;density_info_ptr)</td></tr>
-<tr class="memdesc:a69877dda450dc8cec15881e2683c98bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks all necessary geometric info. <br /></td></tr>
-<tr class="separator:a69877dda450dc8cec15881e2683c98bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae4cada0f41932b05f6b4b36fd6a962"><td class="memItemLeft" align="right" valign="top"><a id="abae4cada0f41932b05f6b4b36fd6a962"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#abae4cada0f41932b05f6b4b36fd6a962">~ProjMatrixByBinSPECTUB</a> () override</td></tr>
+<tr class="memdesc:abae4cada0f41932b05f6b4b36fd6a962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor (deallocates UB SPECT memory) <br /></td></tr>
+<tr class="separator:abae4cada0f41932b05f6b4b36fd6a962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e05ac38da474aa3acf76686d6bace91"><td class="memItemLeft" align="right" valign="top"><a id="a2e05ac38da474aa3acf76686d6bace91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;proj_data_info_ptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; &amp;density_info_ptr) override</td></tr>
+<tr class="memdesc:a2e05ac38da474aa3acf76686d6bace91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks all necessary geometric info. <br /></td></tr>
+<tr class="separator:a2e05ac38da474aa3acf76686d6bace91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4186117d4c65e128cad7f12d3c2a3aec"><td class="memItemLeft" align="right" valign="top"><a id="a4186117d4c65e128cad7f12d3c2a3aec"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_keep_all_views_in_cache</b> () const</td></tr>
 <tr class="separator:a4186117d4c65e128cad7f12d3c2a3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,24 +100,27 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_attenuatio
 <tr class="memitem:a913eb33a50f5c29c25e3f4760135fe38"><td class="memItemLeft" align="right" valign="top"><a id="a913eb33a50f5c29c25e3f4760135fe38"></a>
 shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_attenuation_image_sptr</b> () const</td></tr>
 <tr class="separator:a913eb33a50f5c29c25e3f4760135fe38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34cb4a0b25ab18afa758f738ceddd2db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a34cb4a0b25ab18afa758f738ceddd2db">set_attenuation_image_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; value)</td></tr>
-<tr class="memdesc:a34cb4a0b25ab18afa758f738ceddd2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets attenuation image.  <a href="#a34cb4a0b25ab18afa758f738ceddd2db">More...</a><br /></td></tr>
-<tr class="separator:a34cb4a0b25ab18afa758f738ceddd2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e7381f3c0f29cbad067f3b68e54a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a66e7381f3c0f29cbad067f3b68e54a75">set_attenuation_image_sptr</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt; value)</td></tr>
+<tr class="memdesc:a66e7381f3c0f29cbad067f3b68e54a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets attenuation image.  <a href="#a66e7381f3c0f29cbad067f3b68e54a75">More...</a><br /></td></tr>
+<tr class="separator:a66e7381f3c0f29cbad067f3b68e54a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efc2720551ceac1d795c1b59d03f63a"><td class="memItemLeft" align="right" valign="top"><a id="a3efc2720551ceac1d795c1b59d03f63a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_attenuation_image_sptr</b> (const std::string &amp;value)</td></tr>
 <tr class="separator:a3efc2720551ceac1d795c1b59d03f63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#aa246bdf6cc8e19f7d9575ee9ca695c24">set_resolution_model</a> (const float collimator_sigma_0_in_mm, const float collimator_slope, const bool full_3D=true)</td></tr>
-<tr class="memdesc:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters for the depth-dependent resolution model.  <a href="#aa246bdf6cc8e19f7d9575ee9ca695c24">More...</a><br /></td></tr>
-<tr class="separator:aa246bdf6cc8e19f7d9575ee9ca695c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aba85154e719015156b174e98a951f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a8aba85154e719015156b174e98a951f2">set_resolution_model</a> (const float collimator_sigma_0_in_mm, const float collimator_slope_in_mm, const bool full_3D=true)</td></tr>
+<tr class="memdesc:a8aba85154e719015156b174e98a951f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters for the depth-dependent resolution model.  <a href="#a8aba85154e719015156b174e98a951f2">More...</a><br /></td></tr>
+<tr class="separator:a8aba85154e719015156b174e98a951f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e282a69fe8e30d7ab0ab8d43306529"><td class="memItemLeft" align="right" valign="top"><a id="a42e282a69fe8e30d7ab0ab8d43306529"></a>
+<a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html">ProjMatrixByBinSPECTUB</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const override</td></tr>
+<tr class="separator:a42e282a69fe8e30d7ab0ab8d43306529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; ProjMatrixByBinSPECTUB, ProjMatrixByBin, ProjMatrixByBin &gt;</a></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ProjMatrixByBin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ProjMatrixByBin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ProjMatrixByBin.html">stir::ProjMatrixByBin</a></td></tr>
 <tr class="memitem:a082de424209ed65bad81bd9896382f58 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a082de424209ed65bad81bd9896382f58"></a>
 const <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetriesForBins</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a082de424209ed65bad81bd9896382f58">get_symmetries_ptr</a> () const</td></tr>
@@ -127,9 +130,9 @@ const <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetrie
 const shared_ptr&lt; <a class="el" href="classstir_1_1DataSymmetriesForBins.html">DataSymmetriesForBins</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a167e33f34da78ba80cb71cac17814e5b">get_symmetries_sptr</a> () const</td></tr>
 <tr class="memdesc:a167e33f34da78ba80cb71cac17814e5b inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a shared_ptr to an object encoding all symmetries that are used by this <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> <br /></td></tr>
 <tr class="separator:a167e33f34da78ba80cb71cac17814e5b inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ade76e137791338a39fa73161759c30 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9ade76e137791338a39fa73161759c30">get_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9ade76e137791338a39fa73161759c30 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a row of the matrix.  <a href="classstir_1_1ProjMatrixByBin.html#a9ade76e137791338a39fa73161759c30">More...</a><br /></td></tr>
-<tr class="separator:a9ade76e137791338a39fa73161759c30 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13aad71658eca8479824be6f388d5f2 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#ad13aad71658eca8479824be6f388d5f2">get_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
+<tr class="memdesc:ad13aad71658eca8479824be6f388d5f2 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main method for getting a row of the matrix.  <a href="classstir_1_1ProjMatrixByBin.html#ad13aad71658eca8479824be6f388d5f2">More...</a><br /></td></tr>
+<tr class="separator:ad13aad71658eca8479824be6f388d5f2 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cce41b235b6eb8702805f9d132353c inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a49cce41b235b6eb8702805f9d132353c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enable_cache</b> (const bool v=true)</td></tr>
 <tr class="separator:a49cce41b235b6eb8702805f9d132353c inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,10 +145,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_cache_enabled</b> 
 <tr class="memitem:accd5c20266ec64ed59d42c97f6db4850 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="accd5c20266ec64ed59d42c97f6db4850"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>does_cache_store_only_basic_bins</b> () const</td></tr>
 <tr class="separator:accd5c20266ec64ed59d42c97f6db4850 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9582c0c06a83fb6da096449c1fb0a84a inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a9582c0c06a83fb6da096449c1fb0a84a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9582c0c06a83fb6da096449c1fb0a84a">clear_cache</a> () STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9582c0c06a83fb6da096449c1fb0a84a inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements from the cache. <br /></td></tr>
-<tr class="separator:a9582c0c06a83fb6da096449c1fb0a84a inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada693b419d7e6e62f90eeb2cd384d976 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="ada693b419d7e6e62f90eeb2cd384d976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#ada693b419d7e6e62f90eeb2cd384d976">clear_cache</a> () const</td></tr>
+<tr class="memdesc:ada693b419d7e6e62f90eeb2cd384d976 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements from the cache. <br /></td></tr>
+<tr class="separator:ada693b419d7e6e62f90eeb2cd384d976 inherit pub_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:a15b8a585ba2b09674b823446bf8481bf inherit pub_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a15b8a585ba2b09674b823446bf8481bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ParsingObject</b> (const <a class="el" href="classstir_1_1ParsingObject.html">ParsingObject</a> &amp;)</td></tr>
@@ -184,8 +187,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ada9baf0e388fd3abc2b82bdfb3c98514"><td class="memItemLeft" align="right" valign="top">static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ada9baf0e388fd3abc2b82bdfb3c98514">registered_name</a></td></tr>
-<tr class="memdesc:ada9baf0e388fd3abc2b82bdfb3c98514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name which will be used when parsing a <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> object.  <a href="#ada9baf0e388fd3abc2b82bdfb3c98514">More...</a><br /></td></tr>
+<tr class="memitem:ada9baf0e388fd3abc2b82bdfb3c98514"><td class="memItemLeft" align="right" valign="top"><a id="ada9baf0e388fd3abc2b82bdfb3c98514"></a>
+static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#ada9baf0e388fd3abc2b82bdfb3c98514">registered_name</a> = &quot;SPECT UB&quot;</td></tr>
+<tr class="memdesc:ada9baf0e388fd3abc2b82bdfb3c98514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name which will be used when parsing a <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> object. <br /></td></tr>
 <tr class="separator:ada9baf0e388fd3abc2b82bdfb3c98514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -215,15 +219,15 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <tr class="separator:aa6dc41fd8a2cb0a5e1118aa32df98711 inherit pro_types_classstir_1_1RegisteredObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ProjMatrixByBin"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ProjMatrixByBin')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ProjMatrixByBin.html">stir::ProjMatrixByBin</a></td></tr>
 <tr class="memitem:a7f2e7d84849fa3b7491f4a0bd48fc42b inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a7f2e7d84849fa3b7491f4a0bd48fc42b">ProjMatrixByBin</a> ()</td></tr>
-<tr class="memdesc:a7f2e7d84849fa3b7491f4a0bd48fc42b inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a4f5fcb02277880b850e0e1118b523daf" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>)  <a href="classstir_1_1ProjMatrixByBin.html#a7f2e7d84849fa3b7491f4a0bd48fc42b">More...</a><br /></td></tr>
+<tr class="memdesc:a7f2e7d84849fa3b7491f4a0bd48fc42b inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">default ctor (calls <a class="el" href="classstir_1_1ProjMatrixByBin.html#a3ce9de7d66b4f9b63a537650c49d0458" title="sets value for caching configuration (enables caching, but for &#39;basic&#39; bins only) ...">set_defaults()</a>)  <a href="classstir_1_1ProjMatrixByBin.html#a7f2e7d84849fa3b7491f4a0bd48fc42b">More...</a><br /></td></tr>
 <tr class="separator:a7f2e7d84849fa3b7491f4a0bd48fc42b inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded0f037a4ba1109e6aa5f82bfd6a108 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#aded0f037a4ba1109e6aa5f82bfd6a108">get_cached_proj_matrix_elems_for_one_bin</a> (<a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) const</td></tr>
 <tr class="memdesc:aded0f037a4ba1109e6aa5f82bfd6a108 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method that tries to get data from the cache.  <a href="classstir_1_1ProjMatrixByBin.html#aded0f037a4ba1109e6aa5f82bfd6a108">More...</a><br /></td></tr>
 <tr class="separator:aded0f037a4ba1109e6aa5f82bfd6a108 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9737ef0503e11c78e9ed294a7fa3d798 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a9737ef0503e11c78e9ed294a7fa3d798"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a9737ef0503e11c78e9ed294a7fa3d798">cache_proj_matrix_elems_for_one_bin</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) STIR_MUTABLE_CONST</td></tr>
-<tr class="memdesc:a9737ef0503e11c78e9ed294a7fa3d798 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache. <br /></td></tr>
-<tr class="separator:a9737ef0503e11c78e9ed294a7fa3d798 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a84db90210a0c58cf8077bb4103b1e8 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a6a84db90210a0c58cf8077bb4103b1e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a6a84db90210a0c58cf8077bb4103b1e8">cache_proj_matrix_elems_for_one_bin</a> (const <a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html">ProjMatrixElemsForOneBin</a> &amp;) const</td></tr>
+<tr class="memdesc:a6a84db90210a0c58cf8077bb4103b1e8 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method to store data in the cache. <br /></td></tr>
+<tr class="separator:a6a84db90210a0c58cf8077bb4103b1e8 inherit pro_methods_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -242,6 +246,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_disabled</b></t
 <tr class="memitem:a281ce78b3edb6da048b007408eab50b1 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a281ce78b3edb6da048b007408eab50b1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_basic_bins</b></td></tr>
 <tr class="separator:a281ce78b3edb6da048b007408eab50b1 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca6c553174539c5187dc2d0b85e0ed5 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="acca6c553174539c5187dc2d0b85e0ed5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#acca6c553174539c5187dc2d0b85e0ed5">tof_enabled</a></td></tr>
+<tr class="memdesc:acca6c553174539c5187dc2d0b85e0ed5 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">If activated TOF reconstruction will be performed. <br /></td></tr>
+<tr class="separator:acca6c553174539c5187dc2d0b85e0ed5 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4d9d679afd51354a957231c0993be7 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="a6d4d9d679afd51354a957231c0993be7"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#a6d4d9d679afd51354a957231c0993be7">image_info_sptr</a></td></tr>
+<tr class="memdesc:a6d4d9d679afd51354a957231c0993be7 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need a local copy of the discretised density in order to find the cartesian coordinates of each voxel. <br /></td></tr>
+<tr class="separator:a6d4d9d679afd51354a957231c0993be7 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf047e93e2d21edf9985cf633f0246a1 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memItemLeft" align="right" valign="top"><a id="adf047e93e2d21edf9985cf633f0246a1"></a>
+shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixByBin.html#adf047e93e2d21edf9985cf633f0246a1">proj_data_info_sptr</a></td></tr>
+<tr class="memdesc:adf047e93e2d21edf9985cf633f0246a1 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need a local copy of the proj_data_info to get the integration boundaries and RayTracing. <br /></td></tr>
+<tr class="separator:adf047e93e2d21edf9985cf633f0246a1 inherit pro_attribs_classstir_1_1ProjMatrixByBin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ac53aef0f7ecd5dbb6204239b14e657f8 inherit pro_attribs_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="ac53aef0f7ecd5dbb6204239b14e657f8"></a>
 <a class="el" href="classstir_1_1KeyParser.html">KeyParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
@@ -252,7 +268,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
 <p>This functionality is described in Berta Marti Fuster, Carles Falcon, Charalampos Tsoumpas, Lefteris Livieratos, Pablo Aguiar, Albert Cot, Domenec Ros and Kris Thielemans, <em>Integration of advanced 3D SPECT modeling into the open-source STIR framework</em>, Med. Phys. 40, 092502 (2013); <a href="http://dx.doi.org/10.1118/1.4816676">http://dx.doi.org/10.1118/1.4816676</a></p>
 <dl class="section warning"><dt>Warning</dt><dd>this class currently only works with <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). ">VoxelsOnCartesianGrid</a>.</dd></dl>
 <dl class="section user"><dt>Sample parameter file</dt><dd></dd></dl>
-<pre class="fragment">  Projection Matrix By Bin SPECT UB Parameters:=                                
+<pre class="fragment">  Projection Matrix By Bin SPECT UB Parameters:=
     ; width of PSF
     maximum number of sigmas:= 2.0
 
@@ -265,8 +281,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>cache_stores_only_bas
     collimator sigma 0(cm) := 0.1466
 
     ;Attenuation correction { Simple // Full // No }
-    attenuation type := Simple  
-    ;Values in attenuation map in cm-1                  
+    attenuation type := Simple
+    ;Values in attenuation map in cm-1
     attenuation map := attMapRec.hv
 
     ;Mask properties { Cylinder // Attenuation Map // Explicit Mask // No}
@@ -296,7 +312,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 
 <p>Enable keeping the matrix in memory. </p>
 <p>This speeds-up the calculations, but can use a lot of memory.</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
 
 </div>
 </div>
@@ -318,14 +334,14 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 
 <p>Set type of attenuation modelling. </p>
 <p>Has to be "no", "simple" or "full"</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91" title="Checks all necessary geometric info. ">set_up()</a> after this (unless the value didn't change). </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 </div>
 </div>
-<a id="a34cb4a0b25ab18afa758f738ceddd2db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34cb4a0b25ab18afa758f738ceddd2db">&#9670;&nbsp;</a></span>set_attenuation_image_sptr()</h2>
+<a id="a66e7381f3c0f29cbad067f3b68e54a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e7381f3c0f29cbad067f3b68e54a75">&#9670;&nbsp;</a></span>set_attenuation_image_sptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +349,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
         <tr>
           <td class="memname">void stir::ProjMatrixByBinSPECTUB::set_attenuation_image_sptr </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td>
+          <td class="paramtype">const shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&gt;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -343,14 +359,14 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 <p>Sets attenuation image. </p>
 <p>The image has to have same characteristics as the emission image currently.</p>
 <p>Will call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a74692b8e659755ae0a40c7e535ca26e1" title="Set type of attenuation modelling. ">set_attenuation_type()</a> to set to "simple" if it was set to "no".</p>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="group__IO.html#ga023d6e4a62c18b9df73dd31527f7c648">stir::read_from_file()</a>.</p>
 
 </div>
 </div>
-<a id="aa246bdf6cc8e19f7d9575ee9ca695c24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa246bdf6cc8e19f7d9575ee9ca695c24">&#9670;&nbsp;</a></span>set_resolution_model()</h2>
+<a id="a8aba85154e719015156b174e98a951f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aba85154e719015156b174e98a951f2">&#9670;&nbsp;</a></span>set_resolution_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +381,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>collimator_slope</em>, </td>
+          <td class="paramname"><em>collimator_slope_in_mm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -386,32 +402,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 <pre class="fragment"> sigma_at_depth = collimator_slope * depth_in_mm + collimator sigma 0
 </pre><p>Set slope and sigma_0 to zero for "geometrical" modelling.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Values are in mm</dd></dl>
-<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a69877dda450dc8cec15881e2683c98bf" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ada9baf0e388fd3abc2b82bdfb3c98514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada9baf0e388fd3abc2b82bdfb3c98514">&#9670;&nbsp;</a></span>registered_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char *const stir::ProjMatrixByBinSPECTUB::registered_name</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line"><span class="stringliteral">&quot;SPECT UB&quot;</span></div></div><!-- fragment -->
-<p>Name which will be used when parsing a <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> object. </p>
+<p>You have to call <a class="el" href="classstir_1_1ProjMatrixByBinSPECTUB.html#a2e05ac38da474aa3acf76686d6bace91" title="Checks all necessary geometric info. ">set_up()</a> after this. </p>
 
 </div>
 </div>
@@ -422,7 +413,7 @@ End Projection Matrix By Bin SPECT UB Parameters:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -65,8 +65,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8381b2ced931645405d456448811621a"><td class="memItemLeft" align="right" valign="top"><a id="a8381b2ced931645405d456448811621a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_LOR_GET_FUNCTIONS</b>(TYPE)</td></tr>
+<tr class="memitem:a8381b2ced931645405d456448811621a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_LOR_GET_FUNCTIONS</b>(TYPE)</td></tr>
 <tr class="separator:a8381b2ced931645405d456448811621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -94,10 +93,30 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
 <dd>
 Parisa Khateri </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8381b2ced931645405d456448811621a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8381b2ced931645405d456448811621a">&#9670;&nbsp;</a></span>DEFINE_LOR_GET_FUNCTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_LOR_GET_FUNCTIONS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> coordT&gt;                                                                                                        \</div><div class="line">  Succeeded TYPE&lt;coordT&gt;::change_representation(LORInCylinderCoordinates&lt;coordT&gt;&amp; lor, <span class="keyword">const</span> <span class="keywordtype">double</span> radius) <span class="keyword">const</span>                \</div><div class="line">  {                                                                                                                              \</div><div class="line">    lor = *<span class="keyword">this</span>;                                                                                                                 \</div><div class="line">    return lor.set_radius(static_cast&lt;coordT&gt;(radius));                                                                          \</div><div class="line">  }                                                                                                                              \</div><div class="line">                                                                                                                                 \</div><div class="line">  template &lt;class coordT&gt;                                                                                                        \</div><div class="line">  Succeeded TYPE&lt;coordT&gt;::change_representation(LORInAxialAndNoArcCorrSinogramCoordinates&lt;coordT&gt;&amp; lor, <span class="keyword">const</span> <span class="keywordtype">double</span> radius)     \</div><div class="line">      const                                                                                                                      \</div><div class="line">  {                                                                                                                              \</div><div class="line">    lor = *<span class="keyword">this</span>;                                                                                                                 \</div><div class="line">    return lor.set_radius(static_cast&lt;coordT&gt;(radius));                                                                          \</div><div class="line">  }                                                                                                                              \</div><div class="line">                                                                                                                                 \</div><div class="line">  template &lt;class coordT&gt;                                                                                                        \</div><div class="line">  Succeeded TYPE&lt;coordT&gt;::change_representation(LORInAxialAndSinogramCoordinates&lt;coordT&gt;&amp; lor, <span class="keyword">const</span> <span class="keywordtype">double</span> radius) <span class="keyword">const</span>        \</div><div class="line">  {                                                                                                                              \</div><div class="line">    lor = *<span class="keyword">this</span>;                                                                                                                 \</div><div class="line">    return lor.set_radius(static_cast&lt;coordT&gt;(radius));                                                                          \</div><div class="line">  }                                                                                                                              \</div><div class="line">                                                                                                                                 \</div><div class="line">  template &lt;class coordT&gt;                                                                                                        \</div><div class="line">  Succeeded TYPE&lt;coordT&gt;::get_intersections_with_cylinder(LORAs2Points&lt;coordT&gt;&amp; lor, <span class="keyword">const</span> <span class="keywordtype">double</span> radius) <span class="keyword">const</span>                  \</div><div class="line">  {                                                                                                                              \</div><div class="line">    LORAs2Points&lt;coordT&gt; actual_lor = *<span class="keyword">this</span>;                                                                                     \</div><div class="line">    if (<a class="code" href="group__LOR.html#ga9afa08b42938a4b709105deeb12a24dc">find_LOR_intersections_with_cylinder</a>(lor, actual_lor, radius) == Succeeded::no)                                          \</div><div class="line">      return Succeeded::no;                                                                                                      \</div><div class="line">    return Succeeded::yes;                                                                                                       \</div><div class="line">  }</div><div class="ttc" id="group__LOR_html_ga9afa08b42938a4b709105deeb12a24dc"><div class="ttname"><a href="group__LOR.html#ga9afa08b42938a4b709105deeb12a24dc">stir::find_LOR_intersections_with_cylinder</a></div><div class="ttdeci">Succeeded find_LOR_intersections_with_cylinder(LORInCylinderCoordinates&lt; coordT1 &gt; &amp;, const LORAs2Points&lt; coordT2 &gt; &amp;, const double radius)</div><div class="ttdoc">Given an LOR, find its intersection with a (infintely long) cylinder. </div><div class="ttdef"><b>Definition:</b> LORCoordinates.inl:357</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -60,7 +60,7 @@ Collaboration diagram for Singles rates etc:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:randoms__from__singles_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="randoms__from__singles_8cxx.html">randoms_from_singles.cxx</a></td></tr>
-<tr class="memdesc:randoms__from__singles_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__singles__buildblock.html#ga4aab044cbf3ffda08ae382aa7185023c" title="Estimate randoms from singles. ">stir::randoms_from_singles</a>. <br /></td></tr>
+<tr class="memdesc:randoms__from__singles_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="group__singles__buildblock.html#gaf5d3af33de9618ceb3a904d679d9dce8" title="Estimate randoms from singles (RFS) ">stir::randoms_from_singles</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SinglesRates_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SinglesRates_8cxx.html">SinglesRates.cxx</a></td></tr>
 <tr class="memdesc:SinglesRates_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classstir_1_1FrameSinglesRates.html" title="A single frame of singles information. ">stir::FrameSinglesRates</a> and <a class="el" href="classstir_1_1SinglesRates.html" title="The base-class for using singles info. ">stir::SinglesRates</a>. <br /></td></tr>
@@ -131,14 +131,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4aab044cbf3ffda08ae382aa7185023c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__singles__buildblock.html#ga4aab044cbf3ffda08ae382aa7185023c">stir::randoms_from_singles</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const <a class="el" href="classstir_1_1SinglesRates.html">SinglesRates</a> &amp;singles, const float coincidence_time_window, float isotope_halflife=-1.F)</td></tr>
-<tr class="memdesc:ga4aab044cbf3ffda08ae382aa7185023c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate randoms from singles.  <a href="group__singles__buildblock.html#ga4aab044cbf3ffda08ae382aa7185023c">More...</a><br /></td></tr>
-<tr class="separator:ga4aab044cbf3ffda08ae382aa7185023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5d3af33de9618ceb3a904d679d9dce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__singles__buildblock.html#gaf5d3af33de9618ceb3a904d679d9dce8">stir::randoms_from_singles</a> (<a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data, const <a class="el" href="classstir_1_1SinglesRates.html">SinglesRates</a> &amp;singles, float coincidence_time_window=-1.F, float radionuclide_halflife=-1.F)</td></tr>
+<tr class="memdesc:gaf5d3af33de9618ceb3a904d679d9dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate randoms from singles (RFS)  <a href="group__singles__buildblock.html#gaf5d3af33de9618ceb3a904d679d9dce8">More...</a><br /></td></tr>
+<tr class="separator:gaf5d3af33de9618ceb3a904d679d9dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4aab044cbf3ffda08ae382aa7185023c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4aab044cbf3ffda08ae382aa7185023c">&#9670;&nbsp;</a></span>randoms_from_singles()</h2>
+<a id="gaf5d3af33de9618ceb3a904d679d9dce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5d3af33de9618ceb3a904d679d9dce8">&#9670;&nbsp;</a></span>randoms_from_singles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,14 +158,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>coincidence_time_window</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>coincidence_time_window</em> = <code>-1.F</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>isotope_halflife</em> = <code>-1.F</code>&#160;</td>
+          <td class="paramname"><em>radionuclide_halflife</em> = <code>-1.F</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,7 +175,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Estimate randoms from singles. </p>
+<p>Estimate randoms from singles (RFS) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">proj_data</td><td>Projection data to store output. It needs to be properly initialised with sizes etc. If <em>coincidence_time_window</em> or <em>radionuclide_halflife</em> are invalid, they will be determined from the <em>proj_data</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">singles</td><td>Input value for RFS </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coincidence_time_window</td><td><a class="el" href="classstir_1_1Scanner.html" title="A class for storing some info on the scanner. ">Scanner</a> coincidence window (in secs). Deprecated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radionuclide_halflife</td><td>half-life. Deprecated.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This uses the formula <img class="formulaInl" alt="$ R_{ij}= \tau S_i S_j $" src="form_6.png"/> (with <img class="formulaInl" alt="$\tau$" src="form_7.png"/> the <code>coincidence_time_window</code>) for finding the randoms-rate in terms of the singles-rates. The function then takes duration properly into account using the following procedure. This uses <code>isotope_halflife</code> in the computation of <img class="formulaInl" alt="$\lambda$" src="form_8.png"/>. Default value is -1 and the function will extract <code>isotope_halflife</code> from <code>proj_data</code>. If set, will use the passed value.</p>
 <p>We actually have total counts in the singles for sinograms and need total counts in the randoms. Assuming the radioactivity distribution is stationary and only decays, and dropping indices <img class="formulaInl" alt="$i,j$" src="form_9.png"/>, we get </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]" src="form_10.png"/>
@@ -187,7 +196,7 @@ Functions</h2></td></tr>
 <img class="formulaDsp" alt="\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_{t1}^{t2} dt\,exp (-\lambda t)\right)^2} \]" src="form_12.png"/>
 </p>
 <p>For more details, see: Stearns, C. W., McDaniel, D. L., Kohlmyer, S. G., Arul, P. R., Geiser, B. P., &amp; Shanmugam, V. (2003). Random coincidence estimation from single event rates on the Discovery ST PET/CT scanner. 2003 IEEE Nuclear Science Symposium. Conference Record (IEEE Cat. No.03CH37515), 5, 3067-3069. <a href="https://doi.org/10.1109/NSSMIC.2003.1352545">https://doi.org/10.1109/NSSMIC.2003.1352545</a></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Dead-time is currently completely ignored. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>Dead-time is currently completely ignored. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga8c1ea83fd11e3e7ebaf78ebff345b87a">stir::decay_correction_factor()</a>, <a class="el" href="classstir_1_1ExamData.html#ad79c2d7818f982ac85b2e94ceba830c5">stir::ExamData::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1Radionuclide.html#ae33841ea6b0e8b4b26f3c315a0e8b959">stir::Radionuclide::get_half_life()</a>, <a class="el" href="classstir_1_1ProjData.html#a1ac406cc7051cec1cabd201bd7d860e3">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ExamInfo.html#a6b0dcbd891e4330de46bad5cd30d7ebe">stir::ExamInfo::get_radionuclide()</a>, <a class="el" href="classstir_1_1SinglesRates.html#a849ce3b47e6eace5a1748d4b6afc9a9f">stir::SinglesRates::get_singles()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__projdata.html#gaeddbaa80aaf07f85fc2e5b1164a09b51">stir::multiply_crystal_factors()</a>, and <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>.</p>
 
@@ -196,7 +205,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -60,7 +60,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa45e943872f49ededb715927a1116d20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>KB_DIRECTION</b>(c)</td></tr>
+<tr class="memitem:aa45e943872f49ededb715927a1116d20"><td class="memItemLeft" align="right" valign="top"><a id="aa45e943872f49ededb715927a1116d20"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>KB_DIRECTION</b>(c)&#160;&#160;&#160;(c == 0x1b &amp;&amp; getch() == 0x5b &amp;&amp; (c = getch()) &gt;= 0x41 &amp;&amp; c &lt;= 0x44)</td></tr>
 <tr class="separator:aa45e943872f49ededb715927a1116d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4371ab0151d8c8be534e658673d412"><td class="memItemLeft" align="right" valign="top"><a id="a2f4371ab0151d8c8be534e658673d412"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>KB_UPARROW</b>&#160;&#160;&#160;0x41</td></tr>
@@ -75,10 +76,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>KB_LTARROW</b>&#160;&#160;&#160;0x44</td></tr>
 <tr class="separator:a331c464ff4758664c270bbe1043681e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a202767af7f06cef8e1c69d9771f157c3"><td class="memItemLeft" align="right" valign="top"><a id="a202767af7f06cef8e1c69d9771f157c3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Min</b>(x,  y)&#160;&#160;&#160;((x)&lt;(y) ? (x) : (y))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Min</b>(x,  y)&#160;&#160;&#160;((x) &lt; (y) ? (x) : (y))</td></tr>
 <tr class="separator:a202767af7f06cef8e1c69d9771f157c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56957c78144b268fbcdbf7d9fb5acafe"><td class="memItemLeft" align="right" valign="top"><a id="a56957c78144b268fbcdbf7d9fb5acafe"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Max</b>(x,  y)&#160;&#160;&#160;((x)&gt;(y) ? (x) : (y))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Max</b>(x,  y)&#160;&#160;&#160;((x) &gt; (y) ? (x) : (y))</td></tr>
 <tr class="separator:a56957c78144b268fbcdbf7d9fb5acafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -108,29 +109,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> (char *fmt,
 <dd>
 PARAPET project</dd></dl>
 <p>This is part of a library by Kris Thielemans, mainly written in 1991. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aa45e943872f49ededb715927a1116d20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa45e943872f49ededb715927a1116d20">&#9670;&nbsp;</a></span>KB_DIRECTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define KB_DIRECTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">c</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(c==0x1b &amp;&amp; getch()==0x5b &amp;&amp; \</div><div class="line">        (c=getch())&gt;=0x41 &amp;&amp; c&lt;=0x44)</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

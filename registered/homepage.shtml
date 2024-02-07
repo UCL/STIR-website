@@ -18,7 +18,7 @@ Links might not work!
 </p>
 -->
 
-Current release: version 5.1.0, dated 14 January 2023.
+Current release: version 6.0.0, dated 7 February 2024.
 <!-- (but <a href="#patches">see here for patches</a>) 
 <a href="#prerelease">See here for 3.0 beta</a>-->
 
@@ -44,7 +44,7 @@ Current release: version 5.1.0, dated 14 January 2023.
 <p >Below are links to get parts of the library. You will
 probably want to shift-click, right-click, control-click or whatever on these,
 such that your browser does not attempt to open the archives. </p>
-<p>See <a href="../documentation/release_5.0.htm">release info for this version.</a></o>
+<p>See <a href="../documentation/release_6.0.htm">release info for this version.</a></o>
 
 <ul>
  <li ><a href="STIR.zip">software
@@ -235,7 +235,7 @@ to recognise the scanner in the Interfile header file (*.hs)).</p>
 
 <p ><!-- Created: Thu Jun 15 08:33:10 BST 2000 -->
 <!-- hhmts start -->
-Last modified: Jan 14 2023
+Last modified: Feb 07 2024
 <!-- hhmts end --></p>
 
 

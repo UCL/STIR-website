@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This implements the Worker for the <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> function.  
+<p>This implements the Worker for the <a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> function.  
  <a href="classstir_1_1DistributedWorker.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="DistributedWorker_8h_source.html">stir/recon_buildblock/DistributedWorker.h</a>&quot;</code></p>
@@ -108,11 +108,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><h3>template&lt;class TargetT&gt;<br />
 class stir::DistributedWorker&lt; TargetT &gt;</h3>
 
-<p>This implements the Worker for the <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> function. </p>
+<p>This implements the Worker for the <a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> function. </p>
 <p>The <a class="el" href="classstir_1_1DistributedWorker.html#ac62d006c8b94b1caf72a6a40699b1d8f" title="Infinite loop waiting for tasks from the master. ">start()</a> method is an infinite loop waiting for a task from the master. Very few tasks are implemented at the moment: set_up, compute, stop.</p>
-<p>The <code><a class="el" href="classstir_1_1DistributedWorker.html#a2585688b59d4e95d4a9c2aac6171d38e" title="this does the actual computation corresponding to distributable_computation() ">distributable_computation()</a></code> function does the actual work. It is the slave-part of <a class="el" href="group__distributable.html#ga080ce96edb2b4b7b628a226bcd7d2b20" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> which runs on the master. It is a loop receiving the related viewgrams and calling an RPC_process_related_viewgrams_type function with the received values. When an end_iteration_notification is received, it calls the reduction of the output_image.</p>
+<p>The <code><a class="el" href="classstir_1_1DistributedWorker.html#a2585688b59d4e95d4a9c2aac6171d38e" title="this does the actual computation corresponding to distributable_computation() ">distributable_computation()</a></code> function does the actual work. It is the slave-part of <a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285" title="This function essentially implements a loop over segments and all views in the current subset...">stir::distributable_computation()</a> which runs on the master. It is a loop receiving the related viewgrams and calling an RPC_process_related_viewgrams_type function with the received values. When an end_iteration_notification is received, it calls the reduction of the output_image.</p>
 <p>In each inner loop the worker first receives the vs_num and the information whether this is a new viewgram or a previously received viewgram. The latter case only emerges if distributed caching is enabled. If so, the worker does not have to receive the related viewgrams, but just gets it from its saved viewgrams.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000132">Todo:</a></b></dt><dd><p class="startdd">The log_likelihood_ptr argument to the RPC function is currently always NULL. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000134">Todo:</a></b></dt><dd><p class="startdd">The log_likelihood_ptr argument to the RPC function is currently always NULL. </p>
 <p class="enddd">Currently the only computation that is supported corresponds to the gradient computation. It would be trivial to add others. </p>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -152,7 +152,7 @@ template&lt;typename TargetT &gt; </div>
 </ul>
 <p>Additionally some values for testing are set up. </p>
 
-<p class="reference">References <a class="el" href="namespacedistributed.html#abf856c85a788952ab1fcfa9b8af8e2fc">distributed::receive_and_set_image_parameters()</a>, and <a class="el" href="namespacedistributed.html#aabc670c2c9984fbfeb8d98667618e73a">distributed::receive_bool_value()</a>.</p>
+<p class="reference">References <a class="el" href="namespacedistributed.html#aeb696cb1585c1392f2e07ff5b9a365c1">distributed::receive_and_set_image_parameters()</a>, and <a class="el" href="namespacedistributed.html#aabc670c2c9984fbfeb8d98667618e73a">distributed::receive_bool_value()</a>.</p>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

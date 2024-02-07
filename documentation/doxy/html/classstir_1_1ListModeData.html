@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a45957d9977897c212481e222f3f304bd">set_get_position</a> (const <a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a> &amp;)=0</td></tr>
 <tr class="memdesc:a45957d9977897c212481e222f3f304bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position for reading to a previously saved point. <br /></td></tr>
 <tr class="separator:a45957d9977897c212481e222f3f304bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639c578bcecb3c38d67a4f3ba70ed5f8"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a639c578bcecb3c38d67a4f3ba70ed5f8">get_scanner_ptr</a> () const</td></tr>
-<tr class="memdesc:a639c578bcecb3c38d67a4f3ba70ed5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scanner pointer.  <a href="#a639c578bcecb3c38d67a4f3ba70ed5f8">More...</a><br /></td></tr>
-<tr class="separator:a639c578bcecb3c38d67a4f3ba70ed5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34479a772d959b5076e13d8b2ce48548"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a34479a772d959b5076e13d8b2ce48548">get_scanner</a> () const</td></tr>
+<tr class="memdesc:a34479a772d959b5076e13d8b2ce48548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to scanner.  <a href="#a34479a772d959b5076e13d8b2ce48548">More...</a><br /></td></tr>
+<tr class="separator:a34479a772d959b5076e13d8b2ce48548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573d2d7241b7a546700bf78e65877a19"><td class="memItemLeft" align="right" valign="top"><a id="a573d2d7241b7a546700bf78e65877a19"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a573d2d7241b7a546700bf78e65877a19">has_delayeds</a> () const =0</td></tr>
 <tr class="memdesc:a573d2d7241b7a546700bf78e65877a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the file stores delayed events as well (as opposed to prompts) <br /></td></tr>
@@ -209,7 +209,7 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
 <p>This name is not necessarily unique, and might be empty. However, it is expected (but not guaranteed) that <code>ListModeData::read_from_file(lm_data_ptr-&gt;<a class="el" href="classstir_1_1ListModeData.html#a7bf8b22663fdd55c06d7a23ffd348fc3" title="Returns the name of the list mode data. ">get_name()</a>)</code> would read the same list mode data.</p>
 <p>The reason this cannot be guaranteed is largely in case the list mode data is not really on disk, but the object corresponds for instance to a Monte Carlo simulator. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#aefd2094874286c105598276f7af0faf1">stir::CListModeDataROOT</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a3a5dd113e12102b3e4d2bf421d89054f">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#ac2ee2b87c8889238f881527aa0dd4c9a">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ListModeData__dummy.html#aada5c2696bbce6d9adf54c60d10d953d">stir::ListModeData_dummy</a>, <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#a981a4fa7adcfe0fc742c4ddfd54ffc64">stir::ecat::CListModeDataECAT8_32bit</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a8cef3b7bc2d6d37f503549c39f89b7d7">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a6230367cf0246cc84bb34d78a496eb0a">stir::CListModeDataPENN</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#a4a507769a8a9164b2037d2293b6516a9">stir::CListModeDataROOT</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#ae3f9f04047b681e8471178017d466f27">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#ac2ee2b87c8889238f881527aa0dd4c9a">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ListModeData__dummy.html#a286269bbf1b66de773089793c12dcfac">stir::ListModeData_dummy</a>, <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#ad11a5601ff92ecccafa15c860db77401">stir::ecat::CListModeDataECAT8_32bit</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#adbb3e9886294b51d781756827f83ddbf">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a6230367cf0246cc84bb34d78a496eb0a">stir::CListModeDataPENN</a>.</p>
 
 </div>
 </div>
@@ -273,37 +273,27 @@ These saved positions are only valid for the lifetime of the <a class="el" href=
 <dd>
 A derived class might disable this facility. It will/should then always return Succeeded::no when calling <a class="el" href="classstir_1_1ListModeData.html#a45957d9977897c212481e222f3f304bd" title="Set the position for reading to a previously saved point. ">set_get_position()</a>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#a724383ced2299a8abc6496b66eee4f69">stir::CListModeDataROOT</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a72ec088fe616361868293aa2b6afc338">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a5fc40c3b3ed60aca566d032c44cd0e37">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ListModeData__dummy.html#a06e02aff0384b75e92bd175e520288c6">stir::ListModeData_dummy</a>, <a class="el" href="classstir_1_1CListModeDataLMF.html#a1a63150ace4ae2565f7aa12931ad4187">stir::CListModeDataLMF</a>, <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#a40ff6f36c9183652c8185bc1446eb567">stir::ecat::CListModeDataECAT8_32bit</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a909eb8c596612e6cd5e2bab1c1385d7c">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a81b4dcccfafe8c2e985ffaed70467c5b">stir::CListModeDataPENN</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#ae5275bd3411dd4f7f4b8f1f794cbbb12">stir::CListModeDataROOT</a>, <a class="el" href="classstir_1_1CListModeDataSAFIR.html#a2f8cc64d0cf840b0396e1c9a6fd6ae9d">stir::CListModeDataSAFIR&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a5fc40c3b3ed60aca566d032c44cd0e37">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;</a>, <a class="el" href="classstir_1_1ListModeData__dummy.html#a329b8df6f5d8b8fc4342c0da9c71531a">stir::ListModeData_dummy</a>, <a class="el" href="classstir_1_1ecat_1_1CListModeDataECAT8__32bit.html#a5b3c18689138957f69cb462212488741">stir::ecat::CListModeDataECAT8_32bit</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#acfdf291f2c8b1d3f379920bfbcaced48">stir::GE::RDF_HDF5::CListModeDataGEHDF5</a>, <a class="el" href="classstir_1_1CListModeDataLMF.html#a1a63150ace4ae2565f7aa12931ad4187">stir::CListModeDataLMF</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a81b4dcccfafe8c2e985ffaed70467c5b">stir::CListModeDataPENN</a>.</p>
 
 </div>
 </div>
-<a id="a639c578bcecb3c38d67a4f3ba70ed5f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a639c578bcecb3c38d67a4f3ba70ed5f8">&#9670;&nbsp;</a></span>get_scanner_ptr()</h2>
+<a id="a34479a772d959b5076e13d8b2ce48548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34479a772d959b5076e13d8b2ce48548">&#9670;&nbsp;</a></span>get_scanner()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> * stir::ListModeData::get_scanner_ptr </td>
+          <td class="memname">const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &amp; stir::ListModeData::get_scanner </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get scanner pointer. </p>
-<p>Returns a pointer to a scanner object that is appropriate for the list mode data that is being read. </p><dl class="section warning"><dt>Warning</dt><dd>This member is obsolete and might be removed soon. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ecat_1_1ecat7_1_1CListModeDataECAT.html#a3739933432d421275648db144ee12343">stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;::CListModeDataECAT()</a>.</p>
+<p>Get reference to scanner. </p>
+<p>Returns a reference to a scanner object that is appropriate for the list mode data that is being read. </p>
 
 </div>
 </div>
@@ -333,7 +323,7 @@ A derived class might disable this facility. It will/should then always return S
 <p>Returns the total number of events in the listmode file. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function currently works only with ROOT input files. By default it will throw an error. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#a5bab0b973bff0289a94c601e28774f88">stir::CListModeDataROOT</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a8cf78ce7d944cadb717da41f7df5f62e">stir::CListModeDataPENN</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1CListModeDataROOT.html#a78bfb3df95c86fdb189cef137b2dd572">stir::CListModeDataROOT</a>, and <a class="el" href="classstir_1_1CListModeDataPENN.html#a8cf78ce7d944cadb717da41f7df5f62e">stir::CListModeDataPENN</a>.</p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
@@ -363,7 +353,7 @@ A derived class might disable this facility. It will/should then always return S
 <p>Has to be set by the derived class. </p>
 <p>Has to be initialised by the derived class </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, and <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataPENN.html#a19fb1b7a546986062a2f20035e3ef3ad">stir::CListModeDataPENN::CListModeDataPENN()</a>, <a class="el" href="classstir_1_1CListModeDataROOT.html#a8baf41a636d8db8d42a028d41cbde356">stir::CListModeDataROOT::CListModeDataROOT()</a>, and <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>.</p>
 
 </div>
 </div>
@@ -374,7 +364,7 @@ A derived class might disable this facility. It will/should then always return S
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:44 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

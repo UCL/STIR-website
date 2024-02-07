@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,9 +78,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#af973cc92b9629a7c7519afdde0f638f3">SinglesRatesForTimeSlices</a> ()</td></tr>
 <tr class="memdesc:af973cc92b9629a7c7519afdde0f638f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:af973cc92b9629a7c7519afdde0f638f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af95009e29f0edbdaea7a3951aeaa5f31"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#af95009e29f0edbdaea7a3951aeaa5f31">get_singles</a> (const int singles_bin_index, const double start_time, const double end_time) const</td></tr>
-<tr class="memdesc:af95009e29f0edbdaea7a3951aeaa5f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of singles for a particular singles unit and a frame with the specified start and end times.  <a href="#af95009e29f0edbdaea7a3951aeaa5f31">More...</a><br /></td></tr>
-<tr class="separator:af95009e29f0edbdaea7a3951aeaa5f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d65684238a10890a5158021ff34076"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#a54d65684238a10890a5158021ff34076">get_singles</a> (const int singles_bin_index, const double start_time, const double end_time) const override</td></tr>
+<tr class="memdesc:a54d65684238a10890a5158021ff34076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of singles for a particular singles unit and a frame with the specified start and end times.  <a href="#a54d65684238a10890a5158021ff34076">More...</a><br /></td></tr>
+<tr class="separator:a54d65684238a10890a5158021ff34076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52960d89851ac7ac2a17b11b62f91dcb"><td class="memItemLeft" align="right" valign="top"><a id="a52960d89851ac7ac2a17b11b62f91dcb"></a>
 <a class="el" href="classstir_1_1FrameSinglesRates.html">FrameSinglesRates</a> <a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#a52960d89851ac7ac2a17b11b62f91dcb">get_rates_for_frame</a> (double start_time, double end_time) const</td></tr>
 <tr class="memdesc:a52960d89851ac7ac2a17b11b62f91dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a FramesSinglesRate - containing the average rates. <br /></td></tr>
@@ -232,8 +232,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for singles that are recorded at equal time intervals. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af95009e29f0edbdaea7a3951aeaa5f31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af95009e29f0edbdaea7a3951aeaa5f31">&#9670;&nbsp;</a></span>get_singles()</h2>
+<a id="a54d65684238a10890a5158021ff34076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d65684238a10890a5158021ff34076">&#9670;&nbsp;</a></span>get_singles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +267,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -364,7 +364,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

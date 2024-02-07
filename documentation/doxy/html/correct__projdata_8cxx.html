@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility applying/undoing some corrections on projection data. </p>
 <p>This is useful to precorrect projection data. There's also the option to undo the correction.</p>
-<p>Here's a sample .par file </p><pre class="fragment">correct_projdata Parameters := 
+<p>Here's a sample .par file </p><pre class="fragment">correct_projdata Parameters :=
   input file := trues.hs
 
   ; Current way of specifying time frames, pending modifications to
@@ -111,24 +111,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
   ; the number should be between 1 and num_frames and defaults to 1
   ; this is currently only used to pass the relevant time to the normalisation
   ; time frame number := 1
-  
+
   ; output file
-  ; for future compatibility, do not use an extension in the name of 
+  ; for future compatibility, do not use an extension in the name of
   ; the output file. It will be added automatically
   output filename := precorrected
 
   ; default value for next is -1, meaning 'all segments'
-  ; maximum absolute segment number to process := 
- 
+  ; maximum absolute segment number to process :=
+
 
   ; use data in the input file, or substitute data with all 1's
   ; (useful to get correction factors only)
   ; default is '1'
-  ; use data (1) or set to one (0) := 
+  ; use data (1) or set to one (0) :=
 
   ; precorrect data, or undo precorrection
   ; default is '1'
-  ; apply (1) or undo (0) correction := 
+  ; apply (1) or undo (0) correction :=
 
   ; parameters specifying correction factors
   ; if no value is given, the corresponding correction will not be performed
@@ -144,7 +144,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
   ; attenuation image, will be forward projected to get attenuation factors
   ; OBSOLETE
   ;attenuation image filename := attenuation_image.hv
-  
+
   ; forward projector used to estimate attenuation factors, defaults to Ray Tracing
   ; OBSOLETE
   ;forward_projector type := Ray Tracing
@@ -157,7 +157,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 
   ; to interpolate to uniform sampling in 's', set value to 1
   ; arc correction := 1
-END:= 
+END:=
 </pre><p>Time frame definition is only necessary when the normalisation type uses this time info for dead-time correction.</p>
 <dl class="section warning"><dt>Warning</dt><dd>arc-correction can currently not be undone.</dd></dl>
 <p>The following gives a brief explanation of the non-obvious parameters.</p>
@@ -187,7 +187,7 @@ forward_projector type: obsolete<br />
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -64,12 +64,12 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:gab7367d3ff2f137a0dba047f24be8b081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gab7367d3ff2f137a0dba047f24be8b081">stir::distributable_computation_cache_enabled</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_ptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_ptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_ptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_sptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr)</td></tr>
-<tr class="memdesc:gab7367d3ff2f137a0dba047f24be8b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset in the parallel case.  <a href="group__distributable.html#gab7367d3ff2f137a0dba047f24be8b081">More...</a><br /></td></tr>
-<tr class="separator:gab7367d3ff2f137a0dba047f24be8b081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab030654d6b2d8dd2dad548ce78ba1152"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_estimate</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">stir::DiscretisedDensity</a>&lt; 3, float &gt; &gt; input_image_ptr)</td></tr>
-<tr class="separator:gab030654d6b2d8dd2dad548ce78ba1152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab17f39ca57bd4f1d3e4c8de966ba1ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gab17f39ca57bd4f1d3e4c8de966ba1ad5">stir::distributable_computation_cache_enabled</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_ptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_ptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_ptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_sptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num)</td></tr>
+<tr class="memdesc:gab17f39ca57bd4f1d3e4c8de966ba1ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset in the parallel case.  <a href="group__distributable.html#gab17f39ca57bd4f1d3e4c8de966ba1ad5">More...</a><br /></td></tr>
+<tr class="separator:gab17f39ca57bd4f1d3e4c8de966ba1ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4130f628f8f2e9b7f19c0c6ff762faf0"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::test_image_estimate</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">stir::DiscretisedDensity</a>&lt; 3, float &gt;&gt; input_image_ptr)</td></tr>
+<tr class="separator:ga4130f628f8f2e9b7f19c0c6ff762faf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of the main function that performs parallel processing. </p>
@@ -85,7 +85,7 @@ Tobias Beisel </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

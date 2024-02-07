@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,45 +75,33 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad2b177b2afe15358154982cdd90bd1d1"><td class="memItemLeft" align="right" valign="top"><a id="ad2b177b2afe15358154982cdd90bd1d1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>___BYTEORDER_DEFAULT</b></td></tr>
-<tr class="separator:ad2b177b2afe15358154982cdd90bd1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f05d742ea69fadc3f19504f9d9429ce"><td class="memItemLeft" align="right" valign="top"><a id="a8f05d742ea69fadc3f19504f9d9429ce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>___CAN_CORRUPT_DATA_DEFAULT</b></td></tr>
-<tr class="separator:a8f05d742ea69fadc3f19504f9d9429ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636cffe915659e17676e4e874e59a80f"><td class="memItemLeft" align="right" valign="top"><a id="a636cffe915659e17676e4e874e59a80f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>INT_NUM_DIMENSIONS</b>&#160;&#160;&#160;int num_dimensions,</td></tr>
-<tr class="separator:a636cffe915659e17676e4e874e59a80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f2e729a629eee9f5b7371c357f5e25"><td class="memItemLeft" align="right" valign="top"><a id="a17f2e729a629eee9f5b7371c357f5e25"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TYPENAME</b>&#160;&#160;&#160;typename</td></tr>
-<tr class="separator:a17f2e729a629eee9f5b7371c357f5e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771494d347903f740469a9c107132009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CASE</b>(NUMERICTYPE)</td></tr>
 <tr class="separator:a771494d347903f740469a9c107132009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memTemplParams" colspan="2"><a id="a3dbf512b174a8200ff847f0eea9ec82b"></a>
-template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_not_1d, OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
-<tr class="separator:a3dbf512b174a8200ff847f0eea9ec82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7414ec354be810724a2e3ef2bc9561ce"><td class="memTemplParams" colspan="2"><a id="a7414ec354be810724a2e3ef2bc9561ce"></a>
+template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:a7414ec354be810724a2e3ef2bc9561ce"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_not_1d, OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="separator:a7414ec354be810724a2e3ef2bc9561ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplParams" colspan="2"><a id="a141ebd0eb86381aa3c78441a40d15549"></a>
 template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
 <tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_1d, OStreamT &amp;s, const Array&lt; 1, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt;, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
 <tr class="separator:a141ebd0eb86381aa3c78441a40d15549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplParams" colspan="2">template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">stir::write_data_with_fixed_scale_factor</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</td></tr>
+<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">stir::write_data_with_fixed_scale_factor</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
 <tr class="memdesc:ga7d31f96c70647ffafc36c795fb929c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type but using a given scale factor.  <a href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">More...</a><br /></td></tr>
 <tr class="separator:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplParams" colspan="2">template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, ScaleT &amp;scale_factor, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</td></tr>
+<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, ScaleT &amp;scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
 <tr class="memdesc:ga927a8480234f48e5673b17740d5209e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">More...</a><br /></td></tr>
 <tr class="separator:ga927a8480234f48e5673b17740d5209e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplParams" colspan="2">template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT &gt; </td></tr>
-<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</td></tr>
+<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT &gt; </td></tr>
+<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
 <tr class="memdesc:ga24f100e9608363df6df4154875639755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file.  <a href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">More...</a><br /></td></tr>
 <tr class="separator:ga24f100e9608363df6df4154875639755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplParams" colspan="2">template&lt;INT_NUM_DIMENSIONS class OStreamT, class elemT , class ScaleT &gt; </td></tr>
-<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</td></tr>
+<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class ScaleT &gt; </td></tr>
+<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
 <tr class="memdesc:gac57494c546fbd03f2ba3b7d4747522d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">More...</a><br /></td></tr>
 <tr class="separator:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,14 +124,14 @@ template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; 
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE :                                   <a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">\</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">      return                                             \</a></div><div class="line"><a class="code" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">        write_data</a>(s, data,                              \</div><div class="line">                   NumericInfo&lt;TYPENAME TypeForNumericType&lt;NUMERICTYPE &gt;::type&gt;(), \</div><div class="line">                   scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_gac57494c546fbd03f2ba3b7d4747522d7"><div class="ttname"><a href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order ___BYTEORDER_DEFAULT, const bool can_corrupt_data ___CAN_CORRUPT_DATA_DEFAULT)</div><div class="ttdoc">Write the data of an Array to file as a different type. </div><div class="ttdef"><b>Definition:</b> write_data.inl:197</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE:                                                                                                              \</div><div class="line">    return <a class="code" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">write_data</a>(s, data, NumericInfo&lt;<span class="keyword">typename</span> TypeForNumericType&lt;NUMERICTYPE&gt;::type&gt;(), scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_ga24f100e9608363df6df4154875639755"><div class="ttname"><a href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</div><div class="ttdoc">Write the data of an Array to file. </div><div class="ttdef"><b>Definition:</b> write_data.inl:108</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

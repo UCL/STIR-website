@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -95,13 +95,13 @@ Matthew Jacobson </dd>
 PARAPET project </dd>
 <dd>
 Richard Brown</dd></dl>
-<p>This program enables calling any <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">stir::DataProcessor</a> object on input data, and writing it to file. It can take the following command line: </p><pre class="fragment">postfilter [--verbose] [--dynamic|--parametric] &lt;output filename&gt; &lt;input header filename&gt; &lt;filter .par filename&gt; [output_format_par_file]
-</pre><p> This is done to make it easy to process a lot of files with the same ImageProcessor. However, if the number of command line arguments is not correct, appropriate questions will be asked interactively.</p>
+<p>This program enables calling any <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">stir::DataProcessor</a> object on input data, and writing it to file. It can take the following command line: </p><pre class="fragment">postfilter [--verbose] [--dynamic|--parametric] &lt;output filename&gt; &lt;input header filename&gt; &lt;filter .par filename&gt;
+[output_format_par_file] </pre><p> This is done to make it easy to process a lot of files with the same ImageProcessor. However, if the number of command line arguments is not correct, appropriate questions will be asked interactively.</p>
 <p>If the <code>&ndash;verbose</code> option is used, the filter-parameters that are going to be used will be written to stdout. This is useful for checking/debugging.</p>
 <dl class="section user"><dt>Example .par file</dt><dd>(but see <a class="el" href="classstir_1_1MedianImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements median filtering. ">stir::MedianImageFilter3D</a> to see if the following example is still correct) <pre class="fragment">PostFilteringParameters :=
-Postfilter type :=Median   
+Postfilter type :=Median
 Median Filter Parameters :=
-mask radius x := 1   
+mask radius x := 1
 mask radius y := 2
 mask radius z := 3
 End Median Filter Parameters:=
@@ -111,7 +111,7 @@ End PostFiltering Parameters:=
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

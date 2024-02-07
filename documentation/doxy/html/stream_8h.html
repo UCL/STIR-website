@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -54,6 +54,9 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="VectorWithOffset_8h_source.html">stir/VectorWithOffset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BasicCoordinate_8h_source.html">stir/BasicCoordinate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Bin_8h_source.html">stir/Bin.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DetectionPosition_8h_source.html">stir/DetectionPosition.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DetectionPositionPair_8h_source.html">stir/DetectionPositionPair.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="stream_8inl.html">stir/stream.inl</a>&quot;</code><br />
@@ -80,6 +83,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a673bc096d9624668dfec6e1b8f9dc491"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a673bc096d9624668dfec6e1b8f9dc491">stir::operator&lt;&lt;</a> (std::ostream &amp;str, const std::vector&lt; elemT &gt; &amp;v)</td></tr>
 <tr class="memdesc:a673bc096d9624668dfec6e1b8f9dc491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a vector to a stream.  <a href="namespacestir.html#a673bc096d9624668dfec6e1b8f9dc491">More...</a><br /></td></tr>
 <tr class="separator:a673bc096d9624668dfec6e1b8f9dc491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7482262041aac9bc0348acb6a8ff29f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__projdata.html#gab7482262041aac9bc0348acb6a8ff29f">stir::operator&lt;&lt;</a> (std::ostream &amp;out, const Bin &amp;bin)</td></tr>
+<tr class="memdesc:gab7482262041aac9bc0348acb6a8ff29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> to a stream.Output is of the form.  <a href="group__projdata.html#gab7482262041aac9bc0348acb6a8ff29f">More...</a><br /></td></tr>
+<tr class="separator:gab7482262041aac9bc0348acb6a8ff29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5e039d8ac943fca67ce1fbca21076c5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaa5e039d8ac943fca67ce1fbca21076c5"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__projdata.html#gaa5e039d8ac943fca67ce1fbca21076c5">stir::operator&lt;&lt;</a> (std::ostream &amp;out, const DetectionPosition&lt; T &gt; &amp;det_pos)</td></tr>
+<tr class="memdesc:gaa5e039d8ac943fca67ce1fbca21076c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a <a class="el" href="classstir_1_1DetectionPosition.html" title="A class for storing coordinates of a detection. ">DetectionPosition</a> to a stream.Output is of the form.  <a href="group__projdata.html#gaa5e039d8ac943fca67ce1fbca21076c5">More...</a><br /></td></tr>
+<tr class="separator:gaa5e039d8ac943fca67ce1fbca21076c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga454c2d91b55db5e3d237ac8e151fc0e7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga454c2d91b55db5e3d237ac8e151fc0e7"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__projdata.html#ga454c2d91b55db5e3d237ac8e151fc0e7">stir::operator&lt;&lt;</a> (std::ostream &amp;out, const DetectionPositionPair&lt; T &gt; &amp;det_pos)</td></tr>
+<tr class="memdesc:ga454c2d91b55db5e3d237ac8e151fc0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a <a class="el" href="classstir_1_1DetectionPosition.html" title="A class for storing coordinates of a detection. ">DetectionPosition</a> to a stream.Output is of the form.  <a href="group__projdata.html#ga454c2d91b55db5e3d237ac8e151fc0e7">More...</a><br /></td></tr>
+<tr class="separator:ga454c2d91b55db5e3d237ac8e151fc0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d128ca40ab640bb721b04830d520337"><td class="memTemplParams" colspan="2">template&lt;typename elemT &gt; </td></tr>
 <tr class="memitem:a2d128ca40ab640bb721b04830d520337"><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a2d128ca40ab640bb721b04830d520337">stir::operator&gt;&gt;</a> (std::istream &amp;str, std::vector&lt; elemT &gt; &amp;v)</td></tr>
 <tr class="memdesc:a2d128ca40ab640bb721b04830d520337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inputs a vector from a stream.  <a href="namespacestir.html#a2d128ca40ab640bb721b04830d520337">More...</a><br /></td></tr>
@@ -101,7 +115,7 @@ PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

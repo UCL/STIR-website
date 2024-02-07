@@ -122,25 +122,26 @@
 \form#121:\[ g_r = \sum_{dr} w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
 \form#122:\[ f= \sum_{r,dr} \frac{w_{dr}}{2} \frac{(\lambda_r - \lambda_{r+dr})^2}{(\lambda_r+ \lambda_{r+dr} + \gamma |\lambda_r - \lambda_{r+dr}| + \epsilon)} * \kappa_r * \kappa_{r+dr} \]
 \form#123:$\epsilon$
-\form#124:\[ FWHM_E = \alpha \sqrt(E) \]
-\form#125:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
-\form#126:\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]
-\form#127:$ G(k,s) $
-\form#128:$G(0,s) = 1$
-\form#129:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
-\form#130:\[ abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2 \]
-\form#131:$r = coord - origin$
-\form#132:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1 \]
-\form#133:$dir_x, dir_y, dir_z$
-\form#134:\[ |r.dir_z|<L/2 \]
-\form#135:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1 \]
-\form#136:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2 \]
-\form#137:\[ r' = \mathrm{conj}(q)(r-t)q \]
-\form#138:${[}q0,qz,qy,qx{]}$
-\form#139:${[}n_z,n_y,n_x{]}$
-\form#140:$\phi$
-\form#141:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
-\form#142:\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#143:\[ x^T \cdot H_{\lambda}x >= 0 \]
-\form#144:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
-\form#145:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]
+\form#124:$2\tau$
+\form#125:\[ FWHM_E = \alpha \sqrt(E) \]
+\form#126:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
+\form#127:\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]
+\form#128:$ G(k,s) $
+\form#129:$G(0,s) = 1$
+\form#130:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
+\form#131:\[ abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2 \]
+\form#132:$r = coord - origin$
+\form#133:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1 \]
+\form#134:$dir_x, dir_y, dir_z$
+\form#135:\[ |r.dir_z|<L/2 \]
+\form#136:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1 \]
+\form#137:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2 \]
+\form#138:\[ r' = \mathrm{conj}(q)(r-t)q \]
+\form#139:${[}q0,qz,qy,qx{]}$
+\form#140:${[}n_z,n_y,n_x{]}$
+\form#141:$\phi$
+\form#142:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
+\form#143:\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
+\form#144:\[ x^T \cdot H_{\lambda}x >= 0 \]
+\form#145:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
+\form#146:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]

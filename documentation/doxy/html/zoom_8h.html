@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -154,11 +154,11 @@ If it is larger, the outer ends are filled with 0. </li>
 </ul>
 <dl class="section warning"><dt>Warning</dt><dd>Because overlap_interpolate is used, the zooming is 'count-preserving', i.e. when the output range is large enough, the <a class="el" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187" title="Compute the sum of a sequence using operator+=(), using an initial value. ">in.sum()</a> == <a class="el" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187" title="Compute the sum of a sequence using operator+=(), using an initial value. ">out.sum()</a>.</dd>
 <dd>
-In STIR 1.x, origins were taken relative to the centre of the coordinate range: <div class="fragment"><div class="line">x_in_mm = (x_index - x_ctr_index) * voxel_size.x() + origin.x() </div></div><!-- fragment --> where <div class="fragment"><div class="line">x_ctr_index = (x_max_index + x_min_index)/2</div></div><!-- fragment --> This is no longer true. Instead we use DiscretisedDensity&lt;3,float&gt;::get_physical_coordinates_for_indices. </dd></dl>
+In STIR 1.x, origins were taken relative to the centre of the coordinate range: <div class="fragment"><div class="line">x_in_mm = (x_index - x_ctr_index) * voxel_size.x() + origin.x()</div></div><!-- fragment --> where <div class="fragment"><div class="line">x_ctr_index = (x_max_index + x_min_index)/2</div></div><!-- fragment --> This is no longer true. Instead we use DiscretisedDensity&lt;3,float&gt;::get_physical_coordinates_for_indices. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

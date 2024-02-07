@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Filter1D</b> (const int length_v)</td></tr>
 <tr class="separator:ac7e56761e08ffd0677762e6cd29dd429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16becb607f8252c613c37cb8de6d61d8"><td class="memItemLeft" align="right" valign="top"><a id="a16becb607f8252c613c37cb8de6d61d8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Filter1D</b> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, T &gt; &amp;<a class="el" href="classstir_1_1Filter1D.html#af2ef60cd9786f77e778d1143585d9743">filter</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Filter1D</b> (const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, T &gt; &amp;<a class="el" href="classstir_1_1Filter1D.html#a786f46d64da0dde01ab09ea27b73f112">filter</a>)</td></tr>
 <tr class="separator:a16becb607f8252c613c37cb8de6d61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d0960c13a353a5074c2a18b833b559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Filter1D.html#a15d0960c13a353a5074c2a18b833b559">apply</a> (<a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, T &gt; &amp;data)</td></tr>
 <tr class="memdesc:a15d0960c13a353a5074c2a18b833b559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters data (which has to be in the 'spatial' domain.  <a href="#a15d0960c13a353a5074c2a18b833b559">More...</a><br /></td></tr>
@@ -108,10 +108,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af2ef60cd9786f77e778d1143585d9743"><td class="memItemLeft" align="right" valign="top"><a id="af2ef60cd9786f77e778d1143585d9743"></a>
-<a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Filter1D.html#af2ef60cd9786f77e778d1143585d9743">filter</a></td></tr>
-<tr class="memdesc:af2ef60cd9786f77e778d1143585d9743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the filter in frequency space (will be private sometime) <br /></td></tr>
-<tr class="separator:af2ef60cd9786f77e778d1143585d9743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a786f46d64da0dde01ab09ea27b73f112"><td class="memItemLeft" align="right" valign="top"><a id="a786f46d64da0dde01ab09ea27b73f112"></a>
+<a class="el" href="classstir_1_1Array.html">Array</a>&lt; 1, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Filter1D.html#a786f46d64da0dde01ab09ea27b73f112">filter</a></td></tr>
+<tr class="memdesc:a786f46d64da0dde01ab09ea27b73f112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the filter in frequency space (will be private sometime) <br /></td></tr>
+<tr class="separator:a786f46d64da0dde01ab09ea27b73f112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -119,7 +119,7 @@ class stir::Filter1D&lt; T &gt;</h3>
 
 <p>Preliminary class for 1D filtering using FFTs. </p>
 <dl class="section warning"><dt>Warning</dt><dd>The filtering will be performed using the <a class="el" href="namespacestir.html#ae9f498f118a9bb48995c63b32e4eb9a4" title="Convolve data with a filter which is given in frequency space. ">convlvC()</a> function. See warnings in its documentation. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000200">Todo:</a></b></dt><dd><a class="el" href="classstir_1_1Filter1D.html#a15d0960c13a353a5074c2a18b833b559" title="Filters data (which has to be in the &#39;spatial&#39; domain. ">apply()</a> members can't be const as they call <a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9" title="start all timers kept by this object ">TimedObject::start_timers()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo:</a></b></dt><dd><a class="el" href="classstir_1_1Filter1D.html#a15d0960c13a353a5074c2a18b833b559" title="Filters data (which has to be in the &#39;spatial&#39; domain. ">apply()</a> members can't be const as they call <a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9" title="start all timers kept by this object ">TimedObject::start_timers()</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a15d0960c13a353a5074c2a18b833b559"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15d0960c13a353a5074c2a18b833b559">&#9670;&nbsp;</a></span>apply()</h2>
@@ -158,7 +158,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:43 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

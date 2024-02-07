@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -82,10 +82,10 @@ template&lt;int num_dimensions2, typename T &gt; </td></tr>
 template&lt;typename T , int num_dimensions, int num_dimensions2&gt; </td></tr>
 <tr class="memitem:a88e5c3c9a65416ba4b6c73cb84784e72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::next_help</b> (is_not_1d, BasicCoordinate&lt; num_dimensions, int &gt; &amp;index, const Array&lt; num_dimensions2, T &gt; &amp;a)</td></tr>
 <tr class="separator:a88e5c3c9a65416ba4b6c73cb84784e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d539dd1c930c2256d235c797fcbfdc2"><td class="memTemplParams" colspan="2"><a id="a7d539dd1c930c2256d235c797fcbfdc2"></a>
+<tr class="memitem:a5aa551185eb3cbe7c58de3912e5cb7b8"><td class="memTemplParams" colspan="2"><a id="a5aa551185eb3cbe7c58de3912e5cb7b8"></a>
 template&lt;int num_dimensions, typename elemT &gt; </td></tr>
-<tr class="memitem:a7d539dd1c930c2256d235c797fcbfdc2"><td class="memTemplItemLeft" align="right" valign="top">const Array&lt; num_dimensions-1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::get</b> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const BasicCoordinate&lt; 1, int &gt; &amp;c)</td></tr>
-<tr class="separator:a7d539dd1c930c2256d235c797fcbfdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa551185eb3cbe7c58de3912e5cb7b8"><td class="memTemplItemLeft" align="right" valign="top">const Array&lt; num_dimensions - 1, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::get</b> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const BasicCoordinate&lt; 1, int &gt; &amp;c)</td></tr>
+<tr class="separator:a5aa551185eb3cbe7c58de3912e5cb7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a16a96932257b3bfee40ea54c605fbf8b"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename T &gt; </td></tr>
 <tr class="memitem:a16a96932257b3bfee40ea54c605fbf8b"><td class="memTemplItemLeft" align="right" valign="top">BasicCoordinate&lt; num_dimensions, int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a16a96932257b3bfee40ea54c605fbf8b">stir::get_min_indices</a> (const Array&lt; num_dimensions, T &gt; &amp;a)</td></tr>
@@ -95,10 +95,10 @@ template&lt;int num_dimensions, typename elemT &gt; </td></tr>
 <tr class="memitem:a9cb7c8a5347857b8fe5e89937fdb19ac"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a9cb7c8a5347857b8fe5e89937fdb19ac">stir::next</a> (BasicCoordinate&lt; num_dimensions, int &gt; &amp;indices, const Array&lt; num_dimensions2, T &gt; &amp;a)</td></tr>
 <tr class="memdesc:a9cb7c8a5347857b8fe5e89937fdb19ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an index into an array, increment it to the next one.  <a href="namespacestir.html#a9cb7c8a5347857b8fe5e89937fdb19ac">More...</a><br /></td></tr>
 <tr class="separator:a9cb7c8a5347857b8fe5e89937fdb19ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68cb2bed89b5957938b6a7d4361e919a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, int num_dimensions2, typename elemT &gt; </td></tr>
-<tr class="memitem:a68cb2bed89b5957938b6a7d4361e919a"><td class="memTemplItemLeft" align="right" valign="top">const Array&lt; num_dimensions-num_dimensions2, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a68cb2bed89b5957938b6a7d4361e919a">stir::get</a> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const BasicCoordinate&lt; num_dimensions2, int &gt; &amp;c)</td></tr>
-<tr class="memdesc:a68cb2bed89b5957938b6a7d4361e919a"><td class="mdescLeft">&#160;</td><td class="mdescRight">an alternative for array indexing using <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> objects  <a href="namespacestir.html#a68cb2bed89b5957938b6a7d4361e919a">More...</a><br /></td></tr>
-<tr class="separator:a68cb2bed89b5957938b6a7d4361e919a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788e250ff3bf01efb3b106597fe78022"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, int num_dimensions2, typename elemT &gt; </td></tr>
+<tr class="memitem:a788e250ff3bf01efb3b106597fe78022"><td class="memTemplItemLeft" align="right" valign="top">const Array&lt; num_dimensions - num_dimensions2, elemT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a788e250ff3bf01efb3b106597fe78022">stir::get</a> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const BasicCoordinate&lt; num_dimensions2, int &gt; &amp;c)</td></tr>
+<tr class="memdesc:a788e250ff3bf01efb3b106597fe78022"><td class="mdescLeft">&#160;</td><td class="mdescRight">an alternative for array indexing using <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> objects  <a href="namespacestir.html#a788e250ff3bf01efb3b106597fe78022">More...</a><br /></td></tr>
+<tr class="separator:a788e250ff3bf01efb3b106597fe78022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c5b1964fd45bbd7615d9d20d1c238b"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, typename elemT &gt; </td></tr>
 <tr class="memitem:a50c5b1964fd45bbd7615d9d20d1c238b"><td class="memTemplItemLeft" align="right" valign="top">const elemT &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestir.html#a50c5b1964fd45bbd7615d9d20d1c238b">stir::get</a> (const Array&lt; num_dimensions, elemT &gt; &amp;a, const BasicCoordinate&lt; num_dimensions, int &gt; &amp;c)</td></tr>
 <tr class="memdesc:a50c5b1964fd45bbd7615d9d20d1c238b"><td class="mdescLeft">&#160;</td><td class="mdescRight">an alternative for array indexing using <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a> objects  <a href="namespacestir.html#a50c5b1964fd45bbd7615d9d20d1c238b">More...</a><br /></td></tr>
@@ -110,7 +110,7 @@ template&lt;int num_dimensions, typename elemT &gt; </td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:42 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,53 +70,53 @@ Inheritance diagram for stir::RigidObject3DMotionFromPolaris:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c2d94a6ac70cc7fc42f62bf401a0509"><td class="memItemLeft" align="right" valign="top"><a id="a9c2d94a6ac70cc7fc42f62bf401a0509"></a>
-virtual <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compute_average_motion_in_tracker_coords_rel_time</b> (const double start_time, const double end_time) const</td></tr>
-<tr class="separator:a9c2d94a6ac70cc7fc42f62bf401a0509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f644dcf6342e56f82ed2b64c255d279"><td class="memItemLeft" align="right" valign="top"><a id="a8f644dcf6342e56f82ed2b64c255d279"></a>
-virtual <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a8f644dcf6342e56f82ed2b64c255d279">get_motion_in_tracker_coords_rel_time</a> (const double time) const</td></tr>
-<tr class="memdesc:a8f644dcf6342e56f82ed2b64c255d279"><td class="mdescLeft">&#160;</td><td class="mdescRight">get motion in tracker coordinates <br /></td></tr>
-<tr class="separator:a8f644dcf6342e56f82ed2b64c255d279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78544f671d339f42a42c950c2746466"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#ab78544f671d339f42a42c950c2746466">get_rel_time_of_samples</a> (const double start_time, const double end_time) const</td></tr>
-<tr class="memdesc:ab78544f671d339f42a42c950c2746466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info on when the motion was determined.  <a href="#ab78544f671d339f42a42c950c2746466">More...</a><br /></td></tr>
-<tr class="separator:ab78544f671d339f42a42c950c2746466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149fe6eeecb943783e5a7fa665fa10d6"><td class="memItemLeft" align="right" valign="top"><a id="a149fe6eeecb943783e5a7fa665fa10d6"></a>
+<a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compute_average_motion_in_tracker_coords_rel_time</b> (const double start_time, const double end_time) const override</td></tr>
+<tr class="separator:a149fe6eeecb943783e5a7fa665fa10d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79814b141c4ad4946259b425815f2042"><td class="memItemLeft" align="right" valign="top"><a id="a79814b141c4ad4946259b425815f2042"></a>
+<a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a79814b141c4ad4946259b425815f2042">get_motion_in_tracker_coords_rel_time</a> (const double time) const override</td></tr>
+<tr class="memdesc:a79814b141c4ad4946259b425815f2042"><td class="mdescLeft">&#160;</td><td class="mdescRight">get motion in tracker coordinates <br /></td></tr>
+<tr class="separator:a79814b141c4ad4946259b425815f2042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac762d565389b4f1355914ac644721fc5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#ac762d565389b4f1355914ac644721fc5">get_rel_time_of_samples</a> (const double start_time, const double end_time) const override</td></tr>
+<tr class="memdesc:ac762d565389b4f1355914ac644721fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info on when the motion was determined.  <a href="#ac762d565389b4f1355914ac644721fc5">More...</a><br /></td></tr>
+<tr class="separator:ac762d565389b4f1355914ac644721fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f2d58f78baa13a5302a84e408a85923"><td class="memItemLeft" align="right" valign="top"><a id="a0f2d58f78baa13a5302a84e408a85923"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a0f2d58f78baa13a5302a84e408a85923">set_mask_for_tags</a> (const unsigned int mask_for_tags)</td></tr>
 <tr class="memdesc:a0f2d58f78baa13a5302a84e408a85923"><td class="mdescLeft">&#160;</td><td class="mdescRight">set mask to be able to ignore one or more channels in the listmode gating data <br /></td></tr>
 <tr class="separator:a0f2d58f78baa13a5302a84e408a85923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f0b2bae4660791e9efb62e4ddadc89"><td class="memItemLeft" align="right" valign="top"><a id="a49f0b2bae4660791e9efb62e4ddadc89"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a49f0b2bae4660791e9efb62e4ddadc89">synchronise</a> ()</td></tr>
-<tr class="memdesc:a49f0b2bae4660791e9efb62e4ddadc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise motion tracking file and listmode file. <br /></td></tr>
-<tr class="separator:a49f0b2bae4660791e9efb62e4ddadc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af86fe857d1c68e55096d259a534802ef"><td class="memItemLeft" align="right" valign="top"><a id="af86fe857d1c68e55096d259a534802ef"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>secs_since_1970_to_rel_time</b> (std::time_t) const</td></tr>
-<tr class="separator:af86fe857d1c68e55096d259a534802ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d0eff95f1c40676785ba29dee306530"><td class="memItemLeft" align="right" valign="top"><a id="a9d0eff95f1c40676785ba29dee306530"></a>
-virtual const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_transformation_to_scanner_coords</b> () const</td></tr>
-<tr class="separator:a9d0eff95f1c40676785ba29dee306530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e8354d777a145fe37ad2580ad8f2b8"><td class="memItemLeft" align="right" valign="top"><a id="aa9e8354d777a145fe37ad2580ad8f2b8"></a>
-virtual const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_transformation_from_scanner_coords</b> () const</td></tr>
-<tr class="separator:aa9e8354d777a145fe37ad2580ad8f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467b6708215dfd115eef37d9e9011ed4"><td class="memItemLeft" align="right" valign="top"><a id="a467b6708215dfd115eef37d9e9011ed4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_transformation_from_scanner_coords</b> (const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;)</td></tr>
-<tr class="separator:a467b6708215dfd115eef37d9e9011ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1439c7ea00d5551a5c880056409274d7"><td class="memItemLeft" align="right" valign="top"><a id="a1439c7ea00d5551a5c880056409274d7"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a1439c7ea00d5551a5c880056409274d7">synchronise</a> () override</td></tr>
+<tr class="memdesc:a1439c7ea00d5551a5c880056409274d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise motion tracking file and listmode file. <br /></td></tr>
+<tr class="separator:a1439c7ea00d5551a5c880056409274d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35e253e955637663567389ca5c81730"><td class="memItemLeft" align="right" valign="top"><a id="af35e253e955637663567389ca5c81730"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>secs_since_1970_to_rel_time</b> (std::time_t) const override</td></tr>
+<tr class="separator:af35e253e955637663567389ca5c81730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9450ec97b242df8d814a426b97a3071b"><td class="memItemLeft" align="right" valign="top"><a id="a9450ec97b242df8d814a426b97a3071b"></a>
+const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_transformation_to_scanner_coords</b> () const override</td></tr>
+<tr class="separator:a9450ec97b242df8d814a426b97a3071b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1ff2b9669571ed11be173ededc5897"><td class="memItemLeft" align="right" valign="top"><a id="a0f1ff2b9669571ed11be173ededc5897"></a>
+const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_transformation_from_scanner_coords</b> () const override</td></tr>
+<tr class="separator:a0f1ff2b9669571ed11be173ededc5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b0577e577bd03d86670c8a7cc30f9e"><td class="memItemLeft" align="right" valign="top"><a id="a92b0577e577bd03d86670c8a7cc30f9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_transformation_from_scanner_coords</b> (const <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a> &amp;) override</td></tr>
+<tr class="separator:a92b0577e577bd03d86670c8a7cc30f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a303075280581f0fb6dc62102f76c714e"><td class="memItemLeft" align="right" valign="top"><a id="a303075280581f0fb6dc62102f76c714e"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_mt_file</b> (const std::string &amp;mt_filename)</td></tr>
 <tr class="separator:a303075280581f0fb6dc62102f76c714e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a767d312fc38a168f1fad2b017db027f2"><td class="memItemLeft" align="right" valign="top"><a id="a767d312fc38a168f1fad2b017db027f2"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_list_mode_data_file</b> (const std::string &amp;lm_filename)</td></tr>
 <tr class="separator:a767d312fc38a168f1fad2b017db027f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe9c56ae5bbc83c74a11fe8eeef34a9"><td class="memItemLeft" align="right" valign="top"><a id="a7fe9c56ae5bbc83c74a11fe8eeef34a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a7fe9c56ae5bbc83c74a11fe8eeef34a9">set_defaults</a> ()</td></tr>
-<tr class="memdesc:a7fe9c56ae5bbc83c74a11fe8eeef34a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
-<tr class="separator:a7fe9c56ae5bbc83c74a11fe8eeef34a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563f04a9f19ff95795a4bc6a5be14efe"><td class="memItemLeft" align="right" valign="top"><a id="a563f04a9f19ff95795a4bc6a5be14efe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a563f04a9f19ff95795a4bc6a5be14efe">initialise_keymap</a> ()</td></tr>
-<tr class="memdesc:a563f04a9f19ff95795a4bc6a5be14efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
-<tr class="separator:a563f04a9f19ff95795a4bc6a5be14efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ace820fd73adbfd78d5fa44eac4bdf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a73ace820fd73adbfd78d5fa44eac4bdf">post_processing</a> ()</td></tr>
-<tr class="memdesc:a73ace820fd73adbfd78d5fa44eac4bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a73ace820fd73adbfd78d5fa44eac4bdf">More...</a><br /></td></tr>
-<tr class="separator:a73ace820fd73adbfd78d5fa44eac4bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ffcfe2186477b86809292b4f60de8a"><td class="memItemLeft" align="right" valign="top"><a id="a98ffcfe2186477b86809292b4f60de8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#a98ffcfe2186477b86809292b4f60de8a">set_defaults</a> () override</td></tr>
+<tr class="memdesc:a98ffcfe2186477b86809292b4f60de8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set defaults before parsing. <br /></td></tr>
+<tr class="separator:a98ffcfe2186477b86809292b4f60de8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f8c8fdb8c037026a9ebe062d1d0f82"><td class="memItemLeft" align="right" valign="top"><a id="af9f8c8fdb8c037026a9ebe062d1d0f82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#af9f8c8fdb8c037026a9ebe062d1d0f82">initialise_keymap</a> () override</td></tr>
+<tr class="memdesc:af9f8c8fdb8c037026a9ebe062d1d0f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all keywords. <br /></td></tr>
+<tr class="separator:af9f8c8fdb8c037026a9ebe062d1d0f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd327e1b699199cd2fe1d3eae76bbce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#afcd327e1b699199cd2fe1d3eae76bbce">post_processing</a> () override</td></tr>
+<tr class="memdesc:afcd327e1b699199cd2fe1d3eae76bbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#afcd327e1b699199cd2fe1d3eae76bbce">More...</a><br /></td></tr>
+<tr class="separator:afcd327e1b699199cd2fe1d3eae76bbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab453854fce314661bf94f2b4794256b0"><td class="memItemLeft" align="right" valign="top"><a id="ab453854fce314661bf94f2b4794256b0"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotionFromPolaris.html#ab453854fce314661bf94f2b4794256b0">get_max_time_offset_deviation</a> () const</td></tr>
 <tr class="memdesc:ab453854fce314661bf94f2b4794256b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets boundaries to determine when the time offset is out of bounds. <br /></td></tr>
@@ -133,14 +133,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a123e3920d4270211a4000bae51591304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets boundaries to determine when the time drift is too large. <br /></td></tr>
 <tr class="separator:a123e3920d4270211a4000bae51591304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RegisteredParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RegisteredParsingObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RegisteredParsingObject.html">stir::RegisteredParsingObject&lt; RigidObject3DMotionFromPolaris, RigidObject3DMotion, RigidObject3DMotion &gt;</a></td></tr>
-<tr class="memitem:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a05ad8de71bcd308445ce21e189d3bd7b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a05ad8de71bcd308445ce21e189d3bd7b">get_registered_name</a> () const</td></tr>
-<tr class="memdesc:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
-<tr class="separator:a05ad8de71bcd308445ce21e189d3bd7b inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="abf76fa19f100f1e941e92f6e0abd78ec"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#abf76fa19f100f1e941e92f6e0abd78ec">parameter_info</a> ()</td></tr>
-<tr class="memdesc:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
-<tr class="separator:abf76fa19f100f1e941e92f6e0abd78ec inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="aeb8de0f93c9eb5933d39d29c47035667"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#aeb8de0f93c9eb5933d39d29c47035667">get_registered_name</a> () const override</td></tr>
+<tr class="memdesc:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Derived::registered_name. <br /></td></tr>
+<tr class="separator:aeb8de0f93c9eb5933d39d29c47035667 inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memItemLeft" align="right" valign="top"><a id="a66f36f490ab10ab754462013cdff499c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RegisteredParsingObject.html#a66f36f490ab10ab754462013cdff499c">parameter_info</a> () override</td></tr>
+<tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
+<tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RigidObject3DMotion"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RigidObject3DMotion')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RigidObject3DMotion.html">stir::RigidObject3DMotion</a></td></tr>
 <tr class="memitem:a1434932c354b1e9ee12aba8c8b89741b inherit pub_methods_classstir_1_1RigidObject3DMotion"><td class="memItemLeft" align="right" valign="top"><a id="a1434932c354b1e9ee12aba8c8b89741b"></a>
 virtual <a class="el" href="classstir_1_1RigidObject3DTransformation.html">RigidObject3DTransformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RigidObject3DMotion.html#a1434932c354b1e9ee12aba8c8b89741b">get_motion_in_scanner_coords_rel_time</a> (const double time) const</td></tr>
@@ -233,7 +233,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
      {-1981.93, 20.1226, 3.96638}}
  end:=
 </pre> Obviously the numbers will depend on your systems.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000202">Todo:</a></b></dt><dd>move synchronisation out of this class </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000206">Todo:</a></b></dt><dd>move synchronisation out of this class </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac9a5113f165c47f0f61c564f701168e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9a5113f165c47f0f61c564f701168e7">&#9670;&nbsp;</a></span>make_transformation_from_polaris_data()</h2>
@@ -266,8 +266,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 
 </div>
 </div>
-<a id="ab78544f671d339f42a42c950c2746466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab78544f671d339f42a42c950c2746466">&#9670;&nbsp;</a></span>get_rel_time_of_samples()</h2>
+<a id="ac762d565389b4f1355914ac644721fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac762d565389b4f1355914ac644721fc5">&#9670;&nbsp;</a></span>get_rel_time_of_samples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,14 +295,14 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Info on when the motion was determined. </p>
 <p>Will return a vector of doubles filled with the sampling times between <em>start_time</em> and <em>end_time</em>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000201">Todo:</a></b></dt><dd>Really only makes sense for motion tracking that happens via sampling. One could imagine having simulated motion, and then this function wouldn't make a lot of sense. So, it probably should be moved to a derived class <code>SampledRigidObject3DMotion</code> or so. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo:</a></b></dt><dd>Really only makes sense for motion tracking that happens via sampling. One could imagine having simulated motion, and then this function wouldn't make a lot of sense. So, it probably should be moved to a derived class <code>SampledRigidObject3DMotion</code> or so. </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1RigidObject3DMotion.html#a0bbdb02de63fd0bf550c4434ab31c075">stir::RigidObject3DMotion</a>.</p>
 
@@ -310,8 +310,8 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 
 </div>
 </div>
-<a id="a73ace820fd73adbfd78d5fa44eac4bdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ace820fd73adbfd78d5fa44eac4bdf">&#9670;&nbsp;</a></span>post_processing()</h2>
+<a id="afcd327e1b699199cd2fe1d3eae76bbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd327e1b699199cd2fe1d3eae76bbce">&#9670;&nbsp;</a></span>post_processing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -336,7 +336,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>This will be called at the end of the parsing. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if everything OK, true if not </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classstir_1_1RigidObject3DMotion.html#aa1cc7ae3d2986ba8022e52b381a7ba81">stir::RigidObject3DMotion</a>.</p>
+<p>Reimplemented from <a class="el" href="classstir_1_1RigidObject3DMotion.html#a8e55bf252cc1ebef85caab175b08898d">stir::RigidObject3DMotion</a>.</p>
 
 <p class="reference">References <a class="el" href="classstir_1_1KeyParser.html#ace0df590f8e6b676f5d5410da654021a">stir::KeyParser::add_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#a2f9888661e50ab3a45504abd91e57d72">stir::KeyParser::add_start_key()</a>, <a class="el" href="classstir_1_1KeyParser.html#aa92a7db6e8ab333adf8741acfcd95cb9">stir::KeyParser::add_stop_key()</a>, <a class="el" href="group__Coordinate.html#ga4770b3db3002116b144d80af7afdef39">stir::norm()</a>, <a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43">stir::KeyParser::parse()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
@@ -377,7 +377,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

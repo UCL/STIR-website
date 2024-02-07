@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -58,7 +58,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1RegisteredObjectBase.html#a9eb7d6e93407316c0780e2121e522ae4">get_registered_name</a>() const =0</td><td class="entry"><a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html#af7d3e49369cf0cdb8004128b76a7108b">get_scanner_ptr</a>() const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae74ec18d12b1e7c61af4a968966e9be8">get_singles</a>(int singles_bin_index, unsigned int frame_number) const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#a010699c234f553fe65a6d71048ce0088">get_singles</a>(const int singles_bin_index, const double start_time, const double end_time) const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae074ab6dbfcf1b95b12e2d8453fe74cb">get_singles</a>(const int singles_bin_index, const double start_time, const double end_time) const override</td><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html#ac48494fd7b5075520d21cd0f39135257">stir::SinglesRates::get_singles</a>(const DetectionPosition&lt;&gt; &amp;det_pos, const double start_time, const double end_time) const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html#a9baa4433b1e6679b9b85690a6a8c117b">get_singles_rate</a>(const int singles_bin_index, const double start_time, const double end_time) const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html#a44314150850fbd4c265f5fae5a513154">get_singles_rate</a>(const DetectionPosition&lt;&gt; &amp;det_pos, const double start_time, const double end_time) const</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -84,12 +84,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#aa640301bdbcaff75c5b6b536e94424a6">set_singles</a>(const int singles_bin_index, const unsigned time_frame_num, const float new_singles)</td><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#a070f83841c831f4ce13273680127e126">SinglesRatesForTimeFrames</a>()</td><td class="entry"><a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html">stir::SinglesRatesForTimeFrames</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~ParsingObject</b>() (defined in <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a>)</td><td class="entry"><a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~RegisteredObjectBase</b>() (defined in <a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a>)</td><td class="entry"><a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~SinglesRates</b>() (defined in <a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a>)</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~RegisteredObjectBase</b>() override (defined in <a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a>)</td><td class="entry"><a class="el" href="classstir_1_1RegisteredObjectBase.html">stir::RegisteredObjectBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~SinglesRates</b>() override (defined in <a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a>)</td><td class="entry"><a class="el" href="classstir_1_1SinglesRates.html">stir::SinglesRates</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:40 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

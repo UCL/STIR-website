@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,9 +70,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">TestProjDataInfoSubsets</a> (const std::string &amp;sinogram_filename)</td></tr>
 <tr class="memdesc:aa0241d718935e3a0ac7593c5adfce2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with. <br /></td></tr>
 <tr class="separator:aa0241d718935e3a0ac7593c5adfce2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f9381e1d00e7ad4410d3038d012583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#a58f9381e1d00e7ad4410d3038d012583">run_tests</a> ()</td></tr>
-<tr class="memdesc:a58f9381e1d00e7ad4410d3038d012583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (to be overloaded) which does the actual tests.  <a href="#a58f9381e1d00e7ad4410d3038d012583">More...</a><br /></td></tr>
-<tr class="separator:a58f9381e1d00e7ad4410d3038d012583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e0ee99051432be3538d3b4f4e2a9c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#ae4e0ee99051432be3538d3b4f4e2a9c8">run_tests</a> () override</td></tr>
+<tr class="memdesc:ae4e0ee99051432be3538d3b4f4e2a9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (to be overloaded) which does the actual tests.  <a href="#ae4e0ee99051432be3538d3b4f4e2a9c8">More...</a><br /></td></tr>
+<tr class="separator:ae4e0ee99051432be3538d3b4f4e2a9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0475940fe20512bf4e1bdb9236a0d852"><td class="memItemLeft" align="right" valign="top"><a id="a0475940fe20512bf4e1bdb9236a0d852"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run_tests</b> (const std::shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; &amp;proj_data_sptr, const std::shared_ptr&lt; const <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt;&gt; &amp;test_image_sptr)</td></tr>
+<tr class="separator:a0475940fe20512bf4e1bdb9236a0d852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ba7a68f608007bab341bc3e9602d2f"><td class="memItemLeft" align="right" valign="top"><a id="a62ba7a68f608007bab341bc3e9602d2f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>test_split</b> (const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;proj_data)</td></tr>
 <tr class="separator:a62ba7a68f608007bab341bc3e9602d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +146,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (c
 <tr class="memitem:a29f4db5212da88107d9807c2a24a1d11 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a29f4db5212da88107d9807c2a24a1d11"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (const unsigned long a, const unsigned long b, const std::string &amp;str=&quot;&quot;)</td></tr>
 <tr class="separator:a29f4db5212da88107d9807c2a24a1d11 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686dd2d37263073eb00a013abd274aec inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a686dd2d37263073eb00a013abd274aec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;a, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;b, const std::string &amp;str=&quot;&quot;)</td></tr>
+<tr class="separator:a686dd2d37263073eb00a013abd274aec inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db2daa6e66effce1b579182ea56f3e5 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a6db2daa6e66effce1b579182ea56f3e5"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6db2daa6e66effce1b579182ea56f3e5 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1DetectionPosition.html">DetectionPosition</a>&lt; T &gt; &amp;a, const <a class="el" href="classstir_1_1DetectionPosition.html">DetectionPosition</a>&lt; T &gt; &amp;b, const std::string &amp;str=&quot;&quot;)</td></tr>
+<tr class="separator:a6db2daa6e66effce1b579182ea56f3e5 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1d98621b1483b0057d5e3ffa5494a4 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a6d1d98621b1483b0057d5e3ffa5494a4"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6d1d98621b1483b0057d5e3ffa5494a4 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a6d1d98621b1483b0057d5e3ffa5494a4">check_if_equal</a> (const std::complex&lt; T &gt; a, const std::complex&lt; T &gt; b, const std::string &amp;str=&quot;&quot;)</td></tr>
@@ -232,9 +242,9 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad1d7710c1df052a5c15bcef6e64f4ca8"><td class="memItemLeft" align="right" valign="top"><a id="ad1d7710c1df052a5c15bcef6e64f4ca8"></a>
 static shared_ptr&lt; <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>construct_test_image_data</b> (const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;template_projdata)</td></tr>
 <tr class="separator:ad1d7710c1df052a5c15bcef6e64f4ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f1688ef170179474e4ac4e5f67dfca"><td class="memItemLeft" align="right" valign="top"><a id="a38f1688ef170179474e4ac4e5f67dfca"></a>
-static shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>construct_test_proj_data</b> ()</td></tr>
-<tr class="separator:a38f1688ef170179474e4ac4e5f67dfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d087dba6b234505a05e2d688151922c"><td class="memItemLeft" align="right" valign="top"><a id="a8d087dba6b234505a05e2d688151922c"></a>
+static shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>construct_test_proj_data</b> (bool TOF)</td></tr>
+<tr class="separator:a8d087dba6b234505a05e2d688151922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca105c95e91ef034dbc04a85e001f80"><td class="memItemLeft" align="right" valign="top"><a id="a3ca105c95e91ef034dbc04a85e001f80"></a>
 static shared_ptr&lt; <a class="el" href="classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html">ProjectorByBinPairUsingProjMatrixByBin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>construct_projector_pair</b> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;template_projdatainfo_sptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt;&gt; &amp;template_image_sptr, bool use_z_symmetries=false, bool use_other_symmetries=false)</td></tr>
 <tr class="separator:a3ca105c95e91ef034dbc04a85e001f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,12 +257,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a37be2486d526f6956669cdefe040e7ff"><td class="memItemLeft" align="right" valign="top"><a id="a37be2486d526f6956669cdefe040e7ff"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_sinogram_filename</b></td></tr>
 <tr class="separator:a37be2486d526f6956669cdefe040e7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb78f69e871637409492755500bbb38f"><td class="memItemLeft" align="right" valign="top"><a id="abb78f69e871637409492755500bbb38f"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_input_sino_sptr</b></td></tr>
-<tr class="separator:abb78f69e871637409492755500bbb38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabd4e27ed5c48df83b7be824c5385865"><td class="memItemLeft" align="right" valign="top"><a id="aabd4e27ed5c48df83b7be824c5385865"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_test_image_sptr</b></td></tr>
-<tr class="separator:aabd4e27ed5c48df83b7be824c5385865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a57389d9d070676abb1ffa3f93f3cb2b9 inherit pro_attribs_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a57389d9d070676abb1ffa3f93f3cb2b9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">tolerance</a></td></tr>
@@ -266,8 +270,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Test class for subsets in <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a58f9381e1d00e7ad4410d3038d012583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58f9381e1d00e7ad4410d3038d012583">&#9670;&nbsp;</a></span>run_tests()</h2>
+<a id="ae4e0ee99051432be3538d3b4f4e2a9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e0ee99051432be3538d3b4f4e2a9c8">&#9670;&nbsp;</a></span>run_tests()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +288,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -294,7 +298,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Implements <a class="el" href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">stir::RunTests</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1RunTests.html#a21011f94757f7a15068d2680070baf26">stir::RunTests::everything_ok</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1ProjData.html#a8ecb65334493fcdd1d463ff24ff8d284">stir::ProjData::get_max_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a102991a80f11d5669fa8bcb24166718b">stir::ProjData::get_max_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a581c37630fd579ed236d675407669dd4">stir::ProjData::get_max_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#abb61dcd8371f0a3780bf2d6f0f9d9884">stir::ProjData::get_min_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a25c1e6ff83191624b0ab91635366dc59">stir::ProjData::get_min_segment_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a9c335f1b228c0372dff6619fef190e6d">stir::ProjData::get_min_tangential_pos_num()</a>, <a class="el" href="classstir_1_1ProjData.html#a8e162fbc5ca9e32ff104003fe0a39dd1">stir::ProjData::get_num_views()</a>, <a class="el" href="classstir_1_1ProjData.html#a1ac406cc7051cec1cabd201bd7d860e3">stir::ProjData::get_proj_data_info_sptr()</a>, <a class="el" href="classstir_1_1ProjData.html#a4bd1fc641fd5bf623fb80e2ce0820263">stir::ProjData::get_subset()</a>, <a class="el" href="classstir_1_1ProjDataInMemory.html#a4e327592d3614c655f75885a017a79a4">stir::ProjDataInMemory::get_viewgram()</a>, <a class="el" href="classstir_1_1ProjData.html#afc95d7492a7da4f72f50527658d1e830">stir::ProjData::get_viewgram()</a>, and <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">TestProjDataInfoSubsets()</a>.</p>
 
 </div>
 </div>
@@ -304,7 +310,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

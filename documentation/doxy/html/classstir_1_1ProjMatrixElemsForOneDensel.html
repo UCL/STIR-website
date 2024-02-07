@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -96,10 +96,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#aaf993c272a16999b3a731217f3251f9d">check_state</a> () const</td></tr>
 <tr class="memdesc:aaf993c272a16999b3a731217f3251f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if each voxel occurs only once <br /></td></tr>
 <tr class="separator:aaf993c272a16999b3a731217f3251f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633f36b624f68ccfc2e412acb94ce787"><td class="memItemLeft" align="right" valign="top"><a id="a633f36b624f68ccfc2e412acb94ce787"></a>
-<a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a633f36b624f68ccfc2e412acb94ce787">get_densel</a> () const</td></tr>
-<tr class="memdesc:a633f36b624f68ccfc2e412acb94ce787"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the Densel coordinates corresponding to this row <br /></td></tr>
-<tr class="separator:a633f36b624f68ccfc2e412acb94ce787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76b0dd70fca22785f06b7546958f917"><td class="memItemLeft" align="right" valign="top"><a id="af76b0dd70fca22785f06b7546958f917"></a>
+const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af76b0dd70fca22785f06b7546958f917">get_densel</a> () const</td></tr>
+<tr class="memdesc:af76b0dd70fca22785f06b7546958f917"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the Densel coordinates corresponding to this row <br /></td></tr>
+<tr class="separator:af76b0dd70fca22785f06b7546958f917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d97f768309abd7f316e884c3cf7a38"><td class="memItemLeft" align="right" valign="top"><a id="af0d97f768309abd7f316e884c3cf7a38"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af0d97f768309abd7f316e884c3cf7a38">set_densel</a> (const <a class="el" href="group__densitydata.html#gaf67d385e5094a1990a9aa6ecdfece1f6">Densel</a> &amp;)</td></tr>
 <tr class="memdesc:af0d97f768309abd7f316e884c3cf7a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">and set the Densel coordinates <br /></td></tr>
@@ -215,8 +215,6 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a1b8bd3e5deaa64e4d2561b1c9386a988">ProjMatrixElemsForOneDensel()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -247,7 +245,7 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <p>add a new value_type object at the end </p>
 <dl class="section warning"><dt>Warning</dt><dd>For future compatibility, it is required (but not checked) that the elements are added such that calling <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a8832466731202d9ded748c1689f6db8c" title="Sort the elements on coordinates of the voxels. ">sort()</a> after the <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a695320c0d3c5e52764f40d470fb92680" title="add a new value_type object at the end ">push_back()</a> would not change the order of the elements. Otherwise, schemes for 'incremental' storing of coordinates would require too much overhead. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#a788b101fd56c32b697296e041315af22">stir::ProjMatrixByDenselOnCartesianGridUsingElement::calculate_proj_matrix_elems_for_one_densel()</a>, and <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af58cc59eec447514e2685cbd7df2f79f">merge()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html#ad5d1e3bb24517d1917c8ea5bcd0e191a">stir::ProjMatrixByDenselOnCartesianGridUsingElement::calculate_proj_matrix_elems_for_one_densel()</a>, and <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af58cc59eec447514e2685cbd7df2f79f">merge()</a>.</p>
 
 </div>
 </div>
@@ -296,8 +294,6 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 <p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#ac27b4d2d3161123cedb0e5bed4380a6e">begin()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#aaf993c272a16999b3a731217f3251f9d">check_state()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDenselValue.html#af76d96fcfbbf6910eb288f22a4dc795a">stir::ProjMatrixElemsForOneDenselValue::coordinates_equal()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a251cadd939e203c204daad19cca7a0c0">erase()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a695320c0d3c5e52764f40d470fb92680">push_back()</a>, and <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#a90ba7d92be58d07db61d2d1d1b6f2e08">size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af61f320937c3680f182af5ee5b4e49d2">square_sum()</a>.</p>
-
 </div>
 </div>
 <a id="af61f320937c3680f182af5ee5b4e49d2"></a>
@@ -318,7 +314,7 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <p>Return sum of squares of all values. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This sums over all elements in the <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>, irrespective if they are inside the FOV or not </dd></dl>
 
-<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#ac27b4d2d3161123cedb0e5bed4380a6e">begin()</a>, <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#af58cc59eec447514e2685cbd7df2f79f">merge()</a>, and <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html#ac27b4d2d3161123cedb0e5bed4380a6e">begin()</a>, and <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +326,7 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:45 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

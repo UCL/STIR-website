@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,33 +71,33 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a5b0a28aaa586b0b6b8dc48108bcc86f4">CListModeDataGEHDF5</a> (const std::string &amp;listmode_filename)</td></tr>
 <tr class="memdesc:a5b0a28aaa586b0b6b8dc48108bcc86f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor taking a filename. <br /></td></tr>
 <tr class="separator:a5b0a28aaa586b0b6b8dc48108bcc86f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cef3b7bc2d6d37f503549c39f89b7d7"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a8cef3b7bc2d6d37f503549c39f89b7d7">get_name</a> () const</td></tr>
-<tr class="memdesc:a8cef3b7bc2d6d37f503549c39f89b7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the list mode data.  <a href="#a8cef3b7bc2d6d37f503549c39f89b7d7">More...</a><br /></td></tr>
-<tr class="separator:a8cef3b7bc2d6d37f503549c39f89b7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb3e9886294b51d781756827f83ddbf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#adbb3e9886294b51d781756827f83ddbf">get_name</a> () const override</td></tr>
+<tr class="memdesc:adbb3e9886294b51d781756827f83ddbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the list mode data.  <a href="#adbb3e9886294b51d781756827f83ddbf">More...</a><br /></td></tr>
+<tr class="separator:adbb3e9886294b51d781756827f83ddbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270db7166681be7140eef2d7619d2287"><td class="memItemLeft" align="right" valign="top"><a id="a270db7166681be7140eef2d7619d2287"></a>
 virtual std::time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_scan_start_time_in_secs_since_1970</b> () const</td></tr>
 <tr class="separator:a270db7166681be7140eef2d7619d2287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7498b3c897f6f2f52b5b6a0a295dd4a2"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; CListRecord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a7498b3c897f6f2f52b5b6a0a295dd4a2">get_empty_record_sptr</a> () const</td></tr>
-<tr class="memdesc:a7498b3c897f6f2f52b5b6a0a295dd4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to an empty record.  <a href="#a7498b3c897f6f2f52b5b6a0a295dd4a2">More...</a><br /></td></tr>
-<tr class="separator:a7498b3c897f6f2f52b5b6a0a295dd4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c0d543a6f7c6018a0f7fb5e2c37621"><td class="memItemLeft" align="right" valign="top"><a id="a93c0d543a6f7c6018a0f7fb5e2c37621"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a93c0d543a6f7c6018a0f7fb5e2c37621">get_next_record</a> (CListRecord &amp;record) const</td></tr>
-<tr class="memdesc:a93c0d543a6f7c6018a0f7fb5e2c37621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next record in the listmode sequence. <br /></td></tr>
-<tr class="separator:a93c0d543a6f7c6018a0f7fb5e2c37621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5bff65b4c74a1008641f520c8c6e14e"><td class="memItemLeft" align="right" valign="top"><a id="af5bff65b4c74a1008641f520c8c6e14e"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#af5bff65b4c74a1008641f520c8c6e14e">reset</a> ()</td></tr>
-<tr class="memdesc:af5bff65b4c74a1008641f520c8c6e14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function if you want to re-start reading at the beginning. <br /></td></tr>
-<tr class="separator:af5bff65b4c74a1008641f520c8c6e14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909eb8c596612e6cd5e2bab1c1385d7c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a909eb8c596612e6cd5e2bab1c1385d7c">save_get_position</a> ()</td></tr>
-<tr class="memdesc:a909eb8c596612e6cd5e2bab1c1385d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current reading position.  <a href="#a909eb8c596612e6cd5e2bab1c1385d7c">More...</a><br /></td></tr>
-<tr class="separator:a909eb8c596612e6cd5e2bab1c1385d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d742206a768bba300e65e671991c4a"><td class="memItemLeft" align="right" valign="top"><a id="a58d742206a768bba300e65e671991c4a"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a58d742206a768bba300e65e671991c4a">set_get_position</a> (const <a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a> &amp;)</td></tr>
-<tr class="memdesc:a58d742206a768bba300e65e671991c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position for reading to a previously saved point. <br /></td></tr>
-<tr class="separator:a58d742206a768bba300e65e671991c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47db237de45e417a42a629ffe25a003f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a47db237de45e417a42a629ffe25a003f">has_delayeds</a> () const</td></tr>
-<tr class="memdesc:a47db237de45e417a42a629ffe25a003f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>false</code>, as GEHDF5 listmode data does not store delayed events (and prompts)  <a href="#a47db237de45e417a42a629ffe25a003f">More...</a><br /></td></tr>
-<tr class="separator:a47db237de45e417a42a629ffe25a003f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd7f145119060dfb45d7e22cfffd25f"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classstir_1_1CListRecord.html">CListRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#acdd7f145119060dfb45d7e22cfffd25f">get_empty_record_sptr</a> () const override</td></tr>
+<tr class="memdesc:acdd7f145119060dfb45d7e22cfffd25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to an empty record.  <a href="#acdd7f145119060dfb45d7e22cfffd25f">More...</a><br /></td></tr>
+<tr class="separator:acdd7f145119060dfb45d7e22cfffd25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6501fbe8231e3f3525e46f4894a73e"><td class="memItemLeft" align="right" valign="top"><a id="adc6501fbe8231e3f3525e46f4894a73e"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#adc6501fbe8231e3f3525e46f4894a73e">get_next_record</a> (<a class="el" href="classstir_1_1CListRecord.html">CListRecord</a> &amp;record) const override</td></tr>
+<tr class="memdesc:adc6501fbe8231e3f3525e46f4894a73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next record in the listmode sequence. <br /></td></tr>
+<tr class="separator:adc6501fbe8231e3f3525e46f4894a73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e703906e3b96273f48a9f19fe6c0bc0"><td class="memItemLeft" align="right" valign="top"><a id="a2e703906e3b96273f48a9f19fe6c0bc0"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a2e703906e3b96273f48a9f19fe6c0bc0">reset</a> () override</td></tr>
+<tr class="memdesc:a2e703906e3b96273f48a9f19fe6c0bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function if you want to re-start reading at the beginning. <br /></td></tr>
+<tr class="separator:a2e703906e3b96273f48a9f19fe6c0bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdf291f2c8b1d3f379920bfbcaced48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#acfdf291f2c8b1d3f379920bfbcaced48">save_get_position</a> () override</td></tr>
+<tr class="memdesc:acfdf291f2c8b1d3f379920bfbcaced48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current reading position.  <a href="#acfdf291f2c8b1d3f379920bfbcaced48">More...</a><br /></td></tr>
+<tr class="separator:acfdf291f2c8b1d3f379920bfbcaced48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114bb06db738811984c23d004d77ee14"><td class="memItemLeft" align="right" valign="top"><a id="a114bb06db738811984c23d004d77ee14"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a114bb06db738811984c23d004d77ee14">set_get_position</a> (const <a class="el" href="classstir_1_1ListModeData.html#a51893647e70d643932778121c68c7c67">SavedPosition</a> &amp;) override</td></tr>
+<tr class="memdesc:a114bb06db738811984c23d004d77ee14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position for reading to a previously saved point. <br /></td></tr>
+<tr class="separator:a114bb06db738811984c23d004d77ee14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44774e91efec7cd1b75f85505b797c73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a44774e91efec7cd1b75f85505b797c73">has_delayeds</a> () const override</td></tr>
+<tr class="memdesc:a44774e91efec7cd1b75f85505b797c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>false</code>, as GEHDF5 listmode data does not store delayed events (and prompts)  <a href="#a44774e91efec7cd1b75f85505b797c73">More...</a><br /></td></tr>
+<tr class="separator:a44774e91efec7cd1b75f85505b797c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1ListModeData"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ListModeData')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ListModeData.html">stir::ListModeData</a></td></tr>
 <tr class="memitem:ab8afc74c6711a2737fc861774dc3de33 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="ab8afc74c6711a2737fc861774dc3de33"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#ab8afc74c6711a2737fc861774dc3de33">ListModeData</a> ()</td></tr>
@@ -110,9 +110,9 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a92b09ee7866da5bfa4964fe2d118132f">get_next_record</a> (<a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &amp;event) const</td></tr>
 <tr class="memdesc:a92b09ee7866da5bfa4964fe2d118132f inherit pub_methods_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next record in the listmode sequence. <br /></td></tr>
 <tr class="separator:a92b09ee7866da5bfa4964fe2d118132f inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639c578bcecb3c38d67a4f3ba70ed5f8 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a639c578bcecb3c38d67a4f3ba70ed5f8">get_scanner_ptr</a> () const</td></tr>
-<tr class="memdesc:a639c578bcecb3c38d67a4f3ba70ed5f8 inherit pub_methods_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scanner pointer.  <a href="classstir_1_1ListModeData.html#a639c578bcecb3c38d67a4f3ba70ed5f8">More...</a><br /></td></tr>
-<tr class="separator:a639c578bcecb3c38d67a4f3ba70ed5f8 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34479a772d959b5076e13d8b2ce48548 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstir_1_1Scanner.html">Scanner</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a34479a772d959b5076e13d8b2ce48548">get_scanner</a> () const</td></tr>
+<tr class="memdesc:a34479a772d959b5076e13d8b2ce48548 inherit pub_methods_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to scanner.  <a href="classstir_1_1ListModeData.html#a34479a772d959b5076e13d8b2ce48548">More...</a><br /></td></tr>
+<tr class="separator:a34479a772d959b5076e13d8b2ce48548 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top">virtual unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ListModeData.html#a9cf6b87145336be3c563401063e1cbd6">get_total_number_of_events</a> () const</td></tr>
 <tr class="memdesc:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of events in the listmode file.  <a href="classstir_1_1ListModeData.html#a9cf6b87145336be3c563401063e1cbd6">More...</a><br /></td></tr>
 <tr class="separator:a9cf6b87145336be3c563401063e1cbd6 inherit pub_methods_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,12 +152,12 @@ typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memdesc:a51893647e70d643932778121c68c7c67 inherit pub_types_classstir_1_1ListModeData"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this typedef for save/set_get_position. <br /></td></tr>
 <tr class="separator:a51893647e70d643932778121c68c7c67 inherit pub_types_classstir_1_1ListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1CListModeData"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1CListModeData')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1CListModeData.html">stir::CListModeData</a></td></tr>
-<tr class="memitem:aa95d9886582779b9f2df31d24be99f84 inherit pro_methods_classstir_1_1CListModeData"><td class="memItemLeft" align="right" valign="top"><a id="aa95d9886582779b9f2df31d24be99f84"></a>
-virtual shared_ptr&lt; <a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_empty_record_helper_sptr</b> () const</td></tr>
-<tr class="separator:aa95d9886582779b9f2df31d24be99f84 inherit pro_methods_classstir_1_1CListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab362e1943ed391d1afa250327a817e1d inherit pro_methods_classstir_1_1CListModeData"><td class="memItemLeft" align="right" valign="top"><a id="ab362e1943ed391d1afa250327a817e1d"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_next</b> (<a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &amp;event) const</td></tr>
-<tr class="separator:ab362e1943ed391d1afa250327a817e1d inherit pro_methods_classstir_1_1CListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef133e3d5a086ccd0fe76547175c9393 inherit pro_methods_classstir_1_1CListModeData"><td class="memItemLeft" align="right" valign="top"><a id="aef133e3d5a086ccd0fe76547175c9393"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_empty_record_helper_sptr</b> () const override</td></tr>
+<tr class="separator:aef133e3d5a086ccd0fe76547175c9393 inherit pro_methods_classstir_1_1CListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983a807ecb6f0949f9bdf701e261928e inherit pro_methods_classstir_1_1CListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a983a807ecb6f0949f9bdf701e261928e"></a>
+<a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_next</b> (<a class="el" href="classstir_1_1ListRecord.html">ListRecord</a> &amp;event) const override</td></tr>
+<tr class="separator:a983a807ecb6f0949f9bdf701e261928e inherit pro_methods_classstir_1_1CListModeData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ListModeData"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ListModeData')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ListModeData.html">stir::ListModeData</a></td></tr>
 <tr class="memitem:a976c01086a0da148a9a035405d0fbd19 inherit pro_methods_classstir_1_1ListModeData"><td class="memItemLeft" align="right" valign="top"><a id="a976c01086a0da148a9a035405d0fbd19"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_proj_data_info_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
@@ -175,8 +175,8 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
 <div class="textblock"><p>A class that reads the listmode data for <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> scanners using the RDF9 format. </p>
 <p>This file format is used by <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> Signa PET/MR and can be used by <a class="el" href="namespacestir_1_1GE.html" title="Namespace for the part of the STIR library that handles GE data (and some/most of its applications) ...">GE</a> PET/CT scanners (D690 up to DMI) depending on software version. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8cef3b7bc2d6d37f503549c39f89b7d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cef3b7bc2d6d37f503549c39f89b7d7">&#9670;&nbsp;</a></span>get_name()</h2>
+<a id="adbb3e9886294b51d781756827f83ddbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb3e9886294b51d781756827f83ddbf">&#9670;&nbsp;</a></span>get_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,25 +193,21 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the name of the list mode data. </p>
-<p>This name is not necessarily unique, and might be empty. However, it is expected (but not guaranteed) that <code>ListModeData::read_from_file(lm_data_ptr-&gt;<a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a8cef3b7bc2d6d37f503549c39f89b7d7" title="Returns the name of the list mode data. ">get_name()</a>)</code> would read the same list mode data.</p>
+<p>This name is not necessarily unique, and might be empty. However, it is expected (but not guaranteed) that <code>ListModeData::read_from_file(lm_data_ptr-&gt;<a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#adbb3e9886294b51d781756827f83ddbf" title="Returns the name of the list mode data. ">get_name()</a>)</code> would read the same list mode data.</p>
 <p>The reason this cannot be guaranteed is largely in case the list mode data is not really on disk, but the object corresponds for instance to a Monte Carlo simulator. </p>
 
 <p>Implements <a class="el" href="classstir_1_1ListModeData.html#a7bf8b22663fdd55c06d7a23ffd348fc3">stir::ListModeData</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a7498b3c897f6f2f52b5b6a0a295dd4a2">get_empty_record_sptr()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a5b0a28aaa586b0b6b8dc48108bcc86f4">CListModeDataGEHDF5()</a>.</p>
-
 </div>
 </div>
-<a id="a7498b3c897f6f2f52b5b6a0a295dd4a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7498b3c897f6f2f52b5b6a0a295dd4a2">&#9670;&nbsp;</a></span>get_empty_record_sptr()</h2>
+<a id="acdd7f145119060dfb45d7e22cfffd25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd7f145119060dfb45d7e22cfffd25f">&#9670;&nbsp;</a></span>get_empty_record_sptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +216,7 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">shared_ptr&lt; CListRecord &gt; stir::GE::RDF_HDF5::CListModeDataGEHDF5::get_empty_record_sptr </td>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classstir_1_1CListRecord.html">CListRecord</a> &gt; stir::GE::RDF_HDF5::CListModeDataGEHDF5::get_empty_record_sptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -228,24 +224,22 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get a pointer to an empty record. </p>
-<p>This is mainly/only useful to get a record of the correct type, that can then be passed to <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a93c0d543a6f7c6018a0f7fb5e2c37621" title="Gets the next record in the listmode sequence. ">get_next_record()</a>. </p>
+<p>This is mainly/only useful to get a record of the correct type, that can then be passed to <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#adc6501fbe8231e3f3525e46f4894a73e" title="Gets the next record in the listmode sequence. ">get_next_record()</a>. </p>
 
 <p>Implements <a class="el" href="classstir_1_1CListModeData.html#a221c9c1013bd1cf47079ff744490bce3">stir::CListModeData</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5Wrapper.html#a017f56e769be93995568d41ca2e58468">stir::GE::RDF_HDF5::GEHDF5Wrapper::check_GE_signature()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5Wrapper.html#a715b676b34af373a84343544251ed34b">stir::GE::RDF_HDF5::GEHDF5Wrapper::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a93c0d543a6f7c6018a0f7fb5e2c37621">get_next_record()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#af5bff65b4c74a1008641f520c8c6e14e">reset()</a>, and <a class="el" href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">stir::ExamData::set_exam_info()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a8cef3b7bc2d6d37f503549c39f89b7d7">get_name()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5Wrapper.html#a017f56e769be93995568d41ca2e58468">stir::GE::RDF_HDF5::GEHDF5Wrapper::check_GE_signature()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5Wrapper.html#a715b676b34af373a84343544251ed34b">stir::GE::RDF_HDF5::GEHDF5Wrapper::get_exam_info_sptr()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="classstir_1_1ExamData.html#ab1a74a047cf4164f76f4ec2f1a49d0a9">stir::ExamData::set_exam_info()</a>.</p>
 
 </div>
 </div>
-<a id="a909eb8c596612e6cd5e2bab1c1385d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a909eb8c596612e6cd5e2bab1c1385d7c">&#9670;&nbsp;</a></span>save_get_position()</h2>
+<a id="acfdf291f2c8b1d3f379920bfbcaced48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdf291f2c8b1d3f379920bfbcaced48">&#9670;&nbsp;</a></span>save_get_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +256,7 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -273,18 +267,14 @@ shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a
 <dd>
 These saved positions are only valid for the lifetime of the <a class="el" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. ">ListModeData</a> object.</dd>
 <dd>
-A derived class might disable this facility. It will/should then always return Succeeded::no when calling <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a58d742206a768bba300e65e671991c4a" title="Set the position for reading to a previously saved point. ">set_get_position()</a>. </dd></dl>
+A derived class might disable this facility. It will/should then always return Succeeded::no when calling <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a114bb06db738811984c23d004d77ee14" title="Set the position for reading to a previously saved point. ">set_get_position()</a>. </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1ListModeData.html#a5a521b628dfecaa18368b631ad453e1d">stir::ListModeData</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#a58d742206a768bba300e65e671991c4a">set_get_position()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GE_1_1RDF__HDF5_1_1CListModeDataGEHDF5.html#af5bff65b4c74a1008641f520c8c6e14e">reset()</a>.</p>
-
 </div>
 </div>
-<a id="a47db237de45e417a42a629ffe25a003f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47db237de45e417a42a629ffe25a003f">&#9670;&nbsp;</a></span>has_delayeds()</h2>
+<a id="a44774e91efec7cd1b75f85505b797c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44774e91efec7cd1b75f85505b797c73">&#9670;&nbsp;</a></span>has_delayeds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +283,7 @@ A derived class might disable this facility. It will/should then always return S
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool stir::GE::RDF_HDF5::CListModeDataGEHDF5::has_delayeds </td>
+          <td class="memname">bool stir::GE::RDF_HDF5::CListModeDataGEHDF5::has_delayeds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -301,15 +291,15 @@ A derived class might disable this facility. It will/should then always return S
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>returns <code>false</code>, as GEHDF5 listmode data does not store delayed events (and prompts) </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000067">Todo:</a></b></dt><dd>this depends on the acquisition parameters </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd>this depends on the acquisition parameters </dd></dl>
 
-<p>Implements <a class="el" href="classstir_1_1CListModeData.html#a6e321d12d8d8a9ea5ddaf132760f2101">stir::CListModeData</a>.</p>
+<p>Implements <a class="el" href="classstir_1_1CListModeData.html#abfd1cfcb3370ab71d45aad76f587015a">stir::CListModeData</a>.</p>
 
 </div>
 </div>
@@ -320,7 +310,7 @@ A derived class might disable this facility. It will/should then always return S
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2023 05:43:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
