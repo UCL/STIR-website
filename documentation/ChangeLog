@@ -1,4 +1,757 @@
 -------------------------------
+Thu, 16 May 2024 10:46:39 +0100  Kris Thielemans  
+
+Merge pull request #1433 from KrisThielemans/gitFameUpdates
+updates to CITATION, git fame etc for release 6.1
+
+-------------------------------
+Thu, 16 May 2024 10:45:27 +0100  Kris Thielemans  
+
+update history for release 6.1
+[ci skip]
+
+
+documentation/history.htm
+
+-------------------------------
+Thu, 16 May 2024 10:44:12 +0100  Kris Thielemans  
+
+small change to credits
+
+
+documentation/credits.htm
+
+-------------------------------
+Thu, 16 May 2024 10:41:27 +0100  Kris Thielemans  
+
+update CITATION.cff according to git-fame
+
+
+.mailmap
+CITATION.cff
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Thu, 16 May 2024 10:19:51 +0100  Kris Thielemans  
+
+updates to release notes
+
+
+documentation/release_6.1.htm
+
+-------------------------------
+Thu, 16 May 2024 10:03:51 +0100  Kris Thielemans  
+
+let git blame ignore some maintenance commits
+
+
+.git-blame-ignore-revs
+scripts/maintenance/git-fame.sh
+
+-------------------------------
+Thu, 16 May 2024 09:13:13 +0100  Kris Thielemans  
+
+Merge pull request #1432 from KrisThielemans/WarningFixes
+small rationalising of warnings
+
+-------------------------------
+Thu, 16 May 2024 08:08:14 +0100  Kris Thielemans  
+
+small rationalising of warnings
+- remove warnings related to block variables when parsing a cylindrical
+scanner
+- some explanation in warnings
+- convert warnings on disabled symmetries to info()
+
+
+src/IO/InterfileHeader.cxx
+src/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.cxx
+
+-------------------------------
+Thu, 16 May 2024 07:12:00 +0100  Kris Thielemans  
+
+Merge pull request #1427 from KrisThielemans/TOFHessian
+add TOF loop in computation of Hessian for projdata
+
+-------------------------------
+Thu, 16 May 2024 01:14:14 +0100  Kris Thielemans  
+
+fix set_up of norm in TOF ProjData gradient
+Due to my misunderstanding (and some wrong comments) of the meaning of
+`add_sensitivity`, we did not set-up the normalisation object when
+computing the gradient.
+
+Fixes #1431
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Wed, 15 May 2024 18:06:56 +0100  Kris Thielemans  
+
+add TOF loop in computation of Hessian for projdata
+Fixes #1305
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Wed, 15 May 2024 14:21:50 +0100  markus-jehl  
+
+Changing all occurrences of abs() to std::abs() (#1425)
+* Changing all occurences of abs() to std::abs()
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+src/buildblock/ExamInfo.cxx
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/Radionuclide.cxx
+src/buildblock/TimeFrameDefinitions.cxx
+src/buildblock/extend_projdata.cxx
+src/buildblock/find_fwhm_in_image.cxx
+src/buildblock/inverse_SSRB.cxx
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/spatial_transformation_buildblock/warp_image.cxx
+src/test/test_interpolate_projdata.cxx
+src/utilities/shift_image.cxx
+
+-------------------------------
+Wed, 15 May 2024 11:51:30 +0100  Kris Thielemans  
+
+minor changes preparing for 6.1
+[ci skip]
+
+
+documentation/release_6.1.htm
+examples/python/.gitignore
+recon_test_pack/README.txt
+recon_test_pack/run_test_listmode_recon.sh
+
+-------------------------------
+Tue, 14 May 2024 22:13:56 +0100  Kris Thielemans  
+
+update to 6.1 and minor doc improvements
+
+
+CMakeLists.txt
+VERSION.txt
+documentation/STIR-UsersGuide.tex
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Tue, 14 May 2024 19:41:29 +0100  Kris Thielemans  
+
+Merge pull request #1424 from KrisThielemans/ROOTC++
+[CMake] force C++ version for more recent ROOT
+
+-------------------------------
+Tue, 14 May 2024 18:16:14 +0100  Kris Thielemans  
+
+[CMake] force C++ version for more recent ROOT
+
+
+CMakeLists.txt
+documentation/release_6.1.htm
+
+-------------------------------
+Tue, 14 May 2024 18:05:31 +0100  Kris Thielemans  
+
+Merge pull request #1423 from KrisThielemans/FastErfFix
+fix return value FastErf::get_maximum_sample_value
+
+-------------------------------
+Tue, 14 May 2024 14:37:12 +0100  Kris Thielemans  
+
+fix return value FastErf::get_maximum_sample_value
+was int, now double
+
+Fixes #1421
+
+
+src/include/stir/numerics/FastErf.h
+src/include/stir/numerics/FastErf.inl
+
+-------------------------------
+Tue, 14 May 2024 12:21:34 +0100  Kris Thielemans  
+
+Merge pull request #1418 from KrisThielemans/ListModeObjFuncExtras
+List-mode objective function: minor refactor and extra functionality
+
+-------------------------------
+Tue, 14 May 2024 11:28:17 +0100  Kris Thielemans  
+
+[GHA] disabled LM objfunc test on MacOS
+Cannot figure out what the problem is, but the test works on Ubuntu and Windows
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Tue, 14 May 2024 08:36:09 +0100  Kris Thielemans  
+
+add "increment" test for gradient (enabled for LM data)
+also minor clean-up
+
+
+src/include/stir/recon_buildblock/test/ObjectiveFunctionTests.h
+src/recon_test/CMakeLists.txt
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndListModeWithProjMatrixByBin.cxx
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+[GHA] upload ctest artefact if failure
+Also update to upload-artefacts@v4
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+LM objfun tests slightly better diagnostics
+
+
+src/include/stir/recon_buildblock/test/ObjectiveFunctionTests.h
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+LM obj-fun: add value() and tests
+- compute_objective_function() is now implemented as well
+- Tests are (almost) a duplicate of the ProjData version, but
+  gradient-test is disabled as for this sample data it is too slow
+
+
+documentation/release_6.1.htm
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_test/CMakeLists.txt
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndListModeWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+fix sign of LM Hessian
+
+
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+add numerical test for accumulate_Hessian_times_input
+
+
+src/include/stir/recon_buildblock/test/ObjectiveFunctionTests.h
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+Move common test to ObjectiveFunctionTests
+test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData and test_priors
+contained nearly similar code, so moved it to a new class.
+
+This needed minor modifications to the tests, but also addition of
+GeneralisedObjectiveFunction::compute_value()
+
+
+src/include/stir/recon_buildblock/GeneralisedObjectiveFunction.h
+src/include/stir/recon_buildblock/distributable.txx
+src/include/stir/recon_buildblock/test/ObjectiveFunctionTests.h
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+Add compute_gradient* (as opposed to only subset)
+Also expand test to use all subsets, make it slower of course.
+
+
+documentation/release_6.1.htm
+src/include/stir/recon_buildblock/GeneralisedObjectiveFunction.h
+src/recon_buildblock/GeneralisedObjectiveFunction.cxx
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+fix error when OpenMP is not present
+
+
+src/include/stir/recon_buildblock/distributable.txx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+LM_listmode_function: implement Hessian and move functions
+- move LM_distributable_function implementation to .txx as it now uses
+ a template for the callback
+- implement actual_accumulate_Hessian... for LM
+- try to implement accumulation of log-likelihood
+
+WARNING: LM_distributable_computation is now generic and
+incompatible with the previous one (which was only for the gradient)
+
+Hessian function and log-likelihood value are currently untested/
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/include/stir/recon_buildblock/distributable.h
+src/include/stir/recon_buildblock/distributable.txx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+minor clean-up and clarifications
+
+
+.gitignore
+src/include/stir/recon_buildblock/ProjMatrixByBin.inl
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBin.h
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+prepare LM_distributable function for Hessian
+- make list-mode loop into templated function
+- introduce separate functions for gradient and Hessian
+
+
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+use more local variables in LM_distributable_computation
+The code pre-allocated bins for every thread, but local variables
+are allocated on the stack, which should take no time. Removing
+th epre-allocations simplifies the code, and prepares us for re-use
+for Hessian calculation etc
+
+
+src/recon_buildblock/distributable.cxx
+
+-------------------------------
+Mon, 13 May 2024 22:42:50 +0100  Kris Thielemans  
+
+List-mode objective function: always uses OpenMP for gradient
+- split caching in separate functions for reading a batch from
+list-mode file or cache
+- always use LM_distributable_computation for gradient
+
+Resulting code avoids duplication and is faster when caching is not used.
+
+
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Thu, 9 May 2024 23:40:05 +0100  Kris Thielemans  
+
+fix white-space
+run clang-format on Ubuntu on ByteOrderDefine.h. Apparently, there
+was a version mismatch.
+
+
+src/include/stir/ByteOrderDefine.h
+
+-------------------------------
+Sun, 5 May 2024 09:17:58 +0100  Kris Thielemans  
+
+Merge pull request #1412 from KrisThielemans/GHA_MacOSxcode
+[GHA] remove explicit setting of xcode version
+
+-------------------------------
+Sun, 5 May 2024 09:16:15 +0100  Kris Thielemans  
+
+update Byte Order compile-time checks
+previous version failed on macos-14-arm64.
+We have a very fragile list of checks. Presumably, CMake does a lot better,
+so use CMAKE_CXX_BYTE_ORDER in ByteOrderDefine (via config.h)
+
+
+documentation/release_6.1.htm
+src/CMakeLists.txt
+src/cmake/STIRConfig.h.in
+src/include/stir/ByteOrderDefine.h
+
+-------------------------------
+Sun, 28 Apr 2024 20:17:46 +0100  Kris Thielemans  
+
+[GHA] remove explicit setting of xcode version
+Fixes #1411
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sun, 28 Apr 2024 10:10:54 +0100  Kris Thielemans  
+
+Merge pull request #1410 from KrisThielemans/AbsFix
+Relative Difference Prior abs() fix and improved numerical precision for other priors
+
+-------------------------------
+Sun, 28 Apr 2024 09:24:44 +0100  Kris Thielemans  
+
+increase numerical precision of priors
+use double in neighbourhood calculations
+
+
+documentation/release_6.1.htm
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sun, 28 Apr 2024 09:24:44 +0100  Kris Thielemans  
+
+update RDP doc [ci skip]
+
+
+documentation/release_6.1.htm
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+
+-------------------------------
+Sun, 28 Apr 2024 09:20:32 +0100  Kris Thielemans  
+
+fix and document RDP large limit test for numerical error
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sat, 27 Apr 2024 12:25:42 +0100  Kris Thielemans  
+
+make epsilon in numerical test for prior gradient a bit smaller
+The RDP test was failing with eps=1.e-3, so now using 1.e-4
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sat, 27 Apr 2024 11:25:28 +0100  Kris Thielemans  
+
+extra tests for the Relative Difference Prior
+split the tests for the different priors in different classes, such
+that we can have specific tests for each. Currently, only added some for the RDP,
+including a Lipschitz test and limit for large values.
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sat, 27 Apr 2024 11:24:13 +0100  Kris Thielemans  
+
+change RDP Hessian behaviour at 0,0 when epsilon==0
+now use INFINITY for second order derivatives, obtained by
+continuity
+
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sat, 27 Apr 2024 02:31:39 +0100  Kris Thielemans  
+
+fix abs() bug for RDP and slightly cleaner code
+- we were using abs() which (at least on some systems) converted to
+  integers, giving the wrong result. now using std::abs()
+- introduce value/derivative_10 function for more concise code
+
+
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sat, 27 Apr 2024 00:40:58 +0100  Kris Thielemans  
+
+Split GeneralisedPriorTests into several classes
+This will allow implementation specific tests for a particular prior.
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Wed, 21 Feb 2024 09:56:14 +0000  Kris Thielemans  
+
+Merge pull request #1391 from KrisThielemans/plot_LORs
+fix plot_scanner_LOR for new SWIG etc
+
+-------------------------------
+Sat, 17 Feb 2024 22:35:14 +0000  Kris Thielemans  
+
+fix plot_scanner_LOR for new SWIG [ci skip]
+use Scanner.get_scanner_from_name (static function convention changed in SWIG 4)
+
+Also plot a more interesting scanner and fix the output name for the png file.
+
+
+examples/python/plot_scanner_LORs.py
+
+-------------------------------
+Fri, 16 Feb 2024 17:25:11 +0000  NicoleJurjew  
+
+Enabling to read TOF-bin order from Interfile Header (#1389)
+Reading TOF-bin order from Interfile Header
+
+documentation/release_6.1.htm
+src/IO/InterfileHeader.cxx
+
+-------------------------------
+Fri, 16 Feb 2024 11:55:55 +0000  Kris Thielemans  
+
+[GHA] clean-up more disk space as we go
+The RelWithDebugInfo job is still nearly running out of disk space
+though.
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Thu, 15 Feb 2024 21:05:03 +0000  Kris Thielemans  
+
+Merge pull request #1375 from robbietuk/axial_bucket_projection_issue
+Throw errors if incorrect/unsupported blocks scanner. See https://github.com/UCL/STIR/issues/1374
+
+-------------------------------
+Thu, 15 Feb 2024 21:02:35 +0000  Kris Thielemans  
+
+Merge pull request #1386 from KrisThielemans/ROOT_changes
+update ROOT to v6.28.12 and fix FindCERN_ROOT when root-config is used
+
+-------------------------------
+Thu, 15 Feb 2024 20:19:11 +0000  Kris Thielemans  
+
+[CMake] fix ROOT Version when using root-config
+root-config reports version as 6.26/10. This might also happen in other cases.
+We now convert it to 6.26.10
+
+Fixes #1378
+
+
+src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Thu, 15 Feb 2024 20:19:11 +0000  Kris Thielemans  
+
+[GHA] delete build files etc
+As we are running out of space on the runner
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Thu, 15 Feb 2024 20:19:11 +0000  Kris Thielemans  
+
+[GHA] update ROOT to v6.28.12
+This seems to be required for C++17
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Thu, 15 Feb 2024 20:11:15 +0000  Kris Thielemans  
+
+[GHA] move tmate before recon_test_pack
+[ci skip]
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Thu, 15 Feb 2024 11:52:03 -0800  rts  
+
+[ci skip] Small fixes
+
+
+documentation/release_6.1.htm
+src/buildblock/Scanner.cxx
+src/include/stir/GeometryBlocksOnCylindrical.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Thu, 15 Feb 2024 14:28:29 +0000  Kris Thielemans  
+
+Merge pull request #1383 from KrisThielemans/C++20_fix
+Tiny fix for C++-20
+
+-------------------------------
+Thu, 15 Feb 2024 13:42:30 +0000  Kris Thielemans  
+
+Tiny fix for C++-20
+Also introduce GHA job
+
+
+.github/workflows/build-test.yml
+src/include/stir/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.h
+
+-------------------------------
+Thu, 15 Feb 2024 10:56:01 +0000  Kris Thielemans  
+
+Merge pull request #1382 from KrisThielemans/TOF_Interfile_fix
+fix Interfile parsing for TOF projdata
+
+-------------------------------
+Thu, 15 Feb 2024 08:27:13 +0000  Kris Thielemans  
+
+fix Interfile parsing for projdata
+order Timing_Segment_View_AxialPos_TangPos failed.
+
+Fixes #1381
+
+
+src/IO/InterfileHeader.cxx
+
+-------------------------------
+Thu, 15 Feb 2024 07:58:29 +0000  robbietuk  
+
+Plot scanner lor fix (#1380)
+* [ci skip] Remove defunct lines
+
+* [ci skip] Format and prettier for clarity
+
+examples/python/plot_scanner_LORs.py
+
+-------------------------------
+Tue, 13 Feb 2024 14:28:19 -0800  rts  
+
+Add GeometryBlocksOnCylindricalTests
+
+
+src/recon_test/CMakeLists.txt
+src/recon_test/test_geometry_blocks_on_cylindrical.cxx
+
+-------------------------------
+Tue, 13 Feb 2024 11:34:42 -0800  rts  
+
+[ci skip] Allow test to run and reduce code duplication
+
+
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 22:00:10 +0000  NicoleJurjew  
+
+Parallelproj tof (#1356)
+- add TOF functionality to the Parallelproj projector
+- require Parallelproj 1.3.4 as older versions had a bug
+- [GHA] update parallelproj to 1.7.3
+
+Co-authored-by: robbietuk <robbietuk@gmail.com>
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+documentation/release_6.1.htm
+src/include/stir/recon_buildblock/Parallelproj_projector/ParallelprojHelper.h
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ParallelprojHelper.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 11:34:25 -0800  rts  
+
+Fix an axial_block_spacing issue with a downsampled_scanner test
+
+
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 11:33:32 -0800  rts  
+
+Fix a logic bug with get_scanner_geometry() == "Generic"
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 11:32:58 -0800  rts  
+
+Require GeometryBlocksOnCylindrical to check scanner consistency and error if succeed is no
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/buildblock/Scanner.cxx
+src/include/stir/GeometryBlocksOnCylindrical.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 09:42:43 -0800  rts  
+
+[ci skip] Remove duplicate test and access volume array without PixelsOnCartesianGrid
+
+
+src/include/stir/GeometryBlocksOnCylindrical.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Mon, 12 Feb 2024 17:30:38 +0000  Kris Thielemans  
+
+git ignore .vscode [ci skip]
+
+
+.gitignore
+
+-------------------------------
+Thu, 8 Feb 2024 11:41:39 -0800  Robert Twyman Skelly  
+
+[ci skip] Refactor and renaming
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Thu, 8 Feb 2024 06:31:17 -0800  rts  
+
+Add a guard for axial crystals per bucket being a factor of num_rings
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/include/stir/GeometryBlocksOnCylindrical.h
+
+-------------------------------
+Thu, 8 Feb 2024 06:28:29 -0800  rts  
+
+run_back_projection_test_with_axial_buckets
+
+
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+
+-------------------------------
+Wed, 7 Feb 2024 10:20:36 +0000  Kris Thielemans  
+
+fix release 6.0 notes and add skeleton for 6.1 [ci skip]
+release 6.0 notes had inconsistent order
+
+
+documentation/release_6.0.htm
+documentation/release_6.1.htm
+documentation/release_notes_skeleton.htm
+
+-------------------------------
+Wed, 7 Feb 2024 09:32:48 +0000  Kris Thielemans  
+
+update credits.htm a bit [ci skip]
+
+
+documentation/credits.htm
+
+-------------------------------
 Wed, 7 Feb 2024 08:40:24 +0000  Kris Thielemans  
 
 update history.htm [ci skip]
