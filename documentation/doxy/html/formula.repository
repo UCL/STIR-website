@@ -122,26 +122,33 @@
 \form#121:\[ g_r = \sum_{dr} w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
 \form#122:\[ f= \sum_{r,dr} \frac{w_{dr}}{2} \frac{(\lambda_r - \lambda_{r+dr})^2}{(\lambda_r+ \lambda_{r+dr} + \gamma |\lambda_r - \lambda_{r+dr}| + \epsilon)} * \kappa_r * \kappa_{r+dr} \]
 \form#123:$\epsilon$
-\form#124:$2\tau$
-\form#125:\[ FWHM_E = \alpha \sqrt(E) \]
-\form#126:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
-\form#127:\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]
-\form#128:$ G(k,s) $
-\form#129:$G(0,s) = 1$
-\form#130:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
-\form#131:\[ abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2 \]
-\form#132:$r = coord - origin$
-\form#133:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1 \]
-\form#134:$dir_x, dir_y, dir_z$
-\form#135:\[ |r.dir_z|<L/2 \]
-\form#136:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1 \]
-\form#137:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2 \]
-\form#138:\[ r' = \mathrm{conj}(q)(r-t)q \]
-\form#139:${[}q0,qz,qy,qx{]}$
-\form#140:${[}n_z,n_y,n_x{]}$
-\form#141:$\phi$
-\form#142:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
-\form#143:\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#144:\[ x^T \cdot H_{\lambda}x >= 0 \]
-\form#145:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
-\form#146:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]
+\form#124:$ \epsilon=0 $
+\form#125:$ \lambda_r = \lambda_{r+dr}=0 $
+\form#126:$ \epsilon $
+\form#127:$ 1/(1+\gamma) $
+\form#128:$ 0 $
+\form#129:$ G dx \approx F(x+dx) - F(x) $
+\form#130:$ H dx \approx G(x+dx) - G(x) $
+\form#131:$2\tau$
+\form#132:\[ FWHM_E = \alpha \sqrt(E) \]
+\form#133:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
+\form#134:\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]
+\form#135:$ G(k,s) $
+\form#136:$G(0,s) = 1$
+\form#137:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
+\form#138:\[ abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2 \]
+\form#139:$r = coord - origin$
+\form#140:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1 \]
+\form#141:$dir_x, dir_y, dir_z$
+\form#142:\[ |r.dir_z|<L/2 \]
+\form#143:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1 \]
+\form#144:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2 \]
+\form#145:\[ r' = \mathrm{conj}(q)(r-t)q \]
+\form#146:${[}q0,qz,qy,qx{]}$
+\form#147:${[}n_z,n_y,n_x{]}$
+\form#148:$\phi$
+\form#149:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
+\form#150:\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
+\form#151:\[ x^T \cdot H_{\lambda}x >= 0 \]
+\form#152:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
+\form#153:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]

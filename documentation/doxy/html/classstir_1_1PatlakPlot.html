@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -274,7 +274,7 @@ end Patlak Plot Parameters:=
 <li>The plasma data is assumed to be in decaying counts.</li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>Should be derived from LinearModels, but when non-linear models will be introduced, as well. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>Should be derived from LinearModels, but when non-linear models will be introduced, as well. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2bc3e3859d09a0877d902a8faf5468c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bc3e3859d09a0877d902a8faf5468c6">&#9670;&nbsp;</a></span>PatlakPlot()</h2>
@@ -357,7 +357,7 @@ end Patlak Plot Parameters:=
 
 <p>Multiplies the dynamic image with the model gradient. </p>
 <p>For a linear model the model gradient is the transpose of the model matrix. So, the dynamic image is "projected" from time domain to the parameter domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
 
@@ -398,7 +398,7 @@ end Patlak Plot Parameters:=
 </div><div class="memdoc">
 
 <p>Multiplies the dynamic image with the model gradient and add to original <code>parametric_image</code>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
 
@@ -439,7 +439,7 @@ end Patlak Plot Parameters:=
 </div><div class="memdoc">
 
 <p>Multiplies the parametric image with the model matrix to get the corresponding dynamic image. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>Should be a virtual function declared in the <a class="el" href="classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism...">KineticModel</a> class. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>.</p>
 
@@ -472,7 +472,7 @@ end Patlak Plot Parameters:=
 </div><div class="memdoc">
 
 <p>This is the common method used to estimate the parametric images from the dynamic images. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>There is currently no check if the time frame definitions from <em>dyn_image</em> are the same as the ones encoded in the model. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo:</a></b></dt><dd>There is currently no check if the time frame definitions from <em>dyn_image</em> are the same as the ones encoded in the model. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, and <a class="el" href="group__buildblock.html#ga6791494ac912a0c7675f5768b5dd99fd">stir::linear_regression()</a>.</p>
 
@@ -485,7 +485,7 @@ end Patlak Plot Parameters:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

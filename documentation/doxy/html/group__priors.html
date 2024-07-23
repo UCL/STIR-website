@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -50,13 +50,18 @@ Collaboration diagram for Priors and penalties for MAP:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__priors.png" border="0" alt="" usemap="#group____priors"/>
 <map name="group____priors" id="group____priors">
-<area shape="rect" id="node1" href="group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,5,160,61"/>
+<area shape="rect" id="node1" href="group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,103,160,159"/>
+<area shape="rect" id="node2" href="group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="591,50,747,91"/>
+<area shape="rect" id="node3" href="group__CUDA.html" title="Items relating to CUDA\l and STIR buildblock objects." alt="" coords="572,135,767,177"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:CudaRelativeDifferencePrior_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CudaRelativeDifferencePrior_8h.html">CudaRelativeDifferencePrior.h</a></td></tr>
+<tr class="memdesc:CudaRelativeDifferencePrior_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of the <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">stir::CudaRelativeDifferencePrior</a> class <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:FilterRootPrior_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FilterRootPrior_8h.html">FilterRootPrior.h</a></td></tr>
 <tr class="memdesc:FilterRootPrior_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class stir::FilterRootPriot. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,6 +107,9 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUDA implementation of the Relative Difference prior.  <a href="classstir_1_1CudaRelativeDifferencePrior.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1FilterRootPrior.html">stir::FilterRootPrior&lt; DataT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements 'generalised' priors a la the Median Root Prior (which was invented by Sakari Alenius).  <a href="classstir_1_1FilterRootPrior.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,13 +132,25 @@ Prior Using Parallel Level Sets", IEEE Trans. med. Imag., vol. 35, no. 9, Sept. 
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html">stir::RelativeDifferencePrior&lt; elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements a Relative Difference prior.  <a href="classstir_1_1RelativeDifferencePrior.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPriorTests.html">stir::QuadraticPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>  <a href="classstir_1_1QuadraticPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePriorTests.html">stir::RelativeDifferencePriorTests&lt; RDP &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>  <a href="classstir_1_1RelativeDifferencePriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPriorTests.html">stir::PLSPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1PLSPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements the anatomical penalty function...">PLSPrior</a>  <a href="classstir_1_1PLSPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogCoshPriorTests.html">stir::LogCoshPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for LogCoshPrior  <a href="classstir_1_1LogCoshPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Everything related to priors, which are used for MAP-type (also knows as 'penalised') reconstructions. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

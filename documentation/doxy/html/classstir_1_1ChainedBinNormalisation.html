@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>undo_only_sec
 <tr class="memitem:a18387668eedc313810523a0cdb9c309e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ChainedBinNormalisation.html#a18387668eedc313810523a0cdb9c309e">is_second_trivial</a> () const</td></tr>
 <tr class="memdesc:a18387668eedc313810523a0cdb9c309e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classstir_1_1BinNormalisation.html#aebe407aa214715b152f50222a6a57998" title="check if we would be multiplying with 1 (i.e. do nothing) ">is_trivial()</a> status of the second normalisation object.  <a href="#a18387668eedc313810523a0cdb9c309e">More...</a><br /></td></tr>
 <tr class="separator:a18387668eedc313810523a0cdb9c309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64ad200b7d06f7f1469efdbf2c65418"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ChainedBinNormalisation.html#af64ad200b7d06f7f1469efdbf2c65418">is_TOF_only_norm</a> () const override</td></tr>
+<tr class="memdesc:af64ad200b7d06f7f1469efdbf2c65418"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns if the object can only handle TOF data  <a href="#af64ad200b7d06f7f1469efdbf2c65418">More...</a><br /></td></tr>
+<tr class="separator:af64ad200b7d06f7f1469efdbf2c65418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af56a41d33fb3ccfecf8749aaaaf8afc1"><td class="memItemLeft" align="right" valign="top"><a id="af56a41d33fb3ccfecf8749aaaaf8afc1"></a>
 virtual shared_ptr&lt; <a class="el" href="classstir_1_1BinNormalisation.html">BinNormalisation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_first_norm</b> () const</td></tr>
 <tr class="separator:af56a41d33fb3ccfecf8749aaaaf8afc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +470,36 @@ END Chained Bin Normalisation Parameters :=
 
 </div>
 </div>
+<a id="af64ad200b7d06f7f1469efdbf2c65418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64ad200b7d06f7f1469efdbf2c65418">&#9670;&nbsp;</a></span>is_TOF_only_norm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stir::ChainedBinNormalisation::is_TOF_only_norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns if the object can only handle TOF data </p>
+<p>Checks if either of the normalisation objects can only handle TOF. </p>
+
+<p>Reimplemented from <a class="el" href="classstir_1_1BinNormalisation.html#a22d10814092de18356dd47e76fe9fc81">stir::BinNormalisation</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock/<a class="el" href="ChainedBinNormalisation_8h_source.html">ChainedBinNormalisation.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/recon_buildblock/<a class="el" href="ChainedBinNormalisation_8cxx.html">ChainedBinNormalisation.cxx</a></li>
@@ -474,7 +507,7 @@ END Chained Bin Normalisation Parameters :=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

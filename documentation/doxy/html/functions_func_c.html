@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -81,6 +81,7 @@ $(function() {
 , <a class="el" href="classstir_1_1FilterRootPrior.html#ad93d43d07a5cb74836e64cb5ae6bf06c">stir::FilterRootPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1ForwardProjectorByBin.html#a7b9cec70293affa9ef496c4f36107217">stir::ForwardProjectorByBin</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#a6c3b6f203ad7f47a159be6a5edb7ee65">stir::GeneralisedPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1LogcoshPrior.html#ac258b067428a0d565a34d51815dc7a1b">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a27c88e881aa0988563a98ba5a2f087ac">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PLSPrior.html#a09c1bbfe71b92063af0dbc0bd18e4bb8">stir::PLSPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ProjectorByBinPair.html#a2c61918b0a0d2c1aef887c4d69f8df4b">stir::ProjectorByBinPair</a>
@@ -181,13 +182,18 @@ $(function() {
 : <a class="el" href="classstir_1_1SqrtHessianRowSum.html#abcd3ac2595d1dc632a43e60dbcba4101">stir::SqrtHessianRowSum&lt; TargetT &gt;</a>
 </li>
 <li>compute_gradient()
-: <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;</a>
+: <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html#a40cff61f10269f5ec6f0f39e4fcd866d">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">stir::GeneralisedPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a809d1742e6050793a90513f5098e9bee">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09">stir::PLSPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a85a6598d5e8a28055769e4769d116610">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
+</li>
+<li>compute_gradient_without_penalty()
+: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a7ff0a08633f24353dd2773eb7aa8504d">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 </li>
 <li>compute_Hessian()
 : <a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">stir::GeneralisedPrior&lt; DataT &gt;</a>
@@ -223,7 +229,9 @@ $(function() {
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a0cdcb57e89937541f773e62edbfd3ed3">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>
 </li>
 <li>compute_value()
-: <a class="el" href="classstir_1_1FilterRootPrior.html#a4101f820186f0ecaf501462efa26a818">stir::FilterRootPrior&lt; DataT &gt;</a>
+: <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html#afe2b2235dfddd8c65cc0822f80b4dedf">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1FilterRootPrior.html#a4101f820186f0ecaf501462efa26a818">stir::FilterRootPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa8099c6ef0f97679d2e01d390af6798f">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#afa6d6e88ce44aed622b37aca1548910e">stir::GeneralisedPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1LogcoshPrior.html#acc052ebb2d868ccac73d3e2c71a65b2f">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#aa30796752010654a8d95cc7a62daba1d">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>
@@ -238,6 +246,9 @@ $(function() {
 : <a class="el" href="classstir_1_1ReconstructionTests.html#a7d939bfeef43e67b1b4f87c4c2e6b606">stir::ReconstructionTests&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1TestFBP2D.html#ab0f9133de2e453e709196c6074ded38e">stir::TestFBP2D</a>
 , <a class="el" href="classstir_1_1TestFBP3DRP.html#a74451dbfbccd75c119c22cf6168df1f3">stir::TestFBP3DRP</a>
+</li>
+<li>construct_increment()
+: <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df">stir::ObjectiveFunctionTests&lt; ObjectiveFunctionT, TargetT &gt;</a>
 </li>
 <li>construct_input_data()
 : <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; TargetT &gt;</a>
@@ -340,7 +351,7 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjDataInfo.html#a1daeade99c27b583b2c0b4abf199f29f">stir::ProjDataInfo</a>
 </li>
 <li>create_shared_clone()
-: <a class="el" href="classstir_1_1ExamInfo.html#a6717559481cb65d033e544a825ebcd8c">stir::ExamInfo</a>
+: <a class="el" href="classstir_1_1ExamInfo.html#aa83536e912405140263215719b5356e4">stir::ExamInfo</a>
 , <a class="el" href="classstir_1_1ProjDataInfo.html#a22121efcbc3740e9752995585d2086eb">stir::ProjDataInfo</a>
 </li>
 <li>create_stir_im()
@@ -353,7 +364,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:25:00 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

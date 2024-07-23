@@ -1,30 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="5,384,108,410"/>
-<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="173,358,287,385"/>
-<area shape="rect" id="node18" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file. " alt="" coords="156,409,304,436"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="352,292,592,334"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="365,460,579,516"/>
-<area shape="rect" id="node15" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="395,540,549,582"/>
-<area shape="rect" id="node16" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="355,227,589,268"/>
-<area shape="rect" id="node17" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="949,358,1095,385"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="941,292,1103,334"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="640,679,843,720"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="891,869,1153,925"/>
-<area shape="rect" id="node9" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="891,592,1153,648"/>
-<area shape="rect" id="node11" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="891,672,1153,728"/>
-<area shape="rect" id="node12" href="$classstir_1_1CListEventPENN.html" title="Class for handling PENNPet Explorer events. " alt="" coords="947,752,1097,778"/>
-<area shape="rect" id="node13" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="927,803,1117,844"/>
-<area shape="rect" id="node14" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="943,410,1101,451"/>
-<area shape="rect" id="node8" href="$classstir_1_1ecat_1_1ecat7_1_1CListEventECAT966.html" title="Class for storing and using a coincidence event from a listmode file from the ECAT 966 scanner..." alt="" coords="1205,876,1349,918"/>
-<area shape="rect" id="node10" href="$classstir_1_1ecat_1_1ecat7_1_1CListRecordECAT962.html" title="A class for a general element of a listmode file. " alt="" coords="1201,234,1353,275"/>
-<area shape="rect" id="node19" href="$classstir_1_1ListGatingInput.html" title="A class recording external input to the scanner (normally used for gating) " alt="" coords="673,36,809,62"/>
-<area shape="rect" id="node20" href="$classstir_1_1ecat_1_1ecat7_1_1CListTimeECAT966.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 966 scanner..." alt="" coords="953,58,1091,99"/>
-<area shape="rect" id="node21" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="417,409,527,436"/>
-<area shape="rect" id="node22" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file. " alt="" coords="681,460,802,486"/>
-<area shape="rect" id="node25" href="$classstir_1_1SPECTListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="663,409,819,436"/>
-<area shape="rect" id="node23" href="$classstir_1_1CListRecordROOT.html" title="A class for a general element of a listmode file for a Siemens scanner using the ROOT files..." alt="" coords="943,541,1101,568"/>
-<area shape="rect" id="node24" href="$classstir_1_1ecat_1_1CListRecordECAT8__32bit.html" title="A class for a general element of a listmode file for a Siemens scanner using the ECAT8 32bit format..." alt="" coords="923,475,1121,516"/>
-<area shape="rect" id="node26" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="692,241,791,268"/>
-<area shape="rect" id="node27" href="$classstir_1_1CListTimeROOT.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="949,124,1095,150"/>
-<area shape="rect" id="node28" href="$classstir_1_1ecat_1_1CListTimeECAT8__32bit.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file from the ECAT 8_32bit scanner..." alt="" coords="930,175,1114,216"/>
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,5,132,47"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="180,13,260,39"/>
+<area shape="rect" id="node3" href="$classstir_1_1Line.html" title="A class used by the Interfile parser. " alt="" coords="308,13,380,39"/>
 </map>

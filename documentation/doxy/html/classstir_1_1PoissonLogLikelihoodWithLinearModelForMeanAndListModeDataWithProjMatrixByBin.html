@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -71,9 +71,15 @@ Inheritance diagram for stir::PoissonLogLikelihoodWithLinearModelForMeanAndListM
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac31fcd4e142d17b8b56df7ae20074ed6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#ac31fcd4e142d17b8b56df7ae20074ed6">actual_compute_objective_function_without_penalty</a> (const TargetT &amp;current_estimate, const int subset_num) override</td></tr>
+<tr class="memdesc:ac31fcd4e142d17b8b56df7ae20074ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the value of the objective function at the <em>current_estimate</em>.  <a href="#ac31fcd4e142d17b8b56df7ae20074ed6">More...</a><br /></td></tr>
+<tr class="separator:ac31fcd4e142d17b8b56df7ae20074ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8779079ca011ff7ef6b5059f7e6370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a0a8779079ca011ff7ef6b5059f7e6370">actual_compute_subset_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num, const bool add_sensitivity) override</td></tr>
 <tr class="memdesc:a0a8779079ca011ff7ef6b5059f7e6370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the gradient of the objective function at the <em>current_estimate</em> overwriting <em>gradient</em>.  <a href="#a0a8779079ca011ff7ef6b5059f7e6370">More...</a><br /></td></tr>
 <tr class="separator:a0a8779079ca011ff7ef6b5059f7e6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0448446f695b2f737e966d908837626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#aa0448446f695b2f737e966d908837626">actual_accumulate_sub_Hessian_times_input_without_penalty</a> (TargetT &amp;output, const TargetT &amp;current_image_estimate, const TargetT &amp;input, const int subset_num) const override</td></tr>
+<tr class="memdesc:aa0448446f695b2f737e966d908837626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the function computes the sub-Hessian and multiplies by a vector.  <a href="#aa0448446f695b2f737e966d908837626">More...</a><br /></td></tr>
+<tr class="separator:aa0448446f695b2f737e966d908837626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af92cf6c9d4ff66b92478f43d9748e064"><td class="memItemLeft" align="right" valign="top">TargetT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#af92cf6c9d4ff66b92478f43d9748e064">construct_target_ptr</a> () const override</td></tr>
 <tr class="memdesc:af92cf6c9d4ff66b92478f43d9748e064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a suitable target as determined by the parameters.  <a href="#af92cf6c9d4ff66b92478f43d9748e064">More...</a><br /></td></tr>
 <tr class="separator:af92cf6c9d4ff66b92478f43d9748e064"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,8 +206,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a45ae5ad2c2c78cf24a1a95a633e67ab9 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedObjectiveFunction')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a></td></tr>
 <tr class="memitem:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">compute_sub_gradient</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)</td></tr>
-<tr class="memdesc:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the sub-gradient of the objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">More...</a><br /></td></tr>
+<tr class="memdesc:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the subset-gradient of the objective function at <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">More...</a><br /></td></tr>
 <tr class="separator:a6291a5e5373517ddfb7ccbc259fdeef6 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f40f452c030412e33bd0b7a7f94046b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b">compute_gradient</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a6f40f452c030412e33bd0b7a7f94046b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the gradient of the objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b">More...</a><br /></td></tr>
+<tr class="separator:a6f40f452c030412e33bd0b7a7f94046b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff0a08633f24353dd2773eb7aa8504d inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a7ff0a08633f24353dd2773eb7aa8504d">compute_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a7ff0a08633f24353dd2773eb7aa8504d inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the gradient of the unregularised objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a7ff0a08633f24353dd2773eb7aa8504d">More...</a><br /></td></tr>
+<tr class="separator:a7ff0a08633f24353dd2773eb7aa8504d inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de6d1650b0eb144a73941a5f0ade96b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a2de6d1650b0eb144a73941a5f0ade96b">compute_objective_function_without_penalty</a> (const TargetT &amp;current_estimate, const int subset_num)</td></tr>
 <tr class="memdesc:a2de6d1650b0eb144a73941a5f0ade96b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the value of the unregularised sub-objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#a2de6d1650b0eb144a73941a5f0ade96b">More...</a><br /></td></tr>
 <tr class="separator:a2de6d1650b0eb144a73941a5f0ade96b inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +232,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:af9fd305b3f3b5070ee5c7b62e8b5fee5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5">compute_objective_function</a> (const TargetT &amp;current_estimate)</td></tr>
 <tr class="memdesc:af9fd305b3f3b5070ee5c7b62e8b5fee5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the value of the objective function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5">More...</a><br /></td></tr>
 <tr class="separator:af9fd305b3f3b5070ee5c7b62e8b5fee5 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8099c6ef0f97679d2e01d390af6798f inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="aa8099c6ef0f97679d2e01d390af6798f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa8099c6ef0f97679d2e01d390af6798f">compute_value</a> (const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:aa8099c6ef0f97679d2e01d390af6798f inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5" title="Compute the value of the objective function at the current_estimate. ">compute_objective_function(const TargetT&amp;)</a> <br /></td></tr>
+<tr class="separator:aa8099c6ef0f97679d2e01d390af6798f inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552fa05a71b2b3c533e9c5d987bf7066 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top"><a id="a552fa05a71b2b3c533e9c5d987bf7066"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a552fa05a71b2b3c533e9c5d987bf7066">get_objective_function_values_report</a> (const TargetT &amp;current_estimate)</td></tr>
 <tr class="memdesc:a552fa05a71b2b3c533e9c5d987bf7066 inherit pub_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string with info on the value of objective function with and without penalty. <br /></td></tr>
@@ -297,8 +313,6 @@ static const char *const&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac31fcd4e142d17b8b56df7ae20074ed6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#ac31fcd4e142d17b8b56df7ae20074ed6">actual_compute_objective_function_without_penalty</a> (const TargetT &amp;current_estimate, const int subset_num) override</td></tr>
-<tr class="separator:ac31fcd4e142d17b8b56df7ae20074ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3f38f364835e4ca2a9b8d2f1983889"><td class="memItemLeft" align="right" valign="top"><a id="a5f3f38f364835e4ca2a9b8d2f1983889"></a>
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a5f3f38f364835e4ca2a9b8d2f1983889">set_up_before_sensitivity</a> (shared_ptr&lt; const TargetT &gt; const &amp;target_sptr) override</td></tr>
 <tr class="memdesc:a5f3f38f364835e4ca2a9b8d2f1983889"><td class="mdescLeft">&#160;</td><td class="mdescRight">set-up specifics for the derived class <br /></td></tr>
@@ -333,9 +347,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aae22977c2003d551fc3e9a743b105725 inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aae22977c2003d551fc3e9a743b105725">actual_add_multiplication_with_approximate_sub_Hessian_without_penalty</a> (TargetT &amp;output, const TargetT &amp;input, const int subset_num) const</td></tr>
 <tr class="memdesc:aae22977c2003d551fc3e9a743b105725 inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the function that multiplies the approximate sub-Hessian with a vector.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#aae22977c2003d551fc3e9a743b105725">More...</a><br /></td></tr>
 <tr class="separator:aae22977c2003d551fc3e9a743b105725 inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af748cde4790c3812831d3df186eb79ee inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af748cde4790c3812831d3df186eb79ee">actual_accumulate_sub_Hessian_times_input_without_penalty</a> (TargetT &amp;output, const TargetT &amp;current_image_estimate, const TargetT &amp;input, const int subset_num) const</td></tr>
-<tr class="memdesc:af748cde4790c3812831d3df186eb79ee inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the function computes the sub-Hessian and multiplies by a vector.  <a href="classstir_1_1GeneralisedObjectiveFunction.html#af748cde4790c3812831d3df186eb79ee">More...</a><br /></td></tr>
-<tr class="separator:af748cde4790c3812831d3df186eb79ee inherit pro_methods_classstir_1_1GeneralisedObjectiveFunction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1ParsingObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ParsingObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ParsingObject.html">stir::ParsingObject</a></td></tr>
 <tr class="memitem:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">set_key_values</a> ()</td></tr>
 <tr class="memdesc:ad8e81786834c010c96c31bce2bac3f6d inherit pro_methods_classstir_1_1ParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called before parsing or parameter_info is called.  <a href="classstir_1_1ParsingObject.html#ad8e81786834c010c96c31bce2bac3f6d">More...</a><br /></td></tr>
@@ -492,8 +503,53 @@ class stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMat
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a></dd></dl>
 <p>If the list mode data is binned (with <a class="el" href="classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms. ">LmToProjData</a>) without merging any bins, then the log likelihood computed from list mode data and projection data will be identical.</p>
 <p>Currently, the subset scheme is the same for the projection data and listmode data, i.e. based on views. This is suboptimal for listmode data.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000154">Todo:</a></b></dt><dd>implement a subset scheme based on events </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo:</a></b></dt><dd>implement a subset scheme based on events </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac31fcd4e142d17b8b56df7ae20074ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31fcd4e142d17b8b56df7ae20074ed6">&#9670;&nbsp;</a></span>actual_compute_objective_function_without_penalty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TargetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin</a>&lt; TargetT &gt;::actual_compute_objective_function_without_penalty </td>
+          <td>(</td>
+          <td class="paramtype">const TargetT &amp;&#160;</td>
+          <td class="paramname"><em>current_estimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>subset_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the value of the objective function at the <em>current_estimate</em>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If <code>add_sensitivity = false</code> and <code>use_subset_sensitivities = false</code> will return an error because the value will not be correct. Try <code>use_subset_sensitivities = true</code>. </dd></dl>
+
+<p>Implements <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a1f19e8ac5807a8b3166524132d618095">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, and <a class="el" href="group__distributable.html#gadfca9b2b3e13fd1ac6be0dd6887d1e63">stir::LM_distributable_computation()</a>.</p>
+
+</div>
+</div>
 <a id="a0a8779079ca011ff7ef6b5059f7e6370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a8779079ca011ff7ef6b5059f7e6370">&#9670;&nbsp;</a></span>actual_compute_subset_gradient_without_penalty()</h2>
 
@@ -547,7 +603,67 @@ template&lt;typename TargetT &gt; </div>
 
 <p>Implements <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6728f3fa472544336c1601f21cd01ffd">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>.</p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+</div>
+</div>
+<a id="aa0448446f695b2f737e966d908837626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0448446f695b2f737e966d908837626">&#9670;&nbsp;</a></span>actual_accumulate_sub_Hessian_times_input_without_penalty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TargetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a> <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin</a>&lt; TargetT &gt;::actual_accumulate_sub_Hessian_times_input_without_penalty </td>
+          <td>(</td>
+          <td class="paramtype">TargetT &amp;&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TargetT &amp;&#160;</td>
+          <td class="paramname"><em>current_image_estimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TargetT &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>subset_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation of the function computes the sub-Hessian and multiplies by a vector. </p>
+<dl class="section see"><dt>See also</dt><dd>accumulate_sub_Hessian_times_input_without_penalty(TargetT&amp;,const TargetT&amp;, TargetT&amp;, const int).</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The default implementation just calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a>. This behaviour has to be overloaded by the derived classes.</dd></dl>
+<dl class="section user"><dt>Developer\'s note</dt><dd></dd></dl>
+<p>The reason we have this function is that overloading a function in a derived class, hides all functions of the same name. </p>
+
+<p>Reimplemented from <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af748cde4790c3812831d3df186eb79ee">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
 </div>
 </div>
@@ -616,48 +732,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p class="reference">References <a class="el" href="classstir_1_1ExamData.html#ad79c2d7818f982ac85b2e94ceba830c5">stir::ExamData::get_exam_info_sptr()</a>, and <a class="el" href="classstir_1_1ProjData.html#a1ac406cc7051cec1cabd201bd7d860e3">stir::ProjData::get_proj_data_info_sptr()</a>.</p>
 
-</div>
-</div>
-<a id="ac31fcd4e142d17b8b56df7ae20074ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac31fcd4e142d17b8b56df7ae20074ed6">&#9670;&nbsp;</a></span>actual_compute_objective_function_without_penalty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TargetT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin</a>&lt; TargetT &gt;::actual_compute_objective_function_without_penalty </td>
-          <td>(</td>
-          <td class="paramtype">const TargetT &amp;&#160;</td>
-          <td class="paramname"><em>current_estimate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>subset_num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd>this function is not implemented yet and currently calls <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> </dd></dl>
-
-<p>Implements <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a1f19e8ac5807a8b3166524132d618095">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>.</p>
-
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBinTests.html#aa200d1d995f9530d45d097e2cb5f8dd9">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBinTests::run_tests_for_objective_function()</a>.</p>
 
 </div>
 </div>
@@ -794,7 +869,7 @@ template&lt;typename TargetT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

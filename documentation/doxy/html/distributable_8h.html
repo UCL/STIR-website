@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -92,9 +92,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gabdb1ff752fb5146aac1e4fe85a597285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285">stir::distributable_computation</a> (const shared_ptr&lt; ForwardProjectorByBin &gt; &amp;forward_projector_sptr, const shared_ptr&lt; BackProjectorByBin &gt; &amp;back_projector_sptr, const shared_ptr&lt; DataSymmetriesForViewSegmentNumbers &gt; &amp;symmetries_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const shared_ptr&lt; ProjData &gt; &amp;proj_data_ptr, const bool read_from_proj_data, int subset_num, int num_subsets, int min_segment_num, int max_segment_num, bool zero_seg0_end_planes, double *double_out_ptr, const shared_ptr&lt; ProjData &gt; &amp;additive_binwise_correction, const shared_ptr&lt; BinNormalisation &gt; normalise_sptr, const double start_time_of_frame, const double end_time_of_frame, RPC_process_related_viewgrams_type *RPC_process_related_viewgrams, DistributedCachingInformation *caching_info_ptr, int min_timing_pos_num, int max_timing_pos_num)</td></tr>
 <tr class="memdesc:gabdb1ff752fb5146aac1e4fe85a597285"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over segments and all views in the current subset.Output is in output_image_ptr and in float_out_ptr (but only if they are not NULL). What the output is, is really determined by the call-back function RPC_process_related_viewgrams.  <a href="group__distributable.html#gabdb1ff752fb5146aac1e4fe85a597285">More...</a><br /></td></tr>
 <tr class="separator:gabdb1ff752fb5146aac1e4fe85a597285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf7f34c024eef05fb64204b14eac2734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">stir::LM_distributable_computation</a> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
-<tr class="memdesc:gadf7f34c024eef05fb64204b14eac2734"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadf7f34c024eef05fb64204b14eac2734">More...</a><br /></td></tr>
-<tr class="separator:gadf7f34c024eef05fb64204b14eac2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfca9b2b3e13fd1ac6be0dd6887d1e63"><td class="memTemplParams" colspan="2">template&lt;typename CallBackT &gt; </td></tr>
+<tr class="memitem:gadfca9b2b3e13fd1ac6be0dd6887d1e63"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__distributable.html#gadfca9b2b3e13fd1ac6be0dd6887d1e63">stir::LM_distributable_computation</a> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_cache, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate, double *double_out_ptr, CallBackT &amp;&amp;call_back)</td></tr>
+<tr class="memdesc:gadfca9b2b3e13fd1ac6be0dd6887d1e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function essentially implements a loop over a cached listmode file.  <a href="group__distributable.html#gadfca9b2b3e13fd1ac6be0dd6887d1e63">More...</a><br /></td></tr>
+<tr class="separator:gadfca9b2b3e13fd1ac6be0dd6887d1e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -161,7 +162,7 @@ PARAPET project </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -132,6 +132,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_mask_image_sptr</
 <tr class="memitem:a789d689bc3f266b275d1cd214837ea47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ScatterEstimation.html#a789d689bc3f266b275d1cd214837ea47">set_mask_proj_data_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt; arg)</td></tr>
 <tr class="memdesc:a789d689bc3f266b275d1cd214837ea47"><td class="mdescLeft">&#160;</td><td class="mdescRight">set mask for tail-fitting  <a href="#a789d689bc3f266b275d1cd214837ea47">More...</a><br /></td></tr>
 <tr class="separator:a789d689bc3f266b275d1cd214837ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7203fe233b3b9438d82ced32e4819599"><td class="memItemLeft" align="right" valign="top"><a id="a7203fe233b3b9438d82ced32e4819599"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_recompute_mask_image</b> (bool arg)</td></tr>
+<tr class="separator:a7203fe233b3b9438d82ced32e4819599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637441a55ab2f049f267fc6624ca506d"><td class="memItemLeft" align="right" valign="top"><a id="a637441a55ab2f049f267fc6624ca506d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_recompute_mask_projdata</b> (bool arg)</td></tr>
+<tr class="separator:a637441a55ab2f049f267fc6624ca506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addcc716934a0d0d0f04a35332e968a42"><td class="memItemLeft" align="right" valign="top"><a id="addcc716934a0d0d0f04a35332e968a42"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_scatter_simulation_method_sptr</b> (const shared_ptr&lt; <a class="el" href="classstir_1_1ScatterSimulation.html">ScatterSimulation</a> &gt;)</td></tr>
 <tr class="separator:addcc716934a0d0d0f04a35332e968a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,7 +356,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Kris Thielemans</dd></dl>
 <p>This is an implementation of Watson's SSS iterative algorithm to estimate scatter. Simulation is normally at low resolution, ideally reconstruction as well (to save time). The code also does tail-fitting.</p>
 <p>A particular feature is that the first iterations happen in 2D (after SSRB of all the data). Currently only the last simulation is in 3D. This could be changed later.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000185">Todo:</a></b></dt><dd><p class="startdd">The code should throw an error if 2D input data are loaded. It should just deactivate the final upsampling. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000189">Todo:</a></b></dt><dd><p class="startdd">The code should throw an error if 2D input data are loaded. It should just deactivate the final upsampling. </p>
 <p>Currently FBP reconstruction is not working and just throws an error. </p>
 <p class="enddd">This code needs far more documentation.</p>
 </dd></dl>
@@ -699,7 +705,7 @@ Load the background data (randoms) and do normalisation (to get the additive dat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

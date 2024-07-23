@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -292,17 +292,17 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Three-dimensional ellipsoidal cylinder. </p>
-<dl class="section user"><dt>Description</dt><dd>A point with coordinates <em>coord</em> is inside the shape if for <img class="formulaInl" alt="$r = coord - origin$" src="form_132.png"/>: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ |r.dir_z|&lt;L/2 \]" src="form_135.png"/>
+<dl class="section user"><dt>Description</dt><dd>A point with coordinates <em>coord</em> is inside the shape if for <img class="formulaInl" alt="$r = coord - origin$" src="form_139.png"/>: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ |r.dir_z|&lt;L/2 \]" src="form_142.png"/>
 </p>
  and <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} &lt;= 1 \]" src="form_136.png"/>
+<img class="formulaDsp" alt="\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} &lt;= 1 \]" src="form_143.png"/>
 </p>
  and <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \theta_1 &lt;= atan2(r.dir_y,r.dir_x) &lt;= \theta_2 \]" src="form_137.png"/>
+<img class="formulaDsp" alt="\[ \theta_1 &lt;= atan2(r.dir_y,r.dir_x) &lt;= \theta_2 \]" src="form_144.png"/>
 </p>
 </dd></dl>
-<p>where <img class="formulaInl" alt="$dir_x, dir_y, dir_z$" src="form_134.png"/> are described in the documentation for class <a class="el" href="classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. ">Shape3DWithOrientation</a>.</p>
+<p>where <img class="formulaInl" alt="$dir_x, dir_y, dir_z$" src="form_141.png"/> are described in the documentation for class <a class="el" href="classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. ">Shape3DWithOrientation</a>.</p>
 <dl class="section user"><dt>Parameters</dt><dd>To specify an ellipsoidal cylinder with the dimensions (radius_x,radius_y,length, theta_1, theta_2), where radius_x is in x direction, radius_y in y direction, length in z-direction, theta_1 and theta_2 are defined counter clockwise from the positive x-axis about the z-axis (before any rotations), use: <pre class="fragment">   Ellipsoidal Cylinder Parameters:=
    radius-x (in mm):= &lt;float&gt;
    radius-y (in mm):= &lt;float&gt;
@@ -514,7 +514,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
   </dd>
 </dl>
 <p>This is really only well defined for shapes with sharp boundaries. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1DiscretisedShape3D.html#abc94c7960a2d9b2e78f10ee0a96dc366" title="determine if a point is inside a non-zero voxel or not ">DiscretisedShape3D::is_inside_shape</a> for some discussion. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000196">Todo:</a></b></dt><dd>replace by floating point return value? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000200">Todo:</a></b></dt><dd>replace by floating point return value? </dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1Shape3D.html#aa7327f75ae28f41ed8b7305bc2ea65d6">stir::Shape3D</a>.</p>
 
@@ -592,7 +592,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -271,6 +271,60 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a c
 <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#ab0e5b2d17d8f027b062f7d3b6c57945f">write_to_file</a> (const std::string &amp;filename) const</td></tr>
 <tr class="memdesc:ab0e5b2d17d8f027b062f7d3b6c57945f"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes data to a file in Interfile format <br /></td></tr>
 <tr class="separator:ab0e5b2d17d8f027b062f7d3b6c57945f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">arithmetic operations</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>return sum of all elements </p>
+</div></td></tr>
+<tr class="memitem:a2a4bd9b0513d2a7e4b8f2155c937ff3c"><td class="memItemLeft" align="right" valign="top"><a id="a2a4bd9b0513d2a7e4b8f2155c937ff3c"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>sum</b> () const</td></tr>
+<tr class="separator:a2a4bd9b0513d2a7e4b8f2155c937ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ef9dc1d240e15ba9285f9cfe00d6f7"><td class="memItemLeft" align="right" valign="top"><a id="a29ef9dc1d240e15ba9285f9cfe00d6f7"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a29ef9dc1d240e15ba9285f9cfe00d6f7">find_max</a> () const</td></tr>
+<tr class="memdesc:a29ef9dc1d240e15ba9285f9cfe00d6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return maximum value of all elements <br /></td></tr>
+<tr class="separator:a29ef9dc1d240e15ba9285f9cfe00d6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492a97cc0b0240ef2062735997799230"><td class="memItemLeft" align="right" valign="top"><a id="a492a97cc0b0240ef2062735997799230"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a492a97cc0b0240ef2062735997799230">find_min</a> () const</td></tr>
+<tr class="memdesc:a492a97cc0b0240ef2062735997799230"><td class="mdescLeft">&#160;</td><td class="mdescRight">return minimum value of all elements <br /></td></tr>
+<tr class="separator:a492a97cc0b0240ef2062735997799230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3ad9e1f51bc43dc1ea41dc2876ad1e"><td class="memItemLeft" align="right" valign="top"><a id="a8a3ad9e1f51bc43dc1ea41dc2876ad1e"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a8a3ad9e1f51bc43dc1ea41dc2876ad1e">norm</a> () const</td></tr>
+<tr class="memdesc:a8a3ad9e1f51bc43dc1ea41dc2876ad1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return L2-norm (sqrt of sum of squares) <br /></td></tr>
+<tr class="separator:a8a3ad9e1f51bc43dc1ea41dc2876ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f82b174ed702ec50c87125f38e67c6"><td class="memItemLeft" align="right" valign="top"><a id="ab0f82b174ed702ec50c87125f38e67c6"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#ab0f82b174ed702ec50c87125f38e67c6">norm_squared</a> () const</td></tr>
+<tr class="memdesc:ab0f82b174ed702ec50c87125f38e67c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return L2-norm squared (sum of squares) <br /></td></tr>
+<tr class="separator:ab0f82b174ed702ec50c87125f38e67c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0078e522bbafe5c6f28181159b89e565"><td class="memItemLeft" align="right" valign="top"><a id="a0078e522bbafe5c6f28181159b89e565"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a0078e522bbafe5c6f28181159b89e565">operator+=</a> (const <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;v)</td></tr>
+<tr class="memdesc:a0078e522bbafe5c6f28181159b89e565"><td class="mdescLeft">&#160;</td><td class="mdescRight">adding elements of <code>v</code> to the current data <br /></td></tr>
+<tr class="separator:a0078e522bbafe5c6f28181159b89e565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd9e4d7fef666b5fe33a8b4848b02f9"><td class="memItemLeft" align="right" valign="top"><a id="a6bd9e4d7fef666b5fe33a8b4848b02f9"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a6bd9e4d7fef666b5fe33a8b4848b02f9">operator-=</a> (const <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;v)</td></tr>
+<tr class="memdesc:a6bd9e4d7fef666b5fe33a8b4848b02f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">subtracting elements of <code>v</code> from the current data <br /></td></tr>
+<tr class="separator:a6bd9e4d7fef666b5fe33a8b4848b02f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a626b6b1de3d1537f42519713835167"><td class="memItemLeft" align="right" valign="top"><a id="a5a626b6b1de3d1537f42519713835167"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a5a626b6b1de3d1537f42519713835167">operator*=</a> (const <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;v)</td></tr>
+<tr class="memdesc:a5a626b6b1de3d1537f42519713835167"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiplying elements of the current data with elements of <code>v</code> <br /></td></tr>
+<tr class="separator:a5a626b6b1de3d1537f42519713835167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ddffbfc19ee9f63653fbf1eddd6b2d"><td class="memItemLeft" align="right" valign="top"><a id="a84ddffbfc19ee9f63653fbf1eddd6b2d"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a84ddffbfc19ee9f63653fbf1eddd6b2d">operator/=</a> (const <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;v)</td></tr>
+<tr class="memdesc:a84ddffbfc19ee9f63653fbf1eddd6b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dividing all elements of the current data by elements of <code>v</code> <br /></td></tr>
+<tr class="separator:a84ddffbfc19ee9f63653fbf1eddd6b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5107e38785aaf07a274d2693a93e8ea"><td class="memItemLeft" align="right" valign="top"><a id="ac5107e38785aaf07a274d2693a93e8ea"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#ac5107e38785aaf07a274d2693a93e8ea">operator+=</a> (const float v)</td></tr>
+<tr class="memdesc:ac5107e38785aaf07a274d2693a93e8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">adding an <code>float</code> to the elements of the current data <br /></td></tr>
+<tr class="separator:ac5107e38785aaf07a274d2693a93e8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bbd058cc8c27b6d6c79caba3174eb2"><td class="memItemLeft" align="right" valign="top"><a id="ad5bbd058cc8c27b6d6c79caba3174eb2"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#ad5bbd058cc8c27b6d6c79caba3174eb2">operator-=</a> (const float v)</td></tr>
+<tr class="memdesc:ad5bbd058cc8c27b6d6c79caba3174eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">subtracting an <code>float</code> from the elements of the current data <br /></td></tr>
+<tr class="separator:ad5bbd058cc8c27b6d6c79caba3174eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb38f1cfedbbb369cec82e3c8eb757c"><td class="memItemLeft" align="right" valign="top"><a id="a6fb38f1cfedbbb369cec82e3c8eb757c"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a6fb38f1cfedbbb369cec82e3c8eb757c">operator*=</a> (const float v)</td></tr>
+<tr class="memdesc:a6fb38f1cfedbbb369cec82e3c8eb757c"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiplying the elements of the current data with an <code>float</code> <br /></td></tr>
+<tr class="separator:a6fb38f1cfedbbb369cec82e3c8eb757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e6f0c15f1094d70171d048de474aeb"><td class="memItemLeft" align="right" valign="top"><a id="a52e6f0c15f1094d70171d048de474aeb"></a>
+virtual <a class="el" href="classstir_1_1ProjData.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#a52e6f0c15f1094d70171d048de474aeb">operator/=</a> (const float v)</td></tr>
+<tr class="memdesc:a52e6f0c15f1094d70171d048de474aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">dividing the elements of the current data by an <code>float</code> <br /></td></tr>
+<tr class="separator:a52e6f0c15f1094d70171d048de474aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adffbf383748e15f082ee8cb210b9fd9a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjData.html#adffbf383748e15f082ee8cb210b9fd9a">axpby</a> (const float a, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;x, const float b, const <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &amp;y)</td></tr>
 <tr class="separator:adffbf383748e15f082ee8cb210b9fd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263bc2d92887cba5968a501693b4001f"><td class="memItemLeft" align="right" valign="top"><a id="a263bc2d92887cba5968a501693b4001f"></a>
@@ -407,9 +461,9 @@ ECAT 7 3D sinograms and attenuation files &gt;li&gt; <a class="el" href="namespa
 </ul>
 <p>Developer's note: ideally the return value would be an stir::unique_ptr. </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature::get_signature()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a72227244dbe2a9099f6e0053b062239d">stir::ScatterSimulation::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad36ccb454f6a6a751465274f54ab9774">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1TestDataProcessorProjectors.html#a791b1b2a04fb37f5c8496dba969d1c8e">stir::TestDataProcessorProjectors::run_tests()</a>, <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#ae4e0ee99051432be3538d3b4f4e2a9c8">stir::TestProjDataInfoSubsets::run_tests()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3ba6aebef60bff5fd4cf4850537e68cf">stir::ScatterEstimation::set_up()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a63de851d0f2255a2046a660eb4a70159">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_approximate_Hessian_concavity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1CListModeDataSAFIR.html#aa30210ec3c370689df34b2227c7813da">stir::CListModeDataSAFIR&lt; CListRecordT &gt;::CListModeDataSAFIR()</a>, <a class="el" href="classstir_1_1ScatterSimulation.html#a72227244dbe2a9099f6e0053b062239d">stir::ScatterSimulation::get_exam_info_sptr()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#ad36ccb454f6a6a751465274f54ab9774">stir::ScatterEstimation::post_processing()</a>, <a class="el" href="classstir_1_1TestDataProcessorProjectors.html#a791b1b2a04fb37f5c8496dba969d1c8e">stir::TestDataProcessorProjectors::run_tests()</a>, <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#ae4e0ee99051432be3538d3b4f4e2a9c8">stir::TestProjDataInfoSubsets::run_tests()</a>, <a class="el" href="classstir_1_1ScatterEstimation.html#a3ba6aebef60bff5fd4cf4850537e68cf">stir::ScatterEstimation::set_up()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#accada5bd9e81a580c713c961fb991d59">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_approximate_Hessian_concavity()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +516,7 @@ ECAT 7 3D sinograms and attenuation files &gt;li&gt; <a class="el" href="namespa
 <p>Get viewgram. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use get_viewgram(const ViewgramIndices&amp;) instead. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#a360721daebc3f7daf0b82adf89be7c08">stir::ProjDataFromStream</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#a360721daebc3f7daf0b82adf89be7c08">stir::ProjDataFromStream</a>, and <a class="el" href="classstir_1_1ProjDataInMemory.html#a598fbb6bbad01c52ccfc5057e4ec4274">stir::ProjDataInMemory</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1NiftyPETHelper.html#a990a10f6613fbdf8fb9d32e404f29f04">stir::NiftyPETHelper::convert_proj_data_stir_to_niftyPET()</a>, <a class="el" href="classstir_1_1ArcCorrection.html#a407d3a6f4fe726a86dd4f47a40c35a05">stir::ArcCorrection::do_arc_correction()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
 
@@ -517,7 +571,7 @@ ECAT 7 3D sinograms and attenuation files &gt;li&gt; <a class="el" href="namespa
 <p>Get sinogram. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use get_sinogram(const SinogramIndices&amp;) instead . </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#aaa6ceebcb829145371e6e30dfd1d6890">stir::ProjDataFromStream</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#aaa6ceebcb829145371e6e30dfd1d6890">stir::ProjDataFromStream</a>, and <a class="el" href="classstir_1_1ProjDataInMemory.html#ac5fcfb24678020e13c5b4d7833ade90a">stir::ProjDataInMemory</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="group__projdata.html#ga6ca5b8f25160eda3d22c15a7dfa64a5e">stir::get_scale_factors_per_sinogram()</a>, <a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data()</a>, and <a class="el" href="group__projdata.html#gaa8e5cdb3af7c92d88e7b1f4252c47a77">stir::scale_sinograms()</a>.</p>
 
@@ -720,11 +774,11 @@ ECAT 7 3D sinograms and attenuation files &gt;li&gt; <a class="el" href="namespa
 <p>Get segment by sinogram. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use get_segment_by_sinogram(const SegmentIndices&amp;) instead. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#a35bf21dcb8b2660e3342b03b6adfd0fc">stir::ProjDataFromStream</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#a35bf21dcb8b2660e3342b03b6adfd0fc">stir::ProjDataFromStream</a>, and <a class="el" href="classstir_1_1ProjDataInMemory.html#a2d6ad4ee7b98ce4e75025e604d50bf00">stir::ProjDataInMemory</a>.</p>
 
 <p class="reference">References <a class="el" href="classstir_1_1SegmentBySinogram.html#aeb9c37558295ada9d801c8e607fa8bb1">stir::SegmentBySinogram&lt; elemT &gt;::set_viewgram()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream::get_segment_by_view()</a>, and <a class="el" href="classstir_1_1ProjData.html#a263bc2d92887cba5968a501693b4001f">xapyb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream::get_segment_by_view()</a>, <a class="el" href="classstir_1_1ProjData.html#a8a3ad9e1f51bc43dc1ea41dc2876ad1e">norm()</a>, and <a class="el" href="classstir_1_1ProjData.html#a263bc2d92887cba5968a501693b4001f">xapyb()</a>.</p>
 
 </div>
 </div>
@@ -765,7 +819,7 @@ ECAT 7 3D sinograms and attenuation files &gt;li&gt; <a class="el" href="namespa
 <p>Get segment by view. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Use get_segment_by_view(const SegmentIndices&amp;) instead. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream</a>, and <a class="el" href="classstir_1_1ProjDataInMemory.html#a7d0d3058992637c3d2813a6f8de23b7b">stir::ProjDataInMemory</a>.</p>
 
 <p class="reference">References <a class="el" href="classstir_1_1SegmentByView.html#a487a259a6ded16a9299fe7771500f659">stir::SegmentByView&lt; elemT &gt;::set_viewgram()</a>.</p>
 
@@ -938,7 +992,7 @@ template&lt;typename iterT &gt; </div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ProjData.html#a56b471a9a5444933dc0322683ba938c5" title="set all bins from an array iterator ">fill_from()</a> (consistency between these 2 is guaranteed) </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>there is no range-check on <em>array_iter</em> </dd></dl>
 
-<p class="reference">References <a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a>, and <a class="el" href="group__IO.html#ga0ad946998d5f86bcb7e829271c8cf517">stir::write_to_file()</a>.</p>
+<p class="reference">References <a class="el" href="group__buildblock.html#gaae6c0f5d36d3219fb266eca61f85c187">stir::sum()</a>, and <a class="el" href="group__IO.html#ga0ad946998d5f86bcb7e829271c8cf517">stir::write_to_file()</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1113,7 @@ template&lt;typename iterT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

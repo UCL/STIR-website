@@ -1,3 +1,5 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests" name="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="91,5,197,32"/>
+<area shape="rect" id="node2" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndProjData\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="640,5,945,76"/>
+<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,17,111,43"/>
+<area shape="rect" id="node4" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,48,372,89"/>
 </map>

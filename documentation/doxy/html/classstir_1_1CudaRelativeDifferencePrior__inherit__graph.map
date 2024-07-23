@@ -1,0 +1,6 @@
+<map id="stir::CudaRelativeDifferencePrior&lt; elemT &gt;" name="stir::CudaRelativeDifferencePrior&lt; elemT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; CudaRelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, RelativeDifferencePrior\&lt;\l elemT \&gt; \&gt;" alt="" coords="1217,39,1425,139"/>
+<area shape="rect" id="node3" href="$classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. " alt="" coords="1012,102,1168,143"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="499,97,772,197"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="5,82,199,123"/>
+</map>

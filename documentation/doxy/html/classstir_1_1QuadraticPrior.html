@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_Hessian</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a6a0d858ec6d09b7162a1b754434df473">add_multiplication_with_approximate_Hessian</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
 <tr class="memdesc:a6a0d858ec6d09b7162a1b754434df473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call accumulate_Hessian_times_input. <br /></td></tr>
 <tr class="separator:a6a0d858ec6d09b7162a1b754434df473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e45069e287f23e362bf567480b40e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
-<tr class="memdesc:a1e45069e287f23e362bf567480b40e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input. For the quadratic function, the hessian of the prior is 1. Therefore this will return the weights multiplied by the input.  <a href="#a1e45069e287f23e362bf567480b40e20">More...</a><br /></td></tr>
+<tr class="memitem:a1e45069e287f23e362bf567480b40e20"><td class="memItemLeft" align="right" valign="top"><a id="a1e45069e287f23e362bf567480b40e20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
+<tr class="memdesc:a1e45069e287f23e362bf567480b40e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input. For the quadratic function, the hessian of the prior is 1. Therefore this will return the weights multiplied by the input. <br /></td></tr>
 <tr class="separator:a1e45069e287f23e362bf567480b40e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0886208c647b0d89399b0b32889a776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPrior.html#ae0886208c647b0d89399b0b32889a776">get_weights</a> () const</td></tr>
 <tr class="memdesc:ae0886208c647b0d89399b0b32889a776"><td class="mdescLeft">&#160;</td><td class="mdescRight">get penalty weights for the neighbourhood  <a href="#ae0886208c647b0d89399b0b32889a776">More...</a><br /></td></tr>
@@ -151,8 +152,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
+<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">set_penalisation_factor</a> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
@@ -410,53 +410,6 @@ template&lt;typename elemT&gt; </div>
 
 </div>
 </div>
-<a id="a1e45069e287f23e362bf567480b40e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e45069e287f23e362bf567480b40e20">&#9670;&nbsp;</a></span>accumulate_Hessian_times_input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1QuadraticPrior.html">stir::QuadraticPrior</a>&lt; elemT &gt;::accumulate_Hessian_times_input </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>current_estimate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the multiplication of the hessian of the prior multiplied by the input. For the quadratic function, the hessian of the prior is 1. Therefore this will return the weights multiplied by the input. </p>
-<p>At this point, we have j = [z][y][x] </p>
-
-</div>
-</div>
 <a id="ae0886208c647b0d89399b0b32889a776"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0886208c647b0d89399b0b32889a776">&#9670;&nbsp;</a></span>get_weights()</h2>
 
@@ -607,7 +560,7 @@ template&lt;typename elemT&gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1QuadraticPrior.html#ad9e2c6bb8ed3a5e9d132013768c4e790" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1QuadraticPrior.html#ad9e2c6bb8ed3a5e9d132013768c4e790" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 </div>
 </div>
@@ -618,7 +571,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

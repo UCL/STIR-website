@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -163,26 +163,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a66086ed64987f8d9b19ff9b80fdc1eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3312458d8b9713898d98947fda4eea3"><td class="memItemLeft" align="right" valign="top"><a id="aa3312458d8b9713898d98947fda4eea3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#aa3312458d8b9713898d98947fda4eea3">back_project</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;, const <a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;) const</td></tr>
-<tr class="memdesc:aa3312458d8b9713898d98947fda4eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">back project a single bin <br /></td></tr>
+<tr class="memdesc:aa3312458d8b9713898d98947fda4eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">back project a single bin (accumulates) <br /></td></tr>
 <tr class="separator:aa3312458d8b9713898d98947fda4eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf0468c7f1ba0b51043af7146c1b59d7"><td class="memItemLeft" align="right" valign="top"><a id="adf0468c7f1ba0b51043af7146c1b59d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#adf0468c7f1ba0b51043af7146c1b59d7">forward_project</a> (<a class="el" href="classstir_1_1Bin.html">Bin</a> &amp;, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;) const</td></tr>
-<tr class="memdesc:adf0468c7f1ba0b51043af7146c1b59d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward project into a single bin <br /></td></tr>
+<tr class="memdesc:adf0468c7f1ba0b51043af7146c1b59d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward project into a single bin (accumulates) <br /></td></tr>
 <tr class="separator:adf0468c7f1ba0b51043af7146c1b59d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d98791ab0b23653871a83d8dfdabf4"><td class="memItemLeft" align="right" valign="top"><a id="a49d98791ab0b23653871a83d8dfdabf4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a49d98791ab0b23653871a83d8dfdabf4">back_project</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;, const <a class="el" href="classstir_1_1RelatedBins.html">RelatedBins</a> &amp;) const</td></tr>
-<tr class="memdesc:a49d98791ab0b23653871a83d8dfdabf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">back project related bins <br /></td></tr>
+<tr class="memdesc:a49d98791ab0b23653871a83d8dfdabf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">back project related bins (accumulates) <br /></td></tr>
 <tr class="separator:a49d98791ab0b23653871a83d8dfdabf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7aa941d72c83605ead4fbdc7f2830d"><td class="memItemLeft" align="right" valign="top"><a id="a4a7aa941d72c83605ead4fbdc7f2830d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ProjMatrixElemsForOneBin.html#a4a7aa941d72c83605ead4fbdc7f2830d">forward_project</a> (<a class="el" href="classstir_1_1RelatedBins.html">RelatedBins</a> &amp;, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;) const</td></tr>
-<tr class="memdesc:a4a7aa941d72c83605ead4fbdc7f2830d"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward project related bins <br /></td></tr>
+<tr class="memdesc:a4a7aa941d72c83605ead4fbdc7f2830d"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward project related bins (accumulates) <br /></td></tr>
 <tr class="separator:a4a7aa941d72c83605ead4fbdc7f2830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This stores the non-zero projection matrix elements for every 'densel' that contributes to a given bin. </p>
 <p>In the usual terminology, this class implements a <a class="el" href="classstir_1_1Line.html" title="A class used by the Interfile parser. ">Line</a> (or Tube) of Response (<a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>, or TOR).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000164">Todo:</a></b></dt><dd>Most of the members of this class would work just as well for a (not yet existing) class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html" title="This stores the non-zero projection matrix elements for every &#39;voxel&#39;. ">ProjMatrixElemsForOneDensel</a>. This means that we should derived both from a common base class, templated in the type of element.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000165">Todo:</a></b></dt><dd>It might be useful to template this class in terms of the element-type as well. That way, we could have 'compact' elements, efficient elements, etc. However, doing this will probably only be useful if all <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> classes are then templated as well, which would be a pain. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000167">Todo:</a></b></dt><dd>Most of the members of this class would work just as well for a (not yet existing) class <a class="el" href="classstir_1_1ProjMatrixElemsForOneDensel.html" title="This stores the non-zero projection matrix elements for every &#39;voxel&#39;. ">ProjMatrixElemsForOneDensel</a>. This means that we should derived both from a common base class, templated in the type of element.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo:</a></b></dt><dd>It might be useful to template this class in terms of the element-type as well. That way, we could have 'compact' elements, efficient elements, etc. However, doing this will probably only be useful if all <a class="el" href="classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;...">ProjMatrixByBin</a> classes are then templated as well, which would be a pain. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7e72fad7117fa4c058138d5f4820ebf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e72fad7117fa4c058138d5f4820ebf7">&#9670;&nbsp;</a></span>value_type</h2>
@@ -384,7 +384,7 @@ this is a fairly CPU intensive operation. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

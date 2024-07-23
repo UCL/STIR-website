@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -422,6 +422,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#ae2c55d75f51f89e184a7c4f57e94030b">get_transaxial_block_spacing</a> () const</td></tr>
 <tr class="memdesc:ae2c55d75f51f89e184a7c4f57e94030b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get block spacing in transaxial direction <br /></td></tr>
 <tr class="separator:ae2c55d75f51f89e184a7c4f57e94030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ffe6545cd567550af74571fce3341c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Scanner.html#a19ffe6545cd567550af74571fce3341c">get_axial_length</a> () const</td></tr>
+<tr class="separator:a19ffe6545cd567550af74571fce3341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">functions to get generic geometry info</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>get crystal map file name </p>
 </div></td></tr>
@@ -524,11 +526,11 @@ Currently, in a TOF compatible scanner template, the last three types have to be
 The energy resolution has to be specified but it is used only for scatter correction. </dd>
 <dd>
 In order to define a nonTOF scanner the timing resolution has to be set to 0 or 1. Anything else will trigger a TOF reconstruction. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000179">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo:</a></b></dt><dd><p class="startdd">Some scanners do not have all info filled in at present. Values are then set to 0. </p>
 <p class="enddd">derive from <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a> </p>
 </dd></dl>
 <pre class="fragment">\warning You have to call set_up() after using the \c set_* functions (except set_params()).
-</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000180">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
+</pre><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>a hierarchy distinguishing between different types of scanners </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a289517c0e1d895224c2a19d3e0342361"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a289517c0e1d895224c2a19d3e0342361">&#9670;&nbsp;</a></span>Scanner() <span class="overload">[1/2]</span></h2>
@@ -1030,7 +1032,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 
 <p>get the maximum number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_num_non_arccorrected_tangential_poss()</code> or so. Even better would be to replace it by a name relating to the number of detectors that are in coincidence with a a single detector in the ring, as that is the physical reason why there is a maximum number anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo:</a></b></dt><dd>change name </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>change name </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>, and <a class="el" href="classstir_1_1ScannerTests.html#a3dacb2089fa8853eb89cfe1d558a3e98">stir::ScannerTests::run_tests()</a>.</p>
 
@@ -1061,7 +1063,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 
 <p>get the default number of arccorrected tangential positions </p>
 <dl class="section warning"><dt>Warning</dt><dd>name is not in standard STIR terminology. Should be <code>get_max_default_num_arccorrected_tangential_poss()</code> or so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000185">Todo:</a></b></dt><dd>change name, mabe refering to the fan of detectors in coincidence or so </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
@@ -1180,7 +1182,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 
 <p>Get the size for one (unmashed) TOF bin in picoseconds. </p>
 <dl class="section return"><dt>Returns</dt><dd>will be 0 or negative if not known </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo:</a></b></dt><dd>change name to <code>get_size_of_timing_pos_in_ps</code> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000186">Todo:</a></b></dt><dd>change name to <code>get_size_of_timing_pos_in_ps</code> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a4b6bffb9b6ff79daf8389ac14262ac53">get_coincidence_window_width_in_ps()</a>, and <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
@@ -1211,7 +1213,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 
 <p>Get the timing resolution of the scanner in picoseconds. </p>
 <dl class="section return"><dt>Returns</dt><dd>will be 0 or negative if not known </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo:</a></b></dt><dd>change name to <code>get_size_of_timing_pos_in_ps</code> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000187">Todo:</a></b></dt><dd>change name to <code>get_size_of_timing_pos_in_ps</code> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency()</a>, and <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
 
@@ -1233,7 +1235,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 </div><div class="memdoc">
 
 <p>Get the full width of the coincidence window in picoseconds. </p>
-<p>This is often written as <img class="formulaInl" alt="$2\tau$" src="form_124.png"/> and is usually around 4000ps. It is determined from <code><a class="el" href="classstir_1_1Scanner.html#a02d88d61e8da9f14aab75efc98b11cf3" title="Get the maximum number of TOF bins. ">get_max_num_timing_poss()</a></code> and <code><a class="el" href="classstir_1_1Scanner.html#a57ec12e0783d76a82f286e087c633340" title="Get the size for one (unmashed) TOF bin in picoseconds. ">get_size_of_timing_pos()</a></code>.</p>
+<p>This is often written as <img class="formulaInl" alt="$2\tau$" src="form_131.png"/> and is usually around 4000ps. It is determined from <code><a class="el" href="classstir_1_1Scanner.html#a02d88d61e8da9f14aab75efc98b11cf3" title="Get the maximum number of TOF bins. ">get_max_num_timing_poss()</a></code> and <code><a class="el" href="classstir_1_1Scanner.html#a57ec12e0783d76a82f286e087c633340" title="Get the size for one (unmashed) TOF bin in picoseconds. ">get_size_of_timing_pos()</a></code>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This is currently not known yet for many non-TOF scanners. The function will then throw an error. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1Scanner.html#a02d88d61e8da9f14aab75efc98b11cf3">get_max_num_timing_poss()</a>, <a class="el" href="classstir_1_1Scanner.html#a57ec12e0783d76a82f286e087c633340">get_size_of_timing_pos()</a>, and <a class="el" href="classstir_1_1Scanner.html#ab95a91cd66969bbf2f3bc15971791853">is_tof_ready()</a>.</p>
@@ -1381,6 +1383,34 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1Scanner.html#a7517bd49b68b0e2cd36d3c5d9629d14c" title="name functions to set block geometry info set scanner geometry ">set_scanner_geometry</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1Scanner.html#a2dd6bc8b5428e5538c3d36d945bc0fba">check_consistency()</a>, <a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data()</a>, and <a class="el" href="classstir_1_1Scanner.html#a818f5ce3f759845abfa9296f7491de1d">parameter_info()</a>.</p>
+
+</div>
+</div>
+<a id="a19ffe6545cd567550af74571fce3341c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ffe6545cd567550af74571fce3341c">&#9670;&nbsp;</a></span>get_axial_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stir::Scanner::get_axial_length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>get total axial length covered by the detectors (incl. any gaps between blocks etc.) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000188">Todo:</a></b></dt><dd>Need to update this function when enabling different spacing between blocks and buckets etc. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ac130313dcb61901a619e6397fcd375cc">stir::ScatterSimulation::downsample_scanner()</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1632,7 @@ In order to define a nonTOF scanner the timing resolution has to be set to 0 or 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

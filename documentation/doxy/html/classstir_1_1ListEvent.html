@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for storing and using gamma events from a list mode file. </p>
 <p><a class="el" href="classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. ">ListEvent</a> is used to provide an interface to the actual events (i.e. detected counts) in the list mode stream.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo:</a></b></dt><dd>this is still under development. Things to add are for instance energy windows and time-of-flight info. Also, <a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090" title="Finds the bin coordinates of this event for some characteristics of the projection data...">get_bin()</a> would need time info or so for rotating scanners.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo:</a></b></dt><dd>this is still under development. Things to add are for instance energy windows and time-of-flight info. Also, <a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090" title="Finds the bin coordinates of this event for some characteristics of the projection data...">get_bin()</a> would need time info or so for rotating scanners.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ListModeData.html" title="The base class for reading list mode data. ">ListModeData</a> for more <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6" title="Use this function for writing informational messages. ">info</a> on list mode data. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa3ff35d983c9c3856cfa7fc17d0d7d4c"></a>
@@ -119,7 +119,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b>
 <p>Obviously, these coordinates are only estimates which depend on the scanner hardware. For example, Depth-of-Interaction might not be taken into account. However, the intention is that this function returns 'likely' positions (e.g. not the face of a crystal, but a point somewhere in the middle).</p>
 <p>Coordinates are in mm and in the standard STIR coordinate system used by <a class="el" href="classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. ">ProjDataInfo</a> etc (i.e. origin is in the centre of the scanner).</p>
 <p>Note that for PET data, this (should) return a "directed" <a class="el" href="classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates. ">LOR</a>. e.g. if the TOF bin changes sign, the coordinates will swap.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo:</a></b></dt><dd>This function might need time info or so for rotating scanners. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo:</a></b></dt><dd>This function might need time info or so for rotating scanners. </dd></dl>
 
 <p>Implemented in <a class="el" href="classstir_1_1CListEventSAFIR.html#a478b44c11433fbd6fe2c004f789bafe8">stir::CListEventSAFIR&lt; Derived &gt;</a>, <a class="el" href="classstir_1_1CListEventSAFIR.html#a478b44c11433fbd6fe2c004f789bafe8">stir::CListEventSAFIR&lt; CListRecordSAFIR&lt; DataType &gt; &gt;</a>, <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#aa4904dfd44e8946f8deefb758645dc67">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;</a>, and <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#aa4904dfd44e8946f8deefb758645dc67">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoCylindricalNoArcCorr &gt;</a>.</p>
 
@@ -164,7 +164,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b>
 <p>bin.get_bin_value() will be set to a negative value if no such bin can be found.</p>
 <p>Currently, bin.get_bin_value() might indicate some weight which can be used for normalisation. This is unlikely to remain the case in future versions.</p>
 <p>The default implementation uses <a class="el" href="classstir_1_1ListEvent.html#aa3ff35d983c9c3856cfa7fc17d0d7d4c" title="Finds the LOR between the coordinates where the detection took place. ">get_LOR()</a> and <a class="el" href="classstir_1_1ProjDataInfo.html#a29594945a0cec246736d7efda7fbd9b6" title="Find the bin in the projection data that &#39;contains&#39; an LOR. ">ProjDataInfo::get_bin()</a>. However, a derived class can overload this with a more efficient implementation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo:</a></b></dt><dd><a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090" title="Finds the bin coordinates of this event for some characteristics of the projection data...">get_bin()</a> might need time info or so for rotating scanners. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo:</a></b></dt><dd><a class="el" href="classstir_1_1ListEvent.html#a7a9623d9cfd546d8047c92c981199090" title="Finds the bin coordinates of this event for some characteristics of the projection data...">get_bin()</a> might need time info or so for rotating scanners. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1CListEventSAFIR.html#a6d355a38ceec62cb2ecf54f855da64a5">stir::CListEventSAFIR&lt; Derived &gt;</a>, <a class="el" href="classstir_1_1CListEventSAFIR.html#a6d355a38ceec62cb2ecf54f855da64a5">stir::CListEventSAFIR&lt; CListRecordSAFIR&lt; DataType &gt; &gt;</a>, <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ae7cf99f811322f0396d7b67348f090f5">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>, <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ae7cf99f811322f0396d7b67348f090f5">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; CListRecordECAT962 &gt;</a>, <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#ae7cf99f811322f0396d7b67348f090f5">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; CListEventECAT966 &gt;</a>, <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#acbf3e76b8b467361911563cc4507e3e1">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;</a>, and <a class="el" href="classstir_1_1CListEventScannerWithDiscreteDetectors.html#acbf3e76b8b467361911563cc4507e3e1">stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoCylindricalNoArcCorr &gt;</a>.</p>
 
@@ -210,7 +210,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_prompt</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

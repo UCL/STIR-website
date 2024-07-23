@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -519,7 +519,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 <li>have 1 sinogram with twice as many views, together with the rings as 'unordered pair' (i.e. ring_difference is always &gt;0)</li>
 <li>have 2 sinograms of the same size as in 2D, together with the rings as 'ordered pair' (i.e. ring_difference can be positive and negative). In STIR, we use the second convention.</li>
 </ul>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>The detector specific functions possibly do not belong in this class. One can easily imagine a case where the theta,phi,s,t coordinates are as described, but there is no real correspondence with detectors (for instance, a rotating system). Maybe they should be moved somewhere else? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo:</a></b></dt><dd>The detector specific functions possibly do not belong in this class. One can easily imagine a case where the theta,phi,s,t coordinates are as described, but there is no real correspondence with detectors (for instance, a rotating system). Maybe they should be moved somewhere else? </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a18ff61592c3e8bfe7c1a112e130ddb5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18ff61592c3e8bfe7c1a112e130ddb5a">&#9670;&nbsp;</a></span>ProjDataInfoCylindricalNoArcCorr() <span class="overload">[1/2]</span></h2>
@@ -653,7 +653,7 @@ typedef <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a>&#16
 </div><div class="memdoc">
 
 <p>Constructor which gets <em>ring_radius</em> and <em>angular_increment</em> from the scanner. </p>
-<p><em>angular_increment</em> is determined as Pi divided by the number of detectors in a ring. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo:</a></b></dt><dd>only suitable for full-ring PET scanners </dd></dl>
+<p><em>angular_increment</em> is determined as Pi divided by the number of detectors in a ring. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo:</a></b></dt><dd>only suitable for full-ring PET scanners </dd></dl>
 
 </div>
 </div>
@@ -854,7 +854,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 <p>Note that when axial compression and/or mashing is applied, this is a many-to-one relation, i.e. multiple detector pairs contribute to one bin.</p>
 <dl class="section return"><dt>Returns</dt><dd>Succeeded::yes when a corresponding bin is found in the range of projection data. Currently, the <a class="el" href="classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. ">Bin</a> value is always set to 1. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a81e63559d793ec430211d51c2e1943a1" title="This gets view_num and tang_pos_num for a particular detector pair. ">get_view_tangential_pos_num_for_det_num_pair()</a> for restrictions </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo:</a></b></dt><dd>use member template for the coordT type to support continuous detectors. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo:</a></b></dt><dd>use member template for the coordT type to support continuous detectors. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorrTests.html#a7145fc0940f48798105a3e563eb50833">stir::ProjDataInfoCylindricalNoArcCorrTests::run_tests()</a>.</p>
 
@@ -896,7 +896,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 
 <p>This routine gets the detector pair corresponding to a bin. </p>
 <dl class="section see"><dt>See also</dt><dd>get_det_pair_for_view_tangential_pos_num() for restrictions. In addition, this routine only works for span=1 data, i.e. no axial compression. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo:</a></b></dt><dd>use member template for the coordT type to support continuous detectors. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo:</a></b></dt><dd>use member template for the coordT type to support continuous detectors. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if certain conditions are not met. </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices::timing_pos_num()</a>.</p>
@@ -980,7 +980,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a214166ca1047e8c29d122a62324a8eed" title="Find all ring pairs that contribute to a segment and axial position. ">ProjDataInfoCylindrical::get_all_ring_pairs_for_segment_axial_pos_num</a> for restrictions. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo:</a></b></dt><dd>It might be possible to return some weight factors in case there is no many-to-one correspondence between detection positions and bins (for instance for continuous detectors, or rotating scanners, or arc-corrected data). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo:</a></b></dt><dd>It might be possible to return some weight factors in case there is no many-to-one correspondence between detection positions and bins (for instance for continuous detectors, or rotating scanners, or arc-corrected data). </dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a214166ca1047e8c29d122a62324a8eed">stir::ProjDataInfoCylindrical::get_all_ring_pairs_for_segment_axial_pos_num()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a8d5fcf9a1d5b8ca671338fba9255cb85">stir::ProjDataInfo::get_min_view_num()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindricalNoArcCorr.html#a646f96749ebe1c2741cba93991012bcf">get_num_det_pos_pairs_for_bin()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#acbb945d4ca64ea8e5e53e4534128ef48">stir::ProjDataInfo::get_tof_mash_factor()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ab4329e79f386e32863b1e8c2fe0444a7">stir::ProjDataInfoCylindrical::get_view_mashing_factor()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#ac74a2ce146cd1557f99cc0eeb044ae3f">stir::ProjDataInfo::is_tof_data()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#ad14685b5a4b55d82c10bff9388df5419">stir::SegmentIndices::timing_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
@@ -1162,7 +1162,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

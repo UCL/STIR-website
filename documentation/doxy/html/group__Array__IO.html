@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ template&lt;int num_dimensions, class IStreamT , class elemT &gt; </div>
 
 <p>Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file. </p>
 <p>Only the data will be written, not the dimensions, start indices, nor byte-order. Hence, this should only used for low-level IO.</p>
-<p><em>IStreamT</em> is supposed to be stream or file type (see implementations for <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad" title="This is an internal function called by read_data(). It does the actual reading to std::istream...">read_data_1d()</a>).</p>
+<p><em>IStreamT</em> is supposed to be stream or file type (see implementations for <a class="el" href="group__Array__IO__detail.html#gae01d52f9fd1245349068265d01d96856" title="This is an internal function called by read_data(). It does the actual reading to std::istream...">read_data_1d()</a>).</p>
 <dl class="section warning"><dt>Warning</dt><dd>When an error occurs, the function immediately returns. However, the data might have been partially read from <em>s</em>. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataFromStream.html#a6019767868e247ffff6e6ed938c4ccd0">stir::ProjDataFromStream::get_bin_value()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a35bf21dcb8b2660e3342b03b6adfd0fc">stir::ProjDataFromStream::get_segment_by_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream::get_segment_by_view()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#aaa6ceebcb829145371e6e30dfd1d6890">stir::ProjDataFromStream::get_sinogram()</a>, <a class="el" href="classstir_1_1ProjDataFromStream.html#a360721daebc3f7daf0b82adf89be7c08">stir::ProjDataFromStream::get_viewgram()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#aace3b482f2734b96c26b0eb9d184f8d2">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::grow_z_range()</a>, <a class="el" href="group__Array__IO.html#gac93d981d596788d175201216e70ca06e">stir::read_data()</a>, <a class="el" href="classstir_1_1ProjMatrixByBinFromFile.html#a4d44d2220b61f666013bd2b6067286c1">stir::ProjMatrixByBinFromFile::set_up()</a>, and <a class="el" href="classstir_1_1ecat_1_1BinNormalisationFromECAT8.html#acf6d583b3f477b6a3ebe711ba6b4d5ce">stir::ecat::BinNormalisationFromECAT8::set_up()</a>.</p>
@@ -335,7 +335,7 @@ template&lt;int num_dimensions, class OStreamT , class elemT &gt; </div>
 
 <p>Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file. </p>
 <p>Only the data will be written, not the dimensions, start indices, nor byte-order. Hence, this should only used for low-level IO.</p>
-<p><em>OStreamT</em> is supposed to be stream or file type (see implementations for <a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875" title="This is an internal function called by write_data(). It does the actual writing to std::ostream...">detail::write_data_1d()</a>).</p>
+<p><em>OStreamT</em> is supposed to be stream or file type (see implementations for <a class="el" href="group__Array__IO__detail.html#ga721471457192919962e6021ae4400739" title="This is an internal function called by write_data(). It does the actual writing to std::ostream...">detail::write_data_1d()</a>).</p>
 <p>If <em>can_corrupt_data</em> = <code>true</code>, the data in the array can be byte-swapped after writing, and hence should no longer be used. This is useful for saving (a little bit of) time.</p>
 <dl class="section warning"><dt>Warning</dt><dd>When an error occurs, the function immediately returns. However, the data might have been partially written to <em>s</em>.</dd>
 <dd>
@@ -557,7 +557,7 @@ template&lt;int num_dimensions, class OStreamT , class elemT , class ScaleT &gt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

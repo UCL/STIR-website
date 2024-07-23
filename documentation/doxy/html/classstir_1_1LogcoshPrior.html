@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -156,8 +156,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
+<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">set_penalisation_factor</a> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
@@ -200,6 +199,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4dbecd4c2c7d484cbf6a0f5a43697976"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogcoshPrior.html#a4dbecd4c2c7d484cbf6a0f5a43697976">post_processing</a> () override</td></tr>
 <tr class="memdesc:a4dbecd4c2c7d484cbf6a0f5a43697976"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#a4dbecd4c2c7d484cbf6a0f5a43697976">More...</a><br /></td></tr>
 <tr class="separator:a4dbecd4c2c7d484cbf6a0f5a43697976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac258b067428a0d565a34d51815dc7a1b"><td class="memItemLeft" align="right" valign="top"><a id="ac258b067428a0d565a34d51815dc7a1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogcoshPrior.html#ac258b067428a0d565a34d51815dc7a1b">check</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; const &amp;current_image_estimate) const override</td></tr>
+<tr class="memdesc:ac258b067428a0d565a34d51815dc7a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the prior is ready to be used. <br /></td></tr>
+<tr class="separator:ac258b067428a0d565a34d51815dc7a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">set_defaults</a> () override</td></tr>
 <tr class="memdesc:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">More...</a><br /></td></tr>
@@ -529,7 +532,7 @@ template&lt;typename elemT&gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000140">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1LogcoshPrior.html#a357b31499fbd643d52d5d877574bd583">stir::LogcoshPrior&lt; elemT &gt;::get_weights()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#ae32f7c69521077bc943a3de0114de6cc">stir::LogcoshPrior&lt; elemT &gt;::set_scalar()</a>, and <a class="el" href="classstir_1_1LogcoshPrior.html#a77b5e9f278ca30f6f78cd42541e5c891">stir::LogcoshPrior&lt; elemT &gt;::set_weights()</a>.</p>
 
@@ -542,7 +545,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -47,6 +47,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classstir_1_1VectorWithOffset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">stir::VectorWithOffset&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a> &raquo; <a class="el" href="group__Array.html">Items relating to vectors and (multi-dimensional) arrays</a></div></div>  </div>
@@ -118,29 +119,30 @@ Public Types</h2></td></tr>
 typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
 <tr class="separator:a9cc2cdc27359a727046a7390a7304edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">typedefs for iterator support</div></td></tr>
-<tr class="memitem:aa8e4459a7c7d929ec347bcc4311793dc"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aa8e4459a7c7d929ec347bcc4311793dc">value_type</a></td></tr>
+<tr class="memitem:aa8e4459a7c7d929ec347bcc4311793dc"><td class="memItemLeft" align="right" valign="top"><a id="aa8e4459a7c7d929ec347bcc4311793dc"></a>
+typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
 <tr class="separator:aa8e4459a7c7d929ec347bcc4311793dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5429c0f64832adf47182872ce1ff37dd"><td class="memItemLeft" align="right" valign="top"><a id="a5429c0f64832adf47182872ce1ff37dd"></a>
-typedef <a class="el" href="classstir_1_1VectorWithOffset.html#aa8e4459a7c7d929ec347bcc4311793dc">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+typedef value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
 <tr class="separator:a5429c0f64832adf47182872ce1ff37dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f5bfa4975a429081d50243a79bce80"><td class="memItemLeft" align="right" valign="top"><a id="af0f5bfa4975a429081d50243a79bce80"></a>
-typedef const <a class="el" href="classstir_1_1VectorWithOffset.html#aa8e4459a7c7d929ec347bcc4311793dc">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
+typedef const value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
 <tr class="separator:af0f5bfa4975a429081d50243a79bce80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a927c1394482d76dbdd8101fac655440a"><td class="memItemLeft" align="right" valign="top"><a id="a927c1394482d76dbdd8101fac655440a"></a>
 typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
 <tr class="separator:a927c1394482d76dbdd8101fac655440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ea63441cb07b5aaf674de0895387ed"><td class="memItemLeft" align="right" valign="top"><a id="a85ea63441cb07b5aaf674de0895387ed"></a>
-typedef <a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">detail::VectorWithOffset_iter</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:a85ea63441cb07b5aaf674de0895387ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49509482270e44b48d9ff73a98fc729e"><td class="memItemLeft" align="right" valign="top"><a id="a49509482270e44b48d9ff73a98fc729e"></a>
-typedef <a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">detail::VectorWithOffset_iter</a>&lt; T const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
-<tr class="separator:a49509482270e44b48d9ff73a98fc729e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51dbfec6b3a902f9deb269321119cdbf"><td class="memItemLeft" align="right" valign="top"><a id="a51dbfec6b3a902f9deb269321119cdbf"></a>
-typedef boost::reverse_iterator&lt; <a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b></td></tr>
-<tr class="separator:a51dbfec6b3a902f9deb269321119cdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171492ec6b18ca3a0493b2dc65599f7e"><td class="memItemLeft" align="right" valign="top"><a id="a171492ec6b18ca3a0493b2dc65599f7e"></a>
-typedef boost::reverse_iterator&lt; <a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">const_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b></td></tr>
-<tr class="separator:a171492ec6b18ca3a0493b2dc65599f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdd3ffd9d2f9e00d943b3629f7a881f"><td class="memItemLeft" align="right" valign="top"><a id="a5fdd3ffd9d2f9e00d943b3629f7a881f"></a>
+typedef T *&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a5fdd3ffd9d2f9e00d943b3629f7a881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ce006f3c720be4ff7de8d572e9d885"><td class="memItemLeft" align="right" valign="top"><a id="aa8ce006f3c720be4ff7de8d572e9d885"></a>
+typedef T const  *&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:aa8ce006f3c720be4ff7de8d572e9d885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a835ed0bbac96a291920bbf609cea8e"><td class="memItemLeft" align="right" valign="top"><a id="a5a835ed0bbac96a291920bbf609cea8e"></a>
+typedef std::reverse_iterator&lt; iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b></td></tr>
+<tr class="separator:a5a835ed0bbac96a291920bbf609cea8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92b671bfebed5578b9112efd2fd0ff3"><td class="memItemLeft" align="right" valign="top"><a id="aa92b671bfebed5578b9112efd2fd0ff3"></a>
+typedef std::reverse_iterator&lt; const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b></td></tr>
+<tr class="separator:aa92b671bfebed5578b9112efd2fd0ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,14 +158,26 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a88f8c543d657fdc6b302c8b2ddb1d703">VectorWithOffset</a> (const int min_index, const int max_index)</td></tr>
 <tr class="memdesc:a88f8c543d657fdc6b302c8b2ddb1d703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> with offset <code>min_index</code> (initialised with <code>T()</code>) <br /></td></tr>
 <tr class="separator:a88f8c543d657fdc6b302c8b2ddb1d703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980564ce71e114a887176d1952c0a30b"><td class="memItemLeft" align="right" valign="top"><a id="a980564ce71e114a887176d1952c0a30b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a980564ce71e114a887176d1952c0a30b">VectorWithOffset</a> (const int hsz, T *const data_ptr, T *const end_of_data_ptr)</td></tr>
-<tr class="memdesc:a980564ce71e114a887176d1952c0a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> of given length using existing data (no initialisation) <br /></td></tr>
+<tr class="memitem:a980564ce71e114a887176d1952c0a30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a980564ce71e114a887176d1952c0a30b">VectorWithOffset</a> (const int hsz, T *const data_ptr, T *const end_of_data_ptr)</td></tr>
+<tr class="memdesc:a980564ce71e114a887176d1952c0a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> of given length pointing to existing data.  <a href="#a980564ce71e114a887176d1952c0a30b">More...</a><br /></td></tr>
 <tr class="separator:a980564ce71e114a887176d1952c0a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9740a16b5acdb6bc11b0bac6d463528"><td class="memItemLeft" align="right" valign="top"><a id="af9740a16b5acdb6bc11b0bac6d463528"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#af9740a16b5acdb6bc11b0bac6d463528">VectorWithOffset</a> (const int min_index, const int max_index, T *const data_ptr, T *const end_of_data_ptr)</td></tr>
-<tr class="memdesc:af9740a16b5acdb6bc11b0bac6d463528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> with offset <code>min_index</code> using existing data (no initialisation) <br /></td></tr>
+<tr class="memitem:af9740a16b5acdb6bc11b0bac6d463528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deprecated_8h.html#aa901a54cb49d3957650cfff22a126ac2">STIR_DEPRECATED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#af9740a16b5acdb6bc11b0bac6d463528">VectorWithOffset</a> (const int min_index, const int max_index, T *const data_ptr, T *const end_of_data_ptr)</td></tr>
+<tr class="memdesc:af9740a16b5acdb6bc11b0bac6d463528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> with offset <code>min_index</code> pointing to existing data.  <a href="#af9740a16b5acdb6bc11b0bac6d463528">More...</a><br /></td></tr>
 <tr class="separator:af9740a16b5acdb6bc11b0bac6d463528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa236191f17daa3c45679583dc191f013"><td class="memItemLeft" align="right" valign="top"><a id="aa236191f17daa3c45679583dc191f013"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aa236191f17daa3c45679583dc191f013">VectorWithOffset</a> (const int hsz, const T *const data_ptr)</td></tr>
+<tr class="memdesc:aa236191f17daa3c45679583dc191f013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> of given length from a bare pointer (copying data) <br /></td></tr>
+<tr class="separator:aa236191f17daa3c45679583dc191f013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa753dc11769dc5429df4f3054e3859ee"><td class="memItemLeft" align="right" valign="top"><a id="aa753dc11769dc5429df4f3054e3859ee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aa753dc11769dc5429df4f3054e3859ee">VectorWithOffset</a> (const int min_index, const int max_index, const T *const data_ptr)</td></tr>
+<tr class="memdesc:aa753dc11769dc5429df4f3054e3859ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> with offset <code>min_index</code> from a bare pointer (copying data) <br /></td></tr>
+<tr class="separator:aa753dc11769dc5429df4f3054e3859ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676efb008a94d23ffd1186119df57014"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a676efb008a94d23ffd1186119df57014">VectorWithOffset</a> (const int min_index, const int max_index, shared_ptr&lt; T[]&gt; data_sptr)</td></tr>
+<tr class="memdesc:a676efb008a94d23ffd1186119df57014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> sharing existing data.  <a href="#a676efb008a94d23ffd1186119df57014">More...</a><br /></td></tr>
+<tr class="separator:a676efb008a94d23ffd1186119df57014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d997d2fa406dd863a2fe5bea133573"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a26d997d2fa406dd863a2fe5bea133573">VectorWithOffset</a> (const int sz, shared_ptr&lt; T[]&gt; data_sptr)</td></tr>
+<tr class="memdesc:a26d997d2fa406dd863a2fe5bea133573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> sharing existing data.  <a href="#a26d997d2fa406dd863a2fe5bea133573">More...</a><br /></td></tr>
+<tr class="separator:a26d997d2fa406dd863a2fe5bea133573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7869e0fefe59c1f80f0d06ead3c198"><td class="memItemLeft" align="right" valign="top"><a id="a1a7869e0fefe59c1f80f0d06ead3c198"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a1a7869e0fefe59c1f80f0d06ead3c198">VectorWithOffset</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;il)</td></tr>
 <tr class="memdesc:a1a7869e0fefe59c1f80f0d06ead3c198"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor <br /></td></tr>
@@ -172,12 +186,14 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a1a9eae0fb06c3848ef8d0afaf29bedd7">~VectorWithOffset</a> ()</td></tr>
 <tr class="memdesc:a1a9eae0fb06c3848ef8d0afaf29bedd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a1a9eae0fb06c3848ef8d0afaf29bedd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59666e99514eafc7caf0ea97f015536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aa59666e99514eafc7caf0ea97f015536">VectorWithOffset</a> (<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:aa59666e99514eafc7caf0ea97f015536"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <a href="#aa59666e99514eafc7caf0ea97f015536">More...</a><br /></td></tr>
+<tr class="separator:aa59666e99514eafc7caf0ea97f015536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac191bacb3ad44a3fd32b794c96a5f819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ac191bacb3ad44a3fd32b794c96a5f819">recycle</a> ()</td></tr>
 <tr class="memdesc:ac191bacb3ad44a3fd32b794c96a5f819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all memory and make object as if default-constructed.  <a href="#ac191bacb3ad44a3fd32b794c96a5f819">More...</a><br /></td></tr>
 <tr class="separator:ac191bacb3ad44a3fd32b794c96a5f819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174f5c57e4beecd696079974df0285e0"><td class="memItemLeft" align="right" valign="top"><a id="a174f5c57e4beecd696079974df0285e0"></a>
-<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a174f5c57e4beecd696079974df0285e0">operator=</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;il)</td></tr>
-<tr class="memdesc:a174f5c57e4beecd696079974df0285e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator with another vector <br /></td></tr>
+<tr class="memitem:a174f5c57e4beecd696079974df0285e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a174f5c57e4beecd696079974df0285e0">operator=</a> (const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;il)</td></tr>
+<tr class="memdesc:a174f5c57e4beecd696079974df0285e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator with another vector  <a href="#a174f5c57e4beecd696079974df0285e0">More...</a><br /></td></tr>
 <tr class="separator:a174f5c57e4beecd696079974df0285e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2e44bd6fc383b192e4b4896af59068"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#acc2e44bd6fc383b192e4b4896af59068">operator[]</a> (int i)</td></tr>
 <tr class="memdesc:acc2e44bd6fc383b192e4b4896af59068"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow array-style access, read/write  <a href="#acc2e44bd6fc383b192e4b4896af59068">More...</a><br /></td></tr>
@@ -290,19 +306,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="separator:a06bc75b62129576f3a8c09c3b850d89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">basic iterator support</div></td></tr>
 <tr class="memitem:a147a665c5ab7818c5197fac452bcff9b"><td class="memItemLeft" align="right" valign="top"><a id="a147a665c5ab7818c5197fac452bcff9b"></a>
-<a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a147a665c5ab7818c5197fac452bcff9b">begin</a> ()</td></tr>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a147a665c5ab7818c5197fac452bcff9b">begin</a> ()</td></tr>
 <tr class="memdesc:a147a665c5ab7818c5197fac452bcff9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">use to initialise an iterator to the first element of the vector <br /></td></tr>
 <tr class="separator:a147a665c5ab7818c5197fac452bcff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b86580610c987b8ef5a72b906b8000e"><td class="memItemLeft" align="right" valign="top"><a id="a6b86580610c987b8ef5a72b906b8000e"></a>
-<a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a6b86580610c987b8ef5a72b906b8000e">begin</a> () const</td></tr>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a6b86580610c987b8ef5a72b906b8000e">begin</a> () const</td></tr>
 <tr class="memdesc:a6b86580610c987b8ef5a72b906b8000e"><td class="mdescLeft">&#160;</td><td class="mdescRight">use to initialise an iterator to the first element of the (const) vector <br /></td></tr>
 <tr class="separator:a6b86580610c987b8ef5a72b906b8000e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ea6073b3daf75f23f1b545d0b6593f"><td class="memItemLeft" align="right" valign="top"><a id="ab5ea6073b3daf75f23f1b545d0b6593f"></a>
-<a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ab5ea6073b3daf75f23f1b545d0b6593f">end</a> ()</td></tr>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ab5ea6073b3daf75f23f1b545d0b6593f">end</a> ()</td></tr>
 <tr class="memdesc:ab5ea6073b3daf75f23f1b545d0b6593f"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator 'past' the last element of the vector <br /></td></tr>
 <tr class="separator:ab5ea6073b3daf75f23f1b545d0b6593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae814766b350ae0fef9eea8ef2bdd37c1"><td class="memItemLeft" align="right" valign="top"><a id="ae814766b350ae0fef9eea8ef2bdd37c1"></a>
-<a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ae814766b350ae0fef9eea8ef2bdd37c1">end</a> () const</td></tr>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ae814766b350ae0fef9eea8ef2bdd37c1">end</a> () const</td></tr>
 <tr class="memdesc:ae814766b350ae0fef9eea8ef2bdd37c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator 'past' the last element of the (const) vector <br /></td></tr>
 <tr class="separator:ae814766b350ae0fef9eea8ef2bdd37c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4b60dc74ae49cf89e559f39ffd825a"><td class="memItemLeft" align="right" valign="top"><a id="acf4b60dc74ae49cf89e559f39ffd825a"></a>
@@ -363,6 +379,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a18a1331e3af6ea9a1d5b5ff177f4ae19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a18a1331e3af6ea9a1d5b5ff177f4ae19">check_state</a> () const</td></tr>
 <tr class="memdesc:a18a1331e3af6ea9a1d5b5ff177f4ae19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called internally to see if all variables are consistent.  <a href="#a18a1331e3af6ea9a1d5b5ff177f4ae19">More...</a><br /></td></tr>
 <tr class="separator:a18a1331e3af6ea9a1d5b5ff177f4ae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d62f3dfa24d524d010f632112ac89ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#a2d62f3dfa24d524d010f632112ac89ac">init</a> (const int min_index, const int max_index, T *const data_ptr, bool copy_data)</td></tr>
+<tr class="memdesc:a2d62f3dfa24d524d010f632112ac89ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">change vector with new index range and point to <code>data_ptr</code>  <a href="#a2d62f3dfa24d524d010f632112ac89ac">More...</a><br /></td></tr>
+<tr class="separator:a2d62f3dfa24d524d010f632112ac89ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -370,6 +389,13 @@ Protected Attributes</h2></td></tr>
 T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#aebb7f773557682e1a3bfd55612974164">num</a></td></tr>
 <tr class="memdesc:aebb7f773557682e1a3bfd55612974164"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to (*this)[0] (taking <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa" title="get value of first valid index ">get_min_index()</a> into account that is). <br /></td></tr>
 <tr class="separator:aebb7f773557682e1a3bfd55612974164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ae9cc32cee211911ec85af77ca50a6d00"><td class="memItemLeft" align="right" valign="top"><a id="ae9cc32cee211911ec85af77ca50a6d00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html#ae9cc32cee211911ec85af77ca50a6d00">swap</a> (<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;first, <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> &amp;second)</td></tr>
+<tr class="memdesc:ae9cc32cee211911ec85af77ca50a6d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap content/members of 2 objects. <br /></td></tr>
+<tr class="separator:ae9cc32cee211911ec85af77ca50a6d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -382,10 +408,10 @@ class stir::VectorWithOffset&lt; T &gt;</h3>
 <dl class="section warning"><dt>Warning</dt><dd>This class does not satisfy full Container requirements. </dd>
 <dd>
 Current implementation relies on shifting a <code>T*</code> outside the range of allocated data. This is not guaranteed to be valid by ANSI C++. It is fine however as long as the <code>min_index</code> is negative and such that <code>abs(min_index)</code> is smaller than <code>max_index</code>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000201">Todo:</a></b></dt><dd>add allocator template as in std::vector. This is non-trivial as we would have to use uninitialized_copy etc. in some places. </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa8e4459a7c7d929ec347bcc4311793dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8e4459a7c7d929ec347bcc4311793dc">&#9670;&nbsp;</a></span>value_type</h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo:</a></b></dt><dd>add allocator template as in std::vector. This is non-trivial as we would have to use uninitialized_copy etc. in some places. </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a980564ce71e114a887176d1952c0a30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980564ce71e114a887176d1952c0a30b">&#9670;&nbsp;</a></span>VectorWithOffset() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,11 +419,207 @@ Current implementation relies on shifting a <code>T*</code> outside the range of
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef T <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html#aa8e4459a7c7d929ec347bcc4311793dc">value_type</a></td>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>hsz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *const&#160;</td>
+          <td class="paramname"><em>data_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *const&#160;</td>
+          <td class="paramname"><em>end_of_data_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Most of these should really not be needed because we use boost::iterator_adaptor now. However, some are used directly in STIR code. (Maybe they shouldn't....) </p>
+
+<p>Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> of given length pointing to existing data. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This refers to the original memory range, so any modifications to this object will modify the original data as well.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af9740a16b5acdb6bc11b0bac6d463528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9740a16b5acdb6bc11b0bac6d463528">&#9670;&nbsp;</a></span>VectorWithOffset() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>min_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>max_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *const&#160;</td>
+          <td class="paramname"><em>data_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *const&#160;</td>
+          <td class="paramname"><em>end_of_data_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> with offset <code>min_index</code> pointing to existing data. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This refers to the original memory range, so any modifications to this object will modify the original data as well.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a676efb008a94d23ffd1186119df57014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676efb008a94d23ffd1186119df57014">&#9670;&nbsp;</a></span>VectorWithOffset() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>min_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>max_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shared_ptr&lt; T[]&gt;&#160;</td>
+          <td class="paramname"><em>data_sptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> sharing existing data. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This refers to the original memory range, so any modifications to this object will modify the original data as well. </dd></dl>
+
+</div>
+</div>
+<a id="a26d997d2fa406dd863a2fe5bea133573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d997d2fa406dd863a2fe5bea133573">&#9670;&nbsp;</a></span>VectorWithOffset() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shared_ptr&lt; T[]&gt;&#160;</td>
+          <td class="paramname"><em>data_sptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a> sharing existing data. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This refers to the original memory range, so any modifications to this object will modify the original data as well. </dd></dl>
+
+</div>
+</div>
+<a id="aa59666e99514eafc7caf0ea97f015536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa59666e99514eafc7caf0ea97f015536">&#9670;&nbsp;</a></span>VectorWithOffset() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::<a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move constructor </p>
+<p>implementation uses the copy-and-swap idiom, see e.g. <a href="https://stackoverflow.com/a/3279550">https://stackoverflow.com/a/3279550</a> </p>
 
 </div>
 </div>
@@ -434,6 +656,37 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a174f5c57e4beecd696079974df0285e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174f5c57e4beecd696079974df0285e0">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; T &gt; &amp; <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>il</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assignment operator with another vector </p>
+<p>implementation avoids reallocating if sufficient memory already exists. </p>
+
+</div>
+</div>
 <a id="a9179fdbe02bc4cb22fde51599537e2b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9179fdbe02bc4cb22fde51599537e2b5">&#9670;&nbsp;</a></span>get_length()</h2>
 
@@ -460,9 +713,9 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>return number of elements in this vector </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="classstir_1_1VectorWithOffset.html#aec5c52350ad01a1b87d03c85a0eb0060" title="return number of elements in this vector ">size()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Use <a class="el" href="classstir_1_1VectorWithOffset.html#aec5c52350ad01a1b87d03c85a0eb0060" title="return number of elements in this vector ">size()</a> instead. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a1ff45f2cee956e01345639328913a45f">stir::RelativeDifferencePrior&lt; elemT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#a1d8c931d6ee97b03e00d93ce5fb6fc4e">stir::LogcoshPrior&lt; elemT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">stir::QuadraticPrior&lt; float &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a6a0d858ec6d09b7162a1b754434df473">stir::QuadraticPrior&lt; float &gt;::add_multiplication_with_approximate_Hessian()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html#a45877ecba48e0ded95eedae05c2540a2">stir::ArrayFilter1DUsingConvolutionSymmetricKernel&lt; elemT &gt;::ArrayFilter1DUsingConvolutionSymmetricKernel()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; float &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a85a6598d5e8a28055769e4769d116610">stir::RelativeDifferencePrior&lt; elemT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; float &gt;::compute_value()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a89bda03e34d47f49e17261b9be80c811">stir::RelativeDifferencePrior&lt; elemT &gt;::compute_value()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#acc052ebb2d868ccac73d3e2c71a65b2f">stir::LogcoshPrior&lt; elemT &gt;::compute_value()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a84a973fed82796618df194e82581bbee">stir::SegmentByView&lt; elemT &gt;::get_num_axial_poss()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a06b741c1eab0f732ae90ecab8c946fb4">stir::SegmentByView&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1SegmentBySinogram.html#adf5fd5e26ca67072936838abfe28b9c6">stir::SegmentBySinogram&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1Sinogram.html#a8de906eae38d64f86351235ce0835430">stir::Sinogram&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1Viewgram.html#a9519f6c4d06a0a2c53c31cd52a4fec2f">stir::Viewgram&lt; float &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1SegmentBySinogram.html#a055ff2f4861f46860eae3b5bcd791b3d">stir::SegmentBySinogram&lt; elemT &gt;::get_num_views()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a01a0a3d9e149d1432545d16de9716846">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_x_size()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html#a8c16f83256792ec6de8ac0bf3c4ebcb9">stir::ArrayFilter1DUsingConvolutionSymmetricKernel&lt; elemT &gt;::is_trivial()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolution.html#ace67047f4ff47cd44ff328c06afc879c">stir::ArrayFilter1DUsingConvolution&lt; elemT &gt;::is_trivial()</a>, <a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae96bd3846485c91fe3e5b0d82d7aad8c">stir::QuadraticPrior&lt; float &gt;::parabolic_surrogate_curvature()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#abd995ff2f54db380588db735198b6ee9">stir::LogcoshPrior&lt; elemT &gt;::parabolic_surrogate_curvature()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a480daa46e80e5919615937c31b25260d">stir::ProjDataInfoCylindrical::ProjDataInfoCylindrical()</a>, <a class="el" href="classstir_1_1SeparableMetzArrayFilter.html#a3db07848b970cffaee709b88c3570562">stir::SeparableMetzArrayFilter&lt; num_dimensions, elemT &gt;::SeparableMetzArrayFilter()</a>, and <a class="el" href="namespacestir.html#a7d4bf01dc3ff997b598b5fc5ec3ae0d5">stir::truncate_end_planes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1LogcoshPrior.html#a1d8c931d6ee97b03e00d93ce5fb6fc4e">stir::LogcoshPrior&lt; elemT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">stir::QuadraticPrior&lt; float &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a1ff45f2cee956e01345639328913a45f">stir::RelativeDifferencePrior&lt; elemT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a6a0d858ec6d09b7162a1b754434df473">stir::QuadraticPrior&lt; float &gt;::add_multiplication_with_approximate_Hessian()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html#a45877ecba48e0ded95eedae05c2540a2">stir::ArrayFilter1DUsingConvolutionSymmetricKernel&lt; elemT &gt;::ArrayFilter1DUsingConvolutionSymmetricKernel()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; float &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a85a6598d5e8a28055769e4769d116610">stir::RelativeDifferencePrior&lt; elemT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; float &gt;::compute_value()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#acc052ebb2d868ccac73d3e2c71a65b2f">stir::LogcoshPrior&lt; elemT &gt;::compute_value()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a89bda03e34d47f49e17261b9be80c811">stir::RelativeDifferencePrior&lt; elemT &gt;::compute_value()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a84a973fed82796618df194e82581bbee">stir::SegmentByView&lt; elemT &gt;::get_num_axial_poss()</a>, <a class="el" href="classstir_1_1SegmentByView.html#a06b741c1eab0f732ae90ecab8c946fb4">stir::SegmentByView&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1SegmentBySinogram.html#adf5fd5e26ca67072936838abfe28b9c6">stir::SegmentBySinogram&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1Sinogram.html#a8de906eae38d64f86351235ce0835430">stir::Sinogram&lt; elemT &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1Viewgram.html#a9519f6c4d06a0a2c53c31cd52a4fec2f">stir::Viewgram&lt; float &gt;::get_num_tangential_poss()</a>, <a class="el" href="classstir_1_1SegmentBySinogram.html#a055ff2f4861f46860eae3b5bcd791b3d">stir::SegmentBySinogram&lt; elemT &gt;::get_num_views()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a01a0a3d9e149d1432545d16de9716846">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_x_size()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html#a8c16f83256792ec6de8ac0bf3c4ebcb9">stir::ArrayFilter1DUsingConvolutionSymmetricKernel&lt; elemT &gt;::is_trivial()</a>, <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolution.html#ace67047f4ff47cd44ff328c06afc879c">stir::ArrayFilter1DUsingConvolution&lt; elemT &gt;::is_trivial()</a>, <a class="el" href="namespacestir.html#a393dc726c87c1c9872a2ce19c4535eaf">stir::make_det_pair_data()</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae96bd3846485c91fe3e5b0d82d7aad8c">stir::QuadraticPrior&lt; float &gt;::parabolic_surrogate_curvature()</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#abd995ff2f54db380588db735198b6ee9">stir::LogcoshPrior&lt; elemT &gt;::parabolic_surrogate_curvature()</a>, <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#a480daa46e80e5919615937c31b25260d">stir::ProjDataInfoCylindrical::ProjDataInfoCylindrical()</a>, <a class="el" href="classstir_1_1SeparableMetzArrayFilter.html#a3db07848b970cffaee709b88c3570562">stir::SeparableMetzArrayFilter&lt; num_dimensions, elemT &gt;::SeparableMetzArrayFilter()</a>, and <a class="el" href="namespacestir.html#a7d4bf01dc3ff997b598b5fc5ec3ae0d5">stir::truncate_end_planes()</a>.</p>
 
 </div>
 </div>
@@ -549,8 +802,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>change the range of the vector, new elements are set to <code>T()</code> </p>
-<p>New memory is allocated if the range grows outside the range specified by <a class="el" href="classstir_1_1VectorWithOffset.html#acd11c494f2c0ce80781004068ba705fb" title="get min_index within allocated range ">get_capacity_min_index()</a> till <a class="el" href="classstir_1_1VectorWithOffset.html#abbc49c87e5bee68fac33646558001bb8" title="get max_index within allocated range ">get_capacity_max_index()</a>. Data is then copied and old memory deallocated (unless <a class="el" href="classstir_1_1VectorWithOffset.html#a68696b46943dfbd63124b3287bad24d6" title="check if this object owns the memory for the data ">owns_memory_for_data()</a> is false).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000202">Todo:</a></b></dt><dd>in principle reallocation could be avoided when the new range would fit in the old one by shifting. </dd></dl>
+<p>New memory is allocated if the range grows outside the range specified by <a class="el" href="classstir_1_1VectorWithOffset.html#acd11c494f2c0ce80781004068ba705fb" title="get min_index within allocated range ">get_capacity_min_index()</a> till <a class="el" href="classstir_1_1VectorWithOffset.html#abbc49c87e5bee68fac33646558001bb8" title="get max_index within allocated range ">get_capacity_max_index()</a>. Data is then copied and old memory deallocated (unless it is shared).</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000206">Todo:</a></b></dt><dd>in principle reallocation could be avoided when the new range would fit in the old one by shifting. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a244c7c4378428d63a24b82148cbdf5e7">stir::Array&lt; 1, elemT &gt;</a>.</p>
 
@@ -742,8 +995,6 @@ template&lt;class T &gt; </div>
 <p>Use only in emergency cases...</p>
 <p>To prevent invalidating the safety checks (and making reimplementation more difficult), NO manipulation with the vector is allowed between the pairs <a class="el" href="classstir_1_1VectorWithOffset.html#aca0beefe260d0476ec9630de7cd81e33" title="member function for access to the data via a T* ">get_data_ptr()</a> and <a class="el" href="classstir_1_1VectorWithOffset.html#a6d5ec338892b62cad731355530628c31" title="signal end of access to T* ">release_data_ptr()</a> and <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d" title="member function for access to the data via a const T* ">get_const_data_ptr()</a> and <a class="el" href="classstir_1_1VectorWithOffset.html#a6d5ec338892b62cad731355530628c31" title="signal end of access to T* ">release_data_ptr()</a>. (This is checked with assert() in DEBUG mode.) </p>
 
-<p class="reference">Referenced by <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad">stir::detail::read_data_1d()</a>.</p>
-
 </div>
 </div>
 <a id="a0f7dc51e6a0f4155963ef464acab701d"></a>
@@ -776,8 +1027,6 @@ template&lt;class T &gt; </div>
 <p>Use <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d" title="member function for access to the data via a const T* ">get_const_data_ptr()</a> when you are not going to modify the data.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1VectorWithOffset.html#aca0beefe260d0476ec9630de7cd81e33" title="member function for access to the data via a T* ">get_data_ptr()</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875">stir::detail::write_data_1d()</a>.</p>
-
 </div>
 </div>
 <a id="a6d5ec338892b62cad731355530628c31"></a>
@@ -809,8 +1058,6 @@ template&lt;class T &gt; </div>
 <p>This has to be used when access to the T* returned by <a class="el" href="classstir_1_1VectorWithOffset.html#aca0beefe260d0476ec9630de7cd81e33" title="member function for access to the data via a T* ">get_data_ptr()</a> is finished. It updates the vector with any changes you made, and allows access to the other member functions again.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1VectorWithOffset.html#aca0beefe260d0476ec9630de7cd81e33" title="member function for access to the data via a T* ">get_data_ptr()</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="group__Array__IO__detail.html#ga836785cfb7548ecb7e5fc1a604f71aad">stir::detail::read_data_1d()</a>.</p>
-
 </div>
 </div>
 <a id="a06bc75b62129576f3a8c09c3b850d89f"></a>
@@ -841,8 +1088,6 @@ template&lt;class T &gt; </div>
 <p>signal end of access to const T* </p>
 <p>This has to be used when access to the const T* returned by <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d" title="member function for access to the data via a const T* ">get_const_data_ptr()</a> is finished. It allows access to the other member functions again.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d" title="member function for access to the data via a const T* ">get_const_data_ptr()</a> </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="group__Array__IO__detail.html#ga4418189143eea7d24627e84e02bfd875">stir::detail::write_data_1d()</a>.</p>
 
 </div>
 </div>
@@ -876,6 +1121,61 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a2d62f3dfa24d524d010f632112ac89ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d62f3dfa24d524d010f632112ac89ac">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset</a>&lt; T &gt;::init </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>min_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>max_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *const&#160;</td>
+          <td class="paramname"><em>data_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>copy_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>change vector with new index range and point to <code>data_ptr</code> </p>
+<ul>
+<li>data_ptr should start to a contiguous block of correct size </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="ArrayFilter1DUsingConvolution_8h_source.html">ArrayFilter1DUsingConvolution.h</a></li>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/<a class="el" href="VectorWithOffset_8h_source.html">VectorWithOffset.h</a></li>
@@ -884,7 +1184,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:41 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

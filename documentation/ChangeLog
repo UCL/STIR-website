@@ -1,4 +1,1582 @@
 -------------------------------
+Tue, 23 Jul 2024 09:37:29 +0100  Kris Thielemans  
+
+small updates to make_distrib.sh [ci skip]
+- remind to update credits
+- update pandoc line
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Tue, 23 Jul 2024 09:34:07 +0100  Kris Thielemans  
+
+updated credits
+
+
+documentation/credits.htm
+
+-------------------------------
+Tue, 23 Jul 2024 09:24:41 +0100  Kris Thielemans  
+
+added Markus to release notes for 6.2 [ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Tue, 23 Jul 2024 09:11:26 +0100  Kris Thielemans  
+
+Merge pull request #1478 from KrisThielemans/v6.2.0prep
+V6.2.0prep
+
+-------------------------------
+Tue, 23 Jul 2024 09:10:00 +0100  Kris Thielemans  
+
+updated VERSION.txt etc for release of version 6.2.0 [ci skip]
+
+
+LICENSE.txt
+
+-------------------------------
+Tue, 23 Jul 2024 09:10:00 +0100  Kris Thielemans  
+
+updates to documentation for 6.2
+
+
+documentation/STIR-UsersGuide.tex
+documentation/STIR-developers-overview.tex
+documentation/STIR-glossary.tex
+documentation/history.htm
+documentation/release_6.2.htm
+
+-------------------------------
+Tue, 23 Jul 2024 09:10:00 +0100  Kris Thielemans  
+
+fixes to release notes
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Tue, 23 Jul 2024 07:48:40 +0100  Kris Thielemans  
+
+Merge pull request #1477 from KrisThielemans/PoissonLLHessianFix
+Hessian times input for PoissonLL...ProjData: throw error if result would be incorrect
+
+-------------------------------
+Mon, 22 Jul 2024 23:05:26 +0100  Kris Thielemans  
+
+Hessian times input: throw error if result would be incorrect
+The Hessian calculations for the Poisson log-lik for projdata
+use divide_and_truncate, which sets negative
+numerators to zero. This is incorrect when the forward projection
+of the "input" contains negatives.
+We now check this and throw an error if it occurs. A proper fix
+will have to be for later.
+
+See https://github.com/UCL/STIR/issues/1461
+
+
+documentation/release_6.2.htm
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Sat, 20 Jul 2024 08:39:55 +0100  Kris Thielemans  
+
+Merge pull request #1473 from KrisThielemans/SPECTDICOM_GE
+SPECT DICOM: safer reading and better handling of planar data
+
+-------------------------------
+Fri, 19 Jul 2024 15:31:43 +0100  Kris Thielemans  
+
+SPECT DICOM: remove requirement for is_planar
+As STIR can only read SPECT sinograms, we now read/set all fields
+from a planar scan as well. There is therefore no need anymore for
+the boolean.
+
+Output of a conversion of planar data is now directly readable into STIR.
+
+
+documentation/release_6.2.htm
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Thu, 18 Jul 2024 17:14:07 +0100  Kris Thielemans  
+
+SPECT DICOM: safer reading
+- do checks if sequences are present to avoid seg-faults
+- read more data if planar, but avoid reading data that doesn't make sense
+
+
+src/utilities/SPECT_dicom_to_interfile.cxx
+
+-------------------------------
+Wed, 10 Jul 2024 21:00:51 +0100  Kris Thielemans  
+
+Merge pull request #1471 from KrisThielemans/exposeMaskMethodsForScatter
+added ScatterEstimation::set_recompute_mask_*()
+
+-------------------------------
+Wed, 10 Jul 2024 20:22:51 +0100  Kris Thielemans  
+
+added ScatterEstimation::set_recompute_mask_*()
+useful for use in Python
+
+
+src/include/stir/scatter/ScatterEstimation.h
+src/include/stir/scatter/ScatterEstimation.inl
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Wed, 10 Jul 2024 09:09:40 +0100  Kris Thielemans  
+
+update mailmap and CITATION.cff for 6.2
+
+
+.mailmap
+CITATION.cff
+
+-------------------------------
+Tue, 9 Jul 2024 18:06:18 +0100  Kris Thielemans  
+
+Merge pull request #1469 from KrisThielemans/NormFromAttenThrowError
+BinNormalisationFromAttenuationImage: throw error for TOF data
+
+-------------------------------
+Tue, 9 Jul 2024 15:33:16 +0100  Kris Thielemans  
+
+BinNormalisationFromAttenuationImage throw error for TOF data
+The current functionality uses normal forward projection even for TOF
+data, which is incorrect. To prevent this, we now throw an error.
+
+See #1455
+
+
+src/recon_buildblock/BinNormalisationFromAttenuationImage.cxx
+
+-------------------------------
+Mon, 8 Jul 2024 14:05:48 +0100  Kris Thielemans  
+
+Merge pull request #1408 from Imraj-Singh/cuda_stir
+Add CudaRelativeDifferencePrior (currently limited to 3x3x3 neighbourhood)
+
+-------------------------------
+Mon, 8 Jul 2024 09:36:47 +0100  Kris Thielemans  
+
+disable CUDA RDP tests if no CUDA found
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 8 Jul 2024 09:30:50 +0100  Kris Thielemans  
+
+added RDP timings to stir_timings
+removed obsolete cuda_rdp_tests accordingly
+
+
+documentation/release_6.2.htm
+src/utilities/CMakeLists.txt
+src/utilities/cuda_rdp_test.cxx
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Mon, 8 Jul 2024 09:28:34 +0100  Kris Thielemans  
+
+added ctest for CUDA vs non-CUDA RDP
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Mon, 8 Jul 2024 08:08:31 +0100  Kris Thielemans  
+
+update release notes on the CUDA RDP [ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Mon, 8 Jul 2024 07:46:39 +0100  Kris Thielemans  
+
+CudaRDP: honour elemT template argument
+It was only coded for float before.
+
+I haven't tested with double though.
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Mon, 8 Jul 2024 07:30:42 +0100  Kris Thielemans  
+
+skip CUDA test if nvidia-smi not found
+
+
+CMakeLists.txt
+src/recon_test/CMakeLists.txt
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 22:50:41 +0100  Kris Thielemans  
+
+make running of CUDA tests optional
+CUDA run-time is not available on GitHub actions,
+so we need to able to disable them.
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 22:34:02 +0100  Kris Thielemans  
+
+reduce eps for numerical Hessian test
+RDP test was failing with kappa as eps was too large.
+Now it is set relative to the iamge max.
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 11:25:47 +0100  Kris Thielemans  
+
+add and correct tests for priors with kappa (still fails on RDP)
+- tests were never run with kappa
+- RDP limit tests with kappa were wrong
+
+Still numerical problems for the Hessian test for RDP
+
+
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 11:23:21 +0100  Kris Thielemans  
+
+correct test on kappa characteristics in all priors
+The Hessian() functions all incorrectly threw an error if kappa
+was alright.
+
+I've now moved this test into the check() functions, cleaning
+code a little bit.
+
+
+src/include/stir/recon_buildblock/LogcoshPrior.h
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 11:22:03 +0100  Kris Thielemans  
+
+correct array_to_device for non-contiguous case
+
+
+src/include/stir/cuda_utilities.h
+
+-------------------------------
+Sun, 7 Jul 2024 10:45:54 +0100  Kris Thielemans  
+
+decrease verbosity of SeperableGaussianFilter
+
+
+src/buildblock/SeparableGaussianArrayFilter.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 09:45:56 +0100  Kris Thielemans  
+
+Cuda RDP fixes
+- there was a missing epsilon in the gradient kernel
+- abs was used, which is potentially dangerous, so now using std::abs
+- switch value back to double, as otherwise test_priors still failed
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sun, 7 Jul 2024 02:00:43 +0100  Kris Thielemans  
+
+add CudaRDP to test_priors (but fails)
+Problems with numerical gradients.
+
+I had to revert the change to
+GeneralisedPrior::set_penalisation_factor which set
+_already_set_up to false, as that made test_priors fail
+on all priors (as the test changes the penalisation factor)
+
+
+src/include/stir/recon_buildblock/GeneralisedPrior.inl
+src/recon_test/test_priors.cxx
+
+-------------------------------
+Sun, 7 Jul 2024 01:17:32 +0100  Kris Thielemans  
+
+CudaRDP: put cppdim3 type in the class definition
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sun, 7 Jul 2024 01:04:41 +0100  Kris Thielemans  
+
+CudaRDP: more checks and document 3x3x3 limitation
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sun, 7 Jul 2024 00:34:27 +0100  Kris Thielemans  
+
+correct check for kappa
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sun, 7 Jul 2024 00:06:09 +0100  Kris Thielemans  
+
+CudaRDP: minor clean-up
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sat, 6 Jul 2024 23:59:19 +0100  Kris Thielemans  
+
+don't run CUDA tests on GHA
+
+
+recon_test_pack/run_test_simulate_and_recon.sh
+
+-------------------------------
+Sat, 6 Jul 2024 23:14:58 +0100  Kris Thielemans  
+
+CudaRDP: use float in kernel for value
+No need to compute the value per element as double.
+it is only the accumulation that where it matters.
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sat, 6 Jul 2024 23:07:15 +0100  Kris Thielemans  
+
+CudaRDP: move weights and kappa to set_up
+This allows keeping them on the device, resulting in some speed-up
+(as well as shorter code).
+
+Adjust test to call set_up() after all set_() functions, and split
+timings for value and gradient.
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+src/utilities/cuda_rdp_test.cxx
+
+-------------------------------
+Sat, 6 Jul 2024 23:03:00 +0100  Kris Thielemans  
+
+more *Prior::set_* functions require set_up()
+set_penalisation_factor and RDP::set_weights now set
+_already_set_up=false to prepare for moving more
+things to set_up() (from compute_*())
+
+
+src/include/stir/recon_buildblock/GeneralisedPrior.inl
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Sat, 6 Jul 2024 18:33:00 +0100  Kris Thielemans  
+
+create helper functions for Arrays <-> CUDA device
+
+
+src/include/stir/cuda_utilities.h
+src/include/stir/doxygengroups.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sat, 6 Jul 2024 10:19:24 +0100  Kris Thielemans  
+
+fix CUDA error handling
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Sat, 6 Jul 2024 09:50:29 +0100  Kris Thielemans  
+
+[SWIG] reduce some SWIG warnings
+Before SWIG 4.2, "using base::base" was not supported.
+In SWIG 4.2, there still is a problem with templates
+https://github.com/swig/swig/issues/2951
+
+
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/RegisteredParsingObject.h
+
+-------------------------------
+Sat, 6 Jul 2024 08:03:57 +0100  Kris Thielemans  
+
+[recon_test_pack] remove set -e to avoid early exit
+We had "set -e" on GHA to exit on error, but this meant that the
+"ls CUDA/*par" statement caused exit if there is no file.
+
+In fact, we check all exit values anyway, so this statement was
+not necessary.
+
+
+recon_test_pack/run_test_simulate_and_recon.sh
+
+-------------------------------
+Fri, 5 Jul 2024 20:57:59 +0100  Kris Thielemans  
+
+disable using constructors for SWIG
+needs SWIG 4.2
+
+
+src/include/stir/RegisteredParsingObject.h
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+
+-------------------------------
+Fri, 5 Jul 2024 00:54:53 +0100  Kris Thielemans  
+
+[CMake] only compile cuda_rdptest if CUDA is enabled
+
+
+src/utilities/CMakeLists.txt
+
+-------------------------------
+Fri, 5 Jul 2024 00:52:05 +0100  Kris Thielemans  
+
+run dos2unix
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 5 Jul 2024 00:51:36 +0100  Kris Thielemans  
+
+[CMake] use check_language(CUDA)
+enable_language(CUDA OPTIONAL) is not yet functional, so use
+check_language instead
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 5 Jul 2024 00:38:16 +0100  Kris Thielemans  
+
+minor clean-up of CUDA RDP
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Fri, 5 Jul 2024 00:30:20 +0100  Kris Thielemans  
+
+[recon_test_pack] add a test for parallelproj and CUDARDP
+add it to run_test_simulat_and_recon.sh
+
+
+recon_test_pack/CUDA/OSMAPOSL_test_sim_Parallelproj_CUDARDP.par
+recon_test_pack/run_test_simulate_and_recon.sh
+
+-------------------------------
+Thu, 4 Jul 2024 23:55:15 +0100  Kris Thielemans  
+
+run clang-format on .cu files
+
+
+.pre-commit-config.yaml
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Thu, 4 Jul 2024 23:52:12 +0100  Kris Thielemans  
+
+fix set_up() signature for both RDP versions
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/include/stir/recon_buildblock/RelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Thu, 4 Jul 2024 23:09:51 +0100  Kris Thielemans  
+
+fix CUDARDP constructors and set_up etc
+Also add a bit more to the test.
+
+Convert DOS EOL to Unix and run clang-format
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+src/utilities/cuda_rdp_test.cxx
+
+-------------------------------
+Thu, 4 Jul 2024 23:05:42 +0100  Kris Thielemans  
+
+using parent constructors in RegisteredParsingObject
+This imports the constructors via `using`, which makes
+it possible to do the same in derived classes.
+
+
+src/include/stir/RegisteredParsingObject.h
+
+-------------------------------
+Thu, 4 Jul 2024 22:13:36 +0100  Kris Thielemans  
+
+Merge pull request #1464 from NicoleJurjew/addTOFmash_SSRB
+Allow TOF mashing in SSRB
+
+-------------------------------
+Thu, 4 Jul 2024 16:30:23 +0200  Imraj Singh  
+
+Merge branch 'UCL:master' into cuda_stir
+
+
+-------------------------------
+Thu, 4 Jul 2024 14:29:37 +0000  Imraj-Singh  
+
+Added small test, constructors not inheriting correctly causing an error
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+src/utilities/CMakeLists.txt
+src/utilities/cuda_rdp_test.cxx
+
+-------------------------------
+Thu, 4 Jul 2024 13:27:41 +0100  Kris Thielemans  
+
+change max_rd for STE test-case
+span=2, max_rd=2 is unexpected, and leads to a bug in FBP3DRP etc.
+Changing to the expected case of max_rd=3 for now.
+
+
+recon_test_pack/simulate_PET_data_for_tests.sh
+
+-------------------------------
+Thu, 4 Jul 2024 13:26:20 +0100  Kris Thielemans  
+
+convert some old-style warning() to new-style
+When using a single int as argument, the old style version is
+actually not used anymore due to the overload with the verbosity presumably.
+So use boost::format
+
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+
+-------------------------------
+Thu, 4 Jul 2024 11:55:50 +0000  Imraj-Singh  
+
+Not working, but added the functionality and the registery works thanks to Kris
+
+
+CMakeLists.txt
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Wed, 3 Jul 2024 15:09:19 +0100  Kris Thielemans  
+
+Merge pull request #1466 from markus-jehl/issue/1465-axial-downsampling-and-symmetry-fix
+Axial symmetry fixes for BlocksOnCylindrical
+
+-------------------------------
+Wed, 3 Jul 2024 14:51:38 +0100  Kris Thielemans  
+
+add recon_test_pack/run_test_SSRB.sh
+
+
+documentation/release_6.2.htm
+recon_test_pack/README.txt
+recon_test_pack/run_test_SSRB.sh
+
+-------------------------------
+Wed, 3 Jul 2024 14:38:14 +0100  Kris Thielemans  
+
+avoid caching matrix for forward projection
+Using the cache has very little impact on run-time for a single forward projection,
+but affects memory a lot. This is especially important for TOF.
+
+
+recon_test_pack/forward_projector_proj_matrix_ray_tracing.par
+
+-------------------------------
+Wed, 3 Jul 2024 08:30:27 +0100  Kris Thielemans  
+
+make simulate_PET_data_for_tests.sh more flexible
+add a few arguments and configurable environment variables
+to be able to modify the output of the simulation
+
+
+recon_test_pack/simulate_PET_data_for_tests.sh
+
+-------------------------------
+Wed, 3 Jul 2024 08:26:21 +0100  Kris Thielemans  
+
+SSRB: norm should not count TOF bins
+even if do_norm=1, we should not normalise with the number of TOF bins.
+This is because the projectors will take the width of the TOF bin
+properly into account. (In contrast, for "span", they don't).
+
+
+src/buildblock/SSRB.cxx
+src/include/stir/SSRB.h
+
+-------------------------------
+Mon, 1 Jul 2024 16:07:43 +0100  Kris Thielemans  
+
+use in/out_bin consistently
+This results in shorter code, but also consistent.
+
+There was a "problem" in the previous version that the TOF
+bin was actually used as tang_pos_num when determining get_m()
+(but it didn't create a problem as currently get_m() in independent of both).
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Sun, 30 Jun 2024 16:56:30 +0100  Imraj Singh  
+
+Merge branch 'UCL:master' into cuda_stir
+
+
+-------------------------------
+Thu, 27 Jun 2024 08:04:22 +0000  Markus Jehl  
+
+Fixing silly bug that caused the recon_test_pack failure.
+
+
+src/scatter_buildblock/ScatterSimulation.cxx
+
+-------------------------------
+Wed, 26 Jun 2024 12:21:51 +0000  Markus Jehl  
+
+[ci skip] Remove unintended change.
+
+
+src/include/stir/Scanner.h
+
+-------------------------------
+Wed, 26 Jun 2024 10:01:46 +0000  Markus Jehl  
+
+Code review changes.
+
+
+documentation/release_6.2.htm
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/include/stir/Scanner.inl
+src/scatter_buildblock/ScatterSimulation.cxx
+src/test/test_Scanner.cxx
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Tue, 25 Jun 2024 08:26:22 +0000  Markus Jehl  
+
+One more setting needed updating.
+
+
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Tue, 25 Jun 2024 07:13:07 +0000  Markus Jehl  
+
+Fix axial scanner downsampling and correct handling of gaps to make BlocksOnCylindrical axially symmetric.
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Mon, 24 Jun 2024 14:08:43 +0100  NicoleJurjew  
+
+fix SSRB for nonTOF data
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Mon, 24 Jun 2024 10:22:51 +0100  NicoleJurjew  
+
+add TOF mashing to release notes
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Mon, 24 Jun 2024 10:12:04 +0100  NicoleJurjew  
+
+Merge remote-tracking branch 'origin/master' into addTOFmash_SSRB
+
+
+-------------------------------
+Sun, 23 Jun 2024 22:07:44 +0100  Kris Thielemans  
+
+Merge pull request #1463 from KrisThielemans/ScatterDefaultMinScale
+lower default min-scale-factor for scatter tail-fitting
+
+-------------------------------
+Sun, 23 Jun 2024 10:11:56 +0000  Kris Thielemans  
+
+lower default min-scale-factor for scatter tail-fitting
+Set default to 0.05 (was .4). This prevents problems with
+the mMR (and others?).
+
+Addresses https://github.com/UCL/STIR/issues/1280
+
+
+documentation/release_6.2.htm
+examples/samples/scatter_estimation_par_files/scatter_estimation.par
+src/scatter_buildblock/ScatterEstimation.cxx
+
+-------------------------------
+Fri, 21 Jun 2024 19:48:13 +0100  markus-jehl  
+
+Reverting a change that broke the blocks on cylindrical geometry. (#1462)
+* Reverting a change that broke the blocks on cylindrical geometry.
+
+* Fix for the blocks on cylindrical test by making the bin search more reliable.
+
+* Fixing the other test by simplifying and fixing the calculation of csi using the same logic than in plot_scanner_LORs.py
+
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_6.2.htm
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/test/test_DetectorCoordinateMap.cxx
+
+-------------------------------
+Thu, 20 Jun 2024 11:51:41 +0100  NicoleJurjew  
+
+src/buildblock/SSRB.cxx: corrected normalization
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Wed, 19 Jun 2024 10:11:29 +0100  Kris Thielemans  
+
+Merge pull request #1429 from markus-jehl/issue/1428-force-use-actual-detector-boundaries-to-true-for-blocks-on-cylindrical
+Force use_actual_detector_boundaries to true for BlocksOnCylindrical
+
+-------------------------------
+Wed, 19 Jun 2024 10:09:18 +0100  Kris Thielemans  
+
+Merge pull request #1454 from markus-jehl/issue/1445-memory-leak-in-interfile-reading
+Fix for memory leak introduced in commit a5582cd.
+
+-------------------------------
+Tue, 18 Jun 2024 07:47:52 +0100  Kris Thielemans  
+
+reorder VectorWithOffset constructor args (#1460)
+reorder VectorWithOffset constructor args
+
+Fixes #1459
+
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Tue, 18 Jun 2024 00:13:35 +0100  Kris Thielemans  
+
+set VERSION to 6.2.0 [ci skip]
+Helps the SIRF SuperBuild to find the correct install location.
+
+
+VERSION.txt
+
+-------------------------------
+Mon, 17 Jun 2024 14:59:57 +0100  Kris Thielemans  
+
+Auto use_tofsens (#1458)
+automatically use TOF sensitivity calculation for TOF norm
+
+We default use_tofsens=false, as this is the best for most scanners. However, for
+Siemens Vision 600 (and others), the e7tools norm is TOF. This resulted in a
+call to  error().
+
+This update detects if the norm uses BinNormalisationFromProjData with TOF data,
+and sets use_tofsens=true if it is. It does this by adding `is_TOF_only_norm()` to 
+`BinNormalisation` (defaulting to `false`), and overriding it for certain classes.
+
+
+documentation/release_6.2.htm
+src/include/stir/recon_buildblock/BinNormalisation.h
+src/include/stir/recon_buildblock/BinNormalisationFromProjData.h
+src/include/stir/recon_buildblock/ChainedBinNormalisation.h
+src/recon_buildblock/BinNormalisationFromProjData.cxx
+src/recon_buildblock/ChainedBinNormalisation.cxx
+src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Thu, 13 Jun 2024 09:38:47 +0000  Markus Jehl  
+
+Fix for memory leak introduced in commit a5582cd.
+
+
+src/buildblock/ProjData.cxx
+
+-------------------------------
+Thu, 13 Jun 2024 09:55:40 +0100  NicoleJurjew  
+
+STIR changes to execute script that deals with e7tools data for the Siemens Vision (#1453)
+changes to be able to deal with script to preprocess Siemens data:
+- add SSRB/inverse_SSRB to SWIG
+- minor changes convertSiemensToInterfile.sh
+
+documentation/release_6.2.htm
+scripts/IO/convertSiemensInterfileToSTIR.sh
+src/swig/stir.i
+src/swig/stir_projdata.i
+
+-------------------------------
+Wed, 12 Jun 2024 22:45:08 +0100  Kris Thielemans  
+
+Merge pull request #1449 from KrisThielemans/moreOpenMP
+More openMP: find_min/max() and sum()
+
+-------------------------------
+Wed, 12 Jun 2024 22:44:41 +0100  Kris Thielemans  
+
+update release notes
+[ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Wed, 12 Jun 2024 01:50:14 +0100  Kris Thielemans  
+
+[SWIG] fix SPECTUB matrix typo
+Fixes #1450
+
+
+src/swig/stir_projectors.i
+
+-------------------------------
+Mon, 10 Jun 2024 13:55:03 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into moreOpenMP
+
+
+-------------------------------
+Mon, 10 Jun 2024 13:10:01 +0100  Kris Thielemans  
+
+Merge pull request #1442 from KrisThielemans/NoBoostIteratorAdaptor
+Remove boost::iterator_adaptor from VectorWithOffset
+
+-------------------------------
+Sun, 9 Jun 2024 13:28:09 +0100  Kris Thielemans  
+
+[CMAKE] add explicit -latomic for clang
+work around https://gitlab.kitware.com/cmake/cmake/-/issues/26037
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Sun, 9 Jun 2024 05:18:59 +0100  Kris Thielemans  
+
+avoid compiler warnings of unused variable
+
+
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Sun, 9 Jun 2024 02:50:55 +0100  Kris Thielemans  
+
+use openmp parallel for Array<1,...> sum()
+
+
+src/include/stir/Array.inl
+
+-------------------------------
+Sun, 9 Jun 2024 02:50:55 +0100  Kris Thielemans  
+
+OpenMP parallelise Array::sum/find_max/find_min
+implement the easy reduction clauses
+
+
+src/include/stir/Array.inl
+
+-------------------------------
+Sun, 9 Jun 2024 02:28:06 +0100  Kris Thielemans  
+
+Merge pull request #1448 from KrisThielemans/ProjDataMaths
+add numerical operations to ProjData
+
+-------------------------------
+Sun, 9 Jun 2024 02:26:55 +0100  Kris Thielemans  
+
+update release notes for ProjData numerics
+[ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Sat, 8 Jun 2024 22:38:50 +0100  Kris Thielemans  
+
+add numerical operations to ProjData
+adding norm(), sum(), find_min(), find_max() and +=, -=, *= and /-
+
+
+src/buildblock/ProjData.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjData.h
+src/include/stir/ProjDataInMemory.h
+src/test/test_proj_data.cxx
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Fri, 7 Jun 2024 07:26:43 +0100  Kris Thielemans  
+
+Merge pull request #1447 from KrisThielemans/fix_BinNormalisation_apply_undo
+Fix missing BinNormalisation*::apply/undo(ProjData&)
+
+-------------------------------
+Fri, 7 Jun 2024 07:12:24 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into NoBoostIteratorAdaptor
+
+
+-------------------------------
+Fri, 7 Jun 2024 06:00:42 +0100  Kris Thielemans  
+
+remove duplication of using statements
+
+
+src/include/stir/recon_buildblock/BinNormalisationPETFromComponents.h
+
+-------------------------------
+Fri, 7 Jun 2024 05:27:29 +0100  Kris Thielemans  
+
+[SWIG] re-ordering of includes to fix doc
+DataSymmetriesForViewSegmentNumbers.h was included after stir_projdata.i,
+meaning that `get_related_viewgrams` had documentation problems.
+
+
+src/swig/CMakeLists.txt
+src/swig/stir.i
+src/swig/stir_projdata.i
+src/swig/stir_projdata_coords.i
+
+-------------------------------
+Fri, 7 Jun 2024 05:23:48 +0100  Kris Thielemans  
+
+small correction to doxygen
+
+
+src/include/stir/Array.h
+
+-------------------------------
+Fri, 7 Jun 2024 05:22:58 +0100  Kris Thielemans  
+
+add all apply/undo from BinNormalisation
+Most derived classes did not have `apply(ProjData&)` etc.
+
+Fixes #1175
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromAttenuationImage.h
+src/include/stir/recon_buildblock/BinNormalisationFromProjData.h
+src/include/stir/recon_buildblock/BinNormalisationPETFromComponents.h
+src/include/stir/recon_buildblock/BinNormalisationSPECT.h
+src/include/stir/recon_buildblock/ChainedBinNormalisation.h
+
+-------------------------------
+Fri, 7 Jun 2024 05:15:01 +0100  Kris Thielemans  
+
+add fall-through for Array::is_contiguous() (#1446)
+Make sure it always returns `true` when getting out of the loop.
+
+Fixing my suggestion to @markus-jehl (sorry!)
+
+src/include/stir/Array.inl
+
+-------------------------------
+Thu, 6 Jun 2024 16:53:32 +0100  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into NoBoostIteratorAdaptor
+
+
+-------------------------------
+Thu, 6 Jun 2024 16:30:13 +0100  Kris Thielemans  
+
+Merge pull request #1444 from markus-jehl/issue/1443-bugfix-for-array-copy-memory-leak
+Fixing bug in Array::is_contiguous() that created false positives leading to memory leaks and wrong results
+
+
+-------------------------------
+Thu, 6 Jun 2024 14:07:37 +0000  Markus Jehl  
+
+Fixing bug in is_contiguous() that created false positives leading to memory leaks in copying data.
+
+
+src/include/stir/Array.inl
+
+-------------------------------
+Tue, 4 Jun 2024 09:23:18 +0000  Imraj-Singh  
+
+error handling in cmake
+
+
+CMakeLists.txt
+
+-------------------------------
+Tue, 4 Jun 2024 09:39:45 +0100  Imraj Singh  
+
+Merge branch 'UCL:master' into cuda_stir
+
+
+-------------------------------
+Mon, 3 Jun 2024 13:31:05 +0100  Kris Thielemans  
+
+a bit more diagnostics when a test fails
+
+
+src/test/test_proj_data.cxx
+
+-------------------------------
+Mon, 3 Jun 2024 12:00:28 +0100  NicoleJurjew  
+
+src/swig/stir.i & src/swig/stir_projdata.i: add iSSRB and SSRB to the SWIG-interface
+
+
+src/swig/stir.i
+src/swig/stir_projdata.i
+
+-------------------------------
+Mon, 3 Jun 2024 11:50:17 +0100  NicoleJurjew  
+
+src/buildblock/SSRB.cxx: apply clang format
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Mon, 3 Jun 2024 11:45:13 +0100  NicoleJurjew  
+
+src/buildblock/SSRB.cxx: bugfix: connect in_tof_bin to out_tof_bin src/utilities/SSRB.cxx: formatting of help doc-string
+
+
+src/buildblock/SSRB.cxx
+src/utilities/SSRB.cxx
+
+-------------------------------
+Mon, 3 Jun 2024 05:21:40 +0100  Kris Thielemans  
+
+include boost header
+removed from VectorWithOffset so have to add it here
+
+
+src/include/stir/FullArrayIterator.h
+
+-------------------------------
+Mon, 3 Jun 2024 04:23:40 +0100  Kris Thielemans  
+
+use std::fill in VectorWithOffset::fill
+
+
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Mon, 3 Jun 2024 04:23:40 +0100  Kris Thielemans  
+
+simplify VectorWithOffset::iterator
+- remove boost::iterator_adaptor, detail::VectorWithOffset_iter is
+no longer needed, and begin() et al. now just return T*, allowing compilers
+to speed up std::copy etc
+- use std::make_reverse_iterator as opposed to the boost version
+
+
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Mon, 3 Jun 2024 04:23:40 +0100  Kris Thielemans  
+
+extra timings in stir_timings
+- add more timings for basic building blocks (+=, *= etc)
+- allow skipping image/projdata timings
+
+
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Mon, 3 Jun 2024 02:20:37 +0100  Kris Thielemans  
+
+fix indentation [skip appveyor]
+
+
+src/include/stir/HigherPrecision.h
+
+-------------------------------
+Sun, 2 Jun 2024 02:03:17 +0100  Kris Thielemans  
+
+minor fixes to HigherPrecision
+- fix include "guard"
+- fix doxygen
+
+
+src/include/stir/HigherPrecision.h
+
+-------------------------------
+Fri, 31 May 2024 16:31:51 +0100  Kris Thielemans  
+
+Merge pull request #1439 from KrisThielemans/ProjDataOperations
+add ProjDataInMemory numerical operations
+
+-------------------------------
+Fri, 31 May 2024 16:28:35 +0100  Kris Thielemans  
+
+set version number to 6.2.0:ProjDataInMemory new features
+[ci skip]
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 31 May 2024 16:22:59 +0100  Kris Thielemans  
+
+update release notes
+[ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Fri, 31 May 2024 15:11:57 +0000  Kris Thielemans  
+
+fix for SWIG
+swig cannot handle private typedef
+
+
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Fri, 31 May 2024 15:11:57 +0000  Kris Thielemans  
+
+[CMake] fix dependency on buildblock
+now needed for ProjDataInfo::operator!=
+
+
+src/test/numerics/CMakeLists.txt
+
+-------------------------------
+Fri, 31 May 2024 15:11:57 +0000  Kris Thielemans  
+
+add numerical operators to ProjDataInMemory
+essentially just expose Array<1,float> methods
+
+
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataInMemory.h
+src/include/stir/RunTests.h
+src/test/test_proj_data_maths.cxx
+
+-------------------------------
+Fri, 31 May 2024 04:58:54 +0100  Kris Thielemans  
+
+compute Array::sum() at higher precision
+- add helper class HigherPrecision to convert float to double ec
+- Array:sum() now accumulates into a type of higher precision. End result is still in
+original type.
+
+
+src/include/stir/Array.inl
+src/include/stir/HigherPrecision.h
+
+-------------------------------
+Fri, 31 May 2024 01:11:14 +0100  Kris Thielemans  
+
+Merge pull request #1438 from KrisThielemans/useContiguousArraysMore
+Use contiguous Arrays more
+
+-------------------------------
+Fri, 31 May 2024 01:09:20 +0100  Kris Thielemans  
+
+update release notes
+[ci skip]
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Tue, 28 May 2024 03:25:13 +0100  Kris Thielemans  
+
+copy_to/fill_from specialisations for contiguous Arrays
+use them in ProjDataInMemory
+
+
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/copy_fill.h
+src/test/test_Array.cxx
+src/test/test_proj_data.cxx
+
+-------------------------------
+Tue, 28 May 2024 03:25:13 +0100  Kris Thielemans  
+
+small fixes in doxygen for Array
+
+
+src/include/stir/Array.h
+
+-------------------------------
+Tue, 28 May 2024 03:25:13 +0100  Kris Thielemans  
+
+minor clean-up of ProjDataInMemory
+- remove some occurences if #ifdef STIR_TOF
+- use newer constructors taking a Bin
+
+
+src/buildblock/ProjDataInMemory.cxx
+
+-------------------------------
+Thu, 23 May 2024 23:19:03 +0100  Kris Thielemans  
+
+Merge pull request #1236 from KrisThielemans/Array
+update Array hierarchy and allocate nD arrays in a contiguous block by default
+
+-------------------------------
+Thu, 23 May 2024 23:18:01 +0100  Kris Thielemans  
+
+created release_6.2.htm with info on Array PR
+
+
+documentation/release_6.2.htm
+
+-------------------------------
+Tue, 21 May 2024 09:39:26 +0100  Kris Thielemans  
+
+use conda for pre-commit/clang-format versioning (#1435)
+- use conda for pre-commit/clang-format versioning
+- update devel/git-hooks.md documentation accordingly
+
+.github/workflows/pre-commit-check.yml
+documentation/devel/git-hooks.md
+pre-commit-environment.yml
+
+-------------------------------
+Fri, 17 May 2024 22:19:21 +0100  Kris Thielemans  
+
+Avoid image copies in Parallelproj
+if data is contiguous, we don't need an extra copy.
+
+
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Fri, 17 May 2024 20:40:28 +0100  Kris Thielemans  
+
+[SWIG] avoid warning on stir::swap
+
+
+src/swig/stir.i
+
+-------------------------------
+Fri, 17 May 2024 20:27:43 +0100  Kris Thielemans  
+
+optimise reading/writing for contiguous arrays
+
+
+src/include/stir/IO/read_data.h
+src/include/stir/IO/read_data.inl
+src/include/stir/IO/read_data_1d.h
+src/include/stir/IO/read_data_1d.inl
+src/include/stir/IO/write_data_1d.h
+src/include/stir/IO/write_data_1d.inl
+
+-------------------------------
+Fri, 17 May 2024 13:11:12 +0000  Imraj-Singh  
+
+Register errors
+
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Fri, 17 May 2024 12:19:58 +0100  Kris Thielemans  
+
+[CMake] require ROOT 6.28.0 (needed for C++-17)
+
+
+CMakeLists.txt
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+[CMake] fix FindCERN_ROOT to always check version
+This was previously only done when finding the CONFIG file
+
+
+src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+remove VS 2015 job as no C++-17 for shared_ptr<float[]>
+
+
+.appveyor.yml
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+remove experimental/memory work-around for shared_ptr
+This was an attempt to handle pre-C++-17, but it would need
+work for make_shared.  In any case, it isn't available on VS compilers
+apparently.
+
+
+src/include/stir/shared_ptr.h
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+run clang-format
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/IndexRange.inl
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/include/stir/shared_ptr.h
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: clean-up constructors that take existing data
+- get rid of copy_data argument for constructors but use sensible defaults
+- add VectorWithOffset::init such that Array doesn't need to know much
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: remove private member _owns_memory_for_data
+no longer needed as we're using a shared<T[]> and can test that.
+
+
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+[SWIG] ignore swap and *full_data_ptr
+
+
+src/swig/stir.i
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: use shared_ptr<T[]> for VectorWithOffset
+all Array tests pass
+
+
+src/include/stir/Array.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+require C++-17
+needed for shared_ptr<T[]>, unless we'd implement deleters ourselves
+
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+src/include/stir/Array.inl
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: first version using shared_ptr<T[]> (WIP)
+nD Array's now store the "full" memory via shared_ptr<T[]>. This automates
+memory management. 1D Array's are still TODO.
+
+test_Array now works ok, except for 1D arrays.
+
+Some testing code remains in test_Array
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/shared_ptr.h
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+add Array constructor from ptr [ci skip]
+make Array:init from ptr private
+
+test_Array is crashing due to  memory bug in grow
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+resolve std::swap for VC
+Seems that VC gets confused by the new Array::swap, so add std:: explicitly
+
+
+src/buildblock/ProjDataInfoCylindrical.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: remove wrong/not implemented constructors
+The NumericVectorWithOffset constructor would only work when T=NUMBER.
+
+The 1D Array constructor taking an `elemT*` wasn't implemented yet.
+
+
+src/include/stir/Array.h
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: clean-up
+- make sure it works with other STIR classes, not just floats etc
+- re-instate VectorWithOffset constructors that take both start and end pointers for backwards compatibility
+
+
+src/include/stir/Array.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: add move constructors, swap and missing assignment operators
+Most of the implementation uses the copy-and-swap idiom.
+
+I needed copy-constructors as well, as the default generated ones no longer
+existed or were inappropriate. We should now be following "the rule of five".
+
+This now passes test_Array, including with valgrind.
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+Array: first version that defaults to continuous allocation
+Currently only applies to the constructor from an IndexRange.
+
+Tests fail due to missing assignment operator. Best to use the
+copy-and-swap idiom.
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+speed-up IndexRange::size_all for regular ranges
+
+
+src/include/stir/IndexRange.inl
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+add some timings to test_Array (to be disabled later)
+
+
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+allow Vector/Array construction from existing memory
+needs more tests
+
+
+src/include/stir/Array.h
+src/include/stir/Array.inl
+src/include/stir/NumericVectorWithOffset.h
+src/include/stir/NumericVectorWithOffset.inl
+src/include/stir/VectorWithOffset.h
+src/include/stir/VectorWithOffset.inl
+src/test/test_Array.cxx
+
+-------------------------------
+Fri, 17 May 2024 12:18:16 +0100  Kris Thielemans  
+
+added size_all() to IndexRange
+
+
+src/include/stir/IndexRange.h
+src/include/stir/IndexRange.inl
+
+-------------------------------
+Thu, 16 May 2024 13:47:02 +0100  Kris Thielemans  
+
+change comment to avoid confusing doxygen [ci skip]
+Using /// means that doxygen will interpret it, which is
+not what we wanted here.
+
+
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+
+-------------------------------
+Thu, 16 May 2024 19:58:07 +0800  Imraj Singh  
+
+Merge branch 'UCL:master' into cuda_stir
+
+
+-------------------------------
 Thu, 16 May 2024 10:46:39 +0100  Kris Thielemans  
 
 Merge pull request #1433 from KrisThielemans/gitFameUpdates
@@ -95,6 +1673,14 @@ Fixes #1305
 
 src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
 src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+
+-------------------------------
+Wed, 15 May 2024 15:06:28 +0000  Markus Jehl  
+
+Force use_actual_detector_boundaries to true for BlocksOnCylindrical geometry.
+
+
+src/recon_buildblock/ProjMatrixByBinUsingRayTracing.cxx
 
 -------------------------------
 Wed, 15 May 2024 14:21:50 +0100  markus-jehl  
@@ -484,6 +2070,106 @@ This will allow implementation specific tests for a particular prior.
 
 
 src/recon_test/test_priors.cxx
+
+-------------------------------
+Thu, 25 Apr 2024 14:54:53 +0000  Imraj-Singh  
+
+update cuda error
+
+
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Thu, 25 Apr 2024 14:48:02 +0000  Imraj-Singh  
+
+attempting to get the registries to work...
+
+
+src/cmake/STIRConfig.cmake.in
+src/cmake/STIRConfig.h.in
+src/recon_buildblock/recon_buildblock_registries.cxx
+
+-------------------------------
+Thu, 25 Apr 2024 14:47:31 +0000  Imraj-Singh  
+
+updated Cmakelists
+
+
+CMakeLists.txt
+src/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 25 Apr 2024 14:46:47 +0000  Imraj-Singh  
+
+changes to cudarelativedifference prior const etc
+
+
+src/include/stir/recon_buildblock/CUDA/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CUDA/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Thu, 25 Apr 2024 01:44:20 +0000  Imraj-Singh  
+
+registry add and cmake cuda package/include dirs
+
+
+CMakeLists.txt
+src/cmake/STIRConfig.h.in
+
+-------------------------------
+Thu, 25 Apr 2024 01:24:43 +0000  Imraj-Singh  
+
+attempting to add to registry
+
+
+src/cmake/STIRConfig.cmake.in
+src/recon_buildblock/recon_buildblock_registries.cxx
+
+-------------------------------
+Thu, 25 Apr 2024 00:02:20 +0000  Imraj-Singh  
+
+first attempt at integration with stir
+
+
+CMakeLists.txt
+src/include/stir/recon_buildblock/CUDA_stir/CudaRelativeDifferencePrior.h
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/CUDA_stir/CudaRelativeDifferencePrior.cu
+
+-------------------------------
+Fri, 15 Mar 2024 15:21:34 +0000  NicoleJurjew  
+
+remove check for tof-bins
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Fri, 15 Mar 2024 13:33:57 +0000  NicoleJurjew  
+
+SSRB: include number of TOF bins to combine added in utility
+
+
+src/buildblock/SSRB.cxx
+src/include/stir/SSRB.h
+src/utilities/SSRB.cxx
+
+-------------------------------
+Thu, 14 Mar 2024 15:37:26 +0000  NicoleJurjew  
+
+SSRB: formatting (clang)
+
+
+src/buildblock/SSRB.cxx
+
+-------------------------------
+Thu, 14 Mar 2024 15:34:38 +0000  NicoleJurjew  
+
+SSRB: add TOF mashing funcionality (BETA)
+
+
+src/buildblock/SSRB.cxx
 
 -------------------------------
 Wed, 21 Feb 2024 09:56:14 +0000  Kris Thielemans  

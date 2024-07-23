@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a>  </div>
+<a href="#files">Files</a> &#124;
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Tests of reconstruction building blocks<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__alltest.html">Test code for STIR</a></div></div>  </div>
 </div><!--header-->
@@ -49,7 +50,8 @@ Collaboration diagram for Tests of reconstruction building blocks:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__recontest.png" border="0" alt="" usemap="#group____recontest"/>
 <map name="group____recontest" id="group____recontest">
-<area shape="rect" id="node2" href="group__alltest.html" title="Test code for STIR" alt="" coords="5,13,140,39"/>
+<area shape="rect" id="node2" href="group__priors.html" title="Priors and penalties\l for MAP" alt="" coords="536,58,673,99"/>
+<area shape="rect" id="node3" href="group__alltest.html" title="Test code for STIR" alt="" coords="5,65,140,92"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -68,15 +70,33 @@ Files</h2></td></tr>
 <tr class="memitem:test__blocks__on__cylindrical__projectors_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__blocks__on__cylindrical__projectors_8cxx.html">test_blocks_on_cylindrical_projectors.cxx</a></td></tr>
 <tr class="memdesc:test__blocks__on__cylindrical__projectors_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program for back projection and forward projection using stir::ProjDataInfoBlockOnCylindrical. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:test__geometry__blocks__on__cylindrical_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__geometry__blocks__on__cylindrical_8cxx.html">test_geometry_blocks_on_cylindrical.cxx</a></td></tr>
+<tr class="memdesc:test__geometry__blocks__on__cylindrical_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program to ensure the axial coordinates of blocks on cylindrical are monotonic with axial indices. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:test__DetectorCoordinateMap_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__DetectorCoordinateMap_8cxx.html">test_DetectorCoordinateMap.cxx</a></td></tr>
 <tr class="memdesc:test__DetectorCoordinateMap_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test program for detection position map using stir::ProjDataInfoBlockOnCylindrical. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPriorTests.html">stir::QuadraticPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>  <a href="classstir_1_1QuadraticPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePriorTests.html">stir::RelativeDifferencePriorTests&lt; RDP &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>  <a href="classstir_1_1RelativeDifferencePriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPriorTests.html">stir::PLSPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1PLSPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements the anatomical penalty function...">PLSPrior</a>  <a href="classstir_1_1PLSPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogCoshPriorTests.html">stir::LogCoshPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for LogCoshPrior  <a href="classstir_1_1LogCoshPriorTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,0 +1,6 @@
+<map id="stir::LogCoshPriorTests" name="stir::LogCoshPriorTests">
+<area shape="rect" id="node2" href="$classstir_1_1GeneralisedPriorTests.html" title="Test class for QuadraticPrior, RelativeDifferencePrior, CudaRelativeDifferencePrior and LogcoshPrior..." alt="" coords="873,27,1051,54"/>
+<area shape="rect" id="node3" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="571,5,824,76"/>
+<area shape="rect" id="node4" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,17,111,43"/>
+<area shape="rect" id="node5" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,48,372,89"/>
+</map>

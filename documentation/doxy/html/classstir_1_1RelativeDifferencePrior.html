@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -62,11 +62,13 @@ Inheritance diagram for stir::RelativeDifferencePrior&lt; elemT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1RelativeDifferencePrior__inherit__graph.png" border="0" usemap="#stir_1_1RelativeDifferencePrior_3_01elemT_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1RelativeDifferencePrior_3_01elemT_01_4_inherit__map" id="stir_1_1RelativeDifferencePrior_3_01elemT_01_4_inherit__map">
+<area shape="rect" id="node7" href="classstir_1_1RegisteredParsingObject.html" title="RegisteredParsingObject\l\&lt; CudaRelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, RelativeDifferencePrior\l\&lt; elemT \&gt; \&gt;" alt="" coords="1411,66,1619,166"/>
 <area shape="rect" id="node2" href="classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RelativeDifferencePrior\l\&lt; elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="883,66,1156,166"/>
 <area shape="rect" id="node3" href="classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="409,41,563,97"/>
 <area shape="rect" id="node4" href="classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="5,5,213,61"/>
 <area shape="rect" id="node5" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined..." alt="" coords="37,86,181,127"/>
 <area shape="rect" id="node6" href="classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="389,142,583,183"/>
+<area shape="rect" id="node8" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. " alt="" coords="1668,95,1855,137"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -94,8 +96,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_Hessian</b> (
 <tr class="memitem:ae4877906d02d73842ebdccb429d0359a"><td class="memItemLeft" align="right" valign="top"><a id="ae4877906d02d73842ebdccb429d0359a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_multiplication_with_approximate_Hessian</b> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
 <tr class="separator:ae4877906d02d73842ebdccb429d0359a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff45f2cee956e01345639328913a45f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a1ff45f2cee956e01345639328913a45f">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
-<tr class="memdesc:a1ff45f2cee956e01345639328913a45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input.  <a href="#a1ff45f2cee956e01345639328913a45f">More...</a><br /></td></tr>
+<tr class="memitem:a1ff45f2cee956e01345639328913a45f"><td class="memItemLeft" align="right" valign="top"><a id="a1ff45f2cee956e01345639328913a45f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a1ff45f2cee956e01345639328913a45f">accumulate_Hessian_times_input</a> (<a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;output, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;current_estimate, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;input) const override</td></tr>
+<tr class="memdesc:a1ff45f2cee956e01345639328913a45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the multiplication of the hessian of the prior multiplied by the input. <br /></td></tr>
 <tr class="separator:a1ff45f2cee956e01345639328913a45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c9d019a07050da4eba5c7efd0d8f706"><td class="memItemLeft" align="right" valign="top"><a id="a4c9d019a07050da4eba5c7efd0d8f706"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a4c9d019a07050da4eba5c7efd0d8f706">get_gamma</a> () const</td></tr>
@@ -126,10 +129,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a460a9c7947eca859013d05f87e40757b">set_kappa_sptr</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; &amp;)</td></tr>
 <tr class="memdesc:a460a9c7947eca859013d05f87e40757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set kappa image <br /></td></tr>
 <tr class="separator:a460a9c7947eca859013d05f87e40757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e635664f65874d3609bcd36c38b2e07"><td class="memItemLeft" align="right" valign="top"><a id="a0e635664f65874d3609bcd36c38b2e07"></a>
-virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a0e635664f65874d3609bcd36c38b2e07">set_up</a> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; const &amp;target_sptr)</td></tr>
-<tr class="memdesc:a0e635664f65874d3609bcd36c38b2e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
-<tr class="separator:a0e635664f65874d3609bcd36c38b2e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ddc42f3719d1f3b215af02ba0bf7f3f"><td class="memItemLeft" align="right" valign="top"><a id="a3ddc42f3719d1f3b215af02ba0bf7f3f"></a>
+virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a3ddc42f3719d1f3b215af02ba0bf7f3f">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt;&gt; const &amp;target_sptr) override</td></tr>
+<tr class="memdesc:a3ddc42f3719d1f3b215af02ba0bf7f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
+<tr class="separator:a3ddc42f3719d1f3b215af02ba0bf7f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00f89324afed3e889ef55a789324073"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#ad00f89324afed3e889ef55a789324073">is_convex</a> () const override</td></tr>
 <tr class="memdesc:ad00f89324afed3e889ef55a789324073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the prior is a smooth convex function.  <a href="#ad00f89324afed3e889ef55a789324073">More...</a><br /></td></tr>
 <tr class="separator:ad00f89324afed3e889ef55a789324073"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,8 +162,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
+<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">set_penalisation_factor</a> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474f091d513540f3e1f66084dc021173 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt; const &amp;target_sptr)</td></tr>
@@ -207,6 +209,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab44fff91ab0d1220e8168c6393da2e23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#ab44fff91ab0d1220e8168c6393da2e23">post_processing</a> () override</td></tr>
 <tr class="memdesc:ab44fff91ab0d1220e8168c6393da2e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called at the end of the parsing.  <a href="#ab44fff91ab0d1220e8168c6393da2e23">More...</a><br /></td></tr>
 <tr class="separator:ab44fff91ab0d1220e8168c6393da2e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:afc580848bea3545dd042bc0b58758eb7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#afc580848bea3545dd042bc0b58758eb7">value</a> (const elemT x_j, const elemT x_k) const</td></tr>
+<tr class="memdesc:afc580848bea3545dd042bc0b58758eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value and partial derivatives of the Relative Difference Prior.  <a href="#afc580848bea3545dd042bc0b58758eb7">More...</a><br /></td></tr>
+<tr class="separator:afc580848bea3545dd042bc0b58758eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28f18f51895cb50ade82005e114b78c"><td class="memItemLeft" align="right" valign="top"><a id="af28f18f51895cb50ade82005e114b78c"></a>
+elemT&#160;</td><td class="memItemRight" valign="bottom"><b>derivative_10</b> (const elemT x, const elemT y) const</td></tr>
+<tr class="separator:af28f18f51895cb50ade82005e114b78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bdbc3e6a321827ba8d4631717972d1"><td class="memItemLeft" align="right" valign="top"><a id="ae5bdbc3e6a321827ba8d4631717972d1"></a>
+elemT&#160;</td><td class="memItemRight" valign="bottom"><b>derivative_20</b> (const elemT x_j, const elemT x_k) const</td></tr>
+<tr class="separator:ae5bdbc3e6a321827ba8d4631717972d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648512526e0c7822f2cfe75d07ce67ff"><td class="memItemLeft" align="right" valign="top"><a id="a648512526e0c7822f2cfe75d07ce67ff"></a>
+elemT&#160;</td><td class="memItemRight" valign="bottom"><b>derivative_11</b> (const elemT x_j, const elemT x_k) const</td></tr>
+<tr class="separator:a648512526e0c7822f2cfe75d07ce67ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">set_defaults</a> () override</td></tr>
 <tr class="memdesc:abe926b0e19c221a34a3128e4638dcd27 inherit pro_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets value for penalisation factor  <a href="classstir_1_1GeneralisedPrior.html#abe926b0e19c221a34a3128e4638dcd27">More...</a><br /></td></tr>
@@ -247,6 +262,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePrior.html#a76a80efbf83a99b13b6b52d1c4992c0b">kappa_filename</a></td></tr>
 <tr class="memdesc:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename for the <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image that will be read by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ab44fff91ab0d1220e8168c6393da2e23" title="This will be called at the end of the parsing. ">post_processing()</a> <br /></td></tr>
 <tr class="separator:a76a80efbf83a99b13b6b52d1c4992c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55e8391d1d26766e4943a12a4e12f33"><td class="memItemLeft" align="right" valign="top"><a id="ab55e8391d1d26766e4943a12a4e12f33"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kappa_ptr</b></td></tr>
+<tr class="separator:ab55e8391d1d26766e4943a12a4e12f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DiscretisedDensity&lt; 3, elemT &gt; &gt;</a></td></tr>
 <tr class="memitem:abc351b677ce31d811ee7469a34ffb1ad inherit pro_attribs_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top"><a id="abc351b677ce31d811ee7469a34ffb1ad"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>penalisation_factor</b></td></tr>
@@ -299,8 +317,11 @@ class stir::RelativeDifferencePrior&lt; elemT &gt;</h3>
 <img class="formulaDsp" alt="\[ f= \sum_{r,dr} \frac{w_{dr}}{2} \frac{(\lambda_r - \lambda_{r+dr})^2}{(\lambda_r+ \lambda_{r+dr} + \gamma |\lambda_r - \lambda_{r+dr}| + \epsilon)} * \kappa_r * \kappa_{r+dr} \]" src="form_122.png"/>
 </p>
 <p>where <img class="formulaInl" alt="$\lambda$" src="form_8.png"/> is the image and <img class="formulaInl" alt="$r$" src="form_70.png"/> and <img class="formulaInl" alt="$dr$" src="form_71.png"/> are indices and the sum is over the neighbourhood where the weights <img class="formulaInl" alt="$w_{dr}$" src="form_72.png"/> are non-zero. <img class="formulaInl" alt="$\gamma$" src="form_52.png"/> is a smoothing scalar term and the <img class="formulaInl" alt="$\epsilon$" src="form_123.png"/> is a small non-negative value included to prevent division by zero. Please note that the RDP is only well defined for non-negative voxel values. For more details, see: <em> J. Nuyts, D. Beque, P. Dupont, and L. Mortelmans, "A Concave Prior Penalizing Relative Differences for Maximum-a-Posteriori Reconstruction in Emission Tomography," vol. 49, no. 1, pp. 56-60, 2002. </em></p>
+<p>If <img class="formulaInl" alt="$ \epsilon=0 $" src="form_124.png"/>, we attempt to resolve 0/0 at <img class="formulaInl" alt="$ \lambda_r = \lambda_{r+dr}=0 $" src="form_125.png"/> by using the limit. Note that the Hessian explodes to infinity when both voxel values approach 0, and we currently return <code>INFINITY</code>. Also, as the RDP is not differentiable at this point, we have chosen to return 0 for the gradient (such that a zero background is not modified).</p>
+<dl class="section warning"><dt>Warning</dt><dd>the default value for <img class="formulaInl" alt="$ \epsilon $" src="form_126.png"/> is zero, which can be problematic for gradient-based algorithms.</dd></dl>
 <p>The <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> image can be used to have spatially-varying penalties such as in Jeff Fessler's papers. It should have identical dimensions to the image for which the penalty is computed. If <img class="formulaInl" alt="$\kappa$" src="form_73.png"/> is not set, this class will effectively use 1 for all <img class="formulaInl" alt="$\kappa$" src="form_73.png"/>'s.</p>
 <p>By default, a 3x3 or 3x3x3 neighbourhood is used where the weights are set to x-voxel_size divided by the Euclidean distance between the points.</p>
+<p>The prior computation excludes voxel-pairs where one voxel is outside the volume. This is effectively the same as extending the volume by replicating the edges (which is different from zero boundary conditions).</p>
 <dl class="section user"><dt>Parsing</dt><dd>These are the keywords that can be used in addition to the ones in GeneralPrior. <pre class="fragment">  Relative Difference Prior Parameters:=
   ; next defaults to 0, set to 1 for 2D inverse Euclidean weights, 0 for 3D
   only 2D:= 0
@@ -318,55 +339,6 @@ class stir::RelativeDifferencePrior&lt; elemT &gt;</h3>
   gradient filename prefix:=
   END Relative Difference Prior Parameters:=</pre> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1ff45f2cee956e01345639328913a45f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff45f2cee956e01345639328913a45f">&#9670;&nbsp;</a></span>accumulate_Hessian_times_input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename elemT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstir_1_1RelativeDifferencePrior.html">stir::RelativeDifferencePrior</a>&lt; elemT &gt;::accumulate_Hessian_times_input </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>current_estimate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, elemT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the multiplication of the hessian of the prior multiplied by the input. </p>
-<p>At this point, we have j = [z][y][x] </p>
-
-<p class="reference">References <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ae8c203413f8309a82166c63bc152cae6">stir::RelativeDifferencePrior&lt; elemT &gt;::epsilon</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a95fdb67d03f3d87ad5e97349670bda2a">stir::RelativeDifferencePrior&lt; elemT &gt;::gamma</a>, <a class="el" href="classstir_1_1DiscretisedDensityOnCartesianGrid.html#a5ca0816f38e102de941d025d43ade075">stir::DiscretisedDensityOnCartesianGrid&lt; num_dimensions, elemT &gt;::get_grid_spacing()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a9179fdbe02bc4cb22fde51599537e2b5">stir::VectorWithOffset&lt; T &gt;::get_length()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; T &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a23a3bcc84639216e608406803d98f14e">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_max_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; T &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1VectorWithOffset.html#a60196eb5ff5b91256df466ca4ddbd7fa">stir::VectorWithOffset&lt; Array&lt; num_dimensions - 1, elemT &gt; &gt;::get_min_index()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#ae5f5346b92055e1695171c04a4ffbdf9">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::has_same_characteristics()</a>, and <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ae82bed7521aafc1e743f0f660fad2c75">stir::RelativeDifferencePrior&lt; elemT &gt;::only_2D</a>.</p>
-
-</div>
-</div>
 <a id="a818a4f218a584f8cd7d0ed13957f9499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a818a4f218a584f8cd7d0ed13957f9499">&#9670;&nbsp;</a></span>get_weights()</h2>
 
@@ -388,6 +360,8 @@ template&lt;typename elemT &gt; </div>
 <p>get penalty weights for the neighbourhood </p>
 
 <p class="reference">References <a class="el" href="classstir_1_1RelativeDifferencePrior.html#aeb7725c6d4445f768c00dda9c4fc4634">stir::RelativeDifferencePrior&lt; elemT &gt;::weights</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePriorTests.html#aa0fe8652c00ef88b078716e23811b35d">stir::RelativeDifferencePriorTests&lt; RDP &gt;::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -414,6 +388,8 @@ template&lt;typename elemT &gt; </div>
 
 <p class="reference">References <a class="el" href="classstir_1_1RelativeDifferencePrior.html#aeb7725c6d4445f768c00dda9c4fc4634">stir::RelativeDifferencePrior&lt; elemT &gt;::weights</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePriorTests.html#aa0fe8652c00ef88b078716e23811b35d">stir::RelativeDifferencePriorTests&lt; RDP &gt;::run_tests()</a>.</p>
+
 </div>
 </div>
 <a id="ab093da4be387048383ea663c58b352ea"></a>
@@ -437,6 +413,8 @@ template&lt;typename elemT &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>As this function returns a shared_ptr, this is dangerous. You should not modify the image by manipulating the image refered to by this pointer. Unpredictable results will occur.</dd>
 <dd>
 As this function returns a shared_ptr, this is dangerous. You should not modify the image by manipulating the image referred to by this pointer. Unpredictable results will occur. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePriorTests.html#aa0fe8652c00ef88b078716e23811b35d">stir::RelativeDifferencePriorTests&lt; RDP &gt;::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -506,6 +484,61 @@ template&lt;typename elemT &gt; </div>
 
 </div>
 </div>
+<a id="afc580848bea3545dd042bc0b58758eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc580848bea3545dd042bc0b58758eb7">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classstir_1_1RelativeDifferencePrior.html">stir::RelativeDifferencePrior</a>&lt; elemT &gt;::value </td>
+          <td>(</td>
+          <td class="paramtype">const elemT&#160;</td>
+          <td class="paramname"><em>x_j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const elemT&#160;</td>
+          <td class="paramname"><em>x_k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The value and partial derivatives of the Relative Difference Prior. </p>
+<p>value refers to its value derivative_10 refers to the derivative w.r.t. x_j only derivative_20 refers to the second derivative w.r.t. x_j only (i.e. diagonal elements of the Hessian) derivative_11 refers to the second derivative w.r.t. x_j and x_k (i.e. off-diagonal elements of the Hessian)</p>
+<p>See J. Nuyts, et al., 2002, Equation 7 etc, but here an epsilon is added.</p>
+<p>In the instance x_j, x_k and epsilon equal 0.0, these functions get ill-defined due to 0/0 computations. We currently return 0 for the value, 0 for derivative_10, and INFINITY for the second order derivatives. These follow by taking the limit, i.e. by assuming continuity. Note however that when epsilon=0, derivative_10(x,0) limits to <img class="formulaInl" alt="$ 1/(1+\gamma) $" src="form_127.png"/>, while derivative_10(x,x) limits to <img class="formulaInl" alt="$ 0 $" src="form_128.png"/>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x_j</td><td>is the target voxel. </td></tr>
+    <tr><td class="paramname">x_k</td><td>is the voxel in the neighbourhood. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the second order partial derivatives of the Relative Difference Prior </dd></dl>
+
+<p class="reference">References <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a95fdb67d03f3d87ad5e97349670bda2a">stir::RelativeDifferencePrior&lt; elemT &gt;::gamma</a>, and <a class="el" href="group__buildblock.html#gac418d503952396274cda09838ccab659">stir::square()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a89bda03e34d47f49e17261b9be80c811">stir::RelativeDifferencePrior&lt; elemT &gt;::compute_value()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1bb250da17602b9c7242a2db1d3a0c1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bb250da17602b9c7242a2db1d3a0c1d">&#9670;&nbsp;</a></span>gradient_filename_prefix</h2>
@@ -559,7 +592,7 @@ template&lt;typename elemT&gt; </div>
 </div><div class="memdoc">
 
 <p>penalty weights </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a0e635664f65874d3609bcd36c38b2e07" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000173">Todo:</a></b></dt><dd>This member is mutable at present because some const functions initialise it. That initialisation should be moved to a new <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a3ddc42f3719d1f3b215af02ba0bf7f3f" title="Has to be called before using this object. ">set_up()</a> function. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a818a4f218a584f8cd7d0ed13957f9499">stir::RelativeDifferencePrior&lt; elemT &gt;::get_weights()</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a460a9c7947eca859013d05f87e40757b">stir::RelativeDifferencePrior&lt; elemT &gt;::set_kappa_sptr()</a>, and <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ab783db738bd40ca7966f1d081d982a2d">stir::RelativeDifferencePrior&lt; elemT &gt;::set_weights()</a>.</p>
 
@@ -572,7 +605,7 @@ template&lt;typename elemT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

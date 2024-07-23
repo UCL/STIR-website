@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ class stir::InputStreamWithRecords&lt; RecordT, OptionsT &gt;</h3>
 <p>This class is really a helper class for reading different records from a stream. It is useful when all types of records have some kind of signature to allow the function to find out what the size of the record is. In that case, all IO handling is completely generic and is implemented in this class.</p>
 <p>Current implementation needs a <code>max_size_of_record</code> to allocate enough memory (on the stack) before reading. This is efficient in many cases, but impractical in others.</p>
 <dl class="section user"><dt>Requirements</dt><dd><code>RecordT</code> needs to have the following member functions <div class="fragment"><div class="line">std::size_t</div><div class="line">  size_of_record_at_ptr(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> buffer, <span class="keyword">const</span> std::size_t size_available_in_buffer,</div><div class="line">                        <span class="keyword">const</span> OptionsT options) <span class="keyword">const</span>;</div><div class="line"></div><div class="line">Succeeded</div><div class="line">  init_from_data_ptr(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> buffer,</div><div class="line">                     <span class="keyword">const</span> std::size_t size_of_record,</div><div class="line">                     <span class="keyword">const</span> OptionsT options);</div></div><!-- fragment --></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo:</a></b></dt><dd>Allow choosing between allocation with <code>new</code> or on the stack. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd>Allow choosing between allocation with <code>new</code> or on the stack. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9e13fedca124f0bda004ad3473630f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9e13fedca124f0bda004ad3473630f4">&#9670;&nbsp;</a></span>InputStreamWithRecords() <span class="overload">[1/2]</span></h2>
@@ -322,7 +322,7 @@ template&lt;class RecordT , class OptionsT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:38 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

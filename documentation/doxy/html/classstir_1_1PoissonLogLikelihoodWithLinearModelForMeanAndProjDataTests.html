@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -43,7 +43,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -60,27 +59,33 @@ Inheritance diagram for stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjD
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests__inherit__graph.png" border="0" usemap="#stir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests_inherit__map" id="stir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="91,5,197,32"/>
+<area shape="rect" id="node2" href="classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndProjData\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="640,5,945,76"/>
+<area shape="rect" id="node3" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,17,111,43"/>
+<area shape="rect" id="node4" href="classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,48,372,89"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7be485cf2e621e895bdbccb0eac41ed6"><td class="memItemLeft" align="right" valign="top"><a id="a7be485cf2e621e895bdbccb0eac41ed6"></a>
-typedef <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>target_type</b></td></tr>
-<tr class="separator:a7be485cf2e621e895bdbccb0eac41ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7adc1ba208cd86ec7bbebac4f9a89491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a7adc1ba208cd86ec7bbebac4f9a89491">PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests</a> (char const *const proj_data_filename=0, char const *const density_filename=0)</td></tr>
 <tr class="memdesc:a7adc1ba208cd86ec7bbebac4f9a89491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with.  <a href="#a7adc1ba208cd86ec7bbebac4f9a89491">More...</a><br /></td></tr>
 <tr class="separator:a7adc1ba208cd86ec7bbebac4f9a89491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba5bf93c84b46f1caab7bc109ada404"><td class="memItemLeft" align="right" valign="top"><a id="aaba5bf93c84b46f1caab7bc109ada404"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_input_data</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;density_sptr)</td></tr>
-<tr class="separator:aaba5bf93c84b46f1caab7bc109ada404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2f2cc6f4082113955a9b660848c035"><td class="memItemLeft" align="right" valign="top"><a id="a3f2f2cc6f4082113955a9b660848c035"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_input_data</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;density_sptr, const bool TOF_or_not)</td></tr>
+<tr class="separator:a3f2f2cc6f4082113955a9b660848c035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d226a6142233931abb0862fa0bf73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a56d226a6142233931abb0862fa0bf73c">run_tests</a> () override</td></tr>
 <tr class="memdesc:a56d226a6142233931abb0862fa0bf73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (to be overloaded) which does the actual tests.  <a href="#a56d226a6142233931abb0862fa0bf73c">More...</a><br /></td></tr>
 <tr class="separator:a56d226a6142233931abb0862fa0bf73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a9f52af5365fe0f6e3a2727246a5fcc13">test_gradient</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps, const bool full_gradient=true)</td></tr>
+<tr class="memdesc:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the gradient of the objective function by comparing to the numerical gradient via perturbation.  <a href="classstir_1_1ObjectiveFunctionTests.html#a9f52af5365fe0f6e3a2727246a5fcc13">More...</a><br /></td></tr>
+<tr class="separator:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a6e3498682bc03a58b206f149ee034ab9">test_Hessian</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps)</td></tr>
+<tr class="memdesc:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the accumulate_Hessian_times_input of the objective function by comparing to the numerical result via perturbation.  <a href="classstir_1_1ObjectiveFunctionTests.html#a6e3498682bc03a58b206f149ee034ab9">More...</a><br /></td></tr>
+<tr class="separator:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#aec79c37d203e996b2b3943f87e56f728">test_Hessian_concavity</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float mult_factor=1.F)</td></tr>
+<tr class="memdesc:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the Hessian of the objective function by testing the (<em>mult_factor</em> * x^T Hx &gt; 0) condition.  <a href="classstir_1_1ObjectiveFunctionTests.html#aec79c37d203e996b2b3943f87e56f728">More...</a><br /></td></tr>
+<tr class="separator:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a3ea611ff0f090a359ed903ea09c6ec17 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a3ea611ff0f090a359ed903ea09c6ec17"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a3ea611ff0f090a359ed903ea09c6ec17">RunTests</a> (const double <a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">tolerance</a>=1E-4)</td></tr>
@@ -158,6 +163,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a5b75596456ac4fdc7ebf9a7fe16cd127">check_if_equal</a> (const std::vector&lt; T &gt; &amp;t1, const std::vector&lt; T &gt; &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
 <tr class="memdesc:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">check equality by comparing size and calling check_if_equal on all elements <br /></td></tr>
 <tr class="separator:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35389c3f3a375706bde4b5cdccf7c2c6 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a35389c3f3a375706bde4b5cdccf7c2c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1ProjDataInMemory.html">ProjDataInMemory</a> &amp;t1, const <a class="el" href="classstir_1_1ProjDataInMemory.html">ProjDataInMemory</a> &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
+<tr class="separator:a35389c3f3a375706bde4b5cdccf7c2c6 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c05936fa8877fd40e9b3cced0c0c8d0 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a8c05936fa8877fd40e9b3cced0c0c8d0"></a>
 template&lt;int n&gt; </td></tr>
 <tr class="memitem:a8c05936fa8877fd40e9b3cced0c0c8d0 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1IndexRange.html">IndexRange</a>&lt; n &gt; &amp;t1, const <a class="el" href="classstir_1_1IndexRange.html">IndexRange</a>&lt; n &gt; &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
@@ -200,19 +208,17 @@ template&lt;int num_dimensions, class coordT &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a37849f0e3916941acd492012da72aed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">run_tests_for_objective_function</a> (<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
-<tr class="memdesc:a37849f0e3916941acd492012da72aed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">run the test  <a href="#a37849f0e3916941acd492012da72aed8">More...</a><br /></td></tr>
-<tr class="separator:a37849f0e3916941acd492012da72aed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7652e87174147b6ae461509d82afdd"><td class="memItemLeft" align="right" valign="top"><a id="a3a7652e87174147b6ae461509d82afdd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a3a7652e87174147b6ae461509d82afdd">test_objective_function_gradient</a> (<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
-<tr class="memdesc:a3a7652e87174147b6ae461509d82afdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the gradient of the objective function by comparing to the numerical gradient via perturbation. <br /></td></tr>
-<tr class="separator:a3a7652e87174147b6ae461509d82afdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2743fe76a4d1bf86d51e9b4f276cc285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a2743fe76a4d1bf86d51e9b4f276cc285">test_objective_function_Hessian_concavity</a> (<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
-<tr class="memdesc:a2743fe76a4d1bf86d51e9b4f276cc285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the Hessian of the objective function by testing the (x^T Hx &gt; 0) condition.  <a href="#a2743fe76a4d1bf86d51e9b4f276cc285">More...</a><br /></td></tr>
-<tr class="separator:a2743fe76a4d1bf86d51e9b4f276cc285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63de851d0f2255a2046a660eb4a70159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a63de851d0f2255a2046a660eb4a70159">test_objective_function_approximate_Hessian_concavity</a> (<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
-<tr class="memdesc:a63de851d0f2255a2046a660eb4a70159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the approximate Hessian of the objective function by testing the (x^T Hx &gt; 0) condition.  <a href="#a63de851d0f2255a2046a660eb4a70159">More...</a><br /></td></tr>
-<tr class="separator:a63de851d0f2255a2046a660eb4a70159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6510de10fb931ac2cd5ff47bfc678aac"><td class="memItemLeft" align="right" valign="top"><a id="a6510de10fb931ac2cd5ff47bfc678aac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a6510de10fb931ac2cd5ff47bfc678aac">run_tests_for_objective_function</a> (objective_function_type &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
+<tr class="memdesc:a6510de10fb931ac2cd5ff47bfc678aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">run the test <br /></td></tr>
+<tr class="separator:a6510de10fb931ac2cd5ff47bfc678aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accada5bd9e81a580c713c961fb991d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#accada5bd9e81a580c713c961fb991d59">test_approximate_Hessian_concavity</a> (objective_function_type &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;target)</td></tr>
+<tr class="memdesc:accada5bd9e81a580c713c961fb991d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the approximate Hessian of the objective function by testing the (x^T Hx &gt; 0) condition.  <a href="#accada5bd9e81a580c713c961fb991d59">More...</a><br /></td></tr>
+<tr class="separator:accada5bd9e81a580c713c961fb991d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df">construct_increment</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps) const</td></tr>
+<tr class="memdesc:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct small increment for target.  <a href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df">More...</a><br /></td></tr>
+<tr class="separator:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a6e8d0c619839dca05520a0ea0fb57c02 inherit pro_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a6e8d0c619839dca05520a0ea0fb57c02"></a>
 template&lt;class T &gt; </td></tr>
@@ -242,9 +248,9 @@ shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;
 <tr class="memitem:a6f7083507ff0791609f0c9eb5887607d"><td class="memItemLeft" align="right" valign="top"><a id="a6f7083507ff0791609f0c9eb5887607d"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1ProjData.html">ProjData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>add_proj_data_sptr</b></td></tr>
 <tr class="separator:a6f7083507ff0791609f0c9eb5887607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0b32c4ed2363fe2538f487b395cd0d"><td class="memItemLeft" align="right" valign="top"><a id="a7f0b32c4ed2363fe2538f487b395cd0d"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective_function_sptr</b></td></tr>
-<tr class="separator:a7f0b32c4ed2363fe2538f487b395cd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af292cc480041044b81bbe67132242258"><td class="memItemLeft" align="right" valign="top"><a id="af292cc480041044b81bbe67132242258"></a>
+shared_ptr&lt; <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective_function_sptr</b></td></tr>
+<tr class="separator:af292cc480041044b81bbe67132242258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a57389d9d070676abb1ffa3f93f3cb2b9 inherit pro_attribs_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a57389d9d070676abb1ffa3f93f3cb2b9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">tolerance</a></td></tr>
@@ -254,10 +260,20 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a21011f94757f7a15068d2680070baf26">everything_ok</a></td></tr>
 <tr class="memdesc:a21011f94757f7a15068d2680070baf26 inherit pro_attribs_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">variable storing current status <br /></td></tr>
 <tr class="separator:a21011f94757f7a15068d2680070baf26 inherit pro_attribs_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:ae048865798fbfe63908100c5a2fc1600 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top"><a id="ae048865798fbfe63908100c5a2fc1600"></a>
+typedef <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective_function_type</b></td></tr>
+<tr class="separator:ae048865798fbfe63908100c5a2fc1600 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5d06b223ce3f04675ec0f54ec0a5c7 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top"><a id="a4c5d06b223ce3f04675ec0f54ec0a5c7"></a>
+typedef <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>target_type</b></td></tr>
+<tr class="separator:a4c5d06b223ce3f04675ec0f54ec0a5c7 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Test class for <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a>. </p>
-<p>This is a somewhat preliminary implementation of a test that compares the result of GeneralisedObjectiveFunction::compute_gradient with a numerical gradient computed by using the <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a211f21d59b7d47f605a2f38a643bda68" title="Compute the value of the sub-objective function at the current_estimate. ">GeneralisedObjectiveFunction::compute_objective_function()</a> function.</p>
+<p>This is a somewhat preliminary implementation of a test that compares the result of <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b" title="Compute the gradient of the objective function at the current_estimate. ">GeneralisedObjectiveFunction::compute_gradient</a> with a numerical gradient computed by using the <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a211f21d59b7d47f605a2f38a643bda68" title="Compute the value of the sub-objective function at the current_estimate. ">GeneralisedObjectiveFunction::compute_objective_function()</a> function.</p>
 <p>The trouble with this is that compute the gradient voxel by voxel is obviously terribly slow. A solution (for the test) would be to compute it only in a subset of voxels or so. We'll leave this for later.</p>
 <p>Note that the test only works if the objective function is well-defined. For example, if certain projections are non-zero, while the model estimates them to be zero, the Poisson objective function is in theory infinite. <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a> uses some thresholds to try to avoid overflow, but if there are too many of these bins, the total objective function will become infinite. The numerical gradient then becomes ill-defined (even in voxels that do not contribute to these bins). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -289,7 +305,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Constructor that can take some input data to run the test with. </p>
 <p>This makes it possible to run the test with your own data. However, beware that it is very easy to set up a very long computation. See also the note about non-zero measured bins.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000231">Todo:</a></b></dt><dd>it would be better to parse an objective function. That would allow us to set all parameters from the command line. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000236">Todo:</a></b></dt><dd>it would be better to parse an objective function. That would allow us to set all parameters from the command line. </dd></dl>
 
 </div>
 </div>
@@ -322,12 +338,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Implements <a class="el" href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">stir::RunTests</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1IterativeReconstruction.html#a9a9168f766c27f34c4c51ed28adf64eb">stir::IterativeReconstruction&lt; TargetT &gt;::get_initial_data_ptr()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">run_tests_for_objective_function()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1IterativeReconstruction.html#a9a9168f766c27f34c4c51ed28adf64eb">stir::IterativeReconstruction&lt; TargetT &gt;::get_initial_data_ptr()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a6510de10fb931ac2cd5ff47bfc678aac">run_tests_for_objective_function()</a>.</p>
 
 </div>
 </div>
-<a id="a37849f0e3916941acd492012da72aed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37849f0e3916941acd492012da72aed8">&#9670;&nbsp;</a></span>run_tests_for_objective_function()</h2>
+<a id="accada5bd9e81a580c713c961fb991d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accada5bd9e81a580c713c961fb991d59">&#9670;&nbsp;</a></span>test_approximate_Hessian_concavity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,97 +352,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::run_tests_for_objective_function </td>
+          <td class="memname">void stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_approximate_Hessian_concavity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>objective_function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classstir_1_1DiscretisedDensity.html">PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::target_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>run the test </p>
-<p>Note that this function is not specific to <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data. ">PoissonLogLikelihoodWithLinearModelForMeanAndProjData</a> </p>
-
-<p class="reference">References <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a63de851d0f2255a2046a660eb4a70159">test_objective_function_approximate_Hessian_concavity()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a3a7652e87174147b6ae461509d82afdd">test_objective_function_gradient()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a2743fe76a4d1bf86d51e9b4f276cc285">test_objective_function_Hessian_concavity()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a56d226a6142233931abb0862fa0bf73c">run_tests()</a>.</p>
-
-</div>
-</div>
-<a id="a2743fe76a4d1bf86d51e9b4f276cc285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2743fe76a4d1bf86d51e9b4f276cc285">&#9670;&nbsp;</a></span>test_objective_function_Hessian_concavity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_Hessian_concavity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>objective_function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test the Hessian of the objective function by testing the (x^T Hx &gt; 0) condition. </p>
-<p>setup images</p>
-<p>Compute H x</p>
-<p>Compute dot(x,(H x)) </p>
-
-<p class="reference">References <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#a26ad981b535bbfcacda5d0018716c018">stir::Array&lt; num_dimensions, elemT &gt;::find_min()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#af24e670f16e3711126e9fa2077f65d3d">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_empty_copy()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">run_tests_for_objective_function()</a>.</p>
-
-</div>
-</div>
-<a id="a63de851d0f2255a2046a660eb4a70159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63de851d0f2255a2046a660eb4a70159">&#9670;&nbsp;</a></span>test_objective_function_approximate_Hessian_concavity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_approximate_Hessian_concavity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">GeneralisedObjectiveFunction</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">objective_function_type &amp;&#160;</td>
           <td class="paramname"><em>objective_function</em>, </td>
         </tr>
         <tr>
@@ -453,9 +381,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Compute H x</p>
 <p>Compute dot(x,(H x)) </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; 3, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; 3, elemT &gt;::end_all()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#a26ad981b535bbfcacda5d0018716c018">stir::Array&lt; num_dimensions, elemT &gt;::find_min()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#af24e670f16e3711126e9fa2077f65d3d">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_empty_copy()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a3ebb5cb14b7b1d53a960dabf2b9e8d97">stir::ProjDataInfo::ProjDataInfoCTI()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ac991c48f9b1d3175ce4cbbf54f01990f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_additive_proj_data_sptr()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a6284273b0b09e91b497a5b5050dac29c">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_normalisation_sptr()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a0c440f6db030a8da5ecc495e131eba22">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_num_subsets()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac84807542f51263ad6033af38cfee8b5">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;::set_up()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac2fc52ea6db5292110fbd7ba777ba02e">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;::set_use_subset_sensitivities()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; 3, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a0b2432be5ef89ee539b19b18b5c70f2e">stir::ProjDataInfo::construct_proj_data_info()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; num_dimensions, elemT &gt;::end_all()</a>, <a class="el" href="classstir_1_1Array.html#a3674afccb86b90f13ee648c3e6935475">stir::Array&lt; 3, elemT &gt;::end_all()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; 3, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#a26ad981b535bbfcacda5d0018716c018">stir::Array&lt; num_dimensions, elemT &gt;::find_min()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#af24e670f16e3711126e9fa2077f65d3d">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_empty_copy()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, <a class="el" href="classstir_1_1ProjDataInfo.html#a3ebb5cb14b7b1d53a960dabf2b9e8d97">stir::ProjDataInfo::ProjDataInfoCTI()</a>, <a class="el" href="classstir_1_1ProjData.html#abe098fca9d7ee5dc8a8c14ff6666de97">stir::ProjData::read_from_file()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ac991c48f9b1d3175ce4cbbf54f01990f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_additive_proj_data_sptr()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a6284273b0b09e91b497a5b5050dac29c">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_normalisation_sptr()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a0c440f6db030a8da5ecc495e131eba22">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;::set_num_subsets()</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac84807542f51263ad6033af38cfee8b5">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;::set_up()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ac2fc52ea6db5292110fbd7ba777ba02e">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;::set_use_subset_sensitivities()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a37849f0e3916941acd492012da72aed8">run_tests_for_objective_function()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a6510de10fb931ac2cd5ff47bfc678aac">run_tests_for_objective_function()</a>.</p>
 
 </div>
 </div>
@@ -465,7 +393,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

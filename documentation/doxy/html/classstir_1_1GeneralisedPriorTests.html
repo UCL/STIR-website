@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -53,14 +53,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>.  
+<p>Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">CudaRelativeDifferencePrior</a> and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>.  
  <a href="classstir_1_1GeneralisedPriorTests.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for stir::GeneralisedPriorTests:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstir_1_1GeneralisedPriorTests__inherit__graph.png" border="0" usemap="#stir_1_1GeneralisedPriorTests_inherit__map" alt="Inheritance graph"/></div>
 <map name="stir_1_1GeneralisedPriorTests_inherit__map" id="stir_1_1GeneralisedPriorTests_inherit__map">
-<area shape="rect" id="node2" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="41,5,147,32"/>
+<area shape="rect" id="node5" href="classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior " alt="" coords="1102,5,1262,32"/>
+<area shape="rect" id="node6" href="classstir_1_1PLSPriorTests.html" title="tests for PLSPrior " alt="" coords="1115,56,1249,83"/>
+<area shape="rect" id="node7" href="classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior " alt="" coords="1100,107,1264,133"/>
+<area shape="rect" id="node8" href="classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior " alt="" coords="1104,158,1260,199"/>
+<area shape="rect" id="node2" href="classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="571,59,824,130"/>
+<area shape="rect" id="node3" href="classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,71,111,97"/>
+<area shape="rect" id="node4" href="classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,102,372,143"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -69,22 +75,36 @@ Public Types</h2></td></tr>
 <tr class="memitem:a16b33f5658f215a6529ca5df87fe93c6"><td class="memItemLeft" align="right" valign="top"><a id="a16b33f5658f215a6529ca5df87fe93c6"></a>
 typedef <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>target_type</b></td></tr>
 <tr class="separator:a16b33f5658f215a6529ca5df87fe93c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; GeneralisedPrior&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:ae048865798fbfe63908100c5a2fc1600 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top"><a id="ae048865798fbfe63908100c5a2fc1600"></a>
+typedef <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective_function_type</b></td></tr>
+<tr class="separator:ae048865798fbfe63908100c5a2fc1600 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5d06b223ce3f04675ec0f54ec0a5c7 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top"><a id="a4c5d06b223ce3f04675ec0f54ec0a5c7"></a>
+typedef <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>target_type</b></td></tr>
+<tr class="separator:a4c5d06b223ce3f04675ec0f54ec0a5c7 inherit pub_types_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aed2f2e6c37b360bc32a4a9662cc00aa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#aed2f2e6c37b360bc32a4a9662cc00aa4">GeneralisedPriorTests</a> (char const *density_filename=nullptr)</td></tr>
 <tr class="memdesc:aed2f2e6c37b360bc32a4a9662cc00aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that can take some input data to run the test with.  <a href="#aed2f2e6c37b360bc32a4a9662cc00aa4">More...</a><br /></td></tr>
 <tr class="separator:aed2f2e6c37b360bc32a4a9662cc00aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9241b36ce30e6459b97c57c02b3770"><td class="memItemLeft" align="right" valign="top"><a id="ada9241b36ce30e6459b97c57c02b3770"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_input_data</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;density_sptr)</td></tr>
-<tr class="separator:ada9241b36ce30e6459b97c57c02b3770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05484ce8ce8d981bbf344478047a542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#ad05484ce8ce8d981bbf344478047a542">run_tests</a> () override</td></tr>
-<tr class="memdesc:ad05484ce8ce8d981bbf344478047a542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (to be overloaded) which does the actual tests.  <a href="#ad05484ce8ce8d981bbf344478047a542">More...</a><br /></td></tr>
-<tr class="separator:ad05484ce8ce8d981bbf344478047a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235251135b50c6fab373b8aad352f58b"><td class="memItemLeft" align="right" valign="top"><a id="a235251135b50c6fab373b8aad352f58b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_input_data</b> (shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;density_sptr, shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;kappa_sptr)</td></tr>
+<tr class="separator:a235251135b50c6fab373b8aad352f58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a617bfa46d3a05af995784503c66c89c6"><td class="memItemLeft" align="right" valign="top"><a id="a617bfa46d3a05af995784503c66c89c6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a617bfa46d3a05af995784503c66c89c6">configure_prior_tests</a> (bool gradient, bool Hessian_convexity, bool Hessian_numerical)</td></tr>
 <tr class="memdesc:a617bfa46d3a05af995784503c66c89c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set methods that control which tests are run. <br /></td></tr>
 <tr class="separator:a617bfa46d3a05af995784503c66c89c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; GeneralisedPrior&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a9f52af5365fe0f6e3a2727246a5fcc13">test_gradient</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps, const bool full_gradient=true)</td></tr>
+<tr class="memdesc:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the gradient of the objective function by comparing to the numerical gradient via perturbation.  <a href="classstir_1_1ObjectiveFunctionTests.html#a9f52af5365fe0f6e3a2727246a5fcc13">More...</a><br /></td></tr>
+<tr class="separator:a9f52af5365fe0f6e3a2727246a5fcc13 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a6e3498682bc03a58b206f149ee034ab9">test_Hessian</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps)</td></tr>
+<tr class="memdesc:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the accumulate_Hessian_times_input of the objective function by comparing to the numerical result via perturbation.  <a href="classstir_1_1ObjectiveFunctionTests.html#a6e3498682bc03a58b206f149ee034ab9">More...</a><br /></td></tr>
+<tr class="separator:a6e3498682bc03a58b206f149ee034ab9 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#aec79c37d203e996b2b3943f87e56f728">test_Hessian_concavity</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt; &amp;objective_function, const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float mult_factor=1.F)</td></tr>
+<tr class="memdesc:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the Hessian of the objective function by testing the (<em>mult_factor</em> * x^T Hx &gt; 0) condition.  <a href="classstir_1_1ObjectiveFunctionTests.html#aec79c37d203e996b2b3943f87e56f728">More...</a><br /></td></tr>
+<tr class="separator:aec79c37d203e996b2b3943f87e56f728 inherit pub_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a3ea611ff0f090a359ed903ea09c6ec17 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a3ea611ff0f090a359ed903ea09c6ec17"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a3ea611ff0f090a359ed903ea09c6ec17">RunTests</a> (const double <a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">tolerance</a>=1E-4)</td></tr>
@@ -94,6 +114,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a7b3c3322861dc7adb3229da1d0abb637">~RunTests</a> ()</td></tr>
 <tr class="memdesc:a7b3c3322861dc7adb3229da1d0abb637 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor, outputs a diagnostic message. <br /></td></tr>
 <tr class="separator:a7b3c3322861dc7adb3229da1d0abb637 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8545a068bdda66e6900fd89f836fe23 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">run_tests</a> ()=0</td></tr>
+<tr class="memdesc:af8545a068bdda66e6900fd89f836fe23 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function (to be overloaded) which does the actual tests.  <a href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">More...</a><br /></td></tr>
+<tr class="separator:af8545a068bdda66e6900fd89f836fe23 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9501345feae197210af5c9d1efd1e5 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a3e9501345feae197210af5c9d1efd1e5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a3e9501345feae197210af5c9d1efd1e5">is_everything_ok</a> () const</td></tr>
 <tr class="memdesc:a3e9501345feae197210af5c9d1efd1e5 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if all checks were fine upto now. <br /></td></tr>
@@ -162,6 +185,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a5b75596456ac4fdc7ebf9a7fe16cd127">check_if_equal</a> (const std::vector&lt; T &gt; &amp;t1, const std::vector&lt; T &gt; &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
 <tr class="memdesc:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">check equality by comparing size and calling check_if_equal on all elements <br /></td></tr>
 <tr class="separator:a5b75596456ac4fdc7ebf9a7fe16cd127 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35389c3f3a375706bde4b5cdccf7c2c6 inherit pub_methods_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a35389c3f3a375706bde4b5cdccf7c2c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1ProjDataInMemory.html">ProjDataInMemory</a> &amp;t1, const <a class="el" href="classstir_1_1ProjDataInMemory.html">ProjDataInMemory</a> &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
+<tr class="separator:a35389c3f3a375706bde4b5cdccf7c2c6 inherit pub_methods_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c05936fa8877fd40e9b3cced0c0c8d0 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a8c05936fa8877fd40e9b3cced0c0c8d0"></a>
 template&lt;int n&gt; </td></tr>
 <tr class="memitem:a8c05936fa8877fd40e9b3cced0c0c8d0 inherit pub_methods_classstir_1_1RunTests"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>check_if_equal</b> (const <a class="el" href="classstir_1_1IndexRange.html">IndexRange</a>&lt; n &gt; &amp;t1, const <a class="el" href="classstir_1_1IndexRange.html">IndexRange</a>&lt; n &gt; &amp;t2, const std::string &amp;str=&quot;&quot;)</td></tr>
@@ -204,19 +230,22 @@ template&lt;int num_dimensions, class coordT &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a824ce4c09dab73d7ae2f69eb96433de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">run_tests_for_objective_function</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;target_sptr)</td></tr>
+<tr class="memitem:a824ce4c09dab73d7ae2f69eb96433de5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">run_tests_for_objective_function</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &amp;target_sptr)</td></tr>
 <tr class="memdesc:a824ce4c09dab73d7ae2f69eb96433de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">run the test  <a href="#a824ce4c09dab73d7ae2f69eb96433de5">More...</a><br /></td></tr>
 <tr class="separator:a824ce4c09dab73d7ae2f69eb96433de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf3baf66aa8d88ad15b17a994a3b9a0"><td class="memItemLeft" align="right" valign="top"><a id="abbf3baf66aa8d88ad15b17a994a3b9a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#abbf3baf66aa8d88ad15b17a994a3b9a0">test_gradient</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr)</td></tr>
-<tr class="memdesc:abbf3baf66aa8d88ad15b17a994a3b9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the prior's gradient by comparing to the numerical gradient computed using perturbation response. <br /></td></tr>
-<tr class="separator:abbf3baf66aa8d88ad15b17a994a3b9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754299d8a996be910b8fa5d3f782de70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">test_Hessian_convexity</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr)</td></tr>
+<tr class="memitem:a754299d8a996be910b8fa5d3f782de70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">test_Hessian_convexity</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr)</td></tr>
 <tr class="memdesc:a754299d8a996be910b8fa5d3f782de70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test various configurations of the Hessian of the prior via accumulate_Hessian_times_input() for convexity.  <a href="#a754299d8a996be910b8fa5d3f782de70">More...</a><br /></td></tr>
 <tr class="separator:a754299d8a996be910b8fa5d3f782de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf3eb258805f1882eb3c7299d227478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">test_Hessian_against_numerical</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr)</td></tr>
+<tr class="memitem:adcf3eb258805f1882eb3c7299d227478"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">test_Hessian_against_numerical</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr)</td></tr>
 <tr class="memdesc:adcf3eb258805f1882eb3c7299d227478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the compute_Hessian method implemented into convex priors.  <a href="#adcf3eb258805f1882eb3c7299d227478">More...</a><br /></td></tr>
 <tr class="separator:adcf3eb258805f1882eb3c7299d227478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea760123a879ca097c66512e8aac92d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a3ea760123a879ca097c66512e8aac92d">test_Hessian_convexity_configuration</a> (const std::string &amp;test_name, <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;objective_function, const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;target_sptr, float beta, float input_multiplication, float input_addition, float current_image_multiplication, float current_image_addition)</td></tr>
+<tr class="memdesc:a3ea760123a879ca097c66512e8aac92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian test for a particular configuration of the Hessian concave condition.  <a href="#a3ea760123a879ca097c66512e8aac92d">More...</a><br /></td></tr>
+<tr class="separator:a3ea760123a879ca097c66512e8aac92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classstir_1_1ObjectiveFunctionTests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1ObjectiveFunctionTests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1ObjectiveFunctionTests.html">stir::ObjectiveFunctionTests&lt; GeneralisedPrior&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;</a></td></tr>
+<tr class="memitem:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df">construct_increment</a> (const <a class="el" href="classstir_1_1DiscretisedDensity.html">DiscretisedDensity</a>&lt; 3, float &gt; &amp;target, const float eps) const</td></tr>
+<tr class="memdesc:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct small increment for target.  <a href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df">More...</a><br /></td></tr>
+<tr class="separator:a3a77b16de342e09df8b1c1a1a71939df inherit pro_methods_classstir_1_1ObjectiveFunctionTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a6e8d0c619839dca05520a0ea0fb57c02 inherit pro_methods_classstir_1_1RunTests"><td class="memTemplParams" colspan="2"><a id="a6e8d0c619839dca05520a0ea0fb57c02"></a>
 template&lt;class T &gt; </td></tr>
@@ -237,6 +266,17 @@ char const  *&#160;</td><td class="memItemRight" valign="bottom"><b>density_file
 <tr class="memitem:a8f91acdf12a3da80d1f03b32c1ec2880"><td class="memItemLeft" align="right" valign="top"><a id="a8f91acdf12a3da80d1f03b32c1ec2880"></a>
 shared_ptr&lt; <a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">target_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective_function_sptr</b></td></tr>
 <tr class="separator:a8f91acdf12a3da80d1f03b32c1ec2880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0f1221c97774203c1e863862eeba4908"><td class="memItemLeft" align="right" valign="top"><a id="a0f1221c97774203c1e863862eeba4908"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a0f1221c97774203c1e863862eeba4908">do_test_gradient</a> = false</td></tr>
+<tr class="memdesc:a0f1221c97774203c1e863862eeba4908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables to control which tests are run, see the set methods. <br /></td></tr>
+<tr class="separator:a0f1221c97774203c1e863862eeba4908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d34db2190f36d0f2ce94d4b00e687b"><td class="memItemLeft" align="right" valign="top"><a id="a04d34db2190f36d0f2ce94d4b00e687b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>do_test_Hessian_convexity</b> = false</td></tr>
+<tr class="separator:a04d34db2190f36d0f2ce94d4b00e687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b137d975ca58cf5efd83dbb63f7a75"><td class="memItemLeft" align="right" valign="top"><a id="a43b137d975ca58cf5efd83dbb63f7a75"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>do_test_Hessian_against_numerical</b> = false</td></tr>
+<tr class="separator:a43b137d975ca58cf5efd83dbb63f7a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstir_1_1RunTests"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstir_1_1RunTests')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstir_1_1RunTests.html">stir::RunTests</a></td></tr>
 <tr class="memitem:a57389d9d070676abb1ffa3f93f3cb2b9 inherit pro_attribs_classstir_1_1RunTests"><td class="memItemLeft" align="right" valign="top"><a id="a57389d9d070676abb1ffa3f93f3cb2b9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RunTests.html#a57389d9d070676abb1ffa3f93f3cb2b9">tolerance</a></td></tr>
@@ -248,7 +288,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a21011f94757f7a15068d2680070baf26 inherit pro_attribs_classstir_1_1RunTests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>. </p>
+<div class="textblock"><p>Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">CudaRelativeDifferencePrior</a> and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>. </p>
 <p>This test compares the result of <a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1" title="This should compute the gradient of the log of the prior function at the current_estimate. ">GeneralisedPrior::compute_gradient()</a> with a numerical gradient computed by using the <a class="el" href="classstir_1_1GeneralisedPrior.html#afa6d6e88ce44aed622b37aca1548910e" title="compute the value of the function ">GeneralisedPrior::compute_value()</a> function. Additionally, the Hessian's convexity is tested, via <a class="el" href="classstir_1_1GeneralisedPrior.html#ab85f4e40ea3146102a9e8d5ef16c0601" title="This should compute the multiplication of the Hessian with a vector and add it to output...">GeneralisedPrior::accumulate_Hessian_times_input()</a>, by evaluating the x^T Hx &gt; 0 constraint. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed2f2e6c37b360bc32a4a9662cc00aa4"></a>
@@ -277,43 +317,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Constructor that can take some input data to run the test with. </p>
 <p>This makes it possible to run the test with your own data. However, beware that it is very easy to set up a very long computation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000232">Todo:</a></b></dt><dd>it would be better to parse an objective function. That would allow us to set all parameters from the command line. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000237">Todo:</a></b></dt><dd>it would be better to parse an objective function. That would allow us to set all parameters from the command line. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad05484ce8ce8d981bbf344478047a542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad05484ce8ce8d981bbf344478047a542">&#9670;&nbsp;</a></span>run_tests()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void stir::GeneralisedPriorTests::run_tests </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function (to be overloaded) which does the actual tests. </p>
-<p>This function is expected to do a series of calls to <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537" title="Tests if true, str can be used to tell what you are testing. ">check()</a>, check_if_equal() etc. </p>
-
-<p>Implements <a class="el" href="classstir_1_1RunTests.html#af8545a068bdda66e6900fd89f836fe23">stir::RunTests</a>.</p>
-
-<p class="reference">References <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a617bfa46d3a05af995784503c66c89c6">configure_prior_tests()</a>, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">run_tests_for_objective_function()</a>, and <a class="el" href="classstir_1_1PLSPrior.html#ab533fd1ad2bf6e84882ca361294ce600">stir::PLSPrior&lt; elemT &gt;::set_anatomical_image_sptr()</a>.</p>
-
-</div>
-</div>
 <a id="a824ce4c09dab73d7ae2f69eb96433de5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a824ce4c09dab73d7ae2f69eb96433de5">&#9670;&nbsp;</a></span>run_tests_for_objective_function()</h2>
 
@@ -349,7 +357,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -357,9 +365,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>run the test </p>
 <p>Note that this function is not specific to a particular prior </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">stir::GeneralisedPrior&lt; DataT &gt;::set_up()</a>, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#abbf3baf66aa8d88ad15b17a994a3b9a0">test_gradient()</a>, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">test_Hessian_against_numerical()</a>, and <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">test_Hessian_convexity()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a28f93e7f3e1cd74f2c3074166e2f6537">stir::RunTests::check()</a>, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a0f1221c97774203c1e863862eeba4908">do_test_gradient</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">stir::GeneralisedPrior&lt; DataT &gt;::set_up()</a>, <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a9f52af5365fe0f6e3a2727246a5fcc13">stir::ObjectiveFunctionTests&lt; GeneralisedPrior&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;::test_gradient()</a>, <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a6e3498682bc03a58b206f149ee034ab9">stir::ObjectiveFunctionTests&lt; GeneralisedPrior&lt; DiscretisedDensity&lt; 3, float &gt; &gt;, DiscretisedDensity&lt; 3, float &gt; &gt;::test_Hessian()</a>, <a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">test_Hessian_against_numerical()</a>, and <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">test_Hessian_convexity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#ad05484ce8ce8d981bbf344478047a542">run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1QuadraticPriorTests.html#aae54a6f08d8aebc9416d550f0e33e48d">stir::QuadraticPriorTests::run_tests()</a>, <a class="el" href="classstir_1_1RelativeDifferencePriorTests.html#aa0fe8652c00ef88b078716e23811b35d">stir::RelativeDifferencePriorTests&lt; RDP &gt;::run_tests()</a>, <a class="el" href="classstir_1_1PLSPriorTests.html#aafd3abed92b8234804350fdf13e4c428">stir::PLSPriorTests::run_tests()</a>, and <a class="el" href="classstir_1_1LogCoshPriorTests.html#a2323a0a67afb13e6c4e3eb6b7d4e74aa">stir::LogCoshPriorTests::run_tests()</a>.</p>
 
 </div>
 </div>
@@ -398,20 +406,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Test various configurations of the Hessian of the prior via accumulate_Hessian_times_input() for convexity. </p>
 <p>Tests the convexity condition: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x^T \cdot H_{\lambda}x &gt;= 0 \]" src="form_144.png"/>
+<img class="formulaDsp" alt="\[ x^T \cdot H_{\lambda}x &gt;= 0 \]" src="form_151.png"/>
 </p>
-<p> for all non-negative <code>x</code> and non-zero <code></code>  (Relative Difference Prior conditions). This function constructs an array of configurations to test this condition and calls <code>test_Hessian_convexity_configuration()</code>. </p>
+<p> for all non-negative <code>x</code> and non-zero <code></code>  (Relative Difference Prior conditions). This function constructs an array of configurations to test this condition and calls <code><a class="el" href="classstir_1_1GeneralisedPriorTests.html#a3ea760123a879ca097c66512e8aac92d" title="Hessian test for a particular configuration of the Hessian concave condition. ">test_Hessian_convexity_configuration()</a></code>. </p>
 <p>Construct configurations</p>
 <p>Reset beta to original value </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1GeneralisedPrior.html#ab85f4e40ea3146102a9e8d5ef16c0601">stir::GeneralisedPrior&lt; DataT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#a26ad981b535bbfcacda5d0018716c018">stir::Array&lt; num_dimensions, elemT &gt;::find_min()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#af24e670f16e3711126e9fa2077f65d3d">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_empty_copy()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, and <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;::is_convex()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;::is_convex()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">stir::GeneralisedPrior&lt; DataT &gt;::set_penalisation_factor()</a>, and <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a3ea760123a879ca097c66512e8aac92d">test_Hessian_convexity_configuration()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">run_tests_for_objective_function()</a>.</p>
 
@@ -452,7 +460,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -461,9 +469,92 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Performs a perturbation response using compute_gradient to determine if the compute_Hessian (for a single densel) is within tolerance. </p>
 <p>Setup </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">stir::GeneralisedPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">stir::GeneralisedPrior&lt; DataT &gt;::compute_Hessian()</a>, <a class="el" href="classstir_1_1RunTests.html#a21011f94757f7a15068d2680070baf26">stir::RunTests::everything_ok</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;::is_convex()</a>, <a class="el" href="classstir_1_1RunTests.html#af1dc8b56b0e9c554fc28962b45acf743">stir::RunTests::set_tolerance()</a>, and <a class="el" href="group__IO.html#ga0ad946998d5f86bcb7e829271c8cf517">stir::write_to_file()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">stir::GeneralisedPrior&lt; DataT &gt;::compute_gradient()</a>, <a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">stir::GeneralisedPrior&lt; DataT &gt;::compute_Hessian()</a>, <a class="el" href="classstir_1_1RunTests.html#a21011f94757f7a15068d2680070baf26">stir::RunTests::everything_ok</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, and <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;::is_convex()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a824ce4c09dab73d7ae2f69eb96433de5">run_tests_for_objective_function()</a>.</p>
+
+</div>
+</div>
+<a id="a3ea760123a879ca097c66512e8aac92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea760123a879ca097c66512e8aac92d">&#9670;&nbsp;</a></span>test_Hessian_convexity_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stir::GeneralisedPriorTests::test_Hessian_convexity_configuration </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>test_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstir_1_1GeneralisedPrior.html">GeneralisedPrior</a>&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objective_function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classstir_1_1DiscretisedDensity.html">GeneralisedPriorTests::target_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_sptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input_multiplication</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input_addition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_image_multiplication</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_image_addition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hessian test for a particular configuration of the Hessian concave condition. </p>
+<p>setup targets</p>
+<p>Construct an current_image &amp; input with various values that are variations of the target</p>
+<p>Compute H x</p>
+<p>Compute x  (H x)</p>
+<p>Compute x  x </p>
+
+<p class="reference">References <a class="el" href="classstir_1_1GeneralisedPrior.html#ab85f4e40ea3146102a9e8d5ef16c0601">stir::GeneralisedPrior&lt; DataT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="classstir_1_1Array.html#a887028a2daad51cd19237dc272651cdc">stir::Array&lt; num_dimensions, elemT &gt;::begin_all()</a>, <a class="el" href="classstir_1_1RunTests.html#a2000f359bcd56a21acc1ccd6e009a0e4">stir::RunTests::check_if_less()</a>, <a class="el" href="classstir_1_1Array.html#ad1fb6dfef27ad32187f3cc22e1c4beb0">stir::Array&lt; num_dimensions, elemT &gt;::find_max()</a>, <a class="el" href="classstir_1_1Array.html#a26ad981b535bbfcacda5d0018716c018">stir::Array&lt; num_dimensions, elemT &gt;::find_min()</a>, <a class="el" href="classstir_1_1DiscretisedDensity.html#af24e670f16e3711126e9fa2077f65d3d">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_empty_copy()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__Coordinate.html#ga2f556ccc1c78f5ee93aac477d852701a">stir::inner_product()</a>, and <a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">stir::GeneralisedPrior&lt; DataT &gt;::set_penalisation_factor()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">test_Hessian_convexity()</a>.</p>
 
 </div>
 </div>
@@ -473,7 +564,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

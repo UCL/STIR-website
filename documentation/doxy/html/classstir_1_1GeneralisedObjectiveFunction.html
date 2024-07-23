@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -91,11 +91,17 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 <tr class="memdesc:a594bd9b807d2623fbf383d059140a808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be called before using this object. <br /></td></tr>
 <tr class="separator:a594bd9b807d2623fbf383d059140a808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6291a5e5373517ddfb7ccbc259fdeef6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6291a5e5373517ddfb7ccbc259fdeef6">compute_sub_gradient</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)</td></tr>
-<tr class="memdesc:a6291a5e5373517ddfb7ccbc259fdeef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the sub-gradient of the objective function at the <em>current_estimate</em>.  <a href="#a6291a5e5373517ddfb7ccbc259fdeef6">More...</a><br /></td></tr>
+<tr class="memdesc:a6291a5e5373517ddfb7ccbc259fdeef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the subset-gradient of the objective function at <em>current_estimate</em>.  <a href="#a6291a5e5373517ddfb7ccbc259fdeef6">More...</a><br /></td></tr>
 <tr class="separator:a6291a5e5373517ddfb7ccbc259fdeef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d490db9b1171fc0fa198c93af4d78cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a3d490db9b1171fc0fa198c93af4d78cb">compute_sub_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate, const int subset_num)=0</td></tr>
-<tr class="memdesc:a3d490db9b1171fc0fa198c93af4d78cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the sub-gradient of the unregularised objective function at the <em>current_estimate</em>.  <a href="#a3d490db9b1171fc0fa198c93af4d78cb">More...</a><br /></td></tr>
+<tr class="memdesc:a3d490db9b1171fc0fa198c93af4d78cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the subset-gradient of the unregularised objective function at <em>current_estimate</em>.  <a href="#a3d490db9b1171fc0fa198c93af4d78cb">More...</a><br /></td></tr>
 <tr class="separator:a3d490db9b1171fc0fa198c93af4d78cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f40f452c030412e33bd0b7a7f94046b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b">compute_gradient</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a6f40f452c030412e33bd0b7a7f94046b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the gradient of the objective function at the <em>current_estimate</em>.  <a href="#a6f40f452c030412e33bd0b7a7f94046b">More...</a><br /></td></tr>
+<tr class="separator:a6f40f452c030412e33bd0b7a7f94046b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff0a08633f24353dd2773eb7aa8504d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a7ff0a08633f24353dd2773eb7aa8504d">compute_gradient_without_penalty</a> (TargetT &amp;gradient, const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a7ff0a08633f24353dd2773eb7aa8504d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the gradient of the unregularised objective function at the <em>current_estimate</em>.  <a href="#a7ff0a08633f24353dd2773eb7aa8504d">More...</a><br /></td></tr>
+<tr class="separator:a7ff0a08633f24353dd2773eb7aa8504d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de6d1650b0eb144a73941a5f0ade96b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a2de6d1650b0eb144a73941a5f0ade96b">compute_objective_function_without_penalty</a> (const TargetT &amp;current_estimate, const int subset_num)</td></tr>
 <tr class="memdesc:a2de6d1650b0eb144a73941a5f0ade96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the value of the unregularised sub-objective function at the <em>current_estimate</em>.  <a href="#a2de6d1650b0eb144a73941a5f0ade96b">More...</a><br /></td></tr>
 <tr class="separator:a2de6d1650b0eb144a73941a5f0ade96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +120,10 @@ virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td
 <tr class="memitem:af9fd305b3f3b5070ee5c7b62e8b5fee5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5">compute_objective_function</a> (const TargetT &amp;current_estimate)</td></tr>
 <tr class="memdesc:af9fd305b3f3b5070ee5c7b62e8b5fee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the value of the objective function at the <em>current_estimate</em>.  <a href="#af9fd305b3f3b5070ee5c7b62e8b5fee5">More...</a><br /></td></tr>
 <tr class="separator:af9fd305b3f3b5070ee5c7b62e8b5fee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8099c6ef0f97679d2e01d390af6798f"><td class="memItemLeft" align="right" valign="top"><a id="aa8099c6ef0f97679d2e01d390af6798f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa8099c6ef0f97679d2e01d390af6798f">compute_value</a> (const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:aa8099c6ef0f97679d2e01d390af6798f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#af9fd305b3f3b5070ee5c7b62e8b5fee5" title="Compute the value of the objective function at the current_estimate. ">compute_objective_function(const TargetT&amp;)</a> <br /></td></tr>
+<tr class="separator:aa8099c6ef0f97679d2e01d390af6798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5bfcded32b6d3339b5bb1be1995c75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#abe5bfcded32b6d3339b5bb1be1995c75">fill_nonidentifiable_target_parameters</a> (TargetT &amp;target, const float value) const</td></tr>
 <tr class="memdesc:abe5bfcded32b6d3339b5bb1be1995c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill any elements that we cannot estimate with a fixed value.  <a href="#abe5bfcded32b6d3339b5bb1be1995c75">More...</a><br /></td></tr>
 <tr class="separator:abe5bfcded32b6d3339b5bb1be1995c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,7 +301,7 @@ class stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</h3>
 <p>Often, one includes a penalty (or prior) in the objective function. This class uses a <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> object for this. Note that we use the convention that the objective function is maximised. The penalty is expected to be a function that increases with higher penalty, so it will be <em>subtracted</em> from the unregularised case.</p>
 <p>In tomography, we often use subsets, where the objective function is written as a sum of sub-objective functions. This class has some subset functionality. When using subsets, the penalty will be distributed evenly over all subsets. While this increases the computational cost, it makes the subsets more 'balanced' which is best for most algorithms.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objectsThis is the base class for all iterative reconstructio...">IterativeReconstruction</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000135">Todo:</a></b></dt><dd>Currently, there is subset code in both <a class="el" href="classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objectsThis is the base class for all iterative reconstructio...">IterativeReconstruction</a> and here. This is confusing and leads to repetition. It probably should all be moved here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo:</a></b></dt><dd>Currently, there is subset code in both <a class="el" href="classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objectsThis is the base class for all iterative reconstructio...">IterativeReconstruction</a> and here. This is confusing and leads to repetition. It probably should all be moved here.</dd></dl>
 <dl class="section user"><dt>Parameters for parsing</dt><dd></dd></dl>
 <pre class="fragment">; specify prior, see GeneralisedObjectiveFunction&lt;TargetT&gt; hierarchy for possible values
 prior type :=
@@ -370,14 +380,12 @@ template&lt;typename TargetT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This should compute the sub-gradient of the objective function at the <em>current_estimate</em>. </p>
-<p>The subgradient is the gradient of the objective function restricted to the subset specified. What this means depends on how this function is implemented later on in the hierarchy.</p>
-<p>Computed as the <em>difference</em> of <code>compute_sub_gradient_without_penalty</code> and <code><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a9c99dc70801b4cc6e909794f3889bb5f" title="Read-only access to the prior. ">get_prior_ptr()</a>-&gt;compute_gradient()/num_subsets</code>.</p>
+<p>Compute the subset-gradient of the objective function at <em>current_estimate</em>. </p>
+<p>The subset-gradient is the gradient of the objective function restricted to the subset specified. What this means depends on how this function is implemented later on in the hierarchy.</p>
+<p>Computed as the <em>difference</em> of <code>compute_sub_gradient_without_penalty</code> and <code><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a9c99dc70801b4cc6e909794f3889bb5f" title="Read-only access to the prior. ">get_prior_ptr()</a>-&gt;<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b" title="Compute the gradient of the objective function at the current_estimate. ">compute_gradient()</a>/num_subsets</code>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Any data in <em>gradient</em> will be overwritten. </dd></dl>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a3a7652e87174147b6ae461509d82afdd">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_gradient()</a>.</p>
 
 </div>
 </div>
@@ -423,10 +431,94 @@ template&lt;typename TargetT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This should compute the sub-gradient of the unregularised objective function at the <em>current_estimate</em>. </p>
+<p>This should compute the subset-gradient of the unregularised objective function at <em>current_estimate</em>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>The derived class should overwrite any data in <em>gradient</em>. </dd></dl>
 
 <p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a35ccb0e304436def1a338a8c5c46d276">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#ad0e1104f45c2b6c735e4a6d849184f28">stir::SumOfGeneralisedObjectiveFunctions&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;, TargetT, PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt; &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a6f40f452c030412e33bd0b7a7f94046b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f40f452c030412e33bd0b7a7f94046b">&#9670;&nbsp;</a></span>compute_gradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TargetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">stir::GeneralisedObjectiveFunction</a>&lt; TargetT &gt;::compute_gradient </td>
+          <td>(</td>
+          <td class="paramtype">TargetT &amp;&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TargetT &amp;&#160;</td>
+          <td class="paramname"><em>current_estimate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the gradient of the objective function at the <em>current_estimate</em>. </p>
+<p>Computed as the <em>difference</em> of <code>compute_gradient_without_penalty</code> and <code><a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a9c99dc70801b4cc6e909794f3889bb5f" title="Read-only access to the prior. ">get_prior_ptr()</a>-&gt;<a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a6f40f452c030412e33bd0b7a7f94046b" title="Compute the gradient of the objective function at the current_estimate. ">compute_gradient()</a></code>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Any data in <em>gradient</em> will be overwritten. </dd></dl>
+
+</div>
+</div>
+<a id="a7ff0a08633f24353dd2773eb7aa8504d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff0a08633f24353dd2773eb7aa8504d">&#9670;&nbsp;</a></span>compute_gradient_without_penalty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TargetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html">stir::GeneralisedObjectiveFunction</a>&lt; TargetT &gt;::compute_gradient_without_penalty </td>
+          <td>(</td>
+          <td class="paramtype">TargetT &amp;&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TargetT &amp;&#160;</td>
+          <td class="paramname"><em>current_estimate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the gradient of the unregularised objective function at the <em>current_estimate</em>. </p>
+<p>Computed by summing subset-gradients.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Any data in <em>gradient</em> will be overwritten. </dd></dl>
 
 </div>
 </div>
@@ -558,6 +650,8 @@ template&lt;typename TargetT &gt; </div>
 <p>Compute the value of the penalty at the <em>current_estimate</em>. </p>
 <p>Implemented in terms of <a class="el" href="classstir_1_1GeneralisedPrior.html#afa6d6e88ce44aed622b37aca1548910e" title="compute the value of the function ">GeneralisedPrior::compute_value</a>. </p>
 
+<p class="reference">References <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa8099c6ef0f97679d2e01d390af6798f">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;::compute_value()</a>.</p>
+
 </div>
 </div>
 <a id="a211f21d59b7d47f605a2f38a643bda68"></a>
@@ -590,8 +684,6 @@ template&lt;typename TargetT &gt; </div>
 
 <p>Compute the value of the sub-objective function at the <em>current_estimate</em>. </p>
 <p>Computed as the <em>difference</em> of <code>compute_objective_function_without_penalty</code> and <code>compute_penalty</code>. </p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a3a7652e87174147b6ae461509d82afdd">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_gradient()</a>.</p>
 
 </div>
 </div>
@@ -658,7 +750,7 @@ template&lt;typename TargetT&gt; </div>
 <p>In many cases, it is easier to use a larger target than what we can actually estimate. For instance, using a rectangular image while we estimate only a circular region.</p>
 <p>For some algorithms, it is important that the parameters that cannot be estimate are set to 0 (or some other value). For example, if the outer voxels contribute to the forward projection of an image, but not to a backprojection.</p>
 <p>This function allows you to do that. Its default implementation is to do nothing. It is up to the derived class to implement this sensible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000136">Todo:</a></b></dt><dd>The type of the value should really be derived from e.g. TargetT::full_iterator. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000138">Todo:</a></b></dt><dd>The type of the value should really be derived from e.g. TargetT::full_iterator. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ab9c794711edfbc2301bf945aa4334936">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>.</p>
 
@@ -746,7 +838,7 @@ template&lt;typename TargetT &gt; </div>
 
 <p class="reference">References <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;::accumulate_Hessian_times_input()</a>, <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="group__buildblock.html#ga45e27d9de6cdc69c146e791a825a20da">stir::warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;::accumulate_Hessian_times_input()</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html#a2743fe76a4d1bf86d51e9b4f276cc285">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests::test_objective_function_Hessian_concavity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;::accumulate_Hessian_times_input()</a>.</p>
 
 </div>
 </div>
@@ -856,7 +948,7 @@ template&lt;typename TargetT &gt; </div>
 </div><div class="memdoc">
 
 <p>Read-only access to the prior. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo:</a></b></dt><dd>It would be nicer to not return a pointer. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000139">Todo:</a></b></dt><dd>It would be nicer to not return a pointer. </dd></dl>
 
 </div>
 </div>
@@ -1116,7 +1208,7 @@ template&lt;typename TargetT&gt; </div>
 <dl class="section user"><dt>Developer\'s note</dt><dd></dd></dl>
 <p>The reason we have this function is that overloading subsets_are_approximately_balanced(std::string&amp;) in a derived class would hide <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#a44734aea00b7cf5ce40fd8f21367e9d5" title="Checks of the current subset scheme is approximately balanced. ">subsets_are_approximately_balanced()</a>. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a4b863e78e523e4790f407844409da15f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#af96157154a2a99922949ca84236e05ad">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a0a25f3b77a4599545bc61fed66830bc0">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#a26469a84323ec6d1efffc820c2efd79d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a8c726a5b2b38fa36eb983c6d8b517fed">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#ad133b896ff6307ce2cb5a70388c95f43">stir::SumOfGeneralisedObjectiveFunctions&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;, TargetT, PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt; &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a4b863e78e523e4790f407844409da15f">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#af96157154a2a99922949ca84236e05ad">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a0a25f3b77a4599545bc61fed66830bc0">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#a8c726a5b2b38fa36eb983c6d8b517fed">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html#a26469a84323ec6d1efffc820c2efd79d">stir::PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1SumOfGeneralisedObjectiveFunctions.html#ad133b896ff6307ce2cb5a70388c95f43">stir::SumOfGeneralisedObjectiveFunctions&lt; PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;, TargetT, PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt; &gt;</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1253,7 @@ template&lt;typename TargetT&gt; </div>
 <dl class="section user"><dt>Developer\'s note</dt><dd></dd></dl>
 <p>The reason we have this function is that overloading a function in a derived class, hides all functions of the same name. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ab454cb26a2cd744e4f21fef9f1217187">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#ac31fcd4e142d17b8b56df7ae20074ed6">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a08e4b0ccb5436c00c05ce925f0d71a19">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#af3fe9e6100d7935be3df0c763d517823">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ab454cb26a2cd744e4f21fef9f1217187">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a08e4b0ccb5436c00c05ce925f0d71a19">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#ac31fcd4e142d17b8b56df7ae20074ed6">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#af3fe9e6100d7935be3df0c763d517823">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1365,7 @@ template&lt;typename TargetT &gt; </div>
 <dl class="section user"><dt>Developer\'s note</dt><dd></dd></dl>
 <p>The reason we have this function is that overloading a function in a derived class, hides all functions of the same name. </p>
 
-<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a164e646e2c79adeaf03945d3e082f1de">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a67f1d4ce333d05556739b61f799a38b4">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a639474a396f56761f641590e836392cd">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#a164e646e2c79adeaf03945d3e082f1de">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html#a67f1d4ce333d05556739b61f799a38b4">stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html#aa0448446f695b2f737e966d908837626">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;</a>, and <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html#a639474a396f56761f641590e836392cd">stir::PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData&lt; TargetT &gt;</a>.</p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
 
@@ -1286,7 +1378,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

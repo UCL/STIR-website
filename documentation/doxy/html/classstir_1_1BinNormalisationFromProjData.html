@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a536a69c1ffb729590974081b9f543df1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a536a69c1ffb729590974081b9f543df1">is_trivial</a> () const override</td></tr>
 <tr class="memdesc:a536a69c1ffb729590974081b9f543df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if we could be multiplying with 1 (i.e. do nothing)  <a href="#a536a69c1ffb729590974081b9f543df1">More...</a><br /></td></tr>
 <tr class="separator:a536a69c1ffb729590974081b9f543df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646a138cac94e327d5ebb9546f14474d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a646a138cac94e327d5ebb9546f14474d">is_TOF_only_norm</a> () const override</td></tr>
+<tr class="memdesc:a646a138cac94e327d5ebb9546f14474d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns if the object can only handle TOF data  <a href="#a646a138cac94e327d5ebb9546f14474d">More...</a><br /></td></tr>
+<tr class="separator:a646a138cac94e327d5ebb9546f14474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af761b75b02cf95863bb60bbddbaee5cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BinNormalisationFromProjData.html#af761b75b02cf95863bb60bbddbaee5cb">set_up</a> (const shared_ptr&lt; const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &gt; &amp;exam_info_sptr, const shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; &amp;) override</td></tr>
 <tr class="memdesc:af761b75b02cf95863bb60bbddbaee5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if we can handle certain projection data.  <a href="#af761b75b02cf95863bb60bbddbaee5cb">More...</a><br /></td></tr>
 <tr class="separator:af761b75b02cf95863bb60bbddbaee5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,6 +282,38 @@ End Bin Normalisation From ProjData:=
 
 </div>
 </div>
+<a id="a646a138cac94e327d5ebb9546f14474d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646a138cac94e327d5ebb9546f14474d">&#9670;&nbsp;</a></span>is_TOF_only_norm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stir::BinNormalisationFromProjData::is_TOF_only_norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns if the object can only handle TOF data </p>
+<p>Checks if the underlying "projection data" are TOF or not. </p>
+
+<p>Reimplemented from <a class="el" href="classstir_1_1BinNormalisation.html#a22d10814092de18356dd47e76fe9fc81">stir::BinNormalisation</a>.</p>
+
+<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a8fc4895d789fe6ff51291bff54e0cbbf">get_norm_proj_data_sptr()</a>.</p>
+
+</div>
+</div>
 <a id="af761b75b02cf95863bb60bbddbaee5cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af761b75b02cf95863bb60bbddbaee5cb">&#9670;&nbsp;</a></span>set_up()</h2>
 
@@ -429,7 +464,7 @@ End Bin Normalisation From ProjData:=
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

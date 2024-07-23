@@ -1,3 +1,9 @@
 <map id="stir::GeneralisedPriorTests" name="stir::GeneralisedPriorTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="41,5,147,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior " alt="" coords="1102,5,1262,32"/>
+<area shape="rect" id="node6" href="$classstir_1_1PLSPriorTests.html" title="tests for PLSPrior " alt="" coords="1115,56,1249,83"/>
+<area shape="rect" id="node7" href="$classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior " alt="" coords="1100,107,1264,133"/>
+<area shape="rect" id="node8" href="$classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior " alt="" coords="1104,158,1260,199"/>
+<area shape="rect" id="node2" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="571,59,824,130"/>
+<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,71,111,97"/>
+<area shape="rect" id="node4" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,102,372,143"/>
 </map>

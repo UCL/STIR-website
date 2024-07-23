@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -43,7 +43,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx File Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__recon__buildblock.html">Reconstruction building blocks</a> &raquo; <a class="el" href="group__GeneralisedObjectiveFunction.html">Objective functions for iterative estimation of variables</a></div></div>  </div>
 </div><!--header-->
@@ -70,10 +72,12 @@ $(function() {
 <code>#include &quot;<a class="el" href="FilePath_8h_source.html">stir/FilePath.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="stream_8h_source.html">stir/stream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ListModeData__dummy_8h_source.html">stir/listmode/ListModeData_dummy.h</a>&quot;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="ForwardProjectorByBinUsingProjMatrixByBin_8h_source.html">stir/recon_buildblock/ForwardProjectorByBinUsingProjMatrixByBin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BackProjectorByBinUsingProjMatrixByBin_8h_source.html">stir/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.h</a>&quot;</code><br />
@@ -81,6 +85,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="BinNormalisationWithCalibration_8h_source.html">stir/recon_buildblock/BinNormalisationWithCalibration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PresmoothingForwardProjectorByBin_8h_source.html">stir/recon_buildblock/PresmoothingForwardProjectorByBin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PostsmoothingBackProjectorByBin_8h_source.html">stir/recon_buildblock/PostsmoothingBackProjectorByBin.h</a>&quot;</code><br />
+<code>#include &quot;stir/recon_buildblock/distributable.txx&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -88,6 +93,28 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacestir"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html">stir</a></td></tr>
 <tr class="memdesc:namespacestir"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for the STIR library (and some/most of its applications) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2b6e18c39e558bc6c97de42dbbdc8ed1"><td class="memTemplParams" colspan="2"><a id="a2b6e18c39e558bc6c97de42dbbdc8ed1"></a>
+template&lt;bool do_gradient, bool do_value&gt; </td></tr>
+<tr class="memitem:a2b6e18c39e558bc6c97de42dbbdc8ed1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::LM_gradient_and_value</b> (DiscretisedDensity&lt; 3, float &gt; &amp;output_image, const ProjMatrixElemsForOneBin &amp;row, const float add_term, const Bin &amp;measured_bin, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, double *value_ptr)</td></tr>
+<tr class="separator:a2b6e18c39e558bc6c97de42dbbdc8ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9693e6104584aa6000f13268c56c00"><td class="memItemLeft" align="right" valign="top"><a id="acb9693e6104584aa6000f13268c56c00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::LM_Hessian</b> (DiscretisedDensity&lt; 3, float &gt; &amp;output_image, const ProjMatrixElemsForOneBin &amp;row, const float add_term, const Bin &amp;measured_bin, const DiscretisedDensity&lt; 3, float &gt; &amp;input_image, const DiscretisedDensity&lt; 3, float &gt; &amp;rhs)</td></tr>
+<tr class="separator:acb9693e6104584aa6000f13268c56c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e22291dd1c1835798c0eef42257014a"><td class="memItemLeft" align="right" valign="top"><a id="a0e22291dd1c1835798c0eef42257014a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::LM_gradient_distributable_computation</b> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_ptr, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate, double *value_ptr)</td></tr>
+<tr class="separator:a0e22291dd1c1835798c0eef42257014a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605eab47c8a28f818bd0f8e832b9faff"><td class="memItemLeft" align="right" valign="top"><a id="a605eab47c8a28f818bd0f8e832b9faff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::LM_Hessian_distributable_computation</b> (const shared_ptr&lt; ProjMatrixByBin &gt; PM_sptr, const shared_ptr&lt; ProjDataInfo &gt; &amp;proj_data_info_sptr, DiscretisedDensity&lt; 3, float &gt; *output_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *input_image_ptr, const DiscretisedDensity&lt; 3, float &gt; *rhs_ptr, const std::vector&lt; BinAndCorr &gt; &amp;record_ptr, const int subset_num, const int num_subsets, const bool has_add, const bool accumulate)</td></tr>
+<tr class="separator:a605eab47c8a28f818bd0f8e832b9faff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afb99a5fff7936eab285ba93e7db7db98"><td class="memItemLeft" align="right" valign="top"><a id="afb99a5fff7936eab285ba93e7db7db98"></a>
+constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>stir::max_quotient</b> = 10000.F</td></tr>
+<tr class="separator:afb99a5fff7936eab285ba93e7db7db98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of class <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title="Class for PET list mode data from static images for a scanner with discrete detectors. ">stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin</a>. </p>
@@ -99,7 +126,7 @@ Sanida Mustafovic </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

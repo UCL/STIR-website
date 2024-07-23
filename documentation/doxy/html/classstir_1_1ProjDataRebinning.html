@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -226,7 +226,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>Parameters need to be initialised somehow. This is usually done using the parse() member functions (see <a class="el" href="classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. ">ParsingObject</a>). For some parameters, <code>set_some_parameter()</code> methods are provided.</p>
 <p>Normal usage is for example as follows </p><div class="fragment"><div class="line">shared_ptr&lt;ProjDataRebinning&gt; rebinning_sptr;</div><div class="line"><span class="comment">// set parameters somehow</span></div><div class="line"><span class="keywordflow">if</span> (rebinning_sptr-&gt;set_up()!= Succeeded::yes)</div><div class="line">  <a class="code" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">error</a>(<span class="stringliteral">&quot;Disaster. Presumably data are inconsistent&quot;</span>)</div><div class="line"><span class="keywordflow">if</span> (rebinning_sptr-&gt;rebin()!= Succeeded::yes)</div><div class="line">  <a class="code" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">error</a>(<span class="stringliteral">&quot;Disaster. Presumably run-time error or so&quot;</span>);</div></div><!-- fragment --><dl class="section user"><dt>Info for developers</dt><dd></dd></dl>
 <p>For convenience, the class is derived from <a class="el" href="classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. ">TimedObject</a>. It is the responsibility of the derived class to run these timers though.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000160">Todo:</a></b></dt><dd>there should be a method to rebin the data without writing the result to disk </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000163">Todo:</a></b></dt><dd>there should be a method to rebin the data without writing the result to disk </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a56c95d02aa026ae281af0b6a8406019c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56c95d02aa026ae281af0b6a8406019c">&#9670;&nbsp;</a></span>rebin()</h2>
@@ -331,7 +331,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:39 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

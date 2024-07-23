@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -211,7 +211,7 @@ Files</h2></td></tr>
 <tr class="memdesc:MinimalArrayFilter3D_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the erosion filter (i.e. voxel=min(neighbours)) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:NumericVectorWithOffset_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NumericVectorWithOffset_8inl.html">NumericVectorWithOffset.inl</a></td></tr>
-<tr class="memdesc:NumericVectorWithOffset_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">inline implementations for NumericVectorWithOffset <br /></td></tr>
+<tr class="memdesc:NumericVectorWithOffset_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">inline implementations for <a class="el" href="classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators ">stir::NumericVectorWithOffset</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SeparableArrayFunctionObject_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SeparableArrayFunctionObject_8h.html">SeparableArrayFunctionObject.h</a></td></tr>
 <tr class="memdesc:SeparableArrayFunctionObject_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n -dimensional ArrayFunctionObject whose operation is separable. ">stir::SeparableArrayFunctionObject</a>. <br /></td></tr>
@@ -290,9 +290,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1SeparableMetzArrayFilter.html">stir::SeparableMetzArrayFilter&lt; num_dimensions, elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separable Metz filtering in <code>n</code> - dimensions.  <a href="classstir_1_1SeparableMetzArrayFilter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1detail_1_1VectorWithOffset__iter.html">stir::detail::VectorWithOffset_iter&lt; elemT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">templated class for the iterators used by <a class="el" href="classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. ">VectorWithOffset</a>.  <a href="classstir_1_1detail_1_1VectorWithOffset__iter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A templated class for vectors, but with indices starting not from 0.  <a href="classstir_1_1VectorWithOffset.html#details">More...</a><br /></td></tr>
@@ -443,8 +440,6 @@ template&lt;class elemT &gt; </div>
 
 <p>Replace elements by their logarithm, 1D version. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ArrayTests.html#ad26d14c250b873de4424793cf5c4f23b">stir::ArrayTests::run_tests()</a>.</p>
-
 </div>
 </div>
 <a id="ga5f97351a1c6034e8168f8629a00379c0"></a>
@@ -505,7 +500,7 @@ template&lt;class elemT &gt; </div>
 
 <p>Replace elements by their exponentiation, 1D version. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#aa8d680ead38833e51ee04c33874a6e07">stir::BinNormalisationFromAttenuationImage::apply()</a>, <a class="el" href="classstir_1_1ArrayTests.html#ad26d14c250b873de4424793cf5c4f23b">stir::ArrayTests::run_tests()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a814600afd7d8bc86a248a363564efe31">stir::BinNormalisationFromAttenuationImage::undo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#aa8d680ead38833e51ee04c33874a6e07">stir::BinNormalisationFromAttenuationImage::apply()</a>, and <a class="el" href="classstir_1_1BinNormalisationFromAttenuationImage.html#a814600afd7d8bc86a248a363564efe31">stir::BinNormalisationFromAttenuationImage::undo()</a>.</p>
 
 </div>
 </div>
@@ -642,7 +637,7 @@ template&lt;class T , class FUNCTION &gt; </div>
 <p>apply any function(object) to each element of the multi-dimensional array </p>
 <p>Each element will be replaced by </p><div class="fragment"><div class="line">elem = f(elem);</div></div><!-- fragment --><p>Requires that type <code>T</code> has <code>begin_all()</code> and <code>end_all()</code> functions. </p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">stir::ScatterEstimation::process_data()</a>, and <a class="el" href="classstir_1_1ArrayTests.html#ad26d14c250b873de4424793cf5c4f23b">stir::ArrayTests::run_tests()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterEstimation.html#a20adf5073f27f5c112203fa1aef4cfc8">stir::ScatterEstimation::process_data()</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1424,7 @@ template&lt;class OutputIteratorT , class InputIteratorT , class scaleT &gt; </d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -58,13 +58,15 @@ $(function() {
 <code>#include &quot;<a class="el" href="RelativeDifferencePrior_8h_source.html">stir/recon_buildblock/RelativeDifferencePrior.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LogcoshPrior_8h_source.html">stir/recon_buildblock/LogcoshPrior.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PLSPrior_8h_source.html">stir/recon_buildblock/PLSPrior.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="RunTests_8h_source.html">stir/RunTests.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ObjectiveFunctionTests_8h_source.html">stir/recon_buildblock/test/ObjectiveFunctionTests.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="read__from__file_8h_source.html">stir/IO/read_from_file.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="write__to__file_8h_source.html">stir/IO/write_to_file.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="info_8h_source.html">stir/info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Verbosity_8h_source.html">stir/Verbosity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Succeeded_8h_source.html">stir/Succeeded.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="num__threads_8h_source.html">stir/num_threads.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="norm_8h_source.html">stir/numerics/norm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SeparableGaussianImageFilter_8h_source.html">stir/SeparableGaussianImageFilter.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;boost/random/uniform_01.hpp&gt;</code><br />
@@ -74,7 +76,19 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPriorTests.html">stir::GeneralisedPriorTests</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>.  <a href="classstir_1_1GeneralisedPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test class for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>, <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">CudaRelativeDifferencePrior</a> and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">LogcoshPrior</a>.  <a href="classstir_1_1GeneralisedPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPriorTests.html">stir::QuadraticPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">QuadraticPrior</a>  <a href="classstir_1_1QuadraticPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePriorTests.html">stir::RelativeDifferencePriorTests&lt; RDP &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">RelativeDifferencePrior</a>  <a href="classstir_1_1RelativeDifferencePriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PLSPriorTests.html">stir::PLSPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for <a class="el" href="classstir_1_1PLSPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements the anatomical penalty function...">PLSPrior</a>  <a href="classstir_1_1PLSPriorTests.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogCoshPriorTests.html">stir::LogCoshPriorTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests for LogCoshPrior  <a href="classstir_1_1LogCoshPriorTests.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -93,7 +107,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 <div class="textblock"><p>Test program for <a class="el" href="classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior. ">stir::QuadraticPrior</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior. ">stir::RelativeDifferencePrior</a>, and <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">stir::LogcoshPrior</a>. </p>
 <dl class="section user"><dt>Usage</dt><dd></dd></dl>
 <pre>
-test_priors [ density_filename ]
+test_priors [--skip-cuda] [ density_filename ]
 </pre><p> where the argument is optional. See the class documentation for more info.</p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
 <dd>
@@ -101,7 +115,7 @@ Robert Twyman </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:36 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

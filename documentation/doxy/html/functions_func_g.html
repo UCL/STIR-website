@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,9 @@ $(function() {
 </li>
 <li>get_axial_crystal_spacing()
 : <a class="el" href="classstir_1_1Scanner.html#aeaed6cd1900b071dfa0d830c17bd8b4b">stir::Scanner</a>
+</li>
+<li>get_axial_length()
+: <a class="el" href="classstir_1_1Scanner.html#a19ffe6545cd567550af74571fce3341c">stir::Scanner</a>
 </li>
 <li>get_axial_pos_num()
 : <a class="el" href="classstir_1_1Sinogram.html#a8f1045646d5737fd60c3ed62e2930561">stir::Sinogram&lt; elemT &gt;</a>
@@ -224,6 +227,10 @@ $(function() {
 <li>get_const_data_ptr()
 : <a class="el" href="classstir_1_1ProjDataInMemory.html#a912a9023edac14d9c81ba08a372dbf4f">stir::ProjDataInMemory</a>
 , <a class="el" href="classstir_1_1VectorWithOffset.html#a0f7dc51e6a0f4155963ef464acab701d">stir::VectorWithOffset&lt; T &gt;</a>
+</li>
+<li>get_const_full_data_ptr()
+: <a class="el" href="classstir_1_1Array.html#a5d92ae20381505e0b33c51e3e3cf6db5">stir::Array&lt; num_dimensions, elemT &gt;</a>
+, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#acc95259ebb91cdc73481d183e71d00a2">stir::Array&lt; 1, elemT &gt;</a>
 </li>
 <li>get_coordinate_for_det_pos()
 : <a class="el" href="classstir_1_1DetectorCoordinateMap.html#aba8ad3cafeea295972ca503fb55a4a68">stir::DetectorCoordinateMap</a>
@@ -428,6 +435,10 @@ $(function() {
 </li>
 <li>get_full_C_ptr()
 : <a class="el" href="classstir_1_1Utah__phantom.html#ab44466f654f055b0475d301898a309df">stir::Utah_phantom</a>
+</li>
+<li>get_full_data_ptr()
+: <a class="el" href="classstir_1_1Array.html#a8d0f0bb2095d2a318fe7d4d0c729d02f">stir::Array&lt; num_dimensions, elemT &gt;</a>
+, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a4a1ef9747c03e9f8f2c97127d1ab02b8">stir::Array&lt; 1, elemT &gt;</a>
 </li>
 <li>get_gamma()
 : <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a4c9d019a07050da4eba5c7efd0d8f706">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
@@ -985,9 +996,9 @@ $(function() {
 : <a class="el" href="classstir_1_1SqrtHessianRowSum.html#a999153e25aaab23681092ab779877f2a">stir::SqrtHessianRowSum&lt; TargetT &gt;</a>
 </li>
 <li>get_parameters()
-: <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a4c4638b0f5895054ccc5fa2583b456ed">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a7e5075a29b7f5a8afc1bbdbea1994dde">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#ab90ce3b3da03e0e6b1791aacf5be55f9">stir::OSMAPOSLReconstruction&lt; TargetT &gt;</a>
-, <a class="el" href="classstir_1_1OSSPSReconstruction.html#a2eac9f490d42defa28429d9e63e13a1a">stir::OSSPSReconstruction&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1OSSPSReconstruction.html#a246bad1047611ba6d0fc709b7f888e51">stir::OSSPSReconstruction&lt; TargetT &gt;</a>
 </li>
 <li>get_path()
 : <a class="el" href="classstir_1_1FilePath.html#a3bd6d8a2d074d66e3172d5a7403f014f">stir::FilePath</a>
@@ -1074,7 +1085,7 @@ $(function() {
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#ab8323897ff2d2f535a4951eda382f015">stir::TrivialDataSymmetriesForBins</a>
 </li>
 <li>get_related_bins_factorised()
-: <a class="el" href="classstir_1_1DataSymmetriesForBins.html#af6f6b928d4309c5bb93b63c7f0191bf9">stir::DataSymmetriesForBins</a>
+: <a class="el" href="classstir_1_1DataSymmetriesForBins.html#a62531e2439767d3e72ff6b65244f7cda">stir::DataSymmetriesForBins</a>
 , <a class="el" href="classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html#a04131b478c7c9bc61783507657c8f675">stir::DataSymmetriesForBins_PET_CartesianGrid</a>
 , <a class="el" href="classstir_1_1TrivialDataSymmetriesForBins.html#a6ed9d08b77864d3efdad02fb58cc454a">stir::TrivialDataSymmetriesForBins</a>
 </li>
@@ -1194,14 +1205,14 @@ $(function() {
 : <a class="el" href="classstir_1_1ProjDataInfoCylindrical.html#ae0ff857fa3831b8be8b26dba411f5488">stir::ProjDataInfoCylindrical</a>
 </li>
 <li>get_segment_by_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#a3766de54f90ca8454fda35fb39995a1f">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a0f568f3110e8c7ee5e5773401d3e8121">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#a35bf21dcb8b2660e3342b03b6adfd0fc">stir::ProjDataFromStream</a>
-, <a class="el" href="classstir_1_1ProjDataInMemory.html#a55d1d54b1e11c18ca0e695201e52bfdc">stir::ProjDataInMemory</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a2d6ad4ee7b98ce4e75025e604d50bf00">stir::ProjDataInMemory</a>
 </li>
 <li>get_segment_by_view()
 : <a class="el" href="classstir_1_1ProjData.html#a0579b45b307616e0fe7184600f26afbe">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#ab33006e8c5e136d0085507f685778c09">stir::ProjDataFromStream</a>
-, <a class="el" href="classstir_1_1ProjDataInMemory.html#a3fca9a8dfe700b2490998a84f96343cd">stir::ProjDataInMemory</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a7d0d3058992637c3d2813a6f8de23b7b">stir::ProjDataInMemory</a>
 </li>
 <li>get_segment_num()
 : <a class="el" href="classstir_1_1Segment.html#a4b9c5c4801521562a64b31f26ab8514a">stir::Segment&lt; elemT &gt;</a>
@@ -1224,12 +1235,12 @@ $(function() {
 : <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature</a>
 </li>
 <li>get_singles()
-: <a class="el" href="classstir_1_1SinglesRates.html#ac48494fd7b5075520d21cd0f39135257">stir::SinglesRates</a>
-, <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae074ab6dbfcf1b95b12e2d8453fe74cb">stir::SinglesRatesForTimeFrames</a>
+: <a class="el" href="classstir_1_1SinglesRates.html#a849ce3b47e6eace5a1748d4b6afc9a9f">stir::SinglesRates</a>
+, <a class="el" href="classstir_1_1SinglesRatesForTimeFrames.html#ae74ec18d12b1e7c61af4a968966e9be8">stir::SinglesRatesForTimeFrames</a>
 , <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#a54d65684238a10890a5158021ff34076">stir::SinglesRatesForTimeSlices</a>
 </li>
 <li>get_singles_bin_index()
-: <a class="el" href="classstir_1_1Scanner.html#a29e93595944c668f8c292262b04a384e">stir::Scanner</a>
+: <a class="el" href="classstir_1_1Scanner.html#aabbcf89701fa8f0d04bd21e8676dd73b">stir::Scanner</a>
 </li>
 <li>get_singles_rate()
 : <a class="el" href="classstir_1_1FrameSinglesRates.html#abe0cdb84f5d4b9d2878e471c82898062">stir::FrameSinglesRates</a>
@@ -1239,9 +1250,10 @@ $(function() {
 : <a class="el" href="classstir_1_1SinglesRatesForTimeSlices.html#a675f80bdde97c7f329cbb34fee9a2381">stir::SinglesRatesForTimeSlices</a>
 </li>
 <li>get_sinogram()
-: <a class="el" href="classstir_1_1ProjData.html#af898abcf0239ac4789171ca2a63489fe">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#a351a31bde968a0172c3c3aee02305702">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#aaa6ceebcb829145371e6e30dfd1d6890">stir::ProjDataFromStream</a>
-, <a class="el" href="classstir_1_1Segment.html#a7bd21dc933b59f4ab0f2ea67ec3f401d">stir::Segment&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#ac5fcfb24678020e13c5b4d7833ade90a">stir::ProjDataInMemory</a>
+, <a class="el" href="classstir_1_1Segment.html#a8d6c0a471e8cb42693d7c157a7526e92">stir::Segment&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a5394532b4b1241b821003f6caa85c8af">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#accd0a02d51678402de64378372dba73e">stir::SegmentByView&lt; elemT &gt;</a>
 </li>
@@ -1453,9 +1465,10 @@ $(function() {
 , <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a9cc8e2b57ed338d0ef1049db9aa282a9">stir::ProjDataInfoGenericNoArcCorr</a>
 </li>
 <li>get_viewgram()
-: <a class="el" href="classstir_1_1ProjData.html#abb926d10193faa6570185da42235b9b1">stir::ProjData</a>
+: <a class="el" href="classstir_1_1ProjData.html#acfad7673791280967ea57c26476670ec">stir::ProjData</a>
 , <a class="el" href="classstir_1_1ProjDataFromStream.html#a360721daebc3f7daf0b82adf89be7c08">stir::ProjDataFromStream</a>
-, <a class="el" href="classstir_1_1Segment.html#ab9877ab2b604c7ced4423028982a98af">stir::Segment&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1ProjDataInMemory.html#a598fbb6bbad01c52ccfc5057e4ec4274">stir::ProjDataInMemory</a>
+, <a class="el" href="classstir_1_1Segment.html#a4c97196255e51cbe58a1f93cf93b1e61">stir::Segment&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a548a361a3ede9f17d8bc8a1616d80dec">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#a8b214c71ddefebb8136ea50870e3e7ef">stir::SegmentByView&lt; elemT &gt;</a>
 </li>
@@ -1509,7 +1522,7 @@ $(function() {
 , <a class="el" href="classstir_1_1SegmentBySinogram.html#a82ed44c79c6066001538370ca208e315">stir::SegmentBySinogram&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SegmentByView.html#af559592c046a37af45427142868a45b6">stir::SegmentByView&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Sinogram.html#af68de1778839db449cc9dd8a79644386">stir::Sinogram&lt; elemT &gt;</a>
-, <a class="el" href="classstir_1_1VectorWithOffset.html#ae270ee579120b0b96033d9472c9acfec">stir::VectorWithOffset&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1VectorWithOffset.html#a61c3169c6470ef4ed47c426ec4629a3e">stir::VectorWithOffset&lt; T &gt;</a>
 , <a class="el" href="classstir_1_1Viewgram.html#a8b6bdfe5e474bbb7827ad3a94c3ffbda">stir::Viewgram&lt; elemT &gt;</a>
 </li>
 <li>grow_z_range()
@@ -1519,7 +1532,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:25:00 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

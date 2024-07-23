@@ -1,0 +1,13 @@
+<map id="stir::ObjectiveFunctionTests&lt; ObjectiveFunctionT, TargetT &gt;" name="stir::ObjectiveFunctionTests&lt; ObjectiveFunctionT, TargetT &gt;">
+<area shape="rect" id="node3" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndProjData\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="665,33,971,103"/>
+<area shape="rect" id="node5" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndListModeDataWithProjMatrix\lByBin\&lt; DiscretisedDensity\&lt; 3, float\l \&gt; \&gt;, DiscretisedDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="669,128,967,213"/>
+<area shape="rect" id="node7" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="691,238,945,309"/>
+<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,159,111,185"/>
+<area shape="rect" id="node4" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndProjData. " alt="" coords="1020,47,1297,89"/>
+<area shape="rect" id="node6" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBinTests.html" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin. " alt="" coords="1035,143,1282,199"/>
+<area shape="rect" id="node8" href="$classstir_1_1GeneralisedPriorTests.html" title="Test class for QuadraticPrior, RelativeDifferencePrior, CudaRelativeDifferencePrior and LogcoshPrior..." alt="" coords="1070,260,1247,287"/>
+<area shape="rect" id="node9" href="$classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior " alt="" coords="1349,184,1509,211"/>
+<area shape="rect" id="node10" href="$classstir_1_1PLSPriorTests.html" title="tests for PLSPrior " alt="" coords="1362,235,1495,261"/>
+<area shape="rect" id="node11" href="$classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior " alt="" coords="1347,285,1511,312"/>
+<area shape="rect" id="node12" href="$classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior " alt="" coords="1351,337,1507,378"/>
+</map>

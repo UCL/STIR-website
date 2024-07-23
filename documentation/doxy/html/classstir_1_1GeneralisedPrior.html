@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43132c540fa2a0dee2bb080b2fb4e49a"><td class="memItemLeft" align="right" valign="top"><a id="a43132c540fa2a0dee2bb080b2fb4e49a"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>get_penalisation_factor</b> () const</td></tr>
 <tr class="separator:a43132c540fa2a0dee2bb080b2fb4e49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c"><td class="memItemLeft" align="right" valign="top"><a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_penalisation_factor</b> (float new_penalisation_factor)</td></tr>
+<tr class="memitem:a2b95a0a3ad198a11a4b1f518d4d3af0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2b95a0a3ad198a11a4b1f518d4d3af0c">set_penalisation_factor</a> (float new_penalisation_factor)</td></tr>
 <tr class="separator:a2b95a0a3ad198a11a4b1f518d4d3af0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474f091d513540f3e1f66084dc021173"><td class="memItemLeft" align="right" valign="top"><a id="a474f091d513540f3e1f66084dc021173"></a>
 virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173">set_up</a> (shared_ptr&lt; const DataT &gt; const &amp;target_sptr)</td></tr>
@@ -233,9 +232,7 @@ template&lt;typename DataT&gt; </div>
 <p>compute the value of the function </p>
 <p>For derived classes where this doesn't make sense, it's recommended to return 0. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1PLSPrior.html#a574192e7300f93d4b98635fb04051e5f">stir::PLSPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#acc052ebb2d868ccac73d3e2c71a65b2f">stir::LogcoshPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a89bda03e34d47f49e17261b9be80c811">stir::RelativeDifferencePrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#aa30796752010654a8d95cc7a62daba1d">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; float &gt;</a>, and <a class="el" href="classstir_1_1FilterRootPrior.html#a4101f820186f0ecaf501462efa26a818">stir::FilterRootPrior&lt; DataT &gt;</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#abbf3baf66aa8d88ad15b17a994a3b9a0">stir::GeneralisedPriorTests::test_gradient()</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1PLSPrior.html#a574192e7300f93d4b98635fb04051e5f">stir::PLSPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a89bda03e34d47f49e17261b9be80c811">stir::RelativeDifferencePrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#acc052ebb2d868ccac73d3e2c71a65b2f">stir::LogcoshPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#aa30796752010654a8d95cc7a62daba1d">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#ae9d03f50b6dc12830ae77509825ff761">stir::QuadraticPrior&lt; float &gt;</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#a4101f820186f0ecaf501462efa26a818">stir::FilterRootPrior&lt; DataT &gt;</a>, and <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html#afe2b2235dfddd8c65cc0822f80b4dedf">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a>.</p>
 
 </div>
 </div>
@@ -278,9 +275,9 @@ template&lt;typename DataT&gt; </div>
 <p>This should compute the gradient of the log of the prior function at the <em>current_estimate</em>. </p>
 <p>The gradient is already multiplied with the penalisation_factor. </p><dl class="section warning"><dt>Warning</dt><dd>The derived class should overwrite any data in <em>prior_gradient</em>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09">stir::PLSPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a85a6598d5e8a28055769e4769d116610">stir::RelativeDifferencePrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a809d1742e6050793a90513f5098e9bee">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; float &gt;</a>, and <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1PLSPrior.html#a107b8d32bd145eb1708453401c7dbc09">stir::PLSPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a85a6598d5e8a28055769e4769d116610">stir::RelativeDifferencePrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1LogcoshPrior.html#a76419004dda41eb34bd6b52876d1d3a8">stir::LogcoshPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1ParametricQuadraticPrior.html#a809d1742e6050793a90513f5098e9bee">stir::ParametricQuadraticPrior&lt; TargetT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; elemT &gt;</a>, <a class="el" href="classstir_1_1QuadraticPrior.html#a7279ffb219224aa54b30d8c2a03fa410">stir::QuadraticPrior&lt; float &gt;</a>, <a class="el" href="classstir_1_1FilterRootPrior.html#ad5062f209eecffb8455190e66b79e406">stir::FilterRootPrior&lt; DataT &gt;</a>, and <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html#a40cff61f10269f5ec6f0f39e4fcd866d">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#abbf3baf66aa8d88ad15b17a994a3b9a0">stir::GeneralisedPriorTests::test_gradient()</a>, and <a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">stir::GeneralisedPriorTests::test_Hessian_against_numerical()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#adcf3eb258805f1882eb3c7299d227478">stir::GeneralisedPriorTests::test_Hessian_against_numerical()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +419,38 @@ template&lt;typename TargetT&gt; </div>
 <p>This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>. </p>
 <p>Default implementation just call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a>. This function needs to be overridden by the derived class. </p><dl class="section warning"><dt>Warning</dt><dd>The derived class should accumulate in <em>output</em>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">stir::GeneralisedPriorTests::test_Hessian_convexity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a3ea760123a879ca097c66512e8aac92d">stir::GeneralisedPriorTests::test_Hessian_convexity_configuration()</a>.</p>
+
+</div>
+</div>
+<a id="a2b95a0a3ad198a11a4b1f518d4d3af0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b95a0a3ad198a11a4b1f518d4d3af0c">&#9670;&nbsp;</a></span>set_penalisation_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior</a>&lt; elemT &gt;::set_penalisation_factor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>new_penalisation_factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>Currently we allow the penalisation factor to be set <b>after</b> calling <a class="el" href="classstir_1_1GeneralisedPrior.html#a474f091d513540f3e1f66084dc021173" title="Has to be called before using this object. ">set_up()</a>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a754299d8a996be910b8fa5d3f782de70">stir::GeneralisedPriorTests::test_Hessian_convexity()</a>, and <a class="el" href="classstir_1_1GeneralisedPriorTests.html#a3ea760123a879ca097c66512e8aac92d">stir::GeneralisedPriorTests::test_Hessian_convexity_configuration()</a>.</p>
 
 </div>
 </div>
@@ -540,7 +568,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 7 2024 08:24:37 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
