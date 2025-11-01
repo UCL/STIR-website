@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -147,18 +147,18 @@ Functions</h2></td></tr>
 const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</a>&lt; unsigned long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga9928608cfff6ad1660a51ed5d3a75c09">stir::compute_file_offsets</a> (int number_of_time_frames, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type, const <a class="el" href="classstir_1_1Coordinate3D.html">Coordinate3D</a>&lt; int &gt; &amp;dim, unsigned long initial_offset=0)</td></tr>
 <tr class="memdesc:ga9928608cfff6ad1660a51ed5d3a75c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">a utility function that computes the file offsets of subsequent images <br /></td></tr>
 <tr class="separator:ga9928608cfff6ad1660a51ed5d3a75c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87fc4e5fbe71a53a92b4bb305e347901"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga87fc4e5fbe71a53a92b4bb305e347901"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga87fc4e5fbe71a53a92b4bb305e347901">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;voxel_size, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;origin, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
-<tr class="memdesc:ga87fc4e5fbe71a53a92b4bb305e347901"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object.  <a href="group__InterfileIO.html#ga87fc4e5fbe71a53a92b4bb305e347901">More...</a><br /></td></tr>
-<tr class="separator:ga87fc4e5fbe71a53a92b4bb305e347901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga754f42fa9538275f44639a192a08b803"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga754f42fa9538275f44639a192a08b803"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga754f42fa9538275f44639a192a08b803">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;exam_info, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;voxel_size, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;origin, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
-<tr class="memdesc:ga754f42fa9538275f44639a192a08b803"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object.  <a href="group__InterfileIO.html#ga754f42fa9538275f44639a192a08b803">More...</a><br /></td></tr>
-<tr class="separator:ga754f42fa9538275f44639a192a08b803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46797ee085bb671f00b58d76b959e74c"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga46797ee085bb671f00b58d76b959e74c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga46797ee085bb671f00b58d76b959e74c">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
-<tr class="memdesc:ga46797ee085bb671f00b58d76b959e74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object, assuming unit voxel sizes.  <a href="group__InterfileIO.html#ga46797ee085bb671f00b58d76b959e74c">More...</a><br /></td></tr>
-<tr class="separator:ga46797ee085bb671f00b58d76b959e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf640c067ae07b1382ae3c5717c8ae37e"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:gaf640c067ae07b1382ae3c5717c8ae37e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#gaf640c067ae07b1382ae3c5717c8ae37e">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;voxel_size, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;origin, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
+<tr class="memdesc:gaf640c067ae07b1382ae3c5717c8ae37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object.  <a href="group__InterfileIO.html#gaf640c067ae07b1382ae3c5717c8ae37e">More...</a><br /></td></tr>
+<tr class="separator:gaf640c067ae07b1382ae3c5717c8ae37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63f81939f1c6c7415335ff730fccf99d"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:ga63f81939f1c6c7415335ff730fccf99d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga63f81939f1c6c7415335ff730fccf99d">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="classstir_1_1ExamInfo.html">ExamInfo</a> &amp;exam_info, const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;voxel_size, const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;origin, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
+<tr class="memdesc:ga63f81939f1c6c7415335ff730fccf99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object.  <a href="group__InterfileIO.html#ga63f81939f1c6c7415335ff730fccf99d">More...</a><br /></td></tr>
+<tr class="separator:ga63f81939f1c6c7415335ff730fccf99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84f01d3986512dbba26012cb7a31f965"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:ga84f01d3986512dbba26012cb7a31f965"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga84f01d3986512dbba26012cb7a31f965">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;image, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
+<tr class="memdesc:ga84f01d3986512dbba26012cb7a31f965"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object, assuming unit voxel sizes.  <a href="group__InterfileIO.html#ga84f01d3986512dbba26012cb7a31f965">More...</a><br /></td></tr>
+<tr class="separator:ga84f01d3986512dbba26012cb7a31f965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab513e821545991a5ad90456a58ecff32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#gab513e821545991a5ad90456a58ecff32">stir::write_basic_interfile</a> (const std::string &amp;filename, const <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html">VoxelsOnCartesianGrid</a>&lt; float &gt; &amp;image, const <a class="el" href="classstir_1_1NumericType.html">NumericType</a> output_type=NumericType::FLOAT, const float scale=0, const <a class="el" href="classstir_1_1ByteOrder.html">ByteOrder</a> byte_order=<a class="el" href="classstir_1_1ByteOrder.html#a1ac309a7d63d62e8707b1759cf3c2e07aeed2c2ee1883c5a7528d55e660192830">ByteOrder::native</a>)</td></tr>
 <tr class="memdesc:gab513e821545991a5ad90456a58ecff32"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a VoxelsOnCartesianGrid&lt;float&gt; object.  <a href="group__InterfileIO.html#gab513e821545991a5ad90456a58ecff32">More...</a><br /></td></tr>
 <tr class="separator:gab513e821545991a5ad90456a58ecff32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,8 +363,8 @@ const <a class="el" href="classstir_1_1VectorWithOffset.html">VectorWithOffset</
 
 </div>
 </div>
-<a id="ga87fc4e5fbe71a53a92b4bb305e347901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87fc4e5fbe71a53a92b4bb305e347901">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[1/5]</span></h2>
+<a id="gaf640c067ae07b1382ae3c5717c8ae37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf640c067ae07b1382ae3c5717c8ae37e">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +380,7 @@ template&lt;class elemT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -421,15 +421,15 @@ template&lt;class elemT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object. </p>
+<p>This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object. </p>
 <p>Extension .v will be added to the parameter 'filename' (if no extension present). Extensions .hv (and .ahv) will be used for the header filename. </p>
 
 <p class="reference">Referenced by <a class="el" href="classstir_1_1InterfileOutputFileFormat.html#a199202a072a7953c0df4fa63662eba1b">stir::InterfileOutputFileFormat::actual_write_to_file()</a>, and <a class="el" href="classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html#adc34817340bb724a58615d877791bdfa">stir::InterfileDynamicDiscretisedDensityOutputFileFormat::actual_write_to_file()</a>.</p>
 
 </div>
 </div>
-<a id="ga754f42fa9538275f44639a192a08b803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga754f42fa9538275f44639a192a08b803">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[2/5]</span></h2>
+<a id="ga63f81939f1c6c7415335ff730fccf99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63f81939f1c6c7415335ff730fccf99d">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +451,7 @@ template&lt;class elemT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -492,13 +492,13 @@ template&lt;class elemT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object. </p>
+<p>This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object. </p>
 <p>Extension .v will be added to the parameter 'filename' (if no extension present). Extensions .hv (and .ahv) will be used for the header filename. </p>
 
 </div>
 </div>
-<a id="ga46797ee085bb671f00b58d76b959e74c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga46797ee085bb671f00b58d76b959e74c">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[3/5]</span></h2>
+<a id="ga84f01d3986512dbba26012cb7a31f965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84f01d3986512dbba26012cb7a31f965">&#9670;&nbsp;</a></span>write_basic_interfile() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +514,7 @@ template&lt;class elemT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstir_1_1Array.html">Array</a>&lt; 3, elemT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacestir.html#ab6ac147a2eb751a3ea760617ac132220">ArrayType</a>&lt; 3, elemT &gt; &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -543,7 +543,7 @@ template&lt;class elemT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object, assuming unit voxel sizes. </p>
+<p>This outputs an Interfile header and data for a ArrayType&lt;3,elemT&gt; object, assuming unit voxel sizes. </p>
 <p>Extension .v will be added to the parameter 'filename' (if no extension present). Extensions .hv (and .ahv) will be used for the header filename.</p>
 <dl class="section warning"><dt>Warning</dt><dd>For Visual Studio 7.0 or earlier, only the float version is defined to work around a compiler bug. (Otherwise, the float version is not instantiated for some reason). </dd></dl>
 
@@ -804,7 +804,7 @@ template&lt;class elemT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

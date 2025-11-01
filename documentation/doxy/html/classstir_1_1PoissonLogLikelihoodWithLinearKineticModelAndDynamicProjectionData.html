@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -176,6 +176,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">get_subsensitivity_filenames</a> () const</td></tr>
 <tr class="memdesc:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="mdescLeft">&#160;</td><td class="mdescRight">get filename pattern to read (or write) the subset sensitivities  <a href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">More...</a><br /></td></tr>
 <tr class="separator:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a00aedf9aa77622a2ab63819bce8d87ae">get_subsensitivity_filename</a> (const int subset_num) const</td></tr>
+<tr class="memdesc:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the filename for a particular subset.  <a href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a00aedf9aa77622a2ab63819bce8d87ae">More...</a><br /></td></tr>
+<tr class="separator:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c794711edfbc2301bf945aa4334936 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ab9c794711edfbc2301bf945aa4334936">fill_nonidentifiable_target_parameters</a> (TargetT &amp;target, const float value) const override</td></tr>
 <tr class="separator:ab9c794711edfbc2301bf945aa4334936 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a9bd607a386cb5fe9a2c72b40c28a1 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top"><a id="a93a9bd607a386cb5fe9a2c72b40c28a1"></a>
@@ -925,11 +928,11 @@ template&lt;typename TargetT &gt; </div>
 
 <p>computes the subset gradient of the objective function without the penalty (optional: add subset sensitivity) </p>
 <p>If <code>add_sensitivity</code> is <code>true</code>, this computes </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_100.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_116.png"/>
 </p>
 <p> (see the class general documentation). The sum will however be restricted to a subset.</p>
 <p>However, if <code>add_sensitivity</code> is <code>false</code>, this function will instead compute only the gradient </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]" src="form_99.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]" src="form_115.png"/>
 </p>
  
 <p>Implements <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6728f3fa472544336c1601f21cd01ffd">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>.</p>
@@ -1143,7 +1146,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:49 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

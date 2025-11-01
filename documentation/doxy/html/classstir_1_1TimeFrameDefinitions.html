@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -97,10 +97,10 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameDefinitions.html#ae9cd9930acb4550fafbb00bad8a8065f">set_num_time_frames</a> (int num_time_frames)</td></tr>
 <tr class="memdesc:ae9cd9930acb4550fafbb00bad8a8065f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of time frames. <br /></td></tr>
 <tr class="separator:ae9cd9930acb4550fafbb00bad8a8065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a77753660baaf3ebaa530762626a42"><td class="memItemLeft" align="right" valign="top"><a id="a83a77753660baaf3ebaa530762626a42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameDefinitions.html#a83a77753660baaf3ebaa530762626a42">set_time_frame</a> (const int frame_num, const double start, const double end)</td></tr>
-<tr class="memdesc:a83a77753660baaf3ebaa530762626a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time frame. <br /></td></tr>
-<tr class="separator:a83a77753660baaf3ebaa530762626a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a7a1c18096bc7b56efc0849593c0d3"><td class="memItemLeft" align="right" valign="top"><a id="a57a7a1c18096bc7b56efc0849593c0d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1TimeFrameDefinitions.html#a57a7a1c18096bc7b56efc0849593c0d3">set_time_frame</a> (const unsigned int frame_num, const double start, const double end)</td></tr>
+<tr class="memdesc:a57a7a1c18096bc7b56efc0849593c0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time frame. <br /></td></tr>
+<tr class="separator:a57a7a1c18096bc7b56efc0849593c0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac921f1b42f7a5714f7ddb3aa12ce7bbf"><td class="memItemLeft" align="right" valign="top"><a id="ac921f1b42f7a5714f7ddb3aa12ce7bbf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1TimeFrameDefinitions.html">TimeFrameDefinitions</a> &amp;t) const</td></tr>
 <tr class="separator:ac921f1b42f7a5714f7ddb3aa12ce7bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,12 +146,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>get_duration</b> (u
 </div><div class="memdoc">
 
 <p>Read the frame definitions from a file. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>The filename can point to an ECAT6 file, and ECAT7 file (if you have installed the LLN library), an Interfile file, or a simple ASCII text file.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>The filename can point to an ECAT6 file, and ECAT7 file (if you have installed the LLN library), an Interfile file, or a simple ASCII text file.</dd></dl>
 <p>This latter uses the '.fdef' format used by Peter Bloomfield's software. The format is a number of lines, each existing of 2 numbers </p><pre class="fragment">  num_frames_of_this_duration   duration_in_secs
 </pre><p> This duration is a double number.</p>
 <p>This class in fact allows an extension of the above. Setting <em>num_frames_of_this_duration</em> to 0 allows skipping a time period of the corresponding <em>duration_in_secs</em>. </p>
 
-<p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>, <a class="el" href="classstir_1_1MinimalInterfileHeader.html#a36c46b6b8c8c26a4b76350b0c6968e00">stir::MinimalInterfileHeader::get_exam_info()</a>, <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature::get_signature()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__ECAT.html#ga5d7b46b0ac11484d0221fca903aad746">stir::ecat::ecat6::is_ECAT6_file()</a>, <a class="el" href="group__ECAT.html#ga7c344868b0c5fdfc58274f8c4c622289">stir::ecat::ecat7::is_ECAT7_file()</a>, <a class="el" href="group__InterfileIO.html#ga4189a51813ae80c0025bbc2241186d02">stir::is_interfile_signature()</a>, <a class="el" href="classstir_1_1KeyParser.html#a08ca6f6fc94772b3f2832b438a0a6b43">stir::KeyParser::parse()</a>, and <a class="el" href="namespacestir_1_1ecat_1_1ecat7.html#a6fda205b69aa8c12f26024fc9b92bfad">stir::ecat::ecat7::read_ECAT7_exam_info()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1FileSignature.html#aa4100a7ca31cd8ffece37f5f72c1dc59">stir::FileSignature::get_signature()</a>, <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>, <a class="el" href="group__ECAT.html#ga5d7b46b0ac11484d0221fca903aad746">stir::ecat::ecat6::is_ECAT6_file()</a>, <a class="el" href="group__ECAT.html#ga7c344868b0c5fdfc58274f8c4c622289">stir::ecat::ecat7::is_ECAT7_file()</a>, <a class="el" href="group__InterfileIO.html#ga4189a51813ae80c0025bbc2241186d02">stir::is_interfile_signature()</a>, and <a class="el" href="namespacestir_1_1ecat_1_1ecat7.html#a6fda205b69aa8c12f26024fc9b92bfad">stir::ecat::ecat7::read_ECAT7_exam_info()</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>get_duration</b> (u
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:18 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:52 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

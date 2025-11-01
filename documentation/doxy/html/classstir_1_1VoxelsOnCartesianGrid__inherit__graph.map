@@ -1,7 +1,7 @@
 <map id="stir::VoxelsOnCartesianGrid&lt; elemT &gt;" name="stir::VoxelsOnCartesianGrid&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="847,26,1041,67"/>
-<area shape="rect" id="node3" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="248,27,436,69"/>
-<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="485,52,719,108"/>
-<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="47,5,157,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="5,57,199,98"/>
+<area shape="rect" id="node2" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="849,26,1044,67"/>
+<area shape="rect" id="node3" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="251,27,439,69"/>
+<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="488,52,721,108"/>
+<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="48,5,159,32"/>
+<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="5,57,201,98"/>
 </map>

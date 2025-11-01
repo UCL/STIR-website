@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -83,12 +83,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a912fd1b089312d44a03fa6b98a71a290"><td class="memItemLeft" align="right" valign="top"><a id="a912fd1b089312d44a03fa6b98a71a290"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>actual_can_read</b> (const <a class="el" href="classstir_1_1FileSignature.html">FileSignature</a> &amp;signature, std::istream &amp;) const override</td></tr>
 <tr class="separator:a912fd1b089312d44a03fa6b98a71a290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58515efcb2f091a5c9ac7b8e5d4dd96"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#ab58515efcb2f091a5c9ac7b8e5d4dd96">read_from_file</a> (std::istream &amp;) const override</td></tr>
-<tr class="memdesc:ab58515efcb2f091a5c9ac7b8e5d4dd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a stream  <a href="#ab58515efcb2f091a5c9ac7b8e5d4dd96">More...</a><br /></td></tr>
-<tr class="separator:ab58515efcb2f091a5c9ac7b8e5d4dd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4993ba9379b09df36d1bb0d2477de5"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#adb4993ba9379b09df36d1bb0d2477de5">read_from_file</a> (const std::string &amp;filename) const override</td></tr>
-<tr class="memdesc:adb4993ba9379b09df36d1bb0d2477de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a filename  <a href="#adb4993ba9379b09df36d1bb0d2477de5">More...</a><br /></td></tr>
-<tr class="separator:adb4993ba9379b09df36d1bb0d2477de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82683807b455d823dafde45e1e2342f"><td class="memItemLeft" align="right" valign="top"><a id="ad82683807b455d823dafde45e1e2342f"></a>
+std::unique_ptr&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#ad82683807b455d823dafde45e1e2342f">read_from_file</a> (std::istream &amp;) const override</td></tr>
+<tr class="memdesc:ad82683807b455d823dafde45e1e2342f"><td class="mdescLeft">&#160;</td><td class="mdescRight">always throws via <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> <br /></td></tr>
+<tr class="separator:ad82683807b455d823dafde45e1e2342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988b831d4d5d3d80374baab9635992"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html#ab1988b831d4d5d3d80374baab9635992">read_from_file</a> (const std::string &amp;filename) const override</td></tr>
+<tr class="memdesc:ab1988b831d4d5d3d80374baab9635992"><td class="mdescLeft">&#160;</td><td class="mdescRight">read data from a filename  <a href="#ab1988b831d4d5d3d80374baab9635992">More...</a><br /></td></tr>
+<tr class="separator:ab1988b831d4d5d3d80374baab9635992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -100,8 +101,8 @@ typedef <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">Dynamic
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for reading images in Multi file-format. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab58515efcb2f091a5c9ac7b8e5d4dd96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab58515efcb2f091a5c9ac7b8e5d4dd96">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[1/2]</span></h2>
+<a id="ab1988b831d4d5d3d80374baab9635992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1988b831d4d5d3d80374baab9635992">&#9670;&nbsp;</a></span>read_from_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,39 +111,7 @@ typedef <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">Dynamic
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unique_ptr&lt;<a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a>&gt; stir::MultiDynamicDiscretisedDensityInputFileFormat::read_from_file </td>
-          <td>(</td>
-          <td class="paramtype">std::istream &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>read data from a stream </p>
-<p>This function should throw an exception if the read fails.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This member throws for most implementations. Use a filename instead. </dd></dl>
-
-<p>Implements <a class="el" href="classstir_1_1InputFileFormat.html#a7ab512e824773415be5b74fb1dae4978">stir::InputFileFormat&lt; DynamicDiscretisedDensity &gt;</a>.</p>
-
-</div>
-</div>
-<a id="adb4993ba9379b09df36d1bb0d2477de5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb4993ba9379b09df36d1bb0d2477de5">&#9670;&nbsp;</a></span>read_from_file() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unique_ptr&lt;<a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">data_type</a>&gt; stir::MultiDynamicDiscretisedDensityInputFileFormat::read_from_file </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">MultiDynamicDiscretisedDensityInputFileFormat::data_type</a> &gt; stir::MultiDynamicDiscretisedDensityInputFileFormat::read_from_file </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -151,7 +120,7 @@ typedef <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">Dynamic
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -166,13 +135,14 @@ typedef <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html">Dynamic
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sirfuser/devel/STIRdistrib/STIR/src/include/stir/IO/<a class="el" href="MultiDynamicDiscretisedDensityInputFileFormat_8h_source.html">MultiDynamicDiscretisedDensityInputFileFormat.h</a></li>
+<li>/home/sirfuser/devel/STIRdistrib/STIR/src/IO/<a class="el" href="MultiDynamicDiscretisedDensityInputFileFormat_8cxx.html">MultiDynamicDiscretisedDensityInputFileFormat.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:48 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

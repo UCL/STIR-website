@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -102,9 +102,15 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
 <tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1GeneralisedPrior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1GeneralisedPrior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DataT &gt;</a></td></tr>
+<tr class="memitem:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a0839bc60dc5866c29c2377b8e7d4f510">compute_gradient_times_input</a> (const DataT &amp;input, const DataT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the dot product of the gradient of the log of the prior function at the <em>current_estimate</em> with <em>input</em>  <a href="classstir_1_1GeneralisedPrior.html#a0839bc60dc5866c29c2377b8e7d4f510">More...</a><br /></td></tr>
+<tr class="separator:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">compute_Hessian</a> (DataT &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const DataT &amp;current_image_estimate) const</td></tr>
 <tr class="memdesc:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes a single row of the Hessian.  <a href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">More...</a><br /></td></tr>
 <tr class="separator:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a61765ee96bd109a9af5a313aa92460e1">compute_Hessian_diagonal</a> (DataT &amp;Hessian_diagonal, const DataT &amp;current_estimate) const</td></tr>
+<tr class="memdesc:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes the diagonal of the Hessian of the log of the prior function at the <em>current_estimate</em> and stores it in <em>Hessian_diagonal</em>.  <a href="classstir_1_1GeneralisedPrior.html#a61765ee96bd109a9af5a313aa92460e1">More...</a><br /></td></tr>
+<tr class="separator:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2efe6c08bb8a78a607dff1f4d25a6ef7">add_multiplication_with_approximate_Hessian</a> (DataT &amp;output, const DataT &amp;input) const</td></tr>
 <tr class="memdesc:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#a2efe6c08bb8a78a607dff1f4d25a6ef7">More...</a><br /></td></tr>
 <tr class="separator:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,12 +222,12 @@ class stir::FilterRootPrior&lt; DataT &gt;</h3>
 
 <p>A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements 'generalised' priors a la the Median Root Prior (which was invented by Sakari Alenius). </p>
 <p>This class takes an <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a> object (i.e. a filter), and computes the prior 'gradient' as </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]" src="form_62.png"/>
+<img class="formulaDsp" alt="\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]" src="form_66.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$ \lambda$" src="form_63.png"/> is the data where to compute the gradient, and <img class="formulaInl" alt="$F$" src="form_64.png"/> is the data obtained by filtering <img class="formulaInl" alt="$\lambda$" src="form_8.png"/>.</p>
+<p> where <img class="formulaInl" alt="$ \lambda$" src="form_67.png"/> is the data where to compute the gradient, and <img class="formulaInl" alt="$F$" src="form_68.png"/> is the data obtained by filtering <img class="formulaInl" alt="$\lambda$" src="form_8.png"/>.</p>
 <p>However, we need to avoid division by 0, as it might cause a NaN or an 'infinity'. So, we replace the quotient above by<br />
- if <img class="formulaInl" alt="$|\lambda_v| &lt; M*|F_v| $" src="form_65.png"/> then <img class="formulaInl" alt="${\lambda_v \over F_v}$" src="form_66.png"/> else <img class="formulaInl" alt="$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$" src="form_67.png"/>,<br />
- where <img class="formulaInl" alt="$M$" src="form_68.png"/> is an arbitrary threshold on the quotient (fixed to 1000 when I wrote this documentation, but check <a class="el" href="FilterRootPrior_8cxx.html" title="implementation of the stir::FilterRootPrior class ">FilterRootPrior.cxx</a> if you want to be sure).</p>
+ if <img class="formulaInl" alt="$|\lambda_v| &lt; M*|F_v| $" src="form_69.png"/> then <img class="formulaInl" alt="${\lambda_v \over F_v}$" src="form_70.png"/> else <img class="formulaInl" alt="$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$" src="form_71.png"/>,<br />
+ where <img class="formulaInl" alt="$M$" src="form_72.png"/> is an arbitrary threshold on the quotient (fixed to 1000 when I wrote this documentation, but check <a class="el" href="FilterRootPrior_8cxx.html" title="implementation of the stir::FilterRootPrior class ">FilterRootPrior.cxx</a> if you want to be sure).</p>
 <p>Note that for nearly all filters, this is not a real prior, as this 'gradient' is <em>not</em> the gradient of a function. This can be checked by computing the 'Hessian' (i.e. the partial derivatives of the components of the gradient). For most (interesting) filters, the Hessian will no be symmetric.</p>
 <p>The Median Root Prior is obtained by using a <a class="el" href="classstir_1_1MedianImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements median filtering. ">MedianImageFilter3D</a> as <a class="el" href="classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. ">DataProcessor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -299,7 +305,7 @@ template&lt;typename DataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

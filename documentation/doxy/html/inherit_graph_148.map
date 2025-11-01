@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1RelatedDensels.html" title="This class contains all information about a set of densels related by symmetry. " alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node1" href="$classstir_1_1ParseDiscretisedDensityParameters.html" title="Class for adding parameters relevant to DiscretisedDensity to a parser. " alt="" coords="5,57,199,98"/>
+<area shape="rect" id="node2" href="$classstir_1_1ParseAndCreateFrom_3_01DiscretisedDensity_3_013_00_01elemT_01_4_00_01ExamDataT_01_4.html" title="parse keywords for creating a VoxelsOnCartesianGrid from ProjData etc " alt="" coords="269,5,443,61"/>
+<area shape="rect" id="node3" href="$classstir_1_1ParseAndCreateFrom_3_01ParametricDiscretisedDensity_3_01VoxelsOnCartesianGrid_3_01e3276d936c60e22393ee85ec9b9c5fa3d.html" title="parse keywords for creating a parametric VoxelsOnCartesianGrid from DynamicProjData etc ..." alt="" coords="247,86,465,157"/>
 </map>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -50,8 +50,8 @@ Collaboration diagram for Items relating to CUDA and STIR buildblock objects.:</
 <div class="dyncontent">
 <center><table><tr><td><img src="group__CUDA.png" border="0" alt="" usemap="#group____CUDA"/>
 <map name="group____CUDA" id="group____CUDA">
-<area shape="rect" id="node2" href="group__priors.html" title="Priors and penalties\l for MAP" alt="" coords="620,14,757,55"/>
-<area shape="rect" id="node3" href="group__buildblock.html" title="Basic building blocks" alt="" coords="5,21,151,48"/>
+<area shape="rect" id="node2" href="group__priors.html" title="Priors and penalties\l for MAP" alt="" coords="640,49,777,90"/>
+<area shape="rect" id="node3" href="group__buildblock.html" title="Basic building blocks" alt="" coords="5,56,151,83"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -61,12 +61,24 @@ Files</h2></td></tr>
 <tr class="memitem:cuda__utilities_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cuda__utilities_8h.html">cuda_utilities.h</a></td></tr>
 <tr class="memdesc:cuda__utilities_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">some utilities for STIR and CUDA <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:CudaGibbsPenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CudaGibbsPenalty_8h.html">CudaGibbsPenalty.h</a></td></tr>
+<tr class="memdesc:CudaGibbsPenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of the <a class="el" href="classstir_1_1CudaGibbsPenalty.html" title="A base class with CUDA-accelerated implementation of the GibbsPenalty class. ">stir::CudaGibbsPenalty</a> class. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:CudaRelativeDifferencePrior_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CudaRelativeDifferencePrior_8h.html">CudaRelativeDifferencePrior.h</a></td></tr>
 <tr class="memdesc:CudaRelativeDifferencePrior_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of the <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">stir::CudaRelativeDifferencePrior</a> class <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsQuadraticPenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsQuadraticPenalty_8h.html">GibbsQuadraticPenalty.h</a></td></tr>
+<tr class="memdesc:GibbsQuadraticPenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1GibbsQuadraticPenalty.html" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior. ">stir::GibbsQuadraticPenalty</a>, stir::CudaGibbsQuadraticPenalty and the potential function <a class="el" href="classstir_1_1QuadraticPotential.html" title="Implementation of the Quadratic penalty potential. ">stir::QuadraticPotential</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsRelativeDifferencePenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsRelativeDifferencePenalty_8h.html">GibbsRelativeDifferencePenalty.h</a></td></tr>
+<tr class="memdesc:GibbsRelativeDifferencePenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class stir::CudaRelativeDifferencePenalty, stir::CudaGibbsRelativeDifferencePenalty and the potential function <a class="el" href="classstir_1_1RelativeDifferencePotential.html" title="Implementation of the Relative Difference penalty potential. ">stir::RelativeDifferencePotential</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CudaGibbsPenalty.html">stir::CudaGibbsPenalty&lt; elemT, PotentialT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class with CUDA-accelerated implementation of the <a class="el" href="classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. ">GibbsPenalty</a> class.  <a href="classstir_1_1CudaGibbsPenalty.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUDA implementation of the Relative Difference prior.  <a href="classstir_1_1CudaRelativeDifferencePrior.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -75,7 +87,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

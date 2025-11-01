@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of <a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">stir::read_data()</a> functions for reading <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s from file.  
+<p>Implementation of <a class="el" href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a" title="Read the data of an Array from file. ">stir::read_data()</a> functions for reading <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s from file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="convert__array_8h_source.html">stir/convert_array.h</a>&quot;</code><br />
@@ -80,29 +80,29 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memTemplParams" colspan="2"><a id="a9a7d0a71f2818bb202d8ea02751f97d2"></a>
+<tr class="memitem:ac30cfbb81f2b4d174b44063b2372801b"><td class="memTemplParams" colspan="2"><a id="ac30cfbb81f2b4d174b44063b2372801b"></a>
 template&lt;int num_dimensions, class IStreamT , class elemT &gt; </td></tr>
-<tr class="memitem:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::read_data_help</b> (is_not_1d, IStreamT &amp;s, Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order)</td></tr>
-<tr class="separator:a9a7d0a71f2818bb202d8ea02751f97d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memTemplParams" colspan="2"><a id="a4a02ddbec93bccbc7e13cd6948a77e56"></a>
+<tr class="memitem:ac30cfbb81f2b4d174b44063b2372801b"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::read_data_help</b> (is_not_1d, IStreamT &amp;s, ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order)</td></tr>
+<tr class="separator:ac30cfbb81f2b4d174b44063b2372801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e88fa87a10ef648001dfab4d163fcfc"><td class="memTemplParams" colspan="2"><a id="a0e88fa87a10ef648001dfab4d163fcfc"></a>
 template&lt;class IStreamT , class elemT &gt; </td></tr>
-<tr class="memitem:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::read_data_help</b> (is_1d, IStreamT &amp;s, Array&lt; 1, elemT &gt; &amp;data, const ByteOrder byte_order)</td></tr>
-<tr class="separator:a4a02ddbec93bccbc7e13cd6948a77e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf17e202fe2a818f9861f5bffe8bc4142"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT &gt; </td></tr>
-<tr class="memitem:gaf17e202fe2a818f9861f5bffe8bc4142"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">stir::read_data</a> (IStreamT &amp;s, Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native)</td></tr>
-<tr class="memdesc:gaf17e202fe2a818f9861f5bffe8bc4142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file.  <a href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">More...</a><br /></td></tr>
-<tr class="separator:gaf17e202fe2a818f9861f5bffe8bc4142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac93d981d596788d175201216e70ca06e"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT , class InputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:gac93d981d596788d175201216e70ca06e"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gac93d981d596788d175201216e70ca06e">stir::read_data</a> (IStreamT &amp;s, Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; InputType &gt; input_type, ScaleT &amp;scale_factor, const ByteOrder byte_order=ByteOrder::native)</td></tr>
-<tr class="memdesc:gac93d981d596788d175201216e70ca06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file as a different type.  <a href="group__Array__IO.html#gac93d981d596788d175201216e70ca06e">More...</a><br /></td></tr>
-<tr class="separator:gac93d981d596788d175201216e70ca06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f518da427b61a26e7b79ca7c1421dc4"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT , class ScaleT &gt; </td></tr>
-<tr class="memitem:ga1f518da427b61a26e7b79ca7c1421dc4"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga1f518da427b61a26e7b79ca7c1421dc4">stir::read_data</a> (IStreamT &amp;s, Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order=ByteOrder::native)</td></tr>
-<tr class="memdesc:ga1f518da427b61a26e7b79ca7c1421dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file as a different type.  <a href="group__Array__IO.html#ga1f518da427b61a26e7b79ca7c1421dc4">More...</a><br /></td></tr>
-<tr class="separator:ga1f518da427b61a26e7b79ca7c1421dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e88fa87a10ef648001dfab4d163fcfc"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::read_data_help</b> (is_1d, IStreamT &amp;s, ArrayType&lt; 1, elemT &gt; &amp;data, const ByteOrder byte_order)</td></tr>
+<tr class="separator:a0e88fa87a10ef648001dfab4d163fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b87be115fcb91dcf5e49a5bee71bc9a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT &gt; </td></tr>
+<tr class="memitem:ga8b87be115fcb91dcf5e49a5bee71bc9a"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a">stir::read_data</a> (IStreamT &amp;s, ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native)</td></tr>
+<tr class="memdesc:ga8b87be115fcb91dcf5e49a5bee71bc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file.  <a href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a">More...</a><br /></td></tr>
+<tr class="separator:ga8b87be115fcb91dcf5e49a5bee71bc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b24dbf2fed2584facfc79e84b69bf58"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT , class InputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:ga5b24dbf2fed2584facfc79e84b69bf58"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga5b24dbf2fed2584facfc79e84b69bf58">stir::read_data</a> (IStreamT &amp;s, ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; InputType &gt; input_type, ScaleT &amp;scale_factor, const ByteOrder byte_order=ByteOrder::native)</td></tr>
+<tr class="memdesc:ga5b24dbf2fed2584facfc79e84b69bf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file as a different type.  <a href="group__Array__IO.html#ga5b24dbf2fed2584facfc79e84b69bf58">More...</a><br /></td></tr>
+<tr class="separator:ga5b24dbf2fed2584facfc79e84b69bf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc755932c4dea505aeeab7b0e2ac0eaa"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class IStreamT , class elemT , class ScaleT &gt; </td></tr>
+<tr class="memitem:gadc755932c4dea505aeeab7b0e2ac0eaa"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gadc755932c4dea505aeeab7b0e2ac0eaa">stir::read_data</a> (IStreamT &amp;s, ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order=ByteOrder::native)</td></tr>
+<tr class="memdesc:gadc755932c4dea505aeeab7b0e2ac0eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> from file as a different type.  <a href="group__Array__IO.html#gadc755932c4dea505aeeab7b0e2ac0eaa">More...</a><br /></td></tr>
+<tr class="separator:gadc755932c4dea505aeeab7b0e2ac0eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of <a class="el" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142" title="Read the data of an Array from file. ">stir::read_data()</a> functions for reading <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s from file. </p>
+<div class="textblock"><p>Implementation of <a class="el" href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a" title="Read the data of an Array from file. ">stir::read_data()</a> functions for reading <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s from file. </p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a771494d347903f740469a9c107132009"></a>
@@ -120,14 +120,14 @@ template&lt;class IStreamT , class elemT &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE:                                                                                                              \</div><div class="line">    return <a class="code" href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">read_data</a>(s, data, NumericInfo&lt;<span class="keyword">typename</span> TypeForNumericType&lt;NUMERICTYPE&gt;::type&gt;(), scale, byte_order)</div><div class="ttc" id="group__Array__IO_html_gaf17e202fe2a818f9861f5bffe8bc4142"><div class="ttname"><a href="group__Array__IO.html#gaf17e202fe2a818f9861f5bffe8bc4142">stir::read_data</a></div><div class="ttdeci">Succeeded read_data(IStreamT &amp;s, Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native)</div><div class="ttdoc">Read the data of an Array from file. </div><div class="ttdef"><b>Definition:</b> read_data.inl:63</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE:                                                                                                              \</div><div class="line">    return <a class="code" href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a">read_data</a>(s, data, NumericInfo&lt;<span class="keyword">typename</span> TypeForNumericType&lt;NUMERICTYPE&gt;::type&gt;(), scale, byte_order)</div><div class="ttc" id="group__Array__IO_html_ga8b87be115fcb91dcf5e49a5bee71bc9a"><div class="ttname"><a href="group__Array__IO.html#ga8b87be115fcb91dcf5e49a5bee71bc9a">stir::read_data</a></div><div class="ttdeci">Succeeded read_data(IStreamT &amp;s, ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native)</div><div class="ttdoc">Read the data of an Array from file. </div><div class="ttdef"><b>Definition:</b> read_data.inl:63</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -94,9 +94,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a7ac7d238e604ee6768a46e0bf4adc0e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">compute_gradient</a> (TargetT &amp;prior_gradient, const TargetT &amp;current_estimate)=0</td></tr>
 <tr class="memdesc:a7ac7d238e604ee6768a46e0bf4adc0e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the gradient of the log of the prior function at the <em>current_estimate</em>.  <a href="classstir_1_1GeneralisedPrior.html#a7ac7d238e604ee6768a46e0bf4adc0e1">More...</a><br /></td></tr>
 <tr class="separator:a7ac7d238e604ee6768a46e0bf4adc0e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a0839bc60dc5866c29c2377b8e7d4f510">compute_gradient_times_input</a> (const TargetT &amp;input, const TargetT &amp;current_estimate)</td></tr>
+<tr class="memdesc:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the dot product of the gradient of the log of the prior function at the <em>current_estimate</em> with <em>input</em>  <a href="classstir_1_1GeneralisedPrior.html#a0839bc60dc5866c29c2377b8e7d4f510">More...</a><br /></td></tr>
+<tr class="separator:a0839bc60dc5866c29c2377b8e7d4f510 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">compute_Hessian</a> (TargetT &amp;prior_Hessian_for_single_densel, const <a class="el" href="classstir_1_1BasicCoordinate.html">BasicCoordinate</a>&lt; 3, int &gt; &amp;coords, const TargetT &amp;current_image_estimate) const</td></tr>
 <tr class="memdesc:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes a single row of the Hessian.  <a href="classstir_1_1GeneralisedPrior.html#a206246d1c692b3da0033258d2cb01a29">More...</a><br /></td></tr>
 <tr class="separator:a206246d1c692b3da0033258d2cb01a29 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a61765ee96bd109a9af5a313aa92460e1">compute_Hessian_diagonal</a> (TargetT &amp;Hessian_diagonal, const TargetT &amp;current_estimate) const</td></tr>
+<tr class="memdesc:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This computes the diagonal of the Hessian of the log of the prior function at the <em>current_estimate</em> and stores it in <em>Hessian_diagonal</em>.  <a href="classstir_1_1GeneralisedPrior.html#a61765ee96bd109a9af5a313aa92460e1">More...</a><br /></td></tr>
+<tr class="separator:a61765ee96bd109a9af5a313aa92460e1 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html#a2efe6c08bb8a78a607dff1f4d25a6ef7">add_multiplication_with_approximate_Hessian</a> (TargetT &amp;output, const TargetT &amp;input) const</td></tr>
 <tr class="memdesc:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should compute the multiplication of the Hessian with a vector and add it to <em>output</em>.  <a href="classstir_1_1GeneralisedPrior.html#a2efe6c08bb8a78a607dff1f4d25a6ef7">More...</a><br /></td></tr>
 <tr class="separator:a2efe6c08bb8a78a607dff1f4d25a6ef7 inherit pub_methods_classstir_1_1GeneralisedPrior"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +245,7 @@ template&lt;typename TargetT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:49 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,5 +1,5 @@
 <map id="Priors and penalties for MAP" name="Priors and penalties for MAP">
-<area shape="rect" id="node1" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,103,160,159"/>
-<area shape="rect" id="node2" href="$group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="591,50,747,91"/>
-<area shape="rect" id="node3" href="$group__CUDA.html" title="Items relating to CUDA\l and STIR buildblock objects." alt="" coords="572,135,767,177"/>
+<area shape="rect" id="node1" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,120,160,176"/>
+<area shape="rect" id="node2" href="$group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="611,53,767,94"/>
+<area shape="rect" id="node3" href="$group__CUDA.html" title="Items relating to CUDA\l and STIR buildblock objects." alt="" coords="592,171,787,213"/>
 </map>

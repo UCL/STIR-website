@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -126,9 +126,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with all parameters and their values, in a form suitable for parsing again. <br /></td></tr>
 <tr class="separator:a66f36f490ab10ab754462013cdff499c inherit pub_methods_classstir_1_1RegisteredParsingObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstir_1_1Shape3DWithOrientation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstir_1_1Shape3DWithOrientation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstir_1_1Shape3DWithOrientation.html">stir::Shape3DWithOrientation</a></td></tr>
-<tr class="memitem:ac7468d9554ab2bfc78f11a9f420064e8 inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memItemLeft" align="right" valign="top"><a id="ac7468d9554ab2bfc78f11a9f420064e8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classstir_1_1Shape3DWithOrientation.html">Shape3DWithOrientation</a> &amp;s) const</td></tr>
-<tr class="separator:ac7468d9554ab2bfc78f11a9f420064e8 inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e13b49e5546b3725aeddf1c7ffc536a inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Shape3DWithOrientation.html#a1e13b49e5546b3725aeddf1c7ffc536a">operator==</a> (const <a class="el" href="classstir_1_1Shape3D.html">Shape3D</a> &amp;s) const override</td></tr>
+<tr class="memdesc:a1e13b49e5546b3725aeddf1c7ffc536a inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare shapes.  <a href="classstir_1_1Shape3DWithOrientation.html#a1e13b49e5546b3725aeddf1c7ffc536a">More...</a><br /></td></tr>
+<tr class="separator:a1e13b49e5546b3725aeddf1c7ffc536a inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc246546df30a20f29c51ed8e2280c1e inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Shape3DWithOrientation.html#adc246546df30a20f29c51ed8e2280c1e">scale</a> (const <a class="el" href="classstir_1_1CartesianCoordinate3D.html">CartesianCoordinate3D</a>&lt; float &gt; &amp;scale3D) override</td></tr>
 <tr class="memdesc:adc246546df30a20f29c51ed8e2280c1e inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="mdescLeft">&#160;</td><td class="mdescRight">scale the whole shape  <a href="classstir_1_1Shape3DWithOrientation.html#adc246546df30a20f29c51ed8e2280c1e">More...</a><br /></td></tr>
 <tr class="separator:adc246546df30a20f29c51ed8e2280c1e inherit pub_methods_classstir_1_1Shape3DWithOrientation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,17 +292,17 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Three-dimensional ellipsoidal cylinder. </p>
-<dl class="section user"><dt>Description</dt><dd>A point with coordinates <em>coord</em> is inside the shape if for <img class="formulaInl" alt="$r = coord - origin$" src="form_139.png"/>: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ |r.dir_z|&lt;L/2 \]" src="form_142.png"/>
+<dl class="section user"><dt>Description</dt><dd>A point with coordinates <em>coord</em> is inside the shape if for <img class="formulaInl" alt="$r = coord - origin$" src="form_154.png"/>: <p class="formulaDsp">
+<img class="formulaDsp" alt="\[ |r.dir_z|&lt;L/2 \]" src="form_157.png"/>
 </p>
  and <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} &lt;= 1 \]" src="form_143.png"/>
+<img class="formulaDsp" alt="\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} &lt;= 1 \]" src="form_158.png"/>
 </p>
  and <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \theta_1 &lt;= atan2(r.dir_y,r.dir_x) &lt;= \theta_2 \]" src="form_144.png"/>
+<img class="formulaDsp" alt="\[ \theta_1 &lt;= atan2(r.dir_y,r.dir_x) &lt;= \theta_2 \]" src="form_159.png"/>
 </p>
 </dd></dl>
-<p>where <img class="formulaInl" alt="$dir_x, dir_y, dir_z$" src="form_141.png"/> are described in the documentation for class <a class="el" href="classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. ">Shape3DWithOrientation</a>.</p>
+<p>where <img class="formulaInl" alt="$dir_x, dir_y, dir_z$" src="form_156.png"/> are described in the documentation for class <a class="el" href="classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation. ">Shape3DWithOrientation</a>.</p>
 <dl class="section user"><dt>Parameters</dt><dd>To specify an ellipsoidal cylinder with the dimensions (radius_x,radius_y,length, theta_1, theta_2), where radius_x is in x direction, radius_y in y direction, length in z-direction, theta_1 and theta_2 are defined counter clockwise from the positive x-axis about the z-axis (before any rotations), use: <pre class="fragment">   Ellipsoidal Cylinder Parameters:=
    radius-x (in mm):= &lt;float&gt;
    radius-y (in mm):= &lt;float&gt;
@@ -446,7 +446,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 <p>Compare cylinders. </p>
 <p>Uses a tolerance determined by the smallest dimension of the object divided by 1000. </p>
 
-<p class="reference">References <a class="el" href="classstir_1_1EllipsoidalCylinder.html#af53437dc1b5078a19f285e9bb2565da3">length</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a9a0cae4d8029f687f501232bfa0c4f86">radius_x</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#abd519c760ab361526f84e281d5340bb9">radius_y</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a9af2880cfd30ace44ad3998270638cc2">theta_1</a>, and <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a5d1b6ce1275d959cb32c255035efee61">theta_2</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1EllipsoidalCylinder.html#af53437dc1b5078a19f285e9bb2565da3">length</a>, <a class="el" href="classstir_1_1Shape3DWithOrientation.html#a1e13b49e5546b3725aeddf1c7ffc536a">stir::Shape3DWithOrientation::operator==()</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a9a0cae4d8029f687f501232bfa0c4f86">radius_x</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#abd519c760ab361526f84e281d5340bb9">radius_y</a>, <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a9af2880cfd30ace44ad3998270638cc2">theta_1</a>, and <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a5d1b6ce1275d959cb32c255035efee61">theta_2</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ typedef <a class="el" href="classstir_1_1FactoryRegistry.html">FactoryRegistry</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:47 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

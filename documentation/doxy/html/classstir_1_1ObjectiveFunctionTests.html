@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -310,7 +310,7 @@ template&lt;class ObjectiveFunctionT, class TargetT&gt; </div>
 </div><div class="memdoc">
 
 <p>Test the gradient of the objective function by comparing to the numerical gradient via perturbation. </p>
-<p>If <em>full_gradient=true</em>, all elements in the gradient are tested (using single-element increments). This is slow. Otherwise, the test checks that <img class="formulaInl" alt="$ G dx \approx F(x+dx) - F(x) $" src="form_129.png"/>. dx is computed via <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df" title="Construct small increment for target. ">construct_increment()</a>.</p>
+<p>If <em>full_gradient=true</em>, all elements in the gradient are tested (using single-element increments). This is slow. Otherwise, the test checks that <img class="formulaInl" alt="$ G dx \approx F(x+dx) - F(x) $" src="form_144.png"/>. dx is computed via <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df" title="Construct small increment for target. ">construct_increment()</a>.</p>
 <p>Note: <em>target</em> is non-<code>const</code>, as the code will add/subtract eps, but the actual values are not modified after the test exits. </p>
 
 </div>
@@ -364,7 +364,7 @@ template&lt;class ObjectiveFunctionT, class TargetT&gt; </div>
 </div><div class="memdoc">
 
 <p>Test the accumulate_Hessian_times_input of the objective function by comparing to the numerical result via perturbation. </p>
-<p>This test checks that <img class="formulaInl" alt="$ H dx \approx G(x+dx) - G(x) $" src="form_130.png"/>. dx is computed via <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df" title="Construct small increment for target. ">construct_increment()</a>. </p>
+<p>This test checks that <img class="formulaInl" alt="$ H dx \approx G(x+dx) - G(x) $" src="form_145.png"/>. dx is computed via <a class="el" href="classstir_1_1ObjectiveFunctionTests.html#a3a77b16de342e09df8b1c1a1a71939df" title="Construct small increment for target. ">construct_increment()</a>. </p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ template&lt;class ObjectiveFunctionT , class TargetT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:48 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

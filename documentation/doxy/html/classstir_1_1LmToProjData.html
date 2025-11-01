@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,22 +75,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#abf3a3858bc3404aeef247c1e8e21cfdf">LmToProjData</a> ()</td></tr>
 <tr class="memdesc:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#abf3a3858bc3404aeef247c1e8e21cfdf">More...</a><br /></td></tr>
 <tr class="separator:abf3a3858bc3404aeef247c1e8e21cfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d0a3521b7d3a50cad749809bd8f979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a79d0a3521b7d3a50cad749809bd8f979">set_up</a> () override</td></tr>
+<tr class="memitem:a79d0a3521b7d3a50cad749809bd8f979"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classstir_1_1Succeeded.html">Succeeded</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a79d0a3521b7d3a50cad749809bd8f979">set_up</a> () override</td></tr>
 <tr class="memdesc:a79d0a3521b7d3a50cad749809bd8f979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform various checks.  <a href="#a79d0a3521b7d3a50cad749809bd8f979">More...</a><br /></td></tr>
 <tr class="separator:a79d0a3521b7d3a50cad749809bd8f979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6de003a079d205b5b83c0ca56247c5"><td class="memItemLeft" align="right" valign="top"><a id="a9e6de003a079d205b5b83c0ca56247c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a9e6de003a079d205b5b83c0ca56247c5">process_data</a> () override</td></tr>
-<tr class="memdesc:a9e6de003a079d205b5b83c0ca56247c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function does the actual work N.E: In order to keep the ToF functions separate from the non-TOF STIR this function just call the appropriate actual_process_data_with(out)_tof(). <br /></td></tr>
+<tr class="memitem:a9e6de003a079d205b5b83c0ca56247c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a9e6de003a079d205b5b83c0ca56247c5">process_data</a> () override</td></tr>
+<tr class="memdesc:a9e6de003a079d205b5b83c0ca56247c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function does the actual work.  <a href="#a9e6de003a079d205b5b83c0ca56247c5">More...</a><br /></td></tr>
 <tr class="separator:a9e6de003a079d205b5b83c0ca56247c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions to get/set parameters</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>This can be used as alternative to the parsing mechanism. </p><dl class="section warning"><dt>Warning</dt><dd>Be careful with setting shared pointers. If you modify the objects in one place, all objects that use the shared pointer will be affected. </dd></dl>
 </div></td></tr>
-<tr class="memitem:ac91641f15fec919babd367571bf59ac3"><td class="memItemLeft" align="right" valign="top"><a id="ac91641f15fec919babd367571bf59ac3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_template_proj_data_info_sptr</b> (shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
+<tr class="memitem:ac91641f15fec919babd367571bf59ac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#ac91641f15fec919babd367571bf59ac3">set_template_proj_data_info_sptr</a> (shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;)</td></tr>
+<tr class="memdesc:ac91641f15fec919babd367571bf59ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional <code>proj</code> data_info to use as "template".  <a href="#ac91641f15fec919babd367571bf59ac3">More...</a><br /></td></tr>
 <tr class="separator:ac91641f15fec919babd367571bf59ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef753d74390423ba263add07282d99cc"><td class="memItemLeft" align="right" valign="top"><a id="aef753d74390423ba263add07282d99cc"></a>
-shared_ptr&lt; <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_template_proj_data_info_sptr</b> ()</td></tr>
-<tr class="separator:aef753d74390423ba263add07282d99cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408a113ca6e84c206251e51b6df8b9f8"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a408a113ca6e84c206251e51b6df8b9f8">get_template_proj_data_info_sptr</a> () const</td></tr>
+<tr class="memdesc:a408a113ca6e84c206251e51b6df8b9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current template.  <a href="#a408a113ca6e84c206251e51b6df8b9f8">More...</a><br /></td></tr>
+<tr class="separator:a408a113ca6e84c206251e51b6df8b9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b22b6d743c282a28d73460248963c40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#a3b22b6d743c282a28d73460248963c40">set_input_data</a> (const shared_ptr&lt; <a class="el" href="classstir_1_1ExamData.html">ExamData</a> &gt; &amp;)</td></tr>
 <tr class="memdesc:a3b22b6d743c282a28d73460248963c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">set input data  <a href="#a3b22b6d743c282a28d73460248963c40">More...</a><br /></td></tr>
 <tr class="separator:a3b22b6d743c282a28d73460248963c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +117,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_store_delayeds</b
 <tr class="memitem:a029564bb0939fb4c10314777d6af0e83"><td class="memItemLeft" align="right" valign="top"><a id="a029564bb0939fb4c10314777d6af0e83"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_store_delayeds</b> () const</td></tr>
 <tr class="separator:a029564bb0939fb4c10314777d6af0e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5126669e1e695d23940d48b9847460"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LmToProjData.html#add5126669e1e695d23940d48b9847460">get_last_processed_lm_rel_time</a> () const</td></tr>
+<tr class="memdesc:add5126669e1e695d23940d48b9847460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last processed timestamp in the listmode file.  <a href="#add5126669e1e695d23940d48b9847460">More...</a><br /></td></tr>
+<tr class="separator:add5126669e1e695d23940d48b9847460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45bf1646632620d0311d23fbfd9b48e4"><td class="memItemLeft" align="right" valign="top"><a id="a45bf1646632620d0311d23fbfd9b48e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_num_segments_in_memory</b> (int)</td></tr>
 <tr class="separator:a45bf1646632620d0311d23fbfd9b48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +298,11 @@ output filename prefix := my_favorite_name_for_the_projdata
 
 ; parameters that determine the sizes etc of the output
 
+  ; Optional projection data to use as "template", i.e. the output
+  ; will have the same size.
+  ; If none is specified, we will use the proj_data_info from the input list-mode.
+  ; Warning: for some scanners with TOF capabilities, this will result in very
+  ; large projection data (possibly larger than the default from the vendor).
   template_projdata := some_projdata_file
   ; the next can be used to use a smaller number of segments than given
   ; in the template
@@ -356,7 +363,7 @@ End :=
 </li>
 <li>
 store delayeds only<br />
- Use <div class="fragment"><div class="line">store prompts := 0</div><div class="line">store delayeds := 1</div></div><!-- fragment --> Note that now the delayted events will be <b>added</b>, not subtracted.  </li>
+ Use <div class="fragment"><div class="line">store prompts := 0</div><div class="line">store delayeds := 1</div></div><!-- fragment --> Note that now the delayed events will be <b>added</b>, not subtracted.  </li>
 </ul>
 <dl class="section user"><dt>Notes for developers</dt><dd></dd></dl>
 <p>The class provides several virtual functions. If a derived class overloads these, the default behaviour might change. For example, <a class="el" href="classstir_1_1LmToProjData.html#a4b260985d647a3809f0e8648f2ab6652" title="will be called to get the bin for a coincidence event ">get_bin_from_event()</a> might do motion correction.</p>
@@ -410,6 +417,50 @@ store delayeds only<br />
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac91641f15fec919babd367571bf59ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91641f15fec919babd367571bf59ac3">&#9670;&nbsp;</a></span>set_template_proj_data_info_sptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LmToProjData::set_template_proj_data_info_sptr </td>
+          <td>(</td>
+          <td class="paramtype">shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt;&#160;</td>
+          <td class="paramname"><em>t_sptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional <code>proj</code> data_info to use as "template". </p>
+<p>Use this to specify the output output proj_data_info, i.e. the output will have the same size.</p>
+<p>If not set, or when setting it explicitly to 0, the <code>proj_data_info</code> from the input list-mode will be used.</p>
+<p>Warning: for some scanners with TOF capabilities, this will result in large projection data (possibly larger than the default from the vendor). </p>
+
+</div>
+</div>
+<a id="a408a113ca6e84c206251e51b6df8b9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408a113ca6e84c206251e51b6df8b9f8">&#9670;&nbsp;</a></span>get_template_proj_data_info_sptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; const <a class="el" href="classstir_1_1ProjDataInfo.html">ProjDataInfo</a> &gt; stir::LmToProjData::get_template_proj_data_info_sptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current template. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1LmToProjData.html#ac91641f15fec919babd367571bf59ac3" title="Optional proj data_info to use as &quot;template&quot;. ">set_template_proj_data_info_sptr()</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>the return value can be the null pointer. </dd></dl>
+
+</div>
+</div>
 <a id="a3b22b6d743c282a28d73460248963c40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b22b6d743c282a28d73460248963c40">&#9670;&nbsp;</a></span>set_input_data() <span class="overload">[1/2]</span></h2>
 
@@ -489,6 +540,26 @@ store delayeds only<br />
 
 </div>
 </div>
+<a id="add5126669e1e695d23940d48b9847460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5126669e1e695d23940d48b9847460">&#9670;&nbsp;</a></span>get_last_processed_lm_rel_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double stir::LmToProjData::get_last_processed_lm_rel_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the last processed timestamp in the listmode file. </p>
+<p>This can be used to find the duration (in seconds) of the last time frame processed. </p>
+
+</div>
+</div>
 <a id="a79d0a3521b7d3a50cad749809bd8f979"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79d0a3521b7d3a50cad749809bd8f979">&#9670;&nbsp;</a></span>set_up()</h2>
 
@@ -513,13 +584,43 @@ store delayeds only<br />
 </div><div class="memdoc">
 
 <p>Perform various checks. </p>
-<p>Note: this is currently called by <a class="el" href="classstir_1_1LmToProjData.html#a26f3d7118f3eecb6761a26d6db31adfc" title="This will be called at the end of the parsing. ">post_processing()</a>. This will change in version 5.0 </p>
+<p>Will likely call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f" title="Print error with format string a la printf and throw exception. ">error()</a> if there is a problem. </p>
 
 <p>Reimplemented from <a class="el" href="classstir_1_1LmToProjDataAbstract.html#af4751990877c3b8fde40e01b94a3fd81">stir::LmToProjDataAbstract</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classstir_1_1LmToProjDataWithMC.html#a6d737093eb84e9b51aeaa8b32c711e2d">stir::LmToProjDataWithMC</a>.</p>
 
 <p class="reference">References <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f868b385f">stir::error()</a>.</p>
+
+</div>
+</div>
+<a id="a9e6de003a079d205b5b83c0ca56247c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6de003a079d205b5b83c0ca56247c5">&#9670;&nbsp;</a></span>process_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stir::LmToProjData::process_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function does the actual work. </p>
+<p>You need to call <a class="el" href="classstir_1_1LmToProjData.html#a79d0a3521b7d3a50cad749809bd8f979" title="Perform various checks. ">set_up()</a> first. </p>
+
+<p>Implements <a class="el" href="classstir_1_1LmToProjDataAbstract.html#a8449539a2a85dad8efbd48dd1d40149e">stir::LmToProjDataAbstract</a>.</p>
 
 </div>
 </div>
@@ -799,7 +900,7 @@ store delayeds only<br />
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:15 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:48 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

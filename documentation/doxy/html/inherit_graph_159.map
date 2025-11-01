@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1TimedBlock_3_01TimerT_0ATimer_01_4.html" title="Helper class for measuring execution time of a block of code.It starts the timer in ctor..." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" href="$classstir_1_1PtrBeginEndAllFunction.html" title="stir::PtrBeginEndAllFunction\l\&lt; TopLevelIterT, boost::pointee\l\&lt; boost::iterator_value\&lt; TopLevelIterT\l \&gt;::type \&gt;::type::const_full_iterator \&gt;" alt="" coords="5,5,249,76"/>
+<area shape="rect" id="node2" href="$classstir_1_1ConstPtrBeginEndAllFunction.html" title="Convenience class where the 2nd level iterator is a const_full_iterator. " alt="" coords="297,20,473,61"/>
 </map>

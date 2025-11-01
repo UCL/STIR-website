@@ -27,9 +27,18 @@
 
 <p>conda is the easiest way to install STIR. Check our <a href="https://github.com/UCL/STIR/wiki/Installing-STIR-with-conda" target="_parent">Wiki page</a> for help.</p>
 
-<p>To get the source code (without git), please check <a href="https://github.com/UCL/STIR/releases" target="_parent"> STIR releases on GitHub</a>.
-  Scroll down to the bottom of a release for links for the source code.
-  See the <a href="../documentation/STIR-UsersGuide.pdf">User's Guide</a> for more information on dependencies.</p>
+<p>To get the source code and build STIR yourself, we highly recommend to use git:
+  <pre><code>
+    git clone --recurse-submodules https://github.com/UCL/STIR
+    # this will put you on the master branch. If you want to switch to a release:
+    git checkout --recurse-submodules rel_6.3.0
+  </code></pre>
+  If you do not want to use git, please check <a href="https://github.com/UCL/STIR/releases" target="_parent"> STIR releases on GitHub</a>.
+  Scroll down to the bottom of a release for links for the source code.<br>
+  <strong>Warning:</strong> The .tar.gz/.zip files on GitHub releases currently do not contain submodules such as fmt, needed for
+  older compilers. Therefore, use git if you can.
+  <br>
+  See the <a href="../documentation/STIR-UsersGuide.pdf">User's Guide</a> for more information on dependencies.
 </p>
 <p >Below are links to documentation. You will
 probably want to shift-click, right-click, control-click or whatever on these,
@@ -72,6 +81,7 @@ PARAPET code, so these files are obsolete.
 
 <ul>
 
+  
  <li><a
      href="../documentation/">Software documentation</a>
      </li>

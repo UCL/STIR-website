@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -236,7 +236,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 <dl class="section user"><dt>Implementation note</dt><dd></dd></dl>
 <p>This virtual function has to be implemented in each final class of the hierarchy. However, <a class="el" href="classstir_1_1Shape3D.html#a32b0f189a95c3afc543a8354b28a0043" title="Compare shapes. ">Shape3D::operator==</a> has an implementation that checks equality of the origin (up-to a tolerance of .001). Derived classes can call this implementation. </p>
 
-<p>Implemented in <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a36bdbf7c6a6ff075a053935f64402ffa">stir::EllipsoidalCylinder</a>, <a class="el" href="classstir_1_1Box3D.html#a6104504cd6cab0d78d2bdec2bcaae8c3">stir::Box3D</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#a7c7611ef9c96784070e9cbcfd07fd942">stir::DiscretisedShape3D</a>, and <a class="el" href="classstir_1_1Ellipsoid.html#a3dcf77e68ba03e7c3f3ad4096d186f56">stir::Ellipsoid</a>.</p>
+<p>Implemented in <a class="el" href="classstir_1_1EllipsoidalCylinder.html#a36bdbf7c6a6ff075a053935f64402ffa">stir::EllipsoidalCylinder</a>, <a class="el" href="classstir_1_1Box3D.html#a6104504cd6cab0d78d2bdec2bcaae8c3">stir::Box3D</a>, <a class="el" href="classstir_1_1DiscretisedShape3D.html#a7c7611ef9c96784070e9cbcfd07fd942">stir::DiscretisedShape3D</a>, <a class="el" href="classstir_1_1Ellipsoid.html#a3dcf77e68ba03e7c3f3ad4096d186f56">stir::Ellipsoid</a>, and <a class="el" href="classstir_1_1Shape3DWithOrientation.html#a1e13b49e5546b3725aeddf1c7ffc536a">stir::Shape3DWithOrientation</a>.</p>
 
 <p class="reference">References <a class="el" href="group__Coordinate.html#ga4770b3db3002116b144d80af7afdef39">stir::norm()</a>.</p>
 
@@ -444,9 +444,9 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 
 <p>Reimplemented in <a class="el" href="classstir_1_1DiscretisedShape3D.html#a740e0c002edfd049a56a86917633622f">stir::DiscretisedShape3D</a>.</p>
 
-<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, <a class="el" href="classstir_1_1PixelsOnCartesianGrid.html#a3f14eb41b126acea5a97291dcde4dac1">stir::PixelsOnCartesianGrid&lt; elemT &gt;::get_pixel_size()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
+<p class="reference">References <a class="el" href="classstir_1_1DiscretisedDensity.html#ac7582de45a172909521d05f5670b3bbc">stir::DiscretisedDensity&lt; num_dimensions, elemT &gt;::get_origin()</a>, <a class="el" href="classstir_1_1VoxelsOnCartesianGrid.html#a903a6dca7fc3e4ebf2e9fff5a383affa">stir::VoxelsOnCartesianGrid&lt; elemT &gt;::get_voxel_size()</a>, and <a class="el" href="group__buildblock.html#ga58339978ae5e7a02db3ba4d82bff5ab6">stir::info()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; target_type &gt;::construct_input_data()</a>, <a class="el" href="classstir_1_1ROITests.html#a1af96054f6517c48166cec239bb5f868">stir::ROITests::run_tests()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ReconstructionTests.html#a30871b0b5efcb824b1add7d08d0ca852">stir::ReconstructionTests&lt; target_type &gt;::construct_input_data()</a>, <a class="el" href="classstir_1_1ROITests.html#a1af96054f6517c48166cec239bb5f868">stir::ROITests::run_tests()</a>, <a class="el" href="classstir_1_1TestProjDataInfoSubsets.html#aa0241d718935e3a0ac7593c5adfce2e2">stir::TestProjDataInfoSubsets::TestProjDataInfoSubsets()</a>, and <a class="el" href="classstir_1_1TestProjDataInfoSubsetsSPECTUB.html#aa65ab4b410d895596897ddcccbae24b1">stir::TestProjDataInfoSubsetsSPECTUB::TestProjDataInfoSubsetsSPECTUB()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +488,7 @@ origin (in mm):= &lt;float&gt; ;defaults to {0,0,0}
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:17 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:50 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -44,7 +44,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">cuda_utilities.h File Reference<div class="ingroups"><a class="el" href="group__STIR.html">STIR</a> &raquo; <a class="el" href="group__STIR__library.html">STIR library</a> &raquo; <a class="el" href="group__buildblock.html">Basic building blocks</a> &raquo; <a class="el" href="group__CUDA.html">Items relating to CUDA and STIR buildblock objects.</a></div></div>  </div>
 </div><!--header-->
@@ -54,6 +54,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="info_8h_source.html">stir/info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="error_8h_source.html">stir/error.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="cuda__utilities_8h_source.html">Go to the source code of this file.</a></p>
@@ -63,25 +64,16 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacestir"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html">stir</a></td></tr>
 <tr class="memdesc:namespacestir"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for the STIR library (and some/most of its applications) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a2969c665082ac7473a60516c6f7a49bd"><td class="memTemplParams" colspan="2"><a id="a2969c665082ac7473a60516c6f7a49bd"></a>
-template&lt;int num_dimensions, typename elemT &gt; </td></tr>
-<tr class="memitem:a2969c665082ac7473a60516c6f7a49bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::array_to_device</b> (elemT *dev_data, const Array&lt; num_dimensions, elemT &gt; &amp;stir_array)</td></tr>
-<tr class="separator:a2969c665082ac7473a60516c6f7a49bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2202132845c69f9596deffd1797155b9"><td class="memTemplParams" colspan="2"><a id="a2202132845c69f9596deffd1797155b9"></a>
-template&lt;int num_dimensions, typename elemT &gt; </td></tr>
-<tr class="memitem:a2202132845c69f9596deffd1797155b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::array_to_host</b> (Array&lt; num_dimensions, elemT &gt; &amp;stir_array, const elemT *dev_data)</td></tr>
-<tr class="separator:a2202132845c69f9596deffd1797155b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>some utilities for STIR and CUDA </p>
-<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd>
+<dd>
+Matteo Neel Colombo </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

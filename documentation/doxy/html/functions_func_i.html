@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -56,6 +56,9 @@ $(function() {
 <li>init_from_data()
 : <a class="el" href="classstir_1_1CListRecordROOT.html#a7a3ba8ffcfb098627eb2b9d8632452ef">stir::CListRecordROOT</a>
 </li>
+<li>init_with_copy()
+: <a class="el" href="classstir_1_1VectorWithOffset.html#ad63a2ea443f9a9c8797a333197b3e875">stir::VectorWithOffset&lt; T &gt;</a>
+</li>
 <li>initialise()
 : <a class="el" href="classstir_1_1DistributedCachingInformation.html#a4f7c51fe3caedc8a507d6675333dddbf">stir::DistributedCachingInformation</a>
 , <a class="el" href="classstir_1_1Reconstruction.html#ad8e95fdce438b611703cc9fd4b9f5a94">stir::Reconstruction&lt; TargetT &gt;</a>
@@ -89,6 +92,7 @@ $(function() {
 , <a class="el" href="classstir_1_1FourierRebinning.html#a7c5ebb36a4aeffbc41c5a70723da2995">stir::FourierRebinning</a>
 , <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#ac094cea58ba54853a5894f71b3285ca2">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#a9f385565c0a99506bf7e660c144c3c8b">stir::GeneralisedPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1GibbsPenalty.html#aa3c61d8e4979ec97f7604c92f02be2c1">stir::GibbsPenalty&lt; elemT, potentialT &gt;</a>
 , <a class="el" href="classstir_1_1HUToMuImageProcessor.html#a42f23c91c0db6aadc920e7d953bcd164">stir::HUToMuImageProcessor&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFile.html#a38a2f4f88edd09630606686d9ace397e">stir::InputStreamFromROOTFile</a>
 , <a class="el" href="classstir_1_1InputStreamFromROOTFileForCylindricalPET.html#afc6c3ec0b2e354c576605411f50e923c">stir::InputStreamFromROOTFileForCylindricalPET</a>
@@ -127,8 +131,10 @@ $(function() {
 , <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html#ad2622ee1e04f21bc32eedeb977c23472">stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjData&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1ProjDataRebinning.html#a1e3c80509f099bd771ec1509ba6b19e6">stir::ProjDataRebinning</a>
 , <a class="el" href="classstir_1_1ProjMatrixByBin.html#aadf37c726304846cf411ddf1c4abe7cf">stir::ProjMatrixByBin</a>
+, <a class="el" href="classstir_1_1QuadraticPotential.html#a92bc58b06b1df0fb8fc857de31a3339f">stir::QuadraticPotential&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a87db7a3a9ff8b2c812053d6d1cb04b67">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1Reconstruction.html#a7e2af67ab0a983c19ef3357ffd504bb8">stir::Reconstruction&lt; TargetT &gt;</a>
+, <a class="el" href="classstir_1_1RelativeDifferencePotential.html#add3e717035b43e47d1362d9c4483469d">stir::RelativeDifferencePotential&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a91cbe504bf1ab3dba8617a41dac52ff9">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1ReportMovement.html#a60d03f15778848b803b449880b4ecc8c">stir::ReportMovement</a>
 , <a class="el" href="classstir_1_1RigidObject3DMotion.html#a8b65b6c7de2ef542efe4a2477ec41d4a">stir::RigidObject3DMotion</a>
@@ -193,9 +199,12 @@ $(function() {
 <li>is_convex()
 : <a class="el" href="classstir_1_1FilterRootPrior.html#a132936972dbe6175325d329d0273150f">stir::FilterRootPrior&lt; DataT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#abee515b047f392c5c03b0a5e4bcd5853">stir::GeneralisedPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1GibbsPenalty.html#a1e2c0aec65ec4adad018ecb7d519930b">stir::GibbsPenalty&lt; elemT, potentialT &gt;</a>
 , <a class="el" href="classstir_1_1LogcoshPrior.html#aa0d7b11f4170383854021cf35fe3b9c6">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1PLSPrior.html#a12c88fed5ed069d7387921277a7018e0">stir::PLSPrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1QuadraticPotential.html#a0407457c29e64454abb6a06ebbc81626">stir::QuadraticPotential&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#ab508dd7b551c73d18ed0c84d8990b4f5">stir::QuadraticPrior&lt; elemT &gt;</a>
+, <a class="el" href="classstir_1_1RelativeDifferencePotential.html#a090d22371bb988096e748ec04f478707">stir::RelativeDifferencePotential&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#ad00f89324afed3e889ef55a789324073">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
 </li>
 <li>is_directory()
@@ -279,12 +288,14 @@ $(function() {
 , <a class="el" href="classstir_1_1BinNormalisation.html#aebe407aa214715b152f50222a6a57998">stir::BinNormalisation</a>
 , <a class="el" href="classstir_1_1BinNormalisationFromProjData.html#a536a69c1ffb729590974081b9f543df1">stir::BinNormalisationFromProjData</a>
 , <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#ace0f4eea81283a1e60a4a3f9ff5c8221">stir::BinNormalisationPETFromComponents</a>
+, <a class="el" href="classstir_1_1GammaArrayFilter2D.html#ade7dc4f395adc3a9a509defd4a631f32">stir::GammaArrayFilter2D&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1MaximalArrayFilter3D.html#a384aacf7af0eeca0470db95ef2139b9a">stir::MaximalArrayFilter3D&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1MedianArrayFilter3D.html#a5e07decdd0d146c0747ebaa003c418be">stir::MedianArrayFilter3D&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1MinimalArrayFilter3D.html#a9d79aaa61b008a59011968d068684a65">stir::MinimalArrayFilter3D&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1SeparableArrayFunctionObject2.html#aefe048aa05407a7e3a5965666371b7ac">stir::SeparableArrayFunctionObject2&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1SeparableArrayFunctionObject.html#adf52f5c29716cfe3e33d8f8364f75c87">stir::SeparableArrayFunctionObject&lt; num_dimensions, elemT &gt;</a>
 , <a class="el" href="classstir_1_1TrivialBinNormalisation.html#aafb61e32299254ed85065cc6bf2a86f7">stir::TrivialBinNormalisation</a>
+, <a class="el" href="classstir_1_1WienerArrayFilter2D.html#a1af6439bf05b66640674be55f9a45a48">stir::WienerArrayFilter2D&lt; elemT &gt;</a>
 </li>
 <li>is_valid_template()
 : <a class="el" href="classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html#a7de3cd84db4b69baefba3b16071ad37a">stir::CListEventCylindricalScannerWithViewTangRingRingEncoding&lt; Derived &gt;</a>
@@ -299,7 +310,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:55:12 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,0 +1,7 @@
+<map id="stir::CudaGibbsPenalty&lt; elemT, PotentialT &gt;" name="stir::CudaGibbsPenalty&lt; elemT, PotentialT &gt;">
+<area shape="rect" id="node2" href="$classstir_1_1GibbsPenalty.html" title="stir::GibbsPenalty\l\&lt; elemT, PotentialT \&gt;" alt="" coords="919,50,1068,91"/>
+<area shape="rect" id="node3" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="389,43,543,99"/>
+<area shape="rect" id="node6" href="$classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. " alt="" coords="592,79,739,121"/>
+<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; GeneralisedPrior\&lt; Discretised\lDensity\&lt; 3, elemT \&gt; \&gt; \&gt;" alt="" coords="5,5,213,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined..." alt="" coords="37,86,181,127"/>
+</map>

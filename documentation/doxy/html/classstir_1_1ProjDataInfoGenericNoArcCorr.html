@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -753,7 +753,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a9cc8e2b57ed338d0ef1049db9aa282a9" title="This gets view_num and tang_pos_num for a particular detector pair. ">get_view_tangential_pos_num_for_det_num_pair()</a> for restrictions </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo:</a></b></dt><dd>use member template for the coordT type to support continuous detectors. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html#a8e3163f397c4309e9f30ef4682b17b6e">stir::ProjDataInfoBlocksOnCylindricalNoArcCorr::find_scanner_coordinates_given_cartesian_coordinates()</a>, and <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#af416c6c2517b42d4ba4c99b2dac4eb00">get_bin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#af416c6c2517b42d4ba4c99b2dac4eb00">get_bin()</a>, and <a class="el" href="classstir_1_1ProjDataInfoBlocksOnCylindricalNoArcCorr.html#ad45fbefbe89cc5c0f17022bd7ca27281">stir::ProjDataInfoBlocksOnCylindricalNoArcCorr::parameter_info()</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 
 <p>This routine gets the detector pair corresponding to a bin. </p>
 <dl class="section see"><dt>See also</dt><dd>get_det_pair_for_view_tangential_pos_num() for restrictions. In addition, this routine only works for span=1 data, i.e. no axial compression. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p class="reference">References <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin::axial_pos_num()</a>, <a class="el" href="classstir_1_1SegmentIndices.html#a07539071afc2bce439f86103f8bbe971">stir::SegmentIndices::segment_num()</a>, <a class="el" href="classstir_1_1Bin.html#a6d551b76c16bdf18d25e914b463a9db7">stir::Bin::tangential_pos_num()</a>, and <a class="el" href="classstir_1_1ViewgramIndices.html#adf1a327b7d5046dab9461e2769c4c23b">stir::ViewgramIndices::view_num()</a>.</p>
 
@@ -980,13 +980,11 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 </table>
 </div><div class="memdoc">
 <dl class="section warning"><dt>Warning</dt><dd>These function take a different convention for the axial coordinate compare to the <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a14b29069ba39a8c07230b9fbf2e49680" title="Return z-coordinate of the middle of the LOR. ">get_m()</a>, <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a669ac0a8fbfbe033fce9228cd7d4140f" title="warning Find lor from cartesian coordinates of detector pair ">get_LOR()</a> etc. In the current function, the axial coordinate (z) is zero in the first ring, while for <a class="el" href="classstir_1_1ProjDataInfoGeneric.html#a14b29069ba39a8c07230b9fbf2e49680" title="Return z-coordinate of the middle of the LOR. ">get_m()</a> etc it is zero in the centre of the scanner. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd></dd></dl>
 
 <p>Implements <a class="el" href="classstir_1_1ProjDataInfoGeneric.html">stir::ProjDataInfoGeneric</a>.</p>
 
 <p class="reference">References <a class="el" href="classstir_1_1Scanner.html#a341cf3927fd7be657cba4bd4755341bb">stir::Scanner::get_coordinate_for_det_pos()</a>, <a class="el" href="classstir_1_1ProjDataInfoGenericNoArcCorr.html#a4129c4ec3fd537636a38821180168b26">get_det_pair_for_bin()</a>, and <a class="el" href="classstir_1_1ProjDataInfo.html#aadb5eeea49a59cf9eb8c279bc5123b52">stir::ProjDataInfo::get_scanner_ptr()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classstir_1_1ScatterSimulation.html#ad1889068764d0cf98036f381c3836e97">stir::ScatterSimulation::post_processing()</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1027,7 @@ Will call <a class="el" href="group__buildblock.html#ga19b3ad285f04d613640a497f8
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:49 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

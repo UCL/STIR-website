@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -51,8 +51,10 @@ $(function() {
 : <a class="el" href="classstir_1_1AbsTimeIntervalWithParsing.html#add1dd3d521deeb5d2b0580fe3482da6c">stir::AbsTimeIntervalWithParsing</a>
 </li>
 <li>accumulate_Hessian_times_input()
-: <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
+: <a class="el" href="classstir_1_1CudaGibbsPenalty.html#ac35eff70a3bfe411f2e6e9247a5268a6">stir::CudaGibbsPenalty&lt; elemT, PotentialT &gt;</a>
+, <a class="el" href="classstir_1_1GeneralisedObjectiveFunction.html#aa218e35d7106ddf704fbf566f79d51fa">stir::GeneralisedObjectiveFunction&lt; TargetT &gt;</a>
 , <a class="el" href="classstir_1_1GeneralisedPrior.html#ab85f4e40ea3146102a9e8d5ef16c0601">stir::GeneralisedPrior&lt; DataT &gt;</a>
+, <a class="el" href="classstir_1_1GibbsPenalty.html#ae5905999262c82fbe5bcd97d4a007d1c">stir::GibbsPenalty&lt; elemT, potentialT &gt;</a>
 , <a class="el" href="classstir_1_1LogcoshPrior.html#a1d8c931d6ee97b03e00d93ce5fb6fc4e">stir::LogcoshPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1QuadraticPrior.html#a1e45069e287f23e362bf567480b40e20">stir::QuadraticPrior&lt; elemT &gt;</a>
 , <a class="el" href="classstir_1_1RelativeDifferencePrior.html#a1ff45f2cee956e01345639328913a45f">stir::RelativeDifferencePrior&lt; elemT &gt;</a>
@@ -180,7 +182,10 @@ $(function() {
 , <a class="el" href="classstir_1_1InputFileFormatRegistry.html#aad4f4f8711382cffa1da73f93879edc8">stir::InputFileFormatRegistry&lt; DataT &gt;</a>
 </li>
 <li>add_vectorised_key()
-: <a class="el" href="classstir_1_1KeyParser.html#a50a45f50717b66d7032e87965772b4c0">stir::KeyParser</a>
+: <a class="el" href="classstir_1_1KeyParser.html#acbedfe7fa9da75a107b35e21c060dfb0">stir::KeyParser</a>
+</li>
+<li>advance_to()
+: <a class="el" href="classparse__context.html#aa797d1308d9cd7a7755327c6db352665">parse_context&lt; Char &gt;</a>
 </li>
 <li>allocate()
 : <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a932ea8cbb36ab90bc082a10af5e9f041">stir::BinNormalisationPETFromComponents</a>
@@ -189,7 +194,8 @@ $(function() {
 : <a class="el" href="classstir_1_1ScatterEstimation.html#aaca0db5d394151dfa1dcb81be82803e2">stir::ScatterEstimation</a>
 </li>
 <li>append()
-: <a class="el" href="classstir_1_1FilePath.html#a25cecdc0f314d04a5ef40e15ec0014f4">stir::FilePath</a>
+: <a class="el" href="classdetail_1_1buffer.html#a2591580c2a3516c85bac8f7af1a7bb4f">detail::buffer&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1FilePath.html#a25cecdc0f314d04a5ef40e15ec0014f4">stir::FilePath</a>
 </li>
 <li>append_separator()
 : <a class="el" href="classstir_1_1FilePath.html#a4d0bf4dae5403b3c3f059585517365b1">stir::FilePath</a>
@@ -203,7 +209,7 @@ $(function() {
 , <a class="el" href="classstir_1_1BinNormalisationSinogramRescaling.html#a2ed7482f90bc51b814f77e8b29b24f2a">stir::BinNormalisationSinogramRescaling</a>
 , <a class="el" href="classstir_1_1ChainedBinNormalisation.html#a210286b20576ae76b4d16018560f16dc">stir::ChainedBinNormalisation</a>
 , <a class="el" href="classstir_1_1DataProcessor.html#a74d545bfd0cf25ed6bdce24ff0e55b9e">stir::DataProcessor&lt; DataT &gt;</a>
-, <a class="el" href="classstir_1_1Filter1D.html#a19ae479b579227a9781a1403bde0bf56">stir::Filter1D&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1Filter1D.html#a13781e0a661dffee587520a4770df6bb">stir::Filter1D&lt; T &gt;</a>
 , <a class="el" href="classstir_1_1TrivialBinNormalisation.html#a16f11bbd548c0269f8e90ccb502177c4">stir::TrivialBinNormalisation</a>
 </li>
 <li>apply_linear_regression()
@@ -222,10 +228,10 @@ $(function() {
 </li>
 <li>Array()
 : <a class="el" href="classstir_1_1Array.html#ad567af3ffe92839b7d37811082a3e4bd">stir::Array&lt; num_dimensions, elemT &gt;</a>
-, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#a3e970a4cbce4a5a23caf04314f8cf0a0">stir::Array&lt; 1, elemT &gt;</a>
+, <a class="el" href="classstir_1_1Array_3_011_00_01elemT_01_4.html#aea3efc8f02702ac9fa69318c9c635088">stir::Array&lt; 1, elemT &gt;</a>
 </li>
 <li>ArrayFilter1DUsingConvolution()
-: <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolution.html#a79737742cae14b87cddde811154af3b6">stir::ArrayFilter1DUsingConvolution&lt; elemT &gt;</a>
+: <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolution.html#a979ec983b2868e670a39f03421a39b7e">stir::ArrayFilter1DUsingConvolution&lt; elemT &gt;</a>
 </li>
 <li>ArrayFilter1DUsingConvolutionSymmetricKernel()
 : <a class="el" href="classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html#a45877ecba48e0ded95eedae05c2540a2">stir::ArrayFilter1DUsingConvolutionSymmetricKernel&lt; elemT &gt;</a>
@@ -248,8 +254,8 @@ $(function() {
 </li>
 <li>at()
 : <a class="el" href="classstir_1_1BasicCoordinate.html#a84b8df95f050dc6d02326fad2cb0a50a">stir::BasicCoordinate&lt; num_dimensions, coordT &gt;</a>
-, <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html#a27db7de9ccfe6af734f04abcb0a34823">stir::DynamicDiscretisedDensity</a>
-, <a class="el" href="classstir_1_1VectorWithOffset.html#a076b36a61e565cb74fc4af24aede28f0">stir::VectorWithOffset&lt; T &gt;</a>
+, <a class="el" href="classstir_1_1DynamicDiscretisedDensity.html#aaf1fd9f29305a8b32197ce9b8412fa65">stir::DynamicDiscretisedDensity</a>
+, <a class="el" href="classstir_1_1VectorWithOffset.html#a008245e17d0d35548d1283461cdcbae5">stir::VectorWithOffset&lt; T &gt;</a>
 </li>
 <li>axial_pos_num()
 : <a class="el" href="classstir_1_1Bin.html#a9a4701eee8d1a61ac1a9f860b577feee">stir::Bin</a>
@@ -269,7 +275,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:19 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:55:12 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

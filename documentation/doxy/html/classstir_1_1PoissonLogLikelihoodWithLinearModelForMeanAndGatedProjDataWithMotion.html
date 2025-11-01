@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -233,6 +233,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">get_subsensitivity_filenames</a> () const</td></tr>
 <tr class="memdesc:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="mdescLeft">&#160;</td><td class="mdescRight">get filename pattern to read (or write) the subset sensitivities  <a href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a785b137dfe9c515f485ba847273cb183">More...</a><br /></td></tr>
 <tr class="separator:a785b137dfe9c515f485ba847273cb183 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a00aedf9aa77622a2ab63819bce8d87ae">get_subsensitivity_filename</a> (const int subset_num) const</td></tr>
+<tr class="memdesc:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the filename for a particular subset.  <a href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a00aedf9aa77622a2ab63819bce8d87ae">More...</a><br /></td></tr>
+<tr class="separator:a00aedf9aa77622a2ab63819bce8d87ae inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c794711edfbc2301bf945aa4334936 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#ab9c794711edfbc2301bf945aa4334936">fill_nonidentifiable_target_parameters</a> (TargetT &amp;target, const float value) const override</td></tr>
 <tr class="separator:ab9c794711edfbc2301bf945aa4334936 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a9bd607a386cb5fe9a2c72b40c28a1 inherit pub_methods_classstir_1_1PoissonLogLikelihoodWithLinearModelForMean"><td class="memItemLeft" align="right" valign="top"><a id="a93a9bd607a386cb5fe9a2c72b40c28a1"></a>
@@ -583,7 +586,7 @@ class stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion
 
 <p>a base class for LogLikelihood of independent Poisson variables where the mean values are linear combinations of the gated images. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \begin{array}{lcl} \Lambda_{\nu}^{(s+1)}&amp;&amp;=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\ &amp;&amp;\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow \tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]" src="form_101.png"/>
+<img class="formulaDsp" alt="\[ \begin{array}{lcl} \Lambda_{\nu}^{(s+1)}&amp;&amp;=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\ &amp;&amp;\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow \tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]" src="form_117.png"/>
 </p>
  <dl class="section user"><dt>Parameters for parsing</dt><dd></dd></dl>
 <p>For more information: Tsoumpas et al (2013) Physics in Medicine and Biology </p>
@@ -672,11 +675,11 @@ template&lt;typename TargetT &gt; </div>
 
 <p>computes the subset gradient of the objective function without the penalty (optional: add subset sensitivity) </p>
 <p>If <code>add_sensitivity</code> is <code>true</code>, this computes </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_100.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_116.png"/>
 </p>
 <p> (see the class general documentation). The sum will however be restricted to a subset.</p>
 <p>However, if <code>add_sensitivity</code> is <code>false</code>, this function will instead compute only the gradient </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]" src="form_99.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]" src="form_115.png"/>
 </p>
  
 <p>Implements <a class="el" href="classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html#a6728f3fa472544336c1601f21cd01ffd">stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;</a>.</p>
@@ -1181,7 +1184,7 @@ template&lt;typename TargetT &gt; </div>
 <p>This should compute the subset gradient of the (unregularised) objective function plus the subset sensitivity. </p>
 <p>Implementation in terms of actual_compute_sub_gradient_without_penalty(). This function is used for instance by OSMAPOSL.</p>
 <p>This computes </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_100.png"/>
+<img class="formulaDsp" alt="\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]" src="form_116.png"/>
 </p>
 <p> (see the class general documentation). The sum will however be restricted to a subset. </p>
 
@@ -1386,7 +1389,7 @@ template&lt;typename TargetT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:16 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:49 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

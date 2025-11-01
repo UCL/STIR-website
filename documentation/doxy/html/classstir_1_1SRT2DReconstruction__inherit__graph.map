@@ -1,0 +1,6 @@
+<map id="stir::SRT2DReconstruction" name="stir::SRT2DReconstruction">
+<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; SRT2DReconstruction, Reconstruction\l\&lt; DiscretisedDensity\&lt; 3, float \&gt;\l \&gt;, AnalyticReconstruction \&gt;" alt="" coords="719,30,981,101"/>
+<area shape="rect" id="node3" href="$classstir_1_1AnalyticReconstruction.html" title="base class for all analytic reconstruction algorithmsThis class provides extra functinoality (compare..." alt="" coords="205,20,388,47"/>
+<area shape="rect" id="node4" href="$classstir_1_1Reconstruction.html" title="stir::Reconstruction\l\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="5,5,151,61"/>
+<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="200,77,393,118"/>
+</map>

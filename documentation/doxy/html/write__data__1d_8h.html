@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -43,7 +43,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -51,21 +50,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of <a class="el" href="group__Array__IO__detail.html#ga6191b48f02bcaa810a4482539b22d7c1" title="This is an internal function called by write_data(). It does the actual writing to FILE* using stdio ...">stir::write_data_1d()</a> functions for writing 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to file.  
+<p>Declaration of <a class="el" href="group__Array__IO__detail.html#gac866b99fb309cd41a1f5ffd5090e255e" title="This is an internal function called by write_data(). It does the actual writing to FILE* using stdio ...">stir::write_data_1d()</a> functions for writing 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to file.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">stir/common.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ArrayFwd_8h_source.html">stir/ArrayFwd.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="write__data__1d_8inl.html">stir/IO/write_data_1d.inl</a>&quot;</code><br />
 </div>
 <p><a href="write__data__1d_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html">stir::Array&lt; num_dimensions, elemT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class defines multi-dimensional (numeric) arrays.  <a href="classstir_1_1Array.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacestir"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestir.html">stir</a></td></tr>
@@ -79,20 +72,20 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga721471457192919962e6021ae4400739"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
 <tr class="memitem:ga721471457192919962e6021ae4400739"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#ga721471457192919962e6021ae4400739">stir::detail::write_data_1d</a> (std::ostream &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
-<tr class="memdesc:ga721471457192919962e6021ae4400739"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>std::ostream</code>.  <a href="group__Array__IO__detail.html#ga721471457192919962e6021ae4400739">More...</a><br /></td></tr>
+<tr class="memdesc:ga721471457192919962e6021ae4400739"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>std::ostream</code>.  <a href="group__Array__IO__detail.html#ga721471457192919962e6021ae4400739">More...</a><br /></td></tr>
 <tr class="separator:ga721471457192919962e6021ae4400739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6191b48f02bcaa810a4482539b22d7c1"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
-<tr class="memitem:ga6191b48f02bcaa810a4482539b22d7c1"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#ga6191b48f02bcaa810a4482539b22d7c1">stir::detail::write_data_1d</a> (FILE *&amp;fptr_ref, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
-<tr class="memdesc:ga6191b48f02bcaa810a4482539b22d7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>FILE*</code> using stdio functions.  <a href="group__Array__IO__detail.html#ga6191b48f02bcaa810a4482539b22d7c1">More...</a><br /></td></tr>
-<tr class="separator:ga6191b48f02bcaa810a4482539b22d7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac866b99fb309cd41a1f5ffd5090e255e"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class elemT &gt; </td></tr>
+<tr class="memitem:gac866b99fb309cd41a1f5ffd5090e255e"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO__detail.html#gac866b99fb309cd41a1f5ffd5090e255e">stir::detail::write_data_1d</a> (FILE *&amp;fptr_ref, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="memdesc:gac866b99fb309cd41a1f5ffd5090e255e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an internal function called by <code><a class="el" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6" title="Write the data of an Array to file. ">write_data()</a></code>. It does the actual writing to <code>FILE*</code> using stdio functions.  <a href="group__Array__IO__detail.html#gac866b99fb309cd41a1f5ffd5090e255e">More...</a><br /></td></tr>
+<tr class="separator:gac866b99fb309cd41a1f5ffd5090e255e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of <a class="el" href="group__Array__IO__detail.html#ga6191b48f02bcaa810a4482539b22d7c1" title="This is an internal function called by write_data(). It does the actual writing to FILE* using stdio ...">stir::write_data_1d()</a> functions for writing 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to file. </p>
+<div class="textblock"><p>Declaration of <a class="el" href="group__Array__IO__detail.html#gac866b99fb309cd41a1f5ffd5090e255e" title="This is an internal function called by write_data(). It does the actual writing to FILE* using stdio ...">stir::write_data_1d()</a> functions for writing 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a> objects to file. </p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

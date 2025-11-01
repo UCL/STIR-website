@@ -1,0 +1,13 @@
+<map id="detail::buffer&lt; T &gt;" name="detail::buffer&lt; T &gt;">
+<area shape="rect" id="node2" href="$classbasic__memory__buffer.html" title="A dynamically growing memory buffer for trivially copyable/constructible types with the first SIZE el..." alt="" coords="317,188,496,215"/>
+<area shape="rect" id="node5" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; char\l_type \&gt;" alt="" coords="341,57,472,98"/>
+<area shape="rect" id="node6" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; Container\l::value_type \&gt;" alt="" coords="325,122,488,163"/>
+<area shape="rect" id="node7" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; bigit \&gt;" alt="" coords="335,5,478,32"/>
+<area shape="rect" id="node8" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; std\l::string ::value_type \&gt;" alt="" coords="332,239,481,281"/>
+<area shape="rect" id="node9" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; Char \&gt;" alt="" coords="333,305,480,332"/>
+<area shape="rect" id="node10" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; wchar_t \&gt;" alt="" coords="325,356,489,383"/>
+<area shape="rect" id="node11" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; char \&gt;" alt="" coords="335,407,478,433"/>
+<area shape="rect" id="node12" href="$classdetail_1_1buffer.html" title="detail::buffer\&lt; OutputIt\l::container_type ::value_type \&gt;" alt="" coords="305,458,508,499"/>
+<area shape="rect" id="node3" href="$classbasic__memory__buffer.html" title="basic_memory_buffer\l\&lt; bigit, bigits_capacity \&gt;" alt="" coords="704,142,869,183"/>
+<area shape="rect" id="node4" href="$classbasic__memory__buffer.html" title="basic_memory_buffer\l\&lt; wchar_t \&gt;" alt="" coords="713,219,860,261"/>
+</map>

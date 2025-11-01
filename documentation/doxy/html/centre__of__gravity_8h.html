@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -53,7 +53,7 @@ $(function() {
 
 <p>This file contains functions to compute the centre of gravity of arrays and images.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">stir/common.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ArrayFwd_8h_source.html">stir/ArrayFwd.h</a>&quot;</code><br />
 </div>
 <p><a href="centre__of__gravity_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -61,9 +61,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1BasicCoordinate.html">stir::BasicCoordinate&lt; num_dimensions, coordT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class <a class="el" href="classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions -dimensional coordi...">BasicCoordinate</a>&lt;<code>int</code> <code>num_dimensions</code>, <code>typename</code> <code>coordT&gt;</code> defines <code>num_dimensions</code> -dimensional coordinates.  <a href="classstir_1_1BasicCoordinate.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1Array.html">stir::Array&lt; num_dimensions, elemT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class defines multi-dimensional (numeric) arrays.  <a href="classstir_1_1Array.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1VectorWithOffset.html">stir::VectorWithOffset&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A templated class for vectors, but with indices starting not from 0.  <a href="classstir_1_1VectorWithOffset.html#details">More...</a><br /></td></tr>
@@ -87,18 +84,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gabe965212ea5976e7250826a720d65ccc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gabe965212ea5976e7250826a720d65ccc">stir::find_unweighted_centre_of_gravity_1d</a> (const VectorWithOffset&lt; T &gt; &amp;row)</td></tr>
 <tr class="memdesc:gabe965212ea5976e7250826a720d65ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of a vector but without dividing by its sum.  <a href="group__Array.html#gabe965212ea5976e7250826a720d65ccc">More...</a><br /></td></tr>
 <tr class="separator:gabe965212ea5976e7250826a720d65ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga12ab323ce3931767afce1f04eee1d862"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T &gt; </td></tr>
-<tr class="memitem:ga12ab323ce3931767afce1f04eee1d862"><td class="memTemplItemLeft" align="right" valign="top">BasicCoordinate&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga12ab323ce3931767afce1f04eee1d862">stir::find_unweighted_centre_of_gravity</a> (const Array&lt; num_dimensions, T &gt; &amp;)</td></tr>
-<tr class="memdesc:ga12ab323ce3931767afce1f04eee1d862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> but without dividing by its sum.  <a href="group__Array.html#ga12ab323ce3931767afce1f04eee1d862">More...</a><br /></td></tr>
-<tr class="separator:ga12ab323ce3931767afce1f04eee1d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf12e02ec82783789364617c30650bc9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:gacf12e02ec82783789364617c30650bc9"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gacf12e02ec82783789364617c30650bc9">stir::find_unweighted_centre_of_gravity</a> (const Array&lt; 1, T &gt; &amp;)</td></tr>
-<tr class="memdesc:gacf12e02ec82783789364617c30650bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of a 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> but without dividing by its sum.  <a href="group__Array.html#gacf12e02ec82783789364617c30650bc9">More...</a><br /></td></tr>
-<tr class="separator:gacf12e02ec82783789364617c30650bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e0944415644cae8cbbd0b9f299f25d2"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T &gt; </td></tr>
-<tr class="memitem:ga2e0944415644cae8cbbd0b9f299f25d2"><td class="memTemplItemLeft" align="right" valign="top">BasicCoordinate&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga2e0944415644cae8cbbd0b9f299f25d2">stir::find_centre_of_gravity</a> (const Array&lt; num_dimensions, T &gt; &amp;)</td></tr>
-<tr class="memdesc:ga2e0944415644cae8cbbd0b9f299f25d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>.  <a href="group__Array.html#ga2e0944415644cae8cbbd0b9f299f25d2">More...</a><br /></td></tr>
-<tr class="separator:ga2e0944415644cae8cbbd0b9f299f25d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46ba608525ec64839ec710ee698c0c5e"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T &gt; </td></tr>
+<tr class="memitem:ga46ba608525ec64839ec710ee698c0c5e"><td class="memTemplItemLeft" align="right" valign="top">BasicCoordinate&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga46ba608525ec64839ec710ee698c0c5e">stir::find_unweighted_centre_of_gravity</a> (const ArrayType&lt; num_dimensions, T &gt; &amp;)</td></tr>
+<tr class="memdesc:ga46ba608525ec64839ec710ee698c0c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> but without dividing by its sum.  <a href="group__Array.html#ga46ba608525ec64839ec710ee698c0c5e">More...</a><br /></td></tr>
+<tr class="separator:ga46ba608525ec64839ec710ee698c0c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86279ba5b30465000d1f080e549710cd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga86279ba5b30465000d1f080e549710cd"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga86279ba5b30465000d1f080e549710cd">stir::find_unweighted_centre_of_gravity</a> (const ArrayType&lt; 1, T &gt; &amp;)</td></tr>
+<tr class="memdesc:ga86279ba5b30465000d1f080e549710cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of a 1D <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> but without dividing by its sum.  <a href="group__Array.html#ga86279ba5b30465000d1f080e549710cd">More...</a><br /></td></tr>
+<tr class="separator:ga86279ba5b30465000d1f080e549710cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga618dfe562dba20124dbdb1a6d2565855"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class T &gt; </td></tr>
+<tr class="memitem:ga618dfe562dba20124dbdb1a6d2565855"><td class="memTemplItemLeft" align="right" valign="top">BasicCoordinate&lt; num_dimensions, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#ga618dfe562dba20124dbdb1a6d2565855">stir::find_centre_of_gravity</a> (const ArrayType&lt; num_dimensions, T &gt; &amp;)</td></tr>
+<tr class="memdesc:ga618dfe562dba20124dbdb1a6d2565855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute centre of gravity of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a>.  <a href="group__Array.html#ga618dfe562dba20124dbdb1a6d2565855">More...</a><br /></td></tr>
+<tr class="separator:ga618dfe562dba20124dbdb1a6d2565855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae723014e97df116be49be37c8a18f9dd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:gae723014e97df116be49be37c8a18f9dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array.html#gae723014e97df116be49be37c8a18f9dd">stir::find_centre_of_gravity_in_mm_per_plane</a> (VectorWithOffset&lt; CartesianCoordinate3D&lt; float &gt;&gt; &amp;allCoG, VectorWithOffset&lt; T &gt; &amp;weights, const VoxelsOnCartesianGrid&lt; T &gt; &amp;image)</td></tr>
 <tr class="memdesc:gae723014e97df116be49be37c8a18f9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes centre of gravity for each plane.  <a href="group__Array.html#gae723014e97df116be49be37c8a18f9dd">More...</a><br /></td></tr>
@@ -114,7 +111,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -50,15 +50,18 @@ Collaboration diagram for Priors and penalties for MAP:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__priors.png" border="0" alt="" usemap="#group____priors"/>
 <map name="group____priors" id="group____priors">
-<area shape="rect" id="node1" href="group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,103,160,159"/>
-<area shape="rect" id="node2" href="group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="591,50,747,91"/>
-<area shape="rect" id="node3" href="group__CUDA.html" title="Items relating to CUDA\l and STIR buildblock objects." alt="" coords="572,135,767,177"/>
+<area shape="rect" id="node1" href="group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="5,120,160,176"/>
+<area shape="rect" id="node2" href="group__recontest.html" title="Tests of reconstruction\l building blocks" alt="" coords="611,53,767,94"/>
+<area shape="rect" id="node3" href="group__CUDA.html" title="Items relating to CUDA\l and STIR buildblock objects." alt="" coords="592,171,787,213"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:CudaGibbsPenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CudaGibbsPenalty_8h.html">CudaGibbsPenalty.h</a></td></tr>
+<tr class="memdesc:CudaGibbsPenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of the <a class="el" href="classstir_1_1CudaGibbsPenalty.html" title="A base class with CUDA-accelerated implementation of the GibbsPenalty class. ">stir::CudaGibbsPenalty</a> class. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:CudaRelativeDifferencePrior_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CudaRelativeDifferencePrior_8h.html">CudaRelativeDifferencePrior.h</a></td></tr>
 <tr class="memdesc:CudaRelativeDifferencePrior_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">implementation of the <a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior. ">stir::CudaRelativeDifferencePrior</a> class <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -70,6 +73,18 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:GeneralisedPrior_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeneralisedPrior_8inl.html">GeneralisedPrior.inl</a></td></tr>
 <tr class="memdesc:GeneralisedPrior_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline implementations for class <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">stir::GeneralisedPrior</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsPenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsPenalty_8h.html">GibbsPenalty.h</a></td></tr>
+<tr class="memdesc:GibbsPenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of the <a class="el" href="classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. ">stir::GibbsPenalty</a> class. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsPenalty_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsPenalty_8inl.html">GibbsPenalty.inl</a></td></tr>
+<tr class="memdesc:GibbsPenalty_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. ">stir::GibbsPenalty</a> class. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsQuadraticPenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsQuadraticPenalty_8h.html">GibbsQuadraticPenalty.h</a></td></tr>
+<tr class="memdesc:GibbsQuadraticPenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1GibbsQuadraticPenalty.html" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior. ">stir::GibbsQuadraticPenalty</a>, stir::CudaGibbsQuadraticPenalty and the potential function <a class="el" href="classstir_1_1QuadraticPotential.html" title="Implementation of the Quadratic penalty potential. ">stir::QuadraticPotential</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:GibbsRelativeDifferencePenalty_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GibbsRelativeDifferencePenalty_8h.html">GibbsRelativeDifferencePenalty.h</a></td></tr>
+<tr class="memdesc:GibbsRelativeDifferencePenalty_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class stir::CudaRelativeDifferencePenalty, stir::CudaGibbsRelativeDifferencePenalty and the potential function <a class="el" href="classstir_1_1RelativeDifferencePotential.html" title="Implementation of the Relative Difference penalty potential. ">stir::RelativeDifferencePotential</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:LogcoshPrior_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LogcoshPrior_8h.html">LogcoshPrior.h</a></td></tr>
 <tr class="memdesc:LogcoshPrior_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of class <a class="el" href="classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior. ...">stir::LogcoshPrior</a>. <br /></td></tr>
@@ -107,6 +122,9 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CudaGibbsPenalty.html">stir::CudaGibbsPenalty&lt; elemT, PotentialT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class with CUDA-accelerated implementation of the <a class="el" href="classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. ">GibbsPenalty</a> class.  <a href="classstir_1_1CudaGibbsPenalty.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1CudaRelativeDifferencePrior.html">stir::CudaRelativeDifferencePrior&lt; elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUDA implementation of the Relative Difference prior.  <a href="classstir_1_1CudaRelativeDifferencePrior.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +133,21 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GeneralisedPrior.html">stir::GeneralisedPrior&lt; DataT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for 'generalised' priors, i.e. priors for which at least a 'gradient' is defined.  <a href="classstir_1_1GeneralisedPrior.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GibbsPenalty.html">stir::GibbsPenalty&lt; elemT, potentialT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for Gibbs type penalties in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy.  <a href="classstir_1_1GibbsPenalty.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1QuadraticPotential.html">stir::QuadraticPotential&lt; elemT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the Quadratic penalty potential.  <a href="classstir_1_1QuadraticPotential.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GibbsQuadraticPenalty.html">stir::GibbsQuadraticPenalty&lt; elemT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multithreaded CPU Implementation of the Quadratic Gibbs prior.  <a href="classstir_1_1GibbsQuadraticPenalty.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1RelativeDifferencePotential.html">stir::RelativeDifferencePotential&lt; elemT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the Relative Difference penalty potential.  <a href="classstir_1_1RelativeDifferencePotential.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1GibbsRelativeDifferencePenalty.html">stir::GibbsRelativeDifferencePenalty&lt; elemT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multithreaded CPU Implementation of the Relative Difference penalty.  <a href="classstir_1_1GibbsRelativeDifferencePenalty.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstir_1_1LogcoshPrior.html">stir::LogcoshPrior&lt; elemT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class in the <a class="el" href="classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined...">GeneralisedPrior</a> hierarchy. This implements a logcosh Gibbs prior.  <a href="classstir_1_1LogcoshPrior.html#details">More...</a><br /></td></tr>
@@ -150,7 +183,7 @@ Prior Using Parallel Level Sets", IEEE Trans. med. Imag., vol. 35, no. 9, Sept. 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:14 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

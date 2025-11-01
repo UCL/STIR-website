@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:FastErf_8inl"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FastErf_8inl.html">FastErf.inl</a></td></tr>
 <tr class="memdesc:FastErf_8inl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of an erf interpolation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fftshift_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fftshift_8h.html">fftshift.h</a></td></tr>
+<tr class="memdesc:fftshift_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions to rearrange Fourier data so that DC (zero frequency) is centered. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ieeefp_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ieeefp_8h.html">ieeefp.h</a></td></tr>
 <tr class="memdesc:ieeefp_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of work-around macros STIR_isnan and STIR_finite for a few non-portable IEEE floating point functions. <br /></td></tr>
@@ -375,7 +378,7 @@ template&lt;class NumeratorIterT , class DenominatorIterT , class small_numT &gt
 <p>Because of potential numerical rounding problems, we test if a number is 0 by comparing its absolute value with a small value, which is determined by multiplying the maximum in the <code>numerator</code> range with <em>small_num</em>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This function does not test for non-zero numbers by 0. Results in that case will likely depend on your processor and/or compiler settings. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a9bc04167c7743ea33ba5f864be5ee866">stir::BinNormalisationPETFromComponents::apply()</a>, <a class="el" href="classstir_1_1KOSMAPOSLReconstruction.html#a74b1aeff4fbf3a7d949557367c673286">stir::KOSMAPOSLReconstruction&lt; TargetT &gt;::compute_kernelised_image()</a>, and <a class="el" href="classstir_1_1OSMAPOSLReconstruction.html#aba6cfbd054d95fbead2fd68cab40327d">stir::OSMAPOSLReconstruction&lt; TargetT &gt;::update_estimate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classstir_1_1BinNormalisationPETFromComponents.html#a9bc04167c7743ea33ba5f864be5ee866">stir::BinNormalisationPETFromComponents::apply()</a>.</p>
 
 </div>
 </div>
@@ -554,13 +557,13 @@ template&lt;class elemT &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Succeeded::yes if <em>max_num_iterations</em> was not reached. However, you probably want to check if the norm of the difference between <code>m.max_eigenvector</code> and <code> max_eigenvalue*max_eigenvector</code> is small (compared to max_eigenvalue).</dd></dl>
 <p>Computation uses the <em>power</em> method, see for instance <a href="http://www.maths.lth.se/na/courses/FMN050/FMN050-05/eigenE.pdf">http://www.maths.lth.se/na/courses/FMN050/FMN050-05/eigenE.pdf</a>.</p>
 <p>The method consists in computing </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[v^{n+1}=m.v^{n}\]" src="form_36.png"/>
+<img class="formulaDsp" alt="\[v^{n+1}=m.v^{n}\]" src="form_40.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]" src="form_37.png"/>
+<img class="formulaDsp" alt="\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]" src="form_41.png"/>
 </p>
-<p> with <img class="formulaInl" alt="$ v^{0}=\mathrm{start} $" src="form_38.png"/> for <img class="formulaInl" alt="$ n$" src="form_39.png"/> big enough such that <img class="formulaInl" alt="$ \mathrm{norm}(v^{n+1}-v^{n})$" src="form_40.png"/> becomes smaller than <em>tolerance</em>. The eigenvalue is then computed using the Rayleigh quotient </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[v.m.v \over v.v \]" src="form_41.png"/>
+<p> with <img class="formulaInl" alt="$ v^{0}=\mathrm{start} $" src="form_42.png"/> for <img class="formulaInl" alt="$ n$" src="form_43.png"/> big enough such that <img class="formulaInl" alt="$ \mathrm{norm}(v^{n+1}-v^{n})$" src="form_44.png"/> becomes smaller than <em>tolerance</em>. The eigenvalue is then computed using the Rayleigh quotient </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[v.m.v \over v.v \]" src="form_45.png"/>
 </p>
 <p>This will converge to the eigenvector which has the largest absolute eigenvalue. The method fails when the matrix has more than 1 largest absolute eigenvalue (e.g. with opposite sign). </p>
 
@@ -1131,7 +1134,7 @@ template&lt;int num_dimensions, class elemT , class positionT , class valueT &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

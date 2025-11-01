@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -51,7 +51,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of <a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">stir::write_data()</a> functions for writing <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s to file.  
+<p>Implementation of <a class="el" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6" title="Write the data of an Array to file. ">stir::write_data()</a> functions for writing <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s to file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="convert__array_8h_source.html">stir/convert_array.h</a>&quot;</code><br />
@@ -80,33 +80,33 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7414ec354be810724a2e3ef2bc9561ce"><td class="memTemplParams" colspan="2"><a id="a7414ec354be810724a2e3ef2bc9561ce"></a>
+<tr class="memitem:adb764d41987530b652269024e78727ec"><td class="memTemplParams" colspan="2"><a id="adb764d41987530b652269024e78727ec"></a>
 template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:a7414ec354be810724a2e3ef2bc9561ce"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_not_1d, OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
-<tr class="separator:a7414ec354be810724a2e3ef2bc9561ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplParams" colspan="2"><a id="a141ebd0eb86381aa3c78441a40d15549"></a>
+<tr class="memitem:adb764d41987530b652269024e78727ec"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_not_1d, OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="separator:adb764d41987530b652269024e78727ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b147792a8be7ed2aae3a5e32ad339b"><td class="memTemplParams" colspan="2"><a id="ab5b147792a8be7ed2aae3a5e32ad339b"></a>
 template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:a141ebd0eb86381aa3c78441a40d15549"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_1d, OStreamT &amp;s, const Array&lt; 1, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt;, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
-<tr class="separator:a141ebd0eb86381aa3c78441a40d15549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">stir::write_data_with_fixed_scale_factor</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
-<tr class="memdesc:ga7d31f96c70647ffafc36c795fb929c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type but using a given scale factor.  <a href="group__Array__IO.html#ga7d31f96c70647ffafc36c795fb929c5a">More...</a><br /></td></tr>
-<tr class="separator:ga7d31f96c70647ffafc36c795fb929c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
-<tr class="memitem:ga927a8480234f48e5673b17740d5209e9"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, ScaleT &amp;scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
-<tr class="memdesc:ga927a8480234f48e5673b17740d5209e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#ga927a8480234f48e5673b17740d5209e9">More...</a><br /></td></tr>
-<tr class="separator:ga927a8480234f48e5673b17740d5209e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT &gt; </td></tr>
-<tr class="memitem:ga24f100e9608363df6df4154875639755"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
-<tr class="memdesc:ga24f100e9608363df6df4154875639755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file.  <a href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">More...</a><br /></td></tr>
-<tr class="separator:ga24f100e9608363df6df4154875639755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class ScaleT &gt; </td></tr>
-<tr class="memitem:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">stir::write_data</a> (OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
-<tr class="memdesc:gac57494c546fbd03f2ba3b7d4747522d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#gac57494c546fbd03f2ba3b7d4747522d7">More...</a><br /></td></tr>
-<tr class="separator:gac57494c546fbd03f2ba3b7d4747522d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b147792a8be7ed2aae3a5e32ad339b"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::detail::write_data_with_fixed_scale_factor_help</b> (is_1d, OStreamT &amp;s, const ArrayType&lt; 1, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt;, const ScaleT scale_factor, const ByteOrder byte_order, const bool can_corrupt_data)</td></tr>
+<tr class="separator:ab5b147792a8be7ed2aae3a5e32ad339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab681e4faa354c44c1292df1de38bce4f"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:gab681e4faa354c44c1292df1de38bce4f"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gab681e4faa354c44c1292df1de38bce4f">stir::write_data_with_fixed_scale_factor</a> (OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, const ScaleT scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
+<tr class="memdesc:gab681e4faa354c44c1292df1de38bce4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type but using a given scale factor.  <a href="group__Array__IO.html#gab681e4faa354c44c1292df1de38bce4f">More...</a><br /></td></tr>
+<tr class="separator:gab681e4faa354c44c1292df1de38bce4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93dee99d55d4265b440fc01fa727a9b1"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class OutputType , class ScaleT &gt; </td></tr>
+<tr class="memitem:ga93dee99d55d4265b440fc01fa727a9b1"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga93dee99d55d4265b440fc01fa727a9b1">stir::write_data</a> (OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericInfo&lt; OutputType &gt; output_type, ScaleT &amp;scale_factor, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
+<tr class="memdesc:ga93dee99d55d4265b440fc01fa727a9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#ga93dee99d55d4265b440fc01fa727a9b1">More...</a><br /></td></tr>
+<tr class="separator:ga93dee99d55d4265b440fc01fa727a9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae605d25fd4454a0d6ad027fee0fa7fa6"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT &gt; </td></tr>
+<tr class="memitem:gae605d25fd4454a0d6ad027fee0fa7fa6"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6">stir::write_data</a> (OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
+<tr class="memdesc:gae605d25fd4454a0d6ad027fee0fa7fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file.  <a href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6">More...</a><br /></td></tr>
+<tr class="separator:gae605d25fd4454a0d6ad027fee0fa7fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3514285ffe2172a2ccbccc937810740a"><td class="memTemplParams" colspan="2">template&lt;int num_dimensions, class OStreamT , class elemT , class ScaleT &gt; </td></tr>
+<tr class="memitem:ga3514285ffe2172a2ccbccc937810740a"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__Array__IO.html#ga3514285ffe2172a2ccbccc937810740a">stir::write_data</a> (OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, NumericType type, ScaleT &amp;scale, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</td></tr>
+<tr class="memdesc:ga3514285ffe2172a2ccbccc937810740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data of an <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">Array</a> to file as a different type.  <a href="group__Array__IO.html#ga3514285ffe2172a2ccbccc937810740a">More...</a><br /></td></tr>
+<tr class="separator:ga3514285ffe2172a2ccbccc937810740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of <a class="el" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755" title="Write the data of an Array to file. ">stir::write_data()</a> functions for writing <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s to file. </p>
+<div class="textblock"><p>Implementation of <a class="el" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6" title="Write the data of an Array to file. ">stir::write_data()</a> functions for writing <a class="el" href="classstir_1_1Array.html" title="This class defines multi-dimensional (numeric) arrays. ">stir::Array</a>'s to file. </p>
 <dl class="section author"><dt>Author</dt><dd>Kris Thielemans </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a771494d347903f740469a9c107132009"></a>
@@ -124,14 +124,14 @@ template&lt;class OStreamT , class elemT , class OutputType , class ScaleT &gt; 
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE:                                                                                                              \</div><div class="line">    return <a class="code" href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">write_data</a>(s, data, NumericInfo&lt;<span class="keyword">typename</span> TypeForNumericType&lt;NUMERICTYPE&gt;::type&gt;(), scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_ga24f100e9608363df6df4154875639755"><div class="ttname"><a href="group__Array__IO.html#ga24f100e9608363df6df4154875639755">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const Array&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</div><div class="ttdoc">Write the data of an Array to file. </div><div class="ttdef"><b>Definition:</b> write_data.inl:108</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> NUMERICTYPE:                                                                                                              \</div><div class="line">    return <a class="code" href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6">write_data</a>(s, data, NumericInfo&lt;<span class="keyword">typename</span> TypeForNumericType&lt;NUMERICTYPE&gt;::type&gt;(), scale, byte_order, can_corrupt_data)</div><div class="ttc" id="group__Array__IO_html_gae605d25fd4454a0d6ad027fee0fa7fa6"><div class="ttname"><a href="group__Array__IO.html#gae605d25fd4454a0d6ad027fee0fa7fa6">stir::write_data</a></div><div class="ttdeci">Succeeded write_data(OStreamT &amp;s, const ArrayType&lt; num_dimensions, elemT &gt; &amp;data, const ByteOrder byte_order=ByteOrder::native, const bool can_corrupt_data=false)</div><div class="ttdoc">Write the data of an Array to file. </div><div class="ttdef"><b>Definition:</b> write_data.inl:108</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

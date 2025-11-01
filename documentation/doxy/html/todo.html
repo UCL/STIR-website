@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -226,7 +226,7 @@ $(function() {
 <dd>Probably it would be better to store pointers to factories. However, in that case, the destructor of <a class="el" href="classstir_1_1FactoryRegistry.html" title="This class can be used to store &#39;factories&#39; and their corresponding keys. It is essentially a map...">FactoryRegistry</a> would have to deallocate these factory objects. This would mean that factories have to be allocated with new, and hence would prevent using simple function pointers.  </dd>
 <dt><a class="anchor" id="_todo000208"></a>Class <a class="el" href="classstir_1_1Filter1D.html">stir::Filter1D&lt; T &gt;</a>  </dt>
 <dd><a class="el" href="classstir_1_1Filter1D.html#a15d0960c13a353a5074c2a18b833b559" title="Filters data (which has to be in the &#39;spatial&#39; domain. ">apply()</a> members can't be const as they call <a class="el" href="classstir_1_1TimedObject.html#a4085959b7fca857cd90f8d1ab78400c9" title="start all timers kept by this object ">TimedObject::start_timers()</a>  </dd>
-<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="group__Array.html#ga2e0944415644cae8cbbd0b9f299f25d2">stir::find_centre_of_gravity</a>  (const Array&lt; num_dimensions, T &gt; &amp;)</dt>
+<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="group__Array.html#ga618dfe562dba20124dbdb1a6d2565855">stir::find_centre_of_gravity</a>  (const ArrayType&lt; num_dimensions, T &gt; &amp;)</dt>
 <dd>better error handling  </dd>
 <dt><a class="anchor" id="_todo000030"></a>Class <a class="el" href="classstir_1_1FrameSinglesRates.html">stir::FrameSinglesRates</a>  </dt>
 <dd>This class does not store rates, but totals! Naming is all wrong.  </dd>
@@ -494,7 +494,7 @@ $(function() {
 <p class="enddd">a hierarchy distinguishing between different types of scanners  </p>
 </dd>
 <dt><a class="anchor" id="_todo000188"></a>Member <a class="el" href="classstir_1_1Scanner.html#a19ffe6545cd567550af74571fce3341c">stir::Scanner::get_axial_length</a>  () const</dt>
-<dd>Need to update this function when enabling different spacing between blocks and buckets etc.  </dd>
+<dd>Need to update this function when enabling different spacing between blocks and buckets etc. For cylindrical scanners, calculates the length by the ring spacing.  </dd>
 <dt><a class="anchor" id="_todo000185"></a>Member <a class="el" href="classstir_1_1Scanner.html#a996ac6569d3a0b5a3a132e45e9a6e08f">stir::Scanner::get_default_num_arccorrected_bins</a>  () const</dt>
 <dd>change name, mabe refering to the fan of detectors in coincidence or so  </dd>
 <dt><a class="anchor" id="_todo000184"></a>Member <a class="el" href="classstir_1_1Scanner.html#aeba39b832436927867bee200f63569a5">stir::Scanner::get_max_num_non_arccorrected_bins</a>  () const</dt>
@@ -585,7 +585,7 @@ $(function() {
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

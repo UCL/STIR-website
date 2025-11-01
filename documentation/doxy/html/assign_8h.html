@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -51,10 +51,8 @@ $(function() {
 
 <p>defines the stir::assign function to assign values to different data types  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="VectorWithOffset_8h_source.html">stir/VectorWithOffset.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Array_8h_source.html">stir/Array.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="BasicCoordinate_8h_source.html">stir/BasicCoordinate.h</a>&quot;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="type__traits_8h_source.html">stir/type_traits.h</a>&quot;</code><br />
+<code>#include &lt;typeinfo&gt;</code><br />
 </div>
 <p><a href="assign_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -71,26 +69,18 @@ Functions</h2></td></tr>
 <dl class="section user"><dt>Usage</dt><dd><div class="fragment"><div class="line">assign(x,y); <span class="comment">// logically equivalent to x=y;</span></div></div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Design consideration</dt><dd>We could have overloaded <code>operator=()</code> instead, but that would probably lead to surprising conversions. </dd></dl>
 </div></td></tr>
-<tr class="memitem:a3ea9a294b6c4e6b4137862f975213dc7"><td class="memTemplParams" colspan="2"><a id="a3ea9a294b6c4e6b4137862f975213dc7"></a>
+<tr class="memitem:a9bfea4f526ddb09302a6cca6ce6b1f7f"><td class="memTemplParams" colspan="2"><a id="a9bfea4f526ddb09302a6cca6ce6b1f7f"></a>
 template&lt;class T , class T2 &gt; </td></tr>
-<tr class="memitem:a3ea9a294b6c4e6b4137862f975213dc7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (T &amp;x, const T2 &amp;y)</td></tr>
-<tr class="separator:a3ea9a294b6c4e6b4137862f975213dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c18d28c735854a602e80c0d5548678"><td class="memTemplParams" colspan="2"><a id="ae0c18d28c735854a602e80c0d5548678"></a>
+<tr class="memitem:a9bfea4f526ddb09302a6cca6ce6b1f7f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt;!has_iterator_v&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (T &amp;x, const T2 &amp;y)</td></tr>
+<tr class="separator:a9bfea4f526ddb09302a6cca6ce6b1f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435f6eb4cf67d6fb9a8b932bfcf1de2d"><td class="memTemplParams" colspan="2"><a id="a435f6eb4cf67d6fb9a8b932bfcf1de2d"></a>
 template&lt;class T , class T2 &gt; </td></tr>
-<tr class="memitem:ae0c18d28c735854a602e80c0d5548678"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (std::vector&lt; T &gt; &amp;v, const T2 &amp;y)</td></tr>
-<tr class="separator:ae0c18d28c735854a602e80c0d5548678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8723d00d954f590855c816d7a12bfc8"><td class="memTemplParams" colspan="2"><a id="ac8723d00d954f590855c816d7a12bfc8"></a>
-template&lt;int num_dimensions, class T , class T2 &gt; </td></tr>
-<tr class="memitem:ac8723d00d954f590855c816d7a12bfc8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (BasicCoordinate&lt; num_dimensions, T &gt; &amp;v, const T2 &amp;y)</td></tr>
-<tr class="separator:ac8723d00d954f590855c816d7a12bfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6c7d8f91e063f00c691111c29a2503a"><td class="memTemplParams" colspan="2"><a id="af6c7d8f91e063f00c691111c29a2503a"></a>
+<tr class="memitem:a435f6eb4cf67d6fb9a8b932bfcf1de2d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; has_full_iterator_v&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (T &amp;v, const T2 &amp;y)</td></tr>
+<tr class="separator:a435f6eb4cf67d6fb9a8b932bfcf1de2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc92d7316705bd7fdde9cfd93d2f8d2f"><td class="memTemplParams" colspan="2"><a id="adc92d7316705bd7fdde9cfd93d2f8d2f"></a>
 template&lt;class T , class T2 &gt; </td></tr>
-<tr class="memitem:af6c7d8f91e063f00c691111c29a2503a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (VectorWithOffset&lt; T &gt; &amp;v, const T2 &amp;y)</td></tr>
-<tr class="separator:af6c7d8f91e063f00c691111c29a2503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fcd62ef2c34b7a4af372f6373ff0552"><td class="memTemplParams" colspan="2"><a id="a8fcd62ef2c34b7a4af372f6373ff0552"></a>
-template&lt;int num_dimensions, class T , class T2 &gt; </td></tr>
-<tr class="memitem:a8fcd62ef2c34b7a4af372f6373ff0552"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (Array&lt; num_dimensions, T &gt; &amp;v, const T2 &amp;y)</td></tr>
-<tr class="separator:a8fcd62ef2c34b7a4af372f6373ff0552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc92d7316705bd7fdde9cfd93d2f8d2f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; has_iterator_and_no_full_iterator&lt; T &gt;::value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::assign</b> (T &amp;v, const T2 &amp;y)</td></tr>
+<tr class="separator:adc92d7316705bd7fdde9cfd93d2f8d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3a6f8b8f0139daa1a6ff8d19fc4ee8"><td class="memItemLeft" align="right" valign="top"><a id="a6c3a6f8b8f0139daa1a6ff8d19fc4ee8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::assign</b> (double &amp;x, const int y)</td></tr>
 <tr class="separator:a6c3a6f8b8f0139daa1a6ff8d19fc4ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,7 +94,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stir::assign</b> (flo
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

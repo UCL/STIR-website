@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">STIR
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
  </tr>
@@ -59,8 +59,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="interfile_8h_source.html">stir/IO/interfile.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="interfile__keyword__functions_8h_source.html">stir/interfile_keyword_functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="InterfileHeader_8h_source.html">stir/IO/InterfileHeader.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="InterfileHeaderSiemens_8h_source.html">stir/IO/InterfileHeaderSiemens.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="InterfilePDFSHeaderSPECT_8h_source.html">stir/IO/InterfilePDFSHeaderSPECT.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndexRange3D_8h_source.html">stir/IndexRange3D.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="utilities_8h_source.html">stir/utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CartesianCoordinate3D_8h_source.html">stir/CartesianCoordinate3D.h</a>&quot;</code><br />
@@ -77,9 +75,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="error_8h_source.html">stir/error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="warning_8h_source.html">stir/warning.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DynamicDiscretisedDensity_8h_source.html">stir/DynamicDiscretisedDensity.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="InterfileHeaderSiemens_8h_source.html">stir/IO/InterfileHeaderSiemens.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="InterfilePDFSHeaderSPECT_8h_source.html">stir/IO/InterfilePDFSHeaderSPECT.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ParametricDiscretisedDensity_8h_source.html">stir/modelling/ParametricDiscretisedDensity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="date__time__functions_8h_source.html">stir/date_time_functions.h</a>&quot;</code><br />
-<code>#include &lt;boost/format.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="src_2include_2stir_2format_8h_source.html">stir/format.h</a>&quot;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &quot;<a class="el" href="ProjDataInfoBlocksOnCylindricalNoArcCorr_8h_source.html">stir/ProjDataInfoBlocksOnCylindricalNoArcCorr.h</a>&quot;</code><br />
@@ -122,10 +122,10 @@ ParametricDiscretisedDensity&lt; VoxelsOnCartesianGrid&lt; KineticParameters&lt;
 <tr class="memitem:ga1f533587b747bf45244bb508f4400759"><td class="memItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga1f533587b747bf45244bb508f4400759">stir::write_basic_interfile_image_header</a> (const std::string &amp;header_file_name, const std::string &amp;image_file_name, const ExamInfo &amp;exam_info, const IndexRange&lt; 3 &gt; &amp;index_range, const CartesianCoordinate3D&lt; float &gt; &amp;voxel_size, const CartesianCoordinate3D&lt; float &gt; &amp;origin, const NumericType output_type, const ByteOrder byte_order, const VectorWithOffset&lt; float &gt; &amp;scaling_factors, const VectorWithOffset&lt; unsigned long &gt; &amp;file_offsets, const std::vector&lt; std::string &gt; &amp;data_type_descriptions=std::vector&lt; std::string &gt;())</td></tr>
 <tr class="memdesc:ga1f533587b747bf45244bb508f4400759"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header for an image.  <a href="group__InterfileIO.html#ga1f533587b747bf45244bb508f4400759">More...</a><br /></td></tr>
 <tr class="separator:ga1f533587b747bf45244bb508f4400759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46797ee085bb671f00b58d76b959e74c"><td class="memTemplParams" colspan="2">template&lt;class elemT &gt; </td></tr>
-<tr class="memitem:ga46797ee085bb671f00b58d76b959e74c"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__InterfileIO.html#ga46797ee085bb671f00b58d76b959e74c">stir::write_basic_interfile</a> (const std::string &amp;filename, const Array&lt; 3, elemT &gt; &amp;image, const NumericType output_type=NumericType::FLOAT, const float scale=0, const ByteOrder byte_order=ByteOrder::native)</td></tr>
-<tr class="memdesc:ga46797ee085bb671f00b58d76b959e74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This outputs an Interfile header and data for a <a class="el" href="classstir_1_1Array.html">Array&lt;3,elemT&gt;</a> object, assuming unit voxel sizes.  <a href="group__InterfileIO.html#ga46797ee085bb671f00b58d76b959e74c">More...</a><br /></td></tr>
-<tr class="separator:ga46797ee085bb671f00b58d76b959e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0c73b3ab7bd81e81df9b2de308b430"><td class="memTemplParams" colspan="2"><a id="a4a0c73b3ab7bd81e81df9b2de308b430"></a>
+template&lt;class elemT &gt; </td></tr>
+<tr class="memitem:a4a0c73b3ab7bd81e81df9b2de308b430"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::write_basic_interfile</b> (const string &amp;filename, const Array&lt; 3, elemT &gt; &amp;image, const NumericType output_type, const float scale, const ByteOrder byte_order)</td></tr>
+<tr class="separator:a4a0c73b3ab7bd81e81df9b2de308b430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318bb3c762908d5b707ad1377695bcc2"><td class="memTemplParams" colspan="2"><a id="a318bb3c762908d5b707ad1377695bcc2"></a>
 template&lt;class NUMBER &gt; </td></tr>
 <tr class="memitem:a318bb3c762908d5b707ad1377695bcc2"><td class="memTemplItemLeft" align="right" valign="top">Succeeded&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stir::write_basic_interfile</b> (const string &amp;filename, const ExamInfo &amp;exam_info, const Array&lt; 3, NUMBER &gt; &amp;image, const CartesianCoordinate3D&lt; float &gt; &amp;voxel_size, const CartesianCoordinate3D&lt; float &gt; &amp;origin, const NumericType output_type, const float scale, const ByteOrder byte_order)</td></tr>
@@ -194,7 +194,7 @@ Parisa Khateri </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 23 2024 09:13:13 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 31 2025 13:54:46 for STIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
