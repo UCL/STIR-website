@@ -1,3 +1,5 @@
 <map id="stir::CreateTailMaskFromACFs" name="stir::CreateTailMaskFromACFs">
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="42,5,173,32"/>
+<area shape="rect" id="Node000001" title="The CreateTailMaskFromACFs class." alt="" coords="5,81,222,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="44,5,183,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,47,116,82,111,79,112,51"/>
 </map>

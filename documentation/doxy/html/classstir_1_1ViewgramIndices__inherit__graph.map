@@ -1,6 +1,11 @@
 <map id="stir::ViewgramIndices" name="stir::ViewgramIndices">
-<area shape="rect" id="node3" href="$classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin. " alt="" coords="53,155,120,181"/>
-<area shape="rect" id="node5" href="$classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices " alt="" coords="145,155,327,181"/>
-<area shape="rect" id="node2" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. " alt="" coords="90,5,233,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element. " alt="" coords="5,229,168,271"/>
+<area shape="rect" id="Node000001" title="A very simple class to store all dincies to get a (2D) Viewgram." alt="" coords="93,81,255,109"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Bin.html" title="A class for storing coordinates and value of a single projection bin." alt="" coords="58,157,130,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,122,110,158,106,154,150,118"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1ViewSegmentNumbers.html" title="alias for ViewgramIndices" alt="" coords="154,157,354,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,117,242,156,237,156,199,122"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment." alt="" coords="97,5,251,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,46,177,81,171,80,173,51"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ProjMatrixElemsForOneDenselValue.html" title="Stores voxel coordinates and the value of the matrix element." alt="" coords="5,232,183,277"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,198,97,233,91,231,92,202"/>
 </map>

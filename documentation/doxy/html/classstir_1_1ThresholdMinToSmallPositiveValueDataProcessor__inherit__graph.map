@@ -1,7 +1,13 @@
 <map id="stir::ThresholdMinToSmallPositiveValueDataProcessor&lt; DataT &gt;" name="stir::ThresholdMinToSmallPositiveValueDataProcessor&lt; DataT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ThresholdMinToSmallPositiveValue\lDataProcessor\&lt; DataT \&gt;, DataProcessor\l\&lt; DataT \&gt;, DataProcessor\&lt; DataT \&gt; \&gt;" alt="" coords="679,60,943,131"/>
-<area shape="rect" id="node3" href="$classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing. " alt="" coords="277,35,412,76"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; DataProcessor\&lt; DataT \&gt; \&gt;" alt="" coords="5,5,199,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="41,71,163,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="248,113,441,155"/>
+<area shape="rect" id="Node000001" title="A class in the DataProcessor hierarchy for making sure all elements are strictly positive." alt="" coords="1072,70,1275,132"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="736,62,1023,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1038,98,1074,101,1069,101,1039,104"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing." alt="" coords="302,35,446,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,57,581,63,713,73,738,78,733,78,712,78,580,68,461,62"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,220,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,39,304,48,299,50,235,44"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="46,74,179,102"/>
+<area shape="poly" id="edge4_Node000003_Node000008" title=" " alt="" coords="194,75,304,64,299,67,195,81"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="269,123,478,167"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="494,146,502,146,608,152,654,152,712,146,751,141,757,141,713,152,654,157,608,157,502,152,494,152"/>
 </map>

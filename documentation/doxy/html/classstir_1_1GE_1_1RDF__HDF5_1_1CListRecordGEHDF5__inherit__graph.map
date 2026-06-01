@@ -1,9 +1,18 @@
 <map id="stir::GE::RDF_HDF5::CListRecordGEHDF5" name="stir::GE::RDF_HDF5::CListRecordGEHDF5">
-<area shape="rect" id="node2" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file. " alt="" coords="903,5,1025,32"/>
-<area shape="rect" id="node3" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="651,5,762,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="915,56,1013,83"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="863,107,1065,149"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="600,100,813,156"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="5,117,119,144"/>
-<area shape="rect" id="node8" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="168,139,401,181"/>
+<area shape="rect" id="Node000001" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file." alt="" coords="1202,49,1362,94"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file." alt="" coords="978,5,1106,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1121,34,1204,54,1198,54,1121,39"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file." alt="" coords="706,5,825,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="840,17,981,19,976,19,841,22"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file." alt="" coords="989,57,1095,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1110,69,1204,71,1198,71,1111,74"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="932,109,1152,154"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1148,102,1199,92,1204,91,1149,107"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="648,100,883,162"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="898,129,934,131,929,131,898,134"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="5,119,125,146"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="140,122,149,122,386,112,624,118,651,122,645,122,624,123,386,118,149,127,141,128"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="174,140,431,184"/>
+<area shape="poly" id="edge8_Node000009_Node000007" title=" " alt="" coords="140,139,176,145,171,146,140,144"/>
+<area shape="poly" id="edge7_Node000006_Node000009" title=" " alt="" coords="447,160,534,158,624,152,645,152,651,152,625,157,535,163,447,166"/>
 </map>

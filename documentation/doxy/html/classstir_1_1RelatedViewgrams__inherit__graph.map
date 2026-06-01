@@ -1,3 +1,7 @@
 <map id="stir::RelatedViewgrams&lt; elemT &gt;" name="stir::RelatedViewgrams&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RelatedViewgrams.html" title="stir::RelatedViewgrams\l\&lt; float \&gt;" alt="" coords="5,109,164,151"/>
+<area shape="rect" id="Node000001" title="A class for storing viewgrams which are related by symmetry." alt="" coords="15,82,188,127"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RelatedViewgrams.html" title=" " alt="" coords="15,192,188,237"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,141,104,192,99,191,100,145"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DataWithProjDataInfo.html" title="base class for data objects such as ProjData etc" alt="" coords="5,5,198,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,46,104,82,99,81,101,51"/>
 </map>

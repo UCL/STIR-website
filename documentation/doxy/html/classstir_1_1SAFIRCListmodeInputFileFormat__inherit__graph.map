@@ -1,5 +1,9 @@
 <map id="stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;" name="stir::SAFIRCListmodeInputFileFormat&lt; EventDataType &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="5,109,144,151"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="168,117,299,143"/>
+<area shape="rect" id="Node000001" title="Class for reading SAFIR coincidence listmode data." alt="" coords="99,209,317,254"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="5,115,158,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,166,181,208,176,209,123,171"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="5,5,158,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,63,84,115,79,114,81,68"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="181,124,320,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,164,220,210,216,207,236,167"/>
 </map>

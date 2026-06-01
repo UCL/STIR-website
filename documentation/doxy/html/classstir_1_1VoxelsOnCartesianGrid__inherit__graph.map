@@ -1,7 +1,24 @@
 <map id="stir::VoxelsOnCartesianGrid&lt; elemT &gt;" name="stir::VoxelsOnCartesianGrid&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="849,26,1044,67"/>
-<area shape="rect" id="node3" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="251,27,439,69"/>
-<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="488,52,721,108"/>
-<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="48,5,159,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="5,57,201,98"/>
+<area shape="rect" id="Node000001" title="This class is used to represent voxelised densities on a cuboid grid (3D)." alt="" coords="1194,138,1393,182"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1ParametricDiscretisedDensity.html" title=" " alt="" coords="1611,5,1846,67"/>
+<area shape="poly" id="edge7_Node000001_Node000011" title=" " alt="" coords="1343,127,1416,94,1514,66,1608,51,1613,50,1516,71,1418,99,1345,133"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="1629,91,1828,152"/>
+<area shape="poly" id="edge8_Node000001_Node000012" title=" " alt="" coords="1408,147,1631,130,1626,131,1409,153"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="1629,176,1828,221"/>
+<area shape="poly" id="edge10_Node000001_Node000014" title=" " alt="" coords="1409,168,1631,190,1626,190,1409,173"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="1629,245,1828,307"/>
+<area shape="poly" id="edge11_Node000001_Node000015" title=" " alt="" coords="1344,188,1380,207,1418,222,1471,238,1526,250,1631,268,1626,268,1525,255,1470,243,1416,227,1378,211,1343,193"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title=" " alt="" coords="929,138,1144,182"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1160,158,1196,160,1191,160,1160,163"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations." alt="" coords="271,139,482,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="497,151,532,150,718,143,905,147,931,151,926,151,905,152,718,149,532,155,498,156"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid." alt="" coords="532,164,790,226"/>
+<area shape="poly" id="edge6_Node000010_Node000003" title=" " alt="" coords="498,173,534,179,529,180,498,178"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etc" alt="" coords="54,117,173,145"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="188,137,273,148,268,150,189,142"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays." alt="" coords="5,168,222,213"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="237,174,273,172,268,174,238,180"/>
+<area shape="poly" id="edge5_Node000002_Node000010" title=" " alt="" coords="805,179,931,170,926,170,806,184"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1ParametricDiscretisedDensity.html" title=" " alt="" coords="1896,91,2174,152"/>
+<area shape="poly" id="edge9_Node000012_Node000013" title=" " alt="" coords="1844,119,1898,121,1893,122,1844,124"/>
 </map>

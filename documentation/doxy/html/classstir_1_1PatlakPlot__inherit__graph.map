@@ -1,6 +1,11 @@
 <map id="stir::PatlakPlot" name="stir::PatlakPlot">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; PatlakPlot, KineticModel \&gt;" alt="" coords="74,200,267,241"/>
-<area shape="rect" id="node3" href="$classstir_1_1KineticModel.html" title="base class for all kinetic modelsAt present very basic. It just provides the parsing mechanism..." alt="" coords="19,103,141,130"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; KineticModel \&gt;" alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="166,96,359,137"/>
+<area shape="rect" id="Node000001" title="Patlak kinetic model." alt="" coords="176,303,291,331"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="128,209,338,254"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,267,235,304,231,301,231,271"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1KineticModel.html" title="base class for all kinetic models" alt="" coords="19,108,154,136"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,142,206,208,201,210,116,148"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,168,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,63,89,108,84,107,86,68"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="178,99,387,144"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="268,157,245,210,241,207,264,160"/>
 </map>

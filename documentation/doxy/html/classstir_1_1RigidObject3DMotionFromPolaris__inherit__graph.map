@@ -1,6 +1,11 @@
 <map id="stir::RigidObject3DMotionFromPolaris" name="stir::RigidObject3DMotionFromPolaris">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; RigidObject3DMotionFromPolaris,\l RigidObject3DMotion, RigidObject3DMotion \&gt;" alt="" coords="644,30,939,86"/>
-<area shape="rect" id="node3" href="$classstir_1_1RigidObject3DMotion.html" title="Base class for 3D rigid motion. " alt="" coords="236,13,408,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; RigidObject3DMotion \&gt;" alt="" coords="5,5,176,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="225,69,419,111"/>
+<area shape="rect" id="Node000001" title="A class for handling motion information from the Polaris tracker." alt="" coords="1069,41,1257,86"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="695,33,1020,94"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1035,61,1071,64,1066,64,1035,66"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RigidObject3DMotion.html" title="Base class for 3D rigid motion." alt="" coords="254,14,443,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="458,30,672,44,698,48,692,48,671,49,458,36"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,195,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,25,256,27,251,28,211,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="244,76,453,121"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="469,100,568,100,671,95,692,95,698,95,672,100,568,106,469,106"/>
 </map>

@@ -1,7 +1,13 @@
 <map id="stir::FourierRebinning" name="stir::FourierRebinning">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; FourierRebinning, ProjDataRebinning,\l ProjDataRebinning \&gt;" alt="" coords="576,52,829,108"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataRebinning.html" title="base class for all rebinning algorithms for 3D PET dataTODO describe what rebinning is and why you ne..." alt="" coords="227,35,385,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="21,5,144,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjDataRebinning \&gt;" alt="" coords="5,57,160,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="209,91,403,133"/>
+<area shape="rect" id="Node000001" title="Class for Serial FORE Reconstruction." alt="" coords="953,71,1113,98"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="624,54,904,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="919,82,955,84,950,85,919,87"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ProjDataRebinning.html" title="base class for all rebinning algorithms for 3D PET data" alt="" coords="246,35,417,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="433,52,601,65,626,69,621,69,600,70,433,57"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="25,5,158,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="173,26,248,37,243,39,173,32"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,57,178,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="193,64,248,59,243,60,194,69"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="227,97,436,142"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="451,121,525,120,600,116,621,115,627,115,601,121,525,126,452,126"/>
 </map>

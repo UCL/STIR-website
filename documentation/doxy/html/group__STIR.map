@@ -1,6 +1,8 @@
 <map id="STIR" name="STIR">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="128,5,220,32"/>
-<area shape="rect" id="node2" href="$group__main__programs.html" title="Executables" alt="" coords="127,56,221,83"/>
-<area shape="rect" id="node4" href="$group__alltest.html" title="Test code for STIR" alt="" coords="107,107,241,133"/>
-<area shape="rect" id="node5" href="$group__examples.html" title="Example files" alt="" coords="123,157,225,184"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,56,137"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="143,5,239,33"/>
+<area shape="rect" id="Node000003" href="$group__alltest.html" title=" " alt="" coords="122,57,260,85"/>
+<area shape="rect" id="Node000005" href="$group__examples.html" title=" " alt="" coords="136,109,246,137"/>
+<area shape="rect" id="Node000004" href="$group__main__programs.html" title=" " alt="" coords="141,161,240,189"/>
+<area shape="rect" id="Node000006" href="$group__simset.html" title=" " alt="" coords="104,213,278,241"/>
 </map>

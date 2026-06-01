@@ -1,7 +1,13 @@
 <map id="stir::ITKOutputFileFormat" name="stir::ITKOutputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ITKOutputFileFormat, OutputFile\lFormat\&lt; DiscretisedDensity\&lt; 3,\l float \&gt; \&gt;, OutputFileFormat\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="867,67,1129,152"/>
-<area shape="rect" id="node3" href="$classstir_1_1OutputFileFormat.html" title="stir::OutputFileFormat\l\&lt; DiscretisedDensity\&lt;\l 3, float \&gt; \&gt;" alt="" coords="415,41,568,97"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; OutputFileFormat\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt; \&gt;" alt="" coords="5,5,219,61"/>
-<area shape="rect" id="node5" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files. " alt="" coords="37,86,187,127"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="395,127,588,169"/>
+<area shape="rect" id="Node000001" title="Implementation of OutputFileFormat paradigm using the ITK library for writing." alt="" coords="1294,105,1477,133"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="951,71,1244,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1260,116,1296,119,1290,119,1260,121"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="452,44,622,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="638,74,775,80,927,91,953,96,948,96,927,96,775,85,638,80"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,243,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="258,46,454,65,449,68,258,51"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files." alt="" coords="42,91,206,136"/>
+<area shape="poly" id="edge4_Node000003_Node000008" title=" " alt="" coords="221,111,312,108,408,100,454,95,449,96,409,105,313,113,222,116"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="433,140,642,185"/>
+<area shape="poly" id="edge5_Node000002_Node000010" title=" " alt="" coords="658,164,666,164,797,171,854,171,927,164,948,163,953,163,927,169,854,176,797,176,666,169,658,169"/>
 </map>

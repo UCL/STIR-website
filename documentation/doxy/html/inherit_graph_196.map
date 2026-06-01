@@ -1,3 +1,19 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; int \&gt;" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="5,92,245,154"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1IndexRange.html" title=" " alt="" coords="296,5,461,33"/>
+<area shape="poly" id="edge681_Node000000_Node000001" title=" " alt="" coords="201,83,292,43,330,32,325,35,294,48,204,88"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1IndexRange.html" title=" " alt="" coords="296,57,461,85"/>
+<area shape="poly" id="edge683_Node000000_Node000003" title=" " alt="" coords="259,93,310,85,305,87,261,98"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1IndexRange.html" title=" " alt="" coords="296,109,461,137"/>
+<area shape="poly" id="edge685_Node000000_Node000005" title=" " alt="" coords="260,121,298,122,293,124,261,126"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1IndexRange_3_011_01_4.html" title="The (simple) 1 dimensional specialisation of IndexRange." alt="" coords="296,161,461,189"/>
+<area shape="poly" id="edge687_Node000000_Node000007" title=" " alt="" coords="260,148,310,160,305,161,260,154"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;." alt="" coords="293,213,464,258"/>
+<area shape="poly" id="edge688_Node000000_Node000008" title=" " alt="" coords="206,158,294,198,323,212,317,212,292,203,205,164"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges." alt="" coords="512,5,657,33"/>
+<area shape="poly" id="edge682_Node000001_Node000002" title=" " alt="" coords="476,17,514,19,509,20,477,22"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges." alt="" coords="512,57,657,85"/>
+<area shape="poly" id="edge684_Node000003_Node000004" title=" " alt="" coords="476,69,514,71,509,72,477,74"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges." alt="" coords="512,109,657,137"/>
+<area shape="poly" id="edge686_Node000005_Node000006" title=" " alt="" coords="476,121,514,123,509,124,477,126"/>
 </map>

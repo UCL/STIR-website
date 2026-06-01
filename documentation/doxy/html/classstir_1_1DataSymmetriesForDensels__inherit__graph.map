@@ -1,3 +1,5 @@
 <map id="stir::DataSymmetriesForDensels" name="stir::DataSymmetriesForDensels">
-<area shape="rect" id="node2" href="$classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="5,80,219,121"/>
+<area shape="rect" id="Node000001" title="A class for encoding/finding symmetries common to the geometry of the projection data and the discret..." alt="" coords="5,5,238,33"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DataSymmetriesForDensels__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="5,81,238,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,47,124,81,119,79,120,51"/>
 </map>

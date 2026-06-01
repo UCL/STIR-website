@@ -1,5 +1,10 @@
 <map id="stir::MedianArrayFilter3D&lt; elemT &gt;" name="stir::MedianArrayFilter3D&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="stir::ArrayFunctionObject\l_2ArgumentImplementation\l\&lt; 3, elemT \&gt;" alt="" coords="559,5,740,61"/>
-<area shape="rect" id="node3" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays. " alt="" coords="5,21,193,62"/>
-<area shape="rect" id="node4" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="243,45,431,101"/>
+<area shape="rect" id="Node000001" title="Implements median filtering on 3D arrays." alt="" coords="870,14,1044,58"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="616,5,821,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="836,34,872,36,867,36,837,39"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays." alt="" coords="5,22,217,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,34,266,32,429,26,592,27,618,30,613,30,592,32,429,31,266,37,233,39"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="266,47,477,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="232,57,268,64,263,64,232,62"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="493,60,613,49,619,48,493,66"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="stir::detail::is_1d" name="stir::detail::is_1d">
-<area shape="rect" id="node2" href="$structstir_1_1detail_1_1test__if__1d_3_011_01_4.html" title="1D specialisation of a templated class used to check if it&#39;s a 1D array or not " alt="" coords="10,80,119,121"/>
+<area shape="rect" id="Node000001" title="a class used to signify it&#39;s a 1D array" alt="" coords="5,5,135,33"/>
+<area shape="rect" id="Node000002" href="$structstir_1_1detail_1_1test__if__1d_3_011_01_4.html" title="1D specialisation of a templated class used to check if it&#39;s a 1D array or not" alt="" coords="10,81,130,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,47,73,81,67,80,68,51"/>
 </map>

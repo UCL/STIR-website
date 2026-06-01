@@ -1,5 +1,10 @@
 <map id="stir::TestFBP2D" name="stir::TestFBP2D">
-<area shape="rect" id="node2" href="$classstir_1_1ReconstructionTests.html" title="stir::ReconstructionTests\l\&lt; target_type \&gt;" alt="" coords="5,185,175,227"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="32,5,137,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction. " alt="" coords="107,81,276,123"/>
+<area shape="rect" id="Node000001" title="Test class for FBP2D." alt="" coords="36,286,155,314"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ReconstructionTests.html" title=" " alt="" coords="5,192,186,237"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,250,98,286,93,285,94,254"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="36,5,144,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,46,98,192,92,191,89,50"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction." alt="" coords="112,82,292,127"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="120,40,176,81,171,83,120,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="168,140,119,193,115,190,172,136"/>
 </map>

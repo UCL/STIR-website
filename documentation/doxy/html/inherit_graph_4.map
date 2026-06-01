@@ -1,3 +1,23 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbasic__format__args.html" title="basic_format_args\&lt;\l generic_context \&gt;" alt="" coords="5,5,143,47"/>
+<area shape="rect" id="Node000000" href="$structboost_1_1partially__ordered.html" title=" " alt="" coords="5,84,293,180"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="370,5,526,50"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="295,76,340,60,378,50,373,52,342,65,297,80"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="370,75,526,119"/>
+<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="307,111,372,105,367,107,309,116"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="370,144,526,189"/>
+<area shape="poly" id="edge9_Node000000_Node000007" title=" " alt="" coords="308,147,372,157,366,158,308,153"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1BasicCoordinate.html" title="class BasicCoordinate&lt;int num_dimensions, typename coordT&gt; defines num_dimensions &#45;dimensional coordi..." alt="" coords="341,213,555,258"/>
+<area shape="poly" id="edge11_Node000000_Node000009" title=" " alt="" coords="296,183,342,198,378,213,373,213,340,204,296,188"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Coordinate2D.html" title="a templated class for 2&#45;dimensional coordinates." alt="" coords="603,5,742,50"/>
+<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="541,25,605,27,600,28,541,30"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1CartesianCoordinate2D.html" title="a templated class for 2&#45;dimensional coordinates." alt="" coords="790,5,982,50"/>
+<area shape="poly" id="edge5_Node000002_Node000003" title=" " alt="" coords="758,25,793,27,787,28,758,30"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1Coordinate3D.html" title="a templated class for 3&#45;dimensional coordinates." alt="" coords="603,75,742,119"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="541,94,605,97,600,97,541,100"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CartesianCoordinate3D.html" title="a templated class for 3&#45;dimensional coordinates." alt="" coords="790,75,982,119"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="758,94,793,97,787,97,758,100"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1Coordinate4D.html" title="a templated class for 4&#45;dimensional coordinates." alt="" coords="603,144,742,189"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="541,164,605,166,600,167,541,169"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1Coordinate2D.html" title=" " alt="" coords="603,213,742,258"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="570,233,605,236,600,236,570,238"/>
 </map>

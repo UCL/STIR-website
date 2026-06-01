@@ -1,7 +1,14 @@
 <map id="stir::PixelsOnCartesianGrid&lt; elemT &gt;" name="stir::PixelsOnCartesianGrid&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 2, elemT \&gt;" alt="" coords="849,26,1044,67"/>
-<area shape="rect" id="node3" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="251,27,439,69"/>
-<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="488,52,721,108"/>
-<area shape="rect" id="node4" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="48,5,159,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="5,57,201,98"/>
+<area shape="rect" id="Node000001" title="This class is used to represent pixelised densities on a rectangular grid (2D)." alt="" coords="1194,26,1389,71"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title=" " alt="" coords="929,26,1144,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1160,46,1196,48,1191,49,1160,51"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations." alt="" coords="271,28,482,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,39,532,38,718,32,905,35,931,39,926,39,905,40,718,37,532,43,498,45"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid." alt="" coords="532,52,790,114"/>
+<area shape="poly" id="edge6_Node000010_Node000003" title=" " alt="" coords="498,61,534,68,529,68,498,67"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etc" alt="" coords="54,5,173,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="188,25,273,37,268,38,188,30"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays." alt="" coords="5,57,222,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="237,63,273,61,268,62,238,68"/>
+<area shape="poly" id="edge5_Node000002_Node000010" title=" " alt="" coords="805,67,926,59,931,58,806,73"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="stir::ITKImageInputFileFormat&lt; STIRImageType &gt;" name="stir::ITKImageInputFileFormat&lt; STIRImageType &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; STIRImageType \&gt;" alt="" coords="32,109,175,151"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="34,5,173,47"/>
+<area shape="rect" id="Node000001" title="Class for reading images using ITK." alt="" coords="5,98,220,143"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="36,5,189,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,64,115,99,110,97,111,68"/>
 </map>

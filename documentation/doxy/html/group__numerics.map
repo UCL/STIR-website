@@ -1,8 +1,9 @@
 <map id="Numerical algorithms" name="Numerical algorithms">
-<area shape="rect" id="node1" href="$group__BSpline.html" title="Classes and functions\l for B&#45;spline interpolation." alt="" coords="382,5,553,47"/>
-<area shape="rect" id="node2" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,130,97,157"/>
-<area shape="rect" id="node3" href="$group__DFT.html" title="Discrete Fourier transforms" alt="" coords="377,71,558,98"/>
-<area shape="rect" id="node4" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="404,123,531,164"/>
-<area shape="rect" id="node6" href="$group__distributable.html" title="distributable building\l blocks" alt="" coords="397,188,537,229"/>
-<area shape="rect" id="node7" href="$group__ancillary.html" title="Items related to ancillary\l information such as radionuclide,\l patient info etc" alt="" coords="359,254,576,310"/>
+<area shape="rect" id="Node000004" href="$group__BSpline.html" title=" " alt="" coords="408,5,599,50"/>
+<area shape="rect" id="Node000003" href="$group__DFT.html" title=" " alt="" coords="404,74,603,102"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,143,102,171"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,143,313,171"/>
+<area shape="rect" id="Node000005" href="$group__ancillary.html" title=" " alt="" coords="382,126,625,188"/>
+<area shape="rect" id="Node000006" href="$group__distributable.html" title=" " alt="" coords="424,212,583,257"/>
+<area shape="rect" id="Node000007" href="$group__test.html" title=" " alt="" coords="436,281,571,326"/>
 </map>

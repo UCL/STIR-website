@@ -1,6 +1,11 @@
 <map id="stir::ecat::ecat7::BinNormalisationFromECAT7" name="stir::ecat::ecat7::BinNormalisationFromECAT7">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT7,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="653,24,885,95"/>
-<area shape="rect" id="node3" href="$classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="211,5,385,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="5,13,152,39"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="201,71,395,112"/>
+<area shape="rect" id="Node000001" title="A BinNormalisation class that gets the normalisation factors from an ECAT7 3D normalisation file." alt="" coords="1022,41,1230,86"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="713,24,973,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="988,61,1024,64,1019,64,988,66"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BinNormalisationWithCalibration.html" title=" " alt="" coords="226,5,419,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,29,690,44,716,48,710,48,689,49,435,34"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="5,14,169,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,25,228,27,223,28,185,30"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="218,76,427,121"/>
+<area shape="poly" id="edge4_Node000002_Node000009" title=" " alt="" coords="443,102,562,102,689,95,710,94,715,94,690,100,562,108,443,107"/>
 </map>

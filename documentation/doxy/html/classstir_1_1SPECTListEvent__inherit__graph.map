@@ -1,3 +1,5 @@
 <map id="stir::SPECTListEvent" name="stir::SPECTListEvent">
-<area shape="rect" id="node2" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="28,5,131,32"/>
+<area shape="rect" id="Node000001" title="Class for storing and using gamma events from a SPECT List mode file." alt="" coords="5,81,157,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file." alt="" coords="26,5,136,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,47,84,81,78,80,79,51"/>
 </map>

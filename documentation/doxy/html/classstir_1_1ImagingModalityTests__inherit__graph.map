@@ -1,3 +1,5 @@
 <map id="stir::ImagingModalityTests" name="stir::ImagingModalityTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="41,5,146,32"/>
+<area shape="rect" id="Node000001" title="Test class for ImagingModality." alt="" coords="5,81,199,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="48,5,156,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,47,104,82,100,80,100,51"/>
 </map>

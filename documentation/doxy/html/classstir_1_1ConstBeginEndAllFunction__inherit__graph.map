@@ -1,3 +1,5 @@
 <map id="stir::ConstBeginEndAllFunction&lt; TopLevelIterT, RestIterT &gt;" name="stir::ConstBeginEndAllFunction&lt; TopLevelIterT, RestIterT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1BeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a stir full iterator for the 2n..." alt="" coords="13,5,202,47"/>
+<area shape="rect" id="Node000001" title="Convenience class where the 2nd level iterator is a const_full_iterator." alt="" coords="5,98,226,143"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1BeginEndAllFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to a stir full iterator for the 2n..." alt="" coords="13,5,218,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,64,118,99,113,97,114,68"/>
 </map>

@@ -1,3 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbasic__string__view.html" title="An implementation of std::basic_string_view for pre&#45;C++17. " alt="" coords="5,5,140,47"/>
+<area shape="rect" id="Node000000" href="$structboost_1_1partially__ordered.html" title=" " alt="" coords="5,49,293,145"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="357,5,536,50"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="307,57,359,48,354,49,308,63"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="341,75,552,119"/>
+<area shape="poly" id="edge14_Node000000_Node000002" title=" " alt="" coords="308,94,343,97,338,97,308,100"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BasicCoordinate.html" title=" " alt="" coords="368,144,524,189"/>
+<area shape="poly" id="edge15_Node000000_Node000003" title=" " alt="" coords="308,131,371,148,365,148,307,137"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1Coordinate3D.html" title=" " alt="" coords="600,144,739,189"/>
+<area shape="poly" id="edge16_Node000003_Node000004" title=" " alt="" coords="540,164,602,166,597,166,540,169"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CartesianCoordinate3D.html" title=" " alt="" coords="787,144,979,189"/>
+<area shape="poly" id="edge17_Node000004_Node000005" title=" " alt="" coords="755,164,790,166,784,166,755,169"/>
 </map>

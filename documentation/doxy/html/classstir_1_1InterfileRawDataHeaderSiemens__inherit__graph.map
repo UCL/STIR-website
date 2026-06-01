@@ -1,0 +1,15 @@
+<map id="stir::InterfileRawDataHeaderSiemens" name="stir::InterfileRawDataHeaderSiemens">
+<area shape="rect" id="Node000001" title="a class for Interfile keywords (and parsing) specific to Siemens PET projection, list mode data or no..." alt="" coords="700,75,907,119"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens listmode data (in PETLINK format)" alt="" coords="955,5,1162,50"/>
+<area shape="poly" id="edge4_Node000001_Node000006" title=" " alt="" coords="902,67,971,51,976,50,903,73"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1InterfileNormHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens (component&#45;based) normalisation data" alt="" coords="967,75,1150,119"/>
+<area shape="poly" id="edge5_Node000001_Node000007" title=" " alt="" coords="922,94,969,97,963,97,922,100"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) fo..." alt="" coords="968,144,1148,189"/>
+<area shape="poly" id="edge6_Node000001_Node000008" title=" " alt="" coords="903,121,976,144,971,143,902,127"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="449,83,652,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="668,94,703,97,697,97,668,100"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="254,83,401,111"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,94,451,97,446,97,417,100"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data" alt="" coords="5,83,206,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,94,256,96,251,98,222,100"/>
+</map>

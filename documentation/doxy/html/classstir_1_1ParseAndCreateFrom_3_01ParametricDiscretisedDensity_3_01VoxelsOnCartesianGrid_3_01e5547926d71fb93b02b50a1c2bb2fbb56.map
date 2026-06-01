@@ -1,3 +1,7 @@
 <map id="stir::ParseAndCreateFrom&lt; ParametricDiscretisedDensity&lt; VoxelsOnCartesianGrid&lt; elemT &gt; &gt;, ExamDataT &gt;" name="stir::ParseAndCreateFrom&lt; ParametricDiscretisedDensity&lt; VoxelsOnCartesianGrid&lt; elemT &gt; &gt;, ExamDataT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1ParseDiscretisedDensityParameters.html" title="Class for adding parameters relevant to DiscretisedDensity to a parser. " alt="" coords="18,5,211,47"/>
+<area shape="rect" id="Node000001" title="parse keywords for creating a parametric VoxelsOnCartesianGrid from DynamicProjData etc" alt="" coords="482,24,723,103"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParseDiscretisedDensityParameters.html" title="Class for adding parameters relevant to DiscretisedDensity to a parser." alt="" coords="5,5,214,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,29,458,44,484,48,478,49,457,49,230,35"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ParseAndCreateFrom.html" title="template for adding keywords to a parser and creating an object" alt="" coords="5,76,214,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,102,340,102,457,95,479,94,484,94,458,100,340,108,229,107"/>
 </map>

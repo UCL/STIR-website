@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1PtrBeginEndFunction.html" title="stir::PtrBeginEndFunction\l\&lt; TopLevelIterT, boost\l::pointee\&lt; boost::iterator\l_value\&lt; TopLevelIterT \&gt;::type\l \&gt;::type::const_iterator \&gt;" alt="" coords="5,5,203,91"/>
-<area shape="rect" id="node2" href="$classstir_1_1ConstPtrBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator. " alt="" coords="251,27,457,69"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1PtrBeginEndFunction.html" title=" " alt="" coords="5,5,224,101"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1ConstPtrBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="272,31,493,76"/>
+<area shape="poly" id="edge571_Node000000_Node000001" title=" " alt="" coords="239,51,274,53,269,53,239,56"/>
 </map>

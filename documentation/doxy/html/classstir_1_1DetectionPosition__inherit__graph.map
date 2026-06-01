@@ -1,5 +1,9 @@
 <map id="stir::DetectionPosition&lt; coordT &gt;" name="stir::DetectionPosition&lt; coordT &gt;">
-<area shape="rect" id="node4" href="$classstir_1_1DetectionPosition.html" title="stir::DetectionPosition\&lt;\&gt;" alt="" coords="895,51,1061,77"/>
-<area shape="rect" id="node2" href="$structboost_1_1partially__ordered.html" title="boost::partially_ordered\l\&lt; DetectionPosition\&lt; coordT\l \&gt;, boost::equality_comparable\l\&lt; DetectionPosition\&lt; coordT \&gt; \&gt; \&gt;" alt="" coords="400,29,625,99"/>
-<area shape="rect" id="node3" href="$structboost_1_1partially__ordered.html" title="Boost class to define all comparison operators given only 2 (see operators.hpp) " alt="" coords="5,43,163,85"/>
+<area shape="rect" id="Node000001" title="A class for storing coordinates of a detection." alt="" coords="763,68,929,113"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1DetectionPosition.html" title=" " alt="" coords="1091,68,1256,113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="944,88,1093,90,1087,90,944,93"/>
+<area shape="rect" id="Node000002" href="$structboost_1_1partially__ordered.html" title=" " alt="" coords="423,51,714,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="729,88,765,90,760,90,730,93"/>
+<area shape="rect" id="Node000003" href="$structboost_1_1partially__ordered.html" title="Boost class to define all comparison operators given only 2 (see operators.hpp)" alt="" coords="5,68,182,113"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,88,424,88,421,93,197,93"/>
 </map>

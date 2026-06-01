@@ -1,4 +1,7 @@
 <map id="stir::ParseDiscretisedDensityParameters" name="stir::ParseDiscretisedDensityParameters">
-<area shape="rect" id="node2" href="$classstir_1_1ParseAndCreateFrom_3_01DiscretisedDensity_3_013_00_01elemT_01_4_00_01ExamDataT_01_4.html" title="parse keywords for creating a VoxelsOnCartesianGrid from ProjData etc " alt="" coords="269,5,443,61"/>
-<area shape="rect" id="node3" href="$classstir_1_1ParseAndCreateFrom_3_01ParametricDiscretisedDensity_3_01VoxelsOnCartesianGrid_3_01e3276d936c60e22393ee85ec9b9c5fa3d.html" title="parse keywords for creating a parametric VoxelsOnCartesianGrid from DynamicProjData etc ..." alt="" coords="247,86,465,157"/>
+<area shape="rect" id="Node000001" title="Class for adding parameters relevant to DiscretisedDensity to a parser." alt="" coords="5,62,214,106"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParseAndCreateFrom_3_01DiscretisedDensity_3_013_00_01elemT_01_4_00_01ExamDataT_01_4.html" title="parse keywords for creating a VoxelsOnCartesianGrid from ProjData etc" alt="" coords="289,5,476,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,61,291,52,286,53,229,66"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ParseAndCreateFrom_3_01ParametricDiscretisedDensity_3_01VoxelsOnCartesianGrid_3_01e3276d936c60e22393ee85ec9b9c5fa3d.html" title="parse keywords for creating a parametric VoxelsOnCartesianGrid from DynamicProjData etc" alt="" coords="262,92,503,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,102,264,110,258,110,229,107"/>
 </map>

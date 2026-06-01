@@ -1,6 +1,12 @@
 <map id="stir::CListEventPENN" name="stir::CListEventPENN">
-<area shape="rect" id="node2" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="11,305,213,347"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="5,200,219,256"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="50,5,163,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="129,81,362,123"/>
+<area shape="rect" id="Node000001" title="Class for handling PENNPet Explorer events." alt="" coords="45,414,200,442"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="12,320,233,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,378,125,415,120,412,121,382"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="5,209,240,271"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,284,125,320,120,319,121,289"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="58,5,177,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,46,124,209,119,208,117,51"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="139,82,396,127"/>
+<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="154,38,231,81,226,83,155,44"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="232,139,157,210,154,207,235,135"/>
 </map>

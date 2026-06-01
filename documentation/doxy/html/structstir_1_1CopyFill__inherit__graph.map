@@ -1,0 +1,11 @@
+<map id="stir::CopyFill&lt; T &gt;" name="stir::CopyFill&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Helper class for stir::copy_to and stir::fill_from." alt="" coords="5,118,146,146"/>
+<area shape="rect" id="Node000002" href="$structstir_1_1CopyFill_3_01Array_3_01num__dimensions_00_01elemT_01_4_01_4.html" title="Helper class for stir::copy_to and stir::fill_from." alt="" coords="378,5,604,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,108,169,84,275,56,380,39,375,42,276,61,171,89,116,112"/>
+<area shape="rect" id="Node000003" href="$structstir_1_1CopyFill_3_01DynamicProjData_01_4.html" title="Copy all bins to a range specified by an iterator." alt="" coords="391,75,591,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,122,391,103,389,108,161,127"/>
+<area shape="rect" id="Node000004" href="$structstir_1_1CopyFill_3_01MultipleProjData_01_4.html" title="Copy all bins to a range specified by an iterator." alt="" coords="406,144,576,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,142,170,143,293,154,408,162,403,164,293,159,169,149,162,148"/>
+<area shape="rect" id="Node000005" href="$structstir_1_1CopyFill_3_01ProjData_01_4.html" title="Helper class for stir::copy_to and stir::fill_from." alt="" coords="397,212,585,240"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="111,151,140,167,171,179,228,195,287,207,399,222,394,222,286,212,227,200,169,185,138,172,110,156"/>
+</map>

@@ -1,7 +1,8 @@
 <map id="ECAT6 ... ECAT8 support in the IO library" name="ECAT6 ... ECAT8 support in the IO library">
-<area shape="rect" id="node3" href="$group__utilities.html" title="Utility programs" alt="" coords="638,121,753,148"/>
-<area shape="rect" id="node4" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="618,233,773,274"/>
-<area shape="rect" id="node5" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="616,342,775,383"/>
-<area shape="rect" id="node6" href="$group__InterfileIO.html" title="Interfile support in\l the IO library" alt="" coords="632,427,759,469"/>
-<area shape="rect" id="node2" href="$group__IO.html" title="Input/Output Library" alt="" coords="5,329,143,356"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,372,382,417"/>
+<area shape="rect" id="Node000004" href="$group__InterfileIO.html" title=" " alt="" coords="666,166,807,210"/>
+<area shape="rect" id="Node000003" href="$group__listmode.html" title=" " alt="" coords="650,323,823,368"/>
+<area shape="rect" id="Node000005" href="$group__recon__buildblock.html" title=" " alt="" coords="649,455,824,500"/>
+<area shape="rect" id="Node000006" href="$group__utilities.html" title=" " alt="" coords="673,662,800,690"/>
+<area shape="rect" id="Node000002" href="$group__IO.html" title=" " alt="" coords="5,381,157,408"/>
 </map>

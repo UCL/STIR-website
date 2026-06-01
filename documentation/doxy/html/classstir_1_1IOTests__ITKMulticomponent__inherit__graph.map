@@ -1,3 +1,5 @@
 <map id="stir::IOTests_ITKMulticomponent" name="stir::IOTests_ITKMulticomponent">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="60,5,165,32"/>
+<area shape="rect" id="Node000001" title="A simple class to test the reading of multicomponent ITK images." alt="" coords="5,81,237,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="67,5,175,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,47,123,82,119,79,119,51"/>
 </map>

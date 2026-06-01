@@ -1,6 +1,7 @@
 <map id="Objective functions for iterative estimation of variables" name="Objective functions for iterative estimation of variables">
-<area shape="rect" id="node2" href="$group__modelling.html" title="Kinetic modelling building\l blocks" alt="" coords="433,66,603,107"/>
-<area shape="rect" id="node3" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="441,178,595,219"/>
-<area shape="rect" id="node4" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="439,258,597,299"/>
-<area shape="rect" id="node5" href="$group__priors.html" title="Priors and penalties\l for MAP" alt="" coords="449,330,587,371"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,226,182,287"/>
+<area shape="rect" id="Node000005" href="$group__listmode.html" title=" " alt="" coords="489,49,662,93"/>
+<area shape="rect" id="Node000004" href="$group__modelling.html" title=" " alt="" coords="480,158,671,203"/>
+<area shape="rect" id="Node000003" href="$group__priors.html" title=" " alt="" coords="500,255,650,300"/>
+<area shape="rect" id="Node000002" href="$group__recon__buildblock.html" title=" " alt="" coords="488,347,662,392"/>
 </map>

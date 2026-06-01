@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; float \&gt;" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="5,32,203,93"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="251,32,517,93"/>
+<area shape="poly" id="edge677_Node000000_Node000001" title=" " alt="" coords="218,60,253,62,248,63,219,65"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Array.html" title=" " alt="" coords="583,5,758,50"/>
+<area shape="poly" id="edge678_Node000001_Node000002" title=" " alt="" coords="532,42,585,38,580,39,533,47"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Array.html" title=" " alt="" coords="565,75,776,119"/>
+<area shape="poly" id="edge679_Node000001_Node000003" title=" " alt="" coords="533,78,567,84,562,84,532,83"/>
 </map>

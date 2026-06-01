@@ -1,3 +1,14 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1NestedIterator.html" title="Class NestedIterator implements a (forward) iterator using a pair of &#39;nested&#39; iterators. " alt="" coords="5,5,205,61"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates." alt="" coords="42,127,192,155"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1LORAs2Points.html" title="A class for LORs." alt="" coords="317,5,457,50"/>
+<area shape="poly" id="edge555_Node000000_Node000001" title=" " alt="" coords="156,117,212,88,276,60,319,47,314,49,278,65,214,93,159,122"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html" title="A class for LORs." alt="" coords="293,144,481,205"/>
+<area shape="poly" id="edge556_Node000000_Node000002" title=" " alt="" coords="208,150,295,162,290,164,208,155"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1LORInAxialAndSinogramCoordinates.html" title="A class for LORs." alt="" coords="283,229,491,274"/>
+<area shape="poly" id="edge557_Node000000_Node000004" title=" " alt="" coords="197,157,230,172,245,183,255,194,264,204,278,215,304,229,299,229,275,219,260,208,251,197,241,187,227,177,197,163"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1LORInCylinderCoordinates.html" title="A class for LORs." alt="" coords="277,75,497,119"/>
+<area shape="poly" id="edge558_Node000000_Node000005" title=" " alt="" coords="207,124,278,114,274,116,208,129"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1LORCylindricalCoordinates__z__and__radius.html" title="An internal class for LORs. Do not use." alt="" coords="5,187,229,231"/>
+<area shape="poly" id="edge559_Node000003_Node000002" title=" " alt="" coords="244,190,295,186,290,187,245,195"/>
+<area shape="poly" id="edge560_Node000003_Node000004" title=" " alt="" coords="244,226,285,235,279,235,244,232"/>
 </map>

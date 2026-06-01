@@ -1,8 +1,16 @@
 <map id="stir::ecat::ecat7::CListRecordECAT962" name="stir::ecat::ecat7::CListRecordECAT962">
-<area shape="rect" id="node2" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file. " alt="" coords="1071,5,1170,32"/>
-<area shape="rect" id="node3" href="$classstir_1_1ListGatingInput.html" title="A class recording external input to the scanner (normally used for gating) " alt="" coords="1053,56,1189,83"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="989,107,1252,163"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="268,115,471,157"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="520,140,783,196"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="5,108,219,164"/>
+<area shape="rect" id="Node000001" title="A class for a general element of a listmode file." alt="" coords="1389,49,1544,94"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ListTime.html" title="A class for storing and using a timing record from a listmode file." alt="" coords="1145,5,1251,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1267,29,1340,43,1391,56,1386,55,1339,48,1267,34"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListGatingInput.html" title="A class recording external input to the scanner (normally used for gating)" alt="" coords="1124,57,1273,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1288,69,1391,71,1386,71,1289,74"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title=" " alt="" coords="1057,110,1339,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1334,103,1385,92,1391,91,1335,108"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="289,120,509,164"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="525,131,559,130,796,123,1033,127,1059,131,1054,131,1033,132,796,129,559,135,525,137"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient." alt="" coords="559,144,841,206"/>
+<area shape="poly" id="edge7_Node000010_Node000005" title=" " alt="" coords="525,153,561,159,556,159,525,158"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="5,111,240,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="255,139,291,141,286,142,255,144"/>
+<area shape="poly" id="edge6_Node000004_Node000010" title=" " alt="" coords="856,162,1054,150,1059,150,857,167"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="stir::RadionuclideTest" name="stir::RadionuclideTest">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="27,5,133,32"/>
+<area shape="rect" id="Node000001" title="Class with tests for stir::RadionuclideDB and stir::Radionuclide." alt="" coords="5,81,166,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="31,5,140,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,47,88,82,83,80,84,51"/>
 </map>

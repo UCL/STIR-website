@@ -1,5 +1,10 @@
 <map id="stir::IOTests_DiscretisedDensity" name="stir::IOTests_DiscretisedDensity">
-<area shape="rect" id="node2" href="$classstir_1_1IOTests.html" title="stir::IOTests\&lt; Discretised\lDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="5,185,179,227"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="34,5,139,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function. " alt="" coords="108,81,236,108"/>
+<area shape="rect" id="Node000001" title="A simple class to test the OutputFileFormat function." alt="" coords="9,286,187,331"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1IOTests.html" title=" " alt="" coords="5,192,191,237"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,250,101,286,95,285,96,254"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="38,5,147,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,46,100,192,95,191,92,50"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function." alt="" coords="114,82,250,110"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="120,40,169,81,164,83,120,46"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="165,120,116,193,111,190,162,125"/>
 </map>

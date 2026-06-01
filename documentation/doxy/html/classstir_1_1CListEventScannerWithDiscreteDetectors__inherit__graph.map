@@ -1,12 +1,25 @@
 <map id="stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;" name="stir::CListEventScannerWithDiscreteDetectors&lt; ProjDataInfoT &gt;">
-<area shape="rect" id="node4" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="752,153,965,209"/>
-<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="157,168,271,195"/>
-<area shape="rect" id="node3" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="5,168,108,195"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="1015,161,1217,202"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListEventECAT966 \&gt;" alt="" coords="1736,16,1999,72"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="stir::CListEventCylindrical\lScannerWithViewTangRingRingEncoding\l\&lt; CListRecordECAT962 \&gt;" alt="" coords="1736,100,1999,156"/>
-<area shape="rect" id="node8" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient. " alt="" coords="1267,63,1529,119"/>
-<area shape="rect" id="node9" href="$classstir_1_1CListEventPENN.html" title="Class for handling PENNPet Explorer events. " alt="" coords="1323,193,1473,220"/>
-<area shape="rect" id="node10" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="1303,245,1493,286"/>
-<area shape="rect" id="node11" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file. " alt="" coords="1319,310,1477,351"/>
+<area shape="rect" id="Node000001" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="334,166,591,211"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="808,157,1042,219"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="606,186,810,188,805,189,607,191"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="165,174,284,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,186,336,187,331,189,301,191"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file." alt="" coords="5,174,116,202"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,186,167,187,162,190,132,191"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="1092,166,1312,211"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1058,186,1094,188,1088,188,1058,191"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title=" " alt="" coords="1860,17,2142,79"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1229,152,1284,97,1321,70,1360,50,1423,30,1488,16,1555,8,1621,4,1748,7,1862,21,1857,22,1748,12,1621,9,1555,13,1489,21,1425,35,1362,55,1323,75,1288,101,1232,156"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title=" " alt="" coords="1860,105,2142,167"/>
+<area shape="poly" id="edge6_Node000005_Node000008" title=" " alt="" coords="1327,177,1862,145,1856,146,1328,183"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1CListEventCylindricalScannerWithViewTangRingRingEncoding.html" title="Helper class for listmode events when using 2d sinograms and ring&#45;pairs is most efficient." alt="" coords="1361,64,1644,126"/>
+<area shape="poly" id="edge7_Node000005_Node000010" title=" " alt="" coords="1285,158,1335,142,1392,127,1397,126,1337,147,1286,163"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1CListEventPENN.html" title="Class for handling PENNPet Explorer events." alt="" coords="1425,200,1580,227"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="1327,196,1427,207,1422,207,1327,201"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file." alt="" coords="1422,251,1583,296"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="1286,213,1362,236,1424,255,1419,255,1361,241,1285,219"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1ecat_1_1CListEventECAT8__32bit.html" title="Class for storing and using a coincidence event from a listmode file from Siemens scanners using the ..." alt="" coords="1404,321,1601,365"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="1239,219,1295,264,1328,287,1362,306,1406,325,1401,324,1360,311,1325,291,1292,269,1237,224"/>
+<area shape="poly" id="edge8_Node000010_Node000006" title=" " alt="" coords="1659,78,1862,61,1857,62,1659,83"/>
+<area shape="poly" id="edge9_Node000010_Node000008" title=" " alt="" coords="1659,110,1668,111,1862,128,1857,128,1667,116,1659,115"/>
 </map>

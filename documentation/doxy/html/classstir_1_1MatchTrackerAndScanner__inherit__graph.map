@@ -1,3 +1,5 @@
 <map id="stir::MatchTrackerAndScanner" name="stir::MatchTrackerAndScanner">
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="39,5,170,32"/>
+<area shape="rect" id="Node000001" title="A class for finding the coordinate transformation between tracker and scanner coordinate systems." alt="" coords="5,81,219,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="42,5,182,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,47,114,82,110,79,110,51"/>
 </map>

@@ -1,169 +1,235 @@
-\form#0:\[ out_i = \sum_j kernel_j in_{i-j} \]
-\form#1:$ out_i = in_{i-1}$
-\form#2:\[ out_i = \sum_j kernel_j in_{i+j} \]
-\form#3:\[ C_k = \sum_{i} i A_{i} \]
-\form#4:\[ C_k = \sum_{i_1...i_n} i_k A_{i_1...i_n} \]
-\form#5:$ {a, b, a\times b}$
-\form#6:$ R_{ij}= \tau S_i S_j $
-\form#7:$\tau$
-\form#8:$\lambda$
-\form#9:$i,j$
-\form#10:\[ R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t) \]
-\form#11:\[ r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t) \]
-\form#12:\[ r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_{t1}^{t2} dt\,exp (-\lambda t)\right)^2} \]
-\form#13:\[ \frac{(t_2-t_1)}{ \int_{t_1}^{t_2} \! 2^{-t/\mathrm{halflife}} \, dt} \]
-\form#14:\[ 2^{(\mathrm{rel\_time} / \mathrm{halflife})} \]
-\form#15:$\lambda_{ijk}$
-\form#16:\[ \sum_{ijk} \lambda_{ijk} b_{ijk}({\bar x}) \]
-\form#17:\[ \text{normalized}(i, j) = \frac{\text{input}(i, j) - \text{min\_val}}{\text{max\_val} - \text{min\_val}} \]
-\form#18:\[ \gamma = \frac{\log(0.25)}{\log(\text{averagePixelValue})} \]
-\form#19:\[ \text{corrected}(i, j) = \text{normalized}(i, j)^{\gamma} \]
-\form#20:\[ \text{output}(i, j) = \text{corrected}(i, j) \times (\text{max\_val} - \text{min\_val}) + \text{min\_val} \]
-\form#21:\[ \mu = a + b * \mathrm{HU} \]
-\form#22:$a=a1, b=b1$
-\form#23:$\mathrm{HI} < \mathrm{break}$
-\form#24:$ \boldsymbol{\lambda}$
-\form#25:$ j $
-\form#26:$ \boldsymbol{v}_j $
-\form#27:$\lambda_j$
-\form#28:\[ \lambda_j= \sum_{l=1}^L \alpha_l k_{jl} \]
-\form#29:$k_{jl}$
-\form#30:$jl^{th}$
-\form#31:$\boldsymbol{K}$
-\form#32:\[ \alpha^{(n+1)}_j = \frac{ \alpha^{(n)}_j }{\sum_{m} k^{(n)}_{jm} \sum_i p_{mi}} \sum_{m}k^{(n)}_{jm}\sum_i p_{mi}\frac{ y_i }{\sum_{q} p_{iq} \sum_l k^{(n)}_{ql}\alpha^{(n)}_l + s_i} \]
-\form#33:$ jl $
-\form#34:\[ k^{(n)}_{jl} = k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) \cdot k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l); \]
-\form#35:\[ k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{v}_j-\boldsymbol{v}_l \|^2}{2 \sigma_m^2} \right) \exp \left(- \frac{\tiny \| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny 2 \sigma_{dm}^2} \right) \]
-\form#36:\[ k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l) = \exp \left(\tiny - \frac{\| \boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l \|^2}{2 \sigma_p^2} \right) \exp \left(\tiny - \frac{\| \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny{2 \sigma_{dp}^2}} \right) \]
-\form#37:$ \| \boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l \| $
-\form#38:$[0,2\pi)$
-\form#39:\[ r_s = \sum_{s=0}^{n-1} c_r e^{\mathrm{sign} 2\pi i r s/n} \]
-\form#40:\[v^{n+1}=m.v^{n}\]
-\form#41:\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]
-\form#42:$ v^{0}=\mathrm{start} $
-\form#43:$ n$
-\form#44:$ \mathrm{norm}(v^{n+1}-v^{n})$
-\form#45:\[v.m.v \over v.v \]
-\form#46:$p_v = sum_b p_{bv}$
-\form#47:\[\sum_{b \in \rm{subset}} p_{bv} = { \sum_b p_{bv} \over \rm{numsubsets} } \]
-\form#48:\[ \lambda^\mathrm{new} = \lambda + \zeta D \nabla \Psi \]
-\form#49:$\Psi$
-\form#50:$D$
-\form#51:$\zeta$
-\form#52:\[\sum_{b \in \mathrm{subset}} P_{bv} = \sum_b P_{bv} \over \mathrm{numsubsets} \]
-\form#53:\[ \zeta= { \alpha \over 1+ \gamma n } \]
-\form#54:$n$
-\form#55:$\alpha$
-\form#56:$\gamma$
-\form#57:$\alpha \approx 1$
-\form#58:$ [0, 1, -1, 2, -2, ...] $
-\form#59:$ [0, 1, -1, 2, 3 ] $
-\form#60:\[ P^\mathrm{full}_{bv} = \mathrm{norm}_b P^\mathrm{normalised}_{bv} \]
-\form#61:$\mathrm{norm}_b $
-\form#62:\[ \epsilon_i \epsilon_j g_{ij} B_{ij} \]
-\form#63:$ i,j $
-\form#64:$ g_{ij} $
-\form#65:$ B_{ij} $
-\form#66:\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]
-\form#67:$ \lambda$
-\form#68:$F$
-\form#69:$|\lambda_v| < M*|F_v| $
-\form#70:${\lambda_v \over F_v}$
-\form#71:$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$
-\form#72:$M$
-\form#73:\[ f = \sum_{r,dr} w_{r,dr} \phi(\lambda_r , \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#74:\[ g_r = 2 * \sum_{dr} w_{r,dr} \phi'(\lambda_r , \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#75:$r$
-\form#76:$dr$
-\form#77:$w_{dr}$
-\form#78:$\phi$
-\form#79:$\kappa$
-\form#80:\[ \sum_{r,dr} \kappa_{r} \kappa_{r+dr} w_{dr} \frac{1}{2}(f_r - f_{r+dr})^2 \]
-\form#81:$f_r$
-\form#82:$f_{r+dr}$
-\form#83:$r+dr$
-\form#84:\[ \sum_{r,dr} \kappa_{r} \kappa_{r+dr} w_{dr} \frac{(\lambda_r - \lambda_{r+dr})^2}{2(\lambda_r + \lambda_{r+dr} + \gamma |\lambda_r - \lambda_{r+dr}| + \epsilon)} \]
-\form#85:$\lambda_r$
-\form#86:$\lambda_{r+dr}$
-\form#87:$\epsilon$
-\form#88:$\epsilon=0$
-\form#89:\[ f = \sum_{r,dr} w_{dr} \frac{1}{2 s^2} log(cosh(s(\lambda_r - \lambda_{r+dr}))) * \kappa_r * \kappa_{r+dr} \]
-\form#90:$ f $
-\form#91:\[ \phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2} \]
-\form#92:$\nabla $
-\form#93:$ \xi $
-\form#94:\[ \xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}} \]
-\form#95:$ v $
-\form#96:$ \alpha $
-\form#97:$ \eta $
-\form#98:$y$
-\form#99:$\bar y$
-\form#100:\[ L(y\;\bar y) = \sum_b y_b log \bar y_b - \mathrm{log} y_b! - \bar y_b \]
-\form#101:$Y(\lambda)$
-\form#102:\[ {\partial L \over \partial \lambda_v} = \sum_b \left( {y_b \over Y_b} - 1 \right) {\partial Y_b \over \partial \lambda_v } \]
-\form#103:\[ Y = P \lambda + r \]
-\form#104:$P_{bv}$
-\form#105:$b$
-\form#106:$\lambda_v$
-\form#107:\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} {y_b \over Y_b} - P_v \]
-\form#108:\[ P_v = \sum_b P_{bv} \]
-\form#109:$P_v$
-\form#110:$r=0$
-\form#111:$v$
-\form#112:\[ \mathrm{KL}(y,\bar y) = \sum_b y_b \mathrm{log}(y_b/\bar y_b) + \bar y_b - y_b \]
-\form#113:$\mathrm{KL}(y,\bar y)=0$
-\form#114:$y=\bar y$
-\form#115:\[ {\partial L \over \partial \lambda_v} = \sum_b P_{bv} ({y_b \over Y_b} - 1) \]
-\form#116:\[ {\partial L \over \partial \lambda_v} + P_v = \sum_b P_{bv} {y_b \over Y_b} \]
-\form#117:\[ \begin{array}{lcl} \Lambda_{\nu}^{(s+1)}&&=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\ &&\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu' b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow \tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]
-\form#118:$P$
-\form#119:\[ P = D G \]
-\form#120:\[ P \lambda + r = D ( F \lambda + a ) \]
-\form#121:\[ P' y = F' D y \]
-\form#122:$B$
-\form#123:\[ B D \left[ y / \left( D (F \lambda + a) \right) \right] - B D 1 = B \left[ y / \left(F \lambda + a \right) \right] - B D 1 \]
-\form#124:$a$
-\form#125:\[ H_{jk} = - \sum_i P_{ij} h_i^{''}(y_i) P_{ik} \]
-\form#126:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = y_i / ((P \lambda)_i + a_i)^2; \]
-\form#127:$P_{ij} $
-\form#128:\[ h_i^{''}(y_i) \approx -1/y_i \]
-\form#129:\[ H_{jk} = - \sum_i P_{ij}(1/y_i) P_{ik} \]
-\form#130:\[ H_{jk} = \sum_i G_{ij}{1 \over n_i \mathrm{smooth}( n_i y_i)} G_{ik} \]
-\form#131:$n_i$
-\form#132:\[ P_{ij} = {1 \over n_i } G_{ij}\]
-\form#133:$1 \over y_i+1 $
-\form#134:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = - y_i / ((P \lambda)_i + a_i)^2; \]
-\form#135:\[ H_{jk} = - \sum_i P_{ij}(y_i / ((P \lambda)_i + a_i)^2) P_{ik} \]
-\form#136:\[ f = \frac{1}{4} \sum_{r,dr} w_{dr} (\lambda_r - \lambda_{r+dr})^2 * \kappa_r * \kappa_{r+dr} \]
-\form#137:\[ g_r = \sum_{dr} w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#138:\[ f= \sum_{r,dr} \frac{w_{dr}}{2} \frac{(\lambda_r - \lambda_{r+dr})^2}{(\lambda_r+ \lambda_{r+dr} + \gamma |\lambda_r - \lambda_{r+dr}| + \epsilon)} * \kappa_r * \kappa_{r+dr} \]
-\form#139:$ \epsilon=0 $
-\form#140:$ \lambda_r = \lambda_{r+dr}=0 $
-\form#141:$ \epsilon $
-\form#142:$ 1/(1+\gamma) $
-\form#143:$ 0 $
-\form#144:$ G dx \approx F(x+dx) - F(x) $
-\form#145:$ H dx \approx G(x+dx) - G(x) $
-\form#146:$2\tau$
-\form#147:\[ FWHM_E = \alpha \sqrt(E) \]
-\form#148:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
-\form#149:\[ M(k,s,P) = (1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s) \]
-\form#150:$ G(k,s) $
-\form#151:$G(0,s) = 1$
-\form#152:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
-\form#153:\[ abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2 \]
-\form#154:$r = coord - origin$
-\form#155:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1 \]
-\form#156:$dir_x, dir_y, dir_z$
-\form#157:\[ |r.dir_z|<L/2 \]
-\form#158:\[ {(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1 \]
-\form#159:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2 \]
-\form#160:\[ \text{output}(i, j) = \left(\frac{\text{input}(i, j) - \text{localMean}(i, j)}{\max(\text{localVar}(i, j), \text{noise})}\right) \cdot \max(\text{localVar}(i, j) - \text{noise}, 0) + \text{localMean}(i, j) \]
-\form#161:\[ r' = \mathrm{conj}(q)(r-t)q \]
-\form#162:${[}q0,qz,qy,qx{]}$
-\form#163:${[}n_z,n_y,n_x{]}$
-\form#164:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
-\form#165:\[ g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr} \]
-\form#166:\[ x^T \cdot H_{\lambda}x >= 0 \]
-\form#167:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 } \bigg) P1 } \]
-\form#168:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]
+\_form#0=128x29:\[ out_i = \sum_j kernel_j in_{i-j} \]
+\_form#1=66x11:$ out_i = in_{i-1}$
+\_form#2=126x29:\[ out_i = \sum_j kernel_j in_{i+j} \]
+\_form#3=69x28:\[   C_k = \sum_{i} i A_{i}
+\]
+\_form#4=108x29:\[   C_k = \sum_{i_1...i_n} i_k A_{i_1...i_n}
+\]
+\_form#5=50x13:$ {a, b, a\times b}$
+\_form#6=65x14:$ R_{ij}= \tau S_i S_j $
+\_form#7=8x6:$\tau$
+\_form#8=8x10:$\lambda$
+\_form#9=16x11:$i,j$
+\_form#10=180x14:\[   R_{ij}(t) = \tau * S_i(0) S_j(0) exp (-2 \lambda t)
+\]
+\_form#11=190x34:\[   r_{ij} = \tau S_i(0) S_j(0) \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)
+\]
+\_form#12=165x48:\[   r_{ij} = \tau s_i s_j \frac{ \int_{t_1}^{t_2} dt\,exp (-2 \lambda t)}{\left(\int_{t1}^{t2} dt\,exp (-\lambda t)\right)^2}
+\]
+\_form#13=84x36:\[ \frac{(t_2-t_1)}{ \int_{t_1}^{t_2} \! 2^{-t/\mathrm{halflife}} \, dt} \]
+\_form#14=83x13:\[ 2^{(\mathrm{rel\_time} / \mathrm{halflife})} \]
+\_form#15=20x14:$\lambda_{ijk}$
+\_form#16=76x30:\[ \sum_{ijk} \lambda_{ijk} b_{ijk}({\bar x}) \]
+\_form#17=215x28:\[    \textrm{normalized}(i, j) = \frac{\textrm{input}(i, j) - \textrm{min\_val}}{\textrm{max\_val} - \textrm{min\_val}}
+\]
+\_form#18=150x31:\[    \gamma = \frac{\log(0.25)}{\log(\textrm{averagePixelValue})}
+\]
+\_form#19=184x14:\[    \textrm{corrected}(i, j) = \textrm{normalized}(i, j)^{\gamma}
+\]
+\_form#20=335x14:\[    \textrm{output}(i, j) = \textrm{corrected}(i, j) \times (\textrm{max\_val} - \textrm{min\_val}) + \textrm{min\_val}
+\]
+\_form#21=81x13:\[  \mu = a + b * \mathrm{HU}
+\]
+\_form#22=74x13:$a=a1, b=b1$
+\_form#23=63x11:$\mathrm{HI} < \mathrm{break}$
+\_form#24=9x10:$ \boldsymbol{\lambda}$
+\_form#25=6x11:$ j $
+\_form#26=13x10:$ \boldsymbol{v}_j $
+\_form#27=11x14:$\lambda_j$
+\_form#28=75x39:\[ \lambda_j=  \sum_{l=1}^L \alpha_l k_{jl}
+\]
+\_form#29=14x14:$k_{jl}$
+\_form#30=20x14:$jl^{th}$
+\_form#31=13x10:$\boldsymbol{K}$
+\_form#32=355x41:\[\alpha^{(n+1)}_j =  \frac{ \alpha^{(n)}_j }{\sum_{m} k^{(n)}_{jm} \sum_i p_{mi}} \sum_{m}k^{(n)}_{jm}\sum_i p_{mi}\frac{ y_i
+}{\sum_{q} p_{iq} \sum_l k^{(n)}_{ql}\alpha^{(n)}_l  + s_i} \]
+\_form#33=10x13:$ jl $
+\_form#34=176x20:\[  k^{(n)}_{jl} = k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) \cdot k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l);
+\]
+\_form#35=220x24:\[ k_m(\boldsymbol{v}_j,\boldsymbol{v}_l) = \exp \left(\tiny - \frac{\|  \boldsymbol{v}_j-\boldsymbol{v}_l \|^2}{2 \sigma_m^2}
+\right) \exp \left(- \frac{\tiny \|  \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny 2 \sigma_{dm}^2} \right) \]
+\_form#36=250x29:\[ k_p(\boldsymbol{z}^{(n)}_j,\boldsymbol{z}^{(n)}_l) = \exp \left(\tiny - \frac{\|  \boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l
+\|^2}{2 \sigma_p^2} \right) \exp \left(\tiny - \frac{\|  \boldsymbol{x}_j-\boldsymbol{x}_l \|^2}{ \tiny{2 \sigma_{dp}^2}}
+\right) \]
+\_form#37=70x20:$ \|
+\boldsymbol{z}^{(n)}_j-\boldsymbol{z}^{(n)}_l \| $
+\_form#38=33x14:$[0,2\pi)$
+\_form#39=119x38:\[  r_s = \sum_{s=0}^{n-1} c_r e^{\mathrm{sign} 2\pi i r s/n}
+\]
+\_form#40=70x13:\[v^{n+1}=m.v^{n}\]
+\_form#41=113x16:\[v^{n+1}/=\mathrm{norm}(v^{n+1})\]
+\_form#42=55x11:$ v^{0}=\mathrm{start} $
+\_form#43=9x6:$ n$
+\_form#44=93x15:$ \mathrm{norm}(v^{n+1}-v^{n})$
+\_form#45=31x24:\[v.m.v \over v.v \]
+\_form#46=75x9:$p_v = sum_b p_{bv}$
+\_form#47=139x35:\[\sum_{b \in \rm{subset}} p_{bv} =
+     { \sum_b p_{bv} \over \rm{numsubsets} } \]
+\_form#48=101x13:\[ \lambda^\mathrm{new} = \lambda + \zeta D \nabla \Psi \]
+\_form#49=9x10:$\Psi$
+\_form#50=10x10:$D$
+\_form#51=6x13:$\zeta$
+\_form#52=129x29:\[\sum_{b \in \mathrm{subset}} P_{bv} =
+     \sum_b P_{bv} \over \mathrm{numsubsets} \]
+\_form#53=61x26:\[ \zeta= { \alpha \over 1+ \gamma n } \]
+\_form#54=9x6:$n$
+\_form#55=8x6:$\alpha$
+\_form#56=9x9:$\gamma$
+\_form#57=30x9:$\alpha \approx 1$
+\_form#58=95x14:$ [0, 1, -1, 2, -2, ...] $
+\_form#59=69x14:$ [0, 1, -1, 2, 3 ] $
+\_form#60=131x16:\[ P^\mathrm{full}_{bv} = \mathrm{norm}_b P^\mathrm{normalised}_{bv} \]
+\_form#61=34x9:$\mathrm{norm}_b $
+\_form#62=51x14:\[  \epsilon_i \epsilon_j g_{ij} B_{ij}
+\]
+\_form#63=16x11:$ i,j $
+\_form#64=15x10:$ g_{ij} $
+\_form#65=18x14:$ B_{ij} $
+\_form#66=88x29:\[ G_v = \beta ( {\lambda_v \over F_v} - 1) \]
+\_form#67=8x10:$ \lambda$
+\_form#68=10x10:$F$
+\_form#69=81x14:$|\lambda_v| < M*|F_v| $
+\_form#70=14x19:${\lambda_v \over F_v}$
+\_form#71=159x14:$M*\rm{sign}(F_v)*\rm{sign}(lambda_v)$
+\_form#72=14x10:$M$
+\_form#73=204x30:\[f = \sum_{r,dr} w_{r,dr} \phi(\lambda_r , \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr}
+\]
+\_form#74=229x28:\[g_r = 2 * \sum_{dr} w_{r,dr} \phi'(\lambda_r , \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr}
+\]
+\_form#75=8x6:$r$
+\_form#76=13x10:$dr$
+\_form#77=20x9:$w_{dr}$
+\_form#78=8x13:$\phi$
+\_form#79=89x14:$\phi(x,y) = \phi(y,x)$
+\_form#80=8x6:$\kappa$
+\_form#81=164x35:\[\sum_{r,dr} \kappa_{r} \kappa_{r+dr} w_{dr} \frac{1}{2}(f_r - f_{r+dr})^2
+\]
+\_form#82=11x13:$f_r$
+\_form#83=29x14:$f_{r+dr}$
+\_form#84=35x11:$r+dr$
+\_form#85=268x36:\[\sum_{r,dr} \kappa_{r} \kappa_{r+dr} w_{dr} \frac{(\lambda_r - \lambda_{r+dr})^2}{2(\lambda_r + \lambda_{r+dr} + \gamma
+|\lambda_r - \lambda_{r+dr}| + \epsilon)} \]
+\_form#86=13x13:$\lambda_r$
+\_form#87=30x14:$\lambda_{r+dr}$
+\_form#88=5x6:$\epsilon$
+\_form#89=28x9:$\epsilon=0$
+\_form#90=285x35:\[   f = \sum_{r,dr} w_{dr} \frac{1}{2 s^2}  log(cosh(s(\lambda_r - \lambda_{r+dr}))) * \kappa_r * \kappa_{r+dr}
+\]
+\_form#91=8x13:$ f $
+\_form#92=173x24:\[\phi(f) = \sqrt{\alpha^2 + |\nabla f|^2 - {\langle\nabla f,\xi\rangle}^2}
+\]
+\_form#93=10x11:$\nabla $
+\_form#94=8x13:$ \xi $
+\_form#95=95x33:\[\xi = \frac{\nabla v}{\sqrt{|\nabla v|^2 + \eta^2}}
+\]
+\_form#96=8x6:$ v $
+\_form#97=8x6:$ \alpha $
+\_form#98=8x9:$ \eta $
+\_form#99=8x9:$y$
+\_form#100=8x11:$\bar y$
+\_form#101=181x28:\[ L(y\;\bar y) = \sum_b y_b log \bar y_b - \mathrm{log} y_b! - \bar y_b \]
+\_form#102=28x14:$Y(\lambda)$
+\_form#103=139x35:\[ {\partial L \over \partial \lambda_v} =
+    \sum_b \left( {y_b \over Y_b} - 1 \right)
+           {\partial Y_b \over \partial \lambda_v }
+\]
+\_form#104=66x11:\[ Y = P \lambda + r \]
+\_form#105=18x13:$P_{bv}$
+\_form#106=5x10:$b$
+\_form#107=13x13:$\lambda_v$
+\_form#108=121x34:\[ {\partial L \over \partial \lambda_v} =
+    \sum_b P_{bv} {y_b \over Y_b} - P_v
+\]
+\_form#109=69x28:\[P_v = \sum_b P_{bv}
+\]
+\_form#110=13x13:$P_v$
+\_form#111=30x9:$r=0$
+\_form#112=8x6:$v$
+\_form#113=201x28:\[ \mathrm{KL}(y,\bar y) = \sum_b y_b \mathrm{log}(y_b/\bar y_b) + \bar y_b - y_b \]
+\_form#114=70x14:$\mathrm{KL}(y,\bar y)=0$
+\_form#115=31x11:$y=\bar y$
+\_form#116=124x34:\[ {\partial L \over \partial \lambda_v} =
+   \sum_b P_{bv} ({y_b \over Y_b} - 1)
+\]
+\_form#117=121x34:\[ {\partial L \over \partial \lambda_v} + P_v =
+   \sum_b P_{bv} {y_b \over Y_b}
+\]
+\_form#118=121x34:\[ {\partial L \over \partial \lambda_v} + P_v =
+  \sum_b P_{bv} {y_b \over Y_b}
+\]
+\_form#119=124x34:\[    {\partial L \over \partial \lambda_v} =
+        \sum_b P_{bv} ({y_b \over Y_b} - 1)
+\]
+\_form#120=326x78:\[ \begin{array}{lcl}
+ \Lambda_{\nu}^{(s+1)}&&=\Lambda_{\nu}^{(s)} \frac{1}{ \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'} \hat{W}^{-1}
+_{\nu'g\rightarrow \nu}P_{\nu' b}A_{bg}+\beta \nabla_{\Lambda_{\nu}} E_{\nu}^{(s)}}\\
+ &&\times \sum\limits_{b\in S_{l}, g} \sum\limits_{\nu'}\left(\hat{W}^{-1} _{\nu'g\rightarrow \nu}P_{\nu'
+b}\frac{Y_{bg}}{\sum\limits_{\tilde{\nu}}P_{b\tilde{\nu}}\sum\limits_{\tilde{\nu}'}\hat{W} _{\tilde{\nu}'\rightarrow
+\tilde{\nu}g}\Lambda_{\tilde{\nu}'}^{(s)}+\frac{B_{bg}}{A_{bg}}}\right) \end{array} \]
+\_form#121=10x10:$P$
+\_form#122=48x10:\[ P = D G \]
+\_form#123=114x14:\[ P \lambda + r = D ( F \lambda + a ) \]
+\_form#124=66x14:\[ P' y = F' D y \]
+\_form#125=10x10:$B$
+\_form#126=296x14:\[ B D \left[ y / \left( D (F \lambda + a) \right) \right] - B D 1  =
+    B  \left[ y / \left(F \lambda + a \right) \right] - B D 1
+\]
+\_form#127=6x6:$a$
+\_form#128=138x29:\[ H_{jk} = - \sum_i P_{ij} h_i^{''}(y_i) P_{ik} \]
+\_form#129=249x18:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = y_i / ((P \lambda)_i + a_i)^2; \]
+\_form#130=15x14:$P_{ij} $
+\_form#131=83x18:\[ h_i^{''}(y_i) \approx -1/y_i \]
+\_form#132=136x28:\[ H_{jk} = - \sum_i P_{ij}(1/y_i) P_{ik} \]
+\_form#133=181x33:\[ H_{jk} =  \sum_i G_{ij}{1 \over n_i \mathrm{smooth}( n_i y_i)} G_{ik} \]
+\_form#134=13x9:$n_i$
+\_form#135=66x29:\[ P_{ij} = {1 \over n_i } G_{ij}\]
+\_form#136=24x18:$1 \over y_i+1 $
+\_form#137=259x18:\[ h_i(l) = y_i log (l) - l; h_i^{''}(y_i) = - y_i / ((P \lambda)_i + a_i)^2; \]
+\_form#138=201x28:\[ H_{jk} = - \sum_i P_{ij}(y_i / ((P \lambda)_i + a_i)^2) P_{ik} \]
+\_form#139=216x35:\[f = \frac{1}{4} \sum_{r,dr} w_{dr} (\lambda_r - \lambda_{r+dr})^2 * \kappa_r * \kappa_{r+dr}
+\]
+\_form#140=203x28:\[g_r = \sum_{dr} w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr}
+\]
+\_form#141=311x36:\[    f= \sum_{r,dr} \frac{w_{dr}}{2} \frac{(\lambda_r - \lambda_{r+dr})^2}{(\lambda_r+ \lambda_{r+dr} + \gamma |\lambda_r -
+\lambda_{r+dr}| + \epsilon)} * \kappa_r * \kappa_{r+dr} \]
+\_form#142=28x9:$ \epsilon=0 $
+\_form#143=83x14:$ \lambda_r = \lambda_{r+dr}=0 $
+\_form#144=5x6:$ \epsilon $
+\_form#145=50x14:$ 1/(1+\gamma) $
+\_form#146=8x9:$ 0 $
+\_form#147=136x14:$ G dx \approx F(x+dx) - F(x) $
+\_form#148=138x14:$ H dx \approx G(x+dx) - G(x) $
+\_form#149=13x9:$2\tau$
+\_form#150=111x16:\[ FWHM_E = \alpha  \sqrt(E) \]
+\_form#151=219x29:\[ out_i = \sum_j kernelforthisdirection_j in_{i-j} \]
+\_form#152=251x16:\[M(k,s,P) =
+(1 - (1 - G(k, s)^2)^{(P + 1)})/ G(k, s)
+\]
+\_form#153=36x14:$ G(k,s) $
+\_form#154=59x14:$G(0,s) = 1$
+\_form#155=189x14:\[ Metz(x,s,P) = Metz(x/s, 1 ,P)/s \]
+\_form#156=313x14:\[  abs(x), abs(y), abs(z) <= length_x/2, length_y/2, length_z/2
+\]
+\_form#157=104x13:$r = coord - origin$
+\_form#158=210x34:\[{(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} + {(r.dir_z)^2 \over R_z^2} <= 1
+\]
+\_form#159=78x14:$dir_x, dir_y, dir_z$
+\_form#160=75x14:\[|r.dir_z|<L/2
+\]
+\_form#161=145x34:\[{(r.dir_x)^2 \over R_x^2} + {(r.dir_y)^2 \over R_y^2} <= 1
+\]
+\_form#162=184x14:\[ \theta_1 <= atan2(r.dir_y,r.dir_x) <= \theta_2
+\]
+\_form#163=496x31:\[ \text{output}(i, j) = \left(\frac{\text{input}(i, j) - \text{localMean}(i, j)}{\max(\text{localVar}(i, j), \text{noise})}\right)
+ \cdot \max(\text{localVar}(i, j) - \text{noise}, 0) + \text{localMean}(i, j)
+\]
+\_form#164=106x15:\[ r' = \mathrm{conj}(q)(r-t)q \]
+\_form#165=73x14:${[}q0,qz,qy,qx{]}$
+\_form#166=58x14:${[}n_z,n_y,n_x{]}$
+\_form#167=201x14:${[}cos(\phi),sin(\phi) n_z, sin(\phi) n_y, sin(\phi)n_x{]}$
+\_form#168=209x28:\[g_r = \sum_dr w_{dr} (\lambda_r - \lambda_{r+dr}) * \kappa_r * \kappa_{r+dr}
+\]
+\_form#169=81x15:\[ x^T \cdot H_{\lambda}x >= 0 \]
+\_form#170=8x6:$x$
+\_form#171=145x39:\[ \hat\kappa = \sqrt{ P^T \bigg( \frac{y}{ (P\lambda+a)^2 }  \bigg) P1 } \]
+\_form#172=98x39:\[ \tilde\kappa = \sqrt{ P^T \bigg( \frac{1}{y} \bigg)P1 } \]

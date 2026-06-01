@@ -1,36 +1,107 @@
 <map id="stir::Array&lt; num_dimensions, elemT &gt;" name="stir::Array&lt; num_dimensions, elemT &gt;">
-<area shape="rect" id="node6" href="$classstir_1_1DiscretisedDensity.html" title="DiscretisedDensity\l\&lt; 3, float \&gt;" alt="" coords="1469,64,1602,105"/>
-<area shape="rect" id="node7" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations. " alt="" coords="1441,129,1629,171"/>
-<area shape="rect" id="node16" href="$classstir_1_1Array.html" title="stir::Array\&lt; 1, float \&gt;" alt="" coords="1464,195,1607,222"/>
-<area shape="rect" id="node17" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1458,246,1613,273"/>
-<area shape="rect" id="node21" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l &#45; 1, elemT \&gt;" alt="" coords="1441,297,1630,339"/>
-<area shape="rect" id="node22" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="1439,363,1632,404"/>
-<area shape="rect" id="node23" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, int \&gt;" alt="" coords="1469,429,1601,455"/>
-<area shape="rect" id="node24" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, std\l::pair\&lt; stir::BasicCoordinate\l\&lt; 3, elemT \&gt;, elemT \&gt; \&gt;" alt="" coords="1443,479,1628,535"/>
-<area shape="rect" id="node25" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, stir\l::BasicCoordinate\&lt; 3,\l elemT \&gt; \&gt;" alt="" coords="1461,559,1610,615"/>
-<area shape="rect" id="node26" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="1439,640,1632,681"/>
-<area shape="rect" id="node27" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, unsigned\l char \&gt;" alt="" coords="1456,705,1615,747"/>
-<area shape="rect" id="node28" href="$classstir_1_1Array.html" title="stir::Array\&lt; 4, float \&gt;" alt="" coords="1464,771,1607,798"/>
-<area shape="rect" id="node29" href="$classstir_1_1Array.html" title="stir::Array\&lt; 1, T \&gt;" alt="" coords="1472,822,1599,849"/>
-<area shape="rect" id="node30" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, float \&gt;" alt="" coords="1464,873,1607,899"/>
-<area shape="rect" id="node31" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="1439,924,1632,965"/>
-<area shape="rect" id="node32" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1458,990,1613,1017"/>
-<area shape="rect" id="node35" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, float \&gt;" alt="" coords="1656,1046,1799,1073"/>
-<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions \l&#45; 1, elemT \&gt;, elemT \&gt;" alt="" coords="796,559,995,615"/>
-<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l &#45; 1, elemT \&gt; \&gt;" alt="" coords="404,525,579,581"/>
-<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,577,187,603"/>
-<area shape="rect" id="node5" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="392,605,591,647"/>
-<area shape="rect" id="node8" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 2, elemT \&gt;" alt="" coords="2080,45,2287,87"/>
-<area shape="rect" id="node10" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="DiscretisedDensityOnCartesian\lGrid\&lt; 3, elemT \&gt;" alt="" coords="2080,213,2287,255"/>
-<area shape="rect" id="node12" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid. " alt="" coords="1823,122,2056,178"/>
-<area shape="rect" id="node15" href="$classstir_1_1DiscretisedDensity.html" title="stir::DiscretisedDensity\l\&lt; 3, float \&gt;" alt="" coords="1860,5,2019,47"/>
-<area shape="rect" id="node9" href="$classstir_1_1PixelsOnCartesianGrid.html" title="This class is used to represent pixelised densities on a rectangular grid (2D). " alt="" coords="2557,81,2738,123"/>
-<area shape="rect" id="node11" href="$classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D). " alt="" coords="2555,176,2740,217"/>
-<area shape="rect" id="node13" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 2, elemT \&gt;" alt="" coords="2311,93,2505,135"/>
-<area shape="rect" id="node14" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="stir::DiscretisedDensity\lOnCartesianGrid\&lt; 3, elemT \&gt;" alt="" coords="2311,159,2505,200"/>
-<area shape="rect" id="node18" href="$classstir_1_1Sinogram.html" title="A class for 2d projection data. " alt="" coords="1858,303,2021,330"/>
-<area shape="rect" id="node19" href="$classstir_1_1Viewgram.html" title="A class for 2d projection data. " alt="" coords="1856,253,2023,279"/>
-<area shape="rect" id="node20" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="2331,655,2485,682"/>
-<area shape="rect" id="node33" href="$classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="1854,981,2025,1023"/>
-<area shape="rect" id="node34" href="$classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with fixed SegmentIndices. " alt="" coords="1867,916,2012,957"/>
+<area shape="rect" id="Node000001" title="This class defines multi&#45;dimensional (numeric) arrays." alt="" coords="961,1027,1176,1071"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1DiscretisedDensity.html" title=" " alt="" coords="1884,5,2058,50"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1069,1010,1079,848,1102,618,1118,500,1140,392,1166,301,1181,265,1198,237,1230,198,1266,164,1306,135,1349,109,1394,87,1441,69,1539,42,1636,26,1729,18,1813,16,1886,19,1881,22,1813,21,1730,23,1637,31,1540,47,1443,74,1396,92,1352,114,1309,139,1270,168,1234,202,1203,240,1186,267,1171,303,1145,393,1124,501,1107,619,1084,848,1074,1012"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1DiscretisedDensity.html" title=" " alt="" coords="1884,79,2058,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1070,1010,1081,858,1104,647,1121,539,1142,440,1168,358,1182,325,1199,299,1271,260,1418,191,1641,93,1704,84,1768,81,1886,88,1881,90,1768,86,1704,89,1642,98,1420,196,1273,265,1202,303,1187,328,1173,360,1147,442,1126,540,1109,648,1086,859,1075,1012"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1DiscretisedDensity.html" title=" " alt="" coords="1869,344,2072,405"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1070,1010,1080,878,1103,700,1120,611,1141,530,1167,465,1182,440,1199,421,1234,407,1298,395,1479,380,1688,373,1871,373,1866,375,1688,379,1479,386,1298,401,1236,412,1202,426,1186,443,1172,467,1146,532,1125,612,1108,701,1085,878,1075,1012"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1SegmentByView.html" title=" " alt="" coords="2280,449,2437,494"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1070,1010,1082,886,1105,721,1122,639,1143,565,1168,506,1183,484,1199,467,1222,456,1258,448,1364,438,1501,436,1654,438,1948,451,2124,458,2227,458,2282,463,2277,465,2227,464,2124,464,1947,456,1654,444,1501,441,1364,443,1259,453,1224,461,1202,471,1187,487,1173,509,1148,567,1127,641,1110,722,1087,887,1075,1012"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1DiscretisedDensity.html" title="This abstract class is the basis for all image representations." alt="" coords="1404,217,1616,262"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1070,1010,1083,872,1107,682,1124,585,1145,496,1170,423,1183,394,1198,371,1242,329,1294,297,1349,273,1406,257,1402,260,1351,278,1297,301,1245,333,1202,375,1188,397,1175,425,1150,498,1130,586,1113,682,1088,872,1075,1012"/>
+<area shape="rect" id="Node000021" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,531,1590,575"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="1073,1010,1089,910,1116,783,1133,720,1153,663,1175,618,1199,587,1231,576,1289,567,1432,556,1427,559,1290,573,1232,581,1202,591,1179,620,1158,665,1138,721,1121,784,1095,911,1078,1012"/>
+<area shape="rect" id="Node000022" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,599,1590,627"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="1067,1010,1071,931,1078,882,1090,830,1106,777,1129,726,1160,680,1199,640,1216,631,1239,623,1297,614,1365,609,1432,610,1427,612,1365,614,1298,619,1240,628,1218,636,1202,644,1164,683,1134,729,1111,779,1095,831,1084,883,1077,932,1072,1012"/>
+<area shape="rect" id="Node000023" href="$classstir_1_1Array.html" title=" " alt="" coords="1650,650,1810,678"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="1069,1010,1076,940,1096,852,1113,806,1135,763,1163,724,1199,691,1223,682,1265,675,1386,666,1652,662,1647,665,1386,671,1266,680,1225,687,1202,695,1167,727,1139,766,1118,809,1101,853,1081,941,1074,1012"/>
+<area shape="rect" id="Node000025" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,752,1590,797"/>
+<area shape="poly" id="edge30_Node000001_Node000025" title=" " alt="" coords="1077,1010,1093,964,1117,909,1152,856,1174,832,1199,812,1240,796,1299,785,1432,775,1427,778,1300,790,1241,801,1202,817,1178,836,1156,859,1122,912,1097,966,1082,1013"/>
+<area shape="rect" id="Node000026" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,820,1590,848"/>
+<area shape="poly" id="edge31_Node000001_Node000026" title=" " alt="" coords="1082,1011,1100,975,1125,933,1158,893,1199,861,1240,847,1299,839,1432,833,1427,836,1300,844,1242,853,1202,866,1162,897,1130,936,1104,977,1086,1014"/>
+<area shape="rect" id="Node000027" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,872,1590,917"/>
+<area shape="poly" id="edge32_Node000001_Node000027" title=" " alt="" coords="1101,1014,1146,977,1199,945,1258,924,1318,910,1433,896,1428,899,1319,915,1259,929,1201,950,1149,981,1105,1018"/>
+<area shape="rect" id="Node000028" href="$classstir_1_1Array.html" title=" " alt="" coords="1430,940,1590,968"/>
+<area shape="poly" id="edge33_Node000001_Node000028" title=" " alt="" coords="1142,1019,1200,1001,1320,976,1432,962,1427,964,1321,982,1201,1006,1145,1023"/>
+<area shape="rect" id="Node000029" href="$classstir_1_1Array.html" title=" " alt="" coords="1447,992,1573,1037"/>
+<area shape="poly" id="edge34_Node000001_Node000029" title=" " alt="" coords="1191,1037,1449,1018,1445,1020,1193,1042"/>
+<area shape="rect" id="Node000030" href="$classstir_1_1Array.html" title=" " alt="" coords="1440,1061,1580,1106"/>
+<area shape="poly" id="edge35_Node000001_Node000030" title=" " alt="" coords="1178,1072,1201,1075,1327,1083,1442,1085,1437,1087,1327,1089,1200,1080,1180,1077"/>
+<area shape="rect" id="Node000031" href="$classstir_1_1Array.html" title=" " alt="" coords="1447,1131,1573,1175"/>
+<area shape="poly" id="edge36_Node000001_Node000031" title=" " alt="" coords="1112,1078,1155,1103,1201,1123,1265,1139,1331,1148,1449,1155,1444,1156,1330,1153,1264,1144,1199,1128,1152,1108,1112,1083"/>
+<area shape="rect" id="Node000032" href="$classstir_1_1Array.html" title=" " alt="" coords="1426,1200,1594,1245"/>
+<area shape="poly" id="edge37_Node000001_Node000032" title=" " alt="" coords="1091,1082,1138,1141,1168,1169,1202,1191,1257,1212,1315,1224,1373,1228,1428,1230,1423,1231,1373,1234,1314,1229,1255,1217,1199,1196,1164,1173,1134,1145,1091,1087"/>
+<area shape="rect" id="Node000033" href="$classstir_1_1Array.html" title=" " alt="" coords="1424,700,1596,728"/>
+<area shape="poly" id="edge38_Node000001_Node000033" title=" " alt="" coords="1072,1010,1082,950,1105,876,1122,838,1142,802,1168,769,1199,741,1238,726,1295,716,1426,712,1421,714,1296,722,1239,731,1202,746,1172,773,1147,805,1126,840,1110,878,1088,951,1076,1012"/>
+<area shape="rect" id="Node000036" href="$classstir_1_1Array.html" title=" " alt="" coords="1402,1269,1618,1314"/>
+<area shape="poly" id="edge42_Node000001_Node000036" title=" " alt="" coords="1081,1084,1099,1130,1123,1180,1157,1229,1178,1250,1202,1267,1249,1289,1300,1301,1352,1306,1405,1307,1399,1308,1352,1311,1299,1307,1247,1294,1199,1272,1175,1254,1153,1232,1119,1183,1094,1132,1079,1089"/>
+<area shape="rect" id="Node000037" href="$classstir_1_1Array.html" title=" " alt="" coords="1404,1339,1616,1383"/>
+<area shape="poly" id="edge43_Node000001_Node000037" title=" " alt="" coords="1075,1084,1088,1146,1110,1219,1126,1255,1147,1290,1172,1321,1202,1346,1249,1369,1300,1381,1353,1384,1406,1382,1401,1384,1353,1389,1300,1386,1247,1374,1199,1351,1168,1324,1142,1293,1121,1258,1105,1221,1082,1148,1073,1089"/>
+<area shape="rect" id="Node000038" href="$classstir_1_1Array.html" title=" " alt="" coords="1424,479,1596,507"/>
+<area shape="poly" id="edge44_Node000001_Node000038" title=" " alt="" coords="1071,1010,1085,898,1111,750,1128,676,1148,610,1171,556,1199,520,1215,511,1237,503,1294,493,1359,489,1426,489,1421,492,1360,494,1294,498,1238,508,1217,515,1202,524,1176,559,1153,612,1133,677,1116,751,1091,898,1076,1013"/>
+<area shape="rect" id="Node000041" href="$classstir_1_1Array.html" title=" " alt="" coords="1402,1408,1618,1453"/>
+<area shape="poly" id="edge48_Node000001_Node000041" title=" " alt="" coords="1071,1085,1078,1162,1086,1207,1097,1255,1114,1303,1136,1349,1165,1390,1202,1423,1235,1436,1284,1441,1405,1441,1399,1442,1284,1447,1234,1441,1199,1428,1161,1393,1131,1351,1109,1305,1092,1257,1080,1208,1073,1162,1069,1090"/>
+<area shape="rect" id="Node000042" href="$classstir_1_1Array.html" title=" " alt="" coords="1402,1477,1618,1522"/>
+<area shape="poly" id="edge49_Node000001_Node000042" title=" " alt="" coords="1077,1085,1095,1182,1122,1303,1139,1361,1159,1414,1180,1455,1202,1482,1224,1497,1248,1508,1300,1521,1353,1524,1407,1522,1402,1523,1353,1529,1299,1526,1246,1513,1221,1501,1199,1486,1175,1458,1154,1416,1134,1363,1117,1304,1090,1183,1075,1090"/>
+<area shape="rect" id="Node000043" href="$classstir_1_1Array.html" title=" " alt="" coords="1404,1547,1616,1591"/>
+<area shape="poly" id="edge50_Node000001_Node000043" title=" " alt="" coords="1075,1084,1090,1199,1115,1344,1132,1416,1152,1480,1176,1531,1189,1550,1202,1564,1227,1580,1255,1591,1285,1598,1315,1601,1376,1599,1435,1591,1430,1593,1377,1604,1315,1606,1284,1603,1254,1596,1225,1584,1199,1568,1184,1553,1171,1534,1147,1482,1127,1417,1110,1345,1085,1200,1073,1089"/>
+<area shape="rect" id="Node000044" href="$classstir_1_1Array.html" title=" " alt="" coords="1440,1615,1580,1643"/>
+<area shape="poly" id="edge51_Node000001_Node000044" title=" " alt="" coords="1074,1085,1087,1211,1111,1374,1128,1456,1148,1528,1173,1587,1187,1608,1202,1624,1219,1633,1242,1639,1304,1643,1374,1641,1443,1637,1437,1638,1374,1646,1304,1649,1241,1644,1217,1638,1199,1628,1183,1612,1168,1589,1143,1530,1122,1457,1105,1375,1082,1211,1071,1089"/>
+<area shape="rect" id="Node000045" href="$classstir_1_1Array.html" title=" " alt="" coords="1422,1667,1598,1711"/>
+<area shape="poly" id="edge52_Node000001_Node000045" title=" " alt="" coords="1073,1085,1086,1219,1109,1395,1125,1483,1146,1562,1172,1625,1186,1649,1202,1667,1226,1683,1252,1696,1308,1710,1367,1712,1425,1709,1419,1710,1367,1717,1308,1715,1250,1701,1223,1688,1199,1671,1182,1652,1167,1628,1141,1563,1120,1484,1103,1395,1080,1219,1071,1089"/>
+<area shape="rect" id="Node000046" href="$classstir_1_1Array.html" title=" " alt="" coords="1404,1736,1616,1781"/>
+<area shape="poly" id="edge53_Node000001_Node000046" title=" " alt="" coords="1072,1084,1081,1235,1101,1437,1118,1539,1140,1631,1168,1704,1184,1732,1202,1752,1216,1759,1234,1765,1284,1771,1344,1771,1406,1770,1401,1771,1344,1777,1284,1777,1233,1770,1213,1764,1199,1756,1180,1735,1163,1707,1135,1632,1113,1540,1096,1438,1076,1235,1070,1089"/>
+<area shape="rect" id="Node000047" href="$classstir_1_1Array.html" title=" " alt="" coords="1436,1804,1584,1832"/>
+<area shape="poly" id="edge54_Node000001_Node000047" title=" " alt="" coords="1072,1085,1080,1242,1099,1457,1116,1566,1138,1664,1167,1743,1184,1773,1202,1795,1218,1804,1240,1811,1300,1820,1369,1822,1438,1823,1433,1823,1369,1827,1300,1825,1239,1817,1216,1809,1199,1799,1179,1776,1162,1745,1133,1665,1111,1567,1094,1458,1075,1243,1069,1089"/>
+<area shape="rect" id="Node000048" href="$classstir_1_1Array.html" title=" " alt="" coords="1404,1856,1616,1901"/>
+<area shape="poly" id="edge55_Node000001_Node000048" title=" " alt="" coords="1071,1085,1077,1256,1083,1370,1094,1491,1110,1611,1133,1719,1147,1765,1163,1806,1182,1838,1202,1862,1225,1879,1251,1892,1308,1905,1366,1905,1419,1902,1424,1901,1366,1911,1307,1910,1249,1897,1223,1884,1199,1866,1177,1841,1159,1808,1142,1767,1128,1720,1105,1611,1089,1492,1078,1370,1072,1256,1069,1089"/>
+<area shape="rect" id="Node000049" href="$classstir_1_1Array.html" title=" " alt="" coords="1429,1925,1591,1986"/>
+<area shape="poly" id="edge56_Node000001_Node000049" title=" " alt="" coords="1071,1085,1073,1271,1078,1397,1088,1532,1104,1666,1127,1786,1142,1838,1159,1883,1179,1920,1202,1946,1217,1955,1239,1962,1297,1968,1363,1967,1431,1965,1426,1965,1364,1972,1296,1973,1238,1967,1215,1960,1199,1950,1175,1923,1155,1886,1137,1840,1122,1787,1098,1666,1082,1533,1073,1398,1068,1271,1068,1089"/>
+<area shape="rect" id="Node000050" href="$classstir_1_1Array.html" title=" " alt="" coords="1408,2010,1612,2072"/>
+<area shape="poly" id="edge57_Node000001_Node000050" title=" " alt="" coords="1074,1084,1089,1297,1116,1597,1134,1746,1155,1876,1177,1974,1190,2006,1202,2025,1224,2041,1247,2053,1299,2067,1354,2069,1405,2067,1410,2066,1354,2074,1299,2072,1245,2058,1221,2045,1198,2028,1185,2009,1172,1975,1149,1877,1129,1746,1111,1597,1084,1297,1071,1089"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="696,1018,912,1080"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="926,1047,963,1048,958,1050,928,1051"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="262,1004,460,1032"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,1022,673,1034,698,1038,694,1040,672,1040,476,1027"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators" alt="" coords="253,1056,468,1101"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="483,1077,576,1075,672,1068,698,1067,694,1070,673,1074,577,1080,485,1082"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="5,1064,204,1092"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,1076,255,1077,251,1080,221,1080"/>
+<area shape="poly" id="edge23_Node000010_Node000006" title=" " alt="" coords="1548,205,1591,172,1640,141,1702,111,1765,85,1886,48,1882,51,1767,91,1704,116,1643,146,1594,177,1552,209"/>
+<area shape="poly" id="edge24_Node000010_Node000007" title=" " alt="" coords="1579,209,1641,189,1690,179,1730,174,1768,170,1817,158,1841,148,1911,122,1907,125,1843,153,1819,163,1769,175,1730,180,1691,184,1642,194,1582,214"/>
+<area shape="poly" id="edge25_Node000010_Node000008" title=" " alt="" coords="1541,271,1588,311,1614,329,1643,343,1683,354,1740,361,1871,371,1866,373,1740,366,1682,359,1641,348,1612,333,1584,315,1542,276"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title=" " alt="" coords="2251,124,2466,169"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1630,220,1841,193,2253,154,2248,157,1842,198,1632,225"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title=" " alt="" coords="2251,329,2466,374"/>
+<area shape="poly" id="edge15_Node000010_Node000018" title=" " alt="" coords="1630,258,1860,296,2124,332,2253,345,2248,346,2124,337,1859,301,1632,264"/>
+<area shape="rect" id="Node000020" href="$classstir_1_1DiscretisedDensityOnCartesianGrid.html" title="This abstract class is the basis for images on a Cartesian grid." alt="" coords="1842,208,2100,269"/>
+<area shape="poly" id="edge17_Node000010_Node000020" title=" " alt="" coords="1630,237,1844,238,1839,240,1632,242"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1VoxelsOnCartesianGrid.html" title="This class is used to represent voxelised densities on a cuboid grid (3D)." alt="" coords="2516,124,2715,169"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="2481,144,2518,145,2513,147,2483,149"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="2933,236,3132,297"/>
+<area shape="poly" id="edge12_Node000012_Node000014" title=" " alt="" coords="2685,172,2740,191,2839,219,2935,245,2930,245,2837,225,2738,196,2686,177"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="2933,48,3132,93"/>
+<area shape="poly" id="edge13_Node000012_Node000016" title=" " alt="" coords="2702,117,2738,108,2838,90,2935,79,2930,81,2839,95,2740,113,2704,122"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1VoxelsOnCartesianGrid.html" title=" " alt="" coords="2933,128,3132,189"/>
+<area shape="poly" id="edge14_Node000012_Node000017" title=" " alt="" coords="2730,147,2935,155,2930,156,2731,152"/>
+<area shape="rect" id="Node000019" href="$classstir_1_1PixelsOnCartesianGrid.html" title="This class is used to represent pixelised densities on a rectangular grid (2D)." alt="" coords="2518,329,2713,374"/>
+<area shape="poly" id="edge16_Node000018_Node000019" title=" " alt="" coords="2482,349,2520,351,2515,352,2483,354"/>
+<area shape="poly" id="edge21_Node000020_Node000011" title=" " alt="" coords="2114,215,2226,190,2302,168,2297,170,2228,195,2116,219"/>
+<area shape="poly" id="edge18_Node000020_Node000014" title=" " alt="" coords="2115,250,2124,250,2251,254,2580,266,2724,269,2909,268,2935,269,2930,271,2909,273,2724,274,2580,271,2251,260,2124,256,2117,255"/>
+<area shape="poly" id="edge19_Node000020_Node000016" title=" " alt="" coords="2039,198,2137,150,2193,127,2250,109,2342,88,2436,73,2531,63,2625,57,2796,55,2935,62,2930,63,2796,60,2625,62,2532,68,2437,78,2343,93,2252,114,2195,132,2139,155,2042,202"/>
+<area shape="poly" id="edge20_Node000020_Node000017" title=" " alt="" coords="2115,240,2576,248,2788,245,2863,241,2908,235,2986,188,2981,191,2910,239,2864,246,2788,251,2576,253,2116,245"/>
+<area shape="poly" id="edge22_Node000020_Node000018" title=" " alt="" coords="2078,273,2102,285,2113,296,2125,305,2178,320,2253,336,2248,337,2176,325,2123,310,2110,300,2098,290,2078,279"/>
+<area shape="rect" id="Node000024" href="$classstir_1_1Viewgram.html" title=" " alt="" coords="2271,671,2446,699"/>
+<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="1825,664,2273,681,2268,683,1826,669"/>
+<area shape="rect" id="Node000034" href="$classstir_1_1Sinogram.html" title="A class for 2d projection data." alt="" coords="1879,752,2062,780"/>
+<area shape="poly" id="edge39_Node000033_Node000034" title=" " alt="" coords="1611,723,1881,755,1876,757,1612,728"/>
+<area shape="rect" id="Node000035" href="$classstir_1_1Viewgram.html" title="A class for 2d projection data." alt="" coords="1877,700,2064,728"/>
+<area shape="poly" id="edge40_Node000033_Node000035" title=" " alt="" coords="1611,712,1879,713,1874,715,1612,717"/>
+<area shape="poly" id="edge41_Node000035_Node000024" title=" " alt="" coords="2079,707,2227,697,2273,694,2268,696,2227,702,2081,712"/>
+<area shape="rect" id="Node000039" href="$classstir_1_1SegmentBySinogram.html" title="A class for storing (3d) projection data with fixed SegmentIndices." alt="" coords="1877,549,2064,594"/>
+<area shape="poly" id="edge45_Node000038_Node000039" title=" " alt="" coords="1610,507,1879,555,1874,557,1611,513"/>
+<area shape="rect" id="Node000040" href="$classstir_1_1SegmentByView.html" title="A class for storing (3d) projection data with fixed SegmentIndices." alt="" coords="1892,480,2050,525"/>
+<area shape="poly" id="edge46_Node000038_Node000040" title=" " alt="" coords="1611,493,1894,500,1889,502,1613,498"/>
+<area shape="poly" id="edge47_Node000040_Node000009" title=" " alt="" coords="2064,492,2282,477,2277,479,2066,497"/>
 </map>

@@ -1,7 +1,13 @@
 <map id="stir::ForwardProjectorByBinUsingProjMatrixByBin" name="stir::ForwardProjectorByBinUsingProjMatrixByBin">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ForwardProjectorByBinUsingProj\lMatrixByBin, ForwardProjectorByBin \&gt;" alt="" coords="677,52,924,108"/>
-<area shape="rect" id="node3" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors. " alt="" coords="240,35,423,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="34,5,157,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ForwardProjectorByBin \&gt;" alt="" coords="5,57,185,98"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="235,91,428,133"/>
+<area shape="rect" id="Node000001" title="This implements the ForwardProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="1056,62,1240,107"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="734,54,1007,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1022,82,1058,84,1053,85,1022,87"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors." alt="" coords="260,35,458,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,50,711,65,737,69,731,69,710,70,473,56"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="38,5,172,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,26,262,36,257,38,187,31"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,57,205,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="220,63,262,60,256,61,221,68"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="254,97,463,142"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="479,122,591,123,710,116,731,115,737,115,711,121,591,128,479,128"/>
 </map>

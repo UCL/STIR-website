@@ -1,3 +1,5 @@
 <map id="stir::linear_regressionTests" name="stir::linear_regressionTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="42,5,147,32"/>
+<area shape="rect" id="Node000001" title="A simple class to test the linear_regression function." alt="" coords="5,81,201,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="49,5,157,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,47,105,82,101,80,101,51"/>
 </map>

@@ -1,7 +1,23 @@
 <map id="stir::InterfileHeader" name="stir::InterfileHeader">
-<area shape="rect" id="node4" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images " alt="" coords="571,5,740,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) ..." alt="" coords="571,56,740,83"/>
-<area shape="rect" id="node6" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data " alt="" coords="571,107,740,149"/>
-<area shape="rect" id="node2" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="163,56,341,83"/>
-<area shape="rect" id="node3" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="5,56,115,83"/>
+<area shape="rect" id="Node000001" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="416,162,563,190"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="611,83,815,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="533,153,610,121,649,112,654,111,612,126,535,158"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images" alt="" coords="619,135,807,163"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="578,162,621,160,616,161,579,168"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream)" alt="" coords="623,187,803,215"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="579,183,625,191,620,191,579,188"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data" alt="" coords="623,239,803,283"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="538,193,612,224,646,238,641,238,610,229,537,199"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data" alt="" coords="168,162,368,190"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="383,173,418,175,413,176,384,178"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers." alt="" coords="5,162,120,190"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,173,170,175,165,177,136,178"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1InterfileRawDataHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens PET projection, list mode data or no..." alt="" coords="863,75,1069,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="830,94,865,97,860,97,830,100"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1InterfileListmodeHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens listmode data (in PETLINK format)" alt="" coords="1117,5,1324,50"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1065,67,1133,51,1139,50,1066,73"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1InterfileNormHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to Siemens (component&#45;based) normalisation data" alt="" coords="1129,75,1312,119"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1084,94,1131,97,1126,97,1085,100"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1InterfilePDFSHeaderSiemens.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream) fo..." alt="" coords="1130,144,1311,189"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1065,121,1139,144,1133,143,1065,127"/>
 </map>

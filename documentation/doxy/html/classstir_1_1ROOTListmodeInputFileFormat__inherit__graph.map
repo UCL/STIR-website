@@ -1,4 +1,7 @@
 <map id="stir::ROOTListmodeInputFileFormat" name="stir::ROOTListmodeInputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="31,109,169,151"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="31,5,169,47"/>
+<area shape="rect" id="Node000001" title="The ROOTListmodeInputFileFormat class." alt="" coords="5,209,209,254"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="31,115,183,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,173,109,209,105,208,105,177"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="31,5,183,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,63,110,115,104,114,106,68"/>
 </map>

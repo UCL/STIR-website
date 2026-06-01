@@ -1,5 +1,9 @@
 <map id="stir::InterfilePDFSHeader" name="stir::InterfilePDFSHeader">
-<area shape="rect" id="node2" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data " alt="" coords="28,155,161,181"/>
-<area shape="rect" id="node3" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data " alt="" coords="5,80,184,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers. " alt="" coords="40,5,149,32"/>
+<area shape="rect" id="Node000001" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream)" alt="" coords="15,232,196,260"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="32,157,179,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,198,108,233,103,231,104,202"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data" alt="" coords="5,81,206,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,122,108,157,103,156,104,127"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1KeyParser.html" title="A class to parse Interfile headers." alt="" coords="48,5,163,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,46,108,81,103,80,105,51"/>
 </map>

@@ -1,6 +1,12 @@
 <map id="stir::BinNormalisationPETFromComponents" name="stir::BinNormalisationPETFromComponents">
-<area shape="rect" id="node2" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="33,276,180,303"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="32,185,181,227"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="12,5,191,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="123,81,272,123"/>
+<area shape="rect" id="Node000001" title="A BinNormalisation class that uses component&#45;based normalisation for PET." alt="" coords="5,363,226,408"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="34,286,197,314"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,327,118,363,113,361,114,331"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="33,192,198,237"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,250,118,286,113,285,114,254"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="13,5,207,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,46,118,192,112,191,110,50"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="132,82,294,127"/>
+<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="138,40,189,81,184,83,138,45"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="181,141,137,193,133,190,184,137"/>
 </map>

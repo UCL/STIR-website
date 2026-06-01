@@ -1,4 +1,7 @@
 <map id="stir::ViewSegmentNumbers" name="stir::ViewSegmentNumbers">
-<area shape="rect" id="node2" href="$classstir_1_1ViewgramIndices.html" title="A very simple class to store all dincies to get a (2D) Viewgram. " alt="" coords="23,80,171,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. " alt="" coords="25,5,168,32"/>
+<area shape="rect" id="Node000001" title="alias for ViewgramIndices" alt="" coords="5,157,205,184"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ViewgramIndices.html" title="A very simple class to store all dincies to get a (2D) Viewgram." alt="" coords="24,81,186,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,123,107,157,103,155,103,126"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment." alt="" coords="28,5,182,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,46,108,81,102,80,104,51"/>
 </map>

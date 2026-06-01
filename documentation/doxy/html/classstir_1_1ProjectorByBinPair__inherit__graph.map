@@ -1,14 +1,28 @@
 <map id="stir::ProjectorByBinPair" name="stir::ProjectorByBinPair">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingNiftyPET,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="1182,5,1449,61"/>
-<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingParallelproj,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="1182,85,1449,141"/>
-<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingProjMatrix\lByBin, ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="1163,165,1468,221"/>
-<area shape="rect" id="node12" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingSeparate\lProjectors, ProjectorByBinPair,\l ProjectorByBinPair \&gt;" alt="" coords="1200,246,1431,317"/>
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="749,145,905,186"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="185,152,364,179"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,174,563,215"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,152,136,179"/>
-<area shape="rect" id="node7" href="$classstir_1_1ProjectorByBinPairUsingNiftyPET.html" title="A projector pair based on NiftyPET projectors. " alt="" coords="1521,13,1680,54"/>
-<area shape="rect" id="node9" href="$classstir_1_1ProjectorByBinPairUsingParallelproj.html" title="A projector pair based on Parallelproj projectors. " alt="" coords="1521,93,1680,134"/>
-<area shape="rect" id="node11" href="$classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html" title="A projector pair based on a single matrix. " alt="" coords="1521,173,1680,214"/>
-<area shape="rect" id="node13" href="$classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html" title="A projector pair based on a single matrix. " alt="" coords="1517,261,1684,302"/>
+<area shape="rect" id="Node000001" title="Abstract base class for all projector pairs." alt="" coords="1023,164,1193,191"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1263,5,1552,67"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1134,151,1182,113,1241,76,1267,68,1272,67,1244,81,1185,117,1137,156"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1263,91,1552,152"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1200,158,1260,149,1265,148,1201,163"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1242,176,1573,238"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1208,185,1244,191,1239,191,1208,190"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1282,262,1533,341"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1146,197,1192,223,1243,247,1284,265,1279,264,1241,252,1190,227,1145,202"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="802,155,973,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="989,175,1025,177,1019,178,989,180"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="194,165,388,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,169,580,162,778,164,804,168,799,169,778,169,580,167,404,174"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="438,186,600,230"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="403,191,440,197,435,198,404,196"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="5,165,145,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="159,176,196,178,191,180,161,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="615,198,804,184,799,185,616,203"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1ProjectorByBinPairUsingNiftyPET.html" title="A projector pair based on NiftyPET projectors." alt="" coords="1628,14,1798,58"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1567,34,1630,36,1624,36,1567,39"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1ProjectorByBinPairUsingParallelproj.html" title="A projector pair based on Parallelproj projectors." alt="" coords="1628,99,1798,144"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1567,119,1630,121,1624,122,1567,124"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html" title="A projector pair based on a single matrix." alt="" coords="1628,184,1798,229"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1588,204,1630,207,1625,207,1588,209"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html" title="A projector pair based on a single matrix." alt="" coords="1622,279,1803,324"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1549,299,1624,301,1619,302,1549,304"/>
 </map>

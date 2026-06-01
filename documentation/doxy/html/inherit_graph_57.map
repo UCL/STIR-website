@@ -1,3 +1,728 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1CListTimeDataLMF.html" title="A class for storing and using a timing &#39;event&#39; from a listmode file. " alt="" coords="5,5,168,32"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1ArrayFunctionObject.html" title=" " alt="" coords="5,1698,205,1742"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="273,1620,478,1682"/>
+<area shape="poly" id="edge52_Node000000_Node000001" title=" " alt="" coords="208,1692,274,1675,271,1679,212,1695"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="273,1758,478,1820"/>
+<area shape="poly" id="edge53_Node000000_Node000002" title=" " alt="" coords="208,1745,275,1761,270,1765,211,1749"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title=" " alt="" coords="592,1810,795,1854"/>
+<area shape="poly" id="edge54_Node000002_Node000003" title=" " alt="" coords="491,1803,594,1817,590,1820,494,1807"/>
+<area shape="rect" id="Node000356" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title=" " alt="" coords="592,1723,795,1768"/>
+<area shape="poly" id="edge56_Node000002_Node000356" title=" " alt="" coords="491,1771,594,1757,590,1761,495,1775"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ColsherFilter.html" title="This class contains the Colsher filter used for 3D&#45;PET reconstruction." alt="" coords="945,1826,1077,1854"/>
+<area shape="poly" id="edge55_Node000003_Node000004" title=" " alt="" coords="809,1833,946,1837,942,1840,812,1837"/>
+<area shape="rect" id="Node000355" href="$classstir_1_1RampFilter.html" title="The ramp filter used for (2D) FBP." alt="" coords="950,1722,1072,1750"/>
+<area shape="poly" id="edge57_Node000356_Node000355" title=" " alt="" coords="809,1740,952,1736,948,1740,812,1744"/>
+<area shape="rect" id="Node000339" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="29,7299,181,7344"/>
+<area shape="rect" id="Node000340" href="$classstir_1_1GE_1_1RDF__HDF5_1_1GEHDF5ListmodeInputFileFormat.html" title="Class for being able to read list mode data from the GE Signa PET/MR scanner via the listmode&#45;data re..." alt="" coords="253,7299,498,7344"/>
+<area shape="poly" id="edge58_Node000339_Node000340" title=" " alt="" coords="195,7319,254,7319,250,7323,199,7323"/>
+<area shape="rect" id="Node000341" href="$classstir_1_1PENNListmodeInputFileFormat.html" title="Base class for PENN listmode file format support." alt="" coords="274,7368,476,7413"/>
+<area shape="poly" id="edge59_Node000339_Node000341" title=" " alt="" coords="195,7342,288,7366,283,7369,198,7347"/>
+<area shape="rect" id="Node000342" href="$classstir_1_1ROOTListmodeInputFileFormat.html" title="The ROOTListmodeInputFileFormat class." alt="" coords="274,7438,477,7482"/>
+<area shape="poly" id="edge60_Node000339_Node000342" title=" " alt="" coords="143,7351,196,7389,254,7423,284,7436,279,7439,251,7428,193,7393,145,7356"/>
+<area shape="rect" id="Node000338" href="$classstir_1_1SAFIRCListmodeInputFileFormat.html" title="Class for reading SAFIR coincidence listmode data." alt="" coords="266,7091,484,7136"/>
+<area shape="poly" id="edge61_Node000339_Node000338" title=" " alt="" coords="125,7285,177,7214,212,7177,251,7146,277,7134,274,7138,254,7150,215,7181,181,7217,130,7286"/>
+<area shape="rect" id="Node000343" href="$classstir_1_1ecat_1_1ECAT8__32bitListmodeInputFileFormat.html" title="Class for being able to read list mode data from the ECAT 8_32bit scanner via the listmode&#45;data regis..." alt="" coords="262,7507,489,7552"/>
+<area shape="poly" id="edge62_Node000339_Node000343" title=" " alt="" coords="127,7355,181,7426,215,7462,254,7492,277,7505,273,7508,251,7497,212,7466,177,7429,128,7360"/>
+<area shape="rect" id="Node000344" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT962ListmodeInputFileFormat.html" title="Class for reading list mode data from the ECAT 962 scanner." alt="" coords="255,7160,496,7205"/>
+<area shape="poly" id="edge63_Node000339_Node000344" title=" " alt="" coords="142,7288,193,7249,251,7215,283,7203,280,7208,254,7220,196,7254,147,7290"/>
+<area shape="rect" id="Node000345" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT966ListmodeInputFileFormat.html" title="Class for reading list mode data from the ECAT 966 scanner." alt="" coords="255,7230,496,7274"/>
+<area shape="poly" id="edge64_Node000339_Node000345" title=" " alt="" coords="194,7296,287,7273,284,7277,198,7300"/>
+<area shape="rect" id="Node000328" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="35,6789,175,6816"/>
+<area shape="poly" id="edge397_Node000328_Node000338" title=" " alt="" coords="113,6829,133,6884,161,6950,201,7018,226,7049,254,7077,273,7089,269,7092,251,7081,222,7053,196,7021,156,6952,128,6885,114,6834"/>
+<area shape="rect" id="Node000329" href="$classstir_1_1CorrectProjDataApplication.html" title="class to do precorrections" alt="" coords="262,6988,488,7015"/>
+<area shape="poly" id="edge65_Node000328_Node000329" title=" " alt="" coords="121,6828,146,6862,175,6902,212,6940,254,6972,282,6986,277,6988,251,6977,208,6944,171,6905,141,6865,122,6833"/>
+<area shape="rect" id="Node000330" href="$classstir_1_1CreateTailMaskFromACFs.html" title="The CreateTailMaskFromACFs class." alt="" coords="267,7040,484,7067"/>
+<area shape="poly" id="edge66_Node000328_Node000330" title=" " alt="" coords="116,6828,138,6873,167,6927,206,6980,229,7004,254,7024,278,7038,273,7040,251,7029,225,7008,202,6984,162,6930,133,6876,117,6833"/>
+<area shape="rect" id="Node000331" href="$classstir_1_1FindMCNormFactors.html" title="Class to compute &#39;time&#45;efficiency&#39; factors for motino corrected projection data." alt="" coords="285,6556,466,6583"/>
+<area shape="poly" id="edge67_Node000328_Node000331" title=" " alt="" coords="115,6774,136,6733,165,6684,204,6635,251,6594,286,6579,283,6583,254,6598,208,6639,170,6687,140,6736,120,6776"/>
+<area shape="rect" id="Node000332" href="$classstir_1_1LmToProjDataAbstract.html" title="This class is the abstract base class fir binning listmode data to projection data,..." alt="" coords="278,1706,472,1734"/>
+<area shape="poly" id="edge68_Node000328_Node000332" title=" " alt="" coords="104,6773,117,5831,147,4147,167,3275,192,2519,205,2214,219,1975,234,1815,242,1768,251,1745,279,1726,276,1731,255,1748,247,1770,240,1816,225,1976,210,2214,197,2519,173,3276,152,4147,122,5831,109,6774"/>
+<area shape="rect" id="Node000335" href="$classstir_1_1MatchTrackerAndScanner.html" title="A class for finding the coordinate transformation between tracker and scanner coordinate systems." alt="" coords="269,6608,482,6635"/>
+<area shape="poly" id="edge71_Node000328_Node000335" title=" " alt="" coords="121,6775,174,6709,210,6674,251,6646,283,6633,280,6638,254,6650,214,6679,178,6713,126,6777"/>
+<area shape="rect" id="Node000336" href="$classstir_1_1MyApp.html" title="A class for moving an image according to average motion in the frame." alt="" coords="328,6660,423,6687"/>
+<area shape="poly" id="edge72_Node000328_Node000336" title=" " alt="" coords="131,6777,185,6736,252,6698,289,6685,329,6677,325,6681,291,6690,254,6702,188,6740,136,6780"/>
+<area shape="rect" id="Node000337" href="$classstir_1_1PrepareProjData.html" title="A preliminary class to prepare files for iterative reconstruction." alt="" coords="297,6712,454,6739"/>
+<area shape="poly" id="edge73_Node000328_Node000337" title=" " alt="" coords="156,6781,252,6749,303,6738,300,6742,253,6755,160,6785"/>
+<area shape="rect" id="Node000045" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="278,6764,472,6791"/>
+<area shape="poly" id="edge74_Node000328_Node000045" title=" " alt="" coords="188,6793,279,6785,276,6788,192,6797"/>
+<area shape="rect" id="Node000346" href="$classstir_1_1ScatterEstimation.html" title="Estimate the scatter probability using a model&#45;based approach." alt="" coords="292,6816,458,6843"/>
+<area shape="poly" id="edge398_Node000328_Node000346" title=" " alt="" coords="189,6809,294,6819,290,6823,192,6813"/>
+<area shape="rect" id="Node000347" href="$classstir_1_1SqrtHessianRowSum.html" title="Implementations of two square root Hessian row sum computation methods, as proposed by Tsai et al...." alt="" coords="283,6867,468,6912"/>
+<area shape="poly" id="edge399_Node000328_Node000347" title=" " alt="" coords="157,6820,253,6852,293,6865,289,6868,252,6857,160,6824"/>
+<area shape="rect" id="Node000348" href="$classstir_1_1TimeFrameMotion.html" title="A class for encoding average motion in the frames." alt="" coords="291,6936,460,6963"/>
+<area shape="poly" id="edge400_Node000328_Node000348" title=" " alt="" coords="128,6825,184,6875,218,6901,254,6922,293,6936,288,6939,252,6926,215,6905,181,6879,130,6830"/>
+<area shape="rect" id="Node000333" href="$classstir_1_1LmToProjData.html" title="This class is used to bin listmode data to projection data, i.e. (3d) sinograms." alt="" coords="624,1624,764,1651"/>
+<area shape="poly" id="edge69_Node000332_Node000333" title=" " alt="" coords="459,1700,497,1691,647,1650,644,1654,499,1696,463,1704"/>
+<area shape="rect" id="Node000334" href="$classstir_1_1LmToProjDataWithMC.html" title="Class for binning list mode files with motion correction." alt="" coords="915,1584,1107,1611"/>
+<area shape="poly" id="edge70_Node000333_Node000334" title=" " alt="" coords="778,1625,917,1607,913,1611,781,1628"/>
+<area shape="rect" id="Node000046" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,6208,775,6253"/>
+<area shape="poly" id="edge75_Node000045_Node000046" title=" " alt="" coords="484,6760,496,6749,514,6726,527,6704,540,6661,541,6618,534,6574,525,6528,520,6481,525,6430,544,6375,567,6337,597,6303,660,6251,657,6256,601,6307,572,6340,548,6377,530,6431,526,6481,531,6528,539,6573,546,6617,545,6661,532,6706,519,6729,500,6753,488,6762"/>
+<area shape="rect" id="Node000054" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="583,2318,804,2380"/>
+<area shape="poly" id="edge83_Node000045_Node000054" title=" " alt="" coords="483,6761,496,6749,502,6730,508,6688,517,6544,527,6058,530,5384,528,4616,525,3171,530,2680,535,2534,543,2468,561,2441,583,2416,634,2378,632,2383,586,2420,565,2444,549,2470,540,2534,535,2680,530,3171,534,4616,535,5384,533,6058,522,6545,513,6689,507,6731,500,6752,488,6763"/>
+<area shape="rect" id="Node000067" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="575,6388,812,6450"/>
+<area shape="poly" id="edge96_Node000045_Node000067" title=" " alt="" coords="484,6757,496,6749,518,6728,542,6696,593,6612,641,6521,679,6447,677,6452,645,6524,598,6615,547,6699,522,6731,500,6753,488,6759"/>
+<area shape="rect" id="Node000077" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="584,2481,803,2543"/>
+<area shape="poly" id="edge106_Node000045_Node000077" title=" " alt="" coords="483,6761,496,6749,502,6731,507,6692,516,6556,528,6097,532,5461,532,4737,531,3372,534,2909,538,2770,543,2707,566,2658,596,2612,628,2573,660,2540,658,2545,632,2576,600,2615,571,2660,549,2709,543,2770,539,2909,536,3372,538,4737,538,5461,533,6097,522,6556,512,6692,507,6732,500,6752,488,6763"/>
+<area shape="rect" id="Node000079" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="604,2720,783,2765"/>
+<area shape="poly" id="edge108_Node000045_Node000079" title=" " alt="" coords="483,6761,496,6749,501,6733,506,6697,515,6574,527,6158,533,5582,536,4925,536,3688,538,3267,543,3084,571,2987,608,2896,646,2819,679,2763,678,2768,651,2821,613,2898,576,2989,549,3084,543,3267,541,3688,541,4925,539,5582,532,6159,520,6575,512,6698,506,6734,500,6752,488,6763"/>
+<area shape="rect" id="Node000093" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,6716,776,6761"/>
+<area shape="poly" id="edge122_Node000045_Node000093" title=" " alt="" coords="486,6762,613,6747,609,6751,490,6766"/>
+<area shape="rect" id="Node000117" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="586,3096,801,3141"/>
+<area shape="poly" id="edge146_Node000045_Node000117" title=" " alt="" coords="483,6761,496,6749,506,6726,515,6686,529,6558,536,6375,539,6146,533,5587,520,4954,507,4322,501,3762,504,3533,511,3349,524,3220,533,3179,544,3154,563,3137,587,3126,585,3130,566,3142,548,3158,538,3181,529,3221,516,3349,509,3533,507,3762,512,4321,526,4954,539,5587,544,6146,541,6375,534,6558,521,6687,511,6728,500,6752,488,6763"/>
+<area shape="rect" id="Node000130" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="594,4690,793,4734"/>
+<area shape="poly" id="edge159_Node000045_Node000130" title=" " alt="" coords="484,6760,496,6749,506,6718,515,6654,526,6448,531,6169,532,5852,532,5251,535,5041,539,4974,543,4938,569,4876,603,4819,639,4770,672,4732,670,4737,643,4773,608,4822,574,4878,549,4939,544,4974,541,5041,538,5251,538,5852,536,6169,531,6448,520,6655,511,6719,500,6752,489,6763"/>
+<area shape="rect" id="Node000144" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="578,6785,809,6847"/>
+<area shape="poly" id="edge173_Node000045_Node000144" title=" " alt="" coords="486,6789,580,6800,576,6804,490,6793"/>
+<area shape="rect" id="Node000160" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="580,6871,808,6916"/>
+<area shape="poly" id="edge190_Node000045_Node000160" title=" " alt="" coords="484,6795,499,6802,515,6815,524,6830,533,6844,547,6856,581,6873,577,6875,545,6861,529,6847,520,6833,511,6819,497,6806,486,6800"/>
+<area shape="rect" id="Node000164" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="546,6940,841,7002"/>
+<area shape="poly" id="edge194_Node000045_Node000164" title=" " alt="" coords="486,6793,500,6802,513,6817,521,6833,525,6865,529,6896,536,6911,548,6926,563,6938,558,6940,544,6930,531,6914,524,6898,520,6866,516,6835,509,6820,496,6806,488,6798"/>
+<area shape="rect" id="Node000172" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="576,7025,811,7087"/>
+<area shape="poly" id="edge202_Node000045_Node000172" title=" " alt="" coords="485,6792,500,6802,519,6828,528,6855,528,6882,526,6908,523,6934,523,6960,530,6986,548,7011,579,7034,574,7036,544,7015,526,6988,518,6961,517,6934,520,6908,523,6881,522,6856,514,6831,496,6806,487,6797"/>
+<area shape="rect" id="Node000174" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="582,7111,806,7156"/>
+<area shape="poly" id="edge204_Node000045_Node000174" title=" " alt="" coords="485,6791,500,6802,515,6821,525,6839,534,6877,532,6914,525,6952,518,6988,516,7025,524,7061,534,7079,548,7097,564,7110,583,7121,579,7123,561,7114,544,7101,529,7082,519,7063,511,7025,512,6988,520,6951,527,6914,529,6877,520,6841,510,6824,496,6806,487,6796"/>
+<area shape="rect" id="Node000180" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="578,7180,809,7242"/>
+<area shape="poly" id="edge210_Node000045_Node000180" title=" " alt="" coords="485,6791,500,6802,518,6825,530,6848,537,6871,540,6894,536,6940,526,6985,516,7031,512,7076,514,7098,520,7121,531,7143,548,7166,562,7179,580,7191,575,7193,559,7184,544,7170,527,7146,515,7123,509,7099,507,7076,511,7030,521,6984,531,6939,534,6894,532,6872,525,6850,513,6828,496,6806,487,6796"/>
+<area shape="rect" id="Node000186" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,7266,775,7310"/>
+<area shape="poly" id="edge216_Node000045_Node000186" title=" " alt="" coords="485,6791,500,6802,521,6831,536,6859,543,6888,546,6916,540,6973,525,7029,510,7085,504,7141,506,7168,514,7196,527,7224,548,7252,561,7264,577,7273,614,7285,610,7288,575,7278,558,7268,544,7255,523,7226,509,7198,501,7169,499,7141,505,7084,520,7028,534,6972,541,6916,538,6889,531,6861,517,6833,496,6806,487,6796"/>
+<area shape="rect" id="Node000190" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="580,7334,807,7396"/>
+<area shape="poly" id="edge220_Node000045_Node000190" title=" " alt="" coords="485,6791,500,6802,513,6822,522,6847,530,6909,530,6983,526,7063,521,7142,521,7216,529,7278,537,7302,548,7321,563,7335,583,7347,578,7349,560,7339,544,7324,532,7304,523,7279,516,7216,516,7142,520,7062,525,6983,525,6909,516,6848,508,6824,496,6806,487,6796"/>
+<area shape="rect" id="Node000195" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="577,7420,810,7465"/>
+<area shape="poly" id="edge225_Node000045_Node000195" title=" " alt="" coords="485,6791,500,6802,515,6825,524,6854,533,6927,532,7013,525,7106,518,7199,517,7285,525,7356,534,7384,548,7406,562,7419,579,7429,574,7431,558,7423,544,7410,530,7387,520,7357,511,7285,513,7199,520,7106,526,7013,528,6927,519,6855,510,6828,496,6806,487,6796"/>
+<area shape="rect" id="Node000203" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="575,7490,812,7534"/>
+<area shape="poly" id="edge233_Node000045_Node000203" title=" " alt="" coords="485,6791,500,6802,516,6828,527,6860,533,6898,536,6941,533,7037,525,7141,517,7244,514,7340,517,7382,523,7420,533,7451,548,7476,577,7498,572,7500,544,7479,528,7453,517,7421,511,7383,509,7340,511,7244,520,7140,528,7037,531,6941,528,6899,522,6861,511,6830,496,6806,487,6796"/>
+<area shape="rect" id="Node000212" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="608,5040,780,5085"/>
+<area shape="poly" id="edge242_Node000045_Node000212" title=" " alt="" coords="484,6760,496,6749,504,6725,511,6674,521,6512,527,6290,530,6040,534,5565,537,5398,543,5317,570,5246,605,5181,642,5125,675,5083,673,5088,646,5128,610,5184,575,5249,549,5318,542,5399,539,5565,536,6040,532,6290,527,6512,516,6675,509,6726,500,6752,489,6763"/>
+<area shape="rect" id="Node000216" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,5330,775,5374"/>
+<area shape="poly" id="edge246_Node000045_Node000216" title=" " alt="" coords="484,6760,496,6749,508,6724,518,6683,531,6560,537,6401,538,6223,535,5880,536,5752,543,5675,572,5585,609,5499,646,5426,679,5372,677,5377,651,5428,614,5501,577,5587,549,5677,542,5752,540,5880,543,6223,542,6401,537,6561,524,6683,513,6726,500,6752,488,6763"/>
+<area shape="rect" id="Node000234" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="604,7559,784,7604"/>
+<area shape="poly" id="edge264_Node000045_Node000234" title=" " alt="" coords="485,6791,500,6802,518,6831,529,6866,536,6908,539,6955,535,7061,525,7175,515,7289,511,7395,514,7442,520,7483,531,7518,548,7545,573,7565,605,7577,601,7580,570,7569,544,7548,527,7520,515,7484,509,7442,506,7395,510,7289,520,7175,530,7061,533,6955,531,6909,524,6867,513,6833,496,6806,487,6796"/>
+<area shape="rect" id="Node000239" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="608,7628,779,7673"/>
+<area shape="poly" id="edge269_Node000045_Node000239" title=" " alt="" coords="485,6791,500,6802,519,6833,532,6872,539,6918,541,6969,537,7085,525,7210,513,7335,509,7450,511,7501,518,7546,530,7584,548,7614,575,7635,610,7647,605,7650,572,7640,544,7618,525,7587,513,7548,506,7502,503,7450,508,7334,520,7209,531,7085,536,6969,533,6918,526,6873,514,6835,496,6806,487,6796"/>
+<area shape="rect" id="Node000249" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="580,5688,807,5733"/>
+<area shape="poly" id="edge279_Node000045_Node000249" title=" " alt="" coords="484,6760,496,6749,507,6725,515,6686,523,6570,524,6419,520,6250,516,6081,516,5929,524,5812,532,5772,544,5746,560,5731,581,5721,578,5725,563,5736,548,5750,537,5773,529,5813,522,5929,521,6081,525,6250,529,6419,529,6570,520,6687,512,6727,500,6752,488,6763"/>
+<area shape="rect" id="Node000258" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="599,7698,788,7742"/>
+<area shape="poly" id="edge288_Node000045_Node000258" title=" " alt="" coords="485,6791,500,6802,521,6836,534,6878,541,6928,544,6984,538,7109,525,7245,512,7380,506,7505,508,7561,516,7610,529,7651,548,7684,571,7702,601,7715,596,7717,568,7707,544,7687,524,7653,510,7611,503,7561,501,7505,506,7380,520,7244,533,7109,539,6984,536,6928,529,6879,516,6838,496,6806,487,6796"/>
+<area shape="rect" id="Node000262" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="586,7766,801,7828"/>
+<area shape="poly" id="edge292_Node000045_Node000262" title=" " alt="" coords="485,6791,500,6802,522,6838,537,6884,545,6937,547,6997,541,7132,527,7278,512,7424,505,7559,507,7619,514,7672,528,7717,548,7753,566,7769,588,7782,583,7785,562,7774,544,7756,523,7719,509,7673,502,7619,500,7559,507,7423,521,7277,536,7132,542,6997,539,6938,531,6885,517,6841,496,6806,487,6796"/>
+<area shape="rect" id="Node000266" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="610,7852,777,7897"/>
+<area shape="poly" id="edge296_Node000045_Node000266" title=" " alt="" coords="485,6791,500,6802,512,6828,521,6870,529,6990,529,7147,525,7322,521,7496,521,7653,529,7773,537,7814,548,7838,561,7850,576,7860,612,7872,607,7875,574,7864,558,7855,544,7842,532,7816,523,7774,515,7653,515,7496,520,7322,524,7147,524,6991,516,6871,507,6830,496,6806,487,6796"/>
+<area shape="rect" id="Node000270" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,7922,775,7966"/>
+<area shape="poly" id="edge300_Node000045_Node000270" title=" " alt="" coords="485,6791,500,6802,513,6830,522,6874,531,7003,530,7170,525,7356,520,7543,519,7710,527,7838,536,7882,548,7908,561,7920,577,7929,614,7942,610,7944,575,7934,558,7924,544,7911,531,7883,522,7839,514,7710,515,7543,520,7356,525,7170,525,7003,517,6875,508,6832,496,6806,487,6796"/>
+<area shape="rect" id="Node000283" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="612,7991,775,8036"/>
+<area shape="poly" id="edge313_Node000045_Node000283" title=" " alt="" coords="485,6791,500,6802,514,6832,523,6879,529,6941,532,7016,531,7193,525,7391,519,7589,518,7767,526,7903,535,7949,548,7977,561,7989,577,7999,614,8011,610,8014,575,8004,558,7994,544,7980,530,7951,521,7904,513,7767,514,7589,520,7391,525,7193,527,7016,524,6941,518,6879,509,6833,496,6806,487,6796"/>
+<area shape="rect" id="Node000293" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="596,8060,791,8105"/>
+<area shape="poly" id="edge323_Node000045_Node000293" title=" " alt="" coords="485,6791,500,6802,515,6833,525,6883,531,6949,533,7028,532,7216,525,7426,518,7635,517,7823,519,7902,525,7968,534,8017,548,8046,570,8065,598,8077,594,8079,567,8069,544,8050,529,8018,520,7969,514,7903,511,7824,513,7635,520,7426,526,7216,528,7028,525,6949,519,6884,510,6835,496,6806,487,6796"/>
+<area shape="rect" id="Node000297" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="604,5761,783,5839"/>
+<area shape="poly" id="edge327_Node000045_Node000297" title=" " alt="" coords="484,6760,496,6749,516,6716,530,6675,538,6625,541,6570,536,6444,524,6308,511,6171,505,6044,507,5986,513,5935,525,5891,544,5856,570,5831,605,5815,602,5819,573,5835,548,5859,530,5893,518,5936,512,5987,510,6044,516,6171,529,6307,542,6444,546,6570,543,6626,535,6676,521,6719,500,6752,488,6763"/>
+<area shape="rect" id="Node000299" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="604,5870,783,5949"/>
+<area shape="poly" id="edge329_Node000045_Node000299" title=" " alt="" coords="484,6760,496,6749,514,6721,526,6685,533,6642,536,6594,534,6484,524,6366,514,6247,510,6136,512,6086,517,6042,528,6003,544,5972,570,5946,605,5928,602,5932,573,5950,548,5975,533,6005,523,6043,517,6087,515,6136,520,6247,530,6366,539,6484,542,6594,538,6643,531,6686,518,6723,500,6752,488,6763"/>
+<area shape="rect" id="Node000301" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="601,8129,786,8207"/>
+<area shape="poly" id="edge331_Node000045_Node000301" title=" " alt="" coords="485,6791,500,6802,516,6835,526,6887,532,6957,535,7040,534,7238,527,7459,520,7680,518,7878,520,7962,525,8031,535,8084,548,8116,572,8138,603,8153,598,8156,569,8142,544,8119,530,8085,520,8032,515,7962,512,7878,515,7680,522,7459,529,7238,530,7040,527,6957,521,6888,510,6837,496,6806,487,6796"/>
+<area shape="rect" id="Node000303" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="604,1887,784,1966"/>
+<area shape="poly" id="edge333_Node000045_Node000303" title=" " alt="" coords="483,6761,496,6749,503,6728,509,6681,518,6521,524,6282,528,5978,528,5227,523,4371,518,3515,516,2763,523,2219,531,2057,537,2009,544,1985,570,1959,605,1942,602,1947,573,1964,548,1988,542,2010,537,2057,529,2219,522,2763,523,3515,528,4371,533,5227,533,5978,530,6282,524,6521,514,6682,508,6729,500,6752,488,6763"/>
+<area shape="rect" id="Node000305" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="592,1999,795,2044"/>
+<area shape="poly" id="edge335_Node000045_Node000305" title=" " alt="" coords="483,6761,496,6749,503,6728,509,6682,518,6524,523,6289,526,5990,526,5249,520,4406,515,3563,514,2822,516,2522,522,2287,531,2128,536,2082,544,2059,565,2039,593,2027,590,2032,568,2044,548,2061,542,2083,536,2129,527,2287,522,2522,519,2822,520,3563,525,4406,531,5249,532,5990,529,6289,523,6524,514,6683,508,6729,500,6752,488,6763"/>
+<area shape="rect" id="Node000307" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="582,5986,805,6030"/>
+<area shape="poly" id="edge337_Node000045_Node000307" title=" " alt="" coords="484,6760,496,6749,511,6724,522,6693,529,6656,532,6613,531,6518,524,6414,516,6310,513,6213,520,6130,530,6096,544,6069,567,6045,599,6029,596,6033,571,6050,548,6072,535,6098,525,6131,518,6213,521,6310,529,6414,536,6518,538,6613,534,6656,527,6694,516,6727,500,6752,488,6763"/>
+<area shape="rect" id="Node000311" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="575,2072,812,2134"/>
+<area shape="poly" id="edge341_Node000045_Node000311" title=" " alt="" coords="483,6761,496,6749,502,6729,508,6684,518,6529,524,6300,527,6007,527,5284,523,4460,518,3636,517,2911,524,2387,532,2232,537,2186,544,2163,559,2145,579,2132,577,2136,562,2149,548,2165,542,2187,537,2232,529,2387,522,2911,523,3636,528,4460,532,5284,532,6007,529,6300,523,6530,514,6684,508,6730,500,6752,488,6763"/>
+<area shape="rect" id="Node000313" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="578,2177,809,2255"/>
+<area shape="poly" id="edge343_Node000045_Node000313" title=" " alt="" coords="483,6761,496,6749,502,6729,508,6686,517,6537,527,6031,529,5331,526,4533,521,3033,527,2524,534,2373,538,2328,544,2306,566,2276,598,2254,596,2258,570,2280,548,2308,543,2329,539,2373,532,2525,527,3033,531,4533,534,5331,532,6031,523,6537,513,6686,507,6730,500,6752,488,6763"/>
+<area shape="rect" id="Node000321" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="578,4950,810,5012"/>
+<area shape="poly" id="edge351_Node000045_Node000321" title=" " alt="" coords="484,6760,496,6749,506,6732,515,6708,528,6640,535,6550,538,6441,534,6181,522,5891,510,5601,504,5341,507,5231,513,5140,525,5070,534,5045,544,5026,558,5011,578,5000,575,5005,562,5016,548,5030,539,5047,530,5072,519,5140,512,5231,510,5341,515,5601,527,5891,539,6181,543,6441,541,6550,533,6641,520,6709,511,6734,500,6752,489,6763"/>
+<area shape="rect" id="Node000326" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="572,6083,815,6128"/>
+<area shape="poly" id="edge356_Node000045_Node000326" title=" " alt="" coords="484,6760,496,6749,509,6729,518,6704,528,6639,529,6562,526,6478,521,6393,520,6314,526,6246,533,6218,544,6195,561,6173,582,6154,631,6126,628,6131,585,6158,565,6176,548,6197,538,6219,531,6247,525,6314,527,6393,531,6478,535,6562,533,6640,523,6705,514,6731,500,6752,488,6763"/>
+<area shape="rect" id="Node000030" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="612,4492,775,4537"/>
+<area shape="poly" id="edge358_Node000045_Node000030" title=" " alt="" coords="483,6761,496,6749,508,6713,517,6640,528,6404,531,6084,531,5721,528,5034,532,4793,537,4717,543,4676,567,4633,597,4594,630,4561,663,4535,660,4540,633,4565,601,4597,571,4636,549,4678,542,4718,537,4794,534,5034,536,5721,537,6084,533,6404,522,6641,513,6714,500,6752,488,6763"/>
+<area shape="rect" id="Node000047" href="$classstir_1_1AbsTimeInterval.html" title="Base class for specifying a time interval (in absolute time)" alt="" coords="932,5941,1090,5968"/>
+<area shape="poly" id="edge76_Node000046_Node000047" title=" " alt="" coords="750,6199,795,6170,840,6138,889,6092,934,6044,1000,5967,998,5971,938,6048,893,6096,843,6142,798,6175,754,6202"/>
+<area shape="rect" id="Node000048" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1263,5753,1532,5815"/>
+<area shape="poly" id="edge77_Node000047_Node000048" title=" " alt="" coords="1103,5943,1131,5927,1142,5916,1149,5904,1154,5877,1159,5850,1167,5837,1179,5825,1218,5802,1264,5789,1261,5792,1221,5807,1182,5829,1171,5840,1164,5852,1159,5878,1154,5905,1147,5919,1134,5931,1107,5946"/>
+<area shape="rect" id="Node000050" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1267,5838,1529,5900"/>
+<area shape="poly" id="edge79_Node000047_Node000050" title=" " alt="" coords="1102,5935,1132,5927,1180,5909,1268,5890,1264,5894,1181,5915,1133,5932,1106,5939"/>
+<area shape="rect" id="Node000052" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1267,5924,1529,5986"/>
+<area shape="poly" id="edge81_Node000047_Node000052" title=" " alt="" coords="1104,5953,1268,5953,1264,5956,1107,5957"/>
+<area shape="rect" id="Node000049" href="$classstir_1_1AbsTimeIntervalFromDynamicData.html" title="class for specifying a time interval via a dynamic scan" alt="" coords="1856,5762,2046,5806"/>
+<area shape="poly" id="edge78_Node000048_Node000049" title=" " alt="" coords="1546,5782,1858,5782,1853,5786,1549,5786"/>
+<area shape="rect" id="Node000051" href="$classstir_1_1AbsTimeIntervalFromECAT7ACF.html" title="class for specifying a time interval via an ECAT7 .a file" alt="" coords="1856,5831,2046,5876"/>
+<area shape="poly" id="edge80_Node000050_Node000051" title=" " alt="" coords="1543,5863,1858,5854,1853,5858,1546,5867"/>
+<area shape="rect" id="Node000053" href="$classstir_1_1AbsTimeIntervalWithParsing.html" title="class for specifying a time interval via parsing of explicit times" alt="" coords="1858,5900,2045,5945"/>
+<area shape="poly" id="edge82_Node000052_Node000053" title=" " alt="" coords="1543,5944,1859,5926,1855,5930,1546,5948"/>
+<area shape="rect" id="Node000055" href="$classstir_1_1Reconstruction.html" title=" " alt="" coords="931,2032,1091,2094"/>
+<area shape="poly" id="edge84_Node000054_Node000055" title=" " alt="" coords="786,2309,815,2289,839,2265,852,2244,859,2224,861,2184,864,2145,872,2124,887,2103,907,2088,932,2076,929,2081,910,2092,891,2107,877,2127,869,2146,866,2185,864,2225,857,2246,843,2268,819,2293,791,2312"/>
+<area shape="rect" id="Node000056" href="$classstir_1_1AnalyticReconstruction.html" title="base class for all analytic reconstruction algorithmsThis class provides extra functinoality (compare..." alt="" coords="1298,648,1498,675"/>
+<area shape="poly" id="edge85_Node000055_Node000056" title=" " alt="" coords="1102,2042,1118,2031,1130,2019,1142,1991,1152,1946,1162,1816,1165,1647,1163,1458,1160,1097,1165,963,1170,916,1178,884,1197,848,1220,814,1274,754,1329,706,1376,673,1373,678,1332,710,1278,757,1224,817,1201,851,1183,886,1175,917,1170,963,1165,1097,1169,1458,1170,1647,1167,1816,1157,1947,1148,1993,1135,2021,1122,2035,1107,2045"/>
+<area shape="rect" id="Node000057" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1804,417,2098,495"/>
+<area shape="poly" id="edge86_Node000056_Node000057" title=" " alt="" coords="1428,637,1529,570,1594,534,1662,504,1732,483,1806,470,1802,473,1734,488,1664,509,1596,539,1532,574,1432,640"/>
+<area shape="rect" id="Node000058" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1810,519,2092,598"/>
+<area shape="poly" id="edge87_Node000056_Node000058" title=" " alt="" coords="1483,642,1663,607,1812,581,1808,585,1663,612,1487,646"/>
+<area shape="rect" id="Node000060" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1809,622,2093,701"/>
+<area shape="poly" id="edge89_Node000056_Node000060" title=" " alt="" coords="1512,659,1811,660,1807,663,1515,663"/>
+<area shape="rect" id="Node000062" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1808,725,2094,803"/>
+<area shape="poly" id="edge91_Node000056_Node000062" title=" " alt="" coords="1486,676,1663,709,1810,737,1806,740,1663,715,1489,681"/>
+<area shape="rect" id="Node000063" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1811,827,2091,906"/>
+<area shape="poly" id="edge92_Node000056_Node000063" title=" " alt="" coords="1430,682,1532,748,1597,783,1664,812,1737,834,1813,850,1808,853,1736,839,1662,817,1594,788,1530,752,1432,687"/>
+<area shape="rect" id="Node000065" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1809,314,2093,393"/>
+<area shape="poly" id="edge94_Node000056_Node000065" title=" " alt="" coords="1415,634,1454,583,1511,519,1581,455,1621,426,1662,402,1697,386,1734,374,1810,359,1807,363,1735,379,1699,391,1664,406,1623,430,1585,459,1515,523,1459,586,1420,636"/>
+<area shape="rect" id="Node000059" href="$classstir_1_1FBP2DReconstruction.html" title="Reconstruction class for 2D Filtered Back Projection." alt="" coords="2401,545,2592,572"/>
+<area shape="poly" id="edge88_Node000058_Node000059" title=" " alt="" coords="2106,557,2403,557,2399,560,2109,561"/>
+<area shape="rect" id="Node000061" href="$classstir_1_1FBP3DRPReconstruction.html" title="This class contains the implementation of the FBP3DRP algorithm." alt="" coords="2393,648,2600,675"/>
+<area shape="poly" id="edge90_Node000060_Node000061" title=" " alt="" coords="2107,659,2394,660,2390,663,2110,663"/>
+<area shape="rect" id="Node000064" href="$classstir_1_1SRT2DReconstruction.html" title="Reconstruction class for 2D Spline Reconstruction Technique." alt="" coords="2402,853,2591,880"/>
+<area shape="poly" id="edge93_Node000063_Node000064" title=" " alt="" coords="2105,865,2403,865,2399,868,2109,869"/>
+<area shape="rect" id="Node000066" href="$classstir_1_1SRT2DSPECTReconstruction.html" title="Reconstruction class for 2D Spline Reconstruction Technique." alt="" coords="2381,340,2612,367"/>
+<area shape="poly" id="edge95_Node000065_Node000066" title=" " alt="" coords="2107,351,2383,352,2379,355,2110,355"/>
+<area shape="rect" id="Node000068" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="926,6266,1096,6328"/>
+<area shape="poly" id="edge97_Node000067_Node000068" title=" " alt="" coords="788,6380,930,6327,926,6331,792,6384"/>
+<area shape="rect" id="Node000069" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1260,6250,1536,6345"/>
+<area shape="poly" id="edge98_Node000068_Node000069" title=" " alt="" coords="1110,6295,1261,6296,1257,6299,1113,6300"/>
+<area shape="rect" id="Node000071" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1260,6370,1536,6465"/>
+<area shape="poly" id="edge100_Node000068_Node000071" title=" " alt="" coords="1110,6331,1181,6355,1261,6379,1257,6382,1180,6360,1112,6336"/>
+<area shape="rect" id="Node000073" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1260,6010,1536,6105"/>
+<area shape="poly" id="edge102_Node000068_Node000073" title=" " alt="" coords="1040,6253,1099,6182,1137,6146,1179,6115,1218,6096,1261,6081,1258,6085,1220,6100,1182,6120,1141,6150,1103,6185,1044,6255"/>
+<area shape="rect" id="Node000075" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1251,6130,1544,6225"/>
+<area shape="poly" id="edge104_Node000068_Node000075" title=" " alt="" coords="1109,6259,1180,6235,1253,6214,1249,6218,1181,6240,1113,6263"/>
+<area shape="rect" id="Node000070" href="$classstir_1_1ecat_1_1ecat6_1_1ECAT6OutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the ECAT6 format." alt="" coords="1864,6090,2039,6134"/>
+<area shape="poly" id="edge99_Node000069_Node000070" title=" " alt="" coords="1549,6270,1583,6255,1613,6235,1624,6225,1630,6214,1636,6190,1642,6167,1650,6155,1661,6144,1709,6120,1762,6106,1814,6100,1866,6101,1861,6104,1815,6105,1763,6111,1711,6125,1665,6149,1654,6159,1647,6169,1641,6192,1635,6216,1628,6228,1617,6239,1586,6260,1553,6274"/>
+<area shape="rect" id="Node000072" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7OutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the ECAT7 format." alt="" coords="1864,6159,2039,6204"/>
+<area shape="poly" id="edge101_Node000071_Node000072" title=" " alt="" coords="1548,6394,1583,6377,1613,6355,1626,6339,1633,6321,1635,6285,1638,6249,1646,6231,1661,6214,1684,6199,1708,6187,1760,6172,1813,6166,1866,6168,1861,6171,1814,6171,1761,6177,1710,6192,1686,6203,1665,6218,1650,6234,1643,6250,1640,6285,1638,6322,1631,6341,1617,6359,1586,6382,1552,6398"/>
+<area shape="rect" id="Node000074" href="$classstir_1_1InterfileOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Interfile format." alt="" coords="1868,5970,2035,6014"/>
+<area shape="poly" id="edge103_Node000073_Node000074" title=" " alt="" coords="1550,6037,1869,6000,1865,6004,1553,6041"/>
+<area shape="rect" id="Node000076" href="$classstir_1_1ITKOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm using the ITK library for writing." alt="" coords="1860,6038,2043,6066"/>
+<area shape="poly" id="edge105_Node000075_Node000076" title=" " alt="" coords="1557,6139,1614,6115,1627,6105,1637,6095,1646,6084,1662,6075,1711,6059,1762,6049,1861,6045,1857,6048,1763,6055,1712,6064,1664,6080,1650,6088,1641,6098,1631,6109,1616,6120,1561,6143"/>
+<area shape="rect" id="Node000078" href="$classstir_1_1DataProcessor.html" title=" " alt="" coords="931,2117,1091,2179"/>
+<area shape="poly" id="edge107_Node000077_Node000078" title=" " alt="" coords="759,2471,803,2434,839,2391,852,2363,858,2337,858,2289,858,2265,860,2241,869,2216,887,2190,907,2174,932,2162,929,2166,910,2178,891,2194,874,2218,866,2242,863,2265,863,2289,863,2338,857,2365,844,2393,806,2438,763,2473"/>
+<area shape="rect" id="Node000080" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors." alt="" coords="922,2204,1100,2231"/>
+<area shape="poly" id="edge109_Node000079_Node000080" title=" " alt="" coords="727,2708,786,2640,815,2598,839,2554,853,2508,856,2466,847,2389,844,2352,846,2316,860,2279,887,2241,903,2229,923,2221,920,2225,906,2233,891,2245,864,2281,852,2317,849,2352,853,2388,861,2466,858,2509,844,2556,820,2601,791,2643,732,2710"/>
+<area shape="rect" id="Node000081" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1286,1324,1510,1386"/>
+<area shape="poly" id="edge110_Node000080_Node000081" title=" " alt="" coords="1112,2204,1131,2189,1148,2160,1160,2123,1167,2079,1170,2029,1165,1916,1153,1794,1142,1672,1138,1558,1140,1508,1147,1463,1160,1426,1179,1396,1201,1376,1227,1362,1256,1353,1288,1348,1284,1352,1257,1358,1229,1367,1204,1380,1183,1399,1165,1428,1153,1465,1146,1509,1143,1559,1147,1671,1159,1793,1170,1916,1175,2029,1172,2079,1165,2124,1153,2162,1135,2192,1117,2207"/>
+<area shape="rect" id="Node000083" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1277,897,1518,959"/>
+<area shape="poly" id="edge112_Node000080_Node000083" title=" " alt="" coords="1111,2205,1131,2189,1144,2160,1153,2112,1159,2048,1162,1971,1160,1786,1154,1580,1147,1375,1146,1190,1148,1112,1154,1048,1164,999,1179,969,1199,950,1223,937,1249,927,1279,923,1275,926,1251,933,1225,942,1202,955,1183,972,1169,1001,1159,1049,1154,1113,1151,1190,1152,1374,1159,1580,1165,1786,1167,1971,1165,2048,1159,2113,1149,2162,1135,2192,1116,2207"/>
+<area shape="rect" id="Node000085" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1254,982,1542,1044"/>
+<area shape="poly" id="edge114_Node000080_Node000085" title=" " alt="" coords="1112,2204,1131,2189,1143,2162,1152,2118,1160,1986,1159,1814,1154,1623,1148,1432,1147,1260,1156,1128,1165,1083,1179,1054,1194,1039,1212,1027,1255,1012,1252,1017,1215,1032,1198,1043,1183,1058,1170,1084,1161,1129,1153,1260,1153,1432,1159,1623,1164,1814,1165,1986,1157,2118,1148,2164,1135,2192,1117,2207"/>
+<area shape="rect" id="Node000087" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1264,1068,1532,1130"/>
+<area shape="poly" id="edge116_Node000080_Node000087" title=" " alt="" coords="1112,2204,1131,2189,1142,2164,1151,2123,1158,2001,1158,1843,1154,1666,1149,1489,1149,1330,1157,1208,1166,1166,1179,1140,1196,1123,1217,1110,1265,1096,1262,1100,1219,1115,1200,1127,1183,1143,1171,1168,1162,1209,1154,1330,1154,1489,1159,1666,1163,1843,1164,2002,1156,2124,1147,2166,1135,2192,1117,2207"/>
+<area shape="rect" id="Node000089" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1262,1153,1534,1215"/>
+<area shape="poly" id="edge118_Node000080_Node000089" title=" " alt="" coords="1112,2204,1131,2189,1152,2154,1166,2108,1174,2055,1176,1994,1169,1857,1153,1708,1138,1560,1131,1423,1133,1362,1141,1307,1156,1261,1179,1225,1196,1209,1216,1196,1264,1181,1260,1185,1219,1201,1199,1213,1183,1228,1161,1264,1147,1309,1139,1362,1136,1423,1143,1560,1159,1708,1174,1856,1181,1994,1179,2055,1171,2109,1157,2156,1135,2192,1117,2207"/>
+<area shape="rect" id="Node000091" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1265,1238,1530,1300"/>
+<area shape="poly" id="edge120_Node000080_Node000091" title=" " alt="" coords="1112,2204,1131,2189,1150,2157,1163,2116,1170,2067,1173,2011,1167,1886,1153,1751,1140,1616,1134,1491,1137,1435,1144,1385,1158,1343,1179,1310,1197,1294,1218,1281,1266,1266,1263,1270,1220,1286,1200,1298,1183,1314,1163,1346,1150,1387,1142,1435,1140,1491,1145,1615,1159,1751,1172,1886,1178,2011,1176,2067,1168,2117,1155,2159,1135,2192,1117,2207"/>
+<area shape="rect" id="Node000082" href="$classstir_1_1BackProjectorByBinNiftyPET.html" title="Class for NiftyPET&#39;s GPU back projector." alt="" coords="1862,1332,2040,1377"/>
+<area shape="poly" id="edge111_Node000081_Node000082" title=" " alt="" coords="1523,1353,1863,1353,1859,1356,1526,1357"/>
+<area shape="rect" id="Node000084" href="$classstir_1_1BackProjectorByBinParallelproj.html" title="Class for Parallelproj&#39;s back projector." alt="" coords="1862,930,2040,974"/>
+<area shape="poly" id="edge113_Node000083_Node000084" title=" " alt="" coords="1532,932,1863,946,1859,950,1535,936"/>
+<area shape="rect" id="Node000086" href="$classstir_1_1BackProjectorByBinUsingInterpolation.html" title="does backprojection by interpolating between the bins." alt="" coords="1862,999,2040,1044"/>
+<area shape="poly" id="edge115_Node000085_Node000086" title=" " alt="" coords="1556,1014,1864,1018,1859,1022,1559,1018"/>
+<area shape="rect" id="Node000088" href="$classstir_1_1BackProjectorByBinUsingProjMatrixByBin.html" title="This implements the BackProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="1862,1076,2040,1121"/>
+<area shape="poly" id="edge117_Node000087_Node000088" title=" " alt="" coords="1546,1097,1864,1097,1860,1100,1549,1101"/>
+<area shape="rect" id="Node000090" href="$classstir_1_1BackProjectorByBinUsingSquareProjMatrixByBin.html" title="This implements the BackProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="1847,1162,2055,1206"/>
+<area shape="poly" id="edge119_Node000089_Node000090" title=" " alt="" coords="1547,1182,1849,1182,1845,1186,1550,1186"/>
+<area shape="rect" id="Node000092" href="$classstir_1_1PostsmoothingBackProjectorByBin.html" title="A very preliminary class that first smooths the image, then back projects." alt="" coords="1832,1247,2070,1292"/>
+<area shape="poly" id="edge121_Node000091_Node000092" title=" " alt="" coords="1545,1267,1834,1268,1830,1271,1548,1271"/>
+<area shape="rect" id="Node000094" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="929,6805,1093,6832"/>
+<area shape="poly" id="edge123_Node000093_Node000094" title=" " alt="" coords="790,6759,842,6771,960,6803,956,6806,841,6776,792,6763"/>
+<area shape="rect" id="Node000095" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,6489,1527,6551"/>
+<area shape="poly" id="edge124_Node000094_Node000095" title=" " alt="" coords="1020,6790,1041,6739,1075,6677,1121,6613,1148,6585,1179,6560,1222,6539,1270,6526,1266,6530,1224,6544,1182,6565,1152,6589,1125,6617,1079,6679,1046,6742,1025,6791"/>
+<area shape="rect" id="Node000097" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1286,6574,1510,6636"/>
+<area shape="poly" id="edge126_Node000094_Node000097" title=" " alt="" coords="1028,6791,1054,6757,1089,6717,1131,6678,1179,6646,1231,6624,1288,6613,1284,6616,1233,6630,1182,6650,1135,6682,1093,6721,1058,6760,1033,6794"/>
+<area shape="rect" id="Node000099" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1277,6660,1519,6722"/>
+<area shape="poly" id="edge128_Node000094_Node000099" title=" " alt="" coords="1046,6795,1108,6762,1180,6731,1278,6707,1274,6710,1182,6736,1110,6766,1051,6798"/>
+<area shape="rect" id="Node000101" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1259,6745,1537,6807"/>
+<area shape="poly" id="edge130_Node000094_Node000101" title=" " alt="" coords="1106,6806,1260,6790,1256,6793,1109,6810"/>
+<area shape="rect" id="Node000103" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1282,6830,1514,6892"/>
+<area shape="poly" id="edge132_Node000094_Node000103" title=" " alt="" coords="1107,6827,1284,6847,1280,6850,1109,6832"/>
+<area shape="rect" id="Node000104" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1293,6916,1502,6978"/>
+<area shape="poly" id="edge133_Node000094_Node000104" title=" " alt="" coords="1048,6838,1110,6871,1182,6901,1237,6918,1295,6931,1291,6933,1236,6923,1180,6907,1108,6876,1049,6843"/>
+<area shape="rect" id="Node000106" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1293,7001,1502,7063"/>
+<area shape="poly" id="edge135_Node000094_Node000106" title=" " alt="" coords="1030,6842,1058,6877,1093,6916,1135,6955,1182,6987,1236,7009,1295,7023,1291,7026,1235,7014,1179,6992,1131,6959,1089,6920,1054,6880,1031,6848"/>
+<area shape="rect" id="Node000108" href="$classstir_1_1BinNormalisationPETFromComponents.html" title="A BinNormalisation class that uses component&#45;based normalisation for PET." alt="" coords="1288,7087,1508,7132"/>
+<area shape="poly" id="edge137_Node000094_Node000108" title=" " alt="" coords="1022,6844,1046,6896,1079,6959,1124,7021,1152,7049,1182,7072,1206,7086,1233,7095,1289,7108,1285,7110,1231,7100,1204,7090,1179,7077,1148,7053,1120,7025,1074,6962,1041,6899,1022,6850"/>
+<area shape="rect" id="Node000109" href="$classstir_1_1BinNormalisationWithCalibration.html" title=" " alt="" coords="1301,7156,1494,7201"/>
+<area shape="poly" id="edge138_Node000094_Node000109" title=" " alt="" coords="1018,6845,1038,6910,1069,6991,1090,7033,1116,7074,1147,7111,1182,7142,1209,7157,1239,7168,1303,7180,1298,7183,1238,7174,1207,7162,1179,7146,1143,7114,1112,7077,1085,7036,1064,6993,1033,6912,1018,6850"/>
+<area shape="rect" id="Node000096" href="$classstir_1_1BinNormalisationFromAttenuationImage.html" title="A BinNormalisation class that gets attenuation correction factors from an attenuation image." alt="" coords="1853,6228,2049,6273"/>
+<area shape="poly" id="edge125_Node000095_Node000096" title=" " alt="" coords="1540,6513,1580,6498,1613,6475,1630,6453,1637,6430,1638,6405,1636,6381,1633,6356,1634,6331,1642,6307,1661,6283,1704,6256,1753,6240,1804,6234,1855,6235,1850,6238,1804,6239,1754,6245,1707,6261,1665,6287,1647,6309,1639,6332,1638,6356,1641,6380,1643,6405,1643,6430,1635,6455,1617,6479,1582,6503,1544,6517"/>
+<area shape="rect" id="Node000098" href="$classstir_1_1BinNormalisationFromML2D.html" title="A BinNormalisation class that gets the normalisation factors from the files output by find_ML_normfac..." alt="" coords="1834,6297,2068,6324"/>
+<area shape="poly" id="edge127_Node000097_Node000098" title=" " alt="" coords="1523,6603,1572,6588,1594,6576,1613,6561,1633,6534,1640,6506,1639,6477,1635,6448,1631,6419,1631,6390,1639,6361,1661,6334,1686,6316,1713,6304,1771,6290,1831,6288,1886,6295,1881,6298,1830,6293,1772,6295,1714,6309,1688,6321,1665,6338,1644,6364,1636,6390,1636,6418,1640,6447,1645,6477,1645,6507,1637,6536,1617,6565,1597,6581,1574,6593,1527,6607"/>
+<area shape="rect" id="Node000100" href="$classstir_1_1BinNormalisationFromProjData.html" title="A BinNormalisation class that gets the normalisation factors from a ProjData object." alt="" coords="1853,6348,2049,6393"/>
+<area shape="poly" id="edge129_Node000099_Node000100" title=" " alt="" coords="1532,6687,1576,6672,1596,6660,1613,6646,1634,6617,1641,6588,1640,6557,1635,6526,1630,6495,1630,6464,1639,6433,1661,6403,1681,6388,1704,6375,1753,6359,1804,6353,1855,6354,1850,6357,1804,6358,1754,6364,1706,6380,1684,6392,1665,6407,1643,6435,1635,6464,1636,6494,1641,6525,1646,6557,1647,6588,1638,6619,1617,6650,1599,6665,1579,6676,1536,6691"/>
+<area shape="rect" id="Node000102" href="$classstir_1_1BinNormalisationSinogramRescaling.html" title="The BinNormalisationSinogramRescaling class gets normaliastion factors by dividing forward projection..." alt="" coords="1838,6418,2064,6462"/>
+<area shape="poly" id="edge131_Node000101_Node000102" title=" " alt="" coords="1550,6767,1585,6753,1613,6731,1635,6701,1643,6669,1641,6636,1635,6603,1629,6570,1628,6537,1637,6504,1661,6473,1700,6446,1745,6430,1792,6423,1840,6423,1836,6426,1792,6428,1746,6435,1703,6451,1665,6477,1642,6507,1634,6537,1635,6569,1640,6602,1646,6636,1648,6669,1640,6703,1617,6735,1587,6757,1554,6771"/>
+<area shape="rect" id="Node000105" href="$classstir_1_1ChainedBinNormalisation.html" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects." alt="" coords="1843,6486,2059,6514"/>
+<area shape="poly" id="edge134_Node000104_Node000105" title=" " alt="" coords="1516,6947,1569,6932,1593,6919,1613,6902,1631,6879,1643,6856,1649,6833,1651,6809,1646,6762,1634,6714,1622,6666,1618,6618,1621,6594,1628,6570,1642,6547,1661,6525,1685,6506,1713,6492,1742,6483,1772,6478,1833,6477,1889,6484,1885,6487,1833,6482,1773,6483,1743,6488,1715,6497,1688,6510,1665,6529,1646,6550,1633,6573,1626,6595,1623,6618,1627,6665,1639,6712,1651,6761,1657,6809,1654,6834,1648,6858,1635,6882,1617,6906,1596,6924,1571,6937,1519,6951"/>
+<area shape="rect" id="Node000107" href="$classstir_1_1TrivialBinNormalisation.html" title="Trivial class which does not do any normalisation whatsoever." alt="" coords="1850,6538,2052,6566"/>
+<area shape="poly" id="edge136_Node000106_Node000107" title=" " alt="" coords="1516,7032,1570,7017,1593,7005,1613,6987,1632,6962,1645,6937,1652,6912,1654,6886,1648,6834,1634,6781,1620,6729,1615,6677,1618,6651,1626,6625,1640,6600,1661,6575,1686,6556,1713,6543,1743,6534,1774,6529,1835,6528,1892,6536,1887,6539,1835,6533,1774,6534,1744,6539,1715,6548,1688,6561,1665,6579,1644,6603,1631,6627,1623,6652,1620,6677,1625,6728,1639,6780,1653,6833,1659,6886,1657,6912,1650,6939,1637,6965,1617,6991,1596,7009,1572,7022,1519,7036"/>
+<area shape="rect" id="Node000110" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1822,6590,2081,6669"/>
+<area shape="poly" id="edge139_Node000109_Node000110" title=" " alt="" coords="1509,7185,1538,7180,1566,7172,1591,7160,1613,7142,1635,7114,1650,7086,1658,7058,1660,7029,1653,6972,1637,6913,1621,6854,1613,6795,1616,6766,1624,6736,1638,6707,1661,6678,1695,6651,1735,6633,1778,6622,1823,6618,1819,6621,1779,6627,1737,6638,1698,6655,1665,6682,1643,6710,1629,6738,1621,6767,1619,6795,1626,6853,1642,6912,1658,6970,1665,7029,1663,7059,1655,7088,1640,7117,1617,7146,1594,7164,1568,7177,1539,7185,1512,7189"/>
+<area shape="rect" id="Node000111" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1806,6693,2096,6771"/>
+<area shape="poly" id="edge140_Node000109_Node000111" title=" " alt="" coords="1508,7184,1538,7180,1566,7172,1591,7160,1613,7142,1631,7121,1642,7099,1649,7077,1652,7055,1648,7010,1637,6964,1626,6918,1621,6872,1624,6849,1631,6826,1643,6803,1661,6781,1692,6756,1728,6738,1767,6727,1808,6723,1804,6726,1768,6733,1730,6743,1695,6760,1665,6785,1647,6806,1636,6828,1629,6850,1627,6872,1631,6917,1642,6963,1653,7009,1657,7055,1654,7078,1647,7101,1635,7124,1617,7146,1594,7164,1567,7177,1539,7185,1511,7188"/>
+<area shape="rect" id="Node000113" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1822,6795,2081,6874"/>
+<area shape="poly" id="edge142_Node000109_Node000113" title=" " alt="" coords="1508,7183,1538,7179,1565,7171,1591,7159,1613,7142,1635,7112,1643,7080,1642,7048,1637,7015,1631,6982,1630,6949,1638,6916,1661,6883,1696,6857,1736,6840,1778,6829,1823,6825,1819,6828,1779,6834,1737,6845,1699,6862,1665,6887,1643,6918,1635,6949,1636,6982,1642,7014,1648,7048,1649,7081,1640,7114,1617,7146,1594,7164,1567,7176,1539,7184,1512,7188"/>
+<area shape="rect" id="Node000115" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1822,6898,2081,6977"/>
+<area shape="poly" id="edge144_Node000109_Node000115" title=" " alt="" coords="1509,7181,1565,7169,1590,7158,1613,7142,1628,7124,1635,7106,1637,7067,1638,7026,1645,7006,1661,6987,1697,6963,1737,6946,1779,6935,1823,6931,1819,6934,1780,6941,1738,6951,1699,6967,1665,6991,1650,7009,1643,7028,1642,7067,1640,7107,1633,7127,1617,7146,1593,7162,1567,7174,1512,7186"/>
+<area shape="rect" id="Node000112" href="$classstir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5.html" title="A BinNormalisation class that gets the normalisation factors from an GEHDF5 3D normalisation file." alt="" coords="2382,6710,2611,6754"/>
+<area shape="poly" id="edge141_Node000111_Node000112" title=" " alt="" coords="2110,6730,2384,6731,2379,6733,2113,6734"/>
+<area shape="rect" id="Node000114" href="$classstir_1_1ecat_1_1BinNormalisationFromECAT8.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT8 3D normalisation file...." alt="" coords="2397,6812,2596,6857"/>
+<area shape="poly" id="edge143_Node000113_Node000114" title=" " alt="" coords="2095,6832,2399,6833,2394,6836,2098,6837"/>
+<area shape="rect" id="Node000116" href="$classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT7 3D normalisation file." alt="" coords="2392,6915,2601,6960"/>
+<area shape="poly" id="edge145_Node000115_Node000116" title=" " alt="" coords="2096,6935,2394,6936,2389,6939,2098,6940"/>
+<area shape="rect" id="Node000118" href="$classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing." alt="" coords="939,2255,1083,2300"/>
+<area shape="poly" id="edge147_Node000117_Node000118" title=" " alt="" coords="709,3081,769,2947,839,2776,937,2496,1003,2297,1002,2303,942,2498,844,2778,774,2949,715,3082"/>
+<area shape="rect" id="Node000119" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1279,1786,1516,1865"/>
+<area shape="poly" id="edge148_Node000118_Node000119" title=" " alt="" coords="1096,2264,1115,2254,1131,2241,1147,2218,1158,2195,1165,2173,1167,2150,1163,2104,1153,2059,1143,2013,1139,1967,1142,1944,1149,1921,1161,1897,1179,1874,1200,1856,1224,1842,1280,1826,1277,1830,1226,1847,1203,1860,1183,1878,1165,1900,1154,1923,1147,1945,1144,1967,1148,2012,1158,2058,1169,2104,1173,2150,1170,2174,1163,2197,1152,2221,1135,2244,1118,2259,1100,2268"/>
+<area shape="rect" id="Node000121" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1208,1888,1588,1984"/>
+<area shape="poly" id="edge150_Node000118_Node000121" title=" " alt="" coords="1096,2264,1115,2254,1131,2241,1151,2211,1159,2180,1158,2150,1154,2119,1149,2088,1149,2056,1157,2024,1179,1993,1209,1970,1207,1974,1183,1996,1162,2027,1154,2057,1155,2087,1159,2118,1164,2149,1164,2181,1156,2213,1135,2244,1118,2258,1100,2267"/>
+<area shape="rect" id="Node000123" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1255,2007,1541,2086"/>
+<area shape="poly" id="edge152_Node000118_Node000123" title=" " alt="" coords="1095,2263,1115,2253,1131,2241,1144,2223,1151,2206,1154,2169,1156,2132,1164,2113,1179,2095,1214,2071,1256,2056,1253,2060,1216,2076,1182,2099,1168,2116,1161,2133,1159,2170,1156,2207,1149,2226,1135,2245,1118,2257,1100,2266"/>
+<area shape="rect" id="Node000125" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1208,2110,1588,2205"/>
+<area shape="poly" id="edge154_Node000118_Node000125" title=" " alt="" coords="1096,2253,1132,2240,1180,2215,1214,2204,1210,2208,1182,2220,1134,2245,1100,2257"/>
+<area shape="rect" id="Node000126" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1208,2230,1588,2325"/>
+<area shape="poly" id="edge155_Node000118_Node000126" title=" " alt="" coords="1097,2275,1210,2276,1206,2279,1100,2279"/>
+<area shape="rect" id="Node000127" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1208,1410,1588,1505"/>
+<area shape="poly" id="edge156_Node000118_Node000127" title=" " alt="" coords="1096,2265,1115,2255,1131,2241,1146,2214,1157,2180,1163,2139,1166,2094,1163,1991,1154,1880,1145,1769,1142,1666,1144,1620,1151,1579,1162,1544,1179,1516,1209,1491,1206,1495,1183,1519,1167,1546,1156,1580,1150,1620,1147,1666,1150,1769,1159,1880,1168,1991,1171,2094,1169,2140,1162,2181,1151,2216,1135,2244,1118,2259,1100,2268"/>
+<area shape="rect" id="Node000128" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1208,1530,1588,1625"/>
+<area shape="poly" id="edge157_Node000118_Node000128" title=" " alt="" coords="1096,2265,1115,2255,1131,2241,1144,2219,1153,2190,1161,2118,1160,2033,1154,1940,1148,1847,1146,1761,1155,1688,1164,1659,1179,1636,1209,1611,1206,1615,1183,1639,1169,1661,1160,1690,1152,1761,1153,1847,1159,1940,1165,2033,1167,2119,1158,2191,1149,2221,1135,2244,1118,2259,1100,2268"/>
+<area shape="rect" id="Node000129" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1257,1649,1539,1762"/>
+<area shape="poly" id="edge158_Node000118_Node000129" title=" " alt="" coords="1095,2265,1115,2255,1131,2241,1152,2211,1165,2182,1173,2153,1176,2124,1169,2067,1155,2009,1140,1951,1134,1893,1136,1863,1144,1833,1157,1802,1179,1772,1213,1741,1258,1722,1255,1726,1216,1746,1183,1775,1162,1805,1149,1834,1141,1864,1139,1893,1145,1950,1160,2008,1175,2066,1181,2124,1178,2154,1170,2184,1156,2214,1135,2244,1118,2259,1100,2268"/>
+<area shape="rect" id="Node000120" href="$classstir_1_1ChainedDataProcessor.html" title="A class in the DataProcessor hierarchy that calls 2 DataProcessors in sequence." alt="" coords="1852,1803,2050,1848"/>
+<area shape="poly" id="edge149_Node000119_Node000120" title=" " alt="" coords="1530,1823,1854,1824,1850,1827,1534,1827"/>
+<area shape="rect" id="Node000122" href="$classstir_1_1SeparableGaussianImageFilter.html" title="A class in the DataProcessor hierarchy that implements Gaussian filtering." alt="" coords="1843,1914,2059,1958"/>
+<area shape="poly" id="edge151_Node000121_Node000122" title=" " alt="" coords="1601,1934,1844,1934,1840,1938,1605,1938"/>
+<area shape="rect" id="Node000124" href="$classstir_1_1ThresholdMinToSmallPositiveValueDataProcessor.html" title="A class in the DataProcessor hierarchy for making sure all elements are strictly positive." alt="" coords="1850,2016,2053,2078"/>
+<area shape="poly" id="edge153_Node000123_Node000124" title=" " alt="" coords="1555,2045,1851,2045,1847,2048,1558,2049"/>
+<area shape="rect" id="Node000131" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors." alt="" coords="912,4052,1110,4079"/>
+<area shape="poly" id="edge160_Node000130_Node000131" title=" " alt="" coords="730,4678,786,4620,814,4585,839,4548,874,4482,905,4412,955,4273,987,4154,1007,4077,1006,4082,993,4155,960,4274,910,4414,879,4484,844,4551,818,4588,790,4623,734,4680"/>
+<area shape="rect" id="Node000132" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1276,4162,1520,4224"/>
+<area shape="poly" id="edge161_Node000131_Node000132" title=" " alt="" coords="1047,4085,1110,4118,1182,4148,1278,4174,1273,4177,1180,4153,1108,4122,1050,4090"/>
+<area shape="rect" id="Node000134" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1267,4248,1528,4310"/>
+<area shape="poly" id="edge163_Node000131_Node000134" title=" " alt="" coords="1030,4089,1058,4124,1093,4163,1135,4202,1182,4234,1223,4251,1269,4265,1264,4267,1222,4256,1179,4238,1131,4206,1089,4167,1054,4127,1031,4094"/>
+<area shape="rect" id="Node000136" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1262,3821,1534,3883"/>
+<area shape="poly" id="edge165_Node000131_Node000136" title=" " alt="" coords="1028,4038,1054,4004,1089,3964,1131,3925,1179,3892,1219,3875,1263,3864,1260,3868,1221,3880,1182,3897,1135,3929,1093,3968,1058,4007,1033,4040"/>
+<area shape="rect" id="Node000138" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1250,3906,1546,3968"/>
+<area shape="poly" id="edge167_Node000131_Node000138" title=" " alt="" coords="1046,4042,1108,4008,1180,3977,1251,3959,1248,3963,1182,3983,1110,4013,1051,4045"/>
+<area shape="rect" id="Node000140" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1268,3992,1528,4054"/>
+<area shape="poly" id="edge169_Node000131_Node000140" title=" " alt="" coords="1124,4051,1269,4035,1265,4039,1127,4055"/>
+<area shape="rect" id="Node000142" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1271,4077,1524,4139"/>
+<area shape="poly" id="edge171_Node000131_Node000142" title=" " alt="" coords="1124,4076,1273,4092,1269,4096,1127,4080"/>
+<area shape="rect" id="Node000133" href="$classstir_1_1ForwardProjectorByBinNiftyPET.html" title="Class for NiftyPET&#39;s GPU forward projector." alt="" coords="1862,4171,2040,4216"/>
+<area shape="poly" id="edge162_Node000132_Node000133" title=" " alt="" coords="1533,4191,1864,4192,1860,4195,1536,4196"/>
+<area shape="rect" id="Node000135" href="$classstir_1_1ForwardProjectorByBinParallelproj.html" title="Class for Parallelproj&#39;s forward projector." alt="" coords="1862,4243,2040,4288"/>
+<area shape="poly" id="edge164_Node000134_Node000135" title=" " alt="" coords="1543,4273,1864,4266,1860,4269,1546,4277"/>
+<area shape="rect" id="Node000137" href="$classstir_1_1ForwardProjectorByBinUsingProjMatrixByBin.html" title="This implements the ForwardProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="1859,3830,2043,3874"/>
+<area shape="poly" id="edge166_Node000136_Node000137" title=" " alt="" coords="1548,3850,1861,3850,1856,3854,1551,3854"/>
+<area shape="rect" id="Node000139" href="$classstir_1_1ForwardProjectorByBinUsingRayTracing.html" title="This class implements forward projection using Siddon&#39;s algorithm for ray tracing...." alt="" coords="1862,3915,2040,3960"/>
+<area shape="poly" id="edge168_Node000138_Node000139" title=" " alt="" coords="1560,3935,1864,3936,1860,3939,1563,3939"/>
+<area shape="rect" id="Node000141" href="$classstir_1_1PostsmoothingForwardProjectorByBin.html" title="A very preliminary class that first forward projects, and then smooths the viewgrams." alt="" coords="1852,4000,2051,4045"/>
+<area shape="poly" id="edge170_Node000140_Node000141" title=" " alt="" coords="1542,4020,1853,4021,1849,4024,1545,4025"/>
+<area shape="rect" id="Node000143" href="$classstir_1_1PresmoothingForwardProjectorByBin.html" title="A very preliminary class that first smooths the image, then forward projects." alt="" coords="1855,4086,2047,4130"/>
+<area shape="poly" id="edge172_Node000142_Node000143" title=" " alt="" coords="1539,4106,1857,4106,1852,4110,1542,4110"/>
+<area shape="rect" id="Node000145" href="$classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr..." alt="" coords="916,7243,1106,7288"/>
+<area shape="poly" id="edge174_Node000144_Node000145" title=" " alt="" coords="822,6843,843,6857,885,6902,919,6953,947,7008,968,7064,997,7168,1010,7243,1004,7242,992,7169,963,7066,942,7010,914,6956,881,6905,840,6861,824,6848"/>
+<area shape="rect" id="Node000146" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="1303,7234,1492,7296"/>
+<area shape="poly" id="edge175_Node000145_Node000146" title=" " alt="" coords="1120,7263,1305,7264,1301,7267,1123,7268"/>
+<area shape="rect" id="Node000152" href="$classstir_1_1SumOfGeneralisedObjectiveFunctions.html" title="A base class for sums of &#39;generalised&#39; objective functions, i.e. objective functions for which at lea..." alt="" coords="1281,7320,1515,7382"/>
+<area shape="poly" id="edge187_Node000145_Node000152" title=" " alt="" coords="1112,7289,1181,7305,1283,7328,1278,7330,1180,7311,1115,7294"/>
+<area shape="rect" id="Node000147" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1763,7001,2139,7114"/>
+<area shape="poly" id="edge176_Node000146_Node000147" title=" " alt="" coords="1506,7255,1563,7239,1589,7227,1613,7211,1630,7191,1636,7169,1643,7146,1661,7125,1709,7096,1765,7077,1761,7081,1712,7101,1665,7129,1648,7149,1642,7171,1635,7194,1617,7215,1592,7231,1565,7244,1510,7259"/>
+<area shape="rect" id="Node000149" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1763,7497,2139,7610"/>
+<area shape="poly" id="edge178_Node000146_Node000149" title=" " alt="" coords="1507,7262,1566,7275,1593,7288,1617,7306,1634,7328,1642,7351,1644,7374,1642,7396,1642,7441,1649,7462,1665,7483,1686,7501,1710,7516,1765,7538,1760,7540,1708,7521,1683,7506,1661,7487,1644,7465,1637,7442,1637,7396,1638,7374,1637,7352,1629,7331,1613,7310,1590,7293,1564,7280,1509,7267"/>
+<area shape="rect" id="Node000153" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1793,7138,2109,7251"/>
+<area shape="poly" id="edge180_Node000146_Node000153" title=" " alt="" coords="1506,7249,1795,7213,1791,7216,1509,7254"/>
+<area shape="rect" id="Node000155" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1773,7276,2129,7388"/>
+<area shape="poly" id="edge182_Node000146_Node000155" title=" " alt="" coords="1507,7276,1775,7309,1771,7312,1509,7281"/>
+<area shape="rect" id="Node000157" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data." alt="" coords="1816,7412,2087,7474"/>
+<area shape="poly" id="edge184_Node000146_Node000157" title=" " alt="" coords="1507,7266,1565,7279,1592,7291,1617,7306,1628,7317,1635,7329,1641,7354,1647,7377,1654,7388,1665,7398,1699,7418,1737,7431,1776,7440,1817,7447,1813,7449,1775,7446,1735,7437,1697,7422,1661,7402,1650,7391,1642,7379,1636,7355,1630,7331,1624,7320,1613,7310,1589,7295,1563,7284,1509,7271"/>
+<area shape="rect" id="Node000148" href="$classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2367,7026,2626,7088"/>
+<area shape="poly" id="edge177_Node000147_Node000148" title=" " alt="" coords="2153,7055,2369,7056,2364,7059,2156,7060"/>
+<area shape="rect" id="Node000150" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2371,7596,2622,7658"/>
+<area shape="poly" id="edge179_Node000149_Node000150" title=" " alt="" coords="2154,7578,2373,7609,2368,7611,2155,7583"/>
+<area shape="rect" id="Node000154" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data." alt="" coords="2362,7164,2631,7226"/>
+<area shape="poly" id="edge181_Node000153_Node000154" title=" " alt="" coords="2124,7192,2364,7193,2359,7196,2126,7197"/>
+<area shape="rect" id="Node000156" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2361,7301,2632,7363"/>
+<area shape="poly" id="edge183_Node000155_Node000156" title=" " alt="" coords="2144,7330,2363,7331,2358,7333,2146,7334"/>
+<area shape="rect" id="Node000158" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2290,7386,2703,7499"/>
+<area shape="poly" id="edge185_Node000157_Node000158" title=" " alt="" coords="2102,7440,2292,7441,2288,7444,2104,7445"/>
+<area shape="rect" id="Node000159" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title="Class for PET list mode data from static images for a scanner with discrete detectors." alt="" coords="2756,7412,3028,7474"/>
+<area shape="poly" id="edge186_Node000158_Node000159" title=" " alt="" coords="2717,7440,2758,7442,2754,7444,2719,7445"/>
+<area shape="rect" id="Node000151" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1663,7634,2239,7764"/>
+<area shape="poly" id="edge188_Node000152_Node000151" title=" " alt="" coords="1529,7350,1577,7364,1598,7376,1617,7391,1638,7420,1646,7449,1646,7478,1643,7507,1639,7536,1638,7564,1646,7592,1665,7620,1678,7633,1673,7634,1661,7623,1641,7594,1633,7565,1633,7535,1637,7506,1641,7477,1641,7449,1633,7422,1613,7395,1595,7381,1575,7369,1531,7355"/>
+<area shape="poly" id="edge189_Node000151_Node000150" title=" " alt="" coords="2254,7656,2373,7642,2368,7644,2256,7661"/>
+<area shape="rect" id="Node000161" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined." alt="" coords="932,7368,1090,7413"/>
+<area shape="poly" id="edge191_Node000160_Node000161" title=" " alt="" coords="821,6910,843,6926,862,6950,874,6973,887,7018,886,7062,878,7107,869,7152,865,7198,870,7247,879,7272,892,7299,906,7319,925,7337,966,7367,961,7369,921,7341,902,7323,887,7301,874,7274,865,7248,860,7199,864,7151,873,7106,881,7062,881,7018,870,6975,857,6952,839,6930,823,6915"/>
+<area shape="rect" id="Node000162" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1280,7406,1516,7485"/>
+<area shape="poly" id="edge192_Node000161_Node000162" title=" " alt="" coords="1104,7402,1281,7427,1277,7430,1107,7406"/>
+<area shape="rect" id="Node000163" href="$classstir_1_1FilterRootPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements &#39;generalised&#39; priors a la the Median Root ..." alt="" coords="1880,7787,2023,7832"/>
+<area shape="poly" id="edge193_Node000162_Node000163" title=" " alt="" coords="1530,7449,1578,7465,1599,7478,1617,7494,1641,7530,1649,7566,1647,7602,1640,7638,1633,7674,1632,7708,1641,7742,1650,7758,1665,7774,1687,7792,1713,7805,1769,7820,1826,7824,1882,7821,1877,7824,1826,7829,1768,7825,1711,7810,1685,7796,1661,7778,1646,7761,1636,7744,1626,7709,1628,7673,1634,7637,1641,7602,1643,7567,1636,7532,1613,7498,1595,7482,1575,7470,1532,7454"/>
+<area shape="rect" id="Node000165" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="895,7534,1127,7578"/>
+<area shape="poly" id="edge195_Node000164_Node000165" title=" " alt="" coords="840,7010,844,7012,861,7047,871,7095,875,7152,876,7214,877,7335,881,7386,892,7424,910,7456,933,7485,982,7532,977,7534,930,7489,906,7459,887,7426,876,7387,871,7336,871,7214,870,7153,866,7096,856,7049,839,7015,841,7015"/>
+<area shape="rect" id="Node000166" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1221,7508,1574,7604"/>
+<area shape="poly" id="edge196_Node000165_Node000166" title=" " alt="" coords="1141,7554,1223,7554,1218,7558,1144,7558"/>
+<area shape="rect" id="Node000168" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1221,7628,1574,7724"/>
+<area shape="poly" id="edge198_Node000165_Node000168" title=" " alt="" coords="1113,7581,1134,7588,1182,7614,1223,7629,1218,7632,1180,7618,1132,7593,1115,7586"/>
+<area shape="rect" id="Node000170" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1221,7748,1574,7844"/>
+<area shape="poly" id="edge200_Node000165_Node000170" title=" " alt="" coords="1129,7585,1135,7589,1149,7607,1157,7626,1159,7663,1162,7700,1169,7717,1182,7734,1224,7763,1218,7765,1179,7738,1164,7720,1157,7701,1154,7664,1151,7627,1144,7610,1131,7592,1130,7590"/>
+<area shape="rect" id="Node000167" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the ECAT7 format." alt="" coords="1830,7856,2073,7918"/>
+<area shape="poly" id="edge197_Node000166_Node000167" title=" " alt="" coords="1587,7591,1617,7614,1637,7643,1644,7673,1644,7703,1640,7732,1636,7761,1636,7789,1645,7816,1665,7842,1701,7867,1742,7884,1786,7893,1832,7897,1827,7900,1785,7898,1740,7889,1698,7872,1661,7846,1640,7818,1631,7789,1631,7760,1635,7731,1639,7702,1639,7674,1632,7646,1613,7618,1588,7596"/>
+<area shape="rect" id="Node000169" href="$classstir_1_1InterfileDynamicDiscretisedDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Interfile format." alt="" coords="1836,7942,2067,7986"/>
+<area shape="poly" id="edge199_Node000168_Node000169" title=" " alt="" coords="1587,7712,1617,7734,1634,7759,1642,7784,1642,7810,1640,7835,1638,7859,1639,7883,1647,7905,1665,7927,1702,7952,1745,7967,1790,7975,1837,7978,1833,7980,1790,7980,1744,7972,1700,7957,1661,7931,1642,7908,1634,7884,1632,7859,1635,7834,1637,7809,1637,7785,1630,7761,1613,7738,1588,7717"/>
+<area shape="rect" id="Node000171" href="$classstir_1_1MultiDynamicDiscretisedDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Multi format." alt="" coords="1844,8011,2058,8056"/>
+<area shape="poly" id="edge201_Node000170_Node000171" title=" " alt="" coords="1588,7832,1617,7853,1631,7871,1638,7890,1640,7928,1643,7964,1650,7981,1665,7997,1705,8021,1750,8036,1797,8043,1846,8045,1841,8048,1797,8048,1749,8041,1703,8026,1661,8001,1646,7984,1638,7965,1635,7928,1633,7891,1627,7874,1613,7857,1589,7837"/>
+<area shape="rect" id="Node000173" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="897,7602,1125,7664"/>
+<area shape="poly" id="edge203_Node000172_Node000173" title=" " alt="" coords="823,7080,843,7097,866,7129,881,7160,889,7192,892,7223,885,7284,870,7344,854,7404,847,7465,849,7495,857,7526,870,7557,891,7589,903,7601,898,7603,887,7592,866,7560,852,7528,844,7496,842,7465,849,7403,865,7343,880,7283,886,7223,884,7193,876,7162,861,7132,839,7100,825,7086"/>
+<area shape="rect" id="Node000175" href="$classstir_1_1InputStreamFromROOTFile.html" title="A helper class to read data from a ROOT file Generated by GATE simulation toolkit." alt="" coords="899,7893,1123,7920"/>
+<area shape="poly" id="edge205_Node000174_Node000175" title=" " alt="" coords="819,7148,843,7166,856,7185,866,7209,878,7268,883,7338,884,7413,881,7563,884,7626,892,7675,917,7741,948,7803,1002,7892,997,7893,943,7805,912,7743,887,7677,878,7627,876,7563,879,7413,878,7338,873,7269,861,7211,851,7188,839,7170,820,7153"/>
+<area shape="rect" id="Node000176" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1224,7867,1572,7946"/>
+<area shape="poly" id="edge206_Node000175_Node000176" title=" " alt="" coords="1137,7904,1226,7905,1221,7908,1139,7909"/>
+<area shape="rect" id="Node000178" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1238,7970,1558,8049"/>
+<area shape="poly" id="edge208_Node000175_Node000178" title=" " alt="" coords="1071,7923,1181,7955,1240,7971,1235,7973,1180,7960,1073,7928"/>
+<area shape="rect" id="Node000177" href="$classstir_1_1InputStreamFromROOTFileForCylindricalPET.html" title="Declaration of class stir::InputStreamFromROOTFileForCylindricalPET." alt="" coords="1840,8080,2063,8125"/>
+<area shape="poly" id="edge207_Node000176_Node000177" title=" " alt="" coords="1585,7935,1617,7955,1629,7969,1636,7984,1641,8013,1646,8041,1652,8054,1665,8066,1704,8088,1749,8103,1795,8110,1842,8113,1837,8115,1794,8115,1747,8108,1702,8093,1661,8070,1648,8057,1641,8043,1636,8014,1631,7985,1625,7972,1613,7959,1586,7940"/>
+<area shape="rect" id="Node000179" href="$classstir_1_1InputStreamFromROOTFileForECATPET.html" title="Declaration of class stir::InputStreamFromROOTFileForECATPET." alt="" coords="1840,8150,2063,8194"/>
+<area shape="poly" id="edge209_Node000178_Node000179" title=" " alt="" coords="1572,8034,1617,8058,1634,8078,1641,8098,1648,8118,1665,8135,1705,8155,1750,8168,1795,8175,1842,8179,1837,8182,1795,8181,1749,8174,1703,8160,1661,8139,1643,8121,1636,8100,1629,8080,1613,8062,1573,8039"/>
+<area shape="rect" id="Node000181" href="$classstir_1_1InputStreamWithRecordsFromUPENN.html" title="Base class for reading listmode files from the PENNPet Explorer scanner." alt="" coords="905,8018,1117,8062"/>
+<area shape="poly" id="edge211_Node000180_Node000181" title=" " alt="" coords="822,7234,843,7252,859,7278,870,7310,878,7348,882,7390,883,7484,879,7586,873,7689,870,7785,875,7868,881,7903,892,7931,908,7956,928,7979,974,8017,969,8018,925,7983,904,7960,887,7933,876,7904,869,7869,864,7785,867,7688,873,7586,878,7484,877,7390,873,7348,865,7311,854,7280,839,7255,824,7239"/>
+<area shape="rect" id="Node000182" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1247,8073,1548,8151"/>
+<area shape="poly" id="edge212_Node000181_Node000182" title=" " alt="" coords="1131,8060,1249,8083,1244,8085,1134,8065"/>
+<area shape="rect" id="Node000184" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1248,8175,1548,8254"/>
+<area shape="poly" id="edge214_Node000181_Node000184" title=" " alt="" coords="1127,8068,1135,8073,1152,8095,1159,8118,1165,8140,1182,8161,1214,8180,1250,8195,1245,8197,1211,8185,1179,8165,1161,8143,1154,8120,1147,8098,1131,8077,1128,8073"/>
+<area shape="rect" id="Node000183" href="$classstir_1_1InputStreamWithRecordsFromUPENNbin.html" title="Class for reading binary listmode files from the PENNPet Explorer scanner." alt="" coords="1845,8219,2057,8264"/>
+<area shape="poly" id="edge213_Node000182_Node000183" title=" " alt="" coords="1563,8139,1616,8160,1631,8172,1641,8184,1650,8195,1664,8204,1708,8221,1754,8232,1847,8243,1842,8245,1753,8237,1706,8226,1662,8209,1646,8199,1637,8187,1628,8175,1614,8165,1564,8144"/>
+<area shape="rect" id="Node000185" href="$classstir_1_1InputStreamWithRecordsFromUPENNtxt.html" title="Class for reading listmode files in text format from the PENNPet Explorer scanner." alt="" coords="1845,8288,2057,8333"/>
+<area shape="poly" id="edge215_Node000184_Node000185" title=" " alt="" coords="1562,8250,1663,8273,1847,8300,1842,8302,1663,8279,1563,8256"/>
+<area shape="rect" id="Node000187" href="$classstir_1_1KineticModel.html" title="base class for all kinetic models" alt="" coords="943,8086,1079,8114"/>
+<area shape="poly" id="edge217_Node000186_Node000187" title=" " alt="" coords="789,7290,819,7301,843,7321,861,7350,873,7386,879,7428,882,7476,878,7584,867,7699,857,7815,853,7922,856,7969,863,8011,874,8046,891,8073,915,8090,946,8100,941,8102,913,8095,887,8076,870,8048,858,8012,851,7970,848,7922,852,7815,862,7699,872,7583,876,7476,874,7429,867,7387,856,7352,839,7324,817,7306,791,7295"/>
+<area shape="rect" id="Node000188" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1293,8278,1502,8322"/>
+<area shape="poly" id="edge218_Node000187_Node000188" title=" " alt="" coords="1093,8103,1116,8111,1134,8123,1149,8141,1156,8159,1159,8196,1161,8231,1168,8248,1182,8263,1207,8280,1234,8291,1295,8304,1290,8306,1233,8296,1204,8284,1179,8267,1164,8250,1156,8232,1154,8196,1151,8160,1145,8143,1131,8127,1113,8116,1095,8108"/>
+<area shape="rect" id="Node000189" href="$classstir_1_1PatlakPlot.html" title="Patlak kinetic model." alt="" coords="1894,8357,2009,8384"/>
+<area shape="poly" id="edge219_Node000188_Node000189" title=" " alt="" coords="1517,8315,1616,8332,1663,8343,1786,8357,1895,8367,1891,8369,1786,8363,1663,8348,1614,8337,1519,8320"/>
+<area shape="rect" id="Node000191" href="$classstir_1_1ObjectTransformation.html" title=" " alt="" coords="916,8207,1106,8252"/>
+<area shape="poly" id="edge221_Node000190_Node000191" title=" " alt="" coords="819,7387,843,7406,861,7437,873,7475,880,7519,882,7569,878,7681,868,7802,857,7922,854,8033,856,8083,863,8127,874,8164,891,8193,918,8214,913,8216,887,8196,870,8166,858,8128,851,8083,848,8033,852,7922,863,7801,873,7681,877,7569,874,7520,868,7476,856,7439,839,7410,821,7392"/>
+<area shape="rect" id="Node000192" href="$classstir_1_1ObjectTransformation.html" title="Base&#45;class for performing (potentially non&#45;rigid) object transformations." alt="" coords="905,8138,1117,8182"/>
+<area shape="poly" id="edge222_Node000190_Node000192" title=" " alt="" coords="820,7387,843,7406,860,7434,871,7469,877,7510,880,7555,877,7657,868,7767,859,7877,856,7978,859,8023,865,8063,876,8097,891,8124,908,8139,902,8140,887,8127,871,8099,860,8065,854,8024,851,7978,854,7876,863,7767,871,7657,874,7555,872,7510,865,7470,855,7436,839,7410,821,7392"/>
+<area shape="rect" id="Node000193" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1181,8347,1615,8442"/>
+<area shape="poly" id="edge223_Node000192_Node000193" title=" " alt="" coords="1129,8189,1135,8193,1149,8210,1156,8229,1159,8265,1162,8300,1169,8316,1183,8333,1197,8346,1192,8347,1179,8337,1165,8319,1157,8301,1154,8265,1151,8230,1144,8213,1131,8196,1130,8194"/>
+<area shape="rect" id="Node000194" href="$classstir_1_1NonRigidObjectTransformationUsingBSplines.html" title="Class to perform non&#45;rigid object transformations in arbitrary dimensions." alt="" coords="1826,8409,2076,8471"/>
+<area shape="poly" id="edge224_Node000193_Node000194" title=" " alt="" coords="1630,8411,1828,8429,1823,8431,1632,8416"/>
+<area shape="rect" id="Node000196" href="$classstir_1_1OutputFileFormat.html" title="Base class for classes that create output files." alt="" coords="929,8568,1093,8613"/>
+<area shape="poly" id="edge226_Node000195_Node000196" title=" " alt="" coords="823,7459,843,7476,853,7495,861,7526,873,7616,879,7733,882,7864,885,8114,887,8208,892,8264,916,8353,947,8440,1001,8568,996,8568,942,8442,911,8355,887,8264,882,8208,880,8114,877,7864,874,7733,867,7617,856,7527,848,7497,839,7479,825,7464"/>
+<area shape="rect" id="Node000197" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1188,8466,1608,8579"/>
+<area shape="poly" id="edge227_Node000196_Node000197" title=" " alt="" coords="1106,8572,1189,8558,1185,8561,1109,8576"/>
+<area shape="rect" id="Node000199" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1182,8604,1614,8716"/>
+<area shape="poly" id="edge229_Node000196_Node000199" title=" " alt="" coords="1107,8605,1184,8620,1179,8622,1108,8610"/>
+<area shape="rect" id="Node000201" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1210,8741,1586,8854"/>
+<area shape="poly" id="edge231_Node000196_Node000201" title=" " alt="" coords="1045,8621,1107,8675,1144,8702,1182,8726,1212,8742,1207,8743,1179,8730,1141,8706,1104,8679,1045,8627"/>
+<area shape="rect" id="Node000198" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7ParametricDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the ECAT7 format." alt="" coords="1826,8494,2077,8556"/>
+<area shape="poly" id="edge228_Node000197_Node000198" title=" " alt="" coords="1623,8521,1827,8524,1823,8526,1625,8526"/>
+<area shape="rect" id="Node000200" href="$classstir_1_1InterfileParametricDiscretisedDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Interfile format." alt="" coords="1822,8580,2080,8642"/>
+<area shape="poly" id="edge230_Node000199_Node000200" title=" " alt="" coords="1628,8637,1824,8621,1820,8623,1630,8642"/>
+<area shape="rect" id="Node000202" href="$classstir_1_1MultiParametricDiscretisedDensityOutputFileFormat.html" title="Implementation of OutputFileFormat paradigm for the Multi format." alt="" coords="1801,8666,2101,8710"/>
+<area shape="poly" id="edge232_Node000201_Node000202" title=" " alt="" coords="1599,8735,1663,8720,1803,8700,1798,8703,1663,8725,1602,8739"/>
+<area shape="rect" id="Node000204" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="932,8758,1090,8802"/>
+<area shape="poly" id="edge234_Node000203_Node000204" title=" " alt="" coords="825,7530,843,7545,857,7572,866,7615,878,7738,882,7899,881,8078,878,8422,881,8550,885,8595,892,8624,911,8663,935,8699,987,8757,982,8758,931,8703,906,8666,887,8626,880,8596,876,8551,872,8422,876,8078,877,7899,873,7739,861,7615,852,7574,839,7548,827,7535"/>
+<area shape="rect" id="Node000205" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="this class implements priors with a parabolic surrogate curvature" alt="" coords="1313,8878,1482,8922"/>
+<area shape="poly" id="edge235_Node000204_Node000205" title=" " alt="" coords="1062,8808,1119,8837,1182,8863,1248,8880,1315,8892,1310,8894,1247,8885,1180,8868,1117,8842,1063,8813"/>
+<area shape="rect" id="Node000206" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1794,8855,2108,8950"/>
+<area shape="poly" id="edge236_Node000205_Node000206" title=" " alt="" coords="1497,8898,1797,8901,1792,8903,1499,8903"/>
+<area shape="rect" id="Node000208" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1794,8975,2108,9070"/>
+<area shape="poly" id="edge238_Node000205_Node000208" title=" " alt="" coords="1497,8906,1557,8916,1616,8932,1640,8946,1664,8960,1728,8981,1796,8999,1791,9000,1727,8986,1662,8965,1638,8951,1614,8937,1556,8921,1499,8911"/>
+<area shape="rect" id="Node000210" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1806,8735,2096,8830"/>
+<area shape="poly" id="edge240_Node000205_Node000210" title=" " alt="" coords="1497,8888,1556,8877,1614,8863,1638,8852,1662,8840,1734,8819,1809,8805,1804,8807,1735,8825,1664,8845,1640,8857,1616,8868,1557,8883,1499,8892"/>
+<area shape="rect" id="Node000207" href="$classstir_1_1LogcoshPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a logcosh Gibbs prior." alt="" coords="2430,8880,2563,8925"/>
+<area shape="poly" id="edge237_Node000206_Node000207" title=" " alt="" coords="2123,8900,2432,8902,2427,8904,2124,8905"/>
+<area shape="rect" id="Node000209" href="$classstir_1_1QuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior." alt="" coords="2425,9000,2568,9045"/>
+<area shape="poly" id="edge239_Node000208_Node000209" title=" " alt="" coords="2123,9020,2427,9022,2422,9023,2124,9025"/>
+<area shape="rect" id="Node000211" href="$classstir_1_1ParametricQuadraticPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior." alt="" coords="2405,8760,2588,8805"/>
+<area shape="poly" id="edge241_Node000210_Node000211" title=" " alt="" coords="2111,8780,2407,8782,2402,8784,2112,8785"/>
+<area shape="rect" id="Node000213" href="$classstir_1_1ProjDataRebinning.html" title="base class for all rebinning algorithms for 3D PET data" alt="" coords="925,4830,1097,4858"/>
+<area shape="poly" id="edge243_Node000212_Node000213" title=" " alt="" coords="792,5043,840,5022,893,4982,938,4935,975,4891,1002,4856,1000,4861,979,4894,942,4939,896,4986,843,5026,797,5046"/>
+<area shape="rect" id="Node000214" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1258,4813,1538,4875"/>
+<area shape="poly" id="edge244_Node000213_Node000214" title=" " alt="" coords="1111,4842,1260,4842,1256,4846,1114,4846"/>
+<area shape="rect" id="Node000215" href="$classstir_1_1FourierRebinning.html" title="Class for Serial FORE Reconstruction." alt="" coords="1871,4894,2031,4922"/>
+<area shape="poly" id="edge245_Node000214_Node000215" title=" " alt="" coords="1551,4866,1663,4880,1873,4901,1868,4904,1663,4885,1554,4870"/>
+<area shape="rect" id="Node000217" href="$classstir_1_1ProjMatrixByBin.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;bin&#39;." alt="" coords="933,5214,1089,5242"/>
+<area shape="poly" id="edge247_Node000216_Node000217" title=" " alt="" coords="765,5322,975,5240,971,5245,769,5325"/>
+<area shape="rect" id="Node000218" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5069,1527,5131"/>
+<area shape="poly" id="edge248_Node000217_Node000218" title=" " alt="" coords="1046,5204,1108,5171,1180,5140,1270,5117,1266,5121,1182,5145,1110,5176,1051,5208"/>
+<area shape="rect" id="Node000220" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5154,1527,5216"/>
+<area shape="poly" id="edge250_Node000217_Node000220" title=" " alt="" coords="1102,5216,1270,5198,1266,5201,1106,5220"/>
+<area shape="rect" id="Node000222" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5240,1527,5302"/>
+<area shape="poly" id="edge252_Node000217_Node000222" title=" " alt="" coords="1102,5236,1270,5255,1266,5258,1105,5240"/>
+<area shape="rect" id="Node000224" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5325,1527,5387"/>
+<area shape="poly" id="edge254_Node000217_Node000224" title=" " alt="" coords="1047,5248,1110,5280,1182,5311,1271,5335,1266,5338,1180,5316,1108,5285,1050,5252"/>
+<area shape="rect" id="Node000226" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1265,5410,1530,5472"/>
+<area shape="poly" id="edge256_Node000217_Node000226" title=" " alt="" coords="1030,5252,1058,5286,1093,5326,1135,5364,1182,5396,1222,5414,1267,5427,1263,5430,1221,5419,1179,5401,1131,5369,1089,5329,1054,5290,1031,5257"/>
+<area shape="rect" id="Node000228" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5496,1527,5558"/>
+<area shape="poly" id="edge258_Node000217_Node000228" title=" " alt="" coords="1022,5253,1046,5305,1079,5367,1125,5430,1152,5458,1182,5482,1224,5503,1271,5517,1266,5520,1222,5508,1179,5486,1148,5462,1121,5433,1075,5370,1041,5307,1023,5259"/>
+<area shape="rect" id="Node000230" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,4898,1527,4960"/>
+<area shape="poly" id="edge260_Node000217_Node000230" title=" " alt="" coords="1020,5199,1041,5149,1075,5086,1121,5023,1148,4994,1179,4970,1222,4948,1270,4936,1267,4940,1224,4953,1182,4974,1152,4998,1125,5026,1079,5089,1046,5151,1025,5201"/>
+<area shape="rect" id="Node000232" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1263,4984,1532,5046"/>
+<area shape="poly" id="edge262_Node000217_Node000232" title=" " alt="" coords="1028,5201,1054,5166,1089,5127,1131,5087,1179,5055,1220,5038,1264,5026,1261,5030,1221,5043,1182,5060,1135,5092,1093,5130,1058,5170,1033,5203"/>
+<area shape="rect" id="Node000219" href="$classstir_1_1ProjMatrixByBinFromFile.html" title="Reads/writes a projection matrix from/to file." alt="" coords="1846,5086,2057,5114"/>
+<area shape="poly" id="edge249_Node000218_Node000219" title=" " alt="" coords="1541,5098,1847,5098,1843,5102,1544,5102"/>
+<area shape="rect" id="Node000221" href="$classstir_1_1ProjMatrixByBinPinholeSPECTUB.html" title="Generates projection matrix for pinhole SPECT studies." alt="" coords="1850,5143,2053,5188"/>
+<area shape="poly" id="edge251_Node000220_Node000221" title=" " alt="" coords="1541,5178,1851,5167,1847,5171,1544,5182"/>
+<area shape="rect" id="Node000223" href="$classstir_1_1ProjMatrixByBinSPECTUB.html" title="generates projection matrix for SPECT studies" alt="" coords="1844,5212,2059,5239"/>
+<area shape="poly" id="edge253_Node000222_Node000223" title=" " alt="" coords="1541,5257,1845,5232,1841,5236,1544,5261"/>
+<area shape="rect" id="Node000225" href="$classstir_1_1ProjMatrixByBinSinglePhoton.html" title="a &#39;projection matrix&#39; to implement a model for a single photon acquisition in terms of the detector e..." alt="" coords="1854,5263,2049,5308"/>
+<area shape="poly" id="edge255_Node000224_Node000225" title=" " alt="" coords="1541,5334,1663,5317,1855,5295,1851,5298,1663,5323,1544,5338"/>
+<area shape="rect" id="Node000227" href="$classstir_1_1ProjMatrixByBinUsingInterpolation.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using an interpolation model." alt="" coords="1855,5332,2047,5377"/>
+<area shape="poly" id="edge257_Node000226_Node000227" title=" " alt="" coords="1544,5410,1663,5387,1857,5363,1853,5366,1663,5392,1548,5414"/>
+<area shape="rect" id="Node000229" href="$classstir_1_1ProjMatrixByBinUsingRayTracing.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Length of Intersectio..." alt="" coords="1855,5402,2047,5446"/>
+<area shape="poly" id="edge259_Node000228_Node000229" title=" " alt="" coords="1540,5503,1614,5482,1638,5469,1662,5456,1711,5443,1760,5434,1856,5425,1852,5428,1761,5440,1712,5449,1664,5461,1640,5473,1616,5486,1544,5506"/>
+<area shape="rect" id="Node000231" href="$classstir_1_1ProjMatrixByBinUsingSolidAngle.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Solid Angle model." alt="" coords="1855,4946,2047,4990"/>
+<area shape="poly" id="edge261_Node000230_Node000231" title=" " alt="" coords="1541,4937,1857,4960,1852,4963,1544,4942"/>
+<area shape="rect" id="Node000233" href="$classstir_1_1ProjMatrixByBinWithPositronRange.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Solid Angle model." alt="" coords="1858,5015,2044,5060"/>
+<area shape="poly" id="edge263_Node000232_Node000233" title=" " alt="" coords="1546,5019,1860,5032,1856,5035,1549,5023"/>
+<area shape="rect" id="Node000235" href="$classstir_1_1ProjMatrixByDensel.html" title="This is the (abstract) base class for all projection matrices which are organised by &#39;Densel&#39;." alt="" coords="921,8892,1101,8919"/>
+<area shape="poly" id="edge265_Node000234_Node000235" title=" " alt="" coords="798,7586,824,7597,843,7614,858,7644,868,7692,875,7754,879,7830,880,8009,877,8210,870,8592,876,8733,882,8782,892,8813,909,8838,931,8859,980,8890,974,8892,928,8863,905,8841,887,8816,877,8783,870,8734,865,8592,871,8210,875,8009,873,7830,869,7755,863,7693,853,7646,839,7618,821,7601,800,7591"/>
+<area shape="rect" id="Node000236" href="$classstir_1_1ProjMatrixByDenselOnCartesianGridUsingElement.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Length of Intersectio..." alt="" coords="1288,8947,1508,8992"/>
+<area shape="poly" id="edge266_Node000235_Node000236" title=" " alt="" coords="1108,8920,1181,8932,1290,8951,1285,8953,1180,8937,1110,8925"/>
+<area shape="rect" id="Node000237" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1768,9094,2135,9156"/>
+<area shape="poly" id="edge267_Node000236_Node000237" title=" " alt="" coords="1522,8968,1572,8980,1617,9002,1634,9021,1641,9043,1648,9063,1665,9081,1714,9105,1770,9122,1764,9123,1712,9110,1661,9085,1644,9065,1636,9044,1630,9024,1613,9006,1570,8985,1524,8974"/>
+<area shape="rect" id="Node000238" href="$classstir_1_1ProjMatrixByDenselUsingRayTracing.html" title="Computes projection matrix elements for VoxelsOnCartesianGrid images by using a Length of Intersectio..." alt="" coords="2407,9103,2586,9148"/>
+<area shape="poly" id="edge268_Node000237_Node000238" title=" " alt="" coords="2150,9123,2409,9125,2404,9126,2151,9128"/>
+<area shape="rect" id="Node000240" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs." alt="" coords="926,9128,1096,9155"/>
+<area shape="poly" id="edge270_Node000239_Node000240" title=" " alt="" coords="793,7654,822,7665,843,7684,858,7715,870,7764,878,7828,883,7906,888,8091,887,8298,881,8695,883,8843,886,8896,892,8930,915,8990,945,9046,1001,9127,996,9127,941,9048,910,8992,887,8931,881,8896,877,8843,875,8695,881,8298,882,8091,878,7906,873,7829,864,7765,853,7716,839,7687,819,7670,796,7659"/>
+<area shape="rect" id="Node000241" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1254,9205,1542,9267"/>
+<area shape="poly" id="edge271_Node000240_Node000241" title=" " alt="" coords="1069,9158,1181,9191,1256,9209,1251,9211,1180,9196,1070,9163"/>
+<area shape="rect" id="Node000243" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1254,9290,1542,9352"/>
+<area shape="poly" id="edge273_Node000240_Node000243" title=" " alt="" coords="1035,9164,1099,9222,1139,9252,1182,9276,1217,9290,1256,9303,1251,9304,1215,9295,1180,9281,1136,9256,1096,9226,1035,9169"/>
+<area shape="rect" id="Node000245" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1233,9016,1563,9078"/>
+<area shape="poly" id="edge275_Node000240_Node000245" title=" " alt="" coords="1070,9120,1180,9088,1236,9077,1232,9079,1181,9093,1072,9125"/>
+<area shape="rect" id="Node000247" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1272,9102,1524,9181"/>
+<area shape="poly" id="edge277_Node000240_Node000247" title=" " alt="" coords="1111,9139,1274,9140,1269,9142,1112,9144"/>
+<area shape="rect" id="Node000242" href="$classstir_1_1ProjectorByBinPairUsingNiftyPET.html" title="A projector pair based on NiftyPET projectors." alt="" coords="1866,9319,2036,9364"/>
+<area shape="poly" id="edge272_Node000241_Node000242" title=" " alt="" coords="1556,9258,1616,9276,1640,9291,1664,9304,1715,9318,1768,9328,1868,9340,1863,9341,1767,9333,1714,9323,1662,9309,1638,9295,1614,9281,1557,9263"/>
+<area shape="rect" id="Node000244" href="$classstir_1_1ProjectorByBinPairUsingParallelproj.html" title="A projector pair based on Parallelproj projectors." alt="" coords="1866,9388,2036,9433"/>
+<area shape="poly" id="edge274_Node000243_Node000244" title=" " alt="" coords="1557,9349,1616,9361,1664,9373,1769,9390,1869,9403,1863,9404,1768,9395,1662,9379,1614,9367,1557,9354"/>
+<area shape="rect" id="Node000246" href="$classstir_1_1ProjectorByBinPairUsingProjMatrixByBin.html" title="A projector pair based on a single matrix." alt="" coords="1866,9180,2036,9225"/>
+<area shape="poly" id="edge276_Node000245_Node000246" title=" " alt="" coords="1577,9068,1617,9089,1634,9108,1641,9129,1648,9149,1665,9166,1712,9189,1764,9202,1817,9208,1868,9210,1863,9212,1817,9213,1764,9207,1711,9194,1661,9170,1644,9151,1636,9131,1629,9111,1613,9093,1578,9073"/>
+<area shape="rect" id="Node000248" href="$classstir_1_1ProjectorByBinPairUsingSeparateProjectors.html" title="A projector pair based on a single matrix." alt="" coords="1860,9250,2042,9294"/>
+<area shape="poly" id="edge278_Node000247_Node000248" title=" " alt="" coords="1538,9161,1579,9174,1616,9191,1631,9202,1641,9214,1650,9225,1664,9235,1712,9252,1763,9264,1863,9274,1857,9276,1762,9269,1711,9258,1662,9240,1646,9229,1637,9218,1628,9206,1614,9196,1577,9179,1539,9167"/>
+<area shape="rect" id="Node000250" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="937,5495,1085,5540"/>
+<area shape="poly" id="edge280_Node000249_Node000250" title=" " alt="" coords="725,5676,796,5612,841,5578,888,5550,939,5531,936,5535,891,5554,844,5583,800,5616,729,5679"/>
+<area shape="rect" id="Node000251" href="$classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objects" alt="" coords="1297,5582,1499,5626"/>
+<area shape="poly" id="edge281_Node000250_Node000251" title=" " alt="" coords="1098,5539,1134,5549,1181,5567,1299,5590,1294,5593,1180,5572,1132,5555,1101,5544"/>
+<area shape="rect" id="Node000252" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1822,5471,2081,5566"/>
+<area shape="poly" id="edge282_Node000251_Node000252" title=" " alt="" coords="1513,5584,1823,5537,1819,5540,1516,5588"/>
+<area shape="rect" id="Node000256" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1814,5590,2088,5669"/>
+<area shape="poly" id="edge286_Node000251_Node000256" title=" " alt="" coords="1513,5607,1816,5621,1811,5625,1516,5612"/>
+<area shape="rect" id="Node000253" href="$classstir_1_1OSMAPOSLReconstruction.html" title="Implementation of the Ordered Subsets version of Green&#39;s MAP One Step Late algorithm." alt="" coords="2387,5496,2606,5541"/>
+<area shape="poly" id="edge283_Node000252_Node000253" title=" " alt="" coords="2095,5516,2389,5517,2384,5520,2098,5521"/>
+<area shape="rect" id="Node000254" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2754,5471,3030,5566"/>
+<area shape="poly" id="edge284_Node000253_Node000254" title=" " alt="" coords="2621,5516,2756,5517,2751,5520,2623,5521"/>
+<area shape="rect" id="Node000255" href="$classstir_1_1KOSMAPOSLReconstruction.html" title="A reconstructor class appropriate for emission data." alt="" coords="3078,5496,3305,5541"/>
+<area shape="poly" id="edge285_Node000254_Node000255" title=" " alt="" coords="3044,5516,3080,5517,3075,5520,3047,5521"/>
+<area shape="rect" id="Node000257" href="$classstir_1_1OSSPSReconstruction.html" title="Implementation of the relaxed Ordered Subsets Separable Paraboloidal Surrogate ( OSSPS)" alt="" coords="2402,5607,2591,5652"/>
+<area shape="poly" id="edge287_Node000256_Node000257" title=" " alt="" coords="2103,5627,2404,5628,2399,5631,2105,5632"/>
+<area shape="rect" id="Node000259" href="$classstir_1_1RigidObject3DMotion.html" title="Base class for 3D rigid motion." alt="" coords="917,9286,1105,9314"/>
+<area shape="poly" id="edge289_Node000258_Node000259" title=" " alt="" coords="802,7726,825,7737,843,7753,860,7788,872,7844,880,7917,885,8006,887,8216,883,8452,874,8902,877,9069,883,9128,892,9166,912,9203,939,9236,993,9286,988,9286,935,9240,908,9206,887,9168,878,9129,872,9069,868,8902,878,8452,882,8216,880,8006,875,7918,867,7845,855,7790,839,7756,822,7741,804,7731"/>
+<area shape="rect" id="Node000260" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1236,9376,1560,9438"/>
+<area shape="poly" id="edge290_Node000259_Node000260" title=" " alt="" coords="1059,9318,1118,9340,1181,9361,1238,9377,1233,9379,1180,9367,1116,9345,1060,9323"/>
+<area shape="rect" id="Node000261" href="$classstir_1_1RigidObject3DMotionFromPolaris.html" title="A class for handling motion information from the Polaris tracker." alt="" coords="1857,9458,2045,9502"/>
+<area shape="poly" id="edge291_Node000260_Node000261" title=" " alt="" coords="1575,9431,1663,9443,1859,9469,1854,9470,1663,9448,1576,9436"/>
+<area shape="rect" id="Node000263" href="$classstir_1_1ObjectTransformation.html" title=" " alt="" coords="916,9408,1106,9453"/>
+<area shape="poly" id="edge293_Node000262_Node000263" title=" " alt="" coords="814,7815,843,7838,860,7876,872,7935,880,8013,884,8106,885,8328,879,8576,872,8824,869,9049,874,9224,881,9285,892,9324,907,9349,927,9371,972,9408,967,9408,923,9375,903,9352,887,9326,876,9286,868,9224,864,9049,867,8824,874,8576,880,8328,879,8106,875,8013,867,7936,855,7877,839,7842,816,7820"/>
+<area shape="rect" id="Node000264" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1261,9462,1535,9541"/>
+<area shape="poly" id="edge294_Node000263_Node000264" title=" " alt="" coords="1121,9448,1263,9476,1258,9477,1122,9453"/>
+<area shape="rect" id="Node000265" href="$classstir_1_1RigidObject3DTransformation.html" title="Class to perform rigid object transformations in 3 dimensions." alt="" coords="1830,9526,2072,9554"/>
+<area shape="poly" id="edge295_Node000264_Node000265" title=" " alt="" coords="1550,9509,1833,9531,1827,9532,1551,9515"/>
+<area shape="rect" id="Node000267" href="$classstir_1_1ScatterSimulation.html" title="Simulate the scatter probability using a model&#45;based approach." alt="" coords="928,9494,1094,9522"/>
+<area shape="poly" id="edge297_Node000266_Node000267" title=" " alt="" coords="791,7877,821,7888,843,7908,853,7924,861,7947,873,8009,880,8091,883,8189,880,8424,871,8685,861,8947,857,9182,859,9281,865,9364,876,9426,892,9464,908,9480,930,9493,925,9494,905,9484,887,9467,871,9427,860,9364,854,9281,852,9182,856,8947,865,8685,875,8424,878,8189,875,8091,868,8009,856,7948,848,7926,839,7911,818,7893,794,7882"/>
+<area shape="rect" id="Node000268" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1258,9565,1538,9627"/>
+<area shape="poly" id="edge298_Node000267_Node000268" title=" " alt="" coords="1077,9524,1181,9551,1260,9569,1255,9571,1180,9556,1078,9529"/>
+<area shape="rect" id="Node000269" href="$classstir_1_1SingleScatterSimulation.html" title="PET single scatter simulation." alt="" coords="1848,9578,2054,9606"/>
+<area shape="poly" id="edge299_Node000268_Node000269" title=" " alt="" coords="1553,9592,1850,9592,1845,9593,1554,9598"/>
+<area shape="rect" id="Node000271" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes." alt="" coords="957,9710,1065,9738"/>
+<area shape="poly" id="edge301_Node000270_Node000271" title=" " alt="" coords="789,7946,820,7957,844,7977,853,8006,861,8061,871,8238,877,8478,879,8750,882,9265,885,9445,892,9533,914,9586,944,9636,999,9710,994,9709,939,9639,909,9589,887,9534,880,9446,876,9265,874,8750,871,8478,866,8238,855,8062,848,8007,839,7980,817,7962,791,7950"/>
+<area shape="rect" id="Node000272" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1283,9650,1513,9712"/>
+<area shape="poly" id="edge302_Node000271_Node000272" title=" " alt="" coords="1080,9714,1285,9693,1280,9695,1082,9719"/>
+<area shape="rect" id="Node000274" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1279,9736,1516,9798"/>
+<area shape="poly" id="edge304_Node000271_Node000274" title=" " alt="" coords="1081,9729,1281,9753,1276,9754,1081,9734"/>
+<area shape="rect" id="Node000276" href="$classstir_1_1Shape3DWithOrientation.html" title="Class for shapes with orientation." alt="" coords="1292,9832,1504,9859"/>
+<area shape="poly" id="edge306_Node000271_Node000276" title=" " alt="" coords="1048,9743,1110,9777,1182,9807,1237,9822,1294,9834,1289,9835,1235,9827,1180,9812,1107,9781,1048,9749"/>
+<area shape="rect" id="Node000273" href="$classstir_1_1CombinedShape3D.html" title="A class that allows combining several shapes using logical operations." alt="" coords="1864,9630,2038,9674"/>
+<area shape="poly" id="edge303_Node000272_Node000273" title=" " alt="" coords="1528,9672,1866,9656,1861,9657,1529,9677"/>
+<area shape="rect" id="Node000275" href="$classstir_1_1DiscretisedShape3D.html" title="A class for shapes that have been discretised as a volume." alt="" coords="1860,9698,2042,9726"/>
+<area shape="poly" id="edge305_Node000274_Node000275" title=" " alt="" coords="1531,9750,1663,9736,1863,9719,1857,9721,1663,9741,1532,9755"/>
+<area shape="rect" id="Node000277" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1786,9836,2116,9881"/>
+<area shape="poly" id="edge307_Node000276_Node000277" title=" " alt="" coords="1519,9846,1789,9854,1784,9855,1520,9851"/>
+<area shape="rect" id="Node000279" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1824,9905,2078,9967"/>
+<area shape="poly" id="edge309_Node000276_Node000279" title=" " alt="" coords="1489,9860,1663,9891,1827,9918,1821,9918,1663,9896,1489,9865"/>
+<area shape="rect" id="Node000281" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1838,9750,2065,9812"/>
+<area shape="poly" id="edge311_Node000276_Node000281" title=" " alt="" coords="1518,9829,1840,9794,1835,9795,1519,9834"/>
+<area shape="rect" id="Node000278" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box." alt="" coords="2450,9845,2543,9872"/>
+<area shape="poly" id="edge308_Node000277_Node000278" title=" " alt="" coords="2132,9856,2452,9858,2447,9859,2132,9861"/>
+<area shape="rect" id="Node000280" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid." alt="" coords="2444,9922,2549,9950"/>
+<area shape="poly" id="edge310_Node000279_Node000280" title=" " alt="" coords="2093,9933,2446,9936,2441,9936,2094,9939"/>
+<area shape="rect" id="Node000282" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder." alt="" coords="2411,9768,2582,9795"/>
+<area shape="poly" id="edge312_Node000281_Node000282" title=" " alt="" coords="2079,9779,2413,9781,2408,9782,2080,9784"/>
+<area shape="rect" id="Node000284" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info." alt="" coords="944,9830,1078,9858"/>
+<area shape="poly" id="edge314_Node000283_Node000284" title=" " alt="" coords="789,8015,820,8026,843,8046,854,8064,863,8089,877,8156,885,8245,890,8352,889,8606,881,8890,871,9176,865,9433,866,9542,870,9634,879,9703,892,9748,909,9774,932,9796,982,9830,976,9830,929,9800,905,9777,887,9750,873,9705,865,9634,861,9542,860,9433,866,9175,876,8890,884,8606,885,8352,880,8245,872,8157,858,8090,849,8066,839,8050,817,8031,791,8020"/>
+<area shape="rect" id="Node000285" href="$classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames." alt="" coords="1304,9947,1492,9992"/>
+<area shape="poly" id="edge315_Node000284_Node000285" title=" " alt="" coords="1093,9858,1133,9868,1246,9906,1345,9946,1340,9946,1244,9911,1132,9873,1093,9863"/>
+<area shape="rect" id="Node000288" href="$classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals." alt="" coords="1304,10111,1492,10156"/>
+<area shape="poly" id="edge318_Node000284_Node000288" title=" " alt="" coords="1093,9847,1115,9856,1134,9869,1149,9885,1157,9901,1162,9934,1166,9968,1171,9985,1183,10002,1217,10037,1257,10066,1298,10090,1338,10111,1333,10110,1296,10094,1254,10070,1214,10041,1179,10006,1167,9987,1160,9969,1157,9935,1152,9903,1144,9888,1131,9873,1113,9861,1093,9853"/>
+<area shape="rect" id="Node000286" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1824,9991,2078,10070"/>
+<area shape="poly" id="edge316_Node000285_Node000286" title=" " alt="" coords="1507,9979,1826,10016,1821,10017,1507,9984"/>
+<area shape="rect" id="Node000287" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file." alt="" coords="2407,10008,2586,10053"/>
+<area shape="poly" id="edge317_Node000286_Node000287" title=" " alt="" coords="2094,10028,2409,10030,2404,10031,2094,10033"/>
+<area shape="rect" id="Node000289" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1824,10094,2078,10173"/>
+<area shape="poly" id="edge319_Node000288_Node000289" title=" " alt="" coords="1507,10131,1826,10133,1821,10134,1507,10136"/>
+<area shape="rect" id="Node000291" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1824,10197,2078,10275"/>
+<area shape="poly" id="edge321_Node000288_Node000291" title=" " alt="" coords="1507,10152,1663,10183,1826,10214,1821,10214,1663,10188,1506,10158"/>
+<area shape="rect" id="Node000290" href="$classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format..." alt="" coords="2396,10111,2597,10156"/>
+<area shape="poly" id="edge320_Node000289_Node000290" title=" " alt="" coords="2094,10131,2399,10133,2393,10133,2094,10136"/>
+<area shape="rect" id="Node000292" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html" title="A class for reading/writing singles from an ECAT7 .sgl file." alt="" coords="2406,10214,2587,10258"/>
+<area shape="poly" id="edge322_Node000291_Node000292" title=" " alt="" coords="2094,10233,2408,10236,2403,10236,2094,10239"/>
+<area shape="rect" id="Node000294" href="$classstir_1_1SpatialTransformation.html" title="base class for any type of motion fieldsAt present very basic. It just provides the parsing mechanism..." alt="" coords="914,9882,1108,9910"/>
+<area shape="poly" id="edge324_Node000293_Node000294" title=" " alt="" coords="805,8088,827,8099,843,8114,854,8133,863,8158,876,8228,884,8321,886,8432,881,8697,868,8993,855,9288,850,9553,852,9664,859,9757,872,9826,881,9850,891,9868,917,9888,911,9888,887,9871,876,9853,867,9827,854,9757,847,9665,844,9553,850,9288,863,8993,875,8697,881,8432,878,8321,871,8229,858,8160,850,8135,839,8118,823,8103,806,8093"/>
+<area shape="rect" id="Node000295" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1287,10230,1509,10292"/>
+<area shape="poly" id="edge325_Node000294_Node000295" title=" " alt="" coords="1122,9911,1135,9921,1157,9951,1166,9982,1166,10013,1162,10043,1158,10074,1157,10104,1164,10135,1183,10166,1205,10189,1230,10207,1289,10237,1284,10236,1228,10212,1201,10193,1179,10170,1159,10137,1152,10105,1153,10073,1157,10042,1161,10012,1160,9983,1152,9954,1131,9924,1121,9916"/>
+<area shape="rect" id="Node000296" href="$classstir_1_1GatedSpatialTransformation.html" title="Class for spatial transformations for gated images." alt="" coords="1835,10300,2067,10327"/>
+<area shape="poly" id="edge326_Node000295_Node000296" title=" " alt="" coords="1525,10272,1663,10285,1837,10304,1832,10303,1663,10291,1525,10277"/>
+<area shape="rect" id="Node000298" href="$classstir_1_1DataProcessor.html" title=" " alt="" coords="917,5564,1105,5626"/>
+<area shape="poly" id="edge328_Node000297_Node000298" title=" " alt="" coords="796,5772,819,5759,839,5743,851,5730,857,5717,863,5691,868,5663,876,5649,888,5635,918,5617,915,5621,891,5639,880,5652,873,5665,868,5692,862,5719,855,5733,843,5747,822,5763,800,5775"/>
+<area shape="rect" id="Node000300" href="$classstir_1_1Reconstruction.html" title=" " alt="" coords="917,5649,1105,5711"/>
+<area shape="poly" id="edge330_Node000299_Node000300" title=" " alt="" coords="795,5880,819,5865,839,5849,852,5833,858,5818,862,5786,867,5754,874,5737,888,5721,918,5701,915,5706,891,5725,879,5740,872,5755,868,5787,863,5819,856,5836,843,5853,822,5870,800,5883"/>
+<area shape="rect" id="Node000302" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="917,9934,1105,9996"/>
+<area shape="poly" id="edge332_Node000301_Node000302" title=" " alt="" coords="800,8186,825,8200,843,8218,853,8237,862,8262,873,8330,880,8421,883,8529,879,8785,868,9071,858,9356,854,9612,856,9720,863,9810,874,9878,882,9902,892,9920,903,9932,919,9945,914,9944,900,9936,887,9923,877,9904,869,9879,857,9811,851,9721,848,9612,852,9356,863,9070,874,8785,878,8529,875,8421,868,8331,856,8263,848,8239,839,8222,822,8204,802,8191"/>
+<area shape="rect" id="Node000304" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="917,1636,1105,1698"/>
+<area shape="poly" id="edge334_Node000303_Node000304" title=" " alt="" coords="796,1897,820,1882,839,1865,853,1846,860,1827,862,1788,865,1749,873,1729,887,1709,917,1688,915,1693,891,1713,877,1732,870,1750,868,1788,865,1828,858,1848,843,1868,823,1886,800,1900"/>
+<area shape="rect" id="Node000306" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="910,1774,1112,1802"/>
+<area shape="poly" id="edge336_Node000305_Node000306" title=" " alt="" coords="807,1998,839,1975,854,1956,861,1936,862,1895,863,1854,871,1833,888,1813,911,1799,908,1803,891,1817,876,1836,869,1855,867,1895,866,1937,859,1958,843,1979,812,2001"/>
+<area shape="rect" id="Node000308" href="$classstir_1_1DataProcessor.html" title=" " alt="" coords="939,5735,1083,5780"/>
+<area shape="poly" id="edge338_Node000307_Node000308" title=" " alt="" coords="812,5977,840,5958,858,5935,865,5912,872,5887,887,5858,930,5813,977,5778,974,5783,934,5817,891,5862,877,5889,871,5913,863,5937,843,5962,816,5980"/>
+<area shape="rect" id="Node000309" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1269,5650,1526,5729"/>
+<area shape="poly" id="edge339_Node000308_Node000309" title=" " alt="" coords="1097,5740,1271,5710,1267,5714,1101,5744"/>
+<area shape="rect" id="Node000310" href="$classstir_1_1HUToMuImageProcessor.html" title="A class in the DataProcessor hierarchy that convert from Hounsfield Units to mu&#45;values." alt="" coords="1847,5692,2055,5737"/>
+<area shape="poly" id="edge340_Node000309_Node000310" title=" " alt="" coords="1541,5694,1849,5708,1845,5712,1543,5698"/>
+<area shape="rect" id="Node000312" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="909,1878,1113,1922"/>
+<area shape="poly" id="edge342_Node000311_Node000312" title=" " alt="" coords="824,2067,839,2054,852,2040,858,2025,862,1995,867,1964,874,1948,888,1933,910,1919,907,1923,891,1937,879,1951,872,1965,868,1995,863,2027,856,2042,843,2058,828,2069"/>
+<area shape="rect" id="Node000314" href="$classstir_1_1GeneralisedObjectiveFunction.html" title=" " alt="" coords="889,1946,1133,2008"/>
+<area shape="poly" id="edge344_Node000313_Node000314" title=" " alt="" coords="813,2167,839,2144,851,2128,857,2112,862,2081,867,2050,874,2034,887,2018,905,2006,902,2011,891,2022,879,2037,872,2052,867,2082,862,2114,856,2130,843,2147,817,2169"/>
+<area shape="rect" id="Node000315" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title=" " alt="" coords="1303,177,1492,255"/>
+<area shape="poly" id="edge345_Node000314_Node000315" title=" " alt="" coords="1128,1932,1142,1891,1152,1833,1166,1676,1171,1482,1171,1271,1167,872,1169,723,1173,671,1178,635,1195,579,1217,522,1269,415,1322,323,1369,253,1367,258,1326,326,1273,418,1222,524,1201,580,1183,637,1178,671,1174,724,1172,872,1176,1270,1176,1482,1171,1677,1158,1833,1147,1892,1133,1933"/>
+<area shape="rect" id="Node000316" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title=" " alt="" coords="1816,39,2087,118"/>
+<area shape="poly" id="edge346_Node000315_Node000316" title=" " alt="" coords="1505,176,1662,128,1817,97,1813,101,1664,133,1509,179"/>
+<area shape="rect" id="Node000319" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1769,143,2133,289"/>
+<area shape="poly" id="edge349_Node000315_Node000319" title=" " alt="" coords="1506,214,1770,214,1766,218,1509,218"/>
+<area shape="rect" id="Node000317" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2287,5,2706,152"/>
+<area shape="poly" id="edge347_Node000316_Node000317" title=" " alt="" coords="2101,77,2289,77,2285,80,2104,81"/>
+<area shape="rect" id="Node000318" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title=" " alt="" coords="2756,39,3028,118"/>
+<area shape="poly" id="edge348_Node000317_Node000318" title=" " alt="" coords="2720,77,2758,77,2753,80,2723,81"/>
+<area shape="rect" id="Node000320" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title=" " alt="" coords="2362,177,2631,255"/>
+<area shape="poly" id="edge350_Node000319_Node000320" title=" " alt="" coords="2147,214,2364,214,2360,218,2151,218"/>
+<area shape="rect" id="Node000322" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="926,4736,1096,4798"/>
+<area shape="poly" id="edge352_Node000321_Node000322" title=" " alt="" coords="735,4938,805,4877,888,4816,930,4796,927,4800,891,4821,808,4881,740,4941"/>
+<area shape="rect" id="Node000323" href="$classstir_1_1PriorWithParabolicSurrogate.html" title=" " alt="" coords="1287,4728,1509,4790"/>
+<area shape="poly" id="edge353_Node000322_Node000323" title=" " alt="" coords="1110,4763,1288,4759,1284,4763,1113,4767"/>
+<area shape="rect" id="Node000324" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1800,4775,2102,4870"/>
+<area shape="poly" id="edge354_Node000323_Node000324" title=" " alt="" coords="1523,4771,1802,4804,1798,4807,1526,4775"/>
+<area shape="rect" id="Node000325" href="$classstir_1_1QuadraticPrior.html" title=" " alt="" coords="2425,4800,2568,4845"/>
+<area shape="poly" id="edge355_Node000324_Node000325" title=" " alt="" coords="2116,4820,2427,4821,2422,4824,2119,4825"/>
+<area shape="rect" id="Node000327" href="$classstir_1_1OutputFileFormat.html" title=" " alt="" coords="929,5872,1093,5917"/>
+<area shape="poly" id="edge357_Node000326_Node000327" title=" " alt="" coords="790,6075,817,6059,839,6041,851,6027,857,6013,862,5985,867,5956,875,5942,888,5927,907,5914,930,5905,927,5909,909,5919,891,5931,879,5945,873,5958,867,5986,862,6015,855,6030,843,6045,820,6064,794,6078"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1DataProcessor.html" title=" " alt="" coords="931,3220,1091,3282"/>
+<area shape="poly" id="edge359_Node000030_Node000006" title=" " alt="" coords="702,4477,1002,3279,1001,3284,707,4478"/>
+<area shape="rect" id="Node000031" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="926,4484,1096,4546"/>
+<area shape="poly" id="edge383_Node000030_Node000031" title=" " alt="" coords="788,4513,927,4513,923,4516,792,4517"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,2350,1580,2445"/>
+<area shape="poly" id="edge360_Node000006_Node000007" title=" " alt="" coords="1102,3229,1118,3218,1131,3205,1146,3177,1157,3141,1163,3099,1165,3051,1161,2945,1152,2831,1143,2716,1140,2610,1143,2563,1150,2521,1161,2485,1179,2456,1195,2439,1217,2425,1214,2430,1199,2443,1183,2459,1166,2487,1155,2522,1148,2563,1146,2610,1148,2716,1157,2830,1167,2945,1170,3051,1168,3099,1162,3142,1151,3179,1135,3208,1122,3222,1107,3232"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,2470,1580,2565"/>
+<area shape="poly" id="edge362_Node000006_Node000009" title=" " alt="" coords="1102,3229,1118,3218,1131,3205,1144,3181,1153,3151,1161,3076,1159,2987,1152,2891,1146,2795,1145,2706,1154,2630,1164,2600,1179,2576,1195,2559,1217,2545,1215,2550,1199,2563,1183,2579,1169,2602,1159,2631,1150,2706,1151,2794,1158,2891,1164,2987,1166,3077,1158,3152,1149,3183,1135,3208,1122,3222,1107,3232"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,2590,1580,2685"/>
+<area shape="poly" id="edge364_Node000006_Node000011" title=" " alt="" coords="1103,3228,1131,3205,1141,3186,1149,3162,1157,3101,1156,3029,1153,2951,1149,2873,1149,2801,1158,2740,1166,2715,1179,2696,1195,2679,1217,2666,1214,2670,1199,2683,1183,2699,1171,2718,1163,2741,1155,2801,1154,2873,1158,2951,1162,3029,1162,3102,1154,3163,1146,3188,1135,3208,1107,3231"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,2710,1580,2805"/>
+<area shape="poly" id="edge366_Node000006_Node000013" title=" " alt="" coords="1102,3228,1131,3205,1148,3180,1159,3155,1165,3131,1167,3107,1163,3059,1152,3011,1141,2963,1138,2915,1141,2890,1148,2865,1160,2841,1179,2815,1217,2786,1214,2791,1183,2819,1165,2843,1153,2867,1146,2891,1143,2915,1147,2962,1157,3010,1168,3058,1173,3107,1170,3132,1164,3157,1152,3183,1135,3208,1107,3231"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1251,2829,1544,2942"/>
+<area shape="poly" id="edge368_Node000006_Node000015" title=" " alt="" coords="1102,3227,1131,3205,1150,3173,1158,3142,1158,3111,1153,3080,1149,3048,1149,3016,1157,2984,1179,2952,1211,2924,1252,2906,1249,2910,1214,2929,1183,2955,1162,2986,1154,3017,1154,3048,1159,3079,1163,3111,1163,3143,1155,3175,1135,3208,1107,3230"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,2966,1580,3061"/>
+<area shape="poly" id="edge370_Node000006_Node000017" title=" " alt="" coords="1102,3225,1131,3205,1143,3189,1150,3172,1153,3139,1157,3105,1165,3088,1179,3071,1217,3046,1214,3051,1182,3075,1169,3091,1163,3107,1159,3140,1155,3174,1148,3191,1135,3209,1107,3228"/>
+<area shape="rect" id="Node000019" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,3086,1580,3181"/>
+<area shape="poly" id="edge372_Node000006_Node000019" title=" " alt="" coords="1104,3216,1180,3191,1221,3180,1217,3184,1181,3196,1108,3220"/>
+<area shape="rect" id="Node000021" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,3206,1580,3301"/>
+<area shape="poly" id="edge374_Node000006_Node000021" title=" " alt="" coords="1105,3249,1218,3250,1214,3254,1108,3253"/>
+<area shape="rect" id="Node000023" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,3326,1580,3421"/>
+<area shape="poly" id="edge376_Node000006_Node000023" title=" " alt="" coords="1104,3285,1182,3311,1220,3324,1215,3326,1180,3316,1107,3289"/>
+<area shape="rect" id="Node000025" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1260,3445,1536,3558"/>
+<area shape="poly" id="edge378_Node000006_Node000025" title=" " alt="" coords="1041,3292,1103,3364,1141,3400,1182,3431,1220,3451,1262,3469,1257,3471,1218,3456,1179,3436,1137,3404,1099,3367,1043,3297"/>
+<area shape="rect" id="Node000027" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,3582,1580,3677"/>
+<area shape="poly" id="edge380_Node000006_Node000027" title=" " alt="" coords="1024,3294,1047,3357,1079,3431,1124,3505,1151,3538,1182,3567,1218,3591,1213,3593,1179,3571,1147,3542,1119,3508,1074,3433,1042,3359,1024,3299"/>
+<area shape="rect" id="Node000028" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1216,3702,1580,3797"/>
+<area shape="poly" id="edge381_Node000006_Node000028" title=" " alt="" coords="1017,3294,1033,3380,1061,3486,1083,3541,1109,3594,1143,3644,1182,3687,1218,3713,1213,3715,1179,3691,1138,3647,1105,3597,1078,3543,1056,3488,1028,3381,1017,3300"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1GammaImageFilter2D.html" title="A class in the ImageProcessor hierarchy that implements gamma correction filtering." alt="" coords="1854,2375,2048,2420"/>
+<area shape="poly" id="edge361_Node000007_Node000008" title=" " alt="" coords="1593,2395,1856,2396,1852,2399,1597,2399"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1MaximalImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements maximal filtering." alt="" coords="1856,2495,2046,2540"/>
+<area shape="poly" id="edge363_Node000009_Node000010" title=" " alt="" coords="1593,2515,1858,2516,1854,2519,1597,2519"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1MedianImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements median filtering." alt="" coords="1861,2615,2041,2660"/>
+<area shape="poly" id="edge365_Node000011_Node000012" title=" " alt="" coords="1593,2635,1862,2636,1858,2639,1596,2639"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1MinimalImageFilter3D.html" title="A class in the ImageProcessor hierarchy that implements minimal filtering." alt="" coords="1858,2735,2044,2780"/>
+<area shape="poly" id="edge367_Node000013_Node000014" title=" " alt="" coords="1593,2755,1860,2756,1856,2759,1596,2759"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1NonseparableConvolutionUsingRealDFTImageFilter.html" title="A class derived from DataProcessor for performing separable periodic convolutions with an array kerne..." alt="" coords="1842,2854,2060,2916"/>
+<area shape="poly" id="edge369_Node000015_Node000016" title=" " alt="" coords="1558,2883,1843,2884,1839,2887,1561,2887"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1SeparableCartesianMetzImageFilter.html" title="A class in the DataProcessor hierarchy that implements Metz filtering (which includes Gaussian filter..." alt="" coords="1852,2991,2050,3036"/>
+<area shape="poly" id="edge371_Node000017_Node000018" title=" " alt="" coords="1593,3011,1854,3012,1850,3015,1596,3015"/>
+<area shape="rect" id="Node000020" href="$classstir_1_1SeparableConvolutionImageFilter.html" title="A class derived from DataProcessor for performing separable non&#45;periodic convolutions." alt="" coords="1854,3111,2048,3156"/>
+<area shape="poly" id="edge373_Node000019_Node000020" title=" " alt="" coords="1593,3131,1856,3132,1852,3135,1597,3135"/>
+<area shape="rect" id="Node000022" href="$classstir_1_1TruncateToCylindricalFOVImageProcessor.html" title="A class in the DataProcessor hierarchy that sets voxels to 0 outside a given radius." alt="" coords="1840,3231,2063,3276"/>
+<area shape="poly" id="edge375_Node000021_Node000022" title=" " alt="" coords="1593,3251,1841,3252,1837,3255,1597,3255"/>
+<area shape="rect" id="Node000024" href="$classstir_1_1WienerImageFilter2D.html" title="A class in the ImageProcessor hierarchy that implements wiener filtering." alt="" coords="1862,3351,2040,3396"/>
+<area shape="poly" id="edge377_Node000023_Node000024" title=" " alt="" coords="1593,3371,1864,3372,1860,3375,1597,3375"/>
+<area shape="rect" id="Node000026" href="$classstir_1_1multiply__plane__scale__factorsImageProcessor.html" title="Simply multiplies each plane in an image with a scale factor." alt="" coords="1842,3470,2060,3532"/>
+<area shape="poly" id="edge379_Node000025_Node000026" title=" " alt="" coords="1550,3499,1844,3500,1839,3503,1553,3503"/>
+<area shape="rect" id="Node000029" href="$classstir_1_1Transform3DObjectImageProcessor.html" title="A class in the ImageProcessor hierarchy that performs movement by reinterpolation." alt="" coords="1843,3727,2059,3772"/>
+<area shape="poly" id="edge382_Node000028_Node000029" title=" " alt="" coords="1593,3747,1845,3748,1840,3751,1596,3751"/>
+<area shape="rect" id="Node000032" href="$classstir_1_1GibbsPenalty.html" title=" " alt="" coords="1315,4334,1481,4378"/>
+<area shape="poly" id="edge384_Node000031_Node000032" title=" " alt="" coords="1054,4472,1111,4427,1145,4406,1180,4388,1247,4368,1316,4358,1312,4362,1248,4373,1182,4393,1147,4410,1114,4431,1058,4475"/>
+<area shape="rect" id="Node000034" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1265,4403,1530,4498"/>
+<area shape="poly" id="edge386_Node000031_Node000034" title=" " alt="" coords="1110,4496,1267,4471,1263,4474,1113,4500"/>
+<area shape="rect" id="Node000036" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1245,4522,1550,4635"/>
+<area shape="poly" id="edge388_Node000031_Node000036" title=" " alt="" coords="1110,4529,1247,4552,1243,4555,1113,4533"/>
+<area shape="rect" id="Node000040" href="$classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy." alt="" coords="1315,4659,1481,4704"/>
+<area shape="poly" id="edge392_Node000031_Node000040" title=" " alt="" coords="1052,4554,1112,4603,1146,4626,1182,4644,1248,4665,1317,4676,1312,4679,1247,4670,1180,4649,1143,4630,1109,4607,1054,4559"/>
+<area shape="rect" id="Node000033" href="$classstir_1_1CudaGibbsPenalty.html" title="A base class with CUDA&#45;accelerated implementation of the GibbsPenalty class." alt="" coords="1866,4312,2036,4357"/>
+<area shape="poly" id="edge385_Node000032_Node000033" title=" " alt="" coords="1495,4350,1868,4336,1864,4340,1498,4354"/>
+<area shape="rect" id="Node000035" href="$classstir_1_1PLSPrior.html" title="A class in the GeneralisedPrior hierarchy. This implements the anatomical penalty function,..." alt="" coords="1864,4381,2038,4408"/>
+<area shape="poly" id="edge387_Node000034_Node000035" title=" " alt="" coords="1544,4431,1663,4417,1866,4400,1862,4403,1663,4423,1548,4435"/>
+<area shape="rect" id="Node000037" href="$classstir_1_1RelativeDifferencePrior.html" title="A class in the GeneralisedPrior hierarchy. This implements a Relative Difference prior." alt="" coords="1866,4432,2037,4477"/>
+<area shape="poly" id="edge389_Node000036_Node000037" title=" " alt="" coords="1563,4527,1614,4508,1638,4497,1662,4487,1767,4466,1867,4457,1863,4460,1768,4471,1664,4492,1640,4502,1616,4513,1567,4530"/>
+<area shape="rect" id="Node000038" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2381,4398,2612,4511"/>
+<area shape="poly" id="edge390_Node000037_Node000038" title=" " alt="" coords="2051,4452,2382,4453,2378,4456,2054,4457"/>
+<area shape="rect" id="Node000039" href="$classstir_1_1CudaRelativeDifferencePrior.html" title="CUDA implementation of the Relative Difference prior." alt="" coords="2790,4432,2994,4477"/>
+<area shape="poly" id="edge391_Node000038_Node000039" title=" " alt="" coords="2626,4452,2791,4453,2787,4456,2629,4457"/>
+<area shape="rect" id="Node000041" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1786,4501,2116,4614"/>
+<area shape="poly" id="edge393_Node000040_Node000041" title=" " alt="" coords="1495,4669,1555,4658,1614,4644,1638,4635,1662,4624,1787,4590,1784,4594,1664,4629,1640,4639,1616,4649,1556,4663,1499,4673"/>
+<area shape="rect" id="Node000043" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1803,4638,2099,4751"/>
+<area shape="poly" id="edge395_Node000040_Node000043" title=" " alt="" coords="1495,4681,1805,4689,1800,4693,1498,4686"/>
+<area shape="rect" id="Node000042" href="$classstir_1_1GibbsQuadraticPenalty.html" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior." alt="" coords="2397,4535,2596,4580"/>
+<area shape="poly" id="edge394_Node000041_Node000042" title=" " alt="" coords="2130,4555,2399,4556,2394,4559,2133,4560"/>
+<area shape="rect" id="Node000044" href="$classstir_1_1GibbsRelativeDifferencePenalty.html" title="Multithreaded CPU Implementation of the Relative Difference penalty." alt="" coords="2392,4672,2601,4717"/>
+<area shape="poly" id="edge396_Node000043_Node000044" title=" " alt="" coords="2113,4692,2394,4693,2390,4696,2116,4697"/>
+<area shape="rect" id="Node000349" href="$classstir_1_1MoveImage.html" title="A class for moving an image according to average motion in the frame." alt="" coords="630,8336,757,8363"/>
+<area shape="poly" id="edge401_Node000348_Node000349" title=" " alt="" coords="473,6956,500,6974,516,7008,526,7062,532,7133,535,7219,532,7423,524,7650,516,7877,513,8081,516,8166,522,8237,533,8289,548,8321,565,8335,585,8344,632,8353,627,8356,583,8350,562,8340,544,8324,528,8291,517,8237,511,8166,508,8081,510,7877,519,7650,527,7423,530,7219,527,7133,521,7063,511,7010,496,6978,475,6961"/>
+<area shape="rect" id="Node000350" href="$classstir_1_1MoveProjData.html" title="A class for moving projection data according to average motion in the frame." alt="" coords="622,8232,765,8259"/>
+<area shape="poly" id="edge402_Node000348_Node000350" title=" " alt="" coords="473,6956,500,6974,515,7005,524,7055,530,7121,533,7200,531,7388,524,7598,517,7808,515,7995,518,8074,524,8139,534,8188,548,8217,563,8230,581,8239,624,8249,620,8252,580,8244,560,8235,544,8220,529,8190,519,8140,513,8074,510,7995,512,7808,519,7598,526,7388,527,7200,525,7121,519,7056,510,7007,496,6978,475,6961"/>
+<area shape="rect" id="Node000351" href="$classstir_1_1ReportMovement.html" title="A class for reporting the movement within the frame w.r.t. to the reference position." alt="" coords="612,8284,775,8311"/>
+<area shape="poly" id="edge403_Node000348_Node000351" title=" " alt="" coords="473,6956,500,6974,515,7007,525,7059,531,7127,534,7210,532,7406,524,7624,516,7842,514,8038,517,8120,523,8188,533,8239,548,8269,561,8281,577,8289,614,8300,609,8302,575,8294,558,8285,544,8272,528,8240,518,8189,512,8120,509,8038,511,7842,519,7624,526,7405,529,7210,526,7127,520,7059,510,7008,496,6978,475,6961"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="627,3168,760,3195"/>
+<area shape="poly" id="edge411_Node000005_Node000004" title=" " alt="" coords="774,3183,811,3172,826,3163,839,3152,854,3121,864,3071,870,3003,873,2922,871,2727,863,2510,856,2292,853,2097,856,2015,862,1947,872,1896,887,1864,913,1845,946,1837,943,1841,916,1849,891,1867,877,1897,867,1948,861,2016,859,2098,861,2292,868,2510,876,2727,878,2922,875,3004,869,3072,859,3123,843,3155,829,3168,813,3177,778,3186"/>
+<area shape="poly" id="edge419_Node000005_Node000355" title=" " alt="" coords="774,3183,811,3172,826,3163,839,3152,855,3119,866,3064,872,2991,875,2903,872,2693,863,2459,855,2224,852,2014,854,1925,860,1851,871,1796,887,1761,900,1749,916,1741,951,1733,948,1737,918,1746,903,1753,891,1764,876,1797,866,1852,859,1925,857,2014,860,2224,869,2458,877,2693,880,2903,877,2992,871,3065,860,3121,843,3155,829,3168,813,3177,778,3186"/>
+<area shape="poly" id="edge408_Node000005_Node000055" title=" " alt="" coords="774,3182,811,3172,826,3163,839,3152,851,3127,860,3086,869,2965,869,2808,865,2631,861,2455,861,2296,868,2173,876,2131,887,2104,906,2086,932,2074,929,2078,910,2090,892,2107,881,2132,873,2174,866,2296,866,2455,871,2631,874,2808,874,2966,865,3087,856,3129,843,3155,829,3168,813,3177,778,3186"/>
+<area shape="poly" id="edge405_Node000005_Node000078" title=" " alt="" coords="774,3182,811,3172,826,3163,839,3152,850,3129,858,3092,867,2981,868,2836,865,2675,862,2513,862,2367,869,2254,877,2215,887,2190,906,2172,932,2160,929,2164,910,2176,892,2194,882,2217,875,2255,868,2367,867,2513,871,2675,873,2836,872,2981,864,3093,855,3131,843,3155,829,3168,813,3177,778,3186"/>
+<area shape="poly" id="edge410_Node000005_Node000080" title=" " alt="" coords="774,3182,811,3172,826,3163,839,3152,860,3119,874,3076,881,3026,884,2968,878,2839,863,2699,849,2558,842,2428,845,2371,852,2319,866,2275,887,2241,902,2228,923,2220,920,2224,905,2232,891,2244,871,2278,857,2320,850,2371,848,2428,854,2558,869,2698,883,2838,889,2968,887,3026,879,3077,865,3121,843,3155,829,3168,813,3177,778,3186"/>
+<area shape="poly" id="edge412_Node000005_Node000118" title=" " alt="" coords="774,3181,810,3171,839,3151,851,3134,863,3103,889,3011,914,2890,939,2752,980,2480,1007,2298,1006,2303,985,2481,944,2753,920,2891,894,3013,868,3105,856,3136,843,3155,812,3175,778,3184"/>
+<area shape="poly" id="edge416_Node000005_Node000131" title=" " alt="" coords="705,3207,1007,4050,1002,4051,705,3212"/>
+<area shape="poly" id="edge417_Node000005_Node000213" title=" " alt="" coords="698,3208,800,4085,860,4583,881,4745,892,4808,907,4821,928,4832,923,4835,904,4826,887,4811,876,4745,855,4584,795,4086,698,3213"/>
+<area shape="poly" id="edge418_Node000005_Node000217" title=" " alt="" coords="698,3208,802,4106,892,4869,920,4974,953,5074,1006,5213,1001,5214,948,5076,915,4975,887,4870,797,4107,698,3213"/>
+<area shape="poly" id="edge420_Node000005_Node000250" title=" " alt="" coords="699,3208,763,3706,806,4086,844,4480,851,4598,852,4699,848,4870,848,4952,853,5040,867,5138,892,5253,915,5324,944,5391,998,5494,993,5495,939,5394,910,5325,887,5254,862,5139,848,5040,843,4952,843,4870,847,4699,846,4598,839,4480,800,4086,758,3707,699,3213"/>
+<area shape="poly" id="edge406_Node000005_Node000298" title=" " alt="" coords="699,3208,765,3706,808,4086,844,4480,845,4684,845,5025,848,5202,856,5361,870,5483,880,5525,892,5551,903,5563,919,5574,914,5576,900,5567,887,5553,875,5526,865,5484,851,5361,843,5202,840,5025,840,4684,839,4480,802,4086,760,3707,699,3213"/>
+<area shape="poly" id="edge409_Node000005_Node000300" title=" " alt="" coords="699,3208,765,3706,808,4086,844,4480,856,5063,869,5444,879,5575,885,5616,892,5636,903,5648,919,5659,914,5661,900,5652,887,5639,880,5617,874,5576,864,5444,850,5063,839,4480,803,4086,760,3707,699,3213"/>
+<area shape="poly" id="edge407_Node000005_Node000308" title=" " alt="" coords="699,3208,766,3706,808,4086,844,4480,854,5107,867,5515,878,5656,884,5700,892,5721,913,5739,941,5751,936,5753,910,5743,887,5724,879,5701,873,5657,862,5515,849,5107,839,4480,803,4086,760,3707,699,3213"/>
+<area shape="poly" id="edge404_Node000005_Node000006" title=" " alt="" coords="773,3197,933,3232,929,3235,776,3201"/>
+<area shape="rect" id="Node000352" href="$classstir_1_1DistributedWorker.html" title="This implements the Worker for the stir::distributable_computation() function." alt="" coords="927,3047,1095,3092"/>
+<area shape="poly" id="edge413_Node000005_Node000352" title=" " alt="" coords="774,3173,809,3164,840,3151,855,3140,863,3128,873,3114,888,3102,929,3085,925,3089,891,3106,877,3118,868,3131,858,3144,843,3156,810,3169,778,3177"/>
+<area shape="rect" id="Node000353" href="$classstir_1_1Filter1D.html" title="Preliminary class for 1D filtering using FFTs." alt="" coords="941,3116,1081,3143"/>
+<area shape="poly" id="edge414_Node000005_Node000353" title=" " alt="" coords="774,3166,943,3139,939,3143,778,3170"/>
+<area shape="rect" id="Node000354" href="$classstir_1_1Filter2D.html" title="2&#45;dimensional filters (filtering done by FFTs)" alt="" coords="941,3168,1081,3195"/>
+<area shape="poly" id="edge415_Node000005_Node000354" title=" " alt="" coords="774,3179,943,3180,939,3183,777,3183"/>
 </map>

@@ -1,3 +1,37 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1CListEventDataSAFIR.html" title="Class for record with coincidence data using SAFIR bitfield definition. " alt="" coords="5,5,187,32"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays." alt="" coords="5,333,217,378"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="268,74,472,136"/>
+<area shape="poly" id="edge35_Node000000_Node000001" title=" " alt="" coords="144,321,338,134,336,139,148,324"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="268,240,472,301"/>
+<area shape="poly" id="edge38_Node000000_Node000004" title=" " alt="" coords="194,326,277,300,273,304,197,330"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title=" " alt="" coords="268,325,472,386"/>
+<area shape="poly" id="edge39_Node000000_Node000005" title=" " alt="" coords="231,353,270,354,266,357,233,358"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1ArrayFunctionObject__1ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the 2 argument operator() in t..." alt="" coords="265,441,476,502"/>
+<area shape="poly" id="edge45_Node000000_Node000011" title=" " alt="" coords="177,382,302,439,297,442,177,387"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1ArrayFunctionObject__2ArgumentImplementation.html" title="A convenience class for children of ArrayFunctionObject. It implements the in&#45;place operator() in ter..." alt="" coords="265,592,476,653"/>
+<area shape="poly" id="edge49_Node000000_Node000015" title=" " alt="" coords="145,387,267,512,341,591,336,591,263,516,144,392"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ArrayFilter1DUsingConvolution.html" title="This class implements convolution of a 1D array with an arbitrary (i.e. potentially non&#45;symmetric) ke..." alt="" coords="566,5,739,50"/>
+<area shape="poly" id="edge36_Node000001_Node000002" title=" " alt="" coords="486,70,523,60,569,49,565,52,525,65,489,75"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ArrayFilter1DUsingConvolutionSymmetricKernel.html" title="This class implements convolution of a 1D array with a symmetric kernel." alt="" coords="547,74,758,136"/>
+<area shape="poly" id="edge37_Node000001_Node000003" title=" " alt="" coords="487,103,549,104,544,106,489,107"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1GammaArrayFilter2D.html" title="Gamma correction filter for 2D slices in a 3D volume." alt="" coords="558,160,747,205"/>
+<area shape="poly" id="edge40_Node000005_Node000006" title=" " alt="" coords="472,313,474,311,491,287,497,263,503,239,522,215,561,196,556,199,526,219,508,241,502,265,495,290,478,315,475,317"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1MaximalArrayFilter3D.html" title="Implements erosion on 3D arrays." alt="" coords="561,229,744,274"/>
+<area shape="poly" id="edge41_Node000005_Node000007" title=" " alt="" coords="464,316,475,311,498,297,523,284,563,272,558,275,525,289,501,301,477,315,466,320"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1MedianArrayFilter3D.html" title="Implements median filtering on 3D arrays." alt="" coords="566,299,740,343"/>
+<area shape="poly" id="edge42_Node000005_Node000008" title=" " alt="" coords="487,339,567,331,563,333,489,344"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1MinimalArrayFilter3D.html" title="Implements erosion on 3D arrays." alt="" coords="563,368,742,413"/>
+<area shape="poly" id="edge43_Node000005_Node000009" title=" " alt="" coords="487,367,565,378,560,380,488,373"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1WienerArrayFilter2D.html" title="Applies a 2D Wiener filter on a 3D input array, slice by slice." alt="" coords="566,437,739,482"/>
+<area shape="poly" id="edge44_Node000005_Node000010" title=" " alt="" coords="448,391,525,422,569,438,564,439,523,428,448,396"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable." alt="" coords="550,506,755,568"/>
+<area shape="poly" id="edge46_Node000011_Node000012" title=" " alt="" coords="491,497,552,513,547,514,491,502"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1SeparableGaussianArrayFilter.html" title="Separable Gaussian filtering in n &#45; dimensions." alt="" coords="829,464,1040,525"/>
+<area shape="poly" id="edge47_Node000012_Node000013" title=" " alt="" coords="770,517,832,510,827,511,771,522"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1SeparableMetzArrayFilter.html" title="Separable Metz filtering in n &#45; dimensions." alt="" coords="842,549,1027,610"/>
+<area shape="poly" id="edge48_Node000012_Node000014" title=" " alt="" coords="771,552,845,566,839,566,771,558"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1ArrayFilterUsingRealDFTWithPadding.html" title="This class implements convolution of an array of real numbers with an arbitrary (i...." alt="" coords="524,592,781,653"/>
+<area shape="poly" id="edge50_Node000015_Node000016" title=" " alt="" coords="492,620,526,622,521,623,492,625"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1SeparableArrayFunctionObject2.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable." alt="" coords="550,677,755,738"/>
+<area shape="poly" id="edge51_Node000015_Node000017" title=" " alt="" coords="489,656,552,677,547,677,489,661"/>
 </map>

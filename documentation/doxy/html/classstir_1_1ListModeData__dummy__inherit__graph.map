@@ -1,4 +1,9 @@
 <map id="stir::ListModeData_dummy" name="stir::ListModeData_dummy">
-<area shape="rect" id="node2" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data. " alt="" coords="5,80,135,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etcProvides an ExamInfo member. " alt="" coords="15,5,125,32"/>
+<area shape="rect" id="Node000001" title="A class to trick the Objective function that we have list mode data, when we only have cache." alt="" coords="84,157,224,201"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data." alt="" coords="84,81,224,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,123,156,157,151,155,152,127"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etc" alt="" coords="5,5,124,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,41,141,80,135,81,92,46"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1DataWithProjDataInfo.html" title="base class for data objects such as ProjData etc" alt="" coords="148,5,341,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,42,172,83,168,78,214,45"/>
 </map>

@@ -1,7 +1,9 @@
 <map id="Input/Output Library" name="Input/Output Library">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,323,97,350"/>
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="575,117,711,143"/>
-<area shape="rect" id="node3" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="556,316,731,357"/>
-<area shape="rect" id="node5" href="$group__listmode.html" title="Support classes for\l reading list mode data" alt="" coords="566,385,721,427"/>
-<area shape="rect" id="node6" href="$group__InterfileIO.html" title="Interfile support in\l the IO library" alt="" coords="580,455,707,496"/>
+<area shape="rect" id="Node000005" href="$group__ECAT.html" title=" " alt="" coords="593,11,770,55"/>
+<area shape="rect" id="Node000006" href="$group__GE.html" title=" " alt="" coords="608,175,755,203"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,382,302,409"/>
+<area shape="rect" id="Node000003" href="$group__InterfileIO.html" title=" " alt="" coords="611,375,752,419"/>
+<area shape="rect" id="Node000004" href="$group__MultiIO.html" title=" " alt="" coords="603,444,760,489"/>
+<area shape="rect" id="Node000007" href="$group__listmode.html" title=" " alt="" coords="595,521,768,566"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,382,102,409"/>
 </map>

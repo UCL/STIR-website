@@ -1,3 +1,5 @@
 <map id="stir::BSpline::BSplinesRegularGrid_Tests" name="stir::BSpline::BSplinesRegularGrid_Tests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="52,5,157,32"/>
+<area shape="rect" id="Node000001" title="A simple class to BSplinesRegularGrid for 2D arrays." alt="" coords="5,81,219,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="58,5,166,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,47,114,81,110,79,110,51"/>
 </map>

@@ -1,8 +1,9 @@
 <map id="Reconstruction classes" name="Reconstruction classes">
-<area shape="rect" id="node1" href="$group__OSMAPOSL.html" title="OSMAPOSL" alt="" coords="581,5,677,32"/>
-<area shape="rect" id="node2" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,107,97,133"/>
-<area shape="rect" id="node3" href="$group__iterativereconstructors.html" title="Iterative reconstructors" alt="" coords="551,56,707,83"/>
-<area shape="rect" id="node4" href="$group__OSSPS.html" title="OSSPS" alt="" coords="595,107,663,133"/>
-<area shape="rect" id="node5" href="$group__KOSMAPOSL.html" title="KOSMAPOSL" alt="" coords="576,157,681,184"/>
-<area shape="rect" id="node7" href="$group__analyticreconstructors.html" title="Analytic reconstructors" alt="" coords="551,208,707,235"/>
+<area shape="rect" id="Node000005" href="$group__KOSMAPOSL.html" title=" " alt="" coords="609,7,711,34"/>
+<area shape="rect" id="Node000006" href="$group__OSMAPOSL.html" title=" " alt="" coords="613,59,707,86"/>
+<area shape="rect" id="Node000007" href="$group__OSSPS.html" title=" " alt="" coords="628,111,692,138"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,111,102,138"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,111,321,138"/>
+<area shape="rect" id="Node000004" href="$group__analyticreconstructors.html" title=" " alt="" coords="574,163,746,190"/>
+<area shape="rect" id="Node000003" href="$group__iterativereconstructors.html" title=" " alt="" coords="573,215,747,242"/>
 </map>

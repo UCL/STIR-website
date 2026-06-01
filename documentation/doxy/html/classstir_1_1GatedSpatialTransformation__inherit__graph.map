@@ -1,6 +1,11 @@
 <map id="stir::GatedSpatialTransformation" name="stir::GatedSpatialTransformation">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; GatedSpatialTransformation,\l SpatialTransformation \&gt;" alt="" coords="652,33,852,89"/>
-<area shape="rect" id="node3" href="$classstir_1_1SpatialTransformation.html" title="base class for any type of motion fieldsAt present very basic. It just provides the parsing mechanism..." alt="" coords="237,13,412,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; SpatialTransformation \&gt;" alt="" coords="5,5,179,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="228,64,421,105"/>
+<area shape="rect" id="Node000001" title="Class for spatial transformations for gated images." alt="" coords="983,47,1215,75"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="711,30,934,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="949,58,985,61,980,61,949,64"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1SpatialTransformation.html" title="base class for any type of motion fieldsAt present very basic. It just provides the parsing mechanism..." alt="" coords="257,14,450,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,31,688,46,714,51,708,51,687,52,466,37"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,200,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,25,259,27,254,28,216,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="249,65,458,110"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="474,88,578,86,687,80,708,81,713,80,688,86,578,92,474,93"/>
 </map>

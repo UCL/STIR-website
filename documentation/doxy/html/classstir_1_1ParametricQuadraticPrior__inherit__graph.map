@@ -1,6 +1,11 @@
 <map id="stir::ParametricQuadraticPrior&lt; TargetT &gt;" name="stir::ParametricQuadraticPrior&lt; TargetT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ParametricQuadraticPrior\l\&lt; TargetT \&gt;, GeneralisedPrior\l\&lt; TargetT \&gt;, PriorWithParabolicSurrogate\l\&lt; TargetT \&gt; \&gt;" alt="" coords="681,23,944,109"/>
-<area shape="rect" id="node3" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="this class implements priors with a parabolic surrogate curvature " alt="" coords="217,5,373,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; TargetT \&gt;" alt="" coords="5,5,149,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="199,84,392,125"/>
+<area shape="rect" id="Node000001" title="A class in the GeneralisedPrior hierarchy. This implements a quadratic Gibbs prior." alt="" coords="1077,49,1260,94"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="738,24,1028,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1044,69,1079,72,1074,72,1044,74"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1PriorWithParabolicSurrogate.html" title="this class implements priors with a parabolic surrogate curvature" alt="" coords="233,5,402,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,27,559,32,715,44,741,49,735,49,714,49,558,38,418,32"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="5,5,164,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="179,25,235,27,230,29,180,30"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="213,93,422,138"/>
+<area shape="poly" id="edge4_Node000002_Node000011" title=" " alt="" coords="438,123,571,127,643,124,714,117,735,116,741,115,715,122,643,129,571,132,438,129"/>
 </map>

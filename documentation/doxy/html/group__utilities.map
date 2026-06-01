@@ -1,11 +1,14 @@
 <map id="Utility programs" name="Utility programs">
-<area shape="rect" id="node1" href="$group__scatter.html" title="Scatter estimation\l building blocks" alt="" coords="497,85,625,126"/>
-<area shape="rect" id="node2" href="$group__GE.html" title="support for GE data" alt="" coords="493,151,629,177"/>
-<area shape="rect" id="node3" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="457,202,664,243"/>
-<area shape="rect" id="node4" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="473,329,648,370"/>
-<area shape="rect" id="node7" href="$group__ECAT__utilities.html" title="ECAT6 and ECAT7 utilities" alt="" coords="469,395,652,421"/>
-<area shape="rect" id="node8" href="$group__listmode__utilities.html" title="Utility programs for\l list mode data" alt="" coords="494,446,627,487"/>
-<area shape="rect" id="node9" href="$group__recon__buildblock.html" title="Reconstruction building\l blocks" alt="" coords="481,511,640,553"/>
-<area shape="rect" id="node10" href="$group__motion__utilities.html" title="Utility programs for\l motion and motion correction" alt="" coords="463,577,658,618"/>
-<area shape="rect" id="node6" href="$group__main__programs.html" title="Executables" alt="" coords="5,373,100,400"/>
+<area shape="rect" id="Node000004" href="$group__ClearPET__utilities.html" title=" " alt="" coords="507,8,700,52"/>
+<area shape="rect" id="Node000007" href="$group__ECAT.html" title=" " alt="" coords="515,156,692,200"/>
+<area shape="rect" id="Node000005" href="$group__ECAT__utilities.html" title=" " alt="" coords="509,224,698,252"/>
+<area shape="rect" id="Node000011" href="$group__GE.html" title=" " alt="" coords="530,276,677,304"/>
+<area shape="rect" id="Node000008" href="$group__NiftyPET.html" title=" " alt="" coords="491,328,716,372"/>
+<area shape="rect" id="Node000003" href="$group__listmode__utilities.html" title=" " alt="" coords="529,397,678,442"/>
+<area shape="rect" id="Node000002" href="$group__main__programs.html" title=" " alt="" coords="5,371,105,398"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,371,281,398"/>
+<area shape="rect" id="Node000006" href="$group__motion__utilities.html" title=" " alt="" coords="494,466,713,511"/>
+<area shape="rect" id="Node000009" href="$group__recon__buildblock.html" title=" " alt="" coords="516,536,691,580"/>
+<area shape="rect" id="Node000010" href="$group__scatter.html" title=" " alt="" coords="533,621,674,666"/>
+<area shape="rect" id="Node000012" href="$group__spatial__transformation.html" title=" " alt="" coords="539,711,668,738"/>
 </map>

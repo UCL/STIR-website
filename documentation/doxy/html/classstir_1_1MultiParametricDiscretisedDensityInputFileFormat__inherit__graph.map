@@ -1,4 +1,7 @@
 <map id="stir::MultiParametricDiscretisedDensityInputFileFormat" name="stir::MultiParametricDiscretisedDensityInputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ParametricVoxelsOnCartesian\lGrid \&gt;" alt="" coords="5,124,216,180"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="41,5,180,47"/>
+<area shape="rect" id="Node000001" title="Class for reading images in Multi file&#45;format." alt="" coords="6,243,233,288"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="5,132,234,194"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,207,122,244,117,242,118,211"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="43,5,196,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,63,122,132,117,131,118,68"/>
 </map>

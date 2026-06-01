@@ -1,3 +1,5 @@
 <map id="stir::CorrectProjDataApplication" name="stir::CorrectProjDataApplication">
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="43,5,174,32"/>
+<area shape="rect" id="Node000001" title="class to do precorrections" alt="" coords="5,81,232,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="49,5,188,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,47,121,82,116,79,117,51"/>
 </map>

@@ -1,9 +1,18 @@
 <map id="stir::GeneralisedPriorTests" name="stir::GeneralisedPriorTests">
-<area shape="rect" id="node5" href="$classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior " alt="" coords="1102,5,1262,32"/>
-<area shape="rect" id="node6" href="$classstir_1_1PLSPriorTests.html" title="tests for PLSPrior " alt="" coords="1115,56,1249,83"/>
-<area shape="rect" id="node7" href="$classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior " alt="" coords="1100,107,1264,133"/>
-<area shape="rect" id="node8" href="$classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior " alt="" coords="1104,158,1260,199"/>
-<area shape="rect" id="node2" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; GeneralisedPrior\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;" alt="" coords="571,59,824,130"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,71,111,97"/>
-<area shape="rect" id="node4" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,102,372,143"/>
+<area shape="rect" id="Node000001" title="Test class for QuadraticPrior, RelativeDifferencePrior, CudaRelativeDifferencePrior and LogcoshPrior." alt="" coords="946,84,1137,112"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior" alt="" coords="1191,5,1359,33"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1095,76,1186,43,1223,34,1228,33,1188,48,1096,81"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1PLSPriorTests.html" title="tests for PLSPrior" alt="" coords="1207,57,1343,85"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1152,82,1203,79,1209,79,1153,88"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior" alt="" coords="1187,109,1363,137"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1152,107,1189,114,1184,114,1152,113"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior" alt="" coords="1189,161,1360,206"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1097,115,1214,161,1209,160,1096,120"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="614,58,897,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="912,95,948,98,943,98,912,100"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,71,114,98"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,76,336,65,463,64,591,70,617,75,611,75,590,75,463,70,336,71,130,81"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior." alt="" coords="163,105,395,150"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="128,95,165,104,160,105,129,101"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="411,137,419,138,505,143,590,138,611,137,617,136,591,143,505,148,419,143,411,143"/>
 </map>

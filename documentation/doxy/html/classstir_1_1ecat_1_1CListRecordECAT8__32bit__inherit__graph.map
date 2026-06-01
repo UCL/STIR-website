@@ -1,4 +1,7 @@
 <map id="stir::ecat::CListRecordECAT8_32bit" name="stir::ecat::CListRecordECAT8_32bit">
-<area shape="rect" id="node2" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file. " alt="" coords="43,80,165,107"/>
-<area shape="rect" id="node3" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file. " alt="" coords="49,5,159,32"/>
+<area shape="rect" id="Node000001" title="A class for a general element of a listmode file for a Siemens scanner using the ECAT8 32bit format." alt="" coords="5,157,210,201"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file." alt="" coords="44,81,171,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,123,110,157,105,155,106,127"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListRecord.html" title="A class for a general element of a list mode file." alt="" coords="48,5,167,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,46,110,81,105,80,106,51"/>
 </map>

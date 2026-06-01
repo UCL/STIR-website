@@ -1,49 +1,118 @@
 <map id="stir::VectorWithOffset&lt; T &gt;" name="stir::VectorWithOffset&lt; T &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators " alt="" coords="482,412,713,439"/>
-<area shape="rect" id="node23" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::ArrayFunction\lObject\&lt; 1, elemT \&gt; \&gt; \&gt;" alt="" coords="490,865,705,921"/>
-<area shape="rect" id="node24" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::DataProcessor\l\&lt; TargetT \&gt; \&gt; \&gt;" alt="" coords="487,945,707,1001"/>
-<area shape="rect" id="node25" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; elemT \&gt; \&gt;" alt="" coords="517,1025,678,1081"/>
-<area shape="rect" id="node26" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; shared_ptr\&lt; RingNumPairs \&gt; \&gt; \&gt;" alt="" coords="483,1105,711,1161"/>
-<area shape="rect" id="node27" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; float \&gt;" alt="" coords="523,1186,672,1227"/>
-<area shape="rect" id="node28" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; elemT \&gt;" alt="" coords="523,799,672,841"/>
-<area shape="rect" id="node29" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::ProjDataInfo::\lFloat1Float2 \&gt;" alt="" coords="523,1252,672,1308"/>
-<area shape="rect" id="node30" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; int \&gt;" alt="" coords="523,1333,672,1374"/>
-<area shape="rect" id="node31" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::QuadraticPrior\l\&lt; float \&gt; \&gt;" alt="" coords="523,1399,672,1455"/>
-<area shape="rect" id="node32" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; ViewTangPosSwap \&gt; \&gt;" alt="" coords="511,1479,683,1535"/>
-<area shape="rect" id="node33" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; MapProjMatrixElemsForOneBin \&gt; \&gt;" alt="" coords="477,1559,718,1615"/>
-<area shape="rect" id="node34" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; int \&gt; \&gt;" alt="" coords="517,1639,678,1695"/>
-<area shape="rect" id="node35" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions\l &#45; 1 \&gt; \&gt;" alt="" coords="490,1719,705,1775"/>
-<area shape="rect" id="node44" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; TargetT \&gt; \&gt;" alt="" coords="509,1799,685,1841"/>
-<area shape="rect" id="node45" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::VectorWithOffset\l\&lt; Det1Det2 \&gt; \&gt;" alt="" coords="517,1865,678,1921"/>
-<area shape="rect" id="node46" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; stir::PoissonLogLikelihood\lWithLinearModelForMeanAndProjData \&gt;" alt="" coords="469,1945,725,2001"/>
-<area shape="rect" id="node47" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; Array\&lt; num_dimensions\l &#45; 1, elemT \&gt; \&gt;" alt="" coords="510,719,685,775"/>
-<area shape="rect" id="node48" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; shared_ptr\&lt; stir::BinNormalisation \&gt; \&gt;" alt="" coords="469,2026,725,2067"/>
-<area shape="rect" id="node3" href="$classstir_1_1Array.html" title="Array\&lt; 1, float \&gt;" alt="" coords="973,5,1091,32"/>
-<area shape="rect" id="node4" href="$classstir_1_1Array.html" title="Array\&lt; 1, T \&gt;" alt="" coords="982,56,1082,83"/>
-<area shape="rect" id="node5" href="$classstir_1_1Array.html" title="Array\&lt; 2, float \&gt;" alt="" coords="973,107,1091,133"/>
-<area shape="rect" id="node7" href="$classstir_1_1Array.html" title="Array\&lt; 2, int \&gt;" alt="" coords="979,157,1085,184"/>
-<area shape="rect" id="node8" href="$classstir_1_1Array.html" title="Array\&lt; 3, float \&gt;" alt="" coords="973,208,1091,235"/>
-<area shape="rect" id="node9" href="$classstir_1_1Array.html" title="Array\&lt; 3, std::pair\l\&lt; stir::BasicCoordinate\l\&lt; 3, elemT \&gt;, elemT \&gt; \&gt;" alt="" coords="949,259,1115,315"/>
-<area shape="rect" id="node10" href="$classstir_1_1Array.html" title="Array\&lt; 3, stir::BasicCoordinate\l\&lt; 3, elemT \&gt; \&gt;" alt="" coords="931,339,1133,381"/>
-<area shape="rect" id="node11" href="$classstir_1_1Array.html" title="Array\&lt; 3, unsigned\l char \&gt;" alt="" coords="966,405,1098,446"/>
-<area shape="rect" id="node12" href="$classstir_1_1Array.html" title="Array\&lt; 4, float \&gt;" alt="" coords="973,471,1091,497"/>
-<area shape="rect" id="node13" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l out_elemT \&gt;" alt="" coords="949,522,1115,563"/>
-<area shape="rect" id="node14" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; elemT \&gt; \&gt;" alt="" coords="945,587,1119,629"/>
-<area shape="rect" id="node15" href="$classstir_1_1Array.html" title="Array\&lt; num_dimensions,\l std::complex\&lt; float \&gt; \&gt;" alt="" coords="949,653,1115,694"/>
-<area shape="rect" id="node16" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; Array\&lt; num_dimensions \l&#45; 1, elemT \&gt;, elemT \&gt;" alt="" coords="933,719,1131,775"/>
-<area shape="rect" id="node21" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="933,805,1131,846"/>
-<area shape="rect" id="node6" href="$classstir_1_1Viewgram.html" title="stir::Viewgram\&lt; float \&gt;" alt="" coords="1346,107,1501,133"/>
-<area shape="rect" id="node17" href="$classstir_1_1Array.html" title="stir::Array\&lt; 2, elemT \&gt;" alt="" coords="1708,627,1863,653"/>
-<area shape="rect" id="node18" href="$classstir_1_1Array.html" title="stir::Array\&lt; 3, elemT \&gt;" alt="" coords="1708,721,1863,748"/>
-<area shape="rect" id="node19" href="$classstir_1_1Array.html" title="stir::Array\&lt; num_dimensions\l &#45; 1, elemT \&gt;" alt="" coords="1691,787,1880,829"/>
-<area shape="rect" id="node20" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays. " alt="" coords="1327,667,1520,709"/>
-<area shape="rect" id="node22" href="$classstir_1_1Array_3_011_00_01elemT_01_4.html" title="The 1&#45;dimensional (partial) specialisation of Array. " alt="" coords="1346,877,1501,904"/>
-<area shape="rect" id="node36" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="1349,1609,1498,1636"/>
-<area shape="rect" id="node38" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 3 \&gt;" alt="" coords="1349,1688,1498,1715"/>
-<area shape="rect" id="node40" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 4 \&gt;" alt="" coords="1349,1769,1498,1796"/>
-<area shape="rect" id="node42" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; num\l_dimensions &#45; 1 \&gt;" alt="" coords="1346,1834,1501,1875"/>
-<area shape="rect" id="node43" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="955,1726,1109,1767"/>
-<area shape="rect" id="node37" href="$classstir_1_1IndexRange2D.html" title="a &#39;convenience&#39; class for 2D index ranges. " alt="" coords="1718,1609,1853,1636"/>
-<area shape="rect" id="node39" href="$classstir_1_1IndexRange3D.html" title="a &#39;convenience&#39; class for 3D index ranges. Provides an easier constructor for regular ranges..." alt="" coords="1718,1688,1853,1715"/>
-<area shape="rect" id="node41" href="$classstir_1_1IndexRange4D.html" title="A convenience class for 4D index ranges. " alt="" coords="1718,1769,1853,1796"/>
+<area shape="rect" id="Node000001" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="5,2165,204,2193"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="1038,246,1254,307"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,2150,114,1945,136,1629,152,1462,172,1304,196,1169,210,1115,225,1070,332,814,383,710,439,619,506,537,587,460,688,385,814,309,868,286,926,272,984,265,1040,265,1036,269,984,271,927,277,870,291,816,314,691,390,590,464,509,540,444,622,388,713,337,816,230,1072,215,1116,202,1171,177,1305,157,1462,141,1630,119,1945,110,2150"/>
+<area shape="rect" id="Node000049" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="1038,1147,1254,1209"/>
+<area shape="poly" id="edge22_Node000001_Node000049" title=" " alt="" coords="105,2150,116,1945,141,1641,157,1488,177,1354,199,1253,212,1219,226,1199,243,1189,269,1181,347,1170,449,1163,569,1160,823,1163,1040,1171,1036,1174,823,1168,569,1166,450,1168,347,1175,271,1186,245,1194,229,1202,217,1221,205,1254,182,1355,162,1489,146,1642,122,1945,110,2150"/>
+<area shape="rect" id="Node000050" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators" alt="" coords="537,974,752,1019"/>
+<area shape="poly" id="edge24_Node000001_Node000050" title=" " alt="" coords="103,2149,104,1954,108,1812,117,1658,131,1503,153,1360,168,1297,184,1241,203,1194,226,1158,256,1124,292,1095,331,1071,373,1051,457,1022,538,1006,535,1010,459,1027,375,1056,334,1076,295,1100,260,1128,230,1161,208,1196,189,1242,173,1298,159,1361,137,1504,122,1658,113,1812,109,1954,108,2150"/>
+<area shape="rect" id="Node000056" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="556,1466,734,1527"/>
+<area shape="poly" id="edge38_Node000001_Node000056" title=" " alt="" coords="104,2150,112,2017,132,1830,147,1735,168,1649,194,1579,209,1552,226,1532,250,1517,283,1507,369,1494,466,1489,558,1491,554,1494,466,1494,369,1499,284,1512,252,1522,229,1536,213,1555,198,1581,173,1650,152,1736,137,1831,117,2017,110,2150"/>
+<area shape="rect" id="Node000057" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="525,1551,764,1613"/>
+<area shape="poly" id="edge39_Node000001_Node000057" title=" " alt="" coords="105,2150,115,2031,137,1867,152,1785,172,1710,197,1649,211,1626,226,1609,247,1596,277,1587,352,1575,439,1571,527,1573,523,1577,439,1576,352,1580,278,1592,249,1601,229,1613,215,1630,201,1652,177,1712,158,1786,142,1868,120,2031,110,2150"/>
+<area shape="rect" id="Node000066" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="533,1295,756,1357"/>
+<area shape="poly" id="edge40_Node000001_Node000066" title=" " alt="" coords="103,2149,106,1987,111,1874,121,1752,136,1630,158,1520,171,1472,187,1430,205,1395,226,1369,241,1361,268,1354,345,1343,535,1329,531,1333,345,1348,269,1360,243,1366,229,1373,210,1398,192,1432,176,1473,163,1521,141,1631,126,1752,117,1874,111,1988,108,2150"/>
+<area shape="rect" id="Node000067" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,1226,725,1271"/>
+<area shape="poly" id="edge42_Node000001_Node000067" title=" " alt="" coords="103,2150,103,1975,107,1850,116,1716,131,1582,153,1460,167,1407,184,1360,203,1322,226,1293,262,1265,303,1244,348,1231,394,1223,440,1220,485,1220,566,1230,562,1233,484,1226,440,1225,394,1228,349,1236,305,1249,265,1269,230,1297,208,1325,189,1362,172,1408,158,1461,136,1583,121,1716,113,1851,109,1975,108,2150"/>
+<area shape="rect" id="Node000068" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="546,1380,744,1442"/>
+<area shape="poly" id="edge44_Node000001_Node000068" title=" " alt="" coords="104,2150,109,2002,126,1791,142,1683,163,1584,190,1504,207,1473,226,1451,249,1436,280,1425,362,1411,456,1406,548,1406,544,1409,457,1411,363,1417,282,1430,251,1441,229,1454,211,1476,195,1506,168,1586,147,1684,131,1791,114,2002,109,2150"/>
+<area shape="rect" id="Node000069" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,1637,725,1682"/>
+<area shape="poly" id="edge46_Node000001_Node000069" title=" " alt="" coords="106,2150,120,2048,144,1912,160,1843,179,1782,201,1732,226,1699,264,1672,306,1653,350,1641,396,1633,486,1632,566,1641,562,1644,486,1637,396,1639,351,1646,307,1658,266,1677,230,1702,205,1734,184,1784,165,1845,149,1913,125,2048,112,2150"/>
+<area shape="rect" id="Node000070" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,1706,725,1751"/>
+<area shape="poly" id="edge47_Node000001_Node000070" title=" " alt="" coords="107,2150,122,2059,148,1941,164,1882,182,1829,203,1787,226,1758,251,1745,286,1735,375,1723,474,1720,566,1723,562,1726,474,1725,375,1728,287,1740,253,1750,229,1763,208,1790,187,1832,169,1884,153,1942,128,2060,113,2150"/>
+<area shape="rect" id="Node000071" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="546,1775,744,1837"/>
+<area shape="poly" id="edge48_Node000001_Node000071" title=" " alt="" coords="104,2150,109,2083,127,1995,143,1950,164,1906,191,1866,226,1833,250,1821,282,1811,364,1800,457,1797,548,1799,543,1802,458,1802,365,1806,283,1816,252,1825,229,1837,195,1870,168,1909,148,1952,132,1997,115,2083,109,2150"/>
+<area shape="rect" id="Node000072" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,1860,725,1922"/>
+<area shape="poly" id="edge49_Node000001_Node000072" title=" " alt="" coords="108,2150,120,2100,143,2040,177,1979,200,1953,226,1930,266,1907,309,1891,354,1879,399,1873,488,1869,566,1876,562,1879,488,1875,400,1878,355,1885,311,1896,268,1912,229,1935,203,1957,181,1983,147,2042,126,2102,113,2151"/>
+<area shape="rect" id="Node000073" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="511,1946,779,2025"/>
+<area shape="poly" id="edge50_Node000001_Node000073" title=" " alt="" coords="121,2151,164,2098,193,2071,226,2049,296,2020,369,2000,442,1988,512,1983,508,1987,443,1994,370,2005,297,2025,229,2054,197,2075,168,2101,126,2153"/>
+<area shape="rect" id="Node000074" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="546,2049,744,2094"/>
+<area shape="poly" id="edge51_Node000001_Node000074" title=" " alt="" coords="137,2155,179,2131,227,2111,309,2091,393,2078,474,2071,547,2069,543,2072,474,2076,394,2084,310,2096,228,2116,181,2136,141,2158"/>
+<area shape="rect" id="Node000075" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="499,2118,791,2163"/>
+<area shape="poly" id="edge52_Node000001_Node000075" title=" " alt="" coords="217,2169,500,2149,496,2153,220,2173"/>
+<area shape="rect" id="Node000076" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="523,2187,766,2249"/>
+<area shape="poly" id="edge53_Node000001_Node000076" title=" " alt="" coords="167,2195,228,2207,381,2218,525,2221,521,2224,381,2224,227,2212,170,2200"/>
+<area shape="rect" id="Node000077" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="534,2272,756,2334"/>
+<area shape="poly" id="edge54_Node000001_Node000077" title=" " alt="" coords="126,2202,172,2243,199,2262,229,2277,305,2299,385,2311,463,2314,535,2314,531,2317,463,2320,385,2316,304,2305,227,2282,197,2267,169,2247,128,2207"/>
+<area shape="rect" id="Node000078" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,2358,725,2419"/>
+<area shape="poly" id="edge55_Node000001_Node000078" title=" " alt="" coords="116,2205,135,2242,158,2283,190,2322,229,2354,269,2373,312,2387,357,2397,402,2402,489,2404,566,2400,562,2403,489,2410,402,2408,356,2402,311,2392,267,2378,226,2358,186,2326,154,2286,130,2244,116,2210"/>
+<area shape="rect" id="Node000079" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="557,2443,732,2505"/>
+<area shape="poly" id="edge56_Node000001_Node000079" title=" " alt="" coords="109,2206,123,2261,144,2327,159,2360,178,2392,201,2421,229,2444,267,2466,308,2481,351,2491,395,2497,481,2498,559,2491,555,2494,481,2503,394,2502,350,2497,306,2486,265,2471,226,2449,198,2424,174,2395,154,2363,139,2329,118,2262,110,2211"/>
+<area shape="rect" id="Node000080" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="517,2528,773,2590"/>
+<area shape="poly" id="edge57_Node000001_Node000080" title=" " alt="" coords="106,2206,112,2279,129,2370,144,2418,166,2464,194,2505,229,2539,261,2559,295,2574,332,2584,369,2590,445,2593,519,2587,514,2590,445,2598,369,2595,331,2589,294,2579,259,2564,226,2543,189,2508,161,2466,139,2420,124,2372,107,2279,105,2211"/>
+<area shape="rect" id="Node000081" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="524,2614,766,2659"/>
+<area shape="poly" id="edge58_Node000001_Node000081" title=" " alt="" coords="110,2206,126,2302,151,2426,167,2488,186,2543,207,2587,229,2616,266,2639,306,2655,349,2666,393,2671,480,2669,560,2658,555,2661,480,2674,393,2676,348,2671,305,2660,263,2644,226,2619,202,2590,181,2545,162,2490,146,2428,121,2303,110,2211"/>
+<area shape="rect" id="Node000082" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="557,2683,732,2745"/>
+<area shape="poly" id="edge59_Node000001_Node000082" title=" " alt="" coords="108,2206,121,2321,143,2474,159,2551,179,2621,202,2676,215,2696,229,2711,266,2734,306,2750,349,2759,392,2762,479,2756,559,2741,555,2744,480,2761,392,2767,348,2764,304,2755,263,2739,226,2715,211,2700,197,2678,174,2622,154,2553,138,2475,116,2321,108,2211"/>
+<area shape="rect" id="Node000083" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="565,2769,725,2814"/>
+<area shape="poly" id="edge60_Node000001_Node000083" title=" " alt="" coords="107,2206,118,2335,138,2511,154,2599,174,2680,199,2744,214,2768,229,2785,253,2797,287,2805,375,2812,473,2808,566,2800,562,2803,474,2813,375,2817,286,2811,251,2802,226,2789,209,2771,194,2746,169,2681,148,2601,133,2511,113,2335,107,2211"/>
+<area shape="rect" id="Node000084" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="552,2838,738,2899"/>
+<area shape="poly" id="edge61_Node000001_Node000084" title=" " alt="" coords="107,2206,115,2347,134,2543,149,2642,170,2732,196,2804,212,2831,229,2851,264,2875,303,2892,345,2903,388,2908,474,2905,554,2894,549,2896,474,2911,388,2913,344,2908,301,2897,262,2880,226,2855,208,2835,192,2807,165,2733,144,2643,128,2543,110,2347,106,2211"/>
+<area shape="rect" id="Node000085" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="559,2924,730,2968"/>
+<area shape="poly" id="edge62_Node000001_Node000085" title=" " alt="" coords="106,2206,112,2361,118,2467,128,2581,143,2694,164,2796,178,2840,193,2878,210,2909,229,2931,252,2944,285,2953,371,2961,468,2960,561,2954,556,2957,469,2965,371,2967,284,2959,250,2949,226,2936,206,2912,188,2881,173,2842,159,2797,138,2695,123,2582,113,2468,107,2361,106,2211"/>
+<area shape="rect" id="Node000086" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="511,2992,779,3054"/>
+<area shape="poly" id="edge63_Node000001_Node000086" title=" " alt="" coords="106,2206,110,2374,114,2490,124,2615,138,2739,160,2852,174,2901,190,2943,209,2977,229,3002,248,3013,275,3022,345,3032,427,3035,513,3034,508,3036,427,3040,344,3038,273,3027,246,3018,226,3006,204,2980,185,2945,169,2902,155,2853,133,2740,118,2616,109,2490,104,2374,105,2211"/>
+<area shape="rect" id="Node000087" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="518,3078,772,3123"/>
+<area shape="poly" id="edge64_Node000001_Node000087" title=" " alt="" coords="108,2206,124,2398,149,2676,166,2815,185,2936,207,3028,218,3058,230,3075,249,3087,276,3096,348,3107,433,3110,520,3109,515,3111,433,3115,348,3113,275,3102,246,3092,226,3079,213,3060,202,3029,180,2937,161,2815,144,2676,118,2399,108,2211"/>
+<area shape="rect" id="Node000088" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="525,3147,764,3209"/>
+<area shape="poly" id="edge65_Node000001_Node000088" title=" " alt="" coords="107,2206,122,2416,145,2723,162,2877,182,3013,204,3114,217,3148,230,3167,249,3179,277,3187,352,3196,439,3195,527,3191,522,3193,439,3200,352,3201,276,3192,247,3184,226,3171,212,3150,199,3116,176,3014,157,2878,140,2723,116,2416,107,2211"/>
+<area shape="rect" id="Node000089" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="557,3232,732,3294"/>
+<area shape="poly" id="edge66_Node000001_Node000089" title=" " alt="" coords="107,2206,120,2428,144,2757,160,2923,180,3069,203,3179,216,3216,230,3237,264,3263,303,3281,346,3293,390,3298,434,3299,477,3297,559,3287,554,3288,478,3302,434,3305,389,3304,345,3298,302,3286,261,3267,226,3240,211,3218,198,3181,175,3070,155,2924,138,2757,115,2428,107,2211"/>
+<area shape="rect" id="Node000090" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="546,3318,744,3379"/>
+<area shape="poly" id="edge67_Node000001_Node000090" title=" " alt="" coords="107,2206,118,2447,139,2810,155,2993,176,3155,200,3276,215,3316,230,3339,263,3364,301,3381,341,3391,383,3395,426,3395,468,3392,543,3380,548,3379,469,3397,426,3401,383,3401,340,3396,299,3386,260,3368,226,3343,210,3318,195,3278,170,3156,150,2994,134,2810,113,2447,106,2211"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Array.html" title=" " alt="" coords="1762,5,1934,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1184,233,1239,179,1305,128,1368,87,1419,58,1473,37,1545,18,1601,9,1657,5,1763,9,1759,11,1658,11,1601,14,1547,23,1475,42,1421,63,1370,91,1308,132,1243,183,1188,236"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1Array.html" title=" " alt="" coords="1762,87,1934,114"/>
+<area shape="poly" id="edge3_Node000002_Node000007" title=" " alt="" coords="1212,236,1305,187,1422,133,1475,115,1546,99,1601,92,1658,89,1764,92,1759,95,1658,94,1602,97,1546,104,1477,120,1424,138,1308,192,1216,239"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1Array.html" title=" " alt="" coords="1740,169,1955,214"/>
+<area shape="poly" id="edge4_Node000002_Node000011" title=" " alt="" coords="1265,239,1399,206,1546,181,1631,176,1716,181,1742,183,1737,185,1716,186,1631,182,1546,186,1400,211,1268,243"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1Array.html" title=" " alt="" coords="1766,264,1929,326"/>
+<area shape="poly" id="edge5_Node000002_Node000012" title=" " alt="" coords="1268,273,1478,273,1716,281,1768,285,1764,288,1716,286,1478,279,1271,277"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1Array.html" title=" " alt="" coords="1746,351,1950,413"/>
+<area shape="poly" id="edge6_Node000002_Node000013" title=" " alt="" coords="1268,295,1546,339,1747,368,1743,370,1546,344,1270,300"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays." alt="" coords="1307,522,1522,567"/>
+<area shape="poly" id="edge7_Node000002_Node000014" title=" " alt="" coords="1189,316,1393,521,1388,522,1190,321"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="1413,506,1417,423,1424,370,1436,314,1452,256,1475,199,1505,146,1544,100,1580,78,1635,59,1763,31,1759,35,1637,64,1583,83,1548,104,1510,150,1480,202,1457,258,1441,315,1430,371,1423,423,1418,507"/>
+<area shape="poly" id="edge17_Node000014_Node000007" title=" " alt="" coords="1416,506,1425,437,1447,349,1463,304,1485,259,1511,218,1544,181,1581,160,1636,141,1763,113,1759,117,1637,146,1583,165,1548,185,1516,221,1489,262,1468,306,1452,351,1430,438,1421,507"/>
+<area shape="poly" id="edge18_Node000014_Node000011" title=" " alt="" coords="1422,506,1437,456,1462,395,1497,334,1519,306,1544,281,1578,262,1626,243,1743,212,1739,216,1628,248,1580,267,1548,285,1523,309,1501,337,1467,398,1442,458,1427,508"/>
+<area shape="poly" id="edge20_Node000014_Node000012" title=" " alt="" coords="1431,507,1476,438,1508,402,1545,372,1584,353,1640,336,1768,308,1764,312,1642,341,1586,358,1547,376,1512,406,1481,441,1436,510"/>
+<area shape="poly" id="edge21_Node000014_Node000013" title=" " alt="" coords="1479,513,1545,486,1630,456,1715,428,1765,411,1761,415,1717,433,1632,461,1547,491,1482,517"/>
+<area shape="rect" id="Node000030" href="$classstir_1_1Array.html" title=" " alt="" coords="1768,480,1928,508"/>
+<area shape="poly" id="edge8_Node000014_Node000030" title=" " alt="" coords="1536,529,1716,508,1769,503,1765,506,1716,513,1539,534"/>
+<area shape="rect" id="Node000031" href="$classstir_1_1Array.html" title=" " alt="" coords="1768,569,1928,597"/>
+<area shape="poly" id="edge9_Node000014_Node000031" title=" " alt="" coords="1536,556,1546,556,1770,576,1765,579,1546,561,1539,560"/>
+<area shape="rect" id="Node000033" href="$classstir_1_1Array.html" title=" " alt="" coords="1768,657,1928,685"/>
+<area shape="poly" id="edge10_Node000014_Node000033" title=" " alt="" coords="1483,570,1547,592,1671,627,1783,656,1778,658,1669,633,1545,597,1485,575"/>
+<area shape="rect" id="Node000035" href="$classstir_1_1Array.html" title=" " alt="" coords="1768,724,1928,752"/>
+<area shape="poly" id="edge11_Node000014_Node000035" title=" " alt="" coords="1444,576,1492,620,1519,641,1547,659,1602,684,1660,703,1770,727,1765,729,1659,708,1600,689,1545,664,1515,646,1488,624,1445,581"/>
+<area shape="rect" id="Node000036" href="$classstir_1_1Array.html" title=" " alt="" coords="1785,805,1910,850"/>
+<area shape="poly" id="edge12_Node000014_Node000036" title=" " alt="" coords="1430,578,1451,617,1477,660,1509,702,1548,738,1605,771,1668,795,1730,810,1787,821,1782,823,1729,815,1667,800,1603,776,1544,742,1505,706,1472,663,1447,620,1430,583"/>
+<area shape="rect" id="Node000037" href="$classstir_1_1Array.html" title=" " alt="" coords="1778,904,1918,948"/>
+<area shape="poly" id="edge13_Node000014_Node000037" title=" " alt="" coords="1421,579,1436,641,1459,712,1476,750,1495,785,1519,818,1548,847,1573,866,1601,881,1662,904,1722,917,1779,924,1775,926,1722,922,1660,909,1599,886,1570,870,1544,851,1515,822,1491,788,1471,752,1454,714,1431,642,1421,585"/>
+<area shape="rect" id="Node000038" href="$classstir_1_1Array.html" title=" " alt="" coords="1784,1002,1911,1047"/>
+<area shape="poly" id="edge14_Node000014_Node000038" title=" " alt="" coords="1416,580,1424,661,1443,762,1460,815,1482,866,1511,914,1548,955,1574,975,1602,991,1665,1012,1728,1022,1786,1026,1782,1029,1727,1028,1664,1017,1600,996,1571,980,1544,959,1507,917,1477,869,1455,817,1438,763,1419,662,1415,585"/>
+<area shape="rect" id="Node000039" href="$classstir_1_1Array.html" title=" " alt="" coords="1764,1101,1932,1146"/>
+<area shape="poly" id="edge15_Node000014_Node000039" title=" " alt="" coords="1420,579,1438,692,1464,837,1481,908,1501,973,1523,1026,1548,1061,1571,1079,1596,1094,1651,1114,1709,1124,1765,1128,1760,1130,1708,1129,1650,1119,1594,1098,1568,1083,1544,1064,1519,1028,1496,975,1476,910,1459,838,1433,693,1419,584"/>
+<area shape="rect" id="Node000044" href="$classstir_1_1Array.html" title=" " alt="" coords="1778,1201,1917,1229"/>
+<area shape="poly" id="edge19_Node000014_Node000044" title=" " alt="" coords="1419,580,1434,710,1458,879,1476,965,1496,1042,1520,1104,1534,1128,1548,1146,1563,1157,1586,1167,1645,1184,1713,1197,1780,1207,1775,1209,1712,1202,1644,1189,1584,1172,1561,1162,1544,1150,1529,1131,1515,1107,1491,1043,1470,966,1453,880,1429,710,1418,585"/>
+<area shape="poly" id="edge23_Node000049_Node000044" title=" " alt="" coords="1268,1185,1546,1203,1780,1213,1775,1215,1546,1208,1270,1190"/>
+<area shape="poly" id="edge33_Node000050_Node000002" title=" " alt="" coords="646,958,657,862,684,730,706,658,734,586,769,517,813,455,917,394,1086,306,1083,310,920,398,817,458,774,520,739,588,711,660,689,731,662,863,651,959"/>
+<area shape="poly" id="edge25_Node000050_Node000030" title=" " alt="" coords="662,960,688,915,722,862,765,808,813,759,935,661,989,626,1041,597,1095,573,1155,551,1306,507,1367,493,1430,483,1556,474,1672,476,1769,483,1765,486,1672,481,1556,480,1431,489,1368,498,1307,512,1157,557,1097,578,1043,602,991,630,939,665,817,762,769,811,727,865,692,918,667,962"/>
+<area shape="poly" id="edge26_Node000050_Node000031" title=" " alt="" coords="670,961,731,892,770,856,814,825,874,790,938,759,1070,707,1206,666,1340,635,1469,612,1586,597,1769,584,1765,587,1586,602,1469,617,1342,640,1207,671,1072,712,940,764,877,795,816,829,774,860,735,896,675,963"/>
+<area shape="poly" id="edge27_Node000050_Node000033" title=" " alt="" coords="683,963,743,920,814,881,920,837,1011,804,1093,780,1171,762,1335,735,1546,702,1661,685,1769,676,1765,679,1662,691,1546,707,1336,741,1172,768,1095,785,1013,809,922,842,816,886,746,924,688,966"/>
+<area shape="poly" id="edge28_Node000050_Node000035" title=" " alt="" coords="708,966,814,926,1017,872,1177,841,1339,817,1546,783,1769,748,1765,751,1546,788,1339,822,1178,846,1018,877,816,931,712,969"/>
+<area shape="poly" id="edge29_Node000050_Node000036" title=" " alt="" coords="765,969,815,959,1098,916,1376,879,1787,832,1782,835,1377,884,1099,921,815,964,768,973"/>
+<area shape="poly" id="edge30_Node000050_Node000037" title=" " alt="" coords="767,987,1779,928,1775,932,769,992"/>
+<area shape="poly" id="edge31_Node000050_Node000038" title=" " alt="" coords="767,1000,1118,1013,1546,1025,1716,1025,1786,1025,1782,1027,1716,1030,1546,1030,1118,1018,770,1004"/>
+<area shape="poly" id="edge32_Node000050_Node000039" title=" " alt="" coords="767,1017,1117,1074,1331,1103,1546,1123,1660,1127,1766,1126,1761,1129,1660,1132,1546,1128,1330,1108,1116,1080,769,1022"/>
+<area shape="poly" id="edge37_Node000050_Node000049" title=" " alt="" coords="677,1028,739,1082,776,1108,816,1129,901,1146,1040,1164,1036,1167,901,1151,814,1134,773,1113,736,1086,678,1033"/>
+<area shape="rect" id="Node000051" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="1038,1236,1254,1280"/>
+<area shape="poly" id="edge34_Node000050_Node000051" title=" " alt="" coords="668,1029,696,1067,730,1108,770,1148,816,1182,855,1198,911,1213,1040,1240,1036,1243,909,1218,853,1203,814,1186,767,1152,726,1112,692,1070,668,1035"/>
+<area shape="rect" id="Node000052" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="1038,1320,1254,1398"/>
+<area shape="poly" id="edge35_Node000050_Node000052" title=" " alt="" coords="673,1028,734,1111,766,1161,793,1213,800,1236,801,1255,805,1273,817,1289,853,1309,908,1325,1040,1348,1036,1350,907,1330,851,1314,813,1294,800,1275,796,1256,795,1237,789,1215,761,1163,730,1114,674,1034"/>
+<area shape="rect" id="Node000053" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="1035,1432,1257,1494"/>
+<area shape="poly" id="edge36_Node000050_Node000053" title=" " alt="" coords="676,1028,739,1109,769,1160,794,1213,800,1255,800,1311,804,1365,809,1386,817,1400,839,1420,864,1436,919,1457,978,1468,1037,1472,1032,1475,977,1473,917,1462,861,1440,836,1424,813,1404,804,1388,798,1366,795,1311,794,1256,788,1215,764,1162,734,1112,677,1033"/>
+<area shape="poly" id="edge41_Node000066_Node000052" title=" " alt="" coords="771,1348,815,1353,930,1359,1040,1361,1036,1364,930,1364,815,1358,773,1352"/>
+<area shape="poly" id="edge43_Node000067_Node000051" title=" " alt="" coords="739,1248,1040,1254,1036,1257,742,1253"/>
+<area shape="poly" id="edge45_Node000068_Node000053" title=" " alt="" coords="757,1438,792,1452,804,1460,816,1467,870,1479,927,1484,982,1484,1037,1481,1032,1484,983,1489,927,1489,870,1484,814,1472,801,1465,790,1456,759,1443"/>
 </map>

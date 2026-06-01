@@ -1,3 +1,5 @@
 <map id="stir::find_fwhm_in_imageTests" name="stir::find_fwhm_in_imageTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="15,5,121,32"/>
+<area shape="rect" id="Node000001" title="A simple class to test the find_fwhm_in_image function." alt="" coords="5,81,142,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="19,5,128,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,47,76,81,71,80,72,51"/>
 </map>

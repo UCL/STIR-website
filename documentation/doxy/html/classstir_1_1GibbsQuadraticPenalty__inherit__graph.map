@@ -1,7 +1,11 @@
 <map id="stir::GibbsQuadraticPenalty&lt; elemT &gt;" name="stir::GibbsQuadraticPenalty&lt; elemT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; GibbsQuadraticPenalty\&lt;\l elemT \&gt;, GeneralisedPrior\l\&lt; DiscretisedDensity\&lt; 3, elemT\l \&gt; \&gt;, GibbsPenalty\&lt; elemT, QuadraticPotential\l\&lt; elemT \&gt; \&gt; \&gt;" alt="" coords="1085,30,1380,130"/>
-<area shape="rect" id="node3" href="$classstir_1_1GibbsPenalty.html" title="stir::GibbsPenalty\l\&lt; elemT, QuadraticPotential\l\&lt; elemT \&gt; \&gt;" alt="" coords="575,5,760,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1GeneralisedPrior.html" title="stir::GeneralisedPrior\l\&lt; DiscretisedDensity\&lt;\l 3, elemT \&gt; \&gt;" alt="" coords="5,8,159,64"/>
-<area shape="rect" id="node5" href="$classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy. " alt="" coords="208,45,355,86"/>
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="571,106,764,147"/>
+<area shape="rect" id="Node000001" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior." alt="" coords="1171,67,1370,112"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="791,33,1122,146"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1137,87,1173,89,1168,90,1137,92"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1GibbsPenalty.html" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy." alt="" coords="246,14,413,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,34,588,38,768,52,794,58,788,58,767,57,587,44,428,39"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="5,5,176,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,34,248,35,243,37,192,39"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="225,119,434,164"/>
+<area shape="poly" id="edge4_Node000002_Node000011" title=" " alt="" coords="450,147,601,149,685,145,767,137,788,136,793,136,768,142,685,151,601,154,450,152"/>
 </map>

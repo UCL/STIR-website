@@ -1,3 +1,5 @@
 <map id="stir::FindMCNormFactors" name="stir::FindMCNormFactors">
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="25,5,156,32"/>
+<area shape="rect" id="Node000001" title="Class to compute &#39;time&#45;efficiency&#39; factors for motino corrected projection data." alt="" coords="5,81,186,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="26,5,165,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,47,98,82,93,80,94,51"/>
 </map>

@@ -1,6 +1,11 @@
 <map id="stir::ProjectorByBinPairUsingNiftyPET" name="stir::ProjectorByBinPairUsingNiftyPET">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingNiftyPET,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="629,30,896,86"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. " alt="" coords="228,13,387,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="5,5,161,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="211,69,404,111"/>
+<area shape="rect" id="Node000001" title="A projector pair based on NiftyPET projectors." alt="" coords="1008,41,1178,86"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="670,33,959,94"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="974,61,1010,64,1005,64,974,66"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs." alt="" coords="246,14,416,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,30,647,44,673,48,667,48,646,49,431,35"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,177,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,25,248,27,242,28,193,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="226,76,435,121"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="451,101,547,101,646,95,667,95,673,94,647,100,547,106,451,106"/>
 </map>

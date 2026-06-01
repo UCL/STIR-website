@@ -1,3 +1,5 @@
 <map id="stir::FourierTests" name="stir::FourierTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="13,5,119,32"/>
+<area shape="rect" id="Node000001" title="A simple class to test the erf and erfc functions." alt="" coords="5,81,134,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="15,5,124,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,47,72,81,67,80,68,51"/>
 </map>

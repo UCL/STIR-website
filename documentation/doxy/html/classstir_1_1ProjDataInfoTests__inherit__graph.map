@@ -1,6 +1,11 @@
 <map id="stir::ProjDataInfoTests" name="stir::ProjDataInfoTests">
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoCylindricalTests.html" title="Test class for ProjDataInfoCylindrical. " alt="" coords="361,39,544,80"/>
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,46,111,73"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindricalArcCorrTests.html" title="Test class for ProjDataInfoCylindricalArcCorr. " alt="" coords="592,5,775,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorrTests.html" title="Test class for ProjDataInfoCylindricalNoArcCorr. " alt="" coords="592,71,775,112"/>
+<area shape="rect" id="Node000001" title="Test class for ProjDataInfo." alt="" coords="162,48,326,76"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ProjDataInfoCylindricalTests.html" title="Test class for ProjDataInfoCylindrical." alt="" coords="374,40,574,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="341,60,376,62,371,63,342,65"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,48,114,76"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,60,164,62,158,63,129,65"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ProjDataInfoCylindricalArcCorrTests.html" title="Test class for ProjDataInfoCylindricalArcCorr." alt="" coords="622,5,823,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="589,44,619,42,625,41,590,49"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorrTests.html" title="Test class for ProjDataInfoCylindricalNoArcCorr." alt="" coords="622,75,823,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="590,76,625,83,619,83,590,81"/>
 </map>

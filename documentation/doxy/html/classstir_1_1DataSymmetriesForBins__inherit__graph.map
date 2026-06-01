@@ -1,5 +1,9 @@
 <map id="stir::DataSymmetriesForBins" name="stir::DataSymmetriesForBins">
-<area shape="rect" id="node3" href="$classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="5,169,196,211"/>
-<area shape="rect" id="node4" href="$classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all..." alt="" coords="221,169,402,211"/>
-<area shape="rect" id="node2" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)..." alt="" coords="109,5,303,47"/>
+<area shape="rect" id="Node000001" title="A class for encoding/finding symmetries common to the geometry of the projection data and the discret..." alt="" coords="119,98,327,126"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1DataSymmetriesForBins__PET__CartesianGrid.html" title="Symmetries appropriate for a (cylindrical) PET scanner, and a discretised density on a Cartesian grid..." alt="" coords="5,174,214,218"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,134,141,175,138,171,190,136"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1TrivialDataSymmetriesForBins.html" title="A class derived from DataSymmetriesForBins that says that there are no symmetries at all." alt="" coords="238,174,437,218"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="254,132,310,173,304,173,253,138"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)." alt="" coords="117,5,329,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,64,225,98,220,96,221,68"/>
 </map>

@@ -1,6 +1,11 @@
 <map id="stir::BinNormalisationFromAttenuationImage" name="stir::BinNormalisationFromAttenuationImage">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromAttenuation\lImage, BinNormalisation \&gt;" alt="" coords="657,33,887,89"/>
-<area shape="rect" id="node3" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data. " alt="" coords="227,13,374,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="204,64,397,105"/>
+<area shape="rect" id="Node000001" title="A BinNormalisation class that gets attenuation correction factors from an attenuation image." alt="" coords="1025,39,1221,83"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="717,30,976,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="991,58,1027,61,1022,61,991,64"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="242,14,405,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,30,694,46,719,51,714,51,693,52,421,35"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,170,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,25,244,27,239,28,185,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="219,65,428,110"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="444,87,564,87,693,80,714,81,720,81,694,86,565,92,444,93"/>
 </map>

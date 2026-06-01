@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1Utah__phantom.html" title="A class that represents a Utah phantom. " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="5,19,203,81"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="251,19,466,81"/>
+<area shape="poly" id="edge665_Node000000_Node000001" title=" " alt="" coords="218,47,253,49,248,50,218,52"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Array.html" title=" " alt="" coords="546,5,694,33"/>
+<area shape="poly" id="edge666_Node000001_Node000002" title=" " alt="" coords="481,33,548,28,542,28,482,38"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Array.html" title=" " alt="" coords="514,57,725,102"/>
+<area shape="poly" id="edge667_Node000001_Node000003" title=" " alt="" coords="482,61,516,67,511,67,481,66"/>
 </map>

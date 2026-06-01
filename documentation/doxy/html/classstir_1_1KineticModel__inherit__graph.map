@@ -1,8 +1,16 @@
 <map id="stir::KineticModel" name="stir::KineticModel">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; PatlakPlot, KineticModel \&gt;" alt="" coords="5,428,199,469"/>
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; KineticModel \&gt;" alt="" coords="27,261,177,303"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="7,81,186,108"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="118,157,267,199"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="31,5,162,32"/>
-<area shape="rect" id="node7" href="$classstir_1_1PatlakPlot.html" title="Patlak kinetic model. " alt="" coords="48,519,156,545"/>
+<area shape="rect" id="Node000001" title="base class for all kinetic models" alt="" coords="42,363,178,391"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="5,440,215,485"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="111,404,113,440,107,439,109,409"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="29,269,191,314"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,326,113,363,107,362,109,332"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="8,82,202,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,123,112,269,107,268,105,128"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="126,159,288,204"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="132,117,183,158,178,160,133,122"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="35,5,174,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,46,107,82,102,82,104,51"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="176,218,132,270,127,267,179,214"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1PatlakPlot.html" title="Patlak kinetic model." alt="" coords="52,534,168,562"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="112,498,112,535,108,532,108,502"/>
 </map>

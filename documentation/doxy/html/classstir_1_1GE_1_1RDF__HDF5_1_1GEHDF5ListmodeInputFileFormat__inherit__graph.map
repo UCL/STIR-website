@@ -1,4 +1,7 @@
 <map id="stir::GE::RDF_HDF5::GEHDF5ListmodeInputFileFormat" name="stir::GE::RDF_HDF5::GEHDF5ListmodeInputFileFormat">
-<area shape="rect" id="node2" href="$classstir_1_1InputFileFormat.html" title="stir::InputFileFormat\l\&lt; ListModeData \&gt;" alt="" coords="50,109,189,151"/>
-<area shape="rect" id="node3" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading. " alt="" coords="50,5,189,47"/>
+<area shape="rect" id="Node000001" title="Class for being able to read list mode data from the GE Signa PET/MR scanner via the listmode&#45;data re..." alt="" coords="5,209,251,254"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="52,115,204,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,173,130,210,126,207,126,177"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="52,5,204,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,63,131,115,125,114,127,68"/>
 </map>

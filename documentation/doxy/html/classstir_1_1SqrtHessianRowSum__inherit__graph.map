@@ -1,3 +1,5 @@
 <map id="stir::SqrtHessianRowSum&lt; TargetT &gt;" name="stir::SqrtHessianRowSum&lt; TargetT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="27,5,158,32"/>
+<area shape="rect" id="Node000001" title="Implementations of two square root Hessian row sum computation methods, as proposed by Tsai et al...." alt="" coords="5,81,191,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="28,5,168,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,47,101,81,95,79,96,51"/>
 </map>

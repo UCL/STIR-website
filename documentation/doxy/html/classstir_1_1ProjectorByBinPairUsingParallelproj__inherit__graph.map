@@ -1,6 +1,11 @@
 <map id="stir::ProjectorByBinPairUsingParallelproj" name="stir::ProjectorByBinPairUsingParallelproj">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ProjectorByBinPairUsingParallelproj,\l ProjectorByBinPair, ProjectorByBinPair \&gt;" alt="" coords="639,30,905,86"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs. " alt="" coords="228,13,387,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; ProjectorByBinPair \&gt;" alt="" coords="5,5,161,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="211,69,404,111"/>
+<area shape="rect" id="Node000001" title="A projector pair based on Parallelproj projectors." alt="" coords="1026,41,1196,86"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="688,33,977,94"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="992,61,1028,64,1023,64,992,66"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ProjectorByBinPair.html" title="Abstract base class for all projector pairs." alt="" coords="246,14,416,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,29,665,44,691,48,685,48,664,49,431,35"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,177,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,25,248,27,242,28,193,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="226,76,435,121"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="451,101,555,101,664,95,685,95,691,94,665,100,555,106,451,106"/>
 </map>

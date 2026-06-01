@@ -1,3 +1,5 @@
 <map id="stir::Filter2D&lt; T &gt;" name="stir::Filter2D&lt; T &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer. " alt="" coords="7,5,130,32"/>
+<area shape="rect" id="Node000001" title="2&#45;dimensional filters (filtering done by FFTs)" alt="" coords="5,81,145,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="8,5,142,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,47,78,81,72,80,73,51"/>
 </map>

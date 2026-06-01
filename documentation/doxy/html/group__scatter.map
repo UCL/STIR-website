@@ -1,6 +1,7 @@
 <map id="Scatter estimation building blocks" name="Scatter estimation building blocks">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,125,97,152"/>
-<area shape="rect" id="node3" href="$group__utilities.html" title="Utility programs" alt="" coords="506,67,621,93"/>
-<area shape="rect" id="node4" href="$group__test.html" title="Tests of the basic\l building blocks" alt="" coords="500,118,627,159"/>
-<area shape="rect" id="node5" href="$group__buildblock.html" title="Basic building blocks" alt="" coords="491,184,636,211"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,65,102,93"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,57,292,102"/>
+<area shape="rect" id="Node000004" href="$group__buildblock.html" title=" " alt="" coords="518,5,677,33"/>
+<area shape="rect" id="Node000003" href="$group__test.html" title=" " alt="" coords="530,57,665,102"/>
+<area shape="rect" id="Node000005" href="$group__utilities.html" title=" " alt="" coords="534,199,661,226"/>
 </map>

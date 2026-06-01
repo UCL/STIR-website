@@ -1,5 +1,11 @@
 <map id="basic_memory_buffer&lt; T, SIZE, Allocator &gt;" name="basic_memory_buffer&lt; T, SIZE, Allocator &gt;">
-<area shape="rect" id="node3" href="$classbasic__memory__buffer.html" title="basic_memory_buffer\l\&lt; bigit, bigits_capacity \&gt;" alt="" coords="5,185,171,227"/>
-<area shape="rect" id="node4" href="$classbasic__memory__buffer.html" title="basic_memory_buffer\l\&lt; wchar_t \&gt;" alt="" coords="195,185,341,227"/>
-<area shape="rect" id="node2" href="$classdetail_1_1buffer.html" title="A contiguous memory buffer with an optional growing ability. It is an internal class and shouldn&#39;t be..." alt="" coords="114,5,241,32"/>
+<area shape="rect" id="Node000001" title="A dynamically growing memory buffer for trivially copyable/constructible types with the first SIZE el..." alt="" coords="197,75,359,119"/>
+<area shape="rect" id="Node000003" href="$classbasic__memory__buffer.html" title=" " alt="" coords="588,5,751,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,73,383,72,591,39,586,40,384,77,375,79"/>
+<area shape="rect" id="Node000004" href="$classbasic__memory__buffer.html" title=" " alt="" coords="588,75,751,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,94,591,96,586,98,375,100"/>
+<area shape="rect" id="Node000005" href="$classbasic__memory__buffer.html" title=" " alt="" coords="576,144,763,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="375,115,384,117,579,152,574,153,383,122,375,120"/>
+<area shape="rect" id="Node000002" href="$classdetail_1_1buffer.html" title="A contiguous memory buffer with an optional growing ability. It is an internal class and shouldn&#39;t be..." alt="" coords="5,83,148,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,94,199,96,194,98,164,100"/>
 </map>

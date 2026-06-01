@@ -1,8 +1,16 @@
 <map id="stir::LOR&lt; coordT &gt;" name="stir::LOR&lt; coordT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1LORAs2Points.html" title="A class for LORs. " alt="" coords="280,5,415,47"/>
-<area shape="rect" id="node4" href="$classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html" title="A class for LORs. " alt="" coords="260,71,435,127"/>
-<area shape="rect" id="node5" href="$classstir_1_1LORInAxialAndSinogramCoordinates.html" title="A class for LORs. " alt="" coords="251,152,444,193"/>
-<area shape="rect" id="node6" href="$classstir_1_1LORInCylinderCoordinates.html" title="A class for LORs. " alt="" coords="245,217,449,259"/>
-<area shape="rect" id="node7" href="$classstir_1_1LOR.html" title="stir::LOR\&lt; float \&gt;" alt="" coords="285,283,409,310"/>
-<area shape="rect" id="node3" href="$classstir_1_1LORAs2Points.html" title="stir::LORAs2Points\l\&lt; float \&gt;" alt="" coords="551,141,685,183"/>
+<area shape="rect" id="Node000001" title="A base class for specifying an LOR with geometric coordinates." alt="" coords="5,168,156,196"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1LORAs2Points.html" title="A class for LORs." alt="" coords="307,5,447,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,157,180,109,266,60,309,45,304,48,268,65,182,113,114,161"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1LORInAxialAndNoArcCorrSinogramCoordinates.html" title="A class for LORs." alt="" coords="283,74,471,136"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,162,284,128,280,132,152,167"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1LORInAxialAndSinogramCoordinates.html" title="A class for LORs." alt="" coords="273,160,481,205"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,180,275,181,270,184,172,185"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1LORInCylinderCoordinates.html" title="A class for LORs." alt="" coords="267,229,487,274"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="158,198,281,227,276,230,158,203"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1LOR.html" title=" " alt="" coords="309,298,444,326"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="115,202,184,244,225,266,268,284,311,299,306,299,266,289,223,271,181,249,114,208"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1LORAs2Points.html" title=" " alt="" coords="598,148,738,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,50,488,60,569,103,637,148,632,148,566,108,486,65,462,55"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="459,293,486,284,529,263,570,238,636,194,641,192,573,243,532,267,488,289,460,299"/>
 </map>

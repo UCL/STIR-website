@@ -1,4 +1,9 @@
 <map id="basic_string_view&lt; Char &gt;" name="basic_string_view&lt; Char &gt;">
-<area shape="rect" id="node2" href="$classbasic__string__view.html" title="basic_string_view\&lt;\l char_type \&gt;" alt="" coords="5,109,140,151"/>
-<area shape="rect" id="node3" href="$classbasic__string__view.html" title="basic_string_view\&lt;\l char \&gt;" alt="" coords="164,109,299,151"/>
+<area shape="rect" id="Node000001" title="An implementation of std::basic_string_view for pre&#45;C++17." alt="" coords="5,75,154,119"/>
+<area shape="rect" id="Node000002" href="$classbasic__string__view.html" title=" " alt="" coords="300,5,448,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,74,301,43,297,47,169,79"/>
+<area shape="rect" id="Node000003" href="$classbasic__string__view.html" title=" " alt="" coords="300,75,448,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,94,301,95,297,99,169,100"/>
+<area shape="rect" id="Node000004" href="$classbasic__string__view.html" title=" " alt="" coords="300,144,448,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,115,302,148,297,150,168,120"/>
 </map>

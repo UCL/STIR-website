@@ -1,28 +1,56 @@
 <map id="stir::BinNormalisation" name="stir::BinNormalisation">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromAttenuation\lImage, BinNormalisation \&gt;" alt="" coords="1144,5,1373,61"/>
-<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromML2D,\l BinNormalisation \&gt;" alt="" coords="1157,85,1360,141"/>
-<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromProjData,\l BinNormalisation \&gt;" alt="" coords="1149,165,1368,221"/>
-<area shape="rect" id="node12" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationSinogramRescaling,\l BinNormalisation \&gt;" alt="" coords="1133,245,1384,301"/>
-<area shape="rect" id="node14" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationUsingProfile,\l BinNormalisation \&gt;" alt="" coords="1155,325,1363,381"/>
-<area shape="rect" id="node15" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; ChainedBinNormalisation,\l BinNormalisation \&gt;" alt="" coords="1162,405,1355,461"/>
-<area shape="rect" id="node17" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; TrivialBinNormalisation,\l BinNormalisation \&gt;" alt="" coords="1162,485,1355,541"/>
-<area shape="rect" id="node19" href="$classstir_1_1BinNormalisationPETFromComponents.html" title="A BinNormalisation class that uses component&#45;based normalisation for PET. " alt="" coords="1157,566,1360,607"/>
-<area shape="rect" id="node20" href="$classstir_1_1BinNormalisationWithCalibration.html" title="stir::BinNormalisationWith\lCalibration" alt="" coords="1171,646,1346,687"/>
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; BinNormalisation \&gt;" alt="" coords="739,333,888,374"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="185,340,364,367"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="413,362,563,403"/>
-<area shape="rect" id="node4" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files. " alt="" coords="5,340,136,367"/>
-<area shape="rect" id="node7" href="$classstir_1_1BinNormalisationFromAttenuationImage.html" title="A BinNormalisation class that gets attenuation correction factors from an attenuation image..." alt="" coords="1474,13,1651,54"/>
-<area shape="rect" id="node9" href="$classstir_1_1BinNormalisationFromML2D.html" title="A BinNormalisation class that gets the normalisation factors from the files output by find_ML_normfac..." alt="" coords="1457,100,1669,127"/>
-<area shape="rect" id="node11" href="$classstir_1_1BinNormalisationFromProjData.html" title="A BinNormalisation class that gets the normalisation factors from a ProjData object. " alt="" coords="1474,173,1651,214"/>
-<area shape="rect" id="node13" href="$classstir_1_1BinNormalisationSinogramRescaling.html" title="The BinNormalisationSinogramRescaling class gets normaliastion factors by dividing forward projection..." alt="" coords="1461,253,1664,294"/>
-<area shape="rect" id="node16" href="$classstir_1_1ChainedBinNormalisation.html" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects..." alt="" coords="1465,420,1660,447"/>
-<area shape="rect" id="node18" href="$classstir_1_1TrivialBinNormalisation.html" title="Trivial class which does not do any normalisation whatsoever. " alt="" coords="1471,485,1654,512"/>
-<area shape="rect" id="node21" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT7,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="1447,537,1679,607"/>
-<area shape="rect" id="node23" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromECAT8,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="1447,631,1679,702"/>
-<area shape="rect" id="node25" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationFromGEHDF5,\l BinNormalisation, BinNormalisationWith\lCalibration \&gt;" alt="" coords="1433,726,1692,797"/>
-<area shape="rect" id="node27" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; BinNormalisationSPECT,\l BinNormalisation, BinNormalisation\lWithCalibration \&gt;" alt="" coords="1447,821,1679,891"/>
-<area shape="rect" id="node22" href="$classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT7 3D normalisation file..." alt="" coords="1751,551,1945,593"/>
-<area shape="rect" id="node24" href="$classstir_1_1ecat_1_1BinNormalisationFromECAT8.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT8 3D normalisation file..." alt="" coords="1758,646,1938,687"/>
-<area shape="rect" id="node26" href="$classstir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5.html" title="A BinNormalisation class that gets the normalisation factors from an GEHDF5 3D normalisation file..." alt="" coords="1741,741,1955,782"/>
+<area shape="rect" id="Node000001" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="1009,364,1172,391"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1231,5,1490,67"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1094,347,1106,291,1129,218,1146,180,1166,142,1191,108,1220,77,1234,69,1239,66,1223,81,1195,111,1171,145,1151,182,1134,220,1111,292,1098,350"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1249,91,1472,152"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1099,347,1116,307,1142,257,1176,206,1220,162,1251,146,1246,149,1223,166,1180,209,1146,259,1121,309,1103,351"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1239,176,1482,238"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1110,349,1156,298,1187,271,1220,247,1245,237,1241,239,1223,252,1190,275,1160,302,1113,353"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1221,261,1500,323"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1148,356,1221,332,1259,323,1254,325,1222,337,1150,361"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1245,347,1476,408"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1187,375,1247,377,1242,378,1188,380"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1256,432,1465,494"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1149,394,1222,418,1259,431,1254,432,1221,423,1149,399"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1256,517,1465,579"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1112,401,1160,453,1190,480,1223,503,1258,522,1253,522,1220,508,1187,484,1156,457,1111,406"/>
+<area shape="rect" id="Node000019" href="$classstir_1_1BinNormalisationPETFromComponents.html" title="A BinNormalisation class that uses component&#45;based normalisation for PET." alt="" coords="1250,603,1471,648"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="1102,403,1120,446,1145,496,1180,547,1200,569,1223,589,1252,607,1247,606,1220,593,1196,573,1175,550,1141,499,1115,449,1100,408"/>
+<area shape="rect" id="Node000020" href="$classstir_1_1BinNormalisationWithCalibration.html" title=" " alt="" coords="1264,688,1457,733"/>
+<area shape="poly" id="edge20_Node000001_Node000020" title=" " alt="" coords="1098,404,1114,459,1137,527,1173,597,1196,629,1223,658,1244,674,1268,688,1263,688,1241,678,1220,662,1192,633,1169,600,1133,529,1108,461,1096,409"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="795,355,959,400"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="974,375,1011,377,1006,378,976,380"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="194,365,388,393"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,369,577,362,771,364,797,368,792,369,771,369,577,367,405,374"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="438,386,600,430"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="403,391,440,397,435,399,404,396"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="5,365,145,393"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="159,377,196,377,192,381,162,381"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="615,397,797,383,792,386,616,402"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1BinNormalisationFromAttenuationImage.html" title="A BinNormalisation class that gets attenuation correction factors from an attenuation image." alt="" coords="1596,14,1792,58"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1505,34,1597,35,1592,37,1506,39"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1BinNormalisationFromML2D.html" title="A BinNormalisation class that gets the normalisation factors from the files output by find_ML_normfac..." alt="" coords="1577,108,1810,135"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1487,119,1579,121,1574,122,1488,124"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1BinNormalisationFromProjData.html" title="A BinNormalisation class that gets the normalisation factors from a ProjData object." alt="" coords="1596,184,1792,229"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1496,204,1598,206,1592,207,1498,209"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1BinNormalisationSinogramRescaling.html" title="The BinNormalisationSinogramRescaling class gets normaliastion factors by dividing forward projection..." alt="" coords="1581,270,1806,314"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1515,290,1583,292,1578,293,1516,295"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1ChainedBinNormalisation.html" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects." alt="" coords="1586,449,1802,477"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1480,460,1588,462,1582,463,1481,465"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1TrivialBinNormalisation.html" title="Trivial class which does not do any normalisation whatsoever." alt="" coords="1592,517,1795,545"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="1480,539,1594,536,1589,537,1481,545"/>
+<area shape="rect" id="Node000021" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1564,569,1823,648"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="1449,681,1561,649,1566,648,1451,686"/>
+<area shape="rect" id="Node000022" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1549,672,1838,750"/>
+<area shape="poly" id="edge22_Node000020_Node000022" title=" " alt="" coords="1472,708,1551,711,1546,711,1473,713"/>
+<area shape="rect" id="Node000024" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1564,774,1823,853"/>
+<area shape="poly" id="edge24_Node000020_Node000024" title=" " alt="" coords="1450,736,1566,774,1561,773,1450,741"/>
+<area shape="rect" id="Node000026" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1564,877,1823,956"/>
+<area shape="poly" id="edge26_Node000020_Node000026" title=" " alt="" coords="1396,742,1464,803,1506,835,1550,863,1572,877,1567,876,1548,868,1503,839,1461,807,1394,747"/>
+<area shape="rect" id="Node000023" href="$classstir_1_1GE_1_1RDF__HDF5_1_1BinNormalisationFromGEHDF5.html" title="A BinNormalisation class that gets the normalisation factors from an GEHDF5 3D normalisation file." alt="" coords="1888,688,2117,733"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="1854,708,1890,711,1885,711,1854,713"/>
+<area shape="rect" id="Node000025" href="$classstir_1_1ecat_1_1BinNormalisationFromECAT8.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT8 3D normalisation file...." alt="" coords="1903,791,2102,836"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="1839,811,1905,813,1899,814,1839,816"/>
+<area shape="rect" id="Node000027" href="$classstir_1_1ecat_1_1ecat7_1_1BinNormalisationFromECAT7.html" title="A BinNormalisation class that gets the normalisation factors from an ECAT7 3D normalisation file." alt="" coords="1898,894,2106,938"/>
+<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="1839,914,1900,916,1895,916,1839,919"/>
 </map>

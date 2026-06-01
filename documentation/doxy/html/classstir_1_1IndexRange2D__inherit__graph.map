@@ -1,6 +1,12 @@
 <map id="stir::IndexRange2D" name="stir::IndexRange2D">
-<area shape="rect" id="node2" href="$classstir_1_1IndexRange.html" title="stir::IndexRange\&lt; 2 \&gt;" alt="" coords="935,21,1084,48"/>
-<area shape="rect" id="node3" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; IndexRange\&lt; num_dimensions\l &#45; 1 \&gt; \&gt;" alt="" coords="432,7,647,63"/>
-<area shape="rect" id="node5" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;. " alt="" coords="696,43,851,85"/>
-<area shape="rect" id="node4" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0. " alt="" coords="5,21,187,48"/>
+<area shape="rect" id="Node000001" title="a &#39;convenience&#39; class for 2D index ranges." alt="" coords="1238,24,1384,52"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1IndexRange.html" title=" " alt="" coords="1024,24,1189,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1205,35,1241,38,1236,38,1205,41"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="474,8,713,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="728,28,860,24,1000,26,1026,30,1021,30,1000,31,860,30,729,34"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1IndexRange.html" title="This class defines ranges which can be &#39;irregular&#39;." alt="" coords="762,46,934,91"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="729,52,765,59,759,59,728,58"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="5,26,204,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,37,474,37,472,42,219,42"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="949,54,1020,48,1026,48,949,59"/>
 </map>

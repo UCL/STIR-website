@@ -1,4 +1,7 @@
 <map id="stir::ModelMatrix&lt; num_param &gt;" name="stir::ModelMatrix&lt; num_param &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1ModelMatrix.html" title="stir::ModelMatrix\&lt; 1 \&gt;" alt="" coords="5,109,156,136"/>
-<area shape="rect" id="node3" href="$classstir_1_1ModelMatrix.html" title="stir::ModelMatrix\&lt; 2 \&gt;" alt="" coords="180,109,331,136"/>
+<area shape="rect" id="Node000001" title="A helper class to store the model matrix for a linear kinetic model." alt="" coords="116,5,260,50"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ModelMatrix.html" title=" " alt="" coords="5,115,176,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,61,105,117,101,113,153,62"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ModelMatrix.html" title=" " alt="" coords="200,115,370,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,59,275,115,270,115,219,64"/>
 </map>

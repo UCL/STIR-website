@@ -1,3 +1,5 @@
 <map id="stir::TOF_Tests" name="stir::TOF_Tests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="10,5,115,32"/>
+<area shape="rect" id="Node000001" title="Test class for Time Of Flight." alt="" coords="5,81,122,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="9,5,118,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,47,66,81,61,80,62,51"/>
 </map>

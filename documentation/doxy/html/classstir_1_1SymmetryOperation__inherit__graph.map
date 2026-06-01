@@ -1,3 +1,5 @@
 <map id="stir::SymmetryOperation" name="stir::SymmetryOperation">
-<area shape="rect" id="node2" href="$classstir_1_1TrivialSymmetryOperation.html" title="A class implementing the trivial case where the symmetry operation does nothing at all..." alt="" coords="5,80,204,107"/>
+<area shape="rect" id="Node000001" title="Encodes symmetry operation on image coordinates and projection data coordinates." alt="" coords="25,5,207,33"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1TrivialSymmetryOperation.html" title="A class implementing the trivial case where the symmetry operation does nothing at all." alt="" coords="5,81,227,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,47,118,82,114,79,114,51"/>
 </map>

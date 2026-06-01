@@ -1,5 +1,9 @@
 <map id="stir::ProjDataInfoBlocksOnCylindricalNoArcCorr" name="stir::ProjDataInfoBlocksOnCylindricalNoArcCorr">
-<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors. " alt="" coords="13,155,180,196"/>
-<area shape="rect" id="node3" href="$classstir_1_1ProjDataInfoGeneric.html" title="projection data info for data corresponding to &#39;Generic&#39; sampling. " alt="" coords="13,80,180,107"/>
-<area shape="rect" id="node4" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling. " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000001" title="Projection data info for data from a scanner with discrete dtectors organised by blocks." alt="" coords="18,266,193,311"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ProjDataInfoGenericNoArcCorr.html" title="Projection data info for data for a scanner with discrete detectors." alt="" coords="15,174,196,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,232,108,267,103,265,104,236"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorr.html" title="Projection data info for data which are not arc&#45;corrected." alt="" coords="5,81,206,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,139,108,174,103,173,105,144"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ProjDataInfoCylindrical.html" title="projection data info for data corresponding to a &#39;cylindrical&#39; sampling." alt="" coords="5,5,206,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,46,108,81,103,80,105,51"/>
 </map>

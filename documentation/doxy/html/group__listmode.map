@@ -1,8 +1,9 @@
 <map id="Support classes for reading list mode data" name="Support classes for reading list mode data">
-<area shape="rect" id="node1" href="$group__STIR__library.html" title="STIR library" alt="" coords="5,415,97,441"/>
-<area shape="rect" id="node2" href="$group__GeneralisedObjectiveFunction.html" title="Objective functions\l for iterative estimation\l of variables" alt="" coords="601,44,755,100"/>
-<area shape="rect" id="node3" href="$group__GE.html" title="support for GE data" alt="" coords="610,317,746,344"/>
-<area shape="rect" id="node4" href="$group__NiftyPET.html" title="Wrapped NiftyPET functionality\l in STIR" alt="" coords="575,407,781,449"/>
-<area shape="rect" id="node5" href="$group__ECAT.html" title="ECAT6 ... ECAT8 support\l in the IO library" alt="" coords="591,526,765,567"/>
-<area shape="rect" id="node6" href="$group__IO.html" title="Input/Output Library" alt="" coords="609,616,747,643"/>
+<area shape="rect" id="Node000003" href="$group__ECAT.html" title=" " alt="" coords="645,113,822,158"/>
+<area shape="rect" id="Node000005" href="$group__GE.html" title=" " alt="" coords="660,423,807,451"/>
+<area shape="rect" id="Node000007" href="$group__GeneralisedObjectiveFunction.html" title=" " alt="" coords="645,537,822,598"/>
+<area shape="rect" id="Node000004" href="$group__IO.html" title=" " alt="" coords="658,639,809,667"/>
+<area shape="rect" id="Node000006" href="$group__NiftyPET.html" title=" " alt="" coords="621,707,846,751"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,554,102,581"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,545,323,590"/>
 </map>

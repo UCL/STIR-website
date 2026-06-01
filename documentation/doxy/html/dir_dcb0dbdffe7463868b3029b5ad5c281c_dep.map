@@ -1,0 +1,34 @@
+<map id="/home/kris/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock" name="/home/kris/devel/STIRdistrib/STIR/src/include/stir/recon_buildblock">
+<area shape="rect" id="node1" href="dir_2775cd58e0f45fa97e2b98c55b8f5eda.html" title="geometry" alt="" coords="27,141,112,168"/>
+<area shape="rect" id="node2" href="dir_452f53b83537c5c113b18987f6fa04eb.html" title="data" alt="" coords="647,141,697,168"/>
+<area shape="rect" id="node3" href="dir_4973cf68ecca490fdb13199f5fd5bd3d.html" title="IO" alt="" coords="721,141,759,168"/>
+<area shape="rect" id="node4" href="dir_570727a130bf6de80d6a3b827ad43cd8.html" title="modelling" alt="" coords="136,141,222,168"/>
+<area shape="rect" id="node5" href="dir_76de0853fcb749cdea6f406d80abf669.html" title="spatial_transformation" alt="" coords="246,141,415,168"/>
+<area shape="rect" id="node6" href="dir_dadde5ff235b714a4cfcd56587e73764.html" title="listmode" alt="" coords="440,141,518,168"/>
+<area shape="rect" id="node7" href="dir_fb049926eee4bd809e99e602abeeb9d8.html" title="numerics" alt="" coords="542,141,623,168"/>
+<area shape="rect" id="node8" href="dir_5448dadd40831d11da5749458fd5c94b.html" title="Shape" alt="" coords="783,141,844,168"/>
+<area shape="poly" id="edge1" href="dir_000071_000024.html" alt="" coords="231,95,119,137,117,132,234,90"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000071_000024.html" title="1" alt="" coords="120,133,128,150"/>
+<area shape="poly" id="edge2" href="dir_000071_000007.html" alt="" coords="303,90,345,101,424,113,487,118,551,124,634,140,629,140,550,129,487,124,423,119,343,106,303,95"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000071_000007.html" title="3" alt="" coords="626,123,634,140"/>
+<area shape="poly" id="edge3" href="dir_000071_000029.html" alt="" coords="302,90,345,101,444,114,524,117,605,121,708,141,703,141,604,126,524,122,444,119,343,106,302,95"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000071_000029.html" title="10" alt="" coords="697,123,713,140"/>
+<area shape="poly" id="edge4" href="dir_000071_000042.html" alt="" coords="253,91,207,133,204,128,248,94"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000071_000042.html" title="4" alt="" coords="209,127,217,144"/>
+<area shape="poly" id="edge5" href="dir_000071_000082.html" alt="" coords="277,90,312,129,306,129,275,95"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000071_000082.html" title="1" alt="" coords="309,113,317,130"/>
+<area shape="poly" id="edge6" href="dir_000071_000037.html" alt="" coords="302,90,429,135,424,136,301,95"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000071_000037.html" title="1" alt="" coords="422,118,430,135"/>
+<area shape="poly" id="edge7" href="dir_000071_000056.html" alt="" coords="305,90,345,101,434,120,529,140,524,140,433,125,343,106,305,95"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000071_000056.html" title="2" alt="" coords="521,123,529,140"/>
+<area shape="rect" id="node10" href="dir_5b06f64f74629c5df4647669d3bedf7c.html" title="CUDA" alt="" coords="356,65,415,93"/>
+<area shape="rect" id="node11" href="dir_4eab11179eefc011655b0cb75a777b78.html" title="NiftyPET_projector" alt="" coords="439,65,580,93"/>
+<area shape="rect" id="node12" href="dir_a9b715f7b74cd2c43ab1ea113b9cbb28.html" title="Parallelproj_projector" alt="" coords="604,65,764,93"/>
+<area shape="rect" id="node13" href="dir_829d1cce52bb8b61599d60071140817c.html" title="test" alt="" coords="788,65,834,93"/>
+<area shape="poly" id="edge8" href="dir_000094_000029.html" alt="" coords="800,92,764,132,762,127,796,94"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000094_000029.html" title="3" alt="" coords="767,125,775,142"/>
+<area shape="poly" id="edge9" href="dir_000094_000079.html" alt="" coords="813,91,814,127,810,123,809,95"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000094_000079.html" title="1" alt="" coords="817,113,825,130"/>
+<area shape="rect" id="clust2" href="dir_dcb0dbdffe7463868b3029b5ad5c281c.html" alt="" coords="189,54,844,103"/>
+<area shape="rect" id="clust1" href="dir_3e8c71b7f2899a5cb50f7f3ee44081d2.html" title="stir" alt="" coords="16,16,855,179"/>
+</map>

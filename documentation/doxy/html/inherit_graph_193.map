@@ -1,5 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classstir_1_1VectorWithOffset.html" title="stir::VectorWithOffset\l\&lt; elemT \&gt;" alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node2" href="$classstir_1_1NumericVectorWithOffset.html" title="stir::NumericVectorWithOffset\l\&lt; elemT, elemT \&gt;" alt="" coords="203,5,401,47"/>
-<area shape="rect" id="node3" href="$classstir_1_1Array_3_011_00_01elemT_01_4.html" title="The 1&#45;dimensional (partial) specialisation of Array. " alt="" coords="449,13,604,39"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="5,136,229,197"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="277,127,492,206"/>
+<area shape="poly" id="edge671_Node000000_Node000001" title=" " alt="" coords="243,164,279,165,274,167,245,169"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Array.html" title=" " alt="" coords="568,5,727,50"/>
+<area shape="poly" id="edge672_Node000001_Node000002" title=" " alt="" coords="448,115,492,86,539,60,570,49,565,52,541,65,494,91,451,120"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Array.html" title=" " alt="" coords="568,75,727,119"/>
+<area shape="poly" id="edge673_Node000001_Node000003" title=" " alt="" coords="506,132,570,117,565,119,507,137"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1Array.html" title=" " alt="" coords="568,144,727,189"/>
+<area shape="poly" id="edge674_Node000001_Node000004" title=" " alt="" coords="507,164,570,166,565,167,508,169"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1Array.html" title=" " alt="" coords="540,213,755,258"/>
+<area shape="poly" id="edge675_Node000001_Node000005" title=" " alt="" coords="507,196,563,213,557,213,507,201"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1Array.html" title=" " alt="" coords="542,283,753,327"/>
+<area shape="poly" id="edge676_Node000001_Node000006" title=" " alt="" coords="450,213,494,242,541,268,570,282,565,282,539,273,492,246,449,218"/>
 </map>

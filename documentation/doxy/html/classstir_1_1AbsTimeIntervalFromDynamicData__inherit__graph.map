@@ -1,6 +1,11 @@
 <map id="stir::AbsTimeIntervalFromDynamicData" name="stir::AbsTimeIntervalFromDynamicData">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; AbsTimeIntervalFromDynamicData,\l AbsTimeInterval, AbsTimeInterval \&gt;" alt="" coords="692,33,935,89"/>
-<area shape="rect" id="node3" href="$classstir_1_1AbsTimeInterval.html" title="Base class for specifying a time interval (in absolute time) " alt="" coords="229,13,372,39"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; AbsTimeInterval \&gt;" alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="204,64,397,105"/>
+<area shape="rect" id="Node000001" title="class for specifying a time interval via a dynamic scan" alt="" coords="1069,39,1259,83"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="750,30,1020,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1035,58,1071,61,1066,61,1035,64"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1AbsTimeInterval.html" title="Base class for specifying a time interval (in absolute time)" alt="" coords="243,14,400,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,29,726,46,752,51,747,51,726,52,416,35"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,168,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,25,245,27,240,28,183,30"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="217,65,426,110"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="442,88,578,87,726,80,747,81,753,81,727,86,579,92,442,93"/>
 </map>

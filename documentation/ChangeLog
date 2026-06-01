@@ -1,4 +1,1563 @@
 -------------------------------
+Wed, 27 May 2026 17:16:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+updated VERSION.txt etc for release of version 6.4.0
+[ci skip]
+
+
+LICENSE.txt
+VERSION.txt
+
+-------------------------------
+Wed, 27 May 2026 13:00:12 +0100  markus-jehl  
+
+Example python reconstruction of NeuroLF Hoffman data. (#1711)
+Example python reconstruction of NeuroLF Hoffman data.
+
+[ci skip]
+
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_6.4.htm
+examples/python/NeuroLF_reconstruction_example/NeuroLF-15mm.hs
+examples/python/NeuroLF_reconstruction_example/README.md
+examples/python/NeuroLF_reconstruction_example/hoffman_phantom_reconstruction.ipynb
+examples/python/NeuroLF_reconstruction_example/stir_data_generation.py
+examples/python/NeuroLF_reconstruction_example/stir_plotters.py
+
+-------------------------------
+Wed, 27 May 2026 08:34:10 +0100  Kris Thielemans  
+
+Merge pull request #1718 from KrisThielemans/prep2_v6.4.0
+Prep2 v6.4.0
+
+-------------------------------
+Wed, 27 May 2026 08:30:52 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] finalise release notes for 6.4.0
+
+
+documentation/history.htm
+documentation/release_6.4.htm
+
+-------------------------------
+Wed, 27 May 2026 08:27:33 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] fix doxygen exclude of external_helpers
+EXCLUDE didn't work for me, possibly because of symlinks,
+but EXCLUDE_PATTERNS does.
+
+
+src/Doxyfile.in
+
+-------------------------------
+Tue, 26 May 2026 22:57:24 +0100  Kris Thielemans  
+
+Merge pull request #1717 from KrisThielemans/listmode_hierarchy
+use DataWithProjDataInfo for ListModeData
+
+-------------------------------
+Tue, 26 May 2026 20:33:16 +0100  Kris Thielemans@ucl.ac.uk  
+
+use DataWithProjDataInfo for ListModeData
+Fixes a problem with SWIG (get_proj_data_info() wasn't
+available), and reduces code a bit.
+
+
+src/include/stir/listmode/ListModeData.h
+src/include/stir/listmode/ListModeData_dummy.h
+src/listmode_buildblock/ListModeData.cxx
+
+-------------------------------
+Mon, 25 May 2026 11:52:11 +0100  Kris Thielemans  
+
+Merge pull request #1713 from KrisThielemans/install_python_examples
+Install stir as python module and install some examples
+
+-------------------------------
+Mon, 25 May 2026 10:31:27 +0100  Kris Thielemans  
+
+[PYTHON] better/less warnings
+- Disable some Codacy warnings
+- Improve stirextra warning
+
+Co-authored-by: Casper da Costa-Luis <casper.dcl@physics.org>
+
+
+src/swig/python/stir/__init__.py
+src/swig/python/stirextra.py
+src/swig/test/python/test_buildblock.py
+src/swig/test/python/test_numpy.py
+
+-------------------------------
+Mon, 25 May 2026 09:32:05 +0100  Kris Thielemans  
+
+Merge pull request #1716 from KrisThielemans/doxygen_fixes
+Doxygen fixes and more info in STIR-developers-overview.tex
+
+-------------------------------
+Mon, 25 May 2026 09:30:26 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] added section on doxygen in developers-overview
+
+
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Mon, 25 May 2026 08:58:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+run dos2unix
+
+
+src/analytic/SRT2D/SRT2D.cxx
+
+-------------------------------
+Mon, 25 May 2026 08:58:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] doxygen fixes
+
+
+examples/C++/using_STIR_LOCAL/demo5_line_search.cxx
+src/SimSET/conv_SimSET_projdata_to_STIR.cxx
+src/SimSET/conv_to_SimSET_att_image.cxx
+src/analytic/DDSR2D/DDSR2D.cxx
+src/analytic/GRD2D/GRD2D.cxx
+src/analytic/SRT2D/SRT2D.cxx
+src/analytic/SRT2D/SRT2DReconstruction.cxx
+src/analytic/SRT2DSPECT/SRT2DSPECT.cxx
+src/analytic/SRT2DSPECT/SRT2DSPECTReconstruction.cxx
+src/buildblock/DataWithProjDataInfo.cxx
+src/experimental/motion_test/test_BSpline_transformations.cxx
+src/experimental/recon_test/fwdtestDensel.cxx
+src/experimental/test/test_Fourier.cxx
+src/include/stir/DataWithProjDataInfo.h
+src/include/stir/DataWithProjDataInfo.inl
+src/include/stir/GammaArrayFilter2D.h
+src/include/stir/IO/InterfileHeaderSiemens.h
+src/include/stir/IO/PENNListmodeInputFileFormat.h
+src/include/stir/Scanner.h
+src/include/stir/SeparableGaussianArrayFilter.h
+src/include/stir/doxygengroups.h
+src/include/stir/index_at_maximum.h
+src/include/stir/modelling/ModelMatrix.h
+src/include/stir/modelling/PatlakPlot.h
+src/include/stir/modelling/PlasmaData.h
+src/include/stir/numerics/BSplinesDetail.inl
+src/include/stir/numerics/BSplinesRegularGrid.inl
+src/include/stir/numerics/FastErf.h
+src/include/stir/numerics/MatrixFunction.h
+src/include/stir/recon_buildblock/GibbsPenalty.h
+src/include/stir/spatial_transformation/GatedSpatialTransformation.h
+src/include/stir_experimental/SeparableGaussianArrayFilter.h
+src/recon_buildblock/ProjMatrixByBin.cxx
+src/recon_test/bcktest.cxx
+src/recon_test/fwdtest.cxx
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/recon_test/test_data_processor_projectors.cxx
+src/recon_test/test_geometry_blocks_on_cylindrical.cxx
+src/recon_test/test_priors.cxx
+src/test/NiftyPET_projector/test_ProjectorNiftyPET_adjoint.cxx
+src/test/numerics/test_Fourier.cxx
+src/test/numerics/test_matrices.cxx
+src/test/test_DetectorCoordinateMap.cxx
+src/utilities/stir_timings.cxx
+
+-------------------------------
+Mon, 25 May 2026 03:20:04 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] changes options in Doxyyfile
+
+
+src/Doxyfile.in
+
+-------------------------------
+Mon, 25 May 2026 02:56:56 +0100  Kris Thielemans@ucl.ac.uk  
+
+minor fixes in make_distribution.sh
+
+
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Mon, 25 May 2026 00:46:45 +0100  Kris Thielemans@ucl.ac.uk  
+
+updated Doxyfile with recent doxygen
+
+
+src/Doxyfile.in
+
+-------------------------------
+Mon, 25 May 2026 00:46:45 +0100  Kris Thielemans@ucl.ac.uk  
+
+updated credit, history etc
+
+
+.mailmap
+CITATION.cff
+documentation/credits.htm
+documentation/history.htm
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+updated release notes
+
+
+documentation/release_6.4.htm
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+Add section on Python to STIR-UsersGuide
+
+
+documentation/STIR-UsersGuide.tex
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PYTHON] update to stir.extra and as_array()
+
+
+examples/python/Quadra_files_preprocess.py
+examples/python/ROI_demo.py
+examples/python/Vision_files_preprocess.py
+examples/python/coordinates_vs_bins.py
+examples/python/listmode_demo.py
+examples/python/matplotlib_demo.py
+examples/python/mayavi_demo.py
+examples/python/projdata_profiles.py
+examples/python/projdata_visualisation/BackendTools/STIRInterface.py
+examples/python/projector_demo.py
+examples/python/recon_demo.py
+examples/python/recon_demo_gradient.py
+src/swig/test/python/test_IO.py
+src/swig/test/python/test_buildblock.py
+src/swig/test/python/test_numpy.py
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PYTHON] Install (and rename) some examples
+STIR is now installed as a Python module.
+
+Replace
+	import stirextra
+with
+	import stir.extra
+(although the former will work, but with a warning).
+
+Some of the more useful examples are now installed inside the stir/
+directory, making the following possible
+    python -m stir.projdata_visualisation -h
+
+Some renames such that this would make sense:
+
+- renamed plot_projdata_profiles.py -> projdata_profiles.py
+  (use stir.projdata_profiles.plot)
+- moved content of projdata_visualisation/ProjDataVisualisation.py to
+  projdata_visualisation/__init__.py and __main__.py
+  (use stir.projdata_visualisation.launch_GUI)
+- renamed projdata_visualisation/demo_ProjDataVisualisation.py -> demo_ProjDataVisualisation.py
+
+
+CMakeLists.txt
+examples/python/CMakeLists.txt
+examples/python/README.md
+examples/python/README.txt
+examples/python/demo_ProjDataVisualisation.py
+examples/python/projdata_profiles.py
+examples/python/projdata_visualisation/BackendTools/UIGroupboxProjdataDimensions.py
+examples/python/projdata_visualisation/__init__.py
+examples/python/projdata_visualisation/__main__.py
+src/swig/python/stir/__init__.py
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+fix some python file permissions
+
+
+examples/python/Vision_files_preprocess.py
+examples/python/matplotlib_demo.py
+examples/python/mayavi_demo.py
+examples/python/recon_demo.py
+
+-------------------------------
+Sun, 24 May 2026 23:35:49 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PYTHON] install as module (stirextra->stir.extra)
+Files are now installed in ${PYTHON_DEST}/stir/
+Content of stirextra.py is now in ${PYTHON_DEST}/stir/extra.py
+${PYTHON_DEST}/stirextra.py imports the latter (with a warning).
+
+
+src/swig/CMakeLists.txt
+src/swig/python/stir/__init__.py
+src/swig/python/stir/extra.py
+src/swig/python/stirextra.py
+src/swig/test/python/test_projdata_profiles.py
+
+-------------------------------
+Sun, 24 May 2026 22:47:36 +0100  Kris Thielemans@ucl.ac.uk  
+
+Add --disable-geometric-model option to find_ML_normfactors3D [ci skip]
+
+
+documentation/release_6.4.htm
+src/utilities/find_ML_normfactors3D.cxx
+
+-------------------------------
+Sun, 24 May 2026 16:10:27 +0100  Kris Thielemans  
+
+Merge pull request #1712 from KrisThielemans/swig_fixes
+Fixes making the Python interface better (and some code reduction)
+
+-------------------------------
+Sun, 24 May 2026 16:07:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+updated release notes
+
+
+documentation/release_6.4.htm
+examples/python/plot_scanner_LORs.py
+
+-------------------------------
+Sun, 24 May 2026 16:07:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] more info on the coordinate conventions
+
+
+documentation/STIR-developers-overview.tex
+
+-------------------------------
+Sun, 24 May 2026 16:07:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+update Python examples for LORs
+- minor clean-up of plot_scanner_LORs
+- add coordinates_vs_bins.py
+
+
+examples/python/coordinates_vs_bins.py
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] add downcast and repr for most hierarchies
+Add semi-manual code to let SWIG downcast return values automatically. Sadly,
+it needs explicit lists of the "leaves". But if a leaf is missing, it
+will just fall back to the default.
+
+Also add Python __repr__ pointing the user to parameter_info() for many
+hierarchies.
+
+
+src/swig/stir.i
+src/swig/stir_exam.i
+src/swig/stir_listmode.i
+src/swig/stir_objectivefunctions.i
+src/swig/stir_priors.i
+src/swig/stir_projdata.i
+src/swig/stir_voxels.i
+src/swig/test/python/test_PoissonProjDataObjectiveFunction.py
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] add easier get_lor() etc to ProjDataInfo*NoArcCorr
+get_lor() returning an LOR object was already added by Daniel Deidda
+to ProjDataInfoBlocksOnCylindricalNoArcCorr. Now it's added to
+all *NoArcCorr
+
+
+src/swig/stir_projdata.i
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] add DetectionPositionPairVector
+useful for get_all_bins_for_det_pos_pair
+
+
+src/swig/stir_projdata_coords.i
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PYTHON] nicer print-out of ProjDataInfo objects
+
+
+src/swig/stir.i
+src/swig/stir_projdata.i
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PYTHON] tests on automatic downcast for ProjDataInfo
+
+
+src/swig/test/python/test_buildblock.py
+
+-------------------------------
+Sun, 24 May 2026 12:03:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+moved code from Sinogram/Viewgram.inl to .cxx
+This allowed removing `#include "stir/IndexRange2D.h"` from
+the .inl files, unfortunately meaning it had to inserted in
+various .cxx files.
+
+
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/analytic/GRD2D/GRD2DReconstruction.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/buildblock/Sinogram.cxx
+src/buildblock/Viewgram.cxx
+src/buildblock/scale_sinograms.cxx
+src/include/stir/Sinogram.h
+src/include/stir/Sinogram.inl
+src/include/stir/Viewgram.h
+src/include/stir/Viewgram.inl
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+src/iterative/OSSPS/OSSPSReconstruction.cxx
+src/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.cxx
+
+-------------------------------
+Sun, 24 May 2026 01:29:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+fix bug in ArcCorrection for TOF data
+The output was non-TOF, but actually the
+code should/could crash.
+
+
+src/buildblock/ArcCorrection.cxx
+
+-------------------------------
+Sun, 24 May 2026 01:29:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+fix Sinogram error since DataWithProjDataInfo
+
+
+src/buildblock/Sinogram.cxx
+src/include/stir/Sinogram.h
+src/include/stir/Sinogram.inl
+src/include/stir/Viewgram.inl
+
+-------------------------------
+Sun, 24 May 2026 01:29:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+add run-time checks on sizes in Segment*
+Previously, we had assert() statements. They had to be
+rewritten as the get_min_*pos() functions etc are now
+implemented in terms of the proj_data_info_sptr member.
+
+I enabled these checks also in optimised code, as they
+are quite important (and fast).
+
+
+src/buildblock/SegmentBySinogram.cxx
+src/buildblock/SegmentByView.cxx
+src/include/stir/SegmentBySinogram.h
+src/include/stir/SegmentByView.h
+
+-------------------------------
+Sun, 24 May 2026 01:29:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+introduce DataWithProjDataInfo
+add a new class DataWithProjDataInfo such that duplicate
+code related to get_proj_data_info*(), get_min_view_num() etc
+could be removed.
+
+Also fix SWIG automatic down-casting for ProjDataInfo for
+functions that return a ProjDataInfo. Happily, we need to do this
+now in very few places, thanks to the above.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/DataWithProjDataInfo.cxx
+src/buildblock/ProjData.cxx
+src/buildblock/RelatedViewgrams.cxx
+src/buildblock/SegmentBySinogram.cxx
+src/buildblock/SegmentByView.cxx
+src/include/stir/DataWithProjDataInfo.h
+src/include/stir/DataWithProjDataInfo.inl
+src/include/stir/ProjData.h
+src/include/stir/ProjData.inl
+src/include/stir/RelatedViewgrams.h
+src/include/stir/RelatedViewgrams.inl
+src/include/stir/Segment.h
+src/include/stir/Segment.inl
+src/include/stir/SegmentBySinogram.h
+src/include/stir/SegmentBySinogram.inl
+src/include/stir/SegmentByView.h
+src/include/stir/SegmentByView.inl
+src/include/stir/Sinogram.h
+src/include/stir/Sinogram.inl
+src/include/stir/Viewgram.h
+src/include/stir/Viewgram.inl
+src/swig/stir.i
+src/swig/stir_projdata.i
+
+-------------------------------
+Sat, 23 May 2026 15:37:26 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] avoid some more SWIG warnings due to shadowing
+
+
+src/swig/stir.i
+src/swig/stir_LOR.i
+src/swig/stir_voxels.i
+
+-------------------------------
+Sat, 23 May 2026 15:37:26 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] add more Coordinate2D %template
+avoids some warnings and probably helps anyway
+
+
+src/swig/stir_coordinates.i
+
+-------------------------------
+Fri, 22 May 2026 22:40:10 +0100  Kris Thielemans@ucl.ac.uk  
+
+remove obsolete #if STIR_NO_COVARIANT_RETURN_TYPES
+Simplify C++ code a bit by removing the outdated
+work-around for stone-age compilers
+
+
+src/buildblock/VoxelsOnCartesianGrid.cxx
+src/experimental/recon_buildblock/DataSymmetriesForDensels_PET_CartesianGrid.cxx
+src/include/stir/PixelsOnCartesianGrid.h
+src/include/stir/PixelsOnCartesianGrid.inl
+src/include/stir/VoxelsOnCartesianGrid.h
+src/include/stir/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.h
+src/include/stir_experimental/recon_buildblock/DataSymmetriesForDensels_PET_CartesianGrid.h
+src/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/recon_buildblock/TrivialDataSymmetriesForBins.cxx
+
+-------------------------------
+Fri, 22 May 2026 22:26:30 +0100  Kris Thielemans@ucl.ac.uk  
+
+covariant return type for ProjDataInfo*::clone()
+ProjDataInfoCylindricalNoArcCorr::clone() now returns a
+pointer of type ProjDataInfoCylindricalNoArcCorr*.
+
+This avoids having to downcast. It also provides a handy
+work-around in Python where downcasting is currently not possible
+due to SWIG limitations:
+	p = pdi.clone()
+now ensures that `p` is of the correct type.
+
+
+src/buildblock/ProjDataInfoBlocksOnCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoCylindricalArcCorr.cxx
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/include/stir/ProjDataInfoBlocksOnCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoCylindricalArcCorr.h
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+src/include/stir/ProjDataInfoSubsetByView.h
+
+-------------------------------
+Fri, 22 May 2026 21:37:32 +0100  Kris Thielemans@ucl.ac.uk  
+
+repeat default value to circumvent SWIG bug
+Currently, SWIG needs the declaration of overriden (pure?) virtual functions
+to repeat any default values.
+
+Fixes #1709
+
+
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+
+-------------------------------
+Mon, 18 May 2026 07:31:03 +0100  Kris Thielemans  
+
+Merge pull request #1261 from KrisThielemans/ParallelProjCylFOV
+allow using full FOV for Parallelproj projector
+
+-------------------------------
+Sun, 17 May 2026 23:12:57 +0100  Kris Thielemans@ucl.ac.uk  
+
+update release notes and sample .par files
+
+
+documentation/release_6.4.htm
+examples/samples/back_projector_parallelproj.par
+examples/samples/forward_projector_parallelproj.par
+
+-------------------------------
+Sun, 17 May 2026 13:14:09 +0100  Kris Thielemans@ucl.ac.uk  
+
+Merge branch 'master' into ParallelProjCylFOV
+
+
+-------------------------------
+Sun, 17 May 2026 09:26:51 +0100  Kris Thielemans  
+
+Merge pull request #1696 from KrisThielemans/ProjDataInfoGenericHierarchySwap
+simplify ProjDataInfoGeneric hierarchy to avoid code duplication. See https://github.com/UCL/STIR/issues/1307#issuecomment-2555972620 for more details.
+
+-------------------------------
+Sun, 17 May 2026 09:25:06 +0100  Kris Thielemans  
+
+update release notes on testing order for ProjDataInfo*
+[ci skip]
+
+documentation/release_6.4.htm
+
+-------------------------------
+Sun, 17 May 2026 07:24:37 +0100  Kris Thielemans  
+
+Merge pull request #1708 from KrisThielemans/fixScanner_check_consistency
+disable call to check_consistency() in GeometryBlocksOnCylindrical constructor
+
+-------------------------------
+Sat, 16 May 2026 22:02:45 +0100  Kris Thielemans@ucl.ac.uk  
+
+disable call to check_consistency() in constructor
+Solve problem that the scanner needs to call the constructor
+first, so check_consistency() potentially fails
+
+Fixes #1707
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+
+-------------------------------
+Fri, 15 May 2026 12:23:32 +0100  Kris Thielemans  
+
+Merge pull request #1705 from KrisThielemans/fix_Scanner_ask_parameters
+add set_up in Scanner::ask_parameters()
+
+-------------------------------
+Fri, 15 May 2026 10:51:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+add set_up in Scanner::ask_parameters()
+Fixes https://github.com/UCL/STIR/issues/1704
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Sun, 26 Apr 2026 21:51:43 +0100  Kris Thielemans  
+
+Merge pull request #1703 from KrisThielemans/merge_rel_6.3.1
+Merge release 6.3.1
+
+-------------------------------
+Sun, 26 Apr 2026 20:49:10 +0100  Kris Thielemans@ucl.ac.uk  
+
+Merge branch 'release_6.3' into merge_rel_6.3.1
+
+
+-------------------------------
+Sun, 26 Apr 2026 20:41:44 +0100  Kris Thielemans@ucl.ac.uk  
+
+release 6.3.1 [ci skip]
+
+
+CMakeLists.txt
+documentation/release_6.3.htm
+
+-------------------------------
+Sun, 26 Apr 2026 13:48:00 +0100  Kris Thielemans@ucl.ac.uk  
+
+add explicit include for <array>
+Fixes #1701
+
+
+src/include/stir/IO/GEHDF5Wrapper.h
+
+-------------------------------
+Sun, 26 Apr 2026 09:59:53 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] sync workflow with master
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sun, 26 Apr 2026 09:55:19 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] test release_6.3 branch
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sun, 26 Apr 2026 09:55:19 +0100  Kris Thielemans@ucl.ac.uk  
+
+[AppVeyor] fix libparallelproj==1
+
+
+.appveyor.yml
+
+-------------------------------
+Fri, 17 Apr 2026 23:38:40 +0200  Kris Thielemans  
+
+undo inadvertent change in .git-blame-ignore-revs
+[ci skip]
+
+.git-blame-ignore-revs
+
+-------------------------------
+Fri, 17 Apr 2026 23:17:45 +0200  Denis Prokopenko  
+
+Define minimum C++ version using ROOT_CXX_STANDARD (#1700)
+Use ROOT's CMake variable ROOT_CXX_STANDARD or root_config output to define min CXX version for ROOT >= 6.32
+
+---------
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+CMakeLists.txt
+documentation/release_6.4.htm
+src/cmake/FindCERN_ROOT.cmake
+
+-------------------------------
+Sat, 28 Mar 2026 21:24:14 +0000  Denis Prokopenko  
+
+Fix buffer size issue (#1699)
+* fix_buffer_size
+
+* fix_hidden_sprintfs
+
+* update release note
+
+* update concatenation to strncat in numpy.i
+
+documentation/release_6.4.htm
+src/swig/numpy.i
+src/utilities/manip_projdata.cxx
+
+-------------------------------
+Mon, 23 Mar 2026 07:37:39 +0000  Denis Prokopenko  
+
+Replace deprecated istrstream with istringstream (#1698)
+* updated deprecated istrstream with istringstream
+
+* updated hidden istrstream usage
+
+documentation/release_6.4.htm
+src/buildblock/KeyParser.cxx
+src/experimental/utilities/mode.cxx
+
+-------------------------------
+Sun, 22 Mar 2026 20:20:41 +0000  Denis Prokopenko  
+
+Fix sprintf deprecation warnings (#1697)
+* fix sprintf deprecation
+
+* fix potential read beyond allocated memory
+
+* added release note
+
+documentation/release_6.4.htm
+src/IO/stir_ecat7.cxx
+src/analytic/FBP3DRP/ColsherFilter.cxx
+src/analytic/FBP3DRP/FBP3DRPReconstruction.cxx
+src/buildblock/ML_norm.cxx
+src/display/display_array.cxx
+src/experimental/buildblock/NonseparableSpatiallyVaryingFilters3D.cxx
+src/experimental/listmode_utilities/change_lm_time_tags.cxx
+src/experimental/motion/MatchTrackerAndScanner.cxx
+src/experimental/motion_utilities/find_motion_corrected_norm_factors.cxx
+src/experimental/motion_utilities/move_image.cxx
+src/experimental/motion_utilities/move_projdata.cxx
+src/experimental/recon_buildblock/BinNormalisationFromML2D.cxx
+src/experimental/recon_buildblock/ParametricQuadraticPrior.cxx
+src/experimental/recon_buildblock/ProjMatrixByDensel.cxx
+src/experimental/utilities/create_normfactors.cxx
+src/experimental/utilities/create_normfactors3D.cxx
+src/include/stir/display.inl
+src/iterative/KOSMAPOSL/KOSMAPOSLReconstruction.cxx
+src/iterative/OSMAPOSL/OSMAPOSLReconstruction.cxx
+src/listmode_buildblock/CListModeDataECAT.cxx
+src/listmode_buildblock/LmToProjData.cxx
+src/listmode_utilities/lm_fansums.cxx
+src/recon_buildblock/FourierRebinning.cxx
+src/recon_buildblock/IterativeReconstruction.cxx
+src/recon_buildblock/LogcoshPrior.cxx
+src/recon_buildblock/ML_estimate_component_based_normalisation.cxx
+src/recon_buildblock/PLSPrior.cxx
+src/recon_buildblock/ProjMatrixByBin.cxx
+src/recon_buildblock/QuadraticPrior.cxx
+src/recon_buildblock/RelativeDifferencePrior.cxx
+src/test/numerics/test_overlap_interpolate.cxx
+src/test/test_display.cxx
+src/test/test_stir_math.cxx
+src/utilities/apply_normfactors.cxx
+src/utilities/apply_normfactors3D.cxx
+src/utilities/construct_randoms_from_singles.cxx
+src/utilities/correct_projdata.cxx
+src/utilities/ecat/convecat6_if.cxx
+src/utilities/find_ML_normfactors.cxx
+src/utilities/find_ML_singles_from_delayed.cxx
+src/utilities/manip_projdata.cxx
+
+-------------------------------
+Sun, 22 Mar 2026 00:02:17 +0000  Kris Thielemans  
+
+call error() when using azimuthal tilt for generic scanner
+we currently ignore this field and rely on the detector map,
+so now check that it's zero.
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Sun, 22 Mar 2026 00:02:17 +0000  Kris Thielemans  
+
+use stir::format() in warning()
+
+
+src/buildblock/DetectorCoordinateMap.cxx
+
+-------------------------------
+Sun, 22 Mar 2026 00:02:17 +0000  Kris Thielemans  
+
+ProjDataInfoGenericNoArcCorr: safer handling of "cylindrical" functions
+We were using "delete", but that means they could be called inadvertently.
+This was now more confusing with the change in hierarchy. Instead, we now
+call error() in most cases.
+
+Also updated TOF functionality, but it's still disabled.
+
+
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/include/stir/ProjDataInfoCylindrical.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+
+-------------------------------
+Sat, 21 Mar 2026 21:14:02 +0000  Kris Thielemans  
+
+minor clean-up in ProjDataInfoGenericNoArcCorr::get_bin
+also prepare for TOF (but still disabled)
+
+
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+
+-------------------------------
+Sat, 21 Mar 2026 20:00:36 +0000  Kris Thielemans  
+
+updated release notes
+[ci skip]
+
+
+documentation/release_6.4.htm
+
+-------------------------------
+Sat, 21 Mar 2026 14:56:17 +0000  Kris Thielemans  
+
+remove incorrect assert and replace BOOST_STATIC_ASSERT
+The assertt() call was in the wrong place and caused recursive
+calls in the "generic" case.
+
+I took the opporttunity to remove on more dependency on boost.
+
+
+src/buildblock/ProjDataInfoCylindricalNoArcCorr.cxx
+
+-------------------------------
+Sat, 21 Mar 2026 01:48:05 +0000  Kris Thielemans  
+
+small simplification of ProjDataInfoBlocksOnCylindricalNoArcCorr
+removed one function as it's now implemented higher up
+(t is obsolete anyway)
+
+
+src/buildblock/ProjDataInfoBlocksOnCylindricalNoArcCorr.cxx
+src/include/stir/ProjDataInfoBlocksOnCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+
+-------------------------------
+Sat, 21 Mar 2026 01:27:56 +0000  Kris Thielemans  
+
+derive ProjDataInfoGenericNoArcCorr from ProjDataInfoCylindricalNoArcCorr
+This is step 2 in https://github.com/UCL/STIR/issues/1307#issuecomment-2555972620
+
+By deriving from ProjDataInfoCylindricalNoArcCorr, we can cut most functions
+in the Generic version, as they are duplicates.
+
+
+.git-blame-ignore-revs
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+
+-------------------------------
+Sat, 21 Mar 2026 00:32:33 +0000  Kris Thielemans  
+
+merge ProjDataInfoGeneric into ProjDataInfoGenericNoArcCorr
+This is step 1 in https://github.com/UCL/STIR/issues/1307#issuecomment-2555972620
+
+ProjDataInfoGeneric has no good reason to exist on its own,
+as it assumes discretised detectors already, as does
+ProjDataInfoGenericNoArcCorr. Merging the 2 simplifies the
+hierarchy.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/include/stir/ProjDataInfoGeneric.h
+src/include/stir/ProjDataInfoGeneric.inl
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.inl
+
+-------------------------------
+Thu, 19 Mar 2026 20:37:26 +0000  Casper da Costa-Luis  
+
+CuVec: check size
+
+
+documentation/release_6.4.htm
+src/include/stir/cuda_utilities.h
+
+-------------------------------
+Thu, 19 Mar 2026 17:31:55 +0000  Kris Thielemans  
+
+Merge pull request #1689 from KrisThielemans/parallelproj2.0
+Upgrade to parallelproj 2.0 and use cuvec
+
+-------------------------------
+Thu, 19 Mar 2026 17:29:46 +0000  Kris Thielemans  
+
+updated release notes
+[ci skip]
+
+
+documentation/release_6.4.htm
+
+-------------------------------
+Wed, 18 Mar 2026 23:26:10 +0000  Kris Thielemans  
+
+moved cuvec submodule to external_helpers/CuVec
+
+
+.gitmodules
+external_helpers/CMakeLists.txt
+external_helpers/CuVec
+src/CMakeLists.txt
+
+-------------------------------
+Wed, 18 Mar 2026 21:50:25 +0000  Kris Thielemans  
+
+add sync argument to array_to_host
+
+
+src/include/stir/cuda_utilities.h
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+
+-------------------------------
+Wed, 18 Mar 2026 20:59:36 +0000  Dimitra Kyriakopoulou  
+
+Expose num_gpu_chunks on ProjectorByBinPairUsingParallelproj
+
+
+src/include/stir/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.h
+src/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.cxx
+
+-------------------------------
+Wed, 18 Mar 2026 08:52:08 +0000  Kris Thielemans  
+
+enabled parallelproj 1.* compatibility
+
+
+CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Tue, 17 Mar 2026 15:13:16 +0000  Markus Jehl  
+
+Remove explicit sync statements.
+
+
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Tue, 17 Mar 2026 14:12:30 +0000  Markus Jehl  
+
+Implementation of the GPU chunks and using CuVec start and end points in ParallelprojHelper
+
+
+src/include/stir/recon_buildblock/Parallelproj_projector/ParallelprojHelper.h
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Sat, 14 Mar 2026 07:42:41 +0000  Kris Thielemans  
+
+Merge pull request #1694 from Dimitra-Kyriakopoulou/Hackathon_project08_II
+Add constructor for ProjDataInMemory to move" Array argument. This enables passing CUDA-managed Arrays for instance (continuation of the image stage)
+
+-------------------------------
+Fri, 13 Mar 2026 21:40:13 +0000  Kris Thielemans  
+
+use format()
+
+
+src/buildblock/ProjDataInMemory.cxx
+
+-------------------------------
+Fri, 13 Mar 2026 18:12:30 +0200  Dimitra-Kyriakopoulou  
+
+Add CUDA-managed projection container support
+
+
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Fri, 13 Mar 2026 09:09:54 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into parallelproj2.0
+- force appveyor to suse libparallelproj=2
+- GHA: switch-off OpenMP and Parallelproj for MacOS clang21 job
+
+
+-------------------------------
+Fri, 13 Mar 2026 08:33:27 +0000  Z.K Li  
+
+Quadra script bugfix: rotational shift between STIR and Siemens recons (#1688)
+* change the view_offset in Scanner.cxx for both Vision 600 and Quadra and remove view_offset in pre_processing scripts, but keep the view_offset function in the script for possible use later on.
+
+* minor clean-up of the Quadra script
+
+examples/python/Quadra_files_preprocess.py
+examples/python/Vision_files_preprocess.py
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Thu, 12 Mar 2026 15:57:15 +0000  Dimitra-Kyriakopoulou  
+
+add VoxelsOnCartesianGrid(Array&&) (#1693)
+add a move constructor when passed an array. This enables preserving CUDA Managed pointers.
+
+fix parallelproj to version 1 in appveyor
+---------
+Co-authored-by: Dimitra-Kyriakopoulou <dimitra.kyriakopoulou.13@gmail.com>
+
+.appveyor.yml
+src/buildblock/VoxelsOnCartesianGrid.cxx
+src/include/stir/VoxelsOnCartesianGrid.h
+
+-------------------------------
+Thu, 12 Mar 2026 15:31:43 +0000  Kris Thielemans  
+
+Merge pull request #9 from denproc/parallelproj2.0
+Parallelproj2.0: Using CuVec to delegate cuda calls
+
+-------------------------------
+Thu, 12 Mar 2026 15:14:07 +0000  Denis Prokopenko  
+
+adding cudaDeviceSynchronize
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+
+-------------------------------
+Thu, 12 Mar 2026 15:13:44 +0000  Denis Prokopenko  
+
+fixing else part for CudaGibbsPenalty
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+
+-------------------------------
+Thu, 12 Mar 2026 14:56:11 +0000  Denis Prokopenko  
+
+removing destructor as redundant after switch to cuvec
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Thu, 12 Mar 2026 14:50:58 +0000  Denis Prokopenko  
+
+extending cuvec use to d_input and d_output
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Thu, 12 Mar 2026 14:40:41 +0000  Denis Prokopenko  
+
+extending cuvec use to d_scalar
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Thu, 12 Mar 2026 13:53:49 +0000  Kris Thielemans  
+
+Merge pull request #8 from denproc/parallelproj2.0
+extend CuVec use in CudaGibbsPenalty
+
+-------------------------------
+Thu, 12 Mar 2026 13:31:01 +0000  Denis Prokopenko  
+
+restoring back the consistency check
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+
+-------------------------------
+Thu, 12 Mar 2026 13:15:34 +0000  Denis Prokopenko  
+
+extend CuVec use in CudaGibbsPenalty
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Thu, 12 Mar 2026 13:14:08 +0000  Markus Jehl  
+
+Make CUDA dependency public.
+
+
+src/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 12 Mar 2026 11:59:47 +0000  Dimitra-Kyriakopoulou  
+
+Make sure VoxelsOnCartesianGrid constructor uses contiguous memory (#1690)
+`VoxelsOnCartesianGrid::construct_from_projdata_info` constructor still wasn't return contiguous memory, apparently due to an `Array::grow` problem. This works around that.
+
+.github/workflows/build-test.yml
+src/buildblock/VoxelsOnCartesianGrid.cxx
+src/test/test_VoxelsOnCartesianGrid.cxx
+
+-------------------------------
+Thu, 12 Mar 2026 10:04:31 +0000  Kris Thielemans  
+
+fix target_include_directories for cuvec
+
+
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 12 Mar 2026 10:03:10 +0000  Kris Thielemans  
+
+make CuVeC member mutable for writing
+
+
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Thu, 12 Mar 2026 09:45:29 +0000  Kris Thielemans  
+
+[CMake] install cuvec.cuh and fix CMake includes
+still WIP
+
+
+src/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 12 Mar 2026 00:27:48 +0000  Kris Thielemans  
+
+[CMake] target_include_directories for cuvec PUBLIC
+
+
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Thu, 12 Mar 2026 00:26:04 +0000  Kris Thielemans  
+
+[CMake] add cuvec path to registries
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Wed, 11 Mar 2026 23:50:13 +0000  Kris Thielemans  
+
+Use cuvec in CudaGibbsPenalty
+
+
+src/include/stir/cuda_utilities.h
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.cuh
+src/include/stir/recon_buildblock/CUDA/CudaGibbsPenalty.h
+
+-------------------------------
+Wed, 11 Mar 2026 16:13:22 +0000  Kris Thielemans  
+
+fix cuvec include
+
+
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Wed, 11 Mar 2026 16:01:10 +0000  Kris Thielemans  
+
+add cuvec include (TEMP COMMIT)
+
+
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Wed, 11 Mar 2026 15:47:59 +0000  Kris Thielemans  
+
+added cuvec submodule
+
+
+.gitmodules
+cuvec
+
+-------------------------------
+Wed, 11 Mar 2026 14:50:43 +0000  Kris Thielemans  
+
+[GHA] MacOS clang21: disable OpenMP and enable parallelproj
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Wed, 11 Mar 2026 12:46:59 +0000  Kris Thielemans  
+
+[GHA] use parallelproj 2.0
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Wed, 11 Mar 2026 12:45:15 +0000  Kris Thielemans  
+
+convert to parallelproj 2.0 (WIP)
+
+
+CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Sat, 7 Mar 2026 17:45:04 +0000  Kris Thielemans  
+
+Merge pull request #1681 from ChristianHinge/patch-1
+Update Quadra_files_preprocess.py
+
+[ci skip]
+
+-------------------------------
+Wed, 25 Feb 2026 16:05:44 +0000  Kris Thielemans  
+
+Merge pull request #1682 from NicoleJurjew/Vision_script_Updates
+Vision script bugfix: rotational shift between STIR and Siemens recons
+
+-------------------------------
+Wed, 25 Feb 2026 12:36:43 +0000  NicoleJurjew  
+
+examples/python/Vision_files_preprocess.py: add View offset to remove any rotational shifts between Siemens and STIR Vision reconstructions
+
+
+examples/python/Vision_files_preprocess.py
+
+-------------------------------
+Wed, 25 Feb 2026 09:15:28 +0100  Christian Hinge  
+
+Update Quadra_files_preprocess.py
+Fixed python exponent and added comment regarding e7 sinogram decompression options
+
+examples/python/Quadra_files_preprocess.py
+
+-------------------------------
+Tue, 24 Feb 2026 14:17:59 +0000  NicoleJurjew  
+
+examples/python/Vision_files_preprocess.py: write uniform-1 image for initializing; add optional argument 'file_prefix'
+
+
+examples/python/Vision_files_preprocess.py
+
+-------------------------------
+Thu, 19 Feb 2026 10:18:35 +0000  Nikos Efthimiou  
+
+Fix memory leak from repeated ProjDataInfo::clone() calls (#1673)
+* Fix memory leak in ScatterSimulation from repeated ProjDataInfo::clone() calls
+
+* Small edit to add a new method to ScatterSimulation class to set the template projection data info using a ProjDataInfo object directly, instead of only through a shared pointer. This new method creates a shared pointer from the given ProjDataInfo object and then calls the existing method that takes a shared pointer.
+
+* minor clean-up of test_blocks_on_cylindrical.
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_6.4.htm
+src/include/stir/scatter/ScatterSimulation.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/scatter_buildblock/ScatterEstimation.cxx
+src/scatter_buildblock/ScatterSimulation.cxx
+src/scatter_buildblock/scatter_detection_modelling.cxx
+src/test/test_ScatterSimulation.cxx
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Sun, 8 Feb 2026 22:53:43 +0000  Kris Thielemans  
+
+Merge pull request #1674 from KrisThielemans/TOF_improvements
+TOF improvements: speed-up of Matrix projector by removing zeroes. Added extra tests.
+
+-------------------------------
+Sun, 8 Feb 2026 20:16:16 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into TOF_improvements
+
+
+-------------------------------
+Sun, 8 Feb 2026 20:13:18 +0000  Kris Thielemans  
+
+updated release notes for TOF fixes [ci skip]
+
+
+documentation/release_6.4.htm
+
+-------------------------------
+Fri, 6 Feb 2026 00:44:56 +0000  Kris Thielemans  
+
+add Python example LBFGSB-PC (#1663) [ci skip]
+add Python example running LBFGSB-PC and simple demo
+
+
+examples/python/LBFGSBPC.py
+examples/python/recon_demo-LBFGSBPC.py
+
+-------------------------------
+Wed, 4 Feb 2026 17:54:45 +0000  Z.K Li  
+
+examples/python/Quadra_files_preprocess.py (#1675)
+* Adding Quadra preprocess python script
+---------
+
+Co-authored-by: Z.K Li <54258479+christanmod@users.noreply.github.com>
+
+documentation/release_6.4.htm
+examples/python/Quadra_files_preprocess.py
+
+-------------------------------
+Wed, 21 Jan 2026 10:07:36 +0000  markus-jehl  
+
+OpenMP implementation of make_fan_sum_data and cope with mashing (#1667)
+make_fan_sum_data now handles mashed data and is parallelised.
+
+Also minor change to ProjDataInMemory::get_bin _value to make it a const member
+---------
+
+Co-authored-by: Markus Jehl <markus.jehl@positrigo.com>
+
+documentation/release_6.4.htm
+src/buildblock/ML_norm.cxx
+src/buildblock/ProjDataInMemory.cxx
+src/include/stir/ProjDataInMemory.h
+
+-------------------------------
+Mon, 19 Jan 2026 19:13:40 +0000  Kris Thielemans  
+
+trim zeroes in TOF projection matrix
+
+
+src/include/stir/recon_buildblock/ProjMatrixByBin.inl
+
+-------------------------------
+Mon, 19 Jan 2026 19:13:40 +0000  Kris Thielemans  
+
+removed obsolete code in test_time_of_flight
+the export_lor functions more or less copied functionality from
+ProjMatrixByBin, and therefore had the same bug. I've removed them.
+
+
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 19 Jan 2026 17:46:13 +0000  Kris Thielemans  
+
+add TOF RayTracingMatrix test on symmetry
+
+
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 19 Jan 2026 17:44:47 +0000  Kris Thielemans  
+
+add reverse iterators
+
+
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBin.h
+src/include/stir/recon_buildblock/ProjMatrixElemsForOneBin.inl
+
+-------------------------------
+Mon, 19 Jan 2026 17:43:52 +0000  Kris Thielemans  
+
+minor simplification of TOF vs nonTOF test
+
+
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 19 Jan 2026 17:11:15 +0000  Z.K Li  
+
+Added Siemens Quadra scanner in the scanner.cxx and .h (#1628)
+Added Siemens Quadra scanner in the scanner.cxx and .h, using a work-around
+to be able to insert a virtual axial crystal between every "vision 600".
+
+---------
+
+Co-authored-by: Z.K Li <54258479+christanmod@users.noreply.github.com>
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+
+-------------------------------
+Mon, 19 Jan 2026 15:59:43 +0000  Z.K Li  
+
+Merge pull request #1645 from z-k-li/TOF-bin-fix-for-RayTracingMatrix
+fix bug for oblique LORs when using TOF with the RayTracingMatrix (or any matrix).
+
+This bug was due to different coordinate systems used for images and projection data.
+
+Fixes https://github.com/UCL/STIR/issues/1537
+
+src/include/stir/recon_buildblock/ProjMatrixByBin.inl
+
+-------------------------------
+Fri, 28 Nov 2025 08:30:34 +0000  Kris Thielemans  
+
+Merge pull request #1670 from KrisThielemans/parallelproj_info
+more info() statements when running parallelproj
+
+-------------------------------
+Thu, 27 Nov 2025 23:42:58 +0000  Kris Thielemans  
+
+more info() statements when running parallelproj
+It can be useful to know if CPU or CUDA version is used, so print it
+if verbosity >= 2
+
+
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+
+-------------------------------
+Tue, 25 Nov 2025 21:17:01 +0000  Kris Thielemans  
+
+Merge pull request #1668 from KrisThielemans/HDF5_target_workaround
+[CMake] depend on both HDF5::HDF5 and hdf5::hdf5_cpp
+
+-------------------------------
+Sun, 23 Nov 2025 21:02:17 +0000  Kris Thielemans  
+
+[CMake] fix registries object lib when using shared_libs
+set position independent code for the registries when
+BUILD_SHARED_LIBS is ON. Otherwise, there are linking errors
+on some platforms (if PYTHON is not built, as that already
+switches on CMAKE_POSITION_INDEPENDENT_CODE)
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Sun, 23 Nov 2025 17:28:15 +0000  Kris Thielemans  
+
+[CMake] depend on both HDF5::HDF5 and hdf5:hdf5_cpp
+We need to work-around a CMake (up to a least 4.1) bug
+that the hdf5::hdf5_cpp target is not fully populated.
+See https://gitlab.kitware.com/cmake/cmake/-/issues/27379
+
+
+CMakeLists.txt
+src/IO/CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/data_buildblock/CMakeLists.txt
+src/listmode_buildblock/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Wed, 12 Nov 2025 08:55:55 +0000  Kris Thielemans  
+
+[CMake] Use hdf target as opposed to HDF5_CXX_LIBRARIES (#1665)
+* [CMake] Use HDF5::HDF5 target as opposed to HDF5_CXX_LIBRARIES
+
+Using targets is recommended, as it will add compiler flags etc as needed.
+It might also resolve
+https://github.com/conda-forge/stir-feedstock/issues/149, as with this update,
+`STIRTargets.cmake` contains `HDF5::HDF5` as opposed to explicit filenames.
+
+* introduce USE_HDF5_TARGET CMake option (marked as advanced to avoid
+confusing users)
+
+CMakeLists.txt
+documentation/release_6.4.htm
+src/IO/CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/data_buildblock/CMakeLists.txt
+src/listmode_buildblock/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+
+-------------------------------
+Tue, 11 Nov 2025 11:18:29 +0000  Kris Thielemans  
+
+[CMake] merge circular-dependent libraries (#1658)
+* [CMake] merge circular-dependent libraries (buildblock, data_buildblock, IO etc)
+
+* [CMake] fix compilation flags when GRAPHICS=X or PGM
+
+* update documentation and release notes
+
+* [GHA] test BUILD_SHARED_LIBS=ON on Ubuntu
+
+* fix SPECT_dicom_to_interfile dependency on ITK, necessary for shared libs
+
+* set version to 6.4.0
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+VERSION.txt
+documentation/STIR-developers-overview.tex
+documentation/release_6.4.htm
+src/CMakeLists.txt
+src/IO/CMakeLists.txt
+src/Shape_buildblock/CMakeLists.txt
+src/analytic/DDSR2D/CMakeLists.txt
+src/analytic/FBP2D/CMakeLists.txt
+src/analytic/FBP3DRP/CMakeLists.txt
+src/analytic/GRD2D/CMakeLists.txt
+src/analytic/SRT2D/CMakeLists.txt
+src/analytic/SRT2DSPECT/CMakeLists.txt
+src/buildblock/CMakeLists.txt
+src/cmake/stir_dirs.cmake
+src/data_buildblock/CMakeLists.txt
+src/display/CMakeLists.txt
+src/eval_buildblock/CMakeLists.txt
+src/experimental/buildblock/CMakeLists.txt
+src/experimental/listmode/CMakeLists.txt
+src/experimental/motion/CMakeLists.txt
+src/experimental/motion_utilities/CMakeLists.txt
+src/experimental/recon_buildblock/CMakeLists.txt
+src/iterative/KOSMAPOSL/CMakeLists.txt
+src/iterative/OSMAPOSL/CMakeLists.txt
+src/iterative/OSSPS/CMakeLists.txt
+src/listmode_buildblock/CMakeLists.txt
+src/modelling_buildblock/CMakeLists.txt
+src/numerics_buildblock/CMakeLists.txt
+src/recon_buildblock/CMakeLists.txt
+src/scatter_buildblock/CMakeLists.txt
+src/spatial_transformation_buildblock/CMakeLists.txt
+src/test/CMakeLists.txt
+src/test/numerics/CMakeLists.txt
+src/utilities/CMakeLists.txt
+
+-------------------------------
 Fri, 31 Oct 2025 18:33:36 +0000  Kris Thielemans  
 
 finalise release notes for 6.3 [ci skip] (#1662)
@@ -63,6 +1622,12 @@ Wed, 29 Oct 2025 07:48:44 +0000  Kris Thielemans
 
 Merge pull request #1654 from KrisThielemans/lessWarnings
 Less warnings in 2 cases
+
+-------------------------------
+Wed, 29 Oct 2025 00:44:37 +0000  Kris Thielemans  
+
+Merge remote-tracking branch 'origin/master' into ParallelProjCylFOV
+
 
 -------------------------------
 Wed, 29 Oct 2025 00:32:58 +0000  Dimitra-Kyriakopoulou  
@@ -9449,6 +11014,24 @@ so I hadn't noticed the problem in #1260.
 
 
 src/recon_buildblock/PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.cxx
+
+-------------------------------
+Tue, 19 Sep 2023 20:59:05 +0100  Kris Thielemans  
+
+allow using full FOV for Parallelproj projector
+introduce restrict_to_cylindrical_FOV variable/keyword (defaulting to true),
+identical to what is used in the ray-tracing matrix
+
+This variable is a rename of the _use_truncation variable (which was essentially
+disabled), but now made to work.
+
+
+src/include/stir/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.h
+src/include/stir/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.h
+src/include/stir/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.h
+src/recon_buildblock/Parallelproj_projector/BackProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ForwardProjectorByBinParallelproj.cxx
+src/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.cxx
 
 -------------------------------
 Tue, 19 Sep 2023 19:13:36 +0100  Kris Thielemans  

@@ -1,6 +1,13 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;" name="stir::PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin&lt; TargetT &gt;">
-<area shape="rect" id="node2" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndListModeDataWithProjMatrix\lByBin\&lt; TargetT \&gt;, GeneralisedObjectiveFunction\l\&lt; TargetT \&gt;, PoissonLogLikelihoodWithLinearModelForMean\lAndListModeData\&lt; TargetT \&gt; \&gt;" alt="" coords="796,38,1169,138"/>
-<area shape="rect" id="node3" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data. " alt="" coords="229,5,476,61"/>
-<area shape="rect" id="node4" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="5,5,180,61"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files..." alt="" coords="256,121,449,162"/>
+<area shape="rect" id="Node000001" title="Class for PET list mode data from static images for a scanner with discrete detectors." alt="" coords="1329,67,1600,128"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title=" " alt="" coords="1819,58,2091,137"/>
+<area shape="poly" id="edge5_Node000001_Node000011" title=" " alt="" coords="1615,95,1821,97,1816,98,1616,100"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="867,41,1280,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1295,95,1331,97,1326,98,1295,100"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data." alt="" coords="244,5,515,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="531,34,682,39,844,52,870,58,864,58,843,57,682,45,531,39"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="5,5,195,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,34,246,35,241,37,211,39"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="275,136,484,181"/>
+<area shape="poly" id="edge4_Node000002_Node000010" title=" " alt="" coords="500,159,539,160,692,167,758,168,843,160,884,155,890,154,844,165,758,173,692,172,539,165,500,164"/>
 </map>

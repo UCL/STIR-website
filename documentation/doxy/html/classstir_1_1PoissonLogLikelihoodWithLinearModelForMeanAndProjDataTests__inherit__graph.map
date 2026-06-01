@@ -1,5 +1,10 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests" name="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests">
-<area shape="rect" id="node2" href="$classstir_1_1ObjectiveFunctionTests.html" title="stir::ObjectiveFunctionTests\l\&lt; PoissonLogLikelihoodWithLinear\lModelForMeanAndProjData\&lt; DiscretisedDensity\l\&lt; 3, float \&gt; \&gt;, DiscretisedDensity\&lt; 3, float \&gt; \&gt;" alt="" coords="640,5,945,76"/>
-<area shape="rect" id="node3" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="5,17,111,43"/>
-<area shape="rect" id="node4" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior. " alt="" coords="160,48,372,89"/>
+<area shape="rect" id="Node000001" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndProjData." alt="" coords="1080,22,1381,67"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="694,5,1031,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1046,42,1082,45,1077,45,1046,47"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,18,114,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,24,369,12,519,11,670,17,696,21,691,21,670,22,519,17,369,18,130,29"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior." alt="" coords="163,52,395,96"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,42,165,51,160,52,129,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="411,84,419,85,545,91,600,91,670,85,691,84,697,84,671,90,600,96,545,97,419,90,411,90"/>
 </map>

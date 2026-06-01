@@ -1,3 +1,5 @@
 <map id="stir::ProjDataInfoSubsetByView" name="stir::ProjDataInfoSubsetByView">
-<area shape="rect" id="node2" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data. " alt="" coords="26,5,147,32"/>
+<area shape="rect" id="Node000001" title="Projection data info for data corresponding to a subset sampling by views." alt="" coords="5,81,181,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ProjDataInfo.html" title="An (abstract base) class that contains information on the projection data." alt="" coords="27,5,159,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,47,96,81,90,79,91,51"/>
 </map>

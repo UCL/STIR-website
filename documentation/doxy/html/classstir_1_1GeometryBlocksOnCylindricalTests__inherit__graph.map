@@ -1,3 +1,5 @@
 <map id="stir::GeometryBlocksOnCylindricalTests" name="stir::GeometryBlocksOnCylindricalTests">
-<area shape="rect" id="node2" href="$classstir_1_1RunTests.html" title="A base class for making test classesWith a derived class, an application could look like..." alt="" coords="64,5,169,32"/>
+<area shape="rect" id="Node000001" title="Test class for BlocksOnCylindrical geometry." alt="" coords="5,81,251,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="74,5,182,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,47,130,81,126,79,126,51"/>
 </map>

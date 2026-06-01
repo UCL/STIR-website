@@ -1,5 +1,7 @@
 <map id="OSMAPOSL" name="OSMAPOSL">
-<area shape="rect" id="node3" href="$group__KOSMAPOSL.html" title="KOSMAPOSL" alt="" coords="569,5,675,32"/>
-<area shape="rect" id="node4" href="$group__reconstructors.html" title="Reconstruction classes" alt="" coords="543,56,701,83"/>
-<area shape="rect" id="node2" href="$group__iterativereconstructors.html" title="Iterative reconstructors" alt="" coords="5,31,161,57"/>
+<area shape="rect" id="Node000003" href="$group__KOSMAPOSL.html" title=" " alt="" coords="600,5,701,33"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="228,67,321,94"/>
+<area shape="rect" id="Node000004" href="$group__recon__test.html" title=" " alt="" coords="566,64,735,108"/>
+<area shape="rect" id="Node000005" href="$group__reconstructors.html" title=" " alt="" coords="565,139,736,166"/>
+<area shape="rect" id="Node000002" href="$group__iterativereconstructors.html" title=" " alt="" coords="5,67,179,94"/>
 </map>

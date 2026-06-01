@@ -1,12 +1,24 @@
 <map id="stir::Shape3DWithOrientation" name="stir::Shape3DWithOrientation">
-<area shape="rect" id="node6" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Box3D, Shape3D, Shape3DWithOrientation \&gt;" alt="" coords="1105,5,1405,47"/>
-<area shape="rect" id="node8" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; Ellipsoid, Shape3D, Shape3DWith\lOrientation \&gt;" alt="" coords="1138,71,1373,127"/>
-<area shape="rect" id="node10" href="$classstir_1_1RegisteredParsingObject.html" title="stir::RegisteredParsingObject\l\&lt; EllipsoidalCylinder, Shape3D,\l Shape3DWithOrientation \&gt;" alt="" coords="1152,151,1359,207"/>
-<area shape="rect" id="node2" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes. " alt="" coords="712,86,815,113"/>
-<area shape="rect" id="node3" href="$classstir_1_1RegisteredObject.html" title="stir::RegisteredObject\l\&lt; Shape3D \&gt;" alt="" coords="513,79,663,120"/>
-<area shape="rect" id="node4" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,91,184,118"/>
-<area shape="rect" id="node5" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base classSuppose you have a hierarchy of classes wi..." alt="" coords="233,113,383,155"/>
-<area shape="rect" id="node7" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box. " alt="" coords="1488,13,1576,39"/>
-<area shape="rect" id="node9" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid. " alt="" coords="1483,86,1581,113"/>
-<area shape="rect" id="node11" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder. " alt="" coords="1455,166,1609,193"/>
+<area shape="rect" id="Node000001" title="Class for shapes with orientation." alt="" coords="921,91,1132,119"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1181,5,1511,50"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1091,84,1181,60,1229,51,1235,50,1182,65,1092,89"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1219,74,1473,136"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1147,102,1222,105,1216,105,1148,108"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1232,160,1460,221"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1094,121,1182,145,1234,161,1229,161,1181,150,1093,126"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes." alt="" coords="763,91,871,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="887,102,923,105,918,105,887,108"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="551,83,714,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="729,102,765,105,760,105,729,108"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,98,200,126"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,103,363,97,527,97,553,100,548,101,527,102,364,103,215,108"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="249,119,411,163"/>
+<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="215,123,251,130,246,131,215,129"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="426,127,554,114,549,115,427,132"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1Box3D.html" title="Three&#45;dimensional cuboid box." alt="" coords="1599,14,1692,42"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1526,25,1601,27,1596,28,1526,30"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1Ellipsoid.html" title="Three&#45;dimensional ellipsoid." alt="" coords="1593,91,1698,119"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1489,102,1595,105,1590,105,1489,108"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1EllipsoidalCylinder.html" title="Three&#45;dimensional ellipsoidal cylinder." alt="" coords="1560,176,1731,204"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1475,188,1562,190,1557,190,1475,193"/>
 </map>

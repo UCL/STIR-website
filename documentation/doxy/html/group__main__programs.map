@@ -1,5 +1,6 @@
 <map id="Executables" name="Executables">
-<area shape="rect" id="node1" href="$group__utilities.html" title="Utility programs" alt="" coords="320,5,435,32"/>
-<area shape="rect" id="node4" href="$group__FBP2D.html" title="FBP2D" alt="" coords="345,56,410,83"/>
-<area shape="rect" id="node3" href="$group__STIR.html" title="STIR" alt="" coords="5,31,59,57"/>
+<area shape="rect" id="Node000004" href="$group__FBP2D.html" title=" " alt="" coords="354,5,418,33"/>
+<area shape="rect" id="Node000002" href="$group__STIR.html" title=" " alt="" coords="5,32,56,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="105,32,204,60"/>
+<area shape="rect" id="Node000003" href="$group__utilities.html" title=" " alt="" coords="322,57,450,85"/>
 </map>

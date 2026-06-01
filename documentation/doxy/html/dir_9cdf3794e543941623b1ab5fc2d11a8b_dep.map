@@ -1,0 +1,23 @@
+<map id="/home/kris/devel/STIRdistrib/STIR/src/include/stir/analytic" name="/home/kris/devel/STIRdistrib/STIR/src/include/stir/analytic">
+<area shape="rect" id="node1" href="dir_dcb0dbdffe7463868b3029b5ad5c281c.html" title="recon_buildblock" alt="" coords="349,141,480,168"/>
+<area shape="rect" id="node3" href="dir_0b8a4e873864ed9e6453fe98621fbda4.html" title="DDSR2D" alt="" coords="135,65,212,93"/>
+<area shape="poly" id="edge1" href="dir_000010_000071.html" alt="" coords="200,91,225,101,342,136,336,137,223,106,200,96"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000010_000071.html" title="1" alt="" coords="334,119,342,136"/>
+<area shape="rect" id="node4" href="dir_8e86366887fa1fd45c84ce949f5eeee7.html" title="FBP2D" alt="" coords="236,65,300,93"/>
+<area shape="poly" id="edge2" href="dir_000019_000071.html" alt="" coords="294,91,315,101,377,134,372,134,312,106,293,96"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000019_000071.html" title="2" alt="" coords="371,116,379,133"/>
+<area shape="rect" id="node5" href="dir_a9e974d3e8019b4fed718213fcefbb41.html" title="FBP3DRP" alt="" coords="325,65,406,93"/>
+<area shape="poly" id="edge3" href="dir_000021_000071.html" alt="" coords="375,91,400,128,395,127,373,96"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000021_000071.html" title="3" alt="" coords="399,112,407,129"/>
+<area shape="rect" id="node6" href="dir_a815f58ec04d7654d02a65ac4e82cf6a.html" title="GRD2D" alt="" coords="430,65,498,93"/>
+<area shape="poly" id="edge4" href="dir_000026_000071.html" alt="" coords="457,92,433,130,430,125,453,95"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000026_000071.html" title="1" alt="" coords="437,121,445,138"/>
+<area shape="rect" id="node7" href="dir_ed0bf32c38bfe2143b167d9a4dd5eafd.html" title="SRT2D" alt="" coords="522,65,585,93"/>
+<area shape="poly" id="edge5" href="dir_000086_000071.html" alt="" coords="532,92,512,106,454,136,452,131,509,101,527,94"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000086_000071.html" title="1" alt="" coords="456,131,464,148"/>
+<area shape="rect" id="node8" href="dir_5b0b7ce3747562d9a6206e0c4c3dfdc7.html" title="SRT2DSPECT" alt="" coords="609,65,714,93"/>
+<area shape="poly" id="edge6" href="dir_000088_000071.html" alt="" coords="629,93,598,106,482,139,481,134,597,101,624,94"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000088_000071.html" title="1" alt="" coords="483,135,491,152"/>
+<area shape="rect" id="clust2" href="dir_9cdf3794e543941623b1ab5fc2d11a8b.html" alt="" coords="27,54,724,103"/>
+<area shape="rect" id="clust1" href="dir_3e8c71b7f2899a5cb50f7f3ee44081d2.html" title="stir" alt="" coords="16,16,735,179"/>
+</map>

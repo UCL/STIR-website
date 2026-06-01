@@ -1,3 +1,5 @@
 <map id="stir::SinogramIndices" name="stir::SinogramIndices">
-<area shape="rect" id="node2" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment. " alt="" coords="7,5,149,32"/>
+<area shape="rect" id="Node000001" title="A very simple class to store all dincies to get a (2D) Sinogram." alt="" coords="5,81,164,109"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1SegmentIndices.html" title="A very simple class to store segment numbers and any other indices that define a segment." alt="" coords="7,5,162,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,47,87,81,82,80,83,51"/>
 </map>

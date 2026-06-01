@@ -1,11 +1,23 @@
 <map id="stir::ListEvent" name="stir::ListEvent">
-<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="175,125,288,152"/>
-<area shape="rect" id="node10" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file. " alt="" coords="157,176,305,202"/>
-<area shape="rect" id="node3" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="787,34,1027,75"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="stir::CListEventScannerWith\lDiscreteDetectors\&lt; ProjDataInfo\lCylindricalNoArcCorr \&gt;" alt="" coords="800,125,1013,181"/>
-<area shape="rect" id="node7" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; Derived \&gt;" alt="" coords="395,52,548,94"/>
-<area shape="rect" id="node8" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="355,118,588,159"/>
-<area shape="rect" id="node9" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file. " alt="" coords="398,234,545,261"/>
-<area shape="rect" id="node4" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="1097,34,1258,75"/>
-<area shape="rect" id="node6" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner..." alt="" coords="1076,132,1279,174"/>
+<area shape="rect" id="Node000001" title="Class for storing and using gamma events from a list mode file." alt="" coords="5,170,116,197"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="181,134,300,161"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,167,183,158,178,161,132,172"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1SPECTListEvent.html" title="Class for storing and using gamma events from a SPECT List mode file." alt="" coords="165,186,316,213"/>
+<area shape="poly" id="edge11_Node000001_Node000018" title=" " alt="" coords="131,187,167,192,162,193,132,192"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1CListEventSAFIR.html" title=" " alt="" coords="840,40,1098,84"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,119,305,77,334,56,365,41,432,21,502,9,573,3,643,4,774,16,883,39,878,39,773,22,643,9,573,9,503,14,433,26,367,46,336,61,309,81,265,124"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="852,134,1086,196"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="297,164,366,179,495,190,626,191,748,186,854,179,849,180,748,191,626,197,495,196,365,185,297,169"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1CListEventSAFIR.html" title=" " alt="" coords="415,56,574,100"/>
+<area shape="poly" id="edge6_Node000002_Node000015" title=" " alt="" coords="307,126,365,110,417,98,412,100,366,115,309,131"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="366,125,623,170"/>
+<area shape="poly" id="edge8_Node000002_Node000016" title=" " alt="" coords="316,145,368,147,363,148,316,150"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file." alt="" coords="417,244,572,272"/>
+<area shape="poly" id="edge10_Node000002_Node000017" title=" " alt="" coords="312,167,318,172,328,186,331,200,333,212,342,224,378,243,419,256,414,256,376,248,339,228,328,215,325,201,323,188,314,176,311,172"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="1175,40,1341,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1114,59,1177,62,1171,62,1114,65"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="1148,142,1368,187"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1102,162,1150,165,1145,165,1102,167"/>
+<area shape="poly" id="edge7_Node000015_Node000003" title=" " alt="" coords="589,74,816,68,842,69,837,70,816,73,590,79"/>
+<area shape="poly" id="edge9_Node000016_Node000005" title=" " alt="" coords="639,150,854,160,849,161,639,155"/>
 </map>

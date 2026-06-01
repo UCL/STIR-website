@@ -1,6 +1,11 @@
 <map id="stir::CListEventSAFIR&lt; Derived &gt;" name="stir::CListEventSAFIR&lt; Derived &gt;">
-<area shape="rect" id="node4" href="$classstir_1_1CListEventSAFIR.html" title="stir::CListEventSAFIR\l\&lt; CListRecordSAFIR\&lt; DataType \&gt; \&gt;" alt="" coords="5,276,245,317"/>
-<area shape="rect" id="node2" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file. " alt="" coords="69,81,182,108"/>
-<area shape="rect" id="node3" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file. " alt="" coords="74,5,177,32"/>
-<area shape="rect" id="node5" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="45,367,206,408"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,159,214,204"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEventSAFIR.html" title=" " alt="" coords="5,286,264,331"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,218,137,286,132,285,133,222"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="75,82,194,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,123,137,159,132,158,134,128"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file." alt="" coords="79,5,190,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,46,137,82,132,82,134,51"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="51,380,218,425"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="136,344,137,381,132,378,133,348"/>
 </map>
