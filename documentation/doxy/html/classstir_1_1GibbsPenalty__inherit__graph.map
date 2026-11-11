@@ -1,26 +1,26 @@
 <map id="stir::GibbsPenalty&lt; elemT, potentialT &gt;" name="stir::GibbsPenalty&lt; elemT, potentialT &gt;">
-<area shape="rect" id="Node000001" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy." alt="" coords="1256,177,1422,221"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1619,5,1949,118"/>
-<area shape="poly" id="edge7_Node000001_Node000009" title=" " alt="" coords="1428,169,1616,113,1621,112,1429,174"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1636,143,1932,255"/>
-<area shape="poly" id="edge9_Node000001_Node000011" title=" " alt="" coords="1437,196,1638,199,1633,199,1438,202"/>
-<area shape="rect" id="Node000013" href="$classstir_1_1GibbsPenalty.html" title=" " alt="" coords="1701,279,1867,324"/>
-<area shape="poly" id="edge11_Node000001_Node000013" title=" " alt="" coords="1437,221,1620,264,1703,285,1698,285,1618,270,1437,226"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="1036,168,1206,230"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1222,196,1258,199,1252,199,1222,202"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="501,147,664,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="679,170,1012,186,1038,190,1033,190,1012,191,679,175"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,186,200,214"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="214,191,502,172,500,177,215,196"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="249,207,477,252"/>
-<area shape="poly" id="edge6_Node000007_Node000004" title=" " alt="" coords="215,210,251,216,246,217,216,216"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined." alt="" coords="688,207,846,252"/>
-<area shape="poly" id="edge4_Node000002_Node000006" title=" " alt="" coords="861,228,935,226,1012,220,1033,219,1039,218,1012,225,935,231,862,234"/>
-<area shape="poly" id="edge5_Node000006_Node000007" title=" " alt="" coords="493,227,690,229,685,230,493,232"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1GibbsQuadraticPenalty.html" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior." alt="" coords="2003,39,2202,84"/>
-<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="1965,59,2005,61,2000,62,1965,64"/>
-<area shape="rect" id="Node000012" href="$classstir_1_1GibbsRelativeDifferencePenalty.html" title="Multithreaded CPU Implementation of the Relative Difference penalty." alt="" coords="1999,177,2207,221"/>
-<area shape="poly" id="edge10_Node000011_Node000012" title=" " alt="" coords="1948,196,2001,199,1995,199,1948,202"/>
-<area shape="rect" id="Node000014" href="$classstir_1_1CudaGibbsPenalty.html" title="A base class with CUDA&#45;accelerated implementation of the GibbsPenalty class." alt="" coords="2018,279,2188,324"/>
-<area shape="poly" id="edge12_Node000013_Node000014" title=" " alt="" coords="1883,299,2020,302,2015,302,1883,304"/>
+<area shape="rect" id="Node000001" title="A base class for Gibbs type penalties in the GeneralisedPrior hierarchy." alt="" coords="1155,168,1299,211"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1480,5,1772,112"/>
+<area shape="poly" id="edge7_Node000001_Node000009" title=" " alt="" coords="1308,160,1477,107,1482,106,1309,165"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1494,136,1758,243"/>
+<area shape="poly" id="edge9_Node000001_Node000011" title=" " alt="" coords="1314,187,1497,189,1491,189,1315,192"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1GibbsPenalty.html" title=" " alt="" coords="1553,267,1699,309"/>
+<area shape="poly" id="edge11_Node000001_Node000013" title=" " alt="" coords="1312,213,1324,216,1555,273,1550,273,1322,221,1311,218"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1GeneralisedPrior.html" title=" " alt="" coords="953,160,1105,219"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1121,187,1157,189,1151,189,1121,192"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="458,137,607,180"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="622,157,766,161,929,172,955,177,950,177,929,177,766,167,622,162"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,175,184,201"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,178,459,161,457,166,199,184"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="233,196,434,239"/>
+<area shape="poly" id="edge6_Node000007_Node000004" title=" " alt="" coords="199,198,235,204,230,206,200,203"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1GeneralisedPrior.html" title="A base class for &#39;generalised&#39; priors, i.e. priors for which at least a &#39;gradient&#39; is defined." alt="" coords="631,196,774,239"/>
+<area shape="poly" id="edge4_Node000002_Node000006" title=" " alt="" coords="790,222,858,223,929,217,950,216,955,215,929,223,858,228,790,228"/>
+<area shape="poly" id="edge5_Node000006_Node000007" title=" " alt="" coords="450,215,633,217,628,218,450,220"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1GibbsQuadraticPenalty.html" title="Multithreaded CPU Implementation of the Quadratic Gibbs prior." alt="" coords="1826,37,2007,80"/>
+<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="1788,56,1828,58,1823,59,1788,61"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1GibbsRelativeDifferencePenalty.html" title="Multithreaded CPU Implementation of the Relative Difference penalty." alt="" coords="1822,168,2011,211"/>
+<area shape="poly" id="edge10_Node000011_Node000012" title=" " alt="" coords="1773,187,1824,189,1818,189,1773,192"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1CudaGibbsPenalty.html" title="A base class with CUDA&#45;accelerated implementation of the GibbsPenalty class." alt="" coords="1838,267,1994,309"/>
+<area shape="poly" id="edge12_Node000013_Node000014" title=" " alt="" coords="1715,285,1840,288,1835,288,1715,291"/>
 </map>

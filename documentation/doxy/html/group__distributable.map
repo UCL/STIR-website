@@ -1,7 +1,7 @@
 <map id="distributable building blocks" name="distributable building blocks">
-<area shape="rect" id="Node000004" href="$group__ancillary.html" title=" " alt="" coords="457,5,700,67"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="229,83,388,128"/>
-<area shape="rect" id="Node000003" href="$group__numerics.html" title=" " alt="" coords="497,92,660,119"/>
-<area shape="rect" id="Node000005" href="$group__test.html" title=" " alt="" coords="511,143,646,188"/>
-<area shape="rect" id="Node000002" href="$group__recon__buildblock.html" title=" " alt="" coords="5,83,180,128"/>
+<area shape="rect" id="Node000004" href="$group__ancillary.html" title=" " alt="" coords="417,5,634,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,80,351,123"/>
+<area shape="rect" id="Node000003" href="$group__numerics.html" title=" " alt="" coords="453,88,598,115"/>
+<area shape="rect" id="Node000005" href="$group__test.html" title=" " alt="" coords="463,139,588,181"/>
+<area shape="rect" id="Node000002" href="$group__recon__buildblock.html" title=" " alt="" coords="5,80,163,123"/>
 </map>

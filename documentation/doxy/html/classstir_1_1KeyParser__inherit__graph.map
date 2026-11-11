@@ -1,15 +1,15 @@
 <map id="stir::KeyParser" name="stir::KeyParser">
-<area shape="rect" id="Node000001" title="A class to parse Interfile headers." alt="" coords="5,84,120,112"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data" alt="" coords="168,84,368,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,95,170,97,165,99,136,100"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="416,84,563,112"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,95,418,97,413,98,384,100"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="611,5,815,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="533,75,610,43,649,34,654,33,612,48,535,80"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images" alt="" coords="619,57,807,85"/>
-<area shape="poly" id="edge4_Node000003_Node000009" title=" " alt="" coords="578,85,621,82,616,83,579,90"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream)" alt="" coords="623,109,803,137"/>
-<area shape="poly" id="edge5_Node000003_Node000010" title=" " alt="" coords="579,105,625,113,620,113,579,111"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data" alt="" coords="623,161,803,206"/>
-<area shape="poly" id="edge6_Node000003_Node000011" title=" " alt="" coords="538,116,612,146,646,161,641,160,610,151,537,121"/>
+<area shape="rect" id="Node000001" title="A class to parse Interfile headers." alt="" coords="5,81,114,108"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1MinimalInterfileHeader.html" title="a minimal class for Interfile keywords (and parsing) common to all types of data" alt="" coords="162,81,339,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,92,164,94,159,96,130,97"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InterfileHeader.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="387,81,519,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,92,389,94,384,95,355,97"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1InterfileHeaderSiemens.html" title="a class for Interfile keywords (and parsing) common to all types of data" alt="" coords="567,5,751,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,72,566,42,600,33,605,32,568,46,497,77"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1InterfileImageHeader.html" title="a class for Interfile keywords (and parsing) specific to images" alt="" coords="575,56,743,83"/>
+<area shape="poly" id="edge4_Node000003_Node000009" title=" " alt="" coords="534,82,577,79,572,80,535,87"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1InterfilePDFSHeader.html" title="a class for Interfile keywords (and parsing) specific to projection data (i.e. ProjDataFromStream)" alt="" coords="575,107,743,133"/>
+<area shape="poly" id="edge5_Node000003_Node000010" title=" " alt="" coords="535,102,577,109,572,110,535,107"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1InterfilePDFSHeaderSPECT.html" title="a class for Interfile keywords (and parsing) specific to SPECT projection data" alt="" coords="575,157,743,200"/>
+<area shape="poly" id="edge6_Node000003_Node000011" title=" " alt="" coords="498,112,568,143,599,157,594,156,566,148,497,117"/>
 </map>

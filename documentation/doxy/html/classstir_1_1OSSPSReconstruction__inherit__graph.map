@@ -1,11 +1,11 @@
 <map id="stir::OSSPSReconstruction&lt; TargetT &gt;" name="stir::OSSPSReconstruction&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="Implementation of the relaxed Ordered Subsets Separable Paraboloidal Surrogate ( OSSPS)" alt="" coords="1021,49,1210,94"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="697,32,972,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="987,69,1023,72,1018,72,987,74"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objects" alt="" coords="206,5,408,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,28,544,33,674,44,700,49,694,49,673,49,544,39,423,33"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="5,5,153,50"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="167,25,208,27,203,29,169,30"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="202,93,411,138"/>
-<area shape="poly" id="edge4_Node000002_Node000010" title=" " alt="" coords="427,124,546,126,610,124,673,117,711,112,716,111,674,122,611,129,546,132,427,129"/>
+<area shape="rect" id="Node000001" title="Implementation of the relaxed Ordered Subsets Separable Paraboloidal Surrogate ( OSSPS)." alt="" coords="951,60,1132,103"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="657,44,902,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="917,79,953,81,948,81,918,84"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1IterativeReconstruction.html" title="base class for iterative reconstruction objects" alt="" coords="195,5,377,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,25,509,30,634,43,659,49,654,49,633,48,509,35,393,30"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1Reconstruction.html" title="base class for all ReconstructionsAs there is not a lot of commonality between different reconstructi..." alt="" coords="5,5,141,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,24,197,26,192,28,157,29"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="190,113,382,156"/>
+<area shape="poly" id="edge4_Node000002_Node000010" title=" " alt="" coords="398,141,512,142,573,139,633,131,684,120,690,119,634,136,574,144,512,148,398,146"/>
 </map>

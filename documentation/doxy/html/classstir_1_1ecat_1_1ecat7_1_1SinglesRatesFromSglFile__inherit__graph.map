@@ -1,11 +1,11 @@
 <map id="stir::ecat::ecat7::SinglesRatesFromSglFile" name="stir::ecat::ecat7::SinglesRatesFromSglFile">
-<area shape="rect" id="Node000001" title="A class for reading/writing singles from an ECAT7 .sgl file." alt="" coords="950,41,1131,86"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="646,24,901,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="917,61,952,64,947,64,917,66"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals." alt="" coords="200,5,387,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,30,623,44,649,48,643,49,622,49,403,35"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info." alt="" coords="5,14,140,42"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,25,202,27,197,29,156,30"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="189,76,398,121"/>
-<area shape="poly" id="edge4_Node000002_Node000009" title=" " alt="" coords="414,102,516,102,622,95,643,94,648,94,623,100,516,107,414,107"/>
+<area shape="rect" id="Node000001" title="A class for reading/writing singles from an ECAT7 .sgl file." alt="" coords="910,49,1079,92"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="623,33,861,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="876,68,912,71,907,71,876,73"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals." alt="" coords="190,5,363,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,27,485,32,600,43,625,48,620,48,599,48,485,38,379,32"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1SinglesRates.html" title="The base&#45;class for using singles info." alt="" coords="5,13,131,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,24,191,26,186,28,147,29"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="180,92,372,135"/>
+<area shape="poly" id="edge4_Node000002_Node000009" title=" " alt="" coords="388,118,491,118,599,109,620,108,625,107,600,115,491,124,388,123"/>
 </map>

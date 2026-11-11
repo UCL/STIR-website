@@ -1,17 +1,19 @@
 <map id="stir::ListRecord" name="stir::ListRecord">
-<area shape="rect" id="Node000001" title="A class for a general element of a list mode file." alt="" coords="5,144,124,172"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file." alt="" coords="188,117,315,145"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,145,189,139,185,142,140,150"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1SPECTListRecord.html" title="A class for a general element of a list mode file." alt="" coords="172,169,331,197"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="139,165,174,171,169,173,140,171"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file." alt="" coords="404,5,558,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,105,325,73,378,43,415,32,410,35,380,48,328,78,283,109"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1CListRecordROOT.html" title="A class for a general element of a listmode file for a Siemens scanner using the ROOT files." alt="" coords="399,57,563,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="318,110,378,94,424,85,419,87,380,99,320,115"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="398,109,564,154"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="330,129,400,130,395,132,331,134"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file." alt="" coords="401,178,561,223"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="314,147,407,177,402,178,314,153"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1ecat_1_1CListRecordECAT8__32bit.html" title="A class for a general element of a listmode file for a Siemens scanner using the ECAT8 32bit format." alt="" coords="379,248,583,292"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="324,150,333,156,350,176,357,196,365,215,381,233,400,248,395,247,377,237,360,217,353,197,345,178,329,160,323,155"/>
+<area shape="rect" id="Node000001" title="A class for a general element of a list mode file." alt="" coords="5,161,116,188"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListRecord.html" title="Class for records in a PET list mode file." alt="" coords="181,136,302,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,162,183,156,179,159,132,167"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1SPECTListRecord.html" title="A class for a general element of a list mode file." alt="" coords="164,187,319,213"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="131,182,166,188,161,190,132,187"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1CListRecordLMF.html" title="A class for a general element of a listmode file." alt="" coords="392,5,538,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,123,308,81,336,60,366,42,397,31,393,34,368,46,339,64,311,85,267,127"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListRecordPETSIRD.html" title="Listmode record for PETSIRD coincidence events." alt="" coords="375,56,554,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="283,127,366,92,407,82,402,84,368,97,286,131"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListRecordROOT.html" title="A class for a general element of a listmode file for a Siemens scanner using the ROOT files." alt="" coords="386,107,544,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="316,137,387,129,382,131,317,142"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="384,157,545,200"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="316,156,387,167,382,169,317,162"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1GE_1_1RDF__HDF5_1_1CListRecordGEHDF5.html" title="A class for a general element (or &quot;record&quot;) of a GE RDF9 listmode file." alt="" coords="386,224,543,267"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="307,166,320,172,345,191,368,210,394,224,389,223,366,214,341,195,318,177,307,172"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1ecat_1_1CListRecordECAT8__32bit.html" title="A class for a general element of a listmode file for a Siemens scanner using the ECAT8 32bit format." alt="" coords="367,291,562,333"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="315,168,321,173,333,186,340,200,346,226,351,252,358,264,369,277,386,291,381,290,365,281,353,267,346,254,340,227,335,201,328,189,317,177,314,174"/>
 </map>

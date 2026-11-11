@@ -1,3 +1,175 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classstir_1_1SumOfGeneralisedObjectiveFunctions.html" title=" " alt="" coords="5,5,240,67"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,2043,109,2069"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1IOTests.html" title=" " alt="" coords="223,5,394,48"/>
+<area shape="poly" id="edge585_Node000000_Node000001" title=" " alt="" coords="56,2027,64,1629,82,983,95,653,111,367,131,157,142,92,154,59,169,45,185,35,224,24,221,29,188,40,172,49,159,61,147,93,136,158,117,367,100,654,87,983,69,1629,61,2027"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1IOTests.html" title=" " alt="" coords="197,72,420,115"/>
+<area shape="poly" id="edge587_Node000000_Node000003" title=" " alt="" coords="56,2027,64,1642,83,1017,96,699,112,422,132,220,142,157,154,125,173,109,198,98,195,102,176,113,159,128,148,159,137,221,118,423,101,700,88,1017,69,1642,61,2027"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1IOTests.html" title=" " alt="" coords="224,139,394,181"/>
+<area shape="poly" id="edge589_Node000000_Node000005" title=" " alt="" coords="56,2027,65,1654,84,1051,97,745,113,478,132,283,143,223,154,192,169,178,186,169,225,158,221,162,188,173,172,183,159,195,148,224,138,284,119,479,102,745,89,1051,70,1654,62,2027"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="183,205,435,280"/>
+<area shape="poly" id="edge591_Node000000_Node000007" title=" " alt="" coords="56,2027,66,1672,87,1103,100,814,116,562,134,378,144,320,154,291,183,267,181,272,159,293,149,322,139,378,122,562,106,814,92,1103,71,1673,62,2027"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="160,304,458,395"/>
+<area shape="poly" id="edge597_Node000000_Node000013" title=" " alt="" coords="56,2027,57,1705,67,1189,79,924,96,687,108,588,121,506,137,444,154,405,168,393,166,398,159,408,142,446,126,507,113,589,102,688,84,924,72,1189,62,1705,61,2027"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="157,419,461,493"/>
+<area shape="poly" id="edge599_Node000000_Node000015" title=" " alt="" coords="56,2027,57,1722,68,1238,80,989,98,767,109,675,122,598,137,540,154,504,168,491,166,496,159,507,142,542,127,599,114,675,103,768,86,989,74,1238,63,1723,61,2027"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1ReconstructionTests.html" title=" " alt="" coords="225,517,392,560"/>
+<area shape="poly" id="edge601_Node000000_Node000017" title=" " alt="" coords="56,2027,57,1732,68,1268,79,1030,97,819,108,731,122,659,137,604,155,570,169,557,187,547,226,536,223,541,189,552,172,561,159,574,142,606,127,660,114,732,102,820,85,1031,73,1268,62,1732,61,2027"/>
+<area shape="rect" id="Node000022" href="$classstir_1_1ArcCorrectionTests.html" title="Test class for ArcCorrection." alt="" coords="229,584,388,611"/>
+<area shape="poly" id="edge606_Node000000_Node000022" title=" " alt="" coords="56,2027,57,1741,68,1293,80,1063,97,860,109,775,122,705,137,653,155,621,170,608,189,598,230,590,227,594,190,603,173,612,159,624,142,655,127,707,114,776,103,861,85,1064,73,1293,62,1741,61,2027"/>
+<area shape="rect" id="Node000023" href="$classstir_1_1ArrayFilterTests.html" title="Tests Array functionality." alt="" coords="239,635,378,661"/>
+<area shape="poly" id="edge607_Node000000_Node000023" title=" " alt="" coords="56,2027,58,1750,69,1318,81,1097,99,902,110,820,123,753,138,703,155,672,173,657,193,647,240,640,237,644,195,652,175,661,159,675,142,705,128,754,115,821,104,902,87,1097,75,1318,63,1750,61,2027"/>
+<area shape="rect" id="Node000024" href="$classstir_1_1ArrayTests.html" title="Tests Array functionality." alt="" coords="254,685,364,712"/>
+<area shape="poly" id="edge608_Node000000_Node000024" title=" " alt="" coords="56,2027,59,1759,71,1343,83,1131,100,943,111,865,124,800,138,752,155,722,176,706,201,696,227,691,255,691,251,694,228,696,202,701,179,710,159,726,143,754,129,802,117,866,106,944,88,1131,76,1343,64,1759,61,2027"/>
+<area shape="rect" id="Node000025" href="$classstir_1_1BSpline_1_1BSplinesRegularGrid1D__Tests.html" title="A simple class to test the BSplinesRegularGrid class for 1D arrays." alt="" coords="210,736,408,779"/>
+<area shape="poly" id="edge609_Node000000_Node000025" title=" " alt="" coords="56,2027,60,1772,74,1378,87,1177,104,999,126,864,139,817,155,789,179,769,211,758,208,763,182,774,159,792,144,819,131,865,109,1000,92,1177,79,1378,65,1772,61,2027"/>
+<area shape="rect" id="Node000026" href="$classstir_1_1BSpline_1_1BSplinesRegularGrid__Tests.html" title="A simple class to BSplinesRegularGrid for 2D arrays." alt="" coords="210,803,408,845"/>
+<area shape="poly" id="edge610_Node000000_Node000026" title=" " alt="" coords="56,2027,61,1784,76,1411,89,1221,106,1054,127,926,140,883,155,856,179,836,211,825,208,829,182,841,159,859,145,885,132,927,111,1054,94,1222,81,1411,67,1784,61,2027"/>
+<area shape="rect" id="Node000027" href="$classstir_1_1BSpline_1_1BSplines__Tests.html" title="A simple class to test the BSplines function." alt="" coords="233,869,385,912"/>
+<area shape="poly" id="edge611_Node000000_Node000027" title=" " alt="" coords="56,2027,62,1795,78,1444,91,1266,108,1108,128,988,141,948,155,922,171,908,190,898,234,888,230,892,192,903,174,912,159,926,146,950,134,990,113,1109,96,1266,84,1444,68,1795,62,2027"/>
+<area shape="rect" id="Node000028" href="$classstir_1_1BlocksTests.html" title="Test class for Blocks." alt="" coords="249,936,368,963"/>
+<area shape="poly" id="edge612_Node000000_Node000028" title=" " alt="" coords="56,2027,63,1804,79,1469,92,1299,108,1149,129,1035,141,997,155,973,175,957,199,947,250,941,247,945,200,952,178,962,159,976,146,999,134,1037,113,1150,97,1299,84,1469,68,1805,62,2027"/>
+<area shape="rect" id="Node000029" href="$classstir_1_1ByteOrderTests.html" title="Test class for ByteOrder and the preprocessor defines from ByteOrderDefine.h." alt="" coords="240,987,378,1013"/>
+<area shape="poly" id="edge613_Node000000_Node000029" title=" " alt="" coords="56,2027,63,1814,80,1495,93,1333,110,1191,130,1083,142,1046,155,1024,173,1009,194,999,241,992,237,996,195,1005,176,1014,159,1027,146,1048,135,1084,115,1192,99,1334,86,1495,69,1815,62,2027"/>
+<area shape="rect" id="Node000030" href="$classstir_1_1CUDACXXTests.html" title="Tests cuda_utilities functionality without CUDA." alt="" coords="236,1037,382,1064"/>
+<area shape="poly" id="edge614_Node000000_Node000030" title=" " alt="" coords="57,2027,64,1823,82,1520,95,1367,111,1232,131,1130,142,1096,155,1074,172,1060,192,1051,237,1043,234,1047,194,1056,175,1065,159,1078,147,1098,136,1132,117,1233,100,1368,87,1520,70,1823,62,2027"/>
+<area shape="rect" id="Node000031" href="$classstir_1_1DataSymmetriesForBins__PET__CartesianGridTests.html" title="Test class for DataSymmetriesForBins_PET_CartesianGrid." alt="" coords="214,1088,404,1131"/>
+<area shape="poly" id="edge615_Node000000_Node000031" title=" " alt="" coords="57,2027,66,1836,85,1554,98,1413,114,1288,133,1193,143,1161,155,1141,181,1121,215,1110,212,1114,184,1125,159,1144,148,1163,138,1195,119,1289,104,1413,90,1555,71,1836,62,2027"/>
+<area shape="rect" id="Node000032" href="$classstir_1_1DateTimeTest.html" title="Class with tests for date time functions." alt="" coords="244,1155,374,1181"/>
+<area shape="poly" id="edge616_Node000000_Node000032" title=" " alt="" coords="57,2027,67,1845,86,1580,99,1446,115,1329,133,1240,144,1210,155,1192,174,1177,196,1167,245,1160,242,1164,198,1172,177,1181,159,1195,148,1212,138,1242,120,1330,104,1447,91,1580,72,1846,62,2027"/>
+<area shape="rect" id="Node000033" href="$classstir_1_1DetectionPosMapTests.html" title="Test class for Blocks." alt="" coords="217,1205,400,1232"/>
+<area shape="poly" id="edge617_Node000000_Node000033" title=" " alt="" coords="57,2027,68,1855,88,1606,101,1481,117,1371,134,1288,144,1260,155,1242,183,1223,218,1213,215,1218,185,1227,159,1246,149,1262,139,1289,122,1372,106,1481,93,1606,73,1855,62,2027"/>
+<area shape="rect" id="Node000034" href="$classstir_1_1DetectionPosition__Tests.html" title="Class with tests for DetectionPosition." alt="" coords="234,1256,384,1299"/>
+<area shape="poly" id="edge618_Node000000_Node000034" title=" " alt="" coords="55,2027,56,1878,67,1662,79,1551,97,1450,122,1366,137,1334,155,1309,171,1295,191,1285,235,1275,231,1279,193,1290,174,1299,159,1312,142,1336,127,1368,102,1451,85,1552,73,1663,62,1878,61,2027"/>
+<area shape="rect" id="Node000035" href="$classstir_1_1FilenameTests.html" title="Test class for filename functions defined in utility.h." alt="" coords="243,1323,375,1349"/>
+<area shape="poly" id="edge619_Node000000_Node000035" title=" " alt="" coords="55,2027,57,1886,69,1685,81,1583,99,1489,123,1412,138,1382,155,1359,174,1345,196,1335,244,1329,241,1333,197,1341,176,1350,159,1363,142,1385,128,1414,104,1490,87,1583,75,1686,63,1886,61,2027"/>
+<area shape="rect" id="Node000036" href="$classstir_1_1FourierTests.html" title="A simple class to test the erf and erfc functions." alt="" coords="249,1373,368,1400"/>
+<area shape="poly" id="edge620_Node000000_Node000036" title=" " alt="" coords="56,2027,59,1896,72,1710,85,1615,102,1529,125,1458,139,1431,155,1410,175,1395,199,1385,251,1379,247,1383,200,1390,178,1399,159,1414,143,1434,130,1460,107,1530,90,1616,78,1711,65,1896,61,2027"/>
+<area shape="rect" id="Node000037" href="$classstir_1_1GeneralisedPoissonNoiseGeneratorTests.html" title="Tests GeneralisedPoissonNoiseGenerator functionalityCurrently contains only simple tests to check mea..." alt="" coords="227,1424,390,1467"/>
+<area shape="poly" id="edge621_Node000000_Node000037" title=" " alt="" coords="56,2027,62,1908,78,1743,90,1659,107,1583,128,1520,141,1496,155,1477,170,1464,188,1454,228,1444,225,1448,190,1459,173,1468,159,1481,145,1498,133,1522,112,1584,96,1660,83,1744,68,1909,62,2028"/>
+<area shape="rect" id="Node000038" href="$classstir_1_1GeometryBlocksOnCylindricalTests.html" title="Test class for BlocksOnCylindrical geometry." alt="" coords="198,1491,420,1533"/>
+<area shape="poly" id="edge622_Node000000_Node000038" title=" " alt="" coords="57,2027,65,1920,82,1775,95,1702,111,1636,131,1581,155,1544,174,1528,199,1518,196,1523,177,1533,159,1547,136,1583,116,1637,100,1703,88,1776,70,1921,63,2027"/>
+<area shape="rect" id="Node000039" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function." alt="" coords="247,1557,370,1584"/>
+<area shape="poly" id="edge623_Node000000_Node000039" title=" " alt="" coords="58,2027,67,1929,85,1799,98,1734,114,1675,132,1627,155,1594,175,1580,198,1570,249,1564,245,1568,200,1575,178,1584,159,1598,137,1629,119,1677,103,1735,90,1800,72,1930,63,2027"/>
+<area shape="rect" id="Node000040" href="$classstir_1_1IOTests__ITKMulticomponent.html" title="A simple class to test the reading of multicomponent ITK images." alt="" coords="202,1608,416,1635"/>
+<area shape="poly" id="edge624_Node000000_Node000040" title=" " alt="" coords="59,2027,69,1939,89,1825,117,1716,134,1673,155,1645,176,1630,203,1621,200,1625,179,1635,159,1649,139,1676,122,1717,94,1826,75,1940,64,2028"/>
+<area shape="rect" id="Node000041" href="$classstir_1_1IR__filterTests.html" title="A simple class to test the IIR_filter and FIR_filter function." alt="" coords="246,1659,372,1685"/>
+<area shape="poly" id="edge625_Node000000_Node000041" title=" " alt="" coords="60,2027,72,1949,92,1849,120,1756,137,1720,155,1695,175,1681,198,1672,248,1666,244,1670,200,1677,178,1686,159,1699,141,1723,125,1758,98,1851,77,1950,65,2027"/>
+<area shape="rect" id="Node000042" href="$classstir_1_1ImagingModalityTests.html" title="Test class for ImagingModality." alt="" coords="222,1709,396,1736"/>
+<area shape="poly" id="edge626_Node000000_Node000042" title=" " alt="" coords="56,2027,60,1968,74,1891,86,1851,104,1812,126,1777,155,1746,186,1728,223,1719,219,1723,188,1733,158,1750,130,1780,108,1815,91,1853,79,1893,65,1968,61,2027"/>
+<area shape="rect" id="Node000043" href="$classstir_1_1IndexRange__Tests.html" title="Class with tests for IndexRange, IndexRange3D." alt="" coords="231,1760,387,1787"/>
+<area shape="poly" id="edge627_Node000000_Node000043" title=" " alt="" coords="58,2027,65,1976,81,1913,94,1881,110,1850,130,1821,155,1797,191,1777,232,1769,228,1773,192,1782,158,1801,134,1825,115,1853,99,1883,86,1915,70,1977,63,2027"/>
+<area shape="rect" id="Node000044" href="$classstir_1_1KeyParserTests.html" title="Test class for KeyParser." alt="" coords="239,1811,379,1837"/>
+<area shape="poly" id="edge628_Node000000_Node000044" title=" " alt="" coords="61,2027,71,1986,89,1937,116,1888,134,1866,155,1847,174,1836,195,1828,240,1820,236,1824,196,1833,176,1840,158,1851,138,1870,121,1891,94,1939,76,1988,66,2028"/>
+<area shape="rect" id="Node000045" href="$classstir_1_1ML__normTests.html" title="Test class for ML_norm.h functions." alt="" coords="242,1861,376,1888"/>
+<area shape="poly" id="edge629_Node000000_Node000045" title=" " alt="" coords="65,2028,78,1996,97,1961,123,1926,155,1898,197,1879,243,1872,240,1876,199,1884,158,1902,127,1930,102,1964,83,1999,70,2029"/>
+<area shape="rect" id="Node000046" href="$classstir_1_1MatrixTests.html" title="Tests MatrixFunction.h functionality." alt="" coords="251,1912,366,1939"/>
+<area shape="poly" id="edge630_Node000000_Node000046" title=" " alt="" coords="73,2029,107,1986,130,1965,155,1948,203,1931,252,1924,249,1928,204,1936,158,1953,133,1970,111,1990,78,2031"/>
+<area shape="rect" id="Node000047" href="$classstir_1_1MultipleProjDataTests.html" title="Test class for MultipleProjData." alt="" coords="221,1963,396,1989"/>
+<area shape="poly" id="edge631_Node000000_Node000047" title=" " alt="" coords="89,2033,121,2014,156,1999,223,1983,219,1987,158,2004,123,2019,93,2036"/>
+<area shape="rect" id="Node000048" href="$classstir_1_1NestedIteratorTests.html" title="Tests NestedIterator functionality." alt="" coords="228,2013,390,2040"/>
+<area shape="poly" id="edge632_Node000000_Node000048" title=" " alt="" coords="122,2046,229,2034,225,2038,126,2050"/>
+<area shape="rect" id="Node000049" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior." alt="" coords="205,2064,413,2107"/>
+<area shape="poly" id="edge633_Node000000_Node000049" title=" " alt="" coords="122,2062,206,2071,202,2075,125,2066"/>
+<area shape="rect" id="Node000050" href="$classstir_1_1OutputFileFormatTests.html" title="A simple class to test the OutputFileFormat function." alt="" coords="219,2131,399,2157"/>
+<area shape="poly" id="edge634_Node000000_Node000050" title=" " alt="" coords="86,2076,121,2098,158,2116,220,2133,216,2137,156,2121,118,2103,88,2081"/>
+<area shape="rect" id="Node000051" href="$classstir_1_1ProjDataInMemoryTests.html" title="Test class for ProjDataInMemory." alt="" coords="215,2181,403,2208"/>
+<area shape="poly" id="edge635_Node000000_Node000051" title=" " alt="" coords="73,2080,110,2127,132,2149,158,2167,185,2179,217,2188,212,2191,184,2184,155,2172,129,2153,106,2130,75,2085"/>
+<area shape="rect" id="Node000052" href="$classstir_1_1ProjDataInfoTests.html" title="Test class for ProjDataInfo." alt="" coords="233,2232,385,2259"/>
+<area shape="poly" id="edge636_Node000000_Node000052" title=" " alt="" coords="66,2081,82,2115,101,2152,126,2188,158,2218,194,2235,234,2244,230,2247,192,2240,155,2222,122,2192,96,2155,77,2117,67,2087"/>
+<area shape="rect" id="Node000056" href="$classstir_1_1ProjDataTests.html" title="Test class for ProjData and ProjDataInMemory." alt="" coords="244,2283,374,2309"/>
+<area shape="poly" id="edge640_Node000000_Node000056" title=" " alt="" coords="63,2082,75,2126,93,2177,120,2227,138,2249,158,2269,178,2280,199,2288,245,2297,241,2300,197,2293,175,2285,155,2273,134,2253,115,2230,88,2179,70,2128,63,2088"/>
+<area shape="rect" id="Node000057" href="$classstir_1_1ProjMatrixByBinUsingInterpolationTests.html" title="Test class for ProjMatrixByBinUsingInterpolation." alt="" coords="221,2333,396,2376"/>
+<area shape="poly" id="edge641_Node000000_Node000057" title=" " alt="" coords="60,2082,70,2135,86,2199,98,2232,114,2264,134,2294,158,2319,188,2337,223,2349,219,2352,186,2342,155,2323,130,2297,110,2267,94,2234,81,2201,65,2136,60,2087"/>
+<area shape="rect" id="Node000058" href="$classstir_1_1QuaternionTests.html" title="Test class for Quaternion." alt="" coords="238,2400,380,2427"/>
+<area shape="poly" id="edge642_Node000000_Node000058" title=" " alt="" coords="57,2082,63,2148,76,2230,88,2273,105,2315,129,2353,158,2386,176,2398,195,2406,239,2415,235,2418,194,2411,173,2403,155,2390,124,2356,101,2317,83,2275,71,2231,58,2148,57,2087"/>
+<area shape="rect" id="Node000059" href="$classstir_1_1ROITests.html" title="Test class for compute_ROI_values and Shape3D hierarchy." alt="" coords="257,2451,360,2477"/>
+<area shape="poly" id="edge643_Node000000_Node000059" title=" " alt="" coords="62,2082,76,2166,96,2273,123,2373,140,2411,159,2437,180,2451,205,2460,259,2467,255,2470,204,2465,178,2456,155,2441,135,2414,118,2375,90,2274,71,2167,62,2087"/>
+<area shape="rect" id="Node000060" href="$classstir_1_1RadionuclideTest.html" title="Class with tests for stir::RadionuclideDB and stir::Radionuclide." alt="" coords="235,2501,382,2528"/>
+<area shape="poly" id="edge644_Node000000_Node000060" title=" " alt="" coords="61,2083,73,2177,92,2299,105,2359,120,2414,138,2458,159,2487,175,2500,194,2508,237,2517,233,2520,192,2513,172,2504,155,2491,133,2461,115,2416,100,2361,87,2300,68,2178,61,2088"/>
+<area shape="rect" id="Node000061" href="$classstir_1_1ReconstructionTests.html" title="Base class for simple test on reconstruction." alt="" coords="225,2552,392,2595"/>
+<area shape="poly" id="edge645_Node000000_Node000061" title=" " alt="" coords="60,2082,72,2186,89,2323,102,2391,118,2454,137,2504,159,2538,189,2559,227,2570,223,2573,187,2564,155,2542,132,2507,113,2455,97,2392,84,2323,66,2186,60,2087"/>
+<area shape="rect" id="Node000063" href="$classstir_1_1RigidObject3DTransformationTests.html" title="Various tests on RigidObject3DTransformation." alt="" coords="199,2619,418,2661"/>
+<area shape="poly" id="edge647_Node000000_Node000063" title=" " alt="" coords="59,2083,69,2199,85,2356,98,2435,114,2507,134,2566,146,2588,159,2605,177,2620,201,2631,196,2634,175,2624,155,2609,141,2591,129,2568,109,2508,92,2436,80,2356,64,2200,59,2088"/>
+<area shape="rect" id="Node000064" href="$classstir_1_1ScannerTests.html" title="Test class for Scanner." alt="" coords="245,2685,372,2712"/>
+<area shape="poly" id="edge648_Node000000_Node000064" title=" " alt="" coords="59,2083,66,2212,80,2389,92,2479,109,2561,131,2627,144,2653,159,2671,177,2685,198,2694,247,2702,243,2706,197,2699,174,2690,155,2675,140,2655,126,2629,104,2562,87,2480,74,2390,60,2212,59,2088"/>
+<area shape="rect" id="Node000065" href="$classstir_1_1ScatterSimulationTests.html" title="Test class for ScatterSimulation." alt="" coords="218,2736,400,2763"/>
+<area shape="poly" id="edge649_Node000000_Node000065" title=" " alt="" coords="58,2082,64,2221,76,2413,88,2511,106,2601,129,2674,143,2701,159,2722,186,2740,219,2751,215,2754,183,2745,155,2726,138,2704,124,2676,101,2602,83,2512,71,2414,58,2221,58,2088"/>
+<area shape="rect" id="Node000066" href="$classstir_1_1SeparableGaussianArrayFilterTests.html" title="Tests SeparableGaussianArrayFilter functionality." alt="" coords="213,2787,404,2829"/>
+<area shape="poly" id="edge650_Node000000_Node000066" title=" " alt="" coords="58,2082,63,2230,74,2437,86,2543,104,2640,128,2720,142,2750,159,2773,184,2791,215,2803,210,2806,181,2796,155,2777,138,2753,123,2721,99,2641,81,2544,69,2437,57,2230,58,2088"/>
+<area shape="rect" id="Node000067" href="$classstir_1_1SeparableMetzArrayFilterTests.html" title="Tests SeparableMetzArrayFilter functionality." alt="" coords="226,2853,392,2896"/>
+<area shape="poly" id="edge651_Node000000_Node000067" title=" " alt="" coords="58,2082,60,2241,70,2468,82,2585,100,2693,125,2781,141,2814,159,2840,173,2852,189,2861,228,2873,224,2876,187,2866,170,2856,155,2843,136,2817,120,2782,95,2694,77,2586,65,2469,55,2241,58,2088"/>
+<area shape="rect" id="Node000068" href="$classstir_1_1TOF__Tests.html" title="Test class for Time Of Flight." alt="" coords="253,2920,365,2947"/>
+<area shape="poly" id="edge652_Node000000_Node000068" title=" " alt="" coords="60,2083,72,2265,92,2527,105,2658,121,2773,139,2860,149,2889,159,2906,178,2921,202,2931,254,2938,250,2941,201,2936,176,2926,155,2910,144,2891,134,2862,115,2774,100,2659,86,2527,67,2266,60,2088"/>
+<area shape="rect" id="Node000069" href="$classstir_1_1TestBSplineTransformation.html" title="Test class for Transformations." alt="" coords="207,2971,411,2997"/>
+<area shape="poly" id="edge653_Node000000_Node000069" title=" " alt="" coords="59,2082,71,2274,90,2552,103,2692,119,2815,138,2908,148,2939,159,2957,181,2973,208,2984,204,2986,178,2978,155,2960,143,2941,132,2909,114,2816,98,2692,85,2552,66,2274,59,2087"/>
+<area shape="rect" id="Node000070" href="$classstir_1_1TestDataProcessorProjectors.html" title="Test class for GPU projectors." alt="" coords="200,3021,418,3048"/>
+<area shape="poly" id="edge654_Node000000_Node000070" title=" " alt="" coords="59,2082,70,2283,88,2578,101,2726,117,2857,137,2955,147,2988,159,3008,178,3022,201,3033,197,3035,175,3027,155,3011,142,2990,131,2957,112,2857,96,2727,83,2578,65,2284,59,2087"/>
+<area shape="rect" id="Node000071" href="$classstir_1_1TestGPUProjectors.html" title="Test class for GPU projectors." alt="" coords="229,3072,389,3099"/>
+<area shape="poly" id="edge655_Node000000_Node000071" title=" " alt="" coords="59,2082,69,2293,87,2604,100,2760,116,2898,136,3003,147,3038,159,3058,173,3070,190,3079,231,3089,226,3092,189,3084,170,3075,155,3062,142,3040,130,3004,111,2899,94,2761,81,2604,64,2293,59,2088"/>
+<area shape="rect" id="Node000072" href="$classstir_1_1TestProjDataInfoSubsets.html" title="Test class for subsets in ProjDataInfo." alt="" coords="212,3123,406,3149"/>
+<area shape="poly" id="edge656_Node000000_Node000072" title=" " alt="" coords="59,2082,68,2302,85,2629,98,2794,114,2940,135,3050,146,3087,159,3109,183,3126,214,3137,209,3140,181,3131,155,3112,141,3089,129,3052,109,2941,93,2795,80,2629,63,2302,59,2087"/>
+<area shape="rect" id="Node000073" href="$classstir_1_1TestProjDataInfoSubsetsSPECTUB.html" title="Test class for subsets in ProjDataInfo for SPECT data." alt="" coords="212,3173,406,3216"/>
+<area shape="poly" id="edge657_Node000000_Node000073" title=" " alt="" coords="59,2082,68,2312,84,2654,97,2828,114,2981,134,3097,146,3136,159,3160,183,3178,214,3191,209,3193,180,3183,155,3163,141,3138,129,3099,108,2982,92,2828,79,2655,63,2312,59,2088"/>
+<area shape="rect" id="Node000074" href="$classstir_1_1VectorWithOffsetTests.html" title="Test class for VectorWithOffset." alt="" coords="219,3240,399,3267"/>
+<area shape="poly" id="edge658_Node000000_Node000074" title=" " alt="" coords="59,2082,66,2323,81,2688,94,2873,111,3037,132,3160,145,3202,159,3226,186,3245,221,3256,216,3259,184,3250,155,3230,140,3204,127,3162,105,3037,89,2874,76,2688,61,2324,59,2087"/>
+<area shape="rect" id="Node000075" href="$classstir_1_1VoxelsOnCartesianGridTests.html" title="Test class for VoxelsOnCartesianGrid and image hierarchy." alt="" coords="217,3291,401,3333"/>
+<area shape="poly" id="edge659_Node000000_Node000075" title=" " alt="" coords="59,2082,66,2332,81,2713,93,2906,110,3077,132,3207,145,3251,159,3277,185,3297,219,3309,214,3312,182,3302,155,3280,140,3253,127,3208,105,3078,88,2907,75,2713,61,2333,59,2087"/>
+<area shape="rect" id="Node000076" href="$classstir_1_1convert__array__Tests.html" title="tests convert_array functionality" alt="" coords="246,3357,372,3400"/>
+<area shape="poly" id="edge660_Node000000_Node000076" title=" " alt="" coords="59,2082,65,2344,79,2746,91,2951,108,3132,131,3270,144,3316,159,3344,177,3359,198,3369,247,3380,243,3383,196,3374,174,3363,155,3347,139,3318,125,3271,103,3133,86,2951,73,2746,60,2344,58,2087"/>
+<area shape="rect" id="Node000077" href="$classstir_1_1coordinateTests.html" title="Class with tests for BasicCoordinate, Coordinate3D et al." alt="" coords="239,3424,378,3451"/>
+<area shape="poly" id="edge661_Node000000_Node000077" title=" " alt="" coords="58,2082,63,2356,76,2780,88,2996,105,3188,116,3267,128,3333,143,3381,159,3410,175,3424,195,3433,241,3442,236,3445,193,3438,173,3428,155,3414,138,3383,123,3334,111,3268,100,3188,82,2997,70,2780,58,2356,58,2087"/>
+<area shape="rect" id="Node000078" href="$classstir_1_1erfTests.html" title="A simple class to test the erf and erfc functions." alt="" coords="262,3475,356,3501"/>
+<area shape="poly" id="edge662_Node000000_Node000078" title=" " alt="" coords="58,2082,63,2366,74,2806,86,3031,103,3229,115,3312,127,3380,142,3431,159,3461,180,3477,207,3487,234,3491,264,3492,259,3495,234,3496,205,3492,178,3482,155,3464,137,3433,122,3382,109,3313,98,3230,81,3031,69,2806,57,2366,58,2088"/>
+<area shape="rect" id="Node000079" href="$classstir_1_1find__fwhm__in__imageTests.html" title="A simple class to test the find_fwhm_in_image function." alt="" coords="247,3525,371,3568"/>
+<area shape="poly" id="edge663_Node000000_Node000079" title=" " alt="" coords="58,2082,63,2374,74,2830,86,3063,103,3270,114,3356,127,3427,142,3480,159,3512,177,3527,199,3538,249,3548,244,3551,197,3543,174,3532,155,3515,137,3482,122,3428,109,3357,98,3270,80,3063,68,2830,57,2374,58,2087"/>
+<area shape="rect" id="Node000080" href="$classstir_1_1integrate__discrete__functionTests.html" title="A simple class to test the integrate_discrete_function function." alt="" coords="234,3592,384,3635"/>
+<area shape="poly" id="edge664_Node000000_Node000080" title=" " alt="" coords="58,2082,62,2386,72,2863,83,3108,101,3325,113,3415,126,3490,141,3545,159,3578,174,3592,192,3602,235,3614,231,3616,190,3607,171,3596,155,3582,136,3547,121,3491,107,3416,96,3325,78,3108,66,2863,56,2386,58,2087"/>
+<area shape="rect" id="Node000081" href="$classstir_1_1linear__regressionTests.html" title="A simple class to test the linear_regression function." alt="" coords="220,3659,398,3685"/>
+<area shape="poly" id="edge665_Node000000_Node000081" title=" " alt="" coords="58,2082,60,2398,62,2637,68,2897,80,3153,98,3380,110,3475,124,3553,140,3611,159,3645,186,3664,222,3675,217,3677,184,3669,155,3648,135,3613,119,3554,104,3476,92,3381,75,3154,63,2898,57,2637,55,2399,58,2087"/>
+<area shape="rect" id="Node000082" href="$classstir_1_1modellingTests.html" title="A simple class to test modelling functions." alt="" coords="242,3709,376,3736"/>
+<area shape="poly" id="edge666_Node000000_Node000082" title=" " alt="" coords="59,2082,71,2417,91,2947,105,3215,121,3449,139,3618,149,3671,159,3696,176,3710,196,3719,244,3728,239,3730,195,3724,173,3714,155,3699,144,3672,134,3619,116,3449,100,3216,86,2947,66,2417,59,2087"/>
+<area shape="rect" id="Node000083" href="$classstir_1_1overlap__interpolateTests.html" title="Test class for stir::overlap_interpolate." alt="" coords="231,3760,387,3803"/>
+<area shape="poly" id="edge667_Node000000_Node000083" title=" " alt="" coords="59,2082,71,2427,91,2973,105,3250,121,3490,139,3666,149,3720,159,3746,174,3760,191,3769,233,3782,228,3783,189,3774,170,3764,154,3750,144,3722,134,3667,116,3491,100,3250,86,2973,66,2427,59,2087"/>
+<area shape="rect" id="Node000084" href="$classstir_1_1stir__mathTests.html" title="Test class for the stir_math utility." alt="" coords="242,3827,376,3853"/>
+<area shape="poly" id="edge668_Node000000_Node000084" title=" " alt="" coords="59,2082,70,2439,90,3008,103,3296,119,3547,138,3730,148,3786,159,3813,176,3827,197,3836,244,3845,239,3847,195,3841,173,3832,155,3816,143,3787,133,3731,114,3547,98,3296,84,3008,65,2439,59,2087"/>
+<area shape="rect" id="Node000085" href="$classstir_1_1warp__imageTests.html" title="Class with tests for warp_image functions." alt="" coords="234,3877,384,3904"/>
+<area shape="poly" id="edge669_Node000000_Node000085" title=" " alt="" coords="59,2082,70,2449,89,3034,102,3331,119,3590,138,3778,148,3836,159,3864,174,3877,193,3886,236,3896,231,3897,191,3891,171,3881,154,3867,143,3837,132,3779,113,3590,97,3332,84,3035,65,2450,59,2088"/>
+<area shape="rect" id="Node000086" href="$classstir_1_1zoom__imageTests.html" title="Test class for zoom_image (and centre_of_gravity)." alt="" coords="232,3928,386,3955"/>
+<area shape="poly" id="edge670_Node000000_Node000086" title=" " alt="" coords="59,2082,70,2458,88,3060,101,3366,118,3632,137,3826,148,3885,159,3914,174,3927,192,3936,234,3947,229,3947,190,3941,171,3932,154,3918,143,3887,132,3827,112,3632,96,3366,83,3060,64,2458,59,2088"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1IOTests__DiscretisedDensity.html" title="A simple class to test the OutputFileFormat function." alt="" coords="564,5,730,48"/>
+<area shape="poly" id="edge586_Node000001_Node000002" title=" " alt="" coords="408,25,565,25,561,28,411,29"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1IOTests__DynamicDiscretisedDensity.html" title="A simple class to test the OutputFileFormat function." alt="" coords="538,72,756,115"/>
+<area shape="poly" id="edge588_Node000003_Node000004" title=" " alt="" coords="434,91,539,92,535,95,438,95"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1IOTests__ParametricDiscretisedDensity.html" title="A simple class to test the OutputFileFormat function." alt="" coords="565,139,728,181"/>
+<area shape="poly" id="edge590_Node000005_Node000006" title=" " alt="" coords="408,158,567,158,563,162,411,162"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1GeneralisedPriorTests.html" title="Test class for QuadraticPrior, RelativeDifferencePrior, CudaRelativeDifferencePrior and LogcoshPrior." alt="" coords="559,229,734,256"/>
+<area shape="poly" id="edge592_Node000007_Node000008" title=" " alt="" coords="449,241,561,241,557,244,452,245"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1LogCoshPriorTests.html" title="tests for LogCoshPrior" alt="" coords="844,153,1002,180"/>
+<area shape="poly" id="edge593_Node000008_Node000009" title=" " alt="" coords="711,223,873,179,870,183,715,227"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1PLSPriorTests.html" title="tests for PLSPrior" alt="" coords="857,204,989,231"/>
+<area shape="poly" id="edge594_Node000008_Node000010" title=" " alt="" coords="748,231,859,222,855,225,752,235"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1QuadraticPriorTests.html" title="tests for QuadraticPrior" alt="" coords="842,255,1004,281"/>
+<area shape="poly" id="edge595_Node000008_Node000011" title=" " alt="" coords="748,250,844,259,839,262,752,254"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RelativeDifferencePriorTests.html" title="tests for RelativeDifferencePrior" alt="" coords="845,305,1001,348"/>
+<area shape="poly" id="edge596_Node000008_Node000012" title=" " alt="" coords="706,259,852,303,848,306,709,263"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBinTests.html" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin." alt="" coords="524,320,769,379"/>
+<area shape="poly" id="edge598_Node000013_Node000014" title=" " alt="" coords="471,347,526,348,522,351,475,351"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests.html" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndProjData." alt="" coords="509,419,784,461"/>
+<area shape="poly" id="edge600_Node000015_Node000016" title=" " alt="" coords="475,446,510,445,506,448,478,450"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1PoissonLLReconstructionTests.html" title=" " alt="" coords="548,485,745,528"/>
+<area shape="poly" id="edge602_Node000017_Node000018" title=" " alt="" coords="406,527,550,514,546,518,410,531"/>
+<area shape="rect" id="Node000020" href="$classstir_1_1TestFBP2D.html" title="Test class for FBP2D." alt="" coords="589,552,704,579"/>
+<area shape="poly" id="edge604_Node000017_Node000020" title=" " alt="" coords="406,544,591,559,587,563,410,549"/>
+<area shape="rect" id="Node000021" href="$classstir_1_1TestFBP3DRP.html" title="Test class for FBP3DRP." alt="" coords="580,603,714,629"/>
+<area shape="poly" id="edge605_Node000017_Node000021" title=" " alt="" coords="406,556,462,569,510,588,581,605,577,608,508,593,460,575,409,560"/>
+<area shape="rect" id="Node000019" href="$classstir_1_1TestOSMAPOSL.html" title="Test class for OSMAPOSL." alt="" coords="850,493,996,520"/>
+<area shape="poly" id="edge603_Node000018_Node000019" title=" " alt="" coords="759,505,851,505,847,508,762,509"/>
+<area shape="rect" id="Node000053" href="$classstir_1_1ProjDataInfoCylindricalTests.html" title="Test class for ProjDataInfoCylindrical." alt="" coords="556,2224,737,2267"/>
+<area shape="poly" id="edge637_Node000052_Node000053" title=" " alt="" coords="399,2243,557,2244,553,2247,402,2248"/>
+<area shape="rect" id="Node000054" href="$classstir_1_1ProjDataInfoCylindricalArcCorrTests.html" title="Test class for ProjDataInfoCylindricalArcCorr." alt="" coords="832,2191,1014,2233"/>
+<area shape="poly" id="edge638_Node000053_Node000054" title=" " alt="" coords="752,2230,834,2221,830,2225,755,2235"/>
+<area shape="rect" id="Node000055" href="$classstir_1_1ProjDataInfoCylindricalNoArcCorrTests.html" title="Test class for ProjDataInfoCylindricalNoArcCorr." alt="" coords="832,2257,1014,2300"/>
+<area shape="poly" id="edge639_Node000053_Node000055" title=" " alt="" coords="752,2256,834,2266,830,2269,754,2261"/>
+<area shape="rect" id="Node000062" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="548,2552,745,2595"/>
+<area shape="poly" id="edge646_Node000061_Node000062" title=" " alt="" coords="407,2571,550,2572,546,2575,410,2576"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="stir::LORInAxialAndSinogramCoordinates&lt; coordT &gt;" name="stir::LORInAxialAndSinogramCoordinates&lt; coordT &gt;">
-<area shape="rect" id="Node000001" title="A class for LORs." alt="" coords="82,98,290,143"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates." alt="" coords="5,14,156,42"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,49,163,97,158,98,106,54"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1LORCylindricalCoordinates__z__and__radius.html" title="An internal class for LORs. Do not use." alt="" coords="180,5,403,50"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,59,212,100,210,95,252,61"/>
+<area shape="rect" id="Node000001" title="A class for LORs." alt="" coords="76,96,268,139"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1LOR.html" title="A base class for specifying an LOR with geometric coordinates." alt="" coords="5,13,144,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,48,152,95,147,96,99,53"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1LORCylindricalCoordinates__z__and__radius.html" title="An internal class for LORs. Do not use." alt="" coords="168,5,373,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,58,196,98,194,93,234,60"/>
 </map>

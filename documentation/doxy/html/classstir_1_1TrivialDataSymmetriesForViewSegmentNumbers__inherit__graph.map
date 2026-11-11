@@ -1,5 +1,5 @@
 <map id="stir::TrivialDataSymmetriesForViewSegmentNumbers" name="stir::TrivialDataSymmetriesForViewSegmentNumbers">
-<area shape="rect" id="Node000001" title="A class for encoding/finding NO symmetries. Works only on ViewSegmentNumbers (instead of Bin)." alt="" coords="12,98,211,143"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)." alt="" coords="5,5,218,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,64,114,99,109,97,110,68"/>
+<area shape="rect" id="Node000001" title="A class for encoding/finding NO symmetries. Works only on ViewSegmentNumbers (instead of Bin)." alt="" coords="12,96,192,139"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DataSymmetriesForViewSegmentNumbers.html" title="A class for encoding/finding symmetries. Works only on ViewSegmentNumbers (instead of Bin)." alt="" coords="5,5,199,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,62,104,97,100,95,100,66"/>
 </map>

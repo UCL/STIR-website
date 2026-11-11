@@ -1,8 +1,8 @@
 <map id="STIR" name="STIR">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,56,137"/>
-<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="143,5,239,33"/>
-<area shape="rect" id="Node000003" href="$group__alltest.html" title=" " alt="" coords="122,57,260,85"/>
-<area shape="rect" id="Node000005" href="$group__examples.html" title=" " alt="" coords="136,109,246,137"/>
-<area shape="rect" id="Node000004" href="$group__main__programs.html" title=" " alt="" coords="141,161,240,189"/>
-<area shape="rect" id="Node000006" href="$group__simset.html" title=" " alt="" coords="104,213,278,241"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,58,133"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="142,5,234,32"/>
+<area shape="rect" id="Node000003" href="$group__alltest.html" title=" " alt="" coords="122,56,254,83"/>
+<area shape="rect" id="Node000005" href="$group__examples.html" title=" " alt="" coords="138,107,238,133"/>
+<area shape="rect" id="Node000004" href="$group__main__programs.html" title=" " alt="" coords="141,157,234,184"/>
+<area shape="rect" id="Node000006" href="$group__simset.html" title=" " alt="" coords="106,208,270,235"/>
 </map>

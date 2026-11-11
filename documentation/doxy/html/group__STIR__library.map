@@ -1,19 +1,19 @@
 <map id="STIR library" name="STIR library">
-<area shape="rect" id="Node000006" href="$group__IO.html" title=" " alt="" coords="274,5,425,33"/>
-<area shape="rect" id="Node000002" href="$group__STIR.html" title=" " alt="" coords="5,463,56,490"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="104,463,200,490"/>
-<area shape="rect" id="Node000008" href="$group__Shape.html" title=" " alt="" coords="262,58,437,119"/>
-<area shape="rect" id="Node000003" href="$group__buildblock.html" title=" " alt="" coords="270,144,428,172"/>
-<area shape="rect" id="Node000004" href="$group__data__buildblock.html" title=" " alt="" coords="258,196,440,240"/>
-<area shape="rect" id="Node000015" href="$group__display.html" title=" " alt="" coords="282,264,416,292"/>
-<area shape="rect" id="Node000009" href="$group__evaluation.html" title=" " alt="" coords="248,316,450,360"/>
-<area shape="rect" id="Node000007" href="$group__listmode.html" title=" " alt="" coords="263,385,435,430"/>
-<area shape="rect" id="Node000012" href="$group__modelling.html" title=" " alt="" coords="254,454,445,499"/>
-<area shape="rect" id="Node000017" href="$group__motion.html" title=" " alt="" coords="260,524,439,568"/>
-<area shape="rect" id="Node000005" href="$group__numerics.html" title=" " alt="" coords="268,592,430,620"/>
-<area shape="rect" id="Node000016" href="$group__para.html" title=" " alt="" coords="292,644,407,672"/>
-<area shape="rect" id="Node000010" href="$group__recon__buildblock.html" title=" " alt="" coords="262,696,436,740"/>
-<area shape="rect" id="Node000011" href="$group__reconstructors.html" title=" " alt="" coords="264,764,434,792"/>
-<area shape="rect" id="Node000014" href="$group__scatter.html" title=" " alt="" coords="278,816,420,860"/>
-<area shape="rect" id="Node000013" href="$group__spatial__transformation.html" title=" " alt="" coords="284,884,414,912"/>
+<area shape="rect" id="Node000006" href="$group__IO.html" title=" " alt="" coords="272,5,408,32"/>
+<area shape="rect" id="Node000002" href="$group__STIR.html" title=" " alt="" coords="5,448,58,475"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,448,197,475"/>
+<area shape="rect" id="Node000008" href="$group__Shape.html" title=" " alt="" coords="260,56,420,115"/>
+<area shape="rect" id="Node000003" href="$group__buildblock.html" title=" " alt="" coords="268,139,412,165"/>
+<area shape="rect" id="Node000004" href="$group__data__buildblock.html" title=" " alt="" coords="258,189,421,232"/>
+<area shape="rect" id="Node000015" href="$group__display.html" title=" " alt="" coords="278,256,401,283"/>
+<area shape="rect" id="Node000009" href="$group__evaluation.html" title=" " alt="" coords="245,307,434,349"/>
+<area shape="rect" id="Node000007" href="$group__listmode.html" title=" " alt="" coords="263,373,416,416"/>
+<area shape="rect" id="Node000012" href="$group__modelling.html" title=" " alt="" coords="256,440,424,483"/>
+<area shape="rect" id="Node000017" href="$group__motion.html" title=" " alt="" coords="260,507,419,549"/>
+<area shape="rect" id="Node000005" href="$group__numerics.html" title=" " alt="" coords="268,573,412,600"/>
+<area shape="rect" id="Node000016" href="$group__para.html" title=" " alt="" coords="288,624,391,651"/>
+<area shape="rect" id="Node000010" href="$group__recon__buildblock.html" title=" " alt="" coords="261,675,418,717"/>
+<area shape="rect" id="Node000011" href="$group__reconstructors.html" title=" " alt="" coords="260,741,419,768"/>
+<area shape="rect" id="Node000014" href="$group__scatter.html" title=" " alt="" coords="276,792,403,835"/>
+<area shape="rect" id="Node000013" href="$group__spatial__transformation.html" title=" " alt="" coords="281,859,398,885"/>
 </map>

@@ -1,23 +1,23 @@
 <map id="stir::NumericInfo&lt; NUMBER &gt;" name="stir::NumericInfo&lt; NUMBER &gt;">
-<area shape="rect" id="Node000001" title="class NumericInfo&lt;NUMBER&gt; defines properties for the type NUMBER." alt="" coords="5,317,147,362"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1NumericInfo_3_01double_01_4.html" title="Basic properties of double." alt="" coords="325,5,466,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,301,86,252,102,193,128,134,147,107,169,83,204,59,244,42,285,32,326,27,322,31,286,37,246,47,207,63,172,87,151,110,133,136,107,195,91,253,83,302"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1NumericInfo_3_01float_01_4.html" title="Basic properties of float." alt="" coords="325,75,466,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,302,96,267,114,228,138,190,169,158,205,134,245,118,286,106,327,100,322,104,287,112,247,123,208,139,172,162,142,194,119,231,101,269,89,304"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1NumericInfo_3_01signed_01char_01_4.html" title="Basic properties of signed char." alt="" coords="325,144,466,189"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,303,129,265,169,231,207,210,247,195,326,175,322,179,248,200,209,215,172,235,133,269,103,306"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1NumericInfo_3_01signed_01int_01_4.html" title="Basic properties of signed int." alt="" coords="325,213,466,258"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="130,308,170,291,249,265,326,248,322,251,250,270,172,295,134,312"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1NumericInfo_3_01signed_01long_01_4.html" title="Basic properties of signed long." alt="" coords="325,283,466,327"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="161,328,326,311,323,315,163,333"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1NumericInfo_3_01signed_01short_01_4.html" title="Basic properties of signed short." alt="" coords="325,352,466,397"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="161,348,171,349,326,366,322,369,170,354,164,353"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1NumericInfo_3_01unsigned_01char_01_4.html" title="Basic properties of unsigned char." alt="" coords="325,421,466,466"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="130,367,172,385,250,410,327,429,322,431,249,415,170,390,131,372"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1NumericInfo_3_01unsigned_01int_01_4.html" title="Basic properties of unsigned int." alt="" coords="325,491,466,535"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="100,372,133,410,172,444,209,464,248,479,327,502,322,503,247,484,207,469,169,448,129,414,100,377"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1NumericInfo_3_01unsigned_01long_01_4.html" title="Basic properties of unsigned long." alt="" coords="325,560,466,605"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="87,374,101,410,119,448,142,486,172,517,208,540,247,556,287,568,327,577,322,577,286,573,245,562,205,545,169,521,138,489,114,451,96,412,87,379"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1NumericInfo_3_01unsigned_01short_01_4.html" title="Basic properties of unsigned short." alt="" coords="325,629,466,674"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="81,375,91,426,107,484,133,543,151,569,172,592,207,616,246,632,286,642,327,650,321,650,285,647,244,637,204,620,169,596,147,572,129,545,102,486,86,427,80,380"/>
+<area shape="rect" id="Node000001" title="class NumericInfo&lt;NUMBER&gt; defines properties for the type NUMBER." alt="" coords="5,309,132,352"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1NumericInfo_3_01double_01_4.html" title="Basic properties of double." alt="" coords="297,9,423,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,293,74,243,88,182,113,122,132,94,154,70,186,49,223,35,261,28,298,26,294,30,261,33,224,40,189,53,157,74,136,97,118,124,93,184,79,244,74,294"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1NumericInfo_3_01float_01_4.html" title="Basic properties of float." alt="" coords="297,76,423,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,294,84,257,100,216,123,176,154,142,187,121,224,108,261,99,299,96,294,99,262,104,225,113,189,126,157,146,127,179,105,219,89,259,79,295"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1NumericInfo_3_01signed_01char_01_4.html" title="Basic properties of signed char." alt="" coords="297,143,423,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,295,114,252,133,231,154,214,188,195,225,182,298,167,294,171,227,187,190,200,157,218,136,235,118,255,90,297"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1NumericInfo_3_01signed_01int_01_4.html" title="Basic properties of signed int." alt="" coords="297,209,423,252"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,299,155,276,227,253,298,239,294,242,228,258,157,281,116,302"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1NumericInfo_3_01signed_01long_01_4.html" title="Basic properties of signed long." alt="" coords="297,276,423,319"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="146,319,298,303,295,307,148,324"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1NumericInfo_3_01signed_01short_01_4.html" title="Basic properties of signed short." alt="" coords="297,343,423,385"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,346,156,347,298,360,294,364,155,352,148,350"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1NumericInfo_3_01unsigned_01char_01_4.html" title="Basic properties of unsigned char." alt="" coords="297,409,423,452"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="108,359,157,387,228,409,299,423,294,426,227,415,155,392,108,364"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1NumericInfo_3_01unsigned_01int_01_4.html" title="Basic properties of unsigned int." alt="" coords="297,476,423,519"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="87,363,117,408,136,430,157,447,190,465,226,478,299,493,294,495,225,483,188,470,154,452,132,433,113,412,86,369"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1NumericInfo_3_01unsigned_01long_01_4.html" title="Basic properties of unsigned long." alt="" coords="297,543,423,585"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="76,364,88,403,104,444,126,484,157,518,189,538,225,551,262,559,299,564,294,565,261,564,224,556,187,543,154,522,122,487,99,446,83,404,76,369"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1NumericInfo_3_01unsigned_01short_01_4.html" title="Basic properties of unsigned short." alt="" coords="297,609,423,652"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="71,365,79,418,92,479,117,539,135,567,157,590,189,610,224,623,261,630,299,635,294,635,261,635,223,628,186,615,154,594,131,570,113,542,87,480,74,419,70,370"/>
 </map>

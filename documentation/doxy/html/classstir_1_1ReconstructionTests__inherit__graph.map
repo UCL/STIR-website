@@ -1,18 +1,18 @@
 <map id="stir::ReconstructionTests&lt; TargetT &gt;" name="stir::ReconstructionTests&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="Base class for simple test on reconstruction." alt="" coords="163,41,343,86"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="500,5,712,50"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="358,50,503,38,497,39,359,56"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1ReconstructionTests.html" title=" " alt="" coords="516,76,696,121"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="359,71,518,89,513,90,359,77"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,50,114,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,61,165,63,160,65,130,66"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1PoissonLLReconstructionTests.html" title=" " alt="" coords="869,11,1080,55"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="727,27,871,31,866,32,727,32"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1TestOSMAPOSL.html" title="Test class for OSMAPOSL." alt="" coords="1129,19,1278,47"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1095,30,1132,33,1126,33,1096,36"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="711,77,866,52,871,51,712,82"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1TestFBP2D.html" title="Test class for FBP2D." alt="" coords="915,88,1034,116"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="712,97,917,102,911,102,712,102"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1TestFBP3DRP.html" title="Test class for FBP3DRP." alt="" coords="906,140,1042,168"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="712,112,908,144,903,144,712,117"/>
+<area shape="rect" id="Node000001" title="Base class for simple test on reconstruction." alt="" coords="158,43,325,85"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1PoissonLLReconstructionTests.html" title="Base class for tests for iterative reconstruction that use PoissonLogLikelihoodWithLinearModelForMean..." alt="" coords="470,5,667,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="340,50,472,37,467,39,341,56"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1ReconstructionTests.html" title=" " alt="" coords="485,75,652,117"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="341,74,350,75,487,89,482,90,349,80,341,79"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,51,109,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,62,160,63,155,65,125,67"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1PoissonLLReconstructionTests.html" title=" " alt="" coords="812,12,1008,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="682,26,814,31,809,32,682,32"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1TestOSMAPOSL.html" title="Test class for OSMAPOSL." alt="" coords="1057,20,1204,47"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1023,31,1059,33,1054,34,1023,36"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="667,75,809,52,814,51,668,81"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1TestFBP2D.html" title="Test class for FBP2D." alt="" coords="852,88,968,115"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="668,95,855,100,849,101,668,100"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1TestFBP3DRP.html" title="Test class for FBP3DRP." alt="" coords="843,139,977,165"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="668,110,845,141,840,141,668,115"/>
 </map>

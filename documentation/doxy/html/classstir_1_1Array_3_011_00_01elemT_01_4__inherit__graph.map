@@ -1,0 +1,21 @@
+<map id="stir::Array&lt; 1, elemT &gt;" name="stir::Array&lt; 1, elemT &gt;">
+<area shape="rect" id="Node000001" title="The 1&#45;dimensional (partial) specialisation of Array." alt="" coords="1277,89,1430,116"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="707,41,904,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="919,75,1279,98,1274,98,919,80"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1Array.html" title="This class defines multi&#45;dimensional (numeric) arrays." alt="" coords="954,23,1146,65"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="920,56,956,54,951,55,920,61"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="310,5,490,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,18,593,23,683,35,709,42,704,42,683,40,592,29,506,23"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1NumericVectorWithOffset.html" title="like VectorWithOffset, but with changes in various numeric operators" alt="" coords="302,79,499,121"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="514,91,683,80,709,80,704,81,683,85,515,97"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="707,132,904,175"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="515,119,523,120,709,144,704,145,523,125,515,124"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="5,87,186,113"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,97,304,99,299,101,202,103"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="919,140,1274,110,1279,109,919,146"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="326,161,474,204"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="490,175,683,161,704,162,709,162,683,167,490,180"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1VectorWithOffset.html" title="A templated class for vectors, but with indices starting not from 0." alt="" coords="5,169,186,196"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="201,180,328,182,323,183,201,185"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1162,63,1283,89,1278,89,1161,68"/>
+</map>

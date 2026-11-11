@@ -1,17 +1,17 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;" name="stir::PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="1615,172,1866,234"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1089,62,1466,175"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1481,153,1617,180,1612,180,1481,158"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="268,5,457,67"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="472,20,576,11,700,6,833,8,966,20,1046,37,1127,62,1121,62,1045,42,965,25,833,13,700,11,577,16,473,25"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr..." alt="" coords="5,164,196,209"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,154,308,65,306,70,156,158"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1SumOfGeneralisedObjectiveFunctions.html" title="A base class for sums of &#39;generalised&#39; objective functions, i.e. objective functions for which at lea..." alt="" coords="245,232,479,294"/>
-<area shape="poly" id="edge7_Node000011_Node000004" title=" " alt="" coords="194,211,256,231,251,232,194,217"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="258,130,467,174"/>
-<area shape="poly" id="edge4_Node000002_Node000009" title=" " alt="" coords="482,145,1090,123,1088,128,483,150"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="989,221,1566,350"/>
-<area shape="poly" id="edge8_Node000010_Node000009" title=" " alt="" coords="433,179,459,197,482,219,491,238,492,256,494,272,505,286,528,295,568,301,685,307,833,305,991,302,986,303,833,311,685,312,567,306,527,300,502,290,489,274,487,257,485,239,477,222,456,201,432,185"/>
-<area shape="poly" id="edge5_Node000001_Node000010" title=" " alt="" coords="1580,229,1612,226,1617,225,1581,234"/>
-<area shape="poly" id="edge6_Node000010_Node000011" title=" " alt="" coords="455,296,504,308,626,323,751,328,874,326,986,322,992,322,874,331,751,333,626,328,503,313,455,302"/>
+<area shape="rect" id="Node000001" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="1477,235,1704,293"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1001,108,1341,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1355,204,1479,236,1474,236,1355,209"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="246,41,419,100"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="433,35,462,29,582,12,677,3,772,8,891,29,941,43,991,62,1082,107,1077,107,989,67,940,48,890,34,771,13,677,9,583,17,463,35,435,40"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr..." alt="" coords="5,228,177,271"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,216,292,98,290,103,135,221"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1SumOfGeneralisedObjectiveFunctions.html" title="A base class for sums of &#39;generalised&#39; objective functions, i.e. objective functions for which at lea..." alt="" coords="226,293,438,352"/>
+<area shape="poly" id="edge7_Node000011_Node000004" title=" " alt="" coords="177,273,236,292,231,293,178,278"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="236,184,428,227"/>
+<area shape="poly" id="edge4_Node000002_Node000009" title=" " alt="" coords="443,190,462,188,747,171,1003,164,998,165,747,176,463,193,444,195"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="914,304,1428,427"/>
+<area shape="poly" id="edge8_Node000010_Node000009" title=" " alt="" coords="390,233,418,254,441,280,450,305,450,328,451,349,455,358,464,367,485,375,522,381,631,387,769,385,916,382,911,382,769,390,631,392,521,387,484,381,461,371,451,361,446,350,444,329,445,306,436,283,414,258,389,238"/>
+<area shape="poly" id="edge5_Node000001_Node000010" title=" " alt="" coords="1441,297,1474,292,1479,291,1442,302"/>
+<area shape="poly" id="edge6_Node000010_Node000011" title=" " alt="" coords="391,357,426,375,463,388,576,408,692,416,806,414,911,408,916,408,807,419,692,421,575,413,462,393,424,380,390,363"/>
 </map>

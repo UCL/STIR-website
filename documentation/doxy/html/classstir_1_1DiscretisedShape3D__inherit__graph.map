@@ -1,11 +1,11 @@
 <map id="stir::DiscretisedShape3D" name="stir::DiscretisedShape3D">
-<area shape="rect" id="Node000001" title="A class for shapes that have been discretised as a volume." alt="" coords="132,337,313,365"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="104,226,341,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,301,225,338,220,335,221,305"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes." alt="" coords="32,108,141,136"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,144,195,225,190,227,110,149"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,168,50"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,63,89,108,84,107,86,69"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="164,99,374,144"/>
-<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="259,157,235,227,231,224,255,160"/>
+<area shape="rect" id="Node000001" title="A class for shapes that have been discretised as a volume." alt="" coords="124,341,291,368"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="98,233,317,292"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,306,210,342,205,339,206,309"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Shape3D.html" title="The base class for all 3 dimensional shapes." alt="" coords="29,105,130,132"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,141,184,232,179,234,100,146"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,154,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,61,82,105,77,105,79,66"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="154,97,346,140"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="242,153,218,234,214,232,238,157"/>
 </map>

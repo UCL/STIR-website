@@ -1,10 +1,10 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests" name="stir::PoissonLogLikelihoodWithLinearModelForMeanAndProjDataTests">
-<area shape="rect" id="Node000001" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndProjData." alt="" coords="1080,22,1381,67"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="694,5,1031,84"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1046,42,1082,45,1077,45,1046,47"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,18,114,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,24,369,12,519,11,670,17,696,21,691,21,670,22,519,17,369,18,130,29"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior." alt="" coords="163,52,395,96"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,42,165,51,160,52,129,47"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="411,84,419,85,545,91,600,91,670,85,691,84,697,84,671,90,600,96,545,97,419,90,411,90"/>
+<area shape="rect" id="Node000001" title="Test class for PoissonLogLikelihoodWithLinearModelForMeanAndProjData." alt="" coords="1003,30,1278,72"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ObjectiveFunctionTests.html" title=" " alt="" coords="649,14,954,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="969,48,1005,51,1000,51,969,54"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="5,12,109,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,17,222,9,347,4,486,4,626,12,652,18,646,18,625,18,486,9,347,9,222,15,125,22"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ObjectiveFunctionTests.html" title="Test class for GeneralisedObjectiveFunction and GeneralisedPrior." alt="" coords="158,58,366,100"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="124,40,180,56,175,58,123,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="382,99,391,100,508,109,559,108,625,100,688,89,693,89,626,105,560,113,508,115,390,106,382,105"/>
 </map>

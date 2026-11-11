@@ -1,19 +1,19 @@
 <map id="Basic building blocks" name="Basic building blocks">
-<area shape="rect" id="Node000005" href="$group__Array.html" title=" " alt="" coords="584,5,767,67"/>
-<area shape="rect" id="Node000014" href="$group__CUDA.html" title=" " alt="" coords="571,91,780,136"/>
-<area shape="rect" id="Node000006" href="$group__Coordinate.html" title=" " alt="" coords="571,160,780,187"/>
-<area shape="rect" id="Node000011" href="$group__DataProcessor.html" title=" " alt="" coords="612,212,739,239"/>
-<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,528,102,555"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="151,528,309,555"/>
-<area shape="rect" id="Node000008" href="$group__ancillary.html" title=" " alt="" coords="554,264,797,326"/>
-<area shape="rect" id="Node000004" href="$group__buildblock__detail.html" title=" " alt="" coords="589,350,762,394"/>
-<area shape="rect" id="Node000003" href="$group__copy__fill.html" title=" " alt="" coords="560,419,791,464"/>
-<area shape="rect" id="Node000012" href="$group__date__time.html" title=" " alt="" coords="596,488,755,533"/>
-<area shape="rect" id="Node000010" href="$group__densitydata.html" title=" " alt="" coords="574,557,777,585"/>
-<area shape="rect" id="Node000007" href="$group__geometry.html" title=" " alt="" coords="589,608,762,653"/>
-<area shape="rect" id="Node000009" href="$group__projdata.html" title=" " alt="" coords="562,677,789,705"/>
-<area shape="rect" id="Node000017" href="$group__scatter.html" title=" " alt="" coords="605,728,746,773"/>
-<area shape="rect" id="Node000016" href="$group__test.html" title=" " alt="" coords="608,798,743,842"/>
-<area shape="rect" id="Node000013" href="$group__threads.html" title=" " alt="" coords="578,867,773,912"/>
-<area shape="rect" id="Node000015" href="$group__typetraits.html" title=" " alt="" coords="571,936,780,998"/>
+<area shape="rect" id="Node000005" href="$group__Array.html" title=" " alt="" coords="544,5,707,64"/>
+<area shape="rect" id="Node000014" href="$group__CUDA.html" title=" " alt="" coords="529,88,722,131"/>
+<area shape="rect" id="Node000006" href="$group__Coordinate.html" title=" " alt="" coords="532,155,719,181"/>
+<area shape="rect" id="Node000011" href="$group__DataProcessor.html" title=" " alt="" coords="567,205,684,232"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,509,97,536"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="146,509,290,536"/>
+<area shape="rect" id="Node000008" href="$group__ancillary.html" title=" " alt="" coords="517,256,734,315"/>
+<area shape="rect" id="Node000004" href="$group__buildblock__detail.html" title=" " alt="" coords="549,339,702,381"/>
+<area shape="rect" id="Node000003" href="$group__copy__fill.html" title=" " alt="" coords="520,405,731,448"/>
+<area shape="rect" id="Node000012" href="$group__date__time.html" title=" " alt="" coords="555,472,696,515"/>
+<area shape="rect" id="Node000010" href="$group__densitydata.html" title=" " alt="" coords="535,539,716,565"/>
+<area shape="rect" id="Node000007" href="$group__geometry.html" title=" " alt="" coords="548,589,703,632"/>
+<area shape="rect" id="Node000009" href="$group__projdata.html" title=" " alt="" coords="525,656,726,683"/>
+<area shape="rect" id="Node000017" href="$group__scatter.html" title=" " alt="" coords="562,707,689,749"/>
+<area shape="rect" id="Node000016" href="$group__test.html" title=" " alt="" coords="563,773,688,816"/>
+<area shape="rect" id="Node000013" href="$group__threads.html" title=" " alt="" coords="538,840,713,883"/>
+<area shape="rect" id="Node000015" href="$group__typetraits.html" title=" " alt="" coords="534,907,717,965"/>
 </map>

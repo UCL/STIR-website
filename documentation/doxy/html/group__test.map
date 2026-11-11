@@ -1,13 +1,14 @@
 <map id="Tests of the basic building blocks" name="Tests of the basic building blocks">
-<area shape="rect" id="Node000009" href="$group__Array.html" title=" " alt="" coords="623,83,806,145"/>
-<area shape="rect" id="Node000002" href="$group__alltest.html" title=" " alt="" coords="5,487,143,515"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="192,479,326,523"/>
-<area shape="rect" id="Node000007" href="$group__ancillary.html" title=" " alt="" coords="593,203,836,265"/>
-<area shape="rect" id="Node000004" href="$group__buildblock.html" title=" " alt="" coords="635,406,794,433"/>
-<area shape="rect" id="Node000005" href="$group__date__time.html" title=" " alt="" coords="635,464,794,509"/>
-<area shape="rect" id="Node000011" href="$group__distributable.html" title=" " alt="" coords="635,545,794,590"/>
-<area shape="rect" id="Node000010" href="$group__numerics.html" title=" " alt="" coords="633,614,796,641"/>
-<area shape="rect" id="Node000006" href="$group__projdata.html" title=" " alt="" coords="601,748,828,776"/>
-<area shape="rect" id="Node000008" href="$group__scatter.html" title=" " alt="" coords="644,861,785,906"/>
-<area shape="rect" id="Node000003" href="$group__spatial__transformation.html" title=" " alt="" coords="650,956,779,984"/>
+<area shape="rect" id="Node000009" href="$group__Array.html" title=" " alt="" coords="583,73,746,132"/>
+<area shape="rect" id="Node000012" href="$group__CUDA.html" title=" " alt="" coords="568,173,761,216"/>
+<area shape="rect" id="Node000002" href="$group__alltest.html" title=" " alt="" coords="5,509,138,536"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="187,501,312,544"/>
+<area shape="rect" id="Node000007" href="$group__ancillary.html" title=" " alt="" coords="556,258,773,317"/>
+<area shape="rect" id="Node000004" href="$group__buildblock.html" title=" " alt="" coords="592,421,737,448"/>
+<area shape="rect" id="Node000005" href="$group__date__time.html" title=" " alt="" coords="594,510,735,553"/>
+<area shape="rect" id="Node000011" href="$group__distributable.html" title=" " alt="" coords="595,588,734,630"/>
+<area shape="rect" id="Node000010" href="$group__numerics.html" title=" " alt="" coords="592,654,737,681"/>
+<area shape="rect" id="Node000006" href="$group__projdata.html" title=" " alt="" coords="564,785,765,812"/>
+<area shape="rect" id="Node000008" href="$group__scatter.html" title=" " alt="" coords="601,893,728,936"/>
+<area shape="rect" id="Node000003" href="$group__spatial__transformation.html" title=" " alt="" coords="606,985,723,1012"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="stir::KOSMAPOSLReconstruction&lt; TargetT &gt;" name="stir::KOSMAPOSLReconstruction&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="A reconstructor class appropriate for emission data." alt="" coords="1657,62,1885,107"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1332,37,1608,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1624,82,1660,85,1654,85,1624,87"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1OSMAPOSLReconstruction.html" title="Implementation of the Ordered Subsets version of Green&#39;s MAP One Step Late algorithm." alt="" coords="1063,96,1282,140"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1297,101,1328,101,1334,100,1298,107"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="501,90,760,186"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="775,130,1065,122,1060,122,776,135"/>
-<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="5,73,215,118"/>
-<area shape="poly" id="edge5_Node000002_Node000012" title=" " alt="" coords="230,68,238,67,305,63,358,63,477,67,1332,79,1331,85,477,73,357,69,305,68,239,73,231,74"/>
-<area shape="poly" id="edge4_Node000004_Node000012" title=" " alt="" coords="181,121,239,135,305,144,373,147,503,148,498,149,373,153,305,149,238,141,181,126"/>
+<area shape="rect" id="Node000001" title="A reconstructor class appropriate for emission data." alt="" coords="1574,86,1793,128"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1266,62,1525,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1541,104,1576,107,1571,107,1541,110"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1OSMAPOSLReconstruction.html" title="Implementation of the Ordered Subsets version of Green&#39;s MAP One Step Late algorithm." alt="" coords="1007,120,1216,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1232,124,1263,123,1268,123,1232,130"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="473,120,705,211"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="721,157,1009,146,1004,147,721,162"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="5,104,198,147"/>
+<area shape="poly" id="edge5_Node000002_Node000012" title=" " alt="" coords="176,97,221,87,285,81,335,81,449,87,1266,101,1265,107,449,92,335,86,285,86,222,92,178,102"/>
+<area shape="poly" id="edge4_Node000004_Node000012" title=" " alt="" coords="155,151,188,165,222,175,286,184,351,187,475,183,470,183,351,193,285,190,221,180,186,170,155,157"/>
 </map>

@@ -1,48 +1,48 @@
 <map id="stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;" name="stir::PoissonLogLikelihoodWithLinearModelForMean&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="1194,367,1383,428"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1602,5,1978,118"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1328,353,1378,303,1444,243,1519,182,1601,129,1623,120,1628,117,1603,133,1523,187,1447,247,1382,307,1331,358"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1602,143,1978,255"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1368,357,1406,341,1627,257,1632,255,1408,345,1370,362"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1632,280,1948,393"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1398,371,1407,370,1520,355,1634,346,1629,347,1521,360,1407,375,1399,376"/>
-<area shape="rect" id="Node000015" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1612,664,1968,777"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1331,437,1368,471,1409,504,1474,548,1543,590,1674,664,1669,663,1540,595,1471,553,1405,508,1365,475,1330,442"/>
-<area shape="rect" id="Node000017" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data." alt="" coords="1654,520,1926,582"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="1384,432,1489,469,1603,506,1657,522,1651,522,1601,511,1487,474,1383,437"/>
-<area shape="rect" id="Node000023" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title=" " alt="" coords="1696,417,1885,496"/>
-<area shape="poly" id="edge21_Node000001_Node000023" title=" " alt="" coords="1398,408,1698,445,1692,446,1399,413"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr..." alt="" coords="954,375,1144,420"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1160,395,1196,397,1190,398,1161,400"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="673,367,905,428"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="920,395,956,397,951,398,921,400"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,385,200,413"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="214,390,417,383,649,384,676,387,670,389,649,390,417,388,216,395"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="249,406,411,451"/>
-<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="214,411,251,417,246,419,216,416"/>
-<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="426,427,534,425,649,418,675,417,670,419,650,424,534,431,427,432"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2274,31,2533,92"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1994,59,2276,61,2271,62,1994,64"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2278,168,2529,230"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1993,196,2280,199,2275,199,1994,202"/>
-<area shape="rect" id="Node000012" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data." alt="" coords="2269,254,2538,315"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1963,319,2271,295,2266,296,1964,324"/>
-<area shape="rect" id="Node000013" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title=" " alt="" coords="2904,254,3172,315"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="2553,282,2906,284,2901,285,2553,287"/>
-<area shape="rect" id="Node000014" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title=" " alt="" coords="2904,352,3172,430"/>
-<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="2553,307,2634,321,2906,369,2900,369,2633,326,2553,313"/>
-<area shape="rect" id="Node000016" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2268,750,2539,811"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1984,737,2271,767,2265,767,1984,742"/>
-<area shape="rect" id="Node000018" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2197,613,2610,726"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1941,577,2200,630,2194,630,1941,583"/>
-<area shape="rect" id="Node000021" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title=" " alt="" coords="2268,510,2539,589"/>
-<area shape="poly" id="edge19_Node000017_Node000021" title=" " alt="" coords="1941,548,2270,550,2265,550,1942,553"/>
-<area shape="rect" id="Node000019" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title="Class for PET list mode data from static images for a scanner with discrete detectors." alt="" coords="2902,643,3174,704"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="2625,668,2904,673,2899,673,2625,674"/>
-<area shape="rect" id="Node000022" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2829,472,3247,619"/>
-<area shape="poly" id="edge20_Node000021_Node000022" title=" " alt="" coords="2554,546,2831,547,2825,547,2555,551"/>
-<area shape="poly" id="edge22_Node000023_Node000021" title=" " alt="" coords="1900,468,2174,508,2270,526,2265,526,2173,514,1900,474"/>
-<area shape="rect" id="Node000024" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2221,339,2586,486"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="1900,446,2223,425,2218,426,1900,451"/>
-<area shape="poly" id="edge24_Node000024_Node000014" title=" " alt="" coords="2601,403,2906,395,2901,396,2601,408"/>
+<area shape="rect" id="Node000001" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="1101,343,1274,401"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1479,5,1818,112"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1226,329,1334,228,1403,172,1478,122,1497,114,1502,111,1480,126,1406,176,1337,232,1229,334"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1479,136,1818,243"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1275,334,1478,252,1506,244,1511,242,1480,257,1277,339"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1506,267,1791,373"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1289,358,1508,335,1503,337,1290,363"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1488,636,1809,743"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1222,411,1258,451,1300,489,1357,530,1417,569,1535,636,1530,635,1414,573,1354,535,1296,493,1255,454,1220,416"/>
+<area shape="rect" id="Node000017" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title="An objective function class appropriate for PET list mode data." alt="" coords="1526,496,1771,555"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="1247,407,1299,434,1414,473,1528,503,1523,503,1413,478,1297,438,1246,412"/>
+<area shape="rect" id="Node000023" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMean.html" title=" " alt="" coords="1562,397,1735,472"/>
+<area shape="poly" id="edge21_Node000001_Node000023" title=" " alt="" coords="1279,404,1299,408,1367,419,1436,427,1564,435,1559,436,1436,432,1366,425,1297,413,1279,409"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1GeneralisedObjectiveFunction.html" title="A base class for &#39;generalised&#39; objective functions, i.e. objective functions for which at least a &#39;gr..." alt="" coords="880,351,1051,393"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1066,369,1103,372,1097,372,1067,375"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="623,343,831,401"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="846,369,882,371,877,373,847,375"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="5,355,184,381"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,359,386,351,493,351,599,355,625,358,620,360,599,360,493,356,386,357,200,364"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="233,379,381,421"/>
+<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="198,381,235,388,230,390,200,386"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="396,400,405,400,503,404,545,404,599,400,625,398,620,400,600,405,545,410,502,410,405,405,398,405"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1PoissonLogLikelihoodWithLinearKineticModelAndDynamicProjectionData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2092,29,2326,88"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1834,56,2095,58,2089,59,1834,61"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndGatedProjDataWithMotion.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2095,160,2323,219"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1833,187,2098,189,2092,190,1834,192"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title="An objective function class appropriate for PET emission data." alt="" coords="2087,243,2331,301"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1807,304,2089,282,2084,283,1807,309"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title=" " alt="" coords="2668,243,2911,301"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="2346,269,2670,272,2665,272,2347,275"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndProjData.html" title=" " alt="" coords="2668,337,2911,412"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="2346,297,2396,311,2419,320,2547,346,2670,365,2665,365,2546,351,2418,325,2394,316,2345,303"/>
+<area shape="rect" id="Node000016" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndDynamicProjData.html" title="a base class for LogLikelihood of independent Poisson variables where the mean values are linear comb..." alt="" coords="2087,717,2331,776"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1825,705,2089,734,2084,734,1824,710"/>
+<area shape="rect" id="Node000018" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2023,587,2395,693"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1787,551,2026,602,2020,602,1786,556"/>
+<area shape="rect" id="Node000021" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeData.html" title=" " alt="" coords="2086,488,2332,563"/>
+<area shape="poly" id="edge19_Node000017_Node000021" title=" " alt="" coords="1787,523,2088,525,2083,526,1787,528"/>
+<area shape="rect" id="Node000019" href="$classstir_1_1PoissonLogLikelihoodWithLinearModelForMeanAndListModeDataWithProjMatrixByBin.html" title="Class for PET list mode data from static images for a scanner with discrete detectors." alt="" coords="2667,615,2912,673"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="2410,639,2669,643,2663,643,2410,644"/>
+<area shape="rect" id="Node000022" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2600,452,2979,591"/>
+<area shape="poly" id="edge20_Node000021_Node000022" title=" " alt="" coords="2347,522,2602,522,2597,523,2348,527"/>
+<area shape="poly" id="edge22_Node000023_Node000021" title=" " alt="" coords="1751,440,1871,453,2000,472,2089,493,2083,493,1999,477,1870,458,1751,446"/>
+<area shape="rect" id="Node000024" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="2045,325,2373,464"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="1750,425,2047,406,2042,407,1751,430"/>
+<area shape="poly" id="edge24_Node000024_Node000014" title=" " alt="" coords="2388,386,2670,379,2665,379,2388,391"/>
 </map>

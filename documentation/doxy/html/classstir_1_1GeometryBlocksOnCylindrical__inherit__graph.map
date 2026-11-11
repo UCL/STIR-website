@@ -1,5 +1,5 @@
 <map id="stir::GeometryBlocksOnCylindrical" name="stir::GeometryBlocksOnCylindrical">
-<area shape="rect" id="Node000001" title="A helper class to build the crystal map based on scanner info." alt="" coords="5,81,251,109"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1DetectorCoordinateMap.html" title=" " alt="" coords="25,5,231,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,47,130,82,126,79,126,51"/>
+<area shape="rect" id="Node000001" title="A helper class to build the crystal map based on scanner info." alt="" coords="5,80,228,107"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1DetectorCoordinateMap.html" title=" " alt="" coords="24,5,209,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,46,119,81,114,78,115,50"/>
 </map>

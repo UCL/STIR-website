@@ -1,13 +1,13 @@
 <map id="stir::ForwardProjectorByBinParallelproj" name="stir::ForwardProjectorByBinParallelproj">
-<area shape="rect" id="Node000001" title="Class for Parallelproj&#39;s forward projector." alt="" coords="1066,60,1243,104"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="755,51,1017,113"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1032,79,1068,82,1063,82,1033,84"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors." alt="" coords="260,35,458,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,52,732,67,758,71,752,72,731,72,473,57"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="38,5,172,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,26,262,36,257,38,187,31"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,57,205,102"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="220,63,262,60,256,61,221,68"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="254,86,463,131"/>
-<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="479,108,601,107,731,101,752,102,757,101,732,106,601,113,479,114"/>
+<area shape="rect" id="Node000001" title="Class for Parallelproj&#39;s forward projector." alt="" coords="981,60,1143,103"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="696,52,932,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="948,79,983,81,978,81,948,84"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ForwardProjectorByBin.html" title="Abstract base class for all forward projectors." alt="" coords="240,35,421,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,50,673,64,699,69,693,69,672,69,436,55"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="34,5,156,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,25,241,36,236,38,172,31"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,56,185,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,62,242,59,236,60,201,67"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="234,92,426,135"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="442,116,554,117,672,109,693,109,698,109,673,115,554,122,442,121"/>
 </map>

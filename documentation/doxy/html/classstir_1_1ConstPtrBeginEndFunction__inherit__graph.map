@@ -1,7 +1,7 @@
 <map id="stir::ConstPtrBeginEndFunction&lt; TopLevelIterT &gt;" name="stir::ConstPtrBeginEndFunction&lt; TopLevelIterT &gt;">
-<area shape="rect" id="Node000001" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="720,51,942,96"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1PtrBeginEndFunction.html" title=" " alt="" coords="453,26,671,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="687,71,723,73,717,73,687,76"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1PtrBeginEndFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to pointers to an ordinary iterato..." alt="" coords="5,51,211,96"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,71,454,71,451,75,226,76"/>
+<area shape="rect" id="Node000001" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="668,72,874,115"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1PtrBeginEndFunction.html" title=" " alt="" coords="424,48,619,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="635,91,670,93,665,93,635,96"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1PtrBeginEndFunction.html" title="Helper class for NestedIterator when the 1st level iterator refers to pointers to an ordinary iterato..." alt="" coords="5,72,191,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,91,425,91,422,96,206,96"/>
 </map>

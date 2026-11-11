@@ -1,11 +1,11 @@
 <map id="stir::CListEventSAFIR&lt; Derived &gt;" name="stir::CListEventSAFIR&lt; Derived &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="55,159,214,204"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1CListEventSAFIR.html" title=" " alt="" coords="5,286,264,331"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,218,137,286,132,285,133,222"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="75,82,194,110"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,123,137,159,132,158,134,128"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file." alt="" coords="79,5,190,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,46,137,82,132,82,134,51"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="51,380,218,425"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="136,344,137,381,132,378,133,348"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="48,157,201,200"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEventSAFIR.html" title=" " alt="" coords="5,293,244,336"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,213,127,293,122,292,123,218"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="68,81,181,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,121,127,158,122,157,124,126"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListEvent.html" title="Class for storing and using gamma events from a list mode file." alt="" coords="73,5,176,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,44,127,81,122,81,124,50"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1CListRecordSAFIR.html" title="Class for general SAFIR record, containing a union of data, time and raw record and providing access ..." alt="" coords="44,385,205,428"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,350,127,386,122,384,123,353"/>
 </map>

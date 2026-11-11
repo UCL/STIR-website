@@ -1,12 +1,12 @@
 <map id="stir::CListEventPENN" name="stir::CListEventPENN">
-<area shape="rect" id="Node000001" title="Class for handling PENNPet Explorer events." alt="" coords="45,414,200,442"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="12,320,233,365"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,378,125,415,120,412,121,382"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="5,209,240,271"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,284,125,320,120,319,121,289"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1CListEvent.html" title="Class for storing and using a coincidence event from a list mode file." alt="" coords="58,5,177,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,46,124,209,119,208,117,51"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical single layer ..." alt="" coords="139,82,396,127"/>
-<area shape="poly" id="edge5_Node000006_Node000004" title=" " alt="" coords="154,38,231,81,226,83,155,44"/>
-<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="232,139,157,210,154,207,235,135"/>
+<area shape="rect" id="Node000001" title="Class for handling PENNPet Explorer events." alt="" coords="1190,21,1340,48"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListEventCylindricalScannerWithDiscreteDetectors.html" title="Class for storing and using a coincidence event from a list mode file for a cylindrical scanner." alt="" coords="938,13,1140,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1156,32,1192,35,1186,35,1156,37"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title=" " alt="" coords="676,5,889,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="904,32,940,35,935,35,904,37"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1CListEventScannerWithDiscreteDetectorsBase.html" title="Base&#45;class for storing and using a coincidence event for a list&#45;mode file that uses detector indices." alt="" coords="5,9,193,52"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="208,21,414,14,534,13,652,17,678,22,673,22,652,23,534,19,414,19,209,26"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1CListEventScannerWithDiscreteDetectors.html" title="Class for coincidence events from a list&#45;mode file that uses detector indices and a specific type of ..." alt="" coords="242,41,474,84"/>
+<area shape="poly" id="edge5_Node000007_Node000004" title=" " alt="" coords="209,41,244,48,239,48,209,47"/>
+<area shape="poly" id="edge4_Node000003_Node000007" title=" " alt="" coords="490,68,570,68,652,63,673,62,678,62,653,68,570,74,490,74"/>
 </map>

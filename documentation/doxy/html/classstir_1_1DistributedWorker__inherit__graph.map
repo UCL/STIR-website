@@ -1,5 +1,5 @@
 <map id="stir::DistributedWorker&lt; TargetT &gt;" name="stir::DistributedWorker&lt; TargetT &gt;">
-<area shape="rect" id="Node000001" title="This implements the Worker for the stir::distributable_computation() function." alt="" coords="5,81,173,126"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="22,5,156,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,47,92,81,86,79,87,51"/>
+<area shape="rect" id="Node000001" title="This implements the Worker for the stir::distributable_computation() function." alt="" coords="5,80,157,123"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="20,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,46,84,81,78,79,79,50"/>
 </map>

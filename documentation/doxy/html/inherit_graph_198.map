@@ -1,3 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classstir_1_1ZoomOptions.html" title="This class enables the user to choose between different zooming options." alt="" coords="5,5,144,33"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1VectorWithOffset.html" title=" " alt="" coords="5,131,202,189"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1NumericVectorWithOffset.html" title=" " alt="" coords="250,123,447,197"/>
+<area shape="poly" id="edge684_Node000000_Node000001" title=" " alt="" coords="217,157,252,159,247,161,218,163"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1Array.html" title=" " alt="" coords="522,5,661,48"/>
+<area shape="poly" id="edge685_Node000001_Node000002" title=" " alt="" coords="408,111,449,83,494,58,523,47,519,50,496,62,452,88,411,116"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1Array.html" title=" " alt="" coords="522,72,661,115"/>
+<area shape="poly" id="edge686_Node000001_Node000003" title=" " alt="" coords="461,126,523,112,518,113,463,131"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1Array.html" title=" " alt="" coords="522,139,661,181"/>
+<area shape="poly" id="edge687_Node000001_Node000004" title=" " alt="" coords="462,157,524,160,518,160,463,163"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1Array.html" title=" " alt="" coords="495,205,687,248"/>
+<area shape="poly" id="edge688_Node000001_Node000005" title=" " alt="" coords="462,188,513,205,508,205,462,194"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1Array.html" title=" " alt="" coords="497,272,685,315"/>
+<area shape="poly" id="edge689_Node000001_Node000006" title=" " alt="" coords="410,204,452,232,496,258,523,272,518,271,494,262,449,237,409,209"/>
 </map>

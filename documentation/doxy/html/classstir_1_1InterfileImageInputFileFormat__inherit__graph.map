@@ -1,7 +1,7 @@
 <map id="stir::InterfileImageInputFileFormat" name="stir::InterfileImageInputFileFormat">
-<area shape="rect" id="Node000001" title="Class for reading images in Interfile file&#45;format." alt="" coords="5,243,180,288"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="13,132,172,194"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,207,95,243,90,242,91,211"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="16,5,169,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,63,95,132,90,131,92,68"/>
+<area shape="rect" id="Node000001" title="Class for reading images in Interfile file&#45;format." alt="" coords="5,249,161,292"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="11,141,155,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,213,86,250,80,248,81,217"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1InputFileFormat.html" title="Base&#45;class for file&#45;formats for reading." alt="" coords="14,5,152,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,61,86,141,80,140,82,66"/>
 </map>

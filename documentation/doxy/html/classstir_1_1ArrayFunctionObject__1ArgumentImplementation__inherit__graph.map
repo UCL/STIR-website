@@ -1,12 +1,12 @@
 <map id="stir::ArrayFunctionObject_1ArgumentImplementation&lt; num_dimensions, elemT &gt;" name="stir::ArrayFunctionObject_1ArgumentImplementation&lt; num_dimensions, elemT &gt;">
-<area shape="rect" id="Node000001" title="A convenience class for children of ArrayFunctionObject. It implements the 2 argument operator() in t..." alt="" coords="265,5,476,67"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable." alt="" coords="524,5,729,67"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="491,34,526,36,521,36,492,39"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays." alt="" coords="5,14,217,58"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,34,267,35,262,37,233,39"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1SeparableGaussianArrayFilter.html" title="Separable Gaussian filtering in n &#45; dimensions." alt="" coords="777,5,988,67"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="745,42,780,45,774,45,745,48"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="745,25,780,27,774,28,745,30"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1SeparableMetzArrayFilter.html" title="Separable Metz filtering in n &#45; dimensions." alt="" coords="790,91,975,152"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="736,70,793,91,787,90,735,75"/>
+<area shape="rect" id="Node000001" title="A convenience class for children of ArrayFunctionObject. It implements the 2 argument operator() in t..." alt="" coords="241,5,428,64"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1SeparableArrayFunctionObject.html" title="This class implements an n &#45;dimensional ArrayFunctionObject whose operation is separable." alt="" coords="476,5,662,64"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="443,32,478,34,473,35,444,37"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ArrayFunctionObject.html" title="A class for operations on n&#45;dimensional Arrays." alt="" coords="5,13,193,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,32,243,34,238,35,209,37"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1SeparableGaussianArrayFilter.html" title="Separable Gaussian filtering in n &#45; dimensions." alt="" coords="710,5,902,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="678,41,713,43,707,44,678,46"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="678,23,713,26,707,26,678,28"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1SeparableMetzArrayFilter.html" title="Separable Metz filtering in n &#45; dimensions." alt="" coords="723,88,889,147"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="670,67,726,89,720,88,669,72"/>
 </map>

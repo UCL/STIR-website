@@ -1,5 +1,5 @@
 <map id="stir::PrepareProjData" name="stir::PrepareProjData">
-<area shape="rect" id="Node000001" title="A preliminary class to prepare files for iterative reconstruction." alt="" coords="5,81,162,109"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="14,5,153,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,47,86,81,81,80,82,51"/>
+<area shape="rect" id="Node000001" title="A preliminary class to prepare files for iterative reconstruction." alt="" coords="5,80,149,107"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="12,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,46,80,80,74,79,75,50"/>
 </map>

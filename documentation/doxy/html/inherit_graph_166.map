@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classstir_1_1PushTransposeLinearInterpolator.html" title="A function object to push values at the grid of the input array into the output array." alt="" coords="5,5,192,50"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1PtrBeginEndFunction.html" title=" " alt="" coords="5,5,201,96"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1ConstPtrBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="249,29,454,72"/>
+<area shape="poly" id="edge583_Node000000_Node000001" title=" " alt="" coords="216,48,251,50,245,51,217,53"/>
 </map>

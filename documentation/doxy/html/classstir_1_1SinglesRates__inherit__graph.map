@@ -1,28 +1,32 @@
 <map id="stir::SinglesRates" name="stir::SinglesRates">
-<area shape="rect" id="Node000001" title="The base&#45;class for using singles info." alt="" coords="978,100,1112,128"/>
-<area shape="rect" id="Node000006" href="$classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames." alt="" coords="1161,40,1349,84"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1118,93,1159,86,1165,84,1119,98"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals." alt="" coords="1161,125,1349,170"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1128,124,1164,132,1158,132,1128,130"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="766,92,928,136"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="944,111,980,114,975,114,944,117"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="194,102,388,129"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,105,564,99,742,101,768,105,763,105,742,106,564,104,404,110"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="438,122,600,167"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="403,127,440,134,435,135,404,132"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="5,102,145,129"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="159,113,196,114,191,117,161,118"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="615,133,768,121,763,122,616,138"/>
-<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1398,5,1652,84"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1364,52,1400,53,1395,53,1365,58"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file." alt="" coords="1712,22,1892,67"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1667,42,1714,44,1709,45,1668,47"/>
-<area shape="rect" id="Node000010" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1398,108,1652,187"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1364,145,1400,147,1395,147,1365,150"/>
-<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1398,211,1652,289"/>
-<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="1331,173,1422,210,1417,210,1330,178"/>
-<area shape="rect" id="Node000011" href="$classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format..." alt="" coords="1702,125,1902,170"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1668,145,1704,147,1699,147,1668,150"/>
-<area shape="rect" id="Node000013" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html" title="A class for reading/writing singles from an ECAT7 .sgl file." alt="" coords="1711,228,1892,272"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1668,247,1713,250,1708,250,1668,253"/>
+<area shape="rect" id="Node000001" title="The base&#45;class for using singles info." alt="" coords="916,163,1041,189"/>
+<area shape="rect" id="Node000006" href="$classstir_1_1SinglesRatesForTimeFrames.html" title="A class for singles rates that are recorded in time frames." alt="" coords="1090,104,1264,147"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1048,156,1088,148,1093,147,1049,161"/>
+<area shape="rect" id="Node000011" href="$classstir_1_1SinglesRatesForTimeSlices.html" title="A class for singles that are recorded at equal time intervals." alt="" coords="1090,203,1264,245"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1051,191,1093,203,1087,203,1051,196"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="718,155,866,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="881,173,918,176,913,176,882,179"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RegisteredObjectBase.html" title="Base class for all classes that can parse .par files (and more?)The only reason that this class exist..." alt="" coords="184,163,362,189"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,166,527,160,694,163,720,167,715,167,694,168,527,166,378,171"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title="Helper class to provide registry mechanisms to a Base class." alt="" coords="412,184,560,227"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="378,188,414,195,409,196,378,193"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ParsingObject.html" title="A base class for objects that want to be able to parse parameter files." alt="" coords="5,163,135,189"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,174,186,175,181,177,151,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="575,197,694,187,720,186,715,187,694,192,576,202"/>
+<area shape="rect" id="Node000007" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1313,5,1580,64"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1250,96,1312,73,1345,65,1350,64,1314,79,1251,101"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1328,88,1565,163"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="1279,123,1330,125,1325,126,1279,128"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1SinglesRatesFromJSON.html" title="A class that gets the singles rates of the singles units (&quot;buckets&quot;) from a JSON file." alt="" coords="1630,21,1821,48"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1596,32,1632,34,1626,35,1596,37"/>
+<area shape="rect" id="Node000010" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromECAT7.html" title="A class that extracts singles info from an ECAT7 sinogram file." alt="" coords="1640,104,1811,147"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1581,123,1642,125,1636,126,1581,128"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1328,187,1565,261"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1279,221,1330,224,1325,224,1279,227"/>
+<area shape="rect" id="Node000014" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="1328,285,1565,360"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="1252,249,1345,285,1340,284,1251,254"/>
+<area shape="rect" id="Node000013" href="$classstir_1_1GE_1_1RDF__HDF5_1_1SinglesRatesFromGEHDF5.html" title="A class for reading singles over the number of time samples from an GE HDF5 .BLF listmode file format..." alt="" coords="1630,203,1821,245"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1581,221,1632,224,1626,224,1581,227"/>
+<area shape="rect" id="Node000015" href="$classstir_1_1ecat_1_1ecat7_1_1SinglesRatesFromSglFile.html" title="A class for reading/writing singles from an ECAT7 .sgl file." alt="" coords="1641,301,1810,344"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1581,320,1643,323,1638,323,1581,325"/>
 </map>

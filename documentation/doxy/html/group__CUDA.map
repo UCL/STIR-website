@@ -1,5 +1,6 @@
 <map id="Items relating to CUDA and STIR buildblock objects." name="Items relating to CUDA and STIR buildblock objects.">
-<area shape="rect" id="Node000001" title=" " alt="" coords="213,60,421,105"/>
-<area shape="rect" id="Node000003" href="$group__priors.html" title=" " alt="" coords="686,60,837,105"/>
-<area shape="rect" id="Node000002" href="$group__buildblock.html" title=" " alt="" coords="5,69,164,97"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="199,108,392,151"/>
+<area shape="rect" id="Node000003" href="$group__priors.html" title=" " alt="" coords="635,59,772,101"/>
+<area shape="rect" id="Node000004" href="$group__test.html" title=" " alt="" coords="641,171,766,213"/>
+<area shape="rect" id="Node000002" href="$group__buildblock.html" title=" " alt="" coords="5,116,150,143"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="stir::BackProjectorByBinUsingProjMatrixByBin" name="stir::BackProjectorByBinUsingProjMatrixByBin">
-<area shape="rect" id="Node000001" title="This implements the BackProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="1012,62,1190,107"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="694,54,963,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="978,82,1014,84,1009,85,979,87"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors." alt="" coords="250,35,428,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="444,50,671,65,696,69,691,69,670,70,444,56"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="28,5,162,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,26,251,37,246,39,177,32"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,57,185,102"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,63,252,59,247,60,201,69"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="234,97,443,142"/>
-<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="459,122,562,122,670,116,691,115,697,115,671,121,562,128,459,127"/>
+<area shape="rect" id="Node000001" title="This implements the BackProjectorByBin interface, given any ProjMatrixByBin object." alt="" coords="950,71,1114,113"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="657,63,901,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="916,89,952,92,947,92,916,95"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BackProjectorByBin.html" title="Abstract base class for all back projectors." alt="" coords="231,35,395,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,48,518,54,634,64,660,70,654,70,633,69,518,59,411,53"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="26,5,147,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,26,233,36,228,38,162,31"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,56,168,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="182,62,233,58,228,60,184,67"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="217,113,409,156"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="425,139,526,139,633,131,685,122,690,122,634,136,527,145,425,144"/>
 </map>

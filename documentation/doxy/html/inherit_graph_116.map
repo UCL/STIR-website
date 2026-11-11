@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classstir_1_1InputStreamWithRecords.html" title="A helper class to read data from a (presumably binary) stream." alt="" coords="5,5,218,50"/>
+<area shape="rect" id="Node000000" href="$classstir_1_1InputFileFormat.html" title=" " alt="" coords="5,72,214,115"/>
+<area shape="rect" id="Node000001" href="$classstir_1_1InterfileDynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in Interfile file&#45;format." alt="" coords="271,5,479,48"/>
+<area shape="poly" id="edge515_Node000000_Node000001" title=" " alt="" coords="211,65,289,47,285,50,213,70"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1MultiDynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in Multi file&#45;format." alt="" coords="278,72,472,115"/>
+<area shape="poly" id="edge516_Node000000_Node000002" title=" " alt="" coords="229,91,280,93,275,94,230,96"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ecat_1_1ecat7_1_1ECAT7DynamicDiscretisedDensityInputFileFormat.html" title="Class for reading images in ECAT7 file&#45;format." alt="" coords="262,139,488,197"/>
+<area shape="poly" id="edge517_Node000000_Node000003" title=" " alt="" coords="203,117,271,138,266,139,202,122"/>
 </map>

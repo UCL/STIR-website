@@ -1,11 +1,11 @@
 <map id="stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;" name="stir::ecat::ecat7::CListModeDataECAT&lt; CListRecordT &gt;">
-<area shape="rect" id="Node000001" title="A class that reads the listmode data for ECAT scanners." alt="" coords="20,232,288,277"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data." alt="" coords="79,157,228,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,198,156,233,151,230,152,202"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data." alt="" coords="84,81,224,109"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,122,156,157,151,155,153,127"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etc" alt="" coords="5,5,124,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,40,140,80,136,82,92,46"/>
-<area shape="rect" id="Node000005" href="$classstir_1_1DataWithProjDataInfo.html" title="base class for data objects such as ProjData etc" alt="" coords="148,5,341,33"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="215,45,172,83,168,79,218,41"/>
+<area shape="rect" id="Node000001" title="A class that reads the listmode data for ECAT scanners." alt="" coords="16,229,269,272"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1CListModeData.html" title="The base class for reading PET (i.e. coincidence) list mode data." alt="" coords="74,155,212,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,195,145,230,140,228,141,199"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1ListModeData.html" title="The base class for reading list mode data." alt="" coords="78,80,207,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,120,145,155,140,153,141,125"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1ExamData.html" title="base class for data objects such as ProjData etc" alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,40,131,79,126,81,86,45"/>
+<area shape="rect" id="Node000005" href="$classstir_1_1DataWithProjDataInfo.html" title="base class for data objects such as ProjData etc" alt="" coords="139,5,314,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,44,159,82,155,78,202,41"/>
 </map>

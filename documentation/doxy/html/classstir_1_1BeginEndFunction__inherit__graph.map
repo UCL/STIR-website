@@ -1,9 +1,9 @@
 <map id="stir::BeginEndFunction&lt; TopLevelIterT, RestIterT &gt;" name="stir::BeginEndFunction&lt; TopLevelIterT, RestIterT &gt;">
-<area shape="rect" id="Node000001" title="Helper class for NestedIterator when the 1st level iterator refers to an ordinary iterator for the 2n..." alt="" coords="5,93,211,138"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1ConstBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="452,5,658,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,82,191,61,234,44,289,31,346,24,454,21,449,23,346,29,290,36,235,49,193,66,155,87"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1BeginEndFunction.html" title=" " alt="" coords="439,76,671,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,113,440,114,436,117,226,118"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1BeginEndFunction.html" title=" " alt="" coords="472,179,638,223"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,135,473,183,469,187,226,141"/>
+<area shape="rect" id="Node000001" title="Helper class for NestedIterator when the 1st level iterator refers to an ordinary iterator for the 2n..." alt="" coords="5,113,191,156"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1ConstBeginEndFunction.html" title="Convenience class where the 2nd level iterator is a const_iterator." alt="" coords="410,5,598,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,100,167,69,214,43,263,29,314,20,412,18,407,20,314,25,264,34,216,48,170,73,132,104"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BeginEndFunction.html" title=" " alt="" coords="401,97,608,172"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,132,402,133,398,136,206,137"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1BeginEndFunction.html" title=" " alt="" coords="428,196,581,239"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,157,215,161,429,203,425,206,214,167,198,163"/>
 </map>

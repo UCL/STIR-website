@@ -1,11 +1,11 @@
 <map id="stir::ChainedBinNormalisation" name="stir::ChainedBinNormalisation">
-<area shape="rect" id="Node000001" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects." alt="" coords="85,337,301,365"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="88,226,298,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,301,195,338,191,335,191,305"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="6,108,169,136"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,145,172,225,167,227,106,150"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,170,50"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,63,90,108,85,107,87,69"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="194,99,403,144"/>
-<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="274,154,219,227,215,224,270,158"/>
+<area shape="rect" id="Node000001" title="A BinNormalisation class that simply multiplies the factors given by 2 BinNormalisation objects." alt="" coords="126,341,321,368"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="127,233,320,292"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,306,226,342,221,339,222,309"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1BinNormalisation.html" title="Abstract base class for implementing bin&#45;wise normalisation of data." alt="" coords="6,105,153,132"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,140,197,232,192,234,102,146"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,154,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,61,82,105,77,105,79,66"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="177,97,369,140"/>
+<area shape="poly" id="edge4_Node000002_Node000008" title=" " alt="" coords="263,153,236,234,231,231,259,156"/>
 </map>

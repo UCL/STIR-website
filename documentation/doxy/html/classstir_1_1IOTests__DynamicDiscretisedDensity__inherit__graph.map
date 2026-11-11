@@ -1,10 +1,10 @@
 <map id="stir::IOTests_DynamicDiscretisedDensity" name="stir::IOTests_DynamicDiscretisedDensity">
-<area shape="rect" id="Node000001" title="A simple class to test the OutputFileFormat function." alt="" coords="9,269,245,314"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1IOTests.html" title=" " alt="" coords="5,175,249,220"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,233,129,270,125,267,125,237"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="68,5,176,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,46,129,175,124,174,121,50"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function." alt="" coords="143,82,279,110"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="149,40,198,81,193,83,149,46"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,120,147,176,143,173,189,124"/>
+<area shape="rect" id="Node000001" title="A simple class to test the OutputFileFormat function." alt="" coords="8,272,226,315"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1IOTests.html" title=" " alt="" coords="5,180,229,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,236,119,273,115,271,115,240"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="60,5,163,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,45,119,180,114,179,111,49"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1IOTests.html" title="A simple class to test the OutputFileFormat function." alt="" coords="133,81,256,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="137,40,183,80,178,82,137,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="178,119,134,181,130,178,174,123"/>
 </map>

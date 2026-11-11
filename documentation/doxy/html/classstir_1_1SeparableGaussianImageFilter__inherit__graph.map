@@ -1,14 +1,14 @@
 <map id="stir::SeparableGaussianImageFilter&lt; elemT &gt;" name="stir::SeparableGaussianImageFilter&lt; elemT &gt;">
-<area shape="rect" id="Node000001" title="A class in the DataProcessor hierarchy that implements Gaussian filtering." alt="" coords="1270,88,1486,133"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="841,62,1221,158"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1236,117,1272,119,1267,119,1237,122"/>
-<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="1236,99,1272,102,1267,102,1237,104"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing." alt="" coords="302,35,446,79"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,55,627,60,818,73,844,78,838,78,817,78,627,65,462,60"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,220,50"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,39,304,48,299,50,235,44"/>
-<area shape="rect" id="Node000008" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="46,74,179,102"/>
-<area shape="poly" id="edge4_Node000003_Node000008" title=" " alt="" coords="194,75,303,64,299,67,196,81"/>
-<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="269,140,478,185"/>
-<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="494,167,648,168,733,165,817,158,838,158,843,157,818,163,734,171,648,174,494,172"/>
+<area shape="rect" id="Node000001" title="A class in the DataProcessor hierarchy that implements Gaussian filtering." alt="" coords="1169,100,1365,143"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="785,76,1120,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1135,128,1171,130,1166,130,1135,133"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="1135,110,1171,113,1166,113,1135,115"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1DataProcessor.html" title="Base class that defines an interface for classes that do data processing." alt="" coords="276,35,410,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,52,582,56,672,62,762,72,788,78,782,79,761,77,672,67,582,61,426,58"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1RegisteredObject.html" title=" " alt="" coords="5,5,198,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,38,278,47,273,49,213,43"/>
+<area shape="rect" id="Node000008" href="$classstir_1_1TimedObject.html" title="base class for all objects which need timers. At the moment, there&#39;s only a CPU timer." alt="" coords="41,72,162,99"/>
+<area shape="poly" id="edge4_Node000003_Node000008" title=" " alt="" coords="177,74,278,63,274,66,178,79"/>
+<area shape="rect" id="Node000009" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="247,164,439,207"/>
+<area shape="poly" id="edge5_Node000002_Node000009" title=" " alt="" coords="455,192,601,195,682,191,761,181,828,168,834,167,762,187,682,196,601,200,455,197"/>
 </map>

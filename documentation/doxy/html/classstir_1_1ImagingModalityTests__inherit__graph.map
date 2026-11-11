@@ -1,5 +1,5 @@
 <map id="stir::ImagingModalityTests" name="stir::ImagingModalityTests">
-<area shape="rect" id="Node000001" title="Test class for ImagingModality." alt="" coords="5,81,199,109"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="48,5,156,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,47,104,82,100,80,100,51"/>
+<area shape="rect" id="Node000001" title="Test class for ImagingModality." alt="" coords="5,80,180,107"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RunTests.html" title="A base class for making test classes." alt="" coords="41,5,144,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,46,95,81,90,79,91,50"/>
 </map>

@@ -1,11 +1,11 @@
 <map id="stir::SRT2DSPECTReconstruction" name="stir::SRT2DSPECTReconstruction">
-<area shape="rect" id="Node000001" title="Reconstruction class for 2D Spline Reconstruction Technique." alt="" coords="1068,58,1298,86"/>
-<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="734,33,1019,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1034,70,1070,72,1065,72,1035,75"/>
-<area shape="rect" id="Node000003" href="$classstir_1_1AnalyticReconstruction.html" title="base class for all analytic reconstruction algorithmsThis class provides extra functinoality (compare..." alt="" coords="218,22,419,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,37,711,52,737,57,731,57,710,57,434,43"/>
-<area shape="rect" id="Node000004" href="$classstir_1_1Reconstruction.html" title=" " alt="" coords="5,5,165,67"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,34,221,35,215,37,181,39"/>
-<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="214,84,423,129"/>
-<area shape="poly" id="edge4_Node000002_Node000012" title=" " alt="" coords="439,110,570,111,710,103,731,103,736,103,711,108,570,116,439,115"/>
+<area shape="rect" id="Node000001" title="Reconstruction class for 2D Spline Reconstruction Technique." alt="" coords="986,65,1210,92"/>
+<area shape="rect" id="Node000002" href="$classstir_1_1RegisteredParsingObject.html" title=" " alt="" coords="685,41,937,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="952,76,988,79,983,79,952,81"/>
+<area shape="rect" id="Node000003" href="$classstir_1_1AnalyticReconstruction.html" title="base class for all analytic reconstruction algorithmsThis class provides extra functinoality (compare..." alt="" coords="204,21,386,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,34,526,40,662,51,687,56,682,56,661,56,526,45,402,39"/>
+<area shape="rect" id="Node000004" href="$classstir_1_1Reconstruction.html" title=" " alt="" coords="5,5,150,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,32,206,34,201,36,166,37"/>
+<area shape="rect" id="Node000012" href="$classstir_1_1RegisteredParsingObject.html" title="Parent class for all leaves in a RegisteredObject hierarchy that do parsing of parameter files." alt="" coords="199,100,391,143"/>
+<area shape="poly" id="edge4_Node000002_Node000012" title=" " alt="" coords="407,126,530,127,596,124,661,117,682,116,687,116,662,123,596,129,530,132,407,131"/>
 </map>

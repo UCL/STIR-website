@@ -1,4 +1,1322 @@
 -------------------------------
+Tue, 10 Nov 2026 07:42:30 +0000  Kris Thielemans  
+
+Merge pull request #1787 from KrisThielemans/release_6.5.0
+Prep release 6.5.0
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] small generalisations for conda builds
+- cope with CXX not set
+- add -DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=TRUE
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] remove yardl/PETSIRD install
+now done via build_environment.yml
+
+
+.github/workflows/build-test.yml
+build_environment.yml
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOXYGEN] exclude install and build directories
+just in case someone does an in-source build (as we do
+on GitHub Actions!)
+
+
+src/Doxyfile.in
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] upload some build files for debugging
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] cache Zenodo ROOT files
+Fixes #1758
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:13 +0100  Kris Thielemans@ucl.ac.uk  
+
+some corrections for doxygen
+
+
+src/include/stir/ByteOrder.h
+src/include/stir/IO/HDF5_utilities.h
+src/include/stir/SeparableConvolutionImageFilter.h
+src/include/stir/extend_projdata.h
+src/include/stir_experimental/ModifiedInverseAverigingImageFilter.h
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:12 +0100  Kris Thielemans@ucl.ac.uk  
+
+minor updates to CList*GEHDF5
+- remove unnecessary union, as it crashes doxy2swig
+- replace boost/cstdint with std version
+
+
+src/include/stir/listmode/CListRecordGEHDF5.h
+
+-------------------------------
+Tue, 10 Nov 2026 00:51:12 +0100  Kris Thielemans@ucl.ac.uk  
+
+add cxx-compiler to build_environment.yml
+Mixing system compilers and conda-forge libs sometimes fails.
+
+
+build_environment.yml
+
+-------------------------------
+Mon, 9 Nov 2026 20:09:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+6.5 doc etc
+- update build_environment with libpetsird etc and distrib script
+- add Alan to CITATION.cff and do some reordering
+- updated VERSION.txt etc for release of version 6.5.0
+
+
+.mailmap
+CITATION.cff
+LICENSE.txt
+build_environment.yml
+documentation/STIR-UsersGuide.tex
+documentation/credits.htm
+documentation/history.htm
+documentation/release_6.5.htm
+scripts/maintenance/make_distribution.sh
+
+-------------------------------
+Mon, 9 Nov 2026 16:57:59 +0100  Kris Thielemans@ucl.ac.uk  
+
+clean-up of release_6.5.htm
+
+
+documentation/release_6.5.htm
+
+-------------------------------
+Mon, 9 Nov 2026 10:11:23 +0000  Kris Thielemans  
+
+Merge pull request #1746 from KrisThielemans/ROOTBlocksSupport
+Better generic/blocks-on-cylindrical support: ROOT support and enabled TOF
+
+-------------------------------
+Mon, 9 Nov 2026 09:43:52 +0100  Kris Thielemans@ucl.ac.uk  
+
+use ProjDataInfoPETScannerWithDiscreteDetectors
+future-proof SimSET converter
+
+
+src/SimSET/conv_SimSET_crystal_pairs_to_STIR.cxx
+
+-------------------------------
+Mon, 9 Nov 2026 09:37:00 +0100  Kris Thielemans@ucl.ac.uk  
+
+Merge remote-tracking branch 'origin/master' into ROOTBlocksSupport
+
+
+-------------------------------
+Mon, 9 Nov 2026 02:45:37 +0000  Kris Thielemans  
+
+Merge pull request #1785 from KrisThielemans/HDF5_handling
+safe and silent testing of HDF5 for GE and PETSIRD
+
+Test more completely if various groups/datasets are present, as opposed to just check if it's a HDF5 file, as that fails when both GE and PETSIRD data are supported.
+
+Also add some extra HDF5 utilities to do the testing silently.
+
+-------------------------------
+Mon, 9 Nov 2026 01:23:15 +0000  Kris Thielemans@ucl.ac.uk  
+
+safe and silent testing of HDF5 for GE and PETSIRD
+Test more completely if various groups/datasets are present,
+as opposed to just check if it's a HDF5 file, as that fails
+when both GE and PETSIRD data are supported.
+
+Also add some extra HDF5 utilities to do the testing silently.
+
+Fixes #1571
+
+
+src/IO/GEHDF5ListmodeInputFileFormat.cxx
+src/IO/GEHDF5Wrapper.cxx
+src/IO/PETSIRDCListmodeInputFileFormat.cxx
+src/include/stir/IO/GEHDF5Wrapper.h
+src/include/stir/IO/HDF5_utilities.h
+
+-------------------------------
+Sun, 8 Nov 2026 23:29:55 +0000  Kris Thielemans  
+
+Merge pull request #1774 from rmapree/simset-crystal-pair-rebinner
+Add conv_SimSET_crystal_pairs_to_STIR utility and script
+
+-------------------------------
+Sun, 8 Nov 2026 21:29:07 +0000  Kris Thielemans@ucl.ac.uk  
+
+Merge remote-tracking branch 'origin/master' into simset-crystal-pair-rebinner
+
+
+-------------------------------
+Sun, 8 Nov 2026 21:10:39 +0000  Alan Osys  
+
+Singles and dead-time correction in ECAT8 and PETSIRD (#1770)
+Add dead time correction for ECAT8 and PETSIRD listmode data
+
+* Generic
+
+- Add ListAccumulatedSingles base class following ListTime/ListEvent pattern
+- Add is_accumulated_singles()/accumulated_singles() to CListRecord with default implementations
+- Read per-bucket singles in LmToProjData, write to JSON file
+- Add SinglesRatesFromJSON to read per-bucket singles rates
+
+* mMR/ECAT8
+
+- Fix singles-units info for Siemens mMR
+- Update mMR templates used in the tests
+- Decode PETLINK singles words in CListRecordECAT8_32bit (type=1, subtype=1)
+- Read dtp/dtnp dead time parameters from ECAT8 norm binary file
+- Implement combined paralysable/non-paralysable dead time formula
+  in BinNormalisationFromECAT8 using real per-frame singles rates
+
+* PETSIRD
+
+- PETSIRDInfo: constructor takes shared_ptr<const Header> to avoid copying the header
+- PETSIRDInfo: use the module-pair efficiencies even if there are no per-bin efficiencies,
+and order the detection bins as needed for the lower-triangular module-pair tables
+- Store pre-computed alive fractions in PETSIRD DeadTimeTimeBlock entries
+  during STIR2PETSIRD conversion (scanner-agnostic at reconstruction time)
+- Add singles accumulation to CListModeDataPETSIRD for PETSIRD pipeline
+- Read DeadTimeTimeBlock and use entries in BinNormalisationFromPETSIRD
+(out for module-pair alive-time fractions as not supported yet)
+- CListModeDataPETSIRD: free the module-pair efficiencies after reading the header (several GB)
+- Release PETSIRD file reader after read_norm_data() to reduce memory usage
+
+* Document ECAT8 and PETSIRD dead-time in release notes and User's Guide
+
+---------
+
+Co-authored-by: Kris Thielemans
+
+documentation/STIR-UsersGuide.tex
+documentation/release_6.5.htm
+examples/Siemens-mMR/README.md
+examples/Siemens-mMR/template_span1.hs
+examples/Siemens-mMR/template_span11.hs
+recon_test_pack/Siemens_mMR_seg2.hs
+src/buildblock/PETSIRDInfo.cxx
+src/buildblock/Scanner.cxx
+src/data_buildblock/CMakeLists.txt
+src/data_buildblock/SinglesRatesFromJSON.cxx
+src/data_buildblock/data_buildblock_registries.cxx
+src/include/stir/PETSIRDInfo.h
+src/include/stir/data/SinglesRatesFromJSON.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListRecord.h
+src/include/stir/listmode/CListRecordECAT8_32bit.h
+src/include/stir/listmode/ListAccumulatedSingles.h
+src/include/stir/recon_buildblock/BinNormalisationFromECAT8.h
+src/include/stir/recon_buildblock/BinNormalisationFromPETSIRD.h
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CListRecordPETSIRD.cxx
+src/listmode_buildblock/LmToProjData.cxx
+src/listmode_utilities/lm_fansums.cxx
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+src/recon_buildblock/BinNormalisationFromPETSIRD.cxx
+
+-------------------------------
+Sun, 8 Nov 2026 18:18:17 +0000  rmapree  
+
+Address review comments
+- take the block layout from the template instead of 4 extra arguments
+- add author
+- add TODO to use ProjDataInfoPETWithDiscreteDetectors once #1746 is merged
+- add PR number to release notes
+- remove unclear comment on synchronisation
+- remove "How the conversion works" from the README
+- fix scatter_param example for singles_scat mode
+
+
+documentation/release_6.5.htm
+src/SimSET/README.txt
+src/SimSET/conv_SimSET_crystal_pairs_to_STIR.cxx
+src/SimSET/scripts/conv_SimSET_crystal_pairs_to_STIR.sh
+
+-------------------------------
+Sat, 7 Nov 2026 09:37:40 +0000  Kris Thielemans  
+
+Merge pull request #1782 from MatteoNeelColombo/fix-SPECTUB-first-lor
+SPECTUB/PinholeSPECTUB: fill the first LOR of each view from the cache
+
+-------------------------------
+Fri, 6 Nov 2026 10:54:03 +0100  Matteo Colombo  
+
+SPECTUB/PinholeSPECTUB: fill the first LOR of each view from the cache
+calculate_proj_matrix_elems_for_one_bin() computed the whole view into the
+cache, but returned an empty LOR for the bin that triggered the computation.
+When not all views are kept in the cache, this made forward and back
+projection inconsistent when used one after the other on the same view
+(e.g. in the gradient of the Poisson log-likelihood, see #1776).
+
+Fixes #1576
+
+
+documentation/release_6.5.htm
+src/recon_buildblock/ProjMatrixByBinPinholeSPECTUB.cxx
+src/recon_buildblock/ProjMatrixByBinSPECTUB.cxx
+
+-------------------------------
+Sun, 1 Nov 2026 17:39:15 +0000  Kris Thielemans  
+
+Minor adjustments for PETSIRD 0.11/0.12 (#1780)
+* minor fixes for PETSIRD 0.11/0.12
+
+* update CI to use PETSIRD 0.12.2
+
+.github/workflows/build-test.yml
+src/buildblock/PETSIRDInfo.cxx
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+
+-------------------------------
+Sat, 31 Oct 2026 10:51:19 +0000  Kris Thielemans@ucl.ac.uk  
+
+Some extra documentation on swaps
+
+
+src/listmode_buildblock/CListRecordROOT.cxx
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Thu, 29 Oct 2026 00:00:16 +0000  Alan Osys  
+
+hdf5 \0 removal (#1777)
+* Added a couple lines that remove 0's from the scanner description that caused GE RDF9 HDF5 files to not be read
+---------
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+documentation/release_6.5.htm
+src/IO/GEHDF5Wrapper.cxx
+
+-------------------------------
+Fri, 23 Oct 2026 12:06:17 +0100  Kris Thielemans@ucl.ac.uk  
+
+make ProjDataInfo*NoArcCorr::find_cartesian_coordinates_given_scanner_coordinates protected
+
+
+documentation/release_6.5.htm
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+
+-------------------------------
+Fri, 23 Oct 2026 09:03:43 +0100  Kris Thielemans@ucl.ac.uk  
+
+minor clean-up
+- use ProjDataInfoPETScannerWithDiscreteDetectors as base_type for
+ProjDataInfoGeneric, which is clearer and more future-proof
+(but still identical to the previous situation of course)
+
+- remove obsolete ProjDataInfoGeneric.cxx
+
+- reset verbosity for info on TOF info to 2 from 3 for now.
+
+
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/ProjDataInfoGeneric.cxx
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+src/listmode_buildblock/CListRecordROOT.cxx
+
+-------------------------------
+Fri, 23 Oct 2026 08:52:20 +0100  Kris Thielemans@ucl.ac.uk  
+
+remove files checked-in by accident
+
+
+src/swig/n.swg
+src/swig/test_projdata.hs
+src/swig/test_projdata.s
+src/test_projdata.hs
+src/test_projdata.s
+
+-------------------------------
+Tue, 6 Oct 2026 16:17:10 +0100  Nikos Efthimiou  
+
+Optionally export a single segment (#1773)
+* Optionally export a single segment in extract_segments
+
+src/utilities/extract_segments.cxx
+
+-------------------------------
+Fri, 2 Oct 2026 18:51:28 +0100  Kris Thielemans  
+
+Merge pull request #1772 from KrisThielemans/cudautilities.cu
+enable use of cuvec and allocator in .cxx
+
+-------------------------------
+Fri, 2 Oct 2026 18:02:33 +0100  Kris Thielemans@ucl.ac.uk  
+
+include cuvec.h also from .cxx
+
+
+src/include/stir/cuda_utilities.h
+src/test/CMakeLists.txt
+src/test/test_cuda_utilities_from_cxx.cxx
+
+-------------------------------
+Fri, 2 Oct 2026 17:27:40 +0100  rmapree  
+
+Add conv_SimSET_crystal_pairs_to_STIR utility and script
+Converts SimSET weight files from block-detector simulations binned by
+crystal pair (bin_by_crystal = true) to STIR projection data, for
+Cylindrical and BlocksOnCylindrical templates.
+
+conv_SimSET_crystal_pairs_to_STIR.sh reads the SimSET binning from the
+weight file header (printheader) and the block layout from the STIR
+template, then calls the executable.
+
+
+documentation/release_6.5.htm
+src/SimSET/CMakeLists.txt
+src/SimSET/README.txt
+src/SimSET/conv_SimSET_crystal_pairs_to_STIR.cxx
+src/SimSET/scripts/CMakeLists.txt
+src/SimSET/scripts/conv_SimSET_crystal_pairs_to_STIR.sh
+
+-------------------------------
+Thu, 1 Oct 2026 23:56:05 +0100  Daniel Deidda  
+
+move cuda_utilities inlines to .cu
+keep declaration of `array_to_device` etc even without nvcc
+such that we can use them from cxxfiles.
+
+
+src/buildblock/CMakeLists.txt
+src/buildblock/CUDA/cuda_utilities.cu
+src/include/stir/cuda_utilities.h
+
+-------------------------------
+Thu, 1 Oct 2026 22:50:26 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PRECOMMIT] update pymarkdown
+
+
+.pre-commit-config.yaml
+
+-------------------------------
+Thu, 1 Oct 2026 22:50:26 +0100  Casper da Costa-Luis  
+
+pre-commit: fix pymarkdown
+
+
+.pre-commit-config.yaml
+documentation/devel/git-recommendations.md
+
+-------------------------------
+Mon, 21 Sep 2026 09:15:14 +0100  Kris Thielemans@ucl.ac.uk  
+
+minor clean-up of some tests
+Mostly code clean-up, but includes 1 test now running
+over "negative" TOF bins as well.
+
+
+src/recon_test/test_consistency_with_GATE.cxx
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Mon, 21 Sep 2026 02:54:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+run test_consistency_with_GATE for blocks and cylindrical
+
+
+src/recon_test/CMakeLists.txt
+src/recon_test/test_consistency_with_GATE.cxx
+
+-------------------------------
+Mon, 21 Sep 2026 02:54:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+add test if get_k is consistent between cyl/block/generic
+
+
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Mon, 21 Sep 2026 02:52:42 +0100  Kris Thielemans@ucl.ac.uk  
+
+fix ProjDataInfoGenericNoArcCorr::get_LOR and CListRecordROOT
+test consistency with GATE and CListRecordROOT::get_LOR is
+consistent with ProjDataInfo::get_LOR
+
+Also
+- implement CListRecordROOT::set_detection_position
+- expand test_time_of_flight
+  if ROOT is available, add more checks with different
+  detector orders and TOF bin sign
+
+
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/listmode_buildblock/CListRecordROOT.cxx
+src/test/test_Scanner.cxx
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 21 Sep 2026 00:15:50 +0100  Kris Thielemans@ucl.ac.uk  
+
+add stream/Python output for LORAs2Points
+
+
+src/include/stir/stream.h
+src/swig/stir_LOR.i
+
+-------------------------------
+Mon, 14 Sep 2026 17:55:39 +0100  Kris Thielemans@ucl.ac.uk  
+
+update "GATE consistency" zenodo to blocksoncylindrical version
+
+
+src/recon_test/CMakeLists.txt
+
+-------------------------------
+Sun, 13 Sep 2026 15:09:33 +0200  Kris Thielemans@ucl.ac.uk  
+
+re-enable call to Scanner::set_up() in `set_params()` until v7
+
+
+src/buildblock/Scanner.cxx
+
+-------------------------------
+Sun, 13 Sep 2026 10:30:29 +0200  Kris Thielemans@ucl.ac.uk  
+
+rewrite code to avoid VS2019 compiler bug
+
+
+src/test/IO/test_IO_ITKMulticomponent.cxx
+
+-------------------------------
+Sun, 13 Sep 2026 08:51:46 +0200  Kris Thielemans@ucl.ac.uk  
+
+more Scanner::set_up() calls
+
+
+examples/python/NeuroLF_reconstruction_example/stir_data_generation.py
+examples/python/construct_projdata_demo.py
+examples/python/plot_scanner_LORs.py
+examples/python/print_scanner_info.py
+src/IO/ECAT6OutputFileFormat.cxx
+src/IO/ECAT7DynamicDiscretisedDensityOutputFileFormat.cxx
+src/IO/ECAT7OutputFileFormat.cxx
+src/IO/ECAT7ParametricDensityOutputFileFormat.cxx
+src/IO/MultiDynamicDiscretisedDensityInputFileFormat.cxx
+src/SimSET/conv_SimSET_projdata_to_STIR.cxx
+src/buildblock/Scanner.cxx
+src/listmode_buildblock/CListModeDataECAT8_32bit.cxx
+src/listmode_buildblock/CListModeDataPENN.cxx
+src/modelling_utilities/get_dynamic_images_from_parametric_images.cxx
+src/recon_buildblock/NiftyPET_projector/NiftyPETHelper.cxx
+src/swig/test/matlab/test_IO.m
+src/swig/test/matlab/test_buildblock.m
+src/swig/test/python/test_IO.py
+src/swig/test/python/test_buildblock.py
+src/swig/test/python/test_numpy.py
+src/utilities/conv_GATE_raw_ECAT_projdata_to_interfile.cxx
+src/utilities/ecat/conv_to_ecat6.cxx
+src/utilities/ecat/conv_to_ecat7.cxx
+src/utilities/ecat/convecat6_if.cxx
+src/utilities/list_detector_and_bin_info.cxx
+
+-------------------------------
+Sat, 12 Sep 2026 18:23:53 +0200  Nikos Efthimiou  
+
+more Scanner::set_up()
+* Ask scanner if has been set_up before constructing ProjDataInfo
+
+* Make sure set_up() is called in every test.
+
+src/buildblock/ProjDataInfo.cxx
+src/include/stir/Scanner.h
+src/recon_test/test_DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/recon_test/test_FBP2D.cxx
+src/recon_test/test_FBP3DRP.cxx
+src/recon_test/test_PoissonLogLikelihoodWithLinearModelForMeanAndProjData.cxx
+src/test/test_ArcCorrection.cxx
+src/test/test_ML_norm.cxx
+src/test/test_ScatterSimulation.cxx
+src/test/test_VoxelsOnCartesianGrid.cxx
+src/test/test_export_array.cxx
+src/test/test_multiple_proj_data.cxx
+src/test/test_proj_data.cxx
+src/test/test_proj_data_info_subsets_pet.cxx
+src/test/test_proj_data_maths.cxx
+src/test/test_stir_math.cxx
+
+-------------------------------
+Sat, 12 Sep 2026 09:10:59 +0200  Kris Thielemans@ucl.ac.uk  
+
+Scanner::set_up() in ReconstructionTests
+Also run on non-arccorrected data, as that's what we do
+these days.
+
+
+src/include/stir/recon_buildblock/test/ReconstructionTests.h
+src/scatter_buildblock/ScatterSimulation.cxxxx
+src/swig/n.swg
+src/swig/test_projdata.hs
+src/swig/test_projdata.s
+src/test_projdata.hs
+src/test_projdata.s
+
+-------------------------------
+Sat, 12 Sep 2026 09:10:59 +0200  Kris Thielemans@ucl.ac.uk  
+
+added release notes and updated .hroot example file
+
+
+documentation/release_6.5.htm
+examples/samples/root_header.hroot
+
+-------------------------------
+Sat, 12 Sep 2026 09:10:59 +0200  Kris Thielemans@ucl.ac.uk  
+
+Use ProjDataInfoPETScannerWithDiscreteDetectors in more places
+future-proof and simplify code in a few places
+
+
+src/buildblock/ML_norm.cxx
+src/buildblock/multiply_crystal_factors.cxx
+src/experimental/utilities/interpolate_blocks.cxx
+src/experimental/utilities/set_blocks_to_value.cxx
+src/include/stir/ML_norm.h
+src/recon_buildblock/BinNormalisationFromECAT8.cxx
+src/recon_buildblock/BinNormalisationFromGEHDF5.cxx
+src/test/test_ML_norm.cxx
+src/test/test_time_of_flight.cxx
+src/utilities/list_detector_and_bin_info.cxx
+
+-------------------------------
+Wed, 9 Sep 2026 14:15:43 -0700  Kris Thielemans@ucl.ac.uk  
+
+fix uninitialised _already_set_up warning
+valgrind detected that ProjectorByBinPairUsingParallelproj::_already_set_up
+was used before initialisatoin in set_defaults(). It shouldn't matter
+as it was afterwards set to false anyway. Nevertheless, best to fix it.
+
+
+src/recon_buildblock/Parallelproj_projector/ProjectorByBinPairUsingParallelproj.cxx
+
+-------------------------------
+Wed, 9 Sep 2026 13:59:31 -0700  Kris Thielemans@ucl.ac.uk  
+
+call Scanner::set_up()
+
+
+src/IO/GEHDF5Wrapper.cxx
+src/IO/InterfileHeader.cxx
+src/IO/InterfileHeaderSiemens.cxx
+src/IO/InterfilePDFSHeaderSPECT.cxx
+src/IO/stir_ecat7.cxx
+src/buildblock/PETSIRDInfo.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 23:03:44 -0700  Kris Thielemans@ucl.ac.uk  
+
+fix ROOT header for test of consistency with GATE
+
+
+examples/ROOT_files/ROOT_STIR_consistency/root_header_test_template.hroot
+src/recon_test/test_consistency_with_GATE.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 23:02:20 -0700  Kris Thielemans@ucl.ac.uk  
+
+Fix bug in Interfile parsing for Blocks info
+If the scanner was recognised, but the
+axial_distance_between_crystals_in_cm was not explicitly
+given, it was initialised from the transaxial distance.
+
+Fixes #1752
+
+
+src/IO/InterfileHeader.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 22:57:52 -0700  Kris Thielemans@ucl.ac.uk  
+
+enable TOF for BlocksOnCylindrical/Generic
+no longer set tof_mashing=0 and remove some checks
+that were throwing errors if TOF data was detected.
+
+adapt test_time_of_flight.cxx to test the Blocks case.
+This needed coping with LOR end-points not necessarily corresponding
+to the detectors.
+
+
+src/IO/InterfileHeader.cxx
+src/buildblock/ProjDataInfo.cxx
+src/buildblock/ProjDataInfoBlocksOnCylindricalNoArcCorr.cxx
+src/buildblock/ProjDataInfoGenericNoArcCorr.cxx
+src/include/stir/ProjDataInfoBlocksOnCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoGenericNoArcCorr.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/test/test_DetectorCoordinateMap.cxx
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 22:46:01 -0700  Kris Thielemans@ucl.ac.uk  
+
+add extra run-time checks for BlocksOnCylindrical scanner
+- add basic checks on crystal/blocks spacing when constructing the
+  geometry (call error() when they fail).
+- add check on ring-distance (call warning() when it fails)
+  See https://github.com/UCL/STIR/issues/1753
+- add block-info for GE Signa PET/MR
+
+The checks will be performed when calling Scanner::set_up().
+
+WARNING: set_up() now needs to be called explicitly.
+(We used to call it in the constructor, but can no longer do that
+as it might then throw in unexpected cases).
+
+
+src/buildblock/GeometryBlocksOnCylindrical.cxx
+src/buildblock/Scanner.cxx
+src/listmode_buildblock/CListModeDataROOT.cxx
+src/test/test_Scanner.cxx
+src/test/test_interpolate_projdata.cxx
+src/test/test_proj_data_info.cxx
+src/test/test_time_of_flight.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 22:01:50 -0700  Kris Thielemans@ucl.ac.uk  
+
+add helpers for LORInAxialAndNoArcCorrSinogramCoordinates
+- add RunTests::check_if_equal for LORInAxialAndNoArcCorrSinogramCoordinates
+(and DetectoinPositionPair)
+- add text output to stream for LORInAxialAndNoArcCorrSinogramCoordinates
+- use the latter in Python
+
+
+src/include/stir/RunTests.h
+src/include/stir/geometry/line_distances.h
+src/include/stir/stream.h
+src/swig/stir_LOR.i
+
+-------------------------------
+Mon, 7 Sep 2026 18:06:12 -0700  Kris Thielemans@ucl.ac.uk  
+
+Merge remote-tracking branch 'origin/master' into ROOTBlocksSupport
+
+
+-------------------------------
+Mon, 7 Sep 2026 18:00:48 -0700  Nikos Efthimiou  
+
+fixed more warnings (#1748)
+* fixed more warnings
+
+* Potential bug, in PETSIRD if x and y axis are the same size then z won't be checked.
+
+* fix hidden base function
+
+* Use of format with typeid to avoid using outdated `warning("string %s", "bla")`
+
+src/buildblock/ArcCorrection.cxx
+src/buildblock/RadionuclideDB.cxx
+src/buildblock/recon_array_functions.cxx
+src/display/screen.c
+src/include/stir/detail/PETSIRDInfo_helpers.h
+src/include/stir/recon_buildblock/BackProjectorByBinUsingProjMatrixByBin.h
+src/include/stir/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.inl
+src/recon_buildblock/DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/scatter_buildblock/sample_scatter_points.cxx
+src/test/numerics/test_Fourier.cxx
+src/test/test_proj_data_info_subsets_pet.cxx
+src/test/test_proj_data_info_subsets_spect.cxx
+src/test/test_stir_math.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 17:52:02 -0700  Kris Thielemans  
+
+Merge pull request #1731 from UCL/compare_coordinates
+Simple test for get_m() and scanner z_shift()
+
+-------------------------------
+Mon, 7 Sep 2026 17:49:42 -0700  Kris Thielemans@ucl.ac.uk  
+
+updated release notes [ci skip]
+
+
+documentation/release_6.5.htm
+
+-------------------------------
+Mon, 7 Sep 2026 17:49:42 -0700  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] expose DetectorCoordinateMap to Python
+
+
+src/swig/stir_projdata.i
+
+-------------------------------
+Mon, 7 Sep 2026 17:49:42 -0700  Kris Thielemans@ucl.ac.uk  
+
+rename Scanner::*detector_coordinate_map members
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Mon, 7 Sep 2026 17:49:42 -0700  NikEfth  
+
+Simple test for get_m() and scanner z_shift()
+
+
+src/buildblock/Scanner.cxx
+src/include/stir/Scanner.h
+src/include/stir/listmode/CListRecordSAFIR.h
+src/recon_test/test_blocks_on_cylindrical_projectors.cxx
+src/test/test_proj_data_info.cxx
+
+-------------------------------
+Sat, 5 Sep 2026 10:10:27 -0700  Kris Thielemans  
+
+Merge pull request #1725 from KrisThielemans/test_interpolate_projdata_improvements
+reduce copy-paste in test_interpolate_projdata
+
+-------------------------------
+Fri, 4 Sep 2026 21:59:02 -0700  Kris Thielemans@ucl.ac.uk  
+
+Merge branch 'master' into test_interpolate_projdata_improvements
+
+
+-------------------------------
+Wed, 12 Aug 2026 15:27:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+removed some obsolete files
+
+
+.travis.yml
+src/buildblock/Jamfile
+src/swig/Makefile
+
+-------------------------------
+Wed, 12 Aug 2026 15:27:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+set version to 6.5.0
+
+
+CMakeLists.txt
+VERSION.txt
+
+-------------------------------
+Mon, 10 Aug 2026 13:11:52 +0100  Kris Thielemans@ucl.ac.uk  
+
+[ROOT] support BlocksOnCylindrical
+add "blocks" keywords to .hroot
+
+
+src/include/stir/listmode/CListModeDataROOT.h
+src/include/stir/listmode/CListRecordROOT.h
+src/listmode_buildblock/CListModeDataROOT.cxx
+src/listmode_buildblock/CListRecordROOT.cxx
+
+-------------------------------
+Mon, 10 Aug 2026 13:11:52 +0100  Kris Thielemans@ucl.ac.uk  
+
+add ProjDataInfoPETScannerWithDiscreteDetectors
+try to future-proof changes in the hierarchy
+
+
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.h
+src/include/stir/ProjDataInfoPETScannerWithDiscreteDetectors.h
+
+-------------------------------
+Mon, 10 Aug 2026 13:10:48 +0100  Kris Thielemans  
+
+Merge pull request #1741 (ROOT fixes)
+ROOT fixes
+
+-------------------------------
+Mon, 10 Aug 2026 11:11:58 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] test ROOT 6.40
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Mon, 10 Aug 2026 11:11:58 +0100  Kris Thielemans@ucl.ac.uk  
+
+Fix incompatibility problem with ROOT 6.38 or later.
+Previous versions of STIR either crashed or threw an error `Entry is null`.
+
+Fixes #1740
+
+
+documentation/release_6.5.htm
+src/IO/InputStreamFromROOTFile.cxx
+
+-------------------------------
+Mon, 10 Aug 2026 11:11:58 +0100  Kris Thielemans@ucl.ac.uk  
+
+fix uninitialised value in LmToProjData
+_already_setup was not explicitly initialised when calling
+set_input_data(). Luckily (?), it usually defaults to 0.
+
+
+src/listmode_buildblock/LmToProjData.cxx
+
+-------------------------------
+Mon, 10 Aug 2026 11:10:32 +0100  Kris Thielemans  
+
+Merge pull request #1743 from KrisThielemans/SWIG4.5
+[SWIG] update for SWIG 4.5
+
+-------------------------------
+Mon, 10 Aug 2026 08:08:25 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] PyInt_From* -> PyLong_From*
+
+
+src/swig/stir.i
+
+-------------------------------
+Mon, 10 Aug 2026 08:08:25 +0100  Kris Thielemans@ucl.ac.uk  
+
+[SWIG] update numpy SWIG files for SWIG 4.5
+sync with numpy
+
+Fixes #1743
+
+
+documentation/release_6.5.htm
+src/swig/numpy.i
+src/swig/pyfragments.swg
+
+-------------------------------
+Mon, 10 Aug 2026 07:56:10 +0100  Nikos Efthimiou  
+
+Fixed string find comparison
+
+
+src/modelling_utilities/extract_single_images_from_parametric_image.cxx
+src/utilities/extract_single_images_from_dynamic_image.cxx
+
+-------------------------------
+Mon, 10 Aug 2026 07:54:45 +0100  Alan Osys  
+
+Reduce redundancy in PETSIRD reading code (#1737)
+* Cleaned up the code as asked and added m_last_header to the header to cache. Checked that it works from converting to full reconstruction.
+---------
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+
+-------------------------------
+Sat, 1 Aug 2026 08:38:41 +0200  Alan Osys  
+
+PETSIRD: Fixing header reading and detection efficiency lookup. (#1733)
+* Fixed header reading
+
+* detection efficiency cope with span/compressed template proj-data-info.
+
+---------
+
+Co-authored-by: Kris Thielemans <KrisThielemans@users.noreply.github.com>
+
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/recon_buildblock/BinNormalisationFromPETSIRD.cxx
+
+-------------------------------
+Mon, 27 Jul 2026 07:41:03 +0100  Kris Thielemans@ucl.ac.uk  
+
+PETSIRD: fix delayeds and some corner cases
+- properly read delayed_events_are_stored
+- handle corner cases where there are no prompts/delayeds in a time block.
+Before, we were aborting.
+
+
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+
+-------------------------------
+Fri, 17 Jul 2026 07:31:34 +0100  Kris Thielemans  
+
+Merge reading of PETSIRD list-mode and norm data (#1604)
+
+
+-------------------------------
+Thu, 16 Jul 2026 22:58:21 +0100  Kris Thielemans@ucl.ac.uk  
+
+PETSIRD: move a function to .cxx
+
+
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/listmode_buildblock/CListRecordPETSIRD.cxx
+
+-------------------------------
+Thu, 16 Jul 2026 21:30:08 +0100  Kris Thielemans@ucl.ac.uk  
+
+add release notes
+
+
+documentation/release_6.5.htm
+
+-------------------------------
+Thu, 16 Jul 2026 08:44:57 +0100  Kris Thielemans@ucl.ac.uk  
+
+[CMake] add FMT_INCLUDE_DIR to stir_registries
+Headers included in a "registry.cxx" can now include stir/format.h
+
+
+src/CMakeLists.txt
+
+-------------------------------
+Thu, 16 Jul 2026 08:44:57 +0100  Kris Thielemans@ucl.ac.uk  
+
+add CListEventScannerWithDiscreteDetectorsBase to avoid pointers in CListEventPETSIRD
+
+
+src/include/stir/listmode/CListEventScannerWithDiscreteDetectors.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/listmode_buildblock/CListRecordPETSIRD.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 11:25:17 +0100  Kris Thielemans@ucl.ac.uk  
+
+[GHA] enable CI for PRs on PETSIRD branch
+[ci skip]
+
+
+.github/workflows/build-test.yml
+
+-------------------------------
+Sat, 11 Jul 2026 09:53:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+use build_environment.yml and use on GHA when PETSIRD=ON
+simplify GHA workflow as well (fewer changes w.r.t.
+previous version
+
+
+.github/workflows/build-test.yml
+build_environment.yml
+
+-------------------------------
+Sat, 11 Jul 2026 09:53:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+PETSIRD: hdf5 input files for norm
+
+
+src/include/stir/recon_buildblock/BinNormalisationFromPETSIRD.h
+src/recon_buildblock/BinNormalisationFromPETSIRD.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:53:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+add test on tof_mashing factor
+
+
+src/buildblock/ProjDataInfo.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:53:31 +0100  Kris Thielemans@ucl.ac.uk  
+
+PETSIRD: safe checking on type of scanner geometry
+
+
+src/listmode_buildblock/CListRecordPETSIRD.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:53:31 +0100  NikEfth  
+
+PETSIRD: first working version
+Using PETSIRD 0.9.1
+
+
+.github/workflows/build-test.yml
+CMakeLists.txt
+documentation/devel/README.md
+documentation/devel/local-CI.md
+src/CMakeLists.txt
+src/IO/CMakeLists.txt
+src/IO/IO_registries.cxx
+src/IO/PETSIRDCListmodeInputFileFormat.cxx
+src/buildblock/CMakeLists.txt
+src/buildblock/PETSIRDInfo.cxx
+src/buildblock/ProjDataInfo.cxx
+src/cmake/STIRConfig.cmake.in
+src/include/stir/ArrayFunction.h
+src/include/stir/ArrayFunction.inl
+src/include/stir/IO/InputFileFormat.h
+src/include/stir/IO/InputStreamFromPETSIRD.h
+src/include/stir/IO/PETSIRDCListmodeInputFileFormat.h
+src/include/stir/IO/SAFIRCListmodeInputFileFormat.h
+src/include/stir/PETSIRDInfo.h
+src/include/stir/ProjDataInfoCylindricalNoArcCorr.inl
+src/include/stir/detail/PETSIRDInfo_helpers.h
+src/include/stir/listmode/CListModeDataBasedOnCoordinateMap.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.inl
+src/include/stir/recon_buildblock/BinNormalisationFromPETSIRD.h
+src/listmode_buildblock/CListModeDataBasedOnCoordinateMap.cxx
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/CListRecordPETSIRD.cxx
+src/listmode_buildblock/CMakeLists.txt
+src/recon_buildblock/BinNormalisationFromPETSIRD.cxx
+src/recon_buildblock/CMakeLists.txt
+src/recon_buildblock/recon_buildblock_registries.cxx
+src/recon_test/test_DataSymmetriesForBins_PET_CartesianGrid.cxx
+src/test/CMakeLists.txt
+src/test/test_ArcCorrection.cxx
+src/test/test_PETSIRDInfo_helpers.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  danieldeidda  
+
+PETSIRD: fixes for detector map [WIP]
+
+
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  NikEfth  
+
+PETSIRD: orientations etc [WIP]
+
+
+.github/workflows/build-test.yml
+src/IO/PETSIRDCListmodeInputFileFormat.cxx
+src/include/stir/IO/InputFileFormat.h
+src/include/stir/IO/InputStreamFromPETSIRD.h
+src/include/stir/IO/PETSIRDCListmodeInputFileFormat.h
+src/include/stir/IO/SAFIRCListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.inl
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  danieldeidda  
+
+PETSIRD: extracting position of each detector [WIP]
+
+
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  NikEfth  
+
+Updates on the PETSIRD interface and CMake [WIP]
+
+
+CMakeLists.txt
+src/IO/CMakeLists.txt
+src/IO/PETSIRDCListmodeInputFileFormat.cxx
+src/include/stir/IO/PETSIRDCListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataBasedOnCoordinateMap.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.inl
+src/listmode_buildblock/CListModeDataBasedOnCoordinateMap.cxx
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  danieldeidda  
+
+reading PETSIRD header [WIP]
+
+
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  NikEfth  
+
+initial attempt for CListModeDataPETSIRD [WIP]
+
+
+src/IO/IO_registries.cxx
+src/include/stir/IO/PETSIRDCListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataBasedOnCoordinateMap.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.inl
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  nmdicom-recon  
+
+creating template classes for PETSIRD [WIP]
+mainly a copy at this stage
+
+
+src/IO/IO_registries.cxx
+src/cmake/STIRConfig.cmake.in
+src/cmake/STIRConfig.h.in
+src/include/stir/IO/PETSIRDCListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataBasedOnCoordinateMap.h
+src/include/stir/listmode/CListModeDataPETSIRD.h
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/include/stir/listmode/CListRecordPETSIRD.h
+src/include/stir/listmode/CListRecordPETSIRD.inl
+src/listmode_buildblock/CListModeDataBasedOnCoordinateMap.cxx
+src/listmode_buildblock/CListModeDataPETSIRD.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Sat, 11 Jul 2026 09:05:43 +0100  NikEfth  
+
+Create CListModeDataBasedOnCoordinateMap from SAFIR
+
+
+src/include/stir/IO/SAFIRCListmodeInputFileFormat.h
+src/include/stir/listmode/CListModeDataBasedOnCoordinateMap.h
+src/include/stir/listmode/CListModeDataSAFIR.h
+src/listmode_buildblock/CListModeDataBasedOnCoordinateMap.cxx
+src/listmode_buildblock/CListModeDataSAFIR.cxx
+src/listmode_buildblock/CMakeLists.txt
+
+-------------------------------
+Mon, 29 Jun 2026 16:06:27 +0100  Kris Thielemans  
+
+Merge pull request #1727 from KrisThielemans/update_doc_and_hooks
+Update doc and hooks
+
+-------------------------------
+Mon, 29 Jun 2026 16:05:11 +0100  Kris Thielemans  
+
+add Discord server info [ci skip]
+Co-authored-by: Nikos Efthimiou <NikEfth@users.noreply.github.com>
+
+CONTRIBUTING.md
+
+-------------------------------
+Sun, 28 Jun 2026 13:40:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PRECOMMIT] some more pre-commit hooks
+
+
+.pre-commit-config.yaml
+
+-------------------------------
+Sun, 28 Jun 2026 13:40:15 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] small re-org of .md documentation
+
+
+INSTALL.md
+INSTALL.txt
+README.md
+documentation/EDITOR-CONFIG.md
+documentation/devel/editor-settings.md
+
+-------------------------------
+Sun, 28 Jun 2026 13:28:01 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] reformat some .md files
+
+
+CONTRIBUTING.md
+README.md
+documentation/EDITOR-CONFIG.md
+documentation/devel/README.md
+documentation/devel/editor-settings.md
+documentation/devel/git-hooks.md
+documentation/devel/git-recommendations.md
+
+-------------------------------
+Sun, 28 Jun 2026 13:28:01 +0100  Kris Thielemans@ucl.ac.uk  
+
+[PRECOMMIT] add pymarkdown linter
+
+
+.pre-commit-config.yaml
+.pymarkdown
+
+-------------------------------
+Sun, 28 Jun 2026 13:27:41 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] update *.md for developers
+
+
+CONTRIBUTING.md
+documentation/devel/README.md
+documentation/devel/editor-settings.md
+documentation/devel/git-recommendations.md
+
+-------------------------------
+Mon, 15 Jun 2026 11:07:14 +0100  Kris Thielemans@ucl.ac.uk  
+
+reduce copy-paste in test_interpolate_projdata
+create a few functions to avoid repeating the same code
+
+
+src/test/test_interpolate_projdata.cxx
+
+-------------------------------
+Fri, 5 Jun 2026 23:21:02 +0100  Kris Thielemans@ucl.ac.uk  
+
+minpr fixes to release_6.4 notes
+
+
+documentation/release_6.4.htm
+
+-------------------------------
+Thu, 4 Jun 2026 22:11:57 +0100  Matthew Strugari  
+
+Add ORCiD for Matthew Strugari in CITATION.cff [ci skip]
+
+
+CITATION.cff
+
+-------------------------------
+Tue, 2 Jun 2026 09:07:29 +0100  Kris Thielemans@ucl.ac.uk  
+
+[CMAKE] set minimum SWIG version to 4.2
+Earlier SWIG versions now generate a wrapper that has a
+compilation error.
+
+Fixes #1721
+
+
+documentation/release_6.4.htm
+src/swig/CMakeLists.txt
+
+-------------------------------
+Mon, 1 Jun 2026 22:39:52 +0100  Kris Thielemans@ucl.ac.uk  
+
+[DOC] minor fixes in release_6.4.htm
+[ci skip]
+
+
+documentation/release_6.4.htm
+
+-------------------------------
 Wed, 27 May 2026 17:16:03 +0100  Kris Thielemans@ucl.ac.uk  
 
 updated VERSION.txt etc for release of version 6.4.0

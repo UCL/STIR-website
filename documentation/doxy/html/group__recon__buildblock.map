@@ -1,13 +1,13 @@
 <map id="Reconstruction building blocks" name="Reconstruction building blocks">
-<area shape="rect" id="Node000009" href="$group__ECAT.html" title=" " alt="" coords="627,94,804,139"/>
-<area shape="rect" id="Node000010" href="$group__GE.html" title=" " alt="" coords="642,222,789,249"/>
-<area shape="rect" id="Node000005" href="$group__GeneralisedObjectiveFunction.html" title=" " alt="" coords="627,294,804,356"/>
-<area shape="rect" id="Node000007" href="$group__NiftyPET.html" title=" " alt="" coords="603,380,828,424"/>
-<area shape="rect" id="Node000008" href="$group__Parallelproj.html" title=" " alt="" coords="637,449,794,494"/>
-<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,404,102,432"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="151,396,325,440"/>
-<area shape="rect" id="Node000006" href="$group__distributable.html" title=" " alt="" coords="636,518,795,563"/>
-<area shape="rect" id="Node000004" href="$group__normalisation.html" title=" " alt="" coords="631,588,800,632"/>
-<area shape="rect" id="Node000003" href="$group__projection.html" title=" " alt="" coords="644,657,787,702"/>
-<area shape="rect" id="Node000011" href="$group__utilities.html" title=" " alt="" coords="652,726,779,753"/>
+<area shape="rect" id="Node000009" href="$group__ECAT.html" title=" " alt="" coords="575,87,748,130"/>
+<area shape="rect" id="Node000010" href="$group__GE.html" title=" " alt="" coords="594,210,729,236"/>
+<area shape="rect" id="Node000005" href="$group__GeneralisedObjectiveFunction.html" title=" " alt="" coords="584,282,739,340"/>
+<area shape="rect" id="Node000007" href="$group__NiftyPET.html" title=" " alt="" coords="559,366,764,408"/>
+<area shape="rect" id="Node000008" href="$group__Parallelproj.html" title=" " alt="" coords="589,432,734,475"/>
+<area shape="rect" id="Node000002" href="$group__STIR__library.html" title=" " alt="" coords="5,387,97,414"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="146,379,303,422"/>
+<area shape="rect" id="Node000006" href="$group__distributable.html" title=" " alt="" coords="592,499,731,542"/>
+<area shape="rect" id="Node000004" href="$group__normalisation.html" title=" " alt="" coords="587,566,736,608"/>
+<area shape="rect" id="Node000003" href="$group__projection.html" title=" " alt="" coords="598,632,725,675"/>
+<area shape="rect" id="Node000011" href="$group__utilities.html" title=" " alt="" coords="605,699,718,726"/>
 </map>
